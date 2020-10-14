@@ -1,0 +1,7 @@
+("EMG_202009" "TB_ADC_V2" "schematic" "schematic") nil
+("analogLib" "idc" "spectre" "spectre") nil
+("analogLib" "vpulse" "spectre" "spectre") nil
+("EMG_202009" "ADC_V2" "verilogams" "verilogams") nil
+("EMG_202009" "DAC" "verilogams" "verilogams") nil
+("analogLib" "vsin" "spectre" "spectre") nil
+("analogLib" "vdc" "spectre" "spectre") nil

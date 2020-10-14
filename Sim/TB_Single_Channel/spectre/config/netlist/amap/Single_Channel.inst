@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "EMG_202009_IA_verilogams"
+"I1n" "EMG_202009_BPF_verilogams"
+"I2n" "EMG_202009_VGA_verilogams"
+"Gain_Selv" ":1v"
+"Vddav" ":2v"
+"Vinnv" ":3v"
+"Vinpv" ":4v"
+"Voutv" ":5v"
+"Vssav" ":6v"

@@ -1,0 +1,949 @@
+xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+file: /home/ykhuang/research/EMG_202009/IA/verilogams/verilog.vams
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xmvlog: Memory Usage - Current physical: 24.8M, Current virtual: 57.1M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 91.7% cpu)
+
+		Caching library 'EMG_202009' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		TB_IA
+		cds_globals
+	Discipline resolution Pass...
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:               2       2
+		Interconnect:            7       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: EMG_202009.TB_IA:config
+xmelab: Memory Usage - Final: 40.2M, Peak: 164.7M, Peak virtual: 250.6M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 96.6% cpu)
+Loading snapshot EMG_202009.TB_IA:config .................... Done
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir xcelium.d/AMSD/ahdlSimDB.
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.433.isr9 64bit -- 5 Nov 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence and Spectre are registered trademarks of Cadence
+        Design Systems, Inc. All others are the property of their respective
+        holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 2394
+Memory  available: 38.5621 GB  physical: 67.2864 GB
+Linux   : CentOS Linux release 7.7.1908 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1236.5] ( 16 ),  1 [1345.6] ( 17 ),  2 [1229.3] ( 18 )
+                 3 [1219.3] ( 19 ),  4 [2390.6] ( 20 ),  5 [1499.3] ( 21 )
+                 6 [1267.5] ( 22 ),  7 [1200.9] ( 23 )
+        1:       8 [1200.0] ( 24 ),  9 [1200.0] ( 25 ), 10 [2133.5] ( 26 )
+                11 [1357.9] ( 27 ), 12 [1500.0] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
+        
+System load averages (1min, 5min, 15min) : 1.0 %, 0.6 %, 0.3 %
+Hyperthreading is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
+
+Reading file: 
+        /home/ykhuang/research/Sim/TB_IA/ams/config/netlist/spiceModels.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file:  /home/ykhuang/research/EMG_202009/IA/verilogams/verilog.vams
+Reading file: 
+        /home/ykhuang/research/Sim/TB_IA/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_202009_IA_verilogams_verilog.vams.EMG_202009__IA__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_202009__IA__verilogams__0x10000001_behavioral.so
+Installed compiled interface for
+        EMG_202009__IA__verilogams__0x10000001_behavioral.
+Reading file: 
+        /home/ykhuang/research/Sim/TB_IA/ams/config/netlist/netlist.vams
+Reading file: 
+        /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/tm_bip.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpva.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvb.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpva3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvb3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvc3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnva.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvb.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvb_npn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvb_pnp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvc_npn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvc_pnp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvhscr.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvascr.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvhbscr.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pa.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pb.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pe.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pf.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pa.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pb.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pe.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pf.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pa.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pb.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pe.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pf.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/tm_cap.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csandwt3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csandwt4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csandwt5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf2p.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf3p.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf3a.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf4a.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf5a.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft4a.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft5a.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft6a.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm4t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm5t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm6t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmm4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmm4t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmm5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmm5t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh4t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh5t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh6t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmmh4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmmh4t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmmh5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmmh5t.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc_pmos.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvci.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvci_nmos.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvci_m.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3_pmos.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3i.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3i_nmos.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3i_m.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpod.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpod_i.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpodhv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpodhv_i.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cp1sub.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cp1suba.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cp1subp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/tag_25v.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/tag_60v.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/tm_dio.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnn3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dp3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnw3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/ddnwmv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdnwmv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dipdnwmv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/ddnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dipdnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnhpw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnhpwa.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dphnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dphnwa.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dhpw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dhnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dndf.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdwhn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dwhn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpwhn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpndf.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdddnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/ddpldnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn3dpl.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dbn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpol.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnpdd_scr.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdd_scr.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dsb.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dsba.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dsba_qp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnp20.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpp20.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn3sci.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dscidnwmv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/tm_mos.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nei.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nei_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nei_m_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pei.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pei_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pei_m_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nel.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/neli.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/neli_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/neli_m_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pel.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pel_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/peli.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/peli_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/peli_m_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nn3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3i.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3i_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3i_m_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3i.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3i_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3i_m_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3ln.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3ln_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lni.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lni_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lni_m_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3_mos1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_mos1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_m_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelna.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelnai.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelnai_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelnai_m_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lna.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lnai.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lnai_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lnai_m_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lna.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lna_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lnai.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lnai_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lnai_m_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmma.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/jf_nmma.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmma_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmma.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/jf_pmma.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmma_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedi.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedi_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedia.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedia_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped2_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhv_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhv_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhv_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhv_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmc_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmc_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmd_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmd_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmc_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmc_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nma.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nma_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phv_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phv_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phhv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phhv_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phhv_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmc_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmc_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmmc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmmc_mos2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmmc_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pma.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pma_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmb.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvti.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvti_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvti_m_6.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvt_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvti.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvti_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvti_m_5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhvd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhvd_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhvd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhvd_bjt.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/tm_pho.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoa.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dpho.va
+Reading link: 
+        /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading link: 
+        /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphob.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_uv.va
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc_cat.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc0.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc0_cat.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphocfp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphocfp_cat.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod_an1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod_an2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod0.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod0_an1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod0_an2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphodfp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphodfp_an1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphodfp_an2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dspada.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/ispad.va
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dspada_cat.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dspada0.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dapda.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_apd.va
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dapda_cat.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dapda0.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/tm_res.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdn_esd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp_io.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp_esd.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw_scr.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdn3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw3_scr.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdnwmv.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1_3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1_3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1s.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1s_3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1h.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1h_3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1k1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1k1_3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rctdn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rctdp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rctp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsildn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsildp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsilnp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsilpp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdn.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdn3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdp3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbnp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbpp1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbpp1k1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm1.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm2.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm3.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm4.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm5.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtp.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
+Reading file: 
+        /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
+Reading file: 
+        /home/ykhuang/research/Sim/TB_IA/ams/config/netlist/amsControlSpectre.scs
+Reading file:  /home/ykhuang/research/Sim/TB_IA/ams/config/netlist/ie_card.scs
+Reading file: 
+        /home/ykhuang/research/Sim/TB_IA/ams/config/netlist/.amsbind.scs
+Reading file: 
+        /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 449.964 ms, elapsed = 522.895 ms.
+Time accumulated: CPU = 877.041 ms, elapsed = 522.901 ms.
+Peak resident memory used = 99 Mbytes.
+
+xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> # This is the NC-SIM(R) probe command file
+xcelium> # used in the AMS-ADE integration.
+xcelium> 
+xcelium> 
+xcelium> #
+xcelium> # Database settings
+xcelium> #
+xcelium> if { [info exists ::env(AMS_RESULTS_DIR) ] } { set AMS_RESULTS_DIR $env(AMS_RESULTS_DIR)} else {set AMS_RESULTS_DIR "../psf"}
+../psf
+xcelium> database -open ams_database -into ${AMS_RESULTS_DIR} -default
+Created default SHM database ams_database
+xcelium> 
+xcelium> #
+xcelium> # Probe settings
+xcelium> #
+xcelium> probe -create -emptyok -database ams_database {TB_IA.Vout}
+Created probe 1
+xcelium> probe -create -emptyok -database ams_database {TB_IA.vsig}
+Created probe 2
+xcelium> 
+xcelium> run
+Time for Elaboration: CPU = 141.493 ms, elapsed = 161.817 ms.
+Time accumulated: CPU = 1.01893 s, elapsed = 685.111 ms.
+Peak resident memory used = 116 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the
+        'checklimitdest' option will no longer be supported in future
+        releases.
+
+
+Time for EDB Visiting: CPU = 1.061 ms, elapsed = 1.06001 ms.
+Time accumulated: CPU = 1.02016 s, elapsed = 686.342 ms.
+Peak resident memory used = 116 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 2 nodes:
+        TB_IA.Vdda
+        TB_IA.Vout
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               temp = 27
+            vabstol = 1e-06
+            iabstol = 1e-12
+           homotopy = 7
+              limit = delta
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+             pivrel = 0.001
+     checklimitdest = psf
+             rawfmt = sst2
+               save = selected
+               tnom = 27
+              scale = 1
+             scalem = 1
+             reltol = 0.0001
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 8
+EMG_202009__IA__verilogams__0x10000001_behavioral 1     
+               vcvs 2     
+            vsource 3     
+
+Analysis and control statement inventory:
+               info 4     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 2     
+
+Time for parsing: CPU = 2.487 ms, elapsed = 7.13706 ms.
+Time accumulated: CPU = 1.02279 s, elapsed = 693.625 ms.
+Peak resident memory used = 117 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 50 ms)
+************************************************
+DC simulation time: CPU = 923 us, elapsed = 907.898 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 50 ms
+    step = 50 us
+    maxstep = 500 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (voltage)
+
+    tran: time = 1.288 ms    (2.58 %), step = 39.09 us    (78.2 m%)
+    tran: time = 3.766 ms    (7.53 %), step = 39.22 us    (78.4 m%)
+    tran: time = 6.276 ms    (12.6 %), step = 43.41 us    (86.8 m%)
+    tran: time = 8.76 ms     (17.5 %), step = 39.15 us    (78.3 m%)
+    tran: time = 11.27 ms    (22.5 %), step = 43.55 us    (87.1 m%)
+    tran: time = 13.75 ms    (27.5 %), step = 39.08 us    (78.2 m%)
+    tran: time = 16.25 ms    (32.5 %), step = 43.78 us    (87.6 m%)
+    tran: time = 18.78 ms    (37.6 %), step = 39.35 us    (78.7 m%)
+    tran: time = 21.29 ms    (42.6 %), step = 43.19 us    (86.4 m%)
+    tran: time = 23.77 ms    (47.5 %), step = 39.27 us    (78.5 m%)
+    tran: time = 26.28 ms    (52.6 %), step = 43.31 us    (86.6 m%)
+    tran: time = 28.77 ms    (57.5 %), step = 39.21 us    (78.4 m%)
+    tran: time = 31.27 ms    (62.5 %), step = 43.43 us    (86.9 m%)
+    tran: time = 33.76 ms    (67.5 %), step = 39.14 us    (78.3 m%)
+    tran: time = 36.27 ms    (72.5 %), step = 43.58 us    (87.2 m%)
+    tran: time = 38.75 ms    (77.5 %), step = 39.07 us    (78.1 m%)
+    tran: time = 41.25 ms    (82.5 %), step = 43.81 us    (87.6 m%)
+    tran: time = 43.78 ms    (87.6 %), step = 39.33 us    (78.7 m%)
+    tran: time = 46.29 ms    (92.6 %), step = 43.23 us    (86.5 m%)
+    tran: time = 48.77 ms    (97.5 %), step = 39.25 us    (78.5 m%)
+
+The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
+Simulation stopped via transient analysis stoptime at time 50 MS
+Memory Usage - Current physical: 122.2M, Current virtual: 577.7M
+CPU Usage - 0.3s system + 0.6s user = 0.9s total (87.2% cpu)
+xcelium> exit
+Number of accepted tran steps =             1140
+
+Maximum value achieved for any signal of each quantity: 
+V: V(TB_IA.Vdda) = 1.8 V
+I: I(TB_IA.V1:p) = 0 A
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+          reltol = 10e-06, default 100e-06 (conservative)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (12.3 %)      2 (10.0 %)      3 (4.3 %)       4 (10.0 %)
+                 5 (5.6 %)       7 (1.4 %)      15 (1.4 %)      16 (1.4 %)
+                17 (12.7 %)     21 (83.1 %)     23 (8.6 %)      25 (1.4 %)
+                26 (61.1 %)     27 (2.9 %)      28 (1.4 %)      29 (18.6 %)
+        Other   
+Initial condition solution time: CPU = 1.038 ms, elapsed = 1.02496 ms.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                       0
+  Number of A-to-D events in IEs:              0
+Number of D-to-A events:                       0
+  Number of D-to-A events in IEs:              0
+Number of VHDL-AMS Breaks:                     0
+
+Intrinsic tran analysis time:    CPU = 74.596 ms, elapsed = 79.1399 ms.
+Total time required for tran analysis `tran': CPU = 77.794 ms, elapsed =
+        84.6901 ms.
+Time accumulated: CPU = 1.11327 s, elapsed = 793.271 ms.
+Peak resident memory used = 123 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+Simulation complete via transient analysis stoptime at time 50 MS
+
+Aggregate audit (11:47:58 PM, Sun Sep 27, 2020):
+Time used: CPU = 1.12 s, elapsed = 1.12 s, util. = 100%.
+Time spent in licensing: elapsed = 109 ms, percentage of total = 9.69%.
+Peak memory used = 123 Mbytes.
+Simulation started at: 11:47:57 PM, Sun Sep 27, 2020, ended at: 11:47:58 PM,
+        Sun Sep 27, 2020, with elapsed time (wall clock): 1.12 s.
+spectre completes with 0 errors, 1 warning, and 2 notices.
+xmsim: Memory Usage - Final: 123.1M, Peak: 123.2M, Peak virtual: 577.7M
+xmsim: CPU Usage - 0.3s system + 0.7s user = 1.0s total (1.1s, 92.3% cpu)

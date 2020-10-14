@@ -1,0 +1,37 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/TB_MultiplexingADC_v2/ams/config/netlist/.mapi//xcelium.d/AMSD/ahdlSimDB"
+-amsdlibdir
+/home/ykhuang/research/Sim/TB_MultiplexingADC_v2/ams/config/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/MUX_16/verilogams/verilog.vams lib:EMG_202009 cell:MUX_16 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/DAC/verilogams/verilog.vams lib:EMG_202009 cell:DAC view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/ADC_V2/verilogams/verilog.vams lib:EMG_202009 cell:ADC_V2 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/Counter_4bit/functional/verilog.v lib:EMG_202009 cell:Counter_4bit view:functional"
+-MESSAGES
+-AMSELAB
+-XLMODE
+/home/ykhuang/research/Sim/TB_MultiplexingADC_v2/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+/home/ykhuang/research/Sim/TB_MultiplexingADC_v2/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+/home/ykhuang/research/Sim/TB_MultiplexingADC_v2/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

@@ -1,0 +1,50 @@
+
+Single_Channel I16 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch16), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch16), .Vinp(Vinp_ch16));
+
+Single_Channel I15 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch15), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch15), .Vinp(Vinp_ch15));
+
+Single_Channel I14 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch14), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch14), .Vinp(Vinp_ch14));
+
+Single_Channel I13 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch13), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch13), .Vinp(Vinp_ch13));
+
+Single_Channel I12 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch12), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch12), .Vinp(Vinp_ch12));
+
+Single_Channel I11 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch11), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch11), .Vinp(Vinp_ch11));
+
+Single_Channel I10 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch10), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch10), .Vinp(Vinp_ch10));
+
+Single_Channel I9 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch9), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch9), .Vinp(Vinp_ch9));
+
+Single_Channel I8 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch8), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch8), .Vinp(Vinp_ch8));
+
+Single_Channel I7 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch7), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch7), .Vinp(Vinp_ch7));
+
+Single_Channel I6 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch6), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch6), .Vinp(Vinp_ch6));
+
+Single_Channel I5 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch5), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch5), .Vinp(Vinp_ch5));
+
+Single_Channel I4 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch4), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch4), .Vinp(Vinp_ch4));
+
+Single_Channel I3 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch3), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch3), .Vinp(Vinp_ch3));
+
+Single_Channel I2 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch2), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch2), .Vinp(Vinp_ch2));
+
+Single_Channel I1 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch1), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch1), .Vinp(Vinp_ch1));
+
+endmodule

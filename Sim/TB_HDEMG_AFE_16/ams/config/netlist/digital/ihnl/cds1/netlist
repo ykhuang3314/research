@@ -1,0 +1,82 @@
+// Library - EMG_202009, Cell - MultiChannel_16, View - schematic
+// LAST TIME SAVED: Sep 27 20:12:28 2020
+// NETLIST TIME: Sep 28 16:33:57 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="MultiChannel_16", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Sep 27 20:12:28 2020" *)
+
+module MultiChannel_16 (Vout_ch1, Vout_ch2, Vout_ch3, Vout_ch4, 
+    Vout_ch5, Vout_ch6, Vout_ch7, Vout_ch8, Vout_ch9, Vout_ch10, 
+    Vout_ch11, Vout_ch12, Vout_ch13, Vout_ch14, Vout_ch15, Vout_ch16, 
+    Gain_Sel, Vdda, Vinn_ch1, Vinn_ch2, Vinn_ch3, Vinn_ch4, Vinn_ch5, 
+    Vinn_ch6, Vinn_ch7, Vinn_ch8, Vinn_ch9, Vinn_ch10, Vinn_ch11, 
+    Vinn_ch12, Vinn_ch13, Vinn_ch14, Vinn_ch15, Vinn_ch16, Vinp_ch1, 
+    Vinp_ch2, Vinp_ch3, Vinp_ch4, Vinp_ch5, Vinp_ch6, Vinp_ch7, 
+    Vinp_ch8, Vinp_ch9, Vinp_ch10, Vinp_ch11, Vinp_ch12, Vinp_ch13, 
+    Vinp_ch14, Vinp_ch15, Vinp_ch16, Vssa);
+
+output  Vout_ch1, Vout_ch2, Vout_ch3, Vout_ch4, Vout_ch5, Vout_ch6, 
+    Vout_ch7, Vout_ch8, Vout_ch9, Vout_ch10, Vout_ch11, Vout_ch12, 
+    Vout_ch13, Vout_ch14, Vout_ch15, Vout_ch16;
+
+input  Gain_Sel, Vdda, Vinn_ch1, Vinn_ch2, Vinn_ch3, Vinn_ch4, 
+    Vinn_ch5, Vinn_ch6, Vinn_ch7, Vinn_ch8, Vinn_ch9, Vinn_ch10, 
+    Vinn_ch11, Vinn_ch12, Vinn_ch13, Vinn_ch14, Vinn_ch15, Vinn_ch16, 
+    Vinp_ch1, Vinp_ch2, Vinp_ch3, Vinp_ch4, Vinp_ch5, Vinp_ch6, 
+    Vinp_ch7, Vinp_ch8, Vinp_ch9, Vinp_ch10, Vinp_ch11, Vinp_ch12, 
+    Vinp_ch13, Vinp_ch14, Vinp_ch15, Vinp_ch16, Vssa;
+
+
+Single_Channel I16 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch16), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch16), .Vinp(Vinp_ch16));
+
+Single_Channel I15 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch15), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch15), .Vinp(Vinp_ch15));
+
+Single_Channel I14 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch14), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch14), .Vinp(Vinp_ch14));
+
+Single_Channel I13 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch13), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch13), .Vinp(Vinp_ch13));
+
+Single_Channel I12 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch12), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch12), .Vinp(Vinp_ch12));
+
+Single_Channel I11 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch11), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch11), .Vinp(Vinp_ch11));
+
+Single_Channel I10 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch10), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch10), .Vinp(Vinp_ch10));
+
+Single_Channel I9 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch9), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch9), .Vinp(Vinp_ch9));
+
+Single_Channel I8 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch8), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch8), .Vinp(Vinp_ch8));
+
+Single_Channel I7 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch7), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch7), .Vinp(Vinp_ch7));
+
+Single_Channel I6 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch6), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch6), .Vinp(Vinp_ch6));
+
+Single_Channel I5 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch5), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch5), .Vinp(Vinp_ch5));
+
+Single_Channel I4 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch4), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch4), .Vinp(Vinp_ch4));
+
+Single_Channel I3 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch3), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch3), .Vinp(Vinp_ch3));
+
+Single_Channel I2 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch2), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch2), .Vinp(Vinp_ch2));
+
+Single_Channel I1 ( .Vssa(Vssa), .Vdda(Vdda), .Vout(Vout_ch1), 
+    .Gain_Sel(Gain_Sel), .Vinn(Vinn_ch1), .Vinp(Vinp_ch1));
+
+endmodule

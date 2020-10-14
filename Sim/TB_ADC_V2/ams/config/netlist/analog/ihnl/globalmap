@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_ADC_V2/schematic EMG_202009/TB_ADC_V2/schematic/schematic/EMG_202009_TB_ADC_V2_config/1 TB_ADC_V2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"Voutv" ".Voutv"
+"Vin0v" ".Vin0v"
+"Vin1v" ".Vin1v"
+"Vin2v" ".Vin2v"
+"Vin3v" ".Vin3v"
+"Vddav" ".Vddav"
+"Vssav" ".Vssav"
+"sel<0>v" ".sel[0]v"
+"sel<1>v" ".sel[1]v"

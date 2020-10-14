@@ -1,0 +1,6 @@
+"E1" ((("analogLib" "vcvs" "spectre" "spectre") ("EMG_202009" "TB_IA" "schematic" "schematic")))
+"V0" ((("analogLib" "vdc" "spectre" "spectre") ("EMG_202009" "TB_IA" "schematic" "schematic")))
+"I0" ((("EMG_202009" "IA" "verilogams" "verilogams") ("EMG_202009" "TB_IA" "schematic" "schematic")))
+"E0" ((("analogLib" "vcvs" "spectre" "spectre") ("EMG_202009" "TB_IA" "schematic" "schematic")))
+"V1" ((("analogLib" "vdc" "spectre" "spectre") ("EMG_202009" "TB_IA" "schematic" "schematic")))
+"V2" ((("analogLib" "vsin" "spectre" "spectre") ("EMG_202009" "TB_IA" "schematic" "schematic")))

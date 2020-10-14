@@ -1,0 +1,21 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Sep 23, 2020 at 13:50:39 CEST
+xmvlog
+    -use5x
+    -SPECIFICUNIT AnalogMux_4
+    -zparse /tmp/vamsZpardga573
+    -NOWARN DLNOHV
+    -work EMG_202009
+    -view verilogams
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilogams/EMG_202009/verilogams/compile4.log
+    -messages
+    -ams
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/EMG_202009/AnalogMux_4/verilogams/verilog.vams
+
+file: /home/ykhuang/research/EMG_202009/AnalogMux_4/verilogams/verilog.vams
+	module EMG_202009.AnalogMux_4:verilogams
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Sep 23, 2020 at 13:50:39 CEST  (total: 00:00:00)

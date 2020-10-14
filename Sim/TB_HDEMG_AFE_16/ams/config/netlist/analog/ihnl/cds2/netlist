@@ -1,0 +1,72 @@
+
+// Library name: EMG_202009
+// Cell name: TB_HDEMG_AFE_16
+// View name: schematic
+// Inherited view list: schematic
+E31 (Vinp_ch16 net054 Vsig_ch16 0) vcvs gain=0.5
+E30 (Vinn_ch15 net055 Vsig_ch15 0) vcvs gain=-0.5
+E29 (Vinp_ch15 net055 Vsig_ch15 0) vcvs gain=0.5
+E28 (Vinn_ch16 net054 Vsig_ch16 0) vcvs gain=-0.5
+E27 (Vinp_ch14 net056 Vsig_ch14 0) vcvs gain=0.5
+E26 (Vinn_ch13 net057 Vsig_ch13 0) vcvs gain=-0.5
+E25 (Vinp_ch13 net057 Vsig_ch13 0) vcvs gain=0.5
+E24 (Vinn_ch14 net056 Vsig_ch14 0) vcvs gain=-0.5
+E23 (Vinp_ch12 net038 Vsig_ch12 0) vcvs gain=0.5
+E22 (Vinn_ch11 net039 Vsig_ch11 0) vcvs gain=-0.5
+E21 (Vinp_ch11 net039 Vsig_ch11 0) vcvs gain=0.5
+E20 (Vinn_ch12 net038 Vsig_ch12 0) vcvs gain=-0.5
+E19 (Vinp_ch10 net040 Vsig_ch10 0) vcvs gain=0.5
+E18 (Vinn_ch9 net041 Vsig_ch9 0) vcvs gain=-0.5
+E17 (Vinp_ch9 net041 Vsig_ch9 0) vcvs gain=0.5
+E16 (Vinn_ch10 net040 Vsig_ch10 0) vcvs gain=-0.5
+E15 (Vinp_ch8 net022 Vsig_ch8 0) vcvs gain=0.5
+E14 (Vinn_ch7 net023 Vsig_ch7 0) vcvs gain=-0.5
+E13 (Vinp_ch7 net023 Vsig_ch7 0) vcvs gain=0.5
+E12 (Vinn_ch8 net022 Vsig_ch8 0) vcvs gain=-0.5
+E11 (Vinp_ch6 net024 Vsig_ch6 0) vcvs gain=0.5
+E10 (Vinn_ch5 net025 Vsig_ch5 0) vcvs gain=-0.5
+E9 (Vinp_ch5 net025 Vsig_ch5 0) vcvs gain=0.5
+E8 (Vinn_ch6 net024 Vsig_ch6 0) vcvs gain=-0.5
+E7 (Vinp_ch4 net05 Vsig_ch4 0) vcvs gain=0.5
+E6 (Vinn_ch3 net06 Vsig_ch3 0) vcvs gain=-0.5
+E5 (Vinp_ch3 net06 Vsig_ch3 0) vcvs gain=0.5
+E4 (Vinn_ch4 net05 Vsig_ch4 0) vcvs gain=-0.5
+E3 (Vinp_ch2 net07 Vsig_ch2 0) vcvs gain=0.5
+E1 (Vinn_ch1 net2 Vsig_ch1 0) vcvs gain=-0.5
+E0 (Vinp_ch1 net2 Vsig_ch1 0) vcvs gain=0.5
+E2 (Vinn_ch2 net07 Vsig_ch2 0) vcvs gain=-0.5
+V29 (Vsig_ch15 0) vsource type=sine delay=(1/(100*16))*14 ampl=5m freq=100
+V28 (Vsig_ch16 0) vsource type=sine delay=(1/(100*16))*15 ampl=5m freq=100
+V25 (Vsig_ch13 0) vsource type=sine delay=(1/(100*16))*12 ampl=5m freq=100
+V24 (Vsig_ch14 0) vsource type=sine delay=(1/(100*16))*13 ampl=5m freq=100
+V21 (Vsig_ch11 0) vsource type=sine delay=(1/(100*16))*10 ampl=5m freq=100
+V20 (Vsig_ch12 0) vsource type=sine delay=(1/(100*16))*11 ampl=5m freq=100
+V17 (Vsig_ch9 0) vsource type=sine delay=(1/(100*16))*8 ampl=5m freq=100
+V16 (Vsig_ch10 0) vsource type=sine delay=(1/(100*16))*9 ampl=5m freq=100
+V13 (Vsig_ch7 0) vsource type=sine delay=(1/(100*16))*6 ampl=5m freq=100
+V12 (Vsig_ch8 0) vsource type=sine delay=(1/(100*16))*7 ampl=5m freq=100
+V9 (Vsig_ch5 0) vsource type=sine delay=(1/(100*16))*4 ampl=5m freq=100
+V8 (Vsig_ch6 0) vsource type=sine delay=(1/(100*16))*5 ampl=5m freq=100
+V5 (Vsig_ch3 0) vsource type=sine delay=(1/(100*16))*2 ampl=5m freq=100
+V4 (Vsig_ch4 0) vsource type=sine delay=(1/(100*16))*3 ampl=5m freq=100
+V0 (Vsig_ch1 0) vsource type=sine delay=(1/(100*16))*0 ampl=5m freq=100
+V2 (Vsig_ch2 0) vsource type=sine delay=(1/(100*16))*1 ampl=5m freq=100
+V33 (CLK 0) vsource type=pulse val0=0 val1=1.8 period=1/(32k) \
+        delay=1/(32k*2) rise=10p fall=10p width=1/(32k*2)
+V32 (Vdda 0) vsource dc=1.8 type=dc
+V31 (net055 0) vsource dc=Vcm type=dc
+V30 (net054 0) vsource dc=Vcm type=dc
+V27 (net057 0) vsource dc=Vcm type=dc
+V26 (net056 0) vsource dc=Vcm type=dc
+V23 (net039 0) vsource dc=Vcm type=dc
+V22 (net038 0) vsource dc=Vcm type=dc
+V19 (net041 0) vsource dc=Vcm type=dc
+V18 (net040 0) vsource dc=Vcm type=dc
+V15 (net023 0) vsource dc=Vcm type=dc
+V14 (net022 0) vsource dc=Vcm type=dc
+V11 (net025 0) vsource dc=Vcm type=dc
+V10 (net024 0) vsource dc=Vcm type=dc
+V7 (net06 0) vsource dc=Vcm type=dc
+V6 (net05 0) vsource dc=Vcm type=dc
+V1 (net2 0) vsource dc=Vcm type=dc
+V3 (net07 0) vsource dc=Vcm type=dc

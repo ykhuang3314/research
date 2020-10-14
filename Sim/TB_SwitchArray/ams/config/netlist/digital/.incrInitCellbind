@@ -1,0 +1,4 @@
+("analogLib" "vpulse" "spectre" "spectre") "USED"
+("EMG_202009" "Counter_Nbit" "functional" "functional") "USED"
+("EMG_202009" "SwitchArray" "verilogams" "verilogams") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"

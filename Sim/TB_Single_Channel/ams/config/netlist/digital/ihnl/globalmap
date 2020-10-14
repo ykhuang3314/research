@@ -1,0 +1,10 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_Single_Channel/schematic EMG_202009/TB_Single_Channel/schematic/schematic/EMG_202009_TB_Single_Channel_config/1 TB_Single_Channel
+EMG_202009/Single_Channel/schematic EMG_202009/Single_Channel/schematic/schematic/EMG_202009_TB_Single_Channel_config/0 Single_Channel
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

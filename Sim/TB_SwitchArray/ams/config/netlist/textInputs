@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - EMG_202009 ,Cell - Counter_Nbit, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_202009/Counter_Nbit/functional/verilog.v lib:EMG_202009 cell:Counter_Nbit view:functional"
+
+// HDL file for Lib - EMG_202009 ,Cell - SwitchArray, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_202009/SwitchArray/verilogams/verilog.vams lib:EMG_202009 cell:SwitchArray view:verilogams"
+

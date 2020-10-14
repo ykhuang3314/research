@@ -1,0 +1,10 @@
+
+IA I0 ( .Vout(net15), .Vdda(Vdda), .Vinn(Vinn), .Vinp(Vinp), 
+    .Vssa(Vssa));
+
+BPF I1 ( .Vout(net17), .Vdda(Vdda), .Vin(net15), .Vssa(Vssa));
+
+VGA I2 ( .Vout(Vout), .Gain_Sel(Gain_Sel), .Vdda(Vdda), .Vin(net17), 
+    .Vssa(Vssa));
+
+endmodule

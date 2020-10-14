@@ -1,0 +1,6 @@
+designtop="EMG_202009.TB_VGA:schematic"
+cell="PGA_3Bit" lib="EMG_202009" view="verilogams" 
+cell="VGA" lib="EMG_202009" view="verilogams" 
+cell="isource" view="analogtext" 
+cell="vsource" view="analogtext" 
+cell="Counter_Nbit" lib="EMG_202009" view="functional" 

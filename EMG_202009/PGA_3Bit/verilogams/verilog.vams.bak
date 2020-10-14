@@ -1,0 +1,37 @@
+//Verilog-AMS HDL for "EMG_202009", "PGA_3Bit" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module PGA_3Bit (Vout, Vin, Gain_Sel, Vdda, Vssa, Ibias);
+
+// I/O ports declaration
+output Vout;
+input Vin, Gain_Sel, Vdda, Vssa, Ibias;
+
+// types of ports
+electrical Vout, Vin, Vdda, Vssa, Ibias;
+logic[2:0] Gain_Sel;
+
+//parameters
+parameter real Vcm = 0.9;
+parameter real F_Pole = 1k; //single pole 
+
+//internal variables
+integer gain;
+real out, in;
+
+always@(Gain_Sel) begin
+	gain = 3 * (Gain_Sel[2] * 4 + Gain_Sel[1] * 2 + Gain_Sel[0] + 1);
+end
+
+analog begin
+	
+	in = V(Vin, Vssa);
+	
+	out = laplace_nd(gain*in, {1}, {1, 1/(`M_TWO_PI*F_Pole)});
+
+	V(Vout, Vssa) <+ out + Vcm;
+end
+
+endmodule

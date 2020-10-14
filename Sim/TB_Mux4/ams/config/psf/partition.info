@@ -1,0 +1,44 @@
+( global ( resolution_type basic ) )
+
+( net TB_Mux4.Vout TB_Mux4.Vout analog electrical )
+( net TB_Mux4.I0.Vout TB_Mux4.Vout analog electrical )
+
+( net TB_Mux4.Vin0 TB_Mux4.Vin0 analog electrical )
+( net TB_Mux4.I0.Vin0 TB_Mux4.Vin0 analog electrical )
+
+( net TB_Mux4.Vin1 TB_Mux4.Vin1 analog electrical )
+( net TB_Mux4.I0.Vin1 TB_Mux4.Vin1 analog electrical )
+
+( net TB_Mux4.Vin2 TB_Mux4.Vin2 analog electrical )
+( net TB_Mux4.I0.Vin2 TB_Mux4.Vin2 analog electrical )
+
+( net TB_Mux4.Vin3 TB_Mux4.Vin3 analog electrical )
+( net TB_Mux4.I0.Vin3 TB_Mux4.Vin3 analog electrical )
+
+( net TB_Mux4.sel TB_Mux4.sel digital logic )
+( net TB_Mux4.I4.Sel_Mux4 TB_Mux4.sel digital logic )
+( net TB_Mux4.I0.sel TB_Mux4.sel digital logic )
+
+( net TB_Mux4.Vdda TB_Mux4.Vdda analog electrical )
+( net TB_Mux4.I0.Vdda TB_Mux4.Vdda analog electrical )
+
+( net TB_Mux4.I0.Vssa TB_Mux4.I0.Vssa analog electrical )
+( net cds_globals.\gnd!  TB_Mux4.I0.Vssa analog electrical )
+
+( net TB_Mux4.I0.sel_base10 TB_Mux4.I0.sel_base10 digital logic (type rnm) )
+
+( net TB_Mux4.net3 TB_Mux4.net3 analog electrical )
+
+( net TB_Mux4.net4 TB_Mux4.net4 analog electrical )
+
+(instance TB_Mux4.I0 mixed/dmixed (type rnm))
+(instance TB_Mux4.I4 digital)
+(instance TB_Mux4.V7 analog)
+(instance TB_Mux4.V6 analog)
+(instance TB_Mux4.V4 analog)
+(instance TB_Mux4.V2 analog)
+(instance TB_Mux4.V1 analog)
+(instance TB_Mux4.V0 analog)
+(instance TB_Mux4.V3 analog)
+(instance TB_Mux4 mixed/dmixed (type rnm))
+(instance cds_globals analog)

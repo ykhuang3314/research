@@ -1,0 +1,1088 @@
+( global ( resolution_type basic ) )
+
+( net TB_HDEMG_AFE_16.I0.I16.net15 TB_HDEMG_AFE_16.I0.I16.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I1.Vin TB_HDEMG_AFE_16.I0.I16.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I0.Vout TB_HDEMG_AFE_16.I0.I16.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch16 TB_HDEMG_AFE_16.Vinp_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch16 TB_HDEMG_AFE_16.Vinp_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.Vinp TB_HDEMG_AFE_16.Vinp_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch16 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch16 TB_HDEMG_AFE_16.Vinn_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch16 TB_HDEMG_AFE_16.Vinn_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.Vinn TB_HDEMG_AFE_16.Vinn_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch16 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I39.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I2.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I1.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I0.Vdda TB_HDEMG_AFE_16.Vdda analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I3.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I4.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I5.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I6.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I7.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I8.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I9.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I10.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I11.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I12.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I13.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I14.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I15.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I16.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I1.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I0.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net cds_globals.\gnd!  TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I39.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I38.Reset TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I2.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I42.Vssa TB_HDEMG_AFE_16.I0.Vssa analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I0.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I1.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I1.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I2.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I3.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I3.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I4.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I4.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I5.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I5.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I6.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I6.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I7.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I7.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I8.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I8.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I9.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I9.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I10.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I10.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I11.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I11.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I12.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I12.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I13.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I13.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I14.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I14.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I15.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I15.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I16.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+( net TB_HDEMG_AFE_16.I0.I16.I2.Gain_Sel TB_HDEMG_AFE_16.I0.Vssa digital/mixed logic )
+
+( net TB_HDEMG_AFE_16.I0.I16.I0.Vin TB_HDEMG_AFE_16.I0.I16.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I16.I0.Vdiff TB_HDEMG_AFE_16.I0.I16.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I16.net17 TB_HDEMG_AFE_16.I0.I16.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I2.Vin TB_HDEMG_AFE_16.I0.I16.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I1.Vout TB_HDEMG_AFE_16.I0.I16.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I16.I1.n1 TB_HDEMG_AFE_16.I0.I16.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I16.I1.n2 TB_HDEMG_AFE_16.I0.I16.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch16 TB_HDEMG_AFE_16.Vout_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin15 TB_HDEMG_AFE_16.Vout_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch16 TB_HDEMG_AFE_16.Vout_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.Vout TB_HDEMG_AFE_16.Vout_ch16 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I16.I2.Vout TB_HDEMG_AFE_16.Vout_ch16 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I16.I2.gain TB_HDEMG_AFE_16.I0.I16.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I16.I2.out TB_HDEMG_AFE_16.I0.I16.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I16.I2.in TB_HDEMG_AFE_16.I0.I16.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I15.net15 TB_HDEMG_AFE_16.I0.I15.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I1.Vin TB_HDEMG_AFE_16.I0.I15.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I0.Vout TB_HDEMG_AFE_16.I0.I15.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch15 TB_HDEMG_AFE_16.Vinp_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch15 TB_HDEMG_AFE_16.Vinp_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.Vinp TB_HDEMG_AFE_16.Vinp_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch15 TB_HDEMG_AFE_16.Vinn_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch15 TB_HDEMG_AFE_16.Vinn_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.Vinn TB_HDEMG_AFE_16.Vinn_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch15 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I15.I0.Vin TB_HDEMG_AFE_16.I0.I15.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I15.I0.Vdiff TB_HDEMG_AFE_16.I0.I15.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I15.net17 TB_HDEMG_AFE_16.I0.I15.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I2.Vin TB_HDEMG_AFE_16.I0.I15.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I1.Vout TB_HDEMG_AFE_16.I0.I15.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I15.I1.n1 TB_HDEMG_AFE_16.I0.I15.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I15.I1.n2 TB_HDEMG_AFE_16.I0.I15.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch15 TB_HDEMG_AFE_16.Vout_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin14 TB_HDEMG_AFE_16.Vout_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch15 TB_HDEMG_AFE_16.Vout_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.Vout TB_HDEMG_AFE_16.Vout_ch15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I15.I2.Vout TB_HDEMG_AFE_16.Vout_ch15 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I15.I2.gain TB_HDEMG_AFE_16.I0.I15.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I15.I2.out TB_HDEMG_AFE_16.I0.I15.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I15.I2.in TB_HDEMG_AFE_16.I0.I15.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I14.net15 TB_HDEMG_AFE_16.I0.I14.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I1.Vin TB_HDEMG_AFE_16.I0.I14.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I0.Vout TB_HDEMG_AFE_16.I0.I14.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch14 TB_HDEMG_AFE_16.Vinp_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch14 TB_HDEMG_AFE_16.Vinp_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.Vinp TB_HDEMG_AFE_16.Vinp_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch14 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch14 TB_HDEMG_AFE_16.Vinn_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch14 TB_HDEMG_AFE_16.Vinn_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.Vinn TB_HDEMG_AFE_16.Vinn_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch14 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I14.I0.Vin TB_HDEMG_AFE_16.I0.I14.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I14.I0.Vdiff TB_HDEMG_AFE_16.I0.I14.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I14.net17 TB_HDEMG_AFE_16.I0.I14.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I2.Vin TB_HDEMG_AFE_16.I0.I14.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I1.Vout TB_HDEMG_AFE_16.I0.I14.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I14.I1.n1 TB_HDEMG_AFE_16.I0.I14.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I14.I1.n2 TB_HDEMG_AFE_16.I0.I14.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch14 TB_HDEMG_AFE_16.Vout_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin13 TB_HDEMG_AFE_16.Vout_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch14 TB_HDEMG_AFE_16.Vout_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.Vout TB_HDEMG_AFE_16.Vout_ch14 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I14.I2.Vout TB_HDEMG_AFE_16.Vout_ch14 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I14.I2.gain TB_HDEMG_AFE_16.I0.I14.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I14.I2.out TB_HDEMG_AFE_16.I0.I14.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I14.I2.in TB_HDEMG_AFE_16.I0.I14.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I13.net15 TB_HDEMG_AFE_16.I0.I13.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I1.Vin TB_HDEMG_AFE_16.I0.I13.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I0.Vout TB_HDEMG_AFE_16.I0.I13.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch13 TB_HDEMG_AFE_16.Vinp_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch13 TB_HDEMG_AFE_16.Vinp_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.Vinp TB_HDEMG_AFE_16.Vinp_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch13 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch13 TB_HDEMG_AFE_16.Vinn_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch13 TB_HDEMG_AFE_16.Vinn_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.Vinn TB_HDEMG_AFE_16.Vinn_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch13 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I13.I0.Vin TB_HDEMG_AFE_16.I0.I13.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I13.I0.Vdiff TB_HDEMG_AFE_16.I0.I13.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I13.net17 TB_HDEMG_AFE_16.I0.I13.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I2.Vin TB_HDEMG_AFE_16.I0.I13.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I1.Vout TB_HDEMG_AFE_16.I0.I13.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I13.I1.n1 TB_HDEMG_AFE_16.I0.I13.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I13.I1.n2 TB_HDEMG_AFE_16.I0.I13.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch13 TB_HDEMG_AFE_16.Vout_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin12 TB_HDEMG_AFE_16.Vout_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch13 TB_HDEMG_AFE_16.Vout_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.Vout TB_HDEMG_AFE_16.Vout_ch13 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I13.I2.Vout TB_HDEMG_AFE_16.Vout_ch13 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I13.I2.gain TB_HDEMG_AFE_16.I0.I13.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I13.I2.out TB_HDEMG_AFE_16.I0.I13.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I13.I2.in TB_HDEMG_AFE_16.I0.I13.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I12.net15 TB_HDEMG_AFE_16.I0.I12.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I1.Vin TB_HDEMG_AFE_16.I0.I12.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I0.Vout TB_HDEMG_AFE_16.I0.I12.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch12 TB_HDEMG_AFE_16.Vinp_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch12 TB_HDEMG_AFE_16.Vinp_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.Vinp TB_HDEMG_AFE_16.Vinp_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch12 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch12 TB_HDEMG_AFE_16.Vinn_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch12 TB_HDEMG_AFE_16.Vinn_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.Vinn TB_HDEMG_AFE_16.Vinn_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch12 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I12.I0.Vin TB_HDEMG_AFE_16.I0.I12.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I12.I0.Vdiff TB_HDEMG_AFE_16.I0.I12.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I12.net17 TB_HDEMG_AFE_16.I0.I12.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I2.Vin TB_HDEMG_AFE_16.I0.I12.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I1.Vout TB_HDEMG_AFE_16.I0.I12.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I12.I1.n1 TB_HDEMG_AFE_16.I0.I12.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I12.I1.n2 TB_HDEMG_AFE_16.I0.I12.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch12 TB_HDEMG_AFE_16.Vout_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin11 TB_HDEMG_AFE_16.Vout_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch12 TB_HDEMG_AFE_16.Vout_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.Vout TB_HDEMG_AFE_16.Vout_ch12 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I12.I2.Vout TB_HDEMG_AFE_16.Vout_ch12 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I12.I2.gain TB_HDEMG_AFE_16.I0.I12.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I12.I2.out TB_HDEMG_AFE_16.I0.I12.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I12.I2.in TB_HDEMG_AFE_16.I0.I12.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I11.net15 TB_HDEMG_AFE_16.I0.I11.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I1.Vin TB_HDEMG_AFE_16.I0.I11.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I0.Vout TB_HDEMG_AFE_16.I0.I11.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch11 TB_HDEMG_AFE_16.Vinp_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch11 TB_HDEMG_AFE_16.Vinp_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.Vinp TB_HDEMG_AFE_16.Vinp_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch11 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch11 TB_HDEMG_AFE_16.Vinn_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch11 TB_HDEMG_AFE_16.Vinn_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.Vinn TB_HDEMG_AFE_16.Vinn_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch11 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I11.I0.Vin TB_HDEMG_AFE_16.I0.I11.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I11.I0.Vdiff TB_HDEMG_AFE_16.I0.I11.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I11.net17 TB_HDEMG_AFE_16.I0.I11.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I2.Vin TB_HDEMG_AFE_16.I0.I11.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I1.Vout TB_HDEMG_AFE_16.I0.I11.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I11.I1.n1 TB_HDEMG_AFE_16.I0.I11.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I11.I1.n2 TB_HDEMG_AFE_16.I0.I11.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch11 TB_HDEMG_AFE_16.Vout_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin10 TB_HDEMG_AFE_16.Vout_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch11 TB_HDEMG_AFE_16.Vout_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.Vout TB_HDEMG_AFE_16.Vout_ch11 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I11.I2.Vout TB_HDEMG_AFE_16.Vout_ch11 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I11.I2.gain TB_HDEMG_AFE_16.I0.I11.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I11.I2.out TB_HDEMG_AFE_16.I0.I11.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I11.I2.in TB_HDEMG_AFE_16.I0.I11.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I10.net15 TB_HDEMG_AFE_16.I0.I10.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I1.Vin TB_HDEMG_AFE_16.I0.I10.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I0.Vout TB_HDEMG_AFE_16.I0.I10.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch10 TB_HDEMG_AFE_16.Vinp_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch10 TB_HDEMG_AFE_16.Vinp_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.Vinp TB_HDEMG_AFE_16.Vinp_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch10 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch10 TB_HDEMG_AFE_16.Vinn_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch10 TB_HDEMG_AFE_16.Vinn_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.Vinn TB_HDEMG_AFE_16.Vinn_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch10 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I10.I0.Vin TB_HDEMG_AFE_16.I0.I10.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I10.I0.Vdiff TB_HDEMG_AFE_16.I0.I10.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I10.net17 TB_HDEMG_AFE_16.I0.I10.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I2.Vin TB_HDEMG_AFE_16.I0.I10.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I1.Vout TB_HDEMG_AFE_16.I0.I10.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I10.I1.n1 TB_HDEMG_AFE_16.I0.I10.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I10.I1.n2 TB_HDEMG_AFE_16.I0.I10.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch10 TB_HDEMG_AFE_16.Vout_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin9 TB_HDEMG_AFE_16.Vout_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch10 TB_HDEMG_AFE_16.Vout_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.Vout TB_HDEMG_AFE_16.Vout_ch10 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I10.I2.Vout TB_HDEMG_AFE_16.Vout_ch10 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I10.I2.gain TB_HDEMG_AFE_16.I0.I10.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I10.I2.out TB_HDEMG_AFE_16.I0.I10.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I10.I2.in TB_HDEMG_AFE_16.I0.I10.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I9.net15 TB_HDEMG_AFE_16.I0.I9.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I1.Vin TB_HDEMG_AFE_16.I0.I9.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I0.Vout TB_HDEMG_AFE_16.I0.I9.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch9 TB_HDEMG_AFE_16.Vinp_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch9 TB_HDEMG_AFE_16.Vinp_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.Vinp TB_HDEMG_AFE_16.Vinp_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch9 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch9 TB_HDEMG_AFE_16.Vinn_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch9 TB_HDEMG_AFE_16.Vinn_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.Vinn TB_HDEMG_AFE_16.Vinn_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch9 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I9.I0.Vin TB_HDEMG_AFE_16.I0.I9.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I9.I0.Vdiff TB_HDEMG_AFE_16.I0.I9.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I9.net17 TB_HDEMG_AFE_16.I0.I9.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I2.Vin TB_HDEMG_AFE_16.I0.I9.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I1.Vout TB_HDEMG_AFE_16.I0.I9.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I9.I1.n1 TB_HDEMG_AFE_16.I0.I9.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I9.I1.n2 TB_HDEMG_AFE_16.I0.I9.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch9 TB_HDEMG_AFE_16.Vout_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin8 TB_HDEMG_AFE_16.Vout_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch9 TB_HDEMG_AFE_16.Vout_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.Vout TB_HDEMG_AFE_16.Vout_ch9 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I9.I2.Vout TB_HDEMG_AFE_16.Vout_ch9 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I9.I2.gain TB_HDEMG_AFE_16.I0.I9.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I9.I2.out TB_HDEMG_AFE_16.I0.I9.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I9.I2.in TB_HDEMG_AFE_16.I0.I9.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I8.net15 TB_HDEMG_AFE_16.I0.I8.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I1.Vin TB_HDEMG_AFE_16.I0.I8.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I0.Vout TB_HDEMG_AFE_16.I0.I8.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch8 TB_HDEMG_AFE_16.Vinp_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch8 TB_HDEMG_AFE_16.Vinp_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.Vinp TB_HDEMG_AFE_16.Vinp_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch8 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch8 TB_HDEMG_AFE_16.Vinn_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch8 TB_HDEMG_AFE_16.Vinn_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.Vinn TB_HDEMG_AFE_16.Vinn_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch8 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I8.I0.Vin TB_HDEMG_AFE_16.I0.I8.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I8.I0.Vdiff TB_HDEMG_AFE_16.I0.I8.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I8.net17 TB_HDEMG_AFE_16.I0.I8.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I2.Vin TB_HDEMG_AFE_16.I0.I8.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I1.Vout TB_HDEMG_AFE_16.I0.I8.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I8.I1.n1 TB_HDEMG_AFE_16.I0.I8.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I8.I1.n2 TB_HDEMG_AFE_16.I0.I8.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch8 TB_HDEMG_AFE_16.Vout_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin7 TB_HDEMG_AFE_16.Vout_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch8 TB_HDEMG_AFE_16.Vout_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.Vout TB_HDEMG_AFE_16.Vout_ch8 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I8.I2.Vout TB_HDEMG_AFE_16.Vout_ch8 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I8.I2.gain TB_HDEMG_AFE_16.I0.I8.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I8.I2.out TB_HDEMG_AFE_16.I0.I8.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I8.I2.in TB_HDEMG_AFE_16.I0.I8.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I7.net15 TB_HDEMG_AFE_16.I0.I7.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I1.Vin TB_HDEMG_AFE_16.I0.I7.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I0.Vout TB_HDEMG_AFE_16.I0.I7.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch7 TB_HDEMG_AFE_16.Vinp_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch7 TB_HDEMG_AFE_16.Vinp_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.Vinp TB_HDEMG_AFE_16.Vinp_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch7 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch7 TB_HDEMG_AFE_16.Vinn_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch7 TB_HDEMG_AFE_16.Vinn_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.Vinn TB_HDEMG_AFE_16.Vinn_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch7 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I7.I0.Vin TB_HDEMG_AFE_16.I0.I7.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I7.I0.Vdiff TB_HDEMG_AFE_16.I0.I7.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I7.net17 TB_HDEMG_AFE_16.I0.I7.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I2.Vin TB_HDEMG_AFE_16.I0.I7.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I1.Vout TB_HDEMG_AFE_16.I0.I7.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I7.I1.n1 TB_HDEMG_AFE_16.I0.I7.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I7.I1.n2 TB_HDEMG_AFE_16.I0.I7.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch7 TB_HDEMG_AFE_16.Vout_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin6 TB_HDEMG_AFE_16.Vout_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch7 TB_HDEMG_AFE_16.Vout_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.Vout TB_HDEMG_AFE_16.Vout_ch7 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I7.I2.Vout TB_HDEMG_AFE_16.Vout_ch7 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I7.I2.gain TB_HDEMG_AFE_16.I0.I7.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I7.I2.out TB_HDEMG_AFE_16.I0.I7.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I7.I2.in TB_HDEMG_AFE_16.I0.I7.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I6.net15 TB_HDEMG_AFE_16.I0.I6.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I1.Vin TB_HDEMG_AFE_16.I0.I6.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I0.Vout TB_HDEMG_AFE_16.I0.I6.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch6 TB_HDEMG_AFE_16.Vinp_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch6 TB_HDEMG_AFE_16.Vinp_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.Vinp TB_HDEMG_AFE_16.Vinp_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch6 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch6 TB_HDEMG_AFE_16.Vinn_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch6 TB_HDEMG_AFE_16.Vinn_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.Vinn TB_HDEMG_AFE_16.Vinn_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch6 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I6.I0.Vin TB_HDEMG_AFE_16.I0.I6.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I6.I0.Vdiff TB_HDEMG_AFE_16.I0.I6.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I6.net17 TB_HDEMG_AFE_16.I0.I6.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I2.Vin TB_HDEMG_AFE_16.I0.I6.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I1.Vout TB_HDEMG_AFE_16.I0.I6.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I6.I1.n1 TB_HDEMG_AFE_16.I0.I6.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I6.I1.n2 TB_HDEMG_AFE_16.I0.I6.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch6 TB_HDEMG_AFE_16.Vout_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin5 TB_HDEMG_AFE_16.Vout_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch6 TB_HDEMG_AFE_16.Vout_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.Vout TB_HDEMG_AFE_16.Vout_ch6 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I6.I2.Vout TB_HDEMG_AFE_16.Vout_ch6 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I6.I2.gain TB_HDEMG_AFE_16.I0.I6.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I6.I2.out TB_HDEMG_AFE_16.I0.I6.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I6.I2.in TB_HDEMG_AFE_16.I0.I6.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I5.net15 TB_HDEMG_AFE_16.I0.I5.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I1.Vin TB_HDEMG_AFE_16.I0.I5.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I0.Vout TB_HDEMG_AFE_16.I0.I5.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch5 TB_HDEMG_AFE_16.Vinp_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch5 TB_HDEMG_AFE_16.Vinp_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.Vinp TB_HDEMG_AFE_16.Vinp_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch5 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch5 TB_HDEMG_AFE_16.Vinn_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch5 TB_HDEMG_AFE_16.Vinn_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.Vinn TB_HDEMG_AFE_16.Vinn_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch5 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I5.I0.Vin TB_HDEMG_AFE_16.I0.I5.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I5.I0.Vdiff TB_HDEMG_AFE_16.I0.I5.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I5.net17 TB_HDEMG_AFE_16.I0.I5.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I2.Vin TB_HDEMG_AFE_16.I0.I5.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I1.Vout TB_HDEMG_AFE_16.I0.I5.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I5.I1.n1 TB_HDEMG_AFE_16.I0.I5.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I5.I1.n2 TB_HDEMG_AFE_16.I0.I5.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch5 TB_HDEMG_AFE_16.Vout_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin4 TB_HDEMG_AFE_16.Vout_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch5 TB_HDEMG_AFE_16.Vout_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.Vout TB_HDEMG_AFE_16.Vout_ch5 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I5.I2.Vout TB_HDEMG_AFE_16.Vout_ch5 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I5.I2.gain TB_HDEMG_AFE_16.I0.I5.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I5.I2.out TB_HDEMG_AFE_16.I0.I5.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I5.I2.in TB_HDEMG_AFE_16.I0.I5.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I4.net15 TB_HDEMG_AFE_16.I0.I4.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I1.Vin TB_HDEMG_AFE_16.I0.I4.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I0.Vout TB_HDEMG_AFE_16.I0.I4.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch4 TB_HDEMG_AFE_16.Vinp_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch4 TB_HDEMG_AFE_16.Vinp_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.Vinp TB_HDEMG_AFE_16.Vinp_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch4 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch4 TB_HDEMG_AFE_16.Vinn_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch4 TB_HDEMG_AFE_16.Vinn_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.Vinn TB_HDEMG_AFE_16.Vinn_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch4 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I4.I0.Vin TB_HDEMG_AFE_16.I0.I4.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I4.I0.Vdiff TB_HDEMG_AFE_16.I0.I4.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I4.net17 TB_HDEMG_AFE_16.I0.I4.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I2.Vin TB_HDEMG_AFE_16.I0.I4.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I1.Vout TB_HDEMG_AFE_16.I0.I4.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I4.I1.n1 TB_HDEMG_AFE_16.I0.I4.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I4.I1.n2 TB_HDEMG_AFE_16.I0.I4.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch4 TB_HDEMG_AFE_16.Vout_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin3 TB_HDEMG_AFE_16.Vout_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch4 TB_HDEMG_AFE_16.Vout_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.Vout TB_HDEMG_AFE_16.Vout_ch4 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I4.I2.Vout TB_HDEMG_AFE_16.Vout_ch4 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I4.I2.gain TB_HDEMG_AFE_16.I0.I4.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I4.I2.out TB_HDEMG_AFE_16.I0.I4.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I4.I2.in TB_HDEMG_AFE_16.I0.I4.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I3.net15 TB_HDEMG_AFE_16.I0.I3.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I1.Vin TB_HDEMG_AFE_16.I0.I3.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I0.Vout TB_HDEMG_AFE_16.I0.I3.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch3 TB_HDEMG_AFE_16.Vinp_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch3 TB_HDEMG_AFE_16.Vinp_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.Vinp TB_HDEMG_AFE_16.Vinp_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch3 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch3 TB_HDEMG_AFE_16.Vinn_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch3 TB_HDEMG_AFE_16.Vinn_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.Vinn TB_HDEMG_AFE_16.Vinn_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch3 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I3.I0.Vin TB_HDEMG_AFE_16.I0.I3.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I3.I0.Vdiff TB_HDEMG_AFE_16.I0.I3.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I3.net17 TB_HDEMG_AFE_16.I0.I3.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I2.Vin TB_HDEMG_AFE_16.I0.I3.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I1.Vout TB_HDEMG_AFE_16.I0.I3.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I3.I1.n1 TB_HDEMG_AFE_16.I0.I3.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I3.I1.n2 TB_HDEMG_AFE_16.I0.I3.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch3 TB_HDEMG_AFE_16.Vout_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin2 TB_HDEMG_AFE_16.Vout_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch3 TB_HDEMG_AFE_16.Vout_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.Vout TB_HDEMG_AFE_16.Vout_ch3 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I3.I2.Vout TB_HDEMG_AFE_16.Vout_ch3 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I3.I2.gain TB_HDEMG_AFE_16.I0.I3.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I3.I2.out TB_HDEMG_AFE_16.I0.I3.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I3.I2.in TB_HDEMG_AFE_16.I0.I3.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I2.net15 TB_HDEMG_AFE_16.I0.I2.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I1.Vin TB_HDEMG_AFE_16.I0.I2.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I0.Vout TB_HDEMG_AFE_16.I0.I2.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch2 TB_HDEMG_AFE_16.Vinp_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch2 TB_HDEMG_AFE_16.Vinp_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.Vinp TB_HDEMG_AFE_16.Vinp_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch2 TB_HDEMG_AFE_16.Vinn_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch2 TB_HDEMG_AFE_16.Vinn_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.Vinn TB_HDEMG_AFE_16.Vinn_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch2 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I2.I0.Vin TB_HDEMG_AFE_16.I0.I2.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I2.I0.Vdiff TB_HDEMG_AFE_16.I0.I2.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I2.net17 TB_HDEMG_AFE_16.I0.I2.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I2.Vin TB_HDEMG_AFE_16.I0.I2.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I1.Vout TB_HDEMG_AFE_16.I0.I2.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I2.I1.n1 TB_HDEMG_AFE_16.I0.I2.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I2.I1.n2 TB_HDEMG_AFE_16.I0.I2.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch2 TB_HDEMG_AFE_16.Vout_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin1 TB_HDEMG_AFE_16.Vout_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch2 TB_HDEMG_AFE_16.Vout_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.Vout TB_HDEMG_AFE_16.Vout_ch2 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I2.I2.Vout TB_HDEMG_AFE_16.Vout_ch2 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I2.I2.gain TB_HDEMG_AFE_16.I0.I2.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I2.I2.out TB_HDEMG_AFE_16.I0.I2.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I2.I2.in TB_HDEMG_AFE_16.I0.I2.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.I0.I1.net15 TB_HDEMG_AFE_16.I0.I1.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I1.Vin TB_HDEMG_AFE_16.I0.I1.net15 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I0.Vout TB_HDEMG_AFE_16.I0.I1.net15 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinp_ch1 TB_HDEMG_AFE_16.Vinp_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinp_ch1 TB_HDEMG_AFE_16.Vinp_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.Vinp TB_HDEMG_AFE_16.Vinp_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I0.Vinp TB_HDEMG_AFE_16.Vinp_ch1 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vinn_ch1 TB_HDEMG_AFE_16.Vinn_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vinn_ch1 TB_HDEMG_AFE_16.Vinn_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.Vinn TB_HDEMG_AFE_16.Vinn_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I0.Vinn TB_HDEMG_AFE_16.Vinn_ch1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I1.I0.Vin TB_HDEMG_AFE_16.I0.I1.I0.Vin analog None )
+
+( net TB_HDEMG_AFE_16.I0.I1.I0.Vdiff TB_HDEMG_AFE_16.I0.I1.I0.Vdiff analog None )
+
+( net TB_HDEMG_AFE_16.I0.I1.net17 TB_HDEMG_AFE_16.I0.I1.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I2.Vin TB_HDEMG_AFE_16.I0.I1.net17 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I1.Vout TB_HDEMG_AFE_16.I0.I1.net17 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I1.I1.n1 TB_HDEMG_AFE_16.I0.I1.I1.n1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I1.I1.n2 TB_HDEMG_AFE_16.I0.I1.I1.n2 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vout_ch1 TB_HDEMG_AFE_16.Vout_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vin0 TB_HDEMG_AFE_16.Vout_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.Vout_ch1 TB_HDEMG_AFE_16.Vout_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.Vout TB_HDEMG_AFE_16.Vout_ch1 analog electrical )
+( net TB_HDEMG_AFE_16.I0.I1.I2.Vout TB_HDEMG_AFE_16.Vout_ch1 analog electrical )
+
+( net TB_HDEMG_AFE_16.I0.I1.I2.gain TB_HDEMG_AFE_16.I0.I1.I2.gain digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.I0.I1.I2.out TB_HDEMG_AFE_16.I0.I1.I2.out analog None )
+
+( net TB_HDEMG_AFE_16.I0.I1.I2.in TB_HDEMG_AFE_16.I0.I1.I2.in analog None )
+
+( net TB_HDEMG_AFE_16.Mux_Out TB_HDEMG_AFE_16.Mux_Out analog electrical )
+( net TB_HDEMG_AFE_16.I2.Vin TB_HDEMG_AFE_16.Mux_Out analog electrical )
+( net TB_HDEMG_AFE_16.I42.Vout TB_HDEMG_AFE_16.Mux_Out analog electrical )
+
+( net TB_HDEMG_AFE_16.CLK TB_HDEMG_AFE_16.CLK analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I39.Clk TB_HDEMG_AFE_16.CLK analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I38.Clk TB_HDEMG_AFE_16.CLK digital/mixed logic )
+( net TB_HDEMG_AFE_16.I2.Clk TB_HDEMG_AFE_16.CLK analog/mixed electrical )
+( net TB_HDEMG_AFE_16.I42.Clk TB_HDEMG_AFE_16.CLK digital/mixed logic )
+
+( net TB_HDEMG_AFE_16.Sel TB_HDEMG_AFE_16.Sel digital logic )
+( net TB_HDEMG_AFE_16.I38.Q TB_HDEMG_AFE_16.Sel digital logic )
+( net TB_HDEMG_AFE_16.I42.sel TB_HDEMG_AFE_16.Sel digital logic )
+
+( net TB_HDEMG_AFE_16.I42.sel_base10 TB_HDEMG_AFE_16.I42.sel_base10 digital logic (type rnm) )
+
+( net TB_HDEMG_AFE_16.Dout[11] TB_HDEMG_AFE_16.Dout[11] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[11] TB_HDEMG_AFE_16.Dout[11] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[11] TB_HDEMG_AFE_16.Dout[11] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[10] TB_HDEMG_AFE_16.Dout[10] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[10] TB_HDEMG_AFE_16.Dout[10] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[10] TB_HDEMG_AFE_16.Dout[10] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[9] TB_HDEMG_AFE_16.Dout[9] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[9] TB_HDEMG_AFE_16.Dout[9] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[9] TB_HDEMG_AFE_16.Dout[9] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[8] TB_HDEMG_AFE_16.Dout[8] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[8] TB_HDEMG_AFE_16.Dout[8] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[8] TB_HDEMG_AFE_16.Dout[8] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[7] TB_HDEMG_AFE_16.Dout[7] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[7] TB_HDEMG_AFE_16.Dout[7] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[7] TB_HDEMG_AFE_16.Dout[7] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[6] TB_HDEMG_AFE_16.Dout[6] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[6] TB_HDEMG_AFE_16.Dout[6] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[6] TB_HDEMG_AFE_16.Dout[6] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[5] TB_HDEMG_AFE_16.Dout[5] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[5] TB_HDEMG_AFE_16.Dout[5] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[5] TB_HDEMG_AFE_16.Dout[5] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[4] TB_HDEMG_AFE_16.Dout[4] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[4] TB_HDEMG_AFE_16.Dout[4] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[4] TB_HDEMG_AFE_16.Dout[4] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[3] TB_HDEMG_AFE_16.Dout[3] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[3] TB_HDEMG_AFE_16.Dout[3] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[3] TB_HDEMG_AFE_16.Dout[3] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[2] TB_HDEMG_AFE_16.Dout[2] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[2] TB_HDEMG_AFE_16.Dout[2] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[2] TB_HDEMG_AFE_16.Dout[2] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[1] TB_HDEMG_AFE_16.Dout[1] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[1] TB_HDEMG_AFE_16.Dout[1] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[1] TB_HDEMG_AFE_16.Dout[1] analog electrical )
+
+( net TB_HDEMG_AFE_16.Dout[0] TB_HDEMG_AFE_16.Dout[0] analog electrical )
+( net TB_HDEMG_AFE_16.I39.Din[0] TB_HDEMG_AFE_16.Dout[0] analog electrical )
+( net TB_HDEMG_AFE_16.I2.Dout[0] TB_HDEMG_AFE_16.Dout[0] analog electrical )
+
+( net TB_HDEMG_AFE_16.I2.sample TB_HDEMG_AFE_16.I2.sample analog None )
+
+( net TB_HDEMG_AFE_16.I2.midpoint TB_HDEMG_AFE_16.I2.midpoint analog None )
+
+( net TB_HDEMG_AFE_16.I2.result TB_HDEMG_AFE_16.I2.result analog None )
+
+( net TB_HDEMG_AFE_16.I38.tmp TB_HDEMG_AFE_16.I38.tmp digital logic )
+
+( net TB_HDEMG_AFE_16.Vout TB_HDEMG_AFE_16.Vout analog electrical )
+( net TB_HDEMG_AFE_16.I39.Vout TB_HDEMG_AFE_16.Vout analog electrical )
+
+( net TB_HDEMG_AFE_16.I39.aout TB_HDEMG_AFE_16.I39.aout analog None )
+
+( net TB_HDEMG_AFE_16.I39.weight TB_HDEMG_AFE_16.I39.weight analog None )
+
+( net TB_HDEMG_AFE_16.Vsig_ch16 TB_HDEMG_AFE_16.Vsig_ch16 analog electrical )
+
+( net TB_HDEMG_AFE_16.net054 TB_HDEMG_AFE_16.net054 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch15 TB_HDEMG_AFE_16.Vsig_ch15 analog electrical )
+
+( net TB_HDEMG_AFE_16.net055 TB_HDEMG_AFE_16.net055 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch14 TB_HDEMG_AFE_16.Vsig_ch14 analog electrical )
+
+( net TB_HDEMG_AFE_16.net056 TB_HDEMG_AFE_16.net056 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch13 TB_HDEMG_AFE_16.Vsig_ch13 analog electrical )
+
+( net TB_HDEMG_AFE_16.net057 TB_HDEMG_AFE_16.net057 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch12 TB_HDEMG_AFE_16.Vsig_ch12 analog electrical )
+
+( net TB_HDEMG_AFE_16.net038 TB_HDEMG_AFE_16.net038 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch11 TB_HDEMG_AFE_16.Vsig_ch11 analog electrical )
+
+( net TB_HDEMG_AFE_16.net039 TB_HDEMG_AFE_16.net039 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch10 TB_HDEMG_AFE_16.Vsig_ch10 analog electrical )
+
+( net TB_HDEMG_AFE_16.net040 TB_HDEMG_AFE_16.net040 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch9 TB_HDEMG_AFE_16.Vsig_ch9 analog electrical )
+
+( net TB_HDEMG_AFE_16.net041 TB_HDEMG_AFE_16.net041 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch8 TB_HDEMG_AFE_16.Vsig_ch8 analog electrical )
+
+( net TB_HDEMG_AFE_16.net022 TB_HDEMG_AFE_16.net022 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch7 TB_HDEMG_AFE_16.Vsig_ch7 analog electrical )
+
+( net TB_HDEMG_AFE_16.net023 TB_HDEMG_AFE_16.net023 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch6 TB_HDEMG_AFE_16.Vsig_ch6 analog electrical )
+
+( net TB_HDEMG_AFE_16.net024 TB_HDEMG_AFE_16.net024 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch5 TB_HDEMG_AFE_16.Vsig_ch5 analog electrical )
+
+( net TB_HDEMG_AFE_16.net025 TB_HDEMG_AFE_16.net025 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch4 TB_HDEMG_AFE_16.Vsig_ch4 analog electrical )
+
+( net TB_HDEMG_AFE_16.net05 TB_HDEMG_AFE_16.net05 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch3 TB_HDEMG_AFE_16.Vsig_ch3 analog electrical )
+
+( net TB_HDEMG_AFE_16.net06 TB_HDEMG_AFE_16.net06 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch2 TB_HDEMG_AFE_16.Vsig_ch2 analog electrical )
+
+( net TB_HDEMG_AFE_16.net07 TB_HDEMG_AFE_16.net07 analog electrical )
+
+( net TB_HDEMG_AFE_16.Vsig_ch1 TB_HDEMG_AFE_16.Vsig_ch1 analog electrical )
+
+( net TB_HDEMG_AFE_16.net2 TB_HDEMG_AFE_16.net2 analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_HDEMG_AFE_16.I0.Gain_Sel logic digital )
+    ( TB_HDEMG_AFE_16.I38.Reset logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_HDEMG_AFE_16.CLK
+   electrical
+   analog
+   (
+    ( TB_HDEMG_AFE_16.I42.Clk logic digital )
+    ( TB_HDEMG_AFE_16.I38.Clk logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+(instance TB_HDEMG_AFE_16.I0.I16.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I16.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I16.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I16 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I15.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I15.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I15.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I15 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I14.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I14.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I14.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I14 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I13.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I13.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I13.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I13 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I12.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I12.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I12.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I12 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I11.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I11.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I11.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I11 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I10.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I10.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I10.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I10 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I9.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I9.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I9.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I9 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I8.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I8.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I8.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I8 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I7.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I7.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I7.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I7 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I6.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I6.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I6.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I6 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I5.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I5.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I5.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I5 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I4.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I4.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I4.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I4 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I3.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I3.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I3.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I3 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I2.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I2.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I2.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I1.I0 analog)
+(instance TB_HDEMG_AFE_16.I0.I1.I1 analog)
+(instance TB_HDEMG_AFE_16.I0.I1.I2 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0.I1 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I0 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I42 mixed/dmixed (type rnm))
+(instance TB_HDEMG_AFE_16.I2 analog)
+(instance TB_HDEMG_AFE_16.I38 digital)
+(instance TB_HDEMG_AFE_16.I39 analog)
+(instance TB_HDEMG_AFE_16.E31 analog)
+(instance TB_HDEMG_AFE_16.E30 analog)
+(instance TB_HDEMG_AFE_16.E29 analog)
+(instance TB_HDEMG_AFE_16.E28 analog)
+(instance TB_HDEMG_AFE_16.E27 analog)
+(instance TB_HDEMG_AFE_16.E26 analog)
+(instance TB_HDEMG_AFE_16.E25 analog)
+(instance TB_HDEMG_AFE_16.E24 analog)
+(instance TB_HDEMG_AFE_16.E23 analog)
+(instance TB_HDEMG_AFE_16.E22 analog)
+(instance TB_HDEMG_AFE_16.E21 analog)
+(instance TB_HDEMG_AFE_16.E20 analog)
+(instance TB_HDEMG_AFE_16.E19 analog)
+(instance TB_HDEMG_AFE_16.E18 analog)
+(instance TB_HDEMG_AFE_16.E17 analog)
+(instance TB_HDEMG_AFE_16.E16 analog)
+(instance TB_HDEMG_AFE_16.E15 analog)
+(instance TB_HDEMG_AFE_16.E14 analog)
+(instance TB_HDEMG_AFE_16.E13 analog)
+(instance TB_HDEMG_AFE_16.E12 analog)
+(instance TB_HDEMG_AFE_16.E11 analog)
+(instance TB_HDEMG_AFE_16.E10 analog)
+(instance TB_HDEMG_AFE_16.E9 analog)
+(instance TB_HDEMG_AFE_16.E8 analog)
+(instance TB_HDEMG_AFE_16.E7 analog)
+(instance TB_HDEMG_AFE_16.E6 analog)
+(instance TB_HDEMG_AFE_16.E5 analog)
+(instance TB_HDEMG_AFE_16.E4 analog)
+(instance TB_HDEMG_AFE_16.E3 analog)
+(instance TB_HDEMG_AFE_16.E1 analog)
+(instance TB_HDEMG_AFE_16.E0 analog)
+(instance TB_HDEMG_AFE_16.E2 analog)
+(instance TB_HDEMG_AFE_16.V29 analog)
+(instance TB_HDEMG_AFE_16.V28 analog)
+(instance TB_HDEMG_AFE_16.V25 analog)
+(instance TB_HDEMG_AFE_16.V24 analog)
+(instance TB_HDEMG_AFE_16.V21 analog)
+(instance TB_HDEMG_AFE_16.V20 analog)
+(instance TB_HDEMG_AFE_16.V17 analog)
+(instance TB_HDEMG_AFE_16.V16 analog)
+(instance TB_HDEMG_AFE_16.V13 analog)
+(instance TB_HDEMG_AFE_16.V12 analog)
+(instance TB_HDEMG_AFE_16.V9 analog)
+(instance TB_HDEMG_AFE_16.V8 analog)
+(instance TB_HDEMG_AFE_16.V5 analog)
+(instance TB_HDEMG_AFE_16.V4 analog)
+(instance TB_HDEMG_AFE_16.V0 analog)
+(instance TB_HDEMG_AFE_16.V2 analog)
+(instance TB_HDEMG_AFE_16.V33 analog)
+(instance TB_HDEMG_AFE_16.V32 analog)
+(instance TB_HDEMG_AFE_16.V31 analog)
+(instance TB_HDEMG_AFE_16.V30 analog)
+(instance TB_HDEMG_AFE_16.V27 analog)
+(instance TB_HDEMG_AFE_16.V26 analog)
+(instance TB_HDEMG_AFE_16.V23 analog)
+(instance TB_HDEMG_AFE_16.V22 analog)
+(instance TB_HDEMG_AFE_16.V19 analog)
+(instance TB_HDEMG_AFE_16.V18 analog)
+(instance TB_HDEMG_AFE_16.V15 analog)
+(instance TB_HDEMG_AFE_16.V14 analog)
+(instance TB_HDEMG_AFE_16.V11 analog)
+(instance TB_HDEMG_AFE_16.V10 analog)
+(instance TB_HDEMG_AFE_16.V7 analog)
+(instance TB_HDEMG_AFE_16.V6 analog)
+(instance TB_HDEMG_AFE_16.V1 analog)
+(instance TB_HDEMG_AFE_16.V3 analog)
+(instance TB_HDEMG_AFE_16 mixed/dmixed (type rnm))
+(instance cds_globals analog)

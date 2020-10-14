@@ -1,0 +1,5 @@
+netMap,*TB_IA,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_IA,*I0,*I0
+instMaster,*TB_IA,*I0,*EMG_202009_IA_verilogams
+cellMap,*TB_IA,*TB_IA,*EMG_202009,*schematic
+topMap,*TB_IA

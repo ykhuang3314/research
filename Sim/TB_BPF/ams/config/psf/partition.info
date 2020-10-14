@@ -1,0 +1,33 @@
+( global ( resolution_type basic ) )
+
+( net TB_BPF.Vout TB_BPF.Vout analog electrical )
+( net TB_BPF.I0.Vout TB_BPF.Vout analog electrical )
+
+( net TB_BPF.Vin TB_BPF.Vin analog electrical )
+( net TB_BPF.I3.Vin TB_BPF.Vin analog electrical )
+( net TB_BPF.I0.Vin TB_BPF.Vin analog electrical )
+
+( net TB_BPF.Vdda TB_BPF.Vdda analog electrical )
+( net TB_BPF.I3.Vdda TB_BPF.Vdda analog electrical )
+( net TB_BPF.I0.Vdda TB_BPF.Vdda analog electrical )
+
+( net TB_BPF.I0.Vssa TB_BPF.I0.Vssa analog electrical )
+( net cds_globals.\gnd!  TB_BPF.I0.Vssa analog electrical )
+( net TB_BPF.I3.Vssa TB_BPF.I0.Vssa analog electrical )
+
+( net TB_BPF.I0.n1 TB_BPF.I0.n1 analog electrical )
+
+( net TB_BPF.I0.n2 TB_BPF.I0.n2 analog electrical )
+
+( net TB_BPF.Vout2 TB_BPF.Vout2 analog electrical )
+( net TB_BPF.I3.Vout TB_BPF.Vout2 analog electrical )
+
+( net TB_BPF.Ibias TB_BPF.Ibias analog electrical )
+( net TB_BPF.I3.Ibias TB_BPF.Ibias analog electrical )
+
+(instance TB_BPF.I0 analog)
+(instance TB_BPF.I3 analog)
+(instance TB_BPF.V0 analog)
+(instance TB_BPF.V1 analog)
+(instance TB_BPF analog)
+(instance cds_globals analog)

@@ -1,0 +1,42 @@
+
+// Library name: EMG_202009
+// Cell name: TB_SwitchArray
+// View name: schematic
+// Inherited view list: schematic
+V55 (Row_1 0) vsource dc=0 type=dc
+V54 (Row_0 0) vsource dc=0 type=dc
+V53 (Vdda 0) vsource dc=1.8 type=dc
+V32 (V_E12 0) vsource dc=1.8*(3/8) type=dc
+V33 (V_E22 0) vsource dc=1.8*(3/8) type=dc
+V34 (V_E32 0) vsource dc=1.8*(3/8) type=dc
+V28 (V_E07 0) vsource dc=1.8*(8/8) type=dc
+V35 (V_E13 0) vsource dc=1.8*(4/8) type=dc
+V36 (V_E23 0) vsource dc=1.8*(4/8) type=dc
+V37 (V_E33 0) vsource dc=1.8*(4/8) type=dc
+V24 (V_E06 0) vsource dc=1.8*(7/8) type=dc
+V38 (V_E14 0) vsource dc=1.8*(5/8) type=dc
+V39 (V_E24 0) vsource dc=1.8*(5/8) type=dc
+V40 (V_E34 0) vsource dc=1.8*(5/8) type=dc
+V20 (V_E05 0) vsource dc=1.8*(6/8) type=dc
+V46 (V_E35 0) vsource dc=1.8*(6/8) type=dc
+V45 (V_E25 0) vsource dc=1.8*(6/8) type=dc
+V44 (V_E15 0) vsource dc=1.8*(6/8) type=dc
+V16 (V_E04 0) vsource dc=1.8*(5/8) type=dc
+V47 (V_E16 0) vsource dc=1.8*(7/8) type=dc
+V48 (V_E26 0) vsource dc=1.8*(7/8) type=dc
+V49 (V_E36 0) vsource dc=1.8*(7/8) type=dc
+V12 (V_E03 0) vsource dc=1.8*(4/8) type=dc
+V50 (V_E17 0) vsource dc=1.8*(8/8) type=dc
+V51 (V_E27 0) vsource dc=1.8*(8/8) type=dc
+V52 (V_E37 0) vsource dc=1.8*(8/8) type=dc
+V8 (V_E02 0) vsource dc=1.8*(3/8) type=dc
+V7 (V_E31 0) vsource dc=1.8*(2/8) type=dc
+V6 (V_E21 0) vsource dc=1.8*(2/8) type=dc
+V5 (V_E11 0) vsource dc=1.8*(2/8) type=dc
+V4 (V_E01 0) vsource dc=1.8*(2/8) type=dc
+V3 (V_E30 0) vsource dc=1.8*(1/8) type=dc
+V2 (V_E20 0) vsource dc=1.8*(1/8) type=dc
+V1 (V_E10 0) vsource dc=1.8*(1/8) type=dc
+V0 (V_E00 0) vsource dc=1.8*(1/8) type=dc
+V9 (CLK 0) vsource type=pulse val0=0 val1=1.8 period=20u delay=10u rise=1p \
+        fall=1p width=10u

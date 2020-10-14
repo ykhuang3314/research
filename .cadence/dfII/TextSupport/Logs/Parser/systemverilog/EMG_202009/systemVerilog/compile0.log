@@ -1,0 +1,36 @@
+TOOL:	xrun(64)	18.03-s018: Started on Sep 23, 2020 at 10:39:22 CEST
+xrun
+	-compile
+	-nocopy
+	-nostdout
+	-nowarn DLNOHV
+	-nowarn SPDUSD
+	-messages
+	-update
+	-log /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/systemverilog/EMG_202009/systemVerilog/compile0.log
+	-incdir "/home/ykhuang/research/"
+	-sv
+	-cdslib /home/ykhuang/research/cds.lib
+	-view systemVerilog
+	-work EMG_202009
+	/home/ykhuang/research/EMG_202009/MUX_16/systemVerilog/verilog.sv
+file: /home/ykhuang/research/EMG_202009/MUX_16/systemVerilog/verilog.sv
+analog begin
+           |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/EMG_202009/MUX_16/systemVerilog/verilog.sv,18|11): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		0 : V(Vout, Vssa) <+ V(Vin0,Vssa); 
+		|
+xmvlog: *E,EXPSMC (/home/ykhuang/research/EMG_202009/MUX_16/systemVerilog/verilog.sv,20|2): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+		0 : V(Vout, Vssa) <+ V(Vin0,Vssa); 
+		                   |
+xmvlog: *E,EXPSMC (/home/ykhuang/research/EMG_202009/MUX_16/systemVerilog/verilog.sv,20|21): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+		1 : V(Vout, Vssa) <+ V(Vin1,Vssa); 
+		|
+xmvlog: *E,EXPENM (/home/ykhuang/research/EMG_202009/MUX_16/systemVerilog/verilog.sv,21|2): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module EMG_202009.MUX_16:systemVerilog
+		errors: 4, warnings: 0
+xmvlog: *W,NOTOPL: no top-level unit found, must have recursive instances.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	18.03-s018: Exiting on Sep 23, 2020 at 10:39:22 CEST  (total: 00:00:00)

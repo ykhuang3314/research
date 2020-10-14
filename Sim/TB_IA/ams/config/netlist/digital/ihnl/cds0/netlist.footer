@@ -1,0 +1,5 @@
+
+IA I0 ( .Vout(Vout), .Vdda(Vdda), .Vinn(net9), .Vinp(net8), 
+    .Vssa(cds_globals.\gnd! ));
+
+endmodule

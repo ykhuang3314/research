@@ -1,0 +1,12 @@
+netMap,*TB_VGA,*Gain_Sel<2>,*Gain_Sel[2]
+netMap,*TB_VGA,*Gain_Sel<1>,*Gain_Sel[1]
+netMap,*TB_VGA,*Gain_Sel<0>,*Gain_Sel[0]
+netMap,*TB_VGA,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_VGA,*I0,*I0
+instMaster,*TB_VGA,*I0,*EMG_202009_VGA_verilogams
+instMap,*TB_VGA,*I3,*I3
+instMaster,*TB_VGA,*I3,*EMG_202009_PGA_3Bit_verilogams
+instMap,*TB_VGA,*I5,*I5
+instMaster,*TB_VGA,*I5,*EMG_202009_Counter_Nbit_functional
+cellMap,*TB_VGA,*TB_VGA,*EMG_202009,*schematic
+topMap,*TB_VGA

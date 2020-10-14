@@ -1,0 +1,75 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
+-amsossirunbind
+.amsbind.scs
+-AMSINPUT
+.amsbind.scs
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-NOPARAMERR
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSINPUT
+./spiceModels.scs
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+./amsControlSpectre.scs
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-AMSINPUT
+./ie_card.scs
+-ANALOGCONTROL
+./ie_card.scs
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/Counter_4bit/functional/verilog.v lib:EMG_202009 cell:Counter_4bit view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/DAC/verilogams/verilog.vams lib:EMG_202009 cell:DAC view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/ADC/verilogams/verilog.vams lib:EMG_202009 cell:ADC view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/MUX_16/verilogams/verilog.vams lib:EMG_202009 cell:MUX_16 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/VGA/verilogams/verilog.vams lib:EMG_202009 cell:VGA view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/BPF/verilogams/verilog.vams lib:EMG_202009 cell:BPF view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/IA/verilogams/verilog.vams lib:EMG_202009 cell:IA view:verilogams"
+-SPECTRE_ARGS
+++aps
+-MESSAGES
+EMG_202009.TB_HDEMG_AFE_16:schematic
+cds_globals
+-AMSELAB
+-XLMODE
+./xcelium.d/EMG_202009.TB_HDEMG_AFE_16_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/EMG_202009.TB_HDEMG_AFE_16_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/EMG_202009.TB_HDEMG_AFE_16_config.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

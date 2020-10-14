@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_HDEMG_AFE_16"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_HDEMG_AFE_16/ams/config/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "EMG_202009/Single_Channel/schematic" "Single_Channel" )
+( "EMG_202009/MultiChannel_16/schematic" "MultiChannel_16" )
+( "EMG_202009/TB_HDEMG_AFE_16/schematic" "TB_HDEMG_AFE_16" )
+ )
+( "MultiChannel_16" "ihnl/cds1/map" )
+( "Single_Channel" "ihnl/cds0/map" )
+( "TB_HDEMG_AFE_16" "ihnl/cds2/map" )
+ )

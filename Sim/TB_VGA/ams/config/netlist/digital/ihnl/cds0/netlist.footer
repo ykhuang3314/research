@@ -1,0 +1,11 @@
+
+VGA I0 ( .Vout(Vout), .Gain_Sel(CLK), .Vdda(Vdda), .Vin(Vin), 
+    .Vssa(cds_globals.\gnd! ));
+
+PGA_3Bit I3 ( .Vout(Vout2), .Gain_Sel(Gain_Sel), .Ibias(Ibias), 
+    .Vdda(Vdda), .Vin(Vin), .Vssa(cds_globals.\gnd! ));
+
+Counter_Nbit I5 ( .out(Gain_Sel), .Clk(CLK), .Reset(cds_globals.\gnd! 
+    ));
+
+endmodule

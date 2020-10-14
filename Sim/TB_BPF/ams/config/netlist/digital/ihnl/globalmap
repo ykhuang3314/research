@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_BPF/schematic EMG_202009/TB_BPF/schematic/schematic/EMG_202009_TB_BPF_config/1 TB_BPF
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

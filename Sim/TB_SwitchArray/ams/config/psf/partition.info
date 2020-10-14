@@ -1,0 +1,320 @@
+( global ( resolution_type basic ) )
+
+( net TB_SwitchArray.net33 TB_SwitchArray.net33 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch1 TB_SwitchArray.net33 analog electrical )
+
+( net TB_SwitchArray.net32 TB_SwitchArray.net32 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch2 TB_SwitchArray.net32 analog electrical )
+
+( net TB_SwitchArray.net31 TB_SwitchArray.net31 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch3 TB_SwitchArray.net31 analog electrical )
+
+( net TB_SwitchArray.net30 TB_SwitchArray.net30 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch4 TB_SwitchArray.net30 analog electrical )
+
+( net TB_SwitchArray.net29 TB_SwitchArray.net29 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch5 TB_SwitchArray.net29 analog electrical )
+
+( net TB_SwitchArray.net28 TB_SwitchArray.net28 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch6 TB_SwitchArray.net28 analog electrical )
+
+( net TB_SwitchArray.net27 TB_SwitchArray.net27 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch7 TB_SwitchArray.net27 analog electrical )
+
+( net TB_SwitchArray.net26 TB_SwitchArray.net26 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch8 TB_SwitchArray.net26 analog electrical )
+
+( net TB_SwitchArray.net25 TB_SwitchArray.net25 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch9 TB_SwitchArray.net25 analog electrical )
+
+( net TB_SwitchArray.net24 TB_SwitchArray.net24 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch10 TB_SwitchArray.net24 analog electrical )
+
+( net TB_SwitchArray.net23 TB_SwitchArray.net23 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch11 TB_SwitchArray.net23 analog electrical )
+
+( net TB_SwitchArray.net22 TB_SwitchArray.net22 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch12 TB_SwitchArray.net22 analog electrical )
+
+( net TB_SwitchArray.net21 TB_SwitchArray.net21 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch13 TB_SwitchArray.net21 analog electrical )
+
+( net TB_SwitchArray.net20 TB_SwitchArray.net20 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch14 TB_SwitchArray.net20 analog electrical )
+
+( net TB_SwitchArray.net19 TB_SwitchArray.net19 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch15 TB_SwitchArray.net19 analog electrical )
+
+( net TB_SwitchArray.net18 TB_SwitchArray.net18 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch16 TB_SwitchArray.net18 analog electrical )
+
+( net TB_SwitchArray.net17 TB_SwitchArray.net17 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch17 TB_SwitchArray.net17 analog electrical )
+
+( net TB_SwitchArray.net16 TB_SwitchArray.net16 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch18 TB_SwitchArray.net16 analog electrical )
+
+( net TB_SwitchArray.net15 TB_SwitchArray.net15 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch19 TB_SwitchArray.net15 analog electrical )
+
+( net TB_SwitchArray.net14 TB_SwitchArray.net14 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch20 TB_SwitchArray.net14 analog electrical )
+
+( net TB_SwitchArray.net13 TB_SwitchArray.net13 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch21 TB_SwitchArray.net13 analog electrical )
+
+( net TB_SwitchArray.net12 TB_SwitchArray.net12 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch22 TB_SwitchArray.net12 analog electrical )
+
+( net TB_SwitchArray.net11 TB_SwitchArray.net11 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch23 TB_SwitchArray.net11 analog electrical )
+
+( net TB_SwitchArray.net10 TB_SwitchArray.net10 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch24 TB_SwitchArray.net10 analog electrical )
+
+( net TB_SwitchArray.net9 TB_SwitchArray.net9 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch25 TB_SwitchArray.net9 analog electrical )
+
+( net TB_SwitchArray.net8 TB_SwitchArray.net8 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch26 TB_SwitchArray.net8 analog electrical )
+
+( net TB_SwitchArray.net7 TB_SwitchArray.net7 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch27 TB_SwitchArray.net7 analog electrical )
+
+( net TB_SwitchArray.net6 TB_SwitchArray.net6 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch28 TB_SwitchArray.net6 analog electrical )
+
+( net TB_SwitchArray.net5 TB_SwitchArray.net5 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch29 TB_SwitchArray.net5 analog electrical )
+
+( net TB_SwitchArray.net4 TB_SwitchArray.net4 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch30 TB_SwitchArray.net4 analog electrical )
+
+( net TB_SwitchArray.net3 TB_SwitchArray.net3 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch31 TB_SwitchArray.net3 analog electrical )
+
+( net TB_SwitchArray.net2 TB_SwitchArray.net2 analog electrical )
+( net TB_SwitchArray.I0.EMG_Ch32 TB_SwitchArray.net2 analog electrical )
+
+( net TB_SwitchArray.BI_Ip TB_SwitchArray.BI_Ip analog electrical )
+( net TB_SwitchArray.I0.BI_Ip TB_SwitchArray.BI_Ip analog electrical )
+
+( net TB_SwitchArray.BI_In TB_SwitchArray.BI_In analog electrical )
+( net TB_SwitchArray.I0.BI_In TB_SwitchArray.BI_In analog electrical )
+
+( net TB_SwitchArray.BI_Vp TB_SwitchArray.BI_Vp analog electrical )
+( net TB_SwitchArray.I0.BI_Vp TB_SwitchArray.BI_Vp analog electrical )
+
+( net TB_SwitchArray.BI_Vn TB_SwitchArray.BI_Vn analog electrical )
+( net TB_SwitchArray.I0.BI_Vn TB_SwitchArray.BI_Vn analog electrical )
+
+( net TB_SwitchArray.V_E00 TB_SwitchArray.V_E00 analog electrical )
+( net TB_SwitchArray.I0.E00 TB_SwitchArray.V_E00 analog electrical )
+
+( net TB_SwitchArray.V_E01 TB_SwitchArray.V_E01 analog electrical )
+( net TB_SwitchArray.I0.E01 TB_SwitchArray.V_E01 analog electrical )
+
+( net TB_SwitchArray.V_E02 TB_SwitchArray.V_E02 analog electrical )
+( net TB_SwitchArray.I0.E02 TB_SwitchArray.V_E02 analog electrical )
+
+( net TB_SwitchArray.V_E03 TB_SwitchArray.V_E03 analog electrical )
+( net TB_SwitchArray.I0.E03 TB_SwitchArray.V_E03 analog electrical )
+
+( net TB_SwitchArray.V_E04 TB_SwitchArray.V_E04 analog electrical )
+( net TB_SwitchArray.I0.E04 TB_SwitchArray.V_E04 analog electrical )
+
+( net TB_SwitchArray.V_E05 TB_SwitchArray.V_E05 analog electrical )
+( net TB_SwitchArray.I0.E05 TB_SwitchArray.V_E05 analog electrical )
+
+( net TB_SwitchArray.V_E06 TB_SwitchArray.V_E06 analog electrical )
+( net TB_SwitchArray.I0.E06 TB_SwitchArray.V_E06 analog electrical )
+
+( net TB_SwitchArray.V_E07 TB_SwitchArray.V_E07 analog electrical )
+( net TB_SwitchArray.I0.E07 TB_SwitchArray.V_E07 analog electrical )
+
+( net TB_SwitchArray.V_E10 TB_SwitchArray.V_E10 analog electrical )
+( net TB_SwitchArray.I0.E10 TB_SwitchArray.V_E10 analog electrical )
+
+( net TB_SwitchArray.V_E11 TB_SwitchArray.V_E11 analog electrical )
+( net TB_SwitchArray.I0.E11 TB_SwitchArray.V_E11 analog electrical )
+
+( net TB_SwitchArray.V_E12 TB_SwitchArray.V_E12 analog electrical )
+( net TB_SwitchArray.I0.E12 TB_SwitchArray.V_E12 analog electrical )
+
+( net TB_SwitchArray.V_E13 TB_SwitchArray.V_E13 analog electrical )
+( net TB_SwitchArray.I0.E13 TB_SwitchArray.V_E13 analog electrical )
+
+( net TB_SwitchArray.V_E14 TB_SwitchArray.V_E14 analog electrical )
+( net TB_SwitchArray.I0.E14 TB_SwitchArray.V_E14 analog electrical )
+
+( net TB_SwitchArray.V_E15 TB_SwitchArray.V_E15 analog electrical )
+( net TB_SwitchArray.I0.E15 TB_SwitchArray.V_E15 analog electrical )
+
+( net TB_SwitchArray.V_E16 TB_SwitchArray.V_E16 analog electrical )
+( net TB_SwitchArray.I0.E16 TB_SwitchArray.V_E16 analog electrical )
+
+( net TB_SwitchArray.V_E17 TB_SwitchArray.V_E17 analog electrical )
+( net TB_SwitchArray.I0.E17 TB_SwitchArray.V_E17 analog electrical )
+
+( net TB_SwitchArray.V_E20 TB_SwitchArray.V_E20 analog electrical )
+( net TB_SwitchArray.I0.E20 TB_SwitchArray.V_E20 analog electrical )
+
+( net TB_SwitchArray.V_E21 TB_SwitchArray.V_E21 analog electrical )
+( net TB_SwitchArray.I0.E21 TB_SwitchArray.V_E21 analog electrical )
+
+( net TB_SwitchArray.V_E22 TB_SwitchArray.V_E22 analog electrical )
+( net TB_SwitchArray.I0.E22 TB_SwitchArray.V_E22 analog electrical )
+
+( net TB_SwitchArray.V_E23 TB_SwitchArray.V_E23 analog electrical )
+( net TB_SwitchArray.I0.E23 TB_SwitchArray.V_E23 analog electrical )
+
+( net TB_SwitchArray.V_E24 TB_SwitchArray.V_E24 analog electrical )
+( net TB_SwitchArray.I0.E24 TB_SwitchArray.V_E24 analog electrical )
+
+( net TB_SwitchArray.V_E25 TB_SwitchArray.V_E25 analog electrical )
+( net TB_SwitchArray.I0.E25 TB_SwitchArray.V_E25 analog electrical )
+
+( net TB_SwitchArray.V_E26 TB_SwitchArray.V_E26 analog electrical )
+( net TB_SwitchArray.I0.E26 TB_SwitchArray.V_E26 analog electrical )
+
+( net TB_SwitchArray.V_E27 TB_SwitchArray.V_E27 analog electrical )
+( net TB_SwitchArray.I0.E27 TB_SwitchArray.V_E27 analog electrical )
+
+( net TB_SwitchArray.V_E30 TB_SwitchArray.V_E30 analog electrical )
+( net TB_SwitchArray.I0.E30 TB_SwitchArray.V_E30 analog electrical )
+
+( net TB_SwitchArray.V_E31 TB_SwitchArray.V_E31 analog electrical )
+( net TB_SwitchArray.I0.E31 TB_SwitchArray.V_E31 analog electrical )
+
+( net TB_SwitchArray.V_E32 TB_SwitchArray.V_E32 analog electrical )
+( net TB_SwitchArray.I0.E32 TB_SwitchArray.V_E32 analog electrical )
+
+( net TB_SwitchArray.V_E33 TB_SwitchArray.V_E33 analog electrical )
+( net TB_SwitchArray.I0.E33 TB_SwitchArray.V_E33 analog electrical )
+
+( net TB_SwitchArray.V_E34 TB_SwitchArray.V_E34 analog electrical )
+( net TB_SwitchArray.I0.E34 TB_SwitchArray.V_E34 analog electrical )
+
+( net TB_SwitchArray.V_E35 TB_SwitchArray.V_E35 analog electrical )
+( net TB_SwitchArray.I0.E35 TB_SwitchArray.V_E35 analog electrical )
+
+( net TB_SwitchArray.V_E36 TB_SwitchArray.V_E36 analog electrical )
+( net TB_SwitchArray.I0.E36 TB_SwitchArray.V_E36 analog electrical )
+
+( net TB_SwitchArray.V_E37 TB_SwitchArray.V_E37 analog electrical )
+( net TB_SwitchArray.I0.E37 TB_SwitchArray.V_E37 analog electrical )
+
+( net TB_SwitchArray.I0.Vssa TB_SwitchArray.I0.Vssa analog/mixed electrical )
+( net TB_SwitchArray.I0.Mode TB_SwitchArray.I0.Vssa digital/mixed logic )
+( net TB_SwitchArray.I0.Dis TB_SwitchArray.I0.Vssa digital/mixed logic )
+( net TB_SwitchArray.I0.Dir TB_SwitchArray.I0.Vssa digital/mixed logic )
+( net cds_globals.\gnd!  TB_SwitchArray.I0.Vssa analog/mixed electrical )
+( net TB_SwitchArray.I38.Reset TB_SwitchArray.I0.Vssa digital/mixed logic )
+
+( net TB_SwitchArray.Row[1] TB_SwitchArray.Row[1] analog/mixed electrical )
+( net TB_SwitchArray.I0.Row[1] TB_SwitchArray.Row[1] digital/mixed logic )
+
+( net TB_SwitchArray.Row[0] TB_SwitchArray.Row[0] analog/mixed electrical )
+( net TB_SwitchArray.I0.Row[0] TB_SwitchArray.Row[0] digital/mixed logic )
+
+( net TB_SwitchArray.Col TB_SwitchArray.Col digital logic )
+( net TB_SwitchArray.I38.out TB_SwitchArray.Col digital logic )
+( net TB_SwitchArray.I0.Col TB_SwitchArray.Col digital logic )
+
+( net TB_SwitchArray.Vdda TB_SwitchArray.Vdda analog electrical )
+( net TB_SwitchArray.I0.Vdda TB_SwitchArray.Vdda analog electrical )
+
+( net TB_SwitchArray.I0.C_int TB_SwitchArray.I0.C_int digital logic )
+
+( net TB_SwitchArray.I0.R_int TB_SwitchArray.I0.R_int digital logic )
+
+( net TB_SwitchArray.CLK TB_SwitchArray.CLK analog/mixed electrical )
+( net TB_SwitchArray.I38.Clk TB_SwitchArray.CLK digital/mixed logic )
+
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_SwitchArray.I0.Dir logic digital )
+    ( TB_SwitchArray.I0.Dis logic digital )
+    ( TB_SwitchArray.I0.Mode logic digital )
+    ( TB_SwitchArray.I38.Reset logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_SwitchArray.Row[1]
+   electrical
+   analog
+   (
+    ( TB_SwitchArray.I0.Row[1] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_SwitchArray.Row[0]
+   electrical
+   analog
+   (
+    ( TB_SwitchArray.I0.Row[0] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_SwitchArray.CLK
+   electrical
+   analog
+   (
+    ( TB_SwitchArray.I38.Clk logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+(instance TB_SwitchArray.I0 mixed)
+(instance TB_SwitchArray.I38 digital)
+(instance TB_SwitchArray.V55 analog)
+(instance TB_SwitchArray.V54 analog)
+(instance TB_SwitchArray.V53 analog)
+(instance TB_SwitchArray.V32 analog)
+(instance TB_SwitchArray.V33 analog)
+(instance TB_SwitchArray.V34 analog)
+(instance TB_SwitchArray.V28 analog)
+(instance TB_SwitchArray.V35 analog)
+(instance TB_SwitchArray.V36 analog)
+(instance TB_SwitchArray.V37 analog)
+(instance TB_SwitchArray.V24 analog)
+(instance TB_SwitchArray.V38 analog)
+(instance TB_SwitchArray.V39 analog)
+(instance TB_SwitchArray.V40 analog)
+(instance TB_SwitchArray.V20 analog)
+(instance TB_SwitchArray.V46 analog)
+(instance TB_SwitchArray.V45 analog)
+(instance TB_SwitchArray.V44 analog)
+(instance TB_SwitchArray.V16 analog)
+(instance TB_SwitchArray.V47 analog)
+(instance TB_SwitchArray.V48 analog)
+(instance TB_SwitchArray.V49 analog)
+(instance TB_SwitchArray.V12 analog)
+(instance TB_SwitchArray.V50 analog)
+(instance TB_SwitchArray.V51 analog)
+(instance TB_SwitchArray.V52 analog)
+(instance TB_SwitchArray.V8 analog)
+(instance TB_SwitchArray.V7 analog)
+(instance TB_SwitchArray.V6 analog)
+(instance TB_SwitchArray.V5 analog)
+(instance TB_SwitchArray.V4 analog)
+(instance TB_SwitchArray.V3 analog)
+(instance TB_SwitchArray.V2 analog)
+(instance TB_SwitchArray.V1 analog)
+(instance TB_SwitchArray.V0 analog)
+(instance TB_SwitchArray.V9 analog)
+(instance TB_SwitchArray mixed)
+(instance cds_globals analog)

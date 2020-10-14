@@ -1,0 +1,34 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Rule Set File generated/modified by AS on Dec 13 2016
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+pvsRuleSet( "default"
+     (DrcRules      "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/metalswitch.pvl" "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../xh018_DRC.rul" )
+     (DrcGuiConfig "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../pvs.cfg" )
+     (LvsRules      "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/metalswitch.pvl" "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../xh018_LVS.rul" )
+     (LvsGuiConfig "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../pvs.cfg" )
+)
+
+pvsRuleSet( "DRC & DUMMY Output"
+     (DrcRules      "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/metalswitch.pvl" "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../xh018_DRC.rul" "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../dummy_out.pvl" )
+     (DrcGuiConfig "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../dummy.cfg" )
+)
+
+pvsRuleSet( "DRC Antenna BlackBox"
+     (DrcRules      "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/metalswitch.pvl" "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../antenna_lef.pvl" "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../xh018_DRC.rul" )
+     (DrcGuiConfig "../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/../pvs_BBantenna.cfg" )
+)
+
+ruleSet( "default"
+     (RcxSetupDir      "../../.xkit/setup/xh018/cadence/QRC_pvs/XH018_1143/QRC-Typ")
+)     
+ruleSet( "Min"
+     (RcxSetupDir      "../../.xkit/setup/xh018/cadence/QRC_pvs/XH018_1143/QRC-Min")
+)
+ruleSet( "Typ"
+     (RcxSetupDir      "../../.xkit/setup/xh018/cadence/QRC_pvs/XH018_1143/QRC-Typ")
+)
+ruleSet( "Max"
+     (RcxSetupDir      "../../.xkit/setup/xh018/cadence/QRC_pvs/XH018_1143/QRC-Max")
+)

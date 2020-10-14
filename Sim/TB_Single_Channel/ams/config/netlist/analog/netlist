@@ -1,0 +1,13 @@
+
+// Library name: EMG_202009
+// Cell name: TB_Single_Channel
+// View name: schematic
+// Inherited view list: schematic
+V2 (vsig 0) vsource mag=1 type=sine
+V1 (Vin_CM 0) vsource dc=0 type=dc
+V0 (vdda 0) vsource dc=1.8 type=dc
+E2 (Vemg 0 Vemg_raw 0) vcvs gain=0.001
+E1 (net8 Vin_CM Vemg 0) vcvs gain=-0.5
+E0 (net7 Vin_CM Vemg 0) vcvs gain=0.5
+V3 (Vemg_raw 0) vsource type=pwl \
+        file="/home/ykhuang/research/Emg_Data/emg_healthy.txt"

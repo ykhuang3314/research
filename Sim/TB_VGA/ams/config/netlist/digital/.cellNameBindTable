@@ -1,0 +1,7 @@
+("analogLib" "idc" "spectre") "isource"
+("analogLib" "vpulse" "spectre") "vsource"
+("EMG_202009" "PGA_3Bit" "verilogams") "PGA_3Bit"
+("EMG_202009" "VGA" "verilogams") "VGA"
+("EMG_202009" "Counter_Nbit" "functional") "Counter_Nbit"
+("analogLib" "vsin" "spectre") "vsource"
+("analogLib" "vdc" "spectre") "vsource"

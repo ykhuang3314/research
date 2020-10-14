@@ -1,0 +1,8 @@
+
+BPF I0 ( .Vout(Vout), .Vdda(Vdda), .Vin(Vin), .Vssa(cds_globals.\gnd! 
+    ));
+
+BPF_V2 I3 ( .Vout(Vout2), .Ibias(Ibias), .Vdda(Vdda), .Vin(Vin), 
+    .Vssa(cds_globals.\gnd! ));
+
+endmodule

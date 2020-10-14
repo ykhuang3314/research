@@ -1,0 +1,5 @@
+("analogLib" "vpulse" "spectre" "spectre") "USED"
+("EMG_202009" "ADC" "verilogams" "verilogams") "USED"
+("EMG_202009" "DAC" "verilogams" "verilogams") "USED"
+("analogLib" "vsin" "spectre" "spectre") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"

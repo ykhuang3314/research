@@ -1,0 +1,170 @@
+//Verilog-AMS HDL for "EMG_202009", "SwitchArray" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module SwitchArray (EMG_Ch1, EMG_Ch2, EMG_Ch3, EMG_Ch4, EMG_Ch5, EMG_Ch6, EMG_Ch7, EMG_Ch8, EMG_Ch9, 
+EMG_Ch10, EMG_Ch11, EMG_Ch12, EMG_Ch13, EMG_Ch14, EMG_Ch15, EMG_Ch16, EMG_Ch17, EMG_Ch18, EMG_Ch19, 
+EMG_Ch20, EMG_Ch21, EMG_Ch22, EMG_Ch23, EMG_Ch24, EMG_Ch25, EMG_Ch26, EMG_Ch27, EMG_Ch28, EMG_Ch29,
+EMG_Ch30, EMG_Ch31, EMG_Ch32, BI_Ip, BI_In, BI_Vp, BI_Vn, E00, E01, E02, E03, E04, E05, E06, E07, 
+E10, E11, E12, E13, E14, E15, E16, E17, E20, E21, E22, E23, E24, E25, E26, E27, E30, E31, E32, E33, 
+E34, E35, E36, E37, Mode, Dir, Dis, Row, Col, Vdda, Vssa); 
+
+// characteristics of switches
+parameter real Ron = 10 from [1:inf); 		// on resistance
+parameter real Roff = 100M from [1:inf); 	// off resistance
+
+//IO ports declaration
+output EMG_Ch1, EMG_Ch2, EMG_Ch3, EMG_Ch4, EMG_Ch5, EMG_Ch6, EMG_Ch7, EMG_Ch8, EMG_Ch9,
+EMG_Ch10, EMG_Ch11, EMG_Ch12, EMG_Ch13, EMG_Ch14, EMG_Ch15, EMG_Ch16, EMG_Ch17, 
+EMG_Ch18, EMG_Ch19, EMG_Ch20, EMG_Ch21, EMG_Ch22, EMG_Ch23, EMG_Ch24, EMG_Ch25, 
+EMG_Ch26, EMG_Ch27, EMG_Ch28, EMG_Ch29, EMG_Ch30, EMG_Ch31, EMG_Ch32, 
+BI_Ip, BI_In, BI_Vp, BI_Vn;
+input E00, E01, E02, E03, E04, E05, E06, E07, E10, E11, E12, E13, E14, E15, E16,
+E17, E20, E21, E22, E23, E24, E25, E26, E27, E30, E31, E32, E33, E34, E35, E36, 
+E37, Mode, Dir, Dis, Row, Col, Vdda, Vssa;
+
+// Type of ports
+electrical EMG_Ch1, EMG_Ch2, EMG_Ch3, EMG_Ch4, EMG_Ch5, EMG_Ch6, EMG_Ch7, EMG_Ch8, EMG_Ch9,
+EMG_Ch10, EMG_Ch11, EMG_Ch12, EMG_Ch13, EMG_Ch14, EMG_Ch15, EMG_Ch16, EMG_Ch17, 
+EMG_Ch18, EMG_Ch19, EMG_Ch20, EMG_Ch21, EMG_Ch22, EMG_Ch23, EMG_Ch24, EMG_Ch25, 
+EMG_Ch26, EMG_Ch27, EMG_Ch28, EMG_Ch29, EMG_Ch30, EMG_Ch31, EMG_Ch32, 
+BI_Ip, BI_In, BI_Vp, BI_Vn, E00, E01, E02, E03, E04, E05, E06, E07, E10, E11, E12, 
+E13, E14, E15, E16, E17, E20, E21, E22, E23, E24, E25, E26, E27, E30, E31, E32, E33, 
+E34, E35, E36, E37, Vdda, Vssa;
+
+logic Mode; // Mode selection (1: EMG; 0: BI)
+
+// Effective only when BI mode is chosen
+logic Dir; 		// Direction of current injection and voltage sensing (1: parallel to fiber; 0: perpendicular fiber)
+logic Dis; 		// Distance of BI measurement (0: long; 1: short)
+wire[1:0] Row; 	// Row selection
+wire[2:0] Col; 	// Column selection
+
+//internal variables
+integer C_int, R_int;
+
+always@(Mode or Dir or Row or Col) begin	
+	if(Mode == 1'b0) begin 		// BI Mode
+		if(Dir == 1'b0) begin 	// perpendicular to fiber 
+			C_int = 4*Col[2] + 2*Col[1] + Col[0];	
+		end else begin
+			R_int = 2*Row[1] + Row[0];
+		end
+	end
+end
+
+analog begin
+	if (Mode == 1'b1) begin // EMG Mode
+		I(E00, EMG_Ch1) <+ V(E00, EMG_Ch1)/Ron; I(E01, EMG_Ch2) <+ V(E01, EMG_Ch2)/Ron; 
+		I(E02, EMG_Ch3) <+ V(E02, EMG_Ch3)/Ron; I(E03, EMG_Ch4) <+ V(E03, EMG_Ch4)/Ron;
+		I(E04, EMG_Ch5) <+ V(E04, EMG_Ch5)/Ron; I(E05, EMG_Ch6) <+ V(E05, EMG_Ch6)/Ron;
+		I(E06, EMG_Ch7) <+ V(E06, EMG_Ch7)/Ron; I(E07, EMG_Ch8) <+ V(E07, EMG_Ch8)/Ron;	
+		I(E10, EMG_Ch9) <+ V(E10, EMG_Ch9)/Ron; I(E11, EMG_Ch10) <+ V(E11, EMG_Ch10)/Ron; 
+		I(E12, EMG_Ch11) <+ V(E12, EMG_Ch11)/Ron; I(E13, EMG_Ch12) <+ V(E13, EMG_Ch12)/Ron;
+		I(E14, EMG_Ch13) <+ V(E14, EMG_Ch13)/Ron; I(E15, EMG_Ch14) <+ V(E15, EMG_Ch14)/Ron;
+		I(E16, EMG_Ch15) <+ V(E16, EMG_Ch15)/Ron; I(E17, EMG_Ch16) <+ V(E17, EMG_Ch16)/Ron;
+		I(E20, EMG_Ch17) <+ V(E20, EMG_Ch17)/Ron; I(E21, EMG_Ch18) <+ V(E21, EMG_Ch18)/Ron; 
+		I(E22, EMG_Ch19) <+ V(E22, EMG_Ch19)/Ron; I(E23, EMG_Ch20) <+ V(E23, EMG_Ch20)/Ron;
+		I(E24, EMG_Ch21) <+ V(E24, EMG_Ch21)/Ron; I(E25, EMG_Ch22) <+ V(E25, EMG_Ch22)/Ron;
+		I(E26, EMG_Ch23) <+ V(E26, EMG_Ch23)/Ron; I(E27, EMG_Ch24) <+ V(E27, EMG_Ch24)/Ron;
+		I(E30, EMG_Ch25) <+ V(E30, EMG_Ch25)/Ron; I(E31, EMG_Ch26) <+ V(E31, EMG_Ch26)/Ron; 
+		I(E32, EMG_Ch27) <+ V(E32, EMG_Ch27)/Ron; I(E33, EMG_Ch28) <+ V(E33, EMG_Ch28)/Ron;	
+		I(E34, EMG_Ch29) <+ V(E34, EMG_Ch29)/Ron; I(E35, EMG_Ch30) <+ V(E35, EMG_Ch30)/Ron;
+		I(E36, EMG_Ch31) <+ V(E36, EMG_Ch31)/Ron; I(E37, EMG_Ch32) <+ V(E37, EMG_Ch32)/Ron;	
+	end else begin // BI Mode
+		I(E00, EMG_Ch1) <+ V(E00, EMG_Ch1)/Roff; I(E01, EMG_Ch2) <+ V(E01, EMG_Ch2)/Roff; 
+		I(E02, EMG_Ch3) <+ V(E02, EMG_Ch3)/Roff; I(E03, EMG_Ch4) <+ V(E03, EMG_Ch4)/Roff;
+		I(E04, EMG_Ch5) <+ V(E04, EMG_Ch5)/Roff; I(E05, EMG_Ch6) <+ V(E05, EMG_Ch6)/Roff;
+		I(E06, EMG_Ch7) <+ V(E06, EMG_Ch7)/Roff; I(E07, EMG_Ch8) <+ V(E07, EMG_Ch8)/Roff;	
+		I(E10, EMG_Ch9) <+ V(E10, EMG_Ch9)/Roff; I(E11, EMG_Ch10) <+ V(E11, EMG_Ch10)/Roff; 
+		I(E12, EMG_Ch11) <+ V(E12, EMG_Ch11)/Roff; I(E13, EMG_Ch12) <+ V(E13, EMG_Ch12)/Roff;
+		I(E14, EMG_Ch13) <+ V(E14, EMG_Ch13)/Roff; I(E15, EMG_Ch14) <+ V(E15, EMG_Ch14)/Roff;
+		I(E16, EMG_Ch15) <+ V(E16, EMG_Ch15)/Roff; I(E17, EMG_Ch16) <+ V(E17, EMG_Ch16)/Roff;
+		I(E20, EMG_Ch17) <+ V(E20, EMG_Ch17)/Roff; I(E21, EMG_Ch18) <+ V(E21, EMG_Ch18)/Roff; 
+		I(E22, EMG_Ch19) <+ V(E22, EMG_Ch19)/Roff; I(E23, EMG_Ch20) <+ V(E23, EMG_Ch20)/Roff;
+		I(E24, EMG_Ch21) <+ V(E24, EMG_Ch21)/Roff; I(E25, EMG_Ch22) <+ V(E25, EMG_Ch22)/Roff;
+		I(E26, EMG_Ch23) <+ V(E26, EMG_Ch23)/Roff; I(E27, EMG_Ch24) <+ V(E27, EMG_Ch24)/Roff;
+		I(E30, EMG_Ch25) <+ V(E30, EMG_Ch25)/Roff; I(E31, EMG_Ch26) <+ V(E31, EMG_Ch26)/Roff; 
+		I(E32, EMG_Ch27) <+ V(E32, EMG_Ch27)/Roff; I(E33, EMG_Ch28) <+ V(E33, EMG_Ch28)/Roff;	
+		I(E34, EMG_Ch29) <+ V(E34, EMG_Ch29)/Roff; I(E35, EMG_Ch30) <+ V(E35, EMG_Ch30)/Roff;
+		I(E36, EMG_Ch31) <+ V(E36, EMG_Ch31)/Roff; I(E37, EMG_Ch32) <+ V(E37, EMG_Ch32)/Roff;	
+		
+		if(Dir == 1'b0) begin // perpendicular
+			case(C_int) // selected column
+				0 : begin 
+						V(BI_Ip, E00) <+ I(BI_Ip, E00)*Ron; V(E30, BI_In) <+ I(E30, BI_In)*Ron;
+						I(E10, BI_Vp) <+ V(E10, BI_Vp)/Ron; I(E20, BI_Vn) <+ V(E20, BI_Vn)/Ron;
+					end
+				1 : begin
+						V(BI_Ip, E01) <+ I(BI_Ip, E01)*Ron; V(E31, BI_In) <+ I(E31, BI_In)*Ron;
+						I(E11, BI_Vp) <+ V(E11, BI_Vp)/Ron; I(E21, BI_Vn) <+ V(E21, BI_Vn)/Ron;
+					end
+				2 : begin 
+						V(BI_Ip, E02) <+ I(BI_Ip, E02)*Ron; V(E32, BI_In) <+ I(E32, BI_In)*Ron;
+						I(E12, BI_Vp) <+ V(E12, BI_Vp)/Ron; I(E22, BI_Vn) <+ V(E22, BI_Vn)/Ron;
+					end
+				3 : begin 
+						V(BI_Ip, E03) <+ I(BI_Ip, E03)*Ron; V(E33, BI_In) <+ I(E33, BI_In)*Ron;
+						I(E13, BI_Vp) <+ V(E13, BI_Vp)/Ron; I(E23, BI_Vn) <+ V(E23, BI_Vn)/Ron;
+					end
+				4 : begin
+						V(BI_Ip, E04) <+ I(BI_Ip, E04)*Ron; V(E34, BI_In) <+ I(E34, BI_In)*Ron;
+						I(E14, BI_Vp) <+ V(E14, BI_Vp)/Ron; I(E24, BI_Vn) <+ V(E24, BI_Vn)/Ron;
+					end
+				5 : begin 
+						V(BI_Ip, E05) <+ I(BI_Ip, E05)*Ron; V(E35, BI_In) <+ I(E35, BI_In)*Ron;
+						I(E15, BI_Vp) <+ V(E15, BI_Vp)/Ron; I(E25, BI_Vn) <+ V(E25, BI_Vn)/Ron;
+					end							
+				6 : begin
+						V(BI_Ip, E06) <+ I(BI_Ip, E06)*Ron; V(E36, BI_In) <+ I(E36, BI_In)*Ron;
+						I(E16, BI_Vp) <+ V(E16, BI_Vp)/Ron; I(E26, BI_Vn) <+ V(E26, BI_Vn)/Ron;
+					end
+				7 : begin 
+						V(BI_Ip, E07) <+ I(BI_Ip, E07)*Ron; V(E37, BI_In) <+ I(E37, BI_In)*Ron;
+						I(E17, BI_Vp) <+ V(E17, BI_Vp)/Ron; I(E27, BI_Vn) <+ V(E27, BI_Vn)/Ron;	
+					end	
+			endcase 
+		end else begin // parallel
+			case(R_int) // selected row
+				0: begin 
+						if(Dis == 1'b0) begin // long distance
+							V(BI_Ip, E00) <+ I(BI_Ip, E00)*Ron; V(E07, BI_In) <+ I(E07, BI_In)*Ron;
+							I(E01, BI_Vp) <+ V(E01, BI_Vp)/Ron; I(E06, BI_Vn) <+ V(E06, BI_Vn)/Ron;		
+						end else begin // short distance
+							V(BI_Ip, E02) <+ I(BI_Ip, E02)*Ron; V(E05, BI_In) <+ I(E05, BI_In)*Ron;
+							I(E03, BI_Vp) <+ V(E03, BI_Vp)/Ron; I(E04, BI_Vn) <+ V(E04, BI_Vn)/Ron;
+						end
+					end
+				1: begin 
+						if(Dis == 1'b0) begin // long distance
+							V(BI_Ip, E10) <+ I(BI_Ip, E10)*Ron; V(E17, BI_In) <+ I(E17, BI_In)*Ron;
+							I(E11, BI_Vp) <+ V(E11, BI_Vp)/Ron; I(E16, BI_Vn) <+ V(E16, BI_Vn)/Ron;		
+						end else begin // short distance
+							V(BI_Ip, E12) <+ I(BI_Ip, E12)*Ron; V(E15, BI_In) <+ I(E15, BI_In)*Ron;
+							I(E13, BI_Vp) <+ V(E13, BI_Vp)/Ron; I(E14, BI_Vn) <+ V(E14, BI_Vn)/Ron;
+						end
+					end
+				2: begin 
+						if(Dis == 1'b0) begin // long distance
+							V(BI_Ip, E20) <+ I(BI_Ip, E20)*Ron; V(E27, BI_In) <+ I(E27, BI_In)*Ron;
+							I(E21, BI_Vp) <+ V(E21, BI_Vp)/Ron; I(E26, BI_Vn) <+ V(E26, BI_Vn)/Ron;		
+						end else begin // short distance
+							V(BI_Ip, E22) <+ I(BI_Ip, E22)*Ron; V(E25, BI_In) <+ I(E25, BI_In)*Ron;
+							I(E23, BI_Vp) <+ V(E23, BI_Vp)/Ron; I(E24, BI_Vn) <+ V(E24, BI_Vn)/Ron;
+						end
+					end
+				3: begin 
+						if(Dis == 1'b0) begin // long distance
+							V(BI_Ip, E30) <+ I(BI_Ip, E30)*Ron; V(E37, BI_In) <+ I(E37, BI_In)*Ron;
+							I(E31, BI_Vp) <+ V(E31, BI_Vp)/Ron; I(E36, BI_Vn) <+ V(E36, BI_Vn)/Ron;		
+						end else begin // short distance
+							V(BI_Ip, E32) <+ I(BI_Ip, E32)*Ron; V(E35, BI_In) <+ I(E35, BI_In)*Ron;
+							I(E33, BI_Vp) <+ V(E33, BI_Vp)/Ron; I(E34, BI_Vn) <+ V(E34, BI_Vn)/Ron;
+						end
+					end
+			endcase
+		end
+	end
+end
+endmodule

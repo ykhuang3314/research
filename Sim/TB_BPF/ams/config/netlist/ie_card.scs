@@ -1,0 +1,10 @@
+
+// This is the Cadence AMS Designer(R) analog simulation control file.
+// Generated 'ie' card statement for the Connect Rules.
+// TIME : Oct 13 23:48:30 2020
+// IC subversion:  IC6.1.8-64b.500.7 
+// IUS version: 18.03-s018
+
+amsd{
+    ie vsup=1.8 discipline=logic 
+}

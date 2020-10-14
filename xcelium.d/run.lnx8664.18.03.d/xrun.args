@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-compile
+-nocopy
+-nostdout
+-nowarn
+DLNOHV
+-nowarn
+SPDUSD
+-messages
+-update
+-log
+/home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/systemverilog/EMG_202009/systemVerilog/compile1.log
+-incdir
+"/home/ykhuang/research/"
+-sv
+-cdslib
+/home/ykhuang/research/cds.lib
+-view
+systemVerilog
+-work
+EMG_202009
+/home/ykhuang/research/EMG_202009/AnalogMux_2/systemVerilog/verilog.sv

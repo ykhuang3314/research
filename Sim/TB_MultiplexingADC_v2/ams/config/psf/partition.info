@@ -1,0 +1,402 @@
+( global ( resolution_type basic ) )
+
+( net TB_MultiplexingADC_v2.sel TB_MultiplexingADC_v2.sel digital logic )
+( net TB_MultiplexingADC_v2.I0.sel TB_MultiplexingADC_v2.sel digital logic )
+( net TB_MultiplexingADC_v2.I4.Q TB_MultiplexingADC_v2.sel digital logic )
+
+( net TB_MultiplexingADC_v2.Start TB_MultiplexingADC_v2.Start analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I0.Clk TB_MultiplexingADC_v2.Start digital/mixed logic )
+( net TB_MultiplexingADC_v2.I1.Start TB_MultiplexingADC_v2.Start digital/mixed logic )
+( net TB_MultiplexingADC_v2.I4.Clk TB_MultiplexingADC_v2.Start digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.I4.Reset TB_MultiplexingADC_v2.I4.Reset digital/mixed logic )
+( net cds_globals.\gnd!  TB_MultiplexingADC_v2.I4.Reset analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I0.Vssa TB_MultiplexingADC_v2.I4.Reset analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Vssa TB_MultiplexingADC_v2.I4.Reset analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Vssa TB_MultiplexingADC_v2.I4.Reset analog/mixed electrical )
+
+( net TB_MultiplexingADC_v2.I4.tmp TB_MultiplexingADC_v2.I4.tmp digital logic )
+
+( net TB_MultiplexingADC_v2.Dout[11] TB_MultiplexingADC_v2.Dout[11] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[11] TB_MultiplexingADC_v2.Dout[11] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[11] TB_MultiplexingADC_v2.Dout[11] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[10] TB_MultiplexingADC_v2.Dout[10] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[10] TB_MultiplexingADC_v2.Dout[10] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[10] TB_MultiplexingADC_v2.Dout[10] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[9] TB_MultiplexingADC_v2.Dout[9] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[9] TB_MultiplexingADC_v2.Dout[9] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[9] TB_MultiplexingADC_v2.Dout[9] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[8] TB_MultiplexingADC_v2.Dout[8] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[8] TB_MultiplexingADC_v2.Dout[8] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[8] TB_MultiplexingADC_v2.Dout[8] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[7] TB_MultiplexingADC_v2.Dout[7] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[7] TB_MultiplexingADC_v2.Dout[7] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[7] TB_MultiplexingADC_v2.Dout[7] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[6] TB_MultiplexingADC_v2.Dout[6] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[6] TB_MultiplexingADC_v2.Dout[6] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[6] TB_MultiplexingADC_v2.Dout[6] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[5] TB_MultiplexingADC_v2.Dout[5] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[5] TB_MultiplexingADC_v2.Dout[5] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[5] TB_MultiplexingADC_v2.Dout[5] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[4] TB_MultiplexingADC_v2.Dout[4] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[4] TB_MultiplexingADC_v2.Dout[4] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[4] TB_MultiplexingADC_v2.Dout[4] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[3] TB_MultiplexingADC_v2.Dout[3] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[3] TB_MultiplexingADC_v2.Dout[3] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[3] TB_MultiplexingADC_v2.Dout[3] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[2] TB_MultiplexingADC_v2.Dout[2] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[2] TB_MultiplexingADC_v2.Dout[2] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[2] TB_MultiplexingADC_v2.Dout[2] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[1] TB_MultiplexingADC_v2.Dout[1] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[1] TB_MultiplexingADC_v2.Dout[1] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[1] TB_MultiplexingADC_v2.Dout[1] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.Dout[0] TB_MultiplexingADC_v2.Dout[0] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Din[0] TB_MultiplexingADC_v2.Dout[0] analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Dout[0] TB_MultiplexingADC_v2.Dout[0] digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.EoC TB_MultiplexingADC_v2.EoC digital logic )
+( net TB_MultiplexingADC_v2.I1.EoC TB_MultiplexingADC_v2.EoC digital logic )
+
+( net TB_MultiplexingADC_v2.Ain TB_MultiplexingADC_v2.Ain analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I0.Vout TB_MultiplexingADC_v2.Ain analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Vin TB_MultiplexingADC_v2.Ain digital/mixed logic (type rnm) )
+
+( net TB_MultiplexingADC_v2.Vdda TB_MultiplexingADC_v2.Vdda analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I0.Vdda TB_MultiplexingADC_v2.Vdda analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Vdda TB_MultiplexingADC_v2.Vdda analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Vdda TB_MultiplexingADC_v2.Vdda digital/mixed logic )
+( net TB_MultiplexingADC_v2.I1.En TB_MultiplexingADC_v2.Vdda digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.CLK TB_MultiplexingADC_v2.CLK analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I2.Clk TB_MultiplexingADC_v2.CLK analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.Clk TB_MultiplexingADC_v2.CLK digital/mixed logic )
+
+( net TB_MultiplexingADC_v2.VrefH TB_MultiplexingADC_v2.VrefH analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.VrefH TB_MultiplexingADC_v2.VrefH digital/mixed logic (type rnm) )
+
+( net TB_MultiplexingADC_v2.VrefL TB_MultiplexingADC_v2.VrefL analog/mixed electrical )
+( net TB_MultiplexingADC_v2.I1.VrefL TB_MultiplexingADC_v2.VrefL digital/mixed logic (type rnm) )
+
+( net TB_MultiplexingADC_v2.Ibias TB_MultiplexingADC_v2.Ibias analog electrical )
+( net TB_MultiplexingADC_v2.I1.Ibias TB_MultiplexingADC_v2.Ibias analog electrical )
+
+( net TB_MultiplexingADC_v2.I1.Vdds TB_MultiplexingADC_v2.I1.Vdds analog electrical )
+
+( net TB_MultiplexingADC_v2.I1.count TB_MultiplexingADC_v2.I1.count digital logic )
+
+( net TB_MultiplexingADC_v2.I1.end_count TB_MultiplexingADC_v2.I1.end_count digital logic )
+
+( net TB_MultiplexingADC_v2.I1.Vhold TB_MultiplexingADC_v2.I1.Vhold digital logic (type rnm) )
+
+( net TB_MultiplexingADC_v2.I1.fvalue TB_MultiplexingADC_v2.I1.fvalue digital logic (type rnm) )
+
+( net TB_MultiplexingADC_v2.I1.NaN TB_MultiplexingADC_v2.I1.NaN digital logic (type rnm) )
+
+( net TB_MultiplexingADC_v2.Vout TB_MultiplexingADC_v2.Vout analog electrical )
+( net TB_MultiplexingADC_v2.I2.Vout TB_MultiplexingADC_v2.Vout analog electrical )
+
+( net TB_MultiplexingADC_v2.I2.aout TB_MultiplexingADC_v2.I2.aout analog None )
+
+( net TB_MultiplexingADC_v2.I2.weight TB_MultiplexingADC_v2.I2.weight analog None )
+
+( net TB_MultiplexingADC_v2.Vin0 TB_MultiplexingADC_v2.Vin0 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin0 TB_MultiplexingADC_v2.Vin0 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin1 TB_MultiplexingADC_v2.Vin1 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin1 TB_MultiplexingADC_v2.Vin1 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin2 TB_MultiplexingADC_v2.Vin2 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin2 TB_MultiplexingADC_v2.Vin2 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin3 TB_MultiplexingADC_v2.Vin3 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin3 TB_MultiplexingADC_v2.Vin3 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin4 TB_MultiplexingADC_v2.Vin4 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin4 TB_MultiplexingADC_v2.Vin4 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin5 TB_MultiplexingADC_v2.Vin5 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin5 TB_MultiplexingADC_v2.Vin5 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin6 TB_MultiplexingADC_v2.Vin6 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin6 TB_MultiplexingADC_v2.Vin6 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin7 TB_MultiplexingADC_v2.Vin7 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin7 TB_MultiplexingADC_v2.Vin7 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin8 TB_MultiplexingADC_v2.Vin8 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin8 TB_MultiplexingADC_v2.Vin8 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin9 TB_MultiplexingADC_v2.Vin9 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin9 TB_MultiplexingADC_v2.Vin9 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin10 TB_MultiplexingADC_v2.Vin10 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin10 TB_MultiplexingADC_v2.Vin10 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin11 TB_MultiplexingADC_v2.Vin11 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin11 TB_MultiplexingADC_v2.Vin11 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin12 TB_MultiplexingADC_v2.Vin12 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin12 TB_MultiplexingADC_v2.Vin12 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin13 TB_MultiplexingADC_v2.Vin13 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin13 TB_MultiplexingADC_v2.Vin13 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin14 TB_MultiplexingADC_v2.Vin14 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin14 TB_MultiplexingADC_v2.Vin14 analog electrical )
+
+( net TB_MultiplexingADC_v2.Vin15 TB_MultiplexingADC_v2.Vin15 analog electrical )
+( net TB_MultiplexingADC_v2.I0.Vin15 TB_MultiplexingADC_v2.Vin15 analog electrical )
+
+( net TB_MultiplexingADC_v2.I0.sel_base10 TB_MultiplexingADC_v2.I0.sel_base10 digital logic )
+
+( connect
+   connectLib.E2L_2:module
+   TB_MultiplexingADC_v2.Start
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I4.Clk logic digital )
+    ( TB_MultiplexingADC_v2.I1.Start logic digital )
+    ( TB_MultiplexingADC_v2.I0.Clk logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I4.Reset logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[11]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[11] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[10]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[10] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[9]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[9] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[8]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[8] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[7]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[7] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[6]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[6] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[5]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[5] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[4]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[4] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[3]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[3] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[2]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[2] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[1]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[1] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiplexingADC_v2.Dout[0]
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Dout[0] logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_MultiplexingADC_v2.CLK
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Clk logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_MultiplexingADC_v2.Vdda
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.En logic digital )
+    ( TB_MultiplexingADC_v2.I1.Vdda logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2R:module
+   TB_MultiplexingADC_v2.Ain
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.Vin logic digital (type rnm) )
+   )
+   "connect E2R merged logic, electrical"
+   ( (vdelta (1.800000000000000 / 64.000000000000000)) (vtol ((1.800000000000000 / 64.000000000000000) / 4.000000000000000)) (ttol (0.000000000200000 / 20.000000000000000)) (vss 0) (vsup 1.800000000000000) (currentmode 0) (idelta 0.000010000000000) (itol (0.000010000000000 / 4.000000000000000)) (vbias (0 + (1.800000000000000 / 2.000000000000000))) (rin 200) )
+)
+( connect
+   connectLib.E2R:module
+   TB_MultiplexingADC_v2.VrefH
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.VrefH logic digital (type rnm) )
+   )
+   "connect E2R merged logic, electrical"
+   ( (vdelta (1.800000000000000 / 64.000000000000000)) (vtol ((1.800000000000000 / 64.000000000000000) / 4.000000000000000)) (ttol (0.000000000200000 / 20.000000000000000)) (vss 0) (vsup 1.800000000000000) (currentmode 0) (idelta 0.000010000000000) (itol (0.000010000000000 / 4.000000000000000)) (vbias (0 + (1.800000000000000 / 2.000000000000000))) (rin 200) )
+)
+( connect
+   connectLib.E2R:module
+   TB_MultiplexingADC_v2.VrefL
+   electrical
+   analog
+   (
+    ( TB_MultiplexingADC_v2.I1.VrefL logic digital (type rnm) )
+   )
+   "connect E2R merged logic, electrical"
+   ( (vdelta (1.800000000000000 / 64.000000000000000)) (vtol ((1.800000000000000 / 64.000000000000000) / 4.000000000000000)) (ttol (0.000000000200000 / 20.000000000000000)) (vss 0) (vsup 1.800000000000000) (currentmode 0) (idelta 0.000010000000000) (itol (0.000010000000000 / 4.000000000000000)) (vbias (0 + (1.800000000000000 / 2.000000000000000))) (rin 200) )
+)
+(instance TB_MultiplexingADC_v2.I4 digital)
+(instance TB_MultiplexingADC_v2.I1 mixed/dmixed (type rnm))
+(instance TB_MultiplexingADC_v2.I2 analog)
+(instance TB_MultiplexingADC_v2.I0 mixed)
+(instance TB_MultiplexingADC_v2.V20 analog)
+(instance TB_MultiplexingADC_v2.V19 analog)
+(instance TB_MultiplexingADC_v2.V18 analog)
+(instance TB_MultiplexingADC_v2.V16 analog)
+(instance TB_MultiplexingADC_v2.V17 analog)
+(instance TB_MultiplexingADC_v2.V13 analog)
+(instance TB_MultiplexingADC_v2.V12 analog)
+(instance TB_MultiplexingADC_v2.V11 analog)
+(instance TB_MultiplexingADC_v2.V10 analog)
+(instance TB_MultiplexingADC_v2.V9 analog)
+(instance TB_MultiplexingADC_v2.V8 analog)
+(instance TB_MultiplexingADC_v2.V7 analog)
+(instance TB_MultiplexingADC_v2.V6 analog)
+(instance TB_MultiplexingADC_v2.V5 analog)
+(instance TB_MultiplexingADC_v2.V4 analog)
+(instance TB_MultiplexingADC_v2.V3 analog)
+(instance TB_MultiplexingADC_v2.V2 analog)
+(instance TB_MultiplexingADC_v2.V1 analog)
+(instance TB_MultiplexingADC_v2.V0 analog)
+(instance TB_MultiplexingADC_v2.V22 analog)
+(instance TB_MultiplexingADC_v2.V14 analog)
+(instance TB_MultiplexingADC_v2.I7 analog)
+(instance TB_MultiplexingADC_v2 mixed/dmixed (type rnm))
+(instance cds_globals analog)

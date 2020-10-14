@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_Mux4/schematic EMG_202009/TB_Mux4/schematic/schematic/EMG_202009_TB_Mux4_config/1 TB_Mux4
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

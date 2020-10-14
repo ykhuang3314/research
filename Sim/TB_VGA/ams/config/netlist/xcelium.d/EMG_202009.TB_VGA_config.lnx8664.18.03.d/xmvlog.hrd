@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-SNAPSHOT
+EMG_202009.TB_VGA:config

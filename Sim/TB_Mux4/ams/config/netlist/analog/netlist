@@ -1,0 +1,14 @@
+
+// Library name: EMG_202009
+// Cell name: TB_Mux4
+// View name: schematic
+// Inherited view list: schematic
+V7 (net3 0) vsource type=pulse delay=50m val0=0 val1=1.8 period=100m \
+        rise=10p fall=10p
+V6 (net4 0) vsource type=pulse delay=25m val0=0 val1=1.8 period=50m \
+        rise=10p fall=10p
+V4 (Vdda 0) vsource dc=1.8 type=dc
+V2 (Vin2 0) vsource type=sine freq=50 ampl=60m
+V1 (Vin1 0) vsource type=sine freq=500 ampl=500m
+V0 (Vin0 0) vsource type=sine freq=1K ampl=100m
+V3 (Vin3 0) vsource type=sine freq=100 ampl=100m

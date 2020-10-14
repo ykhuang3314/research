@@ -1,0 +1,36 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-ahdllibdir
+xcelium.d/AMSD/ams_spice_in/ahdlSimDB
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-MESSAGES
+-outdir
+./xcelium.d/AMSD/ams_spice_in
+-runmode
+-cdslib
+./xcelium.d/EMG_202009.TB_Single_Channel_config.lnx8664.18.03.d/cdsrun.lib
+-hdlvar
+./xcelium.d/EMG_202009.TB_Single_Channel_config.lnx8664.18.03.d/hdlrun.var
+-work
+worklib
+-64bit
+-AUTO_USE_REFFILE
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list
+-amsspice-errfile
+./xcelium.d/AMSD/ams_spice_in/amsspice.log
+-simcompat_ams
+spectre
+-amsi
+./spiceModels.scs
+-amsi
+./amsControlSpectre.scs
+-modelincdir
+"/home/ykhuang/research/"
+-amsi
+.amsbind.scs

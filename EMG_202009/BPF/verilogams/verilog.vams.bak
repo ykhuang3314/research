@@ -1,0 +1,29 @@
+//Verilog-AMS HDL for "EMG_202009", "BPF" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BPF (Vout, Vin, Vdda, Vssa );
+
+output Vout;
+input Vin, Vdda, Vssa;
+
+electrical Vout, Vin, Vdda, Vssa;
+
+parameter real gain = 1  from (0: inf);
+parameter real R1 = 5k from (0: inf);
+parameter real C1 = 3.183u from (0: inf);
+parameter real R2 = 100k from (0: inf);
+parameter real C2 = 2.8p from (0: inf);
+
+electrical n1, n2;
+
+analog begin
+	I(Vin, n1) <+ C1 * ddt(V(Vin, n1));
+	V(n1, Vssa) <+ R1 * I(n1, Vssa);
+	I(n1, n2) <+ V(n1, n2)/R2;
+	I(n2, Vssa) <+ C2 * ddt(V(n2, Vssa));  
+	V(Vout, Vssa) <+ V(n2,Vssa) * gain;
+end
+
+endmodule

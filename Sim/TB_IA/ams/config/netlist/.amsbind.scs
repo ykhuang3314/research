@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_202009.TB_IA:config
+// Created On: Sep 27 23:47:47 2020
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_202009.TB_IA:schematic"
+
+	config cell="vcvs" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="IA" lib="EMG_202009" view="verilogams"
+
+ }

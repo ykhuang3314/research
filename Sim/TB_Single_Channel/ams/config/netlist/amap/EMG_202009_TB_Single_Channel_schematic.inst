@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"E0n E1n E2n" "analogLib_vcvs_spectre"
+"V0n V1n" "analogLib_vdc_spectre"
+"V2n" "analogLib_vsin_spectre"
+"V3n" "analogLib_vsource_spectre"
+"I0n" "EMG_202009_Single_Channel_schematic"

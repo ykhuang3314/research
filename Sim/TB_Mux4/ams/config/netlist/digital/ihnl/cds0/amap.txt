@@ -1,0 +1,9 @@
+netMap,*TB_Mux4,*sel<1>,*sel[1]
+netMap,*TB_Mux4,*sel<0>,*sel[0]
+netMap,*TB_Mux4,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_Mux4,*I0,*I0
+instMaster,*TB_Mux4,*I0,*EMG_202009_AnalogMux_4_verilogams
+instMap,*TB_Mux4,*I4,*I4
+instMaster,*TB_Mux4,*I4,*EMG_202009_Digital_Stimuli_Mux4_functional
+cellMap,*TB_Mux4,*TB_Mux4,*EMG_202009,*schematic
+topMap,*TB_Mux4

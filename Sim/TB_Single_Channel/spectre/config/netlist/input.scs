@@ -1,0 +1,53 @@
+// Generated for: spectre
+// Generated on: Sep 22 15:20:55 2020
+// Design library name: EMG_202009
+// Design cell name: TB_Single_Channel
+// Design view name: config
+simulator lang=spectre
+global 0
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: EMG_202009
+// Cell name: Single_Channel
+// View name: schematic
+// Inherited view list: spectre spice pspice verilog verilogams behavioral
+// functional systemVerilog schematic veriloga vhdl vhdlams wreal
+subckt Single_Channel Gain_Sel Vdda Vinn Vinp Vout Vssa
+    I0 (net15 Vinp Vinn Vdda Vssa) IA Vcm=0.9 Gain=25 F_Pole=1000
+    I1 (net17 net15 Vdda Vssa) BPF gain=1 R1=5000 C1=3.183e-06 R2=100000 \
+        C2=1.59e-09
+    I2 (Vout net17 Vdda Vssa Gain_Sel) VGA Vcm=0.9 F_Pole=1000
+ends Single_Channel
+// End of subcircuit definition.
+
+// Library name: EMG_202009
+// Cell name: TB_Single_Channel
+// View name: schematic
+// Inherited view list: spectre spice pspice verilog verilogams behavioral
+// functional systemVerilog schematic veriloga vhdl vhdlams wreal
+I0 (0 vdda net8 net7 Vout 0) Single_Channel
+V2 (vsig 0) vsource mag=1 type=sine
+V1 (Vin_CM 0) vsource dc=0 type=dc
+V0 (vdda 0) vsource dc=1.8 type=dc
+E1 (net8 Vin_CM vsig 0) vcvs gain=-0.5
+E0 (net7 Vin_CM vsig 0) vcvs gain=0.5
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+ac ac start=1 stop=100k annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

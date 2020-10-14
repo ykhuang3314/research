@@ -1,0 +1,45 @@
+//Verilog-AMS HDL for "EMG_202009", "MUX_16" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module MUX_16 (Vout, Vin0, Vin1, Vin2, Vin3, Vin4, Vin5, Vin6, Vin7, Vin8, 
+			Vin9, Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Clk, sel, Vdda, Vssa);
+
+output Vout;
+input Vin0, Vin1, Vin2, Vin3, Vin4, Vin5, Vin6, Vin7, Vin8, Vin9, 
+	  Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Clk, sel, Vdda, Vssa;
+
+electrical Vout, Vin0, Vin1, Vin2, Vin3, Vin4, Vin5, Vin6, Vin7, Vin8, 
+	       Vin9, Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Vdda, Vssa;
+
+wire[3:0] sel;
+logic Clk;
+real sel_base10;
+
+always@(negedge Clk) begin
+	sel_base10 = 8*sel[3] + 4*sel[2] + 2*sel[1] + sel[0];
+end
+
+analog begin
+	case(sel_base10)
+		0 : V(Vout, Vssa) <+ V(Vin0,Vssa); 
+		1 : V(Vout, Vssa) <+ V(Vin1,Vssa); 
+		2 : V(Vout, Vssa) <+ V(Vin2,Vssa);
+		3 : V(Vout, Vssa) <+ V(Vin3,Vssa);
+		4 : V(Vout, Vssa) <+ V(Vin4,Vssa);
+		5 : V(Vout, Vssa) <+ V(Vin5,Vssa);
+		6 : V(Vout, Vssa) <+ V(Vin6,Vssa);
+		7 : V(Vout, Vssa) <+ V(Vin7,Vssa);
+		8 : V(Vout, Vssa) <+ V(Vin8,Vssa);
+		9 : V(Vout, Vssa) <+ V(Vin9,Vssa);
+		10 : V(Vout, Vssa) <+ V(Vin10,Vssa);
+		11 : V(Vout, Vssa) <+ V(Vin11,Vssa);
+		12 : V(Vout, Vssa) <+ V(Vin12,Vssa);
+		13 : V(Vout, Vssa) <+ V(Vin13,Vssa);
+		14 : V(Vout, Vssa) <+ V(Vin14,Vssa);
+		15 : V(Vout, Vssa) <+ V(Vin15,Vssa);
+	endcase
+end
+
+endmodule

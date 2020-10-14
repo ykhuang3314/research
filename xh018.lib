@@ -1,0 +1,97 @@
+# ------------------------------------------------------------------------------
+# X-FAB XH018 Cadence library definitions
+# Please do not edit or modify this file!
+# xkit -m|--modules overwrites this file, any changes will be lost.
+# ------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# Date    : $Date: 2012-12-07 18:11:57 +0100 (Fri, 07 Dec 2012) $
+# Revison : $Revision: 591 $
+# Author  : $Author: wflohrer $
+# ------------------------------------------------------------------------------
+
+# T_VERSION = $Date: 2012-12-07 18:11:57 +0100 (Fri, 07 Dec 2012) $
+# T_TECH = "xh018"
+# T_KIT = $Date: 2012-12-07 18:11:57 +0100 (Fri, 07 Dec 2012) $
+# T_PROC = "1143"
+
+# Standard Cadence libraries
+INCLUDE ./.xkit/setup/x_all/cadence/xenv/templates/cds.lib
+
+# XKit libraries
+# -- cds.lib for XH018 in TheKit -- 
+
+# ==================================================
+
+# primitive device libraries
+
+DEFINE PRIMLIB ./.xkit/setup/xh018/cadence/PDK/PRIMLIB_1143
+
+
+# technology libraries
+
+DEFINE TECH_XH018 ./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143
+DEFINE TECH_XH018_HD ./.xkit/setup/xh018/cadence/PDK/TECH_XH018_HD_1143
+
+
+# analogue design library for digital cells
+
+
+
+# logic library
+
+
+
+# digital core libraries
+
+
+
+# digital junction isolated core libraries
+
+
+
+# digital io libraries
+
+DEFINE IO_CELLS_3V ./.xkit/setup/xh018/diglibs/IO_CELLS_3V/cadence_IC61/IO_CELLS_3V
+DEFINE IO_CELLS_F3V ./.xkit/setup/xh018/diglibs/IO_CELLS_F3V/cadence_IC61/IO_CELLS_F3V
+DEFINE IO_CELLS_JI3V ./.xkit/setup/xh018/diglibs/IO_CELLS_JI3V/cadence_IC61/IO_CELLS_JI3V
+
+
+# digital reference library - udp, check, ...
+
+DEFINE VLG_PRIMITIVES ./.xkit/setup/x_all/diglibs/VLG_PRIMITIVES/cadence_IC61/VLG_PRIMITIVES
+
+
+# Hall IP libraries
+
+
+
+# X-FAB IP libraries
+
+DEFINE D_CELLS_3V		./.xkit/setup/xh018/diglibs/D_CELLS_3V/cadence_IC61/D_CELLS_3V
+DEFINE D_CELLS_HD		./.xkit/setup/xh018/diglibs/D_CELLS_HD/cadence_IC61/D_CELLS_HD
+DEFINE D_CELLS_HDLL		./.xkit/setup/xh018/diglibs/D_CELLS_HDLL/cadence_IC61/D_CELLS_HDLL
+DEFINE D_CELLS_HDMT		./.xkit/setup/xh018/diglibs/D_CELLS_HDMT/cadence_IC61/D_CELLS_HDMT
+DEFINE D_CELLS_HDMV		./.xkit/setup/xh018/diglibs/D_CELLS_HDMV/cadence_IC61/D_CELLS_HDMV
+DEFINE D_CELLS_JI3V		./.xkit/setup/xh018/diglibs/D_CELLS_JI3V/cadence_IC61/D_CELLS_JI3V
+DEFINE D_CELLS_JIHD		./.xkit/setup/xh018/diglibs/D_CELLS_JIHD/cadence_IC61/D_CELLS_JIHD
+DEFINE D_CELLS_JIHDLL		./.xkit/setup/xh018/diglibs/D_CELLS_JIHDLL/cadence_IC61/D_CELLS_JIHDLL
+DEFINE D_CELLS_JIHDMT		./.xkit/setup/xh018/diglibs/D_CELLS_JIHDMT/cadence_IC61/D_CELLS_JIHDMT
+DEFINE D_CELLS_JIHDMV		./.xkit/setup/xh018/diglibs/D_CELLS_JIHDMV/cadence_IC61/D_CELLS_JIHDMV
+DEFINE D_CELLS_JIM3V		./.xkit/setup/xh018/diglibs/D_CELLS_JIM3V/cadence_IC61/D_CELLS_JIM3V
+DEFINE D_CELLS_M3V		./.xkit/setup/xh018/diglibs/D_CELLS_M3V/cadence_IC61/D_CELLS_M3V
+DEFINE GATES_3V		./.xkit/setup/xh018/diglibs/GATES_3V/cadence_IC61/GATES_3V
+DEFINE GATES_HD		./.xkit/setup/xh018/diglibs/GATES_HD/cadence_IC61/GATES_HD
+DEFINE GATES_JI3V		./.xkit/setup/xh018/diglibs/GATES_JI3V/cadence_IC61/GATES_JI3V
+DEFINE GATES_JIHD		./.xkit/setup/xh018/diglibs/GATES_JIHD/cadence_IC61/GATES_JIHD
+DEFINE GATES_JIMT		./.xkit/setup/xh018/diglibs/GATES_JIMT/cadence_IC61/GATES_JIMT
+DEFINE GATES_MT		./.xkit/setup/xh018/diglibs/GATES_MT/cadence_IC61/GATES_MT
+DEFINE IO_CELLS_C1V8		./.xkit/setup/xh018/diglibs/IO_CELLS_C1V8/cadence_IC61/IO_CELLS_C1V8
+DEFINE IO_CELLS_C3V		./.xkit/setup/xh018/diglibs/IO_CELLS_C3V/cadence_IC61/IO_CELLS_C3V
+DEFINE IO_CELLS_FC1V8		./.xkit/setup/xh018/diglibs/IO_CELLS_FC1V8/cadence_IC61/IO_CELLS_FC1V8
+DEFINE IO_CELLS_FC3V		./.xkit/setup/xh018/diglibs/IO_CELLS_FC3V/cadence_IC61/IO_CELLS_FC3V
+DEFINE IO_CELLS_JIF3V		./.xkit/setup/xh018/diglibs/IO_CELLS_JIF3V/cadence_IC61/IO_CELLS_JIF3V
+# License Specific Cadence libraries
+
+DEFINE avTech		$ASSURAHOME/tools/assura/etc/avtech/avTech
+DEFINE cdsDefTechLib		$CDSHOME/tools/dfII/etc/cdsDefTechLib
+DEFINE xfab_connectLib		.xkit/setup/x_all/diglibs/xfab_connectLib/cadence_IC61/xfab_connectLib

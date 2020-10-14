@@ -1,0 +1,8 @@
+("EMG_202009" "TB_VGA" "schematic" "schematic") nil
+("analogLib" "idc" "spectre" "spectre") nil
+("analogLib" "vpulse" "spectre" "spectre") nil
+("EMG_202009" "PGA_3Bit" "verilogams" "verilogams") nil
+("EMG_202009" "VGA" "verilogams" "verilogams") nil
+("EMG_202009" "Counter_Nbit" "functional" "functional") nil
+("analogLib" "vsin" "spectre" "spectre") nil
+("analogLib" "vdc" "spectre" "spectre") nil

@@ -1,0 +1,7 @@
+
+AnalogMux_4 I0 ( .Vout(Vout), .Vdda(Vdda), .Vin0(Vin0), .Vin1(Vin1), 
+    .Vin2(Vin2), .Vin3(Vin3), .Vssa(cds_globals.\gnd! ), .sel(sel));
+
+Digital_Stimuli_Mux4 I4 ( .Sel_Mux4(sel));
+
+endmodule

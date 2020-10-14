@@ -1,0 +1,40 @@
+TOOL:	xrun(64)	18.03-s018: Started on Sep 29, 2020 at 00:13:04 CEST
+xrun
+	-f /home/ykhuang/research/Sim/TB_MultiplexingADC/ams/config/netlist/.mapi/mapi_run.args
+		-64bit
+		-compile
+		-NOCOPYRIGHT
+		-nostdout
+		-nowarn DLNOHV
+		-logfile /home/ykhuang/research/Sim/TB_MultiplexingADC/ams/config/netlist/.mapi/mapirun.log
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-allowredefinition
+		-incdir /home/ykhuang/research/
+		-nclibdirpath /home/ykhuang/research/Sim/TB_MultiplexingADC/ams/config/netlist/.mapi/
+		-cdslib /home/ykhuang/research/Sim/TB_MultiplexingADC/ams/config/netlist/.mapi/cds.lib
+		-amscompilefile "file:/home/ykhuang/research/EMG_202009/Counter_4bit/functional/verilog.v lib:EMG_202009 cell:Counter_4bit view:functional"
+		-amscompilefile "file:/home/ykhuang/research/EMG_202009/DAC/verilogams/verilog.vams lib:EMG_202009 cell:DAC view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/EMG_202009/ADC/verilogams/verilog.vams lib:EMG_202009 cell:ADC view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/EMG_202009/MUX_16/verilogams/verilog.vams lib:EMG_202009 cell:MUX_16 view:verilogams"
+		/home/ykhuang/research/Sim/TB_MultiplexingADC/ams/config/netlist/.mapi//dummyMapi.vams
+		/home/ykhuang/research/Sim/TB_MultiplexingADC/ams/config/netlist/.mapi//dummyMapi.vhms
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+file: /home/ykhuang/research/Sim/TB_MultiplexingADC/ams/config/netlist/.mapi//dummyMapi.vams
+file: /home/ykhuang/research/EMG_202009/Counter_4bit/functional/verilog.v
+	module EMG_202009.Counter_4bit:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_202009/DAC/verilogams/verilog.vams
+	module EMG_202009.DAC:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_202009/ADC/verilogams/verilog.vams
+	module EMG_202009.ADC:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_202009/MUX_16/verilogams/verilog.vams
+	module EMG_202009.MUX_16:verilogams
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun(64)	18.03-s018: Exiting on Sep 29, 2020 at 00:13:06 CEST  (total: 00:00:02)

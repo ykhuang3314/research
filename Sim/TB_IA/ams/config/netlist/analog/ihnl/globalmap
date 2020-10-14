@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_IA/schematic EMG_202009/TB_IA/schematic/schematic/EMG_202009_TB_IA_config/1 TB_IA
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

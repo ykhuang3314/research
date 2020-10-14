@@ -1,0 +1,7 @@
+("analogLib" "idc" "spectre" "spectre") "USED"
+("analogLib" "vpulse" "spectre" "spectre") "USED"
+("EMG_202009" "PGA_3Bit" "verilogams" "verilogams") "USED"
+("EMG_202009" "VGA" "verilogams" "verilogams") "USED"
+("EMG_202009" "Counter_Nbit" "functional" "functional") "USED"
+("analogLib" "vsin" "spectre" "spectre") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"

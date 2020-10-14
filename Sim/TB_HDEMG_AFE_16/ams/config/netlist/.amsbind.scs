@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_202009.TB_HDEMG_AFE_16:config
+// Created On: Sep 28 16:34:04 2020
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_202009.TB_HDEMG_AFE_16:schematic"
+
+	config cell="VGA" lib="EMG_202009" view="verilogams"
+	config cell="vcvs" view="analogtext"
+	config cell="BPF" lib="EMG_202009" view="verilogams"
+	config cell="vsource" view="analogtext"
+	config cell="Single_Channel" lib="EMG_202009" view="schematic"
+	config cell="IA" lib="EMG_202009" view="verilogams"
+	config cell="DAC" lib="EMG_202009" view="verilogams"
+	config cell="MultiChannel_16" lib="EMG_202009" view="schematic"
+	config cell="Counter_4bit" lib="EMG_202009" view="functional"
+	config cell="ADC" lib="EMG_202009" view="verilogams"
+	config cell="MUX_16" lib="EMG_202009" view="verilogams"
+
+ }

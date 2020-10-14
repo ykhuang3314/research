@@ -1,0 +1,65 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
+-amsossirunbind
+.amsbind.scs
+-AMSINPUT
+.amsbind.scs
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-NOPARAMERR
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSINPUT
+./spiceModels.scs
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+./amsControlSpectre.scs
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-AMSINPUT
+./ie_card.scs
+-ANALOGCONTROL
+./ie_card.scs
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/Counter_Nbit/functional/verilog.v lib:EMG_202009 cell:Counter_Nbit view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/SwitchArray/verilogams/verilog.vams lib:EMG_202009 cell:SwitchArray view:verilogams"
+-SPECTRE_ARGS
+++aps
+-MESSAGES
+EMG_202009.TB_SwitchArray:schematic
+cds_globals
+-AMSELAB
+-XLMODE
+./xcelium.d/EMG_202009.TB_SwitchArray_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/EMG_202009.TB_SwitchArray_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/EMG_202009.TB_SwitchArray_config.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

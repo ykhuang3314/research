@@ -1,0 +1,17 @@
+cellMap,*TB_Single_Channel,*TB_Single_Channel,*null,*null
+topMap,*TB_Single_Channel
+netMap,*TB_Single_Channel,*gnd!,*0
+instMap,*TB_Single_Channel,*V2,*V2
+instMaster,*TB_Single_Channel,*V2,*analogLib_vsin_spectre,*vsource
+instMap,*TB_Single_Channel,*V1,*V1
+instMaster,*TB_Single_Channel,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*TB_Single_Channel,*V0,*V0
+instMaster,*TB_Single_Channel,*V0,*analogLib_vdc_spectre,*vsource
+instMap,*TB_Single_Channel,*E2,*E2
+instMaster,*TB_Single_Channel,*E2,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_Single_Channel,*E1,*E1
+instMaster,*TB_Single_Channel,*E1,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_Single_Channel,*E0,*E0
+instMaster,*TB_Single_Channel,*E0,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_Single_Channel,*V3,*V3
+instMaster,*TB_Single_Channel,*V3,*analogLib_vsource_spectre,*vsource

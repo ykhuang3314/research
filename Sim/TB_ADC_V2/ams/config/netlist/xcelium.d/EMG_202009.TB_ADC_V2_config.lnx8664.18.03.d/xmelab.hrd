@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+
+EMG_202009.TB_ADC_V2:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/DAC/verilogams/verilog.vams lib:EMG_202009 cell:DAC view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/ADC_V2/verilogams/verilog.vams lib:EMG_202009 cell:ADC_V2 view:verilogams"
+-SPECTRE_ARGS
+++aps

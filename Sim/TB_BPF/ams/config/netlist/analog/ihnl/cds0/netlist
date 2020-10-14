@@ -1,0 +1,7 @@
+
+// Library name: EMG_202009
+// Cell name: TB_BPF
+// View name: schematic
+// Inherited view list: schematic
+V0 (Vin 0) vsource mag=1 type=sine
+V1 (Vdda 0) vsource dc=1.8 type=dc

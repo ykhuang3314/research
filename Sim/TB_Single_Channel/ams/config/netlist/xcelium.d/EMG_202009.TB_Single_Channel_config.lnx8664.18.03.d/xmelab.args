@@ -1,0 +1,69 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+CDS_SELECT_CRS
++define+CONNRULES_18V_FULL_FAST
+-SPECTRE_ARGS
+"-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
+-amsossirunbind
+.amsbind.scs
+-AMSINPUT
+.amsbind.scs
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-NOPARAMERR
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSINPUT
+./spiceModels.scs
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+./amsControlSpectre.scs
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/VGA/verilogams/verilog.vams lib:EMG_202009 cell:VGA view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/BPF/verilogams/verilog.vams lib:EMG_202009 cell:BPF view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/IA/verilogams/verilog.vams lib:EMG_202009 cell:IA view:verilogams"
+-SPECTRE_ARGS
+++aps
+-MESSAGES
+EMG_202009.TB_Single_Channel:schematic
+cds_globals
+-AMSELAB
+-XLMODE
+./xcelium.d/EMG_202009.TB_Single_Channel_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/EMG_202009.TB_Single_Channel_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/EMG_202009.TB_Single_Channel_config.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

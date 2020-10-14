@@ -1,0 +1,7 @@
+("TB_VGA" "I0") ("EMG_202009" "VGA" "verilogams" "verilogams" "EMG_202009" "TB_VGA" "schematic")
+("TB_VGA" "I5") ("EMG_202009" "Counter_Nbit" "functional" "functional" "EMG_202009" "TB_VGA" "schematic")
+("TB_VGA" "V0") ("analogLib" "vsin" "spectre" "spectre" "EMG_202009" "TB_VGA" "schematic")
+("TB_VGA" "I3") ("EMG_202009" "PGA_3Bit" "verilogams" "verilogams" "EMG_202009" "TB_VGA" "schematic")
+("TB_VGA" "V2") ("analogLib" "vpulse" "spectre" "spectre" "EMG_202009" "TB_VGA" "schematic")
+("TB_VGA" "I6") ("analogLib" "idc" "spectre" "spectre" "EMG_202009" "TB_VGA" "schematic")
+("TB_VGA" "V1") ("analogLib" "vdc" "spectre" "spectre" "EMG_202009" "TB_VGA" "schematic")

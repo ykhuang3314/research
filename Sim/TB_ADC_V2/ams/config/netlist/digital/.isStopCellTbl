@@ -1,0 +1,6 @@
+("analogLib" "idc" "spectre") t
+("analogLib" "vpulse" "spectre") t
+("EMG_202009" "ADC_V2" "verilogams") t
+("EMG_202009" "DAC" "verilogams") t
+("analogLib" "vsin" "spectre") t
+("analogLib" "vdc" "spectre") t

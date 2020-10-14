@@ -1,0 +1,7 @@
+cellMap,*TB_BPF,*TB_BPF,*null,*null
+topMap,*TB_BPF
+netMap,*TB_BPF,*gnd!,*0
+instMap,*TB_BPF,*V0,*V0
+instMaster,*TB_BPF,*V0,*analogLib_vsin_spectre,*vsource
+instMap,*TB_BPF,*V1,*V1
+instMaster,*TB_BPF,*V1,*analogLib_vdc_spectre,*vsource

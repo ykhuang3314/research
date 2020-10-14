@@ -1,0 +1,30 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+SPDUSD
+-INCDIR
+"/home/ykhuang/research/"
+-sv
+-CDSLIB
+./xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+-VIEW
+systemVerilog
+-WORK
+EMG_202009
+/home/ykhuang/research/EMG_202009/AnalogMux_2/systemVerilog/verilog.sv
+-HDLVAR
+./xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND

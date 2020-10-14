@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_VGA/schematic EMG_202009/TB_VGA/schematic/schematic/EMG_202009_TB_VGA_config/1 TB_VGA
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

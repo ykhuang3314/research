@@ -1,0 +1,30 @@
+//Verilog-AMS HDL for "EMG_202009", "AnalogMux_4" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+`timescale 1ms/10ps
+
+module AnalogMux_4 (Vout, Vin0, Vin1, Vin2, Vin3, Vdda, Vssa, sel );
+
+output Vout;
+input Vin0, Vin1, Vin2, Vin3, sel, Vdda, Vssa;
+
+electrical Vout, Vin0, Vin1, Vin2, Vin3, Vdda, Vssa;
+wire[1:0] sel;
+
+real sel_base10;
+
+always@(sel) begin
+	sel_base10 = 2*sel[1] + sel[0];
+end
+
+analog begin
+	case(sel_base10)
+		0 : V(Vout, Vssa) <+ V(Vin0,Vssa); 
+		1 : V(Vout, Vssa) <+ V(Vin1,Vssa); 
+		2 : V(Vout, Vssa) <+ V(Vin2,Vssa);
+		3 : V(Vout, Vssa) <+ V(Vin3,Vssa);
+	endcase
+end
+
+endmodule

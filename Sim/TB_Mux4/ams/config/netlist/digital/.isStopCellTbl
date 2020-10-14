@@ -1,0 +1,4 @@
+("EMG_202009" "AnalogMux_4" "verilogams") t
+("EMG_202009" "Digital_Stimuli_Mux4" "functional") t
+("analogLib" "vsource" "spectre") t
+("analogLib" "vdc" "spectre") t

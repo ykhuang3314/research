@@ -1,0 +1,6 @@
+    I0 (net15 Vinp Vinn Vdda Vssa) IA Vcm=0.9 Gain=25 F_Pole=1000
+    I1 (net17 net15 Vdda Vssa) BPF gain=1 R1=5000 C1=3.183e-06 R2=100000 \
+        C2=1.59e-09
+    I2 (Vout net17 Vdda Vssa Gain_Sel) VGA Vcm=0.9 F_Pole=1000
+ends Single_Channel
+// End of subcircuit definition.

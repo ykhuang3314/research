@@ -1,0 +1,8 @@
+
+ADC #( .thresh(0.9) ) I0 ( .Dout(Dout), .Clk(CLK), .Vdda(Vdda), 
+    .Vin(Vin), .Vssa(cds_globals.\gnd! ));
+
+DAC #( .thresh(0.9) ) I4 ( .Vout(Vout), .Clk(CLK), .Din(Dout), 
+    .Vdda(Vdda), .Vssa(cds_globals.\gnd! ));
+
+endmodule

@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"E0n E1n E10n E11n E12n E13n E14n E15n E16n E17n E18n E19n E2n E20n E21n E22n E23n E24n E25n E26n E27n E28n E29n E3n E30n E31n E4n E5n E6n E7n E8n E9n" "analogLib_vcvs_spectre"
+"V0n V12n V13n V16n V17n V2n V20n V21n V24n V25n V28n V29n V4n V5n V8n V9n" "analogLib_vsin_spectre"
+"V1n V10n V11n V14n V15n V18n V19n V22n V23n V26n V27n V3n V30n V31n V32n V6n V7n" "analogLib_vdc_spectre"
+"V33n" "analogLib_vpulse_spectre"
+"I0n" "EMG_202009_MultiChannel_16_schematic"
+"I2n" "EMG_202009_ADC_verilogams"
+"I38n" "EMG_202009_Counter_4bit_functional"
+"I39n" "EMG_202009_DAC_verilogams"
+"I42n" "EMG_202009_MUX_16_verilogams"

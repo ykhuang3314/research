@@ -1,0 +1,56 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/EMG_202009.TB_Mux4_config.lnx8664.18.03.d
+-RUNMODE
+-amsossirunbind
+.amsbind.scs
+-CDSLIB
+./xcelium.d/EMG_202009.TB_Mux4_config.lnx8664.18.03.d/cdsrun.lib
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-AUTO_USE_REFFILE
+-AMSINPUT
+-AUTO_USE_REFFILE
+-AMSINPUT
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-ALLOWREDEFINITION
+./netlist.vams
+./cds_globals.vams
+-SNAPSHOT
+EMG_202009.TB_Mux4:config
+-HDLVAR
+./xcelium.d/EMG_202009.TB_Mux4_config.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/EMG_202009/Digital_Stimuli_Mux4/functional/verilog.v
+/home/ykhuang/research/EMG_202009/AnalogMux_4/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/research/EMG_202009/AnalogMux_4/verilogams/verilog.vams lib:EMG_202009 cell:AnalogMux_4 view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_202009/Digital_Stimuli_Mux4/functional/verilog.v lib:EMG_202009 cell:Digital_Stimuli_Mux4 view:functional"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/EMG_202009.TB_Mux4_config.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-hastop
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

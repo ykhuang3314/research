@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - EMG_202009 ,Cell - DAC, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_202009/DAC/verilogams/verilog.vams lib:EMG_202009 cell:DAC view:verilogams"
+
+// HDL file for Lib - EMG_202009 ,Cell - ADC_V2, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_202009/ADC_V2/verilogams/verilog.vams lib:EMG_202009 cell:ADC_V2 view:verilogams"
+

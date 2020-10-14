@@ -1,0 +1,7 @@
+("analogLib" "idc" "spectre") "isource"
+("analogLib" "vpulse" "spectre") "vsource"
+("EMG_202009" "MUX_16" "verilogams") "MUX_16"
+("EMG_202009" "ADC_V2" "verilogams") "ADC_V2"
+("EMG_202009" "Counter_4bit" "functional") "Counter_4bit"
+("EMG_202009" "DAC" "verilogams") "DAC"
+("analogLib" "vdc" "spectre") "vsource"

@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I1n" "analogLib_idc_spectre"
+"V0n V1n V2n" "analogLib_vdc_spectre"
+"V3n V4n" "analogLib_vpulse_spectre"
+"V5n" "analogLib_vsin_spectre"
+"I0n" "EMG_202009_ADC_V2_verilogams"
+"I4n" "EMG_202009_DAC_verilogams"

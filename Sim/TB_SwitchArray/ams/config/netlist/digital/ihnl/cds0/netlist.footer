@@ -1,0 +1,25 @@
+
+SwitchArray I0 ( .Col(Col), .BI_In(BI_In), .BI_Ip(BI_Ip), 
+    .BI_Vn(BI_Vn), .BI_Vp(BI_Vp), .EMG_Ch1(net33), .EMG_Ch2(net32), 
+    .EMG_Ch3(net31), .EMG_Ch4(net30), .EMG_Ch5(net29), .EMG_Ch6(net28), 
+    .EMG_Ch7(net27), .EMG_Ch8(net26), .EMG_Ch9(net25), 
+    .EMG_Ch10(net24), .EMG_Ch11(net23), .EMG_Ch12(net22), 
+    .EMG_Ch13(net21), .EMG_Ch14(net20), .EMG_Ch15(net19), 
+    .EMG_Ch16(net18), .EMG_Ch17(net17), .EMG_Ch18(net16), 
+    .EMG_Ch19(net15), .EMG_Ch20(net14), .EMG_Ch21(net13), 
+    .EMG_Ch22(net12), .EMG_Ch23(net11), .EMG_Ch24(net10), 
+    .EMG_Ch25(net9), .EMG_Ch26(net8), .EMG_Ch27(net7), .EMG_Ch28(net6), 
+    .EMG_Ch29(net5), .EMG_Ch30(net4), .EMG_Ch31(net3), .EMG_Ch32(net2), 
+    .Dir(cds_globals.\gnd! ), .Dis(cds_globals.\gnd! ), .E00(V_E00), 
+    .E01(V_E01), .E02(V_E02), .E03(V_E03), .E04(V_E04), .E05(V_E05), 
+    .E06(V_E06), .E07(V_E07), .E10(V_E10), .E11(V_E11), .E12(V_E12), 
+    .E13(V_E13), .E14(V_E14), .E15(V_E15), .E16(V_E16), .E17(V_E17), 
+    .E20(V_E20), .E21(V_E21), .E22(V_E22), .E23(V_E23), .E24(V_E24), 
+    .E25(V_E25), .E26(V_E26), .E27(V_E27), .E30(V_E30), .E31(V_E31), 
+    .E32(V_E32), .E33(V_E33), .E34(V_E34), .E35(V_E35), .E36(V_E36), 
+    .E37(V_E37), .Mode(cds_globals.\gnd! ), .Row(Row), .Vdda(Vdda), 
+    .Vssa(cds_globals.\gnd! ));
+
+Counter_Nbit I38 ( .out(Col), .Clk(CLK), .Reset(cds_globals.\gnd! ));
+
+endmodule

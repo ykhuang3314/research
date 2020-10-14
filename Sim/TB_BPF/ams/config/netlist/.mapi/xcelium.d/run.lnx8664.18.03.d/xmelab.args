@@ -1,0 +1,33 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/TB_BPF/ams/config/netlist/.mapi//xcelium.d/AMSD/ahdlSimDB"
+-amsdlibdir
+/home/ykhuang/research/Sim/TB_BPF/ams/config/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/BPF_V2/verilogams/verilog.vams lib:EMG_202009 cell:BPF_V2 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_202009/BPF/verilogams/verilog.vams lib:EMG_202009 cell:BPF view:verilogams"
+-MESSAGES
+-AMSELAB
+-XLMODE
+/home/ykhuang/research/Sim/TB_BPF/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+/home/ykhuang/research/Sim/TB_BPF/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+/home/ykhuang/research/Sim/TB_BPF/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

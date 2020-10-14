@@ -1,0 +1,12 @@
+netMap,*TB_SwitchArray,*Row<1>,*Row[1]
+netMap,*TB_SwitchArray,*Row<0>,*Row[0]
+netMap,*TB_SwitchArray,*Col<2>,*Col[2]
+netMap,*TB_SwitchArray,*Col<1>,*Col[1]
+netMap,*TB_SwitchArray,*Col<0>,*Col[0]
+netMap,*TB_SwitchArray,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_SwitchArray,*I0,*I0
+instMaster,*TB_SwitchArray,*I0,*EMG_202009_SwitchArray_verilogams
+instMap,*TB_SwitchArray,*I38,*I38
+instMaster,*TB_SwitchArray,*I38,*EMG_202009_Counter_Nbit_functional
+cellMap,*TB_SwitchArray,*TB_SwitchArray,*EMG_202009,*schematic
+topMap,*TB_SwitchArray

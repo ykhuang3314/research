@@ -1,0 +1,4 @@
+("analogLib" "vcvs" "spectre" _spectreVCPrim) t
+("analogLib" "vsin" "spectre" spectreSrcPrim) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("EMG_202009" "IA" "verilogams" nil) nil

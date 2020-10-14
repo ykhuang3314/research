@@ -1,0 +1,6 @@
+
+Single_Channel I0 ( .Vssa(cds_globals.\gnd! ), .Vdda(vdda), 
+    .Vout(Vout), .Gain_Sel(cds_globals.\gnd! ), .Vinn(net8), 
+    .Vinp(net7));
+
+endmodule

@@ -1,0 +1,5 @@
+("EMG_202009" "AnalogMux_4" "verilogams" "verilogams") nil
+("EMG_202009" "TB_Mux4" "schematic" "schematic") nil
+("EMG_202009" "Digital_Stimuli_Mux4" "functional" "functional") nil
+("analogLib" "vsource" "spectre" "spectre") (("V3" ("EMG_202009" "TB_Mux4" "schematic" "schematic")) ("V0" ("EMG_202009" "TB_Mux4" "schematic" "schematic")) ("V1" ("EMG_202009" "TB_Mux4" "schematic" "schematic")) ("V2" ("EMG_202009" "TB_Mux4" "schematic" "schematic")) ("V6" ("EMG_202009" "TB_Mux4" "schematic" "schematic")) ("V7" ("EMG_202009" "TB_Mux4" "schematic" "schematic")))
+("analogLib" "vdc" "spectre" "spectre") (("V4" ("EMG_202009" "TB_Mux4" "schematic" "schematic")))

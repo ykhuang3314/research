@@ -1,0 +1,6 @@
+("analogLib" "vcvs" "spectre") _spectreVCPrim
+("analogLib" "vpulse" "spectre") spectreSrcPrim
+("analogLib" "vsin" "spectre") spectreSrcPrim
+("EMG_202009" "MultiChannel_16" "schematic") nil
+("analogLib" "vdc" "spectre") spectreSrcPrim
+("EMG_202009" "Single_Channel" "schematic") nil

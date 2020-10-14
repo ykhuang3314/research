@@ -1,0 +1,4 @@
+("analogLib" "vpulse" "spectre") "vsource"
+("EMG_202009" "Counter_Nbit" "functional") "Counter_Nbit"
+("EMG_202009" "SwitchArray" "verilogams") "SwitchArray"
+("analogLib" "vdc" "spectre") "vsource"

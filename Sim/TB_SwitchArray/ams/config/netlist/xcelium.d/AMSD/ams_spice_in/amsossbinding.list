@@ -1,0 +1,4 @@
+designtop="EMG_202009.TB_SwitchArray:schematic"
+cell="vsource" view="analogtext" 
+cell="Counter_Nbit" lib="EMG_202009" view="functional" 
+cell="SwitchArray" lib="EMG_202009" view="verilogams" 

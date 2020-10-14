@@ -1,0 +1,4 @@
+
+modelParameter info what=models where=rawfile 
+element info what=inst where=rawfile 
+outputParameter info what=output where=rawfile 

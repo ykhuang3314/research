@@ -1,0 +1,13 @@
+( ( defbus
+( "Row" 1 0  "Row" 1 0  )
+( "Col" 2 0  "Col" 2 0  )
+ )
+( net
+( "gnd!" "cds_globals.\\gnd! " )
+( "Col<1>" "Col[1]" )
+( "Row<1>" "Row[1]" )
+( "Col<2>" "Col[2]" )
+( "Row<0>" "Row[0]" )
+( "Col<0>" "Col[0]" )
+ )
+ )

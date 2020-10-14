@@ -1,0 +1,49 @@
+//Verilog-AMS HDL for "EMG_202009", "ADC" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module ADC (Dout, Vin, Clk, Vdda, Vssa);
+
+parameter integer bits = 12 from [1:16];			// ADC resolution
+parameter real V_fullscale = 1.5;					// input signal range from 0 to fullscale
+parameter real td = 0;							// delay from clock edge to output
+parameter real tt = 0;							// transition time of output
+parameter real Vdd = 1.8;							// voltage level of logic high
+parameter real thresh = Vdd/2;					// logic thrshold level
+parameter integer dir = 1 from [-1:1] exclude 0;	// 1:rising edge, -1:falling edge  
+
+output [bits-1:0] Dout;
+input Vin, Clk, Vdda, Vssa;
+
+electrical Vin, Clk, Vdda, Vssa;
+electrical [bits-1:0] Dout;
+
+real sample, midpoint;
+integer result[bits-1:0];
+genvar i;
+
+analog begin
+	@(cross(V(Clk, Vssa) - thresh, +1) or initial_step) begin // rising edge trigger
+		sample = V(Vin, Vssa);
+		midpoint = V_fullscale/2;
+		for(i=bits-1; i>=0; i=i-1) begin
+			if(sample > midpoint) begin			
+				result[i] = Vdd;
+				sample = sample - midpoint;
+			end 
+			else begin
+				result[i] = 0;
+			end
+			sample = 2*sample;
+		end
+	end
+	
+	for(i=0; i<bits; i=i+1) begin
+		V(Dout[i]) <+ transition(result[i], td, tt);
+	end
+end	
+
+endmodule
+
+

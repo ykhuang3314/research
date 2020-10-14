@@ -1,0 +1,5 @@
+netMap,*TB_Single_Channel,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_Single_Channel,*I0,*I0
+instMaster,*TB_Single_Channel,*I0,*EMG_202009_Single_Channel_schematic
+cellMap,*TB_Single_Channel,*TB_Single_Channel,*EMG_202009,*schematic
+topMap,*TB_Single_Channel

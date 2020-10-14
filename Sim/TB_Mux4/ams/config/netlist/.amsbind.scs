@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_202009.TB_Mux4:config
+// Created On: Sep 23 14:09:46 2020
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_202009.TB_Mux4:schematic"
+
+	config cell="AnalogMux_4" lib="EMG_202009" view="verilogams"
+	config cell="Digital_Stimuli_Mux4" lib="EMG_202009" view="functional"
+
+	config inst="TB_Mux4.V4" view="analogtext" parent="EMG_202009.TB_Mux4:schematic"
+	config inst="TB_Mux4.V0" view="analogtext" parent="EMG_202009.TB_Mux4:schematic"
+	config inst="TB_Mux4.V6" view="analogtext" parent="EMG_202009.TB_Mux4:schematic"
+	config inst="TB_Mux4.V1" view="analogtext" parent="EMG_202009.TB_Mux4:schematic"
+	config inst="TB_Mux4.V3" view="analogtext" parent="EMG_202009.TB_Mux4:schematic"
+	config inst="TB_Mux4.V7" view="analogtext" parent="EMG_202009.TB_Mux4:schematic"
+	config inst="TB_Mux4.V2" view="analogtext" parent="EMG_202009.TB_Mux4:schematic"
+ }

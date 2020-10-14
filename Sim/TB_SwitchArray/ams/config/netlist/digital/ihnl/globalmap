@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_SwitchArray/schematic EMG_202009/TB_SwitchArray/schematic/schematic/EMG_202009_TB_SwitchArray_config/1 TB_SwitchArray
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

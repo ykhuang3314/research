@@ -1,0 +1,7 @@
+netMap,*TB_BPF,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_BPF,*I0,*I0
+instMaster,*TB_BPF,*I0,*EMG_202009_BPF_verilogams
+instMap,*TB_BPF,*I3,*I3
+instMaster,*TB_BPF,*I3,*EMG_202009_BPF_V2_verilogams
+cellMap,*TB_BPF,*TB_BPF,*EMG_202009,*schematic
+topMap,*TB_BPF

@@ -1,0 +1,9 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/TB_ADC_V2/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/TB_ADC_V2/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/TB_ADC_V2/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/DAC/verilogams/verilog.vams lib:EMG_202009 cell:DAC view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/ADC_V2/verilogams/verilog.vams lib:EMG_202009 cell:ADC_V2 view:verilogams"
+/home/ykhuang/research/Sim/TB_ADC_V2/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/TB_ADC_V2/ams/config/netlist/.mapi//dummyMapi.vhms

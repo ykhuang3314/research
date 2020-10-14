@@ -1,0 +1,36 @@
+// Library - EMG_202009, Cell - TB_MultiplexingADC_v2, View - schematic
+// LAST TIME SAVED: Sep 30 15:17:38 2020
+// NETLIST TIME: Sep 30 15:17:49 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="TB_MultiplexingADC_v2", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Sep 30 15:17:38 2020" *)
+
+module TB_MultiplexingADC_v2 ();
+
+// Buses in the design
+
+wire  [11:0]  Dout;
+
+wire  [3:0]  sel;
+
+
+Counter_4bit I4 ( .Q(sel), .Clk(Start), .Reset(cds_globals.\gnd! ));
+
+ADC_V2 I1 ( .Dout(Dout), .EoC(EoC), .Clk(CLK), .En(Vdda), 
+    .Ibias(Ibias), .Start(Start), .Vdda(Vdda), .Vin(Ain), 
+    .VrefH(VrefH), .VrefL(VrefL), .Vssa(cds_globals.\gnd! ));
+
+DAC #( .V_fullscale(1.5), .thresh(0.9) ) I2 ( .Vout(Vout), .Clk(CLK), 
+    .Din(Dout), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ));
+
+MUX_16 I0 ( .Vout(Ain), .Clk(Start), .Vdda(Vdda), .Vin0(Vin0), 
+    .Vin1(Vin1), .Vin2(Vin2), .Vin3(Vin3), .Vin4(Vin4), .Vin5(Vin5), 
+    .Vin6(Vin6), .Vin7(Vin7), .Vin8(Vin8), .Vin9(Vin9), .Vin10(Vin10), 
+    .Vin11(Vin11), .Vin12(Vin12), .Vin13(Vin13), .Vin14(Vin14), 
+    .Vin15(Vin15), .Vssa(cds_globals.\gnd! ), .sel(sel));
+
+endmodule

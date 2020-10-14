@@ -1,0 +1,14 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/TB_HDEMG_AFE_16/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/TB_HDEMG_AFE_16/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/TB_HDEMG_AFE_16/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/DAC/verilogams/verilog.vams lib:EMG_202009 cell:DAC view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/Counter_4bit/functional/verilog.v lib:EMG_202009 cell:Counter_4bit view:functional"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/ADC/verilogams/verilog.vams lib:EMG_202009 cell:ADC view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/MUX_16/verilogams/verilog.vams lib:EMG_202009 cell:MUX_16 view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/VGA/verilogams/verilog.vams lib:EMG_202009 cell:VGA view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/BPF/verilogams/verilog.vams lib:EMG_202009 cell:BPF view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/IA/verilogams/verilog.vams lib:EMG_202009 cell:IA view:verilogams"
+/home/ykhuang/research/Sim/TB_HDEMG_AFE_16/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/TB_HDEMG_AFE_16/ams/config/netlist/.mapi//dummyMapi.vhms

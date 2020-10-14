@@ -1,0 +1,12 @@
+CADENCE IHNL04120
+$model
+EMG_202009/MultiChannel_16/schematic EMG_202009/MultiChannel_16/schematic/schematic/EMG_202009_TB_HDEMG_AFE_16_config/0 MultiChannel_16
+EMG_202009/TB_HDEMG_AFE_16/schematic EMG_202009/TB_HDEMG_AFE_16/schematic/schematic/EMG_202009_TB_HDEMG_AFE_16_config/1 TB_HDEMG_AFE_16
+EMG_202009/Single_Channel/schematic EMG_202009/Single_Channel/schematic/schematic/EMG_202009_TB_HDEMG_AFE_16_config/0 Single_Channel
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+Vcm Vcm
+$endparam

@@ -1,0 +1,21 @@
+// Library - EMG_202009, Cell - TB_BPF, View - schematic
+// LAST TIME SAVED: Oct 13 23:05:42 2020
+// NETLIST TIME: Oct 13 23:48:24 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="TB_BPF", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Oct 13 23:05:42 2020" *)
+
+module TB_BPF ();
+
+
+BPF I0 ( .Vout(Vout), .Vdda(Vdda), .Vin(Vin), .Vssa(cds_globals.\gnd! 
+    ));
+
+BPF_V2 I3 ( .Vout(Vout2), .Ibias(Ibias), .Vdda(Vdda), .Vin(Vin), 
+    .Vssa(cds_globals.\gnd! ));
+
+endmodule

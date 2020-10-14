@@ -1,0 +1,7 @@
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("analogLib" "vpulse" "spectre" spectreSrcPrim) t
+("EMG_202009" "PGA_3Bit" "verilogams" nil) nil
+("EMG_202009" "VGA" "verilogams" nil) nil
+("EMG_202009" "Counter_Nbit" "functional" nil) nil
+("analogLib" "vsin" "spectre" spectreSrcPrim) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t

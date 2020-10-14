@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - EMG_202009 ,Cell - VGA, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_202009/VGA/verilogams/verilog.vams lib:EMG_202009 cell:VGA view:verilogams"
+
+// HDL file for Lib - EMG_202009 ,Cell - BPF, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_202009/BPF/verilogams/verilog.vams lib:EMG_202009 cell:BPF view:verilogams"
+
+// HDL file for Lib - EMG_202009 ,Cell - IA, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_202009/IA/verilogams/verilog.vams lib:EMG_202009 cell:IA view:verilogams"
+

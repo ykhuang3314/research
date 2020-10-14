@@ -1,0 +1,1 @@
+EMG_202009.TB_MultiplexingADC_v2_config.lnx8664.18.03.d

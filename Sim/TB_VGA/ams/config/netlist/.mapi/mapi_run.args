@@ -1,0 +1,10 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/TB_VGA/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/TB_VGA/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/TB_VGA/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/Counter_Nbit/functional/verilog.v lib:EMG_202009 cell:Counter_Nbit view:functional"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/PGA_3Bit/verilogams/verilog.vams lib:EMG_202009 cell:PGA_3Bit view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_202009/VGA/verilogams/verilog.vams lib:EMG_202009 cell:VGA view:verilogams"
+/home/ykhuang/research/Sim/TB_VGA/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/TB_VGA/ams/config/netlist/.mapi//dummyMapi.vhms

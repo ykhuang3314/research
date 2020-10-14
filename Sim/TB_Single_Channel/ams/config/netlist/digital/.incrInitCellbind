@@ -1,0 +1,8 @@
+("analogLib" "vcvs" "spectre" "spectre") "USED"
+("EMG_202009" "BPF" "verilogams" "verilogams") "USED"
+("EMG_202009" "VGA" "verilogams" "verilogams") "USED"
+("analogLib" "vsource" "spectre" "spectre") "USED"
+("analogLib" "vsin" "spectre" "spectre") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"
+("EMG_202009" "Single_Channel" "schematic" "schematic") "USED"
+("EMG_202009" "IA" "verilogams" "verilogams") "USED"

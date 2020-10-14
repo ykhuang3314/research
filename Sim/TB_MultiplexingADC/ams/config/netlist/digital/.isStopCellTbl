@@ -1,0 +1,6 @@
+("analogLib" "vpulse" "spectre") t
+("EMG_202009" "MUX_16" "verilogams") t
+("EMG_202009" "Counter_4bit" "functional") t
+("EMG_202009" "ADC" "verilogams") t
+("EMG_202009" "DAC" "verilogams") t
+("analogLib" "vdc" "spectre") t

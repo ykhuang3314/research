@@ -1,0 +1,14 @@
+cellMap,*TB_VGA,*TB_VGA,*null,*null
+topMap,*TB_VGA
+netMap,*TB_VGA,*Gain_Sel<2>,*Gain_Sel_2
+netMap,*TB_VGA,*Gain_Sel<1>,*Gain_Sel_1
+netMap,*TB_VGA,*Gain_Sel<0>,*Gain_Sel_0
+netMap,*TB_VGA,*gnd!,*0
+instMap,*TB_VGA,*V0,*V0
+instMaster,*TB_VGA,*V0,*analogLib_vsin_spectre,*vsource
+instMap,*TB_VGA,*V1,*V1
+instMaster,*TB_VGA,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*TB_VGA,*V2,*V2
+instMaster,*TB_VGA,*V2,*analogLib_vpulse_spectre,*vsource
+instMap,*TB_VGA,*I6,*I6
+instMaster,*TB_VGA,*I6,*analogLib_idc_spectre,*isource

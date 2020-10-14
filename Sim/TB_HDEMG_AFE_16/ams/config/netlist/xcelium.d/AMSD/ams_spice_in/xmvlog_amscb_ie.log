@@ -1,0 +1,30 @@
+
+---
+
+file: ./xcelium.d/AMSD/ams_spice_in/amscb_ie_crules.vams
+	connect worklib.logic_cr:vams
+		errors: 0, warnings: 0
+
+---
+
+file: ./xcelium.d/AMSD/ams_spice_in/amscb_ie_crules.vams
+	connect worklib.logic_cr:vams
+		errors: 0, warnings: 0
+
+---
+
+file: ./xcelium.d/AMSD/ams_spice_in/amscb_ie_crules.vams
+	connect worklib.logic_cr:vams
+		errors: 0, warnings: 0
+
+---
+
+file: ./xcelium.d/AMSD/ams_spice_in/amscb_ie_crules.vams
+	connect worklib.logic_cr:vams
+		errors: 0, warnings: 0
+
+---
+
+file: ./xcelium.d/AMSD/ams_spice_in/amscb_ie_crules.vams
+	connect worklib.logic_cr:vams
+		errors: 0, warnings: 0

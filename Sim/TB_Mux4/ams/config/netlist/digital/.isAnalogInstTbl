@@ -1,0 +1,4 @@
+("EMG_202009" "AnalogMux_4" "verilogams" nil) nil
+("EMG_202009" "Digital_Stimuli_Mux4" "functional" nil) nil
+("analogLib" "vsource" "spectre" spectreVandISourcePrim) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t

@@ -1,0 +1,5 @@
+("EMG_202009" "BPF" "verilogams" "verilogams") nil
+("EMG_202009" "BPF_V2" "verilogams" "verilogams") nil
+("analogLib" "vsin" "spectre" "spectre") nil
+("analogLib" "vdc" "spectre" "spectre") nil
+("EMG_202009" "TB_BPF" "schematic" "schematic") nil

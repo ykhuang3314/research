@@ -1,0 +1,4 @@
+("EMG_202009" "BPF" "verilogams" "verilogams") "USED"
+("EMG_202009" "BPF_V2" "verilogams" "verilogams") "USED"
+("analogLib" "vsin" "spectre" "spectre") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"

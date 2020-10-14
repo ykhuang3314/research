@@ -1,0 +1,4 @@
+("analogLib" "vpulse" "spectre" spectreSrcPrim) t
+("EMG_202009" "Counter_Nbit" "functional" nil) nil
+("EMG_202009" "SwitchArray" "verilogams" nil) nil
+("analogLib" "vdc" "spectre" spectreSrcPrim) t

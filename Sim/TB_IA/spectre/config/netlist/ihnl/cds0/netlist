@@ -1,0 +1,12 @@
+
+// Library name: EMG_202009
+// Cell name: TB_IA
+// View name: schematic
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+// pspice dspf verilogams
+I0 (Voutp Voutn net8 net9 Vdda 0) IA Vcm=0.9 Gain=25
+V1 (Vin_CM 0) vsource dc=0 type=dc
+V0 (Vdda 0) vsource dc=1.8 type=dc
+E1 (net9 Vin_CM vsig 0) vcvs gain=-0.5
+E0 (net8 Vin_CM vsig 0) vcvs gain=0.5
+V2 (vsig 0) vsource mag=10m type=sine freq=100

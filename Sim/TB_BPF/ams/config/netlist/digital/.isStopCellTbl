@@ -1,0 +1,4 @@
+("EMG_202009" "BPF" "verilogams") t
+("EMG_202009" "BPF_V2" "verilogams") t
+("analogLib" "vsin" "spectre") t
+("analogLib" "vdc" "spectre") t

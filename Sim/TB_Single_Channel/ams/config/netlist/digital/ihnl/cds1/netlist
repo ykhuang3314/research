@@ -1,0 +1,19 @@
+// Library - EMG_202009, Cell - TB_Single_Channel, View - schematic
+// LAST TIME SAVED: Sep 22 15:38:34 2020
+// NETLIST TIME: Sep 22 15:38:53 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="TB_Single_Channel", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Sep 22 15:38:34 2020" *)
+
+module TB_Single_Channel ();
+
+
+Single_Channel I0 ( .Vssa(cds_globals.\gnd! ), .Vdda(vdda), 
+    .Vout(Vout), .Gain_Sel(cds_globals.\gnd! ), .Vinn(net8), 
+    .Vinp(net7));
+
+endmodule

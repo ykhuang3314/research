@@ -1,0 +1,3 @@
+("analogLib" "vcvs" "spectre") _spectreVCPrim
+("analogLib" "vsin" "spectre") spectreSrcPrim
+("analogLib" "vdc" "spectre") spectreSrcPrim

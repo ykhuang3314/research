@@ -1,0 +1,33 @@
+( global ( resolution_type basic ) )
+
+( net TB_IA.Vout TB_IA.Vout analog electrical )
+( net TB_IA.I0.Vout TB_IA.Vout analog electrical )
+
+( net TB_IA.net8 TB_IA.net8 analog electrical )
+( net TB_IA.I0.Vinp TB_IA.net8 analog electrical )
+
+( net TB_IA.net9 TB_IA.net9 analog electrical )
+( net TB_IA.I0.Vinn TB_IA.net9 analog electrical )
+
+( net TB_IA.Vdda TB_IA.Vdda analog electrical )
+( net TB_IA.I0.Vdda TB_IA.Vdda analog electrical )
+
+( net TB_IA.I0.Vssa TB_IA.I0.Vssa analog electrical )
+( net cds_globals.\gnd!  TB_IA.I0.Vssa analog electrical )
+
+( net TB_IA.I0.Vin TB_IA.I0.Vin analog None )
+
+( net TB_IA.I0.Vdiff TB_IA.I0.Vdiff analog None )
+
+( net TB_IA.Vin_CM TB_IA.Vin_CM analog electrical )
+
+( net TB_IA.vsig TB_IA.vsig analog electrical )
+
+(instance TB_IA.I0 analog)
+(instance TB_IA.V1 analog)
+(instance TB_IA.V0 analog)
+(instance TB_IA.E1 analog)
+(instance TB_IA.E0 analog)
+(instance TB_IA.V2 analog)
+(instance TB_IA analog)
+(instance cds_globals analog)

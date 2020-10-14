@@ -1,0 +1,85 @@
+( global ( resolution_type basic ) )
+
+( net TB_ADC.Dout[0] TB_ADC.Dout[0] analog electrical )
+( net TB_ADC.I4.Din[0] TB_ADC.Dout[0] analog electrical )
+( net TB_ADC.I0.Dout[0] TB_ADC.Dout[0] analog electrical )
+
+( net TB_ADC.Dout[1] TB_ADC.Dout[1] analog electrical )
+( net TB_ADC.I4.Din[1] TB_ADC.Dout[1] analog electrical )
+( net TB_ADC.I0.Dout[1] TB_ADC.Dout[1] analog electrical )
+
+( net TB_ADC.Dout[2] TB_ADC.Dout[2] analog electrical )
+( net TB_ADC.I4.Din[2] TB_ADC.Dout[2] analog electrical )
+( net TB_ADC.I0.Dout[2] TB_ADC.Dout[2] analog electrical )
+
+( net TB_ADC.Dout[3] TB_ADC.Dout[3] analog electrical )
+( net TB_ADC.I4.Din[3] TB_ADC.Dout[3] analog electrical )
+( net TB_ADC.I0.Dout[3] TB_ADC.Dout[3] analog electrical )
+
+( net TB_ADC.Dout[4] TB_ADC.Dout[4] analog electrical )
+( net TB_ADC.I4.Din[4] TB_ADC.Dout[4] analog electrical )
+( net TB_ADC.I0.Dout[4] TB_ADC.Dout[4] analog electrical )
+
+( net TB_ADC.Dout[5] TB_ADC.Dout[5] analog electrical )
+( net TB_ADC.I4.Din[5] TB_ADC.Dout[5] analog electrical )
+( net TB_ADC.I0.Dout[5] TB_ADC.Dout[5] analog electrical )
+
+( net TB_ADC.Dout[6] TB_ADC.Dout[6] analog electrical )
+( net TB_ADC.I4.Din[6] TB_ADC.Dout[6] analog electrical )
+( net TB_ADC.I0.Dout[6] TB_ADC.Dout[6] analog electrical )
+
+( net TB_ADC.Dout[7] TB_ADC.Dout[7] analog electrical )
+( net TB_ADC.I4.Din[7] TB_ADC.Dout[7] analog electrical )
+( net TB_ADC.I0.Dout[7] TB_ADC.Dout[7] analog electrical )
+
+( net TB_ADC.Dout[8] TB_ADC.Dout[8] analog electrical )
+( net TB_ADC.I4.Din[8] TB_ADC.Dout[8] analog electrical )
+( net TB_ADC.I0.Dout[8] TB_ADC.Dout[8] analog electrical )
+
+( net TB_ADC.Dout[9] TB_ADC.Dout[9] analog electrical )
+( net TB_ADC.I4.Din[9] TB_ADC.Dout[9] analog electrical )
+( net TB_ADC.I0.Dout[9] TB_ADC.Dout[9] analog electrical )
+
+( net TB_ADC.Dout[10] TB_ADC.Dout[10] analog electrical )
+( net TB_ADC.I4.Din[10] TB_ADC.Dout[10] analog electrical )
+( net TB_ADC.I0.Dout[10] TB_ADC.Dout[10] analog electrical )
+
+( net TB_ADC.Dout[11] TB_ADC.Dout[11] analog electrical )
+( net TB_ADC.I4.Din[11] TB_ADC.Dout[11] analog electrical )
+( net TB_ADC.I0.Dout[11] TB_ADC.Dout[11] analog electrical )
+
+( net TB_ADC.Vin TB_ADC.Vin analog electrical )
+( net TB_ADC.I0.Vin TB_ADC.Vin analog electrical )
+
+( net TB_ADC.CLK TB_ADC.CLK analog electrical )
+( net TB_ADC.I4.Clk TB_ADC.CLK analog electrical )
+( net TB_ADC.I0.Clk TB_ADC.CLK analog electrical )
+
+( net TB_ADC.Vdda TB_ADC.Vdda analog electrical )
+( net TB_ADC.I4.Vdda TB_ADC.Vdda analog electrical )
+( net TB_ADC.I0.Vdda TB_ADC.Vdda analog electrical )
+
+( net TB_ADC.I0.Vssa TB_ADC.I0.Vssa analog electrical )
+( net cds_globals.\gnd!  TB_ADC.I0.Vssa analog electrical )
+( net TB_ADC.I4.Vssa TB_ADC.I0.Vssa analog electrical )
+
+( net TB_ADC.I0.sample TB_ADC.I0.sample analog None )
+
+( net TB_ADC.I0.midpoint TB_ADC.I0.midpoint analog None )
+
+( net TB_ADC.I0.result TB_ADC.I0.result analog None )
+
+( net TB_ADC.Vout TB_ADC.Vout analog electrical )
+( net TB_ADC.I4.Vout TB_ADC.Vout analog electrical )
+
+( net TB_ADC.I4.aout TB_ADC.I4.aout analog None )
+
+( net TB_ADC.I4.weight TB_ADC.I4.weight analog None )
+
+(instance TB_ADC.I0 analog)
+(instance TB_ADC.I4 analog)
+(instance TB_ADC.V0 analog)
+(instance TB_ADC.V1 analog)
+(instance TB_ADC.V2 analog)
+(instance TB_ADC analog)
+(instance cds_globals analog)

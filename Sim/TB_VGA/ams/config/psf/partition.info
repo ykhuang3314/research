@@ -1,0 +1,76 @@
+( global ( resolution_type basic ) )
+
+( net TB_VGA.Vout TB_VGA.Vout analog electrical )
+( net TB_VGA.I0.Vout TB_VGA.Vout analog electrical )
+
+( net TB_VGA.Vin TB_VGA.Vin analog electrical )
+( net TB_VGA.I3.Vin TB_VGA.Vin analog electrical )
+( net TB_VGA.I0.Vin TB_VGA.Vin analog electrical )
+
+( net TB_VGA.Vdda TB_VGA.Vdda analog electrical )
+( net TB_VGA.I3.Vdda TB_VGA.Vdda analog electrical )
+( net TB_VGA.I0.Vdda TB_VGA.Vdda analog electrical )
+
+( net TB_VGA.I0.Vssa TB_VGA.I0.Vssa analog/mixed electrical )
+( net cds_globals.\gnd!  TB_VGA.I0.Vssa analog/mixed electrical )
+( net TB_VGA.I5.Reset TB_VGA.I0.Vssa digital/mixed logic )
+( net TB_VGA.I3.Vssa TB_VGA.I0.Vssa analog/mixed electrical )
+
+( net TB_VGA.CLK TB_VGA.CLK analog/mixed electrical )
+( net TB_VGA.I5.Clk TB_VGA.CLK digital/mixed logic )
+( net TB_VGA.I0.Gain_Sel TB_VGA.CLK digital/mixed logic )
+
+( net TB_VGA.I0.gain TB_VGA.I0.gain digital logic (type rnm) )
+
+( net TB_VGA.I0.out TB_VGA.I0.out analog None )
+
+( net TB_VGA.I0.in TB_VGA.I0.in analog None )
+
+( net TB_VGA.Vout2 TB_VGA.Vout2 analog electrical )
+( net TB_VGA.I3.Vout TB_VGA.Vout2 analog electrical )
+
+( net TB_VGA.Ibias TB_VGA.Ibias analog electrical )
+( net TB_VGA.I3.Ibias TB_VGA.Ibias analog electrical )
+
+( net TB_VGA.Gain_Sel TB_VGA.Gain_Sel digital logic )
+( net TB_VGA.I5.out TB_VGA.Gain_Sel digital logic )
+( net TB_VGA.I3.Gain_Sel TB_VGA.Gain_Sel digital logic )
+
+( net TB_VGA.I3.gain TB_VGA.I3.gain digital logic )
+
+( net TB_VGA.I3.out TB_VGA.I3.out analog None )
+
+( net TB_VGA.I3.in TB_VGA.I3.in analog None )
+
+( connect
+   connectLib.E2L_2:module
+   TB_VGA.CLK
+   electrical
+   analog
+   (
+    ( TB_VGA.I0.Gain_Sel logic digital )
+    ( TB_VGA.I5.Clk logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_VGA.I5.Reset logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+(instance TB_VGA.I0 mixed/dmixed (type rnm))
+(instance TB_VGA.I3 mixed)
+(instance TB_VGA.I5 digital)
+(instance TB_VGA.V0 analog)
+(instance TB_VGA.V1 analog)
+(instance TB_VGA.V2 analog)
+(instance TB_VGA.I6 analog)
+(instance TB_VGA mixed/dmixed (type rnm))
+(instance cds_globals analog)

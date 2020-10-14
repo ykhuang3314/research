@@ -1,0 +1,13 @@
+cellMap,*TB_IA,*TB_IA,*null,*null
+topMap,*TB_IA
+netMap,*TB_IA,*gnd!,*0
+instMap,*TB_IA,*V1,*V1
+instMaster,*TB_IA,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*TB_IA,*V0,*V0
+instMaster,*TB_IA,*V0,*analogLib_vdc_spectre,*vsource
+instMap,*TB_IA,*E1,*E1
+instMaster,*TB_IA,*E1,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_IA,*E0,*E0
+instMaster,*TB_IA,*E0,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_IA,*V2,*V2
+instMaster,*TB_IA,*V2,*analogLib_vsin_spectre,*vsource

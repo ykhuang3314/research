@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"V0n" "analogLib_vsin_spectre"
+"V1n" "analogLib_vdc_spectre"
+"I0n" "EMG_202009_BPF_verilogams"
+"I3n" "EMG_202009_BPF_V2_verilogams"

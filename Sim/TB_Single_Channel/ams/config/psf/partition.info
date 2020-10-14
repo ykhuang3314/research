@@ -1,0 +1,82 @@
+( global ( resolution_type basic ) )
+
+( net TB_Single_Channel.I0.net15 TB_Single_Channel.I0.net15 analog electrical )
+( net TB_Single_Channel.I0.I1.Vin TB_Single_Channel.I0.net15 analog electrical )
+( net TB_Single_Channel.I0.I0.Vout TB_Single_Channel.I0.net15 analog electrical )
+
+( net TB_Single_Channel.net7 TB_Single_Channel.net7 analog electrical )
+( net TB_Single_Channel.I0.Vinp TB_Single_Channel.net7 analog electrical )
+( net TB_Single_Channel.I0.I0.Vinp TB_Single_Channel.net7 analog electrical )
+
+( net TB_Single_Channel.net8 TB_Single_Channel.net8 analog electrical )
+( net TB_Single_Channel.I0.Vinn TB_Single_Channel.net8 analog electrical )
+( net TB_Single_Channel.I0.I0.Vinn TB_Single_Channel.net8 analog electrical )
+
+( net TB_Single_Channel.vdda TB_Single_Channel.vdda analog electrical )
+( net TB_Single_Channel.I0.Vdda TB_Single_Channel.vdda analog electrical )
+( net TB_Single_Channel.I0.I2.Vdda TB_Single_Channel.vdda analog electrical )
+( net TB_Single_Channel.I0.I1.Vdda TB_Single_Channel.vdda analog electrical )
+( net TB_Single_Channel.I0.I0.Vdda TB_Single_Channel.vdda analog electrical )
+
+( net TB_Single_Channel.I0.Vssa TB_Single_Channel.I0.Vssa analog/mixed electrical )
+( net TB_Single_Channel.I0.I2.Vssa TB_Single_Channel.I0.Vssa analog/mixed electrical )
+( net TB_Single_Channel.I0.I1.Vssa TB_Single_Channel.I0.Vssa analog/mixed electrical )
+( net TB_Single_Channel.I0.I0.Vssa TB_Single_Channel.I0.Vssa analog/mixed electrical )
+( net cds_globals.\gnd!  TB_Single_Channel.I0.Vssa analog/mixed electrical )
+( net TB_Single_Channel.I0.Gain_Sel TB_Single_Channel.I0.Vssa digital/mixed logic )
+( net TB_Single_Channel.I0.I2.Gain_Sel TB_Single_Channel.I0.Vssa digital/mixed logic )
+
+( net TB_Single_Channel.I0.I0.Vin TB_Single_Channel.I0.I0.Vin analog None )
+
+( net TB_Single_Channel.I0.I0.Vdiff TB_Single_Channel.I0.I0.Vdiff analog None )
+
+( net TB_Single_Channel.I0.net17 TB_Single_Channel.I0.net17 analog electrical )
+( net TB_Single_Channel.I0.I2.Vin TB_Single_Channel.I0.net17 analog electrical )
+( net TB_Single_Channel.I0.I1.Vout TB_Single_Channel.I0.net17 analog electrical )
+
+( net TB_Single_Channel.I0.I1.n1 TB_Single_Channel.I0.I1.n1 analog electrical )
+
+( net TB_Single_Channel.I0.I1.n2 TB_Single_Channel.I0.I1.n2 analog electrical )
+
+( net TB_Single_Channel.Vout TB_Single_Channel.Vout analog electrical )
+( net TB_Single_Channel.I0.Vout TB_Single_Channel.Vout analog electrical )
+( net TB_Single_Channel.I0.I2.Vout TB_Single_Channel.Vout analog electrical )
+
+( net TB_Single_Channel.I0.I2.gain TB_Single_Channel.I0.I2.gain digital logic (type rnm) )
+
+( net TB_Single_Channel.I0.I2.out TB_Single_Channel.I0.I2.out analog None )
+
+( net TB_Single_Channel.I0.I2.in TB_Single_Channel.I0.I2.in analog None )
+
+( net TB_Single_Channel.vsig TB_Single_Channel.vsig analog electrical )
+
+( net TB_Single_Channel.Vin_CM TB_Single_Channel.Vin_CM analog electrical )
+
+( net TB_Single_Channel.Vemg_raw TB_Single_Channel.Vemg_raw analog electrical )
+
+( net TB_Single_Channel.Vemg TB_Single_Channel.Vemg analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_Single_Channel.I0.Gain_Sel logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_Single_Channel.I0.I0 analog)
+(instance TB_Single_Channel.I0.I1 analog)
+(instance TB_Single_Channel.I0.I2 mixed/dmixed (type rnm))
+(instance TB_Single_Channel.I0 mixed/dmixed (type rnm))
+(instance TB_Single_Channel.V2 analog)
+(instance TB_Single_Channel.V1 analog)
+(instance TB_Single_Channel.V0 analog)
+(instance TB_Single_Channel.E2 analog)
+(instance TB_Single_Channel.E1 analog)
+(instance TB_Single_Channel.E0 analog)
+(instance TB_Single_Channel.V3 analog)
+(instance TB_Single_Channel mixed/dmixed (type rnm))
+(instance cds_globals analog)

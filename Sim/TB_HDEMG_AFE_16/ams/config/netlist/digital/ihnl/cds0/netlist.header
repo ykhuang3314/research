@@ -1,0 +1,17 @@
+// Library - EMG_202009, Cell - Single_Channel, View - schematic
+// LAST TIME SAVED: Sep 22 09:26:51 2020
+// NETLIST TIME: Sep 28 16:33:57 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="Single_Channel", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Sep 22 09:26:51 2020" *)
+
+module Single_Channel (Vout, Gain_Sel, Vdda, Vinn, Vinp, Vssa);
+
+output  Vout;
+
+input  Gain_Sel, Vdda, Vinn, Vinp, Vssa;
+

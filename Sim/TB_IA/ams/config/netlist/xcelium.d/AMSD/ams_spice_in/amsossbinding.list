@@ -1,0 +1,4 @@
+designtop="EMG_202009.TB_IA:schematic"
+cell="vcvs" view="analogtext" 
+cell="vsource" view="analogtext" 
+cell="IA" lib="EMG_202009" view="verilogams" 

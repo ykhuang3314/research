@@ -1,0 +1,4 @@
+("TB_BPF" "V1") ("analogLib" "vdc" "spectre" "spectre" "EMG_202009" "TB_BPF" "schematic")
+("TB_BPF" "I3") ("EMG_202009" "BPF_V2" "verilogams" "verilogams" "EMG_202009" "TB_BPF" "schematic")
+("TB_BPF" "V0") ("analogLib" "vsin" "spectre" "spectre" "EMG_202009" "TB_BPF" "schematic")
+("TB_BPF" "I0") ("EMG_202009" "BPF" "verilogams" "verilogams" "EMG_202009" "TB_BPF" "schematic")

@@ -1,0 +1,24 @@
+// Library - EMG_202009, Cell - TB_Mux4, View - schematic
+// LAST TIME SAVED: Sep 23 14:07:39 2020
+// NETLIST TIME: Sep 23 14:09:40 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="TB_Mux4", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Sep 23 14:07:39 2020" *)
+
+module TB_Mux4 ();
+
+// Buses in the design
+
+wire  [1:0]  sel;
+
+
+AnalogMux_4 I0 ( .Vout(Vout), .Vdda(Vdda), .Vin0(Vin0), .Vin1(Vin1), 
+    .Vin2(Vin2), .Vin3(Vin3), .Vssa(cds_globals.\gnd! ), .sel(sel));
+
+Digital_Stimuli_Mux4 I4 ( .Sel_Mux4(sel));
+
+endmodule

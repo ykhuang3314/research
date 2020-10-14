@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"V0n V1n V12n V16n V2n V20n V24n V28n V3n V32n V33n V34n V35n V36n V37n V38n V39n V4n V40n V44n V45n V46n V47n V48n V49n V5n V50n V51n V52n V53n V54n V55n V6n V7n V8n" "analogLib_vdc_spectre"
+"V9n" "analogLib_vpulse_spectre"
+"I0n" "EMG_202009_SwitchArray_verilogams"
+"I38n" "EMG_202009_Counter_Nbit_functional"

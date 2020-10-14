@@ -1,0 +1,16 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-SNAPSHOT
+EMG_202009.TB_Single_Channel:config

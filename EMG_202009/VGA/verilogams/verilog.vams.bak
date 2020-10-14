@@ -1,0 +1,35 @@
+//Verilog-AMS HDL for "EMG_202009", "VGA" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module VGA (Vout, Vin, Vdda, Vssa, Gain_Sel);
+
+output Vout;
+input Vin, Vdda, Vssa, Gain_Sel;
+
+logic Gain_Sel;
+electrical Vout, Vin, Vdda, Vssa;
+
+parameter real Vcm = 0.9;
+parameter real F_Pole = 1k from (0:inf);
+real gain = 25;
+real out, in;
+
+always@(Gain_Sel) begin
+	if(Gain_Sel == 1) begin
+		gain = 25;
+	end 
+	else begin
+		gain = 4;
+	end
+end
+
+analog begin
+	in = V(Vin, Vssa);
+	out = laplace_nd(gain*in, {1}, {1, 1/(`M_TWO_PI*F_Pole)});
+	
+	V(Vout, Vssa) <+ out + Vcm;
+end  
+
+endmodule

@@ -1,0 +1,5 @@
+CADENCE IHNL04123
+
+EMG_202009 Single_Channel schematic nil schematic EMG_202009 TB_HDEMG_AFE_16 config 0 cds0
+EMG_202009 MultiChannel_16 schematic nil schematic EMG_202009 TB_HDEMG_AFE_16 config 0 cds1
+EMG_202009 TB_HDEMG_AFE_16 schematic nil schematic EMG_202009 TB_HDEMG_AFE_16 config 1 cds2

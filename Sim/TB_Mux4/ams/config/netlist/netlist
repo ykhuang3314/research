@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  EMG_202009 
+cell: TB_Mux4 
+view: config 
+topCellLib: EMG_202009 

@@ -1,0 +1,14 @@
+("analogLib" "vcvs" "spectre" "spectre") nil
+("EMG_202009" "BPF" "verilogams" "verilogams") nil
+("analogLib" "vpulse" "spectre" "spectre") nil
+("EMG_202009" "VGA" "verilogams" "verilogams") nil
+("EMG_202009" "MUX_16" "verilogams" "verilogams") nil
+("EMG_202009" "Counter_4bit" "functional" "functional") nil
+("EMG_202009" "ADC" "verilogams" "verilogams") nil
+("EMG_202009" "DAC" "verilogams" "verilogams") nil
+("analogLib" "vsin" "spectre" "spectre") nil
+("EMG_202009" "MultiChannel_16" "schematic" "schematic") nil
+("analogLib" "vdc" "spectre" "spectre") nil
+("EMG_202009" "TB_HDEMG_AFE_16" "schematic" "schematic") nil
+("EMG_202009" "Single_Channel" "schematic" "schematic") nil
+("EMG_202009" "IA" "verilogams" "verilogams") nil

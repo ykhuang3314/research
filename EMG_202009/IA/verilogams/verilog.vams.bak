@@ -1,0 +1,29 @@
+//Verilog-AMS HDL for "EMG_202009", "IA" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module IA (Vout, Vinp, Vinn, Vdda, Vssa);
+
+output Vout;
+input Vinp, Vinn, Vdda, Vssa, Ibias;
+
+electrical Vout, Vinp, Vinn, Vdda, Vssa;
+
+parameter real Vcm = 0.9;
+parameter real Gain = 25 from (0 : inf);
+parameter real F_Pole = 1k from (0 : inf);
+
+real Vin, Vdiff;
+
+analog begin
+	
+	Vin = V(Vinp, Vinn);
+
+	Vdiff = laplace_nd(Gain*Vin, {1}, {1, 1/(`M_TWO_PI*F_Pole)});
+	
+	V(Vout, Vssa) <+ Vdiff + Vcm;
+
+end
+
+endmodule

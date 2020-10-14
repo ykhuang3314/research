@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_202009.TB_SwitchArray:config
+// Created On: Oct 14 14:51:53 2020
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_202009.TB_SwitchArray:schematic"
+
+	config cell="vsource" view="analogtext"
+	config cell="Counter_Nbit" lib="EMG_202009" view="functional"
+	config cell="SwitchArray" lib="EMG_202009" view="verilogams"
+
+ }

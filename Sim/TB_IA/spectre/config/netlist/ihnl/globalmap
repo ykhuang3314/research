@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+EMG_202009/TB_IA/schematic EMG_202009/TB_IA/schematic/spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl_pspice_dspf_verilogams/EMG_202009_TB_IA_config/1 TB_IA
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

@@ -1,0 +1,7 @@
+designtop="EMG_202009.TB_MultiplexingADC_v2:schematic"
+cell="isource" view="analogtext" 
+cell="vsource" view="analogtext" 
+cell="DAC" lib="EMG_202009" view="verilogams" 
+cell="ADC_V2" lib="EMG_202009" view="verilogams" 
+cell="Counter_4bit" lib="EMG_202009" view="functional" 
+cell="MUX_16" lib="EMG_202009" view="verilogams" 

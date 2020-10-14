@@ -1,0 +1,4 @@
+designtop="EMG_202009.TB_BPF:schematic"
+cell="BPF" lib="EMG_202009" view="verilogams" 
+cell="vsource" view="analogtext" 
+cell="BPF_V2" lib="EMG_202009" view="verilogams" 

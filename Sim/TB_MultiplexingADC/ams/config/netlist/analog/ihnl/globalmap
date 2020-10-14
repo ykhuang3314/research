@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_202009/TB_MultiplexingADC/schematic EMG_202009/TB_MultiplexingADC/schematic/schematic/EMG_202009_TB_MultiplexingADC_config/1 TB_MultiplexingADC
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

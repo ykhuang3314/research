@@ -1,0 +1,58 @@
+// Library - EMG_202009, Cell - TB_HDEMG_AFE_16, View - schematic
+// LAST TIME SAVED: Sep 28 16:33:01 2020
+// NETLIST TIME: Sep 28 16:33:57 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="TB_HDEMG_AFE_16", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Sep 28 16:33:01 2020" *)
+
+module TB_HDEMG_AFE_16 ();
+
+// Buses in the design
+
+wire  [11:0]  Dout;
+
+wire  [3:0]  Sel;
+
+
+MultiChannel_16 I0 ( .Vssa(cds_globals.\gnd! ), .Vdda(Vdda), 
+    .Vout_ch1(Vout_ch1), .Vout_ch2(Vout_ch2), .Vout_ch3(Vout_ch3), 
+    .Vout_ch4(Vout_ch4), .Vout_ch5(Vout_ch5), .Vout_ch6(Vout_ch6), 
+    .Vout_ch7(Vout_ch7), .Vout_ch8(Vout_ch8), .Vout_ch9(Vout_ch9), 
+    .Vout_ch10(Vout_ch10), .Vout_ch11(Vout_ch11), 
+    .Vout_ch12(Vout_ch12), .Vout_ch13(Vout_ch13), 
+    .Vout_ch14(Vout_ch14), .Vout_ch15(Vout_ch15), 
+    .Vout_ch16(Vout_ch16), .Gain_Sel(cds_globals.\gnd! ), 
+    .Vinp_ch1(Vinp_ch1), .Vinn_ch1(Vinn_ch1), .Vinp_ch2(Vinp_ch2), 
+    .Vinn_ch2(Vinn_ch2), .Vinp_ch3(Vinp_ch3), .Vinn_ch3(Vinn_ch3), 
+    .Vinp_ch4(Vinp_ch4), .Vinn_ch4(Vinn_ch4), .Vinp_ch5(Vinp_ch5), 
+    .Vinn_ch5(Vinn_ch5), .Vinp_ch6(Vinp_ch6), .Vinn_ch6(Vinn_ch6), 
+    .Vinp_ch7(Vinp_ch7), .Vinn_ch7(Vinn_ch7), .Vinp_ch8(Vinp_ch8), 
+    .Vinn_ch8(Vinn_ch8), .Vinp_ch9(Vinp_ch9), .Vinn_ch9(Vinn_ch9), 
+    .Vinp_ch10(Vinp_ch10), .Vinn_ch10(Vinn_ch10), 
+    .Vinp_ch11(Vinp_ch11), .Vinn_ch11(Vinn_ch11), 
+    .Vinp_ch12(Vinp_ch12), .Vinn_ch12(Vinn_ch12), 
+    .Vinp_ch13(Vinp_ch13), .Vinn_ch13(Vinn_ch13), 
+    .Vinp_ch14(Vinp_ch14), .Vinn_ch14(Vinn_ch14), 
+    .Vinp_ch15(Vinp_ch15), .Vinn_ch15(Vinn_ch15), 
+    .Vinp_ch16(Vinp_ch16), .Vinn_ch16(Vinn_ch16));
+
+MUX_16 I42 ( .Vout(Mux_Out), .Clk(CLK), .Vdda(Vdda), .Vin0(Vout_ch1), 
+    .Vin1(Vout_ch2), .Vin2(Vout_ch3), .Vin3(Vout_ch4), .Vin4(Vout_ch5), 
+    .Vin5(Vout_ch6), .Vin6(Vout_ch7), .Vin7(Vout_ch8), .Vin8(Vout_ch9), 
+    .Vin9(Vout_ch10), .Vin10(Vout_ch11), .Vin11(Vout_ch12), 
+    .Vin12(Vout_ch13), .Vin13(Vout_ch14), .Vin14(Vout_ch15), 
+    .Vin15(Vout_ch16), .Vssa(cds_globals.\gnd! ), .sel(Sel));
+
+ADC #( .thresh(0.9) ) I2 ( .Dout(Dout), .Clk(CLK), .Vdda(Vdda), 
+    .Vin(Mux_Out), .Vssa(cds_globals.\gnd! ));
+
+Counter_4bit I38 ( .Q(Sel), .Clk(CLK), .Reset(cds_globals.\gnd! ));
+
+DAC #( .thresh(0.9) ) I39 ( .Din(Dout), .Vout(Vout), .Clk(CLK), 
+    .Vdda(Vdda), .Vssa(cds_globals.\gnd! ));
+
+endmodule

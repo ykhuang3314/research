@@ -1,0 +1,28 @@
+// Library - EMG_202009, Cell - TB_VGA, View - schematic
+// LAST TIME SAVED: Sep 30 17:09:09 2020
+// NETLIST TIME: Sep 30 17:10:01 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_202009
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_202009", dfII_cell="TB_VGA", dfII_view="schematic", worklib_name="EMG_202009", view_name="schematic", last_save_time="Sep 30 17:09:09 2020" *)
+
+module TB_VGA ();
+
+// Buses in the design
+
+wire  [2:0]  Gain_Sel;
+
+
+VGA I0 ( .Vout(Vout), .Gain_Sel(CLK), .Vdda(Vdda), .Vin(Vin), 
+    .Vssa(cds_globals.\gnd! ));
+
+PGA_3Bit I3 ( .Vout(Vout2), .Gain_Sel(Gain_Sel), .Ibias(Ibias), 
+    .Vdda(Vdda), .Vin(Vin), .Vssa(cds_globals.\gnd! ));
+
+Counter_Nbit I5 ( .out(Gain_Sel), .Clk(CLK), .Reset(cds_globals.\gnd! 
+    ));
+
+endmodule
