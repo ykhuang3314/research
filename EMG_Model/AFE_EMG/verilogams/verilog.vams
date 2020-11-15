@@ -1,0 +1,26 @@
+//Verilog-AMS HDL for "EMG_Model", "AFE_EMG" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module AFE_EMG (Vout, Vinp, Vinn, Gain_Sel, Vdda, Vssa, Vsub, Ibias );
+
+// port declaration
+output Vout;
+input Vinp, Vinn;
+input[2:0] Gain_Sel;
+inout Vdda, Vssa, Vsub, Ibias;
+
+// signal types
+electrical Vout, Vinp, Vinn, Vdda, Vssa, Vsub, Ibias;
+logic[2:0] Gain_Sel;
+
+// internal signals
+electrical Voutp_IA, Voutn_IA, Voutp_BPF, Voutn_BPF;
+
+// Structure
+IA_EMG IA( Voutp_IA, Voutn_IA, Vinp, Vinn, Vdda, Vssa, Ibias, Vsub);
+BPF_EMG BPF (Voutp_BPF, Voutn_BPF, Voutp_IA, Voutn_BPF, Ibias, Vdda, Vssa, Vsub );
+PGA_EMG PGA (Vout, Voutp_BPF, Voutn_BPF, Gain_Sel, Vdda, Vssa, Vsub, Ibias);
+
+endmodule

@@ -1,0 +1,21 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Nov 13, 2020 at 14:32:47 CET
+xmvlog
+    -use5x
+    -SPECIFICUNIT ANA_MUX_EMG
+    -zparse /tmp/vamsZparea6457
+    -NOWARN DLNOHV
+    -work EMG_Model
+    -view verilogams
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilogams/EMG_Model/verilogams/compile1.log
+    -messages
+    -ams
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
+
+file: /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
+	module EMG_Model.ANA_MUX_EMG:verilogams
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 13, 2020 at 14:32:47 CET  (total: 00:00:00)

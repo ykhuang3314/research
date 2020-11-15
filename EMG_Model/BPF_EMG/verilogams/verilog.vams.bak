@@ -1,0 +1,33 @@
+//Verilog-AMS HDL for "EMG_Model", "BPF_EMG" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BPF_EMG (Voutp, Voutn, Vinp, Vinn, Ibias, Vdda, Vssa, Vsub );
+
+// ports declaration
+output Voutp, Voutn;
+input Vinp, Vinn;
+inout Vdda, Vssa, Vsub, Ibias;
+
+// signal types
+electrical Voutp, Voutn, Vinp, Vinn, Ibias, Vdda, Vssa, Vsub;
+
+// parameters
+parameter real gain = 1  from (0: inf); // pass-band voltage gain
+parameter real fcl = 10 from (0: inf); // lower cut-off freq. 
+parameter real fcu = 1000 from (0: inf); // upper cut-off freq.
+
+// inter variables
+real Vin, Vdiff;
+
+analog begin
+	
+	Vin = V(Vinp, Vinn);
+	Vdiff = laplace_nd(gain*V(Vin, Vssa), {0, 1* (1/(`M_TWO_PI*fcl) + 1/(`M_TWO_PI*fcu))}, {1, (1/(`M_TWO_PI*fcl) + 1/(`M_TWO_PI*fcu)), 1/(`M_TWO_PI*fcl)*1/(`M_TWO_PI*fcu)}); 
+	
+	V(Voutp) <+ 0.5*Vdiff;
+	V(Voutn) <+ -0.5*Vdiff;
+end
+
+endmodule

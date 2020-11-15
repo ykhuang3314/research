@@ -23,3 +23,6 @@ INCLUDE ./xh018_combine.lib
 # ------------------------------------------------------------------------------
 # Add user specific libraries below this line 
 DEFINE EMG_202009 /home/ykhuang/research/EMG_202009
+DEFINE VerilogAMS_Practice /home/ykhuang/research/VerilogAMS_Practice
+DEFINE EMG_Model /home/ykhuang/research/EMG_Model
+DEFINE EMG_TestBench /home/ykhuang/research/EMG_TestBench

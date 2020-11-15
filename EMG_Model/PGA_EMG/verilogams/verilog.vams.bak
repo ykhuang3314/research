@@ -1,0 +1,57 @@
+//Verilog-AMS HDL for "EMG_Model", "PGA_EMG" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module PGA_EMG (Voutp, Vinp, Vinn, Gain_Sel, Vdda, Vssa, Vsub, Ibias);
+
+// I/O ports declaration
+output Vout;
+input Vinp, Vinn;
+input[2:0] Gain_Sel;
+inout Vdda, Vssa, Ibias;
+
+// signal types
+electrical Vout, Vinp, Vinn, Vdda, Vssa, Vsub, Ibias;
+logic[2:0] Gain_Sel;
+
+// Parameters
+parameter real Vcm = 0.9;	// common-mode voltage
+parameter real Av_step = 3; 	// voltage gain step size
+parameter real fp1 = 1k; 	// pole
+parameter real Vsoft = 0.2; // output swing limitation
+parameter real SR = 10e6; // slew rate (V/sec)
+
+
+//internal variables
+integer gain;
+real Vdd_val, Vss_val;
+real Vin, out;
+
+// gain selection
+always@(Gain_Sel) begin
+	gain = Av_step * (Gain_Sel[2] * 4 + Gain_Sel[1] * 2 + Gain_Sel[0] + 1);
+end
+
+// analog
+analog begin	
+
+	@(initial_step) begin 
+		Vdd_val = V(Vdda);
+		Vss_val = V(Vssa);
+	end
+
+// output voltage
+	Vin = V(Vinp, Vinn);
+	out = Vcm + laplace_nd(gain*Vin, {1}, {1, 1/(`M_TWO_PI*fp1)}); // singel pole
+
+// output swing limitation	
+	if(out>(Vdd_val-Vsoft))
+		out = Vdd_val-Vsoft;
+	if(out<(Vss_val+Vsoft))
+		out = Vss_val+Vsoft;
+	V(Vout) <+ slew(out, SR);	
+
+
+end
+endmodule

@@ -1,0 +1,21 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Nov 15, 2020 at 22:50:26 CET
+xmvlog
+    -use5x
+    -SPECIFICUNIT SwitchArray16_EMG_BI
+    -zparse /tmp/vamsZparv32408
+    -NOWARN DLNOHV
+    -work EMG_Model
+    -view verilogams
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilogams/EMG_Model/verilogams/compile6.log
+    -messages
+    -ams
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/EMG_Model/SwitchArray16_EMG_BI/verilogams/verilog.vams
+
+file: /home/ykhuang/research/EMG_Model/SwitchArray16_EMG_BI/verilogams/verilog.vams
+	module EMG_Model.SwitchArray16_EMG_BI:verilogams
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 15, 2020 at 22:50:26 CET  (total: 00:00:00)
