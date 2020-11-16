@@ -1,0 +1,5 @@
+("analogLib" "vcvs" "spectre" "spectre") t
+("analogLib" "idc" "spectre" "spectre") t
+("analogLib" "vsource" "spectre" "spectre") t
+("analogLib" "vsin" "spectre" "spectre") t
+("analogLib" "vdc" "spectre" "spectre") t

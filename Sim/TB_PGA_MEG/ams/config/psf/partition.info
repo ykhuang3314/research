@@ -1,0 +1,89 @@
+( global ( resolution_type basic ) )
+
+( net TB_PGA_MEG.Vout TB_PGA_MEG.Vout analog electrical )
+( net TB_PGA_MEG.I0.Vout TB_PGA_MEG.Vout analog electrical )
+
+( net TB_PGA_MEG.net8 TB_PGA_MEG.net8 analog electrical )
+( net TB_PGA_MEG.I0.Vinp TB_PGA_MEG.net8 analog electrical )
+
+( net TB_PGA_MEG.net7 TB_PGA_MEG.net7 analog electrical )
+( net TB_PGA_MEG.I0.Vinn TB_PGA_MEG.net7 analog electrical )
+
+( net TB_PGA_MEG.Gain_Sel[2] TB_PGA_MEG.Gain_Sel[2] analog/mixed electrical )
+( net TB_PGA_MEG.I0.Gain_Sel[2] TB_PGA_MEG.Gain_Sel[2] digital/mixed logic )
+
+( net TB_PGA_MEG.Gain_Sel[1] TB_PGA_MEG.Gain_Sel[1] analog/mixed electrical )
+( net TB_PGA_MEG.I0.Gain_Sel[1] TB_PGA_MEG.Gain_Sel[1] digital/mixed logic )
+
+( net TB_PGA_MEG.Gain_Sel[0] TB_PGA_MEG.Gain_Sel[0] analog/mixed electrical )
+( net TB_PGA_MEG.I0.Gain_Sel[0] TB_PGA_MEG.Gain_Sel[0] digital/mixed logic )
+
+( net TB_PGA_MEG.Vdda TB_PGA_MEG.Vdda analog electrical )
+( net TB_PGA_MEG.I0.Vdda TB_PGA_MEG.Vdda analog electrical )
+
+( net TB_PGA_MEG.I0.Vsub TB_PGA_MEG.I0.Vsub analog electrical )
+( net TB_PGA_MEG.I0.Vssa TB_PGA_MEG.I0.Vsub analog electrical )
+( net cds_globals.\gnd!  TB_PGA_MEG.I0.Vsub analog electrical )
+
+( net TB_PGA_MEG.net9 TB_PGA_MEG.net9 analog electrical )
+( net TB_PGA_MEG.I0.Ibias TB_PGA_MEG.net9 analog electrical )
+
+( net TB_PGA_MEG.I0.gain TB_PGA_MEG.I0.gain digital logic )
+
+( net TB_PGA_MEG.I0.Vdd_val TB_PGA_MEG.I0.Vdd_val analog None )
+
+( net TB_PGA_MEG.I0.Vss_val TB_PGA_MEG.I0.Vss_val analog None )
+
+( net TB_PGA_MEG.I0.Vin TB_PGA_MEG.I0.Vin analog None )
+
+( net TB_PGA_MEG.I0.out TB_PGA_MEG.I0.out analog None )
+
+( net TB_PGA_MEG.Vin_CM TB_PGA_MEG.Vin_CM analog electrical )
+
+( net TB_PGA_MEG.vsig TB_PGA_MEG.vsig analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   TB_PGA_MEG.Gain_Sel[2]
+   electrical
+   analog
+   (
+    ( TB_PGA_MEG.I0.Gain_Sel[2] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_PGA_MEG.Gain_Sel[1]
+   electrical
+   analog
+   (
+    ( TB_PGA_MEG.I0.Gain_Sel[1] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_PGA_MEG.Gain_Sel[0]
+   electrical
+   analog
+   (
+    ( TB_PGA_MEG.I0.Gain_Sel[0] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+(instance TB_PGA_MEG.I0 mixed)
+(instance TB_PGA_MEG.V6 analog)
+(instance TB_PGA_MEG.V5 analog)
+(instance TB_PGA_MEG.V4 analog)
+(instance TB_PGA_MEG.V1 analog)
+(instance TB_PGA_MEG.V0 analog)
+(instance TB_PGA_MEG.V2 analog)
+(instance TB_PGA_MEG.E1 analog)
+(instance TB_PGA_MEG.E0 analog)
+(instance TB_PGA_MEG.I1 analog)
+(instance TB_PGA_MEG mixed)
+(instance cds_globals analog)

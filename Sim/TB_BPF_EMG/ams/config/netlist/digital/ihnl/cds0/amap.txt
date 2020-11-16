@@ -1,0 +1,5 @@
+netMap,*TB_BPF_EMG,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_BPF_EMG,*I0,*I0
+instMaster,*TB_BPF_EMG,*I0,*EMG_Model_BPF_EMG_verilogams
+cellMap,*TB_BPF_EMG,*TB_BPF_EMG,*EMG_TestBench,*schematic
+topMap,*TB_BPF_EMG

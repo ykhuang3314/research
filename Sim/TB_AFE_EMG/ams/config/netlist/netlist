@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  EMG_TestBench 
+cell: TB_AFE_EMG 
+view: config 
+topCellLib: EMG_TestBench 

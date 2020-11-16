@@ -1,0 +1,150 @@
+( global ( resolution_type basic ) )
+
+( net TB_AFE_MEG.I0.net15 TB_AFE_MEG.I0.net15 analog electrical )
+( net TB_AFE_MEG.I0.I2.Vinp TB_AFE_MEG.I0.net15 analog electrical )
+( net TB_AFE_MEG.I0.I1.Voutp TB_AFE_MEG.I0.net15 analog electrical )
+
+( net TB_AFE_MEG.I0.net16 TB_AFE_MEG.I0.net16 analog electrical )
+( net TB_AFE_MEG.I0.I2.Vinn TB_AFE_MEG.I0.net16 analog electrical )
+( net TB_AFE_MEG.I0.I1.Voutn TB_AFE_MEG.I0.net16 analog electrical )
+
+( net TB_AFE_MEG.I0.net14 TB_AFE_MEG.I0.net14 analog electrical )
+( net TB_AFE_MEG.I0.I0.Voutp TB_AFE_MEG.I0.net14 analog electrical )
+( net TB_AFE_MEG.I0.I1.Vinp TB_AFE_MEG.I0.net14 analog electrical )
+
+( net TB_AFE_MEG.I0.net13 TB_AFE_MEG.I0.net13 analog electrical )
+( net TB_AFE_MEG.I0.I0.Voutn TB_AFE_MEG.I0.net13 analog electrical )
+( net TB_AFE_MEG.I0.I1.Vinn TB_AFE_MEG.I0.net13 analog electrical )
+
+( net TB_AFE_MEG.I0.vdda TB_AFE_MEG.I0.vdda analog electrical )
+( net TB_AFE_MEG.I0.I0.Vdda TB_AFE_MEG.I0.vdda analog electrical )
+( net TB_AFE_MEG.I0.I1.Vdda TB_AFE_MEG.I0.vdda analog electrical )
+
+( net TB_AFE_MEG.I0.Vssa TB_AFE_MEG.I0.Vssa analog electrical )
+( net TB_AFE_MEG.I0.I0.Vssa TB_AFE_MEG.I0.Vssa analog electrical )
+( net TB_AFE_MEG.I0.I2.Vssa TB_AFE_MEG.I0.Vssa analog electrical )
+( net TB_AFE_MEG.I0.I1.Vssa TB_AFE_MEG.I0.Vssa analog electrical )
+( net cds_globals.\gnd!  TB_AFE_MEG.I0.Vssa analog electrical )
+( net TB_AFE_MEG.I0.Vsub TB_AFE_MEG.I0.Vssa analog electrical )
+( net TB_AFE_MEG.I0.I0.Vsub TB_AFE_MEG.I0.Vssa analog electrical )
+( net TB_AFE_MEG.I0.I2.Vsub TB_AFE_MEG.I0.Vssa analog electrical )
+( net TB_AFE_MEG.I0.I1.Vsub TB_AFE_MEG.I0.Vssa analog electrical )
+
+( net TB_AFE_MEG.Ibias TB_AFE_MEG.Ibias analog electrical )
+( net TB_AFE_MEG.I0.Ibias TB_AFE_MEG.Ibias analog electrical )
+( net TB_AFE_MEG.I0.I0.Ibias TB_AFE_MEG.Ibias analog electrical )
+( net TB_AFE_MEG.I0.I2.Ibias TB_AFE_MEG.Ibias analog electrical )
+( net TB_AFE_MEG.I0.I1.Ibias TB_AFE_MEG.Ibias analog electrical )
+
+( net TB_AFE_MEG.I0.I1.Vin TB_AFE_MEG.I0.I1.Vin analog None )
+
+( net TB_AFE_MEG.I0.I1.Vdiff TB_AFE_MEG.I0.I1.Vdiff analog None )
+
+( net TB_AFE_MEG.Vout TB_AFE_MEG.Vout analog electrical )
+( net TB_AFE_MEG.I0.Vout TB_AFE_MEG.Vout analog electrical )
+( net TB_AFE_MEG.I0.I2.Vout TB_AFE_MEG.Vout analog electrical )
+
+( net TB_AFE_MEG.Gain_Sel[2] TB_AFE_MEG.Gain_Sel[2] analog/mixed electrical )
+( net TB_AFE_MEG.I0.Gain_Sel[2] TB_AFE_MEG.Gain_Sel[2] digital/mixed logic )
+( net TB_AFE_MEG.I0.I2.Gain_Sel[2] TB_AFE_MEG.Gain_Sel[2] digital/mixed logic )
+
+( net TB_AFE_MEG.Gain_Sel[1] TB_AFE_MEG.Gain_Sel[1] analog/mixed electrical )
+( net TB_AFE_MEG.I0.Gain_Sel[1] TB_AFE_MEG.Gain_Sel[1] digital/mixed logic )
+( net TB_AFE_MEG.I0.I2.Gain_Sel[1] TB_AFE_MEG.Gain_Sel[1] digital/mixed logic )
+
+( net TB_AFE_MEG.Gain_Sel[0] TB_AFE_MEG.Gain_Sel[0] analog/mixed electrical )
+( net TB_AFE_MEG.I0.Gain_Sel[0] TB_AFE_MEG.Gain_Sel[0] digital/mixed logic )
+( net TB_AFE_MEG.I0.I2.Gain_Sel[0] TB_AFE_MEG.Gain_Sel[0] digital/mixed logic )
+
+( net TB_AFE_MEG.vdda TB_AFE_MEG.vdda analog electrical )
+( net TB_AFE_MEG.I0.Vdda TB_AFE_MEG.vdda analog electrical )
+( net TB_AFE_MEG.I0.I2.Vdda TB_AFE_MEG.vdda analog electrical )
+
+( net TB_AFE_MEG.I0.I2.gain TB_AFE_MEG.I0.I2.gain digital logic )
+
+( net TB_AFE_MEG.I0.I2.Vdd_val TB_AFE_MEG.I0.I2.Vdd_val analog None )
+
+( net TB_AFE_MEG.I0.I2.Vss_val TB_AFE_MEG.I0.I2.Vss_val analog None )
+
+( net TB_AFE_MEG.I0.I2.Vin TB_AFE_MEG.I0.I2.Vin analog None )
+
+( net TB_AFE_MEG.I0.I2.out TB_AFE_MEG.I0.I2.out analog None )
+
+( net TB_AFE_MEG.net8 TB_AFE_MEG.net8 analog electrical )
+( net TB_AFE_MEG.I0.Vinp TB_AFE_MEG.net8 analog electrical )
+( net TB_AFE_MEG.I0.I0.Vinp TB_AFE_MEG.net8 analog electrical )
+
+( net TB_AFE_MEG.net7 TB_AFE_MEG.net7 analog electrical )
+( net TB_AFE_MEG.I0.Vinn TB_AFE_MEG.net7 analog electrical )
+( net TB_AFE_MEG.I0.I0.Vinn TB_AFE_MEG.net7 analog electrical )
+
+( net TB_AFE_MEG.I0.I0.Vdd_val TB_AFE_MEG.I0.I0.Vdd_val analog None )
+
+( net TB_AFE_MEG.I0.I0.Vss_val TB_AFE_MEG.I0.I0.Vss_val analog None )
+
+( net TB_AFE_MEG.I0.I0.Vin TB_AFE_MEG.I0.I0.Vin analog None )
+
+( net TB_AFE_MEG.I0.I0.Vdiff TB_AFE_MEG.I0.I0.Vdiff analog None )
+
+( net TB_AFE_MEG.I0.I0.outp TB_AFE_MEG.I0.I0.outp analog None )
+
+( net TB_AFE_MEG.I0.I0.outn TB_AFE_MEG.I0.I0.outn analog None )
+
+( net TB_AFE_MEG.vsig TB_AFE_MEG.vsig analog electrical )
+
+( net TB_AFE_MEG.Vin_CM TB_AFE_MEG.Vin_CM analog electrical )
+
+( net TB_AFE_MEG.Vemg_raw TB_AFE_MEG.Vemg_raw analog electrical )
+
+( net TB_AFE_MEG.Vemg TB_AFE_MEG.Vemg analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   TB_AFE_MEG.Gain_Sel[2]
+   electrical
+   analog
+   (
+    ( TB_AFE_MEG.I0.Gain_Sel[2] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_AFE_MEG.Gain_Sel[1]
+   electrical
+   analog
+   (
+    ( TB_AFE_MEG.I0.Gain_Sel[1] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_AFE_MEG.Gain_Sel[0]
+   electrical
+   analog
+   (
+    ( TB_AFE_MEG.I0.Gain_Sel[0] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+(instance TB_AFE_MEG.I0.I1 analog)
+(instance TB_AFE_MEG.I0.I2 mixed)
+(instance TB_AFE_MEG.I0.I0 analog)
+(instance TB_AFE_MEG.I0 mixed)
+(instance TB_AFE_MEG.E1 analog)
+(instance TB_AFE_MEG.E0 analog)
+(instance TB_AFE_MEG.E2 analog)
+(instance TB_AFE_MEG.V3 analog)
+(instance TB_AFE_MEG.V2 analog)
+(instance TB_AFE_MEG.V6 analog)
+(instance TB_AFE_MEG.V5 analog)
+(instance TB_AFE_MEG.V4 analog)
+(instance TB_AFE_MEG.V1 analog)
+(instance TB_AFE_MEG.V0 analog)
+(instance TB_AFE_MEG.I1 analog)
+(instance TB_AFE_MEG mixed)
+(instance cds_globals analog)

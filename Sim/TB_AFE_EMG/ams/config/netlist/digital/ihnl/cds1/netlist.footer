@@ -1,0 +1,6 @@
+
+AFE_EMG I0 ( .Ibias(net9), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ), 
+    .Vsub(cds_globals.\gnd! ), .Vout(Vout), .Gain_Sel(Gain_Sel[2:0]), 
+    .Vinn(Vinn), .Vinp(Vinp));
+
+endmodule

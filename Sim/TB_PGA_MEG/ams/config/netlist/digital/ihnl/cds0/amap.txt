@@ -1,0 +1,8 @@
+netMap,*TB_PGA_MEG,*Gain_Sel<0>,*Gain_Sel[0]
+netMap,*TB_PGA_MEG,*Gain_Sel<1>,*Gain_Sel[1]
+netMap,*TB_PGA_MEG,*Gain_Sel<2>,*Gain_Sel[2]
+netMap,*TB_PGA_MEG,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_PGA_MEG,*I0,*I0
+instMaster,*TB_PGA_MEG,*I0,*EMG_Model_PGA_EMG_verilogams
+cellMap,*TB_PGA_MEG,*TB_PGA_MEG,*EMG_TestBench,*schematic
+topMap,*TB_PGA_MEG

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 16 23:15:33 2020
+// Design library name: EMG_TestBench
+// Design cell name: TB_AFE_EMG
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

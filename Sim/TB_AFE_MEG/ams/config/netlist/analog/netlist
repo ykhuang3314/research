@@ -1,0 +1,17 @@
+
+// Library name: EMG_TestBench
+// Cell name: TB_AFE_MEG
+// View name: schematic
+// Inherited view list: schematic
+E1 (net8 Vin_CM vsig 0) vcvs gain=0.5
+E0 (net7 Vin_CM vsig 0) vcvs gain=-0.5
+E2 (Vemg 0 Vemg_raw 0) vcvs gain=0.001
+V3 (Vemg_raw 0) vsource type=pwl \
+        file="/home/ykhuang/research/Emg_Data/emg_healthy.txt"
+V2 (vsig 0) vsource type=sine ampl=5m freq=100
+V6 (Gain_Sel_0 0) vsource dc=0 type=dc
+V5 (Gain_Sel_1 0) vsource dc=0 type=dc
+V4 (Gain_Sel_2 0) vsource dc=0 type=dc
+V1 (Vin_CM 0) vsource dc=0 type=dc
+V0 (vdda 0) vsource dc=1.8 type=dc
+I1 (vdda Ibias) isource dc=10u type=dc

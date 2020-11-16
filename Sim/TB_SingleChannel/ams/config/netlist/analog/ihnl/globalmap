@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_TestBench/TB_SingleChannel/schematic EMG_TestBench/TB_SingleChannel/schematic/schematic/EMG_TestBench_TB_SingleChannel_config/1 TB_SingleChannel
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

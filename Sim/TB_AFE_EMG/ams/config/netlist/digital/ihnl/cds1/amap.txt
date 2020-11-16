@@ -1,0 +1,8 @@
+netMap,*TB_AFE_EMG,*Gain_Sel<2>,*Gain_Sel[2]
+netMap,*TB_AFE_EMG,*Gain_Sel<1>,*Gain_Sel[1]
+netMap,*TB_AFE_EMG,*Gain_Sel<0>,*Gain_Sel[0]
+netMap,*TB_AFE_EMG,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_AFE_EMG,*I0,*I0
+instMaster,*TB_AFE_EMG,*I0,*EMG_Model_AFE_EMG_schematic
+cellMap,*TB_AFE_EMG,*TB_AFE_EMG,*EMG_TestBench,*schematic
+topMap,*TB_AFE_EMG

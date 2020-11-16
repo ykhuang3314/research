@@ -1,0 +1,35 @@
+( global ( resolution_type basic ) )
+
+( net TB_BPF_EMG.net04 TB_BPF_EMG.net04 analog electrical )
+( net TB_BPF_EMG.I0.Voutp TB_BPF_EMG.net04 analog electrical )
+
+( net TB_BPF_EMG.net05 TB_BPF_EMG.net05 analog electrical )
+( net TB_BPF_EMG.I0.Voutn TB_BPF_EMG.net05 analog electrical )
+
+( net TB_BPF_EMG.Vsig TB_BPF_EMG.Vsig analog electrical )
+( net TB_BPF_EMG.I0.Vinp TB_BPF_EMG.Vsig analog electrical )
+
+( net TB_BPF_EMG.I0.Vssa TB_BPF_EMG.I0.Vssa analog electrical )
+( net cds_globals.\gnd!  TB_BPF_EMG.I0.Vssa analog electrical )
+( net TB_BPF_EMG.I0.Vinn TB_BPF_EMG.I0.Vssa analog electrical )
+( net TB_BPF_EMG.I0.Vsub TB_BPF_EMG.I0.Vssa analog electrical )
+
+( net TB_BPF_EMG.Vdda TB_BPF_EMG.Vdda analog electrical )
+( net TB_BPF_EMG.I0.Vdda TB_BPF_EMG.Vdda analog electrical )
+
+( net TB_BPF_EMG.net5 TB_BPF_EMG.net5 analog electrical )
+( net TB_BPF_EMG.I0.Ibias TB_BPF_EMG.net5 analog electrical )
+
+( net TB_BPF_EMG.I0.Vin TB_BPF_EMG.I0.Vin analog None )
+
+( net TB_BPF_EMG.I0.Vdiff TB_BPF_EMG.I0.Vdiff analog None )
+
+( net TB_BPF_EMG.Vout TB_BPF_EMG.Vout analog electrical )
+
+(instance TB_BPF_EMG.I0 analog)
+(instance TB_BPF_EMG.V0 analog)
+(instance TB_BPF_EMG.V1 analog)
+(instance TB_BPF_EMG.I1 analog)
+(instance TB_BPF_EMG.E0 analog)
+(instance TB_BPF_EMG analog)
+(instance cds_globals analog)

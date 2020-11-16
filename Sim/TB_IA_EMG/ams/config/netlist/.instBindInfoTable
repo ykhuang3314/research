@@ -1,0 +1,8 @@
+"E2" ((("analogLib" "vcvs" "spectre" "spectre") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))
+"I1" ((("analogLib" "idc" "spectre" "spectre") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))
+"E1" ((("analogLib" "vcvs" "spectre" "spectre") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))
+"V0" ((("analogLib" "vdc" "spectre" "spectre") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))
+"I0" ((("EMG_Model" "IA_EMG" "verilogams" "verilogams") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))
+"E0" ((("analogLib" "vcvs" "spectre" "spectre") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))
+"V1" ((("analogLib" "vdc" "spectre" "spectre") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))
+"V2" ((("analogLib" "vsin" "spectre" "spectre") ("EMG_TestBench" "TB_IA_EMG" "schematic" "schematic")))

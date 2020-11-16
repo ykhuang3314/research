@@ -1,0 +1,17 @@
+// Library - EMG_TestBench, Cell - TB_PGA_MEG, View - schematic
+// LAST TIME SAVED: Nov 16 22:31:00 2020
+// NETLIST TIME: Nov 16 22:32:51 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_PGA_MEG", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Nov 16 22:31:00 2020" *)
+
+module TB_PGA_MEG ();
+
+// Buses in the design
+
+wire  [2:0]  Gain_Sel;
+

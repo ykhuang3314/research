@@ -1,0 +1,130 @@
+( global ( resolution_type basic ) )
+
+( net TB_SingleChannel.Voutp_IA TB_SingleChannel.Voutp_IA analog electrical )
+( net TB_SingleChannel.I1.Vinp TB_SingleChannel.Voutp_IA analog electrical )
+( net TB_SingleChannel.I0.Voutp TB_SingleChannel.Voutp_IA analog electrical )
+
+( net TB_SingleChannel.Voutn_IA TB_SingleChannel.Voutn_IA analog electrical )
+( net TB_SingleChannel.I1.Vinn TB_SingleChannel.Voutn_IA analog electrical )
+( net TB_SingleChannel.I0.Voutn TB_SingleChannel.Voutn_IA analog electrical )
+
+( net TB_SingleChannel.Vinp TB_SingleChannel.Vinp analog electrical )
+( net TB_SingleChannel.I0.Vinp TB_SingleChannel.Vinp analog electrical )
+
+( net TB_SingleChannel.Vinn TB_SingleChannel.Vinn analog electrical )
+( net TB_SingleChannel.I0.Vinn TB_SingleChannel.Vinn analog electrical )
+
+( net TB_SingleChannel.Vdda TB_SingleChannel.Vdda analog electrical )
+( net TB_SingleChannel.I2.Vdda TB_SingleChannel.Vdda analog electrical )
+( net TB_SingleChannel.I1.Vdda TB_SingleChannel.Vdda analog electrical )
+( net TB_SingleChannel.I0.Vdda TB_SingleChannel.Vdda analog electrical )
+
+( net TB_SingleChannel.I0.Vsub TB_SingleChannel.I0.Vsub analog electrical )
+( net TB_SingleChannel.I0.Vssa TB_SingleChannel.I0.Vsub analog electrical )
+( net cds_globals.\gnd!  TB_SingleChannel.I0.Vsub analog electrical )
+( net TB_SingleChannel.I2.Vsub TB_SingleChannel.I0.Vsub analog electrical )
+( net TB_SingleChannel.I2.Vssa TB_SingleChannel.I0.Vsub analog electrical )
+( net TB_SingleChannel.I1.Vsub TB_SingleChannel.I0.Vsub analog electrical )
+( net TB_SingleChannel.I1.Vssa TB_SingleChannel.I0.Vsub analog electrical )
+
+( net TB_SingleChannel.Ibias TB_SingleChannel.Ibias analog electrical )
+( net TB_SingleChannel.I2.Ibias TB_SingleChannel.Ibias analog electrical )
+( net TB_SingleChannel.I1.Ibias TB_SingleChannel.Ibias analog electrical )
+( net TB_SingleChannel.I0.Ibias TB_SingleChannel.Ibias analog electrical )
+
+( net TB_SingleChannel.I0.Vdd_val TB_SingleChannel.I0.Vdd_val analog None )
+
+( net TB_SingleChannel.I0.Vss_val TB_SingleChannel.I0.Vss_val analog None )
+
+( net TB_SingleChannel.I0.Vin TB_SingleChannel.I0.Vin analog None )
+
+( net TB_SingleChannel.I0.Vdiff TB_SingleChannel.I0.Vdiff analog None )
+
+( net TB_SingleChannel.I0.outp TB_SingleChannel.I0.outp analog None )
+
+( net TB_SingleChannel.I0.outn TB_SingleChannel.I0.outn analog None )
+
+( net TB_SingleChannel.Voutp_BPF TB_SingleChannel.Voutp_BPF analog electrical )
+( net TB_SingleChannel.I2.Vinp TB_SingleChannel.Voutp_BPF analog electrical )
+( net TB_SingleChannel.I1.Voutp TB_SingleChannel.Voutp_BPF analog electrical )
+
+( net TB_SingleChannel.Voutn_BPF TB_SingleChannel.Voutn_BPF analog electrical )
+( net TB_SingleChannel.I2.Vinn TB_SingleChannel.Voutn_BPF analog electrical )
+( net TB_SingleChannel.I1.Voutn TB_SingleChannel.Voutn_BPF analog electrical )
+
+( net TB_SingleChannel.I1.Vin TB_SingleChannel.I1.Vin analog None )
+
+( net TB_SingleChannel.I1.Vdiff TB_SingleChannel.I1.Vdiff analog None )
+
+( net TB_SingleChannel.Vout TB_SingleChannel.Vout analog electrical )
+( net TB_SingleChannel.I2.Vout TB_SingleChannel.Vout analog electrical )
+
+( net TB_SingleChannel.Gain_Sel[2] TB_SingleChannel.Gain_Sel[2] analog/mixed electrical )
+( net TB_SingleChannel.I2.Gain_Sel[2] TB_SingleChannel.Gain_Sel[2] digital/mixed logic )
+
+( net TB_SingleChannel.Gain_Sel[1] TB_SingleChannel.Gain_Sel[1] analog/mixed electrical )
+( net TB_SingleChannel.I2.Gain_Sel[1] TB_SingleChannel.Gain_Sel[1] digital/mixed logic )
+
+( net TB_SingleChannel.Gain_Sel[0] TB_SingleChannel.Gain_Sel[0] analog/mixed electrical )
+( net TB_SingleChannel.I2.Gain_Sel[0] TB_SingleChannel.Gain_Sel[0] digital/mixed logic )
+
+( net TB_SingleChannel.I2.gain TB_SingleChannel.I2.gain digital logic )
+
+( net TB_SingleChannel.I2.Vdd_val TB_SingleChannel.I2.Vdd_val analog None )
+
+( net TB_SingleChannel.I2.Vss_val TB_SingleChannel.I2.Vss_val analog None )
+
+( net TB_SingleChannel.I2.Vin TB_SingleChannel.I2.Vin analog None )
+
+( net TB_SingleChannel.I2.out TB_SingleChannel.I2.out analog None )
+
+( net TB_SingleChannel.Vin_CM TB_SingleChannel.Vin_CM analog electrical )
+
+( net TB_SingleChannel.vsig TB_SingleChannel.vsig analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   TB_SingleChannel.Gain_Sel[2]
+   electrical
+   analog
+   (
+    ( TB_SingleChannel.I2.Gain_Sel[2] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_SingleChannel.Gain_Sel[1]
+   electrical
+   analog
+   (
+    ( TB_SingleChannel.I2.Gain_Sel[1] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_SingleChannel.Gain_Sel[0]
+   electrical
+   analog
+   (
+    ( TB_SingleChannel.I2.Gain_Sel[0] logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+(instance TB_SingleChannel.I0 analog)
+(instance TB_SingleChannel.I1 analog)
+(instance TB_SingleChannel.I2 mixed)
+(instance TB_SingleChannel.V6 analog)
+(instance TB_SingleChannel.V5 analog)
+(instance TB_SingleChannel.V4 analog)
+(instance TB_SingleChannel.V1 analog)
+(instance TB_SingleChannel.V0 analog)
+(instance TB_SingleChannel.V2 analog)
+(instance TB_SingleChannel.E1 analog)
+(instance TB_SingleChannel.E0 analog)
+(instance TB_SingleChannel mixed)
+(instance cds_globals analog)

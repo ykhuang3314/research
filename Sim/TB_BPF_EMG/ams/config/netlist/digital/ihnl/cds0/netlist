@@ -1,0 +1,19 @@
+// Library - EMG_TestBench, Cell - TB_BPF_EMG, View - schematic
+// LAST TIME SAVED: Nov 16 22:21:27 2020
+// NETLIST TIME: Nov 16 22:21:41 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_BPF_EMG", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Nov 16 22:21:27 2020" *)
+
+module TB_BPF_EMG ();
+
+
+BPF_EMG I0 ( .Ibias(net5), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ), 
+    .Vsub(cds_globals.\gnd! ), .Voutn(net05), .Voutp(net04), 
+    .Vinn(cds_globals.\gnd! ), .Vinp(Vsig));
+
+endmodule

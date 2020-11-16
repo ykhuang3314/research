@@ -1,0 +1,8 @@
+designtop="EMG_TestBench.TB_AFE_MEG:schematic"
+cell="vcvs" view="analogtext" 
+cell="IA_EMG" lib="EMG_Model" view="verilogams" 
+cell="PGA_EMG" lib="EMG_Model" view="verilogams" 
+cell="BPF_EMG" lib="EMG_Model" view="verilogams" 
+cell="isource" view="analogtext" 
+cell="vsource" view="analogtext" 
+cell="AFE_EMG" lib="EMG_Model" view="schematic" 

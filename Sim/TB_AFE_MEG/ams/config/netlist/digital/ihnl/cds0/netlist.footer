@@ -1,0 +1,11 @@
+
+BPF_EMG I1 ( .Ibias(Ibias), .Vdda(vdda), .Vssa(Vssa), .Vsub(Vsub), 
+    .Voutn(net16), .Voutp(net15), .Vinn(net13), .Vinp(net14));
+
+PGA_EMG I2 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(Vssa), .Vsub(Vsub), 
+    .Vout(Vout), .Gain_Sel(Gain_Sel), .Vinn(net16), .Vinp(net15));
+
+IA_EMG I0 ( .Ibias(Ibias), .Vdda(vdda), .Vssa(Vssa), .Vsub(Vsub), 
+    .Voutn(net13), .Voutp(net14), .Vinn(Vinn), .Vinp(Vinp));
+
+endmodule

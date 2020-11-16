@@ -1,0 +1,21 @@
+// Library - EMG_Model, Cell - AFE_EMG, View - schematic
+// LAST TIME SAVED: Nov 16 22:13:17 2020
+// NETLIST TIME: Nov 16 22:44:13 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_Model
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_Model", dfII_cell="AFE_EMG", dfII_view="schematic", worklib_name="EMG_Model", view_name="schematic", last_save_time="Nov 16 22:13:17 2020" *)
+
+module AFE_EMG (Vout, Ibias, Vdda, Vssa, Vsub, Gain_Sel, Vinn, Vinp);
+
+output  Vout;
+
+inout  Ibias, Vdda, Vssa, Vsub;
+
+input  Vinn, Vinp;
+
+input [2:0]  Gain_Sel;
+

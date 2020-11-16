@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"EMG_TestBench\" \"TB_IA_EMG\" \"config\" \"\")"
+"simulator" "ams"
+"temperature" "27"
+"host" ""
+"date" "Nov 16 22:09:12 2020"
+"title" ""
+"analysisList" "()"
+END

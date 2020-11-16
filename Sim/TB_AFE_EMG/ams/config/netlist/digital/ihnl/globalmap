@@ -1,0 +1,10 @@
+CADENCE IHNL04120
+$model
+EMG_TestBench/TB_AFE_EMG/schematic EMG_TestBench/TB_AFE_EMG/schematic/schematic/EMG_TestBench_TB_AFE_EMG_config/1 TB_AFE_EMG
+EMG_Model/AFE_EMG/schematic EMG_Model/AFE_EMG/schematic/schematic/EMG_TestBench_TB_AFE_EMG_config/0 AFE_EMG
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

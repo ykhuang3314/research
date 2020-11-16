@@ -1,0 +1,6 @@
+("analogLib" "vcvs" "spectre") _spectreVCPrim
+("analogLib" "idc" "spectre") spectreSrcPrim
+("analogLib" "vsource" "spectre") spectreVandISourcePrim
+("analogLib" "vsin" "spectre") spectreSrcPrim
+("analogLib" "vdc" "spectre") spectreSrcPrim
+("EMG_Model" "AFE_EMG" "schematic") nil

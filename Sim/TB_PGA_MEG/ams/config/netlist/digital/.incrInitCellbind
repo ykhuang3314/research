@@ -1,0 +1,5 @@
+("analogLib" "vcvs" "spectre" "spectre") "USED"
+("analogLib" "idc" "spectre" "spectre") "USED"
+("EMG_Model" "PGA_EMG" "verilogams" "verilogams") "USED"
+("analogLib" "vsin" "spectre" "spectre") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"

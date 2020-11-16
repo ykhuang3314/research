@@ -1,0 +1,6 @@
+("analogLib" "vcvs" "spectre" "spectre") nil
+("EMG_Model" "BPF_EMG" "verilogams" "verilogams") nil
+("analogLib" "idc" "spectre" "spectre") nil
+("EMG_TestBench" "TB_BPF_EMG" "schematic" "schematic") nil
+("analogLib" "vsin" "spectre" "spectre") nil
+("analogLib" "vdc" "spectre" "spectre") nil

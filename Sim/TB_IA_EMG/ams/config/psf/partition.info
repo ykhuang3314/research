@@ -1,0 +1,52 @@
+( global ( resolution_type basic ) )
+
+( net TB_IA_EMG.net10 TB_IA_EMG.net10 analog electrical )
+( net TB_IA_EMG.I0.Voutp TB_IA_EMG.net10 analog electrical )
+
+( net TB_IA_EMG.net9 TB_IA_EMG.net9 analog electrical )
+( net TB_IA_EMG.I0.Voutn TB_IA_EMG.net9 analog electrical )
+
+( net TB_IA_EMG.net8 TB_IA_EMG.net8 analog electrical )
+( net TB_IA_EMG.I0.Vinp TB_IA_EMG.net8 analog electrical )
+
+( net TB_IA_EMG.net7 TB_IA_EMG.net7 analog electrical )
+( net TB_IA_EMG.I0.Vinn TB_IA_EMG.net7 analog electrical )
+
+( net TB_IA_EMG.Vdda TB_IA_EMG.Vdda analog electrical )
+( net TB_IA_EMG.I0.Vdda TB_IA_EMG.Vdda analog electrical )
+
+( net TB_IA_EMG.I0.Vsub TB_IA_EMG.I0.Vsub analog electrical )
+( net TB_IA_EMG.I0.Vssa TB_IA_EMG.I0.Vsub analog electrical )
+( net cds_globals.\gnd!  TB_IA_EMG.I0.Vsub analog electrical )
+
+( net TB_IA_EMG.net11 TB_IA_EMG.net11 analog electrical )
+( net TB_IA_EMG.I0.Ibias TB_IA_EMG.net11 analog electrical )
+
+( net TB_IA_EMG.I0.Vdd_val TB_IA_EMG.I0.Vdd_val analog None )
+
+( net TB_IA_EMG.I0.Vss_val TB_IA_EMG.I0.Vss_val analog None )
+
+( net TB_IA_EMG.I0.Vin TB_IA_EMG.I0.Vin analog None )
+
+( net TB_IA_EMG.I0.Vdiff TB_IA_EMG.I0.Vdiff analog None )
+
+( net TB_IA_EMG.I0.outp TB_IA_EMG.I0.outp analog None )
+
+( net TB_IA_EMG.I0.outn TB_IA_EMG.I0.outn analog None )
+
+( net TB_IA_EMG.vsig TB_IA_EMG.vsig analog electrical )
+
+( net TB_IA_EMG.Vin_CM TB_IA_EMG.Vin_CM analog electrical )
+
+( net TB_IA_EMG.Vout TB_IA_EMG.Vout analog electrical )
+
+(instance TB_IA_EMG.I0 analog)
+(instance TB_IA_EMG.V2 analog)
+(instance TB_IA_EMG.V1 analog)
+(instance TB_IA_EMG.V0 analog)
+(instance TB_IA_EMG.E2 analog)
+(instance TB_IA_EMG.E1 analog)
+(instance TB_IA_EMG.E0 analog)
+(instance TB_IA_EMG.I1 analog)
+(instance TB_IA_EMG analog)
+(instance cds_globals analog)

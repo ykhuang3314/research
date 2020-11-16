@@ -1,0 +1,11 @@
+cellMap,*TB_BPF_EMG,*TB_BPF_EMG,*null,*null
+topMap,*TB_BPF_EMG
+netMap,*TB_BPF_EMG,*gnd!,*0
+instMap,*TB_BPF_EMG,*V0,*V0
+instMaster,*TB_BPF_EMG,*V0,*analogLib_vsin_spectre,*vsource
+instMap,*TB_BPF_EMG,*V1,*V1
+instMaster,*TB_BPF_EMG,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*TB_BPF_EMG,*I1,*I1
+instMaster,*TB_BPF_EMG,*I1,*analogLib_idc_spectre,*isource
+instMap,*TB_BPF_EMG,*E0,*E0
+instMaster,*TB_BPF_EMG,*E0,*analogLib_vcvs_spectre,*vcvs

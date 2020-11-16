@@ -1,0 +1,6 @@
+
+BPF_EMG I0 ( .Ibias(net5), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ), 
+    .Vsub(cds_globals.\gnd! ), .Voutn(net05), .Voutp(net04), 
+    .Vinn(cds_globals.\gnd! ), .Vinp(Vsig));
+
+endmodule

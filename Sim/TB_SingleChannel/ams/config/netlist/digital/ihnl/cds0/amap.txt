@@ -1,0 +1,12 @@
+netMap,*TB_SingleChannel,*Gain_Sel<0>,*Gain_Sel[0]
+netMap,*TB_SingleChannel,*Gain_Sel<1>,*Gain_Sel[1]
+netMap,*TB_SingleChannel,*Gain_Sel<2>,*Gain_Sel[2]
+netMap,*TB_SingleChannel,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_SingleChannel,*I0,*I0
+instMaster,*TB_SingleChannel,*I0,*EMG_Model_IA_EMG_verilogams
+instMap,*TB_SingleChannel,*I1,*I1
+instMaster,*TB_SingleChannel,*I1,*EMG_Model_BPF_EMG_verilogams
+instMap,*TB_SingleChannel,*I2,*I2
+instMaster,*TB_SingleChannel,*I2,*EMG_Model_PGA_EMG_verilogams
+cellMap,*TB_SingleChannel,*TB_SingleChannel,*EMG_TestBench,*schematic
+topMap,*TB_SingleChannel

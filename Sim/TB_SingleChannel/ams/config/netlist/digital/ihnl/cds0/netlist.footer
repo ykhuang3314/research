@@ -1,0 +1,14 @@
+
+IA_EMG I0 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ), 
+    .Vsub(cds_globals.\gnd! ), .Voutn(Voutn_IA), .Voutp(Voutp_IA), 
+    .Vinn(Vinn), .Vinp(Vinp));
+
+BPF_EMG I1 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ), 
+    .Vsub(cds_globals.\gnd! ), .Voutn(Voutn_BPF), .Voutp(Voutp_BPF), 
+    .Vinn(Voutn_IA), .Vinp(Voutp_IA));
+
+PGA_EMG I2 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ), 
+    .Vsub(cds_globals.\gnd! ), .Vout(Vout), .Gain_Sel(Gain_Sel), 
+    .Vinn(Voutn_BPF), .Vinp(Voutp_BPF));
+
+endmodule

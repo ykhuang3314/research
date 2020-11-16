@@ -1,0 +1,4 @@
+CADENCE IHNL04122
+
+EMG_Model AFE_EMG schematic nil schematic EMG_TestBench TB_AFE_MEG config 0 cds0
+EMG_TestBench TB_AFE_MEG schematic nil schematic EMG_TestBench TB_AFE_MEG config 1 cds1

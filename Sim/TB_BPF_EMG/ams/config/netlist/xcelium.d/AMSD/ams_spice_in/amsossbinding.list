@@ -1,0 +1,5 @@
+designtop="EMG_TestBench.TB_BPF_EMG:schematic"
+cell="vcvs" view="analogtext" 
+cell="BPF_EMG" lib="EMG_Model" view="verilogams" 
+cell="isource" view="analogtext" 
+cell="vsource" view="analogtext" 

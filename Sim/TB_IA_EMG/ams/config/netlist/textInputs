@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - EMG_Model ,Cell - IA_EMG, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/IA_EMG/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG view:verilogams"
+
+// Create required libraries 
+-makelib EMG_TestBench 
+-endlib 

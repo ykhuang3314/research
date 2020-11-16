@@ -1,0 +1,17 @@
+cellMap,*TB_IA_EMG,*TB_IA_EMG,*null,*null
+topMap,*TB_IA_EMG
+netMap,*TB_IA_EMG,*gnd!,*0
+instMap,*TB_IA_EMG,*V2,*V2
+instMaster,*TB_IA_EMG,*V2,*analogLib_vsin_spectre,*vsource
+instMap,*TB_IA_EMG,*V1,*V1
+instMaster,*TB_IA_EMG,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*TB_IA_EMG,*V0,*V0
+instMaster,*TB_IA_EMG,*V0,*analogLib_vdc_spectre,*vsource
+instMap,*TB_IA_EMG,*E2,*E2
+instMaster,*TB_IA_EMG,*E2,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_IA_EMG,*E1,*E1
+instMaster,*TB_IA_EMG,*E1,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_IA_EMG,*E0,*E0
+instMaster,*TB_IA_EMG,*E0,*analogLib_vcvs_spectre,*vcvs
+instMap,*TB_IA_EMG,*I1,*I1
+instMaster,*TB_IA_EMG,*I1,*analogLib_idc_spectre,*isource

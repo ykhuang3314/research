@@ -1,0 +1,14 @@
+
+// Library name: EMG_TestBench
+// Cell name: TB_PGA_MEG
+// View name: schematic
+// Inherited view list: schematic
+V6 (Gain_Sel_0 0) vsource dc=0 type=dc
+V5 (Gain_Sel_1 0) vsource dc=0 type=dc
+V4 (Gain_Sel_2 0) vsource dc=0 type=dc
+V1 (Vin_CM 0) vsource dc=0 type=dc
+V0 (Vdda 0) vsource dc=1.8 type=dc
+V2 (vsig 0) vsource mag=0 type=sine ampl=200m freq=100
+E1 (net8 Vin_CM vsig 0) vcvs gain=-0.5
+E0 (net7 Vin_CM vsig 0) vcvs gain=0.5
+I1 (Vdda net9) isource type=dc

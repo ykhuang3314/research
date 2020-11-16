@@ -1,0 +1,9 @@
+
+// Library name: EMG_TestBench
+// Cell name: TB_BPF_EMG
+// View name: schematic
+// Inherited view list: schematic
+V0 (Vsig 0) vsource mag=1 type=sine
+V1 (Vdda 0) vsource dc=1.8 type=dc
+I1 (Vdda net5) isource dc=10u type=dc
+E0 (Vout 0 net04 net05) vcvs gain=1.0

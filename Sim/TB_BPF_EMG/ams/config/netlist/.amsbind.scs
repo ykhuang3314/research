@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_TestBench.TB_BPF_EMG:config
+// Created On: Nov 16 22:21:47 2020
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_TestBench.TB_BPF_EMG:schematic"
+
+	config cell="vcvs" view="analogtext"
+	config cell="BPF_EMG" lib="EMG_Model" view="verilogams"
+	config cell="isource" view="analogtext"
+	config cell="vsource" view="analogtext"
+
+ }

@@ -1,0 +1,6 @@
+designtop="EMG_TestBench.TB_SingleChannel:schematic"
+cell="vcvs" view="analogtext" 
+cell="PGA_EMG" lib="EMG_Model" view="verilogams" 
+cell="IA_EMG" lib="EMG_Model" view="verilogams" 
+cell="BPF_EMG" lib="EMG_Model" view="verilogams" 
+cell="vsource" view="analogtext" 

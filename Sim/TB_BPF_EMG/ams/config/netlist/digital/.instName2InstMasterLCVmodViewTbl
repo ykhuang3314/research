@@ -1,0 +1,5 @@
+("TB_BPF_EMG" "I1") ("analogLib" "idc" "spectre" "spectre" "EMG_TestBench" "TB_BPF_EMG" "schematic")
+("TB_BPF_EMG" "V0") ("analogLib" "vsin" "spectre" "spectre" "EMG_TestBench" "TB_BPF_EMG" "schematic")
+("TB_BPF_EMG" "I0") ("EMG_Model" "BPF_EMG" "verilogams" "verilogams" "EMG_TestBench" "TB_BPF_EMG" "schematic")
+("TB_BPF_EMG" "E0") ("analogLib" "vcvs" "spectre" "spectre" "EMG_TestBench" "TB_BPF_EMG" "schematic")
+("TB_BPF_EMG" "V1") ("analogLib" "vdc" "spectre" "spectre" "EMG_TestBench" "TB_BPF_EMG" "schematic")

@@ -1,0 +1,5 @@
+("analogLib" "vcvs" "spectre") "vcvs"
+("EMG_Model" "BPF_EMG" "verilogams") "BPF_EMG"
+("analogLib" "idc" "spectre") "isource"
+("analogLib" "vsin" "spectre") "vsource"
+("analogLib" "vdc" "spectre") "vsource"

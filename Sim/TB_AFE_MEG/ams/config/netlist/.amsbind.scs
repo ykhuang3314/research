@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_TestBench.TB_AFE_MEG:config
+// Created On: Nov 16 22:44:19 2020
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_TestBench.TB_AFE_MEG:schematic"
+
+	config cell="vcvs" view="analogtext"
+	config cell="IA_EMG" lib="EMG_Model" view="verilogams"
+	config cell="PGA_EMG" lib="EMG_Model" view="verilogams"
+	config cell="BPF_EMG" lib="EMG_Model" view="verilogams"
+	config cell="isource" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="AFE_EMG" lib="EMG_Model" view="schematic"
+
+ }
