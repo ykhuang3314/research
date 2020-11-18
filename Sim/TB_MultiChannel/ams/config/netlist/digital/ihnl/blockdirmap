@@ -1,0 +1,5 @@
+CADENCE IHNL04123
+
+EMG_Model AFE_EMG schematic nil schematic EMG_TestBench TB_MultiChannel config 0 cds0
+EMG_Model MultiCH_16_EMG schematic nil schematic EMG_TestBench TB_MultiChannel config 0 cds1
+EMG_TestBench TB_MultiChannel schematic nil schematic EMG_TestBench TB_MultiChannel config 1 cds2

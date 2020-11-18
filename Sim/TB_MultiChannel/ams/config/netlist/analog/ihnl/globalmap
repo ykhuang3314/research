@@ -1,0 +1,11 @@
+CADENCE IHNL04120
+$model
+EMG_TestBench/TB_MultiChannel/schematic EMG_TestBench/TB_MultiChannel/schematic/schematic/EMG_TestBench_TB_MultiChannel_config/1 TB_MultiChannel
+EMG_Model/AFE_EMG/schematic EMG_Model/AFE_EMG/schematic/schematic/EMG_TestBench_TB_MultiChannel_config/0 AFE_EMG
+EMG_Model/MultiCH_16_EMG/schematic EMG_Model/MultiCH_16_EMG/schematic/schematic/EMG_TestBench_TB_MultiChannel_config/0 MultiCH_16_EMG
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

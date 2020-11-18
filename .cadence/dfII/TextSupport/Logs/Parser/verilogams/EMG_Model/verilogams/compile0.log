@@ -1,9 +1,9 @@
 xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xmvlog(64)	18.03-s018: Started on Nov 13, 2020 at 11:59:27 CET
+TOOL:	xmvlog(64)	18.03-s018: Started on Nov 18, 2020 at 00:10:16 CET
 xmvlog
     -use5x
     -SPECIFICUNIT IA_EMG
-    -zparse /tmp/vamsZpart16457
+    -zparse /tmp/vamsZparbi2887
     -NOWARN DLNOHV
     -work EMG_Model
     -view verilogams
@@ -18,4 +18,4 @@ file: /home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams
 	module EMG_Model.IA_EMG:verilogams
 		errors: 0, warnings: 0
 	 writing out DPL output:
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 13, 2020 at 11:59:27 CET  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 18, 2020 at 00:10:16 CET  (total: 00:00:00)

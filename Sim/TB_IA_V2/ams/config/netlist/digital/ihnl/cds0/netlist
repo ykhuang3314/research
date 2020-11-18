@@ -1,0 +1,19 @@
+// Library - EMG_TestBench, Cell - TB_IA_V2, View - schematic
+// LAST TIME SAVED: Nov 17 23:34:59 2020
+// NETLIST TIME: Nov 17 23:50:04 2020
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_IA_V2", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Nov 17 23:34:59 2020" *)
+
+module TB_IA_V2 ();
+
+
+IA_EMG_V2 I0 ( .Ibias(net9), .Vdda(Vdda), .Voutn(Voutn), .Voutp(Voutp), 
+    .Vssa(cds_globals.\gnd! ), .Vsub(cds_globals.\gnd! ), .Vinn(net8), 
+    .Vinp(net7));
+
+endmodule

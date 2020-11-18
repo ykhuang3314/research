@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"CLKv" ".CLKv"
+"Resetv" ".Resetv"
+"CH_Sel<0>v" ".CH_Sel[0]v"
+"CH_Sel<1>v" ".CH_Sel[1]v"
+"CH_Sel<2>v" ".CH_Sel[2]v"
+"CH_Sel<3>v" ".CH_Sel[3]v"
+"startv" ".startv"

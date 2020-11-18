@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 17 23:50:04 2020
+// Design library name: EMG_TestBench
+// Design cell name: TB_IA_V2
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

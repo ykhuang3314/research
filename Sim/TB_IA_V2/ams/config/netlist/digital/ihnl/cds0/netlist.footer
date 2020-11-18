@@ -1,0 +1,6 @@
+
+IA_EMG_V2 I0 ( .Ibias(net9), .Vdda(Vdda), .Voutn(Voutn), .Voutp(Voutp), 
+    .Vssa(cds_globals.\gnd! ), .Vsub(cds_globals.\gnd! ), .Vinn(net8), 
+    .Vinp(net7));
+
+endmodule

@@ -1,0 +1,20 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Nov 18, 2020 at 22:40:56 CET
+xmvlog
+    -use5x
+    -SPECIFICUNIT Counter_EMG
+    -zparse /tmp/vamsZparlj2887
+    -NOWARN DLNOHV
+    -work EMG_Model
+    -view functional
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilog/EMG_Model/functional/compile0.log
+    -messages
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/EMG_Model/Counter_EMG/functional/verilog.v
+
+file: /home/ykhuang/research/EMG_Model/Counter_EMG/functional/verilog.v
+	module EMG_Model.Counter_EMG:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 18, 2020 at 22:40:56 CET  (total: 00:00:00)

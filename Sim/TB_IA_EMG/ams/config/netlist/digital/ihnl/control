@@ -2,7 +2,7 @@ hnlLastStopCellInfo = '(
                            ( "analogLib" "vsin" "spectre" "35" "1570591052" )
                           ( "analogLib" "vdc" "spectre" "33" "1570591052" )
                           ( "analogLib" "vcvs" "spectre" "48" "1570591052" )
-                          ( "EMG_Model" "IA_EMG" "verilogams" "1605265167" "1605265167" )
+                          ( "EMG_Model" "IA_EMG" "verilogams" "1605654616" "1605654616" )
                           ( "analogLib" "idc" "spectre" "33" "1570591052" )
                        )
 hnlLastNetlistConfig = t

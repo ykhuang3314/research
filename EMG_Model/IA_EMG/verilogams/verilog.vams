@@ -6,7 +6,7 @@
 module IA_EMG (Voutp, Voutn, Vinp, Vinn, Vdda, Vssa, Ibias, Vsub);
 
 // I/O port declaration
-output Voutp, Voutn;
+inout Voutp, Voutn;
 input Vinp, Vinn;
 inout Vdda, Vssa, Ibias, Vsub;
 
@@ -15,41 +15,61 @@ electrical Voutp, Voutn, Vinp, Vinn, Vdda, Vssa, Ibias, Vsub;
 
 // Parameters
 parameter real Vcm = 0.9;	// common-mode voltage
-parameter real Av = 25; 	// voltage gain
+parameter real Av = 2000; // DC voltage gain
 parameter real fp1 = 1k; 	// pole
-parameter real Vsoft = 0.2; // output swing limitation
-parameter real SR = 10e6; // slew rate (V/sec)
+//parameter real Vsoft = 0.2; // output swing limitation
+//parameter real SR = 10e6; // slew rate (V/sec)
+parameter real R1 = 1k; 
+parameter real R2 = 24k;
+parameter real ip3 = -12.8;// 3rd order intercept point in dBm
+parameter real RS = 10; //Source Resistance
+parameter real CS = 3e-7; //Source Capacitance
 
 // interanl variables
 real Vdd_val, Vss_val;
 real Vin, Vdiff, outp, outn;
+real c, ip, vodif, Voutmax, Vinmax;
+
+//internal nodes
+electrical inp, inn;
 
 // analog
 analog begin	
 
 	@(initial_step) begin 
-		Vdd_val = V(Vdda);
-		Vss_val = V(Vssa);
+		//Nonlinearity Model
+		c = Av*(4/3)/(pow(10,ip3/10)*2*RS*0.001);
+	
+		// Compute the critical point
+		Vinmax = sqrt(Av/(3*c));
+		Voutmax = (2*Av/3)*Vinmax;
 	end
 
 // output voltage
-	Vin = V(Vinp, Vinn);
-	Vdiff = laplace_nd(Av*Vin, {1}, {1, 1/(`M_TWO_PI*fp1)}); // singel pole
+	I(Vinp, inp) <+ V(Vinp, inp)/R1;
+	I(Vinn, inn) <+ V(Vinn, inn)/R1;
+ 	
+	Vin = V(inp, inn);
+	
+// Apply the third order nonlinearity. Clamp the output for extreme inputs
+	if (abs(Vin) < Vinmax )
+		vodif = (Av - c*Vin*Vin)*Vin;
+	else if (Vin > 0)
+		vodif = Voutmax;
+	else 
+		vodif = -Voutmax;
+
+	Vdiff = laplace_nd(vodif, {1}, {1, 1/(`M_TWO_PI*fp1)});
+	
 	outp = Vcm + 0.5*Vdiff;
 	outn = Vcm - 0.5*Vdiff;
-	
-// output swing limitation	
-	if(outp>(Vdd_val-Vsoft))
-		outp = Vdd_val-Vsoft;
-	if(outp<(Vss_val+Vsoft))
-		outp = Vss_val+Vsoft;
-	if(outn>(Vdd_val-Vsoft))
-		outn = Vdd_val-Vsoft;
-	if(outn<(Vss_val+Vsoft))
-		outn = Vss_val+Vsoft;	
 
-	V(Voutp) <+ slew(outp, SR);
-	V(Voutn) <+ slew(outn, SR);
+	V(Voutp) <+ outp;
+	V(Voutn) <+ outn;
+	
+	I(Voutp, inn) <+ V(Voutp, inn)/R2;
+	I(Voutn, inp) <+ V(Voutn, inp)/R2;
+
 end
 
 endmodule

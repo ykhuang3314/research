@@ -22,9 +22,9 @@
 ( net TB_IA_EMG.net11 TB_IA_EMG.net11 analog electrical )
 ( net TB_IA_EMG.I0.Ibias TB_IA_EMG.net11 analog electrical )
 
-( net TB_IA_EMG.I0.Vdd_val TB_IA_EMG.I0.Vdd_val analog None )
+( net TB_IA_EMG.I0.Vdd_val TB_IA_EMG.I0.Vdd_val digital logic (type rnm) )
 
-( net TB_IA_EMG.I0.Vss_val TB_IA_EMG.I0.Vss_val analog None )
+( net TB_IA_EMG.I0.Vss_val TB_IA_EMG.I0.Vss_val digital logic (type rnm) )
 
 ( net TB_IA_EMG.I0.Vin TB_IA_EMG.I0.Vin analog None )
 
@@ -34,19 +34,33 @@
 
 ( net TB_IA_EMG.I0.outn TB_IA_EMG.I0.outn analog None )
 
+( net TB_IA_EMG.I0.c TB_IA_EMG.I0.c analog None )
+
+( net TB_IA_EMG.I0.ip TB_IA_EMG.I0.ip digital logic (type rnm) )
+
+( net TB_IA_EMG.I0.vodif TB_IA_EMG.I0.vodif analog None )
+
+( net TB_IA_EMG.I0.Voutmax TB_IA_EMG.I0.Voutmax analog None )
+
+( net TB_IA_EMG.I0.Vinmax TB_IA_EMG.I0.Vinmax analog None )
+
+( net TB_IA_EMG.I0.inp TB_IA_EMG.I0.inp analog electrical )
+
+( net TB_IA_EMG.I0.inn TB_IA_EMG.I0.inn analog electrical )
+
 ( net TB_IA_EMG.vsig TB_IA_EMG.vsig analog electrical )
 
 ( net TB_IA_EMG.Vin_CM TB_IA_EMG.Vin_CM analog electrical )
 
 ( net TB_IA_EMG.Vout TB_IA_EMG.Vout analog electrical )
 
-(instance TB_IA_EMG.I0 analog)
+(instance TB_IA_EMG.I0 mixed (type rnm))
 (instance TB_IA_EMG.V2 analog)
 (instance TB_IA_EMG.V1 analog)
 (instance TB_IA_EMG.V0 analog)
-(instance TB_IA_EMG.E2 analog)
 (instance TB_IA_EMG.E1 analog)
+(instance TB_IA_EMG.E2 analog)
 (instance TB_IA_EMG.E0 analog)
 (instance TB_IA_EMG.I1 analog)
-(instance TB_IA_EMG analog)
+(instance TB_IA_EMG mixed (type rnm))
 (instance cds_globals analog)

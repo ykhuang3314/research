@@ -1,0 +1,33 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/TB_IA_V2/ams/config/netlist/.mapi//xcelium.d/AMSD/ahdlSimDB"
+-amsdlibdir
+/home/ykhuang/research/Sim/TB_IA_V2/ams/config/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-MESSAGES
++EMGRLOG
+/home/ykhuang/research/Sim/TB_IA_V2/ams/config/netlist/.mapi/mapirun.log
+-XLSTIME
+1605653401
+-XLKEEP
+-XLMODE
+/home/ykhuang/research/Sim/TB_IA_V2/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+/home/ykhuang/research/Sim/TB_IA_V2/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+/home/ykhuang/research/Sim/TB_IA_V2/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	18.03-s018"

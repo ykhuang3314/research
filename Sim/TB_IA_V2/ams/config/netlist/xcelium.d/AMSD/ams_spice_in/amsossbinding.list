@@ -1,0 +1,5 @@
+designtop="EMG_TestBench.TB_IA_V2:schematic"
+cell="vcvs" view="analogtext" 
+cell="IA_EMG_V2" lib="EMG_Model" view="verilogams" 
+cell="isource" view="analogtext" 
+cell="vsource" view="analogtext" 

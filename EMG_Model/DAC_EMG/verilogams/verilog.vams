@@ -1,0 +1,43 @@
+//Verilog-AMS HDL for "EMG_202009", "DAC" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module DAC_EMG (Vout, Din, Clk, Vdda, Vssa );
+
+parameter integer bits = 12 from [1:16];			// ADC resolution
+parameter real V_fullscale = 1.5;					// input signal range from 0 to fullscale
+parameter real td = 0;							// delay from clock edge to output
+parameter real tt = 0;							// transition time of output
+parameter real Vdd = 1.8;							// voltage level of logic high
+parameter real thresh = Vdd/2;					// logic thrshold level
+parameter integer dir = 1 from [-1:1] exclude 0;	// 1:rising edge, -1:falling edge  
+
+output Vout;
+input [bits-1:0] Din;
+input Clk, Vdda, Vssa;
+
+electrical Vout, Clk, Vdda, Vssa;
+electrical [bits-1:0] Din;
+
+real aout;
+integer weight;
+genvar i;
+
+analog begin
+	@(cross(V(Clk, Vssa) - thresh, +1) or initial_step) begin // rising edge trigger
+		aout = 0;
+		weight = 2;
+		for(i=bits-1; i>=0; i=i-1) begin
+			if(V(Din[i], Vssa) > thresh) begin			
+				aout = aout + V_fullscale/weight;
+			end 
+			weight = 2*weight;
+		end
+	end
+	
+	V(Vout) <+ transition(aout, td, tt);
+
+end
+
+endmodule

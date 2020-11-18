@@ -1,0 +1,49 @@
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.433.isr9 64bit -- 5 Nov 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 8476
+Memory  available: 52.7494 GB  physical: 67.2863 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1200.0] ( 16 ),  1 [1217.4] ( 17 ),  2 [1201.6] ( 18 )
+                 3 [1200.7] ( 19 ),  4 [1200.3] ( 20 ),  5 [1200.3] ( 21 )
+                 6 [1204.1] ( 22 ),  7 [1200.0] ( 23 )
+        1:       8 [1200.3] ( 24 ),  9 [1200.0] ( 25 ), 10 [1283.2] ( 26 )
+                11 [1200.0] ( 27 ), 12 [1200.0] ( 28 ), 13 [1252.0] ( 29 )
+                14 [1235.3] ( 30 ), 15 [1199.9] ( 31 )
+        
+System load averages (1min, 5min, 15min) : 1.3 %, 0.7 %, 0.5 %
+Hyperthreading is enabled
+
+
+Simulating `/home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 11:55:21 PM, Wed Nov 18, 2020 (process id: 8476).
+Current working directory: /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=
+Command line:
+    amsprimtool  \
+        /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt  \
+        -noraw -va,amsspice_pre -ahdllibdir  \
+        /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/ahdlSimDB  \
+        =log  \
+        /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
+        -token  \
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDA126F37837D471DEBA2AFC31339371C2EE04803012A43FE4AD0AC828389A79F3E230EE213D883FD1A13AA57037D476D9B522F77624D479C3A062EC297F83799FB139A03D7E9F65DDA141A3103196549FB22EFB3C35A479D3A83DE53F31963F9EBB31C13F0F8B73D5ED2ABF6170C37BC4AF3DEA2464DB2388A83DDEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06761C8648AA83DC30C50FB10B0F7884B6BF6AC4F0500005F08
+
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/.mapi/xcelium.d/AMSD/ams_spice_in/.amsspice_pre.ckt
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 127.564 ms, elapsed = 211.882 ms.
+Time accumulated: CPU = 189.393 ms, elapsed = 211.893 ms.
+Peak resident memory used = 48.4 Mbytes.
+

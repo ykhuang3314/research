@@ -1,0 +1,1943 @@
+( global ( resolution_type basic ) )
+
+( net TB_MultiChannel.I3.I35.Voutp_BPF TB_MultiChannel.I3.I35.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I35.I2.Vinp TB_MultiChannel.I3.I35.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I35.I1.Voutp TB_MultiChannel.I3.I35.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I35.Voutn_BPF TB_MultiChannel.I3.I35.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I35.I2.Vinn TB_MultiChannel.I3.I35.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I35.I1.Voutn TB_MultiChannel.I3.I35.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I35.Voutp_IA TB_MultiChannel.I3.I35.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I35.I0.Voutp TB_MultiChannel.I3.I35.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I35.I1.Vinp TB_MultiChannel.I3.I35.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I35.Voutn_IA TB_MultiChannel.I3.I35.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I35.I0.Voutn TB_MultiChannel.I3.I35.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I35.I1.Vinn TB_MultiChannel.I3.I35.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I5.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.En_ADC TB_MultiChannel.Vdda digital/mixed logic )
+( net TB_MultiChannel.I3.I18.En TB_MultiChannel.Vdda digital/mixed logic )
+( net TB_MultiChannel.I3.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I18.Vdda TB_MultiChannel.Vdda digital/mixed logic )
+( net TB_MultiChannel.I3.I17.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I2.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I0.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I1.Vdda TB_MultiChannel.Vdda analog/mixed electrical )
+
+( net TB_MultiChannel.I3.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I18.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I17.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I2.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I0.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I1.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net cds_globals.\gnd!  TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I5.Vssa TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I4.Reset TB_MultiChannel.I3.Vssa digital/mixed logic )
+( net TB_MultiChannel.I3.Vref TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I0.Vinn TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I18.Vsub TB_MultiChannel.I3.Vssa digital/mixed logic )
+( net TB_MultiChannel.I3.I17.Vsub TB_MultiChannel.I3.Vssa digital/mixed logic )
+( net TB_MultiChannel.I3.I34.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I34.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I31.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I28.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I25.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I32.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I33.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I22.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I29.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I30.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I21.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I26.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I27.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I20.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I23.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I24.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I2.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I0.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+( net TB_MultiChannel.I3.I35.I1.Vsub TB_MultiChannel.I3.Vssa analog/mixed electrical )
+
+( net TB_MultiChannel.net3 TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I18.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I34.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I34.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I34.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I34.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I31.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I31.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I31.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I31.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I28.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I28.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I28.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I28.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I25.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I25.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I25.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I25.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I32.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I32.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I32.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I32.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I33.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I33.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I33.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I33.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I22.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I22.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I22.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I22.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I29.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I29.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I29.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I29.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I30.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I30.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I30.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I30.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I21.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I21.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I21.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I21.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I26.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I26.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I26.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I26.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I27.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I27.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I27.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I27.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I20.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I20.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I20.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I20.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I23.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I23.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I23.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I23.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I24.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I24.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I24.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I24.I1.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I35.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I35.I2.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I35.I0.Ibias TB_MultiChannel.net3 analog electrical )
+( net TB_MultiChannel.I3.I35.I1.Ibias TB_MultiChannel.net3 analog electrical )
+
+( net TB_MultiChannel.I3.I35.I1.Vin TB_MultiChannel.I3.I35.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I35.I1.Vdiff TB_MultiChannel.I3.I35.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E16 TB_MultiChannel.E16 analog electrical )
+( net TB_MultiChannel.I3.E16 TB_MultiChannel.E16 analog electrical )
+( net TB_MultiChannel.I3.I35.Vinp TB_MultiChannel.E16 analog electrical )
+( net TB_MultiChannel.I3.I35.I0.Vinp TB_MultiChannel.E16 analog electrical )
+
+( net TB_MultiChannel.I3.I35.I0.Vdd_val TB_MultiChannel.I3.I35.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I35.I0.Vss_val TB_MultiChannel.I3.I35.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I35.I0.Vin TB_MultiChannel.I3.I35.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I35.I0.Vdiff TB_MultiChannel.I3.I35.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I35.I0.outp TB_MultiChannel.I3.I35.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I35.I0.outn TB_MultiChannel.I3.I35.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I35.I0.c TB_MultiChannel.I3.I35.I0.c analog None )
+
+( net TB_MultiChannel.I3.I35.I0.ip TB_MultiChannel.I3.I35.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I35.I0.vodif TB_MultiChannel.I3.I35.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I35.I0.Voutmax TB_MultiChannel.I3.I35.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I35.I0.Vinmax TB_MultiChannel.I3.I35.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I35.I0.inp TB_MultiChannel.I3.I35.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I35.I0.inn TB_MultiChannel.I3.I35.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH16 TB_MultiChannel.I3.Vout_CH16 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin15 TB_MultiChannel.I3.Vout_CH16 analog electrical )
+( net TB_MultiChannel.I3.I35.Vout TB_MultiChannel.I3.Vout_CH16 analog electrical )
+( net TB_MultiChannel.I3.I35.I2.Vout TB_MultiChannel.I3.Vout_CH16 analog electrical )
+
+( net TB_MultiChannel.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] analog/mixed electrical )
+( net TB_MultiChannel.I3.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I34.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I34.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I31.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I31.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I28.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I28.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I25.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I25.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I32.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I32.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I33.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I33.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I22.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I22.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I29.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I29.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I30.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I30.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I21.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I21.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I26.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I26.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I27.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I27.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I20.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I20.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I23.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I23.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I24.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I24.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I35.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I35.I2.Gain_Sel[2] TB_MultiChannel.Gain_Sel[2] digital/mixed logic )
+
+( net TB_MultiChannel.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] analog/mixed electrical )
+( net TB_MultiChannel.I3.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I34.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I34.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I31.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I31.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I28.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I28.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I25.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I25.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I32.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I32.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I33.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I33.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I22.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I22.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I29.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I29.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I30.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I30.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I21.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I21.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I26.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I26.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I27.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I27.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I20.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I20.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I23.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I23.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I24.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I24.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I35.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I35.I2.Gain_Sel[1] TB_MultiChannel.Gain_Sel[1] digital/mixed logic )
+
+( net TB_MultiChannel.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] analog/mixed electrical )
+( net TB_MultiChannel.I3.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I34.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I34.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I31.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I31.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I28.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I28.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I25.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I25.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I32.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I32.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I33.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I33.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I22.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I22.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I29.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I29.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I30.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I30.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I21.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I21.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I26.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I26.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I27.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I27.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I20.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I20.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I23.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I23.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I24.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I24.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I35.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I35.I2.Gain_Sel[0] TB_MultiChannel.Gain_Sel[0] digital/mixed logic )
+
+( net TB_MultiChannel.I3.I35.I2.gain TB_MultiChannel.I3.I35.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I35.I2.Vdd_val TB_MultiChannel.I3.I35.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I35.I2.Vss_val TB_MultiChannel.I3.I35.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I35.I2.Vin TB_MultiChannel.I3.I35.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I35.I2.out TB_MultiChannel.I3.I35.I2.out analog None )
+
+( net TB_MultiChannel.I3.I24.Voutp_BPF TB_MultiChannel.I3.I24.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I24.I2.Vinp TB_MultiChannel.I3.I24.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I24.I1.Voutp TB_MultiChannel.I3.I24.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I24.Voutn_BPF TB_MultiChannel.I3.I24.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I24.I2.Vinn TB_MultiChannel.I3.I24.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I24.I1.Voutn TB_MultiChannel.I3.I24.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I24.Voutp_IA TB_MultiChannel.I3.I24.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I24.I0.Voutp TB_MultiChannel.I3.I24.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I24.I1.Vinp TB_MultiChannel.I3.I24.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I24.Voutn_IA TB_MultiChannel.I3.I24.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I24.I0.Voutn TB_MultiChannel.I3.I24.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I24.I1.Vinn TB_MultiChannel.I3.I24.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I24.I1.Vin TB_MultiChannel.I3.I24.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I24.I1.Vdiff TB_MultiChannel.I3.I24.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E2 TB_MultiChannel.E2 analog electrical )
+( net TB_MultiChannel.I3.E2 TB_MultiChannel.E2 analog electrical )
+( net TB_MultiChannel.I3.I24.Vinp TB_MultiChannel.E2 analog electrical )
+( net TB_MultiChannel.I3.I24.I0.Vinp TB_MultiChannel.E2 analog electrical )
+
+( net TB_MultiChannel.I3.I24.I0.Vdd_val TB_MultiChannel.I3.I24.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I24.I0.Vss_val TB_MultiChannel.I3.I24.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I24.I0.Vin TB_MultiChannel.I3.I24.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I24.I0.Vdiff TB_MultiChannel.I3.I24.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I24.I0.outp TB_MultiChannel.I3.I24.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I24.I0.outn TB_MultiChannel.I3.I24.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I24.I0.c TB_MultiChannel.I3.I24.I0.c analog None )
+
+( net TB_MultiChannel.I3.I24.I0.ip TB_MultiChannel.I3.I24.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I24.I0.vodif TB_MultiChannel.I3.I24.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I24.I0.Voutmax TB_MultiChannel.I3.I24.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I24.I0.Vinmax TB_MultiChannel.I3.I24.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I24.I0.inp TB_MultiChannel.I3.I24.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I24.I0.inn TB_MultiChannel.I3.I24.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH2 TB_MultiChannel.I3.Vout_CH2 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin1 TB_MultiChannel.I3.Vout_CH2 analog electrical )
+( net TB_MultiChannel.I3.I24.Vout TB_MultiChannel.I3.Vout_CH2 analog electrical )
+( net TB_MultiChannel.I3.I24.I2.Vout TB_MultiChannel.I3.Vout_CH2 analog electrical )
+
+( net TB_MultiChannel.I3.I24.I2.gain TB_MultiChannel.I3.I24.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I24.I2.Vdd_val TB_MultiChannel.I3.I24.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I24.I2.Vss_val TB_MultiChannel.I3.I24.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I24.I2.Vin TB_MultiChannel.I3.I24.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I24.I2.out TB_MultiChannel.I3.I24.I2.out analog None )
+
+( net TB_MultiChannel.I3.I23.Voutp_BPF TB_MultiChannel.I3.I23.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I23.I2.Vinp TB_MultiChannel.I3.I23.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I23.I1.Voutp TB_MultiChannel.I3.I23.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I23.Voutn_BPF TB_MultiChannel.I3.I23.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I23.I2.Vinn TB_MultiChannel.I3.I23.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I23.I1.Voutn TB_MultiChannel.I3.I23.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I23.Voutp_IA TB_MultiChannel.I3.I23.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I23.I0.Voutp TB_MultiChannel.I3.I23.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I23.I1.Vinp TB_MultiChannel.I3.I23.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I23.Voutn_IA TB_MultiChannel.I3.I23.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I23.I0.Voutn TB_MultiChannel.I3.I23.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I23.I1.Vinn TB_MultiChannel.I3.I23.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I23.I1.Vin TB_MultiChannel.I3.I23.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I23.I1.Vdiff TB_MultiChannel.I3.I23.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E13 TB_MultiChannel.E13 analog electrical )
+( net TB_MultiChannel.I3.E13 TB_MultiChannel.E13 analog electrical )
+( net TB_MultiChannel.I3.I23.Vinp TB_MultiChannel.E13 analog electrical )
+( net TB_MultiChannel.I3.I23.I0.Vinp TB_MultiChannel.E13 analog electrical )
+
+( net TB_MultiChannel.I3.I23.I0.Vdd_val TB_MultiChannel.I3.I23.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I23.I0.Vss_val TB_MultiChannel.I3.I23.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I23.I0.Vin TB_MultiChannel.I3.I23.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I23.I0.Vdiff TB_MultiChannel.I3.I23.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I23.I0.outp TB_MultiChannel.I3.I23.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I23.I0.outn TB_MultiChannel.I3.I23.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I23.I0.c TB_MultiChannel.I3.I23.I0.c analog None )
+
+( net TB_MultiChannel.I3.I23.I0.ip TB_MultiChannel.I3.I23.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I23.I0.vodif TB_MultiChannel.I3.I23.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I23.I0.Voutmax TB_MultiChannel.I3.I23.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I23.I0.Vinmax TB_MultiChannel.I3.I23.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I23.I0.inp TB_MultiChannel.I3.I23.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I23.I0.inn TB_MultiChannel.I3.I23.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH13 TB_MultiChannel.I3.Vout_CH13 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin12 TB_MultiChannel.I3.Vout_CH13 analog electrical )
+( net TB_MultiChannel.I3.I23.Vout TB_MultiChannel.I3.Vout_CH13 analog electrical )
+( net TB_MultiChannel.I3.I23.I2.Vout TB_MultiChannel.I3.Vout_CH13 analog electrical )
+
+( net TB_MultiChannel.I3.I23.I2.gain TB_MultiChannel.I3.I23.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I23.I2.Vdd_val TB_MultiChannel.I3.I23.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I23.I2.Vss_val TB_MultiChannel.I3.I23.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I23.I2.Vin TB_MultiChannel.I3.I23.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I23.I2.out TB_MultiChannel.I3.I23.I2.out analog None )
+
+( net TB_MultiChannel.I3.I20.Voutp_BPF TB_MultiChannel.I3.I20.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I20.I2.Vinp TB_MultiChannel.I3.I20.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I20.I1.Voutp TB_MultiChannel.I3.I20.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I20.Voutn_BPF TB_MultiChannel.I3.I20.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I20.I2.Vinn TB_MultiChannel.I3.I20.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I20.I1.Voutn TB_MultiChannel.I3.I20.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I20.Voutp_IA TB_MultiChannel.I3.I20.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I20.I0.Voutp TB_MultiChannel.I3.I20.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I20.I1.Vinp TB_MultiChannel.I3.I20.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I20.Voutn_IA TB_MultiChannel.I3.I20.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I20.I0.Voutn TB_MultiChannel.I3.I20.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I20.I1.Vinn TB_MultiChannel.I3.I20.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I20.I1.Vin TB_MultiChannel.I3.I20.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I20.I1.Vdiff TB_MultiChannel.I3.I20.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E1 TB_MultiChannel.E1 analog electrical )
+( net TB_MultiChannel.I3.E1 TB_MultiChannel.E1 analog electrical )
+( net TB_MultiChannel.I3.I20.Vinp TB_MultiChannel.E1 analog electrical )
+( net TB_MultiChannel.I3.I20.I0.Vinp TB_MultiChannel.E1 analog electrical )
+
+( net TB_MultiChannel.I3.I20.I0.Vdd_val TB_MultiChannel.I3.I20.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I20.I0.Vss_val TB_MultiChannel.I3.I20.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I20.I0.Vin TB_MultiChannel.I3.I20.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I20.I0.Vdiff TB_MultiChannel.I3.I20.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I20.I0.outp TB_MultiChannel.I3.I20.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I20.I0.outn TB_MultiChannel.I3.I20.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I20.I0.c TB_MultiChannel.I3.I20.I0.c analog None )
+
+( net TB_MultiChannel.I3.I20.I0.ip TB_MultiChannel.I3.I20.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I20.I0.vodif TB_MultiChannel.I3.I20.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I20.I0.Voutmax TB_MultiChannel.I3.I20.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I20.I0.Vinmax TB_MultiChannel.I3.I20.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I20.I0.inp TB_MultiChannel.I3.I20.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I20.I0.inn TB_MultiChannel.I3.I20.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH1 TB_MultiChannel.I3.Vout_CH1 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin0 TB_MultiChannel.I3.Vout_CH1 analog electrical )
+( net TB_MultiChannel.I3.I20.Vout TB_MultiChannel.I3.Vout_CH1 analog electrical )
+( net TB_MultiChannel.I3.I20.I2.Vout TB_MultiChannel.I3.Vout_CH1 analog electrical )
+
+( net TB_MultiChannel.I3.I20.I2.gain TB_MultiChannel.I3.I20.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I20.I2.Vdd_val TB_MultiChannel.I3.I20.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I20.I2.Vss_val TB_MultiChannel.I3.I20.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I20.I2.Vin TB_MultiChannel.I3.I20.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I20.I2.out TB_MultiChannel.I3.I20.I2.out analog None )
+
+( net TB_MultiChannel.I3.I27.Voutp_BPF TB_MultiChannel.I3.I27.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I27.I2.Vinp TB_MultiChannel.I3.I27.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I27.I1.Voutp TB_MultiChannel.I3.I27.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I27.Voutn_BPF TB_MultiChannel.I3.I27.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I27.I2.Vinn TB_MultiChannel.I3.I27.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I27.I1.Voutn TB_MultiChannel.I3.I27.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I27.Voutp_IA TB_MultiChannel.I3.I27.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I27.I0.Voutp TB_MultiChannel.I3.I27.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I27.I1.Vinp TB_MultiChannel.I3.I27.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I27.Voutn_IA TB_MultiChannel.I3.I27.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I27.I0.Voutn TB_MultiChannel.I3.I27.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I27.I1.Vinn TB_MultiChannel.I3.I27.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I27.I1.Vin TB_MultiChannel.I3.I27.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I27.I1.Vdiff TB_MultiChannel.I3.I27.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E14 TB_MultiChannel.E14 analog electrical )
+( net TB_MultiChannel.I3.E14 TB_MultiChannel.E14 analog electrical )
+( net TB_MultiChannel.I3.I27.Vinp TB_MultiChannel.E14 analog electrical )
+( net TB_MultiChannel.I3.I27.I0.Vinp TB_MultiChannel.E14 analog electrical )
+
+( net TB_MultiChannel.I3.I27.I0.Vdd_val TB_MultiChannel.I3.I27.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I27.I0.Vss_val TB_MultiChannel.I3.I27.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I27.I0.Vin TB_MultiChannel.I3.I27.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I27.I0.Vdiff TB_MultiChannel.I3.I27.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I27.I0.outp TB_MultiChannel.I3.I27.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I27.I0.outn TB_MultiChannel.I3.I27.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I27.I0.c TB_MultiChannel.I3.I27.I0.c analog None )
+
+( net TB_MultiChannel.I3.I27.I0.ip TB_MultiChannel.I3.I27.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I27.I0.vodif TB_MultiChannel.I3.I27.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I27.I0.Voutmax TB_MultiChannel.I3.I27.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I27.I0.Vinmax TB_MultiChannel.I3.I27.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I27.I0.inp TB_MultiChannel.I3.I27.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I27.I0.inn TB_MultiChannel.I3.I27.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH14 TB_MultiChannel.I3.Vout_CH14 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin13 TB_MultiChannel.I3.Vout_CH14 analog electrical )
+( net TB_MultiChannel.I3.I27.Vout TB_MultiChannel.I3.Vout_CH14 analog electrical )
+( net TB_MultiChannel.I3.I27.I2.Vout TB_MultiChannel.I3.Vout_CH14 analog electrical )
+
+( net TB_MultiChannel.I3.I27.I2.gain TB_MultiChannel.I3.I27.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I27.I2.Vdd_val TB_MultiChannel.I3.I27.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I27.I2.Vss_val TB_MultiChannel.I3.I27.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I27.I2.Vin TB_MultiChannel.I3.I27.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I27.I2.out TB_MultiChannel.I3.I27.I2.out analog None )
+
+( net TB_MultiChannel.I3.I26.Voutp_BPF TB_MultiChannel.I3.I26.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I26.I2.Vinp TB_MultiChannel.I3.I26.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I26.I1.Voutp TB_MultiChannel.I3.I26.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I26.Voutn_BPF TB_MultiChannel.I3.I26.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I26.I2.Vinn TB_MultiChannel.I3.I26.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I26.I1.Voutn TB_MultiChannel.I3.I26.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I26.Voutp_IA TB_MultiChannel.I3.I26.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I26.I0.Voutp TB_MultiChannel.I3.I26.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I26.I1.Vinp TB_MultiChannel.I3.I26.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I26.Voutn_IA TB_MultiChannel.I3.I26.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I26.I0.Voutn TB_MultiChannel.I3.I26.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I26.I1.Vinn TB_MultiChannel.I3.I26.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I26.I1.Vin TB_MultiChannel.I3.I26.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I26.I1.Vdiff TB_MultiChannel.I3.I26.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E10 TB_MultiChannel.E10 analog electrical )
+( net TB_MultiChannel.I3.E10 TB_MultiChannel.E10 analog electrical )
+( net TB_MultiChannel.I3.I26.Vinp TB_MultiChannel.E10 analog electrical )
+( net TB_MultiChannel.I3.I26.I0.Vinp TB_MultiChannel.E10 analog electrical )
+
+( net TB_MultiChannel.I3.I26.I0.Vdd_val TB_MultiChannel.I3.I26.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I26.I0.Vss_val TB_MultiChannel.I3.I26.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I26.I0.Vin TB_MultiChannel.I3.I26.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I26.I0.Vdiff TB_MultiChannel.I3.I26.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I26.I0.outp TB_MultiChannel.I3.I26.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I26.I0.outn TB_MultiChannel.I3.I26.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I26.I0.c TB_MultiChannel.I3.I26.I0.c analog None )
+
+( net TB_MultiChannel.I3.I26.I0.ip TB_MultiChannel.I3.I26.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I26.I0.vodif TB_MultiChannel.I3.I26.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I26.I0.Voutmax TB_MultiChannel.I3.I26.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I26.I0.Vinmax TB_MultiChannel.I3.I26.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I26.I0.inp TB_MultiChannel.I3.I26.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I26.I0.inn TB_MultiChannel.I3.I26.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH10 TB_MultiChannel.I3.Vout_CH10 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin9 TB_MultiChannel.I3.Vout_CH10 analog electrical )
+( net TB_MultiChannel.I3.I26.Vout TB_MultiChannel.I3.Vout_CH10 analog electrical )
+( net TB_MultiChannel.I3.I26.I2.Vout TB_MultiChannel.I3.Vout_CH10 analog electrical )
+
+( net TB_MultiChannel.I3.I26.I2.gain TB_MultiChannel.I3.I26.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I26.I2.Vdd_val TB_MultiChannel.I3.I26.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I26.I2.Vss_val TB_MultiChannel.I3.I26.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I26.I2.Vin TB_MultiChannel.I3.I26.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I26.I2.out TB_MultiChannel.I3.I26.I2.out analog None )
+
+( net TB_MultiChannel.I3.I21.Voutp_BPF TB_MultiChannel.I3.I21.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I21.I2.Vinp TB_MultiChannel.I3.I21.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I21.I1.Voutp TB_MultiChannel.I3.I21.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I21.Voutn_BPF TB_MultiChannel.I3.I21.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I21.I2.Vinn TB_MultiChannel.I3.I21.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I21.I1.Voutn TB_MultiChannel.I3.I21.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I21.Voutp_IA TB_MultiChannel.I3.I21.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I21.I0.Voutp TB_MultiChannel.I3.I21.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I21.I1.Vinp TB_MultiChannel.I3.I21.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I21.Voutn_IA TB_MultiChannel.I3.I21.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I21.I0.Voutn TB_MultiChannel.I3.I21.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I21.I1.Vinn TB_MultiChannel.I3.I21.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I21.I1.Vin TB_MultiChannel.I3.I21.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I21.I1.Vdiff TB_MultiChannel.I3.I21.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E5 TB_MultiChannel.E5 analog electrical )
+( net TB_MultiChannel.I3.E5 TB_MultiChannel.E5 analog electrical )
+( net TB_MultiChannel.I3.I21.Vinp TB_MultiChannel.E5 analog electrical )
+( net TB_MultiChannel.I3.I21.I0.Vinp TB_MultiChannel.E5 analog electrical )
+
+( net TB_MultiChannel.I3.I21.I0.Vdd_val TB_MultiChannel.I3.I21.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I21.I0.Vss_val TB_MultiChannel.I3.I21.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I21.I0.Vin TB_MultiChannel.I3.I21.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I21.I0.Vdiff TB_MultiChannel.I3.I21.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I21.I0.outp TB_MultiChannel.I3.I21.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I21.I0.outn TB_MultiChannel.I3.I21.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I21.I0.c TB_MultiChannel.I3.I21.I0.c analog None )
+
+( net TB_MultiChannel.I3.I21.I0.ip TB_MultiChannel.I3.I21.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I21.I0.vodif TB_MultiChannel.I3.I21.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I21.I0.Voutmax TB_MultiChannel.I3.I21.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I21.I0.Vinmax TB_MultiChannel.I3.I21.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I21.I0.inp TB_MultiChannel.I3.I21.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I21.I0.inn TB_MultiChannel.I3.I21.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH5 TB_MultiChannel.I3.Vout_CH5 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin4 TB_MultiChannel.I3.Vout_CH5 analog electrical )
+( net TB_MultiChannel.I3.I21.Vout TB_MultiChannel.I3.Vout_CH5 analog electrical )
+( net TB_MultiChannel.I3.I21.I2.Vout TB_MultiChannel.I3.Vout_CH5 analog electrical )
+
+( net TB_MultiChannel.I3.I21.I2.gain TB_MultiChannel.I3.I21.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I21.I2.Vdd_val TB_MultiChannel.I3.I21.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I21.I2.Vss_val TB_MultiChannel.I3.I21.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I21.I2.Vin TB_MultiChannel.I3.I21.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I21.I2.out TB_MultiChannel.I3.I21.I2.out analog None )
+
+( net TB_MultiChannel.I3.I30.Voutp_BPF TB_MultiChannel.I3.I30.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I30.I2.Vinp TB_MultiChannel.I3.I30.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I30.I1.Voutp TB_MultiChannel.I3.I30.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I30.Voutn_BPF TB_MultiChannel.I3.I30.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I30.I2.Vinn TB_MultiChannel.I3.I30.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I30.I1.Voutn TB_MultiChannel.I3.I30.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I30.Voutp_IA TB_MultiChannel.I3.I30.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I30.I0.Voutp TB_MultiChannel.I3.I30.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I30.I1.Vinp TB_MultiChannel.I3.I30.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I30.Voutn_IA TB_MultiChannel.I3.I30.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I30.I0.Voutn TB_MultiChannel.I3.I30.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I30.I1.Vinn TB_MultiChannel.I3.I30.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I30.I1.Vin TB_MultiChannel.I3.I30.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I30.I1.Vdiff TB_MultiChannel.I3.I30.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E11 TB_MultiChannel.E11 analog electrical )
+( net TB_MultiChannel.I3.E11 TB_MultiChannel.E11 analog electrical )
+( net TB_MultiChannel.I3.I30.Vinp TB_MultiChannel.E11 analog electrical )
+( net TB_MultiChannel.I3.I30.I0.Vinp TB_MultiChannel.E11 analog electrical )
+
+( net TB_MultiChannel.I3.I30.I0.Vdd_val TB_MultiChannel.I3.I30.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I30.I0.Vss_val TB_MultiChannel.I3.I30.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I30.I0.Vin TB_MultiChannel.I3.I30.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I30.I0.Vdiff TB_MultiChannel.I3.I30.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I30.I0.outp TB_MultiChannel.I3.I30.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I30.I0.outn TB_MultiChannel.I3.I30.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I30.I0.c TB_MultiChannel.I3.I30.I0.c analog None )
+
+( net TB_MultiChannel.I3.I30.I0.ip TB_MultiChannel.I3.I30.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I30.I0.vodif TB_MultiChannel.I3.I30.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I30.I0.Voutmax TB_MultiChannel.I3.I30.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I30.I0.Vinmax TB_MultiChannel.I3.I30.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I30.I0.inp TB_MultiChannel.I3.I30.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I30.I0.inn TB_MultiChannel.I3.I30.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH11 TB_MultiChannel.I3.Vout_CH11 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin10 TB_MultiChannel.I3.Vout_CH11 analog electrical )
+( net TB_MultiChannel.I3.I30.Vout TB_MultiChannel.I3.Vout_CH11 analog electrical )
+( net TB_MultiChannel.I3.I30.I2.Vout TB_MultiChannel.I3.Vout_CH11 analog electrical )
+
+( net TB_MultiChannel.I3.I30.I2.gain TB_MultiChannel.I3.I30.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I30.I2.Vdd_val TB_MultiChannel.I3.I30.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I30.I2.Vss_val TB_MultiChannel.I3.I30.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I30.I2.Vin TB_MultiChannel.I3.I30.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I30.I2.out TB_MultiChannel.I3.I30.I2.out analog None )
+
+( net TB_MultiChannel.I3.I29.Voutp_BPF TB_MultiChannel.I3.I29.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I29.I2.Vinp TB_MultiChannel.I3.I29.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I29.I1.Voutp TB_MultiChannel.I3.I29.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I29.Voutn_BPF TB_MultiChannel.I3.I29.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I29.I2.Vinn TB_MultiChannel.I3.I29.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I29.I1.Voutn TB_MultiChannel.I3.I29.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I29.Voutp_IA TB_MultiChannel.I3.I29.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I29.I0.Voutp TB_MultiChannel.I3.I29.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I29.I1.Vinp TB_MultiChannel.I3.I29.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I29.Voutn_IA TB_MultiChannel.I3.I29.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I29.I0.Voutn TB_MultiChannel.I3.I29.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I29.I1.Vinn TB_MultiChannel.I3.I29.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I29.I1.Vin TB_MultiChannel.I3.I29.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I29.I1.Vdiff TB_MultiChannel.I3.I29.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E7 TB_MultiChannel.E7 analog electrical )
+( net TB_MultiChannel.I3.E7 TB_MultiChannel.E7 analog electrical )
+( net TB_MultiChannel.I3.I29.Vinp TB_MultiChannel.E7 analog electrical )
+( net TB_MultiChannel.I3.I29.I0.Vinp TB_MultiChannel.E7 analog electrical )
+
+( net TB_MultiChannel.I3.I29.I0.Vdd_val TB_MultiChannel.I3.I29.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I29.I0.Vss_val TB_MultiChannel.I3.I29.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I29.I0.Vin TB_MultiChannel.I3.I29.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I29.I0.Vdiff TB_MultiChannel.I3.I29.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I29.I0.outp TB_MultiChannel.I3.I29.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I29.I0.outn TB_MultiChannel.I3.I29.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I29.I0.c TB_MultiChannel.I3.I29.I0.c analog None )
+
+( net TB_MultiChannel.I3.I29.I0.ip TB_MultiChannel.I3.I29.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I29.I0.vodif TB_MultiChannel.I3.I29.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I29.I0.Voutmax TB_MultiChannel.I3.I29.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I29.I0.Vinmax TB_MultiChannel.I3.I29.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I29.I0.inp TB_MultiChannel.I3.I29.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I29.I0.inn TB_MultiChannel.I3.I29.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH7 TB_MultiChannel.I3.Vout_CH7 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin6 TB_MultiChannel.I3.Vout_CH7 analog electrical )
+( net TB_MultiChannel.I3.I29.Vout TB_MultiChannel.I3.Vout_CH7 analog electrical )
+( net TB_MultiChannel.I3.I29.I2.Vout TB_MultiChannel.I3.Vout_CH7 analog electrical )
+
+( net TB_MultiChannel.I3.I29.I2.gain TB_MultiChannel.I3.I29.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I29.I2.Vdd_val TB_MultiChannel.I3.I29.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I29.I2.Vss_val TB_MultiChannel.I3.I29.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I29.I2.Vin TB_MultiChannel.I3.I29.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I29.I2.out TB_MultiChannel.I3.I29.I2.out analog None )
+
+( net TB_MultiChannel.I3.I22.Voutp_BPF TB_MultiChannel.I3.I22.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I22.I2.Vinp TB_MultiChannel.I3.I22.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I22.I1.Voutp TB_MultiChannel.I3.I22.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I22.Voutn_BPF TB_MultiChannel.I3.I22.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I22.I2.Vinn TB_MultiChannel.I3.I22.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I22.I1.Voutn TB_MultiChannel.I3.I22.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I22.Voutp_IA TB_MultiChannel.I3.I22.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I22.I0.Voutp TB_MultiChannel.I3.I22.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I22.I1.Vinp TB_MultiChannel.I3.I22.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I22.Voutn_IA TB_MultiChannel.I3.I22.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I22.I0.Voutn TB_MultiChannel.I3.I22.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I22.I1.Vinn TB_MultiChannel.I3.I22.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I22.I1.Vin TB_MultiChannel.I3.I22.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I22.I1.Vdiff TB_MultiChannel.I3.I22.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E9 TB_MultiChannel.E9 analog electrical )
+( net TB_MultiChannel.I3.E9 TB_MultiChannel.E9 analog electrical )
+( net TB_MultiChannel.I3.I22.Vinp TB_MultiChannel.E9 analog electrical )
+( net TB_MultiChannel.I3.I22.I0.Vinp TB_MultiChannel.E9 analog electrical )
+
+( net TB_MultiChannel.I3.I22.I0.Vdd_val TB_MultiChannel.I3.I22.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I22.I0.Vss_val TB_MultiChannel.I3.I22.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I22.I0.Vin TB_MultiChannel.I3.I22.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I22.I0.Vdiff TB_MultiChannel.I3.I22.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I22.I0.outp TB_MultiChannel.I3.I22.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I22.I0.outn TB_MultiChannel.I3.I22.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I22.I0.c TB_MultiChannel.I3.I22.I0.c analog None )
+
+( net TB_MultiChannel.I3.I22.I0.ip TB_MultiChannel.I3.I22.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I22.I0.vodif TB_MultiChannel.I3.I22.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I22.I0.Voutmax TB_MultiChannel.I3.I22.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I22.I0.Vinmax TB_MultiChannel.I3.I22.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I22.I0.inp TB_MultiChannel.I3.I22.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I22.I0.inn TB_MultiChannel.I3.I22.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH9 TB_MultiChannel.I3.Vout_CH9 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin8 TB_MultiChannel.I3.Vout_CH9 analog electrical )
+( net TB_MultiChannel.I3.I22.Vout TB_MultiChannel.I3.Vout_CH9 analog electrical )
+( net TB_MultiChannel.I3.I22.I2.Vout TB_MultiChannel.I3.Vout_CH9 analog electrical )
+
+( net TB_MultiChannel.I3.I22.I2.gain TB_MultiChannel.I3.I22.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I22.I2.Vdd_val TB_MultiChannel.I3.I22.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I22.I2.Vss_val TB_MultiChannel.I3.I22.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I22.I2.Vin TB_MultiChannel.I3.I22.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I22.I2.out TB_MultiChannel.I3.I22.I2.out analog None )
+
+( net TB_MultiChannel.I3.I33.Voutp_BPF TB_MultiChannel.I3.I33.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I33.I2.Vinp TB_MultiChannel.I3.I33.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I33.I1.Voutp TB_MultiChannel.I3.I33.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I33.Voutn_BPF TB_MultiChannel.I3.I33.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I33.I2.Vinn TB_MultiChannel.I3.I33.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I33.I1.Voutn TB_MultiChannel.I3.I33.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I33.Voutp_IA TB_MultiChannel.I3.I33.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I33.I0.Voutp TB_MultiChannel.I3.I33.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I33.I1.Vinp TB_MultiChannel.I3.I33.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I33.Voutn_IA TB_MultiChannel.I3.I33.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I33.I0.Voutn TB_MultiChannel.I3.I33.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I33.I1.Vinn TB_MultiChannel.I3.I33.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I33.I1.Vin TB_MultiChannel.I3.I33.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I33.I1.Vdiff TB_MultiChannel.I3.I33.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E8 TB_MultiChannel.E8 analog electrical )
+( net TB_MultiChannel.I3.E8 TB_MultiChannel.E8 analog electrical )
+( net TB_MultiChannel.I3.I33.Vinp TB_MultiChannel.E8 analog electrical )
+( net TB_MultiChannel.I3.I33.I0.Vinp TB_MultiChannel.E8 analog electrical )
+
+( net TB_MultiChannel.I3.I33.I0.Vdd_val TB_MultiChannel.I3.I33.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I33.I0.Vss_val TB_MultiChannel.I3.I33.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I33.I0.Vin TB_MultiChannel.I3.I33.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I33.I0.Vdiff TB_MultiChannel.I3.I33.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I33.I0.outp TB_MultiChannel.I3.I33.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I33.I0.outn TB_MultiChannel.I3.I33.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I33.I0.c TB_MultiChannel.I3.I33.I0.c analog None )
+
+( net TB_MultiChannel.I3.I33.I0.ip TB_MultiChannel.I3.I33.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I33.I0.vodif TB_MultiChannel.I3.I33.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I33.I0.Voutmax TB_MultiChannel.I3.I33.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I33.I0.Vinmax TB_MultiChannel.I3.I33.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I33.I0.inp TB_MultiChannel.I3.I33.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I33.I0.inn TB_MultiChannel.I3.I33.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH8 TB_MultiChannel.I3.Vout_CH8 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin7 TB_MultiChannel.I3.Vout_CH8 analog electrical )
+( net TB_MultiChannel.I3.I33.Vout TB_MultiChannel.I3.Vout_CH8 analog electrical )
+( net TB_MultiChannel.I3.I33.I2.Vout TB_MultiChannel.I3.Vout_CH8 analog electrical )
+
+( net TB_MultiChannel.I3.I33.I2.gain TB_MultiChannel.I3.I33.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I33.I2.Vdd_val TB_MultiChannel.I3.I33.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I33.I2.Vss_val TB_MultiChannel.I3.I33.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I33.I2.Vin TB_MultiChannel.I3.I33.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I33.I2.out TB_MultiChannel.I3.I33.I2.out analog None )
+
+( net TB_MultiChannel.I3.I32.Voutp_BPF TB_MultiChannel.I3.I32.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I32.I2.Vinp TB_MultiChannel.I3.I32.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I32.I1.Voutp TB_MultiChannel.I3.I32.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I32.Voutn_BPF TB_MultiChannel.I3.I32.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I32.I2.Vinn TB_MultiChannel.I3.I32.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I32.I1.Voutn TB_MultiChannel.I3.I32.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I32.Voutp_IA TB_MultiChannel.I3.I32.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I32.I0.Voutp TB_MultiChannel.I3.I32.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I32.I1.Vinp TB_MultiChannel.I3.I32.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I32.Voutn_IA TB_MultiChannel.I3.I32.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I32.I0.Voutn TB_MultiChannel.I3.I32.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I32.I1.Vinn TB_MultiChannel.I3.I32.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I32.I1.Vin TB_MultiChannel.I3.I32.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I32.I1.Vdiff TB_MultiChannel.I3.I32.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E4 TB_MultiChannel.E4 analog electrical )
+( net TB_MultiChannel.I3.E4 TB_MultiChannel.E4 analog electrical )
+( net TB_MultiChannel.I3.I32.Vinp TB_MultiChannel.E4 analog electrical )
+( net TB_MultiChannel.I3.I32.I0.Vinp TB_MultiChannel.E4 analog electrical )
+
+( net TB_MultiChannel.I3.I32.I0.Vdd_val TB_MultiChannel.I3.I32.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I32.I0.Vss_val TB_MultiChannel.I3.I32.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I32.I0.Vin TB_MultiChannel.I3.I32.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I32.I0.Vdiff TB_MultiChannel.I3.I32.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I32.I0.outp TB_MultiChannel.I3.I32.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I32.I0.outn TB_MultiChannel.I3.I32.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I32.I0.c TB_MultiChannel.I3.I32.I0.c analog None )
+
+( net TB_MultiChannel.I3.I32.I0.ip TB_MultiChannel.I3.I32.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I32.I0.vodif TB_MultiChannel.I3.I32.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I32.I0.Voutmax TB_MultiChannel.I3.I32.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I32.I0.Vinmax TB_MultiChannel.I3.I32.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I32.I0.inp TB_MultiChannel.I3.I32.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I32.I0.inn TB_MultiChannel.I3.I32.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH4 TB_MultiChannel.I3.Vout_CH4 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin3 TB_MultiChannel.I3.Vout_CH4 analog electrical )
+( net TB_MultiChannel.I3.I32.Vout TB_MultiChannel.I3.Vout_CH4 analog electrical )
+( net TB_MultiChannel.I3.I32.I2.Vout TB_MultiChannel.I3.Vout_CH4 analog electrical )
+
+( net TB_MultiChannel.I3.I32.I2.gain TB_MultiChannel.I3.I32.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I32.I2.Vdd_val TB_MultiChannel.I3.I32.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I32.I2.Vss_val TB_MultiChannel.I3.I32.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I32.I2.Vin TB_MultiChannel.I3.I32.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I32.I2.out TB_MultiChannel.I3.I32.I2.out analog None )
+
+( net TB_MultiChannel.I3.I25.Voutp_BPF TB_MultiChannel.I3.I25.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I25.I2.Vinp TB_MultiChannel.I3.I25.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I25.I1.Voutp TB_MultiChannel.I3.I25.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I25.Voutn_BPF TB_MultiChannel.I3.I25.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I25.I2.Vinn TB_MultiChannel.I3.I25.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I25.I1.Voutn TB_MultiChannel.I3.I25.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I25.Voutp_IA TB_MultiChannel.I3.I25.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I25.I0.Voutp TB_MultiChannel.I3.I25.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I25.I1.Vinp TB_MultiChannel.I3.I25.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I25.Voutn_IA TB_MultiChannel.I3.I25.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I25.I0.Voutn TB_MultiChannel.I3.I25.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I25.I1.Vinn TB_MultiChannel.I3.I25.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I25.I1.Vin TB_MultiChannel.I3.I25.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I25.I1.Vdiff TB_MultiChannel.I3.I25.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E6 TB_MultiChannel.E6 analog electrical )
+( net TB_MultiChannel.I3.E6 TB_MultiChannel.E6 analog electrical )
+( net TB_MultiChannel.I3.I25.Vinp TB_MultiChannel.E6 analog electrical )
+( net TB_MultiChannel.I3.I25.I0.Vinp TB_MultiChannel.E6 analog electrical )
+
+( net TB_MultiChannel.I3.I25.I0.Vdd_val TB_MultiChannel.I3.I25.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I25.I0.Vss_val TB_MultiChannel.I3.I25.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I25.I0.Vin TB_MultiChannel.I3.I25.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I25.I0.Vdiff TB_MultiChannel.I3.I25.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I25.I0.outp TB_MultiChannel.I3.I25.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I25.I0.outn TB_MultiChannel.I3.I25.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I25.I0.c TB_MultiChannel.I3.I25.I0.c analog None )
+
+( net TB_MultiChannel.I3.I25.I0.ip TB_MultiChannel.I3.I25.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I25.I0.vodif TB_MultiChannel.I3.I25.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I25.I0.Voutmax TB_MultiChannel.I3.I25.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I25.I0.Vinmax TB_MultiChannel.I3.I25.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I25.I0.inp TB_MultiChannel.I3.I25.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I25.I0.inn TB_MultiChannel.I3.I25.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH6 TB_MultiChannel.I3.Vout_CH6 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin5 TB_MultiChannel.I3.Vout_CH6 analog electrical )
+( net TB_MultiChannel.I3.I25.Vout TB_MultiChannel.I3.Vout_CH6 analog electrical )
+( net TB_MultiChannel.I3.I25.I2.Vout TB_MultiChannel.I3.Vout_CH6 analog electrical )
+
+( net TB_MultiChannel.I3.I25.I2.gain TB_MultiChannel.I3.I25.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I25.I2.Vdd_val TB_MultiChannel.I3.I25.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I25.I2.Vss_val TB_MultiChannel.I3.I25.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I25.I2.Vin TB_MultiChannel.I3.I25.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I25.I2.out TB_MultiChannel.I3.I25.I2.out analog None )
+
+( net TB_MultiChannel.I3.I28.Voutp_BPF TB_MultiChannel.I3.I28.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I28.I2.Vinp TB_MultiChannel.I3.I28.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I28.I1.Voutp TB_MultiChannel.I3.I28.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I28.Voutn_BPF TB_MultiChannel.I3.I28.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I28.I2.Vinn TB_MultiChannel.I3.I28.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I28.I1.Voutn TB_MultiChannel.I3.I28.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I28.Voutp_IA TB_MultiChannel.I3.I28.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I28.I0.Voutp TB_MultiChannel.I3.I28.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I28.I1.Vinp TB_MultiChannel.I3.I28.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I28.Voutn_IA TB_MultiChannel.I3.I28.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I28.I0.Voutn TB_MultiChannel.I3.I28.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I28.I1.Vinn TB_MultiChannel.I3.I28.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I28.I1.Vin TB_MultiChannel.I3.I28.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I28.I1.Vdiff TB_MultiChannel.I3.I28.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E3 TB_MultiChannel.E3 analog electrical )
+( net TB_MultiChannel.I3.E3 TB_MultiChannel.E3 analog electrical )
+( net TB_MultiChannel.I3.I28.Vinp TB_MultiChannel.E3 analog electrical )
+( net TB_MultiChannel.I3.I28.I0.Vinp TB_MultiChannel.E3 analog electrical )
+
+( net TB_MultiChannel.I3.I28.I0.Vdd_val TB_MultiChannel.I3.I28.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I28.I0.Vss_val TB_MultiChannel.I3.I28.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I28.I0.Vin TB_MultiChannel.I3.I28.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I28.I0.Vdiff TB_MultiChannel.I3.I28.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I28.I0.outp TB_MultiChannel.I3.I28.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I28.I0.outn TB_MultiChannel.I3.I28.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I28.I0.c TB_MultiChannel.I3.I28.I0.c analog None )
+
+( net TB_MultiChannel.I3.I28.I0.ip TB_MultiChannel.I3.I28.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I28.I0.vodif TB_MultiChannel.I3.I28.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I28.I0.Voutmax TB_MultiChannel.I3.I28.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I28.I0.Vinmax TB_MultiChannel.I3.I28.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I28.I0.inp TB_MultiChannel.I3.I28.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I28.I0.inn TB_MultiChannel.I3.I28.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH3 TB_MultiChannel.I3.Vout_CH3 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin2 TB_MultiChannel.I3.Vout_CH3 analog electrical )
+( net TB_MultiChannel.I3.I28.Vout TB_MultiChannel.I3.Vout_CH3 analog electrical )
+( net TB_MultiChannel.I3.I28.I2.Vout TB_MultiChannel.I3.Vout_CH3 analog electrical )
+
+( net TB_MultiChannel.I3.I28.I2.gain TB_MultiChannel.I3.I28.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I28.I2.Vdd_val TB_MultiChannel.I3.I28.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I28.I2.Vss_val TB_MultiChannel.I3.I28.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I28.I2.Vin TB_MultiChannel.I3.I28.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I28.I2.out TB_MultiChannel.I3.I28.I2.out analog None )
+
+( net TB_MultiChannel.I3.I31.Voutp_BPF TB_MultiChannel.I3.I31.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I31.I2.Vinp TB_MultiChannel.I3.I31.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I31.I1.Voutp TB_MultiChannel.I3.I31.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I31.Voutn_BPF TB_MultiChannel.I3.I31.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I31.I2.Vinn TB_MultiChannel.I3.I31.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I31.I1.Voutn TB_MultiChannel.I3.I31.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I31.Voutp_IA TB_MultiChannel.I3.I31.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I31.I0.Voutp TB_MultiChannel.I3.I31.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I31.I1.Vinp TB_MultiChannel.I3.I31.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I31.Voutn_IA TB_MultiChannel.I3.I31.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I31.I0.Voutn TB_MultiChannel.I3.I31.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I31.I1.Vinn TB_MultiChannel.I3.I31.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I31.I1.Vin TB_MultiChannel.I3.I31.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I31.I1.Vdiff TB_MultiChannel.I3.I31.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E15 TB_MultiChannel.E15 analog electrical )
+( net TB_MultiChannel.I3.E15 TB_MultiChannel.E15 analog electrical )
+( net TB_MultiChannel.I3.I31.Vinp TB_MultiChannel.E15 analog electrical )
+( net TB_MultiChannel.I3.I31.I0.Vinp TB_MultiChannel.E15 analog electrical )
+
+( net TB_MultiChannel.I3.I31.I0.Vdd_val TB_MultiChannel.I3.I31.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I31.I0.Vss_val TB_MultiChannel.I3.I31.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I31.I0.Vin TB_MultiChannel.I3.I31.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I31.I0.Vdiff TB_MultiChannel.I3.I31.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I31.I0.outp TB_MultiChannel.I3.I31.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I31.I0.outn TB_MultiChannel.I3.I31.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I31.I0.c TB_MultiChannel.I3.I31.I0.c analog None )
+
+( net TB_MultiChannel.I3.I31.I0.ip TB_MultiChannel.I3.I31.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I31.I0.vodif TB_MultiChannel.I3.I31.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I31.I0.Voutmax TB_MultiChannel.I3.I31.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I31.I0.Vinmax TB_MultiChannel.I3.I31.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I31.I0.inp TB_MultiChannel.I3.I31.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I31.I0.inn TB_MultiChannel.I3.I31.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH15 TB_MultiChannel.I3.Vout_CH15 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin14 TB_MultiChannel.I3.Vout_CH15 analog electrical )
+( net TB_MultiChannel.I3.I31.Vout TB_MultiChannel.I3.Vout_CH15 analog electrical )
+( net TB_MultiChannel.I3.I31.I2.Vout TB_MultiChannel.I3.Vout_CH15 analog electrical )
+
+( net TB_MultiChannel.I3.I31.I2.gain TB_MultiChannel.I3.I31.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I31.I2.Vdd_val TB_MultiChannel.I3.I31.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I31.I2.Vss_val TB_MultiChannel.I3.I31.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I31.I2.Vin TB_MultiChannel.I3.I31.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I31.I2.out TB_MultiChannel.I3.I31.I2.out analog None )
+
+( net TB_MultiChannel.I3.I34.Voutp_BPF TB_MultiChannel.I3.I34.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I34.I2.Vinp TB_MultiChannel.I3.I34.Voutp_BPF analog electrical )
+( net TB_MultiChannel.I3.I34.I1.Voutp TB_MultiChannel.I3.I34.Voutp_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I34.Voutn_BPF TB_MultiChannel.I3.I34.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I34.I2.Vinn TB_MultiChannel.I3.I34.Voutn_BPF analog electrical )
+( net TB_MultiChannel.I3.I34.I1.Voutn TB_MultiChannel.I3.I34.Voutn_BPF analog electrical )
+
+( net TB_MultiChannel.I3.I34.Voutp_IA TB_MultiChannel.I3.I34.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I34.I0.Voutp TB_MultiChannel.I3.I34.Voutp_IA analog electrical )
+( net TB_MultiChannel.I3.I34.I1.Vinp TB_MultiChannel.I3.I34.Voutp_IA analog electrical )
+
+( net TB_MultiChannel.I3.I34.Voutn_IA TB_MultiChannel.I3.I34.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I34.I0.Voutn TB_MultiChannel.I3.I34.Voutn_IA analog electrical )
+( net TB_MultiChannel.I3.I34.I1.Vinn TB_MultiChannel.I3.I34.Voutn_IA analog electrical )
+
+( net TB_MultiChannel.I3.I34.I1.Vin TB_MultiChannel.I3.I34.I1.Vin analog None )
+
+( net TB_MultiChannel.I3.I34.I1.Vdiff TB_MultiChannel.I3.I34.I1.Vdiff analog None )
+
+( net TB_MultiChannel.E12 TB_MultiChannel.E12 analog electrical )
+( net TB_MultiChannel.I3.E12 TB_MultiChannel.E12 analog electrical )
+( net TB_MultiChannel.I3.I34.Vinp TB_MultiChannel.E12 analog electrical )
+( net TB_MultiChannel.I3.I34.I0.Vinp TB_MultiChannel.E12 analog electrical )
+
+( net TB_MultiChannel.I3.I34.I0.Vdd_val TB_MultiChannel.I3.I34.I0.Vdd_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I34.I0.Vss_val TB_MultiChannel.I3.I34.I0.Vss_val digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I34.I0.Vin TB_MultiChannel.I3.I34.I0.Vin analog None )
+
+( net TB_MultiChannel.I3.I34.I0.Vdiff TB_MultiChannel.I3.I34.I0.Vdiff analog None )
+
+( net TB_MultiChannel.I3.I34.I0.outp TB_MultiChannel.I3.I34.I0.outp analog None )
+
+( net TB_MultiChannel.I3.I34.I0.outn TB_MultiChannel.I3.I34.I0.outn analog None )
+
+( net TB_MultiChannel.I3.I34.I0.c TB_MultiChannel.I3.I34.I0.c analog None )
+
+( net TB_MultiChannel.I3.I34.I0.ip TB_MultiChannel.I3.I34.I0.ip digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I34.I0.vodif TB_MultiChannel.I3.I34.I0.vodif analog None )
+
+( net TB_MultiChannel.I3.I34.I0.Voutmax TB_MultiChannel.I3.I34.I0.Voutmax analog None )
+
+( net TB_MultiChannel.I3.I34.I0.Vinmax TB_MultiChannel.I3.I34.I0.Vinmax analog None )
+
+( net TB_MultiChannel.I3.I34.I0.inp TB_MultiChannel.I3.I34.I0.inp analog electrical )
+
+( net TB_MultiChannel.I3.I34.I0.inn TB_MultiChannel.I3.I34.I0.inn analog electrical )
+
+( net TB_MultiChannel.I3.Vout_CH12 TB_MultiChannel.I3.Vout_CH12 analog electrical )
+( net TB_MultiChannel.I3.I17.Vin11 TB_MultiChannel.I3.Vout_CH12 analog electrical )
+( net TB_MultiChannel.I3.I34.Vout TB_MultiChannel.I3.Vout_CH12 analog electrical )
+( net TB_MultiChannel.I3.I34.I2.Vout TB_MultiChannel.I3.Vout_CH12 analog electrical )
+
+( net TB_MultiChannel.I3.I34.I2.gain TB_MultiChannel.I3.I34.I2.gain digital logic )
+
+( net TB_MultiChannel.I3.I34.I2.Vdd_val TB_MultiChannel.I3.I34.I2.Vdd_val analog None )
+
+( net TB_MultiChannel.I3.I34.I2.Vss_val TB_MultiChannel.I3.I34.I2.Vss_val analog None )
+
+( net TB_MultiChannel.I3.I34.I2.Vin TB_MultiChannel.I3.I34.I2.Vin analog None )
+
+( net TB_MultiChannel.I3.I34.I2.out TB_MultiChannel.I3.I34.I2.out analog None )
+
+( net TB_MultiChannel.I3.Vin_ADC TB_MultiChannel.I3.Vin_ADC analog/mixed electrical )
+( net TB_MultiChannel.I3.I18.Vin TB_MultiChannel.I3.Vin_ADC digital/mixed logic (type rnm) )
+( net TB_MultiChannel.I3.I17.Vout TB_MultiChannel.I3.Vin_ADC analog/mixed electrical )
+
+( net TB_MultiChannel.Start TB_MultiChannel.Start digital logic )
+( net TB_MultiChannel.I4.start TB_MultiChannel.Start digital logic )
+( net TB_MultiChannel.I3.Start_ADC TB_MultiChannel.Start digital logic )
+( net TB_MultiChannel.I3.I18.Start TB_MultiChannel.Start digital logic )
+( net TB_MultiChannel.I3.CLK_MUX TB_MultiChannel.Start digital logic )
+( net TB_MultiChannel.I3.I17.Clk TB_MultiChannel.Start digital logic )
+
+( net TB_MultiChannel.CH_Sel TB_MultiChannel.CH_Sel digital logic )
+( net TB_MultiChannel.I4.CH_Sel TB_MultiChannel.CH_Sel digital logic )
+( net TB_MultiChannel.I3.CH_Sel TB_MultiChannel.CH_Sel digital logic )
+( net TB_MultiChannel.I3.I17.sel TB_MultiChannel.CH_Sel digital logic )
+
+( net TB_MultiChannel.I3.I17.sel_base10 TB_MultiChannel.I3.I17.sel_base10 digital logic )
+
+( net TB_MultiChannel.net4[0] TB_MultiChannel.net4[0] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[11] TB_MultiChannel.net4[0] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[11] TB_MultiChannel.net4[0] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[11] TB_MultiChannel.net4[0] digital/mixed logic )
+
+( net TB_MultiChannel.net4[1] TB_MultiChannel.net4[1] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[10] TB_MultiChannel.net4[1] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[10] TB_MultiChannel.net4[1] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[10] TB_MultiChannel.net4[1] digital/mixed logic )
+
+( net TB_MultiChannel.net4[2] TB_MultiChannel.net4[2] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[9] TB_MultiChannel.net4[2] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[9] TB_MultiChannel.net4[2] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[9] TB_MultiChannel.net4[2] digital/mixed logic )
+
+( net TB_MultiChannel.net4[3] TB_MultiChannel.net4[3] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[8] TB_MultiChannel.net4[3] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[8] TB_MultiChannel.net4[3] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[8] TB_MultiChannel.net4[3] digital/mixed logic )
+
+( net TB_MultiChannel.net4[4] TB_MultiChannel.net4[4] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[7] TB_MultiChannel.net4[4] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[7] TB_MultiChannel.net4[4] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[7] TB_MultiChannel.net4[4] digital/mixed logic )
+
+( net TB_MultiChannel.net4[5] TB_MultiChannel.net4[5] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[6] TB_MultiChannel.net4[5] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[6] TB_MultiChannel.net4[5] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[6] TB_MultiChannel.net4[5] digital/mixed logic )
+
+( net TB_MultiChannel.net4[6] TB_MultiChannel.net4[6] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[5] TB_MultiChannel.net4[6] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[5] TB_MultiChannel.net4[6] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[5] TB_MultiChannel.net4[6] digital/mixed logic )
+
+( net TB_MultiChannel.net4[7] TB_MultiChannel.net4[7] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[4] TB_MultiChannel.net4[7] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[4] TB_MultiChannel.net4[7] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[4] TB_MultiChannel.net4[7] digital/mixed logic )
+
+( net TB_MultiChannel.net4[8] TB_MultiChannel.net4[8] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[3] TB_MultiChannel.net4[8] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[3] TB_MultiChannel.net4[8] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[3] TB_MultiChannel.net4[8] digital/mixed logic )
+
+( net TB_MultiChannel.net4[9] TB_MultiChannel.net4[9] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[2] TB_MultiChannel.net4[9] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[2] TB_MultiChannel.net4[9] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[2] TB_MultiChannel.net4[9] digital/mixed logic )
+
+( net TB_MultiChannel.net4[10] TB_MultiChannel.net4[10] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[1] TB_MultiChannel.net4[10] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[1] TB_MultiChannel.net4[10] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[1] TB_MultiChannel.net4[10] digital/mixed logic )
+
+( net TB_MultiChannel.net4[11] TB_MultiChannel.net4[11] analog/mixed electrical )
+( net TB_MultiChannel.I5.Din[0] TB_MultiChannel.net4[11] analog/mixed electrical )
+( net TB_MultiChannel.I3.Dout[0] TB_MultiChannel.net4[11] digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Dout[0] TB_MultiChannel.net4[11] digital/mixed logic )
+
+( net TB_MultiChannel.EoC_ADC TB_MultiChannel.EoC_ADC digital logic )
+( net TB_MultiChannel.I3.EoC_ADC TB_MultiChannel.EoC_ADC digital logic )
+( net TB_MultiChannel.I3.I18.EoC TB_MultiChannel.EoC_ADC digital logic )
+
+( net TB_MultiChannel.CLK TB_MultiChannel.CLK analog/mixed electrical )
+( net TB_MultiChannel.I4.CLK TB_MultiChannel.CLK digital/mixed logic )
+( net TB_MultiChannel.I3.CLK_ADC TB_MultiChannel.CLK digital/mixed logic )
+( net TB_MultiChannel.I3.I18.Clk TB_MultiChannel.CLK digital/mixed logic )
+
+( net TB_MultiChannel.VrefH TB_MultiChannel.VrefH analog/mixed electrical )
+( net TB_MultiChannel.I3.VrefH_ADC TB_MultiChannel.VrefH digital/mixed logic (type rnm) )
+( net TB_MultiChannel.I3.I18.VrefH TB_MultiChannel.VrefH digital/mixed logic (type rnm) )
+
+( net TB_MultiChannel.VrefL TB_MultiChannel.VrefL analog/mixed electrical )
+( net TB_MultiChannel.I3.VrefL_ADC TB_MultiChannel.VrefL digital/mixed logic (type rnm) )
+( net TB_MultiChannel.I3.I18.VrefL TB_MultiChannel.VrefL digital/mixed logic (type rnm) )
+
+( net TB_MultiChannel.I3.I18.Vdds TB_MultiChannel.I3.I18.Vdds analog electrical )
+
+( net TB_MultiChannel.I3.I18.count TB_MultiChannel.I3.I18.count digital logic )
+
+( net TB_MultiChannel.I3.I18.end_count TB_MultiChannel.I3.I18.end_count digital logic )
+
+( net TB_MultiChannel.I3.I18.Vhold TB_MultiChannel.I3.I18.Vhold digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I18.fvalue TB_MultiChannel.I3.I18.fvalue digital logic (type rnm) )
+
+( net TB_MultiChannel.I3.I18.NaN TB_MultiChannel.I3.I18.NaN digital logic (type rnm) )
+
+( net TB_MultiChannel.I4.cnt TB_MultiChannel.I4.cnt digital logic )
+
+( net TB_MultiChannel.OUT_DAC TB_MultiChannel.OUT_DAC analog electrical )
+( net TB_MultiChannel.I5.Vout TB_MultiChannel.OUT_DAC analog electrical )
+
+( net TB_MultiChannel.CLK_DAC TB_MultiChannel.CLK_DAC analog electrical )
+( net TB_MultiChannel.I5.Clk TB_MultiChannel.CLK_DAC analog electrical )
+
+( net TB_MultiChannel.I5.aout TB_MultiChannel.I5.aout analog None )
+
+( net TB_MultiChannel.I5.weight TB_MultiChannel.I5.weight analog None )
+
+( connect
+   connectLib.Bidir_2:module
+   TB_MultiChannel.I3.Vsub
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.I17.Vsub logic digital )
+    ( TB_MultiChannel.I3.I18.Vsub logic digital )
+   )
+   "connect Bidir_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.Bidir_2:module
+   TB_MultiChannel.I3.Vdda
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.I18.Vdda logic digital )
+   )
+   "connect Bidir_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.E2R:module
+   TB_MultiChannel.I3.Vin_ADC
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.I18.Vin logic digital (type rnm) )
+   )
+   "connect E2R merged"
+   ( (vdelta (1.800000000000000 / 64)) (vtol ((1.800000000000000 / 64) / 4)) (ttol (0.000000000200000 / 20)) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[0]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[11] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[1]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[10] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[2]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[9] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[3]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[8] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[4]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[7] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[5]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[6] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[6]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[5] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[7]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[4] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[8]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[3] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[9]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[2] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[10]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[1] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_MultiChannel.net4[11]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Dout[0] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_MultiChannel.CLK
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.CLK_ADC logic digital )
+    ( TB_MultiChannel.I4.CLK logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_MultiChannel.Vdda
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.En_ADC logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_MultiChannel.Gain_Sel[2]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Gain_Sel[2] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_MultiChannel.Gain_Sel[1]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Gain_Sel[1] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_MultiChannel.Gain_Sel[0]
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.Gain_Sel[0] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2R:module
+   TB_MultiChannel.VrefH
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.VrefH_ADC logic digital (type rnm) )
+   )
+   "connect E2R merged"
+   ( (vdelta (1.800000000000000 / 64)) (vtol ((1.800000000000000 / 64) / 4)) (ttol (0.000000000200000 / 20)) )
+)
+( connect
+   connectLib.E2R:module
+   TB_MultiChannel.VrefL
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I3.VrefL_ADC logic digital (type rnm) )
+   )
+   "connect E2R merged"
+   ( (vdelta (1.800000000000000 / 64)) (vtol ((1.800000000000000 / 64) / 4)) (ttol (0.000000000200000 / 20)) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_MultiChannel.I4.Reset logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_MultiChannel.I3.I35.I1 analog)
+(instance TB_MultiChannel.I3.I35.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I35.I2 mixed)
+(instance TB_MultiChannel.I3.I35 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I24.I1 analog)
+(instance TB_MultiChannel.I3.I24.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I24.I2 mixed)
+(instance TB_MultiChannel.I3.I24 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I23.I1 analog)
+(instance TB_MultiChannel.I3.I23.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I23.I2 mixed)
+(instance TB_MultiChannel.I3.I23 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I20.I1 analog)
+(instance TB_MultiChannel.I3.I20.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I20.I2 mixed)
+(instance TB_MultiChannel.I3.I20 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I27.I1 analog)
+(instance TB_MultiChannel.I3.I27.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I27.I2 mixed)
+(instance TB_MultiChannel.I3.I27 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I26.I1 analog)
+(instance TB_MultiChannel.I3.I26.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I26.I2 mixed)
+(instance TB_MultiChannel.I3.I26 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I21.I1 analog)
+(instance TB_MultiChannel.I3.I21.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I21.I2 mixed)
+(instance TB_MultiChannel.I3.I21 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I30.I1 analog)
+(instance TB_MultiChannel.I3.I30.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I30.I2 mixed)
+(instance TB_MultiChannel.I3.I30 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I29.I1 analog)
+(instance TB_MultiChannel.I3.I29.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I29.I2 mixed)
+(instance TB_MultiChannel.I3.I29 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I22.I1 analog)
+(instance TB_MultiChannel.I3.I22.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I22.I2 mixed)
+(instance TB_MultiChannel.I3.I22 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I33.I1 analog)
+(instance TB_MultiChannel.I3.I33.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I33.I2 mixed)
+(instance TB_MultiChannel.I3.I33 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I32.I1 analog)
+(instance TB_MultiChannel.I3.I32.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I32.I2 mixed)
+(instance TB_MultiChannel.I3.I32 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I25.I1 analog)
+(instance TB_MultiChannel.I3.I25.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I25.I2 mixed)
+(instance TB_MultiChannel.I3.I25 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I28.I1 analog)
+(instance TB_MultiChannel.I3.I28.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I28.I2 mixed)
+(instance TB_MultiChannel.I3.I28 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I31.I1 analog)
+(instance TB_MultiChannel.I3.I31.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I31.I2 mixed)
+(instance TB_MultiChannel.I3.I31 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I34.I1 analog)
+(instance TB_MultiChannel.I3.I34.I0 mixed (type rnm))
+(instance TB_MultiChannel.I3.I34.I2 mixed)
+(instance TB_MultiChannel.I3.I34 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3.I17 mixed)
+(instance TB_MultiChannel.I3.I18 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I3 mixed/dmixed (type rnm))
+(instance TB_MultiChannel.I4 digital)
+(instance TB_MultiChannel.I5 analog)
+(instance TB_MultiChannel.V6 analog)
+(instance TB_MultiChannel.V5 analog)
+(instance TB_MultiChannel.V4 analog)
+(instance TB_MultiChannel.V20 analog)
+(instance TB_MultiChannel.V19 analog)
+(instance TB_MultiChannel.V18 analog)
+(instance TB_MultiChannel.V7 analog)
+(instance TB_MultiChannel.V14 analog)
+(instance TB_MultiChannel.V23 analog)
+(instance TB_MultiChannel.V22 analog)
+(instance TB_MultiChannel.V21 analog)
+(instance TB_MultiChannel.V17 analog)
+(instance TB_MultiChannel.V16 analog)
+(instance TB_MultiChannel.V15 analog)
+(instance TB_MultiChannel.V13 analog)
+(instance TB_MultiChannel.V12 analog)
+(instance TB_MultiChannel.V11 analog)
+(instance TB_MultiChannel.V10 analog)
+(instance TB_MultiChannel.V9 analog)
+(instance TB_MultiChannel.V8 analog)
+(instance TB_MultiChannel.V3 analog)
+(instance TB_MultiChannel.V1 analog)
+(instance TB_MultiChannel.V0 analog)
+(instance TB_MultiChannel.V2 analog)
+(instance TB_MultiChannel mixed/dmixed (type rnm))
+(instance cds_globals analog)

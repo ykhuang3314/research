@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 11132
+// User: ykhuang Pid: 2887
 // Design library name: EMG_TestBench
 // Design cell name: TB_IA_EMG
 // Design view name: config
@@ -12,8 +12,8 @@
 `include "userDisciplines.vams"
 // HDL file - EMG_Model, IA_EMG, verilogams.
 // Library - EMG_TestBench, Cell - TB_IA_EMG, View - schematic
-// LAST TIME SAVED: Nov 16 22:07:18 2020
-// NETLIST TIME: Nov 16 22:09:19 2020
+// LAST TIME SAVED: Nov 18 00:03:26 2020
+// NETLIST TIME: Nov 18 00:10:26 2020
 
 `worklib EMG_TestBench
 `view schematic
@@ -28,13 +28,13 @@ wire net10;
 wire net9;
 wire Vdda;
 wire net11;
-IA_EMG I0 (.Ibias( net11 ), .Vdda( Vdda ), .Vssa(cds_globals.\gnd! ), .Vsub(cds_globals.\gnd! ), .Voutn( net9 ), .Voutp( net10 ), .Vinn( net7 ), .Vinp( net8 ));
+IA_EMG #(.ip3( - (12.8))) I0 (.Ibias( net11 ), .Vdda( Vdda ), .Vssa(cds_globals.\gnd! ), .Vsub(cds_globals.\gnd! ), .Voutn( net9 ), .Voutp( net10 ), .Vinn( net7 ), .Vinp( net8 ));
 vsource #(.type("sine"), .ampl(0.005), .freq(100)) V2 (vsig, cds_globals.\gnd! );
 vsource #(.dc(0), .type("dc")) V1 (Vin_CM, cds_globals.\gnd! );
 vsource #(.dc(1.8), .type("dc")) V0 (Vdda, cds_globals.\gnd! );
+vcvs #(.gain(0.5)) E1 (net8, Vin_CM, vsig, cds_globals.\gnd! );
 vcvs #(.gain(1)) E2 (Vout, cds_globals.\gnd! , net10, net9);
-vcvs #(.gain(-0.5)) E1 (net8, Vin_CM, vsig, cds_globals.\gnd! );
-vcvs #(.gain(0.5)) E0 (net7, Vin_CM, vsig, cds_globals.\gnd! );
+vcvs #(.gain(-0.5)) E0 (net7, Vin_CM, vsig, cds_globals.\gnd! );
 isource #(.dc(1e-05), .type("dc")) I1 (Vdda, net11);
 
 endmodule
