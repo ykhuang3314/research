@@ -1,0 +1,26 @@
+// Library - Stimulator_TestBench, Cell - TB_Current_Source, View -
+//schematic
+// LAST TIME SAVED: Jan  6 17:54:18 2021
+// NETLIST TIME: Jan  6 23:16:39 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_Current_Source", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Jan  6 17:54:18 2021" *)
+
+module TB_Current_Source ();
+
+// Buses in the design
+
+wire  [4:0]  count_out;
+
+
+Current_Source I0 ( .Ibias(net4), .Vdda(vdda), .Vssa(cds_globals.\gnd! 
+    ), .Ioutn(net3), .Ioutp(vdda), .Mag(count_out));
+
+Counter I1 ( .out(count_out), .CLK(CLK), .EN(vdda), 
+    .RESET(cds_globals.\gnd! ));
+
+endmodule

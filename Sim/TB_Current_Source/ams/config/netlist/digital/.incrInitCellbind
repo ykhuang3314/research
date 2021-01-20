@@ -1,0 +1,5 @@
+("analogLib" "vpulse" "spectre" "spectre") "USED"
+("Digital_Lib" "Counter" "functional" "functional") "USED"
+("analogLib" "res" "spectre" "spectre") "USED"
+("Stimulator_Model" "Current_Source" "verilogams" "verilogams") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"

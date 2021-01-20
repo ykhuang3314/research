@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  VerilogAMS_Practice 
+cell: TB_CCVS 
+view: config 
+topCellLib: VerilogAMS_Practice 

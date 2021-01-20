@@ -1,0 +1,9 @@
+( ( net
+( "gnd!" "0" )
+( "count_out<1>" "count_out_1" )
+( "count_out<4>" "count_out_4" )
+( "count_out<3>" "count_out_3" )
+( "count_out<2>" "count_out_2" )
+( "count_out<0>" "count_out_0" )
+ )
+ )

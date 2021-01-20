@@ -1,0 +1,5 @@
+
+CCVS I1 ( .nout(cds_globals.\gnd! ), .pout(Vout), 
+    .nin(cds_globals.\gnd! ), .pin(net2));
+
+endmodule

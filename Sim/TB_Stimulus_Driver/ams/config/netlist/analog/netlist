@@ -1,0 +1,16 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_Stimulus_Driver
+// View name: schematic
+// Inherited view list: schematic
+R0 (net6 net5) resistor r=1K
+V4 (CLK 0) vsource type=pulse val0=0 val1=1.8 period=220u delay=220u \
+        rise=1p fall=1p width=110u
+V3 (CAT 0) vsource type=pulse val0=0 val1=1.8 period=220u delay=120u \
+        rise=1p fall=1p width=100u
+V0 (ANO 0) vsource type=pulse val0=0 val1=1.8 period=220u delay=10u \
+        rise=1p fall=1p width=100u
+V2 (Vdda 0) vsource dc=1.8 type=dc
+V1 (VddH 0) vsource dc=30 type=dc
+I13 (Vdda net05) isource dc=10u type=dc
+I11 (Vdda net04) isource dc=10u type=dc

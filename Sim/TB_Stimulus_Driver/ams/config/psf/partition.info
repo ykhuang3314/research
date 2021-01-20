@@ -1,0 +1,136 @@
+( global ( resolution_type basic ) )
+
+( net TB_Stimulus_Driver.net5 TB_Stimulus_Driver.net5 analog electrical )
+( net TB_Stimulus_Driver.I9.Out TB_Stimulus_Driver.net5 analog electrical )
+
+( net TB_Stimulus_Driver.CAT TB_Stimulus_Driver.CAT analog/mixed electrical )
+( net TB_Stimulus_Driver.I7.CAT TB_Stimulus_Driver.CAT digital/mixed logic )
+( net TB_Stimulus_Driver.I9.ANO TB_Stimulus_Driver.CAT digital/mixed logic )
+
+( net TB_Stimulus_Driver.ANO TB_Stimulus_Driver.ANO analog/mixed electrical )
+( net TB_Stimulus_Driver.I7.ANO TB_Stimulus_Driver.ANO digital/mixed logic )
+( net TB_Stimulus_Driver.I9.CAT TB_Stimulus_Driver.ANO digital/mixed logic )
+
+( net TB_Stimulus_Driver.VddH TB_Stimulus_Driver.VddH analog electrical )
+( net TB_Stimulus_Driver.I7.VddH TB_Stimulus_Driver.VddH analog electrical )
+( net TB_Stimulus_Driver.I9.VddH TB_Stimulus_Driver.VddH analog electrical )
+
+( net TB_Stimulus_Driver.Vdda TB_Stimulus_Driver.Vdda analog/mixed electrical )
+( net TB_Stimulus_Driver.I12.EN TB_Stimulus_Driver.Vdda digital/mixed logic )
+( net TB_Stimulus_Driver.I10.Ioutp TB_Stimulus_Driver.Vdda analog/mixed electrical )
+( net TB_Stimulus_Driver.I10.Vdda TB_Stimulus_Driver.Vdda analog/mixed electrical )
+( net TB_Stimulus_Driver.I14.Ioutp TB_Stimulus_Driver.Vdda analog/mixed electrical )
+( net TB_Stimulus_Driver.I14.Vdda TB_Stimulus_Driver.Vdda analog/mixed electrical )
+( net TB_Stimulus_Driver.I7.Vdda TB_Stimulus_Driver.Vdda analog/mixed electrical )
+( net TB_Stimulus_Driver.I9.Vdda TB_Stimulus_Driver.Vdda analog/mixed electrical )
+
+( net TB_Stimulus_Driver.I9.Vssa TB_Stimulus_Driver.I9.Vssa analog electrical )
+( net cds_globals.\gnd!  TB_Stimulus_Driver.I9.Vssa analog electrical )
+( net TB_Stimulus_Driver.I7.Vssa TB_Stimulus_Driver.I9.Vssa analog electrical )
+
+( net TB_Stimulus_Driver.Ibais_right TB_Stimulus_Driver.Ibais_right analog electrical )
+( net TB_Stimulus_Driver.I14.Ioutn TB_Stimulus_Driver.Ibais_right analog electrical )
+( net TB_Stimulus_Driver.I9.Ibias TB_Stimulus_Driver.Ibais_right analog electrical )
+
+( net TB_Stimulus_Driver.net6 TB_Stimulus_Driver.net6 analog electrical )
+( net TB_Stimulus_Driver.I7.Out TB_Stimulus_Driver.net6 analog electrical )
+
+( net TB_Stimulus_Driver.Ibias_left TB_Stimulus_Driver.Ibias_left analog electrical )
+( net TB_Stimulus_Driver.I10.Ioutn TB_Stimulus_Driver.Ibias_left analog electrical )
+( net TB_Stimulus_Driver.I7.Ibias TB_Stimulus_Driver.Ibias_left analog electrical )
+
+( net TB_Stimulus_Driver.Mag TB_Stimulus_Driver.Mag digital logic )
+( net TB_Stimulus_Driver.I12.out TB_Stimulus_Driver.Mag digital logic )
+( net TB_Stimulus_Driver.I10.Mag TB_Stimulus_Driver.Mag digital logic )
+( net TB_Stimulus_Driver.I14.Mag TB_Stimulus_Driver.Mag digital logic )
+
+( net TB_Stimulus_Driver.Vssa TB_Stimulus_Driver.Vssa analog/mixed electrical )
+( net TB_Stimulus_Driver.I12.RESET TB_Stimulus_Driver.Vssa digital/mixed logic )
+( net TB_Stimulus_Driver.I10.Vssa TB_Stimulus_Driver.Vssa analog/mixed electrical )
+( net TB_Stimulus_Driver.I14.Vssa TB_Stimulus_Driver.Vssa analog/mixed electrical )
+
+( net TB_Stimulus_Driver.net05 TB_Stimulus_Driver.net05 analog electrical )
+( net TB_Stimulus_Driver.I14.Ibias TB_Stimulus_Driver.net05 analog electrical )
+
+( net TB_Stimulus_Driver.I14.Imag TB_Stimulus_Driver.I14.Imag digital logic (type rnm) )
+
+( net TB_Stimulus_Driver.net04 TB_Stimulus_Driver.net04 analog electrical )
+( net TB_Stimulus_Driver.I10.Ibias TB_Stimulus_Driver.net04 analog electrical )
+
+( net TB_Stimulus_Driver.I10.Imag TB_Stimulus_Driver.I10.Imag digital logic (type rnm) )
+
+( net TB_Stimulus_Driver.CLK TB_Stimulus_Driver.CLK analog/mixed electrical )
+( net TB_Stimulus_Driver.I12.CLK TB_Stimulus_Driver.CLK digital/mixed logic )
+
+( connect
+   connectLib.E2L_2:module
+   TB_Stimulus_Driver.CAT
+   electrical
+   analog
+   (
+    ( TB_Stimulus_Driver.I9.ANO logic digital )
+    ( TB_Stimulus_Driver.I7.CAT logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Stimulus_Driver.ANO
+   electrical
+   analog
+   (
+    ( TB_Stimulus_Driver.I9.CAT logic digital )
+    ( TB_Stimulus_Driver.I7.ANO logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Stimulus_Driver.CLK
+   electrical
+   analog
+   (
+    ( TB_Stimulus_Driver.I12.CLK logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Stimulus_Driver.Vdda
+   electrical
+   analog
+   (
+    ( TB_Stimulus_Driver.I12.EN logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Stimulus_Driver.Vssa
+   electrical
+   analog
+   (
+    ( TB_Stimulus_Driver.I12.RESET logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_Stimulus_Driver.I9 mixed)
+(instance TB_Stimulus_Driver.I7 mixed)
+(instance TB_Stimulus_Driver.I14 mixed/dmixed (type rnm))
+(instance TB_Stimulus_Driver.I10 mixed/dmixed (type rnm))
+(instance TB_Stimulus_Driver.I12 digital)
+(instance TB_Stimulus_Driver.R0 analog)
+(instance TB_Stimulus_Driver.V4 analog)
+(instance TB_Stimulus_Driver.V3 analog)
+(instance TB_Stimulus_Driver.V0 analog)
+(instance TB_Stimulus_Driver.V2 analog)
+(instance TB_Stimulus_Driver.V1 analog)
+(instance TB_Stimulus_Driver.I13 analog)
+(instance TB_Stimulus_Driver.I11 analog)
+(instance TB_Stimulus_Driver mixed/dmixed (type rnm))
+(instance cds_globals analog)

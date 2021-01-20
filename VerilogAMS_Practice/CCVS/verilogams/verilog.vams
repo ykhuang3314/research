@@ -1,0 +1,16 @@
+//Verilog-AMS HDL for "VerilogAMS_Practice", "CCVS" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module CCVS (pout, nout, pin, nin);
+output pout, nout;
+input pin, nin;
+electrical pout, nout, pin, nin;
+parameter real gain=10;
+
+analog begin 
+V(pout,nout) <+ gain*I(pin,nin);
+end
+
+endmodule

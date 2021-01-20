@@ -1,0 +1,29 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_Stimulus_Driver"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  globalHierPrefix "cds_globals."
+  prefixHierarchyWithCV "YES"
+  netlistDir "/home/ykhuang/research/Sim/TB_Stimulus_Driver/ams/config/netlist/digital"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+  slashCheck   "t"
+ )
+( defbus
+( "Mag" 4 0  "Mag" 4 0  )
+ )
+( net
+( "gnd!" "cds_globals.\\gnd! " )
+ )
+( model
+( "Stimulator_TestBench/TB_Stimulus_Driver/schematic" "TB_Stimulus_Driver" )
+ )
+( "TB_Stimulus_Driver" "ihnl/cds0/map" )
+ )

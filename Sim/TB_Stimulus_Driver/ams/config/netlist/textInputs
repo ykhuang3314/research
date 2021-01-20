@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - Digital_Lib ,Cell - Counter, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/Digital_Lib/Counter/functional/verilog.v lib:Digital_Lib cell:Counter view:functional"
+
+// HDL file for Lib - Stimulator_Model ,Cell - Current_Source, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+
+// HDL file for Lib - Stimulator_Model ,Cell - Stimulus_Driver, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_Model/Stimulus_Driver/verilogams/verilog.vams lib:Stimulator_Model cell:Stimulus_Driver view:verilogams"
+
+// Create required libraries 
+-makelib Stimulator_TestBench 
+-endlib 

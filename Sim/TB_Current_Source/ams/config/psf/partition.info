@@ -1,0 +1,68 @@
+( global ( resolution_type basic ) )
+
+( net TB_Current_Source.vdda TB_Current_Source.vdda analog/mixed electrical )
+( net TB_Current_Source.I1.EN TB_Current_Source.vdda digital/mixed logic )
+( net TB_Current_Source.I0.Ioutp TB_Current_Source.vdda analog/mixed electrical )
+( net TB_Current_Source.I0.Vdda TB_Current_Source.vdda analog/mixed electrical )
+
+( net TB_Current_Source.net3 TB_Current_Source.net3 analog electrical )
+( net TB_Current_Source.I0.Ioutn TB_Current_Source.net3 analog electrical )
+
+( net TB_Current_Source.count_out TB_Current_Source.count_out digital logic )
+( net TB_Current_Source.I1.out TB_Current_Source.count_out digital logic )
+( net TB_Current_Source.I0.Mag TB_Current_Source.count_out digital logic )
+
+( net TB_Current_Source.I0.Vssa TB_Current_Source.I0.Vssa analog/mixed electrical )
+( net cds_globals.\gnd!  TB_Current_Source.I0.Vssa analog/mixed electrical )
+( net TB_Current_Source.I1.RESET TB_Current_Source.I0.Vssa digital/mixed logic )
+
+( net TB_Current_Source.net4 TB_Current_Source.net4 analog electrical )
+( net TB_Current_Source.I0.Ibias TB_Current_Source.net4 analog electrical )
+
+( net TB_Current_Source.I0.Imag TB_Current_Source.I0.Imag digital logic (type rnm) )
+
+( net TB_Current_Source.CLK TB_Current_Source.CLK analog/mixed electrical )
+( net TB_Current_Source.I1.CLK TB_Current_Source.CLK digital/mixed logic )
+
+( net cds_globals.\vdda!  cds_globals.\vdda!  digital logic )
+
+( connect
+   connectLib.E2L_2:module
+   TB_Current_Source.CLK
+   electrical
+   analog
+   (
+    ( TB_Current_Source.I1.CLK logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Current_Source.vdda
+   electrical
+   analog
+   (
+    ( TB_Current_Source.I1.EN logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_Current_Source.I1.RESET logic digital )
+   )
+   "connect E2L_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+)
+(instance TB_Current_Source.I0 mixed/dmixed (type rnm))
+(instance TB_Current_Source.I1 digital)
+(instance TB_Current_Source.V0 analog)
+(instance TB_Current_Source.R0 analog)
+(instance TB_Current_Source.V1 analog)
+(instance TB_Current_Source mixed/dmixed (type rnm))
+(instance cds_globals mixed)

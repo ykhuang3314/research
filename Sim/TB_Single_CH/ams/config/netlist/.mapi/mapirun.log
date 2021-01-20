@@ -1,0 +1,40 @@
+TOOL:	xrun(64)	18.03-s018: Started on Jan 19, 2021 at 23:48:39 CET
+xrun
+	-f /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi/mapi_run.args
+		-64bit
+		-compile
+		-NOCOPYRIGHT
+		-nostdout
+		-nowarn DLNOHV
+		-logfile /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi/mapirun.log
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-allowredefinition
+		-incdir /home/ykhuang/research/
+		-nclibdirpath /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi/
+		-cdslib /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi/cds.lib
+		-amscompilefile "file:/home/ykhuang/research/Digital_Lib/Counter/functional/verilog.v lib:Digital_Lib cell:Counter view:functional"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+		/home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi//dummyMapi.vams
+		/home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi//dummyMapi.vhms
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+file: /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi//dummyMapi.vams
+file: /home/ykhuang/research/Digital_Lib/Counter/functional/verilog.v
+	module Digital_Lib.Counter:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
+	module Stimulator_Model.H_Bridge:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
+	module Stimulator_Model.Current_Mirror:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
+	module Stimulator_Model.Current_Source:verilogams
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun(64)	18.03-s018: Exiting on Jan 19, 2021 at 23:48:42 CET  (total: 00:00:03)

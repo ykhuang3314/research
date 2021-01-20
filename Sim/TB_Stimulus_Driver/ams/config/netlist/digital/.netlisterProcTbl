@@ -1,0 +1,4 @@
+("analogLib" "idc" "spectre") spectreSrcPrim
+("analogLib" "vpulse" "spectre") spectreSrcPrim
+("analogLib" "res" "spectre") nil
+("analogLib" "vdc" "spectre") spectreSrcPrim

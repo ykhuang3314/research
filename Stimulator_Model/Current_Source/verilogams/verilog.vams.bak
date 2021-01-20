@@ -1,0 +1,32 @@
+//Verilog-AMS HDL for "Stimulator_Model", "Current_Source" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Current_Source (Ioutp, Ioutn, Mag, Vdda, Vssa, Ibias);
+
+// I/O port declaration
+inout Ioutp, Ioutn;
+input[4:0] Mag;
+inout Vdda, Vssa, Ibias;
+
+// signal type
+electrical Ioutp, Ioutn, Vdda, Vssa, Ibias;
+logic[4:0] Mag;
+
+// parameters
+//parameter real Istep = 10e-6 from [0:inf]; //step size
+
+// internal variable 
+real Imag;
+
+always@(Mag) begin
+	Imag = I(Ibias, Vdda) * (Mag[4] * 16 + Mag[3] * 8 + Mag[2] * 4 + Mag[1] * 2 + Mag[0] * 1);
+end
+
+// analog
+analog begin
+	I(Ioutp, Ioutn) <+ Imag;
+end
+
+endmodule

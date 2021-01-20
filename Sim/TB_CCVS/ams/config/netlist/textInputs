@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - VerilogAMS_Practice ,Cell - CCVS, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/VerilogAMS_Practice/CCVS/verilogams/verilog.vams lib:VerilogAMS_Practice cell:CCVS view:verilogams"
+

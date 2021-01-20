@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Jan  9 22:51:10 2021
+// Design library name: VerilogAMS_Practice
+// Design cell name: TB_CCVS
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

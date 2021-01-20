@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+VerilogAMS_Practice/TB_CCVS/schematic VerilogAMS_Practice/TB_CCVS/schematic/schematic/VerilogAMS_Practice_TB_CCVS_config/1 TB_CCVS
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

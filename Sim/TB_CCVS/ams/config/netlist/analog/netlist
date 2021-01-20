@@ -1,0 +1,6 @@
+
+// Library name: VerilogAMS_Practice
+// Cell name: TB_CCVS
+// View name: schematic
+// Inherited view list: schematic
+I4 (0 net2) isource type=sine ampl=100u freq=50K

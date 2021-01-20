@@ -1,0 +1,4 @@
+("TB_Current_Source" "V1") ("analogLib" "vpulse" "spectre" "spectre" "Stimulator_TestBench" "TB_Current_Source" "schematic")
+("TB_Current_Source" "V0") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "TB_Current_Source" "schematic")
+("TB_Current_Source" "I0") ("Stimulator_Model" "Current_Source" "verilogams" "verilogams" "Stimulator_TestBench" "TB_Current_Source" "schematic")
+("TB_Current_Source" "I1") ("Digital_Lib" "Counter" "functional" "functional" "Stimulator_TestBench" "TB_Current_Source" "schematic")

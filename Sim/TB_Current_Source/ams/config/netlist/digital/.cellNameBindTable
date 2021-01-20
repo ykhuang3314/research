@@ -1,0 +1,5 @@
+("analogLib" "vpulse" "spectre") "vsource"
+("Digital_Lib" "Counter" "functional") "Counter"
+("analogLib" "res" "spectre") "resistor"
+("Stimulator_Model" "Current_Source" "verilogams") "Current_Source"
+("analogLib" "vdc" "spectre") "vsource"

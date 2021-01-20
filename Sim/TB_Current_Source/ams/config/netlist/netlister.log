@@ -1,0 +1,71 @@
+Begin Netlisting Jan  6 23:16:36 2021
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist'
+directory. This file prints the values of the netlister control variables, which
+are different from their default values. To disable the file creation, type
+'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the
+'.cdsinit' file.
+
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all
+stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell
+'Stimulator_TestBench/TB_Current_Source/schematic' has no ports. Make sure that
+this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+Current_Source              verilogams           *Stopping View*  
+Counter                     functional           *Stopping View*  
+vdc                         spectre              *Stopping View*  
+res                         spectre              *Stopping View*  
+vpulse                      spectre              *Stopping View*  
+TB_Current_Source           schematic                             
+
+---------- End of netlist configuration information   ----------
+WARNING (OSSHNL-159): The primitive,
+'Stimulator_Model/Current_Source/verilogams', has been updated since the last
+netlisting session
+in this current run directory. Therefore, re-netlisting all
+cell views where
+this primitive is instantiated.
+
+Running netlist assembly..
+End netlisting Jan  6 23:16:44 2021

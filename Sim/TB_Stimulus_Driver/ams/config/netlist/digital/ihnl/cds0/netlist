@@ -1,0 +1,34 @@
+// Library - Stimulator_TestBench, Cell - TB_Stimulus_Driver, View -
+//schematic
+// LAST TIME SAVED: Jan 13 15:24:55 2021
+// NETLIST TIME: Jan 13 15:26:45 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_Stimulus_Driver", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Jan 13 15:24:55 2021" *)
+
+module TB_Stimulus_Driver ();
+
+// Buses in the design
+
+wire  [4:0]  Mag;
+
+
+Stimulus_Driver I9 ( .Ibias(Ibais_right), .VddH(VddH), .Vdda(Vdda), 
+    .Vssa(cds_globals.\gnd! ), .Out(net5), .ANO(CAT), .CAT(ANO));
+
+Stimulus_Driver I7 ( .Ibias(Ibias_left), .VddH(VddH), .Vdda(Vdda), 
+    .Vssa(cds_globals.\gnd! ), .Out(net6), .ANO(ANO), .CAT(CAT));
+
+Current_Source I14 ( .Ibias(net05), .Vdda(Vdda), .Vssa(Vssa), 
+    .Ioutn(Ibais_right), .Ioutp(Vdda), .Mag(Mag));
+
+Current_Source I10 ( .Ibias(net04), .Vdda(Vdda), .Vssa(Vssa), 
+    .Ioutn(Ibias_left), .Ioutp(Vdda), .Mag(Mag));
+
+Counter I12 ( .out(Mag), .CLK(CLK), .EN(Vdda), .RESET(Vssa));
+
+endmodule

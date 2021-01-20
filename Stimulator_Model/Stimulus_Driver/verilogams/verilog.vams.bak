@@ -1,0 +1,47 @@
+//Verilog-AMS HDL for "Stimulator_Model", "Stimulus_Driver" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Stimulus_Driver (Out, ANO, CAT, VddH, Vdda, Vssa, Ibias);
+
+// port declaration
+output Out;
+input ANO, CAT;
+inout VddH, Vdda, Vssa, Ibias;
+
+// Discipline
+electrical Out, VddH, Vdda, Vssa, Ibias;
+logic ANO, CAT;
+
+// Parameteres
+parameter current_gain = 100 from [0:inf];
+parameter gainError_Isource = 0 from [0:100]; 
+parameter gainError_Isink = 0 from [0:100];
+
+parameter Ron = 10;
+parameter Roff = 100M;
+
+// internal node
+electrical source, sink;
+
+analog begin
+	
+	//CCCS for Isource and Isink
+	I(VddH, source) <+ I(Ibias, Vdda) * current_gain * (1 + gainError_Isource/100);
+	I(sink, Vssa) <+ I(Ibias, Vdda) * current_gain * (1 + gainError_Isink/100);
+	
+	if(ANO) begin
+		//I(VddH, Out) <+ I(Ibias, Vdda) * current_gain * (1 + gainError_Isource/100);
+		I(source, Out) <+ V(source, Out) / Ron;
+		I(Out, sink) <+ V(Out, sink) / Roff;
+	end
+	
+	if(CAT) begin
+		//I(Out, Vssa) <+ I(Ibias, Vdda) * current_gain * (1 + gainError_Isink/100);
+		I(source, Out) <+ V(source, Out) / Roff;
+		I(Out, sink) <+ V(Out, sink) / Ron;
+	end
+	
+end
+endmodule

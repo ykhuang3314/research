@@ -26,3 +26,6 @@ DEFINE EMG_202009 /home/ykhuang/research/EMG_202009
 DEFINE VerilogAMS_Practice /home/ykhuang/research/VerilogAMS_Practice
 DEFINE EMG_Model /home/ykhuang/research/EMG_Model
 DEFINE EMG_TestBench /home/ykhuang/research/EMG_TestBench
+DEFINE Stimulator_Model /home/ykhuang/research/Stimulator_Model
+DEFINE Stimulator_TestBench /home/ykhuang/research/Stimulator_TestBench
+DEFINE Digital_Lib /home/ykhuang/research/Digital_Lib

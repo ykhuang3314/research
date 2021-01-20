@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"R0n" "analogLib_res_spectre"
+"V0n" "analogLib_vdc_spectre"
+"V1n" "analogLib_vpulse_spectre"
+"I0n" "Stimulator_Model_Current_Source_verilogams"
+"I1n" "Digital_Lib_Counter_functional"

@@ -1,0 +1,38 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ALLOWREDEFINITION
+-INCDIR
+/home/ykhuang/research/
+-XMLIBDIRPATH
+/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi/
+-CDSLIB
+/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//dummyMapi.vams
+-HDLVAR
+/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/VerilogAMS_Practice/CCVS/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/research/VerilogAMS_Practice/CCVS/verilogams/verilog.vams lib:VerilogAMS_Practice cell:CCVS view:verilogams"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-amscommfile
+/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/amscomm.list

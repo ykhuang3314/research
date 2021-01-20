@@ -1,0 +1,8 @@
+
+Current_Source I0 ( .Ibias(net4), .Vdda(vdda), .Vssa(cds_globals.\gnd! 
+    ), .Ioutn(net3), .Ioutp(vdda), .Mag(count_out));
+
+Counter I1 ( .out(count_out), .CLK(CLK), .EN(vdda), 
+    .RESET(cds_globals.\gnd! ));
+
+endmodule

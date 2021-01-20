@@ -1,0 +1,6 @@
+//Verilog HDL for "Digital_Lib", "Inverter" "functional"
+
+
+module Inverter ( );
+
+endmodule

@@ -1,0 +1,13 @@
+// Library - VerilogAMS_Practice, Cell - TB_CCVS, View - schematic
+// LAST TIME SAVED: Jan  9 22:51:04 2021
+// NETLIST TIME: Jan  9 22:51:10 2021
+`timescale 1ns / 1ps 
+
+`worklib VerilogAMS_Practice
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="VerilogAMS_Practice", dfII_cell="TB_CCVS", dfII_view="schematic", worklib_name="VerilogAMS_Practice", view_name="schematic", last_save_time="Jan  9 22:51:04 2021" *)
+
+module TB_CCVS ();
+

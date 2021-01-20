@@ -1,0 +1,16 @@
+
+Stimulus_Driver I9 ( .Ibias(Ibais_right), .VddH(VddH), .Vdda(Vdda), 
+    .Vssa(cds_globals.\gnd! ), .Out(net5), .ANO(CAT), .CAT(ANO));
+
+Stimulus_Driver I7 ( .Ibias(Ibias_left), .VddH(VddH), .Vdda(Vdda), 
+    .Vssa(cds_globals.\gnd! ), .Out(net6), .ANO(ANO), .CAT(CAT));
+
+Current_Source I14 ( .Ibias(net05), .Vdda(Vdda), .Vssa(Vssa), 
+    .Ioutn(Ibais_right), .Ioutp(Vdda), .Mag(Mag));
+
+Current_Source I10 ( .Ibias(net04), .Vdda(Vdda), .Vssa(Vssa), 
+    .Ioutn(Ibias_left), .Ioutp(Vdda), .Mag(Mag));
+
+Counter I12 ( .out(Mag), .CLK(CLK), .EN(Vdda), .RESET(Vssa));
+
+endmodule

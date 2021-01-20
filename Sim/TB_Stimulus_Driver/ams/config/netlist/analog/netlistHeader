@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Jan 13 15:26:45 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_Stimulus_Driver
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

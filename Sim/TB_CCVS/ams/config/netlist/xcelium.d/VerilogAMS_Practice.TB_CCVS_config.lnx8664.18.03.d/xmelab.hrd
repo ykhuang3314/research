@@ -1,0 +1,28 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSCONNRULES
+ConnRules_18V_full_fast
+
+VerilogAMS_Practice.TB_CCVS:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/VerilogAMS_Practice/CCVS/verilogams/verilog.vams lib:VerilogAMS_Practice cell:CCVS view:verilogams"
+-SPECTRE_ARGS
+++aps

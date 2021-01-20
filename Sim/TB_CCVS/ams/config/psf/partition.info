@@ -1,0 +1,16 @@
+( global ( resolution_type basic ) )
+
+( net TB_CCVS.Vout TB_CCVS.Vout analog electrical )
+( net TB_CCVS.I1.pout TB_CCVS.Vout analog electrical )
+
+( net TB_CCVS.I1.nin TB_CCVS.I1.nin analog electrical )
+( net TB_CCVS.I1.nout TB_CCVS.I1.nin analog electrical )
+( net cds_globals.\gnd!  TB_CCVS.I1.nin analog electrical )
+
+( net TB_CCVS.net2 TB_CCVS.net2 analog electrical )
+( net TB_CCVS.I1.pin TB_CCVS.net2 analog electrical )
+
+(instance TB_CCVS.I1 analog)
+(instance TB_CCVS.I4 analog)
+(instance TB_CCVS analog)
+(instance cds_globals analog)

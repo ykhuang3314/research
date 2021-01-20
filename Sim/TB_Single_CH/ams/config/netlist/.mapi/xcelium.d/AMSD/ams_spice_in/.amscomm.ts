@@ -1,0 +1,1 @@
+1611096521 /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/amscomm.list

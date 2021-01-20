@@ -1,0 +1,5 @@
+netMap,*TB_CCVS,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_CCVS,*I1,*I1
+instMaster,*TB_CCVS,*I1,*VerilogAMS_Practice_CCVS_verilogams
+cellMap,*TB_CCVS,*TB_CCVS,*VerilogAMS_Practice,*schematic
+topMap,*TB_CCVS

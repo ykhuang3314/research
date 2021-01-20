@@ -1,0 +1,5 @@
+cellMap,*TB_CCVS,*TB_CCVS,*null,*null
+topMap,*TB_CCVS
+netMap,*TB_CCVS,*gnd!,*0
+instMap,*TB_CCVS,*I4,*I4
+instMaster,*TB_CCVS,*I4,*analogLib_isin_spectre,*isource

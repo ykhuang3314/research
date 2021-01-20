@@ -1,0 +1,28 @@
+TOOL:	xrun(64)	18.03-s018: Started on Jan 09, 2021 at 22:51:07 CET
+xrun
+	-f /home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi/mapi_run.args
+		-64bit
+		-compile
+		-NOCOPYRIGHT
+		-nostdout
+		-nowarn DLNOHV
+		-logfile /home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi/mapirun.log
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-allowredefinition
+		-incdir /home/ykhuang/research/
+		-nclibdirpath /home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi/
+		-cdslib /home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi/cds.lib
+		-amscompilefile "file:/home/ykhuang/research/VerilogAMS_Practice/CCVS/verilogams/verilog.vams lib:VerilogAMS_Practice cell:CCVS view:verilogams"
+		/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//dummyMapi.vams
+		/home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//dummyMapi.vhms
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+file: /home/ykhuang/research/Sim/TB_CCVS/ams/config/netlist/.mapi//dummyMapi.vams
+file: /home/ykhuang/research/VerilogAMS_Practice/CCVS/verilogams/verilog.vams
+	module VerilogAMS_Practice.CCVS:verilogams
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun(64)	18.03-s018: Exiting on Jan 09, 2021 at 22:51:10 CET  (total: 00:00:03)

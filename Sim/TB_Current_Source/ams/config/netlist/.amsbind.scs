@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_Current_Source:config
+// Created On: Jan  6 23:16:45 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_Current_Source:schematic"
+
+	config cell="Current_Source" lib="Stimulator_Model" view="verilogams"
+	config cell="vsource" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="Counter" lib="Digital_Lib" view="functional"
+
+ }

@@ -1,0 +1,23 @@
+//Verilog-AMS HDL for "Stimulator_Model", "Current_Mirror" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Current_Mirror (Iout, Iref, Vdda, Vssa);
+
+//I/O port declaration
+inout Iout, Iref, Vdda, Vssa;
+
+//Discipline
+electrical Iout, Iref, Vdda, Vssa;
+
+//Parameters
+parameter Ai = 100 from [0:inf];
+parameter Gain_error = 0 from [0:100]; // in percentage
+
+analog begin
+	I(Iout, Vssa) <+ I(Iref, Vdda) * Ai * (1 + Gain_error/100);
+end
+	
+
+endmodule

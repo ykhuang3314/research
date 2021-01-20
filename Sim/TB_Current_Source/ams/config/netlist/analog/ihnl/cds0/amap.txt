@@ -1,0 +1,14 @@
+cellMap,*TB_Current_Source,*TB_Current_Source,*null,*null
+topMap,*TB_Current_Source
+netMap,*TB_Current_Source,*count_out<4>,*count_out_4
+netMap,*TB_Current_Source,*count_out<3>,*count_out_3
+netMap,*TB_Current_Source,*count_out<2>,*count_out_2
+netMap,*TB_Current_Source,*count_out<1>,*count_out_1
+netMap,*TB_Current_Source,*count_out<0>,*count_out_0
+netMap,*TB_Current_Source,*gnd!,*0
+instMap,*TB_Current_Source,*V0,*V0
+instMaster,*TB_Current_Source,*V0,*analogLib_vdc_spectre,*vsource
+instMap,*TB_Current_Source,*R0,*R0
+instMaster,*TB_Current_Source,*R0,*analogLib_res_spectre,*resistor
+instMap,*TB_Current_Source,*V1,*V1
+instMaster,*TB_Current_Source,*V1,*analogLib_vpulse_spectre,*vsource
