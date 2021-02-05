@@ -1,0 +1,43 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_Multi_CH
+// View name: schematic
+// Inherited view list: schematic
+V13 (Mag_0 0) vsource dc=0 type=dc
+V12 (Mag_1 0) vsource dc=1.8 type=dc
+V11 (Mag_2 0) vsource dc=0 type=dc
+V10 (Mag_3 0) vsource dc=1.8 type=dc
+V7 (Mag_4 0) vsource dc=0 type=dc
+V6 (Vssa 0) vsource dc=0 type=dc
+V2 (Vdda 0) vsource dc=1.8 type=dc
+V1 (VddH 0) vsource dc=30 type=dc
+V5 (DIS 0) vsource dc=0 type=dc
+V8 (CH_SEL_0 0) vsource type=pulse val0=0 val1=1.8 period=2.2m delay=1.1m \
+        rise=1p fall=1p width=1.1m
+V9 (CH_SEL_1 0) vsource type=pulse val0=0 val1=1.8 period=4.4m delay=2.2m \
+        rise=1p fall=1p width=2.2m
+V0 (ANO 0) vsource type=pulse val0=0 val1=1.8 period=220u delay=10u \
+        rise=1p fall=1p width=100u
+V3 (CAT 0) vsource type=pulse val0=0 val1=1.8 period=220u delay=120u \
+        rise=1p fall=1p width=100u
+I11 (Vdda net23) isource dc=10u type=dc
+R11 (net14 net13) resistor r=1M
+R10 (net12 net13) resistor r=500
+R9 (net29 net12) resistor r=1M
+R8 (net18 net17) resistor r=1M
+R7 (net16 net17) resistor r=500
+R6 (net31 net16) resistor r=1M
+R2 (net10 net9) resistor r=1M
+R1 (net8 net9) resistor r=500
+R0 (net22 net8) resistor r=1M
+R5 (net6 net5) resistor r=1M
+R4 (net4 net5) resistor r=500
+R3 (net19 net4) resistor r=1M
+C7 (net14 net13) capacitor c=1n
+C6 (net29 net12) capacitor c=1n
+C5 (net18 net17) capacitor c=1n
+C4 (net31 net16) capacitor c=1n
+C1 (net10 net9) capacitor c=1n
+C0 (net22 net8) capacitor c=1n
+C3 (net6 net5) capacitor c=1n
+C2 (net19 net4) capacitor c=1n

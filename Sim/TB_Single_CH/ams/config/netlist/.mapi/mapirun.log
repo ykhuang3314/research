@@ -1,4 +1,4 @@
-TOOL:	xrun(64)	18.03-s018: Started on Jan 19, 2021 at 23:48:39 CET
+TOOL:	xrun(64)	18.03-s018: Started on Jan 21, 2021 at 14:03:03 CET
 xrun
 	-f /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.mapi/mapi_run.args
 		-64bit
@@ -37,4 +37,4 @@ file: /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun(64)	18.03-s018: Exiting on Jan 19, 2021 at 23:48:42 CET  (total: 00:00:03)
+TOOL:	xrun(64)	18.03-s018: Exiting on Jan 21, 2021 at 14:03:05 CET  (total: 00:00:02)

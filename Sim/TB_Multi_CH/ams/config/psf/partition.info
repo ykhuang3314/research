@@ -1,0 +1,301 @@
+( global ( resolution_type basic ) )
+
+( net TB_Multi_CH.Vdda TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I6.Vdda TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I3.Vdda TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I0.Vdda TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I1.Vdda TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I4.Vdda TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I2.Vdda TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I10.Ioutp TB_Multi_CH.Vdda analog electrical )
+( net TB_Multi_CH.I10.Vdda TB_Multi_CH.Vdda analog electrical )
+
+( net TB_Multi_CH.net33 TB_Multi_CH.net33 analog electrical )
+( net TB_Multi_CH.I2.Iref TB_Multi_CH.net33 analog electrical )
+( net TB_Multi_CH.I10.Ioutn TB_Multi_CH.net33 analog electrical )
+
+( net TB_Multi_CH.Mag[4] TB_Multi_CH.Mag[4] analog/mixed electrical )
+( net TB_Multi_CH.I10.Mag[4] TB_Multi_CH.Mag[4] digital/mixed logic )
+
+( net TB_Multi_CH.Mag[3] TB_Multi_CH.Mag[3] analog/mixed electrical )
+( net TB_Multi_CH.I10.Mag[3] TB_Multi_CH.Mag[3] digital/mixed logic )
+
+( net TB_Multi_CH.Mag[2] TB_Multi_CH.Mag[2] analog/mixed electrical )
+( net TB_Multi_CH.I10.Mag[2] TB_Multi_CH.Mag[2] digital/mixed logic )
+
+( net TB_Multi_CH.Mag[1] TB_Multi_CH.Mag[1] analog/mixed electrical )
+( net TB_Multi_CH.I10.Mag[1] TB_Multi_CH.Mag[1] digital/mixed logic )
+
+( net TB_Multi_CH.Mag[0] TB_Multi_CH.Mag[0] analog/mixed electrical )
+( net TB_Multi_CH.I10.Mag[0] TB_Multi_CH.Mag[0] digital/mixed logic )
+
+( net TB_Multi_CH.Vssa TB_Multi_CH.Vssa analog electrical )
+( net TB_Multi_CH.I6.Vssa TB_Multi_CH.Vssa analog electrical )
+( net TB_Multi_CH.I3.Vssa TB_Multi_CH.Vssa analog electrical )
+( net TB_Multi_CH.I0.Vssa TB_Multi_CH.Vssa analog electrical )
+( net TB_Multi_CH.I1.Vssa TB_Multi_CH.Vssa analog electrical )
+( net TB_Multi_CH.I4.Vssa TB_Multi_CH.Vssa analog electrical )
+( net TB_Multi_CH.I2.Vssa TB_Multi_CH.Vssa analog electrical )
+( net TB_Multi_CH.I10.Vssa TB_Multi_CH.Vssa analog electrical )
+
+( net TB_Multi_CH.net23 TB_Multi_CH.net23 analog electrical )
+( net TB_Multi_CH.I10.Ibias TB_Multi_CH.net23 analog electrical )
+
+( net TB_Multi_CH.I10.Imag TB_Multi_CH.I10.Imag digital logic (type rnm) )
+
+( net TB_Multi_CH.net24 TB_Multi_CH.net24 analog electrical )
+( net TB_Multi_CH.I6.Ist TB_Multi_CH.net24 analog electrical )
+( net TB_Multi_CH.I2.Iout TB_Multi_CH.net24 analog electrical )
+
+( net TB_Multi_CH.net29 TB_Multi_CH.net29 analog electrical )
+( net TB_Multi_CH.I4.Iano TB_Multi_CH.net29 analog electrical )
+
+( net TB_Multi_CH.net14 TB_Multi_CH.net14 analog electrical )
+( net TB_Multi_CH.I4.Icat TB_Multi_CH.net14 analog electrical )
+
+( net TB_Multi_CH.ANO TB_Multi_CH.ANO analog/mixed electrical )
+( net TB_Multi_CH.I3.ANO TB_Multi_CH.ANO digital/mixed logic )
+( net TB_Multi_CH.I0.ANO TB_Multi_CH.ANO digital/mixed logic )
+( net TB_Multi_CH.I1.ANO TB_Multi_CH.ANO digital/mixed logic )
+( net TB_Multi_CH.I4.ANO TB_Multi_CH.ANO digital/mixed logic )
+
+( net TB_Multi_CH.CAT TB_Multi_CH.CAT analog/mixed electrical )
+( net TB_Multi_CH.I3.CAT TB_Multi_CH.CAT digital/mixed logic )
+( net TB_Multi_CH.I0.CAT TB_Multi_CH.CAT digital/mixed logic )
+( net TB_Multi_CH.I1.CAT TB_Multi_CH.CAT digital/mixed logic )
+( net TB_Multi_CH.I4.CAT TB_Multi_CH.CAT digital/mixed logic )
+
+( net TB_Multi_CH.DIS TB_Multi_CH.DIS analog/mixed electrical )
+( net TB_Multi_CH.I3.DIS TB_Multi_CH.DIS digital/mixed logic )
+( net TB_Multi_CH.I0.DIS TB_Multi_CH.DIS digital/mixed logic )
+( net TB_Multi_CH.I1.DIS TB_Multi_CH.DIS digital/mixed logic )
+( net TB_Multi_CH.I4.DIS TB_Multi_CH.DIS digital/mixed logic )
+
+( net TB_Multi_CH.net27 TB_Multi_CH.net27 analog electrical )
+( net TB_Multi_CH.I6.Ist_ch3 TB_Multi_CH.net27 analog electrical )
+( net TB_Multi_CH.I4.Ist TB_Multi_CH.net27 analog electrical )
+
+( net TB_Multi_CH.VddH TB_Multi_CH.VddH analog electrical )
+( net TB_Multi_CH.I3.VddH TB_Multi_CH.VddH analog electrical )
+( net TB_Multi_CH.I0.VddH TB_Multi_CH.VddH analog electrical )
+( net TB_Multi_CH.I1.VddH TB_Multi_CH.VddH analog electrical )
+( net TB_Multi_CH.I4.VddH TB_Multi_CH.VddH analog electrical )
+
+( net TB_Multi_CH.net31 TB_Multi_CH.net31 analog electrical )
+( net TB_Multi_CH.I1.Iano TB_Multi_CH.net31 analog electrical )
+
+( net TB_Multi_CH.net18 TB_Multi_CH.net18 analog electrical )
+( net TB_Multi_CH.I1.Icat TB_Multi_CH.net18 analog electrical )
+
+( net TB_Multi_CH.net28 TB_Multi_CH.net28 analog electrical )
+( net TB_Multi_CH.I6.Ist_ch4 TB_Multi_CH.net28 analog electrical )
+( net TB_Multi_CH.I1.Ist TB_Multi_CH.net28 analog electrical )
+
+( net TB_Multi_CH.net22 TB_Multi_CH.net22 analog electrical )
+( net TB_Multi_CH.I0.Iano TB_Multi_CH.net22 analog electrical )
+
+( net TB_Multi_CH.net10 TB_Multi_CH.net10 analog electrical )
+( net TB_Multi_CH.I0.Icat TB_Multi_CH.net10 analog electrical )
+
+( net TB_Multi_CH.net25 TB_Multi_CH.net25 analog electrical )
+( net TB_Multi_CH.I6.Ist_ch2 TB_Multi_CH.net25 analog electrical )
+( net TB_Multi_CH.I0.Ist TB_Multi_CH.net25 analog electrical )
+
+( net TB_Multi_CH.net19 TB_Multi_CH.net19 analog electrical )
+( net TB_Multi_CH.I3.Iano TB_Multi_CH.net19 analog electrical )
+
+( net TB_Multi_CH.net6 TB_Multi_CH.net6 analog electrical )
+( net TB_Multi_CH.I3.Icat TB_Multi_CH.net6 analog electrical )
+
+( net TB_Multi_CH.net20 TB_Multi_CH.net20 analog electrical )
+( net TB_Multi_CH.I6.Ist_ch1 TB_Multi_CH.net20 analog electrical )
+( net TB_Multi_CH.I3.Ist TB_Multi_CH.net20 analog electrical )
+
+( net TB_Multi_CH.CH_SEL[1] TB_Multi_CH.CH_SEL[1] analog/mixed electrical )
+( net TB_Multi_CH.I6.CH_SEL[1] TB_Multi_CH.CH_SEL[1] digital/mixed logic )
+
+( net TB_Multi_CH.CH_SEL[0] TB_Multi_CH.CH_SEL[0] analog/mixed electrical )
+( net TB_Multi_CH.I6.CH_SEL[0] TB_Multi_CH.CH_SEL[0] digital/mixed logic )
+
+( net TB_Multi_CH.I6.CH_SEL_base10 TB_Multi_CH.I6.CH_SEL_base10 digital logic )
+
+( net TB_Multi_CH.net13 TB_Multi_CH.net13 analog electrical )
+
+( net TB_Multi_CH.net12 TB_Multi_CH.net12 analog electrical )
+
+( net TB_Multi_CH.net17 TB_Multi_CH.net17 analog electrical )
+
+( net TB_Multi_CH.net16 TB_Multi_CH.net16 analog electrical )
+
+( net TB_Multi_CH.net9 TB_Multi_CH.net9 analog electrical )
+
+( net TB_Multi_CH.net8 TB_Multi_CH.net8 analog electrical )
+
+( net TB_Multi_CH.net5 TB_Multi_CH.net5 analog electrical )
+
+( net TB_Multi_CH.net4 TB_Multi_CH.net4 analog electrical )
+
+( net cds_globals.\gnd!  cds_globals.\gnd!  analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.Mag[4]
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I10.Mag[4] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.Mag[3]
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I10.Mag[3] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.Mag[2]
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I10.Mag[2] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.Mag[1]
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I10.Mag[1] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.Mag[0]
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I10.Mag[0] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.ANO
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I4.ANO logic digital )
+    ( TB_Multi_CH.I1.ANO logic digital )
+    ( TB_Multi_CH.I0.ANO logic digital )
+    ( TB_Multi_CH.I3.ANO logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.CAT
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I4.CAT logic digital )
+    ( TB_Multi_CH.I1.CAT logic digital )
+    ( TB_Multi_CH.I0.CAT logic digital )
+    ( TB_Multi_CH.I3.CAT logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.DIS
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I4.DIS logic digital )
+    ( TB_Multi_CH.I1.DIS logic digital )
+    ( TB_Multi_CH.I0.DIS logic digital )
+    ( TB_Multi_CH.I3.DIS logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.CH_SEL[1]
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I6.CH_SEL[1] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Multi_CH.CH_SEL[0]
+   electrical
+   analog
+   (
+    ( TB_Multi_CH.I6.CH_SEL[0] logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_Multi_CH.I10 mixed/dmixed (type rnm))
+(instance TB_Multi_CH.I2 analog)
+(instance TB_Multi_CH.I4 mixed)
+(instance TB_Multi_CH.I1 mixed)
+(instance TB_Multi_CH.I0 mixed)
+(instance TB_Multi_CH.I3 mixed)
+(instance TB_Multi_CH.I6 mixed)
+(instance TB_Multi_CH.V13 analog)
+(instance TB_Multi_CH.V12 analog)
+(instance TB_Multi_CH.V11 analog)
+(instance TB_Multi_CH.V10 analog)
+(instance TB_Multi_CH.V7 analog)
+(instance TB_Multi_CH.V6 analog)
+(instance TB_Multi_CH.V2 analog)
+(instance TB_Multi_CH.V1 analog)
+(instance TB_Multi_CH.V5 analog)
+(instance TB_Multi_CH.V8 analog)
+(instance TB_Multi_CH.V9 analog)
+(instance TB_Multi_CH.V0 analog)
+(instance TB_Multi_CH.V3 analog)
+(instance TB_Multi_CH.I11 analog)
+(instance TB_Multi_CH.R11 analog)
+(instance TB_Multi_CH.R10 analog)
+(instance TB_Multi_CH.R9 analog)
+(instance TB_Multi_CH.R8 analog)
+(instance TB_Multi_CH.R7 analog)
+(instance TB_Multi_CH.R6 analog)
+(instance TB_Multi_CH.R2 analog)
+(instance TB_Multi_CH.R1 analog)
+(instance TB_Multi_CH.R0 analog)
+(instance TB_Multi_CH.R5 analog)
+(instance TB_Multi_CH.R4 analog)
+(instance TB_Multi_CH.R3 analog)
+(instance TB_Multi_CH.C7 analog)
+(instance TB_Multi_CH.C6 analog)
+(instance TB_Multi_CH.C5 analog)
+(instance TB_Multi_CH.C4 analog)
+(instance TB_Multi_CH.C1 analog)
+(instance TB_Multi_CH.C0 analog)
+(instance TB_Multi_CH.C3 analog)
+(instance TB_Multi_CH.C2 analog)
+(instance TB_Multi_CH mixed/dmixed (type rnm))
+(instance cds_globals analog)

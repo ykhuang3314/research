@@ -1,14 +1,14 @@
 // Library - Stimulator_TestBench, Cell - TB_Single_CH, View -
 //schematic
-// LAST TIME SAVED: Jan 19 23:45:51 2021
-// NETLIST TIME: Jan 19 23:48:42 2021
+// LAST TIME SAVED: Jan 20 10:03:00 2021
+// NETLIST TIME: Jan 21 14:03:06 2021
 `timescale 1ns / 1ps 
 
 `worklib Stimulator_TestBench
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_Single_CH", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Jan 19 23:45:51 2021" *)
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_Single_CH", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Jan 20 10:03:00 2021" *)
 
 module TB_Single_CH ();
 

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"CH_SEL<0>v" "CH_SEL[0]v"
+"CH_SEL<1>v" "CH_SEL[1]v"
+"Mag<0>v" "Mag[0]v"
+"Mag<1>v" "Mag[1]v"
+"Mag<2>v" "Mag[2]v"
+"Mag<3>v" "Mag[3]v"
+"Mag<4>v" "Mag[4]v"
+"gnd!v" "cds_globals.\\gnd! v"

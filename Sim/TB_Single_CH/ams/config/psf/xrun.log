@@ -1,5 +1,5 @@
 xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.03-s018: Started on Jan 19, 2021 at 23:48:48 CET
+TOOL:	xrun(64)	18.03-s018: Started on Jan 21, 2021 at 14:03:12 CET
 xrun
 	-f xrunArgs
 		-UNBUFFERED
@@ -68,8 +68,8 @@ file: /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-xmvlog: Memory Usage - Current physical: 25.6M, Current virtual: 57.5M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 66.9% cpu)
+xmvlog: Memory Usage - Current physical: 25.4M, Current virtual: 57.2M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 64.7% cpu)
 		Caching library 'Stimulator_TestBench' ....... Done
 		Caching library 'Stimulator_Model' ....... Done
 		Caching library 'Digital_Lib' ....... Done
@@ -83,11 +83,14 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 66.9% cpu)
 	Connect Rules applied are:
 		ConnRules_18V_full_fast
 	Building instance overlay tables: .................... Done
+	Using implicit TMP libraries; associated with library Stimulator_TestBench
 	Generating native compiled code:
 		Stimulator_Model.Current_Source:verilogams <0x58cd72d6>
 			streams:   1, words:   500
 		Digital_Lib.Counter:functional <0x76a53a2c>
 			streams:   3, words:   990
+		connectLib.E2L_2:module <0x2b14c314>
+			streams:   9, words:  9525
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -102,8 +105,8 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 66.9% cpu)
 		Interconnect:           15       -
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: Stimulator_TestBench.TB_Single_CH:config
-xmelab: Memory Usage - Final: 43.1M, Peak: 215.6M, Peak virtual: 300.7M
-xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.3s, 88.4% cpu)
+xmelab: Memory Usage - Final: 43.2M, Peak: 215.7M, Peak virtual: 300.7M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.3s, 84.7% cpu)
 Loading snapshot Stimulator_TestBench.TB_Single_CH:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
@@ -115,19 +118,19 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 13247
-Memory  available: 52.4967 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 2922
+Memory  available: 59.0651 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1339.2] ( 16 ),  1 [2400.1] ( 17 ),  2 [1248.3] ( 18 )
-                 3 [2400.0] ( 19 ),  4 [1255.8] ( 20 ),  5 [1244.2] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [2327.6] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [1200.9] ( 25 ), 10 [2222.3] ( 26 )
-                11 [1200.0] ( 27 ), 12 [1284.7] ( 28 ), 13 [1280.9] ( 29 )
+        0:       0 [1627.7] ( 16 ),  1 [2944.6] ( 17 ),  2 [1297.6] ( 18 )
+                 3 [1200.1] ( 19 ),  4 [1234.9] ( 20 ),  5 [1200.0] ( 21 )
+                 6 [1272.7] ( 22 ),  7 [1202.0] ( 23 )
+        1:       8 [1288.3] ( 24 ),  9 [1245.4] ( 25 ), 10 [1258.2] ( 26 )
+                11 [1288.9] ( 27 ), 12 [1224.5] ( 28 ), 13 [2399.9] ( 29 )
                 14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.4 %, 0.3 %, 0.2 %
+System load averages (1min, 5min, 15min) : 3.1 %, 1.6 %, 1.2 %
 Hyperthreading is enabled
 HPC is enabled
 
@@ -138,32 +141,21 @@ Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/spiceM
 Notice from spectre during circuit read-in.
     Configuration file used: `/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg'.
 
-Reading file:  /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
-Opening directory xcelium.d/AMSD/ahdlSimDB (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Source_verilogams_verilog.vams.Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Source_verilogams_verilog.vams.Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
-Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Source_verilogams_verilog.vams.Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.so
+Compiling ahdlcmi module library for Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.
+Finished compilation in 959 ms (elapsed) for Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.
 Installed compiled interface for Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.
-Reading file:  /home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Mirror_verilogams_verilog.vams.Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Mirror_verilogams_verilog.vams.Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
-Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Mirror_verilogams_verilog.vams.Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.so
+Compiling ahdlcmi module library for Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.
+Finished compilation in 1.04 s (elapsed) for Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.
 Installed compiled interface for Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.
-Reading file:  /home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_H_Bridge_verilogams_verilog.vams.Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_H_Bridge_verilogams_verilog.vams.Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
-Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_H_Bridge_verilogams_verilog.vams.Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral.so
+Compiling ahdlcmi module library for Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral.
+Finished compilation in 915 ms (elapsed) for Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral.
 Installed compiled interface for Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral.
-Reading link:  /pkg/cadence/installs/XCELIUM1803/tools
-Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/ (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
-Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Compiling ahdlcmi module library for connectLib__E2L_2__module__0x10000001_behavioral.
+Finished compilation in 1.09 s (elapsed) for connectLib__E2L_2__module__0x10000001_behavioral.
 Installed compiled interface for connectLib__E2L_2__module__0x10000001_behavioral.
-Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/netlist.vams
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs
@@ -419,10 +411,10 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/tm_pho.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoa.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dpho.va
-Reading link:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.h
-Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.vams
 Reading link:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.vams
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphob.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_uv.va
@@ -498,9 +490,9 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/amsControlSpectre.scs
 Reading file:  /home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/.amsbind.scs
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 536.778 ms, elapsed = 668.604 ms.
-Time accumulated: CPU = 953.862 ms, elapsed = 668.609 ms.
-Peak resident memory used = 101 Mbytes.
+Time for NDB Parsing: CPU = 591.236 ms, elapsed = 4.71199 s.
+Time accumulated: CPU = 1.01756 s, elapsed = 4.71199 s.
+Peak resident memory used = 102 Mbytes.
 
 xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
 xcelium> 
@@ -543,18 +535,18 @@ xcelium> probe -create -emptyok -database ams_database -flow {TB_Single_CH.R4.1}
 Created probe 11
 xcelium> 
 xcelium> run
-Time for Elaboration: CPU = 228.931 ms, elapsed = 260.598 ms.
-Time accumulated: CPU = 1.18417 s, elapsed = 930.586 ms.
-Peak resident memory used = 129 Mbytes.
+Time for Elaboration: CPU = 196.552 ms, elapsed = 228.432 ms.
+Time accumulated: CPU = 1.21426 s, elapsed = 4.94057 s.
+Peak resident memory used = 130 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 2.336 ms, elapsed = 2.33722 ms.
-Time accumulated: CPU = 1.18676 s, elapsed = 933.167 ms.
-Peak resident memory used = 130 Mbytes.
+Time for EDB Visiting: CPU = 2.812 ms, elapsed = 2.81405 ms.
+Time accumulated: CPU = 1.21729 s, elapsed = 4.9436 s.
+Peak resident memory used = 131 Mbytes.
 
 
 Notice from spectre during initial setup.
@@ -612,9 +604,9 @@ Notice from spectre during initial setup.
     1 vsources are short because their absolute value is less than or equal to 'vabsshort'.
     Fast APS Enabled.
 
-Time for parsing: CPU = 4.253 ms, elapsed = 8.72612 ms.
-Time accumulated: CPU = 1.19122 s, elapsed = 942.107 ms.
-Peak resident memory used = 131 Mbytes.
+Time for parsing: CPU = 3.669 ms, elapsed = 8.33297 ms.
+Time accumulated: CPU = 1.22113 s, elapsed = 4.95211 s.
+Peak resident memory used = 132 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -626,7 +618,7 @@ Transient Analysis `tran': time = (0 s -> 7.04 ms)
 **************************************************
 Trying `homotopy = gmin' for initial conditions.
 
-DC simulation time: CPU = 5.503 ms, elapsed = 5.50008 ms.
+DC simulation time: CPU = 5.413 ms, elapsed = 10.8302 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
@@ -677,19 +669,16 @@ Warning from spectre at time = 120 us during transient analysis `tran'.
 
     tran: time = 190.6 us    (2.71 %), step = 35.29 us     (501 m%)
 
-Warning from spectre at time = 220 us during transient analysis `tran'.
-    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: TB_Single_CH.Vout_CAT.
-    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
-
-Zero diagonal found in Jacobian at `TB_Single_CH.net05' and `TB_Single_CH.net05'.
-
 Warning from spectre at time = 230 us during transient analysis `tran'.
     WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: TB_Single_CH.Vout_ANO.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+Warning from spectre at time = 230 us during transient analysis `tran'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 340 us during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: TB_Single_CH.Vout_CAT.
         Further occurrences of this warning will be suppressed.
     WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
         Further occurrences of this warning will be suppressed.
-Warning from spectre at time = 230 us during transient analysis `tran'.
-    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
 Warning from spectre at time = 340 us during transient analysis `tran'.
     WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
 Warning from spectre at time = 450 us during transient analysis `tran'.
@@ -707,50 +696,29 @@ Warning from spectre at time = 450 us during transient analysis `tran'.
     tran: time = 3.365 ms    (47.8 %), step = 27.48 us     (390 m%)
     tran: time = 3.74 ms     (53.1 %), step = 45.04 us     (640 m%)
     tran: time = 4.07 ms     (57.8 %), step = 44.93 us     (638 m%)
-
-Notice from spectre at time = 4.29 ms during transient analysis `tran'.
-    Newton iteration fails to converge at time = 4.29 ms step = 200.361 as.
-        Disaster recovery algorithm is enabled to search for a converged solution.
-
     tran: time = 4.4 ms      (62.5 %), step = 1 ps        (14.2 n%)
-
-Notice from spectre at time = 4.62 ms during transient analysis `tran'.
-    Newton iteration fails to converge at time = 4.62 ms step = 200.361 as.
-        Disaster recovery algorithm is enabled to search for a converged solution.
-
     tran: time = 4.754 ms    (67.5 %), step = 6.884 us    (97.8 m%)
-
-Notice from spectre at time = 5.06 ms during transient analysis `tran'.
-    Newton iteration fails to converge at time = 5.06 ms step = 200.361 as.
-        Disaster recovery algorithm is enabled to search for a converged solution.
-
     tran: time = 5.125 ms    (72.8 %), step = 27.54 us     (391 m%)
-
-Notice from spectre at time = 5.39 ms during transient analysis `tran'.
-    Newton iteration fails to converge at time = 5.39 ms step = 200.361 as.
-        Disaster recovery algorithm is enabled to search for a converged solution.
-
     tran: time = 5.478 ms    (77.8 %), step = 22.46 us     (319 m%)
-
-Notice from spectre at time = 5.5 ms during transient analysis `tran'.
-    Newton iteration fails to converge at time = 5.5 ms step = 200.361 as.
-        Disaster recovery algorithm is enabled to search for a converged solution.
-        Further occurrences of this notice will be suppressed.
-
     tran: time = 5.83 ms     (82.8 %), step = 44.93 us     (638 m%)
     tran: time = 6.16 ms     (87.5 %), step = 1 ps        (14.2 n%)
     tran: time = 6.514 ms    (92.5 %), step = 6.884 us    (97.8 m%)
+
+Notice from spectre at time = 6.6 ms during transient analysis `tran'.
+    Newton iteration fails to converge at time = 6.6 ms step = 200.361 as.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+
     tran: time = 6.885 ms    (97.8 %), step = 27.54 us     (391 m%)
 
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
 Simulation stopped via transient analysis stoptime at time 7040 US
-Memory Usage - Current physical: 136.9M, Current virtual: 608.5M
-CPU Usage - 0.4s system + 1.1s user = 1.5s total (88.2% cpu)
+Memory Usage - Current physical: 137.9M, Current virtual: 608.5M
+CPU Usage - 0.3s system + 1.1s user = 1.5s total (26.2% cpu)
 xcelium> exit
-Number of accepted tran steps =             5116
+Number of accepted tran steps =             5084
 
 Maximum value achieved for any signal of each quantity: 
-V: V(TB_Single_CH.net10) = 24 MV
+V: V(TB_Single_CH.net10) = 24.01 MV
 I: I(TB_Single_CH.V1:p) = 32 mA
 If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
 
@@ -762,11 +730,12 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (35.4 %)      1 (35.4 %)      3 (11.5 %)      4 (15.4 %)
-                 5 (4.7 %)      21 (9.3 %)      22 (3.1 %)      23 (17.7 %)
-        Other    9 (18.3 %)     12 (9.2 %)      26 (1.5 %)      28 (8.5 %)
-                30 (6.2 %)      
-Initial condition solution time: CPU = 5.596 ms, elapsed = 5.59497 ms.
+        Spectre  0 (21.4 %)      1 (1.3 %)       2 (26.8 %)      3 (10.9 %)
+                 4 (9.6 %)       5 (5.5 %)       6 (2.8 %)       7 (10.0 %)
+                16 (17.0 %)     17 (100.0 %)    18 (15.3 %)     19 (12.9 %)
+                20 (9.3 %)      21 (10.0 %)     22 (28.5 %)     23 (9.3 %)
+        Other   13 (3.2 %)      15 (1.7 %)      25 (1.5 %)      27 (6.8 %)
+Initial condition solution time: CPU = 5.5 ms, elapsed = 10.9181 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
 Number of A-to-D events:                     390
@@ -775,15 +744,14 @@ Number of D-to-A events:                     162
   Number of D-to-A events in IEs:              0
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 481.929 ms, elapsed = 484.632 ms.
-Total time required for tran analysis `tran': CPU = 489.712 ms, elapsed = 494.666 ms.
-Time accumulated: CPU = 1.69703 s, elapsed = 1.45553 s.
-Peak resident memory used = 137 Mbytes.
+Intrinsic tran analysis time:    CPU = 448.148 ms, elapsed = 451.903 ms.
+Total time required for tran analysis `tran': CPU = 455.955 ms, elapsed = 468.524 ms.
+Time accumulated: CPU = 1.69214 s, elapsed = 5.44289 s.
+Peak resident memory used = 138 Mbytes.
 
 
 Notice from spectre.
-    5 notices suppressed.
-    181 warnings suppressed.
+    179 warnings suppressed.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -799,12 +767,12 @@ outputParameter: writing output parameter values to rawfile.
 Opening the PSF file ../psf/outputParameter.info ...
 Simulation complete via transient analysis stoptime at time 7040 US
 
-Aggregate audit (11:48:59 PM, Tue Jan 19, 2021):
-Time used: CPU = 1.71 s, elapsed = 1.48 s, util. = 116%.
-Time spent in licensing: elapsed = 169 ms, percentage of total = 11.4%.
-Peak memory used = 138 Mbytes.
-Simulation started at: 11:48:58 PM, Tue Jan 19, 2021, ended at: 11:48:59 PM, Tue Jan 19, 2021, with elapsed time (wall clock): 1.48 s.
-spectre completes with 0 errors, 16 warnings, and 12 notices.
-xmsim: Memory Usage - Final: 137.7M, Peak: 137.8M, Peak virtual: 608.7M
-xmsim: CPU Usage - 0.5s system + 1.2s user = 1.7s total (1.8s, 95.0% cpu)
-TOOL:	xrun(64)	18.03-s018: Exiting on Jan 19, 2021 at 23:48:59 CET  (total: 00:00:11)
+Aggregate audit (2:03:27 PM, Thur Jan 21, 2021):
+Time used: CPU = 1.71 s, elapsed = 5.47 s, util. = 31.2%.
+Time spent in licensing: elapsed = 146 ms.
+Peak memory used = 139 Mbytes.
+Simulation started at: 2:03:22 PM, Thur Jan 21, 2021, ended at: 2:03:27 PM, Thur Jan 21, 2021, with elapsed time (wall clock): 5.47 s.
+spectre completes with 0 errors, 16 warnings, and 7 notices.
+xmsim: Memory Usage - Final: 138.5M, Peak: 138.7M, Peak virtual: 608.7M
+xmsim: CPU Usage - 2.5s system + 6.9s user = 9.4s total (5.8s, 100.0% cpu)
+TOOL:	xrun(64)	18.03-s018: Exiting on Jan 21, 2021 at 14:03:27 CET  (total: 00:00:15)

@@ -4,7 +4,7 @@
 
 
 // Binding AMSD Control Block for config Stimulator_TestBench.TB_Single_CH:config
-// Created On: Jan 19 23:48:47 2021
+// Created On: Jan 21 14:03:11 2021
 // NOTE      : DO NOT change this system generated file.
 
 amsd {

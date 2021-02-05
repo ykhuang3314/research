@@ -1,0 +1,71 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+CDS_SELECT_CRS
++define+CONNRULES_18V_FULL_FAST
+-SPECTRE_ARGS
+"-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
+-amsossirunbind
+.amsbind.scs
+-AMSINPUT
+.amsbind.scs
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-NOPARAMERR
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSINPUT
+./spiceModels.scs
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+./amsControlSpectre.scs
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/CH_Sel_MUX/verilogams/verilog.vams lib:Stimulator_Model cell:CH_Sel_MUX view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-SPECTRE_ARGS
+++aps
+-MESSAGES
+Stimulator_TestBench.TB_Multi_CH:schematic
+cds_globals
+-AMSELAB
+-XLMODE
+./xcelium.d/Stimulator_TestBench.TB_Multi_CH_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/Stimulator_TestBench.TB_Multi_CH_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/Stimulator_TestBench.TB_Multi_CH_config.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

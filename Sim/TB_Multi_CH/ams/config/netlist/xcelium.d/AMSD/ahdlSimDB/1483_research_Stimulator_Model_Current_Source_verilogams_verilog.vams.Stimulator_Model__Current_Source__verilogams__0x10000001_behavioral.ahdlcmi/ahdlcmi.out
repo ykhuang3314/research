@@ -1,0 +1,43 @@
+ahdlcmicompile: Compiling ahdlcmi in xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Source_verilogams_verilog.vams.Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Thu Jan 21 13:49:09 CET 2021 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /pkg/cadence/installs/IC618/bin:/pkg/cadence/installs/IC618/tools/bin/64bit:/pkg/cadence/installs/IC618/tools/bin:/pkg/cadence/installs/IC618/share/oa/bin:/pkg/xfab/XKIT/x_all/cadence/xenv:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ykhuang/.local/bin:/home/ykhuang/bin:/pkg/cadence/installs/IC618/tools/dfII/bin:/pkg/cadence/installs/SPECTRE181/tools/bin:/pkg/cadence/installs/ASSURA41/tools/bin:/pkg/cadence/installs/ASSURA41/tools/assura/bin:/pkg/cadence/installs/EXT182/tools/bin:/pkg/cadence/installs/XCELIUM1803/tools/bin/64bit:/pkg/cadence/installs/XCELIUM1803/tools/bin:/pkg/cadence/installs/GENUS181/tools.lnx86/bin:/pkg/cadence/installs/INNOVUS181/tools/bin/64bit:/pkg/cadence/installs/INNOVUS181/tools/bin
+LD_LIBRARY_PATH:  /pkg/cadence/installs/XCELIUM1803/tools/lib/64bit:/pkg/cadence/installs/XCELIUM1803/tools/lib/64bit/SuSE:/pkg/cadence/installs/IC618/tools/lib/64bit:/pkg/cadence/installs/IC618/tools/lib:/pkg/cadence/installs/IC618/tools/lib/64bit/RHEL/RHEL7:/pkg/cadence/installs/IC618/share/oa/lib/linux_rhel60_64/opt:/pkg/cadence/installs/IC618/tools/dfII/lib/64bit:/pkg/cadence/installs/IC618/tools/sev/lib/64bit:/pkg/cadence/installs/IC618/tools/hdf5/lib/64bit:/pkg/cadence/installs/IC618/tools/lz4/lib/64bit:/pkg/cadence/installs/XCELIUM1803/tools.lnx86/lib/64bit:/pkg/cadence/installs/IC618/tools/Qt/v5/64bit/lib
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j32 -f GNUmakefile
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+Compiling C file Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.c (optimize)
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include -c Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.c -o obj/optimize/5.0/Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.o || rm -f -f obj/optimize/5.0/Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.o
+<stdin>: In function 'Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral_pDC_Load':
+<stdin>:1028:1082: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2715:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>: In function 'Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral_pCompare':
+<stdin>:1075:1698: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>:1075:1318: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+In file included from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'void * __restrict__' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^
+<stdin>:1075:1318: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+In file included from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'const void * __restrict__' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^
+<stdin>:1075:1935: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>: In function 'Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral_pGetMatrixPointers':
+<stdin>:1081:2886: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>: In function 'Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral_pAnalTranLoad':
+<stdin>:1113:2540: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2715:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^
+rm -f -rf Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.c
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.so ./obj/optimize/5.0/Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+rm -f -f ./obj/optimize/5.0/Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.o 

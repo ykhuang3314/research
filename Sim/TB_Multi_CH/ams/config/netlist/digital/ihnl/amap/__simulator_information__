@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"__artInstanceTerminalDelimiter__" "."
+"__artHierarchyDelimiter__" "."
+"__netlister__" "AMS-UNL"
+"__lib__" "Stimulator_TestBench"
+"__cell__" "TB_Multi_CH"
+"__view__" "config"
+"__topcell__" "TB_Multi_CH"
+"__outputformat__" "sst2"

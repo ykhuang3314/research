@@ -24,11 +24,11 @@ instMap,*TB_Single_CH,*V4,*V4
 instMaster,*TB_Single_CH,*V4,*analogLib_vpulse_spectre,*vsource
 instMap,*TB_Single_CH,*V0,*V0
 instMaster,*TB_Single_CH,*V0,*analogLib_vpulse_spectre,*vsource
-instMap,*TB_Single_CH,*V6,*V6
-instMaster,*TB_Single_CH,*V6,*analogLib_vdc_spectre,*vsource
 instMap,*TB_Single_CH,*V5,*V5
 instMaster,*TB_Single_CH,*V5,*analogLib_vdc_spectre,*vsource
 instMap,*TB_Single_CH,*V1,*V1
 instMaster,*TB_Single_CH,*V1,*analogLib_vdc_spectre,*vsource
 instMap,*TB_Single_CH,*V2,*V2
 instMaster,*TB_Single_CH,*V2,*analogLib_vdc_spectre,*vsource
+instMap,*TB_Single_CH,*V6,*V6
+instMaster,*TB_Single_CH,*V6,*analogLib_vdc_spectre,*vsource

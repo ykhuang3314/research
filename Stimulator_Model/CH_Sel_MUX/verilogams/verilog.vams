@@ -1,0 +1,65 @@
+//Verilog-AMS HDL for "Stimulator_Model", "CH_Sel_MUX" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module CH_Sel_MUX (Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist, CH_SEL, Vdda, Vssa);
+
+//port declaration
+inout Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist;
+input CH_SEL;
+inout Vdda, Vssa;
+
+//discipline
+electrical Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist, Vdda, Vssa;
+wire[1:0] CH_SEL;
+
+//parameters
+parameter Ron = 10; // on-resistance
+parameter Roff = 100M; // off resistance
+
+//internal variables
+integer CH_SEL_base10;
+
+always@(CH_SEL) begin
+	CH_SEL_base10 = 2 * CH_SEL[1] + CH_SEL[0];
+end
+
+analog begin
+
+	case(CH_SEL_base10)
+		0 : begin
+			I(Ist_ch1, Ist) <+ V(Ist_ch1, Ist)/Ron;
+			I(Ist_ch2, Ist) <+ V(Ist_ch2, Ist)/Roff;
+			I(Ist_ch3, Ist) <+ V(Ist_ch3, Ist)/Roff;
+			I(Ist_ch4, Ist) <+ V(Ist_ch4, Ist)/Roff;
+			end
+		1 : begin
+			I(Ist_ch1, Ist) <+ V(Ist_ch1, Ist)/Roff;
+			I(Ist_ch2, Ist) <+ V(Ist_ch2, Ist)/Ron;
+			I(Ist_ch3, Ist) <+ V(Ist_ch3, Ist)/Roff;
+			I(Ist_ch4, Ist) <+ V(Ist_ch4, Ist)/Roff;
+			end
+		2 : begin
+			I(Ist_ch1, Ist) <+ V(Ist_ch1, Ist)/Roff;
+			I(Ist_ch2, Ist) <+ V(Ist_ch2, Ist)/Roff;
+			I(Ist_ch3, Ist) <+ V(Ist_ch3, Ist)/Ron;
+			I(Ist_ch4, Ist) <+ V(Ist_ch4, Ist)/Roff;
+			end
+		3 : begin
+			I(Ist_ch1, Ist) <+ V(Ist_ch1, Ist)/Roff;
+			I(Ist_ch2, Ist) <+ V(Ist_ch2, Ist)/Roff;
+			I(Ist_ch3, Ist) <+ V(Ist_ch3, Ist)/Roff;
+			I(Ist_ch4, Ist) <+ V(Ist_ch4, Ist)/Ron;
+			end
+		default : begin
+			I(Ist_ch1, Ist) <+ V(Ist_ch1, Ist)/Roff;
+			I(Ist_ch2, Ist) <+ V(Ist_ch2, Ist)/Roff;
+			I(Ist_ch3, Ist) <+ V(Ist_ch3, Ist)/Roff;
+			I(Ist_ch4, Ist) <+ V(Ist_ch4, Ist)/Roff;
+		end
+
+	endcase
+end
+
+endmodule

@@ -1,0 +1,24 @@
+
+Current_Source I10 ( .Ibias(net23), .Vdda(Vdda), .Vssa(Vssa), 
+    .Ioutn(net33), .Ioutp(Vdda), .Mag(Mag));
+
+Current_Mirror I2 ( .Iref(net33), .Iout(net24), .Vdda(Vdda), 
+    .Vssa(Vssa));
+
+H_Bridge I4 ( .Ist(net27), .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
+    .Iano(net29), .Icat(net14), .ANO(ANO), .CAT(CAT), .DIS(DIS));
+
+H_Bridge I1 ( .Ist(net28), .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
+    .Iano(net31), .Icat(net18), .ANO(ANO), .CAT(CAT), .DIS(DIS));
+
+H_Bridge I0 ( .Ist(net25), .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
+    .Iano(net22), .Icat(net10), .ANO(ANO), .CAT(CAT), .DIS(DIS));
+
+H_Bridge I3 ( .Ist(net20), .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
+    .Iano(net19), .Icat(net6), .ANO(ANO), .CAT(CAT), .DIS(DIS));
+
+CH_Sel_MUX I6 ( .Vdda(Vdda), .Vssa(Vssa), .Ist_ch1(net20), 
+    .Ist_ch2(net25), .Ist_ch3(net27), .Ist_ch4(net28), .CH_SEL(CH_SEL), 
+    .Ist(net24));
+
+endmodule

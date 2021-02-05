@@ -1,0 +1,9 @@
+("Stimulator_Model" "Current_Mirror" "verilogams" nil) nil
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("analogLib" "vpulse" "spectre" spectreSrcPrim) t
+("Stimulator_Model" "CH_Sel_MUX" "verilogams" nil) nil
+("analogLib" "res" "spectre" nil) t
+("Stimulator_Model" "Current_Source" "verilogams" nil) nil
+("analogLib" "cap" "spectre" nil) t
+("Stimulator_Model" "H_Bridge" "verilogams" nil) nil
+("analogLib" "vdc" "spectre" spectreSrcPrim) t

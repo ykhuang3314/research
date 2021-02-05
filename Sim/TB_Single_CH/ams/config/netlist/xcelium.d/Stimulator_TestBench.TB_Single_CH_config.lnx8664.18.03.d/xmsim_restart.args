@@ -38,7 +38,7 @@ spectre
 +EMGRLOG
 ../psf/xrun.log
 -XLSTIME
-1611096528
+1611234192
 -XLKEEP
 -XLMODE
 ./xcelium.d/Stimulator_TestBench.TB_Single_CH_config.lnx8664.18.03.d
@@ -52,4 +52,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun(64)	18.03-s018"
 -XLNAME
-./xcelium.d/Stimulator_TestBench.TB_Single_CH_config.lnx8664.18.03.d/s2424_13247
+./xcelium.d/Stimulator_TestBench.TB_Single_CH_config.lnx8664.18.03.d/s2424_2922

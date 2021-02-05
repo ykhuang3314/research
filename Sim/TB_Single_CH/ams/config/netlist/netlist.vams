@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 5922
+// User: ykhuang Pid: 5305
 // Design library name: Stimulator_TestBench
 // Design cell name: TB_Single_CH
 // Design view name: config
@@ -15,8 +15,8 @@
 // HDL file - Stimulator_Model, Current_Mirror, verilogams.
 // HDL file - Stimulator_Model, Current_Source, verilogams.
 // Library - Stimulator_TestBench, Cell - TB_Single_CH, View - schematic
-// LAST TIME SAVED: Jan 19 23:45:51 2021
-// NETLIST TIME: Jan 19 23:48:45 2021
+// LAST TIME SAVED: Jan 20 10:03:00 2021
+// NETLIST TIME: Jan 21 14:03:09 2021
 
 `worklib Stimulator_TestBench
 `view schematic
@@ -51,10 +51,10 @@ capacitor #(.c(1e-09)) C2 (Vout_ANO, net04);
 vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(0.00022), .delay(0.00012), .rise(1e-12), .fall(1e-12), .width(0.0001)) V3 (CAT, cds_globals.\gnd! );
 vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(0.00022), .delay(0.00022), .rise(1e-12), .fall(1e-12), .width(0.00011)) V4 (CLK, cds_globals.\gnd! );
 vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(0.00022), .delay(1e-05), .rise(1e-12), .fall(1e-12), .width(0.0001)) V0 (ANO, cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V6 (Vssa, cds_globals.\gnd! );
 vsource #(.dc(0), .type("dc")) V5 (DIS, cds_globals.\gnd! );
 vsource #(.dc(30), .type("dc")) V1 (VddH, cds_globals.\gnd! );
 vsource #(.dc(1.8), .type("dc")) V2 (Vdda, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V6 (Vssa, cds_globals.\gnd! );
 
 endmodule
 `noworklib

@@ -1,0 +1,19 @@
+// Library - Stimulator_TestBench, Cell - TB_Multi_CH, View - schematic
+// LAST TIME SAVED: Jan 21 14:00:27 2021
+// NETLIST TIME: Jan 21 14:14:12 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_Multi_CH", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Jan 21 14:00:27 2021" *)
+
+module TB_Multi_CH ();
+
+// Buses in the design
+
+wire  [4:0]  Mag;
+
+wire  [1:0]  CH_SEL;
+

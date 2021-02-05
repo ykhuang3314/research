@@ -15,7 +15,7 @@ V4 (CLK 0) vsource type=pulse val0=0 val1=1.8 period=220u delay=220u \
         rise=1p fall=1p width=110u
 V0 (ANO 0) vsource type=pulse val0=0 val1=1.8 period=220u delay=10u \
         rise=1p fall=1p width=100u
-V6 (Vssa 0) vsource dc=0 type=dc
 V5 (DIS 0) vsource dc=0 type=dc
 V1 (VddH 0) vsource dc=30 type=dc
 V2 (Vdda 0) vsource dc=1.8 type=dc
+V6 (Vssa 0) vsource dc=0 type=dc
