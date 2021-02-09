@@ -3,15 +3,15 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module Current_Source (Ioutp, Ioutn, Mag, Vdda, Vssa, Ibias);
+module Current_Source (Ioutp, Ioutn, Mag, Vdda, Vssa, Vddd, Vssd Ibias);
 
 // I/O port declaration
 inout Ioutp, Ioutn;
 input[4:0] Mag;
-inout Vdda, Vssa, Ibias;
+inout Vdda, Vssa, Vddd, Vssd, Ibias;
 
 // signal type
-electrical Ioutp, Ioutn, Vdda, Vssa, Ibias;
+electrical Ioutp, Ioutn, Vdda, Vssa, Ibias, Vddd, Vssd;
 logic[4:0] Mag;
 
 // parameters
@@ -21,7 +21,7 @@ logic[4:0] Mag;
 real Imag;
 
 always@(Mag) begin
-	Imag = I(Ibias, Vdda) * (Mag[4] * 16 + Mag[3] * 8 + Mag[2] * 4 + Mag[1] * 2 + Mag[0] * 1);
+	Imag = I(Ibias, Vdda) * (Mag[4] * 16 + Mag[3] * 8 + Mag[2] * 4 + Mag[1] * 2 + Mag[0] * 1 + 1);
 end
 
 // analog

@@ -4,18 +4,18 @@
 `include "disciplines.vams"
 
 module ANA_MUX_EMG (Vout, Vin0, Vin1, Vin2, Vin3, Vin4, Vin5, Vin6, Vin7, Vin8, 
-			Vin9, Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Clk, sel, Vdda, Vssa);
+			Vin9, Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Clk, sel, Vdda, Vssa, Vsub, Vddd, Vssd);
 
 //port declaration
 output Vout;
 input Vin0, Vin1, Vin2, Vin3, Vin4, Vin5, Vin6, Vin7, Vin8, Vin9, 
 	  Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Clk, sel;
-inout Vdda, Vssa, Vsub;
+inout Vdda, Vssa, Vsub, Vddd, Vssd;
 
 
 //signal types
 electrical Vout, Vin0, Vin1, Vin2, Vin3, Vin4, Vin5, Vin6, Vin7, Vin8, 
-	       Vin9, Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Vdda, Vssa;
+	       Vin9, Vin10, Vin11, Vin12, Vin13, Vin14, Vin15, Vdda, Vssa, Vddd, Vssa;
 wire[3:0] sel;
 logic Clk;
 

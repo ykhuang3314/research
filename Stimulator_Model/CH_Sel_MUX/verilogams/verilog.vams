@@ -3,15 +3,15 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module CH_Sel_MUX (Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist, CH_SEL, Vdda, Vssa);
+module CH_Sel_MUX (Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist, CH_SEL, Vdda, Vssa, Vddd, Vssd);
 
 //port declaration
 inout Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist;
 input CH_SEL;
-inout Vdda, Vssa;
+inout Vdda, Vssa, Vddd, Vssd;
 
 //discipline
-electrical Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist, Vdda, Vssa;
+electrical Ist_ch1, Ist_ch2, Ist_ch3, Ist_ch4, Ist, Vdda, Vssa, Vddd, Vssd;
 wire[1:0] CH_SEL;
 
 //parameters

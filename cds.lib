@@ -29,3 +29,4 @@ DEFINE EMG_TestBench /home/ykhuang/research/EMG_TestBench
 DEFINE Stimulator_Model /home/ykhuang/research/Stimulator_Model
 DEFINE Stimulator_TestBench /home/ykhuang/research/Stimulator_TestBench
 DEFINE Digital_Lib /home/ykhuang/research/Digital_Lib
+DEFINE EMG_NMES_TestBench /home/ykhuang/research/EMG_NMES_TestBench

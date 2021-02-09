@@ -3,16 +3,16 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module PGA_EMG (Vout, Vinp, Vinn, Gain_Sel, Vdda, Vssa, Vsub, Ibias);
+module PGA_EMG (Vout, Vinp, Vinn, Gain_Sel, Vdda, Vddd, Vssa, Vssd, Vsub, Ibias);
 
 // I/O ports declaration
 output Vout;
 input Vinp, Vinn;
 input[2:0] Gain_Sel;
-inout Vdda, Vssa, Ibias;
+inout Vdda, Vssa, Ibias, Vddd, Vssd;
 
 // signal types
-electrical Vout, Vinp, Vinn, Vdda, Vssa, Vsub, Ibias;
+electrical Vout, Vinp, Vinn, Vdda, Vssa, Vsub, Ibias, Vddd, Vssd;
 logic[2:0] Gain_Sel;
 
 // Parameters

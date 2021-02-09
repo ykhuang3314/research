@@ -3,15 +3,15 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module ADC_EMG (Dout, EoC, Vin, En, Clk, Start, VrefH, VrefL, Vdda, Vssa, Vsub, Ibias);
+module ADC_EMG (Dout, EoC, Vin, En, Clk, Start, VrefH, VrefL, Vdda, Vssa, Vsub, Ibias, Vddd, Vssd);
 
 //I/O ports declaration
 output Dout, EoC;
 input Vin, En, Clk, Start, VrefH, VrefL;
-inout Vdda, Vssa, Vsub, Ibias;
+inout Vdda, Vssa, Vsub, Ibias, Vddd, Vssd;
 
 //Define type of ports
-electrical Vdds, Vssa, Ibias;
+electrical Vdds, Vssa, Ibias, Vddd, Vssd;
 wreal VrefH, VrefL, Vin;
 logic En, Clk, Start;
 reg [11:0] Dout;

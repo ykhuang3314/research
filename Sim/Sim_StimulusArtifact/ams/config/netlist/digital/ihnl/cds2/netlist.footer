@@ -1,0 +1,10 @@
+
+Stimulator_Single_CH I0 ( .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
+    .Iano(net1), .Icat(net2), .ANO(ANO), .CAT(CAT), .DIS(DIS), 
+    .Ibias(net3), .Mag(Mag[4:0]));
+
+AFE_EMG I1 ( .Ibias(net4), .Vdda(Vdda), .Vssa(Vssa), .Vsub(Vsub), 
+    .Vout(Vout), .Gain_Sel(Gain_Sel[2:0]), .Vinn(cds_globals.\gnd! ), 
+    .Vinp(net08));
+
+endmodule

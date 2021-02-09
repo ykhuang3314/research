@@ -3,7 +3,7 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module PGA_EMG (Voutp, Vinp, Vinn, Gain_Sel, Vdda, Vssa, Vsub, Ibias);
+module PGA_EMG (Vout, Vinp, Vinn, Gain_Sel, Vdda, Vssa, Vsub, Ibias);
 
 // I/O ports declaration
 output Vout;

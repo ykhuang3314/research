@@ -1,0 +1,60 @@
+//Verilog-AMS HDL for "EMG_Model", "IA_EMG_Ideal" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module IA_EMG_Ideal (Voutp, Voutn, Vinp, Vinn, Vdda, Vssa, Ibias, Vsub);
+
+// I/O port declaration
+inout Voutp, Voutn;
+input Vinp, Vinn;
+inout Vdda, Vssa, Ibias, Vsub;
+
+// Signal types
+electrical Voutp, Voutn, Vinp, Vinn, Vdda, Vssa, Ibias, Vsub;
+
+// Parameters
+parameter real Vcm = 0.9;	// common-mode voltage
+parameter real gain = 30;
+parameter real fp1 = 1k; 	// pole
+parameter real Vsoft = 0.2; // output swing limitation
+parameter real SR = 10e6; // slew rate (V/sec)
+
+// interanl variables
+real Vdd_val, Vss_val;
+real Vin, Vdiff, outp, outn;
+
+
+// analog
+analog begin	
+
+	@(initial_step) begin 
+		Vdd_val = V(Vdda);
+		Vss_val = V(Vssa);
+	end
+
+// output voltage
+	Vin = V(Vinp, Vinn);
+	Vdiff = laplace_nd(gain*Vin, {1}, {1, 1/(`M_TWO_PI*fp1)}); // singel pole	
+	outp = Vcm + 0.5*Vdiff;
+	outn = Vcm - 0.5*Vdiff;
+
+// output swing limitation	
+	if(outp>(Vdd_val-Vsoft))
+		outp = Vdd_val-Vsoft;
+	if(outp<(Vss_val+Vsoft))
+		outp = Vss_val+Vsoft;
+	if(outn>(Vdd_val-Vsoft))
+		outn = Vdd_val-Vsoft;
+	if(outn<(Vss_val+Vsoft))
+		outn = Vss_val+Vsoft;
+	
+	V(Voutp) <+ slew(outp, SR);	
+
+	V(Voutn) <+ slew(outn, SR);	
+
+
+end
+
+
+endmodule

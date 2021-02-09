@@ -3,15 +3,15 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module H_Bridge (Iano, Icat, Ist, ANO, CAT, DIS, VddH, Vdda, Vssa);
+module H_Bridge (Iano, Icat, Ist, ANO, CAT, DIS, VddH, Vdda, Vssa, Vddd, Vssd);
 
 // Port declaration
 inout Iano, Icat;
 input ANO, CAT, DIS;
-inout Ist, Vdda, VddH, Vssa;
+inout Ist, Vdda, VddH, Vssa, Vddd, Vssd;
 
 // Discipline
-electrical Iano, Icat, Ist, Vdda, VddH, Vssa;
+electrical Iano, Icat, Ist, Vdda, VddH, Vssa, Vddd, Vssd;
 logic ANO, CAT, DIS;
 
 // Parameters

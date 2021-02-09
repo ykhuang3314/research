@@ -6,7 +6,7 @@
 module H_Bridge (Iano, Icat, Ist, ANO, CAT, DIS, VddH, Vdda, Vssa);
 
 // Port declaration
-output Iano, Icat;
+inout Iano, Icat;
 input ANO, CAT, DIS;
 inout Ist, Vdda, VddH, Vssa;
 

@@ -1,0 +1,35 @@
+// Library - EMG_Model, Cell - AFE_EMG, View - schematic
+// LAST TIME SAVED: Jan 18 10:48:22 2021
+// NETLIST TIME: Feb  9 11:20:13 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_Model
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_Model", dfII_cell="AFE_EMG", dfII_view="schematic", worklib_name="EMG_Model", view_name="schematic", last_save_time="Jan 18 10:48:22 2021" *)
+
+module AFE_EMG (Vout, Ibias, Vdda, Vssa, Vsub, Gain_Sel, Vinn, Vinp);
+
+output  Vout;
+
+inout  Ibias, Vdda, Vssa, Vsub;
+
+input  Vinn, Vinp;
+
+input [2:0]  Gain_Sel;
+
+
+BPF_EMG I1 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(Vssa), .Vsub(Vsub), 
+    .Voutn(Voutn_BPF), .Voutp(Voutp_BPF), .Vinn(Voutn_IA), 
+    .Vinp(Voutp_IA));
+
+IA_EMG #( .ip3(-12.8) ) I0 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(Vssa), 
+    .Vsub(Vsub), .Voutn(Voutn_IA), .Voutp(Voutp_IA), .Vinn(Vinn), 
+    .Vinp(Vinp));
+
+PGA_EMG I2 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(Vssa), .Vsub(Vsub), 
+    .Vout(Vout), .Gain_Sel(Gain_Sel), .Vinn(Voutn_BPF), 
+    .Vinp(Voutp_BPF));
+
+endmodule

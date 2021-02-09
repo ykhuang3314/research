@@ -1,0 +1,15 @@
+netMap,*Sim_StimulusArtifact,*Mag<4>,*Mag[4]
+netMap,*Sim_StimulusArtifact,*Mag<3>,*Mag[3]
+netMap,*Sim_StimulusArtifact,*Mag<2>,*Mag[2]
+netMap,*Sim_StimulusArtifact,*Mag<1>,*Mag[1]
+netMap,*Sim_StimulusArtifact,*Mag<0>,*Mag[0]
+netMap,*Sim_StimulusArtifact,*Gain_Sel<2>,*Gain_Sel[2]
+netMap,*Sim_StimulusArtifact,*Gain_Sel<1>,*Gain_Sel[1]
+netMap,*Sim_StimulusArtifact,*Gain_Sel<0>,*Gain_Sel[0]
+netMap,*Sim_StimulusArtifact,*gnd!,*cds_globals.\gnd! 
+instMap,*Sim_StimulusArtifact,*I0,*I0
+instMaster,*Sim_StimulusArtifact,*I0,*Stimulator_Model_Stimulator_Single_CH_schematic
+instMap,*Sim_StimulusArtifact,*I1,*I1
+instMaster,*Sim_StimulusArtifact,*I1,*EMG_Model_AFE_EMG_schematic
+cellMap,*Sim_StimulusArtifact,*Sim_StimulusArtifact,*EMG_NMES_TestBench,*schematic
+topMap,*Sim_StimulusArtifact

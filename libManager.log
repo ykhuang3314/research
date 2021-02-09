@@ -38,3 +38,1699 @@
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->cellListBox->value = "MultiCH_16_EMG"
+\a cdsLibManager->cellLineEdit->value = "MultiCH_16_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a cdsLibManager->libListBox->value = "CadenceLibs/analogLib"
+\a cdsLibManager->libLineEdit->value = "analogLib"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" nil)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" nil)
+\a cdsLibManager->cellListBox->value = "dcblock"
+\a cdsLibManager->cellLineEdit->value = "dcblock"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "pcapacitor"
+\a cdsLibManager->cellLineEdit->value = "pcapacitor"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libListBox->value = "CadenceLibs"
+\a cdsLibManager->libLineEdit->value = "CadenceLibs"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "pcapacitor"
+\a cdsLibManager->cellLineEdit->value = "pcapacitor"
+\a cdsLibManager->showCatsToggle->value = t
+\a cdsLibManager->QToolButton7->value = t
+\a cdsLibManager->showCategoriesAction->value = t
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "pcapacitor"
+\a cdsLibManager->cellLineEdit->value = "pcapacitor"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "pcapacitor"
+\a cdsLibManager->cellLineEdit->value = "pcapacitor"
+\a cdsLibManager->libCatsTreeView->value = "math"
+\a cdsLibManager->catLineEdit->value = "math"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "reciprocal"
+\a cdsLibManager->cellLineEdit->value = "reciprocal"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libCatsTreeView->value = "measure"
+\a cdsLibManager->catLineEdit->value = "measure"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "find_slope"
+\a cdsLibManager->cellLineEdit->value = "find_slope"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "voltmeter"
+\a cdsLibManager->cellLineEdit->value = "voltmeter"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libCatsTreeView->value = "Amplifiers"
+\a cdsLibManager->catLineEdit->value = "Amplifiers"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "limitingAmplifier"
+\a cdsLibManager->cellLineEdit->value = "limitingAmplifier"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "opAmp"
+\a cdsLibManager->cellLineEdit->value = "opAmp"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "logAmp"
+\a cdsLibManager->cellLineEdit->value = "logAmp"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "opAmp"
+\a cdsLibManager->cellLineEdit->value = "opAmp"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "variableGainAmplifier"
+\a cdsLibManager->cellLineEdit->value = "variableGainAmplifier"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "spectre"
+\a cdsLibManager->viewLineEdit->value = "spectre"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "spectre"
+\a cdsLibManager->viewLineEdit->value = "spectre"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Digital_Lib"
+\a cdsLibManager->libLineEdit->value = "Digital_Lib"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a cdsLibManager->libListBox->value = "CadenceLibs/analogLib"
+\a cdsLibManager->libLineEdit->value = "analogLib"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libListBox->value = "CadenceLibs/functional"
+\a cdsLibManager->libLineEdit->value = "functional"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libListBox->value = "CadenceLibs/analogLib"
+\a cdsLibManager->libLineEdit->value = "analogLib"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "Parasitics"
+\a cdsLibManager->catLineEdit->value = "Parasitics"
+\a cdsLibManager->cellListBox->value = "presistor"
+\a cdsLibManager->cellLineEdit->value = "presistor"
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->libCatsTreeView->value = "Passives"
+\a cdsLibManager->catLineEdit->value = "Passives"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Actives"
+\a cdsLibManager->catLineEdit->value = "Actives"
+\a cdsLibManager->libCatsTreeView->value = "Passives"
+\a cdsLibManager->catLineEdit->value = "Passives"
+\a nrListItemExpand(cdsLibManager->libCatsTreeView "Sources" t)
+\a nrListItemExpand(cdsLibManager->libCatsTreeView "Sources" nil)
+\a cdsLibManager->libCatsTreeView->value = "Misc"
+\a cdsLibManager->catLineEdit->value = "Misc"
+\a cdsLibManager->cellListBox->value = "dummy"
+\a cdsLibManager->cellLineEdit->value = "dummy"
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libCatsTreeView->value = "Interface_Elements"
+\a cdsLibManager->catLineEdit->value = "Interface_Elements"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Analysis"
+\a cdsLibManager->catLineEdit->value = "Analysis"
+\a cdsLibManager->libCatsTreeView->value = "Actives"
+\a cdsLibManager->catLineEdit->value = "Actives"
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->libCatsTreeView->value = "Actives"
+\a cdsLibManager->catLineEdit->value = "Actives"
+\a cdsLibManager->libCatsTreeView->value = "Uncategorized"
+\a cdsLibManager->catLineEdit->value = "Uncategorized"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "Parasitics"
+\a cdsLibManager->catLineEdit->value = "Parasitics"
+\a cdsLibManager->libCatsTreeView->value = "Misc"
+\a cdsLibManager->catLineEdit->value = "Misc"
+\a cdsLibManager->cellListBox->value = "dummy"
+\a cdsLibManager->cellLineEdit->value = "dummy"
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->libCatsTreeView->value = "Misc"
+\a cdsLibManager->catLineEdit->value = "Misc"
+\a cdsLibManager->cellListBox->value = "dummy"
+\a cdsLibManager->cellLineEdit->value = "dummy"
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "dummy"
+\a cdsLibManager->cellLineEdit->value = "dummy"
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libCatsTreeView->value = "Parasitics"
+\a cdsLibManager->catLineEdit->value = "Parasitics"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Misc"
+\a cdsLibManager->catLineEdit->value = "Misc"
+\a cdsLibManager->cellListBox->value = "dummy"
+\a cdsLibManager->cellLineEdit->value = "dummy"
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "dummy"
+\a cdsLibManager->cellLineEdit->value = "dummy"
+\a cdsLibManager->viewListBox->value = "symbol_xform"
+\a cdsLibManager->viewLineEdit->value = "symbol_xform"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libCatsTreeView->value = "Passives"
+\a cdsLibManager->catLineEdit->value = "Passives"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "core"
+\a cdsLibManager->cellLineEdit->value = "core"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "ideal_balun"
+\a cdsLibManager->cellLineEdit->value = "ideal_balun"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "vccap"
+\a cdsLibManager->cellLineEdit->value = "vccap"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "CH_Sel_MUX"
+\a cdsLibManager->cellLineEdit->value = "CH_Sel_MUX"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Mirror"
+\a cdsLibManager->cellLineEdit->value = "Current_Mirror"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Mirror"
+\a cdsLibManager->cellLineEdit->value = "Current_Mirror"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "CH_Sel_MUX"
+\a cdsLibManager->cellLineEdit->value = "CH_Sel_MUX"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Mirror"
+\a cdsLibManager->cellLineEdit->value = "Current_Mirror"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "CH_Sel_MUX"
+\a cdsLibManager->cellLineEdit->value = "CH_Sel_MUX"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Mirror"
+\a cdsLibManager->cellLineEdit->value = "Current_Mirror"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->libListBox->value = "EMG_202009"
+\a cdsLibManager->libLineEdit->value = "EMG_202009"
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "AFE_EMG"
+\a cdsLibManager->cellLineEdit->value = "AFE_EMG"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Stimulator_4CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_4CH"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulator_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_Single_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(2436 294 507 559))
+\a NewLibShell->newLibNameText->value = "EMG_NMES_TestBench"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "EMG_NMES_TestBench" at /home/ykhuang/research/EMG_NMES_TestBench.
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a nrResizeWindow(workingDialogForm list(2508 477 363 133))
+\a nrResizeWindow(NewLibShell list(2436 264 507 559))
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 1)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->cellListBox 2 0)
+\o MPS request: edit design
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "MultiCH_16_EMG"
+\a cdsLibManager->cellLineEdit->value = "MultiCH_16_EMG"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ANA_MUX_EMG"
+\a cdsLibManager->cellLineEdit->value = "ANA_MUX_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "BPF_EMG"
+\a cdsLibManager->cellLineEdit->value = "BPF_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Counter_EMG"
+\a cdsLibManager->cellLineEdit->value = "Counter_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "DAC_EMG"
+\a cdsLibManager->cellLineEdit->value = "DAC_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Digital_Stimuli_EMG"
+\a cdsLibManager->cellLineEdit->value = "Digital_Stimuli_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "PGA_EMG"
+\a cdsLibManager->cellLineEdit->value = "PGA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "SwitchArray16_EMG_BI"
+\a cdsLibManager->cellLineEdit->value = "SwitchArray16_EMG_BI"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Multi_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Multi_CH"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellListBox->value = "TB_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 2 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 62 145 2 "IA_EMG_V2")
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 7 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "PGA_EMG"
+\a cdsLibManager->cellLineEdit->value = "PGA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 7 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "IA_EMG_Ideal"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_Ideal"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->cellListBox->value = "IA_EMG_Ideal"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_Ideal"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "IA_EMG_Ideal"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_Ideal"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 8 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "IA_EMG_Ideal"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_Ideal"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "BPF_EMG"
+\a cdsLibManager->cellLineEdit->value = "BPF_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->cellListBox->value = "IA_EMG_V2"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG_V2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellListBox->value = "MultiCH_16_EMG"
+\a cdsLibManager->cellLineEdit->value = "MultiCH_16_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "PGA_EMG"
+\a cdsLibManager->cellLineEdit->value = "PGA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ANA_MUX_EMG"
+\a cdsLibManager->cellLineEdit->value = "ANA_MUX_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ADC_EMG"
+\a cdsLibManager->cellLineEdit->value = "ADC_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "AFE_EMG"
+\a cdsLibManager->cellLineEdit->value = "AFE_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "ADC_EMG"
+\a cdsLibManager->cellLineEdit->value = "ADC_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "AFE_EMG"
+\a cdsLibManager->cellLineEdit->value = "AFE_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 7)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "MultiCH_16_EMG"
+\a cdsLibManager->cellLineEdit->value = "MultiCH_16_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Z_Electrode"
+\a cdsLibManager->cellLineEdit->value = "Z_Electrode"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Z_Electrode"
+\a cdsLibManager->cellLineEdit->value = "Z_Electrode"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Current_Mirror"
+\a cdsLibManager->cellLineEdit->value = "Current_Mirror"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "CH_Sel_MUX"
+\a cdsLibManager->cellLineEdit->value = "CH_Sel_MUX"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Stimulator_4CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_4CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 1)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Stimulator_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_Single_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulator_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_Single_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulator_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_Single_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulator_4CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_4CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "H_Bridge"
+\a cdsLibManager->cellLineEdit->value = "H_Bridge"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Mirror"
+\a cdsLibManager->cellLineEdit->value = "Current_Mirror"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Mirror"
+\a cdsLibManager->cellLineEdit->value = "Current_Mirror"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Current_Source"
+\a cdsLibManager->cellLineEdit->value = "Current_Source"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "CH_Sel_MUX"
+\a cdsLibManager->cellLineEdit->value = "CH_Sel_MUX"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellListBox->value = "Stimulator_4CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_4CH"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Stimulator_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_Single_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulus_Driver"
+\a cdsLibManager->cellLineEdit->value = "Stimulus_Driver"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Z_Electrode"
+\a cdsLibManager->cellLineEdit->value = "Z_Electrode"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulator_4CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_4CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Stimulator_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_Single_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "SwitchArray16_EMG_BI"
+\a cdsLibManager->cellLineEdit->value = "SwitchArray16_EMG_BI"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 12 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellListBox->value = "SwitchArray16_EMG_BI"
+\a cdsLibManager->cellLineEdit->value = "SwitchArray16_EMG_BI"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TB_MultiChannel"
+\a cdsLibManager->cellLineEdit->value = "TB_MultiChannel"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Single_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "TB_Multi_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Multi_CH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_Model"
+\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->libListBox "EMG_NMES_TestBench" 0)
+\o MPS request: edit design
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TB_AFE_EMG"
+\a cdsLibManager->cellLineEdit->value = "TB_AFE_EMG"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TB_BPF_EMG"
+\a cdsLibManager->cellLineEdit->value = "TB_BPF_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TB_IA_EMG"
+\a cdsLibManager->cellLineEdit->value = "TB_IA_EMG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TB_IA_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_IA_V2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TB_MultiChannel"
+\a cdsLibManager->cellLineEdit->value = "TB_MultiChannel"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TB_MultiChannel"
+\a cdsLibManager->cellLineEdit->value = "TB_MultiChannel"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 4 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_MultiChannel"
+\a cdsLibManager->cellLineEdit->value = "TB_MultiChannel"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "TB_PGA_MEG"
+\a cdsLibManager->cellLineEdit->value = "TB_PGA_MEG"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TB_PGA_MEG"
+\a cdsLibManager->cellLineEdit->value = "TB_PGA_MEG"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 5 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_PGA_MEG"
+\a cdsLibManager->cellLineEdit->value = "TB_PGA_MEG"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemExpand(cdsLibManager->libListBox "CadenceLibs" t)
+\a cdsLibManager->cellListBox->value = "TB_SingleChannel"
+\a cdsLibManager->cellLineEdit->value = "TB_SingleChannel"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->libListBox->value = "VerilogAMS_Practice"
+\a cdsLibManager->libLineEdit->value = "VerilogAMS_Practice"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)

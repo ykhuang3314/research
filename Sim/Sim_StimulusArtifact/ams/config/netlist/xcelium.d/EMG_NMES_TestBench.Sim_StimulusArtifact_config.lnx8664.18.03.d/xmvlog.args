@@ -1,0 +1,68 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/EMG_NMES_TestBench.Sim_StimulusArtifact_config.lnx8664.18.03.d
+-RUNMODE
+-amsossirunbind
+.amsbind.scs
+-CDSLIB
+./xcelium.d/EMG_NMES_TestBench.Sim_StimulusArtifact_config.lnx8664.18.03.d/cdsrun.lib
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-AUTO_USE_REFFILE
+-AMSINPUT
+-AUTO_USE_REFFILE
+-AMSINPUT
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-ALLOWREDEFINITION
+./netlist.vams
+./cds_globals.vams
+-SNAPSHOT
+EMG_NMES_TestBench.Sim_StimulusArtifact:config
+-HDLVAR
+./xcelium.d/EMG_NMES_TestBench.Sim_StimulusArtifact_config.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/EMG_NMES_TestBench.Sim_StimulusArtifact_config.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-hastop
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

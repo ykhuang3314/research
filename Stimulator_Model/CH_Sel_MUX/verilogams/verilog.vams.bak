@@ -21,7 +21,7 @@ parameter Roff = 100M; // off resistance
 //internal variables
 integer CH_SEL_base10;
 
-always begin
+always@(CH_SEL) begin
 	CH_SEL_base10 = 2 * CH_SEL[1] + CH_SEL[0];
 end
 

@@ -1,0 +1,34 @@
+// Library - Stimulator_Model, Cell - Stimulator_Single_CH, View -
+//schematic
+// LAST TIME SAVED: Feb  8 15:30:20 2021
+// NETLIST TIME: Feb  9 11:20:13 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_Model
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_Model", dfII_cell="Stimulator_Single_CH", dfII_view="schematic", worklib_name="Stimulator_Model", view_name="schematic", last_save_time="Feb  8 15:30:20 2021" *)
+
+module Stimulator_Single_CH (Iano, Icat, VddH, Vdda, Vssa, ANO, CAT, 
+    DIS, Ibias, Mag);
+
+output  Iano, Icat;
+
+inout  VddH, Vdda, Vssa;
+
+input  ANO, CAT, DIS, Ibias;
+
+input [4:0]  Mag;
+
+
+Current_Source I10 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(Vssa), 
+    .Ioutn(net11), .Ioutp(Vdda), .Mag(Mag));
+
+Current_Mirror I2 ( .Iref(net11), .Iout(net12), .Vdda(Vdda), 
+    .Vssa(Vssa));
+
+H_Bridge I3 ( .Ist(net12), .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
+    .Iano(Iano), .Icat(Icat), .ANO(ANO), .CAT(CAT), .DIS(DIS));
+
+endmodule

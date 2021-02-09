@@ -7,7 +7,7 @@
 module SwitchArray16_EMG_BI (EMG_Ch1, EMG_Ch2, EMG_Ch3, EMG_Ch4, EMG_Ch5, EMG_Ch6, EMG_Ch7, EMG_Ch8, EMG_Ch9, 
 							EMG_Ch10, EMG_Ch11, EMG_Ch12, EMG_Ch13, EMG_Ch14, EMG_Ch15, EMG_Ch16, BI_Ip, BI_In, BI_Vp, BI_Vn, 
 							E00, E01, E02, E03, E10, E11, E12, E13, E20, E21, E22, E23, E30, E31, E32, E33, 
-							Dir, Row, Col, Vdda, Vssa, Vsub); 
+							Dir, Row, Col, Vdda, Vssa, Vsub, Vddd, Vssd); 
 
 // characteristics of switches
 parameter real Ron = 10 from [1:inf); 		// on resistance
@@ -19,13 +19,13 @@ inout 	EMG_Ch1, EMG_Ch2, EMG_Ch3, EMG_Ch4, EMG_Ch5, EMG_Ch6, EMG_Ch7, EMG_Ch8, E
 		BI_Ip, BI_In, BI_Vp, BI_Vn;
 input 	E00, E01, E02, E03, E10, E11, E12, E13, E20, E21, E22, E23, E30, E31, E32, E33, Dir;
 input[1:0] Row, Col;
-inout Vdda, Vssa, Vsub;
+inout Vdda, Vssa, Vsub, Vddd, Vssd;
 
 // Type of ports
 electrical 	EMG_Ch1, EMG_Ch2, EMG_Ch3, EMG_Ch4, EMG_Ch5, EMG_Ch6, EMG_Ch7, EMG_Ch8, EMG_Ch9,
 			EMG_Ch10, EMG_Ch11, EMG_Ch12, EMG_Ch13, EMG_Ch14, EMG_Ch15, EMG_Ch16,
 			BI_Ip, BI_In, BI_Vp, BI_Vn, E00, E01, E02, E03, E10, E11, E12, 
-			E13, E20, E21, E22, E23, E30, E31, E32, E33, Vdda, Vssa, Vsub;
+			E13, E20, E21, E22, E23, E30, E31, E32, E33, Vdda, Vssa, Vsub, Vddd, Vssd;
 
 
 // Effective only when BI mode is chosen

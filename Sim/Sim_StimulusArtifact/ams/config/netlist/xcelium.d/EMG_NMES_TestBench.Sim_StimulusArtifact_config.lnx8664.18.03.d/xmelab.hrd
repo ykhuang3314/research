@@ -1,0 +1,38 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSCONNRULES
+ConnRules_18V_full_fast
+
+EMG_NMES_TestBench.Sim_StimulusArtifact:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-SPECTRE_ARGS
+++aps
