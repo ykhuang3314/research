@@ -1,0 +1,3 @@
+designtop="EMG_TestBench.TB_Digital_Stimulus_V2:schematic"
+cell="vsource" view="analogtext" 
+cell="Digital_Stimuli_EMG_V2" lib="EMG_Model" view="functional" 

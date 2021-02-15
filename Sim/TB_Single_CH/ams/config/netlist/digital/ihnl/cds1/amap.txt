@@ -1,0 +1,14 @@
+netMap,*TB_Single_CH,*MAG<4>,*MAG[4]
+netMap,*TB_Single_CH,*MAG<3>,*MAG[3]
+netMap,*TB_Single_CH,*MAG<2>,*MAG[2]
+netMap,*TB_Single_CH,*MAG<1>,*MAG[1]
+netMap,*TB_Single_CH,*MAG<0>,*MAG[0]
+netMap,*TB_Single_CH,*CH_SEL<1>,*CH_SEL[1]
+netMap,*TB_Single_CH,*CH_SEL<0>,*CH_SEL[0]
+netMap,*TB_Single_CH,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_Single_CH,*I7,*I7
+instMaster,*TB_Single_CH,*I7,*Stimulator_Model_Stimulator_Single_CH_schematic
+instMap,*TB_Single_CH,*I8,*I8
+instMaster,*TB_Single_CH,*I8,*Stimulator_Model_Digital_Stimulus_ST_functional
+cellMap,*TB_Single_CH,*TB_Single_CH,*Stimulator_TestBench,*schematic
+topMap,*TB_Single_CH

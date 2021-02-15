@@ -1,0 +1,15 @@
+( ( defbus
+( "CH_SEL" 1 0  "CH_SEL" 1 0  )
+( "MAG" 4 0  "MAG" 4 0  )
+ )
+( net
+( "gnd!" "cds_globals.\\gnd! " )
+( "MAG<4>" "MAG[4]" )
+( "CH_SEL<0>" "CH_SEL[0]" )
+( "MAG<0>" "MAG[0]" )
+( "MAG<2>" "MAG[2]" )
+( "MAG<1>" "MAG[1]" )
+( "CH_SEL<1>" "CH_SEL[1]" )
+( "MAG<3>" "MAG[3]" )
+ )
+ )

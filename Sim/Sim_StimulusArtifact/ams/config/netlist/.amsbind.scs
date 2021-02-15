@@ -4,7 +4,7 @@
 
 
 // Binding AMSD Control Block for config EMG_NMES_TestBench.Sim_StimulusArtifact:config
-// Created On: Feb  9 11:20:19 2021
+// Created On: Feb 10 18:47:44 2021
 // NOTE      : DO NOT change this system generated file.
 
 amsd {
@@ -13,14 +13,15 @@ amsd {
 	config cell="Current_Source" lib="Stimulator_Model" view="verilogams"
 	config cell="Current_Mirror" lib="Stimulator_Model" view="verilogams"
 	config cell="PGA_EMG" lib="EMG_Model" view="verilogams"
-	config cell="IA_EMG" lib="EMG_Model" view="verilogams"
 	config cell="capacitor" view="analogtext"
 	config cell="BPF_EMG" lib="EMG_Model" view="verilogams"
 	config cell="isource" view="analogtext"
 	config cell="vsource" view="analogtext"
 	config cell="resistor" view="analogtext"
 	config cell="AFE_EMG" lib="EMG_Model" view="schematic"
+	config cell="relay" view="analogtext"
 	config cell="Stimulator_Single_CH" lib="Stimulator_Model" view="schematic"
+	config cell="IA_EMG_Ideal" lib="EMG_Model" view="verilogams"
 	config cell="H_Bridge" lib="Stimulator_Model" view="verilogams"
 
  }

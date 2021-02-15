@@ -1,0 +1,12 @@
+netMap,*Digital_Stimulus_TB,*CH_SEL<1>,*CH_SEL[1]
+netMap,*Digital_Stimulus_TB,*CH_SEL<0>,*CH_SEL[0]
+netMap,*Digital_Stimulus_TB,*MAG<4>,*MAG[4]
+netMap,*Digital_Stimulus_TB,*MAG<3>,*MAG[3]
+netMap,*Digital_Stimulus_TB,*MAG<2>,*MAG[2]
+netMap,*Digital_Stimulus_TB,*MAG<1>,*MAG[1]
+netMap,*Digital_Stimulus_TB,*MAG<0>,*MAG[0]
+netMap,*Digital_Stimulus_TB,*gnd!,*cds_globals.\gnd! 
+instMap,*Digital_Stimulus_TB,*I7,*I7
+instMaster,*Digital_Stimulus_TB,*I7,*Stimulator_Model_Digital_Stimulus_ST_functional
+cellMap,*Digital_Stimulus_TB,*Digital_Stimulus_TB,*Stimulator_TestBench,*schematic
+topMap,*Digital_Stimulus_TB

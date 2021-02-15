@@ -1,0 +1,18 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-DEFINE
+CONNRULES_INHCONN_FULL_FAST_GND
+-SNAPSHOT
+EMG_TestBench.TB_Digital_Stimulus_all:config

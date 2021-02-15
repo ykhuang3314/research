@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"I11n" "analogLib_idc_spectre"
+"V0n" "analogLib_vpwl_spectre"
+"V1n V2n V3n V4n V5n V6n V7n" "analogLib_vdc_spectre"
+"V8n" "analogLib_vsin_spectre"
+"V9n" "analogLib_vpulse_spectre"
+"I1n" "EMG_Model_ANA_MUX_EMG_verilogams"
+"I2n" "EMG_Model_ADC_EMG_verilogams"
+"I21n" "EMG_Model_DAC_EMG_verilogams"
+"I9n" "EMG_Model_Digital_Stimuli_EMG_V2_functional"

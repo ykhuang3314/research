@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_TestBench/TB_ADC_EMG/schematic EMG_TestBench/TB_ADC_EMG/schematic/schematic/EMG_TestBench_TB_ADC_EMG_config/1 TB_ADC_EMG
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

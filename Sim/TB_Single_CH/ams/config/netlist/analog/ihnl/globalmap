@@ -1,5 +1,6 @@
 CADENCE IHNL04120
 $model
+Stimulator_Model/Stimulator_Single_CH/schematic Stimulator_Model/Stimulator_Single_CH/schematic/schematic/Stimulator_TestBench_TB_Single_CH_config/0 Stimulator_Single_CH
 Stimulator_TestBench/TB_Single_CH/schematic Stimulator_TestBench/TB_Single_CH/schematic/schematic/Stimulator_TestBench_TB_Single_CH_config/1 TB_Single_CH
 $endmodel
 $net

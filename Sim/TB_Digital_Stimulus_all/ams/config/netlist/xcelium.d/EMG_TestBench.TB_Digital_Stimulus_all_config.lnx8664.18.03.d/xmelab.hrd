@@ -1,0 +1,36 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCONNRULES
+ConnRules_inhconn_full_fast_gnd
+
+EMG_TestBench.TB_Digital_Stimulus_all:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_Digital_stim/functional/verilog.v lib:BioZ_EMG_Model cell:BioZ_Digital_stim view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/Digital_Stimulus_all/functional/verilog.v lib:EMG_Model cell:Digital_Stimulus_all view:functional"
+-SPECTRE_ARGS
+++aps

@@ -1,0 +1,11 @@
+( ( defbus
+( "CH_SEL_EMG" 3 0  "CH_SEL_EMG" 3 0  )
+ )
+( net
+( "gnd!" "cds_globals.\\gnd! " )
+( "CH_SEL_EMG<1>" "CH_SEL_EMG[1]" )
+( "CH_SEL_EMG<3>" "CH_SEL_EMG[3]" )
+( "CH_SEL_EMG<2>" "CH_SEL_EMG[2]" )
+( "CH_SEL_EMG<0>" "CH_SEL_EMG[0]" )
+ )
+ )

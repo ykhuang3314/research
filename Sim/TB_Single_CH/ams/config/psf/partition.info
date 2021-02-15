@@ -1,142 +1,133 @@
 ( global ( resolution_type basic ) )
 
-( net TB_Single_CH.Vdda TB_Single_CH.Vdda analog/mixed electrical )
-( net TB_Single_CH.I12.EN TB_Single_CH.Vdda digital/mixed logic )
-( net TB_Single_CH.I3.Vdda TB_Single_CH.Vdda analog/mixed electrical )
-( net TB_Single_CH.I2.Vdda TB_Single_CH.Vdda analog/mixed electrical )
-( net TB_Single_CH.I10.Ioutp TB_Single_CH.Vdda analog/mixed electrical )
-( net TB_Single_CH.I10.Vdda TB_Single_CH.Vdda analog/mixed electrical )
+( net TB_Single_CH.vdda TB_Single_CH.vdda analog electrical )
+( net TB_Single_CH.I7.Vdda TB_Single_CH.vdda analog electrical )
+( net TB_Single_CH.I7.I3.Vdda TB_Single_CH.vdda analog electrical )
+( net TB_Single_CH.I7.I2.Vdda TB_Single_CH.vdda analog electrical )
+( net TB_Single_CH.I7.I10.Ioutp TB_Single_CH.vdda analog electrical )
+( net TB_Single_CH.I7.I10.Vdda TB_Single_CH.vdda analog electrical )
 
-( net TB_Single_CH.net8 TB_Single_CH.net8 analog electrical )
-( net TB_Single_CH.I2.Iref TB_Single_CH.net8 analog electrical )
-( net TB_Single_CH.I10.Ioutn TB_Single_CH.net8 analog electrical )
+( net TB_Single_CH.I7.net11 TB_Single_CH.I7.net11 analog electrical )
+( net TB_Single_CH.I7.I2.Iref TB_Single_CH.I7.net11 analog electrical )
+( net TB_Single_CH.I7.I10.Ioutn TB_Single_CH.I7.net11 analog electrical )
 
-( net TB_Single_CH.Mag TB_Single_CH.Mag digital logic )
-( net TB_Single_CH.I12.out TB_Single_CH.Mag digital logic )
-( net TB_Single_CH.I10.Mag TB_Single_CH.Mag digital logic )
+( net TB_Single_CH.MAG TB_Single_CH.MAG digital logic )
+( net TB_Single_CH.I8.MAG_ST TB_Single_CH.MAG digital logic )
+( net TB_Single_CH.I7.Mag TB_Single_CH.MAG digital logic )
+( net TB_Single_CH.I7.I10.Mag TB_Single_CH.MAG digital logic )
 
-( net TB_Single_CH.Vssa TB_Single_CH.Vssa analog/mixed electrical )
-( net TB_Single_CH.I12.RESET TB_Single_CH.Vssa digital/mixed logic )
-( net TB_Single_CH.I3.Vssa TB_Single_CH.Vssa analog/mixed electrical )
-( net TB_Single_CH.I2.Vssa TB_Single_CH.Vssa analog/mixed electrical )
-( net TB_Single_CH.I10.Vssa TB_Single_CH.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.Vssa TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.I3.Vssa TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.I2.Vssa TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.I10.Vssa TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.Vssd TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.I3.Vssd TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.I10.Vssd TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net cds_globals.\gnd!  TB_Single_CH.I7.Vssa analog/mixed electrical )
+( net TB_Single_CH.I7.DIS TB_Single_CH.I7.Vssa digital/mixed logic )
+( net TB_Single_CH.I7.I3.DIS TB_Single_CH.I7.Vssa digital/mixed logic )
+
+( net TB_Single_CH.vddd TB_Single_CH.vddd analog electrical )
+( net TB_Single_CH.I7.Vddd TB_Single_CH.vddd analog electrical )
+( net TB_Single_CH.I7.I3.Vddd TB_Single_CH.vddd analog electrical )
+( net TB_Single_CH.I7.I10.Vddd TB_Single_CH.vddd analog electrical )
 
 ( net TB_Single_CH.net7 TB_Single_CH.net7 analog electrical )
-( net TB_Single_CH.I10.Ibias TB_Single_CH.net7 analog electrical )
+( net TB_Single_CH.I7.Ibias TB_Single_CH.net7 analog electrical )
+( net TB_Single_CH.I7.I10.Ibias TB_Single_CH.net7 analog electrical )
 
-( net TB_Single_CH.I10.Imag TB_Single_CH.I10.Imag digital logic (type rnm) )
+( net TB_Single_CH.I7.I10.Imag TB_Single_CH.I7.I10.Imag digital logic (type rnm) )
 
-( net TB_Single_CH.net10 TB_Single_CH.net10 analog electrical )
-( net TB_Single_CH.I3.Ist TB_Single_CH.net10 analog electrical )
-( net TB_Single_CH.I2.Iout TB_Single_CH.net10 analog electrical )
+( net TB_Single_CH.I7.net12 TB_Single_CH.I7.net12 analog electrical )
+( net TB_Single_CH.I7.I3.Ist TB_Single_CH.I7.net12 analog electrical )
+( net TB_Single_CH.I7.I2.Iout TB_Single_CH.I7.net12 analog electrical )
 
-( net TB_Single_CH.Vout_ANO TB_Single_CH.Vout_ANO analog electrical )
-( net TB_Single_CH.I3.Iano TB_Single_CH.Vout_ANO analog electrical )
+( net TB_Single_CH.VOUT TB_Single_CH.VOUT analog electrical )
+( net TB_Single_CH.I7.Iano TB_Single_CH.VOUT analog electrical )
+( net TB_Single_CH.I7.I3.Iano TB_Single_CH.VOUT analog electrical )
 
-( net TB_Single_CH.Vout_CAT TB_Single_CH.Vout_CAT analog electrical )
-( net TB_Single_CH.I3.Icat TB_Single_CH.Vout_CAT analog electrical )
+( net TB_Single_CH.net4 TB_Single_CH.net4 analog electrical )
+( net TB_Single_CH.I7.Icat TB_Single_CH.net4 analog electrical )
+( net TB_Single_CH.I7.I3.Icat TB_Single_CH.net4 analog electrical )
 
-( net TB_Single_CH.ANO TB_Single_CH.ANO analog/mixed electrical )
-( net TB_Single_CH.I3.ANO TB_Single_CH.ANO digital/mixed logic )
+( net TB_Single_CH.ANO TB_Single_CH.ANO digital logic )
+( net TB_Single_CH.I8.ANO_ST TB_Single_CH.ANO digital logic )
+( net TB_Single_CH.I7.ANO TB_Single_CH.ANO digital logic )
+( net TB_Single_CH.I7.I3.ANO TB_Single_CH.ANO digital logic )
 
-( net TB_Single_CH.CAT TB_Single_CH.CAT analog/mixed electrical )
-( net TB_Single_CH.I3.CAT TB_Single_CH.CAT digital/mixed logic )
+( net TB_Single_CH.CAT TB_Single_CH.CAT digital logic )
+( net TB_Single_CH.I8.CAT_ST TB_Single_CH.CAT digital logic )
+( net TB_Single_CH.I7.CAT TB_Single_CH.CAT digital logic )
+( net TB_Single_CH.I7.I3.CAT TB_Single_CH.CAT digital logic )
 
-( net TB_Single_CH.DIS TB_Single_CH.DIS analog/mixed electrical )
-( net TB_Single_CH.I3.DIS TB_Single_CH.DIS digital/mixed logic )
+( net TB_Single_CH.vddh TB_Single_CH.vddh analog electrical )
+( net TB_Single_CH.I7.VddH TB_Single_CH.vddh analog electrical )
+( net TB_Single_CH.I7.I3.VddH TB_Single_CH.vddh analog electrical )
 
-( net TB_Single_CH.VddH TB_Single_CH.VddH analog electrical )
-( net TB_Single_CH.I3.VddH TB_Single_CH.VddH analog electrical )
+( net TB_Single_CH.net5 TB_Single_CH.net5 analog/mixed electrical )
+( net TB_Single_CH.I8.ramping TB_Single_CH.net5 digital/mixed logic )
 
-( net TB_Single_CH.CLK TB_Single_CH.CLK analog/mixed electrical )
-( net TB_Single_CH.I12.CLK TB_Single_CH.CLK digital/mixed logic )
+( net TB_Single_CH.net14 TB_Single_CH.net14 digital logic )
+( net TB_Single_CH.I8.EN_ST TB_Single_CH.net14 digital logic )
 
-( net TB_Single_CH.net05 TB_Single_CH.net05 analog electrical )
+( net TB_Single_CH.DIS TB_Single_CH.DIS digital logic )
+( net TB_Single_CH.I8.DIS_ST TB_Single_CH.DIS digital logic )
 
-( net TB_Single_CH.net04 TB_Single_CH.net04 analog electrical )
+( net TB_Single_CH.CH_SEL TB_Single_CH.CH_SEL digital logic )
+( net TB_Single_CH.I8.CH_SEL_ST TB_Single_CH.CH_SEL digital logic )
 
-( net cds_globals.\gnd!  cds_globals.\gnd!  analog electrical )
+( net TB_Single_CH.I8.period_ns TB_Single_CH.I8.period_ns digital logic (type rnm) )
+
+( net TB_Single_CH.I8.CAT_phase_ns TB_Single_CH.I8.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_Single_CH.I8.ANO_phase_ns TB_Single_CH.I8.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_Single_CH.I8.DIS_phase_ns TB_Single_CH.I8.DIS_phase_ns digital logic (type rnm) )
+
+( net TB_Single_CH.I8.IPD_ns TB_Single_CH.I8.IPD_ns digital logic (type rnm) )
+
+( net TB_Single_CH.I8.Rest_ns TB_Single_CH.I8.Rest_ns digital logic (type rnm) )
+
+( net TB_Single_CH.I8.i TB_Single_CH.I8.i digital logic )
+
+( net TB_Single_CH.net3 TB_Single_CH.net3 analog electrical )
+
+( net TB_Single_CH.net2 TB_Single_CH.net2 analog electrical )
 
 ( connect
    connectLib.E2L_2:module
-   TB_Single_CH.ANO
+   cds_globals.\gnd! 
    electrical
    analog
    (
-    ( TB_Single_CH.I3.ANO logic digital )
+    ( TB_Single_CH.I7.DIS logic digital )
    )
    "connect E2L_2 merged"
    ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
 )
 ( connect
    connectLib.E2L_2:module
-   TB_Single_CH.CAT
+   TB_Single_CH.net5
    electrical
    analog
    (
-    ( TB_Single_CH.I3.CAT logic digital )
+    ( TB_Single_CH.I8.ramping logic digital )
    )
    "connect E2L_2 merged"
    ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
 )
-( connect
-   connectLib.E2L_2:module
-   TB_Single_CH.DIS
-   electrical
-   analog
-   (
-    ( TB_Single_CH.I3.DIS logic digital )
-   )
-   "connect E2L_2 merged"
-   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
-)
-( connect
-   connectLib.E2L_2:module
-   TB_Single_CH.CLK
-   electrical
-   analog
-   (
-    ( TB_Single_CH.I12.CLK logic digital )
-   )
-   "connect E2L_2 merged"
-   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
-)
-( connect
-   connectLib.E2L_2:module
-   TB_Single_CH.Vdda
-   electrical
-   analog
-   (
-    ( TB_Single_CH.I12.EN logic digital )
-   )
-   "connect E2L_2 merged"
-   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
-)
-( connect
-   connectLib.E2L_2:module
-   TB_Single_CH.Vssa
-   electrical
-   analog
-   (
-    ( TB_Single_CH.I12.RESET logic digital )
-   )
-   "connect E2L_2 merged"
-   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
-)
-(instance TB_Single_CH.I10 mixed/dmixed (type rnm))
-(instance TB_Single_CH.I2 analog)
-(instance TB_Single_CH.I3 mixed)
-(instance TB_Single_CH.I12 digital)
-(instance TB_Single_CH.I11 analog)
-(instance TB_Single_CH.R5 analog)
-(instance TB_Single_CH.R4 analog)
-(instance TB_Single_CH.R3 analog)
-(instance TB_Single_CH.C3 analog)
-(instance TB_Single_CH.C2 analog)
-(instance TB_Single_CH.V3 analog)
-(instance TB_Single_CH.V4 analog)
-(instance TB_Single_CH.V0 analog)
-(instance TB_Single_CH.V5 analog)
+(instance TB_Single_CH.I7.I10 mixed/dmixed (type rnm))
+(instance TB_Single_CH.I7.I2 analog)
+(instance TB_Single_CH.I7.I3 mixed)
+(instance TB_Single_CH.I7 mixed/dmixed (type rnm))
+(instance TB_Single_CH.I8 dmixed (type rnm))
+(instance TB_Single_CH.I9 analog)
+(instance TB_Single_CH.R8 analog)
+(instance TB_Single_CH.R7 analog)
+(instance TB_Single_CH.R6 analog)
+(instance TB_Single_CH.C5 analog)
+(instance TB_Single_CH.C4 analog)
+(instance TB_Single_CH.V9 analog)
 (instance TB_Single_CH.V1 analog)
 (instance TB_Single_CH.V2 analog)
 (instance TB_Single_CH.V6 analog)

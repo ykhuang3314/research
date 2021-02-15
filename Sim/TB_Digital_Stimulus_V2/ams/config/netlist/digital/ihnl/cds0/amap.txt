@@ -1,0 +1,9 @@
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<3>,*CH_SEL_EMG[3]
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<2>,*CH_SEL_EMG[2]
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<1>,*CH_SEL_EMG[1]
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<0>,*CH_SEL_EMG[0]
+netMap,*TB_Digital_Stimulus_V2,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_Digital_Stimulus_V2,*I0,*I0
+instMaster,*TB_Digital_Stimulus_V2,*I0,*EMG_Model_Digital_Stimuli_EMG_V2_functional
+cellMap,*TB_Digital_Stimulus_V2,*TB_Digital_Stimulus_V2,*EMG_TestBench,*schematic
+topMap,*TB_Digital_Stimulus_V2

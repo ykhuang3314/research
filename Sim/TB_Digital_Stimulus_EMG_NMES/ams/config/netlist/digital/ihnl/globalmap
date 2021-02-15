@@ -1,0 +1,10 @@
+CADENCE IHNL04120
+$model
+EMG_TestBench/TB_Digital_Stimulus_EMG_NMES/schematic EMG_TestBench/TB_Digital_Stimulus_EMG_NMES/schematic/schematic/EMG_TestBench_TB_Digital_Stimulus_EMG_NMES_config/1 TB_Digital_Stimulus_EMG_NMES
+EMG_Model/Digital_Stimuli_EMG_NMES_V2/functional EMG_Model/Digital_Stimuli_EMG_NMES_V2/functional/functional/EMG_TestBench_TB_Digital_Stimulus_EMG_NMES_config/0 Digital_Stimuli_EMG_NMES_V2
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

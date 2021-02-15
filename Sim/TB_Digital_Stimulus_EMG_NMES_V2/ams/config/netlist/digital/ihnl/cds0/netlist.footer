@@ -1,0 +1,12 @@
+
+Digital_Stimulus_ST I0 ( .enable(ENABLE), .ch_sweeping(CH_SWEEP_ST), 
+    .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), .CH_SEL_ST(CH_SEL_ST), 
+    .DIS_ST(DIS_ST), .EN_ST(EN_ST), .MAG_ST(MAG_ST), 
+    .ramping(RAMP_ST));
+
+Digital_Stimuli_EMG_V2 I1 ( .CH_SEL_EMG(CH_SEL_EMG), 
+    .CLK_EMG(ADC_CLK_EMG), .EN_ADC_EMG(EN_ADC_EMG), 
+    .MUX_CLK_EMG(MUX_CLK_EMG), .START_EMG(START_EMG), .Enable(ENABLE), 
+    .RESET(RESET));
+
+endmodule

@@ -18,7 +18,7 @@ DLCLAP
 +EMGRLOG
 /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi/mapirun.log
 -XLSTIME
-1612866010
+1612979256
 -XLKEEP
 -XLMODE
 /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
@@ -32,4 +32,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun(64)	18.03-s018"
 -XLNAME
-./.mapi/xcelium.d/run.lnx8664.18.03.d/s2424_8876
+./.mapi/xcelium.d/run.lnx8664.18.03.d/s2424_15293

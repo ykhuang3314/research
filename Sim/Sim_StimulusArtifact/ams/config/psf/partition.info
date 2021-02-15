@@ -2,8 +2,8 @@
 
 ( net Sim_StimulusArtifact.Vdda Sim_StimulusArtifact.Vdda analog electrical )
 ( net Sim_StimulusArtifact.I1.Vdda Sim_StimulusArtifact.Vdda analog electrical )
-( net Sim_StimulusArtifact.I1.I2.Vdda Sim_StimulusArtifact.Vdda analog electrical )
 ( net Sim_StimulusArtifact.I1.I0.Vdda Sim_StimulusArtifact.Vdda analog electrical )
+( net Sim_StimulusArtifact.I1.I2.Vdda Sim_StimulusArtifact.Vdda analog electrical )
 ( net Sim_StimulusArtifact.I1.I1.Vdda Sim_StimulusArtifact.Vdda analog electrical )
 ( net Sim_StimulusArtifact.I0.Vdda Sim_StimulusArtifact.Vdda analog electrical )
 ( net Sim_StimulusArtifact.I0.I3.Vdda Sim_StimulusArtifact.Vdda analog electrical )
@@ -37,13 +37,27 @@
 
 ( net Sim_StimulusArtifact.Vssa Sim_StimulusArtifact.Vssa analog electrical )
 ( net Sim_StimulusArtifact.I1.Vssa Sim_StimulusArtifact.Vssa analog electrical )
-( net Sim_StimulusArtifact.I1.I2.Vssa Sim_StimulusArtifact.Vssa analog electrical )
 ( net Sim_StimulusArtifact.I1.I0.Vssa Sim_StimulusArtifact.Vssa analog electrical )
+( net Sim_StimulusArtifact.I1.I2.Vssa Sim_StimulusArtifact.Vssa analog electrical )
 ( net Sim_StimulusArtifact.I1.I1.Vssa Sim_StimulusArtifact.Vssa analog electrical )
 ( net Sim_StimulusArtifact.I0.Vssa Sim_StimulusArtifact.Vssa analog electrical )
 ( net Sim_StimulusArtifact.I0.I3.Vssa Sim_StimulusArtifact.Vssa analog electrical )
 ( net Sim_StimulusArtifact.I0.I2.Vssa Sim_StimulusArtifact.Vssa analog electrical )
 ( net Sim_StimulusArtifact.I0.I10.Vssa Sim_StimulusArtifact.Vssa analog electrical )
+
+( net Sim_StimulusArtifact.Vddd Sim_StimulusArtifact.Vddd analog electrical )
+( net Sim_StimulusArtifact.I1.Vddd Sim_StimulusArtifact.Vddd analog electrical )
+( net Sim_StimulusArtifact.I1.I2.Vddd Sim_StimulusArtifact.Vddd analog electrical )
+( net Sim_StimulusArtifact.I0.Vddd Sim_StimulusArtifact.Vddd analog electrical )
+( net Sim_StimulusArtifact.I0.I3.Vddd Sim_StimulusArtifact.Vddd analog electrical )
+( net Sim_StimulusArtifact.I0.I10.Vddd Sim_StimulusArtifact.Vddd analog electrical )
+
+( net Sim_StimulusArtifact.Vssd Sim_StimulusArtifact.Vssd analog electrical )
+( net Sim_StimulusArtifact.I1.Vssd Sim_StimulusArtifact.Vssd analog electrical )
+( net Sim_StimulusArtifact.I1.I2.Vssd Sim_StimulusArtifact.Vssd analog electrical )
+( net Sim_StimulusArtifact.I0.Vssd Sim_StimulusArtifact.Vssd analog electrical )
+( net Sim_StimulusArtifact.I0.I3.Vssd Sim_StimulusArtifact.Vssd analog electrical )
+( net Sim_StimulusArtifact.I0.I10.Vssd Sim_StimulusArtifact.Vssd analog electrical )
 
 ( net Sim_StimulusArtifact.net3 Sim_StimulusArtifact.net3 analog electrical )
 ( net Sim_StimulusArtifact.I0.Ibias Sim_StimulusArtifact.net3 analog electrical )
@@ -71,9 +85,11 @@
 ( net Sim_StimulusArtifact.I0.CAT Sim_StimulusArtifact.CAT digital/mixed logic )
 ( net Sim_StimulusArtifact.I0.I3.CAT Sim_StimulusArtifact.CAT digital/mixed logic )
 
-( net Sim_StimulusArtifact.DIS Sim_StimulusArtifact.DIS analog/mixed electrical )
-( net Sim_StimulusArtifact.I0.DIS Sim_StimulusArtifact.DIS digital/mixed logic )
-( net Sim_StimulusArtifact.I0.I3.DIS Sim_StimulusArtifact.DIS digital/mixed logic )
+( net Sim_StimulusArtifact.I0.DIS Sim_StimulusArtifact.I0.DIS digital/mixed logic )
+( net Sim_StimulusArtifact.I0.I3.DIS Sim_StimulusArtifact.I0.DIS digital/mixed logic )
+( net cds_globals.\gnd!  Sim_StimulusArtifact.I0.DIS analog/mixed electrical )
+( net Sim_StimulusArtifact.I1.Vinn Sim_StimulusArtifact.I0.DIS analog/mixed electrical )
+( net Sim_StimulusArtifact.I1.I0.Vinn Sim_StimulusArtifact.I0.DIS analog/mixed electrical )
 
 ( net Sim_StimulusArtifact.VddH Sim_StimulusArtifact.VddH analog electrical )
 ( net Sim_StimulusArtifact.I0.VddH Sim_StimulusArtifact.VddH analog electrical )
@@ -97,53 +113,19 @@
 
 ( net Sim_StimulusArtifact.Vsub Sim_StimulusArtifact.Vsub analog electrical )
 ( net Sim_StimulusArtifact.I1.Vsub Sim_StimulusArtifact.Vsub analog electrical )
-( net Sim_StimulusArtifact.I1.I2.Vsub Sim_StimulusArtifact.Vsub analog electrical )
 ( net Sim_StimulusArtifact.I1.I0.Vsub Sim_StimulusArtifact.Vsub analog electrical )
+( net Sim_StimulusArtifact.I1.I2.Vsub Sim_StimulusArtifact.Vsub analog electrical )
 ( net Sim_StimulusArtifact.I1.I1.Vsub Sim_StimulusArtifact.Vsub analog electrical )
 
 ( net Sim_StimulusArtifact.net4 Sim_StimulusArtifact.net4 analog electrical )
 ( net Sim_StimulusArtifact.I1.Ibias Sim_StimulusArtifact.net4 analog electrical )
-( net Sim_StimulusArtifact.I1.I2.Ibias Sim_StimulusArtifact.net4 analog electrical )
 ( net Sim_StimulusArtifact.I1.I0.Ibias Sim_StimulusArtifact.net4 analog electrical )
+( net Sim_StimulusArtifact.I1.I2.Ibias Sim_StimulusArtifact.net4 analog electrical )
 ( net Sim_StimulusArtifact.I1.I1.Ibias Sim_StimulusArtifact.net4 analog electrical )
 
 ( net Sim_StimulusArtifact.I1.I1.Vin Sim_StimulusArtifact.I1.I1.Vin analog None )
 
 ( net Sim_StimulusArtifact.I1.I1.Vdiff Sim_StimulusArtifact.I1.I1.Vdiff analog None )
-
-( net Sim_StimulusArtifact.net08 Sim_StimulusArtifact.net08 analog electrical )
-( net Sim_StimulusArtifact.I1.Vinp Sim_StimulusArtifact.net08 analog electrical )
-( net Sim_StimulusArtifact.I1.I0.Vinp Sim_StimulusArtifact.net08 analog electrical )
-
-( net Sim_StimulusArtifact.I1.Vinn Sim_StimulusArtifact.I1.Vinn analog electrical )
-( net Sim_StimulusArtifact.I1.I0.Vinn Sim_StimulusArtifact.I1.Vinn analog electrical )
-( net cds_globals.\gnd!  Sim_StimulusArtifact.I1.Vinn analog electrical )
-
-( net Sim_StimulusArtifact.I1.I0.Vdd_val Sim_StimulusArtifact.I1.I0.Vdd_val digital logic (type rnm) )
-
-( net Sim_StimulusArtifact.I1.I0.Vss_val Sim_StimulusArtifact.I1.I0.Vss_val digital logic (type rnm) )
-
-( net Sim_StimulusArtifact.I1.I0.Vin Sim_StimulusArtifact.I1.I0.Vin analog None )
-
-( net Sim_StimulusArtifact.I1.I0.Vdiff Sim_StimulusArtifact.I1.I0.Vdiff analog None )
-
-( net Sim_StimulusArtifact.I1.I0.outp Sim_StimulusArtifact.I1.I0.outp analog None )
-
-( net Sim_StimulusArtifact.I1.I0.outn Sim_StimulusArtifact.I1.I0.outn analog None )
-
-( net Sim_StimulusArtifact.I1.I0.c Sim_StimulusArtifact.I1.I0.c analog None )
-
-( net Sim_StimulusArtifact.I1.I0.ip Sim_StimulusArtifact.I1.I0.ip digital logic (type rnm) )
-
-( net Sim_StimulusArtifact.I1.I0.vodif Sim_StimulusArtifact.I1.I0.vodif analog None )
-
-( net Sim_StimulusArtifact.I1.I0.Voutmax Sim_StimulusArtifact.I1.I0.Voutmax analog None )
-
-( net Sim_StimulusArtifact.I1.I0.Vinmax Sim_StimulusArtifact.I1.I0.Vinmax analog None )
-
-( net Sim_StimulusArtifact.I1.I0.inp Sim_StimulusArtifact.I1.I0.inp analog electrical )
-
-( net Sim_StimulusArtifact.I1.I0.inn Sim_StimulusArtifact.I1.I0.inn analog electrical )
 
 ( net Sim_StimulusArtifact.Vout Sim_StimulusArtifact.Vout analog electrical )
 ( net Sim_StimulusArtifact.I1.Vout Sim_StimulusArtifact.Vout analog electrical )
@@ -171,13 +153,37 @@
 
 ( net Sim_StimulusArtifact.I1.I2.out Sim_StimulusArtifact.I1.I2.out analog None )
 
-( net Sim_StimulusArtifact.net07 Sim_StimulusArtifact.net07 analog electrical )
+( net Sim_StimulusArtifact.Vinp Sim_StimulusArtifact.Vinp analog electrical )
+( net Sim_StimulusArtifact.I1.Vinp Sim_StimulusArtifact.Vinp analog electrical )
+( net Sim_StimulusArtifact.I1.I0.Vinp Sim_StimulusArtifact.Vinp analog electrical )
 
-( net Sim_StimulusArtifact.net016 Sim_StimulusArtifact.net016 analog electrical )
+( net Sim_StimulusArtifact.I1.I0.Vdd_val Sim_StimulusArtifact.I1.I0.Vdd_val analog None )
+
+( net Sim_StimulusArtifact.I1.I0.Vss_val Sim_StimulusArtifact.I1.I0.Vss_val analog None )
+
+( net Sim_StimulusArtifact.I1.I0.Vin Sim_StimulusArtifact.I1.I0.Vin analog None )
+
+( net Sim_StimulusArtifact.I1.I0.Vdiff Sim_StimulusArtifact.I1.I0.Vdiff analog None )
+
+( net Sim_StimulusArtifact.I1.I0.outp Sim_StimulusArtifact.I1.I0.outp analog None )
+
+( net Sim_StimulusArtifact.I1.I0.outn Sim_StimulusArtifact.I1.I0.outn analog None )
+
+( net Sim_StimulusArtifact.net09 Sim_StimulusArtifact.net09 analog electrical )
 
 ( net Sim_StimulusArtifact.net017 Sim_StimulusArtifact.net017 analog electrical )
 
-( net Sim_StimulusArtifact.Vinp Sim_StimulusArtifact.Vinp analog electrical )
+( net Sim_StimulusArtifact.net016 Sim_StimulusArtifact.net016 analog electrical )
+
+( net Sim_StimulusArtifact.Vctrl_inv Sim_StimulusArtifact.Vctrl_inv analog electrical )
+
+( net Sim_StimulusArtifact.Vctrl Sim_StimulusArtifact.Vctrl analog electrical )
+
+( net Sim_StimulusArtifact.DIS Sim_StimulusArtifact.DIS analog electrical )
+
+( net Sim_StimulusArtifact.net018 Sim_StimulusArtifact.net018 analog electrical )
+
+( net Sim_StimulusArtifact.net019 Sim_StimulusArtifact.net019 analog electrical )
 
 ( connect
    connectLib.E2L_2:module
@@ -203,7 +209,7 @@
 )
 ( connect
    connectLib.E2L_2:module
-   Sim_StimulusArtifact.DIS
+   cds_globals.\gnd! 
    electrical
    analog
    (
@@ -305,17 +311,19 @@
 (instance Sim_StimulusArtifact.I0.I3 mixed)
 (instance Sim_StimulusArtifact.I0 mixed/dmixed (type rnm))
 (instance Sim_StimulusArtifact.I1.I1 analog)
-(instance Sim_StimulusArtifact.I1.I0 mixed (type rnm))
 (instance Sim_StimulusArtifact.I1.I2 mixed)
-(instance Sim_StimulusArtifact.I1 mixed/dmixed (type rnm))
+(instance Sim_StimulusArtifact.I1.I0 analog)
+(instance Sim_StimulusArtifact.I1 mixed)
+(instance Sim_StimulusArtifact.R10 analog)
 (instance Sim_StimulusArtifact.R6 analog)
-(instance Sim_StimulusArtifact.R2 analog)
-(instance Sim_StimulusArtifact.R1 analog)
+(instance Sim_StimulusArtifact.R9 analog)
 (instance Sim_StimulusArtifact.R5 analog)
 (instance Sim_StimulusArtifact.R4 analog)
 (instance Sim_StimulusArtifact.R3 analog)
 (instance Sim_StimulusArtifact.I5 analog)
 (instance Sim_StimulusArtifact.I3 analog)
+(instance Sim_StimulusArtifact.V19 analog)
+(instance Sim_StimulusArtifact.V18 analog)
 (instance Sim_StimulusArtifact.V17 analog)
 (instance Sim_StimulusArtifact.V16 analog)
 (instance Sim_StimulusArtifact.V15 analog)
@@ -324,14 +332,16 @@
 (instance Sim_StimulusArtifact.V10 analog)
 (instance Sim_StimulusArtifact.V9 analog)
 (instance Sim_StimulusArtifact.V8 analog)
-(instance Sim_StimulusArtifact.V4 analog)
 (instance Sim_StimulusArtifact.V6 analog)
 (instance Sim_StimulusArtifact.V2 analog)
 (instance Sim_StimulusArtifact.V1 analog)
-(instance Sim_StimulusArtifact.V5 analog)
+(instance Sim_StimulusArtifact.V4 analog)
+(instance Sim_StimulusArtifact.V14 analog)
+(instance Sim_StimulusArtifact.V13 analog)
 (instance Sim_StimulusArtifact.V0 analog)
 (instance Sim_StimulusArtifact.V3 analog)
-(instance Sim_StimulusArtifact.V7 analog)
+(instance Sim_StimulusArtifact.V5 analog)
+(instance Sim_StimulusArtifact.W3 analog)
 (instance Sim_StimulusArtifact.C1 analog)
 (instance Sim_StimulusArtifact.C3 analog)
 (instance Sim_StimulusArtifact.C2 analog)

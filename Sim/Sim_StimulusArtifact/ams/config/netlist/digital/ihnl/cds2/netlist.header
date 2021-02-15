@@ -1,14 +1,14 @@
 // Library - EMG_NMES_TestBench, Cell - Sim_StimulusArtifact, View -
 //schematic
-// LAST TIME SAVED: Feb  9 11:20:05 2021
-// NETLIST TIME: Feb  9 11:20:13 2021
+// LAST TIME SAVED: Feb 10 18:47:32 2021
+// NETLIST TIME: Feb 10 18:47:39 2021
 `timescale 1ns / 1ps 
 
 `worklib EMG_NMES_TestBench
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="EMG_NMES_TestBench", dfII_cell="Sim_StimulusArtifact", dfII_view="schematic", worklib_name="EMG_NMES_TestBench", view_name="schematic", last_save_time="Feb  9 11:20:05 2021" *)
+(* dfII_lib="EMG_NMES_TestBench", dfII_cell="Sim_StimulusArtifact", dfII_view="schematic", worklib_name="EMG_NMES_TestBench", view_name="schematic", last_save_time="Feb 10 18:47:32 2021" *)
 
 module Sim_StimulusArtifact ();
 

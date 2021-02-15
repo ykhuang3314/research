@@ -1,0 +1,3 @@
+designtop="Stimulator_TestBench.Digital_Stimulus_TB:schematic"
+cell="Digital_Stimulus_ST" lib="Stimulator_Model" view="functional" 
+cell="vsource" view="analogtext" 

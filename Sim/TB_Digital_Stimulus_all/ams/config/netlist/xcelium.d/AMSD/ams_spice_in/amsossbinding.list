@@ -1,0 +1,6 @@
+designtop="EMG_TestBench.TB_Digital_Stimulus_all:schematic"
+cell="Digital_Stimulus_all" lib="EMG_Model" view="functional" 
+cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional" 
+cell="BioZ_Digital_stim" lib="BioZ_EMG_Model" view="functional" 
+cell="vsource" view="analogtext" 
+cell="Digital_Stimuli_EMG_V2" lib="EMG_Model" view="functional" 

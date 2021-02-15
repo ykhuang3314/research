@@ -1,0 +1,8 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: Digital_Stimulus_TB
+// View name: schematic
+// Inherited view list: schematic
+V0 (net03 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]
+V2 (net08 0) vsource dc=1.8 type=dc
+V1 (net02 0) vsource dc=0 type=dc

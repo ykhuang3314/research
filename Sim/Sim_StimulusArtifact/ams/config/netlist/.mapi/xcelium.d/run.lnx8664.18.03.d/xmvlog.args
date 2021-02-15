@@ -25,8 +25,8 @@ DLCLAP
 /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
 -xmfatal
 NOTCMP
+/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
 /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
-/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams
 /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
 /home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
 /home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
@@ -40,9 +40,9 @@ NOTCMP
 -amscompilefile
 "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
 -amscompilefile
-"file:/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG view:verilogams"
--amscompilefile
 "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
 -MESSAGES
 -UPDATE
 -XLLIBSTORE

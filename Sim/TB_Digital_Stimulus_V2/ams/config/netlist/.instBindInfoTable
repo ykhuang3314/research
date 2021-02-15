@@ -1,0 +1,2 @@
+"V0" ((("analogLib" "vpwl" "spectre" "spectre") ("EMG_TestBench" "TB_Digital_Stimulus_V2" "schematic" "schematic")))
+"I0" ((("EMG_Model" "Digital_Stimuli_EMG_V2" "functional" "functional") ("EMG_TestBench" "TB_Digital_Stimulus_V2" "schematic" "schematic")))

@@ -1,10 +1,10 @@
 ("Stimulator_Model" "Current_Mirror" "verilogams" "verilogams") nil
 ("analogLib" "idc" "spectre" "spectre") nil
 ("Stimulator_TestBench" "TB_Single_CH" "schematic" "schematic") nil
-("analogLib" "vpulse" "spectre" "spectre") nil
-("Digital_Lib" "Counter" "functional" "functional") nil
+("Stimulator_Model" "Digital_Stimulus_ST" "functional" "functional") nil
 ("analogLib" "res" "spectre" "spectre") nil
 ("Stimulator_Model" "Current_Source" "verilogams" "verilogams") nil
+("Stimulator_Model" "Stimulator_Single_CH" "schematic" "schematic") nil
 ("analogLib" "cap" "spectre" "spectre") nil
 ("Stimulator_Model" "H_Bridge" "verilogams" "verilogams") nil
 ("analogLib" "vdc" "spectre" "spectre") nil

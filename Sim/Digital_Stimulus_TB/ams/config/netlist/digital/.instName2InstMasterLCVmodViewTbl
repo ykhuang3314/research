@@ -1,0 +1,4 @@
+("Digital_Stimulus_TB" "I7") ("Stimulator_Model" "Digital_Stimulus_ST" "functional" "functional" "Stimulator_TestBench" "Digital_Stimulus_TB" "schematic")
+("Digital_Stimulus_TB" "V0") ("analogLib" "vpwl" "spectre" "spectre" "Stimulator_TestBench" "Digital_Stimulus_TB" "schematic")
+("Digital_Stimulus_TB" "V2") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "Digital_Stimulus_TB" "schematic")
+("Digital_Stimulus_TB" "V1") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "Digital_Stimulus_TB" "schematic")

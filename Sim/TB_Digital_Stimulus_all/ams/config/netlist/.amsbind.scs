@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_TestBench.TB_Digital_Stimulus_all:config
+// Created On: Feb 15 23:11:03 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_TestBench.TB_Digital_Stimulus_all:schematic"
+
+	config cell="Digital_Stimulus_all" lib="EMG_Model" view="functional"
+	config cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional"
+	config cell="BioZ_Digital_stim" lib="BioZ_EMG_Model" view="functional"
+	config cell="vsource" view="analogtext"
+	config cell="Digital_Stimuli_EMG_V2" lib="EMG_Model" view="functional"
+
+ }

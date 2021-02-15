@@ -1,0 +1,8 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/EMG_Model/Digital_Stimulus_all/functional/verilog.v lib:EMG_Model cell:Digital_Stimulus_all view:functional"
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi//dummyMapi.vhms

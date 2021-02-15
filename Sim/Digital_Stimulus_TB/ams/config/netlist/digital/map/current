@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Digital_Stimulus_TB"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  globalHierPrefix "cds_globals."
+  prefixHierarchyWithCV "YES"
+  netlistDir "/home/ykhuang/research/Sim/Digital_Stimulus_TB/ams/config/netlist/digital"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+  slashCheck   "t"
+ )
+( defbus
+( "CH_SEL" 1 0  "CH_SEL" 1 0  )
+( "MAG" 4 0  "MAG" 4 0  )
+ )
+( net
+( "gnd!" "cds_globals.\\gnd! " )
+ )
+( model
+( "Stimulator_TestBench/Digital_Stimulus_TB/schematic" "Digital_Stimulus_TB" )
+ )
+( "Digital_Stimulus_TB" "ihnl/cds0/map" )
+ )

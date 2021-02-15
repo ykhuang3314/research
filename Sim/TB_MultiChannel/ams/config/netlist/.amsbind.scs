@@ -4,21 +4,22 @@
 
 
 // Binding AMSD Control Block for config EMG_TestBench.TB_MultiChannel:config
-// Created On: Nov 18 23:55:28 2020
+// Created On: Feb 10 14:07:13 2021
 // NOTE      : DO NOT change this system generated file.
 
 amsd {
 	config designtop="EMG_TestBench.TB_MultiChannel:schematic"
 
+	config cell="EMG_Clock_Gen" lib="EMG_Model" view="functional"
 	config cell="MultiCH_16_EMG" lib="EMG_Model" view="schematic"
 	config cell="PGA_EMG" lib="EMG_Model" view="verilogams"
-	config cell="IA_EMG" lib="EMG_Model" view="verilogams"
 	config cell="DAC_EMG" lib="EMG_Model" view="verilogams"
 	config cell="ANA_MUX_EMG" lib="EMG_Model" view="verilogams"
 	config cell="BPF_EMG" lib="EMG_Model" view="verilogams"
 	config cell="vsource" view="analogtext"
 	config cell="AFE_EMG" lib="EMG_Model" view="schematic"
 	config cell="Digital_Stimuli_EMG" lib="EMG_Model" view="functional"
+	config cell="IA_EMG_Ideal" lib="EMG_Model" view="verilogams"
 	config cell="ADC_EMG" lib="EMG_Model" view="verilogams"
 
  }

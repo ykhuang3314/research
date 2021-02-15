@@ -1,0 +1,65 @@
+Begin Netlisting Feb 15 23:10:54 2021
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist'
+directory. This file prints the values of the netlister control variables, which
+are different from their default values. To disable the file creation, type
+'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the
+'.cdsinit' file.
+
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all
+stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell
+'EMG_TestBench/TB_Digital_Stimulus_all/schematic' has no ports. Make sure that
+this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+Digital_Stimuli_EMG_V2      functional           *Stopping View*  
+Digital_Stimulus_ST_V2      functional           *Stopping View*  
+BioZ_Digital_stim           functional           *Stopping View*  
+vdc                         spectre              *Stopping View*  
+vpwl                        spectre              *Stopping View*  
+TB_Digital_Stimulus_all     schematic                             
+Digital_Stimulus_all        functional                            
+
+---------- End of netlist configuration information   ----------
+Running netlist assembly..
+End netlisting Feb 15 23:11:03 2021

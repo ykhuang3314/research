@@ -1,0 +1,7 @@
+designtop="EMG_TestBench.TB_ADC_EMG:schematic"
+cell="DAC_EMG" lib="EMG_Model" view="verilogams" 
+cell="ANA_MUX_EMG" lib="EMG_Model" view="verilogams" 
+cell="isource" view="analogtext" 
+cell="vsource" view="analogtext" 
+cell="Digital_Stimuli_EMG_V2" lib="EMG_Model" view="functional" 
+cell="ADC_EMG" lib="EMG_Model" view="verilogams" 

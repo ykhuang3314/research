@@ -17,9 +17,9 @@
   slashCheck   "t"
  )
 ( defbus
+( "net4" 0 11  "net4" 0 11  )
 ( "CH_Sel" 3 0  "CH_Sel" 3 0  )
 ( "Gain_Sel" 2 0  "Gain_Sel" 2 0  )
-( "net4" 0 11  "net4" 0 11  )
  )
 ( net
 ( "gnd!" "cds_globals.\\gnd! " )

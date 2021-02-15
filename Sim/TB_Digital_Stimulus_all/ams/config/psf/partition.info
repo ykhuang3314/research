@@ -1,0 +1,192 @@
+( global ( resolution_type basic ) )
+
+( net TB_Digital_Stimulus_all.net1 TB_Digital_Stimulus_all.net1 analog/mixed electrical )
+( net TB_Digital_Stimulus_all.I0.ENABLE TB_Digital_Stimulus_all.net1 digital/mixed logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.enable TB_Digital_Stimulus_all.net1 digital/mixed logic )
+( net TB_Digital_Stimulus_all.I0.digital_EMG.Enable TB_Digital_Stimulus_all.net1 digital/mixed logic )
+
+( net TB_Digital_Stimulus_all.I0.RESET TB_Digital_Stimulus_all.I0.RESET digital/mixed logic )
+( net TB_Digital_Stimulus_all.I0.digital_EMG.RESET TB_Digital_Stimulus_all.I0.RESET digital/mixed logic )
+( net cds_globals.\gnd!  TB_Digital_Stimulus_all.I0.RESET analog/mixed electrical )
+
+( net TB_Digital_Stimulus_all.ADC_CLK_EMG TB_Digital_Stimulus_all.ADC_CLK_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.ADC_CLK_EMG TB_Digital_Stimulus_all.ADC_CLK_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_EMG.CLK_EMG TB_Digital_Stimulus_all.ADC_CLK_EMG digital logic )
+
+( net TB_Digital_Stimulus_all.EN_ADC_EMG TB_Digital_Stimulus_all.EN_ADC_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.EN_ADC_EMG TB_Digital_Stimulus_all.EN_ADC_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_EMG.EN_ADC_EMG TB_Digital_Stimulus_all.EN_ADC_EMG digital logic )
+
+( net TB_Digital_Stimulus_all.CH_SEL_EMG TB_Digital_Stimulus_all.CH_SEL_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.CH_SEL_EMG TB_Digital_Stimulus_all.CH_SEL_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_EMG.CH_SEL_EMG TB_Digital_Stimulus_all.CH_SEL_EMG digital logic )
+
+( net TB_Digital_Stimulus_all.START_EMG TB_Digital_Stimulus_all.START_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.START_EMG TB_Digital_Stimulus_all.START_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_EMG.START_EMG TB_Digital_Stimulus_all.START_EMG digital logic )
+
+( net TB_Digital_Stimulus_all.MUX_CLK_EMG TB_Digital_Stimulus_all.MUX_CLK_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.MUX_CLK_EMG TB_Digital_Stimulus_all.MUX_CLK_EMG digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_EMG.MUX_CLK_EMG TB_Digital_Stimulus_all.MUX_CLK_EMG digital logic )
+
+( net TB_Digital_Stimulus_all.I0.digital_EMG.cnt_conv TB_Digital_Stimulus_all.I0.digital_EMG.cnt_conv digital logic )
+
+( net TB_Digital_Stimulus_all.I0.digital_EMG.cnt_ch TB_Digital_Stimulus_all.I0.digital_EMG.cnt_ch digital logic )
+
+( net TB_Digital_Stimulus_all.I0.digital_EMG.clk_rate TB_Digital_Stimulus_all.I0.digital_EMG.clk_rate digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_EMG.clk_period TB_Digital_Stimulus_all.I0.digital_EMG.clk_period digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_EMG.mux_clk_rate TB_Digital_Stimulus_all.I0.digital_EMG.mux_clk_rate digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_EMG.mux_clk_period TB_Digital_Stimulus_all.I0.digital_EMG.mux_clk_period digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.net4 TB_Digital_Stimulus_all.net4 analog/mixed electrical )
+( net TB_Digital_Stimulus_all.I0.RAMP_ST TB_Digital_Stimulus_all.net4 digital/mixed logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.ramping TB_Digital_Stimulus_all.net4 digital/mixed logic )
+
+( net TB_Digital_Stimulus_all.net3 TB_Digital_Stimulus_all.net3 analog/mixed electrical )
+( net TB_Digital_Stimulus_all.I0.CH_SWEEP_ST TB_Digital_Stimulus_all.net3 digital/mixed logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.ch_sweeping TB_Digital_Stimulus_all.net3 digital/mixed logic )
+
+( net TB_Digital_Stimulus_all.EN_ST TB_Digital_Stimulus_all.EN_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.EN_ST TB_Digital_Stimulus_all.EN_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.EN_ST TB_Digital_Stimulus_all.EN_ST digital logic )
+
+( net TB_Digital_Stimulus_all.ANO_ST TB_Digital_Stimulus_all.ANO_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.ANO_ST TB_Digital_Stimulus_all.ANO_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.ANO_ST TB_Digital_Stimulus_all.ANO_ST digital logic )
+
+( net TB_Digital_Stimulus_all.CAT_ST TB_Digital_Stimulus_all.CAT_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.CAT_ST TB_Digital_Stimulus_all.CAT_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.CAT_ST TB_Digital_Stimulus_all.CAT_ST digital logic )
+
+( net TB_Digital_Stimulus_all.DIS_ST TB_Digital_Stimulus_all.DIS_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.DIS_ST TB_Digital_Stimulus_all.DIS_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.DIS_ST TB_Digital_Stimulus_all.DIS_ST digital logic )
+
+( net TB_Digital_Stimulus_all.CH_SEL_ST TB_Digital_Stimulus_all.CH_SEL_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.CH_SEL_ST TB_Digital_Stimulus_all.CH_SEL_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.CH_SEL_ST TB_Digital_Stimulus_all.CH_SEL_ST digital logic )
+
+( net TB_Digital_Stimulus_all.MAG_ST TB_Digital_Stimulus_all.MAG_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.MAG_ST TB_Digital_Stimulus_all.MAG_ST digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_ST.MAG_ST TB_Digital_Stimulus_all.MAG_ST digital logic )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.period_ns TB_Digital_Stimulus_all.I0.digital_ST.period_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.CAT_phase_ns TB_Digital_Stimulus_all.I0.digital_ST.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.ANO_phase_ns TB_Digital_Stimulus_all.I0.digital_ST.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.DIS_phase_ns TB_Digital_Stimulus_all.I0.digital_ST.DIS_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.IPD_ns TB_Digital_Stimulus_all.I0.digital_ST.IPD_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.Rest_ns TB_Digital_Stimulus_all.I0.digital_ST.Rest_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.i TB_Digital_Stimulus_all.I0.digital_ST.i digital logic )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.cnt_period TB_Digital_Stimulus_all.I0.digital_ST.cnt_period digital logic )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.cnt_ch TB_Digital_Stimulus_all.I0.digital_ST.cnt_ch digital logic )
+
+( net TB_Digital_Stimulus_all.I0.digital_ST.num_of_period TB_Digital_Stimulus_all.I0.digital_ST.num_of_period digital logic )
+
+( net TB_Digital_Stimulus_all.Fsel_BioZ TB_Digital_Stimulus_all.Fsel_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.Fsel_BioZ TB_Digital_Stimulus_all.Fsel_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.Fsel TB_Digital_Stimulus_all.Fsel_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.StepNum_BioZ TB_Digital_Stimulus_all.StepNum_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.StepNum_BioZ TB_Digital_Stimulus_all.StepNum_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.StepNum TB_Digital_Stimulus_all.StepNum_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.Gain_TCA_SigGen_BioZ TB_Digital_Stimulus_all.Gain_TCA_SigGen_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.Gain_TCA_SigGen_BioZ TB_Digital_Stimulus_all.Gain_TCA_SigGen_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.Gain_TCA_SigGen TB_Digital_Stimulus_all.Gain_TCA_SigGen_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.I0.CountEnable_BioZ TB_Digital_Stimulus_all.I0.CountEnable_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.CountEnable TB_Digital_Stimulus_all.I0.CountEnable_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.I0.Resetn_BioZ TB_Digital_Stimulus_all.I0.Resetn_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.Resetn TB_Digital_Stimulus_all.I0.Resetn_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.Clk_En_BioZ TB_Digital_Stimulus_all.Clk_En_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.Clk_En_BioZ TB_Digital_Stimulus_all.Clk_En_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.Clk_En TB_Digital_Stimulus_all.Clk_En_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.G_CTRL_TCA_AFE_BioZ TB_Digital_Stimulus_all.G_CTRL_TCA_AFE_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.G_CTRL_TCA_AFE_BioZ TB_Digital_Stimulus_all.G_CTRL_TCA_AFE_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.G_CTRL_TCA_AFE TB_Digital_Stimulus_all.G_CTRL_TCA_AFE_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.G_CTRL_TIA_AFE_BioZ TB_Digital_Stimulus_all.G_CTRL_TIA_AFE_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.G_CTRL_TIA_AFE_BioZ TB_Digital_Stimulus_all.G_CTRL_TIA_AFE_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.G_CTRL_TIA_AFE TB_Digital_Stimulus_all.G_CTRL_TIA_AFE_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.ADC_En_BioZ TB_Digital_Stimulus_all.ADC_En_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.ADC_En_BioZ TB_Digital_Stimulus_all.ADC_En_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.ADC_En TB_Digital_Stimulus_all.ADC_En_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.ADC_Start_BioZ TB_Digital_Stimulus_all.ADC_Start_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.ADC_Start_BioZ TB_Digital_Stimulus_all.ADC_Start_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.digital_BioZ.ADC_Start TB_Digital_Stimulus_all.ADC_Start_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.CountEnable_BioZ TB_Digital_Stimulus_all.CountEnable_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.CountEnable_Bioz TB_Digital_Stimulus_all.CountEnable_BioZ digital logic )
+
+( net TB_Digital_Stimulus_all.Restn_BioZ TB_Digital_Stimulus_all.Restn_BioZ digital logic )
+( net TB_Digital_Stimulus_all.I0.Restn_BioZ TB_Digital_Stimulus_all.Restn_BioZ digital logic )
+
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_all.net3
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_all.I0.CH_SWEEP_ST logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_all.net1
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_all.I0.ENABLE logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_all.net4
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_all.I0.RAMP_ST logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_all.I0.RESET logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_Digital_Stimulus_all.I0.digital_EMG dmixed (type rnm))
+(instance TB_Digital_Stimulus_all.I0.digital_ST dmixed (type rnm))
+(instance TB_Digital_Stimulus_all.I0.digital_BioZ digital)
+(instance TB_Digital_Stimulus_all.I0 dmixed (type rnm))
+(instance TB_Digital_Stimulus_all.V1 analog)
+(instance TB_Digital_Stimulus_all.V5 analog)
+(instance TB_Digital_Stimulus_all.V0 analog)
+(instance TB_Digital_Stimulus_all mixed/dmixed (type rnm))
+(instance cds_globals analog)

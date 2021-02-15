@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_Digital_Stimulus"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_Digital_Stimulus/ams/config/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_TestBench/TB_Digital_Stimulus/schematic" "TB_Digital_Stimulus" )
+ )
+( "TB_Digital_Stimulus" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - Stimulator_Model ,Cell - Digital_Stimulus_ST_V2, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+
+// Create required libraries 
+-makelib Stimulator_TestBench 
+-endlib 

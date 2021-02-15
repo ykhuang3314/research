@@ -1,0 +1,23 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-ahdllibdir
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/ahdlSimDB
+-outdir
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in
+-outamsddir
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/AMSD
+-runmode
+-cdslib
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+-hdlvar
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-work
+worklib
+-64bit
+-amscommfile
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/amscomm.list
+-amsspice-errfile
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/amsspice_pre.log
+-dumpprim

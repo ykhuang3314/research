@@ -19,10 +19,11 @@ parameter real gain = 30;
 parameter real fp1 = 1k; 	// pole
 parameter real Vsoft = 0.2; // output swing limitation
 parameter real SR = 10e6; // slew rate (V/sec)
+parameter real Zin = 1e12; // input impedance
 
 // interanl variables
 real Vdd_val, Vss_val;
-real Vin, out, outp, outn;
+real Vin, Vdiff, outp, outn;
 
 
 // analog
@@ -32,6 +33,10 @@ analog begin
 		Vdd_val = V(Vdda);
 		Vss_val = V(Vssa);
 	end
+
+// input impedance
+
+	I(Vinp, Vinn) <+ V(Vinp, Vinn)/Zin;
 
 // output voltage
 	Vin = V(Vinp, Vinn);

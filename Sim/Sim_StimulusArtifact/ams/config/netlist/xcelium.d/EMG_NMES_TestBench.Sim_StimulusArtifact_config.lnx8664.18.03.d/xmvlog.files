@@ -4,8 +4,8 @@
 //
 /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/netlist.vams
 /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/cds_globals.vams
+/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
 /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
-/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams
 /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
 /home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
 /home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams

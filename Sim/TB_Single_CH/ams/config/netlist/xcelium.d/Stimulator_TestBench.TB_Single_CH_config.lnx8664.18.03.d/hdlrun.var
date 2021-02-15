@@ -87,5 +87,6 @@ define VIEW_MAP ( $VIEW_MAP \
 , .svms => svms \
 , .SVMS => SVMS \
 )
+define ELAB_SNAPSHOT
 define SNAPSHOT Stimulator_TestBench.TB_Single_CH:config
 define SNAPSHOT Stimulator_TestBench.TB_Single_CH:config

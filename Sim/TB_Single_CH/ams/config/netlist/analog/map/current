@@ -12,7 +12,9 @@
 ( "gnd!" "0" )
  )
 ( model
+( "Stimulator_Model/Stimulator_Single_CH/schematic" "Stimulator_Single_CH" )
 ( "Stimulator_TestBench/TB_Single_CH/schematic" "TB_Single_CH" )
  )
+( "Stimulator_Single_CH" "ihnl/cds1/map" )
 ( "TB_Single_CH" "ihnl/cds0/map" )
  )

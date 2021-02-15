@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSCONNRULES
+ConnRules_18V_full_fast
+
+EMG_TestBench.TB_Digital_Stimulus:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG view:functional"

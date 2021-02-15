@@ -1,0 +1,6 @@
+
+Digital_Stimulus_ST I7 ( .enable(net03), .ch_sweeping(net02), 
+    .ANO_ST(ANO), .CAT_ST(CAT), .CH_SEL_ST(CH_SEL), .DIS_ST(DIS), 
+    .EN_ST(EN), .MAG_ST(MAG), .ramping(net08));
+
+endmodule

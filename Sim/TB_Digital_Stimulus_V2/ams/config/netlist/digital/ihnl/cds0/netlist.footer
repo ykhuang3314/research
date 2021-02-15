@@ -1,0 +1,7 @@
+
+Digital_Stimuli_EMG_V2 #( .num_of_channel(8) ) I0 ( 
+    .CH_SEL_EMG(CH_SEL_EMG), .CLK_EMG(CLK_EMG), 
+    .EN_ADC_EMG(EN_ADC_EMG), .MUX_CLK_EMG(MUX_CLK_EMG), 
+    .START_EMG(START_EMG), .Enable(net1), .RESET(cds_globals.\gnd! ));
+
+endmodule

@@ -1,0 +1,17 @@
+
+// Library name: EMG_TestBench
+// Cell name: TB_ADC_EMG
+// View name: schematic
+// Inherited view list: schematic
+V0 (net2 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]
+I11 (vdda net4) isource dc=10u type=dc
+V7 (vrefl 0) vsource dc=0 type=dc
+V6 (vdda 0) vsource dc=1.8 type=dc
+V5 (vddd 0) vsource dc=1.8 type=dc
+V4 (vrefh 0) vsource dc=1.5 type=dc
+V3 (vsub 0) vsource dc=0 type=dc
+V2 (vssd 0) vsource dc=0 type=dc
+V1 (vssa 0) vsource dc=0 type=dc
+V8 (vin0 0) vsource dc=900.0m type=sine ampl=500m freq=300
+V9 (DAC_CLK 0) vsource type=pulse val0=0 val1=1.8 period=1/100k \
+        delay=1/(200k) rise=1p fall=1p width=1/(200k)

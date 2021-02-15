@@ -1,0 +1,17 @@
+//Revision 1
+//NOTE
+// Default config view template for AMS netlister(s) in ADE.
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config TB_Digital_Stimulus_all;
+design EMG_TestBench.TB_Digital_Stimulus_all:schematic;
+liblist myLib, BioZ_EMG_Model, EMG_Model, Stimulator_Model;
+
+viewlist spectre, spice, pspice, verilog, verilogams, behavioral, functional, systemVerilog, schematic, veriloga, vhdl, vhdlams, wreal;
+stoplist spectre;
+
+
+endconfig

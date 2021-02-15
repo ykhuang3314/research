@@ -1,0 +1,19 @@
+// Library - EMG_TestBench, Cell - TB_ADC_EMG, View - schematic
+// LAST TIME SAVED: Feb 14 23:46:47 2021
+// NETLIST TIME: Feb 14 23:54:50 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_ADC_EMG", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 14 23:46:47 2021" *)
+
+module TB_ADC_EMG ();
+
+// Buses in the design
+
+wire  [11:0]  Dout;
+
+wire  [3:0]  CH_SEL_EMG;
+

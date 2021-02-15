@@ -1,13 +1,12 @@
 
-Current_Source I10 ( .Ibias(net7), .Vdda(Vdda), .Vssa(Vssa), 
-    .Ioutn(net8), .Ioutp(Vdda), .Mag(Mag));
+Current_Source I10 ( .Vssd(Vssd), .Vddd(Vddd), .Ibias(Ibias), 
+    .Vdda(Vdda), .Vssa(Vssa), .Ioutn(net11), .Ioutp(Vdda), .Mag(Mag));
 
-Current_Mirror I2 ( .Iref(net8), .Iout(net10), .Vdda(Vdda), 
+Current_Mirror I2 ( .Iref(net11), .Iout(net12), .Vdda(Vdda), 
     .Vssa(Vssa));
 
-H_Bridge I3 ( .Ist(net10), .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
-    .Iano(Vout_ANO), .Icat(Vout_CAT), .ANO(ANO), .CAT(CAT), .DIS(DIS));
-
-Counter I12 ( .out(Mag), .CLK(CLK), .EN(Vdda), .RESET(Vssa));
+H_Bridge I3 ( .Vssd(Vssd), .Vddd(Vddd), .Ist(net12), .VddH(VddH), 
+    .Vdda(Vdda), .Vssa(Vssa), .Iano(Iano), .Icat(Icat), .ANO(ANO), 
+    .CAT(CAT), .DIS(DIS));
 
 endmodule

@@ -1,0 +1,4 @@
+CADENCE IHNL04122
+
+EMG_Model Digital_Stimulus_all functional nil functional EMG_TestBench TB_Digital_Stimulus_all config 0 cds0
+EMG_TestBench TB_Digital_Stimulus_all schematic nil schematic EMG_TestBench TB_Digital_Stimulus_all config 1 cds1

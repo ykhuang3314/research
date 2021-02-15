@@ -1,0 +1,5 @@
+simFuncDPLList = '(
+    (nil libName "EMG_Model" cellName "Digital_Stimulus_all"
+    viewName "functional" filePath "/home/ykhuang/research/EMG_Model/Digital_Stimulus_all/functional/verilog.v"
+    )
+)

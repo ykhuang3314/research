@@ -1,0 +1,28 @@
+TOOL:	xrun(64)	18.03-s018: Started on Feb 15, 2021 at 23:10:54 CET
+xrun
+	-f /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi/mapi_run.args
+		-64bit
+		-compile
+		-NOCOPYRIGHT
+		-nostdout
+		-nowarn DLNOHV
+		-logfile /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi/mapirun.log
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-allowredefinition
+		-incdir /home/ykhuang/research/
+		-nclibdirpath /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi/
+		-cdslib /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi/cds.lib
+		-amscompilefile "file:/home/ykhuang/research/EMG_Model/Digital_Stimulus_all/functional/verilog.v lib:EMG_Model cell:Digital_Stimulus_all view:functional"
+		/home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi//dummyMapi.vams
+		/home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi//dummyMapi.vhms
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+file: /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.mapi//dummyMapi.vams
+file: /home/ykhuang/research/EMG_Model/Digital_Stimulus_all/functional/verilog.v
+	module EMG_Model.Digital_Stimulus_all:functional
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun(64)	18.03-s018: Exiting on Feb 15, 2021 at 23:10:57 CET  (total: 00:00:03)

@@ -1,0 +1,31 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/AMSD/ahdlSimDB"
+-amsdlibdir
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_NMES_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_NMES_V2 view:functional"
+-MESSAGES
+-AMSELAB
+-XLMODE
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+/home/ykhuang/research/Sim/TB_Digital_Stimulus_EMG_NMES/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"V0n" "analogLib_vpwl_spectre"
+"V1n V2n V5n" "analogLib_vdc_spectre"
+"I0n" "Stimulator_Model_Digital_Stimulus_ST_functional"
+"I1n" "EMG_Model_Digital_Stimuli_EMG_V2_functional"

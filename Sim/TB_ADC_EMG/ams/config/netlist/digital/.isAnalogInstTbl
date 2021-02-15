@@ -1,0 +1,9 @@
+("EMG_Model" "DAC_EMG" "verilogams" nil) nil
+("EMG_Model" "ANA_MUX_EMG" "verilogams" nil) nil
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("analogLib" "vpulse" "spectre" spectreSrcPrim) t
+("analogLib" "vpwl" "spectre" spectrePwlsrcPrim) t
+("EMG_Model" "ADC_EMG" "verilogams" nil) nil
+("analogLib" "vsin" "spectre" spectreSrcPrim) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("EMG_Model" "Digital_Stimuli_EMG_V2" "functional" nil) nil

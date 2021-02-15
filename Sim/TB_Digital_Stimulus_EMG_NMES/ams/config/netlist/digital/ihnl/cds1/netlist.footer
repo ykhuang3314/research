@@ -1,0 +1,10 @@
+
+Digital_Stimuli_EMG_NMES_V2 #( .num_of_ch_EMG(8) ) I2 ( 
+    .ADC_CLK_EMG(ADC_CLK_EMG), .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), 
+    .CH_SEL_EMG(CH_SEL_EMG), .CH_SEL_ST(CH_SEL_ST), .DIS_ST(DIS_ST), 
+    .EN_ADC_EMG(EN_ADC_EMG), .EN_ST(EN_ST), .MAG_ST(MAG_ST), 
+    .MUX_CLK_EMG(MUX_CLK_EMG), .START_EMG(START_EMG), 
+    .CH_SWEEP_ST(net3), .ENABLE(net1), .RAMP_ST(net4), 
+    .RESET(cds_globals.\gnd! ));
+
+endmodule

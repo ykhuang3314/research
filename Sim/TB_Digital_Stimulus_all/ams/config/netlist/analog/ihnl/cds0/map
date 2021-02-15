@@ -1,0 +1,8 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  hierDelim "."
+ )
+ )

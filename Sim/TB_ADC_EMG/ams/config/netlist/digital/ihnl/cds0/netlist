@@ -1,0 +1,45 @@
+// Library - EMG_TestBench, Cell - TB_ADC_EMG, View - schematic
+// LAST TIME SAVED: Feb 14 23:46:47 2021
+// NETLIST TIME: Feb 14 23:54:50 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_ADC_EMG", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 14 23:46:47 2021" *)
+
+module TB_ADC_EMG ();
+
+// Buses in the design
+
+wire  [11:0]  Dout;
+
+wire  [3:0]  CH_SEL_EMG;
+
+
+Digital_Stimuli_EMG_V2 #( .num_of_channel(1) ) I9 ( 
+    .CH_SEL_EMG(CH_SEL_EMG), .CLK_EMG(CLK_EMG), 
+    .EN_ADC_EMG(EN_ADC_EMG), .MUX_CLK_EMG(MUX_CLK_EMG), 
+    .START_EMG(START_EMG), .Enable(net2), .RESET(cds_globals.\gnd! ));
+
+ANA_MUX_EMG I1 ( .Vddd(vddd), .Vssd(vssd), .Vdda(vdda), .Vssa(vssa), 
+    .Vsub(vsub), .Vout(out_mux), .Clk(MUX_CLK_EMG), .Vin0(vin0), 
+    .Vin1(cds_globals.\gnd! ), .Vin2(cds_globals.\gnd! ), 
+    .Vin3(cds_globals.\gnd! ), .Vin4(cds_globals.\gnd! ), 
+    .Vin5(cds_globals.\gnd! ), .Vin6(cds_globals.\gnd! ), 
+    .Vin7(cds_globals.\gnd! ), .Vin8(cds_globals.\gnd! ), 
+    .Vin9(cds_globals.\gnd! ), .Vin10(cds_globals.\gnd! ), 
+    .Vin11(cds_globals.\gnd! ), .Vin12(cds_globals.\gnd! ), 
+    .Vin13(cds_globals.\gnd! ), .Vin14(cds_globals.\gnd! ), 
+    .Vin15(cds_globals.\gnd! ), .sel(CH_SEL_EMG));
+
+ADC_EMG I2 ( .Vddd(vddd), .Vssd(vssd), .Ibias(net4), .Vdda(vdda), 
+    .Vssa(vssa), .Vsub(vsub), .Dout(Dout), .EoC(EoC), .Clk(CLK_EMG), 
+    .En(EN_ADC_EMG), .Start(START_EMG), .Vin(out_mux), .VrefH(vrefh), 
+    .VrefL(vrefl));
+
+DAC_EMG #( .thresh(0.9) ) I21 ( .Vout(out_dac), .Clk(DAC_CLK), 
+    .Din(Dout), .Vdda(vdda), .Vssa(vssa));
+
+endmodule

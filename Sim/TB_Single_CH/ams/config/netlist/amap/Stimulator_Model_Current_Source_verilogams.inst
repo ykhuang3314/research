@@ -9,4 +9,6 @@ HEADER
 "Mag<4>v" ".Mag[4]v"
 "Vddav" ".Vddav"
 "Vssav" ".Vssav"
+"Vdddv" ".Vdddv"
+"Vssdv" ".Vssdv"
 "Ibiasv" ".Ibiasv"

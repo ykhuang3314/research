@@ -9,11 +9,11 @@ V4 (Gain_Sel_2 0) vsource dc=0 type=dc
 V20 (VrefL 0) vsource dc=0 type=dc
 V19 (VrefH 0) vsource dc=1.5 type=dc
 V18 (Vdda 0) vsource dc=1.8 type=dc
+V24 (Vddd 0) vsource dc=1.8 type=dc
 V7 (CLK_DAC 0) vsource type=pulse val0=0 val1=1.8 period=1/(50k*14) \
         delay=1/(100k*14) width=1/(100k*14)
-V14 (CLK 0) vsource type=pulse val0=0 val1=1.8 period=1/50k delay=1/100k \
+V14 (net03 0) vsource type=pulse val0=0 val1=1.8 period=1/50k delay=1/100k \
         width=1/100k
-V23 (E16 0) vsource type=sine ampl=5m freq=100
 V22 (E1 0) vsource type=sine ampl=5m freq=100
 V21 (E2 0) vsource type=sine ampl=5m freq=100
 V17 (E3 0) vsource type=sine ampl=5m freq=100
@@ -25,6 +25,7 @@ V11 (E8 0) vsource type=sine ampl=5m freq=100
 V10 (E9 0) vsource type=sine ampl=5m freq=100
 V9 (E10 0) vsource type=sine ampl=5m freq=100
 V8 (E11 0) vsource type=sine ampl=5m freq=100
+V23 (E16 0) vsource type=sine ampl=5m freq=100
 V3 (E12 0) vsource type=sine ampl=5m freq=100
 V1 (E13 0) vsource type=sine ampl=5m freq=100
 V0 (E14 0) vsource type=sine ampl=5m freq=100

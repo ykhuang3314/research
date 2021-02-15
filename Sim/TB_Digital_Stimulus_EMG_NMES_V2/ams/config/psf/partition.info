@@ -1,0 +1,135 @@
+( global ( resolution_type basic ) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.ENABLE TB_Digital_Stimulus_EMG_NMES_V2.ENABLE analog/mixed electrical )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.Enable TB_Digital_Stimulus_EMG_NMES_V2.ENABLE digital/mixed logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.enable TB_Digital_Stimulus_EMG_NMES_V2.ENABLE digital/mixed logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.RAMP_ST TB_Digital_Stimulus_EMG_NMES_V2.RAMP_ST analog/mixed electrical )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.ramping TB_Digital_Stimulus_EMG_NMES_V2.RAMP_ST digital/mixed logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.CH_SWEEP_ST TB_Digital_Stimulus_EMG_NMES_V2.CH_SWEEP_ST analog/mixed electrical )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.ch_sweeping TB_Digital_Stimulus_EMG_NMES_V2.CH_SWEEP_ST digital/mixed logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.EN_ST TB_Digital_Stimulus_EMG_NMES_V2.EN_ST digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.EN_ST TB_Digital_Stimulus_EMG_NMES_V2.EN_ST digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.ANO_ST TB_Digital_Stimulus_EMG_NMES_V2.ANO_ST digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.ANO_ST TB_Digital_Stimulus_EMG_NMES_V2.ANO_ST digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.CAT_ST TB_Digital_Stimulus_EMG_NMES_V2.CAT_ST digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.CAT_ST TB_Digital_Stimulus_EMG_NMES_V2.CAT_ST digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.DIS_ST TB_Digital_Stimulus_EMG_NMES_V2.DIS_ST digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.DIS_ST TB_Digital_Stimulus_EMG_NMES_V2.DIS_ST digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.CH_SEL_ST TB_Digital_Stimulus_EMG_NMES_V2.CH_SEL_ST digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.CH_SEL_ST TB_Digital_Stimulus_EMG_NMES_V2.CH_SEL_ST digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.MAG_ST TB_Digital_Stimulus_EMG_NMES_V2.MAG_ST digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.MAG_ST TB_Digital_Stimulus_EMG_NMES_V2.MAG_ST digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.period_ns TB_Digital_Stimulus_EMG_NMES_V2.I0.period_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.CAT_phase_ns TB_Digital_Stimulus_EMG_NMES_V2.I0.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.ANO_phase_ns TB_Digital_Stimulus_EMG_NMES_V2.I0.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.DIS_phase_ns TB_Digital_Stimulus_EMG_NMES_V2.I0.DIS_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.IPD_ns TB_Digital_Stimulus_EMG_NMES_V2.I0.IPD_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.Rest_ns TB_Digital_Stimulus_EMG_NMES_V2.I0.Rest_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.i TB_Digital_Stimulus_EMG_NMES_V2.I0.i digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.cnt_period TB_Digital_Stimulus_EMG_NMES_V2.I0.cnt_period digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.cnt_ch TB_Digital_Stimulus_EMG_NMES_V2.I0.cnt_ch digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I0.num_of_period TB_Digital_Stimulus_EMG_NMES_V2.I0.num_of_period digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.RESET TB_Digital_Stimulus_EMG_NMES_V2.RESET analog/mixed electrical )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.RESET TB_Digital_Stimulus_EMG_NMES_V2.RESET digital/mixed logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.ADC_CLK_EMG TB_Digital_Stimulus_EMG_NMES_V2.ADC_CLK_EMG digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.CLK_EMG TB_Digital_Stimulus_EMG_NMES_V2.ADC_CLK_EMG digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.EN_ADC_EMG TB_Digital_Stimulus_EMG_NMES_V2.EN_ADC_EMG digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.EN_ADC_EMG TB_Digital_Stimulus_EMG_NMES_V2.EN_ADC_EMG digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.CH_SEL_EMG TB_Digital_Stimulus_EMG_NMES_V2.CH_SEL_EMG digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.CH_SEL_EMG TB_Digital_Stimulus_EMG_NMES_V2.CH_SEL_EMG digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.START_EMG TB_Digital_Stimulus_EMG_NMES_V2.START_EMG digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.START_EMG TB_Digital_Stimulus_EMG_NMES_V2.START_EMG digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.MUX_CLK_EMG TB_Digital_Stimulus_EMG_NMES_V2.MUX_CLK_EMG digital logic )
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.MUX_CLK_EMG TB_Digital_Stimulus_EMG_NMES_V2.MUX_CLK_EMG digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.cnt_conv TB_Digital_Stimulus_EMG_NMES_V2.I1.cnt_conv digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.cnt_ch TB_Digital_Stimulus_EMG_NMES_V2.I1.cnt_ch digital logic )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.clk_rate TB_Digital_Stimulus_EMG_NMES_V2.I1.clk_rate digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.clk_period TB_Digital_Stimulus_EMG_NMES_V2.I1.clk_period digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.mux_clk_rate TB_Digital_Stimulus_EMG_NMES_V2.I1.mux_clk_rate digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_EMG_NMES_V2.I1.mux_clk_period TB_Digital_Stimulus_EMG_NMES_V2.I1.mux_clk_period digital logic (type rnm) )
+
+( net cds_globals.\gnd!  cds_globals.\gnd!  analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_EMG_NMES_V2.ENABLE
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_EMG_NMES_V2.I0.enable logic digital )
+    ( TB_Digital_Stimulus_EMG_NMES_V2.I1.Enable logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_EMG_NMES_V2.CH_SWEEP_ST
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_EMG_NMES_V2.I0.ch_sweeping logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_EMG_NMES_V2.RAMP_ST
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_EMG_NMES_V2.I0.ramping logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_EMG_NMES_V2.RESET
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_EMG_NMES_V2.I1.RESET logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_Digital_Stimulus_EMG_NMES_V2.I0 dmixed (type rnm))
+(instance TB_Digital_Stimulus_EMG_NMES_V2.I1 dmixed (type rnm))
+(instance TB_Digital_Stimulus_EMG_NMES_V2.V2 analog)
+(instance TB_Digital_Stimulus_EMG_NMES_V2.V1 analog)
+(instance TB_Digital_Stimulus_EMG_NMES_V2.V5 analog)
+(instance TB_Digital_Stimulus_EMG_NMES_V2.V0 analog)
+(instance TB_Digital_Stimulus_EMG_NMES_V2 mixed/dmixed (type rnm))
+(instance cds_globals analog)

@@ -1,3 +1,4 @@
-CADENCE IHNL04121
+CADENCE IHNL04122
 
-Stimulator_TestBench TB_Single_CH schematic nil schematic Stimulator_TestBench TB_Single_CH config 1 cds0
+Stimulator_Model Stimulator_Single_CH schematic nil schematic Stimulator_TestBench TB_Single_CH config 0 cds0
+Stimulator_TestBench TB_Single_CH schematic nil schematic Stimulator_TestBench TB_Single_CH config 1 cds1

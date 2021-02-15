@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  Stimulator_TestBench 
+cell: Digital_Stimulus_TB 
+view: config 
+topCellLib: Stimulator_TestBench 

@@ -1,0 +1,16 @@
+cellMap,*TB_Digital_Stimulus,*TB_Digital_Stimulus,*null,*null
+topMap,*TB_Digital_Stimulus
+netMap,*TB_Digital_Stimulus,*CH_SEL_ST<1>,*CH_SEL_ST_1
+netMap,*TB_Digital_Stimulus,*CH_SEL_ST<0>,*CH_SEL_ST_0
+netMap,*TB_Digital_Stimulus,*MAG_ST<4>,*MAG_ST_4
+netMap,*TB_Digital_Stimulus,*MAG_ST<3>,*MAG_ST_3
+netMap,*TB_Digital_Stimulus,*MAG_ST<2>,*MAG_ST_2
+netMap,*TB_Digital_Stimulus,*MAG_ST<1>,*MAG_ST_1
+netMap,*TB_Digital_Stimulus,*MAG_ST<0>,*MAG_ST_0
+netMap,*TB_Digital_Stimulus,*gnd!,*0
+instMap,*TB_Digital_Stimulus,*V1,*V1
+instMaster,*TB_Digital_Stimulus,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*TB_Digital_Stimulus,*V0,*V0
+instMaster,*TB_Digital_Stimulus,*V0,*analogLib_vdc_spectre,*vsource
+instMap,*TB_Digital_Stimulus,*V2,*V2
+instMaster,*TB_Digital_Stimulus,*V2,*analogLib_vpwl_spectre,*vsource

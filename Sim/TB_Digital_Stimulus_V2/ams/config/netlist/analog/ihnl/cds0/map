@@ -1,0 +1,8 @@
+( ( net
+( "gnd!" "0" )
+( "CH_SEL_EMG<1>" "CH_SEL_EMG_1" )
+( "CH_SEL_EMG<3>" "CH_SEL_EMG_3" )
+( "CH_SEL_EMG<2>" "CH_SEL_EMG_2" )
+( "CH_SEL_EMG<0>" "CH_SEL_EMG_0" )
+ )
+ )

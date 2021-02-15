@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 5305
+// User: ykhuang Pid: 15215
 // Design library name: Stimulator_TestBench
 // Design cell name: TB_Single_CH
 // Design view name: config
@@ -10,13 +10,13 @@
 
 `include "disciplines.vams"
 `include "userDisciplines.vams"
-// HDL file - Digital_Lib, Counter, functional.
+// HDL file - Stimulator_Model, Digital_Stimulus_ST, functional.
 // HDL file - Stimulator_Model, H_Bridge, verilogams.
 // HDL file - Stimulator_Model, Current_Mirror, verilogams.
 // HDL file - Stimulator_Model, Current_Source, verilogams.
 // Library - Stimulator_TestBench, Cell - TB_Single_CH, View - schematic
-// LAST TIME SAVED: Jan 20 10:03:00 2021
-// NETLIST TIME: Jan 21 14:03:09 2021
+// LAST TIME SAVED: Feb 11 16:11:21 2021
+// NETLIST TIME: Feb 11 16:11:33 2021
 
 `worklib Stimulator_TestBench
 `view schematic
@@ -25,36 +25,53 @@
 (* cds_ams_schematic *)
 
 module TB_Single_CH ( );
-wire [4:0] Mag;
-wire net8;
-wire Vssa;
-wire Vdda;
+wire [1:0] CH_SEL;
+wire [4:0] MAG;
 wire net7;
-wire net10;
-wire DIS;
 wire CAT;
 wire ANO;
-wire Vout_CAT;
-wire Vout_ANO;
-wire VddH;
-wire CLK;
-Current_Source I10 (.Ibias( net7 ), .Vdda( Vdda ), .Vssa( Vssa ), .Ioutn( net8 ), .Ioutp( Vdda ), .Mag( Mag ));
-Current_Mirror I2 (.Iref( net8 ), .Iout( net10 ), .Vdda( Vdda ), .Vssa( Vssa ));
-H_Bridge I3 (.Ist( net10 ), .VddH( VddH ), .Vdda( Vdda ), .Vssa( Vssa ), .Iano( Vout_ANO ), .Icat( Vout_CAT ), .ANO( ANO ), .CAT( CAT ), .DIS( DIS ));
-Counter I12 (.out( Mag ), .CLK( CLK ), .EN( Vdda ), .RESET( Vssa ));
-isource #(.dc(1e-05), .type("dc")) I11 (Vdda, net7);
-resistor #(.r(1000000)) R5 (Vout_CAT, net05);
-resistor #(.r(500)) R4 (net04, net05);
-resistor #(.r(1000000)) R3 (Vout_ANO, net04);
-capacitor #(.c(1e-09)) C3 (Vout_CAT, net05);
-capacitor #(.c(1e-09)) C2 (Vout_ANO, net04);
-vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(0.00022), .delay(0.00012), .rise(1e-12), .fall(1e-12), .width(0.0001)) V3 (CAT, cds_globals.\gnd! );
-vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(0.00022), .delay(0.00022), .rise(1e-12), .fall(1e-12), .width(0.00011)) V4 (CLK, cds_globals.\gnd! );
-vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(0.00022), .delay(1e-05), .rise(1e-12), .fall(1e-12), .width(0.0001)) V0 (ANO, cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V5 (DIS, cds_globals.\gnd! );
-vsource #(.dc(30), .type("dc")) V1 (VddH, cds_globals.\gnd! );
-vsource #(.dc(1.8), .type("dc")) V2 (Vdda, cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V6 (Vssa, cds_globals.\gnd! );
+wire net4;
+wire VOUT;
+wire vdda;
+wire vddh;
+wire vddd;
+wire net5;
+wire net14;
+wire DIS;
+Stimulator_Single_CH I7 (.Vssd(cds_globals.\gnd! ), .Vddd( vddd ), .VddH( vddh ), .Vdda( vdda ), .Vssa(cds_globals.\gnd! ), .Iano( VOUT ), .Icat( net4 ), .ANO( ANO ), .CAT( CAT ), .DIS(cds_globals.\gnd! ), .Ibias( net7 ), .Mag( MAG[4:0] ));
+Digital_Stimulus_ST I8 (.ANO_ST( ANO ), .CAT_ST( CAT ), .CH_SEL_ST( CH_SEL ), .DIS_ST( DIS ), .EN_ST( net14 ), .MAG_ST( MAG ), .ramping( net5 ));
+isource #(.dc(1e-05), .type("dc")) I9 (vdda, net7);
+resistor #(.r(500)) R8 (net2, net3);
+resistor #(.r(10000000)) R7 (net4, net3);
+resistor #(.r(10000000)) R6 (VOUT, net2);
+capacitor #(.c(1e-09)) C5 (net4, net3);
+capacitor #(.c(1e-09)) C4 (VOUT, net2);
+vsource #(.dc(1.8), .type("dc")) V9 (net5, cds_globals.\gnd! );
+vsource #(.dc(50), .type("dc")) V1 (vddh, cds_globals.\gnd! );
+vsource #(.dc(1.8), .type("dc")) V2 (vdda, cds_globals.\gnd! );
+vsource #(.dc(1.8), .type("dc")) V6 (vddd, cds_globals.\gnd! );
+
+endmodule
+// Library - Stimulator_Model, Cell - Stimulator_Single_CH, View - schematic
+// LAST TIME SAVED: Feb  9 12:10:15 2021
+// NETLIST TIME: Feb 11 16:11:33 2021
+
+`worklib Stimulator_Model
+`view schematic
+
+`timescale 1ns / 1ps 
+(* cds_ams_schematic *)
+
+module Stimulator_Single_CH (Iano, Icat, VddH, Vdda, Vddd, Vssa, Vssd, ANO, CAT, DIS, Ibias, Mag);
+output  Iano, Icat;
+input  ANO, CAT, DIS, Ibias;
+inout  VddH, Vdda, Vddd, Vssa, Vssd;
+input [4:0] Mag;
+wire net11;
+wire net12;
+Current_Source I10 (.Vssd( Vssd ), .Vddd( Vddd ), .Ibias( Ibias ), .Vdda( Vdda ), .Vssa( Vssa ), .Ioutn( net11 ), .Ioutp( Vdda ), .Mag( Mag ));
+Current_Mirror I2 (.Iref( net11 ), .Iout( net12 ), .Vdda( Vdda ), .Vssa( Vssa ));
+H_Bridge I3 (.Vssd( Vssd ), .Vddd( Vddd ), .Ist( net12 ), .VddH( VddH ), .Vdda( Vdda ), .Vssa( Vssa ), .Iano( Iano ), .Icat( Icat ), .ANO( ANO ), .CAT( CAT ), .DIS( DIS ));
 
 endmodule
 `noworklib

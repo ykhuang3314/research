@@ -1,1 +1,1 @@
-("Iano")("Icat")("VddH")("Vdda")("Vssa")("ANO")("CAT")("DIS")("Ibias")("Ibias")("Mag" 4 0)("Vout")("Ibias")("Vdda")("Vssa")("Vsub")("Vinn")("Vinp")("Gain_Sel" 2 0)
+("Iano")("Icat")("VddH")("Vdda")("Vddd")("Vssa")("Vssd")("ANO")("CAT")("DIS")("Ibias")("Ibias")("Mag" 4 0)("Vout")("Ibias")("Vdda")("Vddd")("Vssa")("Vssd")("Vsub")("Vinn")("Vinp")("Gain_Sel" 2 0)

@@ -1,7 +1,8 @@
+// HDL file - EMG_Model, EMG_Clock_Gen, functional.
 // HDL file - EMG_Model, DAC_EMG, verilogams.
 // HDL file - EMG_Model, Digital_Stimuli_EMG, functional.
 // HDL file - EMG_Model, ADC_EMG, verilogams.
 // HDL file - EMG_Model, ANA_MUX_EMG, verilogams.
+// HDL file - EMG_Model, IA_EMG_Ideal, verilogams.
 // HDL file - EMG_Model, PGA_EMG, verilogams.
-// HDL file - EMG_Model, IA_EMG, verilogams.
 // HDL file - EMG_Model, BPF_EMG, verilogams.

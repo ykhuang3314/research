@@ -1,3 +1,5 @@
+# File Created by ykhuang at Wed Feb 10 12:08:33 2021
+# assisted by CdsLibEditor
 # ------------------------------------------------------------------------------
 # XKIT library definition files
 #   xh018.lib:
@@ -30,3 +32,5 @@ DEFINE Stimulator_Model /home/ykhuang/research/Stimulator_Model
 DEFINE Stimulator_TestBench /home/ykhuang/research/Stimulator_TestBench
 DEFINE Digital_Lib /home/ykhuang/research/Digital_Lib
 DEFINE EMG_NMES_TestBench /home/ykhuang/research/EMG_NMES_TestBench
+#Removed by ddDeleteObj: DEFINE IC_BioZ Alejandro_Design/IC_BioZ
+DEFINE BioZ_EMG_Model Alejandro_Design/BioZ_EMG_Model

@@ -1,0 +1,4 @@
+("Stimulator_TestBench" "Digital_Stimulus_TB" "schematic" "schematic") nil
+("analogLib" "vpwl" "spectre" "spectre") nil
+("Stimulator_Model" "Digital_Stimulus_ST" "functional" "functional") nil
+("analogLib" "vdc" "spectre" "spectre") nil

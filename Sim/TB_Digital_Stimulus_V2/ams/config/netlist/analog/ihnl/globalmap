@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+EMG_TestBench/TB_Digital_Stimulus_V2/schematic EMG_TestBench/TB_Digital_Stimulus_V2/schematic/schematic/EMG_TestBench_TB_Digital_Stimulus_V2_config/1 TB_Digital_Stimulus_V2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

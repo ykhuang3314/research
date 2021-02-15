@@ -1,5 +1,5 @@
 ("analogLib" "idc" "spectre") spectreSrcPrim
-("analogLib" "vpulse" "spectre") spectreSrcPrim
 ("analogLib" "res" "spectre") nil
+("Stimulator_Model" "Stimulator_Single_CH" "schematic") nil
 ("analogLib" "cap" "spectre") nil
 ("analogLib" "vdc" "spectre") spectreSrcPrim

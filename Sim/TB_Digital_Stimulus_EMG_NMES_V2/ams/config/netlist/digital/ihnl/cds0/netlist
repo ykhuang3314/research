@@ -1,0 +1,37 @@
+// Library - EMG_TestBench, Cell - TB_Digital_Stimulus_EMG_NMES_V2,
+//View - schematic
+// LAST TIME SAVED: Feb 15 15:02:27 2021
+// NETLIST TIME: Feb 15 15:02:32 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_Digital_Stimulus_EMG_NMES_V2", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 15 15:02:27 2021" *)
+
+module TB_Digital_Stimulus_EMG_NMES_V2 (ADC_CLK_EMG, ANO_ST, CAT_ST, 
+    CH_SEL_EMG, CH_SEL_ST, DIS_ST, EN_ADC_EMG, EN_ST, MAG_ST, 
+    MUX_CLK_EMG, START_EMG, CH_SWEEP_ST, ENABLE, RAMP_ST, RESET);
+
+output  ADC_CLK_EMG, ANO_ST, CAT_ST, DIS_ST, EN_ADC_EMG, EN_ST, 
+    MUX_CLK_EMG, START_EMG;
+
+input  CH_SWEEP_ST, ENABLE, RAMP_ST, RESET;
+
+output [1:0]  CH_SEL_ST;
+output [4:0]  MAG_ST;
+output [3:0]  CH_SEL_EMG;
+
+
+Digital_Stimulus_ST I0 ( .enable(ENABLE), .ch_sweeping(CH_SWEEP_ST), 
+    .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), .CH_SEL_ST(CH_SEL_ST), 
+    .DIS_ST(DIS_ST), .EN_ST(EN_ST), .MAG_ST(MAG_ST), 
+    .ramping(RAMP_ST));
+
+Digital_Stimuli_EMG_V2 I1 ( .CH_SEL_EMG(CH_SEL_EMG), 
+    .CLK_EMG(ADC_CLK_EMG), .EN_ADC_EMG(EN_ADC_EMG), 
+    .MUX_CLK_EMG(MUX_CLK_EMG), .START_EMG(START_EMG), .Enable(ENABLE), 
+    .RESET(RESET));
+
+endmodule

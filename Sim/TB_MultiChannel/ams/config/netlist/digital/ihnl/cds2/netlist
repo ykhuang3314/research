@@ -1,27 +1,28 @@
 // Library - EMG_TestBench, Cell - TB_MultiChannel, View - schematic
-// LAST TIME SAVED: Nov 18 23:54:42 2020
-// NETLIST TIME: Nov 18 23:55:22 2020
+// LAST TIME SAVED: Feb 10 14:06:57 2021
+// NETLIST TIME: Feb 10 14:07:07 2021
 `timescale 1ns / 1ps 
 
 `worklib EMG_TestBench
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="EMG_TestBench", dfII_cell="TB_MultiChannel", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Nov 18 23:54:42 2020" *)
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_MultiChannel", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 10 14:06:57 2021" *)
 
 module TB_MultiChannel ();
 
 // Buses in the design
 
-wire  [0:11]  net4;
-
 wire  [2:0]  Gain_Sel;
 
 wire  [3:0]  CH_Sel;
 
+wire  [0:11]  net4;
 
-MultiCH_16_EMG I3 ( .Ibias(net3), .Vdda(Vdda), .Vssa(cds_globals.\gnd! 
-    ), .Vsub(cds_globals.\gnd! ), .Dout(net4[0:11]), .EoC_ADC(EoC_ADC), 
+
+MultiCH_16_EMG I3 ( .Vddd(Vddd), .Vssd(cds_globals.\gnd! ), 
+    .Ibias(net3), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ), 
+    .Vsub(cds_globals.\gnd! ), .Dout(net4[0:11]), .EoC_ADC(EoC_ADC), 
     .CH_Sel(CH_Sel[3:0]), .CLK_ADC(CLK), .CLK_MUX(Start), .E1(E1), 
     .E2(E2), .E3(E3), .E4(E4), .E5(E5), .E6(E6), .E7(E7), .E8(E8), 
     .E9(E9), .E10(E10), .E11(E11), .E12(E12), .E13(E13), .E14(E14), 
@@ -34,5 +35,7 @@ Digital_Stimuli_EMG I4 ( .CH_Sel(CH_Sel), .start(Start), .CLK(CLK),
 
 DAC_EMG #( .thresh(0.9) ) I5 ( .Vout(OUT_DAC), .Clk(CLK_DAC), 
     .Din(net4), .Vdda(Vdda), .Vssa(cds_globals.\gnd! ));
+
+EMG_Clock_Gen I13 ( .CLK(CLK));
 
 endmodule

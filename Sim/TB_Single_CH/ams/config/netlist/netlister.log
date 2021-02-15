@@ -1,4 +1,4 @@
-Begin Netlisting Jan 21 14:03:03 2021
+Begin Netlisting Feb 11 16:11:26 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/TB_Single_CH/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -51,17 +51,17 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
-Current_Source              verilogams           *Stopping View*  
-Current_Mirror              verilogams           *Stopping View*  
-H_Bridge                    verilogams           *Stopping View*  
-Counter                     functional           *Stopping View*  
 idc                         spectre              *Stopping View*  
 res                         spectre              *Stopping View*  
 cap                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
 vdc                         spectre              *Stopping View*  
+Current_Source              verilogams           *Stopping View*  
+Current_Mirror              verilogams           *Stopping View*  
+H_Bridge                    verilogams           *Stopping View*  
+Digital_Stimulus_ST         functional           *Stopping View*  
 TB_Single_CH                schematic                             
+Stimulator_Single_CH        schematic                             
 
 ---------- End of netlist configuration information   ----------
 Running netlist assembly..
-End netlisting Jan 21 14:03:11 2021
+End netlisting Feb 11 16:11:35 2021

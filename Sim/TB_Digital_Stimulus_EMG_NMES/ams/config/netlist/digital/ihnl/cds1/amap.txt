@@ -1,0 +1,16 @@
+netMap,*TB_Digital_Stimulus_EMG_NMES,*CH_SEL_EMG<3>,*CH_SEL_EMG[3]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*CH_SEL_EMG<2>,*CH_SEL_EMG[2]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*CH_SEL_EMG<1>,*CH_SEL_EMG[1]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*CH_SEL_EMG<0>,*CH_SEL_EMG[0]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*CH_SEL_ST<1>,*CH_SEL_ST[1]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*CH_SEL_ST<0>,*CH_SEL_ST[0]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*MAG_ST<4>,*MAG_ST[4]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*MAG_ST<3>,*MAG_ST[3]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*MAG_ST<2>,*MAG_ST[2]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*MAG_ST<1>,*MAG_ST[1]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*MAG_ST<0>,*MAG_ST[0]
+netMap,*TB_Digital_Stimulus_EMG_NMES,*gnd!,*cds_globals.\gnd! 
+instMap,*TB_Digital_Stimulus_EMG_NMES,*I2,*I2
+instMaster,*TB_Digital_Stimulus_EMG_NMES,*I2,*EMG_Model_Digital_Stimuli_EMG_NMES_V2_functional
+cellMap,*TB_Digital_Stimulus_EMG_NMES,*TB_Digital_Stimulus_EMG_NMES,*EMG_TestBench,*schematic
+topMap,*TB_Digital_Stimulus_EMG_NMES

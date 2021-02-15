@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Feb 15 22:34:34 2021
+// Design library name: EMG_TestBench
+// Design cell name: TB_Digital_Stimulus_EMG_NMES
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

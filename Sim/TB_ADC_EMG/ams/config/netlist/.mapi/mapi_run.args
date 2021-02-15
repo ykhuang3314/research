@@ -1,0 +1,11 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams lib:EMG_Model cell:ANA_MUX_EMG view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
+/home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/.mapi//dummyMapi.vhms

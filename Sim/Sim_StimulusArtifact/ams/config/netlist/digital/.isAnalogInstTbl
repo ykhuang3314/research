@@ -2,13 +2,13 @@
 ("Stimulator_Model" "Current_Mirror" "verilogams" nil) nil
 ("analogLib" "idc" "spectre" spectreSrcPrim) t
 ("EMG_Model" "PGA_EMG" "verilogams" nil) nil
-("EMG_Model" "IA_EMG" "verilogams" nil) nil
 ("analogLib" "vpulse" "spectre" spectreSrcPrim) t
+("analogLib" "switch" "spectre" nil) t
 ("analogLib" "res" "spectre" nil) t
 ("Stimulator_Model" "Current_Source" "verilogams" nil) nil
 ("analogLib" "cap" "spectre" nil) t
 ("Stimulator_Model" "Stimulator_Single_CH" "schematic" nil) nil
+("EMG_Model" "IA_EMG_Ideal" "verilogams" nil) nil
 ("Stimulator_Model" "H_Bridge" "verilogams" nil) nil
-("analogLib" "vsin" "spectre" spectreSrcPrim) t
 ("analogLib" "vdc" "spectre" spectreSrcPrim) t
 ("EMG_Model" "AFE_EMG" "schematic" nil) nil

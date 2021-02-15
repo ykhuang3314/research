@@ -1,0 +1,61 @@
+( global ( resolution_type basic ) )
+
+( net TB_Digital_Stimulus_V2.net1 TB_Digital_Stimulus_V2.net1 analog/mixed electrical )
+( net TB_Digital_Stimulus_V2.I0.Enable TB_Digital_Stimulus_V2.net1 digital/mixed logic )
+
+( net TB_Digital_Stimulus_V2.I0.RESET TB_Digital_Stimulus_V2.I0.RESET digital/mixed logic )
+( net cds_globals.\gnd!  TB_Digital_Stimulus_V2.I0.RESET analog/mixed electrical )
+
+( net TB_Digital_Stimulus_V2.CLK_EMG TB_Digital_Stimulus_V2.CLK_EMG digital logic )
+( net TB_Digital_Stimulus_V2.I0.CLK_EMG TB_Digital_Stimulus_V2.CLK_EMG digital logic )
+
+( net TB_Digital_Stimulus_V2.EN_ADC_EMG TB_Digital_Stimulus_V2.EN_ADC_EMG digital logic )
+( net TB_Digital_Stimulus_V2.I0.EN_ADC_EMG TB_Digital_Stimulus_V2.EN_ADC_EMG digital logic )
+
+( net TB_Digital_Stimulus_V2.CH_SEL_EMG TB_Digital_Stimulus_V2.CH_SEL_EMG digital logic )
+( net TB_Digital_Stimulus_V2.I0.CH_SEL_EMG TB_Digital_Stimulus_V2.CH_SEL_EMG digital logic )
+
+( net TB_Digital_Stimulus_V2.START_EMG TB_Digital_Stimulus_V2.START_EMG digital logic )
+( net TB_Digital_Stimulus_V2.I0.START_EMG TB_Digital_Stimulus_V2.START_EMG digital logic )
+
+( net TB_Digital_Stimulus_V2.MUX_CLK_EMG TB_Digital_Stimulus_V2.MUX_CLK_EMG digital logic )
+( net TB_Digital_Stimulus_V2.I0.MUX_CLK_EMG TB_Digital_Stimulus_V2.MUX_CLK_EMG digital logic )
+
+( net TB_Digital_Stimulus_V2.I0.cnt_conv TB_Digital_Stimulus_V2.I0.cnt_conv digital logic )
+
+( net TB_Digital_Stimulus_V2.I0.cnt_ch TB_Digital_Stimulus_V2.I0.cnt_ch digital logic )
+
+( net TB_Digital_Stimulus_V2.I0.clk_rate TB_Digital_Stimulus_V2.I0.clk_rate digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_V2.I0.clk_period TB_Digital_Stimulus_V2.I0.clk_period digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_V2.I0.mux_clk_rate TB_Digital_Stimulus_V2.I0.mux_clk_rate digital logic (type rnm) )
+
+( net TB_Digital_Stimulus_V2.I0.mux_clk_period TB_Digital_Stimulus_V2.I0.mux_clk_period digital logic (type rnm) )
+
+( connect
+   connectLib.E2L_2:module
+   TB_Digital_Stimulus_V2.net1
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_V2.I0.Enable logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_Digital_Stimulus_V2.I0.RESET logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_Digital_Stimulus_V2.I0 dmixed (type rnm))
+(instance TB_Digital_Stimulus_V2.V0 analog)
+(instance TB_Digital_Stimulus_V2 mixed/dmixed (type rnm))
+(instance cds_globals analog)

@@ -7,6 +7,8 @@ HEADER
 "Gain_Sel<1>v" ".Gain_Sel[1]v"
 "Gain_Sel<2>v" ".Gain_Sel[2]v"
 "Vddav" ".Vddav"
+"Vdddv" ".Vdddv"
 "Vssav" ".Vssav"
+"Vssdv" ".Vssdv"
 "Vsubv" ".Vsubv"
 "Ibiasv" ".Ibiasv"

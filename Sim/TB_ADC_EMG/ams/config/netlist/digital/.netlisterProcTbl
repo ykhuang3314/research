@@ -1,0 +1,5 @@
+("analogLib" "idc" "spectre") spectreSrcPrim
+("analogLib" "vpulse" "spectre") spectreSrcPrim
+("analogLib" "vpwl" "spectre") spectrePwlsrcPrim
+("analogLib" "vsin" "spectre") spectreSrcPrim
+("analogLib" "vdc" "spectre") spectreSrcPrim

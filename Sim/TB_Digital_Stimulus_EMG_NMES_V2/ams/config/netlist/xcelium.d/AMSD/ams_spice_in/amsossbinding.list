@@ -1,0 +1,4 @@
+designtop="EMG_TestBench.TB_Digital_Stimulus_EMG_NMES_V2:schematic"
+cell="Digital_Stimulus_ST" lib="Stimulator_Model" view="functional" 
+cell="vsource" view="analogtext" 
+cell="Digital_Stimuli_EMG_V2" lib="EMG_Model" view="functional" 

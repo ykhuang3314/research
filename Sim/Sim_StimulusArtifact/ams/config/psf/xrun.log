@@ -1,5 +1,5 @@
 xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.03-s018: Started on Feb 09, 2021 at 11:20:20 CET
+TOOL:	xrun(64)	18.03-s018: Started on Feb 10, 2021 at 18:47:45 CET
 xrun
 	-f xrunArgs
 		-UNBUFFERED
@@ -38,8 +38,8 @@ xrun
 		-top cds_globals
 		./netlist.vams
 		-f ./textInputs
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
-			-amscompilefile "file:/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
@@ -52,34 +52,12 @@ xrun
 file: ./netlist.vams
 	module EMG_NMES_TestBench.Sim_StimulusArtifact:schematic
 		errors: 0, warnings: 0
-	module Stimulator_Model.Stimulator_Single_CH:schematic
-		errors: 0, warnings: 0
-file: ./cds_globals.vams
-	module worklib.cds_globals:vams
-		errors: 0, warnings: 0
-file: /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
-	module EMG_Model.PGA_EMG:verilogams
-		errors: 0, warnings: 0
-file: /home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams
-	module EMG_Model.IA_EMG:verilogams
-		errors: 0, warnings: 0
-file: /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
-	module EMG_Model.BPF_EMG:verilogams
-		errors: 0, warnings: 0
-file: /home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
-	module Stimulator_Model.H_Bridge:verilogams
-		errors: 0, warnings: 0
-file: /home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
-	module Stimulator_Model.Current_Mirror:verilogams
-		errors: 0, warnings: 0
 file: /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
-	module Stimulator_Model.Current_Source:verilogams
-		errors: 0, warnings: 0
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-xmvlog: Memory Usage - Current physical: 25.8M, Current virtual: 57.8M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 72.1% cpu)
+xmvlog: Memory Usage - Current physical: 25.7M, Current virtual: 57.7M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 79.2% cpu)
 		Caching library 'Stimulator_Model' ....... Done
 		Caching library 'worklib' ....... Done
 		Caching library 'EMG_NMES_TestBench' ....... Done
@@ -93,27 +71,22 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 72.1% cpu)
 	Connect Rules applied are:
 		ConnRules_18V_full_fast
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		Stimulator_Model.Current_Source:verilogams <0x17f21a52>
-			streams:   1, words:   524
-		EMG_Model.PGA_EMG:verilogams <0x69e76153>
-			streams:   1, words:   592
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                21      28
-		Registers:              85     145
+		Registers:              80     140
 		Scalar wires:           22       -
 		Vectored wires:         11       -
 		Always blocks:          79      57
 		Initial blocks:         11      24
 		Cont. assignments:      11      21
-		Interconnect:           34       -
+		Interconnect:           37       -
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: EMG_NMES_TestBench.Sim_StimulusArtifact:config
-xmelab: Memory Usage - Final: 43.2M, Peak: 215.8M, Peak virtual: 300.8M
-xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.3s, 89.0% cpu)
+xmelab: Memory Usage - Final: 42.8M, Peak: 215.8M, Peak virtual: 300.8M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 94.1% cpu)
 Loading snapshot EMG_NMES_TestBench.Sim_StimulusArtifact:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
@@ -125,19 +98,19 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 9213
-Memory  available: 54.0821 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 15672
+Memory  available: 53.1925 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1200.1] ( 16 ),  1 [1270.0] ( 17 ),  2 [1971.1] ( 18 )
-                 3 [1259.3] ( 19 ),  4 [1240.7] ( 20 ),  5 [1199.1] ( 21 )
-                 6 [1486.4] ( 22 ),  7 [1200.0] ( 23 )
-        1:       8 [1198.5] ( 24 ),  9 [1215.7] ( 25 ), 10 [1200.0] ( 26 )
-                11 [2400.0] ( 27 ), 12 [1254.9] ( 28 ), 13 [1200.0] ( 29 )
-                14 [1201.5] ( 30 ), 15 [1200.0] ( 31 )
+        0:       0 [1400.0] ( 16 ),  1 [2316.4] ( 17 ),  2 [1389.7] ( 18 )
+                 3 [1296.2] ( 19 ),  4 [1397.2] ( 20 ),  5 [1298.0] ( 21 )
+                 6 [1257.9] ( 22 ),  7 [2322.7] ( 23 )
+        1:       8 [1263.6] ( 24 ),  9 [1200.3] ( 25 ), 10 [2268.2] ( 26 )
+                11 [1279.4] ( 27 ), 12 [1200.0] ( 28 ), 13 [2400.0] ( 29 )
+                14 [1239.7] ( 30 ), 15 [1200.7] ( 31 )
         
-System load averages (1min, 5min, 15min) : 1.1 %, 1.0 %, 0.6 %
+System load averages (1min, 5min, 15min) : 1.2 %, 4.4 %, 7.1 %
 Hyperthreading is enabled
 HPC is enabled
 
@@ -173,18 +146,18 @@ Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_BPF_EMG_veril
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_BPF_EMG_verilogams_verilog.vams.EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
 Reading file:  /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_BPF_EMG_verilogams_verilog.vams.EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.so
 Installed compiled interface for EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.
-Reading file:  /home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams
-Opening directory xcelium.d/AMSD/ahdlSimDB (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_verilogams_verilog.vams.EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_verilogams_verilog.vams.EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
-Reading file:  /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_verilogams_verilog.vams.EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.so
-Installed compiled interface for EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.
 Reading file:  /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
 Reading file:  /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.so
 Installed compiled interface for EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.
 Reading link:  /pkg/cadence/installs/XCELIUM1803/tools
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
@@ -526,9 +499,9 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/amsControlSpectre.scs
 Reading file:  /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.amsbind.scs
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 596.593 ms, elapsed = 727.115 ms.
-Time accumulated: CPU = 1.02192 s, elapsed = 727.122 ms.
-Peak resident memory used = 105 Mbytes.
+Time for NDB Parsing: CPU = 575.334 ms, elapsed = 703.045 ms.
+Time accumulated: CPU = 1.01801 s, elapsed = 703.05 ms.
+Peak resident memory used = 103 Mbytes.
 
 xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
 xcelium> 
@@ -553,19 +526,25 @@ xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.CAT
 Created probe 2
 xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.DIS}
 Created probe 3
-xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.net07}
+xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.Vinp}
 Created probe 4
 xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.Vout}
 Created probe 5
-xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.inp}
-xmsim: *E,PNOOBJ: Path element could not be found: inp.
-xcelium> probe -create -emptyok -database ams_database -flow {Sim_StimulusArtifact.R4.1}
+xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.net017}
 Created probe 6
+xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.net016}
+Created probe 7
+xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.Vctrl}
+Created probe 8
+xcelium> probe -create -emptyok -database ams_database {Sim_StimulusArtifact.net09}
+Created probe 9
+xcelium> probe -create -emptyok -database ams_database -flow {Sim_StimulusArtifact.R4.1}
+Created probe 10
 xcelium> 
 xcelium> run
-Time for Elaboration: CPU = 225.777 ms, elapsed = 254.519 ms.
-Time accumulated: CPU = 1.24785 s, elapsed = 981.795 ms.
-Peak resident memory used = 129 Mbytes.
+Time for Elaboration: CPU = 170.03 ms, elapsed = 201.438 ms.
+Time accumulated: CPU = 1.18821 s, elapsed = 904.652 ms.
+Peak resident memory used = 127 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
@@ -577,44 +556,47 @@ Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-8527): There are some nodes and instances removed from the netlist topology check. Check the circuit and correct the topology. Or use preserve_inst to keep them if necessary.
 
 ***********************************************
-  Total removed instances 2 ( dangling 2, terminals connected together 0)  
+  Total removed instances 3 ( dangling 3, terminals connected together 0)  
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-8532): Found dangling isource Sim_StimulusArtifact.I5, which can affect the circuit behavior. Check the circuit topology and fix it before running the simulation.
-    WARNING (SPECTRE-8529): Dangling instance. Sim_StimulusArtifact.V7 is removed.
+    WARNING (SPECTRE-8529): Dangling instance. Sim_StimulusArtifact.V18 is removed.
+    WARNING (SPECTRE-8529): Dangling instance. Sim_StimulusArtifact.V14 is removed.
 
 
-  Total removed nodes 2 ( dangling nodes 2, floating nodes 0 )
+  Total removed nodes 3 ( dangling nodes 3, floating nodes 0 )
 
 Warning from spectre during hierarchy flattening.
-    WARNING (SPECTRE-8530): Dangling node. Sim_StimulusArtifact.Vinp is removed.
+    WARNING (SPECTRE-8530): Dangling node. Sim_StimulusArtifact.Vctrl_inv is removed.
+    WARNING (SPECTRE-8530): Dangling node. Sim_StimulusArtifact.Vddd is removed.
     WARNING (SPECTRE-8530): Dangling node. Sim_StimulusArtifact.net4 is removed.
-    WARNING (SPECTRE-8531): Floating node. Sim_StimulusArtifact.I0__ANO__5__0 is removed.
-    WARNING (SPECTRE-8531): Floating node. Sim_StimulusArtifact.I0__CAT__6__0 is removed.
-    WARNING (SPECTRE-8531): Floating node. Sim_StimulusArtifact.I0__DIS__7__0 is removed.
+    WARNING (SPECTRE-8531): Floating node. Sim_StimulusArtifact.I0__ANO__7__0 is removed.
+    WARNING (SPECTRE-8531): Floating node. Sim_StimulusArtifact.I0__CAT__8__0 is removed.
+    WARNING (SPECTRE-8531): Floating node. Sim_StimulusArtifact.I0___dUmmY_pORt_0_ is removed.
 
 ***********************************************
-Time for EDB Visiting: CPU = 5.235 ms, elapsed = 5.23615 ms.
-Time accumulated: CPU = 1.25339 s, elapsed = 987.335 ms.
-Peak resident memory used = 130 Mbytes.
+Time for EDB Visiting: CPU = 2.877 ms, elapsed = 2.87795 ms.
+Time accumulated: CPU = 1.19126 s, elapsed = 907.702 ms.
+Peak resident memory used = 128 Mbytes.
 
 
 Notice from spectre during topology check.
-    No connections to node `Sim_StimulusArtifact.I0__Mag__9__0'.
-    No connections to node `Sim_StimulusArtifact.I0__Mag__9__1'.
-    No connections to node `Sim_StimulusArtifact.I0__Mag__9__2'.
-    No connections to node `Sim_StimulusArtifact.I0__Mag__9__3'.
-    No connections to node `Sim_StimulusArtifact.I0__Mag__9__4'.
+    No connections to node `Sim_StimulusArtifact.I0__Mag__11__0'.
+    No connections to node `Sim_StimulusArtifact.I0__Mag__11__1'.
+    No connections to node `Sim_StimulusArtifact.I0__Mag__11__2'.
+    No connections to node `Sim_StimulusArtifact.I0__Mag__11__3'.
+    No connections to node `Sim_StimulusArtifact.I0__Mag__11__4'.
         Further occurrences of this notice will be suppressed.
-    Only one connection to the following 3 nodes:
+    Only one connection to the following 4 nodes:
+        Sim_StimulusArtifact.DIS
         Sim_StimulusArtifact.Vout
-        Sim_StimulusArtifact.I1.I0.inn
-        Sim_StimulusArtifact.I1.I0.inp
-    No DC path from node `Sim_StimulusArtifact.I0__Mag__9__0' to ground, Gmin installed to provide path.
-    No DC path from node `Sim_StimulusArtifact.I0__Mag__9__1' to ground, Gmin installed to provide path.
-    No DC path from node `Sim_StimulusArtifact.I0__Mag__9__2' to ground, Gmin installed to provide path.
-    No DC path from node `Sim_StimulusArtifact.I0__Mag__9__3' to ground, Gmin installed to provide path.
-    No DC path from node `Sim_StimulusArtifact.I0__Mag__9__4' to ground, Gmin installed to provide path.
+        Sim_StimulusArtifact.net018
+        Sim_StimulusArtifact.net019
+    No DC path from node `Sim_StimulusArtifact.net019' to ground, Gmin installed to provide path.
+    No DC path from node `Sim_StimulusArtifact.I0__Mag__11__0' to ground, Gmin installed to provide path.
+    No DC path from node `Sim_StimulusArtifact.I0__Mag__11__1' to ground, Gmin installed to provide path.
+    No DC path from node `Sim_StimulusArtifact.I0__Mag__11__2' to ground, Gmin installed to provide path.
+    No DC path from node `Sim_StimulusArtifact.I0__Mag__11__3' to ground, Gmin installed to provide path.
         Further occurrences of this notice will be suppressed.
 Notice from spectre during initial setup.
     Multithreading is disabled due to the size of the design being too small.
@@ -645,18 +627,19 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 46
+              nodes 49
           capacitor 3     
 connectLib__E2L_2__module__0x10000001_behavioral 11    
 EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral 1     
-EMG_Model__IA_EMG__verilogams__0x10000001_behavioral 1     
+EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral 1     
 EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral 1     
             isource 2     
+              relay 1     
            resistor 6     
 Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral 1     
 Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral 1     
 Stimulator_Model__H_Bridge__verilogams__0x10000001_behavioral 1     
-            vsource 16    
+            vsource 19    
 
 Analysis and control statement inventory:
                info 4     
@@ -665,17 +648,17 @@ Analysis and control statement inventory:
 Output statements:
              .probe 0     
            .measure 0     
-               save 6     
+               save 10    
 
 
 Notice from spectre during initial setup.
-    2 vsources are short because their absolute value is less than or equal to 'vabsshort'.
+    3 vsources are short because their absolute value is less than or equal to 'vabsshort'.
     Fast APS Enabled.
-    6 notices suppressed.
+    7 notices suppressed.
 
-Time for parsing: CPU = 6.684 ms, elapsed = 11.2939 ms.
-Time accumulated: CPU = 1.26031 s, elapsed = 998.862 ms.
-Peak resident memory used = 131 Mbytes.
+Time for parsing: CPU = 4.08 ms, elapsed = 8.68082 ms.
+Time accumulated: CPU = 1.19548 s, elapsed = 916.519 ms.
+Peak resident memory used = 129 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -687,7 +670,9 @@ Transient Analysis `tran': time = (0 s -> 10 ms)
 ************************************************
 Trying `homotopy = gmin' for initial conditions.
 
-DC simulation time: CPU = 11.245 ms, elapsed = 11.3621 ms.
+Trying `homotopy = gmin' for initial conditions.
+
+DC simulation time: CPU = 19.461 ms, elapsed = 19.443 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
@@ -719,73 +704,89 @@ Notice from spectre during transient analysis `tran'.
 
 Output and IC/nodeset summary:
                  save   1       (current)
-                 save   5       (voltage)
+                 save   9       (voltage)
 
 
 Warning from spectre at time = 10 us during transient analysis `tran'.
-    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: Sim_StimulusArtifact.net1.
-    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
-Warning from spectre at time = 110 us during transient analysis `tran'.
-    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: Sim_StimulusArtifact.net1.
-    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
-Warning from spectre at time = 120 us during transient analysis `tran'.
     WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: Sim_StimulusArtifact.net2.
     WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
-Warning from spectre at time = 230 us during transient analysis `tran'.
+Warning from spectre at time = 10 us during transient analysis `tran'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Notice from spectre at time = 210 us during transient analysis `tran'.
+    Newton iteration fails to converge at time = 210 us step = 20.0035 as.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 210 us during transient analysis `tran'.
+    Newton iteration fails to converge at time = 210 us step = 20.0035 as.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 210 us during transient analysis `tran'.
+    Newton iteration fails to converge at time = 210 us step = 20.0035 as.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 210 us during transient analysis `tran'.
+    Newton iteration fails to converge at time = 210 us step = 20.0035 as.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Warning from spectre at time = 220 us during transient analysis `tran'.
     WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: Sim_StimulusArtifact.net1.
     WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
-Warning from spectre at time = 230 us during transient analysis `tran'.
+Warning from spectre at time = 220 us during transient analysis `tran'.
     WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
 
-    tran: time = 252.1 us    (2.52 %), step = 3.719 us    (37.2 m%)
+    tran: time = 251.2 us    (2.51 %), step = 11.45 us     (114 m%)
 
-Warning from spectre at time = 340 us during transient analysis `tran'.
+Notice from spectre at time = 420 us during transient analysis `tran'.
+    Newton iteration fails to converge at time = 420 us step = 20.0035 as.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+        Further occurrences of this notice will be suppressed.
+Warning from spectre at time = 460 us during transient analysis `tran'.
     WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: Sim_StimulusArtifact.net2.
-        Further occurrences of this warning will be suppressed.
     WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
-        Further occurrences of this warning will be suppressed.
-Warning from spectre at time = 340 us during transient analysis `tran'.
+Warning from spectre at time = 460 us during transient analysis `tran'.
     WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
-Warning from spectre at time = 560 us during transient analysis `tran'.
-    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 670 us during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: Sim_StimulusArtifact.net1.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
 Warning from spectre at time = 670 us during transient analysis `tran'.
     WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
 
-    tran: time = 760.7 us    (7.61 %), step = 11.78 us     (118 m%)
+    tran: time = 781.8 us    (7.82 %), step = 44.4 us      (444 m%)
 
-Warning from spectre at time = 780 us during transient analysis `tran'.
+Warning from spectre at time = 910 us during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: Sim_StimulusArtifact.net2.
+        Further occurrences of this warning will be suppressed.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+        Further occurrences of this warning will be suppressed.
+Warning from spectre at time = 910 us during transient analysis `tran'.
     WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
         Further occurrences of this warning will be suppressed.
 
-    tran: time = 1.251 ms    (12.5 %), step = 1.816 us    (18.2 m%)
-    tran: time = 1.76 ms     (17.6 %), step = 10.89 us     (109 m%)
-    tran: time = 2.253 ms    (22.5 %), step = 4.285 us    (42.8 m%)
-    tran: time = 2.75 ms     (27.5 %), step = 10.43 us     (104 m%)
-    tran: time = 3.254 ms    (32.5 %), step = 5.776 us    (57.8 m%)
-    tran: time = 3.75 ms     (37.5 %), step = 4.515 us    (45.2 m%)
-    tran: time = 4.252 ms    (42.5 %), step = 6.877 us    (68.8 m%)
-    tran: time = 4.751 ms    (47.5 %), step = 3.886 us    (38.9 m%)
-    tran: time = 5.26 ms     (52.6 %), step = 9.759 us    (97.6 m%)
-    tran: time = 5.751 ms    (57.5 %), step = 3.193 us    (31.9 m%)
-    tran: time = 6.261 ms    (62.6 %), step = 11.59 us     (116 m%)
-    tran: time = 6.751 ms    (67.5 %), step = 1.863 us    (18.6 m%)
-    tran: time = 7.251 ms    (72.5 %), step = 11.59 us     (116 m%)
-    tran: time = 7.754 ms    (77.5 %), step = 4.389 us    (43.9 m%)
-    tran: time = 8.25 ms     (82.5 %), step = 10.48 us     (105 m%)
-    tran: time = 8.754 ms    (87.5 %), step = 5.773 us    (57.7 m%)
-    tran: time = 9.25 ms     (92.5 %), step = 4.516 us    (45.2 m%)
-    tran: time = 9.751 ms    (97.5 %), step = 6.698 us      (67 m%)
+    tran: time = 1.277 ms    (12.8 %), step = 52.03 us     (520 m%)
+    tran: time = 1.77 ms     (17.7 %), step = 45.01 us     (450 m%)
+    tran: time = 2.25 ms     (22.5 %), step = 5.797 us      (58 m%)
+    tran: time = 2.779 ms    (27.8 %), step = 30.92 us     (309 m%)
+    tran: time = 3.283 ms    (32.8 %), step = 53.84 us     (538 m%)
+    tran: time = 3.772 ms    (37.7 %), step = 38.39 us     (384 m%)
+    tran: time = 4.26 ms     (42.6 %), step = 37.88 us     (379 m%)
+    tran: time = 4.76 ms     (47.6 %), step = 15.81 us     (158 m%)
+    tran: time = 5.293 ms    (52.9 %), step = 51.72 us     (517 m%)
+    tran: time = 5.782 ms    (57.8 %), step = 37.54 us     (375 m%)
+    tran: time = 6.27 ms     (62.7 %), step = 37.54 us     (375 m%)
+    tran: time = 6.75 ms     (67.5 %), step = 6.08 us     (60.8 m%)
+    tran: time = 7.25 ms     (72.5 %), step = 16.14 us     (161 m%)
+    tran: time = 7.784 ms    (77.8 %), step = 51.66 us     (517 m%)
+    tran: time = 8.272 ms    (82.7 %), step = 38.43 us     (384 m%)
+    tran: time = 8.76 ms     (87.6 %), step = 38.43 us     (384 m%)
+    tran: time = 9.258 ms    (92.6 %), step = 15.34 us     (153 m%)
+    tran: time = 9.793 ms    (97.9 %), step = 53.86 us     (539 m%)
 
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
 Simulation stopped via transient analysis stoptime at time 10 MS
-Memory Usage - Current physical: 137.0M, Current virtual: 611.6M
-CPU Usage - 0.4s system + 1.9s user = 2.2s total (91.6% cpu)
+Memory Usage - Current physical: 135.0M, Current virtual: 611.6M
+CPU Usage - 0.3s system + 4.0s user = 4.3s total (95.6% cpu)
 xcelium> exit
-Number of accepted tran steps =             8609
+Number of accepted tran steps =             18589
 
 Maximum value achieved for any signal of each quantity: 
-V: V(Sim_StimulusArtifact.I0.net12) = 5.015 MV
-I: I(Sim_StimulusArtifact.V1:p) = 597.9 mA
+V: V(Sim_StimulusArtifact.I1.I0._cds_internal_IA_EMG_Ideal_:laplace0_state_0) = 58.82 MV
+I: I(Sim_StimulusArtifact.V1:p) = 10 mA
 If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -796,27 +797,28 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (2.5 %)       1 (54.9 %)      2 (8.9 %)       4 (29.7 %)
-                 5 (3.0 %)       6 (11.4 %)      7 (3.9 %)      21 (11.8 %)
-                22 (6.4 %)      23 (3.4 %)      
-        Other    8 (6.4 %)      11 (7.4 %)      25 (2.5 %)      27 (8.8 %)
-Initial condition solution time: CPU = 11.357 ms, elapsed = 11.4741 ms.
+        Spectre  0 (3.4 %)       1 (80.0 %)      4 (11.1 %)      6 (2.2 %)
+                21 (18.2 %)     22 (13.8 %)     
+        Other    8 (3.4 %)      10 (1.5 %)      13 (3.6 %)      25 (2.2 %)
+                27 (3.2 %)      28 (4.4 %)      
+Initial condition solution time: CPU = 19.605 ms, elapsed = 19.5892 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
-Number of A-to-D events:                     384
-  Number of A-to-D events in IEs:            384
-Number of D-to-A events:                     188
+Number of A-to-D events:                     200
+  Number of A-to-D events in IEs:            200
+Number of D-to-A events:                      96
   Number of D-to-A events in IEs:              0
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 1.13825 s, elapsed = 1.14719 s.
-Total time required for tran analysis `tran': CPU = 1.15225 s, elapsed = 1.16375 s.
-Time accumulated: CPU = 2.42854 s, elapsed = 2.18203 s.
-Peak resident memory used = 137 Mbytes.
+Intrinsic tran analysis time:    CPU = 3.31255 s, elapsed = 3.31585 s.
+Total time required for tran analysis `tran': CPU = 3.33484 s, elapsed = 3.34039 s.
+Time accumulated: CPU = 4.55348 s, elapsed = 4.2855 s.
+Peak resident memory used = 135 Mbytes.
 
 
 Notice from spectre.
-    257 warnings suppressed.
+    98 notices suppressed.
+    120 warnings suppressed.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -832,12 +834,12 @@ outputParameter: writing output parameter values to rawfile.
 Opening the PSF file ../psf/outputParameter.info ...
 Simulation complete via transient analysis stoptime at time 10 MS
 
-Aggregate audit (11:20:32 AM, Tue Feb 9, 2021):
-Time used: CPU = 2.44 s, elapsed = 2.21 s, util. = 111%.
-Time spent in licensing: elapsed = 166 ms, percentage of total = 7.52%.
-Peak memory used = 138 Mbytes.
-Simulation started at: 11:20:29 AM, Tue Feb 9, 2021, ended at: 11:20:32 AM, Tue Feb 9, 2021, with elapsed time (wall clock): 2.21 s.
-spectre completes with 0 errors, 24 warnings, and 18 notices.
-xmsim: Memory Usage - Final: 135.8M, Peak: 137.8M, Peak virtual: 611.6M
-xmsim: CPU Usage - 0.5s system + 2.0s user = 2.4s total (2.5s, 96.1% cpu)
-TOOL:	xrun(64)	18.03-s018: Exiting on Feb 09, 2021 at 11:20:32 CET  (total: 00:00:12)
+Aggregate audit (6:47:59 PM, Wed Feb 10, 2021):
+Time used: CPU = 4.57 s, elapsed = 4.31 s, util. = 106%.
+Time spent in licensing: elapsed = 131 ms.
+Peak memory used = 136 Mbytes.
+Simulation started at: 6:47:55 PM, Wed Feb 10, 2021, ended at: 6:47:59 PM, Wed Feb 10, 2021, with elapsed time (wall clock): 4.31 s.
+spectre completes with 0 errors, 26 warnings, and 24 notices.
+xmsim: Memory Usage - Final: 135.8M, Peak: 135.9M, Peak virtual: 611.6M
+xmsim: CPU Usage - 0.4s system + 4.1s user = 4.5s total (4.6s, 97.8% cpu)
+TOOL:	xrun(64)	18.03-s018: Exiting on Feb 10, 2021 at 18:47:59 CET  (total: 00:00:14)

@@ -1,0 +1,9 @@
+cellMap,*TB_Digital_Stimulus_V2,*TB_Digital_Stimulus_V2,*null,*null
+topMap,*TB_Digital_Stimulus_V2
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<3>,*CH_SEL_EMG_3
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<2>,*CH_SEL_EMG_2
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<1>,*CH_SEL_EMG_1
+netMap,*TB_Digital_Stimulus_V2,*CH_SEL_EMG<0>,*CH_SEL_EMG_0
+netMap,*TB_Digital_Stimulus_V2,*gnd!,*0
+instMap,*TB_Digital_Stimulus_V2,*V0,*V0
+instMaster,*TB_Digital_Stimulus_V2,*V0,*analogLib_vpwl_spectre,*vsource

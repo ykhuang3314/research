@@ -1,10 +1,10 @@
 HEADER
 "PSFversion" "1.00"
 "Log Generator" "drlLog rev. 1.0"
-"Log Time Stamp" "Wed Nov 18 23:55:39 2020"
+"Log Time Stamp" "Wed Feb 10 14:07:25 2021"
 "simulator" "ams"
 "version" "17.1.0.433.isr9"
-"date" "11:55:39 PM, Wed Nov 18, 2020"
+"date" "2:07:25 PM, Wed Feb 10, 2021"
 "design" "(no title)"
 "signalNameType" "spectre"
 "simMode" "APS"

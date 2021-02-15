@@ -1,0 +1,3 @@
+("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" nil) nil
+("analogLib" "vpwl" "spectre" spectrePwlsrcPrim) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t

@@ -1,4 +1,4 @@
-Begin Netlisting Feb  9 11:20:10 2021
+Begin Netlisting Feb 10 18:47:35 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -56,13 +56,13 @@ Current_Source              verilogams           *Stopping View*
 Current_Mirror              verilogams           *Stopping View*  
 H_Bridge                    verilogams           *Stopping View*  
 BPF_EMG                     verilogams           *Stopping View*  
-IA_EMG                      verilogams           *Stopping View*  
 PGA_EMG                     verilogams           *Stopping View*  
+IA_EMG_Ideal                verilogams           *Stopping View*  
 res                         spectre              *Stopping View*  
 idc                         spectre              *Stopping View*  
 vdc                         spectre              *Stopping View*  
 vpulse                      spectre              *Stopping View*  
-vsin                        spectre              *Stopping View*  
+switch                      spectre              *Stopping View*  
 cap                         spectre              *Stopping View*  
 Sim_StimulusArtifact        schematic                             
 AFE_EMG                     schematic                             
@@ -70,4 +70,4 @@ Stimulator_Single_CH        schematic
 
 ---------- End of netlist configuration information   ----------
 Running netlist assembly..
-End netlisting Feb  9 11:20:19 2021
+End netlisting Feb 10 18:47:44 2021

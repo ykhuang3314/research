@@ -1,0 +1,32 @@
+// Library - EMG_TestBench, Cell - TB_Digital_Stimulus_EMG_NMES, View -
+//schematic
+// LAST TIME SAVED: Feb 15 14:48:32 2021
+// NETLIST TIME: Feb 15 22:34:33 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_Digital_Stimulus_EMG_NMES", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 15 14:48:32 2021" *)
+
+module TB_Digital_Stimulus_EMG_NMES ();
+
+// Buses in the design
+
+wire  [4:0]  MAG_ST;
+
+wire  [1:0]  CH_SEL_ST;
+
+wire  [3:0]  CH_SEL_EMG;
+
+
+Digital_Stimuli_EMG_NMES_V2 #( .num_of_ch_EMG(8) ) I2 ( 
+    .ADC_CLK_EMG(ADC_CLK_EMG), .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), 
+    .CH_SEL_EMG(CH_SEL_EMG), .CH_SEL_ST(CH_SEL_ST), .DIS_ST(DIS_ST), 
+    .EN_ADC_EMG(EN_ADC_EMG), .EN_ST(EN_ST), .MAG_ST(MAG_ST), 
+    .MUX_CLK_EMG(MUX_CLK_EMG), .START_EMG(START_EMG), 
+    .CH_SWEEP_ST(net3), .ENABLE(net1), .RAMP_ST(net4), 
+    .RESET(cds_globals.\gnd! ));
+
+endmodule

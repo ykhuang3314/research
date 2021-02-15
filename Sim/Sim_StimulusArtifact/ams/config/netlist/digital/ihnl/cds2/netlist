@@ -1,14 +1,14 @@
 // Library - EMG_NMES_TestBench, Cell - Sim_StimulusArtifact, View -
 //schematic
-// LAST TIME SAVED: Feb  9 11:20:05 2021
-// NETLIST TIME: Feb  9 11:20:13 2021
+// LAST TIME SAVED: Feb 10 18:47:32 2021
+// NETLIST TIME: Feb 10 18:47:39 2021
 `timescale 1ns / 1ps 
 
 `worklib EMG_NMES_TestBench
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="EMG_NMES_TestBench", dfII_cell="Sim_StimulusArtifact", dfII_view="schematic", worklib_name="EMG_NMES_TestBench", view_name="schematic", last_save_time="Feb  9 11:20:05 2021" *)
+(* dfII_lib="EMG_NMES_TestBench", dfII_cell="Sim_StimulusArtifact", dfII_view="schematic", worklib_name="EMG_NMES_TestBench", view_name="schematic", last_save_time="Feb 10 18:47:32 2021" *)
 
 module Sim_StimulusArtifact ();
 
@@ -19,12 +19,12 @@ wire  [2:0]  Gain_Sel;
 wire  [4:0]  Mag;
 
 
-Stimulator_Single_CH I0 ( .VddH(VddH), .Vdda(Vdda), .Vssa(Vssa), 
-    .Iano(net1), .Icat(net2), .ANO(ANO), .CAT(CAT), .DIS(DIS), 
-    .Ibias(net3), .Mag(Mag[4:0]));
+Stimulator_Single_CH I0 ( .Vssd(Vssd), .Vddd(Vddd), .VddH(VddH), 
+    .Vdda(Vdda), .Vssa(Vssa), .Iano(net1), .Icat(net2), .ANO(ANO), 
+    .CAT(CAT), .DIS(cds_globals.\gnd! ), .Ibias(net3), .Mag(Mag[4:0]));
 
-AFE_EMG I1 ( .Ibias(net4), .Vdda(Vdda), .Vssa(Vssa), .Vsub(Vsub), 
-    .Vout(Vout), .Gain_Sel(Gain_Sel[2:0]), .Vinn(cds_globals.\gnd! ), 
-    .Vinp(net08));
+AFE_EMG I1 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(net4), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout), .Gain_Sel(Gain_Sel[2:0]), 
+    .Vinn(cds_globals.\gnd! ), .Vinp(Vinp));
 
 endmodule

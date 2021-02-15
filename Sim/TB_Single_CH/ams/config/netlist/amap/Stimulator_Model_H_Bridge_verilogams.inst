@@ -9,3 +9,5 @@ HEADER
 "VddHv" ".VddHv"
 "Vddav" ".Vddav"
 "Vssav" ".Vssav"
+"Vdddv" ".Vdddv"
+"Vssdv" ".Vssdv"

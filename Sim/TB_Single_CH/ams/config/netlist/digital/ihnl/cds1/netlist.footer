@@ -1,0 +1,11 @@
+
+Stimulator_Single_CH I7 ( .Vssd(cds_globals.\gnd! ), .Vddd(vddd), 
+    .VddH(vddh), .Vdda(vdda), .Vssa(cds_globals.\gnd! ), .Iano(VOUT), 
+    .Icat(net4), .ANO(ANO), .CAT(CAT), .DIS(cds_globals.\gnd! ), 
+    .Ibias(net7), .Mag(MAG[4:0]));
+
+Digital_Stimulus_ST I8 ( .ANO_ST(ANO), .CAT_ST(CAT), 
+    .CH_SEL_ST(CH_SEL), .DIS_ST(DIS), .EN_ST(net14), .MAG_ST(MAG), 
+    .ramping(net5));
+
+endmodule

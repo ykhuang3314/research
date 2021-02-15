@@ -17,13 +17,16 @@
   slashCheck   "t"
  )
 ( defbus
-( "Mag" 4 0  "Mag" 4 0  )
+( "MAG" 4 0  "MAG" 4 0  )
+( "CH_SEL" 1 0  "CH_SEL" 1 0  )
  )
 ( net
 ( "gnd!" "cds_globals.\\gnd! " )
  )
 ( model
+( "Stimulator_Model/Stimulator_Single_CH/schematic" "Stimulator_Single_CH" )
 ( "Stimulator_TestBench/TB_Single_CH/schematic" "TB_Single_CH" )
  )
-( "TB_Single_CH" "ihnl/cds0/map" )
+( "Stimulator_Single_CH" "ihnl/cds0/map" )
+( "TB_Single_CH" "ihnl/cds1/map" )
  )

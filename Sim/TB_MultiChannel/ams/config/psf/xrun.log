@@ -1,5 +1,5 @@
 xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.03-s018: Started on Nov 18, 2020 at 23:55:29 CET
+TOOL:	xrun(64)	18.03-s018: Started on Feb 10, 2021 at 14:07:14 CET
 xrun
 	-f xrunArgs
 		-UNBUFFERED
@@ -38,24 +38,58 @@ xrun
 		-top cds_globals
 		./netlist.vams
 		-f ./textInputs
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/EMG_Clock_Gen/functional/verilog.v lib:EMG_Model cell:EMG_Clock_Gen view:functional"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG view:functional"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams lib:EMG_Model cell:ANA_MUX_EMG view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
-			-amscompilefile "file:/home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
 			-makelib EMG_TestBench
 			-endlib
 		./cds_globals.vams
 		-l ../psf/xrun.log
 		-spectre_args ++aps
+file: ./netlist.vams
+	module EMG_TestBench.TB_MultiChannel:schematic
+		errors: 0, warnings: 0
+	module EMG_Model.AFE_EMG:schematic
+		errors: 0, warnings: 0
+	module EMG_Model.MultiCH_16_EMG:schematic
+		errors: 0, warnings: 0
+file: ./cds_globals.vams
+	module worklib.cds_globals:vams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/EMG_Clock_Gen/functional/verilog.v
+	module EMG_Model.EMG_Clock_Gen:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG/functional/verilog.v
+	module EMG_Model.Digital_Stimuli_EMG:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams
+	module EMG_Model.DAC_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams
+	module EMG_Model.ADC_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
+	module EMG_Model.ANA_MUX_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+	module EMG_Model.IA_EMG_Ideal:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
+	module EMG_Model.PGA_EMG:verilogams
+		errors: 0, warnings: 0
 file: /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
+	module EMG_Model.BPF_EMG:verilogams
+		errors: 0, warnings: 0
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-xmvlog: Memory Usage - Current physical: 25.3M, Current virtual: 57.4M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 89.5% cpu)
+xmvlog: Memory Usage - Current physical: 26.0M, Current virtual: 57.9M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 80.9% cpu)
 		Caching library 'EMG_TestBench' ....... Done
 		Caching library 'worklib' ....... Done
 		Caching library 'EMG_Model' ....... Done
@@ -68,25 +102,39 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 89.5% cpu)
 	Connect Rules applied are:
 		ConnRules_18V_full_fast
 	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		EMG_Model.EMG_Clock_Gen:functional <0x285faf27>
+			streams:   4, words:  2628
+		EMG_Model.Digital_Stimuli_EMG:functional <0x78565d9f>
+			streams:   4, words:  1847
+		EMG_Model.ANA_MUX_EMG:verilogams <0x576b0c18>
+			streams:   1, words:   300
+		EMG_Model.PGA_EMG:verilogams <0x691e4e91>
+			streams:   1, words:   592
+		EMG_Model.ADC_EMG:verilogams <0x45813533>
+	NaN = 0.0/0.0;
+	         |
+xmvlog_cg: *W,REALDZ (/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams,28|10): Division by zero attempted (type real operator).
+			streams:  11, words:  5949
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:                94      29
+		Modules:                94      30
 		Primitives:              6       1
-		Registers:             471     157
-		Scalar wires:           55       -
+		Registers:             393     160
+		Scalar wires:           54       -
 		Expanded wires:         12       1
-		Vectored wires:         27       -
-		Always blocks:         110      60
-		Initial blocks:         25      26
-		Cont. assignments:      21      21
+		Vectored wires:         26       -
+		Always blocks:         104      61
+		Initial blocks:         26      28
+		Cont. assignments:      20      21
 		Pseudo assignments:     10       5
-		Interconnect:          153       -
+		Interconnect:          122       -
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: EMG_TestBench.TB_MultiChannel:config
-xmelab: Memory Usage - Final: 43.8M, Peak: 216.7M, Peak virtual: 301.4M
-xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 96.7% cpu)
+xmelab: Memory Usage - Final: 44.1M, Peak: 216.5M, Peak virtual: 301.4M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.3s total (0.3s, 92.2% cpu)
 Loading snapshot EMG_TestBench.TB_MultiChannel:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
@@ -98,19 +146,19 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 8769
-Memory  available: 52.6999 GB  physical: 67.2863 GB
-Linux   : CentOS Linux release 7.8.2003 (Core)
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 24063
+Memory  available: 44.1376 GB  physical: 67.2863 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1294.8] ( 16 ),  1 [1289.5] ( 17 ),  2 [1374.2] ( 18 )
-                 3 [1200.7] ( 19 ),  4 [1255.1] ( 20 ),  5 [1432.8] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [1538.8] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [2032.9] ( 25 ), 10 [1248.2] ( 26 )
-                11 [1200.0] ( 27 ), 12 [1200.7] ( 28 ), 13 [1200.1] ( 29 )
-                14 [2400.0] ( 30 ), 15 [1200.0] ( 31 )
+        0:       0 [1235.7] ( 16 ),  1 [1203.1] ( 17 ),  2 [1244.5] ( 18 )
+                 3 [1277.3] ( 19 ),  4 [1200.0] ( 20 ),  5 [1200.0] ( 21 )
+                 6 [1200.0] ( 22 ),  7 [1274.9] ( 23 )
+        1:       8 [1273.4] ( 24 ),  9 [1225.9] ( 25 ), 10 [1294.6] ( 26 )
+                11 [1200.0] ( 27 ), 12 [1200.0] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 1.2 %, 0.8 %, 0.6 %
+System load averages (1min, 5min, 15min) : 0.5 %, 0.7 %, 1.8 %
 Hyperthreading is enabled
 HPC is enabled
 
@@ -127,18 +175,18 @@ Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_BPF_EMG_veril
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_BPF_EMG_verilogams_verilog.vams.EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
 Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_BPF_EMG_verilogams_verilog.vams.EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.so
 Installed compiled interface for EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.
-Reading file:  /home/ykhuang/research/EMG_Model/IA_EMG/verilogams/verilog.vams
-Opening directory xcelium.d/AMSD/ahdlSimDB (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_verilogams_verilog.vams.EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
-Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_verilogams_verilog.vams.EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
-Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_verilogams_verilog.vams.EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.so
-Installed compiled interface for EMG_Model__IA_EMG__verilogams__0x10000001_behavioral.
 Reading file:  /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
 Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.so
 Installed compiled interface for EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.
 Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/netlist.vams
 Reading file:  /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
@@ -512,9 +560,9 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/amsControlSpectre.scs
 Reading file:  /home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/.amsbind.scs
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 773.236 ms, elapsed = 953.385 ms.
-Time accumulated: CPU = 1.21835 s, elapsed = 953.39 ms.
-Peak resident memory used = 105 Mbytes.
+Time for NDB Parsing: CPU = 775.892 ms, elapsed = 961.822 ms.
+Time accumulated: CPU = 1.234 s, elapsed = 961.828 ms.
+Peak resident memory used = 106 Mbytes.
 
 xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
 xcelium> 
@@ -577,39 +625,58 @@ xcelium> probe -create -emptyok -database ams_database {TB_MultiChannel.OUT_DAC}
 Created probe 21
 xcelium> 
 xcelium> run
-Time for Elaboration: CPU = 240.676 ms, elapsed = 276.973 ms.
-Time accumulated: CPU = 1.45919 s, elapsed = 1.23053 s.
-Peak resident memory used = 137 Mbytes.
+Time for Elaboration: CPU = 201.878 ms, elapsed = 240.471 ms.
+Time accumulated: CPU = 1.43605 s, elapsed = 1.20247 s.
+Peak resident memory used = 138 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 6.809 ms, elapsed = 6.809 ms.
-Time accumulated: CPU = 1.46621 s, elapsed = 1.23755 s.
-Peak resident memory used = 138 Mbytes.
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8527): There are some nodes and instances removed from the netlist topology check. Check the circuit and correct the topology. Or use preserve_inst to keep them if necessary.
+
+***********************************************
+  Total removed instances 2 ( dangling 2, terminals connected together 0)  
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8529): Dangling instance. TB_MultiChannel.V24 is removed.
+    WARNING (SPECTRE-8529): Dangling instance. TB_MultiChannel.V14 is removed.
+
+
+  Total removed nodes 2 ( dangling nodes 2, floating nodes 0 )
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8530): Dangling node. TB_MultiChannel.Vddd is removed.
+    WARNING (SPECTRE-8530): Dangling node. TB_MultiChannel.net03 is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_MultiChannel.CLK is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_MultiChannel.EoC_ADC is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_MultiChannel.I3__Vdda__27__0 is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_MultiChannel.I3__VrefH__31__0 is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_MultiChannel.I3__VrefL__32__0 is removed.
+        Further occurrences of this warning will be suppressed.
+
+***********************************************
+Time for EDB Visiting: CPU = 7.464 ms, elapsed = 7.46512 ms.
+Time accumulated: CPU = 1.44376 s, elapsed = 1.21018 s.
+Peak resident memory used = 139 Mbytes.
 
 
 Notice from spectre during topology check.
-    No connections to node `TB_MultiChannel.I3__Gain_Sel__26__0'.
-    No connections to node `TB_MultiChannel.I3__Gain_Sel__26__1'.
-    No connections to node `TB_MultiChannel.I3__Gain_Sel__26__2'.
-    No connections to node `TB_MultiChannel.I3__net4__4__0'.
-    No connections to node `TB_MultiChannel.I3__net4__4__1'.
+    No connections to node `TB_MultiChannel.I3__Gain_Sel__28__0'.
+    No connections to node `TB_MultiChannel.I3__Gain_Sel__28__1'.
+    No connections to node `TB_MultiChannel.I3__Gain_Sel__28__2'.
+    No connections to node `TB_MultiChannel.I3__net4__6__0'.
+    No connections to node `TB_MultiChannel.I3__net4__6__1'.
         Further occurrences of this notice will be suppressed.
-    Only one connection to the following 33 nodes:
-        TB_MultiChannel.OUT_DAC
-        TB_MultiChannel.I3.I35.I0.inn
-        TB_MultiChannel.I3.I35.I0.inp
-        TB_MultiChannel.I3.I24.I0.inn
-        TB_MultiChannel.I3.I24.I0.inp
-        Further occurrences of this notice will be suppressed.
-    No DC path from node `TB_MultiChannel.I3__Gain_Sel__26__0' to ground, Gmin installed to provide path.
-    No DC path from node `TB_MultiChannel.I3__Gain_Sel__26__1' to ground, Gmin installed to provide path.
-    No DC path from node `TB_MultiChannel.I3__Gain_Sel__26__2' to ground, Gmin installed to provide path.
-    No DC path from node `TB_MultiChannel.I3__net4__4__0' to ground, Gmin installed to provide path.
-    No DC path from node `TB_MultiChannel.I3__net4__4__1' to ground, Gmin installed to provide path.
+    Only one connection to node `TB_MultiChannel.OUT_DAC'.
+    No DC path from node `TB_MultiChannel.I3__Gain_Sel__28__0' to ground, Gmin installed to provide path.
+    No DC path from node `TB_MultiChannel.I3__Gain_Sel__28__1' to ground, Gmin installed to provide path.
+    No DC path from node `TB_MultiChannel.I3__Gain_Sel__28__2' to ground, Gmin installed to provide path.
+    No DC path from node `TB_MultiChannel.I3__net4__6__0' to ground, Gmin installed to provide path.
+    No DC path from node `TB_MultiChannel.I3__net4__6__1' to ground, Gmin installed to provide path.
         Further occurrences of this notice will be suppressed.
 Notice from spectre during initial setup.
     Multithreading is disabled due to the size of the design being too small.
@@ -640,17 +707,17 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 182
+              nodes 151
 connectLib__Bidir_2__module__0x10000001_behavioral 2     
-connectLib__E2L_2__module__0x10000001_behavioral 6     
+connectLib__E2L_2__module__0x10000001_behavioral 5     
 connectLib__E2R__module__0x10000001_behavioral 3     
 connectLib__L2E_2__module__0x10000001_behavioral 12    
 EMG_Model__ANA_MUX_EMG__verilogams__0x10000001_behavioral 1     
 EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral 16    
 EMG_Model__DAC_EMG__verilogams__0x10000001_behavioral 1     
-EMG_Model__IA_EMG__verilogams__0x10000001_behavioral 16    
+EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral 16    
 EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral 16    
-            vsource 24    
+            vsource 25    
 
 Analysis and control statement inventory:
                info 4     
@@ -659,17 +726,18 @@ Analysis and control statement inventory:
 Output statements:
              .probe 0     
            .measure 0     
-               save 15    
+               save 14    
 
 
 Notice from spectre during initial setup.
     1 vsources are short because their absolute value is less than or equal to 'vabsshort'.
     Fast APS Enabled.
-    29 notices suppressed.
+    28 notices suppressed.
+    5 warnings suppressed.
 
-Time for parsing: CPU = 7.026 ms, elapsed = 11.7071 ms.
-Time accumulated: CPU = 1.47339 s, elapsed = 1.24941 s.
-Peak resident memory used = 139 Mbytes.
+Time for parsing: CPU = 8.053 ms, elapsed = 12.7289 ms.
+Time accumulated: CPU = 1.45199 s, elapsed = 1.22308 s.
+Peak resident memory used = 141 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -709,7 +777,7 @@ Warning from spectre during IC analysis, during transient analysis `tran'.
 Notice from spectre during IC analysis, during transient analysis `tran'.
     Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
 
-DC simulation time: CPU = 45.167 ms, elapsed = 45.301 ms.
+DC simulation time: CPU = 35.052 ms, elapsed = 35.022 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
@@ -740,39 +808,39 @@ Notice from spectre during transient analysis `tran'.
 
 
 Output and IC/nodeset summary:
-                 save   15      (voltage)
+                 save   14      (voltage)
 
-    tran: time = 250 us       (2.5 %), step = 450 ns       (4.5 m%)
-    tran: time = 750 us       (7.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 1.25 ms     (12.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 1.75 ms     (17.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 2.25 ms     (22.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 2.75 ms     (27.5 %), step = 442.9 ns    (4.43 m%)
-    tran: time = 3.25 ms     (32.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 3.75 ms     (37.5 %), step = 442.9 ns    (4.43 m%)
-    tran: time = 4.25 ms     (42.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 4.75 ms     (47.5 %), step = 442.9 ns    (4.43 m%)
-    tran: time = 5.25 ms     (52.5 %), step = 442.9 ns    (4.43 m%)
-    tran: time = 5.75 ms     (57.5 %), step = 442.9 ns    (4.43 m%)
-    tran: time = 6.25 ms     (62.5 %), step = 442.9 ns    (4.43 m%)
-    tran: time = 6.75 ms     (67.5 %), step = 7.143 ns    (71.4 u%)
-    tran: time = 7.25 ms     (72.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 7.75 ms     (77.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 8.25 ms     (82.5 %), step = 7.143 ns    (71.4 u%)
-    tran: time = 8.75 ms     (87.5 %), step = 7.143 ns    (71.4 u%)
-    tran: time = 9.25 ms     (92.5 %), step = 446.4 ns    (4.46 m%)
-    tran: time = 9.75 ms     (97.5 %), step = 446.4 ns    (4.46 m%)
+    tran: time = 250 us       (2.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 750 us       (7.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 1.25 ms     (12.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 1.75 ms     (17.5 %), step = 471.4 ns    (4.71 m%)
+    tran: time = 2.25 ms     (22.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 2.75 ms     (27.5 %), step = 464.3 ns    (4.64 m%)
+    tran: time = 3.25 ms     (32.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 3.75 ms     (37.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 4.25 ms     (42.5 %), step = 464.3 ns    (4.64 m%)
+    tran: time = 4.75 ms     (47.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 5.25 ms     (52.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 5.75 ms     (57.5 %), step = 453.6 ns    (4.54 m%)
+    tran: time = 6.25 ms     (62.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 6.75 ms     (67.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 7.25 ms     (72.5 %), step = 460.7 ns    (4.61 m%)
+    tran: time = 7.75 ms     (77.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 8.25 ms     (82.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 8.75 ms     (87.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 9.25 ms     (92.5 %), step = 467.9 ns    (4.68 m%)
+    tran: time = 9.75 ms     (97.5 %), step = 467.9 ns    (4.68 m%)
 
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
 Simulation stopped via transient analysis stoptime at time 10 MS
-Memory Usage - Current physical: 145.0M, Current virtual: 624.0M
-CPU Usage - 0.5s system + 15.1s user = 15.6s total (98.0% cpu)
+Memory Usage - Current physical: 146.7M, Current virtual: 624.0M
+CPU Usage - 0.5s system + 13.0s user = 13.6s total (91.4% cpu)
 xcelium> exit
-Number of accepted tran steps =             65015
+Number of accepted tran steps =             61433
 
 Maximum value achieved for any signal of each quantity: 
 V: V(TB_MultiChannel.net4[10]) = 1.8 V
-I: I(TB_MultiChannel.V23:p) = 38.57 uA
+I: I(TB_MultiChannel.V18:p) = 180 nA
 If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -782,23 +850,22 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  8 (10.8 %)     11 (17.1 %)     12 (16.8 %)     13 (17.5 %)
-                14 (17.1 %)     15 (17.5 %)     
-        Other    2 (2.4 %)       4 (5.6 %)      21 (1.6 %)      22 (2.5 %)
-                23 (9.9 %)      
-Initial condition solution time: CPU = 45.274 ms, elapsed = 45.4111 ms.
+        Spectre  0 (6.1 %)       1 (90.7 %)      3 (3.5 %)       4 (1.0 %)
+                21 (1.3 %)      22 (4.8 %)      
+        Other    8 (3.4 %)       9 (5.3 %)      26 (1.3 %)      
+Initial condition solution time: CPU = 35.161 ms, elapsed = 35.1329 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
-Number of A-to-D events:                    2146
-  Number of A-to-D events in IEs:           2146
-Number of D-to-A events:                     264
-  Number of D-to-A events in IEs:            212
+Number of A-to-D events:                      87
+  Number of A-to-D events in IEs:             87
+Number of D-to-A events:                     201
+  Number of D-to-A events in IEs:            146
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 14.2791 s, elapsed = 14.3445 s.
-Total time required for tran analysis `tran': CPU = 14.3273 s, elapsed = 14.3952 s.
-Time accumulated: CPU = 15.8162 s, elapsed = 15.6639 s.
-Peak resident memory used = 145 Mbytes.
+Intrinsic tran analysis time:    CPU = 12.2481 s, elapsed = 12.256 s.
+Total time required for tran analysis `tran': CPU = 12.2857 s, elapsed = 12.2959 s.
+Time accumulated: CPU = 13.7571 s, elapsed = 13.542 s.
+Peak resident memory used = 147 Mbytes.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -814,12 +881,12 @@ outputParameter: writing output parameter values to rawfile.
 Opening the PSF file ../psf/outputParameter.info ...
 Simulation complete via transient analysis stoptime at time 10 MS
 
-Aggregate audit (11:55:54 PM, Wed Nov 18, 2020):
-Time used: CPU = 15.9 s, elapsed = 15.7 s, util. = 101%.
-Time spent in licensing: elapsed = 169 ms.
-Peak memory used = 146 Mbytes.
-Simulation started at: 11:55:38 PM, Wed Nov 18, 2020, ended at: 11:55:54 PM, Wed Nov 18, 2020, with elapsed time (wall clock): 15.7 s.
-spectre completes with 0 errors, 5 warnings, and 17 notices.
-xmsim: Memory Usage - Final: 145.7M, Peak: 145.8M, Peak virtual: 624.0M
-xmsim: CPU Usage - 0.6s system + 15.2s user = 15.9s total (16.0s, 99.0% cpu)
-TOOL:	xrun(64)	18.03-s018: Exiting on Nov 18, 2020 at 23:55:54 CET  (total: 00:00:25)
+Aggregate audit (2:07:38 PM, Wed Feb 10, 2021):
+Time used: CPU = 13.8 s, elapsed = 13.6 s, util. = 102%.
+Time spent in licensing: elapsed = 135 ms.
+Peak memory used = 147 Mbytes.
+Simulation started at: 2:07:24 PM, Wed Feb 10, 2021, ended at: 2:07:38 PM, Wed Feb 10, 2021, with elapsed time (wall clock): 13.6 s.
+spectre completes with 0 errors, 15 warnings, and 19 notices.
+xmsim: Memory Usage - Final: 147.4M, Peak: 147.5M, Peak virtual: 624.0M
+xmsim: CPU Usage - 0.6s system + 13.2s user = 13.8s total (14.9s, 92.6% cpu)
+TOOL:	xrun(64)	18.03-s018: Exiting on Feb 10, 2021 at 14:07:38 CET  (total: 00:00:24)

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ykhuang
+HostName                       s2424.it.kth.se
+ProcessIdentifier              10648
+ProcessCreationTime_UTC        1613395468
+ProcessCreationTime_Readable   Mon Feb 15 14:24:28 2021 CET
+AppIdentifier                  /pkg/cadence/installs/IC618/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Lock file for generating unique number for ICRP command and log file directories.
+FilePathUsedToEditLock         /home/ykhuang/research/.tmp_ykhuang/.unique_number_0_file
+TimeEditLocked                 Mon Feb 15 15:46:30 2021 CET

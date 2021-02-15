@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"CH_SEL_EMG<0>v" "CH_SEL_EMG[0]v"
+"CH_SEL_EMG<1>v" "CH_SEL_EMG[1]v"
+"CH_SEL_EMG<2>v" "CH_SEL_EMG[2]v"
+"CH_SEL_EMG<3>v" "CH_SEL_EMG[3]v"
+"gnd!v" "cds_globals.\\gnd! v"
