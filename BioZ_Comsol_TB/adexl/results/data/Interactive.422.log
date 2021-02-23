@@ -1,0 +1,53 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Jan 13 12:16:18 2021 
+Best design point: 1
+Design specs: 
+	BioZ_EMG_Model:BioZ_Comsol_TB:1	corner	Nominal - 
+Design parameters: 
+	a1_arm_2cm		990m
+	a1_arm_4cm		930m
+	a1_leg_2cm		990m
+	a1_leg_4cm		950m
+	a2_arm_2cm		800m
+	a2_arm_4cm		800m
+	a2_leg_2cm		780m
+	a2_leg_4cm		880m
+	a3_arm_2cm		710m
+	a3_arm_4cm		860m
+	a3_leg_2cm		800m
+	a3_leg_4cm		860m
+	R1_arm_2cm		31
+	R1_arm_4cm		46
+	R1_leg_2cm		10
+	R1_leg_4cm		10.5
+	R2_arm_2cm		35
+	R2_arm_4cm		40
+	R2_leg_2cm		16
+	R2_leg_4cm		8.7
+	R3_arm_2cm		16
+	R3_arm_4cm		10
+	R3_leg_2cm		4
+	R3_leg_4cm		1.8
+	Rinf_arm_2cm		10
+	Rinf_arm_4cm		12
+	Rinf_leg_2cm		6
+	Rinf_leg_4cm		6
+	Z1_arm_2cm		7K
+	Z1_arm_4cm		9K
+	Z1_leg_2cm		1.8K
+	Z1_leg_4cm		2.4K
+	Z2_arm_2cm		1.5M
+	Z2_arm_4cm		1.6M
+	Z2_leg_2cm		600K
+	Z2_leg_4cm		1.7M
+	Z3_arm_2cm		17K
+	Z3_arm_4cm		20K
+	Z3_leg_2cm		13K
+	Z3_leg_4cm		6K
+
+Interactive.422
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.422 completed. 
+Current time: Wed Jan 13 12:16:22 2021 

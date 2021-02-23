@@ -1,0 +1,45 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_AFE_GM-Cell" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_AFE_GM_Cell ( IOUT_N, IOUT_P, VIN_N, VIN_P, bias_in, vdda, vssa, vsub );
+
+  input vsub;
+  input VIN_P;
+  input VIN_N;
+  output IOUT_P;
+  output IOUT_N;
+  input vdda;
+  input bias_in;
+  input vssa;
+
+  electrical IOUT_N, IOUT_P, VIN_N, VIN_P, vssa;
+  
+  parameter real vcm = 0.9; //Common mode voltage
+  parameter real Av = 20000; //DC voltage Gain 
+  parameter real GM = 0.1u; //Transconductance
+
+  //real GM; //Transconductance
+  real Gout, Gout_se, vodif; 
+
+  // Analog block
+  analog begin
+
+	@(initial_step) begin
+		Gout=GM/Av;  //Gout differential 
+		Gout_se = 2*Gout; //Gout single ended 
+	end
+
+  	
+	vodif = Av*V(VIN_P,VIN_N); // Differential gain (DC)
+	
+    //Amplifier Ouput current
+	I(IOUT_P,vssa) <+ (V(IOUT_P,vssa)-(vcm+vodif/2))*Gout_se;
+	I(IOUT_N,vssa) <+ (V(IOUT_N,vssa)-(vcm-vodif/2))*Gout_se;
+	
+  end 
+
+
+
+endmodule

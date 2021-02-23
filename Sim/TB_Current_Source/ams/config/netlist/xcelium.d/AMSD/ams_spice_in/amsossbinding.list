@@ -1,5 +1,7 @@
 designtop="Stimulator_TestBench.TB_Current_Source:schematic"
 cell="Current_Source" lib="Stimulator_Model" view="verilogams" 
+cell="Current_Mirror" lib="Stimulator_Model" view="verilogams" 
+cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional" 
+cell="isource" view="analogtext" 
 cell="vsource" view="analogtext" 
 cell="resistor" view="analogtext" 
-cell="Counter" lib="Digital_Lib" view="functional" 

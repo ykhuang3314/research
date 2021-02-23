@@ -1,0 +1,5 @@
+define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT EMG_Model.Digital_Stimuli_EMG_V2:functional
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => worklib )

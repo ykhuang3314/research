@@ -4,7 +4,6 @@ Stimulator_TestBench/TB_Current_Source/schematic Stimulator_TestBench/TB_Current
 $endmodel
 $net
 gnd! 0
-vdda! vdda!
 $endnet
 $param
 $endparam

@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 15215
+// User: ykhuang Pid: 9799
 // Design library name: EMG_TestBench
 // Design cell name: TB_MultiChannel
 // Design view name: config
@@ -10,17 +10,17 @@
 
 `include "disciplines.vams"
 `include "userDisciplines.vams"
-// HDL file - EMG_Model, EMG_Clock_Gen, functional.
-// HDL file - EMG_Model, DAC_EMG, verilogams.
-// HDL file - EMG_Model, Digital_Stimuli_EMG, functional.
 // HDL file - EMG_Model, ADC_EMG, verilogams.
 // HDL file - EMG_Model, ANA_MUX_EMG, verilogams.
 // HDL file - EMG_Model, IA_EMG_Ideal, verilogams.
 // HDL file - EMG_Model, PGA_EMG, verilogams.
 // HDL file - EMG_Model, BPF_EMG, verilogams.
+// HDL file - EMG_Model, Signal_Gen, verilogams.
+// HDL file - EMG_Model, Digital_Stimuli_EMG_V2, functional.
+// HDL file - EMG_Model, DAC_EMG, verilogams.
 // Library - EMG_TestBench, Cell - TB_MultiChannel, View - schematic
-// LAST TIME SAVED: Feb 10 14:06:57 2021
-// NETLIST TIME: Feb 10 14:07:11 2021
+// LAST TIME SAVED: Feb 19 18:15:20 2021
+// NETLIST TIME: Feb 19 18:22:50 2021
 
 `worklib EMG_TestBench
 `view schematic
@@ -29,69 +29,57 @@
 (* cds_ams_schematic *)
 
 module TB_MultiChannel ( );
-wire [2:0] Gain_Sel;
-wire [3:0] CH_Sel;
-wire [0:11] net4;
-wire VrefL;
-wire VrefH;
-wire E16;
-wire E15;
-wire E14;
-wire E13;
-wire E12;
-wire E11;
-wire E10;
-wire E9;
-wire E8;
-wire E7;
-wire E6;
-wire E5;
-wire E4;
-wire E3;
-wire E2;
-wire E1;
-wire Start;
-wire CLK;
-wire EoC_ADC;
-wire Vdda;
-wire net3;
-wire Vddd;
-wire CLK_DAC;
+wire [2:0] EMG_GAIN_SEL;
+wire [3:0] EMG_CH_SEL;
+wire [11:0] EMG_ADC_DOUT;
+wire vdda;
+wire EMG_ADC_CLK;
 wire OUT_DAC;
-MultiCH_16_EMG I3 (.Vddd( Vddd ), .Vssd(cds_globals.\gnd! ), .Ibias( net3 ), .Vdda( Vdda ), .Vssa(cds_globals.\gnd! ), .Vsub(cds_globals.\gnd! ), .Dout( net4[0:11] ), .EoC_ADC( EoC_ADC ), .CH_Sel( CH_Sel[3:0] ), .CLK_ADC( CLK ), .CLK_MUX( Start ), .E1( E1 ), .E2( E2 ), .E3( E3 ), .E4( E4 ), .E5( E5 ), .E6( E6 ), .E7( E7 ), .E8( E8 ), .E9( E9 ), .E10( E10 ), .E11( E11 ), .E12( E12 ), .E13( E13 ), .E14( E14 ), .E15( E15 ), .E16( E16 ), .En_ADC( Vdda ), .Gain_Sel( Gain_Sel[2:0] ), .Start_ADC( Start ), .Vref(cds_globals.\gnd! ), .VrefH_ADC( VrefH ), .VrefL_ADC( VrefL ));
-Digital_Stimuli_EMG I4 (.CH_Sel( CH_Sel ), .start( Start ), .CLK( CLK ), .Reset(cds_globals.\gnd! ));
-DAC_EMG #(.thresh(0.9)) I5 (.Vout( OUT_DAC ), .Clk( CLK_DAC ), .Din( net4 ), .Vdda( Vdda ), .Vssa(cds_globals.\gnd! ));
-EMG_Clock_Gen I13 (.CLK( CLK ));
-vsource #(.dc(0), .type("dc")) V6 (Gain_Sel[0], cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V5 (Gain_Sel[1], cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V4 (Gain_Sel[2], cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V20 (VrefL, cds_globals.\gnd! );
-vsource #(.dc(1.5), .type("dc")) V19 (VrefH, cds_globals.\gnd! );
-vsource #(.dc(1.8), .type("dc")) V18 (Vdda, cds_globals.\gnd! );
-vsource #(.dc(1.8), .type("dc")) V24 (Vddd, cds_globals.\gnd! );
-vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(1/(50e+3*14)), .delay(1/(100e+3*14)), .width(1/(100e+3*14))) V7 (CLK_DAC, cds_globals.\gnd! );
-vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(1/50e+3), .delay(1/100e+3), .width(1/100e+3)) V14 (net03, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V22 (E1, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V21 (E2, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V17 (E3, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V16 (E4, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V15 (E5, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V13 (E6, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V12 (E7, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V11 (E8, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V10 (E9, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V9 (E10, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V8 (E11, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V23 (E16, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V3 (E12, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V1 (E13, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V0 (E14, cds_globals.\gnd! );
-vsource #(.type("sine"), .ampl(0.005), .freq(100)) V2 (E15, cds_globals.\gnd! );
+wire net1;
+wire EMG_ADC_START;
+wire EMG_MUX_CLK;
+wire EMG_ADC_EN;
+wire EMG_Ch16;
+wire EMG_Ch15;
+wire EMG_Ch14;
+wire EMG_Ch13;
+wire EMG_Ch12;
+wire EMG_Ch11;
+wire EMG_Ch10;
+wire EMG_Ch9;
+wire EMG_Ch8;
+wire EMG_Ch7;
+wire EMG_Ch6;
+wire EMG_Ch5;
+wire EMG_Ch4;
+wire EMG_Ch3;
+wire EMG_Ch2;
+wire EMG_Ch1;
+wire vssa;
+wire EMG_ADC_VrefL;
+wire EMG_ADC_VrefH;
+wire EMG_ADC_EOC;
+wire vsub;
+wire Ibias;
+wire vssd;
+wire vddd;
+DAC_EMG #(.thresh(0.9)) I78 (.Vout( OUT_DAC ), .Clk( EMG_ADC_CLK ), .Din( EMG_ADC_DOUT ), .Vdda( vdda ), .Vssa(cds_globals.\gnd! ));
+Digital_Stimuli_EMG_V2 #(.VGA_Gain(3'b100)) I0 (.GAIN_EMG( EMG_GAIN_SEL ), .CH_SEL_EMG( EMG_CH_SEL ), .CLK_EMG( EMG_ADC_CLK ), .EN_ADC_EMG( EMG_ADC_EN ), .MUX_CLK_EMG( EMG_MUX_CLK ), .START_EMG( EMG_ADC_START ), .Enable( net1 ), .RESET(cds_globals.\gnd! ));
+Signal_Gen I3 (.Vdda( vdda ), .Vssa( vssa ), .V1( EMG_Ch1 ), .V2( EMG_Ch2 ), .V3( EMG_Ch3 ), .V4( EMG_Ch4 ), .V5( EMG_Ch5 ), .V6( EMG_Ch6 ), .V7( EMG_Ch7 ), .V8( EMG_Ch8 ), .V9( EMG_Ch9 ), .V10( EMG_Ch10 ), .V11( EMG_Ch11 ), .V12( EMG_Ch12 ), .V13( EMG_Ch13 ), .V14( EMG_Ch14 ), .V15( EMG_Ch15 ), .V16( EMG_Ch16 ));
+MultiCH_16_EMG I9 (.Vddd( vddd ), .Vssd( vssd ), .Ibias( Ibias ), .Vdda( vdda ), .Vssa( vssa ), .Vsub( vsub ), .Dout( EMG_ADC_DOUT[11:0] ), .EoC_ADC( EMG_ADC_EOC ), .CH_Sel( EMG_CH_SEL[3:0] ), .CLK_ADC( EMG_ADC_CLK ), .CLK_MUX( EMG_MUX_CLK ), .E1( EMG_Ch1 ), .E2( EMG_Ch2 ), .E3( EMG_Ch3 ), .E4( EMG_Ch4 ), .E5( EMG_Ch5 ), .E6( EMG_Ch6 ), .E7( EMG_Ch7 ), .E8( EMG_Ch8 ), .E9( EMG_Ch9 ), .E10( EMG_Ch10 ), .E11( EMG_Ch11 ), .E12( EMG_Ch12 ), .E13( EMG_Ch13 ), .E14( EMG_Ch14 ), .E15( EMG_Ch15 ), .E16( EMG_Ch16 ), .En_ADC( EMG_ADC_EN ), .Gain_Sel( EMG_GAIN_SEL[2:0] ), .Start_ADC( EMG_ADC_START ), .Vref(cds_globals.\gnd! ), .VrefH_ADC( EMG_ADC_VrefH ), .VrefL_ADC( EMG_ADC_VrefL ));
+vsource #(.type("pwl"), .wave({"0", "0", "1e-05", "1.8"})) V5 (net1, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V8 (vssa, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V12 (vsub, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V11 (vssd, cds_globals.\gnd! );
+vsource #(.dc(1.8), .type("dc")) V2 (vdda, cds_globals.\gnd! );
+vsource #(.dc(1.8), .type("dc")) V3 (vddd, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V4 (EMG_ADC_VrefL, cds_globals.\gnd! );
+vsource #(.dc(1.5), .type("dc")) V1 (EMG_ADC_VrefH, cds_globals.\gnd! );
 
 endmodule
 // Library - EMG_Model, Cell - AFE_EMG, View - schematic
 // LAST TIME SAVED: Feb  9 12:37:09 2021
-// NETLIST TIME: Feb 10 14:07:11 2021
+// NETLIST TIME: Feb 19 18:22:50 2021
 
 `worklib EMG_Model
 `view schematic
@@ -115,7 +103,7 @@ IA_EMG_Ideal I0 (.Ibias( Ibias ), .Vdda( Vdda ), .Vssa( Vssa ), .Vsub( Vsub ), .
 endmodule
 // Library - EMG_Model, Cell - MultiCH_16_EMG, View - schematic
 // LAST TIME SAVED: Feb  9 13:18:29 2021
-// NETLIST TIME: Feb 10 14:07:11 2021
+// NETLIST TIME: Feb 19 18:22:50 2021
 
 `worklib EMG_Model
 `view schematic

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"__artInstanceTerminalDelimiter__" "."
+"__artHierarchyDelimiter__" "."
+"__netlister__" "AMS-UNL"
+"__lib__" "EMG_TestBench"
+"__cell__" "TB_EMG_w_SwitchArray"
+"__view__" "config"
+"__topcell__" "TB_EMG_w_SwitchArray"
+"__outputformat__" "sst2"

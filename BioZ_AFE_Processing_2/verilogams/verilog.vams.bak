@@ -1,0 +1,55 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_AFE_Processing_2" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_AFE_Processing_2 ( VIN_P_I, VIN_N_I, VIN_P_Q, VIN_N_Q, re, im, mag, pha, G_CTRL_TCA_AFE, G_CTRL_TIA_AFE, Gain_TCA_SigGen);
+
+	input VIN_P_I, VIN_N_I, VIN_P_Q, VIN_N_Q, G_CTRL_TCA_AFE, G_CTRL_TIA_AFE;
+	input [1:0] Gain_TCA_SigGen;
+	output re, im, mag, pha;
+
+	logic G_CTRL_TCA_AFE,G_CTRL_TIA_AFE;
+	logic [1:0] Gain_TCA_SigGen;
+	electrical VIN_P_I, VIN_N_I, VIN_P_Q, VIN_N_Q, re, im, mag, pha;
+
+	real TCA_gain = 20u; // [I/V]
+	real TIA_gain = 10M; // [V/I]
+	real I_stim_se = 50u;
+
+	integer sel = 0; // sel = 0 for I path, sel = 1 for Q path
+	real re_buffer, im_buffer, mag_buffer, pha_buffer;
+
+	always @(G_CTRL_TCA_AFE,G_CTRL_TIA_AFE,Gain_TCA_SigGen) begin
+		if (G_CTRL_TCA_AFE == 1) begin
+			TCA_gain = 20u;
+		end else if (G_CTRL_TCA_AFE == 0) begin
+			TCA_gain = 6.66666u;
+		end
+		if (G_CTRL_TIA_AFE == 1) begin
+			TIA_gain = 10M;
+		end else if (G_CTRL_TIA_AFE == 0) begin
+			TIA_gain = 3.33333M;
+		end
+		case (Gain_TCA_SigGen)
+			2'b00: I_stim_se = 50u/9;
+			2'b01: I_stim_se = 50u/3;
+			2'b10: I_stim_se = 50u;
+			default: I_stim_se = 50u;
+		endcase
+	end
+
+	analog begin
+		
+		re_buffer = -(`M_PI/2) * (V(VIN_P_I,VIN_N_I) / (I_stim_se*TCA_gain*TIA_gain));
+		im_buffer = -(`M_PI/2) * (V(VIN_P_Q,VIN_N_Q) / (I_stim_se*TCA_gain*TIA_gain));
+		mag_buffer = sqrt(pow(re_buffer,2)+pow(im_buffer,2))/2; //Divided by 2 to account for 2 BioZ models with path to GND
+		pha_buffer = atan(im_buffer/re_buffer)*(180.0/`M_PI) - 22.5;
+		V(mag) <+ mag_buffer;
+		V(pha) <+ pha_buffer;
+		V(re) <+ mag_buffer*cos(pha_buffer*`M_PI/180);
+		V(im) <+ mag_buffer*sin(pha_buffer*`M_PI/180);
+
+	end
+
+endmodule

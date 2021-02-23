@@ -1,0 +1,21 @@
+
+CH_SEL_MUX_V2 I8 ( .IN(net32), .OUT0(E10), .OUT1(E11), .OUT2(E12), 
+    .OUT3(E13), .Vdda(vdda), .Vddd(vddd), .Vssa(vssa), .Vssd(vssd), 
+    .CH_SEL(CH_SEL_D_ST));
+
+CH_SEL_MUX_V2 I6 ( .IN(net31), .OUT0(E00), .OUT1(E01), .OUT2(E02), 
+    .OUT3(E03), .Vdda(vdda), .Vddd(vddd), .Vssa(vssa), .Vssd(vssd), 
+    .CH_SEL(CH_SEL_U_ST));
+
+Current_Source I3 ( .EN(EN_ST), .Vssd(vssd), .Vddd(vddd), 
+    .Ibias(Ibias), .Vdda(vdda), .Vssa(vssa), .Ioutn(Iout_dac), 
+    .Ioutp(vdda), .Mag(MAG_ST));
+
+Current_Mirror I1 ( .ANO(ANO_ST), .CAT(CAT_ST), .Iref(Iout_dac), 
+    .EN(EN_ST), .Iout(Ist), .Vdda(vdda), .Vssa(vssa));
+
+H_Bridge I0 ( .Vssd(vssd), .Vddd(vddd), .Ist(Ist), .VddH(vddh), 
+    .Vdda(vdda), .Vssa(vssa), .Iano(net31), .Icat(net32), .ANO(ANO_ST), 
+    .CAT(CAT_ST), .DIS(DIS_ST));
+
+endmodule

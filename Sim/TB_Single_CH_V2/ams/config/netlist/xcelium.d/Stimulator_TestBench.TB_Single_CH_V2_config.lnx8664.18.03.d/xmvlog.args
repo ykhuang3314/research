@@ -1,0 +1,71 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/Stimulator_TestBench.TB_Single_CH_V2_config.lnx8664.18.03.d
+-RUNMODE
+-amsossirunbind
+.amsbind.scs
+-CDSLIB
+./xcelium.d/Stimulator_TestBench.TB_Single_CH_V2_config.lnx8664.18.03.d/cdsrun.lib
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-AUTO_USE_REFFILE
+-AMSINPUT
+-AUTO_USE_REFFILE
+-AMSINPUT
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-DEFINE
+CONNRULES_INHCONN_FULL_FAST_GND
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+-ALLOWREDEFINITION
+./netlist.vams
+./cds_globals.vams
+-SNAPSHOT
+Stimulator_TestBench.TB_Single_CH_V2:config
+-HDLVAR
+./xcelium.d/Stimulator_TestBench.TB_Single_CH_V2_config.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v
+/home/ykhuang/research/Stimulator_Model/CH_SEL_MUX_V2/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/CH_SEL_MUX_V2/verilogams/verilog.vams lib:Stimulator_Model cell:CH_SEL_MUX_V2 view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/Stimulator_TestBench.TB_Single_CH_V2_config.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-hastop
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

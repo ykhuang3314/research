@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_TestBench.TB_EMG_w_SwitchArray:config
+// Created On: Feb 19 17:42:44 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_TestBench.TB_EMG_w_SwitchArray:schematic"
+
+	config cell="MultiCH_16_EMG" lib="EMG_Model" view="schematic"
+	config cell="PGA_EMG" lib="EMG_Model" view="verilogams"
+	config cell="Signal_Gen" lib="EMG_Model" view="verilogams"
+	config cell="DAC_EMG" lib="EMG_Model" view="verilogams"
+	config cell="ANA_MUX_EMG" lib="EMG_Model" view="verilogams"
+	config cell="BPF_EMG" lib="EMG_Model" view="verilogams"
+	config cell="BioZ_EMG_SwitchArray16" lib="BioZ_EMG_Model" view="verilogams"
+	config cell="vsource" view="analogtext"
+	config cell="Digital_Stimuli_EMG_V2" lib="EMG_Model" view="functional"
+	config cell="AFE_EMG" lib="EMG_Model" view="schematic"
+	config cell="IA_EMG_Ideal" lib="EMG_Model" view="verilogams"
+	config cell="ADC_EMG" lib="EMG_Model" view="verilogams"
+
+ }

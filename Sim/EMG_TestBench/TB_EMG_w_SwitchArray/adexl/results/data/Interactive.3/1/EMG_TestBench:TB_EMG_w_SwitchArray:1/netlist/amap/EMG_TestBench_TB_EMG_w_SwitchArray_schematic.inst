@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"V1n V11n V12n V2n V3n V31n V32n V33n V34n V35n V4n V6n V7n V8n V9n" "analogLib_vdc_spectre"
+"V5n" "analogLib_vpwl_spectre"
+"I0n" "EMG_Model_Digital_Stimuli_EMG_V2_functional"
+"I17n" "BioZ_EMG_Model_BioZ_EMG_SwitchArray16_verilogams"
+"I3n" "EMG_Model_Signal_Gen_verilogams"
+"I78n" "EMG_Model_DAC_EMG_verilogams"
+"I9n" "EMG_Model_MultiCH_16_EMG_schematic"

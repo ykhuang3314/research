@@ -1,0 +1,23 @@
+//Verilog HDL for "BioZ_EMG_Model", "BioZ_PLL_FD" "functional"
+//Frequency Divider
+
+module BioZ_PLL_FD (qinc, qdec, active, ref, reset);
+    output qinc, qdec;
+    input reset, active, ref;
+    wire fv_rst, fr_rst;
+    reg q0, q1;
+
+    assign fr_rst = reset | (q0 & q1);
+    assign fv_rst = reset | (q0 & q1);
+
+    always @(posedge active or posedge fv_rst) begin
+	    if (fv_rst) q0 <= 0; else q0 <= 1;
+    end
+
+    always @(posedge ref or posedge fr_rst) begin
+	    if (fr_rst) q1 <= 0; else q1 <= 1;
+    end
+
+    assign qinc = q1;
+    assign qdec = q0;
+endmodule

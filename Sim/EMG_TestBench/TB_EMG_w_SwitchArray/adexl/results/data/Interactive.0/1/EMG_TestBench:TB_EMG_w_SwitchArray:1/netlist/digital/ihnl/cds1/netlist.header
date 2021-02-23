@@ -1,0 +1,29 @@
+// Library - EMG_Model, Cell - MultiCH_16_EMG, View - schematic
+// LAST TIME SAVED: Feb  9 13:18:29 2021
+// NETLIST TIME: Feb 19 17:43:15 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_Model
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_Model", dfII_cell="MultiCH_16_EMG", dfII_view="schematic", worklib_name="EMG_Model", view_name="schematic", last_save_time="Feb  9 13:18:29 2021" *)
+
+module MultiCH_16_EMG (Dout, EoC_ADC, Ibias, Vdda, Vddd, Vssa, Vssd, 
+    Vsub, CH_Sel, CLK_ADC, CLK_MUX, E1, E2, E3, E4, E5, E6, E7, E8, E9, 
+    E10, E11, E12, E13, E14, E15, E16, En_ADC, Gain_Sel, Start_ADC, 
+    Vref, VrefH_ADC, VrefL_ADC);
+
+output  EoC_ADC;
+
+inout  Ibias, Vdda, Vddd, Vssa, Vssd, Vsub;
+
+input  CLK_ADC, CLK_MUX, E1, E2, E3, E4, E5, E6, E7, E8, E9, E10, E11, 
+    E12, E13, E14, E15, E16, En_ADC, Start_ADC, Vref, VrefH_ADC, 
+    VrefL_ADC;
+
+output [11:0]  Dout;
+
+input [2:0]  Gain_Sel;
+input [3:0]  CH_Sel;
+

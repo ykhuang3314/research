@@ -1,0 +1,10 @@
+1614002296 /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.2/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/.mapi/dummyMapi.vams
+1613751073 /home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v
+1612867538 /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
+1614002013 /home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams
+1605303912 /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
+1613226291 /home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams
+1605740047 /home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams
+1612867711 /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
+1612885663 /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+1613755496 /home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams

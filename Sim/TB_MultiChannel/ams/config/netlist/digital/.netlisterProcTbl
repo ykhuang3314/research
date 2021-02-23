@@ -1,5 +1,4 @@
-("analogLib" "vpulse" "spectre") spectreSrcPrim
 ("EMG_Model" "MultiCH_16_EMG" "schematic") nil
-("analogLib" "vsin" "spectre") spectreSrcPrim
+("analogLib" "vpwl" "spectre") spectrePwlsrcPrim
 ("analogLib" "vdc" "spectre") spectreSrcPrim
 ("EMG_Model" "AFE_EMG" "schematic") nil

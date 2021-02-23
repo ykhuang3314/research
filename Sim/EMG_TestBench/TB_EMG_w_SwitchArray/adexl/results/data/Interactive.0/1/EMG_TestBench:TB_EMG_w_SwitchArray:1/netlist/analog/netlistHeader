@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Feb 19 17:42:39 2021
+// Design library name: EMG_TestBench
+// Design cell name: TB_EMG_w_SwitchArray
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

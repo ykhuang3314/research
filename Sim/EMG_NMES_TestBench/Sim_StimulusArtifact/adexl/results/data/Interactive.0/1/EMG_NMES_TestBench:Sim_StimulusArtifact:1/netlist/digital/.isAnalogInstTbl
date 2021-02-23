@@ -1,0 +1,15 @@
+("EMG_Model" "BPF_EMG" "verilogams" nil) nil
+("Stimulator_Model" "Current_Mirror" "verilogams" nil) nil
+("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" nil) nil
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("EMG_Model" "PGA_EMG" "verilogams" nil) nil
+("analogLib" "vpwl" "spectre" spectrePwlsrcPrim) t
+("Stimulator_Model" "CH_SEL_MUX_V2" "verilogams" nil) nil
+("analogLib" "res" "spectre" nil) t
+("Stimulator_Model" "Current_Source" "verilogams" nil) nil
+("analogLib" "cap" "spectre" nil) t
+("Stimulator_Model" "Stimulator_4CH_V2" "schematic" nil) nil
+("EMG_Model" "IA_EMG_Ideal" "verilogams" nil) nil
+("Stimulator_Model" "H_Bridge" "verilogams" nil) nil
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("EMG_Model" "AFE_EMG" "schematic" nil) nil

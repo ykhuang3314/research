@@ -1,6 +1,6 @@
 // Library - EMG_Model, Cell - MultiCH_16_EMG, View - schematic
 // LAST TIME SAVED: Feb  9 13:18:29 2021
-// NETLIST TIME: Feb 10 14:07:07 2021
+// NETLIST TIME: Feb 19 18:22:46 2021
 `timescale 1ns / 1ps 
 
 `worklib EMG_Model

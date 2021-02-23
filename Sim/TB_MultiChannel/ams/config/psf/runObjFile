@@ -1,10 +1,10 @@
 HEADER
 "PSFversion" "1.00"
 "Run Generator" "drlRun rev. 1.0"
-"Run Time Stamp" "Feb 10 14:07:13 2021"
+"Run Time Stamp" "Feb 19 18:22:53 2021"
 "simulator" "ams"
 "solver" "Spectre"
-"date" "Feb 10 14:07:13 2021"
+"date" "Feb 19 18:22:53 2021"
  "externalSweepVariableCount" 0
 "#maeTestName" ""
 "#maeHistoryName" ""

@@ -1,0 +1,25 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_Single_CH_V2
+// View name: schematic
+// Inherited view list: schematic
+I4 (vdda net9) isource dc=10u type=dc
+V7 (vssd 0) vsource dc=0 type=dc
+V8 (vssa 0) vsource dc=0 type=dc
+V4 (vddh 0) vsource dc=40 type=dc
+V3 (vdda 0) vsource dc=1.8 type=dc
+V6 (vddd 0) vsource dc=1.8 type=dc
+V2 (net7 0) vsource dc=1.8 type=dc
+V1 (net8 0) vsource dc=0 type=dc
+V0 (enable 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]
+R20 (net06 net08) resistor r=1K
+R19 (net05 net06) resistor r=1K
+R18 (net17 net06) resistor r=1K
+R17 (net06 net19) resistor r=1K
+R16 (net05 net23) resistor r=1K
+R15 (net21 net05) resistor r=1K
+R14 (net08 net010) resistor r=1K
+R13 (net24 net010) resistor r=1K
+R12 (net010 net014) resistor r=1K
+R11 (net08 net016) resistor r=1K
+R10 (net22 net08) resistor r=1K

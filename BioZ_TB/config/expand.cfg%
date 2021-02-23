@@ -1,0 +1,32 @@
+//Revision 13
+config BioZ_TB;
+design BioZ_EMG_Model.BioZ_TB:schematic;
+liblist BioZ_EMG_Model, analogLib, EMG_Model;
+
+viewlist ahdl, behavioral, functional, spectre, schematic, symbol;
+stoplist spectreS, symbol;
+
+
+cell BioZ_EMG_Model.BioZ_AFE_ADC binding :verilogams;
+cell BioZ_EMG_Model.BioZ_AFE_Processing_2 binding :verilogams;
+cell BioZ_EMG_Model.BioZ_SigGen_TOP binding :schematic;
+cell BioZ_EMG_Model.BioZ_SigGen_ClkGen binding :functional;
+cell BioZ_EMG_Model.BioZ_Model binding :schematic;
+cell BioZ_EMG_Model.BioZ_Digital_stim binding :functional;
+cell BioZ_EMG_Model.BioZ_AFE_TOP binding :schematic;
+cell BioZ_EMG_Model.BioZ_AFE_BUFFER binding :verilogams;
+cell BioZ_EMG_Model.BioZ_AFE_GM_Cell binding :verilogams;
+cell BioZ_EMG_Model.BioZ_AFE_LPF binding :verilogams;
+cell BioZ_EMG_Model.BioZ_AFE_Mixer_2 binding :verilogams;
+cell BioZ_EMG_Model.BioZ_AFE_TCA binding :verilogams;
+cell BioZ_EMG_Model.BioZ_AFE_TIA binding :verilogams;
+cell BioZ_EMG_Model.BioZ_SigGen_DAC binding :verilogams;
+cell BioZ_EMG_Model.BioZ_SigGen_LPF binding :verilogams;
+cell BioZ_EMG_Model.BioZ_SigGen_TCA binding :verilogams;
+cell BioZ_EMG_Model.BioZ_SigGen_DACCtrl binding :functional;
+
+cell EMG_Model.DAC_EMG binding :verilogams;
+cell EMG_Model.SwitchArray16_EMG_BI binding :verilogams;
+
+
+endconfig

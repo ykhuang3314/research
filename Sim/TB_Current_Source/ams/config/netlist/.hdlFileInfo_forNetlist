@@ -1,2 +1,3 @@
-// HDL file - Digital_Lib, Counter, functional.
+// HDL file - Stimulator_Model, Digital_Stimulus_ST_V2, functional.
+// HDL file - Stimulator_Model, Current_Mirror, verilogams.
 // HDL file - Stimulator_Model, Current_Source, verilogams.

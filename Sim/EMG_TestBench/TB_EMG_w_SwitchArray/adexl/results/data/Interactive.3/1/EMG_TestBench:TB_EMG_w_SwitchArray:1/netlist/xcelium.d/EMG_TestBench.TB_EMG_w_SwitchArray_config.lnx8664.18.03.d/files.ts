@@ -1,0 +1,10 @@
+1614002680 /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.3/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/cds.lib
+1614002678 /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.3/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/.amsbind.scs
+1614002680 /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.3/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/spiceModels.scs
+1614002680 /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.3/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/amsControlSpectre.scs
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+1614002678 /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.3/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/netlist.vams
+1613752964 /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.3/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/cds_globals.vams

@@ -8,7 +8,9 @@ module Digital_Stimuli_EMG_V2 (
 		output reg EN_ADC_EMG, 
 		output reg[3:0] CH_SEL_EMG, 
 		output reg START_EMG, 
-		output reg MUX_CLK_EMG );
+		output reg MUX_CLK_EMG,
+		output reg[2:0] GAIN_EMG
+		 );
 
 integer cnt_conv, cnt_ch;
 
@@ -16,7 +18,8 @@ real clk_rate, clk_period, mux_clk_rate, mux_clk_period;
 
 parameter num_of_channel = 16; 
 parameter sampling_rate = 2; // in kHz/channel
-parameter ADC_clk_cycle = 15; // ADC takes 15 clock cycles to convert
+parameter ADC_clk_cycle = 13; // ADC takes 13 clock cycles to convert
+parameter VGA_Gain = 3'b111; // 
 
 initial begin
 
@@ -30,12 +33,12 @@ initial begin
 	cnt_ch = 1;
 
 	// initial value for all REG
-	EN_ADC_EMG <= 1'b0;
+	EN_ADC_EMG <= 1'b1;
 	CH_SEL_EMG <= 4'b0000;
 	START_EMG <= 1'b0;
 	CLK_EMG <= 1'b0;
 	MUX_CLK_EMG <= 1'b0;
-	
+	GAIN_EMG <= VGA_Gain;
 end
 
 always begin
@@ -63,14 +66,14 @@ always@(posedge CLK_EMG or posedge RESET ) begin
 		cnt_conv = 0;
 	end
 	
+	//if(cnt_conv == 0) begin
+		//EN_ADC_EMG <= 1'b1;
 	if(cnt_conv == 0) begin
-		EN_ADC_EMG <= 1'b1;
-	end else if(cnt_conv == 1) begin
 		START_EMG <= 1'b1;
-	end else if(cnt_conv == 2) begin
+	end else if(cnt_conv == 1) begin
 		START_EMG <= 1'b0;
 	end else if(cnt_conv == ADC_clk_cycle) begin
-		EN_ADC_EMG <= 1'b0;
+		//EN_ADC_EMG <= 1'b0;
 		if(cnt_ch < num_of_channel) begin
 			cnt_ch = cnt_ch + 1;
 			CH_SEL_EMG <= CH_SEL_EMG + 1;

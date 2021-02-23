@@ -1,0 +1,21 @@
+
+// Library name: EMG_TestBench
+// Cell name: TB_EMG_w_SwitchArray
+// View name: schematic
+// Inherited view list: schematic
+V9 (SenseMode_2 0) vsource dc=0 type=dc
+V7 (SenseMode_0 0) vsource dc=0 type=dc
+V6 (SenseMode_1 0) vsource dc=0 type=dc
+V35 (Col_0 0) vsource dc=0 type=dc
+V34 (Col_1 0) vsource dc=0 type=dc
+V33 (Row_0 0) vsource dc=0 type=dc
+V32 (Row_1 0) vsource dc=0 type=dc
+V31 (Dir 0) vsource dc=0 type=dc
+V4 (EMG_ADC_VrefL 0) vsource dc=0 type=dc
+V1 (EMG_ADC_VrefH 0) vsource dc=1.5 type=dc
+V11 (vssd 0) vsource dc=0 type=dc
+V12 (vsub 0) vsource dc=0 type=dc
+V8 (vssa 0) vsource dc=0 type=dc
+V3 (vddd 0) vsource dc=1.8 type=dc
+V2 (vdda 0) vsource dc=1.8 type=dc
+V5 (net1 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]

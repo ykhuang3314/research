@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+Stimulator_TestBench/TB_Single_CH_V2/schematic Stimulator_TestBench/TB_Single_CH_V2/schematic/schematic/Stimulator_TestBench_TB_Single_CH_V2_config/1 TB_Single_CH_V2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

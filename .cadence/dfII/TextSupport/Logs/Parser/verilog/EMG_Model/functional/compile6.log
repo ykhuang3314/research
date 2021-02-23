@@ -1,9 +1,9 @@
 xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xmvlog(64)	18.03-s018: Started on Feb 15, 2021 at 22:51:45 CET
+TOOL:	xmvlog(64)	18.03-s018: Started on Feb 23, 2021 at 09:51:45 CET
 xmvlog
     -use5x
     -SPECIFICUNIT Digital_Stimulus_all
-    -zparse /tmp/vamsZparxs0648
+    -zparse /tmp/vamsZpardsb799
     -NOWARN DLNOHV
     -work EMG_Model
     -view functional
@@ -17,4 +17,4 @@ file: /home/ykhuang/research/EMG_Model/Digital_Stimulus_all/functional/verilog.v
 	module EMG_Model.Digital_Stimulus_all:functional
 		errors: 0, warnings: 0
 	 writing out DPL output:
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Feb 15, 2021 at 22:51:45 CET  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Feb 23, 2021 at 09:51:45 CET  (total: 00:00:00)

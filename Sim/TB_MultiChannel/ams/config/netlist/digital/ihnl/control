@@ -1,15 +1,14 @@
 hnlLastStopCellInfo = '(
-                           ( "EMG_Model" "BPF_EMG" "verilogams" "1605303913" "1605303913" )
+                           ( "EMG_Model" "DAC_EMG" "verilogams" "1605740047" "1605740047" )
+                          ( "analogLib" "vpwl" "spectre" "34" "1570591052" )
+                          ( "EMG_Model" "Digital_Stimuli_EMG_V2" "functional" "1613751073" "1613751073" )
+                          ( "EMG_Model" "Signal_Gen" "verilogams" "1613755357" "1613755357" )
+                          ( "analogLib" "vdc" "spectre" "33" "1570591052" )
+                          ( "EMG_Model" "BPF_EMG" "verilogams" "1605303913" "1605303913" )
                           ( "EMG_Model" "PGA_EMG" "verilogams" "1612867538" "1612867538" )
                           ( "EMG_Model" "IA_EMG_Ideal" "verilogams" "1612885663" "1612885663" )
                           ( "EMG_Model" "ANA_MUX_EMG" "verilogams" "1612867711" "1612867711" )
-                          ( "EMG_Model" "ADC_EMG" "verilogams" "1612954881" "1612954880" )
-                          ( "EMG_Model" "Digital_Stimuli_EMG" "functional" "1612951718" "1612951718" )
-                          ( "EMG_Model" "DAC_EMG" "verilogams" "1605740047" "1605740047" )
-                          ( "analogLib" "vdc" "spectre" "33" "1570591052" )
-                          ( "analogLib" "vpulse" "spectre" "34" "1570591052" )
-                          ( "analogLib" "vsin" "spectre" "35" "1570591052" )
-                          ( "EMG_Model" "EMG_Clock_Gen" "functional" "1612962269" "1612962269" )
+                          ( "EMG_Model" "ADC_EMG" "verilogams" "1613588032" "1613588032" )
                        )
 hnlLastNetlistConfig = t
 hnlLastConfigFileVersion = 2

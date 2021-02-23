@@ -1,68 +1,139 @@
 ( global ( resolution_type basic ) )
 
-( net TB_Current_Source.vdda TB_Current_Source.vdda analog/mixed electrical )
-( net TB_Current_Source.I1.EN TB_Current_Source.vdda digital/mixed logic )
-( net TB_Current_Source.I0.Ioutp TB_Current_Source.vdda analog/mixed electrical )
-( net TB_Current_Source.I0.Vdda TB_Current_Source.vdda analog/mixed electrical )
+( net TB_Current_Source.vdda TB_Current_Source.vdda analog electrical )
+( net TB_Current_Source.I1.Vdda TB_Current_Source.vdda analog electrical )
+( net TB_Current_Source.I3.Ioutp TB_Current_Source.vdda analog electrical )
+( net TB_Current_Source.I3.Vdda TB_Current_Source.vdda analog electrical )
 
-( net TB_Current_Source.net3 TB_Current_Source.net3 analog electrical )
-( net TB_Current_Source.I0.Ioutn TB_Current_Source.net3 analog electrical )
+( net TB_Current_Source.Iout_dac TB_Current_Source.Iout_dac analog electrical )
+( net TB_Current_Source.I1.Iref TB_Current_Source.Iout_dac analog electrical )
+( net TB_Current_Source.I3.Ioutn TB_Current_Source.Iout_dac analog electrical )
 
-( net TB_Current_Source.count_out TB_Current_Source.count_out digital logic )
-( net TB_Current_Source.I1.out TB_Current_Source.count_out digital logic )
-( net TB_Current_Source.I0.Mag TB_Current_Source.count_out digital logic )
+( net TB_Current_Source.MAG_ST TB_Current_Source.MAG_ST digital logic )
+( net TB_Current_Source.I2.MAG_ST TB_Current_Source.MAG_ST digital logic )
+( net TB_Current_Source.I3.Mag TB_Current_Source.MAG_ST digital logic )
 
-( net TB_Current_Source.I0.Vssa TB_Current_Source.I0.Vssa analog/mixed electrical )
-( net cds_globals.\gnd!  TB_Current_Source.I0.Vssa analog/mixed electrical )
-( net TB_Current_Source.I1.RESET TB_Current_Source.I0.Vssa digital/mixed logic )
+( net TB_Current_Source.EN_ST TB_Current_Source.EN_ST digital logic )
+( net TB_Current_Source.I2.EN_ST TB_Current_Source.EN_ST digital logic )
+( net TB_Current_Source.I1.EN TB_Current_Source.EN_ST digital logic )
+( net TB_Current_Source.I3.EN TB_Current_Source.EN_ST digital logic )
 
-( net TB_Current_Source.net4 TB_Current_Source.net4 analog electrical )
-( net TB_Current_Source.I0.Ibias TB_Current_Source.net4 analog electrical )
+( net TB_Current_Source.vssa TB_Current_Source.vssa analog electrical )
+( net TB_Current_Source.I1.Vssa TB_Current_Source.vssa analog electrical )
+( net TB_Current_Source.I3.Vssa TB_Current_Source.vssa analog electrical )
 
-( net TB_Current_Source.I0.Imag TB_Current_Source.I0.Imag digital logic (type rnm) )
+( net TB_Current_Source.vddd TB_Current_Source.vddd analog electrical )
+( net TB_Current_Source.I3.Vddd TB_Current_Source.vddd analog electrical )
 
-( net TB_Current_Source.CLK TB_Current_Source.CLK analog/mixed electrical )
-( net TB_Current_Source.I1.CLK TB_Current_Source.CLK digital/mixed logic )
+( net TB_Current_Source.vssd TB_Current_Source.vssd analog electrical )
+( net TB_Current_Source.I3.Vssd TB_Current_Source.vssd analog electrical )
 
-( net cds_globals.\vdda!  cds_globals.\vdda!  digital logic )
+( net TB_Current_Source.net8 TB_Current_Source.net8 analog electrical )
+( net TB_Current_Source.I3.Ibias TB_Current_Source.net8 analog electrical )
+
+( net TB_Current_Source.I3.Imag TB_Current_Source.I3.Imag digital logic (type rnm) )
+
+( net TB_Current_Source.Ist TB_Current_Source.Ist analog electrical )
+( net TB_Current_Source.I1.Iout TB_Current_Source.Ist analog electrical )
+
+( net TB_Current_Source.ANO_ST TB_Current_Source.ANO_ST digital logic )
+( net TB_Current_Source.I2.ANO_ST TB_Current_Source.ANO_ST digital logic )
+( net TB_Current_Source.I1.ANO TB_Current_Source.ANO_ST digital logic )
+
+( net TB_Current_Source.CAT_ST TB_Current_Source.CAT_ST digital logic )
+( net TB_Current_Source.I2.CAT_ST TB_Current_Source.CAT_ST digital logic )
+( net TB_Current_Source.I1.CAT TB_Current_Source.CAT_ST digital logic )
+
+( net TB_Current_Source.I1.enable TB_Current_Source.I1.enable digital logic )
+
+( net TB_Current_Source.enable TB_Current_Source.enable analog/mixed electrical )
+( net TB_Current_Source.I2.enable TB_Current_Source.enable digital/mixed logic )
+
+( net TB_Current_Source.net7 TB_Current_Source.net7 analog/mixed electrical )
+( net TB_Current_Source.I2.ramping TB_Current_Source.net7 digital/mixed logic )
+
+( net TB_Current_Source.net6 TB_Current_Source.net6 analog/mixed electrical )
+( net TB_Current_Source.I2.ch_sweeping TB_Current_Source.net6 digital/mixed logic )
+
+( net TB_Current_Source.DIS_ST TB_Current_Source.DIS_ST digital logic )
+( net TB_Current_Source.I2.DIS_ST TB_Current_Source.DIS_ST digital logic )
+
+( net TB_Current_Source.CH_SEL_ST TB_Current_Source.CH_SEL_ST digital logic )
+( net TB_Current_Source.I2.CH_SEL_ST TB_Current_Source.CH_SEL_ST digital logic )
+
+( net TB_Current_Source.I2.period_ns TB_Current_Source.I2.period_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.CAT_phase_ns TB_Current_Source.I2.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.ANO_phase_ns TB_Current_Source.I2.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.DIS_phase_ns TB_Current_Source.I2.DIS_phase_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.IPD_ns TB_Current_Source.I2.IPD_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.Rest_ns TB_Current_Source.I2.Rest_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.en_extension_ns TB_Current_Source.I2.en_extension_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.delay_dis_ns TB_Current_Source.I2.delay_dis_ns digital logic (type rnm) )
+
+( net TB_Current_Source.I2.i TB_Current_Source.I2.i digital logic )
+
+( net TB_Current_Source.I2.cnt_period TB_Current_Source.I2.cnt_period digital logic )
+
+( net TB_Current_Source.I2.cnt_ch TB_Current_Source.I2.cnt_ch digital logic )
+
+( net TB_Current_Source.I2.num_of_period TB_Current_Source.I2.num_of_period digital logic )
+
+( net TB_Current_Source.vddh TB_Current_Source.vddh analog electrical )
+
+( net cds_globals.\gnd!  cds_globals.\gnd!  analog electrical )
 
 ( connect
    connectLib.E2L_2:module
-   TB_Current_Source.CLK
+   TB_Current_Source.net6
    electrical
    analog
    (
-    ( TB_Current_Source.I1.CLK logic digital )
+    ( TB_Current_Source.I2.ch_sweeping logic digital )
    )
-   "connect E2L_2 merged logic, electrical"
-   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
 )
 ( connect
    connectLib.E2L_2:module
-   TB_Current_Source.vdda
+   TB_Current_Source.enable
    electrical
    analog
    (
-    ( TB_Current_Source.I1.EN logic digital )
+    ( TB_Current_Source.I2.enable logic digital )
    )
-   "connect E2L_2 merged logic, electrical"
-   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
 )
 ( connect
    connectLib.E2L_2:module
-   cds_globals.\gnd! 
+   TB_Current_Source.net7
    electrical
    analog
    (
-    ( TB_Current_Source.I1.RESET logic digital )
+    ( TB_Current_Source.I2.ramping logic digital )
    )
-   "connect E2L_2 merged logic, electrical"
-   ( (vsup 1.800000000000000) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vtol (((0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000)) - (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) / 4.000000000000000)) (tr 0.000000000200000) (txdel (0.000000000200000 * 4.000000000000000)) (ttol_c (0.000000000200000 / 4.000000000000000)) (enable_highz 0) (duration 0.000000005000000) )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
 )
-(instance TB_Current_Source.I0 mixed/dmixed (type rnm))
-(instance TB_Current_Source.I1 digital)
-(instance TB_Current_Source.V0 analog)
-(instance TB_Current_Source.R0 analog)
+(instance TB_Current_Source.I3 mixed/dmixed (type rnm))
+(instance TB_Current_Source.I1 mixed)
+(instance TB_Current_Source.I2 dmixed (type rnm))
+(instance TB_Current_Source.I4 analog)
+(instance TB_Current_Source.V7 analog)
+(instance TB_Current_Source.V8 analog)
+(instance TB_Current_Source.V4 analog)
+(instance TB_Current_Source.V3 analog)
+(instance TB_Current_Source.V6 analog)
+(instance TB_Current_Source.V2 analog)
 (instance TB_Current_Source.V1 analog)
+(instance TB_Current_Source.R0 analog)
+(instance TB_Current_Source.V0 analog)
 (instance TB_Current_Source mixed/dmixed (type rnm))
-(instance cds_globals mixed)
+(instance cds_globals analog)

@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_4CH_ST_V2:config
+// Created On: Feb 23 10:26:08 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_4CH_ST_V2:schematic"
+
+	config cell="CH_SEL_MUX_V2" lib="Stimulator_Model" view="verilogams"
+	config cell="Current_Source" lib="Stimulator_Model" view="verilogams"
+	config cell="Current_Mirror" lib="Stimulator_Model" view="verilogams"
+	config cell="isource" view="analogtext"
+	config cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional"
+	config cell="vsource" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="H_Bridge" lib="Stimulator_Model" view="verilogams"
+
+ }

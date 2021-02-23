@@ -1,0 +1,56 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+CDS_SELECT_CRS
++define+CONNRULES_18V_FULL_FAST
++define+CONNRULES_INHCONN_FULL_FAST_GND
+-AMSINPUT
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ADE
+-AMSINPUT
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-INPUT
+./probe.tcl
+-RUN
+-EXIT
++amsrawdir
+../psf
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.4/sharedData/CDS/ahdl/input.ahdlSimDB"
+-SIMCOMPATIBLE_AMS
+spectre
+-SPECTRE_ARGS
+++aps
+-SPECTRE_ARGS
++mt=16
+-ANALOGCONTROL
+.amsbind.scs
+-MESSAGES
++EMGRLOG
+../psf/xrun.log
+-XLSTIME
+1614002790
+-XLKEEP
+-XLMODE
+./xcelium.d/EMG_TestBench.TB_EMG_w_SwitchArray_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/EMG_TestBench.TB_EMG_w_SwitchArray_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/EMG_TestBench.TB_EMG_w_SwitchArray_config.lnx8664.18.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	18.03-s018"

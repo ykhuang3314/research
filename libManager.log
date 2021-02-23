@@ -1,161 +1,92 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-mpssession virtuoso10648 -mpshost s2424 
+\o Arguments:		-mpssession virtuoso26546 -mpshost s2424 
 \o Working Directory:	s2424:/home/ykhuang/research
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o Log file is "/home/ykhuang/research/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(259 140 1169 631))
+\a nrResizeWindow(cdsLibManager list(135 230 1388 780))
 \o changeWorkingDir("/home/ykhuang/research") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrResizeWindow(cdsLibManager list(2123 372 1388 780))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileOpenButton->value = t
-\o MPS request: edit design
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "BioZ_EMG_Model"
-\a cdsLibManager->libLineEdit->value = "BioZ_EMG_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->cellLineEdit->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a nrResizeWindow(cdsLibManager list(1989 0 1851 1052))
 \a cdsLibManager->libListBox->value = "Stimulator_Model"
 \a cdsLibManager->libLineEdit->value = "Stimulator_Model"
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Single_CH_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH_V2"
+\a lmgrLogShowPopup("mainListPopup1" 73 112 2 "TB_Single_CH_V2")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "TB_Single_CH_V2"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "TB_Single_CH_V2"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(2785 419 239 190))
+\a basicRenameForm->basicRenameToEdit->value = "TB_MultiH_V2"
+\a basicRenameForm->OK->value = t
+\o Renaming Cell "TB_Single_CH_V2" to "TB_MultiH_V2" in library "Stimulator_TestBench".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2770 418 268 133))
+\a workingDialogForm->Close->value = t
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
+\a nrResizeWindow(workingDialogForm list(2770 388 268 133))
+\o Rename succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimuli_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimuli_EMG_NMES"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a nrResizeWindow(basicRenameForm list(2785 359 239 190))
+\a cdsLibManager->cellListBox->value = "TB_MultiH_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_MultiH_V2"
+\a lmgrLogShowPopup("mainListPopup1" 91 58 2 "TB_MultiH_V2")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "TB_MultiH_V2"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(2785 419 239 190))
+\a basicRenameForm->basicRenameToEdit->value = "TB_4CH_ST_V2"
+\a basicRenameForm->OK->value = t
+\o Renaming Cell "TB_MultiH_V2" to "TB_4CH_ST_V2" in library "Stimulator_TestBench".
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2770 448 268 133))
+\a workingDialogForm->Close->value = t
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a nrResizeWindow(workingDialogForm list(2770 418 268 133))
+\o Rename succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a nrResizeWindow(basicRenameForm list(2785 389 239 190))
+\a cdsLibManager->cellListBox->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellListBox->value = "Digital_Stimulus_TB"
+\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_TB"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = "config"
 \a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
+\a cdsLibManager->cellListBox->value = "TB_Multi_CH"
+\a cdsLibManager->cellLineEdit->value = "TB_Multi_CH"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "config"
@@ -166,801 +97,271 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "config"
 \a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_Model"
-\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_ST"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_ST"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellListBox->value = "Digital_Stimulus_TB"
 \a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_Model"
-\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_ST"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_ST"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_TB"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_TB"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_TB"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_TB"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_Model"
-\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 6 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimuli_EMG_V2"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimuli_EMG_V2"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
-\a cdsLibManager->cellListBox->value = "Digital_Stimuli_EMG_V2"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimuli_EMG_V2"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
-\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
-\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 5 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "BioZ_EMG_Model"
-\a cdsLibManager->libLineEdit->value = "BioZ_EMG_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "BioZ_PLL_PFD"
-\a cdsLibManager->cellLineEdit->value = "BioZ_PLL_PFD"
-\a cdsLibManager->cellListBox->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->cellLineEdit->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->cellLineEdit->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 20 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "BioZ_EMG_Model"
-\a cdsLibManager->libLineEdit->value = "BioZ_EMG_Model"
-\a cdsLibManager->cellListBox->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->cellLineEdit->value = "BioZ_EMG_Combined_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "BioZ_AFE_ideal"
-\a cdsLibManager->cellLineEdit->value = "BioZ_AFE_ideal"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrResizeWindow(cdsLibManager list(259 140 1169 904))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(259 140 1169 883))
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Digital_Lib"
-\a cdsLibManager->libLineEdit->value = "Digital_Lib"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "BioZ_EMG_Model"
-\a cdsLibManager->libLineEdit->value = "BioZ_EMG_Model"
-\a cdsLibManager->cellListBox->value = "BioZ_TB"
-\a cdsLibManager->cellLineEdit->value = "BioZ_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_TB"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_TB"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_Model"
-\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_ST"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_ST"
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_TB"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_TB"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
-\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
-\a cdsLibManager->libListBox->value = "EMG_202009"
-\a cdsLibManager->libLineEdit->value = "EMG_202009"
-\a cdsLibManager->cellListBox->value = "Digital_Stimuli_Mux4"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimuli_Mux4"
-\a cdsLibManager->cellListBox->value = "BPF_V2"
-\a cdsLibManager->cellLineEdit->value = "BPF_V2"
-\a cdsLibManager->cellListBox->value = "AnalogMux_4"
-\a cdsLibManager->cellLineEdit->value = "AnalogMux_4"
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimuli_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimuli_EMG_NMES_V2"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_Model"
-\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_ST"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_ST"
-\a lmgrLogShowPopup("mainListPopup1" 179 63 2 "Digital_Stimulus_ST")
+\a lmgrLogShowPopup("mainListPopup1" 77 7 2 "Digital_Stimulus_TB")
 \a cdsLibManager->editDeleteButton->value = t
 \a deleteForm->deleteFilterEdit->value = "*"
 \a deleteForm->notDeleteFilterEdit->value = "*"
 \a nrSetWindowVisibility(deleteForm "show")
 \a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(510 321 627 425))
-\a deleteForm->deleteListBox->value = '("Digital_Stimulus_ST" )
+\a nrResizeWindow(deleteForm list(2591 302 627 425))
 \a deleteForm->OK->value = t
 \o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
 \a nrSetWindowVisibility(mcMBXDLG "show")
 \a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(699 496 268 91))
+\a nrResizeWindow(mcMBXDLG list(2770 439 268 91))
 \a mcMBXDLG->pushButton1->value = t
-\o Deleting cell "Digital_Stimulus_ST" from library "Stimulator_Model".
-\a nrSetWindowVisibility(workingDialogForm "show")
+\o Deleting cell "Digital_Stimulus_TB" from library "Stimulator_TestBench".
+\o Deleted cell 'Stimulator_TestBench/Digital_Stimulus_TB'.
 \a nrSetCurrentWindow(cdsLibManager)
-\o Deleted cell 'Stimulator_Model/Digital_Stimulus_ST'.
+\a nrSetCurrentWindow(workingDialogForm)
 \o Deletion of 1 cell done.
-\a nrResizeWindow(workingDialogForm list(699 505 268 133))
+\a nrResizeWindow(workingDialogForm list(2770 448 268 133))
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
+\a nrResizeWindow(deleteForm list(2591 242 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2770 418 268 133))
+\a cdsLibManager->cellListBox->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_4CH_ST_V2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_4CH_ST_V2"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_4CH_ST_V2"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_4CH_ST_V2"
+\a cdsLibManager->cellLineEdit->value = "TB_4CH_ST_V2"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->libListBox->value = "Stimulator_Model"
 \a cdsLibManager->libLineEdit->value = "Stimulator_Model"
-\a nrSetCurrentWindow(workingDialogForm)
+\a cdsLibManager->cellListBox->value = "Stimulator_4CH_V2"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_4CH_V2"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(deleteForm list(520 299 627 425))
-\a nrResizeWindow(workingDialogForm list(699 445 268 133))
-\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
-\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
-\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES_V2"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 125 92 2 "TB_Digital_Stimulus_EMG_NMES_V2")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(510 321 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(689 488 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting cell "TB_Digital_Stimulus_EMG_NMES_V2" from library "EMG_TestBench".
-\o Deleted cell 'EMG_TestBench/TB_Digital_Stimulus_EMG_NMES_V2'.
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deletion of 1 cell done.
-\a nrResizeWindow(workingDialogForm list(699 505 268 133))
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a nrResizeWindow(deleteForm list(510 291 627 425))
+\a nrSetWindowVisibility(cdsLibManager "hide")
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(699 475 268 133))
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->libListBox->value = "BioZ_EMG_Model"
-\a cdsLibManager->libLineEdit->value = "BioZ_EMG_Model"
-\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "BioZ_Digital_stim"
-\a cdsLibManager->cellLineEdit->value = "BioZ_Digital_stim"
-\a lmgrLogShowPopup("mainListPopup1" 75 332 2 "BioZ_Digital_stim")
-\a cdsLibManager->copySimpleButton->value = t
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a copyCellForm->CopyFromLibrary->value = "BioZ_EMG_Model"
-\a copyCellForm->CopyToLibrary->value = "BioZ_EMG_Model"
-\a copyCellForm->CopyFromCell->value = "BioZ_Digital_stim"
-\a copyCellForm->CopyToCell->value = "BioZ_Digital_stim"
-\a copyCellForm->ViewsToCopy->value = "functional symbol"
-\a copyCellForm->SkipLibrariesEdit->value = ""
-\a copyCellForm->SkipLibrariesEdit->value = "CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V DigitalLibs Digital_Lib EMG_202009 EMG_Model EMG_NMES_TestBench EMG_TestBench GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V PRIMLIB Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES VerilogAMS_Practice XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib connectLib functional\\nieee sample sbaLib std synopsys xfab_connectLib"
-\a nrSetWindowVisibility(copyCellForm "show")
-\a nrSetCurrentWindow(copyCellForm)
-\a nrResizeWindow(copyCellForm list(589 204 468 659))
-\a copyCellForm->CopyToLibrary->value = "EMG_NMES_TestBench"
-\a copyCellForm->CopyToLibrary->value = "EMG_Model"
-\a copyCellForm->OK->value = t
-\o Beginning simple copy to library "EMG_Model".
-\o Processing files to be copied...
-\a nrSetCurrentWindow(workingDialogForm)
-\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file does not exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source library file is not valid in a different library.\n      7. A source OpenAccess cellview master file has zero size.
-\a nrSetWindowVisibility(copyProblemsDialog "show")
-\a nrSetCurrentWindow(copyProblemsDialog)
-\a nrResizeWindow(workingDialogForm list(699 475 273 133))
-\a nrResizeWindow(copyProblemsDialog list(421 321 825 441))
-\a copyProblemsDialog->Cancel->value = t
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a nrSetCurrentWindow(copyCellForm)
-\a nrResizeWindow(copyProblemsDialog list(421 291 825 441))
-\a copyCellForm->Cancel->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(copyCellForm list(599 182 468 659))
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellListBox->value = "Stimulator_4CH_V2"
+\a cdsLibManager->cellLineEdit->value = "Stimulator_4CH_V2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CopyFromLibrary->value = "BioZ_EMG_Model"
-\a basicCopyForm->CopyToLibrary->value = "BioZ_EMG_Model"
-\a basicCopyForm->CopyFromLibrary->value = "EMG_Model"
-\a basicCopyForm->CopyToLibrary->value = "EMG_Model"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(682 383 303 316))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(basicCopyForm list(682 353 303 316))
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_202009"
-\a cdsLibManager->libLineEdit->value = "EMG_202009"
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
-\a cdsLibManager->cellListBox->value = "Digital_Stimuli_EMG_NMES_V2"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimuli_EMG_NMES_V2"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "Digital_Stimulus_all"
-\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_all"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
 \a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
 \a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
 \a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
-\a cdsLibManager->libListBox->value = "EMG_202009"
-\a cdsLibManager->libLineEdit->value = "EMG_202009"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "EMG_Model"
-\a cdsLibManager->libLineEdit->value = "EMG_Model"
-\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
-\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
-\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
-\a cdsLibManager->libListBox->value = "EMG_TestBench"
-\a cdsLibManager->libLineEdit->value = "EMG_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_all"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_all"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_all"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_all"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_V2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_EMG_NMES"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TB_Digital_Stimulus_all"
-\a cdsLibManager->cellLineEdit->value = "TB_Digital_Stimulus_all"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrResizeWindow(cdsLibManager list(2123 270 1388 780))

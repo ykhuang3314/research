@@ -3,10 +3,11 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module Current_Mirror (Iout, Iref, Vdda, Vssa);
+module Current_Mirror (Iout, Iref, EN, ANO, CAT, Vdda, Vssa);
 
 //I/O port declaration
 inout Iout, Iref, Vdda, Vssa;
+input EN, ANO, CAT;
 
 //Discipline
 electrical Iout, Iref, Vdda, Vssa;
@@ -14,9 +15,23 @@ electrical Iout, Iref, Vdda, Vssa;
 //Parameters
 parameter Ai = 100 from [0:inf];
 parameter Gain_error = 0 from [0:100]; // in percentage
+parameter Roff = 1G; 
+
+// internal node
+logic enable;
+
+assign enable = EN & (ANO | CAT);
 
 analog begin
-	I(Iout, Vssa) <+ I(Iref, Vdda) * Ai * (1 + Gain_error/100);
+	if(enable == 1'b1) begin
+		I(Iout, Vssa) <+ I(Iref, Vdda) * Ai * (1 + Gain_error/100);
+	end 
+	else begin
+	//	I(Iout, Vssa) <+ V(Iout, Vssa)/Roff ;
+		I(Iout, Vssa) <+ 0 ;
+	
+	end
+	
 end
 	
 

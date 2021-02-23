@@ -1,0 +1,13 @@
+//Revision 1
+config BioZ_AFE_TCA_TB;
+design BioZ_EMG_Model.BioZ_AFE_TCA_TB:schematic;
+liblist BioZ_EMG_Model, analogLib;
+
+viewlist functional, schematic, spectre, behavioral;
+stoplist spectre;
+
+
+cell BioZ_EMG_Model.BioZ_AFE_TCA binding :verilogams;
+
+
+endconfig

@@ -1,0 +1,8 @@
+// HDL file - Stimulator_Model, Digital_Stimulus_ST_V2, functional.
+// HDL file - EMG_Model, IA_EMG_Ideal, verilogams.
+// HDL file - EMG_Model, PGA_EMG, verilogams.
+// HDL file - EMG_Model, BPF_EMG, verilogams.
+// HDL file - Stimulator_Model, H_Bridge, verilogams.
+// HDL file - Stimulator_Model, Current_Mirror, verilogams.
+// HDL file - Stimulator_Model, Current_Source, verilogams.
+// HDL file - Stimulator_Model, CH_SEL_MUX_V2, verilogams.

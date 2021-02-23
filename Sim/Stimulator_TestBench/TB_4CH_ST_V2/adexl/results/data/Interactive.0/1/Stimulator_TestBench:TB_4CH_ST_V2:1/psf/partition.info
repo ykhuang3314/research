@@ -1,0 +1,222 @@
+( global ( resolution_type basic ) )
+
+( net TB_4CH_ST_V2.net5 TB_4CH_ST_V2.net5 analog electrical )
+( net TB_4CH_ST_V2.I6.IN TB_4CH_ST_V2.net5 analog electrical )
+( net TB_4CH_ST_V2.I0.Iano TB_4CH_ST_V2.net5 analog electrical )
+
+( net TB_4CH_ST_V2.net11 TB_4CH_ST_V2.net11 analog electrical )
+( net TB_4CH_ST_V2.I8.IN TB_4CH_ST_V2.net11 analog electrical )
+( net TB_4CH_ST_V2.I0.Icat TB_4CH_ST_V2.net11 analog electrical )
+
+( net TB_4CH_ST_V2.ANO_ST TB_4CH_ST_V2.ANO_ST digital logic )
+( net TB_4CH_ST_V2.I2.ANO_ST TB_4CH_ST_V2.ANO_ST digital logic )
+( net TB_4CH_ST_V2.I1.ANO TB_4CH_ST_V2.ANO_ST digital logic )
+( net TB_4CH_ST_V2.I0.ANO TB_4CH_ST_V2.ANO_ST digital logic )
+
+( net TB_4CH_ST_V2.CAT_ST TB_4CH_ST_V2.CAT_ST digital logic )
+( net TB_4CH_ST_V2.I2.CAT_ST TB_4CH_ST_V2.CAT_ST digital logic )
+( net TB_4CH_ST_V2.I1.CAT TB_4CH_ST_V2.CAT_ST digital logic )
+( net TB_4CH_ST_V2.I0.CAT TB_4CH_ST_V2.CAT_ST digital logic )
+
+( net TB_4CH_ST_V2.DIS_ST TB_4CH_ST_V2.DIS_ST digital logic )
+( net TB_4CH_ST_V2.I2.DIS_ST TB_4CH_ST_V2.DIS_ST digital logic )
+( net TB_4CH_ST_V2.I0.DIS TB_4CH_ST_V2.DIS_ST digital logic )
+
+( net TB_4CH_ST_V2.Ist TB_4CH_ST_V2.Ist analog electrical )
+( net TB_4CH_ST_V2.I1.Iout TB_4CH_ST_V2.Ist analog electrical )
+( net TB_4CH_ST_V2.I0.Ist TB_4CH_ST_V2.Ist analog electrical )
+
+( net TB_4CH_ST_V2.vdda TB_4CH_ST_V2.vdda analog electrical )
+( net TB_4CH_ST_V2.I6.Vdda TB_4CH_ST_V2.vdda analog electrical )
+( net TB_4CH_ST_V2.I8.Vdda TB_4CH_ST_V2.vdda analog electrical )
+( net TB_4CH_ST_V2.I3.Ioutp TB_4CH_ST_V2.vdda analog electrical )
+( net TB_4CH_ST_V2.I3.Vdda TB_4CH_ST_V2.vdda analog electrical )
+( net TB_4CH_ST_V2.I1.Vdda TB_4CH_ST_V2.vdda analog electrical )
+( net TB_4CH_ST_V2.I0.Vdda TB_4CH_ST_V2.vdda analog electrical )
+
+( net TB_4CH_ST_V2.vddh TB_4CH_ST_V2.vddh analog electrical )
+( net TB_4CH_ST_V2.I0.VddH TB_4CH_ST_V2.vddh analog electrical )
+
+( net TB_4CH_ST_V2.vssa TB_4CH_ST_V2.vssa analog electrical )
+( net TB_4CH_ST_V2.I6.Vssa TB_4CH_ST_V2.vssa analog electrical )
+( net TB_4CH_ST_V2.I8.Vssa TB_4CH_ST_V2.vssa analog electrical )
+( net TB_4CH_ST_V2.I3.Vssa TB_4CH_ST_V2.vssa analog electrical )
+( net TB_4CH_ST_V2.I1.Vssa TB_4CH_ST_V2.vssa analog electrical )
+( net TB_4CH_ST_V2.I0.Vssa TB_4CH_ST_V2.vssa analog electrical )
+
+( net TB_4CH_ST_V2.vddd TB_4CH_ST_V2.vddd analog electrical )
+( net TB_4CH_ST_V2.I6.Vddd TB_4CH_ST_V2.vddd analog electrical )
+( net TB_4CH_ST_V2.I8.Vddd TB_4CH_ST_V2.vddd analog electrical )
+( net TB_4CH_ST_V2.I3.Vddd TB_4CH_ST_V2.vddd analog electrical )
+( net TB_4CH_ST_V2.I0.Vddd TB_4CH_ST_V2.vddd analog electrical )
+
+( net TB_4CH_ST_V2.vssd TB_4CH_ST_V2.vssd analog electrical )
+( net TB_4CH_ST_V2.I6.Vssd TB_4CH_ST_V2.vssd analog electrical )
+( net TB_4CH_ST_V2.I8.Vssd TB_4CH_ST_V2.vssd analog electrical )
+( net TB_4CH_ST_V2.I3.Vssd TB_4CH_ST_V2.vssd analog electrical )
+( net TB_4CH_ST_V2.I0.Vssd TB_4CH_ST_V2.vssd analog electrical )
+
+( net TB_4CH_ST_V2.Iout_dac TB_4CH_ST_V2.Iout_dac analog electrical )
+( net TB_4CH_ST_V2.I3.Ioutn TB_4CH_ST_V2.Iout_dac analog electrical )
+( net TB_4CH_ST_V2.I1.Iref TB_4CH_ST_V2.Iout_dac analog electrical )
+
+( net TB_4CH_ST_V2.EN_ST TB_4CH_ST_V2.EN_ST digital logic )
+( net TB_4CH_ST_V2.I3.EN TB_4CH_ST_V2.EN_ST digital logic )
+( net TB_4CH_ST_V2.I2.EN_ST TB_4CH_ST_V2.EN_ST digital logic )
+( net TB_4CH_ST_V2.I1.EN TB_4CH_ST_V2.EN_ST digital logic )
+
+( net TB_4CH_ST_V2.I1.enable TB_4CH_ST_V2.I1.enable digital logic )
+
+( net TB_4CH_ST_V2.enable TB_4CH_ST_V2.enable analog/mixed electrical )
+( net TB_4CH_ST_V2.I2.enable TB_4CH_ST_V2.enable digital/mixed logic )
+
+( net TB_4CH_ST_V2.net8 TB_4CH_ST_V2.net8 analog/mixed electrical )
+( net TB_4CH_ST_V2.I2.ramping TB_4CH_ST_V2.net8 digital/mixed logic )
+
+( net TB_4CH_ST_V2.net7 TB_4CH_ST_V2.net7 analog/mixed electrical )
+( net TB_4CH_ST_V2.I2.ch_sweeping TB_4CH_ST_V2.net7 digital/mixed logic )
+
+( net TB_4CH_ST_V2.CH_SEL_U_ST[1] TB_4CH_ST_V2.CH_SEL_U_ST[1] digital logic )
+( net TB_4CH_ST_V2.I6.CH_SEL[1] TB_4CH_ST_V2.CH_SEL_U_ST[1] digital logic )
+( net TB_4CH_ST_V2.I2.CH_SEL_U_ST[1] TB_4CH_ST_V2.CH_SEL_U_ST[1] digital logic )
+
+( net TB_4CH_ST_V2.CH_SEL_U_ST[0] TB_4CH_ST_V2.CH_SEL_U_ST[0] digital logic )
+( net TB_4CH_ST_V2.I6.CH_SEL[0] TB_4CH_ST_V2.CH_SEL_U_ST[0] digital logic )
+( net TB_4CH_ST_V2.I2.CH_SEL_U_ST[0] TB_4CH_ST_V2.CH_SEL_U_ST[0] digital logic )
+
+( net TB_4CH_ST_V2.CH_SEL_D_ST[1] TB_4CH_ST_V2.CH_SEL_D_ST[1] digital logic )
+( net TB_4CH_ST_V2.I8.CH_SEL[1] TB_4CH_ST_V2.CH_SEL_D_ST[1] digital logic )
+( net TB_4CH_ST_V2.I2.CH_SEL_D_ST[1] TB_4CH_ST_V2.CH_SEL_D_ST[1] digital logic )
+
+( net TB_4CH_ST_V2.CH_SEL_D_ST[0] TB_4CH_ST_V2.CH_SEL_D_ST[0] digital logic )
+( net TB_4CH_ST_V2.I8.CH_SEL[0] TB_4CH_ST_V2.CH_SEL_D_ST[0] digital logic )
+( net TB_4CH_ST_V2.I2.CH_SEL_D_ST[0] TB_4CH_ST_V2.CH_SEL_D_ST[0] digital logic )
+
+( net TB_4CH_ST_V2.MAG_ST TB_4CH_ST_V2.MAG_ST digital logic )
+( net TB_4CH_ST_V2.I3.Mag TB_4CH_ST_V2.MAG_ST digital logic )
+( net TB_4CH_ST_V2.I2.MAG_ST TB_4CH_ST_V2.MAG_ST digital logic )
+
+( net TB_4CH_ST_V2.I2.period_ns TB_4CH_ST_V2.I2.period_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.CAT_phase_ns TB_4CH_ST_V2.I2.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.ANO_phase_ns TB_4CH_ST_V2.I2.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.DIS_phase_ns TB_4CH_ST_V2.I2.DIS_phase_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.IPD_ns TB_4CH_ST_V2.I2.IPD_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.Rest_ns TB_4CH_ST_V2.I2.Rest_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.en_extension_ns TB_4CH_ST_V2.I2.en_extension_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.delay_dis_ns TB_4CH_ST_V2.I2.delay_dis_ns digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.I2.i TB_4CH_ST_V2.I2.i digital logic )
+
+( net TB_4CH_ST_V2.I2.cnt_period TB_4CH_ST_V2.I2.cnt_period digital logic )
+
+( net TB_4CH_ST_V2.I2.cnt_ch TB_4CH_ST_V2.I2.cnt_ch digital logic )
+
+( net TB_4CH_ST_V2.I2.num_of_period TB_4CH_ST_V2.I2.num_of_period digital logic )
+
+( net TB_4CH_ST_V2.net9 TB_4CH_ST_V2.net9 analog electrical )
+( net TB_4CH_ST_V2.I3.Ibias TB_4CH_ST_V2.net9 analog electrical )
+
+( net TB_4CH_ST_V2.I3.Imag TB_4CH_ST_V2.I3.Imag digital logic (type rnm) )
+
+( net TB_4CH_ST_V2.net014 TB_4CH_ST_V2.net014 analog electrical )
+( net TB_4CH_ST_V2.I8.OUT0 TB_4CH_ST_V2.net014 analog electrical )
+
+( net TB_4CH_ST_V2.net016 TB_4CH_ST_V2.net016 analog electrical )
+( net TB_4CH_ST_V2.I8.OUT1 TB_4CH_ST_V2.net016 analog electrical )
+
+( net TB_4CH_ST_V2.net19 TB_4CH_ST_V2.net19 analog electrical )
+( net TB_4CH_ST_V2.I8.OUT2 TB_4CH_ST_V2.net19 analog electrical )
+
+( net TB_4CH_ST_V2.net23 TB_4CH_ST_V2.net23 analog electrical )
+( net TB_4CH_ST_V2.I8.OUT3 TB_4CH_ST_V2.net23 analog electrical )
+
+( net TB_4CH_ST_V2.net24 TB_4CH_ST_V2.net24 analog electrical )
+( net TB_4CH_ST_V2.I6.OUT0 TB_4CH_ST_V2.net24 analog electrical )
+
+( net TB_4CH_ST_V2.net22 TB_4CH_ST_V2.net22 analog electrical )
+( net TB_4CH_ST_V2.I6.OUT1 TB_4CH_ST_V2.net22 analog electrical )
+
+( net TB_4CH_ST_V2.net17 TB_4CH_ST_V2.net17 analog electrical )
+( net TB_4CH_ST_V2.I6.OUT2 TB_4CH_ST_V2.net17 analog electrical )
+
+( net TB_4CH_ST_V2.net21 TB_4CH_ST_V2.net21 analog electrical )
+( net TB_4CH_ST_V2.I6.OUT3 TB_4CH_ST_V2.net21 analog electrical )
+
+( net TB_4CH_ST_V2.net010 TB_4CH_ST_V2.net010 analog electrical )
+
+( net TB_4CH_ST_V2.net08 TB_4CH_ST_V2.net08 analog electrical )
+
+( net TB_4CH_ST_V2.net05 TB_4CH_ST_V2.net05 analog electrical )
+
+( net TB_4CH_ST_V2.net06 TB_4CH_ST_V2.net06 analog electrical )
+
+( net cds_globals.\gnd!  cds_globals.\gnd!  analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   TB_4CH_ST_V2.net7
+   electrical
+   analog
+   (
+    ( TB_4CH_ST_V2.I2.ch_sweeping logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_4CH_ST_V2.enable
+   electrical
+   analog
+   (
+    ( TB_4CH_ST_V2.I2.enable logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_4CH_ST_V2.net8
+   electrical
+   analog
+   (
+    ( TB_4CH_ST_V2.I2.ramping logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_4CH_ST_V2.I0 mixed)
+(instance TB_4CH_ST_V2.I1 mixed)
+(instance TB_4CH_ST_V2.I2 dmixed (type rnm))
+(instance TB_4CH_ST_V2.I3 mixed/dmixed (type rnm))
+(instance TB_4CH_ST_V2.I8 mixed)
+(instance TB_4CH_ST_V2.I6 mixed)
+(instance TB_4CH_ST_V2.I4 analog)
+(instance TB_4CH_ST_V2.V7 analog)
+(instance TB_4CH_ST_V2.V8 analog)
+(instance TB_4CH_ST_V2.V4 analog)
+(instance TB_4CH_ST_V2.V3 analog)
+(instance TB_4CH_ST_V2.V6 analog)
+(instance TB_4CH_ST_V2.V2 analog)
+(instance TB_4CH_ST_V2.V1 analog)
+(instance TB_4CH_ST_V2.V0 analog)
+(instance TB_4CH_ST_V2.R14 analog)
+(instance TB_4CH_ST_V2.R13 analog)
+(instance TB_4CH_ST_V2.R12 analog)
+(instance TB_4CH_ST_V2.R15 analog)
+(instance TB_4CH_ST_V2.R11 analog)
+(instance TB_4CH_ST_V2.R19 analog)
+(instance TB_4CH_ST_V2.R18 analog)
+(instance TB_4CH_ST_V2.R10 analog)
+(instance TB_4CH_ST_V2.R20 analog)
+(instance TB_4CH_ST_V2.R16 analog)
+(instance TB_4CH_ST_V2.R17 analog)
+(instance TB_4CH_ST_V2 mixed/dmixed (type rnm))
+(instance cds_globals analog)

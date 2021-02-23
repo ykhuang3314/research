@@ -1,0 +1,8 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_EMG_SwitchArray16" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_EMG_SwitchArray16 ( );
+
+endmodule

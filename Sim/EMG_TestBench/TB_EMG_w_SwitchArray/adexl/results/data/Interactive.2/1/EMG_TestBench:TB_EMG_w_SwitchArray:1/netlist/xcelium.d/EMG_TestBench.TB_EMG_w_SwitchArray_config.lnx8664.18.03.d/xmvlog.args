@@ -1,0 +1,83 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/EMG_TestBench.TB_EMG_w_SwitchArray_config.lnx8664.18.03.d
+-RUNMODE
+-amsossirunbind
+.amsbind.scs
+-CDSLIB
+./xcelium.d/EMG_TestBench.TB_EMG_w_SwitchArray_config.lnx8664.18.03.d/cdsrun.lib
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-AUTO_USE_REFFILE
+-AMSINPUT
+-AUTO_USE_REFFILE
+-AMSINPUT
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-DEFINE
+CONNRULES_INHCONN_FULL_FAST_GND
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+-ALLOWREDEFINITION
+./netlist.vams
+./cds_globals.vams
+-SNAPSHOT
+EMG_TestBench.TB_EMG_w_SwitchArray:config
+-HDLVAR
+./xcelium.d/EMG_TestBench.TB_EMG_w_SwitchArray_config.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v
+/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
+/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams lib:EMG_Model cell:ANA_MUX_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams lib:EMG_Model cell:Signal_Gen view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams lib:BioZ_EMG_Model cell:BioZ_EMG_SwitchArray16 view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/EMG_TestBench.TB_EMG_w_SwitchArray_config.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-hastop
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

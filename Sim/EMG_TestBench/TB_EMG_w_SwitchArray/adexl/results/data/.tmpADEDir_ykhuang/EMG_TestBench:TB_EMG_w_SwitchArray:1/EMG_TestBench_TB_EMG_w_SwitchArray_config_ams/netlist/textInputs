@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - EMG_Model ,Cell - Digital_Stimuli_EMG_V2, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
+
+// HDL file for Lib - BioZ_EMG_Model ,Cell - BioZ_EMG_SwitchArray16, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams lib:BioZ_EMG_Model cell:BioZ_EMG_SwitchArray16 view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - Signal_Gen, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/Signal_Gen/verilogams/verilog.vams lib:EMG_Model cell:Signal_Gen view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - ADC_EMG, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - ANA_MUX_EMG, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams lib:EMG_Model cell:ANA_MUX_EMG view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - IA_EMG_Ideal, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - PGA_EMG, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - BPF_EMG, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - DAC_EMG, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
+
+// Create required libraries 
+-makelib EMG_TestBench 
+-endlib 

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Feb 22 17:45:13 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_Single_CH_V2
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

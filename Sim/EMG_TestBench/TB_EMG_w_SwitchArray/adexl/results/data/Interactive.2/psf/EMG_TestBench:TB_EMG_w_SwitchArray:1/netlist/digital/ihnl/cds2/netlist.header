@@ -1,0 +1,26 @@
+// Library - EMG_TestBench, Cell - TB_EMG_w_SwitchArray, View -
+//schematic
+// LAST TIME SAVED: Feb 22 14:58:12 2021
+// NETLIST TIME: Feb 22 14:58:19 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_EMG_w_SwitchArray", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 22 14:58:12 2021" *)
+
+module TB_EMG_w_SwitchArray ();
+
+// Buses in the design
+
+wire  [2:0]  EMG_GAIN_SEL;
+
+wire  [3:0]  EMG_CH_SEL;
+
+wire  [11:0]  EMG_ADC_DOUT;
+
+wire  [1:0]  Row;
+
+wire  [1:0]  Col;
+

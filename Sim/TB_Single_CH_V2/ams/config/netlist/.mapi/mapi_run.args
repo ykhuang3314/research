@@ -1,0 +1,12 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/TB_Single_CH_V2/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/TB_Single_CH_V2/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/TB_Single_CH_V2/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/CH_SEL_MUX_V2/verilogams/verilog.vams lib:Stimulator_Model cell:CH_SEL_MUX_V2 view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+/home/ykhuang/research/Sim/TB_Single_CH_V2/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/TB_Single_CH_V2/ams/config/netlist/.mapi//dummyMapi.vhms

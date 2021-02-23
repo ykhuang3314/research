@@ -1,14 +1,13 @@
+("EMG_Model" "Signal_Gen" "verilogams" "verilogams") nil
 ("EMG_Model" "DAC_EMG" "verilogams" "verilogams") nil
 ("EMG_Model" "ANA_MUX_EMG" "verilogams" "verilogams") nil
 ("EMG_Model" "BPF_EMG" "verilogams" "verilogams") nil
 ("EMG_Model" "PGA_EMG" "verilogams" "verilogams") nil
-("analogLib" "vpulse" "spectre" "spectre") nil
 ("EMG_Model" "MultiCH_16_EMG" "schematic" "schematic") nil
-("EMG_Model" "EMG_Clock_Gen" "functional" "functional") nil
+("analogLib" "vpwl" "spectre" "spectre") nil
 ("EMG_Model" "ADC_EMG" "verilogams" "verilogams") nil
 ("EMG_Model" "IA_EMG_Ideal" "verilogams" "verilogams") nil
-("analogLib" "vsin" "spectre" "spectre") nil
-("EMG_Model" "Digital_Stimuli_EMG" "functional" "functional") nil
 ("EMG_TestBench" "TB_MultiChannel" "schematic" "schematic") nil
 ("analogLib" "vdc" "spectre" "spectre") nil
+("EMG_Model" "Digital_Stimuli_EMG_V2" "functional" "functional") nil
 ("EMG_Model" "AFE_EMG" "schematic" "schematic") nil

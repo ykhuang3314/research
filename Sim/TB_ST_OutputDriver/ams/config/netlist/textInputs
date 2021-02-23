@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - Stimulator_Model ,Cell - Digital_Stimulus_ST_V2, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+
+// HDL file for Lib - Stimulator_Model ,Cell - Current_Source, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+
+// HDL file for Lib - Stimulator_Model ,Cell - Current_Mirror, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+
+// HDL file for Lib - Stimulator_Model ,Cell - H_Brideg_V2, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_Model/H_Brideg_V2/verilogams/verilog.vams lib:Stimulator_Model cell:H_Brideg_V2 view:verilogams"
+
+// Create required libraries 
+-makelib Stimulator_TestBench 
+-endlib 

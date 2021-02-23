@@ -1,4 +1,4 @@
-Begin Netlisting Feb 10 14:07:03 2021
+Begin Netlisting Feb 19 18:22:43 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/TB_MultiChannel/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -51,27 +51,26 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
+DAC_EMG                     verilogams           *Stopping View*  
+vpwl                        spectre              *Stopping View*  
+Digital_Stimuli_EMG_V2      functional           *Stopping View*  
+Signal_Gen                  verilogams           *Stopping View*  
+vdc                         spectre              *Stopping View*  
 BPF_EMG                     verilogams           *Stopping View*  
 PGA_EMG                     verilogams           *Stopping View*  
 IA_EMG_Ideal                verilogams           *Stopping View*  
 ANA_MUX_EMG                 verilogams           *Stopping View*  
 ADC_EMG                     verilogams           *Stopping View*  
-Digital_Stimuli_EMG         functional           *Stopping View*  
-DAC_EMG                     verilogams           *Stopping View*  
-vdc                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
-vsin                        spectre              *Stopping View*  
-EMG_Clock_Gen               functional           *Stopping View*  
 TB_MultiChannel             schematic                             
 MultiCH_16_EMG              schematic                             
 AFE_EMG                     schematic                             
 
 ---------- End of netlist configuration information   ----------
-WARNING (OSSHNL-160): The primitive, 'EMG_Model/EMG_Clock_Gen/functional', was
-not used in the last netlisting session in this
-current run directory.
-Therefore, re-netlisting all cell views where this
-primitive is instantiated.
+WARNING (OSSHNL-159): The primitive, 'EMG_Model/Signal_Gen/verilogams', has been
+updated since the last netlisting session
+in this current run directory.
+Therefore, re-netlisting all cell views where
+this primitive is instantiated.
 
 Running netlist assembly..
-End netlisting Feb 10 14:07:13 2021
+End netlisting Feb 19 18:22:52 2021

@@ -15,46 +15,49 @@ electrical Iano, Icat, Ist, Vdda, VddH, Vssa, Vddd, Vssd;
 logic ANO, CAT, DIS;
 
 // Parameters
-parameter Ron = 10; // on-resistance
+parameter Ron = 100; // on-resistance
 parameter Roff = 1G; // off-resistance
 
+
+parameter Rout = 1M;
+//assign ANO_ON = EN & ANO;
+//assign CAT_ON = EN & ANO;
+//assign DIS_ON = EN & ANO;
+
+
 analog begin
-	
-	if(ANO) begin
+	V(Ist, Vssa) <+ I(Ist, Vssa) * Rout;
+	if(ANO == 1'b1) begin
 		I(VddH, Iano) <+ V(VddH, Iano)/Ron;
 		I(VddH, Icat) <+ V(VddH, Icat)/Roff;
 		I(Iano, Ist) <+ V(Iano, Ist)/Roff;
 		I(Icat, Ist) <+ V(Icat, Ist)/Ron;
-		//I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
-		//I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
-		//I(Iano, Icat) <+ V(Iano, Icat)/Roff;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
 	end
-	else if(CAT) begin
+	else if(CAT == 1'b1) begin
 		I(VddH, Iano) <+ V(VddH, Iano)/Roff;
 		I(VddH, Icat) <+ V(VddH, Icat)/Ron;
 		I(Iano, Ist) <+ V(Iano, Ist)/Ron;
 		I(Icat, Ist) <+ V(Icat, Ist)/Roff;
-		//I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
-		//I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
-		//I(Iano, Icat) <+ V(Iano, Icat)/Roff;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
 	end
-	else if(DIS) begin
+	else if(DIS == 1'b1) begin
 		I(VddH, Iano) <+ V(VddH, Iano)/Roff;
 		I(VddH, Icat) <+ V(VddH, Icat)/Roff;
 		I(Iano, Ist) <+ V(Iano, Ist)/Roff;
 		I(Icat, Ist) <+ V(Icat, Ist)/Roff;
-		//I(Iano, Vssa) <+ V(Iano, Vssa)/Ron;
-		//I(Icat, Vssa) <+ V(Icat, Vssa)/Ron;
-		I(Iano, Icat) <+ V(Iano, Icat)/Ron;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Ron;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Ron;
 	end
 	else begin
 		I(VddH, Iano) <+ V(VddH, Iano)/Roff;
 		I(VddH, Icat) <+ V(VddH, Icat)/Roff;
 		I(Iano, Ist) <+ V(Iano, Ist)/Roff;
 		I(Icat, Ist) <+ V(Icat, Ist)/Roff;
-		//I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
-		//I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
-		//(Iano, Icat) <+ V(Iano, Icat)/Roff;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
 	end		
 end
 

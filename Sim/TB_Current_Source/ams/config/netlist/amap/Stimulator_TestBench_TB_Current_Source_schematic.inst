@@ -1,7 +1,9 @@
 HEADER
 "PSFversion" "1.00"
+"I4n" "analogLib_idc_spectre"
 "R0n" "analogLib_res_spectre"
-"V0n" "analogLib_vdc_spectre"
-"V1n" "analogLib_vpulse_spectre"
-"I0n" "Stimulator_Model_Current_Source_verilogams"
-"I1n" "Digital_Lib_Counter_functional"
+"V0n" "analogLib_vpwl_spectre"
+"V1n V2n V3n V4n V6n V7n V8n" "analogLib_vdc_spectre"
+"I1n" "Stimulator_Model_Current_Mirror_verilogams"
+"I2n" "Stimulator_Model_Digital_Stimulus_ST_V2_functional"
+"I3n" "Stimulator_Model_Current_Source_verilogams"

@@ -4,15 +4,17 @@
 
 
 // Binding AMSD Control Block for config Stimulator_TestBench.TB_Current_Source:config
-// Created On: Jan  6 23:16:45 2021
+// Created On: Feb 22 15:44:17 2021
 // NOTE      : DO NOT change this system generated file.
 
 amsd {
 	config designtop="Stimulator_TestBench.TB_Current_Source:schematic"
 
 	config cell="Current_Source" lib="Stimulator_Model" view="verilogams"
+	config cell="Current_Mirror" lib="Stimulator_Model" view="verilogams"
+	config cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional"
+	config cell="isource" view="analogtext"
 	config cell="vsource" view="analogtext"
 	config cell="resistor" view="analogtext"
-	config cell="Counter" lib="Digital_Lib" view="functional"
 
  }

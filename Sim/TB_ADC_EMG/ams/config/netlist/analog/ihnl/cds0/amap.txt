@@ -29,12 +29,12 @@ instMap,*TB_ADC_EMG,*V5,*V5
 instMaster,*TB_ADC_EMG,*V5,*analogLib_vdc_spectre,*vsource
 instMap,*TB_ADC_EMG,*V4,*V4
 instMaster,*TB_ADC_EMG,*V4,*analogLib_vdc_spectre,*vsource
-instMap,*TB_ADC_EMG,*V3,*V3
-instMaster,*TB_ADC_EMG,*V3,*analogLib_vdc_spectre,*vsource
-instMap,*TB_ADC_EMG,*V2,*V2
-instMaster,*TB_ADC_EMG,*V2,*analogLib_vdc_spectre,*vsource
 instMap,*TB_ADC_EMG,*V1,*V1
 instMaster,*TB_ADC_EMG,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*TB_ADC_EMG,*V2,*V2
+instMaster,*TB_ADC_EMG,*V2,*analogLib_vdc_spectre,*vsource
+instMap,*TB_ADC_EMG,*V3,*V3
+instMaster,*TB_ADC_EMG,*V3,*analogLib_vdc_spectre,*vsource
 instMap,*TB_ADC_EMG,*V8,*V8
 instMaster,*TB_ADC_EMG,*V8,*analogLib_vsin_spectre,*vsource
 instMap,*TB_ADC_EMG,*V9,*V9

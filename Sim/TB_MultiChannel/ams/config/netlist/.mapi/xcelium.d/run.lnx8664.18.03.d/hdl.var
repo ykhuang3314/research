@@ -1,5 +1,5 @@
 define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
 include ./hdlrun.var
-define SNAPSHOT EMG_Model.EMG_Clock_Gen:functional
+define SNAPSHOT EMG_Model.ADC_EMG:verilogams
 DEFINE RUNMODEDEFAULT 1
 DEFINE LIB_MAP ( + => worklib )

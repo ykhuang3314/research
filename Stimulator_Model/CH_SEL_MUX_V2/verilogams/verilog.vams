@@ -1,0 +1,58 @@
+//Verilog-AMS HDL for "Stimulator_Model", "CH_SEL_MUX_V2" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module CH_SEL_MUX_V2 (OUT0, OUT1, OUT2, OUT3, IN, CH_SEL, Vdda, Vssa, Vddd, Vssd );
+
+//port declaration
+inout OUT0, OUT1, OUT2, OUT3, IN;
+input CH_SEL;
+inout Vdda, Vssa, Vddd, Vssd;
+
+//discipline
+electrical OUT0, OUT1, OUT2, OUT3, IN, Vdda, Vssa, Vddd, Vssd;
+wire[1:0] CH_SEL;
+
+//parameters
+parameter Ron = 10; // on-resistance
+parameter Roff = 100M; // off resistance
+
+analog begin
+
+	case(CH_SEL)
+		2'b00:begin
+			I(OUT0, IN) <+ V(OUT0, IN)/Ron;
+			I(OUT1, IN) <+ V(OUT1, IN)/Roff;
+			I(OUT2, IN) <+ V(OUT2, IN)/Roff;
+			I(OUT3, IN) <+ V(OUT3, IN)/Roff;
+			end
+		2'b01:begin
+			I(OUT0, IN) <+ V(OUT0, IN)/Roff;
+			I(OUT1, IN) <+ V(OUT1, IN)/Ron;
+			I(OUT2, IN) <+ V(OUT2, IN)/Roff;
+			I(OUT3, IN) <+ V(OUT3, IN)/Roff;
+			end
+		2'b10:begin
+			I(OUT0, IN) <+ V(OUT0, IN)/Roff;
+			I(OUT1, IN) <+ V(OUT1, IN)/Roff;
+			I(OUT2, IN) <+ V(OUT2, IN)/Ron;
+			I(OUT3, IN) <+ V(OUT3, IN)/Roff;
+			end
+		2'b11:begin
+			I(OUT0, IN) <+ V(OUT0, IN)/Roff;
+			I(OUT1, IN) <+ V(OUT1, IN)/Roff;
+			I(OUT2, IN) <+ V(OUT2, IN)/Roff;
+			I(OUT3, IN) <+ V(OUT3, IN)/Ron;
+			end
+		default:begin
+			I(OUT0, IN) <+ V(OUT0, IN)/Roff;
+			I(OUT1, IN) <+ V(OUT1, IN)/Roff;
+			I(OUT2, IN) <+ V(OUT2, IN)/Roff;
+			I(OUT3, IN) <+ V(OUT3, IN)/Roff;
+		end
+
+	endcase
+end
+
+endmodule

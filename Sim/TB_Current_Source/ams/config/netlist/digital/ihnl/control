@@ -1,16 +1,18 @@
 hnlLastStopCellInfo = '(
-                           ( "Stimulator_Model" "Current_Source" "verilogams" "1609971387" "1609971387" )
-                          ( "Digital_Lib" "Counter" "functional" "1609951885" "1609951884" )
+                           ( "analogLib" "idc" "spectre" "33" "1570591052" )
+                          ( "Stimulator_Model" "Current_Source" "verilogams" "1614004979" "1614004979" )
                           ( "analogLib" "vdc" "spectre" "33" "1570591052" )
                           ( "analogLib" "res" "spectre" "28" "1570591052" )
-                          ( "analogLib" "vpulse" "spectre" "34" "1570591052" )
+                          ( "Stimulator_Model" "Current_Mirror" "verilogams" "1614004049" "1614004049" )
+                          ( "analogLib" "vpwl" "spectre" "34" "1570591052" )
+                          ( "Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" "1613986120" "1613986120" )
                        )
 hnlLastNetlistConfig = t
-hnlLastConfigFileVersion = 2
-hnlLastConfigFileTimeStamp = "1609951264"
+hnlLastConfigFileVersion = 3
+hnlLastConfigFileTimeStamp = "1613997085"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "Stimulator_TestBench" "TB_Current_Source" "config" 2 "1609951264" )
+( "Stimulator_TestBench" "TB_Current_Source" "config" 3 "1613997085" )
 ) 
 hnlLastMaxNameLength = 2000
 hnlLastNamePrefix = "hnl_"

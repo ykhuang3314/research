@@ -1,0 +1,972 @@
+xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.03-s018: Started on Feb 19, 2021 at 17:43:21 CET
+xrun
+	-f xrunArgs
+		-UNBUFFERED
+		-cdslib ./cds.lib
+		-errormax 50
+		-status
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-incdir /home/ykhuang/research/
+		-ade
+		-timescale 1ns/1ns
+		-vtimescale 1ns/1ns
+		-discipline logic
+		-delay_mode None
+		-novitalaccl
+		-access r
+		-noparamerr
+		-amspartinfo ../psf/partition.info
+		-rnm_partinfo
+		-modelincdir /home/ykhuang/research/
+		./spiceModels.scs
+		./amsControlSpectre.scs
+		-input ./probe.tcl
+		-run
+		-exit
+		-xmsimargs "+amsrawdir ../psf"
+		-spectre_args "-ahdllibdir /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB"
+		-simcompatible_ams spectre
+		-name EMG_TestBench.TB_EMG_w_SwitchArray:config
+		-amsconnrules ConnRules_18V_full_fast
+		+define+CDS_SELECT_CRS
+		+define+CONNRULES_18V_FULL_FAST
+		-amsconnrules ConnRules_inhconn_full_fast_gnd
+		+define+CONNRULES_INHCONN_FULL_FAST_GND
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+		-allowredefinition
+		-amsbind
+		-top EMG_TestBench.TB_EMG_w_SwitchArray:schematic
+		-top cds_globals
+		./netlist.vams
+		-f ./textInputs
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams lib:EMG_Model cell:Signal_Gen view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams lib:EMG_Model cell:ANA_MUX_EMG view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
+			-amscompilefile "file:/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams lib:BioZ_EMG_Model cell:BioZ_EMG_SwitchArray16 view:verilogams"
+			-makelib EMG_TestBench
+			-endlib
+		./cds_globals.vams
+		-l ../psf/xrun.log
+		-spectre_args ++aps
+		-spectre_args +mt=16
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+	connect worklib.ConnRules_inhconn_full_fast_gnd:vams
+		errors: 0, warnings: 0
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+	module worklib.L2E_2_inhconn_gnd:vams
+		errors: 0, warnings: 0
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+	module worklib.E2L_2_inhconn_gnd:vams
+		errors: 0, warnings: 0
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+	module worklib.Bidir_2_inhconn_gnd:vams
+		errors: 0, warnings: 0
+file: ./netlist.vams
+	module EMG_TestBench.TB_EMG_w_SwitchArray:schematic
+		errors: 0, warnings: 0
+	module EMG_Model.AFE_EMG:schematic
+		errors: 0, warnings: 0
+	module EMG_Model.MultiCH_16_EMG:schematic
+		errors: 0, warnings: 0
+file: ./cds_globals.vams
+	module worklib.cds_globals:vams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v
+	module EMG_Model.Digital_Stimuli_EMG_V2:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams
+	module EMG_Model.Signal_Gen:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams
+	module EMG_Model.ADC_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
+	module EMG_Model.ANA_MUX_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+	module EMG_Model.IA_EMG_Ideal:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
+	module EMG_Model.PGA_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
+	module EMG_Model.BPF_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams
+	module EMG_Model.DAC_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams
+	module BioZ_EMG_Model.BioZ_EMG_SwitchArray16:verilogams
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xmvlog: Memory Usage - Current physical: 25.9M, Current virtual: 57.8M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 74.6% cpu)
+		Caching library 'BioZ_EMG_Model' ....... Done
+		Caching library 'EMG_TestBench' ....... Done
+		Caching library 'worklib' ....... Done
+		Caching library 'EMG_Model' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		TB_EMG_w_SwitchArray
+		cds_globals
+	Discipline resolution Pass...
+	Doing auto-insertion of connection elements...
+	Connect Rules applied are:
+		ConnRules_18V_full_fast
+	Building instance overlay tables: .................... Done
+	Using implicit TMP libraries; associated with library EMG_TestBench
+	Generating native compiled code:
+		EMG_Model.Digital_Stimuli_EMG_V2:functional <0x71fc0df4>
+			streams:   9, words:  5429
+		EMG_Model.Signal_Gen:verilogams <0x4992e4a7>
+			streams:   1, words:   483
+		EMG_Model.ANA_MUX_EMG:verilogams <0x576b0c18>
+			streams:   1, words:   300
+		EMG_Model.PGA_EMG:verilogams <0x7aedb64a>
+			streams:   1, words:   565
+		EMG_Model.ADC_EMG:verilogams <0x6ca07982>
+	NaN = 0.0/0.0;
+	         |
+xmvlog_cg: *W,REALDZ (/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams,28|10): Division by zero attempted (type real operator).
+			streams:  11, words:  5949
+		connectLib.E2R:module <0x0c190f4a>
+			streams:   4, words:  7449
+		connectLib.L2E_2:module <0x0588870b>
+			streams:   4, words:  8774
+		connectLib.E2R:module <0x7971f89b>
+			streams:   4, words:  7449
+		connectLib.Bidir_2:module <0x47cef303>
+			streams:  15, words: 19111
+		connectLib.E2L_2:module <0x2b14c314>
+			streams:   9, words:  9525
+	Building instance specific data structures.
+logic Dis; 		// Distance of BI measurement (0: long; 1: short)
+        |
+xmelab: *W,CSINFI (/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams,36|8): implicit wire has no fanin (TB_EMG_w_SwitchArray.I140.Dis).
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                99      34
+		Primitives:              6       1
+		Registers:             421     186
+		Scalar wires:           65       -
+		Expanded wires:         12       1
+		Vectored wires:         31       -
+		Always blocks:         128      74
+		Initial blocks:         29      30
+		Cont. assignments:      24      24
+		Pseudo assignments:     10       5
+		Interconnect:          147       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: EMG_TestBench.TB_EMG_w_SwitchArray:config
+xmelab: Memory Usage - Final: 44.7M, Peak: 217.0M, Peak virtual: 301.7M
+xmelab: CPU Usage - 0.1s system + 0.2s user = 0.3s total (0.3s, 88.9% cpu)
+Loading snapshot EMG_TestBench.TB_EMG_w_SwitchArray:config .................... Done
+Simulating in AMS-SIE mode...
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB ++aps +mt=16.
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.433.isr9 64bit -- 5 Nov 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 452
+Memory  available: 52.1250 GB  physical: 67.2863 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1368.5] ( 16 ),  1 [1204.4] ( 17 ),  2 [1680.3] ( 18 )
+                 3 [1249.5] ( 19 ),  4 [1387.5] ( 20 ),  5 [1954.0] ( 21 )
+                 6 [1692.3] ( 22 ),  7 [1332.9] ( 23 )
+        1:       8 [1200.0] ( 24 ),  9 [1252.3] ( 25 ), 10 [2400.0] ( 26 )
+                11 [1200.0] ( 27 ), 12 [1216.7] ( 28 ), 13 [1200.1] ( 29 )
+                14 [1200.1] ( 30 ), 15 [1200.0] ( 31 )
+        
+System load averages (1min, 5min, 15min) : 1.3 %, 1.5 %, 1.8 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/spiceModels.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used: `/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file:  /home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/2432_Alejandro_Design_BioZ_EMG_Model_BioZ_EMG_SwitchArray16_verilogams_verilog.vams.BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/2432_Alejandro_Design_BioZ_EMG_Model_BioZ_EMG_SwitchArray16_verilogams_verilog.vams.BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/2432_Alejandro_Design_BioZ_EMG_Model_BioZ_EMG_SwitchArray16_verilogams_verilog.vams.BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral.so
+Installed compiled interface for BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_DAC_EMG_verilogams_verilog.vams.EMG_Model__DAC_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_DAC_EMG_verilogams_verilog.vams.EMG_Model__DAC_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_DAC_EMG_verilogams_verilog.vams.EMG_Model__DAC_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__DAC_EMG__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__DAC_EMG__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_BPF_EMG_verilogams_verilog.vams.EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_BPF_EMG_verilogams_verilog.vams.EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_BPF_EMG_verilogams_verilog.vams.EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_PGA_EMG_verilogams_verilog.vams.EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_IA_EMG_Ideal_verilogams_verilog.vams.EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/netlist.vams
+Reading file:  /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_ANA_MUX_EMG_verilogams_verilog.vams.EMG_Model__ANA_MUX_EMG__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_ANA_MUX_EMG_verilogams_verilog.vams.EMG_Model__ANA_MUX_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_ANA_MUX_EMG_verilogams_verilog.vams.EMG_Model__ANA_MUX_EMG__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__ANA_MUX_EMG__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__ANA_MUX_EMG__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams
+Reading link:  /pkg/cadence/installs/XCELIUM1803/tools
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/affirma_ams/etc/connect_lib/Bidir_2.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_Bidir_2.vams.connectLib__Bidir_2__module__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_Bidir_2.vams.connectLib__Bidir_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_Bidir_2.vams.connectLib__Bidir_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__Bidir_2__module__0x10000001_behavioral.so
+Installed compiled interface for connectLib__Bidir_2__module__0x10000001_behavioral.
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/affirma_ams/etc/connect_lib/E2R.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2R.vams.connectLib__E2R__module__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2R.vams.connectLib__E2R__module__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2R.vams.connectLib__E2R__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2R__module__0x10000001_behavioral.so
+Installed compiled interface for connectLib__E2R__module__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_Signal_Gen_verilogams_verilog.vams.EMG_Model__Signal_Gen__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_Signal_Gen_verilogams_verilog.vams.EMG_Model__Signal_Gen__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/1483_research_EMG_Model_Signal_Gen_verilogams_verilog.vams.EMG_Model__Signal_Gen__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_EMG_Model__Signal_Gen__verilogams__0x10000001_behavioral.so
+Installed compiled interface for EMG_Model__Signal_Gen__verilogams__0x10000001_behavioral.
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Installed compiled interface for connectLib__E2L_2__module__0x10000001_behavioral.
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/tm_bip.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpva.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvb.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpva3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvb3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvc3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnva.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvb.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvb_npn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvb_pnp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvc_npn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnvc_pnp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvhscr.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvascr.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpvhbscr.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pa.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pb.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pe.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpv_pf.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pa.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pb.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pe.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qpl_pf.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pa.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pb.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pe.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/bip/qnl_pf.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/tm_cap.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csandwt3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csandwt4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csandwt5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf2p.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf3p.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf3a.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf4a.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csf5a.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft4a.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft5a.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/csft6a.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm4t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm5t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmm6t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmm4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmm4t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmm5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmm5t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh4t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh5t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cmmh6t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmmh4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cdmmh4t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmmh5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/ctmmh5t.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc_pmos.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvci.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvci_nmos.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvci_m.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3_pmos.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3i.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3i_nmos.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/mosvc3i_m.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpod.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpod_i.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpodhv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cpodhv_i.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cp1sub.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cp1suba.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/cp1subp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/tag_25v.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/cap/tag_60v.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/tm_dio.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnn3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dp3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnw3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/ddnwmv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdnwmv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dipdnwmv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/ddnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dipdnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnhpw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnhpwa.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dphnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dphnwa.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dhpw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dhnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dndf.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdwhn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dwhn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpwhn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpndf.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdddnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/ddpldnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn3dpl.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dbn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpol.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnpdd_scr.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpdd_scr.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dsb.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dsba.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dsba_qp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dnp20.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dpp20.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dn3sci.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/dio/dscidnwmv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/tm_mos.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nei.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nei_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nei_m_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pei.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pei_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pei_m_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nel.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/neli.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/neli_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/neli_m_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pel.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pel_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/peli.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/peli_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/peli_m_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nn3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3i.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3i_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3i_m_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3i.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3i_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3i_m_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3ln.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3ln_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lni.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lni_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lni_m_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3_mos1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_mos1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nd3i_m_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelna.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelnai.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelnai_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nelnai_m_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lna.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lnai.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lnai_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ne3lnai_m_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lna.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lna_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lnai.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lnai_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pe3lnai_m_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmma.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/jf_nmma.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmma_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmma.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/jf_pmma.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmma_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedi.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedi_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedia.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nedia_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped2_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/ped_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhv_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhv_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhv_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhv_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmc_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmc_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmd_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmmd_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmc_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nmc_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nma.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nma_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phv_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phv_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phhv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phhv_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/phhv_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmc_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmc_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmmc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmmc_mos2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmmc_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pma.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pma_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pmb.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvti.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvti_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nesvti_m_6.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvt_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvti.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvti_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/pesvti_m_5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhvd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhvd_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhvd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/mos/nhhvd_bjt.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/tm_pho.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoa.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dpho.va
+Reading link:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading link:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphob.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_uv.va
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc_cat.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc0.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc0_cat.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphocfp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphocfp_cat.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod_an1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod_an2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod0.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod0_an1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphod0_an2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphodfp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphodfp_an1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphodfp_an2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dspada.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/ispad.va
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dspada_cat.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dspada0.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dapda.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_apd.va
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dapda_cat.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dapda0.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/tm_res.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdn_esd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp_io.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp_esd.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw_scr.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdn3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdp3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnw3_scr.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rdnwmv.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1_3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1_3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1s.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1s_3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1h.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rnp1h_3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1k1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rpp1k1_3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rctdn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rctdp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rctp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsildn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsildp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsilnp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsilpp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdn.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdn3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbdp3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbnp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbpp1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rsbpp1k1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm1.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm2.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm3.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm4.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rm5.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtp.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
+Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/amsControlSpectre.scs
+Reading file:  /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.0/1/EMG_TestBench:TB_EMG_w_SwitchArray:1/netlist/.amsbind.scs
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 1.07052 s, elapsed = 1.25172 s.
+Time accumulated: CPU = 1.52131 s, elapsed = 1.25172 s.
+Peak resident memory used = 117 Mbytes.
+
+xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> # This is the NC-SIM(R) probe command file
+xcelium> # used in the AMS-ADE integration.
+xcelium> 
+xcelium> 
+xcelium> #
+xcelium> # Database settings
+xcelium> #
+xcelium> if { [info exists ::env(AMS_RESULTS_DIR) ] } { set AMS_RESULTS_DIR $env(AMS_RESULTS_DIR)} else {set AMS_RESULTS_DIR "../psf"}
+../psf
+xcelium> database -open ams_database -into ${AMS_RESULTS_DIR} -default
+Created default SHM database ams_database
+xcelium> 
+xcelium> #
+xcelium> # Probe settings
+xcelium> #
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E00}
+Created probe 1
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E01}
+Created probe 2
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E02}
+Created probe 3
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E03}
+Created probe 4
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E10}
+Created probe 5
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E11}
+Created probe 6
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E12}
+Created probe 7
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E13}
+Created probe 8
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E20}
+Created probe 9
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E21}
+Created probe 10
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E22}
+Created probe 11
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E23}
+Created probe 12
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E30}
+Created probe 13
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E31}
+Created probe 14
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E32}
+Created probe 15
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.E33}
+Created probe 16
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch1}
+Created probe 17
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch2}
+Created probe 18
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch3}
+Created probe 19
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch4}
+Created probe 20
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch5}
+Created probe 21
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch6}
+Created probe 22
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch7}
+Created probe 23
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch8}
+Created probe 24
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch9}
+Created probe 25
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch10}
+Created probe 26
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch11}
+Created probe 27
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch12}
+Created probe 28
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch13}
+Created probe 29
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch14}
+Created probe 30
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch15}
+Created probe 31
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_Ch16}
+Created probe 32
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[11]}
+Created probe 33
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[10]}
+Created probe 34
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[9]}
+Created probe 35
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[8]}
+Created probe 36
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[7]}
+Created probe 37
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[6]}
+Created probe 38
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[5]}
+Created probe 39
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[4]}
+Created probe 40
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[3]}
+Created probe 41
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[2]}
+Created probe 42
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[1]}
+Created probe 43
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_DOUT[0]}
+Created probe 44
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.OUT_DAC}
+Created probe 45
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_CLK}
+Created probe 46
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_MUX_CLK}
+Created probe 47
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_CH_SEL[3]}
+Created probe 48
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_CH_SEL[2]}
+Created probe 49
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_CH_SEL[1]}
+Created probe 50
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_CH_SEL[0]}
+Created probe 51
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_START}
+Created probe 52
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_ADC_EOC}
+Created probe 53
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_GAIN_SEL[2]}
+Created probe 54
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_GAIN_SEL[1]}
+Created probe 55
+xcelium> probe -create -emptyok -database ams_database {TB_EMG_w_SwitchArray.EMG_GAIN_SEL[0]}
+Created probe 56
+xcelium> 
+xcelium> run
+Time for Elaboration: CPU = 264.246 ms, elapsed = 307.646 ms.
+Time accumulated: CPU = 1.78573 s, elapsed = 1.55954 s.
+Peak resident memory used = 149 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8527): There are some nodes and instances removed from the netlist topology check. Check the circuit and correct the topology. Or use preserve_inst to keep them if necessary.
+
+***********************************************
+  Total removed instances 1 ( dangling 1, terminals connected together 0)  
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8529): Dangling instance. TB_EMG_w_SwitchArray.V3 is removed.
+
+
+  Total removed nodes 1 ( dangling nodes 1, floating nodes 0 )
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8530): Dangling node. TB_EMG_w_SwitchArray.vddd is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_EMG_w_SwitchArray.EMG_ADC_EN is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_EMG_w_SwitchArray.EMG_ADC_EOC is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_EMG_w_SwitchArray.EMG_ADC_START is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_EMG_w_SwitchArray.EMG_MUX_CLK is removed.
+    WARNING (SPECTRE-8531): Floating node. TB_EMG_w_SwitchArray.I9__EMG_ADC_CLK__9__0 is removed.
+        Further occurrences of this warning will be suppressed.
+
+***********************************************
+Time for EDB Visiting: CPU = 7.062 ms, elapsed = 7.06291 ms.
+Time accumulated: CPU = 1.793 s, elapsed = 1.56681 s.
+Peak resident memory used = 150 Mbytes.
+
+
+Notice from spectre during topology check.
+    No connections to node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__0'.
+    No connections to node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__1'.
+    No connections to node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__10'.
+    No connections to node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__11'.
+    No connections to node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__2'.
+        Further occurrences of this notice will be suppressed.
+    Only one connection to the following 5 nodes:
+        TB_EMG_w_SwitchArray.IoutN_bioz
+        TB_EMG_w_SwitchArray.IoutP_bioz
+        TB_EMG_w_SwitchArray.OUT_DAC
+        TB_EMG_w_SwitchArray.Vn_bioz
+        TB_EMG_w_SwitchArray.Vp_bioz
+        Further occurrences of this notice will be suppressed.
+    No DC path from node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__0' to ground, Gmin installed to provide path.
+    No DC path from node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__1' to ground, Gmin installed to provide path.
+    No DC path from node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__10' to ground, Gmin installed to provide path.
+    No DC path from node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__11' to ground, Gmin installed to provide path.
+    No DC path from node `TB_EMG_w_SwitchArray.I9__EMG_ADC_DOUT__6__2' to ground, Gmin installed to provide path.
+        Further occurrences of this notice will be suppressed.
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               temp = 27
+            vabstol = 1e-06
+            iabstol = 1e-12
+           homotopy = 7
+              limit = delta
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+             pivrel = 0.001
+     checklimitdest = psf
+             rawfmt = sst2
+               save = selected
+               tnom = 27
+              scale = 1
+             scalem = 1
+             reltol = 0.0001
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 178
+BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral 1     
+connectLib__Bidir_2__module__0x10000001_behavioral 2     
+connectLib__E2L_2__module__0x10000001_behavioral 8     
+connectLib__E2R__module__0x10000001_behavioral 3     
+connectLib__L2E_2__module__0x10000001_behavioral 13    
+EMG_Model__ANA_MUX_EMG__verilogams__0x10000001_behavioral 1     
+EMG_Model__BPF_EMG__verilogams__0x10000001_behavioral 16    
+EMG_Model__DAC_EMG__verilogams__0x10000001_behavioral 1     
+EMG_Model__IA_EMG_Ideal__verilogams__0x10000001_behavioral 16    
+EMG_Model__PGA_EMG__verilogams__0x10000001_behavioral 16    
+EMG_Model__Signal_Gen__verilogams__0x10000001_behavioral 1     
+            vsource 13    
+
+Analysis and control statement inventory:
+               info 4     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 46    
+
+
+Notice from spectre during initial setup.
+    5 vsources are short because their absolute value is less than or equal to 'vabsshort'.
+    Fast APS Enabled.
+    28 notices suppressed.
+    6 warnings suppressed.
+
+Time for parsing: CPU = 8.893 ms, elapsed = 13.622 ms.
+Time accumulated: CPU = 1.80205 s, elapsed = 1.58059 s.
+Peak resident memory used = 151 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 10 ms)
+************************************************
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.Vn_bioz').
+
+Warning from spectre during IC analysis, during transient analysis `tran'.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+Trying `homotopy = gmin' for initial conditions.
+
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.IoutN_bioz').
+
+Warning from spectre during IC analysis, during transient analysis `tran'.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+Trying `homotopy = source' for initial conditions.
+
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I9.Vin_ADC').
+
+Warning from spectre during IC analysis, during transient analysis `tran'.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+Trying `homotopy = dptran' for initial conditions.
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.IoutN_bioz').
+
+Warning from spectre during IC analysis, during transient analysis `tran'.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.IoutN_bioz').
+
+Warning from spectre during IC analysis, during transient analysis `tran'.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+        Further occurrences of this warning will be suppressed.
+
+.
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I140._cds_internal_BioZ_EMG_SwitchArray16_:E00_BI_Ip_flow').
+Trying `homotopy = gmin' for initial conditions.
+
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I140._cds_internal_BioZ_EMG_SwitchArray16_:E00_BI_Ip_flow').
+Trying `homotopy = source' for initial conditions.
+
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I140._cds_internal_BioZ_EMG_SwitchArray16_:E00_BI_Ip_flow').
+Trying `homotopy = dptran' for initial conditions.
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I140._cds_internal_BioZ_EMG_SwitchArray16_:E00_BI_Ip_flow').
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I140._cds_internal_BioZ_EMG_SwitchArray16_:E00_BI_Ip_flow').
+.
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I140._cds_internal_BioZ_EMG_SwitchArray16_:E00_BI_Ip_flow').
+Trying `homotopy = ptran' for initial conditions.
+Matrix is singular (detected at `TB_EMG_w_SwitchArray.I140._cds_internal_BioZ_EMG_SwitchArray16_:E00_BI_Ip_flow').
+
+Error found by spectre during IC analysis, during transient analysis `tran'.
+    ERROR (SPECTRE-16080): No DC solution found (no convergence).  
+
+The values for those nodes that did not converge on the last Newton iteration are given below.  The manner in which the convergence criteria were not satisfied is also given.
+            Failed test: | Value | > RelTol*Ref + AbsTol
+
+ Top 10 Residue too large Convergence failure:
+    V(TB_EMG_w_SwitchArray.vdda) = 1.8 V
+        residue too large: | 44.9998 mA | > 225.001 uA + 1 pA
+    I(TB_EMG_w_SwitchArray.I9.I17._cds_internal_ANA_MUX_EMG_:Vout_Vssa_flow) = 0 A
+        residue too large: | 900 mV | > 4.5 mV + 1 uV
+
+DC simulation time: CPU = 58.388 ms, elapsed = 58.563 ms.
+Analysis `tran' was terminated prematurely due to an error.
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+
+Error found by spectre during DC analysis, during info `finalTimeOP'.
+    ERROR (SPECTRE-16041): Analysis was skipped due to inability to compute operating point.
+
+Analysis `finalTimeOP' was terminated prematurely due to an error.
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+
+Aggregate audit (5:43:33 PM, Fri Feb 19, 2021):
+Time used: CPU = 1.89 s, elapsed = 1.68 s, util. = 112%.
+Time spent in licensing: elapsed = 166 ms, percentage of total = 9.88%.
+Peak memory used = 153 Mbytes.
+Simulation started at: 5:43:31 PM, Fri Feb 19, 2021, ended at: 5:43:33 PM, Fri Feb 19, 2021, with elapsed time (wall clock): 1.68 s.
+spectre completes with 2 errors, 14 warnings, and 17 notices.
+xmsim: *E,RNALER: Simulation terminated due to analog error.
+Memory Usage - Current physical: 153.1M, Current virtual: 628.8M
+CPU Usage - 0.4s system + 1.3s user = 1.7s total (86.2% cpu)
+xcelium> exit
+xmsim: Memory Usage - Final: 153.4M, Peak: 153.4M, Peak virtual: 628.8M
+xmsim: CPU Usage - 0.5s system + 1.4s user = 1.9s total (2.0s, 94.7% cpu)
+TOOL:	xrun(64)	18.03-s018: Exiting on Feb 19, 2021 at 17:43:33 CET  (total: 00:00:12)
+
+
+********* LOG ENDS **************
+**                             **

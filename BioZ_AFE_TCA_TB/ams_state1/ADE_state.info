@@ -1,0 +1,3 @@
+projectDir = '"./Sim"
+designInfo = '("BioZ_EMG_Model" "BioZ_AFE_TCA_TB" "config" "ams")
+descriptionText = "None"

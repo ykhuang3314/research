@@ -1,4 +1,4 @@
-Begin Netlisting Jan  6 23:16:36 2021
+Begin Netlisting Feb 22 15:44:09 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -52,20 +52,15 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
+idc                         spectre              *Stopping View*  
 Current_Source              verilogams           *Stopping View*  
-Counter                     functional           *Stopping View*  
 vdc                         spectre              *Stopping View*  
 res                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
+Current_Mirror              verilogams           *Stopping View*  
+vpwl                        spectre              *Stopping View*  
+Digital_Stimulus_ST_V2      functional           *Stopping View*  
 TB_Current_Source           schematic                             
 
 ---------- End of netlist configuration information   ----------
-WARNING (OSSHNL-159): The primitive,
-'Stimulator_Model/Current_Source/verilogams', has been updated since the last
-netlisting session
-in this current run directory. Therefore, re-netlisting all
-cell views where
-this primitive is instantiated.
-
 Running netlist assembly..
-End netlisting Jan  6 23:16:44 2021
+End netlisting Feb 22 15:44:17 2021

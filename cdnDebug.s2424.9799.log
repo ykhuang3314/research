@@ -1,0 +1,4 @@
+# start: 2021/02/22 14:59:11
+[000001] srr::[QPRuntime.cpp:361] Signal '/EMG_ADC_DOUT<11:0>': waveform dimension '2' is not supported.(ParamWave)
+[000002] srr::[QPRuntime.cpp:361] Signal '/EMG_ADC_DOUT<11:0>': waveform dimension '2' is not supported.(ParamWave)
+[000003] srr::[QPRuntime.cpp:361] Signal '/EMG_ADC_DOUT<11:0>': waveform dimension '2' is not supported.(ParamWave)

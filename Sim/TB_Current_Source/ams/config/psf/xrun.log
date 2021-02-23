@@ -1,5 +1,5 @@
 xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.03-s018: Started on Jan 06, 2021 at 23:16:45 CET
+TOOL:	xrun(64)	18.03-s018: Started on Feb 22, 2021 at 15:44:19 CET
 xrun
 	-f xrunArgs
 		-UNBUFFERED
@@ -13,6 +13,7 @@ xrun
 		-ade
 		-timescale 1ns/1ns
 		-vtimescale 1ns/1ns
+		-discipline logic
 		-delay_mode None
 		-novitalaccl
 		-access r
@@ -28,14 +29,23 @@ xrun
 		-xmsimargs "+amsrawdir ../psf"
 		-simcompatible_ams spectre
 		-name Stimulator_TestBench.TB_Current_Source:config
+		-amsconnrules ConnRules_18V_full_fast
+		+define+CDS_SELECT_CRS
+		+define+CONNRULES_18V_FULL_FAST
+		-amsconnrules ConnRules_inhconn_full_fast_gnd
+		+define+CONNRULES_INHCONN_FULL_FAST_GND
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
 		-allowredefinition
 		-amsbind
 		-top Stimulator_TestBench.TB_Current_Source:schematic
 		-top cds_globals
 		./netlist.vams
-		./ie_card.scs
 		-f ./textInputs
-			-amscompilefile "file:/home/ykhuang/research/Digital_Lib/Counter/functional/verilog.v lib:Digital_Lib cell:Counter view:functional"
+			-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+			-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
 			-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
 			-makelib Stimulator_TestBench
 			-endlib
@@ -43,16 +53,13 @@ xrun
 		-l ../psf/xrun.log
 		-spectre_args ++aps
 file: /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
-	module Stimulator_Model.Current_Source:verilogams
-		errors: 0, warnings: 0
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-xmvlog: Memory Usage - Current physical: 25.4M, Current virtual: 57.5M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 71.8% cpu)
+xmvlog: Memory Usage - Current physical: 25.2M, Current virtual: 57.3M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 86.5% cpu)
 		Caching library 'Stimulator_TestBench' ....... Done
 		Caching library 'Stimulator_Model' ....... Done
-		Caching library 'Digital_Lib' ....... Done
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
@@ -61,29 +68,24 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 71.8% cpu)
 	Discipline resolution Pass...
 	Doing auto-insertion of connection elements...
 	Connect Rules applied are:
-		logic_cr
+		ConnRules_18V_full_fast
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		Stimulator_Model.Current_Source:verilogams <0x16ef9391>
-			streams:   1, words:   397
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:                 7      25
-		Verilog packages:        0       1
-		Registers:              20     210
-		Scalar wires:            7       -
-		Vectored wires:          4       -
-		Always blocks:          23      63
-		Initial blocks:          4      61
-		Cont. assignments:       3      24
-		Interconnect:            5       -
-		Compilation units:       0       3
+		Modules:                 8      26
+		Registers:              37     169
+		Scalar wires:           11       -
+		Vectored wires:          5       -
+		Always blocks:          23      69
+		Initial blocks:          4      28
+		Cont. assignments:       4      25
+		Interconnect:           12       -
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: Stimulator_TestBench.TB_Current_Source:config
-xmelab: Memory Usage - Final: 43.0M, Peak: 215.7M, Peak virtual: 300.6M
-xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.3s, 92.2% cpu)
+xmelab: Memory Usage - Final: 42.9M, Peak: 215.7M, Peak virtual: 300.8M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 96.5% cpu)
 Loading snapshot Stimulator_TestBench.TB_Current_Source:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
@@ -95,19 +97,19 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 2056
-Memory  available: 51.8130 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 27550
+Memory  available: 51.1867 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1208.9] ( 16 ),  1 [1405.2] ( 17 ),  2 [1228.6] ( 18 )
-                 3 [1241.6] ( 19 ),  4 [1230.5] ( 20 ),  5 [1217.1] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [1282.3] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [1235.3] ( 25 ), 10 [1247.9] ( 26 )
-                11 [2159.3] ( 27 ), 12 [1200.6] ( 28 ), 13 [1200.0] ( 29 )
-                14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
+        0:       0 [1499.3] ( 16 ),  1 [1202.5] ( 17 ),  2 [1379.2] ( 18 )
+                 3 [1293.3] ( 19 ),  4 [1200.0] ( 20 ),  5 [1803.8] ( 21 )
+                 6 [1284.1] ( 22 ),  7 [1242.0] ( 23 )
+        1:       8 [2398.8] ( 24 ),  9 [1209.4] ( 25 ), 10 [1212.3] ( 26 )
+                11 [1200.3] ( 27 ), 12 [1200.0] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1200.0] ( 30 ), 15 [1300.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 1.1 %, 0.7 %, 0.5 %
+System load averages (1min, 5min, 15min) : 0.5 %, 0.3 %, 0.3 %
 Hyperthreading is enabled
 HPC is enabled
 
@@ -122,9 +124,14 @@ Reading file:  /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Source_verilogams_verilog.vams.Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
 Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Source_verilogams_verilog.vams.Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
-Compiling ahdlcmi module library for Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.
-Finished compilation in 965 ms (elapsed) for Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Source_verilogams_verilog.vams.Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.so
 Installed compiled interface for Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral.
+Reading file:  /home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Mirror_verilogams_verilog.vams.Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Mirror_verilogams_verilog.vams.Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/1483_research_Stimulator_Model_Current_Mirror_verilogams_verilog.vams.Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.so
+Installed compiled interface for Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral.
 Reading link:  /pkg/cadence/installs/XCELIUM1803/tools
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
 Opening directory xcelium.d/AMSD/ahdlSimDB (775)
@@ -133,7 +140,6 @@ Opening directory xcelium.d/AMSD/ahdlSimDB/3151_tools_affirma_ams_etc_connect_li
 Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/xcelium.d/AMSD/ahdlSimDB/3151_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
 Installed compiled interface for connectLib__E2L_2__module__0x10000001_behavioral.
 Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/netlist.vams
-Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/cds_globals.vams
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs
@@ -466,11 +472,10 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
 Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/amsControlSpectre.scs
-Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/ie_card.scs
 Reading file:  /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/.amsbind.scs
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 518.567 ms, elapsed = 1.61317 s.
-Time accumulated: CPU = 961.057 ms, elapsed = 1.61318 s.
+Time for NDB Parsing: CPU = 475.717 ms, elapsed = 597.226 ms.
+Time accumulated: CPU = 905.452 ms, elapsed = 597.23 ms.
 Peak resident memory used = 101 Mbytes.
 
 xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
@@ -490,43 +495,48 @@ xcelium>
 xcelium> #
 xcelium> # Probe settings
 xcelium> #
-xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.CLK}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.ANO_ST}
 Created probe 1
-xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.count_out[4]}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.CAT_ST}
 Created probe 2
-xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.count_out[3]}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.DIS_ST}
 Created probe 3
-xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.count_out[2]}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.MAG_ST[4]}
 Created probe 4
-xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.count_out[1]}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.MAG_ST[3]}
 Created probe 5
-xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.count_out[0]}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.MAG_ST[2]}
 Created probe 6
-xcelium> probe -create -emptyok -database ams_database -flow {TB_Current_Source.I0.Ioutn}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.MAG_ST[1]}
 Created probe 7
-xcelium> probe -create -emptyok -database ams_database -flow {TB_Current_Source.R0.1}
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.MAG_ST[0]}
 Created probe 8
+xcelium> probe -create -emptyok -database ams_database {TB_Current_Source.EN_ST}
+Created probe 9
+xcelium> probe -create -emptyok -database ams_database -flow {TB_Current_Source.I3.Ioutn}
+Created probe 10
+xcelium> probe -create -emptyok -database ams_database -flow {TB_Current_Source.I1.Iout}
+Created probe 11
 xcelium> 
 xcelium> run
-Time for Elaboration: CPU = 192.059 ms, elapsed = 223.644 ms.
-Time accumulated: CPU = 1.15327 s, elapsed = 1.83698 s.
-Peak resident memory used = 129 Mbytes.
+Time for Elaboration: CPU = 222.582 ms, elapsed = 265.873 ms.
+Time accumulated: CPU = 1.12819 s, elapsed = 863.263 ms.
+Peak resident memory used = 133 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 1.685 ms, elapsed = 1.6861 ms.
-Time accumulated: CPU = 1.1552 s, elapsed = 1.8389 s.
-Peak resident memory used = 129 Mbytes.
+Time for EDB Visiting: CPU = 1.744 ms, elapsed = 1.74403 ms.
+Time accumulated: CPU = 1.13016 s, elapsed = 865.225 ms.
+Peak resident memory used = 133 Mbytes.
 
 
 Notice from spectre during topology check.
-    No connections to node `vdda!'.
-    No connections to node `TB_Current_Source.net4'.
-    No DC path from node `vdda!' to ground, Gmin installed to provide path.
-    No DC path from node `TB_Current_Source.net4' to ground, Gmin installed to provide path.
+    Only one connection to the following 2 nodes:
+        TB_Current_Source.vddd
+        TB_Current_Source.vssd
 Notice from spectre during initial setup.
     Multithreading is disabled due to the size of the design being too small.
 
@@ -557,12 +567,14 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 13
-             iprobe 1     
+              nodes 25
+             iprobe 2     
 connectLib__E2L_2__module__0x10000001_behavioral 3     
+            isource 1     
            resistor 1     
+Stimulator_Model__Current_Mirror__verilogams__0x10000001_behavioral 1     
 Stimulator_Model__Current_Source__verilogams__0x10000001_behavioral 1     
-            vsource 2     
+            vsource 8     
 
 Analysis and control statement inventory:
                info 4     
@@ -571,15 +583,16 @@ Analysis and control statement inventory:
 Output statements:
              .probe 0     
            .measure 0     
-               save 3     
+               save 2     
 
 
 Notice from spectre during initial setup.
+    2 vsources are short because their absolute value is less than or equal to 'vabsshort'.
     Fast APS Enabled.
 
-Time for parsing: CPU = 3.923 ms, elapsed = 8.61311 ms.
-Time accumulated: CPU = 1.1593 s, elapsed = 1.8477 s.
-Peak resident memory used = 130 Mbytes.
+Time for parsing: CPU = 3.867 ms, elapsed = 8.57496 ms.
+Time accumulated: CPU = 1.1342 s, elapsed = 873.971 ms.
+Peak resident memory used = 134 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -587,32 +600,31 @@ Pre-Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~
 
 ***********************************************
-Transient Analysis `tran': time = (0 s -> 5 ms)
+Transient Analysis `tran': time = (0 s -> 1 ms)
 ***********************************************
-DC simulation time: CPU = 1.566 ms, elapsed = 1.5471 ms.
+DC simulation time: CPU = 3.925 ms, elapsed = 3.90601 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
-    stop = 5 ms
-    step = 5 us
-    maxstep = 100 us
+    stop = 1 ms
+    step = 1 us
+    maxstep = 10 us
     ic = all
     useprevic = no
     skipdc = no
-    reltol = 1e-03
+    reltol = 10e-06
     abstol(V) = 1 uV
     abstol(I) = 1 pA
     temp = 27 C
     tnom = 27 C
     tempeffects = all
-    errpreset = liberal
-    method = trapgear2
-    lteratio = 3.5
+    errpreset = conservative_sigglobal
+    method = gear2only
+    lteratio = 10
     relref = sigglobal
     cmin = 0 F
     gmin = 1 pS
     rabsshort = 1 mOhm
-    compression = wildcardonly
 
 
 Notice from spectre during transient analysis `tran'.
@@ -621,70 +633,70 @@ Notice from spectre during transient analysis `tran'.
 
 Output and IC/nodeset summary:
                  save   2       (current)
-                 save   1       (voltage)
 
-    tran: time = 130 us       (2.6 %), step = 16 us        (320 m%)
-    tran: time = 380 us       (7.6 %), step = 16 us        (320 m%)
-    tran: time = 630 us      (12.6 %), step = 16 us        (320 m%)
-    tran: time = 880 us      (17.6 %), step = 16 us        (320 m%)
-    tran: time = 1.13 ms     (22.6 %), step = 16 us        (320 m%)
-    tran: time = 1.38 ms     (27.6 %), step = 16 us        (320 m%)
-    tran: time = 1.63 ms     (32.6 %), step = 16 us        (320 m%)
-    tran: time = 1.88 ms     (37.6 %), step = 16 us        (320 m%)
-    tran: time = 2.13 ms     (42.6 %), step = 16 us        (320 m%)
-    tran: time = 2.38 ms     (47.6 %), step = 16 us        (320 m%)
-    tran: time = 2.63 ms     (52.6 %), step = 16 us        (320 m%)
-    tran: time = 2.88 ms     (57.6 %), step = 16 us        (320 m%)
-    tran: time = 3.13 ms     (62.6 %), step = 16 us        (320 m%)
-    tran: time = 3.38 ms     (67.6 %), step = 16 us        (320 m%)
-    tran: time = 3.63 ms     (72.6 %), step = 16 us        (320 m%)
-    tran: time = 3.88 ms     (77.6 %), step = 16 us        (320 m%)
-    tran: time = 4.13 ms     (82.6 %), step = 16 us        (320 m%)
-    tran: time = 4.38 ms     (87.6 %), step = 16 us        (320 m%)
-    tran: time = 4.63 ms     (92.6 %), step = 16 us        (320 m%)
-    tran: time = 4.88 ms     (97.6 %), step = 16 us        (320 m%)
+    tran: time = 27.26 us    (2.73 %), step = 7.061 us     (706 m%)
+    tran: time = 77.26 us    (7.73 %), step = 10 us           (1 %)
+    tran: time = 127.3 us    (12.7 %), step = 10 us           (1 %)
+    tran: time = 177.3 us    (17.7 %), step = 10 us           (1 %)
+    tran: time = 229.7 us      (23 %), step = 10 us           (1 %)
+    tran: time = 279.7 us      (28 %), step = 10 us           (1 %)
+    tran: time = 329.7 us      (33 %), step = 10 us           (1 %)
+    tran: time = 379.7 us      (38 %), step = 10 us           (1 %)
+    tran: time = 429.7 us      (43 %), step = 10 us           (1 %)
+    tran: time = 479.7 us      (48 %), step = 10 us           (1 %)
+    tran: time = 529.9 us      (53 %), step = 6.602 us     (660 m%)
+    tran: time = 579.9 us      (58 %), step = 10 us           (1 %)
+    tran: time = 629.9 us      (63 %), step = 10 us           (1 %)
+    tran: time = 679.9 us      (68 %), step = 10 us           (1 %)
+    tran: time = 726.9 us    (72.7 %), step = 10 us           (1 %)
+    tran: time = 776.9 us    (77.7 %), step = 10 us           (1 %)
+    tran: time = 826.9 us    (82.7 %), step = 10 us           (1 %)
+    tran: time = 876.9 us    (87.7 %), step = 10 us           (1 %)
+    tran: time = 926.9 us    (92.7 %), step = 10 us           (1 %)
+    tran: time = 976.9 us    (97.7 %), step = 10 us           (1 %)
 
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
-Simulation stopped via transient analysis stoptime at time 5 MS
-Memory Usage - Current physical: 135.9M, Current virtual: 604.4M
-CPU Usage - 0.4s system + 0.7s user = 1.0s total (32.7% cpu)
+Simulation stopped via transient analysis stoptime at time 1 MS
+Memory Usage - Current physical: 140.0M, Current virtual: 609.9M
+CPU Usage - 0.3s system + 0.7s user = 1.0s total (82.6% cpu)
 xcelium> exit
-Number of accepted tran steps =             697
+Number of accepted tran steps =             125
 
 Maximum value achieved for any signal of each quantity: 
-V: V(TB_Current_Source.net3) = 31 V
-I: I(TB_Current_Source.I0:Ioutn) = 31 mA
+V: V(TB_Current_Source.Ist) = 40 V
+I: I(TB_Current_Source.I1:Iout) = 10 mA
 If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Post-Transient Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative_sigglobal, default moderate
+          reltol = 10e-06, default 100e-06 (conservative)
    -   The circuit contains signals of the voltage > 10V, consider to set highvoltage=yes to get better accuracy and convergence ability.
    -   Features that may significantly slowing down simulation
-          iprobe = 22.22 % of total equations
+          iprobe = 19.05 % of total equations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (30.4 %)      1 (4.4 %)       4 (1.1 %)       5 (7.7 %)
-                 6 (12.8 %)      7 (2.2 %)      16 (4.4 %)      17 (2.2 %)
-                18 (6.1 %)      19 (2.2 %)      20 (3.4 %)      21 (36.3 %)
-                22 (5.1 %)      23 (14.6 %)     
-        Other   10 (1.1 %)      14 (4.5 %)      15 (1.1 %)      26 (2.8 %)
-                28 (10.0 %)     
-Initial condition solution time: CPU = 1.684 ms, elapsed = 1.66702 ms.
+        Spectre  0 (3.7 %)       1 (1.3 %)       2 (5.0 %)       4 (16.5 %)
+                 6 (1.3 %)      17 (1.3 %)      21 (67.9 %)     22 (23.8 %)
+                23 (16.7 %)     
+        Other    8 (45.5 %)     11 (1.2 %)      25 (5.1 %)      27 (22.8 %)
+Initial condition solution time: CPU = 4.041 ms, elapsed = 4.02522 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
-Number of A-to-D events:                     204
-  Number of A-to-D events in IEs:            204
-Number of D-to-A events:                      50
+Number of A-to-D events:                       8
+  Number of A-to-D events in IEs:              8
+Number of D-to-A events:                       5
   Number of D-to-A events in IEs:              0
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 69.891 ms, elapsed = 73.503 ms.
-Total time required for tran analysis `tran': CPU = 74.088 ms, elapsed = 79.9139 ms.
-Time accumulated: CPU = 1.24738 s, elapsed = 1.94398 s.
-Peak resident memory used = 136 Mbytes.
+Intrinsic tran analysis time:    CPU = 24.547 ms, elapsed = 28.9419 ms.
+Total time required for tran analysis `tran': CPU = 30.93 ms, elapsed = 37.6689 ms.
+Time accumulated: CPU = 1.18174 s, elapsed = 930.634 ms.
+Peak resident memory used = 140 Mbytes.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -698,14 +710,14 @@ Opening the PSF file ../psf/element.info ...
 outputParameter: writing output parameter values to rawfile.
 
 Opening the PSF file ../psf/outputParameter.info ...
-Simulation complete via transient analysis stoptime at time 5 MS
+Simulation complete via transient analysis stoptime at time 1 MS
 
-Aggregate audit (11:16:58 PM, Wed Jan 6, 2021):
-Time used: CPU = 1.26 s, elapsed = 1.97 s, util. = 64%.
-Time spent in licensing: elapsed = 135 ms, percentage of total = 6.89%.
-Peak memory used = 137 Mbytes.
-Simulation started at: 11:16:56 PM, Wed Jan 6, 2021, ended at: 11:16:58 PM, Wed Jan 6, 2021, with elapsed time (wall clock): 1.97 s.
-spectre completes with 0 errors, 1 warning, and 8 notices.
-xmsim: Memory Usage - Final: 136.7M, Peak: 136.8M, Peak virtual: 604.4M
-xmsim: CPU Usage - 0.8s system + 1.5s user = 2.3s total (3.3s, 69.6% cpu)
-TOOL:	xrun(64)	18.03-s018: Exiting on Jan 06, 2021 at 23:16:58 CET  (total: 00:00:13)
+Aggregate audit (3:44:29 PM, Mon Feb 22, 2021):
+Time used: CPU = 1.19 s, elapsed = 954 ms, util. = 125%.
+Time spent in licensing: elapsed = 166 ms, percentage of total = 17.4%.
+Peak memory used = 141 Mbytes.
+Simulation started at: 3:44:28 PM, Mon Feb 22, 2021, ended at: 3:44:29 PM, Mon Feb 22, 2021, with elapsed time (wall clock): 954 ms.
+spectre completes with 0 errors, 1 warning, and 6 notices.
+xmsim: Memory Usage - Final: 140.8M, Peak: 140.9M, Peak virtual: 610.1M
+xmsim: CPU Usage - 0.4s system + 0.7s user = 1.1s total (1.2s, 91.6% cpu)
+TOOL:	xrun(64)	18.03-s018: Exiting on Feb 22, 2021 at 15:44:29 CET  (total: 00:00:10)

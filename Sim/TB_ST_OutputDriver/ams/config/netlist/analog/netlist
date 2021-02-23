@@ -1,0 +1,25 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_ST_OutputDriver
+// View name: schematic
+// Inherited view list: schematic
+I4 (vdda net10) isource dc=10u type=dc
+R16 (net9 E13) resistor r=1K
+R15 (E03 net9) resistor r=1K
+R14 (net7 net9) resistor r=1K
+R13 (net7 E12) resistor r=1K
+R12 (E02 net7) resistor r=1K
+R11 (net5 net7) resistor r=1K
+R10 (net5 E11) resistor r=1K
+R9 (E01 net5) resistor r=1K
+R8 (net020 net5) resistor r=1K
+R1 (net020 E10) resistor r=1K
+R0 (E00 net020) resistor r=1K
+V8 (vssa 0) vsource dc=0 type=dc
+V7 (vssd 0) vsource dc=0 type=dc
+V4 (vddh 0) vsource dc=40 type=dc
+V3 (vdda 0) vsource dc=1.8 type=dc
+V6 (vddd 0) vsource dc=1.8 type=dc
+V2 (net13 0) vsource dc=0 type=dc
+V1 (net14 0) vsource dc=0 type=dc
+V0 (enable 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]

@@ -1,0 +1,49 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Feb  9 17:33:08 2021 
+Best design point: 1
+Design specs: 
+	BioZ_EMG_Model:BioZ_AFE_TB_2:ALL	corner	Nominal - 
+	real_spectrum		42.04
+	imag_spectrum		8.327
+	mag_spectrum		42.86
+	pha_spectrum		11.2
+	integrated_noise		28.93u
+	Isource_rms		210.3u
+	Resolution_rms		137.6m
+	mag_d		-32.82
+	pha_d		3.16
+	mag_rmsd		Error	No
+	pha_rmsd		Error	No
+	G0		-27.56K
+	EP		8.067p
+	EN		6.858m
+	IM2		1.714m
+	IM3		857.2u
+	IM2_val		1.714m
+	IM3_val		857.2u
+	IM2_dB		-55.32
+	IM3_dB		-61.34
+Design parameters: 
+	freq_bioz		976.6
+	a1		950m
+	a2		880m
+	a3		860m
+	R1		10.5
+	R2		8.7
+	R3		1.8
+	Rinf		6
+	Z1		2.4K
+	Z2		1.7M
+	Z3		6K
+	IS		-300u
+	IS_DC		0
+	IS_offset		0
+	IS_phase_AC		90
+	IS_phase_trans		90
+	IS_pk		300u
+	t_meas		4.5m
+
+Received stop signal from user. 
+Interactive.114 completed. 
+Current time: Tue Feb  9 17:35:10 2021 

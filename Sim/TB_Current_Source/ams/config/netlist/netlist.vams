@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 5922
+// User: ykhuang Pid: 9799
 // Design library name: Stimulator_TestBench
 // Design cell name: TB_Current_Source
 // Design view name: config
@@ -10,11 +10,12 @@
 
 `include "disciplines.vams"
 `include "userDisciplines.vams"
-// HDL file - Digital_Lib, Counter, functional.
+// HDL file - Stimulator_Model, Digital_Stimulus_ST_V2, functional.
+// HDL file - Stimulator_Model, Current_Mirror, verilogams.
 // HDL file - Stimulator_Model, Current_Source, verilogams.
 // Library - Stimulator_TestBench, Cell - TB_Current_Source, View - schematic
-// LAST TIME SAVED: Jan  6 17:54:18 2021
-// NETLIST TIME: Jan  6 23:16:42 2021
+// LAST TIME SAVED: Feb 22 13:30:58 2021
+// NETLIST TIME: Feb 22 15:44:15 2021
 
 `worklib Stimulator_TestBench
 `view schematic
@@ -23,16 +24,35 @@
 (* cds_ams_schematic *)
 
 module TB_Current_Source ( );
-wire [4:0] count_out;
-wire net3;
+wire [1:0] CH_SEL_ST;
+wire [4:0] MAG_ST;
+wire Iout_dac;
+wire vssa;
 wire vdda;
-wire net4;
-wire CLK;
-Current_Source I0 (.Ibias( net4 ), .Vdda( vdda ), .Vssa(cds_globals.\gnd! ), .Ioutn( net3 ), .Ioutp( vdda ), .Mag( count_out ));
-Counter I1 (.out( count_out ), .CLK( CLK ), .EN( vdda ), .RESET(cds_globals.\gnd! ));
-vsource #(.dc(1.8), .type("dc")) V0 (vdda, cds_globals.\gnd! );
-resistor #(.r(1000)) R0 (net3, cds_globals.\gnd! );
-vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(0.0001), .delay(5e-05), .rise(1e-12), .fall(1e-12), .width(5e-05)) V1 (CLK, cds_globals.\gnd! );
+wire net8;
+wire vddd;
+wire vssd;
+wire EN_ST;
+wire Ist;
+wire CAT_ST;
+wire ANO_ST;
+wire net7;
+wire enable;
+wire net6;
+wire DIS_ST;
+Current_Source I3 (.EN( EN_ST ), .Vssd( vssd ), .Vddd( vddd ), .Ibias( net8 ), .Vdda( vdda ), .Vssa( vssa ), .Ioutn( Iout_dac ), .Ioutp( vdda ), .Mag( MAG_ST ));
+Current_Mirror I1 (.ANO( ANO_ST ), .CAT( CAT_ST ), .Iref( Iout_dac ), .EN( EN_ST ), .Iout( Ist ), .Vdda( vdda ), .Vssa( vssa ));
+Digital_Stimulus_ST_V2 I2 (.ANO_ST( ANO_ST ), .CAT_ST( CAT_ST ), .CH_SEL_ST( CH_SEL_ST ), .DIS_ST( DIS_ST ), .EN_ST( EN_ST ), .MAG_ST( MAG_ST ), .ch_sweeping( net6 ), .enable( enable ), .ramping( net7 ));
+isource #(.dc(1e-05), .type("dc")) I4 (vdda, net8);
+vsource #(.dc(0), .type("dc")) V7 (vssd, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V8 (vssa, cds_globals.\gnd! );
+vsource #(.dc(40), .type("dc")) V4 (vddh, cds_globals.\gnd! );
+vsource #(.dc(1.8), .type("dc")) V3 (vdda, cds_globals.\gnd! );
+vsource #(.dc(1.8), .type("dc")) V6 (vddd, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V2 (net6, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V1 (net7, cds_globals.\gnd! );
+resistor #(.r(1000)) R0 (vddh, Ist);
+vsource #(.type("pwl"), .wave({"0", "0", "1e-05", "1.8"})) V0 (enable, cds_globals.\gnd! );
 
 endmodule
 `noworklib

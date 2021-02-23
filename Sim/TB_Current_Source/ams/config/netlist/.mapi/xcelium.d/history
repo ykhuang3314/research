@@ -2,4 +2,4 @@
 // File created by:  xrun
 // Do not modify this file
 
-s1::(06Jan2021:23:16:36):( xrun -f /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/.mapi/mapi_run.args )
+s1::(22Feb2021:15:44:09):( xrun -f /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/.mapi/mapi_run.args )

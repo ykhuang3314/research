@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"OUT0v" ".OUT0v"
+"OUT1v" ".OUT1v"
+"OUT2v" ".OUT2v"
+"OUT3v" ".OUT3v"
+"INv" ".INv"
+"CH_SEL<0>v" ".CH_SEL[0]v"
+"CH_SEL<1>v" ".CH_SEL[1]v"
+"Vddav" ".Vddav"
+"Vssav" ".Vssav"
+"Vdddv" ".Vdddv"
+"Vssdv" ".Vssdv"

@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      ykhuang
 HostName                       s2424.it.kth.se
-ProcessIdentifier              11001
-ProcessCreationTime_UTC        1613395476
-ProcessCreationTime_Readable   Mon Feb 15 14:24:36 2021 CET
+ProcessIdentifier              26907
+ProcessCreationTime_UTC        1614072029
+ProcessCreationTime_Readable   Tue Feb 23 10:20:29 2021 CET
 AppIdentifier                  /pkg/cadence/installs/IC618/tools/dfII/bin/64bit/libManager
 OSType                         lnx86
 ReasonForPlacingEditLock       log file
 FilePathUsedToEditLock         /home/ykhuang/research/libManager.log
-TimeEditLocked                 Mon Feb 15 14:24:36 2021 CET
+TimeEditLocked                 Tue Feb 23 10:20:29 2021 CET

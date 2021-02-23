@@ -1,9 +1,9 @@
 xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xmvlog(64)	18.03-s018: Started on Feb 09, 2021 at 12:02:47 CET
+TOOL:	xmvlog(64)	18.03-s018: Started on Feb 22, 2021 at 15:42:59 CET
 xmvlog
     -use5x
     -SPECIFICUNIT Current_Source
-    -zparse /tmp/vamsZparyj8366
+    -zparse /tmp/vamsZparqdb799
     -NOWARN DLNOHV
     -work Stimulator_Model
     -view verilogams
@@ -18,4 +18,4 @@ file: /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.
 	module Stimulator_Model.Current_Source:verilogams
 		errors: 0, warnings: 0
 	 writing out DPL output:
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Feb 09, 2021 at 12:02:47 CET  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Feb 22, 2021 at 15:42:59 CET  (total: 00:00:00)

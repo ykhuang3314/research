@@ -1,0 +1,50 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.2/sharedData/CDS/ahdl/input.ahdlSimDB"
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCONNRULES
+ConnRules_inhconn_full_fast_gnd
+
+EMG_TestBench.TB_EMG_w_SwitchArray:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_EMG_SwitchArray16/verilogams/verilog.vams lib:BioZ_EMG_Model cell:BioZ_EMG_SwitchArray16 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams lib:EMG_Model cell:Signal_Gen view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams lib:EMG_Model cell:ANA_MUX_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
+-SPECTRE_ARGS
+++aps
+-SPECTRE_ARGS
++mt=16

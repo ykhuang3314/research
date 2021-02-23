@@ -3,20 +3,22 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module Current_Source (Ioutp, Ioutn, Mag, Vdda, Vssa, Vddd, Vssd, Ibias);
+module Current_Source (Ioutp, Ioutn, EN, Mag, Vdda, Vssa, Vddd, Vssd, Ibias);
 
 // I/O port declaration
 inout Ioutp, Ioutn;
 input[4:0] Mag;
+input EN;
 inout Vdda, Vssa, Vddd, Vssd, Ibias;
 
 // signal type
 electrical Ioutp, Ioutn, Vdda, Vssa, Ibias, Vddd, Vssd;
 logic[4:0] Mag;
+logic EN;
 
 // parameters
 //parameter real Istep = 10e-6 from [0:inf]; //step size
-
+parameter Roff = 10G;
 // internal variable 
 real Imag;
 
@@ -26,7 +28,13 @@ end
 
 // analog
 analog begin
-	I(Ioutp, Ioutn) <+ Imag;
+	if(EN == 1'b1) begin 
+		I(Ioutp, Ioutn) <+ Imag;
+	end else begin
+		//I(Ioutp, Ioutn) <+ V(Ioutp, Ioutn)/Roff;
+	 	I(Ioutp, Ioutn) <+ 0;
+	
+	end
 end
 
 endmodule

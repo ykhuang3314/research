@@ -1,0 +1,23 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_AFE_BUFFER" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_AFE_BUFFER ( OUT, IN, bias_in, vdda, vssa, vsub );
+
+  input vsub;
+  output OUT;
+  input vdda;
+  input bias_in;
+  input vssa;
+  input IN;
+
+  electrical IN, OUT, vssa;
+
+  analog begin
+
+    V(OUT,vssa) <+ V(IN,vssa);
+ 
+  end
+
+endmodule

@@ -1,0 +1,50 @@
+//Verilog-AMS HDL for "EMG_Model", "Signal_Gen" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Signal_Gen (V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16, Vdda, Vssa );
+
+// port declaration
+output V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16;
+inout Vdda, Vssa;
+
+// discipline
+electrical V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16, Vdda, Vssa;
+
+// parameters
+parameter frequency = 300; // in Hz
+parameter amplituide = 0.5; // in mV 
+
+// intenal variables
+real step_phase;
+real mag;
+
+initial begin
+	step_phase = 2*`M_PI/16;
+	mag = amplituide * 1e-3;
+end
+
+analog begin
+
+	V(V1, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*0);
+	V(V2, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*1);
+	V(V3, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*2);
+	V(V4, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*3);
+	V(V5, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*4);
+	V(V6, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*5);
+	V(V7, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*6);
+	V(V8, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*7);
+	V(V9, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*8);
+	V(V10, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*9);
+	V(V11, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*10);
+	V(V12, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*11);
+	V(V13, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*12);
+	V(V14, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*13);
+	V(V15, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*14);
+	V(V16, Vssa) <+ mag * sin(2*`M_PI*frequency*$abstime-step_phase*15);
+
+	$bound_step(0.05/frequency);
+end
+
+endmodule

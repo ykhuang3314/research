@@ -38,7 +38,7 @@ spectre
 +EMGRLOG
 ../psf/xrun.log
 -XLSTIME
-1612962434
+1613755373
 -XLKEEP
 -XLMODE
 ./xcelium.d/EMG_TestBench.TB_MultiChannel_config.lnx8664.18.03.d
@@ -52,4 +52,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun(64)	18.03-s018"
 -XLNAME
-./xcelium.d/EMG_TestBench.TB_MultiChannel_config.lnx8664.18.03.d/s2424_24063
+./xcelium.d/EMG_TestBench.TB_MultiChannel_config.lnx8664.18.03.d/s2424_17197

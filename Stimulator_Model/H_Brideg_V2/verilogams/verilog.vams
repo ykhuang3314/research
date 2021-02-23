@@ -1,0 +1,311 @@
+//Verilog-AMS HDL for "Stimulator_Model", "H_Brideg_V2" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module H_Brideg_V2 (E00, E01, E02, E03, E10, E11, E12, E13, Ist, EN, ANO, CAT, DIS, 
+					CH_SEL_U, CH_SEL_D, Vddh, Vdda, Vddd, Vssa, Vssd);
+
+// Port declaration
+inout E00, E01, E02, E03, E10, E11, E12, E13, Ist;
+input ANO, CAT, DIS, CH_SEL_U, CH_SEL_D;
+inout Vddh, Vdda, Vddd, Vssa, Vssd;
+
+// Discipline
+electrical E00, E01, E02, E03, E10, E11, E12, E13, Ist, Vddh, Vdda, Vddd, Vssa, Vssd;
+logic EN, ANO, CAT, DIS;
+wire[1:0] CH_SEL_U, CH_SEL_D;
+
+// Parameters
+parameter Ron = 100; // on-resistance in ohm
+parameter Roff = 1G; // off-resistance in ohm
+
+
+//internal node
+logic ANO_ON, CAT_ON, DIS_ON;
+
+// Digital Part
+
+
+assign ANO_ON = EN & ANO;
+assign CAT_ON = EN & CAT;
+assign DIS_ON = EN & DIS;
+
+
+analog begin
+	
+	if(ANO_ON == 1'b1) begin
+		case(CH_SEL_U)
+			2'b00: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Ron;
+					I(Vddh, E01) <+ V(Vddh, E01)/Roff;
+					I(Vddh, E02) <+ V(Vddh, E02)/Roff;
+					I(Vddh, E03) <+ V(Vddh, E03)/Roff;
+					case (CH_SEL_D) 
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end	
+			2'b01: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Roff;
+					I(Vddh, E01) <+ V(Vddh, E01)/Ron;
+					I(Vddh, E02) <+ V(Vddh, E02)/Roff;
+					I(Vddh, E03) <+ V(Vddh, E03)/Roff;
+					case (CH_SEL_D) 
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end
+			2'b10: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Roff;
+					I(Vddh, E01) <+ V(Vddh, E01)/Roff;
+					I(Vddh, E02) <+ V(Vddh, E02)/Ron;
+					I(Vddh, E03) <+ V(Vddh, E03)/Roff;
+					case (CH_SEL_D)
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end	
+			2'b11: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Roff;
+					I(Vddh, E01) <+ V(Vddh, E01)/Roff;
+					I(Vddh, E02) <+ V(Vddh, E02)/Roff;
+					I(Vddh, E03) <+ V(Vddh, E03)/Ron;
+					case (CH_SEL_D)
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end			
+		endcase
+	end else if(CAT_ON == 1'b1) begin
+		case(CH_SEL_D)
+			2'b00: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Ron;
+					I(Vddh, E01) <+ V(Vddh, E01)/Roff;
+					I(Vddh, E02) <+ V(Vddh, E02)/Roff;
+					I(Vddh, E03) <+ V(Vddh, E03)/Roff;
+					case (CH_SEL_U) 
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end	
+			2'b01: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Roff;
+					I(Vddh, E01) <+ V(Vddh, E01)/Ron;
+					I(Vddh, E02) <+ V(Vddh, E02)/Roff;
+					I(Vddh, E03) <+ V(Vddh, E03)/Roff;
+					case (CH_SEL_U) 
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end
+			2'b10: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Roff;
+					I(Vddh, E01) <+ V(Vddh, E01)/Roff;
+					I(Vddh, E02) <+ V(Vddh, E02)/Ron;
+					I(Vddh, E03) <+ V(Vddh, E03)/Roff;
+					case (CH_SEL_U)
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end	
+			2'b11: begin
+					I(Vddh, E00) <+ V(Vddh, E00)/Roff;
+					I(Vddh, E01) <+ V(Vddh, E01)/Roff;
+					I(Vddh, E02) <+ V(Vddh, E02)/Roff;
+					I(Vddh, E03) <+ V(Vddh, E03)/Ron;
+					case (CH_SEL_U)
+						2'b00: begin
+							I(E10, Ist) <+ V(E10, Ist)/Ron;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b01: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Ron;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b10: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Ron;
+							I(E13, Ist) <+ V(E13, Ist)/Roff;
+							end
+						2'b11: begin
+							I(E10, Ist) <+ V(E10, Ist)/Roff;
+							I(E11, Ist) <+ V(E11, Ist)/Roff;
+							I(E12, Ist) <+ V(E12, Ist)/Roff;
+							I(E13, Ist) <+ V(E13, Ist)/Ron;
+							end
+					endcase		
+					end			
+		endcase
+	end else begin
+		I(Vddh, E00) <+ V(Vddh, E00)/Roff;
+		I(Vddh, E01) <+ V(Vddh, E01)/Roff;
+		I(Vddh, E02) <+ V(Vddh, E02)/Roff;
+		I(Vddh, E03) <+ V(Vddh, E03)/Roff;
+		I(E10, Ist) <+ V(E10, Ist)/Roff;	
+		I(E11, Ist) <+ V(E11, Ist)/Roff;
+		I(E12, Ist) <+ V(E12, Ist)/Roff;
+		I(E13, Ist) <+ V(E13, Ist)/Roff;
+	end
+	
+end		
+endmodule

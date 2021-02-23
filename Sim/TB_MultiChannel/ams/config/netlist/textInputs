@@ -2,14 +2,8 @@
 // (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
 // -----------------------------------------------------------------------------
 
-// HDL file for Lib - EMG_Model ,Cell - EMG_Clock_Gen, View - functional
--amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/EMG_Clock_Gen/functional/verilog.v lib:EMG_Model cell:EMG_Clock_Gen view:functional"
-
-// HDL file for Lib - EMG_Model ,Cell - Digital_Stimuli_EMG, View - functional
--amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/Digital_Stimuli_EMG/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG view:functional"
-
-// HDL file for Lib - EMG_Model ,Cell - DAC_EMG, View - verilogams
--amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
+// HDL file for Lib - EMG_Model ,Cell - Digital_Stimuli_EMG_V2, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
 
 // HDL file for Lib - EMG_Model ,Cell - ADC_EMG, View - verilogams
 -amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
@@ -25,6 +19,12 @@
 
 // HDL file for Lib - EMG_Model ,Cell - BPF_EMG, View - verilogams
 -amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - Signal_Gen, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/Signal_Gen/verilogams/verilog.vams lib:EMG_Model cell:Signal_Gen view:verilogams"
+
+// HDL file for Lib - EMG_Model ,Cell - DAC_EMG, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
 
 // Create required libraries 
 -makelib EMG_TestBench 

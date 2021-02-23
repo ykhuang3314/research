@@ -1,0 +1,108 @@
+// Library - EMG_Model, Cell - MultiCH_16_EMG, View - schematic
+// LAST TIME SAVED: Feb  9 13:18:29 2021
+// NETLIST TIME: Feb 19 18:05:42 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_Model
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_Model", dfII_cell="MultiCH_16_EMG", dfII_view="schematic", worklib_name="EMG_Model", view_name="schematic", last_save_time="Feb  9 13:18:29 2021" *)
+
+module MultiCH_16_EMG (Dout, EoC_ADC, Ibias, Vdda, Vddd, Vssa, Vssd, 
+    Vsub, CH_Sel, CLK_ADC, CLK_MUX, E1, E2, E3, E4, E5, E6, E7, E8, E9, 
+    E10, E11, E12, E13, E14, E15, E16, En_ADC, Gain_Sel, Start_ADC, 
+    Vref, VrefH_ADC, VrefL_ADC);
+
+output  EoC_ADC;
+
+inout  Ibias, Vdda, Vddd, Vssa, Vssd, Vsub;
+
+input  CLK_ADC, CLK_MUX, E1, E2, E3, E4, E5, E6, E7, E8, E9, E10, E11, 
+    E12, E13, E14, E15, E16, En_ADC, Start_ADC, Vref, VrefH_ADC, 
+    VrefL_ADC;
+
+output [11:0]  Dout;
+
+input [2:0]  Gain_Sel;
+input [3:0]  CH_Sel;
+
+
+AFE_EMG I35 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH16), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E16));
+
+AFE_EMG I24 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH2), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E2));
+
+AFE_EMG I23 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH13), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E13));
+
+AFE_EMG I20 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH1), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E1));
+
+AFE_EMG I27 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH14), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E14));
+
+AFE_EMG I26 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH10), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E10));
+
+AFE_EMG I21 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH5), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E5));
+
+AFE_EMG I30 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH11), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E11));
+
+AFE_EMG I29 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH7), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E7));
+
+AFE_EMG I22 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH9), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E9));
+
+AFE_EMG I33 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH8), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E8));
+
+AFE_EMG I32 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH4), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E4));
+
+AFE_EMG I25 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH6), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E6));
+
+AFE_EMG I28 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH3), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E3));
+
+AFE_EMG I31 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH15), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E15));
+
+AFE_EMG I34 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout_CH12), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(Vref), .Vinp(E12));
+
+ANA_MUX_EMG I17 ( .Vddd(Vddd), .Vssd(Vssd), .Vdda(Vdda), .Vssa(Vssa), 
+    .Vsub(Vsub), .Vout(Vin_ADC), .Clk(CLK_MUX), .Vin0(Vout_CH1), 
+    .Vin1(Vout_CH2), .Vin2(Vout_CH3), .Vin3(Vout_CH4), .Vin4(Vout_CH5), 
+    .Vin5(Vout_CH6), .Vin6(Vout_CH7), .Vin7(Vout_CH8), .Vin8(Vout_CH9), 
+    .Vin9(Vout_CH10), .Vin10(Vout_CH11), .Vin11(Vout_CH12), 
+    .Vin12(Vout_CH13), .Vin13(Vout_CH14), .Vin14(Vout_CH15), 
+    .Vin15(Vout_CH16), .sel(CH_Sel));
+
+ADC_EMG I18 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
+    .Vssa(Vssa), .Vsub(Vsub), .Dout(Dout), .EoC(EoC_ADC), 
+    .Clk(CLK_ADC), .En(En_ADC), .Start(Start_ADC), .Vin(Vin_ADC), 
+    .VrefH(VrefH_ADC), .VrefL(VrefL_ADC));
+
+endmodule

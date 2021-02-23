@@ -17,7 +17,8 @@
   slashCheck   "t"
  )
 ( defbus
-( "count_out" 4 0  "count_out" 4 0  )
+( "MAG_ST" 4 0  "MAG_ST" 4 0  )
+( "CH_SEL_ST" 1 0  "CH_SEL_ST" 1 0  )
  )
 ( net
 ( "gnd!" "cds_globals.\\gnd! " )

@@ -1,0 +1,74 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_AFE_Mixer_2" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_AFE_Mixer_2 ( IF_N, IF_P, IQ_N, IQ_P, RF_N, RF_P, vddd, vssa, vssd, vsub );
+
+input vsub;
+output IF_N;
+input IQ_N;
+input IQ_P;
+input vssd;
+input RF_P;
+input vssa;
+input vddd;
+output IF_P;
+input RF_N;
+
+logic IQ_N, IQ_P;
+electrical IF_N, IF_P, RF_N, RF_P, vssa;
+
+parameter real ron = 1; // on resistance
+parameter real roff = 1G; //off resistance
+parameter real td = 0; //delay time
+parameter real tr = 200n; //rise time
+parameter real tf = 200n; //fall time
+
+
+integer sel = 0; // sel = 0 for I path, sel = 1 for Q path 
+real r1; //resistance between (RF+,IF+) and (RF-,IF-)
+real r2; //resistance between (RF+,IF-) and (RF-,IF+)  
+	
+real iin;
+
+//analog block
+analog begin
+
+	iin = I(RF_P,RF_N);
+/*
+	I(IF_P,vssa) <+ iin * V(IQ_P,IQ_N) / 2;
+	I(IF_N,vssa) <+ -iin * V(IQ_P,IQ_N) / 2;
+*/
+/*		
+	if(IQ_P) begin
+		I(IF_P,IF_N) <+ -iin;
+	end else begin
+		I(IF_P,IF_N) <+ iin;
+	end 
+*/
+
+    @(initial_step) begin
+		r1 = roff;
+		r2 = roff;
+	end
+
+	@(posedge IQ_P) begin   
+		r1 = ron;
+		r2 = roff;
+    end
+	
+	@(negedge IQ_P) begin  
+		r1 = roff;
+		r2 = ron;
+    end
+
+	I(RF_P,IF_P) <+ V(RF_P,IF_P)/transition(r1,td,tr,tf);
+    I(RF_N,IF_N) <+ V(RF_N,IF_N)/transition(r1,td,tr,tf);
+
+	I(RF_P,IF_N) <+ V(RF_P,IF_P)/transition(r2,td,tr,tf);
+    I(RF_N,IF_P) <+ V(RF_P,IF_P)/transition(r2,td,tr,tf);
+ 
+end
+
+endmodule

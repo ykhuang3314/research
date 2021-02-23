@@ -1,0 +1,753 @@
+ahdlcmicompile: Compiling ahdlcmi in /home/ykhuang/research/Sim/EMG_TestBench/TB_EMG_w_SwitchArray/adexl/results/data/Interactive.1/sharedData/CDS/ahdl/input.ahdlSimDB/2432_Alejandro_Design_BioZ_EMG_Model_BioZ_EMG_SwitchArray16_verilogams_verilog.vams.BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Fri Feb 19 18:05:24 CET 2021 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /pkg/cadence/installs/IC618/bin:/pkg/cadence/installs/IC618/tools/bin/64bit:/pkg/cadence/installs/IC618/tools/bin:/pkg/cadence/installs/IC618/share/oa/bin:/pkg/xfab/XKIT/x_all/cadence/xenv:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ykhuang/.local/bin:/home/ykhuang/bin:/pkg/cadence/installs/IC618/tools/dfII/bin:/pkg/cadence/installs/SPECTRE181/tools/bin:/pkg/cadence/installs/ASSURA41/tools/bin:/pkg/cadence/installs/ASSURA41/tools/assura/bin:/pkg/cadence/installs/EXT182/tools/bin:/pkg/cadence/installs/XCELIUM1803/tools/bin/64bit:/pkg/cadence/installs/XCELIUM1803/tools/bin:/pkg/cadence/installs/GENUS181/tools.lnx86/bin:/pkg/cadence/installs/INNOVUS181/tools/bin/64bit:/pkg/cadence/installs/INNOVUS181/tools/bin
+LD_LIBRARY_PATH:  /pkg/cadence/installs/XCELIUM1803/tools/lib/64bit:/pkg/cadence/installs/XCELIUM1803/tools/lib/64bit/SuSE:/pkg/cadence/installs/IC618/tools/lib/64bit:/pkg/cadence/installs/IC618/tools/lib:/pkg/cadence/installs/IC618/tools/lib/64bit/RHEL/RHEL7:/pkg/cadence/installs/IC618/share/oa/lib/linux_rhel60_64/opt:/pkg/cadence/installs/IC618/tools/dfII/lib/64bit:/pkg/cadence/installs/IC618/tools/sev/lib/64bit:/pkg/cadence/installs/IC618/tools/hdf5/lib/64bit:/pkg/cadence/installs/IC618/tools/lz4/lib/64bit:/pkg/cadence/installs/XCELIUM1803/tools.lnx86/lib/64bit:/pkg/cadence/installs/IC618/tools/Qt/v5/64bit/lib
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j32 -f GNUmakefile
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+Compiling C file BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_func.c (optimize)
+Compiling C file BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad.c (optimize)
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include -c BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_func.c -o obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_func.o || rm -f -f obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_func.o
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include -c BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad.c -o obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad.o || rm -f -f obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad.o
+Compiling C file BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad.c (optimize)
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include -c BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad.c -o obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad.o || rm -f -f obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad.o
+Compiling C file BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad.c (optimize)
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include -c BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad.c -o obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad.o || rm -f -f obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad.o
+Compiling C file BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad.c (optimize)
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include -c BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad.c -o obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad.o || rm -f -f obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad.o
+Compiling C file BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_cmi_c.c (optimize)
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include -I/pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/include -c BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_cmi_c.c -o obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_cmi_c.o || rm -f -f obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_cmi_c.o
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad':
+<stdin>:735:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad':
+<stdin>:687:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+<stdin>:1508:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+<stdin>:1412:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_AcLoad':
+<stdin>:735:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+<stdin>:2505:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2512:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2361:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2526:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2527:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2380:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2534:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad':
+<stdin>:735:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2399:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2548:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2549:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2418:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad':
+<stdin>:1508:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+<stdin>:687:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2556:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+<stdin>:2437:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2570:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2456:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2571:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2578:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2475:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2592:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2494:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2593:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:1508:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2513:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2600:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:1412:2: warning: passing argument 2 of 'aslDevInterGetIntFromABReg' from incompatible pointer type [enabled by default]
+<stdin>:2614:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2532:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2155:38: note: expected 'char *' but argument is of type 'long int *'
+ ASL_FUNC_DECL_START extern long long aslDevInterGetIntFromABReg ( long, char *, long, struct ahdlFuncModeParam *, int * );
+                                      ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2615:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2551:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2622:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_pDC_Load':
+<stdin>:853:1094: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2570:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2636:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2715:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2637:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2589:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2644:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2608:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2658:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2659:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2627:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2666:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2646:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2680:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2505:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2681:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_pCompare':
+<stdin>:901:12162: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>:901:1367: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+<stdin>:2361:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'void * __restrict__' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^
+<stdin>:901:1367: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+In file included from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'const void * __restrict__' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^
+<stdin>:901:12409: warning: assignment makes integer from pointer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2512:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2688:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2380:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2526:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2702:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_pGetMatrixPointers':
+<stdin>:907:2984: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>:2527:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2703:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2399:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2534:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2710:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2418:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2548:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2724:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2437:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2549:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2725:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2456:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2556:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2732:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2746:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2570:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2475:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2747:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2571:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2494:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2754:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2578:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>: In function 'BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_pAnalTranLoad':
+<stdin>:939:2582: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2513:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2768:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2715:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2592:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2769:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2593:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2532:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2776:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2600:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2551:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2790:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2614:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2791:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2570:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2615:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2798:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2622:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2589:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2812:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2636:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2608:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2813:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2637:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2627:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2820:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2644:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2834:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2646:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2658:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2835:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2659:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2842:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2666:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2856:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+<stdin>:2680:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2681:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2688:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2702:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2703:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2710:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2724:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2725:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2732:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2746:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2747:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2754:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2768:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2769:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2776:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2790:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2791:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2798:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2812:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2813:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2820:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2834:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2835:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2842:4: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+<stdin>:2856:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2171:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^
+rm -f -rf BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_func.c
+rm -f -rf BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad.c
+rm -f -rf BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_cmi_c.c
+rm -f -rf BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad.c
+rm -f -rf BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad.c
+rm -f -rf BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad.c
+/pkg/cadence/installs/XCELIUM1803/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral.so ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_func.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_cmi_c.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+rm -f -f ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_func.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncDerLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_DcFuncLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncDerLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_TranFuncLoad.o ./obj/optimize/5.0/BioZ_EMG_Model__BioZ_EMG_SwitchArray16__verilogams__0x10000001_behavioral_cmi_c.o 

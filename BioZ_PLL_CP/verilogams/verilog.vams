@@ -1,0 +1,41 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_PLL_CP" "verilogams"
+//Charge Pump
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_PLL_CP ( CP_out, AN, B, vdda, vssa, vsub, bias );
+
+  input vsub;
+  input vdda;
+  input vssa;
+  input bias;
+  input B;
+  input AN;
+  output CP_out;
+
+  logic AN;
+  logic B;
+
+  electrical vdda, vssa, CP_out;
+
+  parameter real out_current = 1u;  
+
+  analog begin
+    // PMOS Current source, A is complemented logic!
+	if (AN == 0) begin
+		I(vdda,CP_out) <+ out_current;
+	end else begin
+		I(vdda,CP_out) <+ 0;
+    end
+
+    // NMOS Current source
+	if (B && V(CP_out) > 0) begin
+	//if (B > 0) begin				
+		I(CP_out,vssa) <+ out_current;		
+	end else begin
+		I(CP_out,vssa) <+ 0;
+    end
+
+  end
+endmodule

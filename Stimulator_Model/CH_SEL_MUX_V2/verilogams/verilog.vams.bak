@@ -1,0 +1,8 @@
+//Verilog-AMS HDL for "Stimulator_Model", "CH_SEL_MUX_V2" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module CH_SEL_MUX_V2 ( );
+
+endmodule

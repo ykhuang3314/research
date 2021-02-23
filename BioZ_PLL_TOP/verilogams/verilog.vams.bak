@@ -1,0 +1,8 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_PLL_TOP" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_PLL_TOP ( );
+
+endmodule

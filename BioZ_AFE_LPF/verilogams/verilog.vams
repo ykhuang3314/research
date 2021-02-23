@@ -1,0 +1,31 @@
+//Verilog-AMS HDL for "BioZ_EMG_Model", "BioZ_AFE_LPF" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module BioZ_AFE_LPF ( VOUT_N, VOUT_P, VIN_N, VIN_P, bias_in, vdda, vssa, vsub );
+
+  input vsub;
+  input VIN_P;
+  input VIN_N;
+  output VOUT_P;
+  output VOUT_N;
+  input vdda;
+  input bias_in;
+  input vssa;
+
+  electrical VOUT_N, VOUT_P, VIN_N, VIN_P, vssa;
+
+  parameter real gm_1 = 0.1u;
+  parameter real C1_1 = 85.19p;
+  parameter real C2_1 = 47.57p;
+  parameter real a1_1 = C1_1/gm_1;
+  parameter real a2_1 = (C1_1*C2_1)/(gm_1**2);
+  parameter real vcm = 0.9;
+
+  analog begin
+     V(VOUT_P,vssa)<+ laplace_nd(V(VIN_P,vssa) + vcm,{1},{1,a1_1,a2_1});
+     V(VOUT_N,vssa)<+ laplace_nd(V(VIN_N,vssa) + vcm,{1},{1,a1_1,a2_1});
+  end
+
+endmodule

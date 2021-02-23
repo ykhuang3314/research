@@ -1,4 +1,4 @@
-Begin Netlisting Feb 14 23:54:47 2021
+Begin Netlisting Feb 17 19:54:37 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -70,5 +70,11 @@ in this current run directory. Therefore, re-netlisting all
 cell views where
 this primitive is instantiated.
 
+WARNING (OSSHNL-159): The primitive, 'EMG_Model/ADC_EMG/verilogams', has been
+updated since the last netlisting session
+in this current run directory.
+Therefore, re-netlisting all cell views where
+this primitive is instantiated.
+
 Running netlist assembly..
-End netlisting Feb 14 23:54:56 2021
+End netlisting Feb 17 19:54:45 2021

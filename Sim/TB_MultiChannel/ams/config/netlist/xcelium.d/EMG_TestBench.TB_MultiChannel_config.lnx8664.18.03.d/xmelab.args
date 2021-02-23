@@ -45,11 +45,7 @@ r
 -AMSCONNRULES
 ConnRules_18V_full_fast
 -AMSCOMPILEFILE
-"file:/home/ykhuang/research/EMG_Model/EMG_Clock_Gen/functional/verilog.v lib:EMG_Model cell:EMG_Clock_Gen view:functional"
--AMSCOMPILEFILE
-"file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG view:functional"
--AMSCOMPILEFILE
-"file:/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
+"file:/home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v lib:EMG_Model cell:Digital_Stimuli_EMG_V2 view:functional"
 -AMSCOMPILEFILE
 "file:/home/ykhuang/research/EMG_Model/ADC_EMG/verilogams/verilog.vams lib:EMG_Model cell:ADC_EMG view:verilogams"
 -AMSCOMPILEFILE
@@ -60,6 +56,10 @@ ConnRules_18V_full_fast
 "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
 -AMSCOMPILEFILE
 "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/Signal_Gen/verilogams/verilog.vams lib:EMG_Model cell:Signal_Gen view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/DAC_EMG/verilogams/verilog.vams lib:EMG_Model cell:DAC_EMG view:verilogams"
 -SPECTRE_ARGS
 ++aps
 -MESSAGES

@@ -1,0 +1,82 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+CDS_SELECT_CRS
++define+CONNRULES_18V_FULL_FAST
++define+CONNRULES_INHCONN_FULL_FAST_GND
+-amsossirunbind
+.amsbind.scs
+-AMSINPUT
+.amsbind.scs
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-NOPARAMERR
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSINPUT
+./spiceModels.scs
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+./amsControlSpectre.scs
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB"
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCONNRULES
+ConnRules_inhconn_full_fast_gnd
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/CH_SEL_MUX_V2/verilogams/verilog.vams lib:Stimulator_Model cell:CH_SEL_MUX_V2 view:verilogams"
+-SPECTRE_ARGS
+++aps
+-MESSAGES
+EMG_NMES_TestBench.Sim_StimulusArtifact:schematic
+cds_globals
+-AMSELAB
+-XLMODE
+./xcelium.d/EMG_NMES_TestBench.Sim_StimulusArtifact_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/EMG_NMES_TestBench.Sim_StimulusArtifact_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/EMG_NMES_TestBench.Sim_StimulusArtifact_config.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

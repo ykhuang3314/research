@@ -1,7 +1,10 @@
-1609971405 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/cds.lib
-1609971405 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/.amsbind.scs
-1609971405 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/spiceModels.scs
-1609971405 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/amsControlSpectre.scs
-1609971404 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/netlist.vams
-1609951618 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/cds_globals.vams
-1609971405 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/ie_card.scs
+1614005058 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/cds.lib
+1614005057 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/.amsbind.scs
+1614005058 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/spiceModels.scs
+1614005058 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/amsControlSpectre.scs
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+1614005057 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/netlist.vams
+1613997175 /home/ykhuang/research/Sim/TB_Current_Source/ams/config/netlist/cds_globals.vams

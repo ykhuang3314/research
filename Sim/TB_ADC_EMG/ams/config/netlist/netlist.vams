@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 11135
+// User: ykhuang Pid: 10648
 // Design library name: EMG_TestBench
 // Design cell name: TB_ADC_EMG
 // Design view name: config
@@ -16,7 +16,7 @@
 // HDL file - EMG_Model, Digital_Stimuli_EMG_V2, functional.
 // Library - EMG_TestBench, Cell - TB_ADC_EMG, View - schematic
 // LAST TIME SAVED: Feb 14 23:46:47 2021
-// NETLIST TIME: Feb 14 23:54:54 2021
+// NETLIST TIME: Feb 17 19:54:43 2021
 
 `worklib EMG_TestBench
 `view schematic
@@ -45,7 +45,7 @@ wire EoC;
 wire net4;
 wire DAC_CLK;
 wire out_dac;
-Digital_Stimuli_EMG_V2 #(.num_of_channel(1)) I9 (.CH_SEL_EMG( CH_SEL_EMG ), .CLK_EMG( CLK_EMG ), .EN_ADC_EMG( EN_ADC_EMG ), .MUX_CLK_EMG( MUX_CLK_EMG ), .START_EMG( START_EMG ), .Enable( net2 ), .RESET(cds_globals.\gnd! ));
+Digital_Stimuli_EMG_V2 #(.ADC_clk_cycle(15), .num_of_channel(1)) I9 (.CH_SEL_EMG( CH_SEL_EMG ), .CLK_EMG( CLK_EMG ), .EN_ADC_EMG( EN_ADC_EMG ), .MUX_CLK_EMG( MUX_CLK_EMG ), .START_EMG( START_EMG ), .Enable( net2 ), .RESET(cds_globals.\gnd! ));
 ANA_MUX_EMG I1 (.Vddd( vddd ), .Vssd( vssd ), .Vdda( vdda ), .Vssa( vssa ), .Vsub( vsub ), .Vout( out_mux ), .Clk( MUX_CLK_EMG ), .Vin0( vin0 ), .Vin1(cds_globals.\gnd! ), .Vin2(cds_globals.\gnd! ), .Vin3(cds_globals.\gnd! ), .Vin4(cds_globals.\gnd! ), .Vin5(cds_globals.\gnd! ), .Vin6(cds_globals.\gnd! ), .Vin7(cds_globals.\gnd! ), .Vin8(cds_globals.\gnd! ), .Vin9(cds_globals.\gnd! ), .Vin10(cds_globals.\gnd! ), .Vin11(cds_globals.\gnd! ), .Vin12(cds_globals.\gnd! ), .Vin13(cds_globals.\gnd! ), .Vin14(cds_globals.\gnd! ), .Vin15(cds_globals.\gnd! ), .sel( CH_SEL_EMG ));
 ADC_EMG I2 (.Vddd( vddd ), .Vssd( vssd ), .Ibias( net4 ), .Vdda( vdda ), .Vssa( vssa ), .Vsub( vsub ), .Dout( Dout ), .EoC( EoC ), .Clk( CLK_EMG ), .En( EN_ADC_EMG ), .Start( START_EMG ), .Vin( out_mux ), .VrefH( vrefh ), .VrefL( vrefl ));
 DAC_EMG #(.thresh(0.9)) I21 (.Vout( out_dac ), .Clk( DAC_CLK ), .Din( Dout ), .Vdda( vdda ), .Vssa( vssa ));
@@ -55,9 +55,9 @@ vsource #(.dc(0), .type("dc")) V7 (vrefl, cds_globals.\gnd! );
 vsource #(.dc(1.8), .type("dc")) V6 (vdda, cds_globals.\gnd! );
 vsource #(.dc(1.8), .type("dc")) V5 (vddd, cds_globals.\gnd! );
 vsource #(.dc(1.5), .type("dc")) V4 (vrefh, cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V3 (vsub, cds_globals.\gnd! );
-vsource #(.dc(0), .type("dc")) V2 (vssd, cds_globals.\gnd! );
 vsource #(.dc(0), .type("dc")) V1 (vssa, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V2 (vssd, cds_globals.\gnd! );
+vsource #(.dc(0), .type("dc")) V3 (vsub, cds_globals.\gnd! );
 vsource #(.dc(0.9), .type("sine"), .ampl(0.5), .freq(300)) V8 (vin0, cds_globals.\gnd! );
 vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(1/100e+3), .delay(1/(200e+3)), .rise(1e-12), .fall(1e-12), .width(1/(200e+3))) V9 (DAC_CLK, cds_globals.\gnd! );
 

@@ -1,0 +1,205 @@
+( global ( resolution_type basic ) )
+
+( net TB_ST_OutputDriver.E00 TB_ST_OutputDriver.E00 analog electrical )
+( net TB_ST_OutputDriver.I0.E00 TB_ST_OutputDriver.E00 analog electrical )
+
+( net TB_ST_OutputDriver.E01 TB_ST_OutputDriver.E01 analog electrical )
+( net TB_ST_OutputDriver.I0.E01 TB_ST_OutputDriver.E01 analog electrical )
+
+( net TB_ST_OutputDriver.E02 TB_ST_OutputDriver.E02 analog electrical )
+( net TB_ST_OutputDriver.I0.E02 TB_ST_OutputDriver.E02 analog electrical )
+
+( net TB_ST_OutputDriver.E03 TB_ST_OutputDriver.E03 analog electrical )
+( net TB_ST_OutputDriver.I0.E03 TB_ST_OutputDriver.E03 analog electrical )
+
+( net TB_ST_OutputDriver.E10 TB_ST_OutputDriver.E10 analog electrical )
+( net TB_ST_OutputDriver.I0.E10 TB_ST_OutputDriver.E10 analog electrical )
+
+( net TB_ST_OutputDriver.E11 TB_ST_OutputDriver.E11 analog electrical )
+( net TB_ST_OutputDriver.I0.E11 TB_ST_OutputDriver.E11 analog electrical )
+
+( net TB_ST_OutputDriver.E12 TB_ST_OutputDriver.E12 analog electrical )
+( net TB_ST_OutputDriver.I0.E12 TB_ST_OutputDriver.E12 analog electrical )
+
+( net TB_ST_OutputDriver.E13 TB_ST_OutputDriver.E13 analog electrical )
+( net TB_ST_OutputDriver.I0.E13 TB_ST_OutputDriver.E13 analog electrical )
+
+( net TB_ST_OutputDriver.Ist TB_ST_OutputDriver.Ist analog electrical )
+( net TB_ST_OutputDriver.I1.Iout TB_ST_OutputDriver.Ist analog electrical )
+( net TB_ST_OutputDriver.I0.Ist TB_ST_OutputDriver.Ist analog electrical )
+
+( net TB_ST_OutputDriver.ANO_ST TB_ST_OutputDriver.ANO_ST digital logic )
+( net TB_ST_OutputDriver.I2.ANO_ST TB_ST_OutputDriver.ANO_ST digital logic )
+( net TB_ST_OutputDriver.I1.ANO TB_ST_OutputDriver.ANO_ST digital logic )
+( net TB_ST_OutputDriver.I0.ANO TB_ST_OutputDriver.ANO_ST digital logic )
+
+( net TB_ST_OutputDriver.CAT_ST TB_ST_OutputDriver.CAT_ST digital logic )
+( net TB_ST_OutputDriver.I2.CAT_ST TB_ST_OutputDriver.CAT_ST digital logic )
+( net TB_ST_OutputDriver.I1.CAT TB_ST_OutputDriver.CAT_ST digital logic )
+( net TB_ST_OutputDriver.I0.CAT TB_ST_OutputDriver.CAT_ST digital logic )
+
+( net TB_ST_OutputDriver.DIS_ST TB_ST_OutputDriver.DIS_ST digital logic )
+( net TB_ST_OutputDriver.I2.DIS_ST TB_ST_OutputDriver.DIS_ST digital logic )
+( net TB_ST_OutputDriver.I0.DIS TB_ST_OutputDriver.DIS_ST digital logic )
+
+( net TB_ST_OutputDriver.CH_SEL_ST[1] TB_ST_OutputDriver.CH_SEL_ST[1] digital logic )
+( net TB_ST_OutputDriver.I2.CH_SEL_ST[1] TB_ST_OutputDriver.CH_SEL_ST[1] digital logic )
+( net TB_ST_OutputDriver.I0.CH_SEL_U[1] TB_ST_OutputDriver.CH_SEL_ST[1] digital logic )
+( net TB_ST_OutputDriver.I0.CH_SEL_D[1] TB_ST_OutputDriver.CH_SEL_ST[1] digital logic )
+
+( net TB_ST_OutputDriver.CH_SEL_ST[0] TB_ST_OutputDriver.CH_SEL_ST[0] digital logic )
+( net TB_ST_OutputDriver.I2.CH_SEL_ST[0] TB_ST_OutputDriver.CH_SEL_ST[0] digital logic )
+( net TB_ST_OutputDriver.I0.CH_SEL_U[0] TB_ST_OutputDriver.CH_SEL_ST[0] digital logic )
+( net TB_ST_OutputDriver.I0.CH_SEL_D[0] TB_ST_OutputDriver.CH_SEL_ST[0] digital logic )
+
+( net TB_ST_OutputDriver.vddh TB_ST_OutputDriver.vddh analog electrical )
+( net TB_ST_OutputDriver.I0.Vddh TB_ST_OutputDriver.vddh analog electrical )
+
+( net TB_ST_OutputDriver.vdda TB_ST_OutputDriver.vdda analog electrical )
+( net TB_ST_OutputDriver.I3.Ioutp TB_ST_OutputDriver.vdda analog electrical )
+( net TB_ST_OutputDriver.I3.Vdda TB_ST_OutputDriver.vdda analog electrical )
+( net TB_ST_OutputDriver.I1.Vdda TB_ST_OutputDriver.vdda analog electrical )
+( net TB_ST_OutputDriver.I0.Vdda TB_ST_OutputDriver.vdda analog electrical )
+
+( net TB_ST_OutputDriver.vddd TB_ST_OutputDriver.vddd analog electrical )
+( net TB_ST_OutputDriver.I3.Vddd TB_ST_OutputDriver.vddd analog electrical )
+( net TB_ST_OutputDriver.I0.Vddd TB_ST_OutputDriver.vddd analog electrical )
+
+( net TB_ST_OutputDriver.vssa TB_ST_OutputDriver.vssa analog electrical )
+( net TB_ST_OutputDriver.I3.Vssa TB_ST_OutputDriver.vssa analog electrical )
+( net TB_ST_OutputDriver.I1.Vssa TB_ST_OutputDriver.vssa analog electrical )
+( net TB_ST_OutputDriver.I0.Vssa TB_ST_OutputDriver.vssa analog electrical )
+
+( net TB_ST_OutputDriver.vssd TB_ST_OutputDriver.vssd analog electrical )
+( net TB_ST_OutputDriver.I3.Vssd TB_ST_OutputDriver.vssd analog electrical )
+( net TB_ST_OutputDriver.I0.Vssd TB_ST_OutputDriver.vssd analog electrical )
+
+( net TB_ST_OutputDriver.EN_ST TB_ST_OutputDriver.EN_ST digital logic )
+( net TB_ST_OutputDriver.I3.EN TB_ST_OutputDriver.EN_ST digital logic )
+( net TB_ST_OutputDriver.I2.EN_ST TB_ST_OutputDriver.EN_ST digital logic )
+( net TB_ST_OutputDriver.I1.EN TB_ST_OutputDriver.EN_ST digital logic )
+( net TB_ST_OutputDriver.I0.EN TB_ST_OutputDriver.EN_ST digital logic )
+
+( net TB_ST_OutputDriver.I0.ANO_ON TB_ST_OutputDriver.I0.ANO_ON digital logic )
+
+( net TB_ST_OutputDriver.I0.CAT_ON TB_ST_OutputDriver.I0.CAT_ON digital logic )
+
+( net TB_ST_OutputDriver.I0.DIS_ON TB_ST_OutputDriver.I0.DIS_ON digital logic )
+
+( net TB_ST_OutputDriver.Iout_dac TB_ST_OutputDriver.Iout_dac analog electrical )
+( net TB_ST_OutputDriver.I3.Ioutn TB_ST_OutputDriver.Iout_dac analog electrical )
+( net TB_ST_OutputDriver.I1.Iref TB_ST_OutputDriver.Iout_dac analog electrical )
+
+( net TB_ST_OutputDriver.I1.enable TB_ST_OutputDriver.I1.enable digital logic )
+
+( net TB_ST_OutputDriver.enable TB_ST_OutputDriver.enable analog/mixed electrical )
+( net TB_ST_OutputDriver.I2.enable TB_ST_OutputDriver.enable digital/mixed logic )
+
+( net TB_ST_OutputDriver.net14 TB_ST_OutputDriver.net14 analog/mixed electrical )
+( net TB_ST_OutputDriver.I2.ramping TB_ST_OutputDriver.net14 digital/mixed logic )
+
+( net TB_ST_OutputDriver.net13 TB_ST_OutputDriver.net13 analog/mixed electrical )
+( net TB_ST_OutputDriver.I2.ch_sweeping TB_ST_OutputDriver.net13 digital/mixed logic )
+
+( net TB_ST_OutputDriver.MAG_ST TB_ST_OutputDriver.MAG_ST digital logic )
+( net TB_ST_OutputDriver.I3.Mag TB_ST_OutputDriver.MAG_ST digital logic )
+( net TB_ST_OutputDriver.I2.MAG_ST TB_ST_OutputDriver.MAG_ST digital logic )
+
+( net TB_ST_OutputDriver.I2.period_ns TB_ST_OutputDriver.I2.period_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.CAT_phase_ns TB_ST_OutputDriver.I2.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.ANO_phase_ns TB_ST_OutputDriver.I2.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.DIS_phase_ns TB_ST_OutputDriver.I2.DIS_phase_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.IPD_ns TB_ST_OutputDriver.I2.IPD_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.Rest_ns TB_ST_OutputDriver.I2.Rest_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.en_extension_ns TB_ST_OutputDriver.I2.en_extension_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.delay_dis_ns TB_ST_OutputDriver.I2.delay_dis_ns digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.I2.i TB_ST_OutputDriver.I2.i digital logic )
+
+( net TB_ST_OutputDriver.I2.cnt_period TB_ST_OutputDriver.I2.cnt_period digital logic )
+
+( net TB_ST_OutputDriver.I2.cnt_ch TB_ST_OutputDriver.I2.cnt_ch digital logic )
+
+( net TB_ST_OutputDriver.I2.num_of_period TB_ST_OutputDriver.I2.num_of_period digital logic )
+
+( net TB_ST_OutputDriver.net10 TB_ST_OutputDriver.net10 analog electrical )
+( net TB_ST_OutputDriver.I3.Ibias TB_ST_OutputDriver.net10 analog electrical )
+
+( net TB_ST_OutputDriver.I3.Imag TB_ST_OutputDriver.I3.Imag digital logic (type rnm) )
+
+( net TB_ST_OutputDriver.net9 TB_ST_OutputDriver.net9 analog electrical )
+
+( net TB_ST_OutputDriver.net7 TB_ST_OutputDriver.net7 analog electrical )
+
+( net TB_ST_OutputDriver.net5 TB_ST_OutputDriver.net5 analog electrical )
+
+( net TB_ST_OutputDriver.net020 TB_ST_OutputDriver.net020 analog electrical )
+
+( net cds_globals.\gnd!  cds_globals.\gnd!  analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   TB_ST_OutputDriver.net13
+   electrical
+   analog
+   (
+    ( TB_ST_OutputDriver.I2.ch_sweeping logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_ST_OutputDriver.enable
+   electrical
+   analog
+   (
+    ( TB_ST_OutputDriver.I2.enable logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_ST_OutputDriver.net14
+   electrical
+   analog
+   (
+    ( TB_ST_OutputDriver.I2.ramping logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_ST_OutputDriver.I0 mixed)
+(instance TB_ST_OutputDriver.I1 mixed)
+(instance TB_ST_OutputDriver.I2 dmixed (type rnm))
+(instance TB_ST_OutputDriver.I3 mixed/dmixed (type rnm))
+(instance TB_ST_OutputDriver.I4 analog)
+(instance TB_ST_OutputDriver.R16 analog)
+(instance TB_ST_OutputDriver.R15 analog)
+(instance TB_ST_OutputDriver.R14 analog)
+(instance TB_ST_OutputDriver.R13 analog)
+(instance TB_ST_OutputDriver.R12 analog)
+(instance TB_ST_OutputDriver.R11 analog)
+(instance TB_ST_OutputDriver.R10 analog)
+(instance TB_ST_OutputDriver.R9 analog)
+(instance TB_ST_OutputDriver.R8 analog)
+(instance TB_ST_OutputDriver.R1 analog)
+(instance TB_ST_OutputDriver.R0 analog)
+(instance TB_ST_OutputDriver.V8 analog)
+(instance TB_ST_OutputDriver.V7 analog)
+(instance TB_ST_OutputDriver.V4 analog)
+(instance TB_ST_OutputDriver.V3 analog)
+(instance TB_ST_OutputDriver.V6 analog)
+(instance TB_ST_OutputDriver.V2 analog)
+(instance TB_ST_OutputDriver.V1 analog)
+(instance TB_ST_OutputDriver.V0 analog)
+(instance TB_ST_OutputDriver mixed/dmixed (type rnm))
+(instance cds_globals analog)

@@ -1,5 +1,5 @@
 xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.03-s018: Started on Feb 14, 2021 at 23:54:57 CET
+TOOL:	xrun(64)	18.03-s018: Started on Feb 17, 2021 at 19:54:46 CET
 xrun
 	-f xrunArgs
 		-UNBUFFERED
@@ -53,12 +53,15 @@ xrun
 		./cds_globals.vams
 		-l ../psf/xrun.log
 		-spectre_args ++aps
+file: /home/ykhuang/research/EMG_Model/Digital_Stimuli_EMG_V2/functional/verilog.v
+	module EMG_Model.Digital_Stimuli_EMG_V2:functional
+		errors: 0, warnings: 0
 file: /home/ykhuang/research/EMG_Model/ANA_MUX_EMG/verilogams/verilog.vams
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-xmvlog: Memory Usage - Current physical: 25.3M, Current virtual: 57.3M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 87.4% cpu)
+xmvlog: Memory Usage - Current physical: 25.8M, Current virtual: 57.7M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 73.1% cpu)
 		Caching library 'EMG_TestBench' ....... Done
 		Caching library 'worklib' ....... Done
 		Caching library 'EMG_Model' ....... Done
@@ -71,6 +74,9 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 87.4% cpu)
 	Connect Rules applied are:
 		ConnRules_18V_full_fast
 	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		EMG_Model.Digital_Stimuli_EMG_V2:functional <0x27f40720>
+			streams:   9, words:  5280
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -88,8 +94,8 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 87.4% cpu)
 		Interconnect:           27       -
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: EMG_TestBench.TB_ADC_EMG:config
-xmelab: Memory Usage - Final: 43.2M, Peak: 216.0M, Peak virtual: 300.8M
-xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 96.2% cpu)
+xmelab: Memory Usage - Final: 43.5M, Peak: 216.0M, Peak virtual: 300.8M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 90.4% cpu)
 Loading snapshot EMG_TestBench.TB_ADC_EMG:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
@@ -101,19 +107,19 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 2538
-Memory  available: 53.3822 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 13470
+Memory  available: 52.4312 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1248.3] ( 16 ),  1 [1201.9] ( 17 ),  2 [1263.0] ( 18 )
-                 3 [1200.1] ( 19 ),  4 [1200.0] ( 20 ),  5 [1579.8] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [1288.9] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [1392.6] ( 25 ), 10 [1262.0] ( 26 )
-                11 [1200.1] ( 27 ), 12 [1200.0] ( 28 ), 13 [1200.0] ( 29 )
-                14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
+        0:       0 [1211.7] ( 16 ),  1 [2399.9] ( 17 ),  2 [2715.5] ( 18 )
+                 3 [2027.6] ( 19 ),  4 [2372.8] ( 20 ),  5 [2621.2] ( 21 )
+                 6 [1394.1] ( 22 ),  7 [2095.8] ( 23 )
+        1:       8 [2600.0] ( 24 ),  9 [2599.8] ( 25 ), 10 [2600.0] ( 26 )
+                11 [2599.8] ( 27 ), 12 [2599.8] ( 28 ), 13 [2599.8] ( 29 )
+                14 [2599.5] ( 30 ), 15 [2599.8] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.3 %, 0.3 %, 0.3 %
+System load averages (1min, 5min, 15min) : 6.8 %, 6.1 %, 4.4 %
 Hyperthreading is enabled
 HPC is enabled
 
@@ -497,8 +503,8 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/amsControlSpectre.scs
 Reading file:  /home/ykhuang/research/Sim/TB_ADC_EMG/ams/config/netlist/.amsbind.scs
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 699.082 ms, elapsed = 889.381 ms.
-Time accumulated: CPU = 1.16185 s, elapsed = 889.389 ms.
+Time for NDB Parsing: CPU = 610.772 ms, elapsed = 727.367 ms.
+Time accumulated: CPU = 962.365 ms, elapsed = 727.371 ms.
 Peak resident memory used = 103 Mbytes.
 
 xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
@@ -568,8 +574,8 @@ xcelium> probe -create -emptyok -database ams_database {TB_ADC_EMG.Dout[0]}
 Created probe 24
 xcelium> 
 xcelium> run
-Time for Elaboration: CPU = 239.12 ms, elapsed = 289.878 ms.
-Time accumulated: CPU = 1.40126 s, elapsed = 1.17956 s.
+Time for Elaboration: CPU = 222.472 ms, elapsed = 266.544 ms.
+Time accumulated: CPU = 1.18499 s, elapsed = 994.067 ms.
 Peak resident memory used = 135 Mbytes.
 
 
@@ -599,8 +605,8 @@ Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-8531): Floating node. TB_ADC_EMG.I2__vsub__5__0 is removed.
 
 ***********************************************
-Time for EDB Visiting: CPU = 3.237 ms, elapsed = 3.2382 ms.
-Time accumulated: CPU = 1.40474 s, elapsed = 1.18303 s.
+Time for EDB Visiting: CPU = 3.989 ms, elapsed = 3.98898 ms.
+Time accumulated: CPU = 1.18925 s, elapsed = 998.326 ms.
 Peak resident memory used = 136 Mbytes.
 
 
@@ -659,8 +665,8 @@ Notice from spectre during initial setup.
     4 vsources are short because their absolute value is less than or equal to 'vabsshort'.
     Fast APS Enabled.
 
-Time for parsing: CPU = 4.616 ms, elapsed = 9.45902 ms.
-Time accumulated: CPU = 1.40954 s, elapsed = 1.19268 s.
+Time for parsing: CPU = 3.475 ms, elapsed = 8.03113 ms.
+Time accumulated: CPU = 1.19294 s, elapsed = 1.00658 s.
 Peak resident memory used = 137 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -697,7 +703,7 @@ Warning from spectre during IC analysis, during transient analysis `tran'.
     WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
 
 .
-DC simulation time: CPU = 9.27 ms, elapsed = 9.44185 ms.
+DC simulation time: CPU = 5.669 ms, elapsed = 5.651 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
@@ -733,10 +739,10 @@ Output and IC/nodeset summary:
     tran: time = 250 us       (2.5 %), step = 3 us          (30 m%)
     tran: time = 750 us       (7.5 %), step = 2 us          (20 m%)
     tran: time = 1.25 ms     (12.5 %), step = 2 us          (20 m%)
-    tran: time = 1.75 ms     (17.5 %), step = 2 us          (20 m%)
+    tran: time = 1.75 ms     (17.5 %), step = 3 us          (30 m%)
     tran: time = 2.25 ms     (22.5 %), step = 2 us          (20 m%)
     tran: time = 2.75 ms     (27.5 %), step = 2 us          (20 m%)
-    tran: time = 3.25 ms     (32.5 %), step = 3 us          (30 m%)
+    tran: time = 3.25 ms     (32.5 %), step = 2 us          (20 m%)
     tran: time = 3.75 ms     (37.5 %), step = 3 us          (30 m%)
     tran: time = 4.25 ms     (42.5 %), step = 2 us          (20 m%)
     tran: time = 4.75 ms     (47.5 %), step = 2 us          (20 m%)
@@ -754,9 +760,9 @@ Output and IC/nodeset summary:
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
 Simulation stopped via transient analysis stoptime at time 10 MS
 Memory Usage - Current physical: 142.5M, Current virtual: 616.7M
-CPU Usage - 0.4s system + 1.9s user = 2.4s total (64.4% cpu)
+CPU Usage - 0.4s system + 1.6s user = 2.0s total (90.9% cpu)
 xcelium> exit
-Number of accepted tran steps =             10008
+Number of accepted tran steps =             9813
 
 Maximum value achieved for any signal of each quantity: 
 V: V(TB_ADC_EMG.Dout[11]) = 1.8 V
@@ -770,21 +776,26 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  8 (27.7 %)     11 (47.9 %)     28 (1.4 %)      
-        Other    0 (1.8 %)       5 (10.4 %)      6 (6.8 %)      21 (11.8 %)
-                23 (11.8 %)     
-Initial condition solution time: CPU = 9.421 ms, elapsed = 9.59492 ms.
+        Spectre  0 (9.1 %)       1 (57.9 %)      2 (50.3 %)      3 (44.9 %)
+                 4 (49.7 %)      5 (20.8 %)      6 (13.6 %)      7 (15.2 %)
+                16 (16.8 %)     19 (9.2 %)      20 (1.6 %)      21 (13.0 %)
+                22 (14.2 %)     23 (8.7 %)      
+        Other    8 (13.6 %)      9 (24.7 %)     10 (11.9 %)     11 (11.5 %)
+                12 (5.4 %)      13 (50.5 %)     14 (33.5 %)     15 (32.6 %)
+                24 (40.0 %)     25 (15.1 %)     26 (8.2 %)      27 (22.4 %)
+                28 (35.7 %)     29 (30.1 %)     30 (35.7 %)     31 (21.4 %)
+Initial condition solution time: CPU = 5.753 ms, elapsed = 5.73707 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
 Number of A-to-D events:                     239
   Number of A-to-D events in IEs:            239
-Number of D-to-A events:                     267
-  Number of D-to-A events in IEs:            266
+Number of D-to-A events:                     142
+  Number of D-to-A events in IEs:            141
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 1.11853 s, elapsed = 1.1407 s.
-Total time required for tran analysis `tran': CPU = 1.13065 s, elapsed = 1.15556 s.
-Time accumulated: CPU = 2.56483 s, elapsed = 2.37639 s.
+Intrinsic tran analysis time:    CPU = 918.615 ms, elapsed = 918.468 ms.
+Total time required for tran analysis `tran': CPU = 926.123 ms, elapsed = 928.159 ms.
+Time accumulated: CPU = 2.13883 s, elapsed = 1.95811 s.
 Peak resident memory used = 143 Mbytes.
 
 finalTimeOP: writing operating point information to rawfile.
@@ -801,12 +812,12 @@ outputParameter: writing output parameter values to rawfile.
 Opening the PSF file ../psf/outputParameter.info ...
 Simulation complete via transient analysis stoptime at time 10 MS
 
-Aggregate audit (11:55:10 PM, Sun Feb 14, 2021):
-Time used: CPU = 2.6 s, elapsed = 2.42 s, util. = 107%.
-Time spent in licensing: elapsed = 169 ms, percentage of total = 6.97%.
+Aggregate audit (7:54:57 PM, Wed Feb 17, 2021):
+Time used: CPU = 2.15 s, elapsed = 1.98 s, util. = 109%.
+Time spent in licensing: elapsed = 157 ms, percentage of total = 7.95%.
 Peak memory used = 143 Mbytes.
-Simulation started at: 11:55:08 PM, Sun Feb 14, 2021, ended at: 11:55:10 PM, Sun Feb 14, 2021, with elapsed time (wall clock): 2.42 s.
+Simulation started at: 7:54:55 PM, Wed Feb 17, 2021, ended at: 7:54:57 PM, Wed Feb 17, 2021, with elapsed time (wall clock): 1.98 s.
 spectre completes with 0 errors, 13 warnings, and 6 notices.
-xmsim: Memory Usage - Final: 143.2M, Peak: 143.4M, Peak virtual: 616.9M
-xmsim: CPU Usage - 0.5s system + 2.1s user = 2.6s total (3.7s, 69.8% cpu)
-TOOL:	xrun(64)	18.03-s018: Exiting on Feb 14, 2021 at 23:55:10 CET  (total: 00:00:13)
+xmsim: Memory Usage - Final: 143.2M, Peak: 143.3M, Peak virtual: 616.9M
+xmsim: CPU Usage - 0.4s system + 1.7s user = 2.1s total (2.2s, 95.1% cpu)
+TOOL:	xrun(64)	18.03-s018: Exiting on Feb 17, 2021 at 19:54:57 CET  (total: 00:00:11)

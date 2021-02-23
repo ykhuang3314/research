@@ -1,0 +1,3 @@
+projectDir = '"./Sim"
+designInfo = '("BioZ_EMG_Model" "BioZ_PLL_TOP_TB" "config" "ams")
+descriptionText = "None"

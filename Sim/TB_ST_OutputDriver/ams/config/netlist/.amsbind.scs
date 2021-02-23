@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_ST_OutputDriver:config
+// Created On: Feb 22 11:15:27 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_ST_OutputDriver:schematic"
+
+	config cell="Current_Source" lib="Stimulator_Model" view="verilogams"
+	config cell="Current_Mirror" lib="Stimulator_Model" view="verilogams"
+	config cell="isource" view="analogtext"
+	config cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional"
+	config cell="vsource" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="H_Brideg_V2" lib="Stimulator_Model" view="verilogams"
+
+ }

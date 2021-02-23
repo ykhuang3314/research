@@ -1,0 +1,13 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Feb 19 17:42:33 2021 
+Best design point: 1
+Design specs: 
+	EMG_TestBench:TB_EMG_w_SwitchArray:1	corner	Nominal - 
+Design parameters: 
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.0 completed. 
+Current time: Fri Feb 19 17:43:33 2021 

@@ -1,5 +1,7 @@
-("analogLib" "vpulse" "spectre" "spectre") nil
-("Digital_Lib" "Counter" "functional" "functional") nil
+("Stimulator_Model" "Current_Mirror" "verilogams" "verilogams") nil
+("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" "functional") nil
+("analogLib" "idc" "spectre" "spectre") nil
+("analogLib" "vpwl" "spectre" "spectre") nil
 ("analogLib" "res" "spectre" "spectre") nil
 ("Stimulator_Model" "Current_Source" "verilogams" "verilogams") nil
 ("Stimulator_TestBench" "TB_Current_Source" "schematic" "schematic") nil

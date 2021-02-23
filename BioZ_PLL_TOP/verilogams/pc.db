@@ -1,0 +1,18 @@
+--pcdbVlog file, Rev:1.0
+
+#CELL
+* fd *
+FD
+
+#CELL
+* cp *
+CP
+
+#CELL
+* pfd *
+PFD
+
+#CELL
+* vco *
+VCO
+

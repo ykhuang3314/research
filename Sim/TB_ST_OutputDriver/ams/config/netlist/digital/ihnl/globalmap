@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+Stimulator_TestBench/TB_ST_OutputDriver/schematic Stimulator_TestBench/TB_ST_OutputDriver/schematic/schematic/Stimulator_TestBench_TB_ST_OutputDriver_config/1 TB_ST_OutputDriver
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam
