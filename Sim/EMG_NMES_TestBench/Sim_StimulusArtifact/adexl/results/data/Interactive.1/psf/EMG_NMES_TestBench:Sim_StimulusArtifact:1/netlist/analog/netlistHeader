@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Feb 23 20:00:14 2021
+// Design library name: EMG_NMES_TestBench
+// Design cell name: Sim_StimulusArtifact
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

@@ -1,0 +1,5 @@
+CADENCE IHNL04123
+
+Stimulator_Model Stimulator_4CH_V2 schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds0
+EMG_Model AFE_EMG schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds1
+EMG_NMES_TestBench Sim_StimulusArtifact schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 1 cds2

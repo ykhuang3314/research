@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config EMG_NMES_TestBench.Sim_StimulusArtifact:config
+// Created On: Feb 23 20:00:20 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="EMG_NMES_TestBench.Sim_StimulusArtifact:schematic"
+
+	config cell="CH_SEL_MUX_V2" lib="Stimulator_Model" view="verilogams"
+	config cell="Current_Source" lib="Stimulator_Model" view="verilogams"
+	config cell="Current_Mirror" lib="Stimulator_Model" view="verilogams"
+	config cell="PGA_EMG" lib="EMG_Model" view="verilogams"
+	config cell="capacitor" view="analogtext"
+	config cell="BPF_EMG" lib="EMG_Model" view="verilogams"
+	config cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional"
+	config cell="isource" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="AFE_EMG" lib="EMG_Model" view="schematic"
+	config cell="IA_EMG_Ideal" lib="EMG_Model" view="verilogams"
+	config cell="Stimulator_4CH_V2" lib="Stimulator_Model" view="schematic"
+	config cell="H_Bridge" lib="Stimulator_Model" view="verilogams"
+
+ }

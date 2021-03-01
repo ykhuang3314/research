@@ -5,3 +5,4 @@
 "digital_EMG" ((("EMG_Model" "Digital_Stimuli_EMG_V2" "functional" "functional") ("EMG_Model" "Digital_Stimulus_all" "functional" "functional")))
 "V1" ((("analogLib" "vdc" "spectre" "spectre") ("EMG_TestBench" "TB_Digital_Stimulus_all" "schematic" "schematic")))
 "digital_ST" ((("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" "functional") ("EMG_Model" "Digital_Stimulus_all" "functional" "functional")))
+"V2" ((("analogLib" "vpulse" "spectre" "spectre") ("EMG_TestBench" "TB_Digital_Stimulus_all" "schematic" "schematic")))

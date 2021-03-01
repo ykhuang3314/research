@@ -203,5 +203,227 @@
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>EMG_NMES_TestBench:Sim_StimulusArtifact:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Sim_StimulusArtifact</value>
+							</option>
+							<option>lib
+								<value>EMG_NMES_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>EMG_NMES_TestBench:Sim_StimulusArtifact:1_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Sim_StimulusArtifact</value>
+							</option>
+							<option>lib
+								<value>EMG_NMES_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">b00
+						<value>2'b00</value>
+						<dependentTests>
+							<dependentTest enabled="1">EMG_NMES_TestBench:Sim_StimulusArtifact:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">b01001
+						<value>5'b01001</value>
+						<dependentTests>
+							<dependentTest enabled="1">EMG_NMES_TestBench:Sim_StimulusArtifact:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Feb 23 20:00:08 2021</timestamp>
+			<uuid>{57274d44-ff69-41a8-99b5-00cded173491}</uuid>
+			<resultsname>/home/ykhuang/research/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_200008310</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>EMG_NMES_TestBench:Sim_StimulusArtifact:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Sim_StimulusArtifact</value>
+							</option>
+							<option>lib
+								<value>EMG_NMES_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>EMG_NMES_TestBench:Sim_StimulusArtifact:1_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Sim_StimulusArtifact</value>
+							</option>
+							<option>lib
+								<value>EMG_NMES_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">b00
+						<value>2'b00</value>
+						<dependentTests>
+							<dependentTest enabled="1">EMG_NMES_TestBench:Sim_StimulusArtifact:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">b01001
+						<value>5'b01001</value>
+						<dependentTests>
+							<dependentTest enabled="1">EMG_NMES_TestBench:Sim_StimulusArtifact:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Feb 23 20:08:11 2021</timestamp>
+			<uuid>{4608047e-dd91-4c2e-95e8-0c1769a3c8a7}</uuid>
+			<resultsname>/home/ykhuang/research/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_200811993</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
 	</history>
 </setupdb>

@@ -6,3 +6,5 @@
 V1 (net4 0) vsource dc=0 type=dc
 V5 (net3 0) vsource dc=1.8 type=dc
 V0 (net1 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]
+V2 (net012 0) vsource type=pulse val0=0 val1=1.8 period=1/13k delay=1/26k \
+        rise=1p fall=1p width=1/26k

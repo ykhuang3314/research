@@ -1,0 +1,20 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Feb 23, 2021 at 17:17:16 CET
+xmvlog
+    -use5x
+    -SPECIFICUNIT BioZ_Digital_stim
+    -zparse /tmp/vamsZparlo6546
+    -NOWARN DLNOHV
+    -work BioZ_EMG_Model
+    -view functional
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilog/BioZ_EMG_Model/functional/compile0.log
+    -messages
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_Digital_stim/functional/verilog.v
+
+file: /home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_Digital_stim/functional/verilog.v
+	module BioZ_EMG_Model.BioZ_Digital_stim:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Feb 23, 2021 at 17:17:16 CET  (total: 00:00:00)

@@ -1,0 +1,24 @@
+// Library - EMG_NMES_TestBench, Cell - Sim_StimulusArtifact, View -
+//schematic
+// LAST TIME SAVED: Feb 23 20:07:58 2021
+// NETLIST TIME: Feb 23 20:08:18 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_NMES_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_NMES_TestBench", dfII_cell="Sim_StimulusArtifact", dfII_view="schematic", worklib_name="EMG_NMES_TestBench", view_name="schematic", last_save_time="Feb 23 20:07:58 2021" *)
+
+module Sim_StimulusArtifact ();
+
+// Buses in the design
+
+wire  [4:0]  MAG_ST;
+
+wire  [1:0]  CH_SEL_D_ST;
+
+wire  [1:0]  CH_SEL_U_ST;
+
+wire  [2:0]  Gain_Sel;
+

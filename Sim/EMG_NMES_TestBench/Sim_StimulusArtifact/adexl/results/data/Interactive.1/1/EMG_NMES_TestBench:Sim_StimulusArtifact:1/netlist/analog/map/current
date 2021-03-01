@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Sim_StimulusArtifact"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_Model/Stimulator_4CH_V2/schematic" "Stimulator_4CH_V2" )
+( "EMG_Model/AFE_EMG/schematic" "AFE_EMG" )
+( "EMG_NMES_TestBench/Sim_StimulusArtifact/schematic" "Sim_StimulusArtifact" )
+ )
+( "Stimulator_4CH_V2" "ihnl/cds0/map" )
+( "Sim_StimulusArtifact" "ihnl/cds2/map" )
+( "AFE_EMG" "ihnl/cds1/map" )
+ )

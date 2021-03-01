@@ -33,7 +33,7 @@ xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
 xmvlog: Memory Usage - Current physical: 25.6M, Current virtual: 57.6M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 65.0% cpu)
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 65.3% cpu)
 
 		Caching library 'BioZ_EMG_Model' ....... Done
 		Caching library 'Stimulator_Model' ....... Done
@@ -41,6 +41,11 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 65.0% cpu)
 		Caching library 'worklib' ....... Done
 		Caching library 'EMG_Model' ....... Done
 	Elaborating the design hierarchy:
+	) digital_BioZ
+	             |
+xmelab: *W,CUVWSI (/home/ykhuang/research/EMG_Model/Digital_Stimulus_all/functional/verilog.v,114|14): 1 input port was not connected:
+xmelab: (/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model/BioZ_Digital_stim/functional/verilog.v,4): clk_ADC
+
 	Top level design units:
 		TB_Digital_Stimulus_all
 		cds_globals
@@ -51,30 +56,30 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 65.0% cpu)
 	Building instance overlay tables: .................... Done
 	Using implicit TMP libraries; associated with library EMG_TestBench
 	Generating native compiled code:
-		EMG_Model.Digital_Stimuli_EMG_V2:functional <0x4e942d7a>
-			streams:   9, words:  5473
-		Stimulator_Model.Digital_Stimulus_ST_V2:functional <0x0996dd11>
-			streams:   8, words: 22234
-		BioZ_EMG_Model.BioZ_Digital_stim:functional <0x23f5c7fa>
-			streams:   2, words:  3209
+		EMG_Model.Digital_Stimuli_EMG_V2:functional <0x797ef0ac>
+			streams:   9, words:  5429
+		Stimulator_Model.Digital_Stimulus_ST_V2:functional <0x25b3f180>
+			streams:   9, words: 36390
+		BioZ_EMG_Model.BioZ_Digital_stim:functional <0x7ad58df9>
+			streams:  11, words:  4756
 		connectLib.E2L_2:module <0x2b14c314>
 			streams:   9, words:  9525
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:                10      27
-		Registers:              61     187
-		Scalar wires:           26       -
-		Vectored wires:          8       -
-		Always blocks:          33      72
-		Initial blocks:          7      30
-		Cont. assignments:       4      24
-		Interconnect:            4       -
+		Modules:                11      27
+		Registers:              76     196
+		Scalar wires:           28       -
+		Vectored wires:         15       -
+		Always blocks:          41      73
+		Initial blocks:          8      30
+		Cont. assignments:       5      24
+		Interconnect:            5       -
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: EMG_TestBench.TB_Digital_Stimulus_all:config
-xmelab: Memory Usage - Final: 43.3M, Peak: 216.0M, Peak virtual: 300.8M
-xmelab: CPU Usage - 0.1s system + 0.1s user = 0.3s total (0.3s, 84.4% cpu)
+xmelab: Memory Usage - Final: 43.5M, Peak: 216.1M, Peak virtual: 300.9M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.3s total (0.3s, 84.5% cpu)
 Loading snapshot EMG_TestBench.TB_Digital_Stimulus_all:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
@@ -90,19 +95,19 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
         Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 19753
-Memory  available: 50.9254 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 22253
+Memory  available: 51.6847 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1200.0] ( 16 ),  1 [1200.6] ( 17 ),  2 [1293.9] ( 18 )
-                 3 [1209.5] ( 19 ),  4 [1693.5] ( 20 ),  5 [1590.5] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [2399.9] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [1248.5] ( 25 ), 10 [2138.1] ( 26 )
-                11 [1263.0] ( 27 ), 12 [1262.1] ( 28 ), 13 [1200.0] ( 29 )
-                14 [1200.0] ( 30 ), 15 [1200.1] ( 31 )
+        0:       0 [1200.0] ( 16 ),  1 [1201.8] ( 17 ),  2 [1312.1] ( 18 )
+                 3 [1203.5] ( 19 ),  4 [1239.0] ( 20 ),  5 [1200.0] ( 21 )
+                 6 [1367.4] ( 22 ),  7 [1273.8] ( 23 )
+        1:       8 [1200.0] ( 24 ),  9 [1281.3] ( 25 ), 10 [1379.9] ( 26 )
+                11 [1307.5] ( 27 ), 12 [1285.7] ( 28 ), 13 [1658.5] ( 29 )
+                14 [1209.2] ( 30 ), 15 [1200.1] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.8 %, 0.5 %, 0.5 %
+System load averages (1min, 5min, 15min) : 1.5 %, 1.0 %, 0.6 %
 Hyperthreading is enabled
 HPC is enabled
 
@@ -118,7 +123,7 @@ Notice from spectre during circuit read-in.
 
 Compiling ahdlcmi module library for
         connectLib__E2L_2__module__0x10000001_behavioral.
-Finished compilation in 1.02 s (elapsed) for
+Finished compilation in 1.13 s (elapsed) for
         connectLib__E2L_2__module__0x10000001_behavioral.
 Installed compiled interface for
         connectLib__E2L_2__module__0x10000001_behavioral.
@@ -785,8 +790,8 @@ Reading file:
         /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/.amsbind.scs
 Reading file: 
         /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 555.557 ms, elapsed = 1.7047 s.
-Time accumulated: CPU = 1.00777 s, elapsed = 1.70471 s.
+Time for NDB Parsing: CPU = 540.874 ms, elapsed = 1.80179 s.
+Time accumulated: CPU = 1.01043 s, elapsed = 1.8018 s.
 Peak resident memory used = 102 Mbytes.
 
 xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
@@ -826,53 +831,47 @@ xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.
 Created probe 9
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.G_CTRL_TIA_AFE_BioZ}
 Created probe 10
-xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.Gain_TCA_SigGen_BioZ}
-Created probe 11
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.Restn_BioZ}
-Created probe 12
+Created probe 11
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.StepNum_BioZ}
-Created probe 13
+Created probe 12
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.ADC_CLK_EMG}
-Created probe 14
+Created probe 13
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.MUX_CLK_EMG}
-Created probe 15
+Created probe 14
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.EN_ADC_EMG}
-Created probe 16
+Created probe 15
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.CH_SEL_EMG[3]}
-Created probe 17
+Created probe 16
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.CH_SEL_EMG[2]}
-Created probe 18
+Created probe 17
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.CH_SEL_EMG[1]}
-Created probe 19
+Created probe 18
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.CH_SEL_EMG[0]}
-Created probe 20
+Created probe 19
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.EN_ST}
-Created probe 21
+Created probe 20
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.ANO_ST}
-Created probe 22
+Created probe 21
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.CAT_ST}
-Created probe 23
+Created probe 22
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.DIS_ST}
-Created probe 24
-xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.CH_SEL_ST[1]}
-Created probe 25
-xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.CH_SEL_ST[0]}
-Created probe 26
+Created probe 23
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.MAG_ST[4]}
-Created probe 27
+Created probe 24
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.MAG_ST[3]}
-Created probe 28
+Created probe 25
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.MAG_ST[2]}
-Created probe 29
+Created probe 26
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.MAG_ST[1]}
-Created probe 30
+Created probe 27
 xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimulus_all.MAG_ST[0]}
-Created probe 31
+Created probe 28
 xcelium> 
 xcelium> run
 
-Time for Elaboration: CPU = 209.134 ms, elapsed = 286.801 ms.
-Time accumulated: CPU = 1.21705 s, elapsed = 1.99167 s.
+Time for Elaboration: CPU = 224.214 ms, elapsed = 296.623 ms.
+Time accumulated: CPU = 1.2348 s, elapsed = 2.09857 s.
 Peak resident memory used = 133 Mbytes.
 
 
@@ -882,8 +881,8 @@ Warning from spectre during hierarchy flattening.
         releases.
 
 
-Time for EDB Visiting: CPU = 2.684 ms, elapsed = 2.68388 ms.
-Time accumulated: CPU = 1.21999 s, elapsed = 1.9946 s.
+Time for EDB Visiting: CPU = 2.755 ms, elapsed = 2.75517 ms.
+Time accumulated: CPU = 1.2378 s, elapsed = 2.10157 s.
 Peak resident memory used = 133 Mbytes.
 
 
@@ -914,9 +913,9 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 37
-connectLib__E2L_2__module__0x10000001_behavioral 4     
-            vsource 3     
+              nodes 52
+connectLib__E2L_2__module__0x10000001_behavioral 5     
+            vsource 4     
 
 Analysis and control statement inventory:
                info 4     
@@ -933,8 +932,8 @@ Notice from spectre during initial setup.
         'vabsshort'.
     Fast APS Enabled.
 
-Time for parsing: CPU = 3.274 ms, elapsed = 7.9 ms.
-Time accumulated: CPU = 1.22345 s, elapsed = 2.00268 s.
+Time for parsing: CPU = 3.431 ms, elapsed = 8.19993 ms.
+Time accumulated: CPU = 1.24141 s, elapsed = 2.10996 s.
 Peak resident memory used = 134 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -945,7 +944,7 @@ Pre-Simulation Summary
 ************************************************
 Transient Analysis `tran': time = (0 s -> 20 ms)
 ************************************************
-DC simulation time: CPU = 1.564 ms, elapsed = 1.5471 ms.
+DC simulation time: CPU = 1.84 ms, elapsed = 1.97291 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
@@ -975,33 +974,33 @@ Notice from spectre during transient analysis `tran'.
     Multithreading is disabled due to the size of the design being too small.
 
 
-    tran: time = 736.2 us    (3.68 %), step = 366 us       (1.83 %)
-    tran: time = 1.536 ms    (7.68 %), step = 400 us          (2 %)
-    tran: time = 2.736 ms    (13.7 %), step = 400 us          (2 %)
-    tran: time = 3.536 ms    (17.7 %), step = 400 us          (2 %)
-    tran: time = 4.736 ms    (23.7 %), step = 400 us          (2 %)
-    tran: time = 5.536 ms    (27.7 %), step = 400 us          (2 %)
-    tran: time = 6.736 ms    (33.7 %), step = 400 us          (2 %)
-    tran: time = 7.536 ms    (37.7 %), step = 400 us          (2 %)
-    tran: time = 8.736 ms    (43.7 %), step = 400 us          (2 %)
-    tran: time = 9.536 ms    (47.7 %), step = 400 us          (2 %)
-    tran: time = 10.74 ms    (53.7 %), step = 400 us          (2 %)
-    tran: time = 11.54 ms    (57.7 %), step = 400 us          (2 %)
-    tran: time = 12.74 ms    (63.7 %), step = 400 us          (2 %)
-    tran: time = 13.54 ms    (67.7 %), step = 400 us          (2 %)
-    tran: time = 14.74 ms    (73.7 %), step = 400 us          (2 %)
-    tran: time = 15.54 ms    (77.7 %), step = 400 us          (2 %)
-    tran: time = 16.74 ms    (83.7 %), step = 400 us          (2 %)
-    tran: time = 17.54 ms    (87.7 %), step = 400 us          (2 %)
-    tran: time = 18.74 ms    (93.7 %), step = 400 us          (2 %)
-    tran: time = 19.54 ms    (97.7 %), step = 400 us          (2 %)
+    tran: time = 500 us       (2.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 1.5 ms       (7.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 2.5 ms      (12.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 3.5 ms      (17.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 4.5 ms      (22.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 5.5 ms      (27.5 %), step = 1 ps           (5 n%)
+    tran: time = 6.5 ms      (32.5 %), step = 1 ps           (5 n%)
+    tran: time = 7.5 ms      (37.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 8.5 ms      (42.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 9.5 ms      (47.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 10.5 ms     (52.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 11.5 ms     (57.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 12.5 ms     (62.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 13.5 ms     (67.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 14.5 ms     (72.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 15.5 ms     (77.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 16.5 ms     (82.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 17.5 ms     (87.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 18.5 ms     (92.5 %), step = 12.23 us    (61.2 m%)
+    tran: time = 19.5 ms     (97.5 %), step = 12.23 us    (61.2 m%)
 
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
 Simulation stopped via transient analysis stoptime at time 20 MS
-Memory Usage - Current physical: 135.9M, Current virtual: 605.7M
-CPU Usage - 0.3s system + 0.7s user = 1.1s total (31.9% cpu)
+Memory Usage - Current physical: 136.1M, Current virtual: 605.8M
+CPU Usage - 0.4s system + 1.0s user = 1.3s total (36.0% cpu)
 xcelium> exit
-Number of accepted tran steps =             67
+Number of accepted tran steps =             3647
 
 Maximum value achieved for any signal of each quantity: 
 V: V(TB_Digital_Stimulus_all.net3) = 1.8 V
@@ -1018,24 +1017,25 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (27.1 %)      1 (3.7 %)       2 (2.7 %)       3 (9.5 %)
-                 4 (5.3 %)       6 (9.5 %)       7 (5.8 %)      16 (15.3 %)
-                17 (9.5 %)      18 (8.0 %)      19 (8.9 %)      20 (5.3 %)
-                21 (25.0 %)     22 (38.1 %)     23 (7.4 %)      
-        Other   11 (3.7 %)      
-Initial condition solution time: CPU = 1.681 ms, elapsed = 1.66702 ms.
+        Spectre  8 (24.8 %)      9 (12.4 %)     12 (2.7 %)      13 (3.1 %)
+                14 (2.2 %)      15 (1.8 %)      24 (7.1 %)      25 (6.2 %)
+                26 (7.0 %)      27 (13.3 %)     28 (5.8 %)      29 (36.6 %)
+                30 (9.3 %)      31 (8.4 %)      
+        Other    0 (3.5 %)       6 (4.0 %)       7 (4.9 %)      21 (6.6 %)
+                22 (11.1 %)     
+Initial condition solution time: CPU = 1.973 ms, elapsed = 2.10786 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
-Number of A-to-D events:                      10
-  Number of A-to-D events in IEs:             10
+Number of A-to-D events:                    1050
+  Number of A-to-D events in IEs:           1050
 Number of D-to-A events:                       0
   Number of D-to-A events in IEs:              0
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 23.415 ms, elapsed = 22.944 ms.
-Total time required for tran analysis `tran': CPU = 27.182 ms, elapsed = 29.073
-        ms.
-Time accumulated: CPU = 1.26417 s, elapsed = 2.04529 s.
+Intrinsic tran analysis time:    CPU = 283.56 ms, elapsed = 283.947 ms.
+Total time required for tran analysis `tran': CPU = 288.168 ms, elapsed =
+        291.161 ms.
+Time accumulated: CPU = 1.54218 s, elapsed = 2.41372 s.
 Peak resident memory used = 136 Mbytes.
 
 finalTimeOP: writing operating point information to rawfile.
@@ -1052,12 +1052,12 @@ outputParameter: writing output parameter values to rawfile.
 Opening the PSF file ../psf/outputParameter.info ...
 Simulation complete via transient analysis stoptime at time 20 MS
 
-Aggregate audit (11:11:16 PM, Mon Feb 15, 2021):
-Time used: CPU = 1.28 s, elapsed = 2.07 s, util. = 61.7%.
-Time spent in licensing: elapsed = 147 ms, percentage of total = 7.1%.
+Aggregate audit (7:46:48 PM, Tue Feb 23, 2021):
+Time used: CPU = 1.56 s, elapsed = 2.44 s, util. = 63.8%.
+Time spent in licensing: elapsed = 161 ms, percentage of total = 6.59%.
 Peak memory used = 137 Mbytes.
-Simulation started at: 11:11:14 PM, Mon Feb 15, 2021, ended at: 11:11:16 PM,
-        Mon Feb 15, 2021, with elapsed time (wall clock): 2.07 s.
+Simulation started at: 7:46:46 PM, Tue Feb 23, 2021, ended at: 7:46:48 PM, Tue
+        Feb 23, 2021, with elapsed time (wall clock): 2.44 s.
 spectre completes with 0 errors, 1 warning, and 5 notices.
-xmsim: Memory Usage - Final: 136.9M, Peak: 137.0M, Peak virtual: 605.7M
-xmsim: CPU Usage - 1.3s system + 2.3s user = 3.6s total (3.4s, 100.0% cpu)
+xmsim: Memory Usage - Final: 137.0M, Peak: 137.1M, Peak virtual: 605.8M
+xmsim: CPU Usage - 1.4s system + 2.7s user = 4.0s total (3.8s, 100.0% cpu)

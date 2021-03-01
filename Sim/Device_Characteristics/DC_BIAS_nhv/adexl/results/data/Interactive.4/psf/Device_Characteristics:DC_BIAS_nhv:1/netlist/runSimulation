@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../../../../Interactive.1/psf/Device_Characteristics:DC_BIAS_nhv:1/psf/spectre.out  -format psfxl -raw ../../../../Interactive.1/psf/Device_Characteristics:DC_BIAS_nhv:1/psf   +lqtimeout 900 -maxw 5 -maxn 5 -env ade   

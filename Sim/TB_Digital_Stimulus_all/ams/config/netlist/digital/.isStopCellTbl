@@ -1,4 +1,5 @@
 ("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional") t
+("analogLib" "vpulse" "spectre") t
 ("analogLib" "vpwl" "spectre") t
 ("EMG_Model" "Digital_Stimulus_all" "functional") nil
 ("BioZ_EMG_Model" "BioZ_Digital_stim" "functional") t

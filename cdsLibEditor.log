@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 09/03/2019 21:38 (ip-172-18-22-89) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-display localhost:10.0 -mpssession virtuoso15215 -mpshost s2424 -namespace CDBA -cdslib /home/ykhuang/research/cds.lib 
+\o Arguments:		-display localhost:11.0 -mpssession virtuoso3084 -mpshost s2424 -namespace CDBA -cdslib /home/ykhuang/research/cds.lib 
 \o Working Directory:	s2424:/home/ykhuang/research
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
@@ -8,23 +8,49 @@
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(69 27 500 400))
+\a nrResizeWindow(cdsLibEditor list(2017 28 500 400))
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(cdsLibEditor list(2525 226 500 400))
-\a nrListItemAction(cdsLibEditor->mainTable 56 0)
-\o Active cell: 56 0 ""
-\a nrListItemAction(cdsLibEditor->mainTable 4 0)
-\o Active cell: 4 0 "basic"
+\a nrResizeWindow(cdsLibEditor list(2407 333 500 400))
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(cdsLibEditor list(2525 226 500 575))
-\a nrListItemAction(cdsLibEditor->mainTable 56 0)
-\o Active cell: 56 0 ""
-\a nrListItemRename(cdsLibEditor->mainTable, 56 0 "BioZ_EMG_Model")
-\a nrListItemAction(cdsLibEditor->mainTable 56 1)
-\o Active cell: 56 1 ""
+\a nrResizeWindow(cdsLibEditor list(2407 333 707 536))
+\a nrListItemAction(cdsLibEditor->mainTable 58 0)
+\o Active cell: 58 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 58 0 "CHARACTERIZATION")
+\a nrListItemAction(cdsLibEditor->mainTable 58 1)
+\o Active cell: 58 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 58 1 "/home/ykhuang/workingdir/CHARACTERIZATION")
+\a nrListItemAction(cdsLibEditor->mainTable 59 0)
+\o Active cell: 59 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 59 0 "DAY1")
+\a nrListItemAction(cdsLibEditor->mainTable 59 1)
+\o Active cell: 59 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 59 1 "/home/ykhuang/workingdir/DAY1")
+\a nrListItemAction(cdsLibEditor->mainTable 60 0)
+\o Active cell: 60 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 60 0 "DAY2")
+\a nrListItemAction(cdsLibEditor->mainTable 60 1)
+\o Active cell: 60 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 60 1 "/home/ykhuang/workingdir/DAY2")
+\a nrListItemAction(cdsLibEditor->mainTable 61 0)
+\o Active cell: 61 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 61 0 "DAY3")
+\a nrListItemAction(cdsLibEditor->mainTable 61 1)
+\o Active cell: 61 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 61 1 "/home/ykhuang/workingdir/DAY3")
+\a nrListItemAction(cdsLibEditor->mainTable 62 0)
+\o Active cell: 62 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 62 0 "EXERCISE1")
+\a nrListItemAction(cdsLibEditor->mainTable 62 1)
+\o Active cell: 62 1 ""
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemRename(cdsLibEditor->mainTable, 56 1 "/home/ykhuang/research/Alejandro_Design/BioZ_EMG_Model")
-\a nrListItemAction(cdsLibEditor->mainTable 57 0)
-\o Active cell: 57 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 62 1 "/home/ykhuang/workingdir/EXERCISE1")
+\a nrListItemAction(cdsLibEditor->mainTable 63 0)
+\o Active cell: 63 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 63 0 "Exercise6")
+\a nrListItemAction(cdsLibEditor->mainTable 63 1)
+\o Active cell: 63 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 63 1 "/home/ykhuang/workingdir/Exercise6")
+\a nrListItemAction(cdsLibEditor->mainTable 64 0)
+\o Active cell: 64 0 ""
 \a cdsLibEditor->fileSaveButton->value = t
 \a exit(0)

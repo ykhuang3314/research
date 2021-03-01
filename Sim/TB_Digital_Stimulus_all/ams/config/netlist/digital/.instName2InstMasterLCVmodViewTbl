@@ -1,3 +1,4 @@
+("TB_Digital_Stimulus_all" "V2") ("analogLib" "vpulse" "spectre" "spectre" "EMG_TestBench" "TB_Digital_Stimulus_all" "schematic")
 ("TB_Digital_Stimulus_all" "V1") ("analogLib" "vdc" "spectre" "spectre" "EMG_TestBench" "TB_Digital_Stimulus_all" "schematic")
 ("Digital_Stimulus_all" "digital_BioZ") ("BioZ_EMG_Model" "BioZ_Digital_stim" "functional" "functional" "EMG_Model" "Digital_Stimulus_all" "functional")
 ("Digital_Stimulus_all" "digital_EMG") ("EMG_Model" "Digital_Stimuli_EMG_V2" "functional" "functional" "EMG_Model" "Digital_Stimulus_all" "functional")

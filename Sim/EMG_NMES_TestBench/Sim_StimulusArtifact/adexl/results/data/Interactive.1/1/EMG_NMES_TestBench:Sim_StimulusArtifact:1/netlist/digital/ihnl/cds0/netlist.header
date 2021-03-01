@@ -1,0 +1,26 @@
+// Library - Stimulator_Model, Cell - Stimulator_4CH_V2, View -
+//schematic
+// LAST TIME SAVED: Feb 23 11:17:45 2021
+// NETLIST TIME: Feb 23 20:00:14 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_Model
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_Model", dfII_cell="Stimulator_4CH_V2", dfII_view="schematic", worklib_name="Stimulator_Model", view_name="schematic", last_save_time="Feb 23 11:17:45 2021" *)
+
+module Stimulator_4CH_V2 (E00, E01, E02, E03, E10, E11, E12, E13, 
+    Ibias, vdda, vddd, vddh, vssa, vssd, ANO_ST, CAT_ST, CH_SEL_D_ST, 
+    CH_SEL_U_ST, DIS_ST, EN_ST, MAG_ST);
+
+output  E00, E01, E02, E03, E10, E11, E12, E13;
+
+inout  Ibias, vdda, vddd, vddh, vssa, vssd;
+
+input  ANO_ST, CAT_ST, DIS_ST, EN_ST;
+
+input [4:0]  MAG_ST;
+input [1:0]  CH_SEL_D_ST;
+input [1:0]  CH_SEL_U_ST;
+

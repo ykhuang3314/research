@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "DC_BIAS_nhv"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.2/2/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Device_Characteristics/DC_BIAS_nhv/schematic" "DC_BIAS_nhv" )
+ )
+( "DC_BIAS_nhv" "ihnl/cds0/map" )
+ )

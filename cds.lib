@@ -1,4 +1,4 @@
-# File Created by ykhuang at Wed Feb 10 12:08:33 2021
+# File Created by ykhuang at Sat Feb 27 14:05:06 2021
 # assisted by CdsLibEditor
 # ------------------------------------------------------------------------------
 # XKIT library definition files
@@ -34,3 +34,10 @@ DEFINE Digital_Lib /home/ykhuang/research/Digital_Lib
 DEFINE EMG_NMES_TestBench /home/ykhuang/research/EMG_NMES_TestBench
 #Removed by ddDeleteObj: DEFINE IC_BioZ Alejandro_Design/IC_BioZ
 DEFINE BioZ_EMG_Model Alejandro_Design/BioZ_EMG_Model
+DEFINE Device_Characteristics /home/ykhuang/research/Device_Characteristics
+DEFINE CHARACTERIZATION /home/ykhuang/workingdir/CHARACTERIZATION
+DEFINE DAY1 /home/ykhuang/workingdir/DAY1
+DEFINE DAY2 /home/ykhuang/workingdir/DAY2
+DEFINE DAY3 /home/ykhuang/workingdir/DAY3
+DEFINE EXERCISE1 /home/ykhuang/workingdir/EXERCISE1
+DEFINE Exercise6 /home/ykhuang/workingdir/Exercise6

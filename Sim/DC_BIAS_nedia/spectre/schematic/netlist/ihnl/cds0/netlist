@@ -1,0 +1,8 @@
+
+// Library name: Device_Characteristics
+// Cell name: DC_BIAS_nedia
+// View name: schematic
+M0 (net4 net3 0 0) nedia w=W l=1.25u m=(1)*(NR) par1=((1)*(NR)) extlay=0 \
+        xf_subext=0
+V1 (net4 0) vsource dc=VDS type=dc
+V0 (net3 0) vsource dc=VGS type=dc

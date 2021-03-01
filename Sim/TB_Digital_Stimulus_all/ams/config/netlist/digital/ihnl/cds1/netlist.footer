@@ -1,16 +1,18 @@
 
-Digital_Stimulus_all I0 ( .ADC_CLK_EMG(ADC_CLK_EMG), 
-    .ADC_En_BioZ(ADC_En_BioZ), .ADC_Start_BioZ(ADC_Start_BioZ), 
-    .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), .CH_SEL_EMG(CH_SEL_EMG), 
-    .CH_SEL_ST(CH_SEL_ST), .Clk_En_BioZ(Clk_En_BioZ), 
-    .CountEnable_Bioz(CountEnable_BioZ), .DIS_ST(DIS_ST), 
-    .EN_ADC_EMG(EN_ADC_EMG), .EN_ST(EN_ST), .Fsel_BioZ(Fsel_BioZ), 
-    .G_CTRL_TCA_AFE_BioZ(G_CTRL_TCA_AFE_BioZ), 
-    .G_CTRL_TIA_AFE_BioZ(G_CTRL_TIA_AFE_BioZ), 
-    .Gain_TCA_SigGen_BioZ(Gain_TCA_SigGen_BioZ), .MAG_ST(MAG_ST), 
-    .MUX_CLK_EMG(MUX_CLK_EMG), .Restn_BioZ(Restn_BioZ), 
-    .START_EMG(START_EMG), .StepNum_BioZ(StepNum_BioZ), 
-    .CH_SWEEP_ST(net3), .ENABLE(net1), .RAMP_ST(net4), 
-    .RESET(cds_globals.\gnd! ));
+Digital_Stimulus_all I0 ( .Resetn_BioZ(Restn_BioZ), 
+    .CountEnable_BioZ(CountEnable_BioZ), .Dir_BioZ(Dir_BioZ), 
+    .CH_SEL_D_ST(CH_SEL_D_ST), .CH_SEL_U_ST(CH_SEL_U_ST), 
+    .Col_BioZ(Col_BioZ), .GAIN_EMG(GAIN_EMG), 
+    .Gain_TCA_SigGen_BioZ(Gain_TCA_SigGen_BioZ), .Row_BioZ(Row_BioZ), 
+    .SenseMode_BioZ(SenseMode_BioZ), .clk_ADC_BioZ(net012), 
+    .ADC_CLK_EMG(ADC_CLK_EMG), .ADC_En_BioZ(ADC_En_BioZ), 
+    .ADC_Start_BioZ(ADC_Start_BioZ), .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), 
+    .CH_SEL_EMG(CH_SEL_EMG), .Clk_En_BioZ(Clk_En_BioZ), 
+    .DIS_ST(DIS_ST), .EN_ADC_EMG(EN_ADC_EMG), .EN_ST(EN_ST), 
+    .Fsel_BioZ(Fsel_BioZ), .G_CTRL_TCA_AFE_BioZ(G_CTRL_TCA_AFE_BioZ), 
+    .G_CTRL_TIA_AFE_BioZ(G_CTRL_TIA_AFE_BioZ), .MAG_ST(MAG_ST), 
+    .MUX_CLK_EMG(MUX_CLK_EMG), .START_EMG(START_EMG), 
+    .StepNum_BioZ(StepNum_BioZ), .CH_SWEEP_ST(net3), .ENABLE(net1), 
+    .RAMP_ST(net4), .RESET(cds_globals.\gnd! ));
 
 endmodule

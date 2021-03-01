@@ -1,0 +1,23 @@
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o ERROR (ADEXL-5011): While simulating run Interactive.2, point 1, test EMG_NMES_TestBench:Sim_StimulusArtifact:1, received error:
+\o Simulation Error:
+\o  ------------------------------
+\o  Simulator failed to complete the simulation.
+\o  Error found by spectre at time = 842.967 us during transient analysis `tran'.
+\o ERROR (SPECTRE-16192): No convergence achieved with the minimum time step specified.  Last acceptable solution computed at 838.167 us.
+\o 
+\o  
+\o  For details open log: /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.2/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/psf/xrun.log for the point: (1 1)
+\o  ------------------------------
+\o 
+\o For more details, consult the job log file:
+\o /home/ykhuang/research/logs_ykhuang/logs0/Job3.log
+\a hiResizeWindow(window(1) list(2242:70 3037:263))
+\r t
+\a hiCloseWindow(swindow(3))
+\r t
+\a hiCloseWindow(swindow(4))
+\r t
+\a hiCloseWindow(swindow(1))
+\r t

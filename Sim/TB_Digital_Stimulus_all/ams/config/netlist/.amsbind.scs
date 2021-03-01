@@ -4,7 +4,7 @@
 
 
 // Binding AMSD Control Block for config EMG_TestBench.TB_Digital_Stimulus_all:config
-// Created On: Feb 15 23:11:03 2021
+// Created On: Feb 23 19:46:34 2021
 // NOTE      : DO NOT change this system generated file.
 
 amsd {

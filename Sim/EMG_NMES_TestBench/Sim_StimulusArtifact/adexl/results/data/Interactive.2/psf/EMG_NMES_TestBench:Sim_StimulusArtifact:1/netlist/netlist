@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  EMG_NMES_TestBench 
+cell: Sim_StimulusArtifact 
+view: config 
+topCellLib: EMG_NMES_TestBench 

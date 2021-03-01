@@ -1,0 +1,56 @@
+TOOL:	xrun(64)	18.03-s018: Started on Feb 23, 2021 at 20:00:11 CET
+xrun
+	-f /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/.mapi/mapi_run.args
+		-64bit
+		-compile
+		-NOCOPYRIGHT
+		-nostdout
+		-nowarn DLNOHV
+		-logfile /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/.mapi/mapirun.log
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-allowredefinition
+		-incdir /home/ykhuang/research/
+		-nclibdirpath /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/.mapi/
+		-cdslib /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/.mapi/cds.lib
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+		-amscompilefile "file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_Model/CH_SEL_MUX_V2/verilogams/verilog.vams lib:Stimulator_Model cell:CH_SEL_MUX_V2 view:verilogams"
+		/home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/.mapi//dummyMapi.vams
+		/home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/.mapi//dummyMapi.vhms
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+file: /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.1/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/.mapi//dummyMapi.vams
+file: /home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v
+	module Stimulator_Model.Digital_Stimulus_ST_V2:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
+	module EMG_Model.IA_EMG_Ideal:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
+	module EMG_Model.PGA_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
+	module EMG_Model.BPF_EMG:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
+	module Stimulator_Model.H_Bridge:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
+	module Stimulator_Model.Current_Mirror:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
+	module Stimulator_Model.Current_Source:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_Model/CH_SEL_MUX_V2/verilogams/verilog.vams
+	module Stimulator_Model.CH_SEL_MUX_V2:verilogams
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun(64)	18.03-s018: Exiting on Feb 23, 2021 at 20:00:14 CET  (total: 00:00:03)

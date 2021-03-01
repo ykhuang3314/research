@@ -1,5 +1,6 @@
 //Verilog HDL for "EMG_Model", "Digital_Stimulus_all" "functional"
 
+`timescale 1ns / 1ps
 
 module Digital_Stimulus_all (
 	input ENABLE,
@@ -21,14 +22,14 @@ module Digital_Stimulus_all (
 	output wire[1:0] CH_SEL_D_ST,
 	output wire[4:0] MAG_ST,
 	output wire[3:0] Fsel_BioZ,
-	output wire Dir_Bioz,
+	output wire Dir_BioZ,
 	output wire[1:0] Row_BioZ,
 	output wire[1:0] Col_BioZ,
 	output wire[1:0] Gain_TCA_SigGen_BioZ,
 	output wire[2:0] SenseMode_BioZ,
 	output wire StepNum_BioZ,
-	output wire CountEnable_Bioz,
-	output wire Restn_BioZ,
+	output wire CountEnable_BioZ,
+	output wire Resetn_BioZ,
 	output wire Clk_En_BioZ,
 	output wire ADC_En_BioZ,
 	output wire ADC_Start_BioZ,
@@ -59,6 +60,7 @@ parameter VGA_Gain_EMG = 3'b111;
 parameter cycle_BioZ = 4500000; // 4.5 ms
 parameter [3:0] freq_selection_BioZ = 4'b1010;
 parameter ADC_clk_cycle_BioZ = 13;
+
 
 // instantiate modules
 
@@ -126,5 +128,4 @@ BioZ_Digital_stim #(
 	.Gain_TCA_SigGen(Gain_TCA_SigGen_BioZ[1:0]),
 	.SenseMode(SenseMode_BioZ[2:0])
 	);
-
 endmodule

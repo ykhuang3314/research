@@ -1,0 +1,8 @@
+
+// Library name: Device_Characteristics
+// Cell name: DC_BIAS_nhhv
+// View name: schematic
+M0 (net4 net3 0 0) nhhv w=W l=5u as=-1 ad=-1 ps=-1 pd=-1 nrs=-1 nrd=-1 \
+        m=(1)*(NF) par1=((1)*(NF)) extlay=0 xf_subext=0
+V1 (net4 0) vsource dc=VDS type=dc
+V0 (net3 0) vsource dc=VGS type=dc

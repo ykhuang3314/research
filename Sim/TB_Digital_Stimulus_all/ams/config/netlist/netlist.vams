@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 10648
+// User: ykhuang Pid: 18591
 // Design library name: EMG_TestBench
 // Design cell name: TB_Digital_Stimulus_all
 // Design view name: config
@@ -15,8 +15,8 @@
 // HDL file - EMG_Model, Digital_Stimuli_EMG_V2, functional.
 // HDL file - EMG_Model, Digital_Stimulus_all, functional.
 // Library - EMG_TestBench, Cell - TB_Digital_Stimulus_all, View - schematic
-// LAST TIME SAVED: Feb 15 23:08:28 2021
-// NETLIST TIME: Feb 15 23:11:00 2021
+// LAST TIME SAVED: Feb 23 19:46:02 2021
+// NETLIST TIME: Feb 23 19:46:32 2021
 
 `worklib EMG_TestBench
 `view schematic
@@ -25,34 +25,42 @@
 (* cds_ams_schematic *)
 
 module TB_Digital_Stimulus_all ( );
-wire [1:0] CH_SEL_ST;
-wire [3:0] CH_SEL_EMG;
 wire [4:0] MAG_ST;
+wire [1:0] CH_SEL_D_ST;
+wire [2:0] GAIN_EMG;
+wire [3:0] CH_SEL_EMG;
+wire [1:0] Gain_TCA_SigGen_BioZ;
+wire [1:0] CH_SEL_U_ST;
+wire [2:0] SenseMode_BioZ;
 wire [3:0] Fsel_BioZ;
+wire [1:0] Col_BioZ;
+wire [1:0] Row_BioZ;
 wire net4;
 wire net1;
 wire net3;
 wire StepNum_BioZ;
 wire START_EMG;
-wire Restn_BioZ;
 wire MUX_CLK_EMG;
-wire Gain_TCA_SigGen_BioZ;
 wire G_CTRL_TIA_AFE_BioZ;
 wire G_CTRL_TCA_AFE_BioZ;
 wire EN_ST;
 wire EN_ADC_EMG;
 wire DIS_ST;
-wire CountEnable_BioZ;
 wire Clk_En_BioZ;
 wire CAT_ST;
 wire ANO_ST;
 wire ADC_Start_BioZ;
 wire ADC_En_BioZ;
 wire ADC_CLK_EMG;
-Digital_Stimulus_all I0 (.ADC_CLK_EMG( ADC_CLK_EMG ), .ADC_En_BioZ( ADC_En_BioZ ), .ADC_Start_BioZ( ADC_Start_BioZ ), .ANO_ST( ANO_ST ), .CAT_ST( CAT_ST ), .CH_SEL_EMG( CH_SEL_EMG ), .CH_SEL_ST( CH_SEL_ST ), .Clk_En_BioZ( Clk_En_BioZ ), .CountEnable_Bioz( CountEnable_BioZ ), .DIS_ST( DIS_ST ), .EN_ADC_EMG( EN_ADC_EMG ), .EN_ST( EN_ST ), .Fsel_BioZ( Fsel_BioZ ), .G_CTRL_TCA_AFE_BioZ( G_CTRL_TCA_AFE_BioZ ), .G_CTRL_TIA_AFE_BioZ( G_CTRL_TIA_AFE_BioZ ), .Gain_TCA_SigGen_BioZ( Gain_TCA_SigGen_BioZ ), .MAG_ST( MAG_ST ), .MUX_CLK_EMG( MUX_CLK_EMG ), .Restn_BioZ( Restn_BioZ ), .START_EMG( START_EMG ), .StepNum_BioZ( StepNum_BioZ ), .CH_SWEEP_ST( net3 ), .ENABLE( net1 ), .RAMP_ST( net4 ), .RESET(cds_globals.\gnd! ));
+wire net012;
+wire Dir_BioZ;
+wire CountEnable_BioZ;
+wire Restn_BioZ;
+Digital_Stimulus_all I0 (.Resetn_BioZ( Restn_BioZ ), .CountEnable_BioZ( CountEnable_BioZ ), .Dir_BioZ( Dir_BioZ ), .CH_SEL_D_ST( CH_SEL_D_ST ), .CH_SEL_U_ST( CH_SEL_U_ST ), .Col_BioZ( Col_BioZ ), .GAIN_EMG( GAIN_EMG ), .Gain_TCA_SigGen_BioZ( Gain_TCA_SigGen_BioZ ), .Row_BioZ( Row_BioZ ), .SenseMode_BioZ( SenseMode_BioZ ), .clk_ADC_BioZ( net012 ), .ADC_CLK_EMG( ADC_CLK_EMG ), .ADC_En_BioZ( ADC_En_BioZ ), .ADC_Start_BioZ( ADC_Start_BioZ ), .ANO_ST( ANO_ST ), .CAT_ST( CAT_ST ), .CH_SEL_EMG( CH_SEL_EMG ), .Clk_En_BioZ( Clk_En_BioZ ), .DIS_ST( DIS_ST ), .EN_ADC_EMG( EN_ADC_EMG ), .EN_ST( EN_ST ), .Fsel_BioZ( Fsel_BioZ ), .G_CTRL_TCA_AFE_BioZ( G_CTRL_TCA_AFE_BioZ ), .G_CTRL_TIA_AFE_BioZ( G_CTRL_TIA_AFE_BioZ ), .MAG_ST( MAG_ST ), .MUX_CLK_EMG( MUX_CLK_EMG ), .START_EMG( START_EMG ), .StepNum_BioZ( StepNum_BioZ ), .CH_SWEEP_ST( net3 ), .ENABLE( net1 ), .RAMP_ST( net4 ), .RESET(cds_globals.\gnd! ));
 vsource #(.dc(0), .type("dc")) V1 (net4, cds_globals.\gnd! );
 vsource #(.dc(1.8), .type("dc")) V5 (net3, cds_globals.\gnd! );
 vsource #(.type("pwl"), .wave({"0", "0", "1e-05", "1.8"})) V0 (net1, cds_globals.\gnd! );
+vsource #(.type("pulse"), .val0(0), .val1(1.8), .period(1/13e+3), .delay(1/26e+3), .rise(1e-12), .fall(1e-12), .width(1/26e+3)) V2 (net012, cds_globals.\gnd! );
 
 endmodule
 `noworklib

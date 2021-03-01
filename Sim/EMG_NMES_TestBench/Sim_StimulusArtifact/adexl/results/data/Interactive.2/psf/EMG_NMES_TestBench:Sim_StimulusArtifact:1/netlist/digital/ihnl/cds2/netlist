@@ -1,0 +1,43 @@
+// Library - EMG_NMES_TestBench, Cell - Sim_StimulusArtifact, View -
+//schematic
+// LAST TIME SAVED: Feb 23 20:07:58 2021
+// NETLIST TIME: Feb 23 20:08:18 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_NMES_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_NMES_TestBench", dfII_cell="Sim_StimulusArtifact", dfII_view="schematic", worklib_name="EMG_NMES_TestBench", view_name="schematic", last_save_time="Feb 23 20:07:58 2021" *)
+
+module Sim_StimulusArtifact ();
+
+// Buses in the design
+
+wire  [4:0]  MAG_ST;
+
+wire  [1:0]  CH_SEL_D_ST;
+
+wire  [1:0]  CH_SEL_U_ST;
+
+wire  [2:0]  Gain_Sel;
+
+
+Stimulator_4CH_V2 I23 ( .Ibias(net3), .vdda(vdda), .vddd(vddd), 
+    .vddh(vddh), .vssa(vssa), .vssd(vssd), .E00(E00), .E01(net022), 
+    .E02(net021), .E03(net020), .E10(E10), .E11(net019), .E12(net018), 
+    .E13(net025), .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), 
+    .CH_SEL_D_ST(CH_SEL_D_ST[1:0]), .CH_SEL_U_ST(CH_SEL_U_ST[1:0]), 
+    .DIS_ST(DIS_ST), .EN_ST(EN_ST), .MAG_ST(MAG_ST[4:0]));
+
+AFE_EMG I1 ( .Vddd(vddd), .Vssd(vssd), .Ibias(net4), .Vdda(vdda), 
+    .Vssa(vssa), .Vsub(vsub), .Vout(Vout), .Gain_Sel(Gain_Sel[2:0]), 
+    .Vinn(cds_globals.\gnd! ), .Vinp(Vinp));
+
+Digital_Stimulus_ST_V2 #( .Channel_DOWN(2'b00), .period(1000) ) I2 ( 
+    .CH_SEL_D_ST(CH_SEL_D_ST), .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), 
+    .CH_SEL_U_ST(CH_SEL_U_ST), .DIS_ST(DIS_ST), .EN_ST(EN_ST), 
+    .MAG_ST(MAG_ST), .ch_sweeping(net012), .enable(enable), 
+    .ramping(net013));
+
+endmodule

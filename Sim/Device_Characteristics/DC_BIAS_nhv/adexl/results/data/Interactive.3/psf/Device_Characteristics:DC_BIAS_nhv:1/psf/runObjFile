@@ -1,0 +1,170 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Feb 27 15:25:09 2021"
+"date" "Feb 27 15:25:09 2021"
+"simulator" "spectre"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 2
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("Corner")
+)
+"Corner=nom" "runObject" (
+("")
+"Root"
+("VGS")
+) PROP(
+"Corner" "nom"
+)
+
+"Corner=nom,VGS=0.0" "runObject" (
+(
+"../../../2/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../2/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 2
+"netlistDir" "../../../2/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../2/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 0.000000e+00
+)
+
+"Corner=nom,VGS=2.0" "runObject" (
+(
+"../../../3/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../3/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 3
+"netlistDir" "../../../3/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../3/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 2.000000e+00
+)
+
+"Corner=nom,VGS=4.0" "runObject" (
+(
+"../../../4/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../4/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 4
+"netlistDir" "../../../4/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../4/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 4.000000e+00
+)
+
+"Corner=nom,VGS=6.0" "runObject" (
+(
+"../../../5/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../5/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 5
+"netlistDir" "../../../5/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../5/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 6.000000e+00
+)
+
+"Corner=nom,VGS=8.0" "runObject" (
+(
+"../../../6/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../6/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 6
+"netlistDir" "../../../6/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../6/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 8.000000e+00
+)
+
+"Corner=nom,VGS=10.0" "runObject" (
+(
+"../../../7/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../7/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 7
+"netlistDir" "../../../7/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../7/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 1.000000e+01
+)
+
+"Corner=nom,VGS=12.0" "runObject" (
+(
+"../../../8/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../8/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 8
+"netlistDir" "../../../8/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../8/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 1.200000e+01
+)
+
+"Corner=nom,VGS=14.0" "runObject" (
+(
+"../../../9/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../9/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 9
+"netlistDir" "../../../9/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../9/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 1.400000e+01
+)
+
+"Corner=nom,VGS=16.0" "runObject" (
+(
+"../../../10/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../10/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 10
+"netlistDir" "../../../10/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../10/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 1.600000e+01
+)
+
+"Corner=nom,VGS=18.0" "runObject" (
+(
+"../../../11/Device_Characteristics:DC_BIAS_nhv:1/psf/logFile"
+"../../../11/Device_Characteristics:DC_BIAS_nhv:1/psf/artistLogFile"
+)
+"Corner=nom"
+()
+) PROP(
+ "#pointID" 11
+"netlistDir" "../../../11/Device_Characteristics:DC_BIAS_nhv:1/netlist"
+"dataDir" "../../../11/Device_Characteristics:DC_BIAS_nhv:1"
+ "VGS" 1.800000e+01
+)
+
+END

@@ -2,4 +2,5 @@ HEADER
 "PSFversion" "1.00"
 "V0n" "analogLib_vpwl_spectre"
 "V1n V5n" "analogLib_vdc_spectre"
+"V2n" "analogLib_vpulse_spectre"
 "I0n" "EMG_Model_Digital_Stimulus_all_functional"

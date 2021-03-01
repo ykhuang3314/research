@@ -1,0 +1,9 @@
+
+// Library name: Device_Characteristics
+// Cell name: DC_BIAS_ped
+// View name: schematic
+M0 (net4 net3 vdd! vdd!) ped w=W l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+V2 (net4 vdd!) vsource dc=VDS type=dc
+V1 (net3 vdd!) vsource dc=VGS type=dc
+V0 (vdd! 0) vsource dc=40 type=dc

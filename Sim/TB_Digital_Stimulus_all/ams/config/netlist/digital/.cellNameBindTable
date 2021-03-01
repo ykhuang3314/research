@@ -1,4 +1,5 @@
 ("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional") "Digital_Stimulus_ST_V2"
+("analogLib" "vpulse" "spectre") "vsource"
 ("analogLib" "vpwl" "spectre") "vsource"
 ("EMG_Model" "Digital_Stimulus_all" "functional") "Digital_Stimulus_all"
 ("BioZ_EMG_Model" "BioZ_Digital_stim" "functional") "BioZ_Digital_stim"

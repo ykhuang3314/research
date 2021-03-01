@@ -1,16 +1,17 @@
 hnlLastStopCellInfo = '(
-                           ( "EMG_Model" "Digital_Stimuli_EMG_V2" "functional" "1613343037" "1613343037" )
-                          ( "Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" "1613424449" "1613424449" )
-                          ( "BioZ_EMG_Model" "BioZ_Digital_stim" "functional" "1613400694" "1613400694" )
+                           ( "EMG_Model" "Digital_Stimuli_EMG_V2" "functional" "1613751073" "1613751073" )
+                          ( "Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" "1614012277" "1614012277" )
+                          ( "BioZ_EMG_Model" "BioZ_Digital_stim" "functional" "1614097053" "1614097036" )
                           ( "analogLib" "vdc" "spectre" "33" "1570591052" )
                           ( "analogLib" "vpwl" "spectre" "34" "1570591052" )
+                          ( "analogLib" "vpulse" "spectre" "34" "1570591052" )
                        )
 hnlLastNetlistConfig = t
-hnlLastConfigFileVersion = 2
-hnlLastConfigFileTimeStamp = "1613426981"
+hnlLastConfigFileVersion = 3
+hnlLastConfigFileTimeStamp = "1614097057"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "EMG_TestBench" "TB_Digital_Stimulus_all" "config" 2 "1613426981" )
+( "EMG_TestBench" "TB_Digital_Stimulus_all" "config" 3 "1614097057" )
 ) 
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"

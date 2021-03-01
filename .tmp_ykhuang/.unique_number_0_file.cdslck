@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      ykhuang
 HostName                       s2424.it.kth.se
-ProcessIdentifier              26546
-ProcessCreationTime_UTC        1614072021
-ProcessCreationTime_Readable   Tue Feb 23 10:20:21 2021 CET
+ProcessIdentifier              3084
+ProcessCreationTime_UTC        1614252572
+ProcessCreationTime_Readable   Thu Feb 25 12:29:32 2021 CET
 AppIdentifier                  /pkg/cadence/installs/IC618/tools/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       Lock file for generating unique number for ICRP command and log file directories.
 FilePathUsedToEditLock         /home/ykhuang/research/.tmp_ykhuang/.unique_number_0_file
-TimeEditLocked                 Tue Feb 23 10:23:23 2021 CET
+TimeEditLocked                 Sat Feb 27 15:03:36 2021 CET

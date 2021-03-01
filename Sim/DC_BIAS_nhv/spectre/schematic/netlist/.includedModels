@@ -1,0 +1,2 @@
+simulator lang=spectre
+include "nhv_bjt.scs"

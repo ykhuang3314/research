@@ -4,6 +4,7 @@
   repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
   stopList "spectre"
   hierDelim "."
+  hierPrefix "TB_Digital_Stimulus_all"
   globalHierPrefix "cds_globals."
   prefixHierarchyWithCV "YES"
   busRef   "ORDERED"

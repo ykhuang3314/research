@@ -1,16 +1,16 @@
-\# Program start time:     UTC 2021.02.23 09:23:28.162
-\# Local time: CET (UTC+01:00) 2021.02.23 10:23:28.162
+\# Program start time:     UTC 2021.02.27 14:03:41.096
+\# Local time: CET (UTC+01:00) 2021.02.27 15:03:41.096
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
 \o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso26546 -mpshost s2424 -davinciService DaVinciService_26546_1614072189 -log /home/ykhuang/research/logs_ykhuang/logs0/Job0.log -licenseLockFileName /home/ykhuang/research/.tmp_ykhuang/.s2424_26546 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 0
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso3084 -mpshost s2424 -davinciService DaVinciService_3084_1614434608 -log /home/ykhuang/research/logs_ykhuang/logs0/Job0.log -licenseLockFileName /home/ykhuang/research/.tmp_ykhuang/.s2424_3084 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 0
 \# Host name (type):	s2424 (x86_64)
 \# Operating system:	Linux 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 17 13:59:11 UTC 2020
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
 \# X display name (WxH):	:95 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 27960)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 22027)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        543 MB
-\# Available memory:	     82,223 MB
+\# Initial sbrk value:	        518 MB
+\# Available memory:	     80,322 MB
 \# System memory:	     96,361 MB
-\# Maximum memory size:	     95,976 MB
-\# Max mem available:	     82,380 MB
+\# Maximum memory size:	     96,000 MB
+\# Max mem available:	     80,479 MB
 \# Initial memory used:	        157 MB
 \#        process size:	      1,382 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		ykhuang
 \o Working Directory:	s2424:/home/ykhuang/research
-\# Process Id:		27965
+\# Process Id:		22032
 \o 
 \o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
@@ -68,16 +68,16 @@
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
 \o Loading adexl.cxt 
+\# Memory report: using         303 MB, process size 1,604 MB at UTC 2021.02.27 14:03:43.169
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading cli.cxt 
 \o Loading cle.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso26546, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso3084, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 27965 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 22032 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# Memory report: using         333 MB, process size 1,631 MB at UTC 2021.02.23 09:23:30.900
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -108,6 +108,7 @@
 \o Loading msgHandler.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
+\# Memory report: using         423 MB, process size 1,720 MB at UTC 2021.02.27 14:03:45.067
 \o  --> Finished setting the required PDK definitions
 \o  --> Setting the recommended EDA tool defaults...
 \o  --> Finished setting the recommended EDA tool defaults
@@ -120,7 +121,6 @@
 \r t
 \o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
 \o  - Menu "XKit Utilities" installed to CIW.
-\# Memory report: using         439 MB, process size 1,742 MB at UTC 2021.02.23 09:23:33.268
 \o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
 \o     INFO: To customize this setup, please use the following environment variables:
 \o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
@@ -130,11 +130,3011 @@
 \o                              e.g.:
 \o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
 \o  -> END LOAD ".cdsinit" FILE
-\# Available memory:         81,993 MB at UTC 2021.02.23 09:23:38.306
-\# Memory report: Maximum memory size now 82,431 MB at UTC 2021.02.23 09:23:38.306
-\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.02.23 09:23:38.306
-\o Job 0 timed out after no activity in 300 seconds.
+\# Available memory:         80,093 MB at UTC 2021.02.27 14:03:51.305
+\# Memory report: Maximum memory size now 80,532 MB at UTC 2021.02.27 14:03:51.306
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.02.27 14:03:51.306
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = Device_Characteristics
+\o 	Cell         = DC_BIAS_nhv
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Device_Characteristics:DC_BIAS_nhv:1_state1_Interactive.0
+\o 	Results DB   = /home/ykhuang/research/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0.rdb
+\o 	Results Dir  = /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/1/Device_Characteristics:DC_BIAS_nhv:1
+\o 	Results Loc  = /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data
+\o 	Project Dir  = /home/ykhuang/research/Sim
+\o 	Setup DB loc = /home/ykhuang/research/Device_Characteristics/DC_BIAS_nhv/adexl
+\o 	File Encoding = 0
+\o 
+\o 
 \o Loading simui.cxt 
+\o INFO (TECH-150003): The technology database "analogLib" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS = "20"
+\o Setting var VGS = "10"
+\o Setting var W = "10u"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/1/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/1/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/1/Device_Characteristics:DC_BIAS_nhv:1/netlist/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Begin Incremental Netlisting Feb 27 15:06:17 2021
+\o End netlisting Feb 27 15:06:17 2021
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:    3
+\o 
+\o 	Elapsed time:          1.0s (3.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (0 1).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/1/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 1) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 2) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var W = "100u"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/2/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/2/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:06:20 2021
+\o End netlisting Feb 27 15:06:20 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (0 2).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/2/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 2) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 3) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var W = "150u"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/3/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/3/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:06:21 2021
+\o End netlisting Feb 27 15:06:21 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (0 3).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/3/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 3) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 4) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var W = "200u"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/4/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/4/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:06:23 2021
+\o End netlisting Feb 27 15:06:23 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (0 4).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.0/4/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 4) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = Device_Characteristics
+\o 	Cell         = DC_BIAS_nhv
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Device_Characteristics:DC_BIAS_nhv:1_state1_Interactive.1
+\o 	Results DB   = /home/ykhuang/research/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/1/Device_Characteristics:DC_BIAS_nhv:1
+\o 	Results Loc  = /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data
+\o 	Project Dir  = /home/ykhuang/research/Sim
+\o 	Setup DB loc = /home/ykhuang/research/Device_Characteristics/DC_BIAS_nhv/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o variable oasisVariableValue redefined
+\o variable persistNewList redefined
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS = "20"
+\o Setting var VGS = "10"
+\o Setting var W = "10u"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/1/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/1/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:34 2021
+\o End netlisting Feb 27 15:07:34 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 1).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/1/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 1) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 2) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/2/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/2/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:36 2021
+\o End netlisting Feb 27 15:07:36 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 2).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/2/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 2) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 3) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/3/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/3/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:37 2021
+\o End netlisting Feb 27 15:07:37 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 3).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/3/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 3) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 4) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "4"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/4/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/4/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:39 2021
+\o End netlisting Feb 27 15:07:39 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 4).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/4/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 4) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 5) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/5/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/5/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:41 2021
+\o End netlisting Feb 27 15:07:41 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 5).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/5/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 5) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 6) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "8"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/6/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/6/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:43 2021
+\o End netlisting Feb 27 15:07:43 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 6).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/6/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 6) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 7) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "10"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/7/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/7/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 7)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:44 2021
+\o End netlisting Feb 27 15:07:44 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 7).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/7/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 7) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 8) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "12"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/8/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/8/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:46 2021
+\o End netlisting Feb 27 15:07:46 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 8).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/8/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 8) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 9) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "14"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/9/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/9/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:47 2021
+\o End netlisting Feb 27 15:07:47 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 9).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/9/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 9) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 10) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "16"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/10/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/10/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:49 2021
+\o End netlisting Feb 27 15:07:49 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 10).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/10/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 10) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 11) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "18"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/11/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/11/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:51 2021
+\o End netlisting Feb 27 15:07:51 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 11).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/11/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 11) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 12) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "10"
+\o Setting var W = "100u"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/12/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/12/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:52 2021
+\o End netlisting Feb 27 15:07:52 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 12).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/12/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 12) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 13) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/13/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/13/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:54 2021
+\o End netlisting Feb 27 15:07:54 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 13).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/13/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 13) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 14) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/14/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/14/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:56 2021
+\o End netlisting Feb 27 15:07:56 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 14).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/14/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 14) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 15) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "4"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/15/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/15/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:57 2021
+\o End netlisting Feb 27 15:07:57 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 15).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/15/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 15) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 16) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/16/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/16/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:07:59 2021
+\o End netlisting Feb 27 15:07:59 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 16).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/16/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 16) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 17) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "8"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/17/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/17/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:01 2021
+\o End netlisting Feb 27 15:08:01 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 17).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/17/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 17) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 18) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "10"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/18/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/18/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 18)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:02 2021
+\o End netlisting Feb 27 15:08:02 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 18).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/18/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 18) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 19) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "12"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/19/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/19/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:04 2021
+\o End netlisting Feb 27 15:08:04 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 19).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/19/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 19) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 20) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "14"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/20/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/20/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 20)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:06 2021
+\o End netlisting Feb 27 15:08:06 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 20).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/20/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 20) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 21) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "16"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/21/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/21/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:07 2021
+\o End netlisting Feb 27 15:08:07 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 21).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/21/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 21) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 22) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "18"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/22/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/22/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:09 2021
+\o End netlisting Feb 27 15:08:09 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 22).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/22/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 22) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 23) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "10"
+\o Setting var W = "150u"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/23/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/23/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 23)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:11 2021
+\o End netlisting Feb 27 15:08:11 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 23).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/23/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 23) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 24) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/24/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/24/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:12 2021
+\o End netlisting Feb 27 15:08:12 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 24).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/24/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 24) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 25) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/25/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/25/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 25)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:14 2021
+\o End netlisting Feb 27 15:08:14 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 25).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/25/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 25) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 26) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "4"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/26/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/26/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:16 2021
+\o End netlisting Feb 27 15:08:16 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 26).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/26/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 26) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 27) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/27/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/27/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 27)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:17 2021
+\o End netlisting Feb 27 15:08:17 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 27).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/27/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 27) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 28) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "8"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/28/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/28/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:19 2021
+\o End netlisting Feb 27 15:08:19 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 28).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/28/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 28) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 29) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "10"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/29/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/29/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 29)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:21 2021
+\o End netlisting Feb 27 15:08:21 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 29).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/29/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 29) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 30) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "12"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/30/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/30/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:22 2021
+\o End netlisting Feb 27 15:08:22 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 30).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/30/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 30) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 31) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "14"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/31/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/31/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:24 2021
+\o End netlisting Feb 27 15:08:24 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 31).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/31/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 31) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 32) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "16"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/32/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/32/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 32)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:26 2021
+\o End netlisting Feb 27 15:08:26 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 32).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/32/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 32) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 33) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "18"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/33/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/33/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:27 2021
+\o End netlisting Feb 27 15:08:27 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 33).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/33/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 33) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 34) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "10"
+\o Setting var W = "200u"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/34/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/34/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 34)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:29 2021
+\o End netlisting Feb 27 15:08:29 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 34).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/34/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 34) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 35) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/35/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/35/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 35)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:31 2021
+\o End netlisting Feb 27 15:08:31 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 35).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/35/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 35) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 36) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/36/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/36/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 36)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:32 2021
+\o End netlisting Feb 27 15:08:32 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 36).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/36/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 36) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 37) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "4"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/37/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/37/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 37)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:34 2021
+\o End netlisting Feb 27 15:08:34 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 37).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/37/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 37) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 38) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/38/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/38/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 38)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:36 2021
+\o End netlisting Feb 27 15:08:36 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 38).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/38/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 38) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 39) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "8"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/39/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/39/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 39)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:37 2021
+\o End netlisting Feb 27 15:08:37 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 39).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/39/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 39) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 40) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "10"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/40/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/40/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 40)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:39 2021
+\o End netlisting Feb 27 15:08:39 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 40).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/40/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 40) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 41) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "12"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/41/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/41/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 41)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:41 2021
+\o End netlisting Feb 27 15:08:41 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 41).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/41/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 41) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 42) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "14"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/42/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/42/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 42)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:42 2021
+\o End netlisting Feb 27 15:08:42 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 42).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/42/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 42) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 43) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "16"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/43/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/43/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 43)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:44 2021
+\o End netlisting Feb 27 15:08:44 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 43).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/43/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 43) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 44) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VGS = "18"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/44/Device_Characteristics:DC_BIAS_nhv:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/44/Device_Characteristics:DC_BIAS_nhv:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 44)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Feb 27 15:08:46 2021
+\o End netlisting Feb 27 15:08:46 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ] for Point ID (1 44).
+\o 
+\o Delete psf data in /home/ykhuang/research/Sim/Device_Characteristics/DC_BIAS_nhv/adexl/results/data/Interactive.1/44/Device_Characteristics:DC_BIAS_nhv:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 44) on testbench [
+\o           Device_Characteristics:DC_BIAS_nhv:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Job 0 timed out after no activity in 300 seconds.
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
 \o 
 \o *Info*    Received signal SIGTERM.
 \o 

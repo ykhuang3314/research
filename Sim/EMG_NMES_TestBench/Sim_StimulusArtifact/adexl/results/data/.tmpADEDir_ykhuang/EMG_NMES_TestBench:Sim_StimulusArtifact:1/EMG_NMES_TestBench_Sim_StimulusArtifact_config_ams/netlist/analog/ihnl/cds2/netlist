@@ -3,20 +3,20 @@
 // Cell name: Sim_StimulusArtifact
 // View name: schematic
 // Inherited view list: schematic
-R6 (Vinp net09) resistor r=1k
+R6 (Vinp net09) resistor r=1M
 R9 (net017 net09) resistor r=1k
-R5 (E10 net016) resistor r=1k
+R5 (E10 net016) resistor r=1M
 R4 (net017 net016) resistor r=1k
-R3 (E00 net017) resistor r=1k
+R3 (E00 net017) resistor r=1M
 I5 (vdda net4) isource dc=10u type=dc
 I3 (vdda net3) isource dc=10u type=dc
+V20 (net012 0) vsource dc=0 type=dc
+V21 (net013 0) vsource dc=0 type=dc
+V19 (vssd 0) vsource dc=0 type=dc
+V18 (vddd 0) vsource dc=1.8 type=dc
 V24 (Gain_Sel_2 0) vsource dc=1.8 type=dc
 V23 (Gain_Sel_1 0) vsource dc=0 type=dc
 V22 (Gain_Sel_0 0) vsource dc=0 type=dc
-V21 (net013 0) vsource dc=0 type=dc
-V20 (net012 0) vsource dc=0 type=dc
-V19 (vssd 0) vsource dc=0 type=dc
-V18 (vddd 0) vsource dc=1.8 type=dc
 V6 (vssa 0) vsource dc=0 type=dc
 V2 (vdda 0) vsource dc=1.8 type=dc
 V1 (vddh 0) vsource dc=40 type=dc

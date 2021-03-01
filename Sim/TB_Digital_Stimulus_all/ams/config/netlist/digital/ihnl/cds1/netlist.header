@@ -1,24 +1,36 @@
 // Library - EMG_TestBench, Cell - TB_Digital_Stimulus_all, View -
 //schematic
-// LAST TIME SAVED: Feb 15 23:08:28 2021
-// NETLIST TIME: Feb 15 23:10:57 2021
+// LAST TIME SAVED: Feb 23 19:46:02 2021
+// NETLIST TIME: Feb 23 19:46:28 2021
 `timescale 1ns / 1ps 
 
 `worklib EMG_TestBench
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="EMG_TestBench", dfII_cell="TB_Digital_Stimulus_all", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 15 23:08:28 2021" *)
+(* dfII_lib="EMG_TestBench", dfII_cell="TB_Digital_Stimulus_all", dfII_view="schematic", worklib_name="EMG_TestBench", view_name="schematic", last_save_time="Feb 23 19:46:02 2021" *)
 
 module TB_Digital_Stimulus_all ();
 
 // Buses in the design
 
-wire  [1:0]  CH_SEL_ST;
+wire  [4:0]  MAG_ST;
+
+wire  [1:0]  CH_SEL_D_ST;
+
+wire  [2:0]  GAIN_EMG;
 
 wire  [3:0]  CH_SEL_EMG;
 
-wire  [4:0]  MAG_ST;
+wire  [1:0]  Gain_TCA_SigGen_BioZ;
+
+wire  [1:0]  CH_SEL_U_ST;
+
+wire  [2:0]  SenseMode_BioZ;
 
 wire  [3:0]  Fsel_BioZ;
+
+wire  [1:0]  Col_BioZ;
+
+wire  [1:0]  Row_BioZ;
 

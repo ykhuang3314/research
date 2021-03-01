@@ -6,6 +6,7 @@
   stopList "spectre"
   globalList "gnd!"
   hierDelim "."
+  hierPrefix "TB_Digital_Stimulus_all"
   globalHierPrefix "cds_globals."
   prefixHierarchyWithCV "YES"
   netlistDir "/home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/digital"
@@ -17,10 +18,16 @@
   slashCheck   "t"
  )
 ( defbus
+( "Row_BioZ" 1 0  "Row_BioZ" 1 0  )
+( "Col_BioZ" 1 0  "Col_BioZ" 1 0  )
 ( "Fsel_BioZ" 3 0  "Fsel_BioZ" 3 0  )
-( "MAG_ST" 4 0  "MAG_ST" 4 0  )
+( "SenseMode_BioZ" 2 0  "SenseMode_BioZ" 2 0  )
+( "CH_SEL_U_ST" 1 0  "CH_SEL_U_ST" 1 0  )
+( "Gain_TCA_SigGen_BioZ" 1 0  "Gain_TCA_SigGen_BioZ" 1 0  )
 ( "CH_SEL_EMG" 3 0  "CH_SEL_EMG" 3 0  )
-( "CH_SEL_ST" 1 0  "CH_SEL_ST" 1 0  )
+( "GAIN_EMG" 2 0  "GAIN_EMG" 2 0  )
+( "CH_SEL_D_ST" 1 0  "CH_SEL_D_ST" 1 0  )
+( "MAG_ST" 4 0  "MAG_ST" 4 0  )
  )
 ( net
 ( "gnd!" "cds_globals.\\gnd! " )

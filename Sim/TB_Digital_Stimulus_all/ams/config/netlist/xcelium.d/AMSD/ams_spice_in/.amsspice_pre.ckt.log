@@ -5,23 +5,23 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 19795
-Memory  available: 50.9769 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 22295
+Memory  available: 51.7345 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1205.0] ( 16 ),  1 [1209.5] ( 17 ),  2 [1200.0] ( 18 )
-                 3 [1208.9] ( 19 ),  4 [1200.0] ( 20 ),  5 [1200.0] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [1300.2] ( 23 )
-        1:       8 [1200.1] ( 24 ),  9 [1214.9] ( 25 ), 10 [1318.1] ( 26 )
-                11 [1251.1] ( 27 ), 12 [1200.0] ( 28 ), 13 [1200.0] ( 29 )
+        0:       0 [1200.0] ( 16 ),  1 [1199.9] ( 17 ),  2 [1200.0] ( 18 )
+                 3 [1200.0] ( 19 ),  4 [1200.0] ( 20 ),  5 [1200.3] ( 21 )
+                 6 [1204.4] ( 22 ),  7 [1231.6] ( 23 )
+        1:       8 [1200.3] ( 24 ),  9 [1240.3] ( 25 ), 10 [1268.6] ( 26 )
+                11 [1200.0] ( 27 ), 12 [1251.7] ( 28 ), 13 [1246.9] ( 29 )
                 14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.8 %, 0.5 %, 0.5 %
+System load averages (1min, 5min, 15min) : 0.9 %, 0.8 %, 0.6 %
 Hyperthreading is enabled
 
 
-Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 11:11:06 PM, Mon Feb 15, 2021 (process id: 19795).
+Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 7:46:38 PM, Tue Feb 23, 2021 (process id: 22295).
 Current working directory: /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -32,7 +32,7 @@ Command line:
         xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
         ./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
         -I/home/ykhuang/research/ -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2BE7CB936679A72D1E934895D50FB3080A83DEEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06461CB648AA83DC30C50FB10B0C8171C44A183709A000041D2
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2E52EBE6360CF2983E93DDE0A50FB3080A83DEEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06561CA648AA83DC30C50FB10B0C808A0B01D777085000041EE
 
 Loading /pkg/cadence/installs/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /pkg/cadence/installs/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -372,7 +372,7 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
 Reading file:  /home/ykhuang/research/Sim/TB_Digital_Stimulus_all/ams/config/netlist/amsControlSpectre.scs
-Time for NDB Parsing: CPU = 417.719 ms, elapsed = 509.511 ms.
-Time accumulated: CPU = 494.475 ms, elapsed = 509.528 ms.
+Time for NDB Parsing: CPU = 418.887 ms, elapsed = 513.27 ms.
+Time accumulated: CPU = 495.525 ms, elapsed = 513.286 ms.
 Peak resident memory used = 70.2 Mbytes.
 

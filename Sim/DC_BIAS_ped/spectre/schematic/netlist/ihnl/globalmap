@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+Device_Characteristics/DC_BIAS_ped/schematic DC_BIAS_ped
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+VGS VGS
+W W
+VDS VDS
+$endparam
