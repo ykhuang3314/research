@@ -1,0 +1,2 @@
+netMap,*INV3_ST,*gnd!,*cds_globals.\gnd! 
+cellMap,*INV3_ST,*INV3_ST,*Stimulator_IMP,*schematic

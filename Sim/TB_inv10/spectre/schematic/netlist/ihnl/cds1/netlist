@@ -1,0 +1,9 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_inv10
+// View name: schematic
+I0 (in out net3 0) INV10_ST W=5u
+V0 (in 0) vsource type=pulse val0=0 val1=10 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+C0 (out 0) capacitor c=1p
+V1 (net3 0) vsource dc=10 type=dc

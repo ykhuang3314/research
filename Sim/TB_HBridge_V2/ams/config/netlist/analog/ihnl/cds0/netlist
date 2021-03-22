@@ -1,0 +1,6 @@
+    R9 (vddh out) resistor r=100k
+    R8 (out net10) resistor r=300k
+    M13 (net10 inn3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.

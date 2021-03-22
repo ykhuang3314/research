@@ -1,0 +1,10 @@
+Begin Incremental Netlisting Mar  9 16:38:48 2021
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the
+current netlisting session. It had a value
+'_unl' last time netlisting was done
+in current run directory. Netlists from last
+session cannot be used for
+incremental netlisting. Therefore re-netlisting the
+design.
+
+End netlisting Mar  9 16:38:48 2021

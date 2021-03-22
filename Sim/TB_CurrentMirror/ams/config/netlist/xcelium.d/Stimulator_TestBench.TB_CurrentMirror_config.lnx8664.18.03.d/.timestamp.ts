@@ -1,0 +1,9 @@
+1529061437 /pkg/xfab/XKIT/xh018/diglibs/D_CELLS_M3V/v2_0/cadence_IC61/v2_0_0/D_CELLS_M3V/LSHVT18U3VX1/verilogams/verilog.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+1614012277 /home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v
+1520347516 /pkg/xfab/XKIT/xh018/diglibs/D_CELLS_3V/v2_1/cadence_IC61/v2_1_0/D_CELLS_3V/IN_3VX2/verilogams/verilog.vams
+1616421749 /home/ykhuang/research/Sim/TB_CurrentMirror/ams/config/netlist/netlist.vams
+1616415800 /home/ykhuang/research/Sim/TB_CurrentMirror/ams/config/netlist/cds_globals.vams

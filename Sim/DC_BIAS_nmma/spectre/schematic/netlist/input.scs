@@ -1,0 +1,43 @@
+// Generated for: spectre
+// Generated on: Mar 17 12:08:07 2021
+// Design library name: Device_Characteristics
+// Design cell name: DC_BIAS_nmma
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters VDS=5 VGS=3.3 W=60u
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: Device_Characteristics
+// Cell name: DC_BIAS_nmma
+// View name: schematic
+M0 (net4 net3 0 0) nmma_bjt w=W l=2.9u as=1.85e-06*((W)+8.6e-07) \
+        ad=1.85e-06*((W)+8.6e-07) ps=1*2*(1.85e-06+(W)+8.6e-07) \
+        pd=2*(1.85e-06+(W)+8.6e-07) nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+V2 (net3 0) vsource dc=VGS type=dc
+V1 (net4 0) vsource dc=VDS type=dc
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc param=VDS start=0 stop=10 oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save M0:1 
+saveOptions options save=allpub

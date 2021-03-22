@@ -1,0 +1,8 @@
+    M0 (out in vss vss) ne w=W l=180.0n as=4.8e-07*(W) ad=4.8e-07*(W) \
+        ps=1*2*(4.8e-07+(W)) pd=2*(4.8e-07+(W)) nrs=2.7e-07/(W) \
+        nrd=2.7e-07/(W) m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (out in vddd vddd) pe w=W*2 l=180.0n as=4.8e-07*(W*2) \
+        ad=4.8e-07*(W*2) ps=1*2*(4.8e-07+(W*2)) pd=2*(4.8e-07+(W*2)) \
+        nrs=2.7e-07/(W*2) nrd=2.7e-07/(W*2) m=(1)*(1) par1=((1)*(1))
+ends INV_ST
+// End of subcircuit definition.

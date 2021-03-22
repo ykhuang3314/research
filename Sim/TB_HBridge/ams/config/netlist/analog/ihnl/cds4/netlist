@@ -1,0 +1,31 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_HBridge
+// View name: schematic
+// Inherited view list: schematic
+I19 LS_HighSide_V2_ST
+I0 LS_HighSide_V2_ST
+I24 LS_LowSide_ST
+I1 LS_LowSide_ST
+V0 (enable 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]
+M2 (net7 CtrlHS_R vddh 0) ped w=40u l=940.0n m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0
+M0 (net5 CtrlHS_L vddh 0) ped w=40u l=940.0n m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0
+M3 (net7 CtrlLS_R Ist 0) nedia w=20u l=1.25u m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0
+M1 (net5 CtrlLS_L Ist 0) nedia w=20u l=1.25u m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0
+R0 (net5 net7) resistor r=1K
+I9 (vdda net11) isource dc=10u type=dc
+V8 (vssa 0) vsource dc=0 type=dc
+V7 (vssd 0) vsource dc=0 type=dc
+V6 (vddd 0) vsource dc=1.8 type=dc
+V3 (vdda 0) vsource dc=1.8 type=dc
+V4 (vddh 0) vsource dc=40 type=dc
+V11 (vdd3 0) vsource dc=3.3 type=dc
+V10 (vdd10 0) vsource dc=10 type=dc
+V9 (vssh 0) vsource dc=30 type=dc
+V5 (vssa 0) vsource dc=0 type=dc
+V1 (net10 0) vsource dc=1.8 type=dc
+V2 (net9 0) vsource dc=0 type=dc

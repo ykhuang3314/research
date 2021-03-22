@@ -1,0 +1,10 @@
+cellMap,*INV3_ST,*INV3_ST,*Stimulator_IMP,*schematic
+netMap,*INV3_ST,*gnd!,*0
+instMap,*INV3_ST,*M1,*M1
+instMaster,*INV3_ST,*M1,*PRIMLIB_pe3_spectre,*pe3
+instMap,*INV3_ST,*M0,*M0
+instMaster,*INV3_ST,*M0,*PRIMLIB_ne3_spectre,*ne3
+portMap,*INV3_ST,*in,*in
+portMap,*INV3_ST,*out,*out
+portMap,*INV3_ST,*vdd3,*vdd3
+portMap,*INV3_ST,*vss,*vss

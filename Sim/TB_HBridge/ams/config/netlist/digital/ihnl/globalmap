@@ -1,0 +1,13 @@
+CADENCE IHNL04120
+$model
+Stimulator_IMP/LS_HighSide_V2_ST/schematic Stimulator_IMP/LS_HighSide_V2_ST/schematic/schematic/Stimulator_TestBench_TB_HBridge_config/0 LS_HighSide_V2_ST
+Stimulator_IMP/INV3_ST/schematic Stimulator_IMP/INV3_ST/schematic/schematic/Stimulator_TestBench_TB_HBridge_config/0 INV3_ST
+Stimulator_TestBench/TB_HBridge/schematic Stimulator_TestBench/TB_HBridge/schematic/schematic/Stimulator_TestBench_TB_HBridge_config/1 TB_HBridge
+Stimulator_IMP/INV10_ST/schematic Stimulator_IMP/INV10_ST/schematic/schematic/Stimulator_TestBench_TB_HBridge_config/0 INV10_ST
+Stimulator_IMP/LS_LowSide_ST/schematic Stimulator_IMP/LS_LowSide_ST/schematic/schematic/Stimulator_TestBench_TB_HBridge_config/0 LS_LowSide_ST
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

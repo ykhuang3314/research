@@ -1,0 +1,17 @@
+Begin Incremental Netlisting Mar 12 16:22:12 2021
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the
+current netlisting session. It had a value
+'_unl' last time netlisting was done
+in current run directory. Netlists from last
+session cannot be used for
+incremental netlisting. Therefore re-netlisting the
+design.
+
+ERROR (OSSHNL-109): The cellview 'Stimulator_TestBench/TB_TCA/schematic' has
+been modified since the last extraction. Validate
+that the schematic is correct
+and run Check and Save to correct this error.
+
+End netlisting Mar 12 16:22:12 2021
+Begin Incremental Netlisting Mar 12 16:22:17 2021
+End netlisting Mar 12 16:22:17 2021

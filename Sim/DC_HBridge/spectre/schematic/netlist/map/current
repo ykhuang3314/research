@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "DC_HBridge"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/DC_HBridge/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Device_Characteristics/DC_HBridge/schematic" "DC_HBridge" )
+ )
+( "DC_HBridge" "ihnl/cds0/map" )
+ )

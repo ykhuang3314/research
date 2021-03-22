@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"M1n M0n" "PRIMLIB_nmma_bjt_spectre"
+"M2n" "PRIMLIB_pmma_bjt_spectre"
+"in_pdv" ":1v"
+"in_puv" ":2v"
+"outv" ":3v"
+"vdd10v" ":4v"
+"vdd15v" ":5v"
+"vssv" ":6v"

@@ -1,0 +1,16 @@
+CADENCE IHNL11140
+$model
+Stimulator_TestBench/TB_HBridge_DC/schematic TB_HBridge_DC
+D_CELLS_M3V/LSHVT18U3VX1/cmos_sch LSHVT18U3VX1
+$endmodel
+$net
+gnd! 0
+vdd3! vdd3!
+vdde! vdde!
+$endnet
+$param
+Idac Idac
+Iref Iref
+Ist Ist
+vdac vdac
+$endparam

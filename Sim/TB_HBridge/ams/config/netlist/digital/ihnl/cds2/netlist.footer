@@ -1,0 +1,13 @@
+
+INV3_ST #( .W(2u) ) I8 ( .vss(vss), .vdd3(vdd3), .out(IN3_n), 
+    .in(IN3));
+
+INV3_ST #( .W(2u) ) I1 ( .vss(vss), .vdd3(vdd3), .out(IN3), .in(in));
+
+INV10_ST #( .W(5u) ) I11 ( .vss(vss), .vdd10(vdd10), .out(out), 
+    .in(outn_LS));
+
+INV10_ST #( .W(5u) ) I12 ( .vss(vss), .vdd10(vdd10), .out(outn), 
+    .in(out_LS));
+
+endmodule

@@ -1,0 +1,16 @@
+    I8 (IN3 IN3_n vdd3 vss) INV3_ST W=2u
+    I1 (in IN3 vdd3 vss) INV3_ST W=2u
+    M3 (outn out vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (out outn vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M9 (out IN3_n vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M8 (outn IN3 vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LS_LowSide_ST
+// End of subcircuit definition.

@@ -1,0 +1,34 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCONNRULES
+ConnRules_inhconn_full_fast_gnd
+
+Stimulator_TestBench.TB_HBridge:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-SPECTRE_ARGS
+++aps

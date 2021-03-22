@@ -1,0 +1,28 @@
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_ST
+// View name: schematic
+I3 (in net4 vddd 0) INV_ST W=2u
+I8 (IN INN vdd3 0) INV3_ST W=2u
+I1 (net4 IN vdd3 0) INV3_ST W=2u
+V3 (vddh 0) vsource dc=10 type=dc
+V1 (vddd 0) vsource dc=1.8 type=dc
+V0 (vdd3 0) vsource dc=3.3 type=dc
+V2 (in 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+M3 (OUTN OUT vddh vddh 0) pmma_bjt w=Wp l=2.9u as=1.85e-06*((Wp)+8.6e-07) \
+        ad=1.85e-06*((Wp)+8.6e-07) ps=1*2*(1.85e-06+(Wp)+8.6e-07) \
+        pd=2*(1.85e-06+(Wp)+8.6e-07) nrs=6e-07/(Wp) nrd=6e-07/(Wp) \
+        m=(1)*(1) par1=((1)*(1))
+M2 (OUT OUTN vddh vddh 0) pmma_bjt w=Wp l=2.9u as=1.85e-06*((Wp)+8.6e-07) \
+        ad=1.85e-06*((Wp)+8.6e-07) ps=1*2*(1.85e-06+(Wp)+8.6e-07) \
+        pd=2*(1.85e-06+(Wp)+8.6e-07) nrs=6e-07/(Wp) nrd=6e-07/(Wp) \
+        m=(1)*(1) par1=((1)*(1))
+M9 (OUT INN 0 0) nmma_bjt w=Wn l=2.9u as=1.85e-06*((Wn)+8.6e-07) \
+        ad=1.85e-06*((Wn)+8.6e-07) ps=1*2*(1.85e-06+(Wn)+8.6e-07) \
+        pd=2*(1.85e-06+(Wn)+8.6e-07) nrs=6e-07/(Wn) nrd=6e-07/(Wn) \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+M8 (OUTN IN 0 0) nmma_bjt w=Wn l=2.9u as=1.85e-06*((Wn)+8.6e-07) \
+        ad=1.85e-06*((Wn)+8.6e-07) ps=1*2*(1.85e-06+(Wn)+8.6e-07) \
+        pd=2*(1.85e-06+(Wn)+8.6e-07) nrs=6e-07/(Wn) nrd=6e-07/(Wn) \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0

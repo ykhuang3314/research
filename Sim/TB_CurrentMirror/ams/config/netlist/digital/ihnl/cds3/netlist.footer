@@ -1,0 +1,32 @@
+
+Digital_Stimulus_ST_V2 #( .MAG(5'b11111), .ANO_phase(50), .CAT_phase(50) 
+    , .period(150) ) I24 ( .CH_SEL_D_ST(net079), .ANO_ST(net058), 
+    .CAT_ST(net057), .CH_SEL_U_ST(net080), .DIS_ST(net056), 
+    .EN_ST(EN_ST), .MAG_ST(MAG_ST), .ch_sweeping(net083), 
+    .enable(net048), .ramping(net050));
+
+LSHVT18U3VX1 I0 ( .A(MAG_ST[0]), .Q(net051));
+
+LSHVT18U3VX1 I30 ( .A(MAG_ST[1]), .Q(net052));
+
+LSHVT18U3VX1 I4 ( .A(MAG_ST[2]), .Q(net053));
+
+LSHVT18U3VX1 I6 ( .A(MAG_ST[3]), .Q(net054));
+
+LSHVT18U3VX1 I29 ( .A(MAG_ST[4]), .Q(net055));
+
+LSHVT18U3VX1 I17 ( .A(EN_ST), .Q(en_3v));
+
+IN_3VX2 I18 ( .A(en_3v), .Q(enb_3v));
+
+IN_3VX2 I31 ( .A(net051), .Q(D0_3v));
+
+IN_3VX2 I3 ( .A(net052), .Q(D1_3v));
+
+IN_3VX2 I5 ( .A(net053), .Q(D2_3v));
+
+IN_3VX2 I7 ( .A(net054), .Q(D3_3v));
+
+IN_3VX2 I9 ( .A(net055), .Q(D4_3v));
+
+endmodule

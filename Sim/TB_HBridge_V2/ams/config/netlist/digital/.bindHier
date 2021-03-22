@@ -1,0 +1,15 @@
+("PRIMLIB" "ped" "spectre" "spectre") nil
+("PRIMLIB" "nedia" "spectre" "spectre") nil
+("Stimulator_IMP" "LS_HighSide_V3_ST" "schematic" "schematic") nil
+("Stimulator_Model" "Current_Mirror" "verilogams" "verilogams") nil
+("D_CELLS_M3V" "LSHVT18U3VX1" "verilogams" "verilogams") nil
+("analogLib" "idc" "spectre" "spectre") nil
+("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" "functional") nil
+("PRIMLIB" "nedia_bjt" "spectre" "spectre") nil
+("analogLib" "vpwl" "spectre" "spectre") nil
+("Stimulator_Model" "Current_Source" "verilogams" "verilogams") nil
+("analogLib" "res" "spectre" "spectre") nil
+("Stimulator_IMP" "LS_LowSide_V2_ST" "schematic" "schematic") nil
+("Stimulator_TestBench" "TB_HBridge_V2" "schematic" "schematic") nil
+("analogLib" "vdc" "spectre" "spectre") nil
+("PRIMLIB" "ped_bjt" "spectre" "spectre") nil

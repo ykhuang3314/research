@@ -1,0 +1,60 @@
+Begin Incremental Netlisting Mar 19 16:09:02 2021
+ERROR (OSSHNL-109): The cellview
+'Stimulator_TestBench/TB_CurrentMirror/schematic' has been modified since the
+last extraction. Validate
+that the schematic is correct and run Check and Save
+to correct this error.
+
+End netlisting Mar 19 16:09:02 2021
+Begin Incremental Netlisting Mar 19 16:09:06 2021
+End netlisting Mar 19 16:09:06 2021
+Begin Incremental Netlisting Mar 19 16:27:51 2021
+WARNING (OSSHNL-226): There are more design variables used in the current
+netlisting session as
+compared to the last session in the current run directory.
+The netlist(s)
+generated in the last netlisting session cannot be reused for
+incremental
+netlisting. Therefore re-netlisting the design.
+
+ERROR (OSSHNL-109): The cellview
+'Stimulator_TestBench/TB_CurrentMirror/schematic' has been modified since the
+last extraction. Validate
+that the schematic is correct and run Check and Save
+to correct this error.
+
+End netlisting Mar 19 16:27:51 2021
+Begin Incremental Netlisting Mar 19 16:27:56 2021
+End netlisting Mar 19 16:27:56 2021
+Begin Incremental Netlisting Mar 19 16:29:37 2021
+End netlisting Mar 19 16:29:37 2021
+Begin Incremental Netlisting Mar 19 16:30:18 2021
+End netlisting Mar 19 16:30:18 2021
+Begin Incremental Netlisting Mar 19 16:30:49 2021
+End netlisting Mar 19 16:30:49 2021
+Begin Incremental Netlisting Mar 19 16:30:59 2021
+ERROR (OSSHNL-109): The cellview
+'Stimulator_TestBench/TB_CurrentMirror/schematic' has been modified since the
+last extraction. Validate
+that the schematic is correct and run Check and Save
+to correct this error.
+
+End netlisting Mar 19 16:30:59 2021
+Begin Incremental Netlisting Mar 19 16:31:04 2021
+End netlisting Mar 19 16:31:04 2021
+Begin Incremental Netlisting Mar 19 16:31:36 2021
+End netlisting Mar 19 16:31:36 2021
+Begin Incremental Netlisting Mar 19 16:31:43 2021
+End netlisting Mar 19 16:31:43 2021
+Begin Incremental Netlisting Mar 19 16:31:56 2021
+End netlisting Mar 19 16:31:56 2021
+Begin Incremental Netlisting Mar 19 16:32:31 2021
+ERROR (OSSHNL-109): The cellview
+'Stimulator_TestBench/TB_CurrentMirror/schematic' has been modified since the
+last extraction. Validate
+that the schematic is correct and run Check and Save
+to correct this error.
+
+End netlisting Mar 19 16:32:31 2021
+Begin Incremental Netlisting Mar 19 16:32:36 2021
+End netlisting Mar 19 16:32:36 2021

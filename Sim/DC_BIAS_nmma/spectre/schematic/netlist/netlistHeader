@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 17 12:08:07 2021
+// Design library name: Device_Characteristics
+// Design cell name: DC_BIAS_nmma
+// Design view name: schematic
+simulator lang=spectre
+global 0

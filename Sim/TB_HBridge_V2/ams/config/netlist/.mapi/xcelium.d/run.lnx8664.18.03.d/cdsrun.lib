@@ -1,0 +1,6 @@
+SOFTINCLUDE /pkg/cadence/installs/XCELIUM1803/tools/inca/files/IEEE_vhdlams/cds.lib
+include ../../cds.lib
+define Stimulator_Model ../Stimulator_Model
+define D_CELLS_M3V ../D_CELLS_M3V
+define worklib ../worklib
+define vhdlspice_skeletons ../vhdlspice_skeletons

@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Stimulator_IMP/INV3_ST/schematic INV3_ST
+Stimulator_TestBench/TB_LS_LowSide/schematic TB_LS_LowSide
+Stimulator_IMP/LS_LowSide_ST/schematic LS_LowSide_ST
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

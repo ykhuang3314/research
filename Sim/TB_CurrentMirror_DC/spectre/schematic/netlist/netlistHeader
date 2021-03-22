@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 22 15:07:16 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_CurrentMirror_DC
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdde! vdd3!

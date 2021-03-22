@@ -1,0 +1,8 @@
+instMap,*IN_3VX2,*invr_1,*invr_1
+instMaster,*IN_3VX2,*invr_1,*GATES_3V_invrv3_schematic
+netMap,*IN_3VX2,*inh_power_vdd3_vdd3!,*\vdd3! 
+netMap,*IN_3VX2,*inh_ground_gnd_gnd!,*\gnd! 
+netMap,*IN_3VX2,*gnd!,*cds_globals.\gnd! 
+netMap,*IN_3VX2,*vdde!,*cds_globals.\vdde! 
+netMap,*IN_3VX2,*vdd3!,*cds_globals.\vdd3! 
+cellMap,*IN_3VX2,*IN_3VX2,*D_CELLS_3V,*cmos_sch

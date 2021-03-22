@@ -1,0 +1,32 @@
+// Library - Stimulator_IMP, Cell - LS_LowSide_ST, View - schematic
+// LAST TIME SAVED: Mar  9 10:11:42 2021
+// NETLIST TIME: Mar 15 15:29:36 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="LS_LowSide_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar  9 10:11:42 2021" *)
+
+module LS_LowSide_ST (out, outn, vdd3, vdd10, vss, in);
+
+output  out, outn;
+
+inout  vdd3, vdd10, vss;
+
+input  in;
+
+
+INV3_ST #( .W(2u) ) I8 ( .vss(vss), .vdd3(vdd3), .out(IN3_n), 
+    .in(IN3));
+
+INV3_ST #( .W(2u) ) I1 ( .vss(vss), .vdd3(vdd3), .out(IN3), .in(in));
+
+INV10_ST #( .W(5u) ) I11 ( .vss(vss), .vdd10(vdd10), .out(out), 
+    .in(outn_LS));
+
+INV10_ST #( .W(5u) ) I12 ( .vss(vss), .vdd10(vdd10), .out(outn), 
+    .in(out_LS));
+
+endmodule

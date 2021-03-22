@@ -1,0 +1,6 @@
+CADENCE IHNL04124
+
+D_CELLS_M3V LSHVT18U3VX1 cmos_sch nil cmos_sch Stimulator_TestBench TB_CurrentMirror config 0 cds0
+GATES_3V invrv3 schematic nil schematic Stimulator_TestBench TB_CurrentMirror config 0 cds1
+D_CELLS_3V IN_3VX2 cmos_sch nil cmos_sch Stimulator_TestBench TB_CurrentMirror config 0 cds2
+Stimulator_TestBench TB_CurrentMirror schematic nil schematic Stimulator_TestBench TB_CurrentMirror config 1 cds3

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Stimulator_TestBench\" \"TB_inv15\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Mar  5 12:12:24 2021"
+"title" ""
+"analysisList" "()"
+END

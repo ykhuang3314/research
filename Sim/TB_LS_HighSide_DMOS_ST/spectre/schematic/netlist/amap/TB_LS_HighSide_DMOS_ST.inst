@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"V0n" "analogLib_vpulse_spectre"
+"I8n" "INV10_ST"
+"M5n M4n M1n M0n" "PRIMLIB_nedia_spectre"
+"M3n M2n" "PRIMLIB_pmma_bjt_spectre"
+"V5n V4n V3n V1n" "analogLib_vdc_spectre"
+"M7n M6n" "PRIMLIB_nmma_bjt_spectre"
+"I12n" "LS_LowSide_ST"

@@ -1,0 +1,8 @@
+instMap,*LS_HighSide_V2_ST,*I0,*I0
+instMaster,*LS_HighSide_V2_ST,*I0,*Stimulator_IMP_LS_LowSide_ST_schematic
+instMap,*LS_HighSide_V2_ST,*I7,*I7
+instMaster,*LS_HighSide_V2_ST,*I7,*Stimulator_IMP_INV10_ST_schematic
+instMap,*LS_HighSide_V2_ST,*I8,*I8
+instMaster,*LS_HighSide_V2_ST,*I8,*Stimulator_IMP_INV10_ST_schematic
+netMap,*LS_HighSide_V2_ST,*gnd!,*cds_globals.\gnd! 
+cellMap,*LS_HighSide_V2_ST,*LS_HighSide_V2_ST,*Stimulator_IMP,*schematic

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Stimulator_TestBench\" \"TB_LS_LowSide_V2_ST\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Mar 16 00:21:25 2021"
+"title" ""
+"analysisList" "()"
+END

@@ -1,0 +1,145 @@
+// Generated for: spectre
+// Generated on: Mar 16 00:21:25 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_LS_LowSide_V2_ST
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd3! vdde!
+parameters R=10k
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: D_CELLS_M3V
+// Cell name: LSHVT18U3VX1
+// View name: cmos_sch
+subckt LSHVT18U3VX1 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde
+    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=1.46u l=300n \
+        as=7.008e-13 ad=7.008e-13 ps=3.88e-06 pd=3.88e-06 nrs=0.184932 \
+        nrd=0.184932 m=(1)*(1) par1=((1)*(1))
+    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.48u l=300n \
+        as=7.104e-13 ad=7.104e-13 ps=3.92e-06 pd=3.92e-06 nrs=0.182432 \
+        nrd=0.182432 m=(1)*(1) par1=((1)*(1))
+    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=890.0n l=350.0n \
+        as=4.272e-13 ad=4.272e-13 ps=2.74e-06 pd=2.74e-06 nrs=0.303371 \
+        nrd=0.303371 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LSHVT18U3VX1
+// End of subcircuit definition.
+
+// Library name: GATES_3V
+// Cell name: invrv3
+// View name: schematic
+subckt invrv3 in out inh_ground_gnd inh_power_vdd3
+parameters GT_PDW GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=300.00n
+    MN1 (out in inh_ground_gnd inh_ground_gnd) ne3 w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*sx+(GT_PDW) pd=2*sx+(GT_PDW) \
+        nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    MP1 (out in inh_power_vdd3 inh_power_vdd3) pe3 w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*sx+(GT_PUW) pd=2*sx+(GT_PUW) \
+        nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) par1=((1)*(1))
+ends invrv3
+// End of subcircuit definition.
+
+// Library name: D_CELLS_3V
+// Cell name: IN_3VX1
+// View name: cmos_sch
+subckt IN_3VX1 A Q inh_ground_gnd inh_power_vdd3
+    invr_1 (A Q inh_ground_gnd inh_power_vdd3) invrv3 GT_PDW=600.00n \
+        GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW=1.41u GT_PUL=300.00n
+ends IN_3VX1
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_LS_LowSide_V2_ST
+// View name: schematic
+I6 (in net04 0 vdd3! vdde!) LSHVT18U3VX1
+I0 (in in_3V 0 vdd3! vdde!) LSHVT18U3VX1
+V0 (in 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+M12 (net026 vdd30 net036 0) nedia_bjt w=10u l=1.25u m=(1)*(5) \
+        par1=((1)*(5)) extlay=0 xf_subext=0
+M11 (net027 vdd30 net037 0) nedia_bjt w=10u l=1.25u m=(1)*(5) \
+        par1=((1)*(5)) extlay=0 xf_subext=0
+M6 (net036 net013 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M4 (net037 net04 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M0 (net5 in_3V 0 0) nedia_bjt w=10u l=1.25u m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0
+R9 (vddh vb1) resistor r=R
+R8 (vdd30 vb3) resistor r=R
+R6 (net028 vb5) resistor r=R
+R7 (net030 net022) resistor r=R
+R5 (net07 net015) resistor r=300k
+R4 (net015 0) resistor r=100k
+R1 (net4 net5) resistor r=300k
+R3 (out 0) resistor r=100k
+R2 (net012 out) resistor r=300k
+R0 (vddh net4) resistor r=100k
+V4 (vssh 0) vsource dc=30 type=dc
+V3 (vdde! 0) vsource dc=1.8 type=dc
+V2 (vdd3! 0) vsource dc=3.3 type=dc
+V1 (vddh 0) vsource dc=40 type=dc
+M13 (net026 vdd30 net018 0) ped_bjt w=10u l=940.0n m=(1)*(5) \
+        par1=((1)*(5)) extlay=0 xf_subext=0
+M10 (net027 vdd30 net05 0) ped_bjt w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M3 (net05 net018 vddh 0) ped_bjt w=10u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M2 (net018 net05 vddh 0) ped_bjt w=10u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M1 (net012 net4 vddh 0) ped_bjt w=10u l=940.0n m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0
+I8 (net04 net013 0 vdd3!) IN_3VX1
+M9 (vb1 vb1 vdd30 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M8 (vb3 vb3 net028 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M5 (vb5 vb5 net030 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M7 (net022 net022 0 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+C0 (vdd30 0) capacitor c=10p
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=500u errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

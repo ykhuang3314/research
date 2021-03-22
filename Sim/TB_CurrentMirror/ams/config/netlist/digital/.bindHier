@@ -1,0 +1,13 @@
+("D_CELLS_M3V" "LSHVT18U3VX1" "cmos_sch" "cmos_sch") nil
+("PRIMLIB" "pe3" "spectre" "spectre") nil
+("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" "functional") nil
+("PRIMLIB" "nedia_bjt" "spectre" "spectre") nil
+("Stimulator_TestBench" "TB_CurrentMirror" "schematic" "schematic") nil
+("D_CELLS_3V" "IN_3VX2" "cmos_sch" "cmos_sch") nil
+("analogLib" "vpwl" "spectre" "spectre") nil
+("PRIMLIB" "ne3" "spectre" "spectre") nil
+("analogLib" "res" "spectre" "spectre") nil
+("GATES_3V" "invrv3" "schematic" "schematic") nil
+("PRIMLIB" "rpp1k1" "spectre" "spectre") nil
+("analogLib" "vdc" "spectre" "spectre") nil
+("PRIMLIB" "ped_bjt" "spectre" "spectre") nil

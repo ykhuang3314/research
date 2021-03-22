@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I3n" "INV_ST"
+"I8n I1n" "INV3_ST"
+"V6n V5n V4n V3n V1n V0n" "analogLib_vdc_spectre"
+"V2n" "analogLib_vpulse_spectre"
+"M9n M8n M7n M6n M5n M4n M1n M0n" "PRIMLIB_nmma_bjt_spectre"
+"M17n M16n M15n M14n M13n M12n M3n M2n" "PRIMLIB_pmma_bjt_spectre"

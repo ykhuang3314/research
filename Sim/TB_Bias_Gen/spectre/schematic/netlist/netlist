@@ -1,0 +1,131 @@
+
+// Library name: Stimulator_IMP
+// Cell name: INV3_ST
+// View name: schematic
+subckt INV3_ST in out vdd3 vss
+parameters W=2u
+    M1 (out in vdd3 vdd3) pe3 w=2*W l=300n as=4.8e-07*(2*W) \
+        ad=4.8e-07*(2*W) ps=1*2*(4.8e-07+(2*W)) pd=2*(4.8e-07+(2*W)) \
+        nrs=2.7e-07/(2*W) nrd=2.7e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+    M0 (out in vss vss) ne3 w=W l=350.0n as=4.8e-07*(W) ad=4.8e-07*(W) \
+        ps=1*2*(4.8e-07+(W)) pd=2*(4.8e-07+(W)) nrs=2.7e-07/(W) \
+        nrd=2.7e-07/(W) m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends INV3_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: INV10_ST
+// View name: schematic
+subckt INV10_ST in out vdd10 vss
+parameters W=5u
+    M0 (out in vss vss) nmma_bjt w=W l=2.9u as=1.85e-06*((W)+8.6e-07) \
+        ad=1.85e-06*((W)+8.6e-07) ps=1*2*(1.85e-06+(W)+8.6e-07) \
+        pd=2*(1.85e-06+(W)+8.6e-07) nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (out in vdd10 vdd10 vss) pmma_bjt w=2*W l=2.9u \
+        as=1.85e-06*((2*W)+8.6e-07) ad=1.85e-06*((2*W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(2*W)+8.6e-07) pd=2*(1.85e-06+(2*W)+8.6e-07) \
+        nrs=6e-07/(2*W) nrd=6e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+ends INV10_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_ST
+// View name: schematic
+subckt LS_LowSide_ST in out outn vdd10 vdd3 vss
+    I8 (IN3 IN3_n vdd3 vss) INV3_ST W=2u
+    I1 (in IN3 vdd3 vss) INV3_ST W=2u
+    I12 (out_LS outn vdd10 vss) INV10_ST W=5u
+    I11 (outn_LS out vdd10 vss) INV10_ST W=5u
+    M3 (out_LS outn_LS vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (outn_LS out_LS vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M9 (outn_LS IN3_n vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M8 (out_LS IN3 vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LS_LowSide_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_HighSide_V2_ST
+// View name: schematic
+subckt LS_HighSide_V2_ST in out outn vdd10 vdd3 vddh vss vssh
+    I0 (in in_shifted inn_shifted vdd10 vdd3 vss) LS_LowSide_ST
+    I7 (out_ls out vddh vssh) INV10_ST W=5u
+    I8 (outn_ls outn vddh vssh) INV10_ST W=5u
+    M5 (outn_ls vssh net26 vss) nedia w=10u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M4 (out_ls vssh net026 vss) nedia w=10u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M1 (net026 inn_shifted vss vss) nedia w=10u l=1.25u m=(1)*(2) \
+        par1=((1)*(2)) extlay=0 xf_subext=0
+    M0 (net26 in_shifted vss vss) nedia w=10u l=1.25u m=(1)*(2) \
+        par1=((1)*(2)) extlay=0 xf_subext=0
+    M2 (out_ls outn_ls vddh vddh vss) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M3 (outn_ls out_ls vddh vddh vss) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M7 (outn_ls vssh vssh vssh) nmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M6 (out_ls vssh vssh vssh) nmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LS_HighSide_V2_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_Bias_Gen
+// View name: schematic
+V2 (vdd3 0) vsource dc=3.3 type=dc
+V0 (vddh 0) vsource dc=40 type=dc
+M16 (vb6 vb6 net10 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M15 (vb4 vb4 net11 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M14 (vb2 vb2 net026 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M0 (net8 net8 vddh 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M13 (0 vb6 vdd10 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M11 (net022 vb4 net024 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M9 (net035 vb2 vssh 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+R7 (net020 net014) resistor r=R
+R6 (net021 vb5) resistor r=R
+R5 (net030 vb3) resistor r=R
+R4 (vddh vb1) resistor r=R
+R3 (vb6 0) resistor r=R
+R2 (vb4 net10) resistor r=R
+R1 (vb2 net11) resistor r=R
+R0 (net8 net026) resistor r=R
+M12 (net022 vb5 vdd10 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M10 (net035 vb3 net024 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M8 (vddh vb1 vssh 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M7 (net014 net014 0 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M6 (vb5 vb5 net020 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M5 (vb3 vb3 net021 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M4 (vb1 vb1 net030 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+I13 (net039 out net037 vdd10 vdd3 vddh 0 vssh) LS_HighSide_V2_ST
+V1 (net039 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u \
+        rise=1p fall=1p width=50u
+C2 (net024 0) capacitor c=10p
+C1 (vssh 0) capacitor c=10p
+C0 (vdd10 0) capacitor c=10p

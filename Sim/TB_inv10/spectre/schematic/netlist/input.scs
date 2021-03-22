@@ -1,0 +1,55 @@
+// Generated for: spectre
+// Generated on: Mar  5 11:55:26 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_inv10
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: Stimulator_IMP
+// Cell name: INV10_ST
+// View name: schematic
+subckt INV10_ST in out vdd10 vss
+parameters W=5u
+    M0 (out in vss vss) nmma_bjt w=W l=2.9u as=1.85e-06*((W)+8.6e-07) \
+        ad=1.85e-06*((W)+8.6e-07) ps=1*2*(1.85e-06+(W)+8.6e-07) \
+        pd=2*(1.85e-06+(W)+8.6e-07) nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (out in vdd10 vdd10 vss) pmma_bjt w=2*W l=2.9u \
+        as=1.85e-06*((2*W)+8.6e-07) ad=1.85e-06*((2*W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(2*W)+8.6e-07) pd=2*(1.85e-06+(2*W)+8.6e-07) \
+        nrs=6e-07/(2*W) nrd=6e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+ends INV10_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_inv10
+// View name: schematic
+I0 (in out net3 0) INV10_ST W=5u
+V0 (in 0) vsource type=pulse val0=0 val1=10 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+C0 (out 0) capacitor c=1p
+V1 (net3 0) vsource dc=10 type=dc
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=500u errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

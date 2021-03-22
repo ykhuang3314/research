@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar  4 14:56:20 2021
+// Design library name: Stimulator_IMP
+// Design cell name: LS_LowSide_ST
+// Design view name: schematic
+simulator lang=spectre
+global 0

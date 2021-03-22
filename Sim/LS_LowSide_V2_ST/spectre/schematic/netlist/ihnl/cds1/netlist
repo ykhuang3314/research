@@ -1,0 +1,18 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: LS_LowSide_V2_ST
+// View name: schematic
+I0 (in in_3V 0 vdd3! vdde!) LSHVT18U3VX1
+V0 (in 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+M0 (net5 in_3V 0 0) nedia_bjt w=10u l=1.25u m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0
+R3 (out 0) resistor r=100k
+R2 (net012 out) resistor r=300k
+R1 (net4 net5) resistor r=300k
+R0 (vddh net4) resistor r=100k
+V3 (vdde! 0) vsource dc=1.8 type=dc
+V2 (vdd3! 0) vsource dc=3.3 type=dc
+V1 (vddh 0) vsource dc=40 type=dc
+M1 (net012 net4 vddh 0) ped_bjt w=10u l=940.0n m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0

@@ -1,0 +1,11 @@
+
+LS_LowSide_ST I0 ( .outn(inn_shifted), .vss(vss), .vdd3(vdd3), 
+    .vdd10(vdd10), .out(in_shifted), .in(in));
+
+INV10_ST #( .W(5u) ) I7 ( .vss(vssh), .vdd10(vddh), .out(out), 
+    .in(out_ls));
+
+INV10_ST #( .W(5u) ) I8 ( .vss(vssh), .vdd10(vddh), .out(outn), 
+    .in(outn_ls));
+
+endmodule

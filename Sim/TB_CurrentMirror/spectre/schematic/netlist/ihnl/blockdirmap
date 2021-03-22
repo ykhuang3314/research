@@ -1,0 +1,6 @@
+CADENCE IHNL11144
+
+D_CELLS_M3V LSHVT18U3VX1 cmos_sch cds0
+GATES_3V invrv3 schematic cds1
+D_CELLS_3V IN_3VX1 cmos_sch cds2
+Stimulator_TestBench TB_CurrentMirror schematic cds3

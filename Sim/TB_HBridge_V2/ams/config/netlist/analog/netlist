@@ -1,0 +1,54 @@
+
+// Library name: Stimulator_IMP
+// Cell name: LS_HighSide_V3_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt LS_HighSide_V3_ST
+    R9 (vddh out) resistor r=100k
+    R8 (out net10) resistor r=300k
+    M13 (net10 inn3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_V2_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt LS_LowSide_V2_ST
+    M0 (net12 in_3V 0 0) nedia_bjt w=10u l=1.25u m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0
+    R1 (net9 net12) resistor r=300k
+    R3 (out 0) resistor r=100k
+    R2 (net11 out) resistor r=300k
+    R0 (vddh net9) resistor r=100k
+    M1 (net11 net9 vddh 0) ped_bjt w=10u l=940.0n m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0
+ends LS_LowSide_V2_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_HBridge_V2
+// View name: schematic
+// Inherited view list: schematic
+V1 (net10 0) vsource dc=1.8 type=dc
+V2 (net9 0) vsource dc=0 type=dc
+V6 (vdde! 0) vsource dc=1.8 type=dc
+V3 (vdda 0) vsource dc=1.8 type=dc
+V4 (vddh 0) vsource dc=40 type=dc
+V11 (vdd3! 0) vsource dc=3.3 type=dc
+V0 (enable 0) vsource type=pwl wave=[ 0 0 10u 1.8 ]
+I0 LS_HighSide_V3_ST
+I1 LS_HighSide_V3_ST
+M3 (net7 CtrlLS_R Ist 0) nedia w=20u l=1.25u m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0
+M1 (net5 CtrlLS_L Ist 0) nedia w=20u l=1.25u m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0
+I4 LS_LowSide_V2_ST
+I2 LS_LowSide_V2_ST
+I9 (vdda net11) isource dc=10u type=dc
+R0 (net5 net7) resistor r=1K
+M2 (net7 CtrlHS_R vddh 0) ped w=40u l=940.0n m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0
+M0 (net5 CtrlHS_L vddh 0) ped w=40u l=940.0n m=(1)*(20) par1=((1)*(20)) \
+        extlay=0 xf_subext=0

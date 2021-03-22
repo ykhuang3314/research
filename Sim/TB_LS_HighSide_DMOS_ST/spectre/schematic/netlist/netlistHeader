@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar  9 16:38:48 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_LS_HighSide_DMOS_ST
+// Design view name: schematic
+simulator lang=spectre
+global 0

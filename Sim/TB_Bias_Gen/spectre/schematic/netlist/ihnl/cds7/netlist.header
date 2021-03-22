@@ -1,0 +1,6 @@
+
+// Library name: Stimulator_IMP
+// Cell name: INV10_ST
+// View name: schematic
+subckt INV10_ST in out vdd10 vss
+parameters W=5u

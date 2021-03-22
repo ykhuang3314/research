@@ -1,0 +1,10 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_LS_LowSide
+// View name: schematic
+I0 (in out net2 net3 0) LS_LowSide_ST
+V1 (net2 0) vsource dc=10 type=dc
+V0 (net3 0) vsource dc=3.3 type=dc
+V2 (in 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+C0 (out 0) capacitor c=1p

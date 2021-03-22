@@ -1,0 +1,25 @@
+
+// Library name: Stimulator_IMP
+// Cell name: INV10_ST
+// View name: schematic
+subckt INV10_ST in out vdd10 vss
+parameters W=5u
+    M0 (out in vss vss) nmma_bjt w=W l=2.9u as=1.85e-06*((W)+8.6e-07) \
+        ad=1.85e-06*((W)+8.6e-07) ps=1*2*(1.85e-06+(W)+8.6e-07) \
+        pd=2*(1.85e-06+(W)+8.6e-07) nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (out in vdd10 vdd10 vss) pmma_bjt w=2*W l=2.9u \
+        as=1.85e-06*((2*W)+8.6e-07) ad=1.85e-06*((2*W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(2*W)+8.6e-07) pd=2*(1.85e-06+(2*W)+8.6e-07) \
+        nrs=6e-07/(2*W) nrd=6e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+ends INV10_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_inv10
+// View name: schematic
+I0 (in out net3 0) INV10_ST W=5u
+V0 (in 0) vsource type=pulse val0=0 val1=10 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+C0 (out 0) capacitor c=1p
+V1 (net3 0) vsource dc=10 type=dc

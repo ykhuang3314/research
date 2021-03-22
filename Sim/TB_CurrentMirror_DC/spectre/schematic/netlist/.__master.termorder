@@ -1,0 +1,3 @@
+"GATES_3V.invrv3.schematic.termorder" (("in" "out" "gnd!" "vdd3!") ("in" "out" "gnd!" "vdd3!"))
+"D_CELLS_M3V.LSHVT18U3VX1.cmos_sch.termorder" (("A" "Q" "gnd!" "vdd3!" "vdde!") ("A" "Q" "gnd!" "vdd3!" "vdde!"))
+"D_CELLS_3V.IN_3VX2.cmos_sch.termorder" (("A" "Q" "gnd!" "vdd3!") ("A" "Q" "gnd!" "vdd3!"))

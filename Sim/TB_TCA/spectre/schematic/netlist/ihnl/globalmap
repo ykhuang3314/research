@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Stimulator_TestBench/TB_TCA/schematic TB_TCA
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+vdac vdac
+$endparam

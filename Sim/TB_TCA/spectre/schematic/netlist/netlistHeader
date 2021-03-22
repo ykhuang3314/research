@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 12 16:22:17 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_TCA
+// Design view name: schematic
+simulator lang=spectre
+global 0

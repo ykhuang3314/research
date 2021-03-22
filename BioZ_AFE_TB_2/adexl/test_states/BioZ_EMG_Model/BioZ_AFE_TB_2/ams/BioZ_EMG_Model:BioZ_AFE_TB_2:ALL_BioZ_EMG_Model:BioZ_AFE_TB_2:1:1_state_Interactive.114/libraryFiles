@@ -1,6 +1,0 @@
-libName ""
-libDirs ""
-libFiles ""
-langName "Verilog"
-viewName "module"
-extDirs ".v"

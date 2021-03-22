@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "LS_LowSide_ST"
+"V1n V0n" "analogLib_vdc_spectre"
+"V2n" "analogLib_vpulse_spectre"
+"C0n" "analogLib_cap_spectre"

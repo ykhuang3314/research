@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_CurrentMirror:config
+// Created On: Mar 22 15:02:29 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_CurrentMirror:schematic"
+
+	config cell="LSHVT18U3VX1" lib="D_CELLS_M3V" view="cmos_sch"
+	config cell="nedia_bjt" view="analogtext"
+	config cell="invrv3" lib="GATES_3V" view="schematic"
+	config cell="pe3" view="analogtext"
+	config cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional"
+	config cell="ne3" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="IN_3VX2" lib="D_CELLS_3V" view="cmos_sch"
+	config cell="ped_bjt" view="analogtext"
+	config cell="rpp1k1" view="analogtext"
+
+ }

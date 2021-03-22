@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Stimulator_TestBench\" \"TB_HBridge_V2\" \"config\" \"\")"
+"simulator" "ams"
+"temperature" "27"
+"host" ""
+"date" "Mar 15 15:50:46 2021"
+"title" ""
+"analysisList" "()"
+END

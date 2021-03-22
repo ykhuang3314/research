@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_Bias_Gen"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_Bias_Gen/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_IMP/INV3_ST/schematic" "INV3_ST" )
+( "Stimulator_IMP/LS_LowSide_ST/schematic" "LS_LowSide_ST" )
+( "Stimulator_IMP/LS_HighSide_V2_ST/schematic" "LS_HighSide_V2_ST" )
+( "Stimulator_TestBench/TB_Bias_Gen/schematic" "TB_Bias_Gen" )
+( "Stimulator_IMP/INV10_ST/schematic" "INV10_ST" )
+ )
+( "INV3_ST" "ihnl/cds6/map" )
+( "LS_LowSide_ST" "ihnl/cds8/map" )
+( "LS_HighSide_V2_ST" "ihnl/cds9/map" )
+( "TB_Bias_Gen" "ihnl/cds1/map" )
+( "INV10_ST" "ihnl/cds7/map" )
+ )

@@ -1,0 +1,48 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_Bias_Gen
+// View name: schematic
+V2 (vdd3 0) vsource dc=3.3 type=dc
+V0 (vddh 0) vsource dc=40 type=dc
+M16 (vb6 vb6 net10 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M15 (vb4 vb4 net11 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M14 (vb2 vb2 net026 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M0 (net8 net8 vddh 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M13 (0 vb6 vdd10 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M11 (net022 vb4 net024 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M9 (net035 vb2 vssh 0) ped w=10u l=940.0n m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+R7 (net020 net014) resistor r=R
+R6 (net021 vb5) resistor r=R
+R5 (net030 vb3) resistor r=R
+R4 (vddh vb1) resistor r=R
+R3 (vb6 0) resistor r=R
+R2 (vb4 net10) resistor r=R
+R1 (vb2 net11) resistor r=R
+R0 (net8 net026) resistor r=R
+M12 (net022 vb5 vdd10 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M10 (net035 vb3 net024 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M8 (vddh vb1 vssh 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) extlay=0 \
+        xf_subext=0
+M7 (net014 net014 0 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M6 (vb5 vb5 net020 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M5 (vb3 vb3 net021 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+M4 (vb1 vb1 net030 0) nedia w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+I13 (net039 out net037 vdd10 vdd3 vddh 0 vssh) LS_HighSide_V2_ST
+V1 (net039 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u \
+        rise=1p fall=1p width=50u
+C2 (net024 0) capacitor c=10p
+C1 (vssh 0) capacitor c=10p
+C0 (vdd10 0) capacitor c=10p

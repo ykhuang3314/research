@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"R0n" "analogLib_res_spectre"
+"M3n M1n" "PRIMLIB_nedia_spectre"
+"I1n" "analogLib_idc_spectre"
+"V4n V1n V0n" "analogLib_vdc_spectre"
+"M2n M0n" "PRIMLIB_ped_spectre"

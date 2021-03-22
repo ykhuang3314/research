@@ -1,0 +1,16 @@
+CADENCE IHNL11140
+$model
+Device_Characteristics/Test_nedia/schematic Test_nedia
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+NR_N NR_N
+VGS VGS
+W_N W_N
+NR_P NR_P
+W_P W_P
+IDS IDS
+$endparam

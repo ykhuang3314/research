@@ -1,0 +1,4 @@
+    invr_1 (A Q inh_ground_gnd inh_power_vdd3) invrv3 GT_PDW=600.00n \
+        GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW=1.41u GT_PUL=300.00n
+ends IN_3VX1
+// End of subcircuit definition.

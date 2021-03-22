@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"I9n" "analogLib_idc_spectre"
+"M0n M2n" "PRIMLIB_ped_spectre"
+"M1n M3n" "PRIMLIB_nedia_spectre"
+"R0n" "analogLib_res_spectre"
+"V0n" "analogLib_vpwl_spectre"
+"V1n V11n V2n V3n V4n V6n" "analogLib_vdc_spectre"
+"I0n I1n" "Stimulator_IMP_LS_HighSide_V3_ST_schematic"
+"I10n" "Stimulator_Model_Current_Mirror_verilogams"
+"I2n I4n" "Stimulator_IMP_LS_LowSide_V2_ST_schematic"
+"I3n" "Stimulator_Model_Current_Source_verilogams"
+"I7n" "Stimulator_Model_Digital_Stimulus_ST_V2_functional"

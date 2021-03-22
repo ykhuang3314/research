@@ -1,0 +1,114 @@
+// Generated for: spectre
+// Generated on: Mar  9 16:38:48 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_LS_HighSide_DMOS_ST
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: Stimulator_IMP
+// Cell name: INV10_ST
+// View name: schematic
+subckt INV10_ST in out vdd10 vss
+parameters W=5u
+    M0 (out in vss vss) nmma_bjt w=W l=2.9u as=1.85e-06*((W)+8.6e-07) \
+        ad=1.85e-06*((W)+8.6e-07) ps=1*2*(1.85e-06+(W)+8.6e-07) \
+        pd=2*(1.85e-06+(W)+8.6e-07) nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (out in vdd10 vdd10 vss) pmma_bjt w=2*W l=2.9u \
+        as=1.85e-06*((2*W)+8.6e-07) ad=1.85e-06*((2*W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(2*W)+8.6e-07) pd=2*(1.85e-06+(2*W)+8.6e-07) \
+        nrs=6e-07/(2*W) nrd=6e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+ends INV10_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: INV3_ST
+// View name: schematic
+subckt INV3_ST in out vdd3 vss
+parameters W=2u
+    M1 (out in vdd3 vdd3) pe3 w=2*W l=300n as=4.8e-07*(2*W) \
+        ad=4.8e-07*(2*W) ps=1*2*(4.8e-07+(2*W)) pd=2*(4.8e-07+(2*W)) \
+        nrs=2.7e-07/(2*W) nrd=2.7e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+    M0 (out in vss vss) ne3 w=W l=350.0n as=4.8e-07*(W) ad=4.8e-07*(W) \
+        ps=1*2*(4.8e-07+(W)) pd=2*(4.8e-07+(W)) nrs=2.7e-07/(W) \
+        nrd=2.7e-07/(W) m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends INV3_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_ST
+// View name: schematic
+subckt LS_LowSide_ST in out outn vdd10 vdd3 vss
+    I8 (IN3 IN3_n vdd3 vss) INV3_ST W=2u
+    I1 (in IN3 vdd3 vss) INV3_ST W=2u
+    I12 (out_LS outn vdd10 vss) INV10_ST W=5u
+    I11 (outn_LS out vdd10 vss) INV10_ST W=5u
+    M3 (out_LS outn_LS vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (outn_LS out_LS vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M9 (outn_LS IN3_n vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M8 (out_LS IN3 vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LS_LowSide_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_LS_HighSide_DMOS_ST
+// View name: schematic
+V0 (in 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+I8 (outn_ls out vddh vssh) INV10_ST W=5u
+M5 (outn_ls vssh net20 0) nedia w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M4 (out_ls vssh net19 0) nedia w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M1 (net19 inn_shifted 0 0) nedia w=10u l=1.25u m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0
+M0 (net20 in_shifted 0 0) nedia w=10u l=1.25u m=(1)*(2) par1=((1)*(2)) \
+        extlay=0 xf_subext=0
+M3 (outn_ls out_ls vddh vddh 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+M2 (out_ls outn_ls vddh vddh 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+V5 (vdd10 0) vsource dc=10 type=dc
+V4 (vssh 0) vsource dc=30 type=dc
+V3 (vddh 0) vsource dc=40 type=dc
+V1 (vdd3 0) vsource dc=3.3 type=dc
+M7 (outn_ls vssh vssh vssh) nmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+M6 (out_ls vssh vssh vssh) nmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+I12 (in in_shifted inn_shifted vdd10 vdd3 0) LS_LowSide_ST
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

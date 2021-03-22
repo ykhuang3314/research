@@ -1,0 +1,7 @@
+simulator lang=spectre
+include "ne.scs"
+include "ne3.scs"
+include "nmma_bjt.scs"
+include "pe.scs"
+include "pe3.scs"
+include "pmma_bjt.scs"

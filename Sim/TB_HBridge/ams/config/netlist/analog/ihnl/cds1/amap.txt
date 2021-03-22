@@ -1,0 +1,10 @@
+cellMap,*INV10_ST,*INV10_ST,*Stimulator_IMP,*schematic
+netMap,*INV10_ST,*gnd!,*0
+instMap,*INV10_ST,*M0,*M0
+instMaster,*INV10_ST,*M0,*PRIMLIB_nmma_bjt_spectre,*nmma_bjt
+instMap,*INV10_ST,*M1,*M1
+instMaster,*INV10_ST,*M1,*PRIMLIB_pmma_bjt_spectre,*pmma_bjt
+portMap,*INV10_ST,*in,*in
+portMap,*INV10_ST,*out,*out
+portMap,*INV10_ST,*vdd10,*vdd10
+portMap,*INV10_ST,*vss,*vss

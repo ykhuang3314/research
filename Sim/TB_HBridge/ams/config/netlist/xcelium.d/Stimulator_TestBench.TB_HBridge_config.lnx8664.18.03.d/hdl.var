@@ -1,0 +1,9 @@
+define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT Stimulator_TestBench.TB_HBridge:config
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => Stimulator_TestBench )
+DEFINE LIB_MAP ($LIB_MAP,  => Stimulator_IMP )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT Stimulator_TestBench.TB_HBridge:config

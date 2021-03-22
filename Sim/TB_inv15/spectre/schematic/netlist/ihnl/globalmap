@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Stimulator_TestBench/TB_inv15/schematic TB_inv15
+Stimulator_IMP/INV15_ST/schematic INV15_ST
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

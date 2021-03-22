@@ -1,0 +1,2 @@
+simulator lang=spectre
+include "nmma_bjt.scs"

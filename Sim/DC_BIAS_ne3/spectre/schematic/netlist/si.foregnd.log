@@ -1,0 +1,19 @@
+Begin Incremental Netlisting Mar 12 15:35:16 2021
+ERROR (OSSHNL-109): The cellview 'Device_Characteristics/DC_BIAS_ne3/schematic'
+has been modified since the last extraction. Validate
+that the schematic is
+correct and run Check and Save to correct this error.
+
+End netlisting Mar 12 15:35:16 2021
+Begin Incremental Netlisting Mar 12 15:35:34 2021
+End netlisting Mar 12 15:35:34 2021
+Begin Incremental Netlisting Mar 12 15:37:53 2021
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the
+current netlisting session. It had a value
+'_unl' last time netlisting was done
+in current run directory. Netlists from last
+session cannot be used for
+incremental netlisting. Therefore re-netlisting the
+design.
+
+End netlisting Mar 12 15:37:53 2021

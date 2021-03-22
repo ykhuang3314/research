@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"M0n M16n M21n M3n M4n M5n M6n M7n M8n" "PRIMLIB_nedia_bjt_spectre"
+"M1n M10n M11n M12n M2n M9n" "PRIMLIB_ped_bjt_spectre"
+"M13n M26n M28n M37n M40n M43n M53n" "PRIMLIB_ne3_spectre"
+"M22n M29n M31n M32n M33n M35n M36n M38n M39n M41n M42n M44n M45n M46n M47n M48n M49n M50n M51n M52n M54n" "PRIMLIB_pe3_spectre"
+"R0n" "analogLib_res_spectre"
+"R1n" "PRIMLIB_rpp1k1_spectre"
+"V0n V1n V3n V4n V7n V8n" "analogLib_vdc_spectre"
+"V2n" "analogLib_vpwl_spectre"
+"I0n I17n I29n I30n I4n I6n" "D_CELLS_M3V_LSHVT18U3VX1_cmos_sch"
+"I18n I3n I31n I5n I7n I9n" "D_CELLS_3V_IN_3VX2_cmos_sch"
+"I24n" "Stimulator_Model_Digital_Stimulus_ST_V2_functional"

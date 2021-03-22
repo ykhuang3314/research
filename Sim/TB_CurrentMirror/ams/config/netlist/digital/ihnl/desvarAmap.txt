@@ -1,0 +1,4 @@
+desvar,*Wp,*Wp,*30u
+desvar,*W,*W,*60u
+desvar,*b01001,*b01001,*5'b01001
+desvar,*b00,*b00,*2'b00

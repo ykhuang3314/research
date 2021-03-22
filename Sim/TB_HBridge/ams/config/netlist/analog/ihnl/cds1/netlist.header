@@ -1,0 +1,7 @@
+
+// Library name: Stimulator_IMP
+// Cell name: INV10_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt INV10_ST
+parameters W=5u

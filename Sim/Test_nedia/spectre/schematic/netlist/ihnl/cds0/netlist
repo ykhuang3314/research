@@ -1,0 +1,17 @@
+
+// Library name: Device_Characteristics
+// Cell name: Test_nedia
+// View name: schematic
+R0 (net7 net03) resistor r=1K
+M3 (net03 0 net6 0) nedia w=W_N l=1.25u m=(1)*(NR_N) par1=((1)*(NR_N)) \
+        extlay=0 xf_subext=0
+M1 (net7 net1 net6 0) nedia w=W_N l=1.25u m=(1)*(NR_N) par1=((1)*(NR_N)) \
+        extlay=0 xf_subext=0
+I1 (net6 0) isource dc=IDS type=dc
+V4 (vdd! net06) vsource dc=VGS type=dc
+V1 (vdd! 0) vsource dc=35 type=dc
+V0 (net1 0) vsource dc=VGS type=dc
+M2 (net03 net06 vdd! 0) ped w=W_P l=940.0n m=(1)*(NR_P) par1=((1)*(NR_P)) \
+        extlay=0 xf_subext=0
+M0 (net7 vdd! vdd! 0) ped w=W_P l=940.0n m=(1)*(NR_P) par1=((1)*(NR_P)) \
+        extlay=0 xf_subext=0

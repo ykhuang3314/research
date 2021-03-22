@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_HBridge_V2:config
+// Created On: Mar 15 15:50:56 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_HBridge_V2:schematic"
+
+	config cell="LSHVT18U3VX1" lib="D_CELLS_M3V" view="verilogams"
+	config cell="nedia_bjt" view="analogtext"
+	config cell="ped" view="analogtext"
+	config cell="nedia" view="analogtext"
+	config cell="Current_Source" lib="Stimulator_Model" view="verilogams"
+	config cell="Current_Mirror" lib="Stimulator_Model" view="verilogams"
+	config cell="LS_LowSide_V2_ST" lib="Stimulator_IMP" view="schematic"
+	config cell="isource" view="analogtext"
+	config cell="Digital_Stimulus_ST_V2" lib="Stimulator_Model" view="functional"
+	config cell="vsource" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="LS_HighSide_V3_ST" lib="Stimulator_IMP" view="schematic"
+	config cell="ped_bjt" view="analogtext"
+
+ }

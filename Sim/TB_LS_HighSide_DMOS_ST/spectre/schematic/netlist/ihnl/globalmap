@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+Stimulator_IMP/INV3_ST/schematic INV3_ST
+Stimulator_TestBench/TB_LS_HighSide_DMOS_ST/schematic TB_LS_HighSide_DMOS_ST
+Stimulator_IMP/INV10_ST/schematic INV10_ST
+Stimulator_IMP/LS_LowSide_ST/schematic LS_LowSide_ST
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

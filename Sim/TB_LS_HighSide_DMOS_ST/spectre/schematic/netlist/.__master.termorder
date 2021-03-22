@@ -1,0 +1,3 @@
+"Stimulator_IMP.INV3_ST.schematic.termorder" (("in" "out" "vdd3" "vss") ("in" "out" "vdd3" "vss"))
+"Stimulator_IMP.INV10_ST.schematic.termorder" (("in" "out" "vdd10" "vss") ("in" "out" "vdd10" "vss"))
+"Stimulator_IMP.LS_LowSide_ST.schematic.termorder" (("in" "out" "outn" "vdd10" "vdd3" "vss") ("in" "out" "outn" "vdd3" "vdd10" "vss"))

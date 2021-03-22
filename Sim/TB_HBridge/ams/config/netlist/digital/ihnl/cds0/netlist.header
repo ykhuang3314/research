@@ -1,0 +1,21 @@
+// Library - Stimulator_IMP, Cell - INV3_ST, View - schematic
+// LAST TIME SAVED: Mar  3 15:32:31 2021
+// NETLIST TIME: Mar 15 15:29:36 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="INV3_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar  3 15:32:31 2021" *)
+
+module INV3_ST (out, vdd3, vss, in);
+
+parameter W=2u;
+
+output  out;
+
+inout  vdd3, vss;
+
+input  in;
+

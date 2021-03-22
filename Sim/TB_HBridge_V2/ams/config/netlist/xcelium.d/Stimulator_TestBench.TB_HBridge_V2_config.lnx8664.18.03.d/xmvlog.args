@@ -1,0 +1,61 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/Stimulator_TestBench.TB_HBridge_V2_config.lnx8664.18.03.d
+-RUNMODE
+-amsossirunbind
+.amsbind.scs
+-CDSLIB
+./xcelium.d/Stimulator_TestBench.TB_HBridge_V2_config.lnx8664.18.03.d/cdsrun.lib
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-AUTO_USE_REFFILE
+-AMSINPUT
+-AUTO_USE_REFFILE
+-AMSINPUT
+-ALLOWREDEFINITION
+./netlist.vams
+-AUTO_USE_REFFILE
+-AMSINPUT
+./cds_globals.vams
+/pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v
+-SNAPSHOT
+Stimulator_TestBench.TB_HBridge_V2:config
+-HDLVAR
+./xcelium.d/Stimulator_TestBench.TB_HBridge_V2_config.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v
+/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
+/pkg/xfab/XKIT/xh018/diglibs/D_CELLS_M3V/v2_0/cadence_IC61/v2_0_0/D_CELLS_M3V/LSHVT18U3VX1/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
+-amscompilefile
+"file:/pkg/xfab/XKIT/xh018/diglibs/D_CELLS_M3V/v2_0/cadence_IC61/v2_0_0/D_CELLS_M3V/LSHVT18U3VX1/verilogams/verilog.vams lib:D_CELLS_M3V cell:LSHVT18U3VX1 view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_Model/Digital_Stimulus_ST_V2/functional/verilog.v lib:Stimulator_Model cell:Digital_Stimulus_ST_V2 view:functional"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/Stimulator_TestBench.TB_HBridge_V2_config.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-hastop
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

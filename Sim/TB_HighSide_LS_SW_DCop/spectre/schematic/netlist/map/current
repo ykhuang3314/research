@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_HighSide_LS_SW_DCop"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd! vdd3! vdde!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_HighSide_LS_SW_DCop/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_TestBench/TB_HighSide_LS_SW_DCop/schematic" "TB_HighSide_LS_SW_DCop" )
+ )
+( "TB_HighSide_LS_SW_DCop" "ihnl/cds0/map" )
+ )

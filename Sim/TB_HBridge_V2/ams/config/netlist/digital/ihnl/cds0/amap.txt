@@ -1,0 +1,6 @@
+instMap,*LS_HighSide_V3_ST,*I10,*I10
+instMaster,*LS_HighSide_V3_ST,*I10,*D_CELLS_M3V_LSHVT18U3VX1_verilogams
+netMap,*LS_HighSide_V3_ST,*gnd!,*cds_globals.\gnd! 
+netMap,*LS_HighSide_V3_ST,*vdde!,*cds_globals.\vdde! 
+netMap,*LS_HighSide_V3_ST,*vdd3!,*cds_globals.\vdd3! 
+cellMap,*LS_HighSide_V3_ST,*LS_HighSide_V3_ST,*Stimulator_IMP,*schematic

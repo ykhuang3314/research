@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 17 11:18:11 2021
+// Design library name: Device_Characteristics
+// Design cell name: DC_HBridge
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,18 @@
+CADENCE IHNL04120
+$model
+GATES_3V/invrv3/schematic GATES_3V/invrv3/schematic/schematic/Stimulator_TestBench_TB_CurrentMirror_config/0 invrv3
+Stimulator_TestBench/TB_CurrentMirror/schematic Stimulator_TestBench/TB_CurrentMirror/schematic/schematic/Stimulator_TestBench_TB_CurrentMirror_config/1 TB_CurrentMirror
+D_CELLS_3V/IN_3VX2/cmos_sch D_CELLS_3V/IN_3VX2/cmos_sch/cmos_sch/Stimulator_TestBench_TB_CurrentMirror_config/0 IN_3VX2
+D_CELLS_M3V/LSHVT18U3VX1/cmos_sch D_CELLS_M3V/LSHVT18U3VX1/cmos_sch/cmos_sch/Stimulator_TestBench_TB_CurrentMirror_config/0 LSHVT18U3VX1
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+vdd3! cds_globals.\vdd3! 
+vdde! cds_globals.\vdde! 
+$endnet
+$param
+Wp cds_globals.Wp
+W cds_globals.W
+b01001 cds_globals.b01001
+b00 cds_globals.b00
+$endparam

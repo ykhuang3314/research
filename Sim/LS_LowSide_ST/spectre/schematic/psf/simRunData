@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Stimulator_IMP\" \"LS_LowSide_ST\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Mar  4 14:56:20 2021"
+"title" ""
+"analysisList" "()"
+END

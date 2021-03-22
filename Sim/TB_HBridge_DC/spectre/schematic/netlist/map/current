@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_HBridge_DC"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd! vdd3! vdde!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_HBridge_DC/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_TestBench/TB_HBridge_DC/schematic" "TB_HBridge_DC" )
+( "D_CELLS_M3V/LSHVT18U3VX1/cmos_sch" "LSHVT18U3VX1" )
+ )
+( "TB_HBridge_DC" "ihnl/cds0/map" )
+( "LSHVT18U3VX1" "ihnl/cds1/map" )
+ )

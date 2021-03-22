@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  Stimulator_TestBench 
+cell: TB_CurrentMirror 
+view: config 
+topCellLib: Stimulator_TestBench 

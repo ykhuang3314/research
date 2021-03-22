@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+Stimulator_TestBench/TB_HighSide_LS_SW_DCop/schematic TB_HighSide_LS_SW_DCop
+$endmodel
+$net
+gnd! 0
+vdd3! vdd3!
+vdde! vdde!
+$endnet
+$param
+Ibias Ibias
+Ist Ist
+$endparam

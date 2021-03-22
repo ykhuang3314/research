@@ -1,0 +1,6 @@
+CADENCE IHNL11145
+
+Stimulator_IMP INV3_ST schematic cds0
+Stimulator_IMP INV10_ST schematic cds2
+Stimulator_TestBench TB_LS_HighSide_DMOS_ST schematic cds3
+Stimulator_IMP LS_LowSide_ST schematic cds4

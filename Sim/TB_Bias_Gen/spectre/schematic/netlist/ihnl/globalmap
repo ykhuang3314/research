@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+Stimulator_IMP/LS_HighSide_V2_ST/schematic LS_HighSide_V2_ST
+Stimulator_IMP/INV3_ST/schematic INV3_ST
+Stimulator_IMP/INV10_ST/schematic INV10_ST
+Stimulator_IMP/LS_LowSide_ST/schematic LS_LowSide_ST
+Stimulator_TestBench/TB_Bias_Gen/schematic TB_Bias_Gen
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+R R
+$endparam

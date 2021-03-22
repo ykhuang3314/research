@@ -1,0 +1,10 @@
+instMap,*LS_LowSide_ST,*I8,*I8
+instMaster,*LS_LowSide_ST,*I8,*Stimulator_IMP_INV3_ST_schematic
+instMap,*LS_LowSide_ST,*I1,*I1
+instMaster,*LS_LowSide_ST,*I1,*Stimulator_IMP_INV3_ST_schematic
+instMap,*LS_LowSide_ST,*I11,*I11
+instMaster,*LS_LowSide_ST,*I11,*Stimulator_IMP_INV10_ST_schematic
+instMap,*LS_LowSide_ST,*I12,*I12
+instMaster,*LS_LowSide_ST,*I12,*Stimulator_IMP_INV10_ST_schematic
+netMap,*LS_LowSide_ST,*gnd!,*cds_globals.\gnd! 
+cellMap,*LS_LowSide_ST,*LS_LowSide_ST,*Stimulator_IMP,*schematic

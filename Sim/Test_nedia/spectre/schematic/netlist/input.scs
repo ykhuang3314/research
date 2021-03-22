@@ -1,0 +1,47 @@
+// Generated for: spectre
+// Generated on: Mar  2 13:58:02 2021
+// Design library name: Device_Characteristics
+// Design cell name: Test_nedia
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters NR_N=15 NR_P=30 W_N=20u W_P=20u IDS=30m VGS=18
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: Device_Characteristics
+// Cell name: Test_nedia
+// View name: schematic
+R0 (net7 net03) resistor r=1K
+M3 (net03 0 net6 0) nedia w=W_N l=1.25u m=(1)*(NR_N) par1=((1)*(NR_N)) \
+        extlay=0 xf_subext=0
+M1 (net7 net1 net6 0) nedia w=W_N l=1.25u m=(1)*(NR_N) par1=((1)*(NR_N)) \
+        extlay=0 xf_subext=0
+I1 (net6 0) isource dc=IDS type=dc
+V4 (vdd! net06) vsource dc=VGS type=dc
+V1 (vdd! 0) vsource dc=35 type=dc
+V0 (net1 0) vsource dc=VGS type=dc
+M2 (net03 net06 vdd! 0) ped w=W_P l=940.0n m=(1)*(NR_P) par1=((1)*(NR_P)) \
+        extlay=0 xf_subext=0
+M0 (net7 vdd! vdd! 0) ped w=W_P l=940.0n m=(1)*(NR_P) par1=((1)*(NR_P)) \
+        extlay=0 xf_subext=0
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

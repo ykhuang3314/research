@@ -1,0 +1,17 @@
+("Stimulator_Model" "Current_Mirror" "verilogams" nil) nil
+("PRIMLIB" "ped" "spectre" nil) t
+("PRIMLIB" "nedia" "spectre" nil) t
+("Stimulator_IMP" "LS_LowSide_ST" "schematic" nil) nil
+("PRIMLIB" "pe3" "spectre" nil) t
+("Stimulator_Model" "Digital_Stimulus_ST_V2" "functional" nil) nil
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("analogLib" "vpwl" "spectre" spectrePwlsrcPrim) t
+("PRIMLIB" "ne3" "spectre" nil) t
+("Stimulator_Model" "Current_Source" "verilogams" nil) nil
+("analogLib" "res" "spectre" nil) t
+("Stimulator_IMP" "LS_HighSide_V2_ST" "schematic" nil) nil
+("PRIMLIB" "pmma_bjt" "spectre" nil) t
+("PRIMLIB" "nmma_bjt" "spectre" nil) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("Stimulator_IMP" "INV10_ST" "schematic" nil) nil
+("Stimulator_IMP" "INV3_ST" "schematic" nil) nil

@@ -1,0 +1,14 @@
+    M1 (out vdd10 net12 net12) nmma_bjt w=W l=2.9u \
+        as=1.85e-06*((W)+8.6e-07) ad=1.85e-06*((W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(W)+8.6e-07) pd=2*(1.85e-06+(W)+8.6e-07) \
+        nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M0 (net12 in_pd vss vss) nmma_bjt w=W l=2.9u as=1.85e-06*((W)+8.6e-07) \
+        ad=1.85e-06*((W)+8.6e-07) ps=1*2*(1.85e-06+(W)+8.6e-07) \
+        pd=2*(1.85e-06+(W)+8.6e-07) nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M2 (out in_pu vdd15 vdd15 vss) pmma_bjt w=2*W l=2.9u \
+        as=1.85e-06*((2*W)+8.6e-07) ad=1.85e-06*((2*W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(2*W)+8.6e-07) pd=2*(1.85e-06+(2*W)+8.6e-07) \
+        nrs=6e-07/(2*W) nrd=6e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+ends INV15_ST
+// End of subcircuit definition.

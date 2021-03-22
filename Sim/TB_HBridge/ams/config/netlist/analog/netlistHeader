@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 15 15:29:36 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_HBridge
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

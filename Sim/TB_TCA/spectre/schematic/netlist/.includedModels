@@ -1,0 +1,4 @@
+simulator lang=spectre
+include "nedia_bjt.scs"
+include "nmma_bjt.scs"
+include "ped_bjt.scs"

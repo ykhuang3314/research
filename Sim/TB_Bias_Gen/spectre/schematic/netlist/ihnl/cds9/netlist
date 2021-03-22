@@ -1,0 +1,25 @@
+    I0 (in in_shifted inn_shifted vdd10 vdd3 vss) LS_LowSide_ST
+    I7 (out_ls out vddh vssh) INV10_ST W=5u
+    I8 (outn_ls outn vddh vssh) INV10_ST W=5u
+    M5 (outn_ls vssh net26 vss) nedia w=10u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M4 (out_ls vssh net026 vss) nedia w=10u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M1 (net026 inn_shifted vss vss) nedia w=10u l=1.25u m=(1)*(2) \
+        par1=((1)*(2)) extlay=0 xf_subext=0
+    M0 (net26 in_shifted vss vss) nedia w=10u l=1.25u m=(1)*(2) \
+        par1=((1)*(2)) extlay=0 xf_subext=0
+    M2 (out_ls outn_ls vddh vddh vss) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M3 (outn_ls out_ls vddh vddh vss) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M7 (outn_ls vssh vssh vssh) nmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M6 (out_ls vssh vssh vssh) nmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LS_HighSide_V2_ST
+// End of subcircuit definition.

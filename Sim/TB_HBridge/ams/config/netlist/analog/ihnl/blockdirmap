@@ -1,0 +1,7 @@
+CADENCE IHNL04125
+
+Stimulator_IMP INV3_ST schematic nil schematic Stimulator_TestBench TB_HBridge config 0 cds0
+Stimulator_IMP INV10_ST schematic nil schematic Stimulator_TestBench TB_HBridge config 0 cds1
+Stimulator_IMP LS_LowSide_ST schematic nil schematic Stimulator_TestBench TB_HBridge config 0 cds2
+Stimulator_IMP LS_HighSide_V2_ST schematic nil schematic Stimulator_TestBench TB_HBridge config 0 cds3
+Stimulator_TestBench TB_HBridge schematic nil schematic Stimulator_TestBench TB_HBridge config 1 cds4

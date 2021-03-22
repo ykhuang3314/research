@@ -1,0 +1,54 @@
+// Library - Stimulator_TestBench, Cell - TB_HBridge_V2, View -
+//schematic
+// LAST TIME SAVED: Mar 15 15:42:14 2021
+// NETLIST TIME: Mar 15 15:50:50 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_HBridge_V2", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Mar 15 15:42:14 2021" *)
+
+module TB_HBridge_V2 ();
+
+// Buses in the design
+
+wire  [4:0]  MAG_ST;
+
+wire  [1:0]  CH_SEL_D_ST;
+
+wire  [1:0]  CH_SEL_U_ST;
+
+
+Current_Mirror I10 ( .ANO(ANO_ST), .CAT(CAT_ST), .Iref(Iout_dac), 
+    .EN(EN_ST), .Iout(Ist), .Vdda(vdda), .Vssa(cds_globals.\gnd! ));
+
+LS_HighSide_V3_ST I0 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(CtrlHS_L), .in(ANO_ST));
+
+LS_HighSide_V3_ST I1 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(CtrlHS_R), .in(CAT_ST));
+
+Digital_Stimulus_ST_V2 #( .MAG(5'b11111), .num_of_ch(1) ) I7 ( 
+    .CH_SEL_D_ST(CH_SEL_D_ST), .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), 
+    .CH_SEL_U_ST(CH_SEL_U_ST), .DIS_ST(DIS_ST), .EN_ST(EN_ST), 
+    .MAG_ST(MAG_ST), .ch_sweeping(net9), .enable(enable), 
+    .ramping(net10));
+
+LS_LowSide_V2_ST I4 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(CtrlLS_R), .in(ANO_ST));
+
+LS_LowSide_V2_ST I2 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
+    .out(CtrlLS_L), .in(CAT_ST));
+
+Current_Source I3 ( .EN(EN_ST), .Vssd(cds_globals.\gnd! ), 
+    .Vddd(cds_globals.\vdde! ), .Ibias(net11), .Vdda(vdda), 
+    .Vssa(cds_globals.\gnd! ), .Ioutn(Iout_dac), .Ioutp(vdda), 
+    .Mag(MAG_ST));
+
+endmodule

@@ -1,0 +1,45 @@
+
+// Library name: Stimulator_IMP
+// Cell name: INV3_ST
+// View name: schematic
+subckt INV3_ST in out vdd3 vss
+parameters W=2u
+    M1 (out in vdd3 vdd3) pe3 w=2*W l=300n as=4.8e-07*(2*W) \
+        ad=4.8e-07*(2*W) ps=1*2*(4.8e-07+(2*W)) pd=2*(4.8e-07+(2*W)) \
+        nrs=2.7e-07/(2*W) nrd=2.7e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+    M0 (out in vss vss) ne3 w=W l=350.0n as=4.8e-07*(W) ad=4.8e-07*(W) \
+        ps=1*2*(4.8e-07+(W)) pd=2*(4.8e-07+(W)) nrs=2.7e-07/(W) \
+        nrd=2.7e-07/(W) m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends INV3_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_ST
+// View name: schematic
+subckt LS_LowSide_ST in out vdd10 vdd3 vss
+    I8 (IN3 IN3_n vdd3 vss) INV3_ST W=2u
+    I1 (in IN3 vdd3 vss) INV3_ST W=2u
+    M3 (outn out vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (out outn vdd10 vdd10 0) pmma_bjt w=5u l=2.9u as=1.0841e-11 \
+        ad=1.0841e-11 ps=1.542e-05 pd=1.542e-05 nrs=0.12 nrd=0.12 \
+        m=(1)*(1) par1=((1)*(1))
+    M9 (out IN3_n vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M8 (outn IN3 vss vss) nmma_bjt w=15.0u l=2.9u as=2.9341e-11 \
+        ad=2.9341e-11 ps=3.542e-05 pd=3.542e-05 nrs=0.04 nrd=0.04 \
+        m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LS_LowSide_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_LS_LowSide
+// View name: schematic
+I0 (in out net2 net3 0) LS_LowSide_ST
+V1 (net2 0) vsource dc=10 type=dc
+V0 (net3 0) vsource dc=3.3 type=dc
+V2 (in 0) vsource type=pulse val0=0 val1=1.8 period=100u delay=50u rise=1p \
+        fall=1p width=50u
+C0 (out 0) capacitor c=1p

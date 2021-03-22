@@ -1,0 +1,20 @@
+Begin Incremental Netlisting Mar 15 14:46:44 2021
+WARNING (OSSHNL-160): The primitive, 'PRIMLIB/ped_bjt/spectre', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Mar 15 14:46:44 2021
+Begin Incremental Netlisting Mar 15 14:49:28 2021
+ERROR (OSSHNL-109): The cellview
+'Stimulator_TestBench/LS_LowSide_V2_ST/schematic' has been modified since the
+last extraction. Validate
+that the schematic is correct and run Check and Save
+to correct this error.
+
+End netlisting Mar 15 14:49:28 2021
+Begin Incremental Netlisting Mar 15 14:49:42 2021
+End netlisting Mar 15 14:49:42 2021
+Begin Incremental Netlisting Mar 15 15:13:05 2021
+End netlisting Mar 15 15:13:05 2021

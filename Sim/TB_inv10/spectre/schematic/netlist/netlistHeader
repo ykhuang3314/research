@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar  5 11:55:26 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_inv10
+// Design view name: schematic
+simulator lang=spectre
+global 0

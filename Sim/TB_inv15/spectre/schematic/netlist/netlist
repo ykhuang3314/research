@@ -1,0 +1,32 @@
+
+// Library name: Stimulator_IMP
+// Cell name: INV15_ST
+// View name: schematic
+subckt INV15_ST in_pd in_pu out vdd10 vdd15 vss
+parameters W=5u
+    M1 (out vdd10 net12 net12) nmma_bjt w=W l=2.9u \
+        as=1.85e-06*((W)+8.6e-07) ad=1.85e-06*((W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(W)+8.6e-07) pd=2*(1.85e-06+(W)+8.6e-07) \
+        nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M0 (net12 in_pd vss vss) nmma_bjt w=W l=2.9u as=1.85e-06*((W)+8.6e-07) \
+        ad=1.85e-06*((W)+8.6e-07) ps=1*2*(1.85e-06+(W)+8.6e-07) \
+        pd=2*(1.85e-06+(W)+8.6e-07) nrs=6e-07/(W) nrd=6e-07/(W) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M2 (out in_pu vdd15 vdd15 vss) pmma_bjt w=2*W l=2.9u \
+        as=1.85e-06*((2*W)+8.6e-07) ad=1.85e-06*((2*W)+8.6e-07) \
+        ps=1*2*(1.85e-06+(2*W)+8.6e-07) pd=2*(1.85e-06+(2*W)+8.6e-07) \
+        nrs=6e-07/(2*W) nrd=6e-07/(2*W) m=(1)*(1) par1=((1)*(1))
+ends INV15_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_inv15
+// View name: schematic
+I0 (in_pd in_pu out net3 net2 0) INV15_ST W=5u
+V1 (in_pd 0) vsource type=pulse val0=0 val1=10 period=100u delay=50u \
+        rise=1p fall=1p width=50u
+V0 (in_pu 0) vsource type=pulse val0=0 val1=15 period=100u delay=50u \
+        rise=1p fall=1p width=50u
+V3 (net2 0) vsource dc=15 type=dc
+V2 (net3 0) vsource dc=10 type=dc
+C0 (out 0) capacitor c=1p

@@ -1,0 +1,29 @@
+
+LS_HighSide_V2_ST I19 ( .vss(vssa), .vddh(vddh), .vssh(vssh), 
+    .vdd10(vdd10), .vdd3(vdd3), .out(CtrlHS_R), .outn(net20), 
+    .in(CAT_ST));
+
+LS_HighSide_V2_ST I0 ( .vss(vssa), .vddh(vddh), .vssh(vssh), 
+    .vdd10(vdd10), .vdd3(vdd3), .out(CtrlHS_L), .outn(net21), 
+    .in(ANO_ST));
+
+LS_LowSide_ST I24 ( .outn(net19), .vss(vssa), .vdd3(vdd3), 
+    .vdd10(vdd10), .out(CtrlLS_L), .in(CAT_ST));
+
+LS_LowSide_ST I1 ( .outn(net16), .vss(vssa), .vdd3(vdd3), 
+    .vdd10(vdd10), .out(CtrlLS_R), .in(ANO_ST));
+
+Digital_Stimulus_ST_V2 #( .MAG(5'b11111), .num_of_ch(1) ) I7 ( 
+    .CH_SEL_D_ST(CH_SEL_D_ST), .ANO_ST(ANO_ST), .CAT_ST(CAT_ST), 
+    .CH_SEL_U_ST(CH_SEL_U_ST), .DIS_ST(DIS_ST), .EN_ST(EN_ST), 
+    .MAG_ST(MAG_ST), .ch_sweeping(net9), .enable(enable), 
+    .ramping(net10));
+
+Current_Source I3 ( .EN(EN_ST), .Vssd(vssd), .Vddd(vddd), 
+    .Ibias(net11), .Vdda(vdda), .Vssa(vssa), .Ioutn(Iout_dac), 
+    .Ioutp(vdda), .Mag(MAG_ST));
+
+Current_Mirror I10 ( .ANO(ANO_ST), .CAT(CAT_ST), .Iref(Iout_dac), 
+    .EN(EN_ST), .Iout(Ist), .Vdda(vdda), .Vssa(vssa));
+
+endmodule

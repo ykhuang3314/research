@@ -1,0 +1,22 @@
+// Library - Stimulator_TestBench, Cell - TB_CurrentMirror, View -
+//schematic
+// LAST TIME SAVED: Mar 22 15:02:08 2021
+// NETLIST TIME: Mar 22 15:02:23 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_CurrentMirror", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Mar 22 15:02:08 2021" *)
+
+module TB_CurrentMirror ();
+
+// Buses in the design
+
+wire  [4:0]  MAG_ST;
+
+wire  [0:1]  net080;
+
+wire  [0:1]  net079;
+

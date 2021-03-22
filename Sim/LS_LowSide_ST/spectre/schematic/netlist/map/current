@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "LS_LowSide_ST"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/LS_LowSide_ST/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_IMP/INV3_ST/schematic" "INV3_ST" )
+( "Stimulator_IMP/LS_LowSide_ST/schematic" "LS_LowSide_ST" )
+( "Stimulator_IMP/INV_ST/schematic" "INV_ST" )
+ )
+( "INV3_ST" "ihnl/cds1/map" )
+( "LS_LowSide_ST" "ihnl/cds2/map" )
+( "INV_ST" "ihnl/cds0/map" )
+ )

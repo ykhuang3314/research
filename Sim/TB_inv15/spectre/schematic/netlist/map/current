@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_inv15"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_inv15/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_TestBench/TB_inv15/schematic" "TB_inv15" )
+( "Stimulator_IMP/INV15_ST/schematic" "INV15_ST" )
+ )
+( "TB_inv15" "ihnl/cds1/map" )
+( "INV15_ST" "ihnl/cds0/map" )
+ )
