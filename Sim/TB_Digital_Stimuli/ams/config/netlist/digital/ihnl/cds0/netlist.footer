@@ -1,0 +1,5 @@
+
+Digital_Stimulus_ST #( .Ramping(1'b1) ) I0 ( .ANO_ST(ANO_ST), 
+    .CAT_ST(CAT_ST), .DIS_ST(DIS_ST), .EN_ST(EN_ST), .MAG_ST(MAG_ST));
+
+endmodule

@@ -1,0 +1,6 @@
+("TB_OneChannel_imp" "I35") ("analogLib" "idc" "spectre" "spectre" "Stimulator_TestBench" "TB_OneChannel_imp" "schematic")
+("TB_OneChannel_imp" "V3") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "TB_OneChannel_imp" "schematic")
+("TB_OneChannel_imp" "I38") ("Stimulator_IMP" "Digital_Stimulus_ST" "functional" "functional" "Stimulator_TestBench" "TB_OneChannel_imp" "schematic")
+("TB_OneChannel_imp" "V0") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "TB_OneChannel_imp" "schematic")
+("TB_OneChannel_imp" "V4") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "TB_OneChannel_imp" "schematic")
+("IN_3VX2" "invr_1") ("GATES_3V" "invrv3" "schematic" "schematic" "D_CELLS_3V" "IN_3VX2" "cmos_sch")

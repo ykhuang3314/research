@@ -1,0 +1,985 @@
+\# Program start time:     UTC 2021.04.07 12:07:46.499
+\# Local time: CEST (UTC+02:00) 2021.04.07 14:07:46.499
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
+\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso32262 -mpshost s2424 -davinciService DaVinciService_32262_1617623711 -log /home/ykhuang/research/logs_ykhuang/logs0/Job30.log -licenseLockFileName /home/ykhuang/research/.tmp_ykhuang/.s2424_32262 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 30
+\# Host name (type):	s2424 (x86_64)
+\# Operating system:	Linux 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 17 13:59:11 UTC 2020
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 15796)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x2c00000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        536 MB
+\# Available memory:	     76,033 MB
+\# System memory:	     96,361 MB
+\# Maximum memory size:	     95,983 MB
+\# Max mem available:	     76,190 MB
+\# Initial memory used:	        157 MB
+\#        process size:	      1,382 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		ykhuang
+\o Working Directory:	s2424:/home/ykhuang/research
+\# Process Id:		16932
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\# Memory report: using         303 MB, process size 1,606 MB at UTC 2021.04.07 12:07:48.077
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso32262, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 16932 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "./.xkit/setup/xh018/cadence/PDK"
+\o Loading XfPcellCore.cxt
+\o Loading XfSktTools.cxt
+\o Loading XfTechXh018.cxt
+\o nil
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o "XfDtbSkill package succesfully loaded."
+\o     Generic Dcells Tool Box: 'Dcells_Toolbox_v1.2.0' loaded.
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\# Memory report: using         431 MB, process size 1,728 MB at UTC 2021.04.07 12:07:50.449
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\a _treeSetOpcGUI(t)
+\r t
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = Stimulator_TestBench
+\o 	Cell         = TB_OneCH_Top
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.10
+\o 	Results DB   = /home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10.rdb
+\o 	Results Dir  = /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/2/Stimulator_TestBench:TB_OneCH_Top:1
+\o 	Results Loc  = /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data
+\o 	Project Dir  = /home/ykhuang/research/Sim
+\o 	Setup DB loc = /home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o INFO (TECH-150003): The technology database "analogLib" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\o WARNING (AMS-1058): The rule 'ConnRules_inhconn_full_fast_gnd' has been specified twice for the library 'xfab_connectLib' in the connectRules.il file. Therefore, the second occurrence of this rule has been ignored.
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  -> END LOAD ".cdsinit" FILE
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 8) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Rload = "100"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/8/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/8/Stimulator_TestBench:TB_OneCH_Top:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 8)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\o Loading seCore.cxt 
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/8/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/control
+\o Begin Netlisting Apr  7 14:07:52 2021
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/8/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (TECH-150003): The technology database "basic" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\o INFO (TECH-150003): The technology database "US_8ths" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o Loading digitalSim.cxt 
+\o WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o rpp1k1                      spectre              *Stopping View*  
+\o ne3                         spectre              *Stopping View*  
+\o pe3                         spectre              *Stopping View*  
+\o ne                          spectre              *Stopping View*  
+\o pe                          spectre              *Stopping View*  
+\o csft5a                      spectre              *Stopping View*  
+\o nedia_bjt                   spectre              *Stopping View*  
+\o ped_bjt                     spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Decoder8                    functional           *Stopping View*  
+\o Digital_Stimulus_V2_ST      functional           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o TB_OneCH_Top                schematic                             
+\o SingleChannel_ST            schematic                             
+\o HalfBridge_ST               schematic                             
+\o LS_LowSide_V2_ST            schematic                             
+\o LS_HighSide_V3_ST           schematic                             
+\o CurrentSource_All_ST        schematic                             
+\o CurrentMirror_ST            schematic                             
+\o LSHVT18U3VX2                cmos_sch                              
+\o Idac_5bit_ST                schematic                             
+\o AND2HDX0                    cmos_sch                              
+\o invr                        schematic                             
+\o nand2                       schematic                             
+\o IN_3VX2                     cmos_sch                              
+\o invrv3                      schematic                             
+\o LSHVT18U3VX1                cmos_sch                              
+\o Ext_Iref_ST                 schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/8/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_M3V" "LSHVT18U3VX1" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Netlist Warning: The netlisting procedure specified for (GATES_3V invrv3 schematic) is 
+\o obsolete. You can convert your library with the 
+\o Tools - Conversion Tool Box menu on the CIW. 
+\o 
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "IN_3VX2" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_HD" "AND2HDX0" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_M3V" "LSHVT18U3VX2" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o WARNING (ADE-6003): Terminal "gnd", specified in the CDF termOrder, does not exist
+\o            in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
+\o WARNING (ADE-6003): Terminal "vdd3", specified in the CDF termOrder, does not exist
+\o            in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
+\o WARNING (ADE-6003): Terminal "vdde", specified in the CDF termOrder, does not exist
+\o            in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\# Available memory:         71,265 MB at UTC 2021.04.07 12:07:56.296
+\# Memory report: Maximum memory size now 71,757 MB at UTC 2021.04.07 12:07:56.297
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.04.07 12:07:56.297
+\o ..............
+\o End netlisting Apr  7 14:08:01 2021
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o Loading cdf.cxt 
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ] for Point ID (7 8).
+\o 
+\o Delete simulation data in /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/8/Stimulator_TestBench:TB_OneCH_Top:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 8) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 19) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Rload = "375"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/19/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/19/Stimulator_TestBench:TB_OneCH_Top:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 19)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Apr  7 14:08:44 2021
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/19/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o rpp1k1                      spectre              *Stopping View*  
+\o ne3                         spectre              *Stopping View*  
+\o pe3                         spectre              *Stopping View*  
+\o ne                          spectre              *Stopping View*  
+\o pe                          spectre              *Stopping View*  
+\o csft5a                      spectre              *Stopping View*  
+\o nedia_bjt                   spectre              *Stopping View*  
+\o ped_bjt                     spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Decoder8                    functional           *Stopping View*  
+\o Digital_Stimulus_V2_ST      functional           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o TB_OneCH_Top                schematic                             
+\o SingleChannel_ST            schematic                             
+\o HalfBridge_ST               schematic                             
+\o LS_LowSide_V2_ST            schematic                             
+\o LS_HighSide_V3_ST           schematic                             
+\o CurrentSource_All_ST        schematic                             
+\o CurrentMirror_ST            schematic                             
+\o LSHVT18U3VX2                cmos_sch                              
+\o Idac_5bit_ST                schematic                             
+\o AND2HDX0                    cmos_sch                              
+\o invr                        schematic                             
+\o nand2                       schematic                             
+\o IN_3VX2                     cmos_sch                              
+\o invrv3                      schematic                             
+\o LSHVT18U3VX1                cmos_sch                              
+\o Ext_Iref_ST                 schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/19/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ........
+\o End netlisting Apr  7 14:08:53 2021
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ] for Point ID (7 19).
+\o 
+\o Delete simulation data in /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/19/Stimulator_TestBench:TB_OneCH_Top:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 70,067 MB at UTC 2021.04.07 12:09:07.306
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o ERROR (WIA-1006): Unable to plot expression <IT("/R0/PLUS")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\o 
+\o *Info*    Run complete for Point ID (7 19) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 43) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Rload = "650"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/43/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/43/Stimulator_TestBench:TB_OneCH_Top:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 43)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Apr  7 14:09:39 2021
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/43/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o rpp1k1                      spectre              *Stopping View*  
+\o ne3                         spectre              *Stopping View*  
+\o pe3                         spectre              *Stopping View*  
+\o ne                          spectre              *Stopping View*  
+\o pe                          spectre              *Stopping View*  
+\o csft5a                      spectre              *Stopping View*  
+\o nedia_bjt                   spectre              *Stopping View*  
+\o ped_bjt                     spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Decoder8                    functional           *Stopping View*  
+\o Digital_Stimulus_V2_ST      functional           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o TB_OneCH_Top                schematic                             
+\o SingleChannel_ST            schematic                             
+\o HalfBridge_ST               schematic                             
+\o LS_LowSide_V2_ST            schematic                             
+\o LS_HighSide_V3_ST           schematic                             
+\o CurrentSource_All_ST        schematic                             
+\o CurrentMirror_ST            schematic                             
+\o LSHVT18U3VX2                cmos_sch                              
+\o Idac_5bit_ST                schematic                             
+\o AND2HDX0                    cmos_sch                              
+\o invr                        schematic                             
+\o nand2                       schematic                             
+\o IN_3VX2                     cmos_sch                              
+\o invrv3                      schematic                             
+\o LSHVT18U3VX1                cmos_sch                              
+\o Ext_Iref_ST                 schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/43/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ........
+\o End netlisting Apr  7 14:09:48 2021
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ] for Point ID (7 43).
+\o 
+\o Delete simulation data in /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/43/Stimulator_TestBench:TB_OneCH_Top:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o ERROR (WIA-1006): Unable to plot expression <IT("/R0/PLUS")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\o 
+\o *Info*    Run complete for Point ID (7 43) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 59) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Rload = "925"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/59/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/59/Stimulator_TestBench:TB_OneCH_Top:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 59)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Apr  7 14:10:30 2021
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/59/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o rpp1k1                      spectre              *Stopping View*  
+\o ne3                         spectre              *Stopping View*  
+\o pe3                         spectre              *Stopping View*  
+\o ne                          spectre              *Stopping View*  
+\o pe                          spectre              *Stopping View*  
+\o csft5a                      spectre              *Stopping View*  
+\o nedia_bjt                   spectre              *Stopping View*  
+\o ped_bjt                     spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Decoder8                    functional           *Stopping View*  
+\o Digital_Stimulus_V2_ST      functional           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o TB_OneCH_Top                schematic                             
+\o SingleChannel_ST            schematic                             
+\o HalfBridge_ST               schematic                             
+\o LS_LowSide_V2_ST            schematic                             
+\o LS_HighSide_V3_ST           schematic                             
+\o CurrentSource_All_ST        schematic                             
+\o CurrentMirror_ST            schematic                             
+\o LSHVT18U3VX2                cmos_sch                              
+\o Idac_5bit_ST                schematic                             
+\o AND2HDX0                    cmos_sch                              
+\o invr                        schematic                             
+\o nand2                       schematic                             
+\o IN_3VX2                     cmos_sch                              
+\o invrv3                      schematic                             
+\o LSHVT18U3VX1                cmos_sch                              
+\o Ext_Iref_ST                 schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/59/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ........
+\o End netlisting Apr  7 14:10:39 2021
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ] for Point ID (7 59).
+\o 
+\o Delete simulation data in /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/59/Stimulator_TestBench:TB_OneCH_Top:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o ERROR (WIA-1006): Unable to plot expression <IT("/R0/PLUS")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\o 
+\o *Info*    Run complete for Point ID (7 59) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 72) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Rload = "1200"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/72/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/72/Stimulator_TestBench:TB_OneCH_Top:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 72)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Apr  7 14:11:21 2021
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/72/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o rpp1k1                      spectre              *Stopping View*  
+\o ne3                         spectre              *Stopping View*  
+\o pe3                         spectre              *Stopping View*  
+\o ne                          spectre              *Stopping View*  
+\o pe                          spectre              *Stopping View*  
+\o csft5a                      spectre              *Stopping View*  
+\o nedia_bjt                   spectre              *Stopping View*  
+\o ped_bjt                     spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Decoder8                    functional           *Stopping View*  
+\o Digital_Stimulus_V2_ST      functional           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o TB_OneCH_Top                schematic                             
+\o SingleChannel_ST            schematic                             
+\o HalfBridge_ST               schematic                             
+\o LS_LowSide_V2_ST            schematic                             
+\o LS_HighSide_V3_ST           schematic                             
+\o CurrentSource_All_ST        schematic                             
+\o CurrentMirror_ST            schematic                             
+\o LSHVT18U3VX2                cmos_sch                              
+\o Idac_5bit_ST                schematic                             
+\o AND2HDX0                    cmos_sch                              
+\o invr                        schematic                             
+\o nand2                       schematic                             
+\o IN_3VX2                     cmos_sch                              
+\o invrv3                      schematic                             
+\o LSHVT18U3VX1                cmos_sch                              
+\o Ext_Iref_ST                 schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/72/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ........
+\o End netlisting Apr  7 14:11:29 2021
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ] for Point ID (7 72).
+\o 
+\o Delete simulation data in /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/72/Stimulator_TestBench:TB_OneCH_Top:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o ERROR (WIA-1006): Unable to plot expression <IT("/R0/PLUS")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\o 
+\o *Info*    Run complete for Point ID (7 72) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit            522 MB, process size 1,825 MB at UTC 2021.04.07 12:17:59.351
+\# Memory report: peak usage         522 MB, process size 1,825 MB

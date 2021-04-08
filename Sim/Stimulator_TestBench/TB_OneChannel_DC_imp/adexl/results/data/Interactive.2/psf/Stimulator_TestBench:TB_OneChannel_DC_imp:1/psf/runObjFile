@@ -1,0 +1,127 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Apr  5 15:18:44 2021"
+"date" "Apr  5 15:18:44 2021"
+"simulator" "spectre"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 1
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("Rload")
+)
+"Rload=100.0" "runObject" (
+(
+"../../../1/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/logFile"
+"../../../1/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+"dataDir" "../../../1/Stimulator_TestBench:TB_OneChannel_DC_imp:1"
+ "Rload" 1.000000e+02
+)
+
+"Rload=300.0" "runObject" (
+(
+"../../../2/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/logFile"
+"../../../2/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 2
+"netlistDir" "../../../2/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+"dataDir" "../../../2/Stimulator_TestBench:TB_OneChannel_DC_imp:1"
+ "Rload" 3.000000e+02
+)
+
+"Rload=500.0" "runObject" (
+(
+"../../../3/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/logFile"
+"../../../3/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 3
+"netlistDir" "../../../3/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+"dataDir" "../../../3/Stimulator_TestBench:TB_OneChannel_DC_imp:1"
+ "Rload" 5.000000e+02
+)
+
+"Rload=700.0" "runObject" (
+(
+"../../../4/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/logFile"
+"../../../4/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 4
+"netlistDir" "../../../4/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+"dataDir" "../../../4/Stimulator_TestBench:TB_OneChannel_DC_imp:1"
+ "Rload" 7.000000e+02
+)
+
+"Rload=900.0" "runObject" (
+(
+"../../../5/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/logFile"
+"../../../5/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 5
+"netlistDir" "../../../5/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+"dataDir" "../../../5/Stimulator_TestBench:TB_OneChannel_DC_imp:1"
+ "Rload" 9.000000e+02
+)
+
+"Rload=1100.0" "runObject" (
+(
+"../../../6/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/logFile"
+"../../../6/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 6
+"netlistDir" "../../../6/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+"dataDir" "../../../6/Stimulator_TestBench:TB_OneChannel_DC_imp:1"
+ "Rload" 1.100000e+03
+)
+
+"Rload=1300.0" "runObject" (
+(
+"../../../7/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/logFile"
+"../../../7/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 7
+"netlistDir" "../../../7/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+"dataDir" "../../../7/Stimulator_TestBench:TB_OneChannel_DC_imp:1"
+ "Rload" 1.300000e+03
+)
+
+END

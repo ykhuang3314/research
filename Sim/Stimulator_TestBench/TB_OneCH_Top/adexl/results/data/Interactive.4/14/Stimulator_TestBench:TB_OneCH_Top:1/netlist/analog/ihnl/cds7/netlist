@@ -1,0 +1,62 @@
+    M41 (net31 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+    M38 (net33 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+    M35 (net35 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+    M32 (net37 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+    M22 (net39 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M42 (net30 Bias2 net31 vdd3) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+    M39 (net32 Bias2 net33 vdd3) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+    M36 (net34 Bias2 net35 vdd3) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+    M33 (net36 Bias2 net37 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+    M29 (net38 Bias2 net39 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M44 (Idac D1_3v net36 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M45 (Idac D2_3v net34 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M46 (Idac D3_3v net32 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M47 (Idac D4_3v net30 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M31 (Idac D0_3v net38 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    I16 LSHVT18U3VX1
+    I30 LSHVT18U3VX1
+    I14 LSHVT18U3VX1
+    I12 LSHVT18U3VX1
+    I29 LSHVT18U3VX1
+    I31 IN_3VX2
+    I15 IN_3VX2
+    I13 IN_3VX2
+    I11 IN_3VX2
+    I10 IN_3VX2
+    I45 AND2HDX0
+    I46 AND2HDX0
+    I47 AND2HDX0
+    I48 AND2HDX0
+    I49 AND2HDX0
+ends Idac_5bit_ST
+// End of subcircuit definition.

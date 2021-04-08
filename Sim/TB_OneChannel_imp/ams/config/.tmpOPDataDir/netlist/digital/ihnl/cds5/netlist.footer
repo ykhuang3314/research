@@ -1,0 +1,41 @@
+
+Digital_Stimulus_ST #( .Ramping(1'b1) ) I38 ( .ANO_ST(ANO_ST), 
+    .CAT_ST(CAT_ST), .DIS_ST(DIS_ST), .EN_ST(EN_ST), .MAG_ST(MAG_ST));
+
+IN_3VX2 I18 ( .A(en_3v), .Q(enb_3v));
+
+IN_3VX2 I31 ( .A(net247), .Q(D0_3v));
+
+IN_3VX2 I3 ( .A(net253), .Q(D1_3v));
+
+IN_3VX2 I5 ( .A(net254), .Q(D2_3v));
+
+IN_3VX2 I7 ( .A(net255), .Q(D3_3v));
+
+IN_3VX2 I9 ( .A(net257), .Q(D4_3v));
+
+LSHVT18U3VX1 I34 ( .A(ANO_ST), .Q(net238));
+
+LSHVT18U3VX1 I27 ( .A(ANO_ST), .Q(net233));
+
+LSHVT18U3VX1 I17 ( .A(EN_ST), .Q(en_3v));
+
+LSHVT18U3VX1 I0 ( .A(MAG_ST[0]), .Q(net247));
+
+LSHVT18U3VX1 I30 ( .A(MAG_ST[1]), .Q(net253));
+
+LSHVT18U3VX1 I4 ( .A(MAG_ST[2]), .Q(net254));
+
+LSHVT18U3VX1 I6 ( .A(MAG_ST[3]), .Q(net255));
+
+LSHVT18U3VX1 I29 ( .A(MAG_ST[4]), .Q(net257));
+
+LS_LowSide_V2_ST I33 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
+    .out(Ctrl_LS), .in(CAT_ST));
+
+LS_HighSide_V3_ST I36 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(Ctrl_HS), .in(CAT_ST));
+
+endmodule

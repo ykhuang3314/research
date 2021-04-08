@@ -1,0 +1,43 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Apr  5 15:03:11 2021"
+"date" "Apr  5 15:03:11 2021"
+"simulator" "ams"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 1
+"paramName" "#maeCorner"
+ "#maeCorner_num" 2
+"#maeCorner_name_1" "nom"
+"#maeCorner_name_2" "C0"
+ "#maeCorner_param_set_num" 1
+"#maeCorner_param_name_1" "Design_Point"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("Rload")
+)
+"Rload=1000.0" "runObject" (
+(
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+03
+)
+
+END

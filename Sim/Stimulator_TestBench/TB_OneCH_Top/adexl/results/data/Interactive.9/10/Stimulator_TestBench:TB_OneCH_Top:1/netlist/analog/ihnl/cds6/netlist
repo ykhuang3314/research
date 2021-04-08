@@ -1,0 +1,6 @@
+    nand2_1 nand2 GT_PDW=420.00n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=720.00n GT_PUL=180.00n
+    invr_1 invr GT_PDW=420.00n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=720.00n GT_PUL=180.00n
+ends AND2HDX0
+// End of subcircuit definition.

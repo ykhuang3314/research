@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - Digital_Lib ,Cell - Counter, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/Digital_Lib/Counter/functional/verilog.v lib:Digital_Lib cell:Counter view:functional"
+
+// HDL file for Lib - Stimulator_IMP ,Cell - Decoder3_8, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
+
+// Create required libraries 
+-makelib Stimulator_TestBench 
+-endlib 

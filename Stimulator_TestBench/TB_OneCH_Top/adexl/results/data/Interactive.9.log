@@ -1,0 +1,30 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Apr  6 11:51:39 2021 
+Best design point: 1
+Design specs: 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_0 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_1 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_2 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_3 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_4 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_5 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_6 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_7 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_8 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_9 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_10 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_11 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_12 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_13 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_14 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	C0_15 - 
+	Stimulator_TestBench:TB_OneCH_Top:1	corner	Nominal - 
+Design parameters: 
+	Rload		100
+
+Interactive.9
+Number of points completed: 5
+Number of simulation errors: 0
+Interactive.9 completed. 
+Current time: Tue Apr  6 12:59:15 2021 

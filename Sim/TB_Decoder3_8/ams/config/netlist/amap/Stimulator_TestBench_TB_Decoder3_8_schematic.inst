@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"V0n V1n" "analogLib_vdc_spectre"
+"V2n" "analogLib_vpulse_spectre"
+"I0n" "Stimulator_IMP_Decoder3_8_functional"
+"I2n" "Digital_Lib_Counter_functional"

@@ -1,0 +1,86 @@
+Begin Netlisting Apr  7 14:10:28 2021
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/55/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist'
+directory. This file prints the values of the netlister control variables, which
+are different from their default values. To disable the file creation, type
+'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the
+'.cdsinit' file.
+
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all
+stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic'
+has no ports. Make sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+rpp1k1                      spectre              *Stopping View*  
+ne3                         spectre              *Stopping View*  
+pe3                         spectre              *Stopping View*  
+ne                          spectre              *Stopping View*  
+pe                          spectre              *Stopping View*  
+csft5a                      spectre              *Stopping View*  
+nedia_bjt                   spectre              *Stopping View*  
+ped_bjt                     spectre              *Stopping View*  
+idc                         spectre              *Stopping View*  
+Decoder8                    functional           *Stopping View*  
+Digital_Stimulus_V2_ST      functional           *Stopping View*  
+res                         spectre              *Stopping View*  
+vdc                         spectre              *Stopping View*  
+TB_OneCH_Top                schematic                             
+SingleChannel_ST            schematic                             
+HalfBridge_ST               schematic                             
+LS_LowSide_V2_ST            schematic                             
+LS_HighSide_V3_ST           schematic                             
+CurrentSource_All_ST        schematic                             
+CurrentMirror_ST            schematic                             
+LSHVT18U3VX2                cmos_sch                              
+Idac_5bit_ST                schematic                             
+AND2HDX0                    cmos_sch                              
+invr                        schematic                             
+nand2                       schematic                             
+IN_3VX2                     cmos_sch                              
+invrv3                      schematic                             
+LSHVT18U3VX1                cmos_sch                              
+Ext_Iref_ST                 schematic                             
+
+---------- End of netlist configuration information   ----------
+Running netlist assembly..
+End netlisting Apr  7 14:10:36 2021

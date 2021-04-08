@@ -5,23 +5,23 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 27065
-Memory  available: 50.6932 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 6562
+Memory  available: 49.0992 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1270.3] ( 16 ),  1 [1294.8] ( 17 ),  2 [2400.0] ( 18 )
-                 3 [1200.4] ( 19 ),  4 [1200.0] ( 20 ),  5 [1220.9] ( 21 )
-                 6 [1283.3] ( 22 ),  7 [1199.7] ( 23 )
-        1:       8 [1200.3] ( 24 ),  9 [1818.8] ( 25 ), 10 [1207.5] ( 26 )
-                11 [1276.5] ( 27 ), 12 [1461.3] ( 28 ), 13 [1417.7] ( 29 )
-                14 [1215.7] ( 30 ), 15 [1300.2] ( 31 )
+        0:       0 [1200.0] ( 16 ),  1 [1400.0] ( 17 ),  2 [2400.0] ( 18 )
+                 3 [1200.1] ( 19 ),  4 [1200.4] ( 20 ),  5 [1200.1] ( 21 )
+                 6 [1294.5] ( 22 ),  7 [1200.0] ( 23 )
+        1:       8 [1341.1] ( 24 ),  9 [1311.5] ( 25 ), 10 [1289.6] ( 26 )
+                11 [1201.8] ( 27 ), 12 [1413.6] ( 28 ), 13 [1259.8] ( 29 )
+                14 [1422.5] ( 30 ), 15 [1470.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.3 %, 0.4 %, 0.3 %
+System load averages (1min, 5min, 15min) : 0.2 %, 0.1 %, 0.2 %
 Hyperthreading is enabled
 
 
-Simulating `input.scs' on s2424 at 4:39:32 PM, Fri Mar 19, 2021 (process id: 27065).
+Simulating `input.scs' on s2424 at 4:20:33 PM, Tue Mar 23, 2021 (process id: 6562).
 Current working directory: /home/ykhuang/research/Sim/TB_HBridge_DC/spectre/schematic/netlist
 Command line:
     /pkg/cadence/installs/SPECTRE181/tools/bin/spectre -64 input.scs  \
@@ -364,30 +364,40 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
-Time for NDB Parsing: CPU = 500.287 ms, elapsed = 588.347 ms.
-Time accumulated: CPU = 571.628 ms, elapsed = 588.361 ms.
-Peak resident memory used = 70.4 Mbytes.
+Time for NDB Parsing: CPU = 498.516 ms, elapsed = 585.271 ms.
+Time accumulated: CPU = 559.441 ms, elapsed = 585.286 ms.
+Peak resident memory used = 70.5 Mbytes.
 
-Time for Elaboration: CPU = 46.142 ms, elapsed = 46.144 ms.
-Time accumulated: CPU = 617.925 ms, elapsed = 634.658 ms.
-Peak resident memory used = 80.7 Mbytes.
+
+Warning from spectre in `LS_LowSide_V2_ST', during circuit read-in.
+    WARNING (SFE-2453): The global node `0' and sub circuit terminal `0' will be treated as the sub circuit terminal.
+    WARNING (SFE-2453): The global node `vdd3!' and sub circuit terminal `vdd3!' will be treated as the sub circuit terminal.
+    WARNING (SFE-2453): The global node `vdde!' and sub circuit terminal `vdde!' will be treated as the sub circuit terminal.
+Warning from spectre in `LS_HighSide_V3_ST', during circuit read-in.
+    WARNING (SFE-2453): The global node `0' and sub circuit terminal `0' will be treated as the sub circuit terminal.
+    WARNING (SFE-2453): The global node `vdd3!' and sub circuit terminal `vdd3!' will be treated as the sub circuit terminal.
+        Further occurrences of this warning will be suppressed.
+
+Time for Elaboration: CPU = 43.356 ms, elapsed = 43.3581 ms.
+Time accumulated: CPU = 602.958 ms, elapsed = 628.804 ms.
+Peak resident memory used = 81 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 4.612 ms, elapsed = 4.61292 ms.
-Time accumulated: CPU = 622.714 ms, elapsed = 639.447 ms.
-Peak resident memory used = 81.9 Mbytes.
+Time for EDB Visiting: CPU = 6.35 ms, elapsed = 6.35099 ms.
+Time accumulated: CPU = 609.467 ms, elapsed = 635.312 ms.
+Peak resident memory used = 82.3 Mbytes.
 
 
 Notice from spectre during initial setup.
+    I28.M13.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
     M2.ped_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is P.
-    M12.ped_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is P.
-    M18.ped_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is P.
+    M4.ped_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is P.
     M3.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
-    M15.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
+    M6.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
         Further occurrences of this notice will be suppressed.
 
 
@@ -417,74 +427,155 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 62
-                bjt 23    
-            bsim3v3 41    
-           hisim_hv 22    
+              nodes 136
+                bjt 18    
+            bsim3v3 40    
+          capacitor 72    
+           hisim_hv 18    
             isource 2     
-           resistor 17    
-               vcvs 1     
-            vsource 8     
+           resistor 97    
+            vsource 5     
 
 Analysis and control statement inventory:
-                 dc 1     
                info 7     
+               tran 1     
 
 Output statements:
              .probe 0     
            .measure 0     
-               save 0     
+               save 1     
 
 
 Notice from spectre.
-    5 notices suppressed.
+    4 notices suppressed.
+    1 warning suppressed.
 
-Time for parsing: CPU = 5.905 ms, elapsed = 10.426 ms.
-Time accumulated: CPU = 628.75 ms, elapsed = 650.004 ms.
-Peak resident memory used = 84 Mbytes.
+Time for parsing: CPU = 5.867 ms, elapsed = 10.237 ms.
+Time accumulated: CPU = 615.463 ms, elapsed = 645.677 ms.
+Peak resident memory used = 84.3 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~
 
-******************
-DC Analysis `dcOp'
-******************
+***********************************************
+Transient Analysis `tran': time = (0 s -> 5 ms)
+***********************************************
+Trying `homotopy = gmin' for initial conditions.
 
-Opening the PSF file ../psf/dcOp.dc ...
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(M0.m1:int_d) = 178.534 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+Maximum value of each quantity, excluding Verilog-A modules and dangling current sources:
+V: V(R1.n3) = 40 V
+I: I(V0:p) = 200 uA
+DC simulation time: CPU = 148.689 ms, elapsed = 148.69 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
 Important parameter values:
-    reltol = 100e-06
+    start = 0 s
+    outputstart = 0 s
+    stop = 5 ms
+    step = 5 us
+    maxstep = 50 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-06
     abstol(V) = 1 uV
     abstol(I) = 1 pA
     temp = 27 C
     tnom = 27 C
     tempeffects = all
-    gmindc = 1 pS
-Trying `homotopy = gmin'.
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
 
-Notice from spectre during DC analysis `dcOp'.
-    GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(M26.xpnp.q1:int_c) = 26.4398 mV
-        Use the `gmin_check' option to eliminate or expand this report.
-    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
 
+Output and IC/nodeset summary:
+                 save   6       (current)
+                 save   136     (voltage)
+
+
+Warning from spectre at time = 110.192 us during transient analysis `tran'.
+    WARNING (CMI-5007): I29.M1.m1: Actual channel length 7.82474e-10 is too small. As a result, it has been reset it to 1e-09. Check the values of the CLM5 and CLM6 parameters and reduce the values, if required.
+
+    tran: time = 125.8 us    (2.52 %), step = 925.6 ns    (18.5 m%)
+
+Warning from spectre at time = 220.193 us during transient analysis `tran'.
+    WARNING (CMI-5007): M4.m1: Actual channel length 4.17358e-10 is too small. As a result, it has been reset it to 1e-09. Check the values of the CLM5 and CLM6 parameters and reduce the values, if required.
+Warning from spectre at time = 220.496 us during transient analysis `tran'.
+    WARNING (CMI-5007): M4.m1: Actual channel length 7.15996e-10 is too small. As a result, it has been reset it to 1e-09. Check the values of the CLM5 and CLM6 parameters and reduce the values, if required.
+
+    tran: time = 381.1 us    (7.62 %), step = 29.9 us      (598 m%)
+
+Warning from spectre at time = 610.193 us during transient analysis `tran'.
+    WARNING (CMI-5007): I29.M1.m1: Actual channel length 2.87896e-10 is too small. As a result, it has been reset it to 1e-09. Check the values of the CLM5 and CLM6 parameters and reduce the values, if required.
+Warning from spectre at time = 610.496 us during transient analysis `tran'.
+    WARNING (CMI-5007): I29.M1.m1: Actual channel length 7.02074e-10 is too small. As a result, it has been reset it to 1e-09. Check the values of the CLM5 and CLM6 parameters and reduce the values, if required.
+        Further occurrences of this warning will be suppressed.
+
+    tran: time = 625.8 us    (12.5 %), step = 934.6 ns    (18.7 m%)
+    tran: time = 881.3 us    (17.6 %), step = 29.96 us     (599 m%)
+    tran: time = 1.126 ms    (22.5 %), step = 932.8 ns    (18.7 m%)
+    tran: time = 1.381 ms    (27.6 %), step = 29.97 us     (599 m%)
+    tran: time = 1.626 ms    (32.5 %), step = 935.2 ns    (18.7 m%)
+    tran: time = 1.881 ms    (37.6 %), step = 29.97 us     (599 m%)
+    tran: time = 2.126 ms    (42.5 %), step = 934.8 ns    (18.7 m%)
+    tran: time = 2.381 ms    (47.6 %), step = 29.92 us     (598 m%)
+    tran: time = 2.626 ms    (52.5 %), step = 935 ns      (18.7 m%)
+    tran: time = 2.881 ms    (57.6 %), step = 29.92 us     (598 m%)
+    tran: time = 3.126 ms    (62.5 %), step = 935.1 ns    (18.7 m%)
+    tran: time = 3.381 ms    (67.6 %), step = 29.92 us     (598 m%)
+    tran: time = 3.626 ms    (72.5 %), step = 935.2 ns    (18.7 m%)
+    tran: time = 3.881 ms    (77.6 %), step = 29.92 us     (598 m%)
+    tran: time = 4.126 ms    (82.5 %), step = 936.4 ns    (18.7 m%)
+    tran: time = 4.381 ms    (87.6 %), step = 29.9 us      (598 m%)
+    tran: time = 4.626 ms    (92.5 %), step = 936.4 ns    (18.7 m%)
+    tran: time = 4.881 ms    (97.6 %), step = 29.9 us      (598 m%)
+Number of accepted tran steps =             21673
 
 Maximum value achieved for any signal of each quantity: 
-V: V(vddh) = 40 V
-I: I(V0:p) = 30 mA
-Maximum value of each quantity, excluding Verilog-A modules and dangling current sources:
-V: V(M17.xpnp.q1:int_b) = 40 V
-I: I(V0:p) = 30 mA
-Convergence achieved in 623 iterations.
-DC simulation time: CPU = 142.995 ms, elapsed = 145.427 ms.
-Total time required for dc analysis `dcOp': CPU = 143.077 ms, elapsed = 145.505 ms.
-Time accumulated: CPU = 782.915 ms, elapsed = 806.6 ms.
-Peak resident memory used = 85.9 Mbytes.
+V: V(Ctrl_HS) = 42.25 V
+I: I(V6:p) = 20.61 mA
 
-dcOpInfo: writing operating point information to rawfile.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+          reltol = 10e-06, default 100e-06 (conservative)
+   -   The circuit contains signals of the voltage > 10V, consider to set highvoltage=yes to get better accuracy and convergence ability.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Opening the PSF file ../psf/dcOpInfo.info ...
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (12.2 %)      2 (5.1 %)       8 (83.3 %)     10 (8.2 %)
+                11 (10.1 %)     12 (1.3 %)      13 (1.4 %)      22 (3.5 %)
+                23 (2.8 %)      
+        Other   
+Initial condition solution time: CPU = 148.757 ms, elapsed = 148.761 ms.
+Intrinsic tran analysis time:    CPU = 9.67226 s, elapsed = 9.67548 s.
+Total time required for tran analysis `tran': CPU = 9.82389 s, elapsed = 9.8271 s.
+Time accumulated: CPU = 10.5327 s, elapsed = 10.5661 s.
+Peak resident memory used = 148 Mbytes.
+
+
+Notice from spectre.
+    24 warnings suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
 modelParameter: writing model parameter values to rawfile.
 
 Opening the PSF file ../psf/modelParameter.info ...
@@ -504,9 +595,9 @@ subckts: writing subcircuits to rawfile.
 
 Opening the PSFASCII file ../psf/subckts.info.subckts ...
 
-Aggregate audit (4:39:33 PM, Fri Mar 19, 2021):
-Time used: CPU = 865 ms, elapsed = 915 ms, util. = 94.5%.
-Time spent in licensing: elapsed = 138 ms, percentage of total = 15.1%.
-Peak memory used = 88.1 Mbytes.
-Simulation started at: 4:39:32 PM, Fri Mar 19, 2021, ended at: 4:39:33 PM, Fri Mar 19, 2021, with elapsed time (wall clock): 915 ms.
-spectre completes with 0 errors, 1 warning, and 9 notices.
+Aggregate audit (4:20:44 PM, Tue Mar 23, 2021):
+Time used: CPU = 10.6 s, elapsed = 10.7 s, util. = 99.4%.
+Time spent in licensing: elapsed = 150 ms.
+Peak memory used = 148 Mbytes.
+Simulation started at: 4:20:33 PM, Tue Mar 23, 2021, ended at: 4:20:44 PM, Tue Mar 23, 2021, with elapsed time (wall clock): 10.7 s.
+spectre completes with 0 errors, 11 warnings, and 11 notices.

@@ -1,0 +1,78 @@
+( global ( resolution_type basic ) )
+
+( net TB_Decoder3_8.Bin TB_Decoder3_8.Bin digital logic )
+( net TB_Decoder3_8.I2.out TB_Decoder3_8.Bin digital logic )
+( net TB_Decoder3_8.I0.Bin TB_Decoder3_8.Bin digital logic )
+
+( net TB_Decoder3_8.net4 TB_Decoder3_8.net4 analog/mixed electrical )
+( net TB_Decoder3_8.I0.Enable TB_Decoder3_8.net4 digital/mixed logic )
+
+( net TB_Decoder3_8.Dout TB_Decoder3_8.Dout digital logic )
+( net TB_Decoder3_8.I0.Dout TB_Decoder3_8.Dout digital logic )
+
+( net TB_Decoder3_8.CLK TB_Decoder3_8.CLK analog/mixed electrical )
+( net TB_Decoder3_8.I2.CLK TB_Decoder3_8.CLK digital/mixed logic )
+
+( net TB_Decoder3_8.I2.RESET TB_Decoder3_8.I2.RESET digital/mixed logic )
+( net cds_globals.\gnd!  TB_Decoder3_8.I2.RESET analog/mixed electrical )
+
+( net TB_Decoder3_8.net3 TB_Decoder3_8.net3 analog/mixed electrical )
+( net TB_Decoder3_8.I2.EN TB_Decoder3_8.net3 digital/mixed logic )
+
+( net cds_globals.\vdd3!  cds_globals.\vdd3!  digital logic )
+
+( net cds_globals.\vdde!  cds_globals.\vdde!  digital logic )
+
+( net cds_globals.\vdd!  cds_globals.\vdd!  digital logic )
+
+( connect
+   connectLib.E2L_2:module
+   TB_Decoder3_8.net4
+   electrical
+   analog
+   (
+    ( TB_Decoder3_8.I0.Enable logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Decoder3_8.CLK
+   electrical
+   analog
+   (
+    ( TB_Decoder3_8.I2.CLK logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_Decoder3_8.net3
+   electrical
+   analog
+   (
+    ( TB_Decoder3_8.I2.EN logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_Decoder3_8.I2.RESET logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance TB_Decoder3_8.I0 digital)
+(instance TB_Decoder3_8.I2 digital)
+(instance TB_Decoder3_8.V1 analog)
+(instance TB_Decoder3_8.V0 analog)
+(instance TB_Decoder3_8.V2 analog)
+(instance TB_Decoder3_8 mixed)
+(instance cds_globals mixed)

@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+Stimulator_TestBench/TB_Iref_imp/schematic TB_Iref_imp
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

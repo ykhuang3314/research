@@ -1,0 +1,1688 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">C0
+				<models>
+					<model enabled="0">config.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">param.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+						<modelsection>"3s"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+						<modelsection>"wp" "ws"</modelsection>
+					</model>
+					<model enabled="1">dio.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">mos.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+						<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+					</model>
+					<model enabled="1">photo.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+						<modelsection>"wp" "ws"</modelsection>
+					</model>
+					<model enabled="0">xh018.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>TB_OneCH_Top</value>
+					</option>
+					<option>lib
+						<value>Stimulator_TestBench</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>Stimulator_TestBench:TB_OneCH_Top:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>TB_OneCH_Top</value>
+					</option>
+					<option>lib
+						<value>Stimulator_TestBench</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="1">Rload
+				<value>{From/To}Auto:100:5:1200{From/To}</value>
+				<dependentTests>
+					<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 14:10:29 2021</timestamp>
+			<uuid>{51386f49-8b64-40c8-8937-88d4c4abb688}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_141029380</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>{From/To}Linear:100:100:1500{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 14:16:36 2021</timestamp>
+			<uuid>{086b1dfa-15a3-44d4-9f34-0bf407c9af18}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_141636955</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>Rload
+						<value>1k</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="0">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="0">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"tm" "wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="0">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="0">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws" "tm"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 15:02:46 2021</timestamp>
+			<uuid>{b1ff63fb-4ecb-49c5-b680-a77ad07eaf91}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_150246495</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"tm" "wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws" "tm"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 15:03:14 2021</timestamp>
+			<uuid>{528c39eb-4d88-4d8f-b705-6ad08ccbb00a}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_150314029</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 15:18:29 2021</timestamp>
+			<uuid>{5e44b2ec-1cd9-4358-86b4-27b426dd90d9}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_151829072</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.5</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 15:34:48 2021</timestamp>
+			<uuid>{559132e9-aa38-42a5-8051-cba1fd036efa}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_153448480</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.6</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 6 11:47:12 2021</timestamp>
+			<uuid>{4a7c1beb-1f53-4532-953c-9220c54e286c}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_114712637</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>{From/To}Auto:100:10:1200{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 6 11:50:56 2021</timestamp>
+			<uuid>{214b05c1-4bae-4682-850d-dc9842bac34e}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_115056301</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>Rload
+						<value>1k</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Rload
+						<value>{From/To}Auto:100:5:1200{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 6 11:51:38 2021</timestamp>
+			<uuid>{291df473-69cb-471c-a089-ae61b615acf2}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_115138651</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>Rload
+						<value>1k</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Stimulator_TestBench:TB_OneCH_Top:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TB_OneCH_Top</value>
+							</option>
+							<option>lib
+								<value>Stimulator_TestBench</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">Rload
+						<value>{From/To}Auto:100:5:1200{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Stimulator_TestBench:TB_OneCH_Top:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 7 14:07:37 2021</timestamp>
+			<uuid>{d4f5c024-6256-45d4-a8c5-04467e08c3dc}</uuid>
+			<resultsname>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_140737700</localpsfdir>
+			<psfdir>/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>Rload
+						<value>1k</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

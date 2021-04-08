@@ -1,0 +1,5 @@
+
+// Library name: D_CELLS_HD
+// Cell name: AND2HDX0
+// View name: cmos_sch
+subckt AND2HDX0 A B Q inh_ground_gnd inh_power_vdd

@@ -1,0 +1,28 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Mar 25 16:28:53 2021"
+"simulator" "spectre"
+"date" "Mar 25 16:28:53 2021"
+ "externalSweepVariableCount" 0
+"#maeTestName" "Stimulator_TestBench:TB_Iref_imp:1"
+"#maeHistoryName" "Interactive.3"
+"#maeCorner" "C0_17"
+ "#maeDesignPoint" 1
+"netlistDir" "../netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Run1" "runObject" (
+(
+"logFile"
+"artistLogFile"
+)
+""
+()
+)
+END

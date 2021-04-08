@@ -1,0 +1,8 @@
+
+// Library name: GATES_HD
+// Cell name: nand2
+// View name: schematic
+// Inherited view list: schematic
+subckt nand2
+parameters GT_PDW GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=180.00n

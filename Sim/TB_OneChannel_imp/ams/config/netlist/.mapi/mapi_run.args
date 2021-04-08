@@ -1,0 +1,8 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_ST view:functional"
+/home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/.mapi//dummyMapi.vhms

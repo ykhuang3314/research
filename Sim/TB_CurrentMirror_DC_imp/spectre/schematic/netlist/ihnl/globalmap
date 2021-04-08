@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+Stimulator_TestBench/TB_CurrentMirror_DC_imp/schematic TB_CurrentMirror_DC_imp
+GATES_3V/invrv3/schematic invrv3
+D_CELLS_3V/IN_3VX2/cmos_sch IN_3VX2
+D_CELLS_M3V/LSHVT18U3VX1/cmos_sch LSHVT18U3VX1
+$endmodel
+$net
+gnd! 0
+vdd3! vdd3!
+vdde! vdde!
+$endnet
+$param
+$endparam

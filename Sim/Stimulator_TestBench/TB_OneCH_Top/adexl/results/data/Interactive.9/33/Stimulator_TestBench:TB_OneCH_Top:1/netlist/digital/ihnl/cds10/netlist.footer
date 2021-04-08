@@ -1,0 +1,12 @@
+
+Ext_Iref_ST I0 ( .Iext(Iext), .vdd3(vdd3), .vss(vss), .Bias1(Bias1), 
+    .Bias2(Bias2));
+
+Idac_5bit_ST I1 ( .Enable(Enable_ST), .Idac(net9), .vdd3(vdd3), 
+    .Bias1(Bias1), .Bias2(Bias2), .D0(Mag0_ST), .D1(Mag1_ST), 
+    .D2(Mag2_ST), .D3(Mag3_ST), .D4(Mag4_ST));
+
+CurrentMirror_ST I2 ( .vss(vss), .Ist(Ist), .Iref(net9), .vddh(vddh), 
+    .vdd3(vdd3), .enable(Enable_ST));
+
+endmodule

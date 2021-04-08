@@ -1,0 +1,22 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+
+Stimulator_TestBench.TB_Digital_Stimuli:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_ST view:functional"

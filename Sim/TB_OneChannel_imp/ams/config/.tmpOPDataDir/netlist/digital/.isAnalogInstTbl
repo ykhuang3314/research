@@ -1,0 +1,15 @@
+("Stimulator_IMP" "LS_HighSide_V3_ST" "schematic" nil) nil
+("D_CELLS_M3V" "LSHVT18U3VX1" "cmos_sch" nil) nil
+("PRIMLIB" "pe3" "spectre" nil) t
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("PRIMLIB" "nedia_bjt" "spectre" nil) t
+("D_CELLS_3V" "IN_3VX2" "cmos_sch" nil) nil
+("PRIMLIB" "ne3" "spectre" nil) t
+("analogLib" "res" "spectre" nil) t
+("Stimulator_IMP" "LS_LowSide_V2_ST" "schematic" nil) nil
+("GATES_3V" "invrv3" "schematic" ansSpectreSubcktCall) nil
+("PRIMLIB" "csft5a" "spectre" nil) t
+("Stimulator_IMP" "Digital_Stimulus_ST" "functional" nil) nil
+("PRIMLIB" "rpp1k1" "spectre" nil) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("PRIMLIB" "ped_bjt" "spectre" nil) t

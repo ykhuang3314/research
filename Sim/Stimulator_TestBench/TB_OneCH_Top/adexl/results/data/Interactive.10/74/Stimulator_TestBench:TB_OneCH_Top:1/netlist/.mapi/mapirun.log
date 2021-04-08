@@ -1,0 +1,32 @@
+TOOL:	xrun(64)	18.03-s018: Started on Apr 07, 2021 at 14:11:21 CEST
+xrun
+	-f /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/74/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi/mapi_run.args
+		-64bit
+		-compile
+		-NOCOPYRIGHT
+		-nostdout
+		-nowarn DLNOHV
+		-logfile /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/74/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi/mapirun.log
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-allowredefinition
+		-incdir /home/ykhuang/research/
+		-nclibdirpath /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/74/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi/
+		-cdslib /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/74/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi/cds.lib
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v lib:Stimulator_IMP cell:Decoder8 view:functional"
+		/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/74/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//dummyMapi.vams
+		/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/74/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//dummyMapi.vhms
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+file: /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/74/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//dummyMapi.vams
+file: /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v
+	module Stimulator_IMP.Digital_Stimulus_V2_ST:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v
+	module Stimulator_IMP.Decoder8:functional
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun(64)	18.03-s018: Exiting on Apr 07, 2021 at 14:11:24 CEST  (total: 00:00:03)

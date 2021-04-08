@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "18.1.0.516.isr12"
-"date" "4:39:33 PM, Fri Mar 19, 2021"
+"date" "4:20:34 PM, Tue Mar 23, 2021"
 "design" "// Generated for: spectre"
 "analysis type" "info"
 "analysis name" "designParamVals"
@@ -15,7 +15,6 @@ TYPE
 "tnom" FLOAT DOUBLE
 "time" FLOAT DOUBLE
 "Iref" FLOAT DOUBLE
-"vdac" FLOAT DOUBLE
 "__bsim4_diomod" FLOAT DOUBLE
 "xsf__mos" FLOAT DOUBLE
 "xsf__bip" FLOAT DOUBLE
@@ -1245,7 +1244,6 @@ VALUE
 2.700000000000000e+01
 0.000000000000000e+00
 1.000000000000000e-04
-1.500000000000000e+00
 1.000000000000000e+00
 3.000000000000000e+00
 3.000000000000000e+00

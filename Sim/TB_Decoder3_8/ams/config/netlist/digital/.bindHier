@@ -1,0 +1,5 @@
+("Stimulator_TestBench" "TB_Decoder3_8" "schematic" "schematic") nil
+("analogLib" "vpulse" "spectre" "spectre") nil
+("Digital_Lib" "Counter" "functional" "functional") nil
+("Stimulator_IMP" "Decoder3_8" "functional" "functional") nil
+("analogLib" "vdc" "spectre" "spectre") nil

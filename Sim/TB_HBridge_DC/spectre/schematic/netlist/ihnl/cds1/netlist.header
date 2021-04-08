@@ -1,5 +1,0 @@
-
-// Library name: D_CELLS_M3V
-// Cell name: LSHVT18U3VX1
-// View name: cmos_sch
-subckt LSHVT18U3VX1 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde

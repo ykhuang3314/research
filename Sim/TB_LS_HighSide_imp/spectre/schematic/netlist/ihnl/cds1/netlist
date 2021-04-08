@@ -1,0 +1,15 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_LS_HighSide_imp
+// View name: schematic
+M13 (net015 in_3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+V0 (in 0) vsource dc=1.8 type=pulse val0=0 val1=1.8 period=100u delay=50u \
+        rise=1p fall=1p width=50u
+C0 (net011 0) capacitor c=1p
+V3 (vddH 0) vsource dc=40 type=dc
+V2 (vdde! 0) vsource dc=1.8 type=dc
+V1 (vdd3! 0) vsource dc=3.3 type=dc
+R0 (vddH net011) rpp1k1 l=304.58u w=2u m=1 par1=(1)
+R1 (net011 net015) rpp1k1 l=506.18u w=2u m=1 par1=(1)
+I10 (in in_3v 0 vdd3! vdde!) LSHVT18U3VX1

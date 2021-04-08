@@ -1,5 +1,5 @@
 "Stimulator_IMP.INV3_ST.schematic.termorder" (("in" "out" "vdd3" "vss") ("in" "out" "vdd3" "vss"))
 "D_CELLS_3V.IN_3VX1.cmos_sch.termorder" (("A" "Q" "gnd!" "vdd3!") ("A" "Q" "gnd!" "vdd3!"))
-"Stimulator_IMP.LS_HighSide_V3_ST.schematic.termorder" nil
 "GATES_3V.invrv3.schematic.termorder" (("in" "out" "gnd!" "vdd3!") ("in" "out" "gnd!" "vdd3!"))
+"Stimulator_IMP.LS_HighSide_V3_ST.schematic.termorder" nil
 "D_CELLS_M3V.LSHVT18U3VX1.cmos_sch.termorder" (("A" "Q" "gnd!" "vdd3!" "vdde!") ("A" "Q" "gnd!" "vdd3!" "vdde!"))

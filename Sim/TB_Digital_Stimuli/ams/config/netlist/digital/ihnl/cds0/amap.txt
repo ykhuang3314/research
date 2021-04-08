@@ -1,0 +1,9 @@
+netMap,*TB_Digital_Stimuli,*MAG_ST<4>,*MAG_ST[4]
+netMap,*TB_Digital_Stimuli,*MAG_ST<3>,*MAG_ST[3]
+netMap,*TB_Digital_Stimuli,*MAG_ST<2>,*MAG_ST[2]
+netMap,*TB_Digital_Stimuli,*MAG_ST<1>,*MAG_ST[1]
+netMap,*TB_Digital_Stimuli,*MAG_ST<0>,*MAG_ST[0]
+instMap,*TB_Digital_Stimuli,*I0,*I0
+instMaster,*TB_Digital_Stimuli,*I0,*Stimulator_IMP_Digital_Stimulus_ST_functional
+cellMap,*TB_Digital_Stimuli,*TB_Digital_Stimuli,*Stimulator_TestBench,*schematic
+topMap,*TB_Digital_Stimuli

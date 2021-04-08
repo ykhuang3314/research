@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"nand2_1n" "nand2"
+"invr_1n" "invr"
+"Av" ":1v"
+"Bv" ":2v"
+"Qv" ":3v"
+"gndv" ":4v"
+"vddv" ":5v"

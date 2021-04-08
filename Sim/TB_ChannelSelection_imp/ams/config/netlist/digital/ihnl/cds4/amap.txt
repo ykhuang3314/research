@@ -1,0 +1,5 @@
+netMap,*Ext_Iref_ST,*vdd3!,*cds_globals.\vdd3! 
+netMap,*Ext_Iref_ST,*vdde!,*cds_globals.\vdde! 
+netMap,*Ext_Iref_ST,*gnd!,*cds_globals.\gnd! 
+netMap,*Ext_Iref_ST,*vdd!,*cds_globals.\vdd! 
+cellMap,*Ext_Iref_ST,*Ext_Iref_ST,*Stimulator_IMP,*schematic

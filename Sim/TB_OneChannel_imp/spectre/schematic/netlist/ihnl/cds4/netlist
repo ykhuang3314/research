@@ -1,0 +1,8 @@
+    M13 (net10 inn3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+    R0 (vddh out) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (out net10) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    I10 (in inn3v inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
+        LSHVT18U3VX1
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.

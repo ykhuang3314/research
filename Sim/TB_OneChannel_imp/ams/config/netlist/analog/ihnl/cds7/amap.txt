@@ -1,0 +1,13 @@
+cellMap,*invr,*invr,*GATES_HD,*schematic
+netMap,*invr,*vdd3!,*vdd3!
+netMap,*invr,*vdde!,*vdde!
+netMap,*invr,*vdd!,*vdd!
+netMap,*invr,*gnd!,*0
+instMap,*invr,*ne,*ne
+instMaster,*invr,*ne,*PRIMLIB_ne_spectre,*ne
+instMap,*invr,*pe,*pe
+instMaster,*invr,*pe,*PRIMLIB_pe_spectre,*pe
+netMap,*invr,*inh_power_vdd_vdd!,*inh_power_vdd
+netMap,*invr,*inh_ground_gnd_gnd!,*inh_ground_gnd
+portMap,*invr,*in,*in
+portMap,*invr,*out,*out

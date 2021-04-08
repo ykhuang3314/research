@@ -1,0 +1,37 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Mar 25 16:32:08 2021 
+Best design point: 1
+Design specs: 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_0 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_1 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_2 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_3 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_4 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_5 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_6 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_7 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_8 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_9 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_10 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_11 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_12 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_13 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_14 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_15 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_16 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_17 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_18 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_19 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_20 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_21 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_22 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_23 - 
+Design parameters: 
+	vdd		3.3
+
+Interactive.4
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.4 completed. 
+Current time: Thu Mar 25 16:32:51 2021 

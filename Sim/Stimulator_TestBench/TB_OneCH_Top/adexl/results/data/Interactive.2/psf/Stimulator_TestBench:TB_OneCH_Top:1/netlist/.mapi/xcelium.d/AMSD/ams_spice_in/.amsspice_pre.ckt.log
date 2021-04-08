@@ -1,0 +1,49 @@
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.433.isr9 64bit -- 5 Nov 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 29138
+Memory  available: 49.8448 GB  physical: 67.2863 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1213.5] ( 16 ),  1 [1274.3] ( 17 ),  2 [1246.7] ( 18 )
+                 3 [1200.1] ( 19 ),  4 [1200.0] ( 20 ),  5 [1200.1] ( 21 )
+                 6 [1200.1] ( 22 ),  7 [1225.2] ( 23 )
+        1:       8 [1199.9] ( 24 ),  9 [1276.9] ( 25 ), 10 [1238.1] ( 26 )
+                11 [1238.8] ( 27 ), 12 [1229.2] ( 28 ), 13 [1227.8] ( 29 )
+                14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
+        
+System load averages (1min, 5min, 15min) : 0.5 %, 0.3 %, 0.3 %
+Hyperthreading is enabled
+
+
+Simulating `/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 2:16:52 PM, Mon Apr 5, 2021 (process id: 29138).
+Current working directory: /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=
+Command line:
+    amsprimtool  \
+        /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt  \
+        -noraw -va,amsspice_pre -ahdllibdir  \
+        /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/ahdlSimDB  \
+        =log  \
+        /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
+        -token  \
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDA126F37837D471DEBA2AFC31339371C2EE03B60624923FE3B033F21622A464DF992CD73A3E9852D5A330EB763E9E4FFF981981157F9A7FC0FF23EC2A35883FC2F32AF924318F3FD49536FE72229A64D5A465BC6762D4759E9224A97F259779DD981BE93B35884FE4AE3BA32A6AAF73D88210E73C18A475F3E928D7363E9E219FB561B73D7E96649FEE6AEF29339E3FC8F334AE147FBA3ED48D7FD33023A471DDA401F722399575EFE67EB161238871DD9428EF30229E4FC0E37CFA3B699F3085A979E50960FB2890A83DEEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B09204D83C65FB2A89A83DED3C50FB10B0A83DED3C50FB10B0C857128EAF4970DA0000836D
+
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi/xcelium.d/AMSD/ams_spice_in/.amsspice_pre.ckt
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 126.559 ms, elapsed = 215.402 ms.
+Time accumulated: CPU = 189.732 ms, elapsed = 215.416 ms.
+Peak resident memory used = 48.3 Mbytes.
+

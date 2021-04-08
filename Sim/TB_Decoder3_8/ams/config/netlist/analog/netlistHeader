@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr  1 15:17:43 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_Decoder3_8
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

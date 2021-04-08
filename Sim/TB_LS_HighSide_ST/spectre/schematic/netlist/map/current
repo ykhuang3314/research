@@ -4,7 +4,7 @@
   blockName "TB_LS_HighSide_ST"
   repList "spectre veriloga ahdl cmos_sch schematic"
   stopList "spectre veriloga ahdl"
-  globalList "gnd! vdde! vdd3!"
+  globalList "gnd! vdd3! vdde!"
   hierDelim "."
   netlistDir "/home/ykhuang/research/Sim/TB_LS_HighSide_ST/spectre/schematic/netlist"
  )
@@ -12,15 +12,9 @@
 ( "gnd!" "0" )
  )
 ( model
-( "D_CELLS_3V/IN_3VX1/cmos_sch" "IN_3VX1" )
-( "GATES_3V/invrv3/schematic" "invrv3" )
 ( "Stimulator_TestBench/TB_LS_HighSide_ST/schematic" "TB_LS_HighSide_ST" )
-( "Stimulator_IMP/LS_HighSide_V3_ST/schematic" "LS_HighSide_V3_ST" )
 ( "D_CELLS_M3V/LSHVT18U3VX1/cmos_sch" "LSHVT18U3VX1" )
  )
-( "TB_LS_HighSide_ST" "ihnl/cds1/map" )
-( "invrv3" "ihnl/cds3/map" )
+( "TB_LS_HighSide_ST" "ihnl/cds3/map" )
 ( "LSHVT18U3VX1" "ihnl/cds2/map" )
-( "IN_3VX1" "ihnl/cds4/map" )
-( "LS_HighSide_V3_ST" "ihnl/cds5/map" )
  )

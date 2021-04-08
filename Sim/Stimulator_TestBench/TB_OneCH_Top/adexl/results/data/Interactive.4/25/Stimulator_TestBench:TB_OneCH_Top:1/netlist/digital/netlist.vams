@@ -1,0 +1,555 @@
+`include "disciplines.vams"
+`include "userDisciplines.vams"
+// Library - Stimulator_IMP, Cell - Ext_Iref_ST, View - schematic
+// LAST TIME SAVED: Mar 31 11:16:25 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="Ext_Iref_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 31 11:16:25 2021" *)
+
+module Ext_Iref_ST (Bias1, Bias2, Iext, vdd3, vss);
+
+output  Bias1, Bias2;
+
+inout  Iext, vdd3, vss;
+
+
+endmodule
+// Library - D_CELLS_M3V, Cell - LSHVT18U3VX1, View - cmos_sch
+// LAST TIME SAVED: Jun  7 14:44:58 2018
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib D_CELLS_M3V
+`view cmos_sch
+
+(* cds_ams_schematic *) 
+(* dfII_lib="D_CELLS_M3V", dfII_cell="LSHVT18U3VX1", dfII_view="cmos_sch", worklib_name="D_CELLS_M3V", view_name="cmos_sch", last_save_time="Jun  7 14:44:58 2018" *)
+
+module LSHVT18U3VX1 (Q, A);
+
+output  Q;
+
+input  A;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd3";
+integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
+\vdd3! ;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdde";
+integer inh_conn_def_value = "cds_globals.\\vdde! ";*)
+\vdde! ;
+
+
+endmodule
+// Library - Stimulator_IMP, Cell - CurrentSource_All_ST, View -
+//schematic
+// LAST TIME SAVED: Apr  1 15:53:40 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentSource_All_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  1 15:53:40 2021" *)
+
+module CurrentSource_All_ST (Iext, Ist, vdd3, vddh, vss, Enable_ST, 
+    Mag0_ST, Mag1_ST, Mag2_ST, Mag3_ST, Mag4_ST);
+
+inout  Iext, Ist, vdd3, vddh, vss;
+
+input  Enable_ST, Mag0_ST, Mag1_ST, Mag2_ST, Mag3_ST, Mag4_ST;
+
+
+Ext_Iref_ST I0 ( .Iext(Iext), .vdd3(vdd3), .vss(vss), .Bias1(Bias1), 
+    .Bias2(Bias2));
+
+Idac_5bit_ST I1 ( .Enable(Enable_ST), .Idac(net9), .vdd3(vdd3), 
+    .Bias1(Bias1), .Bias2(Bias2), .D0(Mag0_ST), .D1(Mag1_ST), 
+    .D2(Mag2_ST), .D3(Mag3_ST), .D4(Mag4_ST));
+
+CurrentMirror_ST I2 ( .vss(vss), .Ist(Ist), .Iref(net9), .vddh(vddh), 
+    .vdd3(vdd3), .enable(Enable_ST));
+
+endmodule
+// Library - Stimulator_IMP, Cell - LS_HighSide_V3_ST, View - schematic
+// LAST TIME SAVED: Mar 19 17:27:00 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="LS_HighSide_V3_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 19 17:27:00 2021" *)
+
+module LS_HighSide_V3_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
+    .\vdde! (cdsNet0), vddh, in);
+
+output  out;
+
+inout  cdsNet2, cdsNet1, cdsNet0, vddh;
+
+input  in;
+
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst1(cdsNet2, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst2(cdsNet1, cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst3(cdsNet0, cds_globals.\vdde! );
+
+LSHVT18U3VX1 I10 ( .A(in), .Q(inn3v));
+
+endmodule
+// Library - Stimulator_IMP, Cell - LS_LowSide_V2_ST, View - schematic
+// LAST TIME SAVED: Mar 23 11:40:23 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="LS_LowSide_V2_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 23 11:40:23 2021" *)
+
+module LS_LowSide_V2_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
+    .\vdde! (cdsNet0), vddh, in);
+
+output  out;
+
+inout  cdsNet2, cdsNet1, cdsNet0, vddh;
+
+input  in;
+
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst4(cdsNet2, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst5(cdsNet1, cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst6(cdsNet0, cds_globals.\vdde! );
+
+LSHVT18U3VX1 I0 ( .A(in), .Q(in_3V));
+
+endmodule
+// Library - Stimulator_IMP, Cell - HalfBridge_ST, View - schematic
+// LAST TIME SAVED: Mar 30 17:29:00 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="HalfBridge_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 30 17:29:00 2021" *)
+
+module HalfBridge_ST (OUT, Ist, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
+    .\vdde! (cdsNet0), vddh, Ctrl_HS, Ctrl_LS);
+
+output  OUT;
+
+inout  Ist, cdsNet2, cdsNet1, cdsNet0, vddh;
+
+input  Ctrl_HS, Ctrl_LS;
+
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst7(cdsNet2, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst8(cdsNet1, cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst9(cdsNet0, cds_globals.\vdde! );
+
+LS_HighSide_V3_ST I8 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(net07), .in(Ctrl_HS));
+
+LS_LowSide_V2_ST I9 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
+    .out(net08), .in(Ctrl_LS));
+
+endmodule
+// Library - Stimulator_IMP, Cell - SingleChannel_ST, View - schematic
+// LAST TIME SAVED: Apr  5 13:23:53 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="SingleChannel_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  5 13:23:53 2021" *)
+
+module SingleChannel_ST (Iext, .\gnd! (cdsNet2), out1, out2, .\vdd3! 
+    (cdsNet1), .\vdde! (cdsNet0), vddh, CtrlHS_1, CtrlHS_2, CtrlLS_1, 
+    CtrlLS_2, Enable_ST, Mag0_ST, Mag1_ST, Mag2_ST, Mag3_ST, Mag4_ST);
+
+inout  Iext, cdsNet2, out1, out2, cdsNet1, cdsNet0, vddh;
+
+input  CtrlHS_1, CtrlHS_2, CtrlLS_1, CtrlLS_2, Enable_ST, Mag0_ST, 
+    Mag1_ST, Mag2_ST, Mag3_ST, Mag4_ST;
+
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst10(cdsNet2, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst11(cdsNet1, cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst12(cdsNet0, cds_globals.\vdde! );
+
+CurrentSource_All_ST I0 ( .vss(cds_globals.\gnd! ), .Ist(net10), 
+    .Iext(Iext), .vdd3(cds_globals.\vdd3! ), .vddh(vddh), 
+    .Enable_ST(Enable_ST), .Mag0_ST(Mag0_ST), .Mag1_ST(Mag1_ST), 
+    .Mag2_ST(Mag2_ST), .Mag3_ST(Mag3_ST), .Mag4_ST(Mag4_ST));
+
+HalfBridge_ST I2 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(CtrlLS_2), .Ctrl_HS(CtrlHS_2), .OUT(out2), .Ist(net10));
+
+HalfBridge_ST I1 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(CtrlLS_1), .Ctrl_HS(CtrlHS_1), .OUT(out1), .Ist(net10));
+
+endmodule
+// Library - Stimulator_TestBench, Cell - TB_OneCH_Top, View -
+//schematic
+// LAST TIME SAVED: Apr  5 14:10:04 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_OneCH_Top", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Apr  5 14:10:04 2021" *)
+
+module TB_OneCH_Top ();
+
+// Buses in the design
+
+wire  [7:0]  CtrlHS;
+
+wire  [7:0]  CtrlLS;
+
+wire  [3:0]  ChSel_HS;
+
+wire  [3:0]  ChSel_LS;
+
+wire  [4:0]  Mag_ST;
+
+
+SingleChannel_ST I0 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .Iext(net6), 
+    .out1(vout1), .out2(vout2), .vddh(vddh), .CtrlHS_1(CtrlHS[0]), 
+    .CtrlHS_2(CtrlHS[1]), .CtrlLS_1(CtrlLS[0]), .CtrlLS_2(CtrlLS[1]), 
+    .Enable_ST(Enable_ST), .Mag0_ST(Mag_ST[0]), .Mag1_ST(Mag_ST[1]), 
+    .Mag2_ST(Mag_ST[2]), .Mag3_ST(Mag_ST[3]), .Mag4_ST(Mag_ST[4]));
+
+Decoder8 I30 ( .Dout(CtrlHS), .Bin(ChSel_HS));
+
+Decoder8 I31 ( .Dout(CtrlLS), .Bin(ChSel_LS));
+
+Digital_Stimulus_V2_ST #( .MAG(5'b11110) ) I32 ( .ChSel_HS(ChSel_HS), 
+    .ChSel_LS(ChSel_LS), .EN_ST(Enable_ST), .MAG_ST(Mag_ST));
+
+endmodule
+// Library - GATES_3V, Cell - invrv3, View - schematic
+// LAST TIME SAVED: Mar  7 12:42:39 2018
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib GATES_3V
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="GATES_3V", dfII_cell="invrv3", dfII_view="schematic", worklib_name="GATES_3V", view_name="schematic", last_save_time="Mar  7 12:42:39 2018" *)
+
+module invrv3 (out, in);
+
+parameter GT_PDW=0;
+parameter GT_PDL=350.00n;
+parameter sx=4.8e-07;
+parameter lc=2.7e-07;
+parameter GT_PUW=0;
+parameter GT_PUL=300.00n;
+
+output  out;
+
+input  in;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd3";
+integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
+\vdd3! ;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+
+endmodule
+// Library - D_CELLS_3V, Cell - IN_3VX2, View - cmos_sch
+// LAST TIME SAVED: Feb 20 10:23:55 2018
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib D_CELLS_3V
+`view cmos_sch
+
+(* cds_ams_schematic *) 
+(* dfII_lib="D_CELLS_3V", dfII_cell="IN_3VX2", dfII_view="cmos_sch", worklib_name="D_CELLS_3V", view_name="cmos_sch", last_save_time="Feb 20 10:23:55 2018" *)
+
+module IN_3VX2 (Q, A);
+
+output  Q;
+
+input  A;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd3";
+integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
+\vdd3! ;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+
+invrv3 #( .sx(4.8e-07), .GT_PUW(2.94u), .GT_PDL(350.00n), .lc(2.7e-07), .GT_PUL(300.00n) 
+    , .GT_PDW(960.00n) ) invr_1 ( .in(A), .out(Q));
+
+endmodule
+// Library - GATES_HD, Cell - nand2, View - schematic
+// LAST TIME SAVED: Jan 18 15:00:04 2018
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib GATES_HD
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="GATES_HD", dfII_cell="nand2", dfII_view="schematic", worklib_name="GATES_HD", view_name="schematic", last_save_time="Jan 18 15:00:04 2018" *)
+
+module nand2 (out, a, b);
+
+parameter GT_PDW=0;
+parameter GT_PDL=180.00n;
+parameter sx=4.8e-07;
+parameter lc=2.7e-07;
+parameter GT_PUW=0;
+parameter GT_PUL=180.00n;
+
+output  out;
+
+input  a, b;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
+
+
+endmodule
+// Library - GATES_HD, Cell - invr, View - schematic
+// LAST TIME SAVED: Jan 18 15:00:13 2018
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib GATES_HD
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="GATES_HD", dfII_cell="invr", dfII_view="schematic", worklib_name="GATES_HD", view_name="schematic", last_save_time="Jan 18 15:00:13 2018" *)
+
+module invr (out, in);
+
+parameter GT_PDW=0;
+parameter GT_PDL=180.00n;
+parameter sx=4.8e-07;
+parameter lc=2.7e-07;
+parameter GT_PUW=0;
+parameter GT_PUL=180.00n;
+
+output  out;
+
+input  in;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
+
+
+endmodule
+// Library - D_CELLS_HD, Cell - AND2HDX0, View - cmos_sch
+// LAST TIME SAVED: Jan 23 08:10:19 2018
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib D_CELLS_HD
+`view cmos_sch
+
+(* cds_ams_schematic *) 
+(* dfII_lib="D_CELLS_HD", dfII_cell="AND2HDX0", dfII_view="cmos_sch", worklib_name="D_CELLS_HD", view_name="cmos_sch", last_save_time="Jan 23 08:10:19 2018" *)
+
+module AND2HDX0 (Q, A, B);
+
+output  Q;
+
+input  A, B;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
+
+
+nand2 #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) nand2_1 ( .a(A), .b(B), .out(net10));
+
+invr #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) invr_1 ( .out(Q), .in(net10));
+
+endmodule
+// Library - Stimulator_IMP, Cell - Idac_5bit_ST, View - schematic
+// LAST TIME SAVED: Mar 31 15:05:20 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="Idac_5bit_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 31 15:05:20 2021" *)
+
+module Idac_5bit_ST (Idac, vdd3, Bias1, Bias2, D0, D1, D2, D3, D4, 
+    Enable);
+
+output  Idac;
+
+inout  vdd3;
+
+input  Bias1, Bias2, D0, D1, D2, D3, D4, Enable;
+
+
+LSHVT18U3VX1 I16 ( .A(net024), .Q(net020));
+
+LSHVT18U3VX1 I30 ( .A(net021), .Q(net019));
+
+LSHVT18U3VX1 I14 ( .A(net022), .Q(net018));
+
+LSHVT18U3VX1 I12 ( .A(net023), .Q(net017));
+
+LSHVT18U3VX1 I29 ( .A(net026), .Q(net025));
+
+IN_3VX2 I31 ( .A(net020), .Q(D0_3v));
+
+IN_3VX2 I15 ( .A(net019), .Q(D1_3v));
+
+IN_3VX2 I13 ( .A(net018), .Q(D2_3v));
+
+IN_3VX2 I11 ( .A(net017), .Q(D3_3v));
+
+IN_3VX2 I10 ( .A(net025), .Q(D4_3v));
+
+AND2HDX0 I45 ( .Q(net024), .B(D0), .A(Enable));
+
+AND2HDX0 I46 ( .Q(net021), .B(D1), .A(Enable));
+
+AND2HDX0 I47 ( .Q(net022), .B(D2), .A(Enable));
+
+AND2HDX0 I48 ( .Q(net023), .B(D3), .A(Enable));
+
+AND2HDX0 I49 ( .Q(net026), .B(D4), .A(Enable));
+
+endmodule
+// Library - D_CELLS_M3V, Cell - LSHVT18U3VX2, View - cmos_sch
+// LAST TIME SAVED: Jun  7 14:44:51 2018
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib D_CELLS_M3V
+`view cmos_sch
+
+(* cds_ams_schematic *) 
+(* dfII_lib="D_CELLS_M3V", dfII_cell="LSHVT18U3VX2", dfII_view="cmos_sch", worklib_name="D_CELLS_M3V", view_name="cmos_sch", last_save_time="Jun  7 14:44:51 2018" *)
+
+module LSHVT18U3VX2 (Q, A);
+
+output  Q;
+
+input  A;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd3";
+integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
+\vdd3! ;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdde";
+integer inh_conn_def_value = "cds_globals.\\vdde! ";*)
+\vdde! ;
+
+
+endmodule
+// Library - Stimulator_IMP, Cell - CurrentMirror_ST, View - schematic
+// LAST TIME SAVED: Apr  1 15:37:28 2021
+// NETLIST TIME: Apr  5 15:11:05 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentMirror_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  1 15:37:28 2021" *)
+
+module CurrentMirror_ST (Iref, Ist, vdd3, vddh, vss, enable);
+
+inout  Iref, Ist, vdd3, vddh, vss;
+
+input  enable;
+
+
+LSHVT18U3VX2 I17 ( .A(enable), .Q(en_3v));
+
+endmodule
+`noworklib
+`noview
+
+ // END AMS-UNL Netlist

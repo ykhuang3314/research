@@ -1,0 +1,43 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Apr  6 11:48:18 2021"
+"date" "Apr  6 11:48:18 2021"
+"simulator" "ams"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 1
+"paramName" "#maeCorner"
+ "#maeCorner_num" 2
+"#maeCorner_name_1" "nom"
+"#maeCorner_name_2" "C0_0"
+ "#maeCorner_param_set_num" 1
+"#maeCorner_param_name_1" "modelFiles"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("modelFiles")
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm" "runObject" (
+(
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1"
+"modelFiles" "config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+)
+
+END

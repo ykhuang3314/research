@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"outv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".out\")))v"
+"outv" ".outv"
+"outv" ".\\1 v"
+"inv" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".in\")))v"
+"inv" ".inv"
+"inv" ".\\2 v"
+"gndv" ".gndv"
+"vdd3v" ".vdd3v"
+"MN1n" "PRIMLIB_ne3_spectre"
+"MP1n" "PRIMLIB_pe3_spectre"

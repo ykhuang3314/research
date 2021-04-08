@@ -1,0 +1,176 @@
+xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.03-s018: Started on Apr 05, 2021 at 15:03:00 CEST
+xrun
+	-f xrunArgs
+		-UNBUFFERED
+		-cdslib ./cds.lib
+		-errormax 50
+		-status
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-incdir /home/ykhuang/research/
+		-ade
+		-timescale 1ns/1ns
+		-vtimescale 1ns/1ns
+		-discipline logic
+		-delay_mode None
+		-novitalaccl
+		-access r
+		-noparamerr
+		-amspartinfo ../psf/partition.info
+		-rnm_partinfo
+		-modelincdir /home/ykhuang/research/
+		./spiceModels.scs
+		./amsControlSpectre.scs
+		-input ./probe.tcl
+		-run
+		-exit
+		-xmsimargs "+amsrawdir ../psf"
+		-spectre_args "-ahdllibdir /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.3/sharedData/Job10/ahdl/input.ahdlSimDB"
+		-simcompatible_ams spectre
+		-name Stimulator_TestBench.TB_OneCH_Top:config
+		-amsconnrules ConnRules_18V_full_fast
+		+define+CDS_SELECT_CRS
+		+define+CONNRULES_18V_FULL_FAST
+		-amsconnrules ConnRules_inhconn_full_fast_gnd
+		+define+CONNRULES_INHCONN_FULL_FAST_GND
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+		/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+		-allowredefinition
+		-amsbind
+		-top Stimulator_TestBench.TB_OneCH_Top:schematic
+		-top cds_globals
+		./netlist.vams
+		-f ./textInputs
+			-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
+			-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v lib:Stimulator_IMP cell:Decoder8 view:functional"
+			-makelib GATES_HD
+			-makelib D_CELLS_M3V
+			-makelib Stimulator_TestBench
+			-makelib D_CELLS_3V
+			-makelib D_CELLS_HD
+			-makelib GATES_3V
+			-endlib
+		./cds_globals.vams
+		/pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v
+		-l ../psf/xrun.log
+		-spectre_args ++aps
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+	connect worklib.ConnRules_inhconn_full_fast_gnd:vams
+		errors: 0, warnings: 0
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+	module worklib.L2E_2_inhconn_gnd:vams
+		errors: 0, warnings: 0
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+	module worklib.E2L_2_inhconn_gnd:vams
+		errors: 0, warnings: 0
+file: /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+	module worklib.Bidir_2_inhconn_gnd:vams
+		errors: 0, warnings: 0
+file: ./netlist.vams
+	module Stimulator_IMP.Ext_Iref_ST:schematic
+		errors: 0, warnings: 0
+	module Stimulator_IMP.CurrentSource_All_ST:schematic
+		errors: 0, warnings: 0
+	module Stimulator_IMP.LS_HighSide_V3_ST:schematic
+		errors: 0, warnings: 0
+	module Stimulator_IMP.LS_LowSide_V2_ST:schematic
+		errors: 0, warnings: 0
+	module Stimulator_IMP.HalfBridge_ST:schematic
+		errors: 0, warnings: 0
+	module Stimulator_IMP.SingleChannel_ST:schematic
+		errors: 0, warnings: 0
+	module Stimulator_IMP.Idac_5bit_ST:schematic
+		errors: 0, warnings: 0
+	module Stimulator_IMP.CurrentMirror_ST:schematic
+		errors: 0, warnings: 0
+	module GATES_3V.invrv3:schematic
+		errors: 0, warnings: 0
+	module D_CELLS_HD.AND2HDX0:cmos_sch
+		errors: 0, warnings: 0
+	module D_CELLS_3V.IN_3VX2:cmos_sch
+		errors: 0, warnings: 0
+	module Stimulator_TestBench.TB_OneCH_Top:schematic
+		errors: 0, warnings: 0
+	module D_CELLS_M3V.LSHVT18U3VX1:cmos_sch
+		errors: 0, warnings: 0
+	module D_CELLS_M3V.LSHVT18U3VX2:cmos_sch
+		errors: 0, warnings: 0
+	module GATES_HD.nand2:schematic
+		errors: 0, warnings: 0
+	module GATES_HD.invr:schematic
+		errors: 0, warnings: 0
+file: ./cds_globals.vams
+	module worklib.cds_globals:vams
+		errors: 0, warnings: 0
+file: /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v
+	module worklib.cds_alias:v
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v
+	module Stimulator_IMP.Digital_Stimulus_V2_ST:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v
+	module Stimulator_IMP.Decoder8:functional
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xmvlog: Memory Usage - Current physical: 25.9M, Current virtual: 57.9M
+xmvlog: CPU Usage - 0.0s system + 0.1s user = 0.1s total (0.1s, 59.7% cpu)
+		Caching library 'D_CELLS_M3V' ....... Done
+		Caching library 'GATES_3V' ....... Done
+		Caching library 'D_CELLS_HD' ....... Done
+		Caching library 'GATES_HD' ....... Done
+		Caching library 'Stimulator_TestBench' ....... Done
+		Caching library 'D_CELLS_3V' ....... Done
+		Caching library 'Stimulator_IMP' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'GATES_HD' ....... Done
+		Caching library 'D_CELLS_M3V' ....... Done
+		Caching library 'Stimulator_TestBench' ....... Done
+		Caching library 'D_CELLS_3V' ....... Done
+		Caching library 'D_CELLS_HD' ....... Done
+		Caching library 'GATES_3V' ....... Done
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		TB_OneCH_Top
+		cds_globals
+	Discipline resolution Pass...
+xmelab: *W,IHNOPT: AMS interface element optimization is disabled due to interface elements on inherited connections.
+	Doing auto-insertion of connection elements...
+	Connect Rules applied are:
+		ConnRules_18V_full_fast
+	Building instance overlay tables: .................... Done
+	Using implicit TMP libraries; associated with library Stimulator_TestBench
+	Generating native compiled code:
+		Stimulator_TestBench.TB_OneCH_Top:schematic <0x048aaca8>
+			streams:   0, words:     0
+		Stimulator_IMP.Digital_Stimulus_V2_ST:functional <0x60970acc>
+			streams:   8, words:  8138
+		Stimulator_IMP.Decoder8:functional <0x37d17d8e>
+			streams:   2, words:  2750
+		connectLib.L2E_2:module <0x0588870b>
+			streams:   4, words:  8774
+		connectLib.E2L_2:module <0x2b14c314>
+			streams:   9, words:  9525
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                85      41
+		Registers:             112     163
+		Scalar wires:           27       -
+		Expanded wires:         21       3
+		Vectored wires:         15       -
+		Always blocks:          44      69
+		Initial blocks:         16      29
+		Cont. assignments:      13      24
+		Interconnect:          200       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: Stimulator_TestBench.TB_OneCH_Top:config
+xmelab: Memory Usage - Final: 44.6M, Peak: 167.5M, Peak virtual: 252.6M
+xmelab: CPU Usage - 0.1s system + 0.2s user = 0.3s total (0.4s, 83.4% cpu)

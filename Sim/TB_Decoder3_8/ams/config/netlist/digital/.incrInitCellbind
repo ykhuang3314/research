@@ -1,0 +1,4 @@
+("analogLib" "vpulse" "spectre" "spectre") "USED"
+("Digital_Lib" "Counter" "functional" "functional") "USED"
+("Stimulator_IMP" "Decoder3_8" "functional" "functional") "USED"
+("analogLib" "vdc" "spectre" "spectre") "USED"

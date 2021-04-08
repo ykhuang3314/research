@@ -1,0 +1,35 @@
+// Library - D_CELLS_HD, Cell - AND2HDX0, View - cmos_sch
+// LAST TIME SAVED: Jan 23 08:10:19 2018
+// NETLIST TIME: Apr  6 12:29:07 2021
+`timescale 1ns / 1ps 
+
+`worklib D_CELLS_HD
+`view cmos_sch
+
+(* cds_ams_schematic *) 
+(* dfII_lib="D_CELLS_HD", dfII_cell="AND2HDX0", dfII_view="cmos_sch", worklib_name="D_CELLS_HD", view_name="cmos_sch", last_save_time="Jan 23 08:10:19 2018" *)
+
+module AND2HDX0 (Q, A, B);
+
+output  Q;
+
+input  A, B;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
+
+
+nand2 #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) nand2_1 ( .a(A), .b(B), .out(net10));
+
+invr #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) invr_1 ( .out(Q), .in(net10));
+
+endmodule

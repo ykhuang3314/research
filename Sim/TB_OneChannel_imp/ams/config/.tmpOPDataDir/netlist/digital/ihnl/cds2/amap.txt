@@ -1,0 +1,7 @@
+netMap,*LSHVT18U3VX1,*inh_power_vdd3_vdd3!,*\vdd3! 
+netMap,*LSHVT18U3VX1,*inh_ground_gnd_gnd!,*\gnd! 
+netMap,*LSHVT18U3VX1,*inh_power_vdde_vdde!,*\vdde! 
+netMap,*LSHVT18U3VX1,*vdd3!,*cds_globals.\vdd3! 
+netMap,*LSHVT18U3VX1,*vdde!,*cds_globals.\vdde! 
+netMap,*LSHVT18U3VX1,*gnd!,*cds_globals.\gnd! 
+cellMap,*LSHVT18U3VX1,*LSHVT18U3VX1,*D_CELLS_M3V,*cmos_sch

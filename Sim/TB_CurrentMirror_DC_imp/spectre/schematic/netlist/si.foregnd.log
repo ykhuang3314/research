@@ -1,0 +1,22 @@
+Begin Incremental Netlisting Mar 31 11:08:31 2021
+ERROR (OSSHNL-109): The cellview
+'Stimulator_TestBench/TB_CurrentMirror_DC_imp/schematic' has been modified since
+the last extraction. Validate
+that the schematic is correct and run Check and
+Save to correct this error.
+
+End netlisting Mar 31 11:08:31 2021
+Begin Incremental Netlisting Mar 31 11:08:39 2021
+WARNING (OSSHNL-160): The primitive, 'analogLib/idc/spectre', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Mar 31 11:08:39 2021
+Begin Incremental Netlisting Mar 31 11:09:42 2021
+End netlisting Mar 31 11:09:42 2021
+Begin Incremental Netlisting Mar 31 11:12:31 2021
+End netlisting Mar 31 11:12:31 2021
+Begin Incremental Netlisting Mar 31 11:13:10 2021
+End netlisting Mar 31 11:13:10 2021

@@ -1,0 +1,8 @@
+    I8 LS_HighSide_V3_ST
+    M34 (OUT net08 Ist 0) nedia_bjt w=200.0000u l=1.25u m=(1)*(4) \
+        par1=((1)*(4)) extlay=0 xf_subext=0
+    M66 (OUT net07 vddh 0) ped_bjt w=200.0000u l=940.0n m=(1)*(4) \
+        par1=((1)*(4)) extlay=0 xf_subext=0
+    I9 LS_LowSide_V2_ST
+ends HalfBridge_ST
+// End of subcircuit definition.

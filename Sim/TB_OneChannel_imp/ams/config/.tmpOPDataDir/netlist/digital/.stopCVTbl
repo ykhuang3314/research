@@ -1,0 +1,9 @@
+("PRIMLIB" "pe3" "spectre" "spectre") t
+("analogLib" "idc" "spectre" "spectre") t
+("PRIMLIB" "nedia_bjt" "spectre" "spectre") t
+("PRIMLIB" "ne3" "spectre" "spectre") t
+("analogLib" "res" "spectre" "spectre") t
+("PRIMLIB" "csft5a" "spectre" "spectre") t
+("PRIMLIB" "rpp1k1" "spectre" "spectre") t
+("analogLib" "vdc" "spectre" "spectre") t
+("PRIMLIB" "ped_bjt" "spectre" "spectre") t

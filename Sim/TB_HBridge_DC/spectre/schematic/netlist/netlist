@@ -36,83 +36,88 @@ subckt LSHVT18U3VX1 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde
 ends LSHVT18U3VX1
 // End of subcircuit definition.
 
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_V2_ST
+// View name: schematic
+subckt LS_LowSide_V2_ST 0 in out vdd3! vdde! vddh inh_ground_gnd \
+        inh_power_vdd3 inh_power_vdde
+    M0 (net12 in_3V 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    R2 (net9 net12) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    R0 (out 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (vddh net9) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R3 (net11 out) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    M1 (net11 net9 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    I0 (in in_3V inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
+        LSHVT18U3VX1
+ends LS_LowSide_V2_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_HighSide_V3_ST
+// View name: schematic
+subckt LS_HighSide_V3_ST 0 in out vdd3! vdde! vddh inh_ground_gnd \
+        inh_power_vdd3 inh_power_vdde
+    M13 (net10 inn3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+    R0 (vddh out) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (out net10) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    I10 (in inn3v inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
+        LSHVT18U3VX1
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.
+
 // Library name: Stimulator_TestBench
 // Cell name: TB_HBridge_DC
 // View name: schematic
-M26 (net017 net017 net055 vss) nedia_bjt w=15.0u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
 M25 (net022 net022 VB vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
         par1=((1)*(1)) extlay=0 xf_subext=0
 M24 (net055 VB net046 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
         par1=((1)*(1)) extlay=0 xf_subext=0
-M23 (net6 VB net054 vss) nedia_bjt w=60u l=1.25u m=(1)*(10) \
-        par1=((1)*(10)) extlay=0 xf_subext=0
+M23 (net6 VB net054 vss) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
 M22 (VB net022 net080 vss) nedia_bjt w=20u l=1.25u m=(1)*(1) \
         par1=((1)*(1)) extlay=0 xf_subext=0
 M21 (net080 net080 0 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
 M20 (net046 net055 0 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
-M19 (net054 net055 0 vss) nedia_bjt w=60u l=1.25u m=(1)*(10) \
-        par1=((1)*(10)) extlay=0 xf_subext=0
-M16 (net041 net063 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+M19 (net054 net055 0 vss) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
+M26 (net017 net017 net055 vss) nedia_bjt w=15.0u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M6 (net021 net019 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
-M15 (net060 net030 net026 0) nedia_bjt w=20u l=1.25u m=(1)*(20) \
-        par1=((1)*(20)) extlay=0 xf_subext=0
-M14 (net03 0 net026 0) nedia_bjt w=20u l=1.25u m=(1)*(20) par1=((1)*(20)) \
+M13 (net9 net064 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
-M11 (net044 net032 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+M3 (net7 net010 net6 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M1 (net5 Ctrl_LS net6 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M4 (net016 net018 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
-M6 (net021 net019 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
-        extlay=0 xf_subext=0
-M13 (net9 net064 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
-        extlay=0 xf_subext=0
-M3 (net7 net010 net6 0) nedia_bjt w=50u l=1.25u m=(1)*(10) par1=((1)*(10)) \
-        extlay=0 xf_subext=0
-M1 (net5 0 net6 0) nedia_bjt w=50u l=1.25u m=(1)*(10) par1=((1)*(10)) \
-        extlay=0 xf_subext=0
-M18 (net060 vddh vddh 0) ped_bjt w=40u l=940.0n m=(1)*(20) par1=((1)*(20)) \
-        extlay=0 xf_subext=0
-M17 (net03 net01 vddh 0) ped_bjt w=40u l=940.0n m=(1)*(20) par1=((1)*(20)) \
-        extlay=0 xf_subext=0
-M12 (net040 net031 vddh 0) ped_bjt w=10u l=940.0n m=(1)*(1) par1=((1)*(1)) \
-        extlay=0 xf_subext=0
-M4 (net016 net018 vddh 0) ped_bjt w=10u l=940.0n m=(1)*(1) par1=((1)*(1)) \
-        extlay=0 xf_subext=0
-M2 (net7 vddh vddh 0) ped_bjt w=80u l=940.0n m=(1)*(10) par1=((1)*(10)) \
-        extlay=0 xf_subext=0
-M0 (net5 net012 vddh 0) ped_bjt w=80u l=940.0n m=(1)*(10) par1=((1)*(10)) \
-        extlay=0 xf_subext=0
-R15 (vddh net01) resistor r=100k
-R14 (net01 net041) resistor r=300k
-R13 (net03 net060) resistor r=1K
-R12 (net040 net030) resistor r=300k
-R11 (net030 0) resistor r=100k
-R10 (vddh net031) resistor r=100k
-R7 (net031 net044) resistor r=300k
-R6 (vddh net018) resistor r=100k
-R5 (net018 net021) resistor r=300k
-R4 (net014 0) resistor r=50
-R3 (net010 0) resistor r=150k
-R2 (net016 net010) resistor r=250k
-R9 (vddh net012) resistor r=150k
-R8 (net012 net9) resistor r=250k
+M2 (net7 Ctrl_HS vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M0 (net5 net012 vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
 R0 (net5 net7) resistor r=1K
 I26 (vddh net022) isource dc=Iref type=dc
 I25 (vddh net017) isource dc=Iref type=dc
-V8 (net062 0) vsource dc=1.8 type=dc
-V7 (net033 0) vsource dc=1.8 type=dc
-V4 (Vdac 0) vsource dc=vdac type=dc
-V5 (net034 0) vsource dc=1.8 type=dc
-V6 (net020 0) vsource dc=1.8 type=dc
 V2 (vdd3! 0) vsource dc=3.3 type=dc
 V1 (vdde! 0) vsource dc=1.8 type=dc
 V0 (vddh 0) vsource dc=40 type=dc
-M5 (net026 net015 net014 0) nmma_bjt w=30u l=2.9u as=3.88219e-11 \
-        ad=3.42546e-11 ps=3.9548e-05 pd=3.308e-05 nrs=0.02 nrd=0.02 \
-        m=(1)*(10) par1=((1)*(10)) xf_subext=0
-E0 (net015 0 Vdac net014) vcvs gain=100
-I24 (net062 net063 0 vdd3! vdde!) LSHVT18U3VX1
-I18 (net033 net032 0 vdd3! vdde!) LSHVT18U3VX1
-I10 (net034 net064 0 vdd3! vdde!) LSHVT18U3VX1
-I11 (net020 net019 0 vdd3! vdde!) LSHVT18U3VX1
+I29 (0 CAT Ctrl_LS vdd3! vdde! vddh 0 vdd3! vdde!) LS_LowSide_V2_ST
+I28 (0 CAT Ctrl_HS vdd3! vdde! vddh 0 vdd3! vdde!) LS_HighSide_V3_ST
+I10 (ANO net064 0 vdd3! vdde!) LSHVT18U3VX1
+I11 (ANO net019 0 vdd3! vdde!) LSHVT18U3VX1
+R18 (net018 net021) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R17 (vddh net018) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+R16 (net016 net010) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R9 (net010 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+R8 (net012 net9) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R1 (vddh net012) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+V6 (CAT 0) vsource dc=0 type=pulse val0=0 val1=1.8 period=500u delay=120u \
+        rise=1p fall=1p width=100u
+V3 (ANO 0) vsource dc=1.8 type=pulse val0=0 val1=1.8 period=500u delay=10u \
+        rise=1p fall=1p width=100u

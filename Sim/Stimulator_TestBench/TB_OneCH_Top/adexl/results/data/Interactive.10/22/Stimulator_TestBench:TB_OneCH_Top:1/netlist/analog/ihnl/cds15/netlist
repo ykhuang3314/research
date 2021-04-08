@@ -1,0 +1,12 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_OneCH_Top
+// View name: schematic
+// Inherited view list: schematic
+I0 SingleChannel_ST
+I1 (vdd3! net6) isource dc=10u type=dc
+R0 (vout1 vout2) resistor r=Rload
+V3 (vdd! 0) vsource dc=1.8 type=dc
+V2 (vddh 0) vsource dc=40 type=dc
+V0 (vdde! 0) vsource dc=1.8 type=dc
+V1 (vdd3! 0) vsource dc=3.3 type=dc

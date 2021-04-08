@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "18.1.0.516.isr12"
-"date" "4:39:33 PM, Fri Mar 19, 2021"
+"date" "4:20:34 PM, Tue Mar 23, 2021"
 "design" "// Generated for: spectre"
 "analysis type" "info.primitives"
 "analysis name" "primitives"
@@ -37,6 +37,14 @@ VALUE
 "off triode sat subth breakdown "
 "d g s b "
 )
+"capacitor" "primitive" (
+"c trise tnom w l etch cj cjsw scalec rforce di thick coeffs symmetric min max tc1 tc2 shrink shrink2 bv_max bv_min "
+"cap "
+"tempeff meff leff weff ceff "
+"c w l m scale trise tc1 tc2 ic area perim coeffs symmetric bv_max scalec bv_min "
+""
+"1 2 "
+)
 "hisim_hv" "primitive" (
 "type level version corsrd coiprv copprv coadov coisub cogidl coiigs coovlp coovlps coflick coisti conqs cothrml info tnom corg corbnet coign compatible alarm codfm coselfheat cosubnode cosym coqovsm cotemp coldrift cordrift w l as ad ps pd temp dtemp trise tox xld xwd xwdc tpoly nsubc nsubp rs rd vfbc lp xqy lover ll lld lln wl wld wln vbi nsubp0 nsubwp lpext npext rsh rshg rbpb rbpd rbps gbmin xl xw xqy1 xqy2 xldld xwdld rdov11 rdov12 rdov13 rdslp1 rdict1 rdslp2 rdict2 loverld lovers ldrift1 ldrift1s ldrift2 ldrift2s subld1 subld1l subld1lp subld2 xpdv xpvdth xpvdthg qovadd rdrbb rdrbbtmp eg0 bgtmp1 bgtmp2 igtemp2 igtemp3 vmaxt1 vmaxt2 ninvdt1 ninvdt2 rdtemp1 rdtemp2 rdvdtemp1 rdvdtemp2 rthtemp1 rthtemp2 prattemp1 prattemp2 qme1 qme2 qme3 kappa pgd1 pgd2 pgd3 pgd4 parl2 sc1 sc2 sc3 sc4 scp1 scp2 scp3 scp22 scp21 bs1 bs2 wfc nsubcw nsubcwp nsti wsti muephw muepwp wvth0 mueswp vthsti muesti1 muesti2 muesti3 nsubpsti1 nsubpsti2 nsubpsti3 wstil wstilp scsti1 scsti2 saref sbref wstiw wstiwp vdsti muecb0 muecb1 mueph0 mueph1 muetmp muesr0 muesr1 ndep ninv ninvd ninvdw ninvdwp bb vmax vover voverp vovers voversp vtmp muephl mueplp muesrl muesrw mueslp ndepl ndeplp wl1 wl1p wl2 wl2p muephs muepsp clm1 clm2 clm3 clm5 clm6 sub1 sub2 svgs svbs svbsl svds slg sub1l sub2l fn1 fn2 fn3 fvbs svgsl svgslp svgswp svgsw svbslp slgl slglp sub1lp ibpc1 ibpc1l ibpc1lp ibpc2 glpart1 gleak1 gleak2 gleak3 gleak4 gleak5 glksd1 glksd2 glksd3 glkb1 glkb2 gleak6 gleak7 glkb3 egig gidl1 gidl2 gidl3 gidl4 gidl5 nfalp falph nftrp cit pthrou dly1 dly2 dly3 dlyov minr vzadd0 pzadd0 js0 js0sw nj njsw xti cj cjsw cjswg tcjbd tcjbdsw tcjbdswg tcjbs tcjbssw tcjbsswg mj mjsw mjswg pb pbsw pbswg vdiffj xti2 cisb cvb ctemp cisbk cvbk divx cgso cgdo cgbo ovslp ovmag vfbover nover novers coddlt ddltmax ddltslp ddltict mphdfm rdvsub rdvdsub ddrift vbisub nsubsub warn bvd bvs bvj vbox mvtwl mvt0 mbewl mbe0 mvtwl2 mismatchmod mismatchvec1 mismatchvec2 mismatchvec3 mismatchvec4 mismatchdist rdvg11 rdvg12 vbsmin rth0 cth0 qdftvd rdvd rdvb rd20 rd21 rd22 rd22d rd23 rd24 rd25 rd26 qovsm rdvdl rdvdlp rdvds rdvdsp rd23l rd23lp rd23s rd23sp rds rdsp ldrift rth0r rth0w rth0wp rth0nf cvdsover powrat shemax shemaxdlt vgsmin wmax wmin lmax lmin ptl ptp pt2 ptlp gdl gdlp gdld pt4 pt4p rdrmue rdrvmax rdrmuetmp rdrvtmp rdrdjunc rdrcx rdrcar rdrdl1 rdrdl2 rdrvmaxw rdrvmaxwp rdrvmaxl rdrvmaxlp rdrmuel rdrmuelp rdrqover js0d js0swd njd njswd xtid cjd cjswd cjswgd mjd mjswd mjswgd pbd pbswd pbswgd xti2d cisbd cvbd ctempd cisbkd divxd vdiffjd js0s js0sws njs njsws xtis cjs cjsws cjswgs mjs mjsws mjswgs pbs pbsws pbswgs xti2s cisbs cvbs ctemps cisbks divxs vdiffjs codep ndepm tndep depmue0 depmue1 depmueback0 depmueback1 depleak depeta depvmax depvdsef1 depvdsef2 depmueph0 depmueph1 depbb depvtmp depmuetmp isbreak rwell mueefb subtmp rth0l rth0lp tndepv depmue2 depmuea1 depddlt depvfbc depsubsl depmue0tmp depmue2tmp depvgpsl depvsatr qovjunc cohbd hbda hbdb hbdc hbdctmp hbdf lbinn wbinn lvmax lbgtmp1 lbgtmp2 leg0 lnovers lvfbover lnover lwl2 lvfbc lnsubc lnsubp lscp1 lscp2 lscp3 lsc1 lsc2 lsc3 lpgd1 lpgd3 lndep lninv lmuecb0 lmuecb1 lmueph1 lvtmp lwvth0 lmuesr1 lmuetmp lsub1 lsub2 lsvds lsvbs lsvgs lfn1 lfn2 lfn3 lfvbs lnsti lwsti lscsti1 lscsti2 lvthsti lmuesti1 lmuesti2 lmuesti3 lnsubpsti1 lnsubpsti2 lnsubpsti3 lcgso lcgdo ljs0 ljs0sw lnj lcisbk lclm1 lclm2 lclm3 lwfc lgidl1 lgidl2 lgleak1 lgleak2 lgleak3 lgleak6 lglksd1 lglksd2 lglkb1 lglkb2 lnftrp lnfalp lpthrou lvdiffj libpc1 libpc2 lcgbo lcvdsover lfalph lnpext lpowrat lrd lrd22 lrd23 lrd24 lrdict1 lrdov13 lrdslp1 lrdvb lrdvd lrdvg11 lrs lrth0 lvover ljs0d ljs0swd lnjd lcisbkd lvdiffjd ljs0s ljs0sws lnjs lcisbks lvdiffjs wvmax wbgtmp1 wbgtmp2 weg0 wnovers wvfbover wnover wwl2 wvfbc wnsubc wnsubp wscp1 wscp2 wscp3 wsc1 wsc2 wsc3 wpgd1 wpgd3 wndep wninv wmuecb0 wmuecb1 wmueph1 wvtmp wwvth0 wmuesr1 wmuetmp wsub1 wsub2 wsvds wsvbs wsvgs wfn1 wfn2 wfn3 wfvbs wnsti wwsti wscsti1 wscsti2 wvthsti wmuesti1 wmuesti2 wmuesti3 wnsubpsti1 wnsubpsti2 wnsubpsti3 wcgso wcgdo wjs0 wjs0sw wnj wcisbk wclm1 wclm2 wclm3 wwfc wgidl1 wgidl2 wgleak1 wgleak2 wgleak3 wgleak6 wglksd1 wglksd2 wglkb1 wglkb2 wnftrp wnfalp wpthrou wvdiffj wibpc1 wibpc2 wcgbo wcvdsover wfalph wnpext wpowrat wrd wrd22 wrd23 wrd24 wrdict1 wrdov13 wrdslp1 wrdvb wrdvd wrdvg11 wrs wrth0 wvover wjs0d wjs0swd wnjd wcisbkd wvdiffjd wjs0s wjs0sws wnjs wcisbks wvdiffjs pvmax pbgtmp1 pbgtmp2 peg0 pnovers pvfbover pnover pwl2 pvfbc pnsubc pnsubp pscp1 pscp2 pscp3 psc1 psc2 psc3 ppgd1 ppgd3 pndep pninv pmuecb0 pmuecb1 pmueph1 pvtmp pwvth0 pmuesr1 pmuetmp psub1 psub2 psvds psvbs psvgs pfn1 pfn2 pfn3 pfvbs pnsti pwsti pscsti1 pscsti2 pvthsti pmuesti1 pmuesti2 pmuesti3 pnsubpsti1 pnsubpsti2 pnsubpsti3 pcgso pcgdo pjs0 pjs0sw pnj pcisbk pclm1 pclm2 pclm3 pwfc pgidl1 pgidl2 pgleak1 pgleak2 pgleak3 pgleak6 pglksd1 pglksd2 pglkb1 pglkb2 pnftrp pnfalp ppthrou pvdiffj pibpc1 pibpc2 pcgbo pcvdsover pfalph pnpext ppowrat prd prd22 prd23 prd24 prdict1 prdov13 prdslp1 prdvb prdvd prdvg11 prs prth0 pvover pjs0d pjs0swd pnjd pcisbkd pvdiffjd pjs0s pjs0sws pnjs pcisbks pvdiffjs gdsleak coerrrep vds_max vgd_max vgs_max vbd_max vbs_max vgb_max vgdr_max vgsr_max vgbr_max vbsr_max vbdr_max vthmod ivth ivthw ivthl ivth_vdsmin "
 "temp tk shetemp dtsh reversed vdse vgse vbse ids vds vgs vbs vgd vgb vdb idsres idsacc vth vdsat region gm gds gmbs qb qd qg qs qb_itr qd_itr qg_itr qs_itr qdp qsp cjd cjs cgg cgd cgs cgb cdg cdd cds cdb csg csd css csb cbg cbd cbs cbb cdd_tot cgg_tot css_tot cbb_tot id ig is ibulk pwr ps0 psl pds isub isubld idsibpc gbds gbgs gbbs igate igates igateb igated igisl igidl ibs ibd cgso cgbo cgdo cggo cddo csso cbbo rseff rdeff rsdrift rdrift gmt lx4 lx7 lx8 lv9 lx142 "
@@ -60,14 +68,6 @@ VALUE
 "r l w lvl m scale resform tc1 tc1r tc2 tc2r trise isnoisy bv_max c tc1c tc2c rac scaler scalec dtemp cap "
 ""
 "1 2 0 "
-)
-"vcvs" "primitive" (
-""
-"i v pwr lx0 lx1 lx2 "
-"issimple "
-"m type delta gain td min max abs file scale stretch tc1 tc2 trise "
-""
-"p n ps ns "
 )
 "vsource" "primitive" (
 ""

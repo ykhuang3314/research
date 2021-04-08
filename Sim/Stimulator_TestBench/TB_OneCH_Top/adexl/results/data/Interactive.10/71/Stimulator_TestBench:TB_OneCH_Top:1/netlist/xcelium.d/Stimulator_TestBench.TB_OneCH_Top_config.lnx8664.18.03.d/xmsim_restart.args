@@ -1,0 +1,56 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+CDS_SELECT_CRS
++define+CONNRULES_18V_FULL_FAST
++define+CONNRULES_INHCONN_FULL_FAST_GND
+-AMSINPUT
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ADE
+-AMSINPUT
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-INPUT
+./probe.tcl
+-RUN
+-EXIT
++amsrawdir
+../psf
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/sharedData/Job25/ahdl/input.ahdlSimDB"
+-SIMCOMPATIBLE_AMS
+spectre
+-SPECTRE_ARGS
+++aps
+-ANALOGCONTROL
+.amsbind.scs
+-MESSAGES
++EMGRLOG
+../psf/xrun.log
+-XLSTIME
+1617797489
+-XLKEEP
+-XLMODE
+./xcelium.d/Stimulator_TestBench.TB_OneCH_Top_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/Stimulator_TestBench.TB_OneCH_Top_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/Stimulator_TestBench.TB_OneCH_Top_config.lnx8664.18.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	18.03-s018"
+-XLNAME
+./xcelium.d/Stimulator_TestBench.TB_OneCH_Top_config.lnx8664.18.03.d/s2424_5890

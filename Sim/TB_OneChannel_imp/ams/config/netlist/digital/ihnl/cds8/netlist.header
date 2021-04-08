@@ -1,0 +1,18 @@
+// Library - Stimulator_TestBench, Cell - TB_OneChannel_imp, View -
+//schematic
+// LAST TIME SAVED: Mar 31 14:57:51 2021
+// NETLIST TIME: Apr  1 14:05:41 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_OneChannel_imp", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Mar 31 14:57:51 2021" *)
+
+module TB_OneChannel_imp ();
+
+// Buses in the design
+
+wire  [4:0]  MAG_ST;
+

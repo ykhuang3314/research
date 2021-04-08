@@ -5,7 +5,7 @@ module Counter #(
 	// block parameters
 	parameter WIDTH = 5, // number of bits in the counter
 	parameter START = 0, // counting from the START value to the END value
-	parameter END = (1 << WIDTH),
+	parameter END = 31,
 	parameter STEP = 1 // counting step
 	)(
 	//output port
@@ -24,7 +24,7 @@ always@(posedge CLK) begin
 		out <= START;
 	end else begin
 		if(EN ==1) begin
-			if(out == END - 1)
+			if(out == 31)
 				out <= START;
 			else
 				out <= out + STEP;

@@ -1,0 +1,11 @@
+1617703477 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/17/Stimulator_TestBench:TB_OneCH_Top:1/netlist/cds.lib
+1617703476 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/17/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.amsbind.scs
+1617703477 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/17/Stimulator_TestBench:TB_OneCH_Top:1/netlist/spiceModels.scs
+1617703477 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/17/Stimulator_TestBench:TB_OneCH_Top:1/netlist/amsControlSpectre.scs
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+1617703476 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/17/Stimulator_TestBench:TB_OneCH_Top:1/netlist/netlist.vams
+1617702668 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/17/Stimulator_TestBench:TB_OneCH_Top:1/netlist/cds_globals.vams
+1034185470 /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v

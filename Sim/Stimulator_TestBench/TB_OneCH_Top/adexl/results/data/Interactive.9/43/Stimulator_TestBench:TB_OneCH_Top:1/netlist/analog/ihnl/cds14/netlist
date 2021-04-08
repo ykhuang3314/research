@@ -1,0 +1,5 @@
+    I0 CurrentSource_All_ST
+    I2 HalfBridge_ST
+    I1 HalfBridge_ST
+ends SingleChannel_ST
+// End of subcircuit definition.

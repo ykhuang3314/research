@@ -1,0 +1,4 @@
+# start: 2021/04/05 14:00:03
+[000001] srr::[QPRuntime.cpp:361] Signal '/CtrlHS<7:0>': waveform dimension '2' is not supported.(ParamWave)
+[000002] srr::[QPRuntime.cpp:361] Signal '/CtrlLS<7:0>': waveform dimension '2' is not supported.(ParamWave)
+[000003] srr::[QPRuntime.cpp:361] Signal '/Mag_ST<4:0>': waveform dimension '2' is not supported.(ParamWave)

@@ -1,5 +1,5 @@
-( ( net
-( "gnd!" "inh_ground_gnd" )
-( "vdd3!" "inh_power_vdd3" )
+( ( model
+( "TB_LS_HighSide_ST" "TB_LS_HighSide_ST" )
+( "LSHVT18U3VX1" "LSHVT18U3VX1" )
  )
  )

@@ -1,0 +1,17 @@
+// Library - Stimulator_IMP, Cell - Ext_Iref_ST, View - schematic
+// LAST TIME SAVED: Mar 31 11:16:25 2021
+// NETLIST TIME: Apr  7 14:10:31 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="Ext_Iref_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 31 11:16:25 2021" *)
+
+module Ext_Iref_ST (Bias1, Bias2, Iext, vdd3, vss);
+
+output  Bias1, Bias2;
+
+inout  Iext, vdd3, vss;
+

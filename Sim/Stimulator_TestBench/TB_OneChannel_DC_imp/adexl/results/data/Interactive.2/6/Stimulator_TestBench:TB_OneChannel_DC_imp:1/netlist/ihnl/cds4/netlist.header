@@ -1,0 +1,5 @@
+
+// Library name: D_CELLS_3V
+// Cell name: IN_3VX2
+// View name: cmos_sch
+subckt IN_3VX2 A Q inh_ground_gnd inh_power_vdd3

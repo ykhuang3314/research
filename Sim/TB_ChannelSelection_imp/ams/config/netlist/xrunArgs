@@ -1,0 +1,45 @@
+
+-UNBUFFERED 
+-cdslib ./cds.lib 
+-errormax 50 
+-status 
+-nowarn DLNOHV 
+-nowarn DLCLAP 
+-v93 
+-incdir ${IC_INVOKE_DIR}/
+-ade 
+-timescale 1ns/1ns 
+-vtimescale 1ns/1ns 
+-discipline logic 
+-delay_mode None 
+-novitalaccl 
+-access r 
+-noparamerr 
+-amspartinfo ../psf/partition.info -rnm_partinfo 
+-modelincdir ${IC_INVOKE_DIR}/
+./spiceModels.scs 
+./amsControlSpectre.scs 
+-input ./probe.tcl 
+-run -exit 
+-xmsimargs "+amsrawdir ../psf" 
+ -simcompatible_ams spectre 
+-name Stimulator_TestBench.TB_ChannelSelection_imp:config 
+-amsconnrules ConnRules_18V_full_fast 
++define+CDS_SELECT_CRS 
++define+CONNRULES_18V_FULL_FAST 
+-amsconnrules ConnRules_inhconn_full_fast_gnd 
++define+CONNRULES_INHCONN_FULL_FAST_GND 
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams 
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams 
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams 
+/pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams  
+-allowredefinition 
+-amsbind 
+-top Stimulator_TestBench.TB_ChannelSelection_imp:schematic 
+-top cds_globals 
+./netlist.vams 
+-f ./textInputs
+./cds_globals.vams 
+/pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v 
+-l ../psf/xrun.log
+-spectre_args ++aps

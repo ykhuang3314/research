@@ -1,0 +1,313 @@
+// Generated for: spectre
+// Generated on: Mar 30 16:38:26 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_PowerON_Protection_imp
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd3! vdde!
+parameters d4=0 d3=0 d2=0 d1=0 d0=0
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: GATES_3V
+// Cell name: invrv3
+// View name: schematic
+subckt invrv3 in out inh_ground_gnd inh_power_vdd3
+parameters GT_PDW GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=300.00n
+    MN1 (out in inh_ground_gnd inh_ground_gnd) ne3 w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*sx+(GT_PDW) pd=2*sx+(GT_PDW) \
+        nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    MP1 (out in inh_power_vdd3 inh_power_vdd3) pe3 w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*sx+(GT_PUW) pd=2*sx+(GT_PUW) \
+        nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) par1=((1)*(1))
+ends invrv3
+// End of subcircuit definition.
+
+// Library name: D_CELLS_3V
+// Cell name: IN_3VX2
+// View name: cmos_sch
+subckt IN_3VX2 A Q inh_ground_gnd inh_power_vdd3
+    invr_1 (A Q inh_ground_gnd inh_power_vdd3) invrv3 GT_PDW=960.00n \
+        GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW=2.94u GT_PUL=300.00n
+ends IN_3VX2
+// End of subcircuit definition.
+
+// Library name: D_CELLS_M3V
+// Cell name: LSHVT18U3VX1
+// View name: cmos_sch
+subckt LSHVT18U3VX1 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde
+    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=1.46u l=300n \
+        as=7.008e-13 ad=7.008e-13 ps=3.88e-06 pd=3.88e-06 nrs=0.184932 \
+        nrd=0.184932 m=(1)*(1) par1=((1)*(1))
+    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.48u l=300n \
+        as=7.104e-13 ad=7.104e-13 ps=3.92e-06 pd=3.92e-06 nrs=0.182432 \
+        nrd=0.182432 m=(1)*(1) par1=((1)*(1))
+    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=890.0n l=350.0n \
+        as=4.272e-13 ad=4.272e-13 ps=2.74e-06 pd=2.74e-06 nrs=0.303371 \
+        nrd=0.303371 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LSHVT18U3VX1
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_V2_ST
+// View name: schematic
+subckt LS_LowSide_V2_ST 0 in out vdd3! vdde! vddh inh_ground_gnd \
+        inh_power_vdd3 inh_power_vdde
+    M0 (net12 in_3V 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    R2 (net9 net12) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    R0 (out 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (vddh net9) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R3 (net11 out) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    M1 (net11 net9 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    I0 (in in_3V inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
+        LSHVT18U3VX1
+ends LS_LowSide_V2_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_HighSide_V3_ST
+// View name: schematic
+subckt LS_HighSide_V3_ST 0 in out vdd3! vdde! vddh inh_ground_gnd \
+        inh_power_vdd3 inh_power_vdde
+    M13 (net10 inn3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+    R0 (vddh out) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (out net10) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    I10 (in inn3v inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
+        LSHVT18U3VX1
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_PowerON_Protection_imp
+// View name: schematic
+V13 (net085 0) vsource type=pwl wave=[ 0 0 100u 0 101u 3.3 ]
+V12 (vddh 0) vsource type=pwl wave=[ 0 0 50u 0 51u 40 ]
+M70 (net0159 net0112 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M69 (net0160 net0112 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M68 (net0112 net0112 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M67 (net0125 Ctrl_HS vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M66 (net0123 net0122 vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M65 (net0156 net0147 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M64 (net0120 Bias2 net0159 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M63 (Bias2 Bias2 net0112 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M62 (net0116 Bias2 net0160 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M82 (net033 net033 net0133 0) ne3 w=1u l=350.0n as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M81 (net0133 net0133 net031 0) ne3 w=1u l=350.0n as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M80 (net031 net031 net030 0) ne3 w=1u l=350.0n as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M79 (net030 net030 0 0) ne3 w=1u l=350.0n as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M43 (vdd3! net086 net0130 0) ne3 w=2u l=1u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M37 (VBp2 net0130 net092 0) ne3 w=10u l=350.0n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M29 (net0130 net092 0 0) ne3 w=10u l=350.0n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M53 (net086 net086 0 0) ne3 w=2u l=5u as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M26 (net099 net099 0 0) ne3 w=40u l=2u as=1.92e-11 ad=1.92e-11 \
+        ps=8.096e-05 pd=8.096e-05 nrs=0.00675 nrd=0.00675 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M20 (net033 net099 0 0) ne3 w=40u l=2u as=1.248e-11 ad=1.08e-11 \
+        ps=4.8624e-05 pd=4.054e-05 nrs=0.00675 nrd=0.00675 m=(1)*(10) \
+        par1=((1)*(10)) xf_subext=0
+M11 (net099 enb_3v 0 0) ne3 w=2u l=350.0n as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M32 (Bias2 vdd3! net033 0) nedia_bjt w=50u l=1.25u m=(1)*(5) \
+        par1=((1)*(5)) extlay=0 xf_subext=0
+M50 (net0157 net0158 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M36 (net0161 net0148 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M35 (net0125 net0146 net0124 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M34 (net0123 Ctrl_LS net0124 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M33 (net0120 net0120 net0119 0) nedia_bjt w=30u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M30 (net0116 net0116 VB 0) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
+M27 (net0119 VB net0174 0) nedia_bjt w=60u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M25 (net0124 VB net0173 0) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
+M24 (VB net0116 net0115 0) nedia_bjt w=20u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M23 (net0174 net0119 0 0) nedia_bjt w=60u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M22 (net0115 net0115 0 0) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
+M21 (net0173 net0119 0 0) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
+M19 (net033 net0113 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M15 (net0113 vdd3! 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M61 (net0172 net096 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M60 (net0163 net096 vdd3! vdd3!) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+M59 (net0165 net096 vdd3! vdd3!) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+M58 (net0167 net096 vdd3! vdd3!) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+M57 (net0169 net096 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+M56 (net0171 net096 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M55 (net096 net096 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M54 (net086 net086 vdd3! vdd3!) pe3 w=6u l=5u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(1)*(1) \
+        par1=((1)*(1))
+M51 (net0130 VBp2 net0172 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M48 (net0162 VBp2 net0163 vdd3!) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+M42 (net0164 VBp2 net0165 vdd3!) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+M41 (net0166 VBp2 net0167 vdd3!) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+M39 (net0168 VBp2 net0169 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+M38 (net0170 VBp2 net0171 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M49 (VBp2 VBp2 net096 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M44 (net099 D1_3v net0168 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M45 (net099 D2_3v net0166 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M46 (net099 D3_3v net0164 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M47 (net099 D4_3v net0162 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M31 (net099 D0_3v net0170 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+I45 (net066 CAT_ST 0 vdd3!) IN_3VX2
+I42 (net067 ANO_ST 0 vdd3!) IN_3VX2
+I40 (en_3v enb_3v 0 vdd3!) IN_3VX2
+I39 (net0149 D0_3v 0 vdd3!) IN_3VX2
+I3 (net0150 D1_3v 0 vdd3!) IN_3VX2
+I5 (net0151 D2_3v 0 vdd3!) IN_3VX2
+I7 (net0152 D3_3v 0 vdd3!) IN_3VX2
+I9 (net0153 D4_3v 0 vdd3!) IN_3VX2
+I44 (CAT net066 0 vdd3! vdde!) LSHVT18U3VX1
+I43 (ANO net067 0 vdd3! vdde!) LSHVT18U3VX1
+I41 (EN_ST en_3v 0 vdd3! vdde!) LSHVT18U3VX1
+I0 (MAG_ST\<0\> net0149 0 vdd3! vdde!) LSHVT18U3VX1
+I38 (MAG_ST\<1\> net0150 0 vdd3! vdde!) LSHVT18U3VX1
+I4 (MAG_ST\<2\> net0151 0 vdd3! vdde!) LSHVT18U3VX1
+I6 (MAG_ST\<3\> net0152 0 vdd3! vdde!) LSHVT18U3VX1
+I35 (MAG_ST\<4\> net0153 0 vdd3! vdde!) LSHVT18U3VX1
+I34 (ANO_ST net0158 0 vdd3! vdde!) LSHVT18U3VX1
+I27 (ANO_ST net0148 0 vdd3! vdde!) LSHVT18U3VX1
+V15 (CAT 0) vsource dc=0 type=dc
+V14 (ANO 0) vsource dc=0 type=dc
+V11 (EN_ST 0) vsource dc=0 type=dc
+V10 (MAG_ST\<4\> 0) vsource dc=d4 type=dc
+V8 (MAG_ST\<3\> 0) vsource dc=d3 type=dc
+V7 (MAG_ST\<2\> 0) vsource dc=d2 type=dc
+V6 (MAG_ST\<1\> 0) vsource dc=d1 type=dc
+V5 (MAG_ST\<0\> 0) vsource dc=d0 type=dc
+V4 (vdde! 0) vsource dc=1.8 type=dc
+V3 (net089 0) vsource dc=3.3 type=dc
+V0 (net091 0) vsource dc=40 type=dc
+R3 (net0123 net0125) resistor r=1K
+R2 (vddh net0122) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+R17 (vddh net0147) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+R8 (net0122 net0157) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R16 (net0156 net0146) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R18 (net0147 net0161) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R9 (net0146 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+R1 (net092 0) rpp1k1 l=150.295u w=2u m=1 par1=(1)
+C6 (vddh net0113) csft5a area=6.3936e-11 perimeter=33.72u m=15 par1=(15)
+C4 (net0113 0) csft5a area=6.3936e-11 perimeter=33.72u m=45 par1=(45)
+I33 (0 CAT_ST Ctrl_LS vdd3! vdde! vddh 0 vdd3! vdde!) LS_LowSide_V2_ST
+I36 (0 CAT_ST Ctrl_HS vdd3! vdde! vddh 0 vdd3! vdde!) LS_HighSide_V3_ST
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=150u errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

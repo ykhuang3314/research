@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"Av" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".A\")))v"
+"Av" ".Av"
+"Av" ".\\2 v"
+"Bv" "(FUNCTION or(mappedRoot(\".3@index\") mappedRoot(\".B\")))v"
+"Bv" ".Bv"
+"Bv" ".\\3 v"
+"Qv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".Q\")))v"
+"Qv" ".Qv"
+"Qv" ".\\1 v"
+"vddv" ".vddv"
+"gndv" ".gndv"

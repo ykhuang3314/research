@@ -4,10 +4,10 @@ hnlLastStopCellInfo = '(
                           ( "analogLib" "res" "spectre" "28" "1570591052" )
                           ( "analogLib" "idc" "spectre" "33" "1570591052" )
                           ( "analogLib" "vdc" "spectre" "33" "1570591052" )
-                          ( "PRIMLIB" "nmma_bjt" "spectre" "151" "1562138759" )
-                          ( "analogLib" "vcvs" "spectre" "48" "1570591052" )
+                          ( "PRIMLIB" "rpp1k1" "spectre" "40" "1562065969" )
                           ( "PRIMLIB" "pe3" "spectre" "53" "1562065969" )
                           ( "PRIMLIB" "ne3" "spectre" "52" "1562065969" )
+                          ( "analogLib" "vpulse" "spectre" "34" "1570591052" )
                        )
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"
@@ -764,8 +764,9 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "Stimulator_TestBench" "1609948351" )
-                   ( "D_CELLS_M3V" "1528371405" )
+                    ( "D_CELLS_M3V" "1528371405" )
+                   ( "Stimulator_TestBench" "1609948351" )
+                   ( "Stimulator_IMP" "1614781067" )
                   )
 hnlLastConstants = '(
                       "P_CELSIUS0"
@@ -793,5 +794,4 @@ hnlLastConstants = '(
                     )
 hnlLastDesignVars = '(
                       "Iref"
-                      "vdac"
                     )

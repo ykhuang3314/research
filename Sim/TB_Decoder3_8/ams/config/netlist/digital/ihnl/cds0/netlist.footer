@@ -1,0 +1,7 @@
+
+Decoder3_8 I0 ( .Dout(Dout), .Bin(Bin), .Enable(net4));
+
+Counter I2 ( .out(Bin), .CLK(CLK), .EN(net3), .RESET(cds_globals.\gnd! 
+    ));
+
+endmodule

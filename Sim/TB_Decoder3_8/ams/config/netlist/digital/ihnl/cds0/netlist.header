@@ -1,0 +1,20 @@
+// Library - Stimulator_TestBench, Cell - TB_Decoder3_8, View -
+//schematic
+// LAST TIME SAVED: Apr  1 15:15:33 2021
+// NETLIST TIME: Apr  1 15:17:42 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_Decoder3_8", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Apr  1 15:15:33 2021" *)
+
+module TB_Decoder3_8 ();
+
+// Buses in the design
+
+wire  [7:0]  Dout;
+
+wire  [2:0]  Bin;
+

@@ -1,32 +1,54 @@
-    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=1.46u l=300n \
-        as=7.008e-13 ad=7.008e-13 ps=3.88e-06 pd=3.88e-06 nrs=0.184932 \
-        nrd=0.184932 m=(1)*(1) par1=((1)*(1))
-    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.48u l=300n \
-        as=7.104e-13 ad=7.104e-13 ps=3.92e-06 pd=3.92e-06 nrs=0.182432 \
-        nrd=0.182432 m=(1)*(1) par1=((1)*(1))
-    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
-        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
-        m=(1)*(1) par1=((1)*(1))
-    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
-        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
-        m=(1)*(1) par1=((1)*(1))
-    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
-        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
-        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
-    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
-        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
-        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
-    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
-        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
-        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
-    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=890.0n l=350.0n \
-        as=4.272e-13 ad=4.272e-13 ps=2.74e-06 pd=2.74e-06 nrs=0.303371 \
-        nrd=0.303371 m=(1)*(1) par1=((1)*(1)) xf_subext=0
-    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
-        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
-        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
-    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
-        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
-        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
-ends LSHVT18U3VX1
-// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_HBridge_DC
+// View name: schematic
+M25 (net022 net022 VB vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M24 (net055 VB net046 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M23 (net6 VB net054 vss) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
+M22 (VB net022 net080 vss) nedia_bjt w=20u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M21 (net080 net080 0 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M20 (net046 net055 0 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M19 (net054 net055 0 vss) nedia_bjt w=60u l=1.25u m=(10)*(1) \
+        par1=((10)*(1)) extlay=0 xf_subext=0
+M26 (net017 net017 net055 vss) nedia_bjt w=15.0u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M6 (net021 net019 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M13 (net9 net064 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M3 (net7 net010 net6 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M1 (net5 Ctrl_LS net6 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M4 (net016 net018 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M2 (net7 Ctrl_HS vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M0 (net5 net012 vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+R0 (net5 net7) resistor r=1K
+I26 (vddh net022) isource dc=Iref type=dc
+I25 (vddh net017) isource dc=Iref type=dc
+V2 (vdd3! 0) vsource dc=3.3 type=dc
+V1 (vdde! 0) vsource dc=1.8 type=dc
+V0 (vddh 0) vsource dc=40 type=dc
+I29 (0 CAT Ctrl_LS vdd3! vdde! vddh 0 vdd3! vdde!) LS_LowSide_V2_ST
+I28 (0 CAT Ctrl_HS vdd3! vdde! vddh 0 vdd3! vdde!) LS_HighSide_V3_ST
+I10 (ANO net064 0 vdd3! vdde!) LSHVT18U3VX1
+I11 (ANO net019 0 vdd3! vdde!) LSHVT18U3VX1
+R18 (net018 net021) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R17 (vddh net018) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+R16 (net016 net010) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R9 (net010 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+R8 (net012 net9) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+R1 (vddh net012) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+V6 (CAT 0) vsource dc=0 type=pulse val0=0 val1=1.8 period=500u delay=120u \
+        rise=1p fall=1p width=100u
+V3 (ANO 0) vsource dc=1.8 type=pulse val0=0 val1=1.8 period=500u delay=10u \
+        rise=1p fall=1p width=100u

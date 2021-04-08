@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../psf/spectre.out  -format psfxl -raw ../psf   +lqtimeout 900 -maxw 5 -maxn 5 -env ade  -ahdllibdir /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data/Interactive.2/sharedData/Job12/ahdl/input.ahdlSimDB +logstatus  

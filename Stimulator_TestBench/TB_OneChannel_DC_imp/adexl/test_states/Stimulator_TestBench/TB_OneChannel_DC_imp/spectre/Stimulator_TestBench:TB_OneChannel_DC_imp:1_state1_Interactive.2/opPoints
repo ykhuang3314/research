@@ -1,0 +1,43 @@
+_opPointKeepList = nil
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOpPointStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->index = 11
+tmp1->inLastSet = nil
+tmp1->uniqueName = "nil"
+tmp1->fullName = "/M0"
+tmp1->opPoints = "vdsat vds"
+tmp1->cellName = "nedia_bjt"
+tmp1->libName = nil
+tmp1->plotOp = 't
+tmp1->saveOp = 't
+list(tmp1)
+)
+_opPointKeepList = nconc( _opPointKeepList savedComponent) 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOpPointStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->index = 12
+tmp1->inLastSet = nil
+tmp1->uniqueName = "nil"
+tmp1->fullName = "/M3"
+tmp1->opPoints = "vdsat vds"
+tmp1->cellName = "nedia_bjt"
+tmp1->libName = nil
+tmp1->plotOp = 't
+tmp1->saveOp = 't
+list(tmp1)
+)
+_opPointKeepList = nconc( _opPointKeepList savedComponent) 
+savedComponent = _opPointKeepList 
+_opPointKeepList = 'unbound

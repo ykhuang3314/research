@@ -1,0 +1,6 @@
+
+// Library name: Stimulator_IMP
+// Cell name: LS_HighSide_V3_ST
+// View name: schematic
+subckt LS_HighSide_V3_ST 0 in out vdd3! vdde! vddh inh_ground_gnd \
+        inh_power_vdd3 inh_power_vdde

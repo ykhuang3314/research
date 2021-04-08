@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Stimulator_TestBench\" \"TB_OneChannel_DC_imp\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Apr  5 14:55:30 2021"
+"title" ""
+"analysisList" "()"
+END

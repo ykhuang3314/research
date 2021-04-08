@@ -1,0 +1,7 @@
+simulator lang=spectre
+include "csft5a.scs"
+include "ne3.scs"
+include "nedia_bjt.scs"
+include "pe3.scs"
+include "ped_bjt.scs"
+include "rpp1k1.scs"

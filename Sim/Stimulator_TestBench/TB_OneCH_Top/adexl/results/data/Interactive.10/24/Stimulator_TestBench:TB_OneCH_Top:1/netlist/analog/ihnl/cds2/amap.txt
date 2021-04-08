@@ -1,0 +1,13 @@
+cellMap,*invrv3,*invrv3,*GATES_3V,*schematic
+netMap,*invrv3,*gnd!,*0
+netMap,*invrv3,*vdd3!,*vdd3!
+netMap,*invrv3,*vdde!,*vdde!
+netMap,*invrv3,*vdd!,*vdd!
+instMap,*invrv3,*MN1,*MN1
+instMaster,*invrv3,*MN1,*PRIMLIB_ne3_spectre,*ne3
+instMap,*invrv3,*MP1,*MP1
+instMaster,*invrv3,*MP1,*PRIMLIB_pe3_spectre,*pe3
+netMap,*invrv3,*inh_power_vdd3_vdd3!,*inh_power_vdd3
+netMap,*invrv3,*inh_ground_gnd_gnd!,*inh_ground_gnd
+portMap,*invrv3,*in,*in
+portMap,*invrv3,*out,*out

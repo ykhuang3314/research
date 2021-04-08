@@ -1,9 +1,7 @@
-( ( net
-( "gnd!" "inh_ground_gnd" )
-( "vdde!" "inh_power_vdde" )
-( "vdd3!" "inh_power_vdd3" )
- )
-( model
+( ( model
+( "TB_HBridge_DC" "TB_HBridge_DC" )
 ( "LSHVT18U3VX1" "LSHVT18U3VX1" )
+( "LS_LowSide_V2_ST" "LS_LowSide_V2_ST" )
+( "LS_HighSide_V3_ST" "LS_HighSide_V3_ST" )
  )
  )

@@ -1,0 +1,34 @@
+( global ( resolution_type basic ) )
+
+( net TB_Digital_Stimuli.EN_ST TB_Digital_Stimuli.EN_ST digital logic )
+( net TB_Digital_Stimuli.I0.EN_ST TB_Digital_Stimuli.EN_ST digital logic )
+
+( net TB_Digital_Stimuli.ANO_ST TB_Digital_Stimuli.ANO_ST digital logic )
+( net TB_Digital_Stimuli.I0.ANO_ST TB_Digital_Stimuli.ANO_ST digital logic )
+
+( net TB_Digital_Stimuli.CAT_ST TB_Digital_Stimuli.CAT_ST digital logic )
+( net TB_Digital_Stimuli.I0.CAT_ST TB_Digital_Stimuli.CAT_ST digital logic )
+
+( net TB_Digital_Stimuli.DIS_ST TB_Digital_Stimuli.DIS_ST digital logic )
+( net TB_Digital_Stimuli.I0.DIS_ST TB_Digital_Stimuli.DIS_ST digital logic )
+
+( net TB_Digital_Stimuli.MAG_ST TB_Digital_Stimuli.MAG_ST digital logic )
+( net TB_Digital_Stimuli.I0.MAG_ST TB_Digital_Stimuli.MAG_ST digital logic )
+
+( net TB_Digital_Stimuli.I0.period_ns TB_Digital_Stimuli.I0.period_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimuli.I0.CAT_phase_ns TB_Digital_Stimuli.I0.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimuli.I0.ANO_phase_ns TB_Digital_Stimuli.I0.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimuli.I0.DIS_phase_ns TB_Digital_Stimuli.I0.DIS_phase_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimuli.I0.IPD_ns TB_Digital_Stimuli.I0.IPD_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimuli.I0.Rest_ns TB_Digital_Stimuli.I0.Rest_ns digital logic (type rnm) )
+
+( net TB_Digital_Stimuli.I0.en_extension_ns TB_Digital_Stimuli.I0.en_extension_ns digital logic (type rnm) )
+
+(instance TB_Digital_Stimuli.I0 dmixed (type rnm))
+(instance TB_Digital_Stimuli dmixed (type rnm))
+(instance cds_globals digital)

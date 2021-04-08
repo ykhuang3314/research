@@ -1,0 +1,32 @@
+    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=2.82u l=300n \
+        as=1.3536e-12 ad=1.3536e-12 ps=6.6e-06 pd=6.6e-06 nrs=0.0957447 \
+        nrd=0.0957447 m=(1)*(1) par1=((1)*(1))
+    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.47u l=300n \
+        as=7.056e-13 ad=7.056e-13 ps=3.9e-06 pd=3.9e-06 nrs=0.183673 \
+        nrd=0.183673 m=(1)*(1) par1=((1)*(1))
+    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=1.78u l=350.0n \
+        as=8.544e-13 ad=8.544e-13 ps=4.52e-06 pd=4.52e-06 nrs=0.151685 \
+        nrd=0.151685 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LSHVT18U3VX2
+// End of subcircuit definition.

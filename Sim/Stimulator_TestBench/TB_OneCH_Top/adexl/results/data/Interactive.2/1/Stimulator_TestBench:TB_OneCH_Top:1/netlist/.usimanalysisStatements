@@ -1,0 +1,12 @@
+
+tran tran stop=2.5m write="spectre.ic" writefinal="spectre.fc" 
+
+finalTimeOP info what=oppoint where=rawfile
+
+modelParameter info what=models where=rawfile 
+element info what=inst where=rawfile 
+outputParameter info what=output where=rawfile 
+
+wave_out options rawfmt=sst2
+save TB_OneCH_Top.I0.I0.I2.M0:vds TB_OneCH_Top.I0.I0.I2.M0:vdsat \
+TB_OneCH_Top.I0.I0.I2.M3:vds TB_OneCH_Top.I0.I0.I2.M3:vdsat 

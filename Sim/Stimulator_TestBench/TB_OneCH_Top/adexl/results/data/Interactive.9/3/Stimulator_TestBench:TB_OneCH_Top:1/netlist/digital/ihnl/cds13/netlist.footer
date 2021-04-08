@@ -1,0 +1,10 @@
+
+LS_HighSide_V3_ST I8 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(net07), .in(Ctrl_HS));
+
+LS_LowSide_V2_ST I9 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
+    .out(net08), .in(Ctrl_LS));
+
+endmodule

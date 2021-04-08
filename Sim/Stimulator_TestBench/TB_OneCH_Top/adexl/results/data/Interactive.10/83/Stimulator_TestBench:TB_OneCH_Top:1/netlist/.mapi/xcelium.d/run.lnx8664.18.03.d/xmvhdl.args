@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/83/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-amsdlibdir
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/83/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-ALLOWREDEFINITION
+-CDSLIB
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/83/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/83/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//dummyMapi.vhms
+-HDLVAR
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/83/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-MESSAGES
+-UPDATE

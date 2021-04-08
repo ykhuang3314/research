@@ -3,4 +3,7 @@
 ( "vdde!" "inh_power_vdde" )
 ( "vdd3!" "inh_power_vdd3" )
  )
+( model
+( "LSHVT18U3VX1" "LSHVT18U3VX1" )
+ )
  )

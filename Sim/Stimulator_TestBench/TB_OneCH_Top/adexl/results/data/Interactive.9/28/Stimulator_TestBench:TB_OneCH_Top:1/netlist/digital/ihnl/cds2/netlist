@@ -1,0 +1,36 @@
+// Library - GATES_3V, Cell - invrv3, View - schematic
+// LAST TIME SAVED: Mar  7 12:42:39 2018
+// NETLIST TIME: Apr  6 12:13:14 2021
+`timescale 1ns / 1ps 
+
+`worklib GATES_3V
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="GATES_3V", dfII_cell="invrv3", dfII_view="schematic", worklib_name="GATES_3V", view_name="schematic", last_save_time="Mar  7 12:42:39 2018" *)
+
+module invrv3 (out, in);
+
+parameter GT_PDW=0;
+parameter GT_PDL=350.00n;
+parameter sx=4.8e-07;
+parameter lc=2.7e-07;
+parameter GT_PUW=0;
+parameter GT_PUL=300.00n;
+
+output  out;
+
+input  in;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd3";
+integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
+\vdd3! ;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+
+endmodule

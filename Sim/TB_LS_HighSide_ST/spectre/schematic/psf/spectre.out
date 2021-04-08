@@ -5,23 +5,23 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 17024
-Memory  available: 49.4961 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 11866
+Memory  available: 49.1473 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1202.3] ( 16 ),  1 [1400.8] ( 17 ),  2 [1231.5] ( 18 )
-                 3 [1289.9] ( 19 ),  4 [1200.1] ( 20 ),  5 [1398.8] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [1483.7] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [1216.1] ( 25 ), 10 [1267.2] ( 26 )
-                11 [1256.5] ( 27 ), 12 [1231.9] ( 28 ), 13 [1284.7] ( 29 )
-                14 [1200.0] ( 30 ), 15 [1200.1] ( 31 )
+        0:       0 [1247.5] ( 16 ),  1 [1231.5] ( 17 ),  2 [1200.0] ( 18 )
+                 3 [1292.9] ( 19 ),  4 [1200.0] ( 20 ),  5 [1224.9] ( 21 )
+                 6 [1372.1] ( 22 ),  7 [1200.0] ( 23 )
+        1:       8 [1200.3] ( 24 ),  9 [1349.0] ( 25 ), 10 [1268.6] ( 26 )
+                11 [1308.7] ( 27 ), 12 [1244.2] ( 28 ), 13 [1296.2] ( 29 )
+                14 [1294.8] ( 30 ), 15 [1242.6] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.4 %, 0.3 %, 0.2 %
+System load averages (1min, 5min, 15min) : 0.2 %, 0.2 %, 0.2 %
 Hyperthreading is enabled
 
 
-Simulating `input.scs' on s2424 at 11:56:16 AM, Mon Mar 15, 2021 (process id: 17024).
+Simulating `input.scs' on s2424 at 10:59:46 AM, Tue Mar 23, 2021 (process id: 11866).
 Current working directory: /home/ykhuang/research/Sim/TB_LS_HighSide_ST/spectre/schematic/netlist
 Command line:
     /pkg/cadence/installs/SPECTRE181/tools/bin/spectre -64 input.scs  \
@@ -364,32 +364,25 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
-Time for NDB Parsing: CPU = 462.59 ms, elapsed = 549.298 ms.
-Time accumulated: CPU = 534.485 ms, elapsed = 549.313 ms.
-Peak resident memory used = 70.4 Mbytes.
+Time for NDB Parsing: CPU = 483.229 ms, elapsed = 569.772 ms.
+Time accumulated: CPU = 552.382 ms, elapsed = 569.786 ms.
+Peak resident memory used = 72.4 Mbytes.
 
-
-Warning from spectre in `LS_HighSide_V3_ST', during circuit read-in.
-    WARNING (SFE-2453): The global node `0' and sub circuit terminal `0' will be treated as the sub circuit terminal.
-    WARNING (SFE-2453): The global node `vdd3!' and sub circuit terminal `vdd3!' will be treated as the sub circuit terminal.
-    WARNING (SFE-2453): The global node `vdde!' and sub circuit terminal `vdde!' will be treated as the sub circuit terminal.
-
-Time for Elaboration: CPU = 34.67 ms, elapsed = 34.6711 ms.
-Time accumulated: CPU = 569.307 ms, elapsed = 584.135 ms.
-Peak resident memory used = 80.3 Mbytes.
+Time for Elaboration: CPU = 44.58 ms, elapsed = 44.5819 ms.
+Time accumulated: CPU = 597.193 ms, elapsed = 614.598 ms.
+Peak resident memory used = 82 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 2.523 ms, elapsed = 2.52509 ms.
-Time accumulated: CPU = 571.977 ms, elapsed = 586.805 ms.
-Peak resident memory used = 81.3 Mbytes.
+Time for EDB Visiting: CPU = 2.196 ms, elapsed = 2.19703 ms.
+Time accumulated: CPU = 599.58 ms, elapsed = 616.984 ms.
+Peak resident memory used = 82.9 Mbytes.
 
 
 Notice from spectre during initial setup.
-    M2.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
     M13.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
 
 
@@ -419,126 +412,63 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 26
-             iprobe 1     
-                bjt 3     
-            bsim3v3 26    
-          capacitor 1     
-           hisim_hv 3     
-            isource 1     
-           resistor 6     
+              nodes 12
+                bjt 1     
+            bsim3v3 10    
+           hisim_hv 1     
+           resistor 2     
             vsource 4     
 
 Analysis and control statement inventory:
+                 dc 1     
                info 7     
-               tran 1     
 
 Output statements:
              .probe 0     
            .measure 0     
-               save 1     
+               save 0     
 
-Time for parsing: CPU = 4.579 ms, elapsed = 8.85296 ms.
-Time accumulated: CPU = 576.691 ms, elapsed = 595.792 ms.
-Peak resident memory used = 83.3 Mbytes.
+Time for parsing: CPU = 4.741 ms, elapsed = 9.14288 ms.
+Time accumulated: CPU = 604.493 ms, elapsed = 626.298 ms.
+Peak resident memory used = 84.7 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~
 
-*************************************************
-Transient Analysis `tran': time = (0 s -> 500 us)
-*************************************************
+******************
+DC Analysis `dcOp'
+******************
 
-Notice from spectre during IC analysis, during transient analysis `tran'.
-    GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(I10.M2.m1:int_d) = 21.9668 mV
-        Use the `gmin_check' option to eliminate or expand this report.
-
-DC simulation time: CPU = 8.272 ms, elapsed = 8.27312 ms.
-
-Opening the PSFXL file ../psf/tran.tran.tran ...
+Opening the PSF file ../psf/dcOp.dc ...
 Important parameter values:
-    start = 0 s
-    outputstart = 0 s
-    stop = 500 us
-    step = 500 ns
-    maxstep = 5 us
-    ic = all
-    useprevic = no
-    skipdc = no
-    reltol = 10e-06
+    reltol = 100e-06
     abstol(V) = 1 uV
     abstol(I) = 1 pA
     temp = 27 C
     tnom = 27 C
     tempeffects = all
-    errpreset = conservative
-    method = gear2only
-    lteratio = 10
-    relref = alllocal
-    cmin = 0 F
-    gmin = 1 pS
+    gmindc = 1 pS
 
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I10.M4.m1:int_d) = 21.965 mV
+        Use the `gmin_check' option to eliminate or expand this report.
 
-Output and IC/nodeset summary:
-                 save   5       (current)
-                 save   26      (voltage)
-
-    tran: time = 17.22 us    (3.44 %), step = 5 us            (1 %)
-    tran: time = 42.22 us    (8.44 %), step = 5 us            (1 %)
-    tran: time = 63.26 us    (12.7 %), step = 1.546 us     (309 m%)
-    tran: time = 91.2 us     (18.2 %), step = 5 us            (1 %)
-    tran: time = 113.3 us    (22.7 %), step = 1.514 us     (303 m%)
-    tran: time = 140.1 us      (28 %), step = 4.753 us     (951 m%)
-    tran: time = 162.6 us    (32.5 %), step = 1.465 us     (293 m%)
-    tran: time = 188.9 us    (37.8 %), step = 4.704 us     (941 m%)
-    tran: time = 213.4 us    (42.7 %), step = 1.524 us     (305 m%)
-    tran: time = 240.4 us    (48.1 %), step = 4.787 us     (957 m%)
-    tran: time = 262.6 us    (52.5 %), step = 1.465 us     (293 m%)
-    tran: time = 288.9 us    (57.8 %), step = 4.704 us     (941 m%)
-    tran: time = 313.4 us    (62.7 %), step = 1.524 us     (305 m%)
-    tran: time = 340.4 us    (68.1 %), step = 4.788 us     (958 m%)
-    tran: time = 362.6 us    (72.5 %), step = 1.465 us     (293 m%)
-    tran: time = 388.9 us    (77.8 %), step = 4.704 us     (941 m%)
-    tran: time = 413.4 us    (82.7 %), step = 1.524 us     (305 m%)
-    tran: time = 440.4 us    (88.1 %), step = 4.788 us     (958 m%)
-    tran: time = 462.6 us    (92.5 %), step = 1.465 us     (293 m%)
-    tran: time = 488.9 us    (97.8 %), step = 4.704 us     (941 m%)
-Number of accepted tran steps =             4043
 
 Maximum value achieved for any signal of each quantity: 
-V: V(M2.xpnp.q1:int_b) = 40.56 V
-I: I(V0:p) = 20.61 mA
+V: V(vddH) = 40 V
+I: I(V3:p) = 99.66 uA
+Convergence achieved in 20 iterations.
+DC simulation time: CPU = 5.719 ms, elapsed = 8.07619 ms.
+Total time required for dc analysis `dcOp': CPU = 5.801 ms, elapsed = 8.15105 ms.
+Time accumulated: CPU = 619.614 ms, elapsed = 643.774 ms.
+Peak resident memory used = 86.4 Mbytes.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Post-Transient Simulation Summary
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   -   To further speed up simulation, consider
-          add ++aps on command line
-   -   Non-default settings that could significantly slow down simulation
-          errpreset = conservative, default moderate
-          reltol = 10e-06, default 100e-06 (conservative)
-   -   The circuit contains signals of the voltage > 10V, consider to set highvoltage=yes to get better accuracy and convergence ability.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dcOpInfo: writing operating point information to rawfile.
 
-
-During simulation, the CPU load for active processors is :
-        Spectre  0 (20.9 %)      1 (2.0 %)       2 (2.6 %)       3 (5.2 %)
-                 6 (1.3 %)       7 (3.3 %)       8 (16.2 %)      9 (29.4 %)
-                11 (5.8 %)      12 (7.1 %)      14 (1.3 %)      17 (2.6 %)
-                21 (32.5 %)     
-        Other   
-Initial condition solution time: CPU = 8.332 ms, elapsed = 8.33416 ms.
-Intrinsic tran analysis time:    CPU = 1.02039 s, elapsed = 1.02282 s.
-Total time required for tran analysis `tran': CPU = 1.03103 s, elapsed = 1.03345 s.
-Time accumulated: CPU = 1.62161 s, elapsed = 1.64314 s.
-Peak resident memory used = 88.6 Mbytes.
-
-finalTimeOP: writing operating point information to rawfile.
-
-Opening the PSF file ../psf/finalTimeOP.info ...
+Opening the PSF file ../psf/dcOpInfo.info ...
 modelParameter: writing model parameter values to rawfile.
 
 Opening the PSF file ../psf/modelParameter.info ...
@@ -558,9 +488,9 @@ subckts: writing subcircuits to rawfile.
 
 Opening the PSFASCII file ../psf/subckts.info.subckts ...
 
-Aggregate audit (11:56:18 AM, Mon Mar 15, 2021):
-Time used: CPU = 1.7 s, elapsed = 1.75 s, util. = 97.2%.
-Time spent in licensing: elapsed = 143 ms, percentage of total = 8.17%.
-Peak memory used = 89.4 Mbytes.
-Simulation started at: 11:56:16 AM, Mon Mar 15, 2021, ended at: 11:56:18 AM, Mon Mar 15, 2021, with elapsed time (wall clock): 1.75 s.
-spectre completes with 0 errors, 4 warnings, and 4 notices.
+Aggregate audit (10:59:47 AM, Tue Mar 23, 2021):
+Time used: CPU = 693 ms, elapsed = 744 ms, util. = 93.2%.
+Time spent in licensing: elapsed = 144 ms, percentage of total = 19.4%.
+Peak memory used = 88.6 Mbytes.
+Simulation started at: 10:59:46 AM, Tue Mar 23, 2021, ended at: 10:59:47 AM, Tue Mar 23, 2021, with elapsed time (wall clock): 744 ms.
+spectre completes with 0 errors, 1 warning, and 3 notices.

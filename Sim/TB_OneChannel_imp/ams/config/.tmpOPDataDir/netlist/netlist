@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  Stimulator_TestBench 
+cell: TB_OneChannel_imp 
+view: config 
+topCellLib: Stimulator_TestBench 

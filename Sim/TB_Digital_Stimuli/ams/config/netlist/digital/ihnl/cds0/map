@@ -1,0 +1,11 @@
+( ( defbus
+( "MAG_ST" 4 0  "MAG_ST" 4 0  )
+ )
+( net
+( "MAG_ST<2>" "MAG_ST[2]" )
+( "MAG_ST<1>" "MAG_ST[1]" )
+( "MAG_ST<0>" "MAG_ST[0]" )
+( "MAG_ST<3>" "MAG_ST[3]" )
+( "MAG_ST<4>" "MAG_ST[4]" )
+ )
+ )

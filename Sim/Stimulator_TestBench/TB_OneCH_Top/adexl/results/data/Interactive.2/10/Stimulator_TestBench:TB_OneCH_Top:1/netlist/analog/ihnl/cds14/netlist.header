@@ -1,0 +1,6 @@
+
+// Library name: Stimulator_IMP
+// Cell name: SingleChannel_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt SingleChannel_ST

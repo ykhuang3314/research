@@ -1,0 +1,9 @@
+instMap,*HalfBridge_ST,*I8,*I8
+instMaster,*HalfBridge_ST,*I8,*Stimulator_IMP_LS_HighSide_V3_ST_schematic
+instMap,*HalfBridge_ST,*I9,*I9
+instMaster,*HalfBridge_ST,*I9,*Stimulator_IMP_LS_LowSide_V2_ST_schematic
+netMap,*HalfBridge_ST,*vdd3!,*cds_globals.\vdd3! 
+netMap,*HalfBridge_ST,*vdde!,*cds_globals.\vdde! 
+netMap,*HalfBridge_ST,*gnd!,*cds_globals.\gnd! 
+netMap,*HalfBridge_ST,*vdd!,*cds_globals.\vdd! 
+cellMap,*HalfBridge_ST,*HalfBridge_ST,*Stimulator_IMP,*schematic

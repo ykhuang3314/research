@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"MN1n" "PRIMLIB_ne3_spectre"
+"MP1n" "PRIMLIB_pe3_spectre"
+"inv" ":1v"
+"outv" ":2v"
+"gndv" ":3v"
+"vdd3v" ":4v"

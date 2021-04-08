@@ -1,0 +1,11 @@
+cellMap,*IN_3VX2,*IN_3VX2,*D_CELLS_3V,*cmos_sch
+netMap,*IN_3VX2,*vdd3!,*vdd3!
+netMap,*IN_3VX2,*vdde!,*vdde!
+netMap,*IN_3VX2,*gnd!,*0
+netMap,*IN_3VX2,*vdd!,*vdd!
+instMap,*IN_3VX2,*invr_1,*invr_1
+instMaster,*IN_3VX2,*invr_1,*GATES_3V_invrv3_schematic,*invrv3
+netMap,*IN_3VX2,*inh_power_vdd3_vdd3!,*inh_power_vdd3
+netMap,*IN_3VX2,*inh_ground_gnd_gnd!,*inh_ground_gnd
+portMap,*IN_3VX2,*A,*A
+portMap,*IN_3VX2,*Q,*Q

@@ -1,0 +1,9 @@
+( ( net
+( "gnd!" "inh_ground_gnd" )
+( "vdd3!" "inh_power_vdd3" )
+ )
+( model
+( "invrv3" "invrv3" )
+( "IN_3VX2" "IN_3VX2" )
+ )
+ )

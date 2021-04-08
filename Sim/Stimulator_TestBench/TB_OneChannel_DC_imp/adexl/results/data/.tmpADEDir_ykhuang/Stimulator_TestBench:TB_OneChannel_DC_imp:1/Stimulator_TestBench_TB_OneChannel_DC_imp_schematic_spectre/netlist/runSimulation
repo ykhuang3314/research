@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../../simulation/TB_OneChannel_DC_imp/spectre/schematic/psf/spectre.out  -format psfxl -raw ../../simulation/TB_OneChannel_DC_imp/spectre/schematic/psf   +lqtimeout 900 -maxw 5 -maxn 5 -env ade   

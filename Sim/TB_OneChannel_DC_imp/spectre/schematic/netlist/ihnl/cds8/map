@@ -1,0 +1,9 @@
+( ( model
+( "TB_OneChannel_DC_imp" "TB_OneChannel_DC_imp" )
+( "LSHVT18U3VX1" "LSHVT18U3VX1" )
+( "LS_LowSide_V2_ST" "LS_LowSide_V2_ST" )
+( "LS_HighSide_V3_ST" "LS_HighSide_V3_ST" )
+( "AND2HDX0" "AND2HDX0" )
+( "IN_3VX2" "IN_3VX2" )
+ )
+ )

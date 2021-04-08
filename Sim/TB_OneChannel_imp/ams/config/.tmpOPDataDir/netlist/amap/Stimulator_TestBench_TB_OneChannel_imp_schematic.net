@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"MAG_ST<0>v" "MAG_ST[0]v"
+"MAG_ST<1>v" "MAG_ST[1]v"
+"MAG_ST<2>v" "MAG_ST[2]v"
+"MAG_ST<3>v" "MAG_ST[3]v"
+"MAG_ST<4>v" "MAG_ST[4]v"
+"gnd!v" "cds_globals.\\gnd! v"
+"vdd3!v" "cds_globals.\\vdd3! v"
+"vdde!v" "cds_globals.\\vdde! v"

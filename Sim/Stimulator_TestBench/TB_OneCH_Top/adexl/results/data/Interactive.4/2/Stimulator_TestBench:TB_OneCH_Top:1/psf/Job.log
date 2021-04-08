@@ -1,0 +1,125 @@
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 2) on testbench [
+\o           Stimulator_TestBench:TB_OneCH_Top:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Rload = "1000"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4/2/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4/2/Stimulator_TestBench:TB_OneCH_Top:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 2)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Apr  5 15:03:53 2021
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4/2/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o rpp1k1                      spectre              *Stopping View*  
+\o ne3                         spectre              *Stopping View*  
+\o pe3                         spectre              *Stopping View*  
+\o ne                          spectre              *Stopping View*  
+\o pe                          spectre              *Stopping View*  
+\o csft5a                      spectre              *Stopping View*  
+\o nedia_bjt                   spectre              *Stopping View*  
+\o ped_bjt                     spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Decoder8                    functional           *Stopping View*  
+\o Digital_Stimulus_V2_ST      functional           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o TB_OneCH_Top                schematic                             
+\o SingleChannel_ST            schematic                             
+\o HalfBridge_ST               schematic                             
+\o LS_LowSide_V2_ST            schematic                             
+\o LS_HighSide_V3_ST           schematic                             
+\o CurrentSource_All_ST        schematic                             
+\o CurrentMirror_ST            schematic                             
+\o LSHVT18U3VX2                cmos_sch                              
+\o Idac_5bit_ST                schematic                             
+\o AND2HDX0                    cmos_sch                              
+\o invr                        schematic                             
+\o nand2                       schematic                             
+\o IN_3VX2                     cmos_sch                              
+\o invrv3                      schematic                             
+\o LSHVT18U3VX1                cmos_sch                              
+\o Ext_Iref_ST                 schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4/2/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ........
+\o     ERROR (SFE-675): "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" 10: Cannot run the simulation because a library file was included in `/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.4/2/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/input.scs':14 without a section name. Add a valid section name in the include statement and rerun the simulation.
+\o Please refer to assembler.log file in netlist directory for the detailed info.
+\e *ERROR* (AMS-1245): AMS UNL netlisting has failed because of errors in the design.
+\e Right-click the test name on the Outputs assistant pane 
+\e and check Output Log->Netlister Log for errors.
+\e Correct your design and netlist again.
+\o       ...unsuccessful.
+\e *Error* Error during netlisting of design for the point ID (1 2).
+\e ("error" 0 t nil ("*Error* "))
+\e 
+\e 
+\o 
+\o *Error*   Error ID  = 5012
+\o *Error*   Error Msg = Failed to create netlist.
+\o 
+\o 
+\o 
+\o 

@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_Digital_Stimuli:config
+// Created On: Mar 25 14:59:59 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_Digital_Stimuli:schematic"
+
+	config cell="Digital_Stimulus_ST" lib="Stimulator_IMP" view="functional"
+
+ }

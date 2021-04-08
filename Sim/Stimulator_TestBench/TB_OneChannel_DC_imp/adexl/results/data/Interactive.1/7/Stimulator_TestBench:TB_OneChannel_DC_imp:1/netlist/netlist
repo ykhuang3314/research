@@ -1,0 +1,304 @@
+
+// Library name: GATES_HD
+// Cell name: nand2
+// View name: schematic
+subckt nand2 a b out inh_ground_gnd inh_power_vdd
+parameters GT_PDW GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=180.00n
+    MN1 (out a net11 inh_ground_gnd) ne w=GT_PDW l=GT_PDL as=sx*(GT_PDW) \
+        ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) pd=2*(sx+(GT_PDW)) \
+        nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    MN2 (net11 b inh_ground_gnd inh_ground_gnd) ne w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) \
+        pd=2*(sx+(GT_PDW)) nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    MP1 (out a inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
+        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
+        par1=((1)*(1))
+    MP2 (out b inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
+        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
+        par1=((1)*(1))
+ends nand2
+// End of subcircuit definition.
+
+// Library name: GATES_HD
+// Cell name: invr
+// View name: schematic
+subckt invr in out inh_ground_gnd inh_power_vdd
+parameters GT_PDW GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=180.00n
+    ne (out in inh_ground_gnd inh_ground_gnd) ne w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) \
+        pd=2*(sx+(GT_PDW)) nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    pe (out in inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
+        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
+        par1=((1)*(1))
+ends invr
+// End of subcircuit definition.
+
+// Library name: D_CELLS_HD
+// Cell name: AND2HDX0
+// View name: cmos_sch
+subckt AND2HDX0 A B Q inh_ground_gnd inh_power_vdd
+    nand2_1 (A B net10 inh_ground_gnd inh_power_vdd) nand2 GT_PDW=420.00n \
+        GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW=720.00n GT_PUL=180.00n
+    invr_1 (net10 Q inh_ground_gnd inh_power_vdd) invr GT_PDW=420.00n \
+        GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW=720.00n GT_PUL=180.00n
+ends AND2HDX0
+// End of subcircuit definition.
+
+// Library name: GATES_3V
+// Cell name: invrv3
+// View name: schematic
+subckt invrv3 in out inh_ground_gnd inh_power_vdd3
+parameters GT_PDW GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=300.00n
+    MN1 (out in inh_ground_gnd inh_ground_gnd) ne3 w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*sx+(GT_PDW) pd=2*sx+(GT_PDW) \
+        nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    MP1 (out in inh_power_vdd3 inh_power_vdd3) pe3 w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*sx+(GT_PUW) pd=2*sx+(GT_PUW) \
+        nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) par1=((1)*(1))
+ends invrv3
+// End of subcircuit definition.
+
+// Library name: D_CELLS_3V
+// Cell name: IN_3VX2
+// View name: cmos_sch
+subckt IN_3VX2 A Q inh_ground_gnd inh_power_vdd3
+    invr_1 (A Q inh_ground_gnd inh_power_vdd3) invrv3 GT_PDW=960.00n \
+        GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW=2.94u GT_PUL=300.00n
+ends IN_3VX2
+// End of subcircuit definition.
+
+// Library name: D_CELLS_M3V
+// Cell name: LSHVT18U3VX1
+// View name: cmos_sch
+subckt LSHVT18U3VX1 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde
+    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=1.46u l=300n \
+        as=7.008e-13 ad=7.008e-13 ps=3.88e-06 pd=3.88e-06 nrs=0.184932 \
+        nrd=0.184932 m=(1)*(1) par1=((1)*(1))
+    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.48u l=300n \
+        as=7.104e-13 ad=7.104e-13 ps=3.92e-06 pd=3.92e-06 nrs=0.182432 \
+        nrd=0.182432 m=(1)*(1) par1=((1)*(1))
+    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=890.0n l=350.0n \
+        as=4.272e-13 ad=4.272e-13 ps=2.74e-06 pd=2.74e-06 nrs=0.303371 \
+        nrd=0.303371 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LSHVT18U3VX1
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_V2_ST
+// View name: schematic
+subckt LS_LowSide_V2_ST 0 in out vdd3! vdde! vddh inh_ground_gnd \
+        inh_power_vdd3 inh_power_vdde
+    M0 (net12 in_3V 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    R2 (net9 net12) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    R0 (out 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (vddh net9) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R3 (net11 out) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    M1 (net11 net9 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    I0 (in in_3V inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
+        LSHVT18U3VX1
+ends LS_LowSide_V2_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_HighSide_V3_ST
+// View name: schematic
+subckt LS_HighSide_V3_ST 0 in out vdd3! vdde! vddh inh_ground_gnd \
+        inh_power_vdd3 inh_power_vdde
+    M13 (net10 inn3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+    R0 (vddh out) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (out net10) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    I10 (in inn3v inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
+        LSHVT18U3VX1
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_OneChannel_DC_imp
+// View name: schematic
+V11 (CAT_ST 0) vsource dc=0 type=dc
+V10 (ANO_ST 0) vsource dc=1.8 type=dc
+V9 (EN_ST 0) vsource dc=1.8 type=dc
+V0 (vddh 0) vsource dc=40 type=dc
+V4 (vdde! 0) vsource dc=1.8 type=dc
+V3 (vdd3! 0) vsource dc=3.3 type=dc
+V1 (vdd! 0) vsource dc=1.8 type=dc
+V12 (MAG_ST\<0\> 0) vsource type=pulse val0=0 val1=1.8 period=200u \
+        delay=100u rise=1p fall=1p width=100u
+V2 (MAG_ST\<1\> 0) vsource type=pulse val0=0 val1=1.8 period=400u \
+        delay=200u rise=1p fall=1p width=200u
+V5 (MAG_ST\<2\> 0) vsource type=pulse val0=0 val1=1.8 period=800u \
+        delay=400u rise=1p fall=1p width=400u
+V6 (MAG_ST\<3\> 0) vsource type=pulse val0=0 val1=1.8 period=1.6m \
+        delay=800u rise=1p fall=1p width=800u
+V7 (MAG_ST\<4\> 0) vsource type=pulse val0=0 val1=1.8 period=3.2m \
+        delay=1.6m rise=1p fall=1p width=1.6m
+M2 (net288 net301 net287 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M1 (net286 net057 net287 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M21 (net283 net283 net282 0) nedia_bjt w=30u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M8 (net279 net279 VB 0) nedia_bjt w=60u l=1.25u m=(10)*(1) par1=((10)*(1)) \
+        extlay=0 xf_subext=0
+M5 (net282 VB net331 0) nedia_bjt w=60u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M0 (net287 VB net330 0) nedia_bjt w=60u l=1.25u m=(10)*(1) par1=((10)*(1)) \
+        extlay=0 xf_subext=0
+M7 (VB net279 net278 0) nedia_bjt w=20u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M4 (net331 net282 0 0) nedia_bjt w=60u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M6 (net278 net278 0 0) nedia_bjt w=60u l=1.25u m=(10)*(1) par1=((10)*(1)) \
+        extlay=0 xf_subext=0
+M3 (net330 net282 0 0) nedia_bjt w=60u l=1.25u m=(10)*(1) par1=((10)*(1)) \
+        extlay=0 xf_subext=0
+M9 (net276 vdd3! 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M10 (net271 net276 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M16 (Bias2 en_3v net271 0) nedia_bjt w=50u l=1.25u m=(1)*(5) \
+        par1=((1)*(5)) extlay=0 xf_subext=0
+C5 (vddh net276) csft5a area=6.3936e-11 perimeter=33.72u m=15 par1=(15)
+C1 (net276 0) csft5a area=6.3936e-11 perimeter=33.72u m=45 par1=(45)
+I45 (EN_ST MAG_ST\<0\> net329 0 vdd!) AND2HDX0
+I46 (EN_ST MAG_ST\<1\> net326 0 vdd!) AND2HDX0
+I47 (EN_ST MAG_ST\<2\> net327 0 vdd!) AND2HDX0
+I48 (EN_ST MAG_ST\<3\> net328 0 vdd!) AND2HDX0
+I49 (EN_ST MAG_ST\<4\> net333 0 vdd!) AND2HDX0
+M56 (VBp2 net260 net320 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M34 (net260 net260 net259 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M30 (net259 net259 0 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 ps=4.096e-05 \
+        pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M27 (net320 net259 0 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 ps=4.096e-05 \
+        pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M26 (net268 net268 0 0) ne3 w=40u l=2u as=1.92e-11 ad=1.92e-11 \
+        ps=8.096e-05 pd=8.096e-05 nrs=0.00675 nrd=0.00675 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M13 (net271 net268 0 0) ne3 w=40u l=2u as=1.248e-11 ad=1.08e-11 \
+        ps=4.8624e-05 pd=4.054e-05 nrs=0.00675 nrd=0.00675 m=(1)*(10) \
+        par1=((1)*(10)) xf_subext=0
+I31 (net325 D0_3v 0 vdd3!) IN_3VX2
+I3 (net324 D1_3v 0 vdd3!) IN_3VX2
+I5 (net323 D2_3v 0 vdd3!) IN_3VX2
+I7 (net322 D3_3v 0 vdd3!) IN_3VX2
+I9 (net332 D4_3v 0 vdd3!) IN_3VX2
+I17 (EN_ST en_3v 0 vdd3! vdde!) LSHVT18U3VX1
+I0 (net329 net325 0 vdd3! vdde!) LSHVT18U3VX1
+I30 (net326 net324 0 vdd3! vdde!) LSHVT18U3VX1
+I4 (net327 net323 0 vdd3! vdde!) LSHVT18U3VX1
+I6 (net328 net322 0 vdd3! vdde!) LSHVT18U3VX1
+I29 (net333 net332 0 vdd3! vdde!) LSHVT18U3VX1
+M41 (net311 net267 vdd3! vdd3!) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+M38 (net313 net267 vdd3! vdd3!) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+M35 (net315 net267 vdd3! vdd3!) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+M32 (net317 net267 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+M22 (net319 net267 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M52 (net267 net267 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M42 (net310 VBp2 net311 vdd3!) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+M39 (net312 VBp2 net313 vdd3!) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+M36 (net314 VBp2 net315 vdd3!) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+M33 (net316 VBp2 net317 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+M29 (net318 VBp2 net319 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M55 (VBp2 VBp2 net267 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M44 (net268 D1_3v net316 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M45 (net268 D2_3v net314 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M46 (net268 D3_3v net312 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M47 (net268 D4_3v net310 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M31 (net268 D0_3v net318 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+R3 (net321 net260) rpp1k1 l=20.095u w=2u m=1 par1=(1)
+I33 (0 ANO_ST net301 vdd3! vdde! vddh 0 vdd3! vdde!) LS_LowSide_V2_ST
+I32 (0 CAT_ST net057 vdd3! vdde! vddh 0 vdd3! vdde!) LS_LowSide_V2_ST
+I35 (vdd3! net321) isource dc=10u type=dc
+M11 (net307 net275 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M15 (net308 net275 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M17 (net275 net275 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M25 (net288 net059 vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M24 (net286 net285 vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+M12 (net283 Bias2 net307 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+M18 (Bias2 Bias2 net275 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+M14 (net279 Bias2 net308 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+R0 (net286 net288) resistor r=Rload
+I28 (0 CAT_ST net059 vdd3! vdde! vddh 0 vdd3! vdde!) LS_HighSide_V3_ST
+I22 (0 ANO_ST net285 vdd3! vdde! vddh 0 vdd3! vdde!) LS_HighSide_V3_ST

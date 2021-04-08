@@ -1,0 +1,33 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD/ahdlSimDB"
+-amsdlibdir
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v lib:Stimulator_IMP cell:Decoder8 view:functional"
+-MESSAGES
+-AMSELAB
+-XLMODE
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.9/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

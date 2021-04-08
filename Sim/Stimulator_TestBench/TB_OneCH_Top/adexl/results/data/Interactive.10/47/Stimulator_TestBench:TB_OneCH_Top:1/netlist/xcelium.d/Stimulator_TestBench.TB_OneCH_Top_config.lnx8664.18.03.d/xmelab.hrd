@@ -1,0 +1,34 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/sharedData/Job27/ahdl/input.ahdlSimDB"
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCONNRULES
+ConnRules_inhconn_full_fast_gnd
+
+Stimulator_TestBench.TB_OneCH_Top:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v lib:Stimulator_IMP cell:Decoder8 view:functional"
+-SPECTRE_ARGS
+++aps

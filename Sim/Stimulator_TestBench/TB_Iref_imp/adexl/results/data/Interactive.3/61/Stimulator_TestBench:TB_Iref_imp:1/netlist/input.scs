@@ -1,0 +1,65 @@
+// Generated for: spectre
+// Generated on: Mar 25 16:23:21 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_Iref_imp
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters vdd=3.3
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=ws
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=ws
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=ws
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_Iref_imp
+// View name: schematic
+R1 (net73 0) rpp1k1 l=150.295u w=2u m=1 par1=(1)
+M43 (net81 net69 net06 0) ne3 w=2u l=1u as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M37 (Bias2 net06 net73 0) ne3 w=10u l=350.0n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M28 (net06 net73 0 0) ne3 w=10u l=350.0n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M53 (net69 net69 0 0) ne3 w=2u l=5u as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M50 (net80 Bias1 net81 net81) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M48 (Bias1 Bias1 net81 net81) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M54 (net69 net69 net81 net81) pe3 w=6u l=5u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(1)*(1) \
+        par1=((1)*(1))
+M51 (net06 Bias2 net80 net81) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M49 (Bias2 Bias2 Bias1 net81) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+V0 (net81 0) vsource dc=vdd type=dc
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=-10 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc param=vdd start=0 stop=4 oppoint=rawfile maxiters=150 maxsteps=10000 \
+    annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save M49:3 
+saveOptions options save=allpub

@@ -23,7 +23,7 @@ M53 (net2 net2 0 0) ne3 w=2u l=5u as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
 M26 (net14 net14 0 0) ne3 w=40u l=2u as=1.92e-11 ad=1.92e-11 ps=8.096e-05 \
         pd=8.096e-05 nrs=0.00675 nrd=0.00675 m=(1)*(1) par1=((1)*(1)) \
         xf_subext=0
-M13 (net23 net14 0 0) ne3 w=40u l=2u as=1.248e-11 ad=1.08e-11 \
+M13 (net075 net14 0 0) ne3 w=40u l=2u as=1.248e-11 ad=1.08e-11 \
         ps=4.8624e-05 pd=4.054e-05 nrs=0.00675 nrd=0.00675 m=(1)*(10) \
         par1=((1)*(10)) xf_subext=0
 M40 (net14 enb_3v 0 0) ne3 w=2u l=350.0n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
@@ -31,7 +31,7 @@ M40 (net14 enb_3v 0 0) ne3 w=2u l=350.0n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
         xf_subext=0
 M21 (net33 net33 net32 0) nedia_bjt w=15.0u l=1.25u m=(1)*(1) \
         par1=((1)*(1)) extlay=0 xf_subext=0
-M16 (Bias2 vdd3 net23 0) nedia_bjt w=50u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+M16 (Bias2 vdd3 net075 0) nedia_bjt w=50u l=1.25u m=(1)*(5) par1=((1)*(5)) \
         extlay=0 xf_subext=0
 M8 (net29 net29 VB 0) nedia_bjt w=W l=1.25u m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
@@ -113,7 +113,7 @@ M47 (net14 D4_3v net59 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
 M31 (net14 D0_3v net67 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
         ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
         par1=((1)*(1))
-M52 (net23 en_3v vdd3 vdd3) pe3 w=2u l=300n as=9.6e-13 ad=9.6e-13 \
+M52 (net075 en_3v vdd3 vdd3) pe3 w=2u l=300n as=9.6e-13 ad=9.6e-13 \
         ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
         par1=((1)*(1))
 R1 (net8 0) rpp1k1 l=150.295u w=2u m=1 par1=(1)
@@ -131,10 +131,10 @@ M10 (net29 Bias2 net56 0) ped_bjt w=Wp l=940.0n m=(1)*(1) par1=((1)*(1)) \
 M9 (Bias2 Bias2 Bias1 0) ped_bjt w=Wp l=940.0n m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
 V9 (EN_ST 0) vsource dc=1.8 type=dc
-V8 (MAG_ST\<4\> 0) vsource dc=1.8 type=dc
-V7 (MAG_ST\<3\> 0) vsource dc=1.8 type=dc
-V6 (MAG_ST\<2\> 0) vsource dc=1.8 type=dc
-V5 (MAG_ST\<1\> 0) vsource dc=1.8 type=dc
+V8 (MAG_ST\<4\> 0) vsource dc=0 type=dc
+V7 (MAG_ST\<3\> 0) vsource dc=0 type=dc
+V6 (MAG_ST\<2\> 0) vsource dc=0 type=dc
+V5 (MAG_ST\<1\> 0) vsource dc=0 type=dc
 V2 (MAG_ST\<0\> 0) vsource dc=1.8 type=dc
 V4 (vdde! 0) vsource dc=1.8 type=dc
 V3 (vdd3! 0) vsource dc=3.3 type=dc

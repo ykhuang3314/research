@@ -1,0 +1,28 @@
+Begin Incremental Netlisting Apr  8 12:42:07 2021
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the
+current netlisting session. It had a value
+'_unl' last time netlisting was done
+in current run directory. Netlists from last
+session cannot be used for
+incremental netlisting. Therefore re-netlisting the
+design.
+
+WARNING (OSSHNL-225): The design variable 'Ibias', used in the last netlisting
+session in the current
+run directory is not used in this netlisting session. The
+netlist(s) generated
+in the last netlisting session cannot be reused for
+incremental netlisting.
+Therefore re-netlisting the design.
+
+End netlisting Apr  8 12:42:07 2021
+Begin Incremental Netlisting Apr  8 12:43:56 2021
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the
+current netlisting session. It had a value
+'_unl' last time netlisting was done
+in current run directory. Netlists from last
+session cannot be used for
+incremental netlisting. Therefore re-netlisting the
+design.
+
+End netlisting Apr  8 12:43:56 2021

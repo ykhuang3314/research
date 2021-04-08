@@ -1,0 +1,23 @@
+// Library - Stimulator_TestBench, Cell - TB_Digital_Stimuli, View -
+//schematic
+// LAST TIME SAVED: Mar 25 14:59:47 2021
+// NETLIST TIME: Mar 25 14:59:53 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_Digital_Stimuli", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Mar 25 14:59:47 2021" *)
+
+module TB_Digital_Stimuli ();
+
+// Buses in the design
+
+wire  [4:0]  MAG_ST;
+
+
+Digital_Stimulus_ST #( .Ramping(1'b1) ) I0 ( .ANO_ST(ANO_ST), 
+    .CAT_ST(CAT_ST), .DIS_ST(DIS_ST), .EN_ST(EN_ST), .MAG_ST(MAG_ST));
+
+endmodule

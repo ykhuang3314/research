@@ -1,0 +1,10 @@
+( ( net
+( "gnd!" "0" )
+( "vdde!" "vdde!" )
+( "vdd3!" "vdd3!" )
+ )
+( model
+( "LSHVT18U3VX1" "LSHVT18U3VX1" )
+( "LS_LowSide_V2_ST" "LS_LowSide_V2_ST" )
+ )
+ )

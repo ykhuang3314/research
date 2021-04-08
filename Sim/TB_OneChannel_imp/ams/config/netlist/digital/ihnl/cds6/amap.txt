@@ -1,0 +1,7 @@
+netMap,*invr,*inh_ground_gnd_gnd!,*\gnd! 
+netMap,*invr,*inh_power_vdd_vdd!,*\vdd! 
+netMap,*invr,*vdd3!,*cds_globals.\vdd3! 
+netMap,*invr,*vdde!,*cds_globals.\vdde! 
+netMap,*invr,*vdd!,*cds_globals.\vdd! 
+netMap,*invr,*gnd!,*cds_globals.\gnd! 
+cellMap,*invr,*invr,*GATES_HD,*schematic

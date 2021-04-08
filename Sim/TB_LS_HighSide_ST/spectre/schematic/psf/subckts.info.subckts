@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "18.1.0.516.isr12"
-"date" "11:56:17 AM, Mon Mar 15, 2021"
+"date" "10:59:46 AM, Tue Mar 23, 2021"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -18,472 +18,12 @@ TYPE
 "key" "sub"
 )
 VALUE
-"dpdnwmv" "subckt" (
+"dphocfp" "subckt" (
 ""
 ""
 ""
 )
-"ped_bjt" "subckt" (
-""
-""
-""
-)
-"ped2" "subckt" (
-""
-""
-""
-)
-"rdp_io" "subckt" (
-""
-""
-""
-)
-"csf5" "subckt" (
-""
-""
-""
-)
-"dn3sci" "subckt" (
-""
-""
-""
-)
-"dpol" "subckt" (
-""
-""
-""
-)
-"nhv_bjt" "subckt" (
-""
-""
-""
-)
-"pe3lni" "subckt" (
-""
-""
-""
-)
-"phhv_bjt" "subckt" (
-""
-""
-""
-)
-"pmb" "subckt" (
-""
-""
-""
-)
-"rmtpl" "subckt" (
-""
-""
-""
-)
-"nesvti" "subckt" (
-""
-""
-""
-)
-"qpl_pa" "subckt" (
-""
-""
-""
-)
-"nhhv_bjt" "subckt" (
-""
-""
-""
-)
-"dscidnwmv" "subckt" (
-""
-""
-""
-)
-"LS_HighSide_V3_ST" "subckt" (
-""
-"0 in out vdd3! vdde! vddh inh_ground_gnd inh_power_vdd3 inh_power_vdde"
-"I12"
-)
-"qnl_pa" "subckt" (
-""
-""
-""
-)
-"ne3lnai" "subckt" (
-""
-""
-""
-)
-"nmmd" "subckt" (
-""
-""
-""
-)
-"dapda" "subckt" (
-""
-""
-""
-)
-"pesvt" "subckt" (
-""
-""
-""
-)
-"qpv_pc" "subckt" (
-""
-""
-""
-)
-"IN_3VX1" "subckt" (
-""
-"A Q inh_ground_gnd inh_power_vdd3"
-"I11 I12.I11"
-)
-"qnl_pd" "subckt" (
-""
-""
-""
-)
-"dp" "subckt" (
-""
-""
-""
-)
-"nedia" "subckt" (
-""
-""
-""
-)
-"jf_pmma" "subckt" (
-""
-""
-""
-)
-"cmm6t" "subckt" (
-""
-""
-""
-)
-"nedi_bjt" "subckt" (
-""
-""
-""
-)
-"nedia_bjt" "subckt" (
-"adio extlay xf_subext par1 w adl pdio coselfheat l pdl"
-"d g s sb"
-"M13 M2 I12.M13"
-)
-"nelnai_6" "subckt" (
-""
-""
-""
-)
-"qpvhscr" "subckt" (
-""
-""
-""
-)
-"qpl_pb" "subckt" (
-""
-""
-""
-)
-"rpp1s" "subckt" (
-""
-""
-""
-)
-"nei" "subckt" (
-""
-""
-""
-)
-"rdp" "subckt" (
-""
-""
-""
-)
-"csf5a" "subckt" (
-""
-""
-""
-)
-"qpv_pb" "subckt" (
-"par1 area le"
-"c b e"
-"M13.xpnp M2.xpnp I12.M13.xpnp"
-)
-"rm2" "subckt" (
-""
-""
-""
-)
-"dapda0" "subckt" (
-""
-""
-""
-)
-"nhvd_bjt" "subckt" (
-""
-""
-""
-)
-"rpp1_3" "subckt" (
-""
-""
-""
-)
-"phv_bjt" "subckt" (
-""
-""
-""
-)
-"cdmmh4t" "subckt" (
-""
-""
-""
-)
-"pe3i_5" "subckt" (
-""
-""
-""
-)
-"qpl_pe" "subckt" (
-""
-""
-""
-)
-"nmmc_bjt" "subckt" (
-""
-""
-""
-)
-"csandwt5" "subckt" (
-""
-""
-""
-)
-"dnw" "subckt" (
-""
-""
-""
-)
-"dpp20" "subckt" (
-""
-""
-""
-)
-"qpvhbscr" "subckt" (
-""
-""
-""
-)
-"dnhpwa" "subckt" (
-""
-""
-""
-)
-"qnvb_pnp" "subckt" (
-""
-""
-""
-)
-"nmma_bjt" "subckt" (
-""
-""
-""
-)
-"pmmc" "subckt" (
-""
-""
-""
-)
-"dnhpw" "subckt" (
-""
-""
-""
-)
-"rdn_esd" "subckt" (
-""
-""
-""
-)
-"rnp1h" "subckt" (
-""
-""
-""
-)
-"tag_25v" "subckt" (
-""
-""
-""
-)
-"pel" "subckt" (
-""
-""
-""
-)
-"rnw" "subckt" (
-""
-""
-""
-)
-"cmmh4t" "subckt" (
-""
-""
-""
-)
-"mosvc3i" "subckt" (
-""
-""
-""
-)
-"qpvc" "subckt" (
-""
-""
-""
-)
-"dnw3" "subckt" (
-""
-""
-""
-)
-"rdp3" "subckt" (
-""
-""
-""
-)
-"cmmh4" "subckt" (
-""
-""
-""
-)
-"pe3i" "subckt" (
-""
-""
-""
-)
-"rnp1_3" "subckt" (
-""
-""
-""
-)
-"csft5a" "subckt" (
-""
-""
-""
-)
-"ctmm5" "subckt" (
-""
-""
-""
-)
-"qpvascr" "subckt" (
-""
-""
-""
-)
-"qnl_pe" "subckt" (
-""
-""
-""
-)
-"nmmc" "subckt" (
-""
-""
-""
-)
-"ctmmh5t" "subckt" (
-""
-""
-""
-)
-"dphodfp" "subckt" (
-""
-""
-""
-)
-"pe" "subckt" (
-""
-""
-""
-)
-"rdn3" "subckt" (
-""
-""
-""
-)
-"dipdnw" "subckt" (
-""
-""
-""
-)
-"qpva3" "subckt" (
-""
-""
-""
-)
-"pe3lna" "subckt" (
-""
-""
-""
-)
-"nmc" "subckt" (
-""
-""
-""
-)
-"ctmmh5" "subckt" (
-""
-""
-""
-)
-"dn3dpl" "subckt" (
-""
-""
-""
-)
-"csf2p" "subckt" (
-""
-""
-""
-)
-"peli_m_5" "subckt" (
-""
-""
-""
-)
-"qpl_pf" "subckt" (
-""
-""
-""
-)
-"ped" "subckt" (
-""
-""
-""
-)
-"dphod0_an2" "subckt" (
-""
-""
-""
-)
-"qpvc3" "subckt" (
-""
-""
-""
-)
-"nei_m_6" "subckt" (
-""
-""
-""
-)
-"cdmmh4" "subckt" (
-""
-""
-""
-)
-"nhhv" "subckt" (
+"phhv" "subckt" (
 ""
 ""
 ""
@@ -493,82 +33,7 @@ VALUE
 ""
 ""
 )
-"pe3" "subckt" (
-"psl wcd_au0 ad nrs nrsl xf_subext as par1 pd w adl ps nrdl l wcd_avt asl nrd pdl"
-"d g s b"
-"I11.invr_1.MP1 I12.I11.invr_1.MP1 I12.I10.M6 I12.I10.M8 I12.I10.M9 I12.I10.M0 I12.I10.M2 I12.I10.M4 I10.M6 I10.M8 I10.M9 I10.M0 I10.M2 I10.M4"
-)
-"pel_5" "subckt" (
-""
-""
-""
-)
-"pesvti_m_5" "subckt" (
-""
-""
-""
-)
-"qpvb" "subckt" (
-""
-""
-""
-)
-"jf_nmma" "subckt" (
-""
-""
-""
-)
-"pmma" "subckt" (
-""
-""
-""
-)
-"dspada0" "subckt" (
-""
-""
-""
-)
-"qpvb3" "subckt" (
-""
-""
-""
-)
-"dpndf" "subckt" (
-""
-""
-""
-)
-"pesvti" "subckt" (
-""
-""
-""
-)
-"nd3i_6" "subckt" (
-""
-""
-""
-)
-"qnvc" "subckt" (
-""
-""
-""
-)
-"peli" "subckt" (
-""
-""
-""
-)
-"nmma" "subckt" (
-""
-""
-""
-)
-"ne3lnai_6" "subckt" (
-""
-""
-""
-)
-"cpod" "subckt" (
+"neli" "subckt" (
 ""
 ""
 ""
@@ -578,12 +43,32 @@ VALUE
 ""
 ""
 )
-"nelnai_m_6" "subckt" (
+"nedia" "subckt" (
 ""
 ""
 ""
 )
-"pe3lnai_5" "subckt" (
+"cmmh4t" "subckt" (
+""
+""
+""
+)
+"pe3lni_m_5" "subckt" (
+""
+""
+""
+)
+"rdp3" "subckt" (
+""
+""
+""
+)
+"rnp1" "subckt" (
+""
+""
+""
+)
+"rm3" "subckt" (
 ""
 ""
 ""
@@ -593,22 +78,112 @@ VALUE
 ""
 ""
 )
-"dphod0" "subckt" (
+"rnw" "subckt" (
 ""
 ""
 ""
 )
-"csandwt4" "subckt" (
+"rm2" "subckt" (
 ""
 ""
 ""
 )
-"dpwhn" "subckt" (
+"dphodfp" "subckt" (
 ""
 ""
 ""
 )
-"pei" "subckt" (
+"mosvci" "subckt" (
+""
+""
+""
+)
+"dhpw" "subckt" (
+""
+""
+""
+)
+"pmma_bjt" "subckt" (
+""
+""
+""
+)
+"pe3lnai_5" "subckt" (
+""
+""
+""
+)
+"pei_5" "subckt" (
+""
+""
+""
+)
+"dnp20" "subckt" (
+""
+""
+""
+)
+"cdmmh4" "subckt" (
+""
+""
+""
+)
+"rmtpl" "subckt" (
+""
+""
+""
+)
+"csft6a" "subckt" (
+""
+""
+""
+)
+"rnw3" "subckt" (
+""
+""
+""
+)
+"dnw" "subckt" (
+""
+""
+""
+)
+"pmc" "subckt" (
+""
+""
+""
+)
+"qnl_pf" "subckt" (
+""
+""
+""
+)
+"qpl_pd" "subckt" (
+""
+""
+""
+)
+"rdp_io" "subckt" (
+""
+""
+""
+)
+"dndf" "subckt" (
+""
+""
+""
+)
+"phv_bjt" "subckt" (
+""
+""
+""
+)
+"qpl_pf" "subckt" (
+""
+""
+""
+)
+"dpndf" "subckt" (
 ""
 ""
 ""
@@ -618,7 +193,162 @@ VALUE
 ""
 ""
 )
-"pmc_bjt" "subckt" (
+"qnl_pd" "subckt" (
+""
+""
+""
+)
+"cdmmh4t" "subckt" (
+""
+""
+""
+)
+"dsba" "subckt" (
+""
+""
+""
+)
+"csf3p" "subckt" (
+""
+""
+""
+)
+"cdmm4t" "subckt" (
+""
+""
+""
+)
+"cmmh3" "subckt" (
+""
+""
+""
+)
+"cpod" "subckt" (
+""
+""
+""
+)
+"pe_5" "subckt" (
+""
+""
+""
+)
+"nei" "subckt" (
+""
+""
+""
+)
+"qpva" "subckt" (
+""
+""
+""
+)
+"ne3" "subckt" (
+"psl wcd_au0 ad nrs nrsl xf_subext as par1 pd w adl ps nrdl l wcd_avt asl nrd pdl"
+"d g s b"
+"I10.M3 I10.M5 I10.M7 I10.M1"
+)
+"pmma" "subckt" (
+""
+""
+""
+)
+"pmmc_bjt" "subckt" (
+""
+""
+""
+)
+"dpdnwmv" "subckt" (
+""
+""
+""
+)
+"qnva" "subckt" (
+""
+""
+""
+)
+"ped_bjt" "subckt" (
+""
+""
+""
+)
+"cmmh5t" "subckt" (
+""
+""
+""
+)
+"dwhn" "subckt" (
+""
+""
+""
+)
+"qpv_pd" "subckt" (
+""
+""
+""
+)
+"dp3" "subckt" (
+""
+""
+""
+)
+"cmm6t" "subckt" (
+""
+""
+""
+)
+"dpdddnw" "subckt" (
+""
+""
+""
+)
+"nmmc_bjt" "subckt" (
+""
+""
+""
+)
+"dhnw" "subckt" (
+""
+""
+""
+)
+"csf3a" "subckt" (
+""
+""
+""
+)
+"ctmmh5t" "subckt" (
+""
+""
+""
+)
+"pe3i" "subckt" (
+""
+""
+""
+)
+"nd3i_m_6" "subckt" (
+""
+""
+""
+)
+"rnp1h" "subckt" (
+""
+""
+""
+)
+"rpp1s" "subckt" (
+""
+""
+""
+)
+"qpvascr" "subckt" (
+""
+""
+""
+)
+"qpl_pe" "subckt" (
 ""
 ""
 ""
@@ -633,742 +363,12 @@ VALUE
 ""
 ""
 )
-"qpv_pa" "subckt" (
-""
-""
-""
-)
-"dsba" "subckt" (
-""
-""
-""
-)
-"neli_6" "subckt" (
-""
-""
-""
-)
-"qnvb" "subckt" (
-""
-""
-""
-)
-"dphnwa" "subckt" (
-""
-""
-""
-)
-"dphod0_an1" "subckt" (
-""
-""
-""
-)
-"dphod_an1" "subckt" (
-""
-""
-""
-)
-"nelnai" "subckt" (
-""
-""
-""
-)
-"pma_bjt" "subckt" (
-""
-""
-""
-)
-"nesvti_m_6" "subckt" (
-""
-""
-""
-)
-"rm3" "subckt" (
-""
-""
-""
-)
-"nel" "subckt" (
-""
-""
-""
-)
-"cpod_i" "subckt" (
-""
-""
-""
-)
-"dndf" "subckt" (
-""
-""
-""
-)
-"ctmm5t" "subckt" (
-""
-""
-""
-)
-"dphoc0_cat" "subckt" (
-""
-""
-""
-)
-"cpodhv_i" "subckt" (
-""
-""
-""
-)
-"dpdd_scr" "subckt" (
-""
-""
-""
-)
-"neli" "subckt" (
-""
-""
-""
-)
-"nesvt" "subckt" (
-""
-""
-""
-)
-"rnw_scr" "subckt" (
-""
-""
-""
-)
-"dphod" "subckt" (
-""
-""
-""
-)
-"nma_bjt" "subckt" (
-""
-""
-""
-)
-"pmma_bjt" "subckt" (
-""
-""
-""
-)
-"phv" "subckt" (
-""
-""
-""
-)
-"qpv_pe" "subckt" (
-""
-""
-""
-)
-"csf3p" "subckt" (
-""
-""
-""
-)
-"ddnwmv" "subckt" (
-""
-""
-""
-)
-"rnp1" "subckt" (
-""
-""
-""
-)
-"nedi" "subckt" (
-""
-""
-""
-)
-"pe3lni_5" "subckt" (
-""
-""
-""
-)
-"pe3lni_m_5" "subckt" (
-""
-""
-""
-)
-"nei_6" "subckt" (
-""
-""
-""
-)
-"pe3lnai" "subckt" (
-""
-""
-""
-)
-"dphoa" "subckt" (
-""
-""
-""
-)
-"dphoc" "subckt" (
-""
-""
-""
-)
-"nmmd_bjt" "subckt" (
-""
-""
-""
-)
-"qpv_pd" "subckt" (
-""
-""
-""
-)
-"rpp1k1" "subckt" (
-""
-""
-""
-)
-"mosvc" "subckt" (
-""
-""
-""
-)
-"csf4" "subckt" (
-""
-""
-""
-)
-"csft5" "subckt" (
-""
-""
-""
-)
-"neli_m_6" "subckt" (
-""
-""
-""
-)
-"qnva" "subckt" (
-""
-""
-""
-)
-"dphocfp_cat" "subckt" (
-""
-""
-""
-)
 "nhhvd_bjt" "subckt" (
 ""
 ""
 ""
 )
-"ne3" "subckt" (
-"psl wcd_au0 ad nrs nrsl xf_subext as par1 pd w adl ps nrdl l wcd_avt asl nrd pdl"
-"d g s b"
-"M0 M1 I11.invr_1.MN1 I12.I11.invr_1.MN1 I12.I10.M3 I12.I10.M5 I12.I10.M7 I12.I10.M1 I10.M3 I10.M5 I10.M7 I10.M1"
-)
-"rpp1k1_3" "subckt" (
-""
-""
-""
-)
-"dphodfp_an2" "subckt" (
-""
-""
-""
-)
-"cmmh3" "subckt" (
-""
-""
-""
-)
-"dphod_an2" "subckt" (
-""
-""
-""
-)
-"pei_5" "subckt" (
-""
-""
-""
-)
-"phhv" "subckt" (
-""
-""
-""
-)
-"dphodfp_an1" "subckt" (
-""
-""
-""
-)
-"nhv" "subckt" (
-""
-""
-""
-)
-"pe_5" "subckt" (
-""
-""
-""
-)
-"peli_5" "subckt" (
-""
-""
-""
-)
-"dpdddnw" "subckt" (
-""
-""
-""
-)
-"nn3" "subckt" (
-""
-""
-""
-)
-"qpl_pc" "subckt" (
-""
-""
-""
-)
-"ne3lna" "subckt" (
-""
-""
-""
-)
-"qpl_pd" "subckt" (
-""
-""
-""
-)
-"csft4" "subckt" (
-""
-""
-""
-)
-"csft6a" "subckt" (
-""
-""
-""
-)
-"dspada_cat" "subckt" (
-""
-""
-""
-)
-"cmm3" "subckt" (
-""
-""
-""
-)
-"ne" "subckt" (
-""
-""
-""
-)
-"nhhvd" "subckt" (
-""
-""
-""
-)
-"rdn" "subckt" (
-""
-""
-""
-)
-"cmm4t" "subckt" (
-""
-""
-""
-)
-"csft4a" "subckt" (
-""
-""
-""
-)
-"dp3" "subckt" (
-""
-""
-""
-)
-"rm1" "subckt" (
-""
-""
-""
-)
-"dphnw" "subckt" (
-""
-""
-""
-)
-"dbn" "subckt" (
-""
-""
-""
-)
-"cmm4" "subckt" (
-""
-""
-""
-)
-"qnl_pf" "subckt" (
-""
-""
-""
-)
-"s_res" "subckt" (
-""
-""
-""
-)
-"cmmh6t" "subckt" (
-""
-""
-""
-)
-"dphocfp" "subckt" (
-""
-""
-""
-)
-"qpv_pf" "subckt" (
-""
-""
-""
-)
-"pmmc_bjt" "subckt" (
-""
-""
-""
-)
-"csft6" "subckt" (
-""
-""
-""
-)
-"cdmm4" "subckt" (
-""
-""
-""
-)
-"ddpldnw" "subckt" (
-""
-""
-""
-)
-"dphob" "subckt" (
-""
-""
-""
-)
-"ne3lnai_m_6" "subckt" (
-""
-""
-""
-)
-"nhvd" "subckt" (
-""
-""
-""
-)
-"pe3_5" "subckt" (
-""
-""
-""
-)
-"pesvti_5" "subckt" (
-""
-""
-""
-)
-"rnw3_scr" "subckt" (
-""
-""
-""
-)
-"dspada" "subckt" (
-""
-""
-""
-)
-"pe3ln_5" "subckt" (
-""
-""
-""
-)
-"qnvc_npn" "subckt" (
-""
-""
-""
-)
-"mosvci_m" "subckt" (
-""
-""
-""
-)
-"rm4" "subckt" (
-""
-""
-""
-)
-"rdp_esd" "subckt" (
-""
-""
-""
-)
-"rm5" "subckt" (
-""
-""
-""
-)
-"dapda_cat" "subckt" (
-""
-""
-""
-)
-"dwhn" "subckt" (
-""
-""
-""
-)
-"rpp1s_3" "subckt" (
-""
-""
-""
-)
-"csf3" "subckt" (
-""
-""
-""
-)
-"csf3a" "subckt" (
-""
-""
-""
-)
-"pe3ln" "subckt" (
-""
-""
-""
-)
-"qnl_pc" "subckt" (
-""
-""
-""
-)
-"ne3i_6" "subckt" (
-""
-""
-""
-)
-"dphoc0" "subckt" (
-""
-""
-""
-)
-"rnp1h_3" "subckt" (
-""
-""
-""
-)
-"cmmh5t" "subckt" (
-""
-""
-""
-)
-"invrv3" "subckt" (
-"sx lc GT_PDL GT_PDW GT_PUW GT_PUL"
-"in out inh_ground_gnd inh_power_vdd3"
-"I11.invr_1 I12.I11.invr_1"
-)
-"cdmm4t" "subckt" (
-""
-""
-""
-)
-"dnp20" "subckt" (
-""
-""
-""
-)
-"pmc" "subckt" (
-""
-""
-""
-)
-"nesvti_6" "subckt" (
-""
-""
-""
-)
-"rdnwmv" "subckt" (
-""
-""
-""
-)
-"pe3i_m_5" "subckt" (
-""
-""
-""
-)
-"qnl_pb" "subckt" (
-""
-""
-""
-)
-"dnpdd_scr" "subckt" (
-""
-""
-""
-)
-"dpdnw" "subckt" (
-""
-""
-""
-)
-"cmm5t" "subckt" (
-""
-""
-""
-)
-"dn" "subckt" (
-""
-""
-""
-)
-"ped2_bjt" "subckt" (
-""
-""
-""
-)
-"nma" "subckt" (
-""
-""
-""
-)
-"pesvt_5" "subckt" (
-""
-""
-""
-)
-"rpp1" "subckt" (
-""
-""
-""
-)
-"nelna" "subckt" (
-""
-""
-""
-)
-"pe3lnai_m_5" "subckt" (
-""
-""
-""
-)
-"rmtp" "subckt" (
-""
-""
-""
-)
-"nd3i_m_6" "subckt" (
-""
-""
-""
-)
-"rnw3" "subckt" (
-""
-""
-""
-)
-"dpdwhn" "subckt" (
-""
-""
-""
-)
-"mosvc3i_m" "subckt" (
-""
-""
-""
-)
-"ne3i" "subckt" (
-""
-""
-""
-)
-"nmc_bjt" "subckt" (
-""
-""
-""
-)
-"dphoc_cat" "subckt" (
-""
-""
-""
-)
-"dsb" "subckt" (
-""
-""
-""
-)
-"LSHVT18U3VX1" "subckt" (
-""
-"A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde"
-"I12.I10 I10"
-)
-"ddnw" "subckt" (
-""
-""
-""
-)
-"ne3i_m_6" "subckt" (
-""
-""
-""
-)
-"qpva" "subckt" (
-""
-""
-""
-)
-"mosvci" "subckt" (
-""
-""
-""
-)
-"dhnw" "subckt" (
-""
-""
-""
-)
-"qnvb_npn" "subckt" (
-""
-""
-""
-)
-"nd3i" "subckt" (
-""
-""
-""
-)
-"tag_60v" "subckt" (
-""
-""
-""
-)
-"dnn3" "subckt" (
-""
-""
-""
-)
-"dhpw" "subckt" (
-""
-""
-""
-)
-"cpodhv" "subckt" (
+"dp" "subckt" (
 ""
 ""
 ""
@@ -1378,7 +378,52 @@ VALUE
 ""
 ""
 )
-"csf4a" "subckt" (
+"nmma_bjt" "subckt" (
+""
+""
+""
+)
+"peli_5" "subckt" (
+""
+""
+""
+)
+"jf_nmma" "subckt" (
+""
+""
+""
+)
+"qpl_pa" "subckt" (
+""
+""
+""
+)
+"nelnai_6" "subckt" (
+""
+""
+""
+)
+"qpva3" "subckt" (
+""
+""
+""
+)
+"qpvhbscr" "subckt" (
+""
+""
+""
+)
+"qpvb" "subckt" (
+""
+""
+""
+)
+"dspada0" "subckt" (
+""
+""
+""
+)
+"nhv" "subckt" (
 ""
 ""
 ""
@@ -1388,12 +433,952 @@ VALUE
 ""
 ""
 )
+"ctmm5t" "subckt" (
+""
+""
+""
+)
+"csft6" "subckt" (
+""
+""
+""
+)
+"dphodfp_an1" "subckt" (
+""
+""
+""
+)
+"qnl_pe" "subckt" (
+""
+""
+""
+)
+"qpvb3" "subckt" (
+""
+""
+""
+)
+"rdp_esd" "subckt" (
+""
+""
+""
+)
+"csandwt5" "subckt" (
+""
+""
+""
+)
+"qpv_pb" "subckt" (
+"par1 area le"
+"c b e"
+"M13.xpnp"
+)
+"qnvc_npn" "subckt" (
+""
+""
+""
+)
+"csf5" "subckt" (
+""
+""
+""
+)
+"ne3i_6" "subckt" (
+""
+""
+""
+)
+"qpl_pb" "subckt" (
+""
+""
+""
+)
+"rmtp" "subckt" (
+""
+""
+""
+)
+"pmb" "subckt" (
+""
+""
+""
+)
+"cmm4t" "subckt" (
+""
+""
+""
+)
+"csft4" "subckt" (
+""
+""
+""
+)
+"dbn" "subckt" (
+""
+""
+""
+)
+"rnw_scr" "subckt" (
+""
+""
+""
+)
+"qpvc3" "subckt" (
+""
+""
+""
+)
+"ne3lnai" "subckt" (
+""
+""
+""
+)
+"pe3lnai_m_5" "subckt" (
+""
+""
+""
+)
+"dphoa" "subckt" (
+""
+""
+""
+)
+"csandwt4" "subckt" (
+""
+""
+""
+)
+"ped2_bjt" "subckt" (
+""
+""
+""
+)
+"rpp1_3" "subckt" (
+""
+""
+""
+)
+"cdmm4" "subckt" (
+""
+""
+""
+)
+"cmmh4" "subckt" (
+""
+""
+""
+)
+"csf5a" "subckt" (
+""
+""
+""
+)
+"dphod" "subckt" (
+""
+""
+""
+)
+"nhhv" "subckt" (
+""
+""
+""
+)
+"phhv_bjt" "subckt" (
+""
+""
+""
+)
+"rpp1s_3" "subckt" (
+""
+""
+""
+)
+"ctmmh5" "subckt" (
+""
+""
+""
+)
+"pe3i_5" "subckt" (
+""
+""
+""
+)
+"mosvci_m" "subckt" (
+""
+""
+""
+)
+"nn3" "subckt" (
+""
+""
+""
+)
+"nhhvd" "subckt" (
+""
+""
+""
+)
+"peli_m_5" "subckt" (
+""
+""
+""
+)
+"nesvt" "subckt" (
+""
+""
+""
+)
+"dapda0" "subckt" (
+""
+""
+""
+)
+"nelnai" "subckt" (
+""
+""
+""
+)
+"nmmd" "subckt" (
+""
+""
+""
+)
+"nhvd_bjt" "subckt" (
+""
+""
+""
+)
+"pesvti_5" "subckt" (
+""
+""
+""
+)
+"csf4" "subckt" (
+""
+""
+""
+)
+"dphod0_an1" "subckt" (
+""
+""
+""
+)
+"dapda" "subckt" (
+""
+""
+""
+)
+"cmm3" "subckt" (
+""
+""
+""
+)
+"nesvti_6" "subckt" (
+""
+""
+""
+)
+"ne3lna" "subckt" (
+""
+""
+""
+)
+"mosvc3i" "subckt" (
+""
+""
+""
+)
+"peli" "subckt" (
+""
+""
+""
+)
+"ne" "subckt" (
+""
+""
+""
+)
 "dipdnwmv" "subckt" (
 ""
 ""
 ""
 )
+"dpdwhn" "subckt" (
+""
+""
+""
+)
+"qpv_pf" "subckt" (
+""
+""
+""
+)
+"rpp1" "subckt" (
+""
+""
+""
+)
+"pe3lni_5" "subckt" (
+""
+""
+""
+)
+"dnhpw" "subckt" (
+""
+""
+""
+)
+"dphnw" "subckt" (
+""
+""
+""
+)
+"ne3i" "subckt" (
+""
+""
+""
+)
+"neli_m_6" "subckt" (
+""
+""
+""
+)
+"pma_bjt" "subckt" (
+""
+""
+""
+)
+"dspada" "subckt" (
+""
+""
+""
+)
+"mosvc3i_m" "subckt" (
+""
+""
+""
+)
+"csft4a" "subckt" (
+""
+""
+""
+)
+"rnp1h_3" "subckt" (
+""
+""
+""
+)
+"pmmc" "subckt" (
+""
+""
+""
+)
+"rdn" "subckt" (
+""
+""
+""
+)
+"dnhpwa" "subckt" (
+""
+""
+""
+)
+"csft5" "subckt" (
+""
+""
+""
+)
+"dphodfp_an2" "subckt" (
+""
+""
+""
+)
+"qpv_pe" "subckt" (
+""
+""
+""
+)
+"pe3lnai" "subckt" (
+""
+""
+""
+)
+"dapda_cat" "subckt" (
+""
+""
+""
+)
+"dphnwa" "subckt" (
+""
+""
+""
+)
+"dphod0_an2" "subckt" (
+""
+""
+""
+)
+"qnvb" "subckt" (
+""
+""
+""
+)
+"neli_6" "subckt" (
+""
+""
+""
+)
+"jf_pmma" "subckt" (
+""
+""
+""
+)
+"pesvt_5" "subckt" (
+""
+""
+""
+)
+"nedia_bjt" "subckt" (
+"adio extlay xf_subext par1 w adl pdio coselfheat l pdl"
+"d g s sb"
+"M13"
+)
+"ctmm5" "subckt" (
+""
+""
+""
+)
+"dpol" "subckt" (
+""
+""
+""
+)
+"nmc" "subckt" (
+""
+""
+""
+)
+"pesvti" "subckt" (
+""
+""
+""
+)
+"nel" "subckt" (
+""
+""
+""
+)
+"pe3lna" "subckt" (
+""
+""
+""
+)
+"nedi" "subckt" (
+""
+""
+""
+)
+"nmmd_bjt" "subckt" (
+""
+""
+""
+)
+"rm4" "subckt" (
+""
+""
+""
+)
+"cmm5t" "subckt" (
+""
+""
+""
+)
+"csf4a" "subckt" (
+""
+""
+""
+)
+"dn" "subckt" (
+""
+""
+""
+)
+"cpodhv" "subckt" (
+""
+""
+""
+)
+"dscidnwmv" "subckt" (
+""
+""
+""
+)
+"rdnwmv" "subckt" (
+""
+""
+""
+)
+"rnp1_3" "subckt" (
+""
+""
+""
+)
+"dphod_an1" "subckt" (
+""
+""
+""
+)
+"ped" "subckt" (
+""
+""
+""
+)
+"dnn3" "subckt" (
+""
+""
+""
+)
+"dipdnw" "subckt" (
+""
+""
+""
+)
+"pesvt" "subckt" (
+""
+""
+""
+)
+"ne3i_m_6" "subckt" (
+""
+""
+""
+)
+"dphoc_cat" "subckt" (
+""
+""
+""
+)
+"ddnwmv" "subckt" (
+""
+""
+""
+)
+"dphocfp_cat" "subckt" (
+""
+""
+""
+)
+"pmc_bjt" "subckt" (
+""
+""
+""
+)
+"qpvc" "subckt" (
+""
+""
+""
+)
+"rm1" "subckt" (
+""
+""
+""
+)
+"nhv_bjt" "subckt" (
+""
+""
+""
+)
+"dphoc" "subckt" (
+""
+""
+""
+)
+"qpv_pa" "subckt" (
+""
+""
+""
+)
+"dn3dpl" "subckt" (
+""
+""
+""
+)
+"nei_m_6" "subckt" (
+""
+""
+""
+)
+"s_res" "subckt" (
+""
+""
+""
+)
+"dphoc0_cat" "subckt" (
+""
+""
+""
+)
+"rdp" "subckt" (
+""
+""
+""
+)
+"csft5a" "subckt" (
+""
+""
+""
+)
+"dsb" "subckt" (
+""
+""
+""
+)
+"nesvti_m_6" "subckt" (
+""
+""
+""
+)
+"qpvhscr" "subckt" (
+""
+""
+""
+)
+"rpp1k1" "subckt" (
+""
+""
+""
+)
+"qnvb_npn" "subckt" (
+""
+""
+""
+)
+"nhvd" "subckt" (
+""
+""
+""
+)
+"pel_5" "subckt" (
+""
+""
+""
+)
+"LSHVT18U3VX1" "subckt" (
+""
+"A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde"
+"I10"
+)
+"nmmc" "subckt" (
+""
+""
+""
+)
+"ddnw" "subckt" (
+""
+""
+""
+)
+"dpdnw" "subckt" (
+""
+""
+""
+)
+"nelnai_m_6" "subckt" (
+""
+""
+""
+)
+"qnvc" "subckt" (
+""
+""
+""
+)
+"dpdd_scr" "subckt" (
+""
+""
+""
+)
+"dspada_cat" "subckt" (
+""
+""
+""
+)
+"nmc_bjt" "subckt" (
+""
+""
+""
+)
+"dnpdd_scr" "subckt" (
+""
+""
+""
+)
+"rdn_esd" "subckt" (
+""
+""
+""
+)
+"nei_6" "subckt" (
+""
+""
+""
+)
+"ne3lnai_6" "subckt" (
+""
+""
+""
+)
+"nelna" "subckt" (
+""
+""
+""
+)
+"phv" "subckt" (
+""
+""
+""
+)
+"cpodhv_i" "subckt" (
+""
+""
+""
+)
+"csf3" "subckt" (
+""
+""
+""
+)
+"qnl_pb" "subckt" (
+""
+""
+""
+)
+"dnw3" "subckt" (
+""
+""
+""
+)
+"cmm4" "subckt" (
+""
+""
+""
+)
+"pe3ln" "subckt" (
+""
+""
+""
+)
+"pesvti_m_5" "subckt" (
+""
+""
+""
+)
+"nmma" "subckt" (
+""
+""
+""
+)
+"dpwhn" "subckt" (
+""
+""
+""
+)
+"dphoc0" "subckt" (
+""
+""
+""
+)
+"qnl_pa" "subckt" (
+""
+""
+""
+)
+"qpv_pc" "subckt" (
+""
+""
+""
+)
+"nedi_bjt" "subckt" (
+""
+""
+""
+)
+"qnl_pc" "subckt" (
+""
+""
+""
+)
+"pe" "subckt" (
+""
+""
+""
+)
+"dphob" "subckt" (
+""
+""
+""
+)
+"pe3_5" "subckt" (
+""
+""
+""
+)
+"cpod_i" "subckt" (
+""
+""
+""
+)
+"csf2p" "subckt" (
+""
+""
+""
+)
 "pfuse" "subckt" (
+""
+""
+""
+)
+"pe3lni" "subckt" (
+""
+""
+""
+)
+"qpl_pc" "subckt" (
+""
+""
+""
+)
+"rdn3" "subckt" (
+""
+""
+""
+)
+"nma" "subckt" (
+""
+""
+""
+)
+"ddpldnw" "subckt" (
+""
+""
+""
+)
+"tag_60v" "subckt" (
+""
+""
+""
+)
+"mosvc" "subckt" (
+""
+""
+""
+)
+"nma_bjt" "subckt" (
+""
+""
+""
+)
+"pe3i_m_5" "subckt" (
+""
+""
+""
+)
+"tag_25v" "subckt" (
+""
+""
+""
+)
+"dpp20" "subckt" (
+""
+""
+""
+)
+"ped2" "subckt" (
+""
+""
+""
+)
+"qnvb_pnp" "subckt" (
+""
+""
+""
+)
+"cmmh6t" "subckt" (
+""
+""
+""
+)
+"dphod_an2" "subckt" (
+""
+""
+""
+)
+"dn3sci" "subckt" (
+""
+""
+""
+)
+"pe3ln_5" "subckt" (
+""
+""
+""
+)
+"pel" "subckt" (
+""
+""
+""
+)
+"pe3" "subckt" (
+"psl wcd_au0 ad nrs nrsl xf_subext as par1 pd w adl ps nrdl l wcd_avt asl nrd pdl"
+"d g s b"
+"I10.M6 I10.M8 I10.M9 I10.M0 I10.M2 I10.M4"
+)
+"rpp1k1_3" "subckt" (
+""
+""
+""
+)
+"dphod0" "subckt" (
+""
+""
+""
+)
+"nhhv_bjt" "subckt" (
+""
+""
+""
+)
+"rnw3_scr" "subckt" (
+""
+""
+""
+)
+"nd3i" "subckt" (
+""
+""
+""
+)
+"nd3i_6" "subckt" (
+""
+""
+""
+)
+"ne3lnai_m_6" "subckt" (
+""
+""
+""
+)
+"nesvti" "subckt" (
+""
+""
+""
+)
+"rm5" "subckt" (
+""
+""
+""
+)
+"pei" "subckt" (
 ""
 ""
 ""

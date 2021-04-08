@@ -1,0 +1,41 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/75/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ALLOWREDEFINITION
+-INCDIR
+/home/ykhuang/research/
+-XMLIBDIRPATH
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/75/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi/
+-CDSLIB
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/75/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/75/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//dummyMapi.vams
+-HDLVAR
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/75/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v
+/home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v lib:Stimulator_IMP cell:Decoder8 view:functional"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/75/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-amscommfile
+/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.10/75/Stimulator_TestBench:TB_OneCH_Top:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/amscomm.list

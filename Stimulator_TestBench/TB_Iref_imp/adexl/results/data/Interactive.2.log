@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Mar 25 16:23:20 2021 
+Best design point: 1
+Design specs: 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	Nominal - 
+Design parameters: 
+	vdd		3.3
+
+Interactive.2
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Thu Mar 25 16:23:24 2021 

@@ -1,0 +1,31 @@
+// Library - Stimulator_IMP, Cell - LS_HighSide_V3_ST, View - schematic
+// LAST TIME SAVED: Mar 19 17:27:00 2021
+// NETLIST TIME: Apr  6 12:58:31 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="LS_HighSide_V3_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 19 17:27:00 2021" *)
+
+module LS_HighSide_V3_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
+    .\vdde! (cdsNet0), vddh, in);
+
+output  out;
+
+inout  cdsNet2, cdsNet1, cdsNet0, vddh;
+
+input  in;
+
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst1(cdsNet2, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst2(cdsNet1, cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst3(cdsNet0, cds_globals.\vdde! );
+
+LSHVT18U3VX1 I10 ( .A(in), .Q(inn3v));
+
+endmodule

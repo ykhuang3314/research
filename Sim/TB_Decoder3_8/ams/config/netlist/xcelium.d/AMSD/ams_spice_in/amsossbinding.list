@@ -1,0 +1,4 @@
+designtop="Stimulator_TestBench.TB_Decoder3_8:schematic"
+cell="Decoder3_8" lib="Stimulator_IMP" view="functional" 
+cell="vsource" view="analogtext" 
+cell="Counter" lib="Digital_Lib" view="functional" 

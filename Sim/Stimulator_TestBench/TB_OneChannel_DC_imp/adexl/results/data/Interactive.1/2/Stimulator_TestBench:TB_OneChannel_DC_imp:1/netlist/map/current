@@ -1,0 +1,34 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_OneChannel_DC_imp"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "vdde! vdd3! gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data/Interactive.1/2/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "GATES_HD/invr/schematic" "invr" )
+( "GATES_HD/nand2/schematic" "nand2" )
+( "Stimulator_IMP/LS_LowSide_V2_ST/schematic" "LS_LowSide_V2_ST" )
+( "Stimulator_TestBench/TB_OneChannel_DC_imp/schematic" "TB_OneChannel_DC_imp" )
+( "D_CELLS_3V/IN_3VX2/cmos_sch" "IN_3VX2" )
+( "D_CELLS_HD/AND2HDX0/cmos_sch" "AND2HDX0" )
+( "GATES_3V/invrv3/schematic" "invrv3" )
+( "Stimulator_IMP/LS_HighSide_V3_ST/schematic" "LS_HighSide_V3_ST" )
+( "D_CELLS_M3V/LSHVT18U3VX1/cmos_sch" "LSHVT18U3VX1" )
+ )
+( "TB_OneChannel_DC_imp" "ihnl/cds8/map" )
+( "invrv3" "ihnl/cds3/map" )
+( "nand2" "ihnl/cds0/map" )
+( "invr" "ihnl/cds1/map" )
+( "LSHVT18U3VX1" "ihnl/cds5/map" )
+( "LS_LowSide_V2_ST" "ihnl/cds6/map" )
+( "LS_HighSide_V3_ST" "ihnl/cds7/map" )
+( "AND2HDX0" "ihnl/cds2/map" )
+( "IN_3VX2" "ihnl/cds4/map" )
+ )

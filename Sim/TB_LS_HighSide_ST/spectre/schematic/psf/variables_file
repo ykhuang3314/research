@@ -1,11 +1,10 @@
 HEADER
 "PSFversion" "1.00"
-"Time Stamp" "Mar 15 11:56:15 2021"
+"Time Stamp" "Mar 23 10:59:45 2021"
 TYPE
 "variable" STRUCT(
 "value" FLOAT DOUBLE
 ) PROP( "key" "element" )
 VALUE
-"Ibias" "variable" ( 10e-6 ) PROP( )
 "temp" "variable" ( 27 ) PROP( )
 END

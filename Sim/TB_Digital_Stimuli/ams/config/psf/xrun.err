@@ -1,0 +1,80 @@
+xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+file: ./netlist.vams
+	module Stimulator_TestBench.TB_Digital_Stimuli:schematic
+		errors: 0, warnings: 0
+file: /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/verilog.v
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xmvlog: Memory Usage - Current physical: 25.2M, Current virtual: 57.4M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 79.1% cpu)
+
+		Caching library 'Stimulator_TestBench' ....... Done
+		Caching library 'Stimulator_IMP' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		TB_Digital_Stimuli
+		cds_globals
+	Discipline resolution Pass...
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		Stimulator_IMP.Digital_Stimulus_ST:functional <0x03437d71>
+			streams:   8, words:  9579
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              12      12
+		Scalar wires:            4       -
+		Vectored wires:          1       -
+		Always blocks:           1       1
+		Initial blocks:          1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: Stimulator_TestBench.TB_Digital_Stimuli:config
+xmelab: Memory Usage - Final: 40.6M, Peak: 164.6M, Peak virtual: 244.4M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.3s, 91.7% cpu)
+xmsim: *W,ANAIGN: -analogcontrol file specified when analog solver is not used.
+Loading snapshot Stimulator_TestBench.TB_Digital_Stimuli:config .................... Done
+xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> # This is the NC-SIM(R) probe command file
+xcelium> # used in the AMS-ADE integration.
+xcelium> 
+xcelium> 
+xcelium> #
+xcelium> # Database settings
+xcelium> #
+xcelium> if { [info exists ::env(AMS_RESULTS_DIR) ] } { set AMS_RESULTS_DIR $env(AMS_RESULTS_DIR)} else {set AMS_RESULTS_DIR "../psf"}
+../psf
+xcelium> database -open ams_database -into ${AMS_RESULTS_DIR} -default
+Created default SHM database ams_database
+xcelium> 
+xcelium> #
+xcelium> # Probe settings
+xcelium> #
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.EN_ST}
+Created probe 1
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.ANO_ST}
+Created probe 2
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.CAT_ST}
+Created probe 3
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.DIS_ST}
+Created probe 4
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.MAG_ST[4]}
+Created probe 5
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.MAG_ST[3]}
+Created probe 6
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.MAG_ST[2]}
+Created probe 7
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.MAG_ST[1]}
+Created probe 8
+xcelium> probe -create -emptyok -database ams_database {TB_Digital_Stimuli.MAG_ST[0]}
+Created probe 9
+xcelium> 
+xcelium> run
+Ran until 16 MS + 0
+xcelium> exit
+xmsim: Memory Usage - Final: 37.7M, Peak: 44.0M, Peak virtual: 177.9M
+xmsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.3s, 74.6% cpu)

@@ -1,0 +1,7 @@
+instMap,*CurrentMirror_ST,*I17,*I17
+instMaster,*CurrentMirror_ST,*I17,*D_CELLS_M3V_LSHVT18U3VX2_cmos_sch
+netMap,*CurrentMirror_ST,*vdd3!,*cds_globals.\vdd3! 
+netMap,*CurrentMirror_ST,*vdde!,*cds_globals.\vdde! 
+netMap,*CurrentMirror_ST,*gnd!,*cds_globals.\gnd! 
+netMap,*CurrentMirror_ST,*vdd!,*cds_globals.\vdd! 
+cellMap,*CurrentMirror_ST,*CurrentMirror_ST,*Stimulator_IMP,*schematic

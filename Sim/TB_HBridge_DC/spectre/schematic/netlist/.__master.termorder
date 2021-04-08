@@ -1,1 +1,3 @@
+"Stimulator_IMP.LS_LowSide_V2_ST.schematic.termorder" (("gnd!" "in" "out" "vdd3!" "vdde!" "vddh" "[@ground_gnd:%:gnd!]" "[@power_vdd3:%:vdd3!]" "[@power_vdde:%:vdde!]") ("gnd!" "in" "out" "vdd3!" "vdde!" "vddh" "[@ground_gnd:%:gnd!]" "[@power_vdd3:%:vdd3!]" "[@power_vdde:%:vdde!]"))
+"Stimulator_IMP.LS_HighSide_V3_ST.schematic.termorder" nil
 "D_CELLS_M3V.LSHVT18U3VX1.cmos_sch.termorder" (("A" "Q" "gnd!" "vdd3!" "vdde!") ("A" "Q" "gnd!" "vdd3!" "vdde!"))

@@ -1,0 +1,9 @@
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+1617625150 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/6/Stimulator_TestBench:TB_OneCH_Top:1/netlist/cds_globals.vams
+1034185470 /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v
+1617613619 /home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+1617625150 /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.2/6/Stimulator_TestBench:TB_OneCH_Top:1/netlist/netlist.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
+1617615733 /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v

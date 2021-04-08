@@ -1,0 +1,20 @@
+// Library - Stimulator_IMP, Cell - Idac_5bit_ST, View - schematic
+// LAST TIME SAVED: Mar 31 15:05:20 2021
+// NETLIST TIME: Apr  5 15:18:34 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="Idac_5bit_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 31 15:05:20 2021" *)
+
+module Idac_5bit_ST (Idac, vdd3, Bias1, Bias2, D0, D1, D2, D3, D4, 
+    Enable);
+
+output  Idac;
+
+inout  vdd3;
+
+input  Bias1, Bias2, D0, D1, D2, D3, D4, Enable;
+

@@ -1,0 +1,17 @@
+// Library - Stimulator_IMP, Cell - CurrentMirror_ST, View - schematic
+// LAST TIME SAVED: Apr  6 11:03:54 2021
+// NETLIST TIME: Apr  6 12:18:47 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentMirror_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  6 11:03:54 2021" *)
+
+module CurrentMirror_ST (Iref, Ist, vdd3, vddh, vss, enable);
+
+inout  Iref, Ist, vdd3, vddh, vss;
+
+input  enable;
+

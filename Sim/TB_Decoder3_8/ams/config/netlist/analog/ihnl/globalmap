@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+Stimulator_TestBench/TB_Decoder3_8/schematic Stimulator_TestBench/TB_Decoder3_8/schematic/schematic/Stimulator_TestBench_TB_Decoder3_8_config/1 TB_Decoder3_8
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

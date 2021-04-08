@@ -1,0 +1,21 @@
+    R0 (Iext net9) rpp1k1 l=20.095u w=2u m=1 par1=(1)
+    M3 (net8 net8 vss vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M2 (net9 net9 net8 vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M0 (Bias2 net9 net17 vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (net17 net8 vss vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M48 (Bias1 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M49 (Bias2 Bias2 Bias1 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+ends Ext_Iref_ST
+// End of subcircuit definition.

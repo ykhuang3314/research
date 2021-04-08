@@ -1,0 +1,6 @@
+
+// Library name: Stimulator_IMP
+// Cell name: HalfBridge_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt HalfBridge_ST

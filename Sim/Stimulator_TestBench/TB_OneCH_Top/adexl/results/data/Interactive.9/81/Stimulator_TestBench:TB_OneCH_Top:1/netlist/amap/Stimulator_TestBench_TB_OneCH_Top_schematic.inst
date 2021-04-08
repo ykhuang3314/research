@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I1n" "analogLib_idc_spectre"
+"R0n" "analogLib_res_spectre"
+"V0n V1n V2n V3n" "analogLib_vdc_spectre"
+"I0n" "Stimulator_IMP_SingleChannel_ST_schematic"
+"I30n I31n" "Stimulator_IMP_Decoder8_functional"
+"I32n" "Stimulator_IMP_Digital_Stimulus_V2_ST_functional"

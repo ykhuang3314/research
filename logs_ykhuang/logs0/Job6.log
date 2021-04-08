@@ -1,160 +1,141 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = EMG_NMES_TestBench
-	Cell         = Sim_StimulusArtifact
-	View         = config
-	Simulator    = ams
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = EMG_NMES_TestBench:Sim_StimulusArtifact:1_none_Interactive.0
-	Results DB   = /home/ykhuang/research/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0.rdb
-	Results Dir  = /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1
-	Results Loc  = /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data
-	Project Dir  = /home/ykhuang/research/Sim
-	Setup DB loc = /home/ykhuang/research/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl
-	File Encoding = 0
-
-
-variable oasisVariableValue redefined
-variable persistNewList redefined
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [
-          EMG_NMES_TestBench:Sim_StimulusArtifact:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1
-
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
-INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
- field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
- analog primitives using the Spectre CDF simulation information.
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/digital/control
-Begin Netlisting Feb 23 11:20:33 2021
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-If you want to print only those cellviews that need to be re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
-INFO (VLOGNET-117): Re-netlisting the entire design.
-
-INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-non-stopping cells.
- 
-WARNING (VLOGNET-110): The cell 'EMG_NMES_TestBench/Sim_StimulusArtifact/schematic' has no ports. Make sure that this was the intended 
-design.
- 
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-
-
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-CH_SEL_MUX_V2               verilogams           *Stopping View*  
-Current_Source              verilogams           *Stopping View*  
-Current_Mirror              verilogams           *Stopping View*  
-H_Bridge                    verilogams           *Stopping View*  
-BPF_EMG                     verilogams           *Stopping View*  
-PGA_EMG                     verilogams           *Stopping View*  
-IA_EMG_Ideal                verilogams           *Stopping View*  
-res                         spectre              *Stopping View*  
-idc                         spectre              *Stopping View*  
-vdc                         spectre              *Stopping View*  
-Digital_Stimulus_ST_V2      functional           *Stopping View*  
-vpwl                        spectre              *Stopping View*  
-cap                         spectre              *Stopping View*  
-Sim_StimulusArtifact        schematic                             
-AFE_EMG                     schematic                             
-Stimulator_4CH_V2           schematic                             
-
----------- End of netlist configuration information   ----------
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/netlist/analog/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Running netlist assembly..
-........
-End netlisting Feb 23 11:20:42 2021
-INFO (AMS-1241): AMS UNL netlisting has completed successfully.
-To view the modules, right-click the test name on the Tests and Analyses 
-assistant pane and choose Netlist->Display menu option.
-      ...successful.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          EMG_NMES_TestBench:Sim_StimulusArtifact:1 ] for Point ID (0
-          1).
-
-Delete simulation data in /home/ykhuang/research/Sim/EMG_NMES_TestBench/Sim_StimulusArtifact/adexl/results/data/Interactive.0/1/EMG_NMES_TestBench:Sim_StimulusArtifact:1/psf.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-validating simulator hierarchy...
-      ...successful.
-running...
-To check for output from compilation, elaboration and simulation run, 
-right-click on the test name, result name, or any value in the "Results" 
-tab of the Outputs section and choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (0 1) on testbench [
-          EMG_NMES_TestBench:Sim_StimulusArtifact:1 ].
-
-
-
-
-
+\# Program start time:     UTC 2021.04.05 12:43:43.592
+\# Local time: CEST (UTC+02:00) 2021.04.05 14:43:43.592
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
+\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso32262 -mpshost s2424 -davinciService DaVinciService_32262_1617623711 -log /home/ykhuang/research/logs_ykhuang/logs0/Job6.log -licenseLockFileName /home/ykhuang/research/.tmp_ykhuang/.s2424_32262 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 6
+\# Host name (type):	s2424 (x86_64)
+\# Operating system:	Linux 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 17 13:59:11 UTC 2020
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 9161)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        535 MB
+\# Available memory:	     79,820 MB
+\# System memory:	     96,361 MB
+\# Maximum memory size:	     95,983 MB
+\# Max mem available:	     79,977 MB
+\# Initial memory used:	        157 MB
+\#        process size:	      1,382 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		ykhuang
+\o Working Directory:	s2424:/home/ykhuang/research
+\# Process Id:		9164
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\# Memory report: using         285 MB, process size 1,589 MB at UTC 2021.04.05 12:43:45.119
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso32262, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 9164 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "./.xkit/setup/xh018/cadence/PDK"
+\o Loading XfPcellCore.cxt
+\o Loading XfSktTools.cxt
+\o Loading XfTechXh018.cxt
+\o nil
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o "XfDtbSkill package succesfully loaded."
+\o     Generic Dcells Tool Box: 'Dcells_Toolbox_v1.2.0' loaded.
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\# Memory report: using         411 MB, process size 1,708 MB at UTC 2021.04.05 12:43:47.071
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\a _treeSetOpcGUI(t)
+\r t
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  -> END LOAD ".cdsinit" FILE
+\# Available memory:         79,590 MB at UTC 2021.04.05 12:43:54.305
+\# Memory report: Maximum memory size now 80,029 MB at UTC 2021.04.05 12:43:54.305
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.04.05 12:43:54.306
+\o Job 6 timed out after no activity in 300 seconds.
+\o Loading simui.cxt 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 

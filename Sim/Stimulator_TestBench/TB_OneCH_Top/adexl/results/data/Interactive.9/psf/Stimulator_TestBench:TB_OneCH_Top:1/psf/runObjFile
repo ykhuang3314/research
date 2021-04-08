@@ -1,0 +1,1455 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Apr  6 12:59:15 2021"
+"date" "Apr  6 12:59:15 2021"
+"simulator" "ams"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 2
+"axlDependentVarFlag" "true"
+"paramName" "#maeCorner"
+ "#maeCorner_num" 17
+"#maeCorner_name_1" "nom"
+"#maeCorner_name_2" "C0_0"
+"#maeCorner_name_3" "C0_1"
+"#maeCorner_name_4" "C0_2"
+"#maeCorner_name_5" "C0_3"
+"#maeCorner_name_6" "C0_4"
+"#maeCorner_name_7" "C0_5"
+"#maeCorner_name_8" "C0_6"
+"#maeCorner_name_9" "C0_7"
+"#maeCorner_name_10" "C0_8"
+"#maeCorner_name_11" "C0_9"
+"#maeCorner_name_12" "C0_10"
+"#maeCorner_name_13" "C0_11"
+"#maeCorner_name_14" "C0_12"
+"#maeCorner_name_15" "C0_13"
+"#maeCorner_name_16" "C0_14"
+"#maeCorner_name_17" "C0_15"
+ "#maeCorner_param_set_num" 1
+"#maeCorner_param_name_1" "modelFiles"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("modelFiles")
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../17/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../17/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_15"
+ "#pointID" 17
+"netlistDir" "../../../17/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../17/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../16/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../16/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_14"
+ "#pointID" 16
+"netlistDir" "../../../16/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../16/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../15/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../15/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_13"
+ "#pointID" 15
+"netlistDir" "../../../15/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../15/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../14/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../14/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_12"
+ "#pointID" 14
+"netlistDir" "../../../14/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../14/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../13/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../13/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_11"
+ "#pointID" 13
+"netlistDir" "../../../13/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../13/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../12/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../12/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_10"
+ "#pointID" 12
+"netlistDir" "../../../12/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../12/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../11/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../11/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_9"
+ "#pointID" 11
+"netlistDir" "../../../11/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../11/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=100.0" "runObject" (
+(
+"../../../10/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../10/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_8"
+ "#pointID" 10
+"netlistDir" "../../../10/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../10/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../9/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../9/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_7"
+ "#pointID" 9
+"netlistDir" "../../../9/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../9/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../8/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../8/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_6"
+ "#pointID" 8
+"netlistDir" "../../../8/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../8/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../7/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../7/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_5"
+ "#pointID" 7
+"netlistDir" "../../../7/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../7/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../6/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../6/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_4"
+ "#pointID" 6
+"netlistDir" "../../../6/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../6/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../5/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../5/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_3"
+ "#pointID" 5
+"netlistDir" "../../../5/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../5/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../4/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../4/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_2"
+ "#pointID" 4
+"netlistDir" "../../../4/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../4/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../3/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../3/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_1"
+ "#pointID" 3
+"netlistDir" "../../../3/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../3/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=100.0" "runObject" (
+(
+"../../../2/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../2/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_0"
+ "#pointID" 2
+"netlistDir" "../../../2/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../2/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm,Rload=100.0" "runObject" (
+(
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../34/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../34/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_15"
+ "#pointID" 34
+"netlistDir" "../../../34/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../34/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../33/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../33/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_14"
+ "#pointID" 33
+"netlistDir" "../../../33/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../33/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../32/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../32/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_13"
+ "#pointID" 32
+"netlistDir" "../../../32/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../32/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../31/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../31/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_12"
+ "#pointID" 31
+"netlistDir" "../../../31/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../31/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../30/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../30/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_11"
+ "#pointID" 30
+"netlistDir" "../../../30/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../30/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../29/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../29/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_10"
+ "#pointID" 29
+"netlistDir" "../../../29/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../29/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../28/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../28/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_9"
+ "#pointID" 28
+"netlistDir" "../../../28/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../28/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=375.0" "runObject" (
+(
+"../../../27/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../27/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_8"
+ "#pointID" 27
+"netlistDir" "../../../27/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../27/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../26/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../26/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_7"
+ "#pointID" 26
+"netlistDir" "../../../26/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../26/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../25/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../25/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_6"
+ "#pointID" 25
+"netlistDir" "../../../25/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../25/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../24/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../24/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_5"
+ "#pointID" 24
+"netlistDir" "../../../24/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../24/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../23/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../23/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_4"
+ "#pointID" 23
+"netlistDir" "../../../23/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../23/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../22/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../22/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_3"
+ "#pointID" 22
+"netlistDir" "../../../22/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../22/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../21/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../21/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_2"
+ "#pointID" 21
+"netlistDir" "../../../21/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../21/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../20/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../20/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_1"
+ "#pointID" 20
+"netlistDir" "../../../20/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../20/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=375.0" "runObject" (
+(
+"../../../19/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../19/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_0"
+ "#pointID" 19
+"netlistDir" "../../../19/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../19/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm,Rload=375.0" "runObject" (
+(
+"../../../18/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../18/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 18
+"netlistDir" "../../../18/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../18/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 3.750000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../51/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../51/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_15"
+ "#pointID" 51
+"netlistDir" "../../../51/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../51/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../50/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../50/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_14"
+ "#pointID" 50
+"netlistDir" "../../../50/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../50/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../49/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../49/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_13"
+ "#pointID" 49
+"netlistDir" "../../../49/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../49/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../48/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../48/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_12"
+ "#pointID" 48
+"netlistDir" "../../../48/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../48/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../47/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../47/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_11"
+ "#pointID" 47
+"netlistDir" "../../../47/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../47/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../46/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../46/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_10"
+ "#pointID" 46
+"netlistDir" "../../../46/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../46/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../45/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../45/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_9"
+ "#pointID" 45
+"netlistDir" "../../../45/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../45/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=650.0" "runObject" (
+(
+"../../../44/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../44/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_8"
+ "#pointID" 44
+"netlistDir" "../../../44/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../44/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../43/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../43/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_7"
+ "#pointID" 43
+"netlistDir" "../../../43/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../43/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../42/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../42/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_6"
+ "#pointID" 42
+"netlistDir" "../../../42/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../42/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../41/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../41/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_5"
+ "#pointID" 41
+"netlistDir" "../../../41/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../41/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../40/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../40/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_4"
+ "#pointID" 40
+"netlistDir" "../../../40/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../40/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../39/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../39/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_3"
+ "#pointID" 39
+"netlistDir" "../../../39/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../39/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../38/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../38/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_2"
+ "#pointID" 38
+"netlistDir" "../../../38/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../38/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../37/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../37/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_1"
+ "#pointID" 37
+"netlistDir" "../../../37/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../37/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=650.0" "runObject" (
+(
+"../../../36/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../36/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_0"
+ "#pointID" 36
+"netlistDir" "../../../36/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../36/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm,Rload=650.0" "runObject" (
+(
+"../../../35/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../35/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 35
+"netlistDir" "../../../35/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../35/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 6.500000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../68/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../68/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_15"
+ "#pointID" 68
+"netlistDir" "../../../68/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../68/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../67/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../67/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_14"
+ "#pointID" 67
+"netlistDir" "../../../67/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../67/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../66/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../66/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_13"
+ "#pointID" 66
+"netlistDir" "../../../66/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../66/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../65/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../65/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_12"
+ "#pointID" 65
+"netlistDir" "../../../65/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../65/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../64/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../64/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_11"
+ "#pointID" 64
+"netlistDir" "../../../64/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../64/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../63/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../63/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_10"
+ "#pointID" 63
+"netlistDir" "../../../63/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../63/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../62/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../62/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_9"
+ "#pointID" 62
+"netlistDir" "../../../62/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../62/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=925.0" "runObject" (
+(
+"../../../61/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../61/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_8"
+ "#pointID" 61
+"netlistDir" "../../../61/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../61/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../60/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../60/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_7"
+ "#pointID" 60
+"netlistDir" "../../../60/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../60/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../59/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../59/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_6"
+ "#pointID" 59
+"netlistDir" "../../../59/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../59/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../58/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../58/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_5"
+ "#pointID" 58
+"netlistDir" "../../../58/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../58/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../57/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../57/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_4"
+ "#pointID" 57
+"netlistDir" "../../../57/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../57/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../56/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../56/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_3"
+ "#pointID" 56
+"netlistDir" "../../../56/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../56/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../55/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../55/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_2"
+ "#pointID" 55
+"netlistDir" "../../../55/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../55/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../54/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../54/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_1"
+ "#pointID" 54
+"netlistDir" "../../../54/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../54/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=925.0" "runObject" (
+(
+"../../../53/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../53/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_0"
+ "#pointID" 53
+"netlistDir" "../../../53/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../53/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm,Rload=925.0" "runObject" (
+(
+"../../../52/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../52/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 52
+"netlistDir" "../../../52/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../52/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 9.250000e+02
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../85/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../85/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_15"
+ "#pointID" 85
+"netlistDir" "../../../85/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../85/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../84/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../84/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_14"
+ "#pointID" 84
+"netlistDir" "../../../84/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../84/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../83/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../83/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_13"
+ "#pointID" 83
+"netlistDir" "../../../83/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../83/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../82/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../82/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_12"
+ "#pointID" 82
+"netlistDir" "../../../82/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../82/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../81/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../81/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_11"
+ "#pointID" 81
+"netlistDir" "../../../81/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../81/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../80/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../80/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_10"
+ "#pointID" 80
+"netlistDir" "../../../80/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../80/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../79/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../79/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_9"
+ "#pointID" 79
+"netlistDir" "../../../79/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../79/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws,Rload=1200.0" "runObject" (
+(
+"../../../78/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../78/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+()
+) PROP(
+"#maeCorner" "C0_8"
+ "#pointID" 78
+"netlistDir" "../../../78/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../78/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../77/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../77/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_7"
+ "#pointID" 77
+"netlistDir" "../../../77/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../77/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../76/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../76/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_6"
+ "#pointID" 76
+"netlistDir" "../../../76/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../76/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../75/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../75/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_5"
+ "#pointID" 75
+"netlistDir" "../../../75/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../75/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../74/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../74/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_4"
+ "#pointID" 74
+"netlistDir" "../../../74/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../74/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../73/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../73/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_3"
+ "#pointID" 73
+"netlistDir" "../../../73/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../73/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../72/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../72/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_2"
+ "#pointID" 72
+"netlistDir" "../../../72/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../72/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../71/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../71/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_1"
+ "#pointID" 71
+"netlistDir" "../../../71/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../71/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp,Rload=1200.0" "runObject" (
+(
+"../../../70/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../70/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+()
+) PROP(
+"#maeCorner" "C0_0"
+ "#pointID" 70
+"netlistDir" "../../../70/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../70/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm,Rload=1200.0" "runObject" (
+(
+"../../../69/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../69/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 69
+"netlistDir" "../../../69/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../69/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.200000e+03
+)
+
+END

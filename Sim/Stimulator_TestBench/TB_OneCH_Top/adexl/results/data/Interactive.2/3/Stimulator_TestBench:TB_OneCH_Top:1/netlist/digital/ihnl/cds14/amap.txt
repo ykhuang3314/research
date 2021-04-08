@@ -1,0 +1,11 @@
+instMap,*SingleChannel_ST,*I0,*I0
+instMaster,*SingleChannel_ST,*I0,*Stimulator_IMP_CurrentSource_All_ST_schematic
+instMap,*SingleChannel_ST,*I2,*I2
+instMaster,*SingleChannel_ST,*I2,*Stimulator_IMP_HalfBridge_ST_schematic
+instMap,*SingleChannel_ST,*I1,*I1
+instMaster,*SingleChannel_ST,*I1,*Stimulator_IMP_HalfBridge_ST_schematic
+netMap,*SingleChannel_ST,*gnd!,*cds_globals.\gnd! 
+netMap,*SingleChannel_ST,*vdd3!,*cds_globals.\vdd3! 
+netMap,*SingleChannel_ST,*vdde!,*cds_globals.\vdde! 
+netMap,*SingleChannel_ST,*vdd!,*cds_globals.\vdd! 
+cellMap,*SingleChannel_ST,*SingleChannel_ST,*Stimulator_IMP,*schematic

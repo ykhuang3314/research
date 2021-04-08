@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_Iref_imp"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/Stimulator_TestBench/TB_Iref_imp/adexl/results/data/Interactive.4/13/Stimulator_TestBench:TB_Iref_imp:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Stimulator_TestBench/TB_Iref_imp/schematic" "TB_Iref_imp" )
+ )
+( "TB_Iref_imp" "ihnl/cds0/map" )
+ )

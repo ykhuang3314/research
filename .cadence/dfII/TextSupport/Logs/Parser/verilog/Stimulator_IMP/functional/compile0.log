@@ -1,0 +1,20 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Mar 25, 2021 at 14:53:14 CET
+xmvlog
+    -use5x
+    -SPECIFICUNIT Digital_Stimulus_ST
+    -zparse /tmp/vamsZparyz1354
+    -NOWARN DLNOHV
+    -work Stimulator_IMP
+    -view functional
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilog/Stimulator_IMP/functional/compile0.log
+    -messages
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/verilog.v
+
+file: /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/verilog.v
+	module Stimulator_IMP.Digital_Stimulus_ST:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Mar 25, 2021 at 14:53:14 CET  (total: 00:00:00)

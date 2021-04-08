@@ -1,0 +1,78 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Apr  5 15:14:54 2021"
+"date" "Apr  5 15:14:54 2021"
+"simulator" "ams"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 1
+"paramName" "#maeCorner"
+ "#maeCorner_num" 37
+"#maeCorner_name_1" "nom"
+"#maeCorner_name_2" "C0_0"
+"#maeCorner_name_3" "C0_1"
+"#maeCorner_name_4" "C0_2"
+"#maeCorner_name_5" "C0_3"
+"#maeCorner_name_6" "C0_4"
+"#maeCorner_name_7" "C0_5"
+"#maeCorner_name_8" "C0_6"
+"#maeCorner_name_9" "C0_7"
+"#maeCorner_name_10" "C0_8"
+"#maeCorner_name_11" "C0_9"
+"#maeCorner_name_12" "C0_10"
+"#maeCorner_name_13" "C0_11"
+"#maeCorner_name_14" "C0_12"
+"#maeCorner_name_15" "C0_13"
+"#maeCorner_name_16" "C0_14"
+"#maeCorner_name_17" "C0_15"
+"#maeCorner_name_18" "C0_16"
+"#maeCorner_name_19" "C0_17"
+"#maeCorner_name_20" "C0_18"
+"#maeCorner_name_21" "C0_19"
+"#maeCorner_name_22" "C0_20"
+"#maeCorner_name_23" "C0_21"
+"#maeCorner_name_24" "C0_22"
+"#maeCorner_name_25" "C0_23"
+"#maeCorner_name_26" "C0_24"
+"#maeCorner_name_27" "C0_25"
+"#maeCorner_name_28" "C0_26"
+"#maeCorner_name_29" "C0_27"
+"#maeCorner_name_30" "C0_28"
+"#maeCorner_name_31" "C0_29"
+"#maeCorner_name_32" "C0_30"
+"#maeCorner_name_33" "C0_31"
+"#maeCorner_name_34" "C0_32"
+"#maeCorner_name_35" "C0_33"
+"#maeCorner_name_36" "C0_34"
+"#maeCorner_name_37" "C0_35"
+ "#maeCorner_param_set_num" 1
+"#maeCorner_param_name_1" "modelFiles"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("modelFiles")
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm" "runObject" (
+(
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1"
+"modelFiles" "config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+)
+
+END

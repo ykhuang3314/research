@@ -1,0 +1,5 @@
+    I0 Ext_Iref_ST
+    I1 Idac_5bit_ST
+    I2 CurrentMirror_ST
+ends CurrentSource_All_ST
+// End of subcircuit definition.

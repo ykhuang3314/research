@@ -3,9 +3,9 @@
 
 module Counter #( 
 	// block parameters
-	parameter WIDTH = 5, // number of bits in the counter
+	parameter WIDTH = 3, // number of bits in the counter
 	parameter START = 0, // counting from the START value to the END value
-	parameter END = 31,
+	parameter END = 7,
 	parameter STEP = 1 // counting step
 	)(
 	//output port

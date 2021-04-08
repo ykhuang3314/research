@@ -1,0 +1,406 @@
+// Generated for: spectre
+// Generated on: Apr  5 15:03:20 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_OneCH_Top
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0 vdd3! vdde! vdd!
+parameters Rload=1000
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=wz
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs"
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=wp
+
+// Library name: Stimulator_IMP
+// Cell name: Ext_Iref_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt Ext_Iref_ST
+    R0 (Iext net9) rpp1k1 l=20.095u w=2u m=1 par1=(1)
+    M3 (net8 net8 vss vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M2 (net9 net9 net8 vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M0 (Bias2 net9 net17 vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (net17 net8 vss vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
+        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M48 (Bias1 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M49 (Bias2 Bias2 Bias1 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+ends Ext_Iref_ST
+// End of subcircuit definition.
+
+// Library name: D_CELLS_M3V
+// Cell name: LSHVT18U3VX1
+// View name: cmos_sch
+// Inherited view list: cmos_sch
+subckt LSHVT18U3VX1
+    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=1.46u l=300n \
+        as=7.008e-13 ad=7.008e-13 ps=3.88e-06 pd=3.88e-06 nrs=0.184932 \
+        nrd=0.184932 m=(1)*(1) par1=((1)*(1))
+    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.48u l=300n \
+        as=7.104e-13 ad=7.104e-13 ps=3.92e-06 pd=3.92e-06 nrs=0.182432 \
+        nrd=0.182432 m=(1)*(1) par1=((1)*(1))
+    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=890.0n l=350.0n \
+        as=4.272e-13 ad=4.272e-13 ps=2.74e-06 pd=2.74e-06 nrs=0.303371 \
+        nrd=0.303371 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LSHVT18U3VX1
+// End of subcircuit definition.
+
+// Library name: GATES_3V
+// Cell name: invrv3
+// View name: schematic
+// Inherited view list: schematic
+subckt invrv3
+parameters GT_PDW GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=300.00n
+    MN1 (out in inh_ground_gnd inh_ground_gnd) ne3 w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*sx+(GT_PDW) pd=2*sx+(GT_PDW) \
+        nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    MP1 (out in inh_power_vdd3 inh_power_vdd3) pe3 w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*sx+(GT_PUW) pd=2*sx+(GT_PUW) \
+        nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) par1=((1)*(1))
+ends invrv3
+// End of subcircuit definition.
+
+// Library name: D_CELLS_3V
+// Cell name: IN_3VX2
+// View name: cmos_sch
+// Inherited view list: cmos_sch
+subckt IN_3VX2
+    invr_1 invrv3 GT_PDW=960.00n GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=2.94u GT_PUL=300.00n
+ends IN_3VX2
+// End of subcircuit definition.
+
+// Library name: GATES_HD
+// Cell name: nand2
+// View name: schematic
+// Inherited view list: schematic
+subckt nand2
+parameters GT_PDW GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=180.00n
+    MN1 (out a net11 inh_ground_gnd) ne w=GT_PDW l=GT_PDL as=sx*(GT_PDW) \
+        ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) pd=2*(sx+(GT_PDW)) \
+        nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    MN2 (net11 b inh_ground_gnd inh_ground_gnd) ne w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) \
+        pd=2*(sx+(GT_PDW)) nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    MP1 (out a inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
+        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
+        par1=((1)*(1))
+    MP2 (out b inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
+        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
+        par1=((1)*(1))
+ends nand2
+// End of subcircuit definition.
+
+// Library name: GATES_HD
+// Cell name: invr
+// View name: schematic
+// Inherited view list: schematic
+subckt invr
+parameters GT_PDW GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
+        GT_PUL=180.00n
+    ne (out in inh_ground_gnd inh_ground_gnd) ne w=GT_PDW l=GT_PDL \
+        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) \
+        pd=2*(sx+(GT_PDW)) nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    pe (out in inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
+        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
+        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
+        par1=((1)*(1))
+ends invr
+// End of subcircuit definition.
+
+// Library name: D_CELLS_HD
+// Cell name: AND2HDX0
+// View name: cmos_sch
+// Inherited view list: cmos_sch
+subckt AND2HDX0
+    nand2_1 nand2 GT_PDW=420.00n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=720.00n GT_PUL=180.00n
+    invr_1 invr GT_PDW=420.00n GT_PDL=180.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=720.00n GT_PUL=180.00n
+ends AND2HDX0
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: Idac_5bit_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt Idac_5bit_ST
+    M41 (net31 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+    M38 (net33 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+    M35 (net35 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+    M32 (net37 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+    M22 (net39 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M42 (net30 Bias2 net31 vdd3) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
+        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
+        par1=((1)*(16))
+    M39 (net32 Bias2 net33 vdd3) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
+        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
+        par1=((1)*(8))
+    M36 (net34 Bias2 net35 vdd3) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
+        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
+        par1=((1)*(4))
+    M33 (net36 Bias2 net37 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
+        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
+        par1=((1)*(2))
+    M29 (net38 Bias2 net39 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M44 (Idac D1_3v net36 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M45 (Idac D2_3v net34 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M46 (Idac D3_3v net32 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M47 (Idac D4_3v net30 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M31 (Idac D0_3v net38 vdd3) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    I16 LSHVT18U3VX1
+    I30 LSHVT18U3VX1
+    I14 LSHVT18U3VX1
+    I12 LSHVT18U3VX1
+    I29 LSHVT18U3VX1
+    I31 IN_3VX2
+    I15 IN_3VX2
+    I13 IN_3VX2
+    I11 IN_3VX2
+    I10 IN_3VX2
+    I45 AND2HDX0
+    I46 AND2HDX0
+    I47 AND2HDX0
+    I48 AND2HDX0
+    I49 AND2HDX0
+ends Idac_5bit_ST
+// End of subcircuit definition.
+
+// Library name: D_CELLS_M3V
+// Cell name: LSHVT18U3VX2
+// View name: cmos_sch
+// Inherited view list: cmos_sch
+subckt LSHVT18U3VX2
+    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=2.82u l=300n \
+        as=1.3536e-12 ad=1.3536e-12 ps=6.6e-06 pd=6.6e-06 nrs=0.0957447 \
+        nrd=0.0957447 m=(1)*(1) par1=((1)*(1))
+    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.47u l=300n \
+        as=7.056e-13 ad=7.056e-13 ps=3.9e-06 pd=3.9e-06 nrs=0.183673 \
+        nrd=0.183673 m=(1)*(1) par1=((1)*(1))
+    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=1.78u l=350.0n \
+        as=8.544e-13 ad=8.544e-13 ps=4.52e-06 pd=4.52e-06 nrs=0.151685 \
+        nrd=0.151685 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LSHVT18U3VX2
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: CurrentMirror_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt CurrentMirror_ST
+    C5 (vddh net014) csft5a area=6.3936e-11 perimeter=33.72u m=15 \
+        par1=(15)
+    C1 (net014 vss) csft5a area=6.3936e-11 perimeter=33.72u m=45 par1=(45)
+    M26 (Iref Iref vss vss) ne3 w=40u l=2u as=1.92e-11 ad=1.92e-11 \
+        ps=8.096e-05 pd=8.096e-05 nrs=0.00675 nrd=0.00675 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M13 (net11 Iref vss vss) ne3 w=40u l=2u as=1.248e-11 ad=1.08e-11 \
+        ps=4.8624e-05 pd=4.054e-05 nrs=0.00675 nrd=0.00675 m=(1)*(10) \
+        par1=((1)*(10)) xf_subext=0
+    M17 (net11 net014 vss vss) nedia_bjt w=10u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M15 (net014 vdd3 vss vss) nedia_bjt w=10u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M14 (net016 net016 net19 vss) nedia_bjt w=30u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M8 (net17 net17 VB vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M16 (Bias2 en_3v net11 vss) nedia_bjt w=60u l=1.25u m=(1)*(5) \
+        par1=((1)*(5)) extlay=0 xf_subext=0
+    M5 (net19 VB net26 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M0 (Ist VB net25 vss) nedia_bjt w=60u l=1.25u m=(1)*(10) \
+        par1=((1)*(10)) extlay=0 xf_subext=0
+    M7 (VB net17 net16 vss) nedia_bjt w=20u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M6 (net16 net16 vss vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M4 (net26 net19 vss vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M3 (net25 net19 vss vss) nedia_bjt w=60u l=1.25u m=(1)*(10) \
+        par1=((1)*(10)) extlay=0 xf_subext=0
+    I17 LSHVT18U3VX2
+    M11 (net23 net013 vddh vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M1 (net24 net013 vddh vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M2 (net013 net013 vddh vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M12 (net016 Bias2 net23 vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M10 (net17 Bias2 net24 vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M9 (Bias2 Bias2 net013 vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    R1 (vdd3 vss) rpp1k1 l=202.905u w=2u m=1 par1=(1)
+    R0 (en_3v vss) rpp1k1 l=202.905u w=2u m=1 par1=(1)
+ends CurrentMirror_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: CurrentSource_All_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt CurrentSource_All_ST
+    I0 Ext_Iref_ST
+    I1 Idac_5bit_ST
+    I2 CurrentMirror_ST
+ends CurrentSource_All_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_HighSide_V3_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt LS_HighSide_V3_ST
+    M13 (net10 inn3v 0 0) nedia_bjt w=10u l=1.25u m=(1)*(5) par1=((1)*(5)) \
+        extlay=0 xf_subext=0
+    R0 (vddh out) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (out net10) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    I10 LSHVT18U3VX1
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: LS_LowSide_V2_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt LS_LowSide_V2_ST
+    M0 (net12 in_3V 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    R2 (net9 net12) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    R0 (out 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R1 (vddh net9) rpp1k1 l=304.47u w=2u m=1 par1=(1)
+    R3 (net11 out) rpp1k1 l=507.595u w=2u m=1 par1=(1)
+    M1 (net11 net9 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    I0 LSHVT18U3VX1
+ends LS_LowSide_V2_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: HalfBridge_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt HalfBridge_ST
+    I8 LS_HighSide_V3_ST
+    M34 (OUT net08 Ist 0) nedia_bjt w=100.0000u l=1.25u m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+    M66 (OUT net07 vddh 0) ped_bjt w=100.0000u l=940.0n m=(1)*(6) \
+        par1=((1)*(6)) extlay=0 xf_subext=0
+    I9 LS_LowSide_V2_ST
+ends HalfBridge_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_IMP
+// Cell name: SingleChannel_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt SingleChannel_ST
+    I0 CurrentSource_All_ST
+    I2 HalfBridge_ST
+    I1 HalfBridge_ST
+ends SingleChannel_ST
+// End of subcircuit definition.
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_OneCH_Top
+// View name: schematic
+// Inherited view list: schematic
+I0 SingleChannel_ST
+I1 (vdd3! net6) isource dc=10u type=dc
+R0 (vout1 vout2) resistor r=Rload
+V3 (vdd! 0) vsource dc=1.8 type=dc
+V2 (vddh 0) vsource dc=40 type=dc
+V0 (vdde! 0) vsource dc=1.8 type=dc
+V1 (vdd3! 0) vsource dc=3.3 type=dc
+simulatorOptions options temp=27 tnom=27 scale=1.0 scalem=1.0 \
+reltol=100e-6 vabstol=1e-6 iabstol=1e-12 homotopy=all limit=delta \
+gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 digits=5 pivrel=1e-3 \
+checklimitdest=psf resolve_duplicate_master=subckt \
+duplicate_subckt=warning portmismatch_severity=warning 

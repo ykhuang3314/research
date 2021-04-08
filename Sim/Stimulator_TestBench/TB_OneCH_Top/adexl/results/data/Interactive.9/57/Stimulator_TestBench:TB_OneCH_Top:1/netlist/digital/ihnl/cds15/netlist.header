@@ -1,0 +1,26 @@
+// Library - Stimulator_TestBench, Cell - TB_OneCH_Top, View -
+//schematic
+// LAST TIME SAVED: Apr  6 11:43:13 2021
+// NETLIST TIME: Apr  6 12:36:17 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_OneCH_Top", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Apr  6 11:43:13 2021" *)
+
+module TB_OneCH_Top ();
+
+// Buses in the design
+
+wire  [7:0]  CtrlHS;
+
+wire  [7:0]  CtrlLS;
+
+wire  [3:0]  ChSel_HS;
+
+wire  [3:0]  ChSel_LS;
+
+wire  [4:0]  Mag_ST;
+

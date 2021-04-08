@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr  6 11:00:38 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_OneChannel_DC_imp
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdde! vdd3! vdd!

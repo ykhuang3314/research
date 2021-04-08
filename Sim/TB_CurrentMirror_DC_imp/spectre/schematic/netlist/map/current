@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_CurrentMirror_DC_imp"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "vdde! gnd! vdd3!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_CurrentMirror_DC_imp/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "D_CELLS_3V/IN_3VX2/cmos_sch" "IN_3VX2" )
+( "GATES_3V/invrv3/schematic" "invrv3" )
+( "Stimulator_TestBench/TB_CurrentMirror_DC_imp/schematic" "TB_CurrentMirror_DC_imp" )
+( "D_CELLS_M3V/LSHVT18U3VX1/cmos_sch" "LSHVT18U3VX1" )
+ )
+( "invrv3" "ihnl/cds0/map" )
+( "LSHVT18U3VX1" "ihnl/cds2/map" )
+( "TB_CurrentMirror_DC_imp" "ihnl/cds3/map" )
+( "IN_3VX2" "ihnl/cds1/map" )
+ )

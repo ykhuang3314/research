@@ -1,7 +1,7 @@
 "_dspfFullDesignInfo" nil
 "printComments" (nil nil)
-"termMismatch" "default"
 "setTopLevelAsSubckt" nil
-"_dspfFileToEnvOptionsMapInfo" nil
+"termMismatch" "default"
 "srcFileMappingInfo" nil
+"_dspfFileToEnvOptionsMapInfo" nil
 "termDirectionMismatch" "default"

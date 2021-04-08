@@ -1,0 +1,11 @@
+instMap,*AND2HDX0,*nand2_1,*nand2_1
+instMaster,*AND2HDX0,*nand2_1,*GATES_HD_nand2_schematic
+instMap,*AND2HDX0,*invr_1,*invr_1
+instMaster,*AND2HDX0,*invr_1,*GATES_HD_invr_schematic
+netMap,*AND2HDX0,*inh_ground_gnd_gnd!,*\gnd! 
+netMap,*AND2HDX0,*inh_power_vdd_vdd!,*\vdd! 
+netMap,*AND2HDX0,*vdd3!,*cds_globals.\vdd3! 
+netMap,*AND2HDX0,*vdde!,*cds_globals.\vdde! 
+netMap,*AND2HDX0,*vdd!,*cds_globals.\vdd! 
+netMap,*AND2HDX0,*gnd!,*cds_globals.\gnd! 
+cellMap,*AND2HDX0,*AND2HDX0,*D_CELLS_HD,*cmos_sch

@@ -1,0 +1,146 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Mar 31, 2021 at 00:40:37 CEST
+xmvlog
+    -use5x
+    -SPECIFICUNIT Control_Logic_ST
+    -zparse /tmp/vamsZparpm1033
+    -NOWARN DLNOHV
+    -work Stimulator_IMP
+    -view functional
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilog/Stimulator_IMP/functional/compile1.log
+    -messages
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v
+
+file: /home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v
+		case(ChSEL0_ANO | ChSEL1_ANO) begin
+		                                  |
+xmvlog: *E,ILLPRI (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,34|36): illegal expression primary [4.2(IEEE)].
+			2'b00: Ctrl_HS_E00=1'b1, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,35|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b00: Ctrl_HS_E00=1'b1, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,35|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b00: Ctrl_HS_E00=1'b1, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,35|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b00: Ctrl_HS_E00=1'b1, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,35|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b1, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,36|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b1, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,36|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b1, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,36|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b1, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b0;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,36|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b1, Ctrl_HS_E30=1'b0;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,37|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b1, Ctrl_HS_E30=1'b0;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,37|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b1, Ctrl_HS_E30=1'b0;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,37|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b1, Ctrl_HS_E30=1'b0;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,37|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b1;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,38|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b1;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,38|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b1;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,38|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_HS_E00=1'b0, Ctrl_HS_E10=1'b0, Ctrl_HS_E20=1'b0, Ctrl_HS_E30=1'b1;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,38|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		case(ChSEL0_CAT | ChSEL1_CAT) begin
+		                                  |
+xmvlog: *E,ILLPRI (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,41|36): illegal expression primary [4.2(IEEE)].
+			2'b00: Ctrl_LS_E01=1'b1, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,42|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b00: Ctrl_LS_E01=1'b1, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,42|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b00: Ctrl_LS_E01=1'b1, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,42|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b00: Ctrl_LS_E01=1'b1, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,42|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b1, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,43|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b1, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,43|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b1, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,43|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b01: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b1, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b0;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,43|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b1, Ctrl_LS_E04=1'b0;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,44|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b1, Ctrl_LS_E04=1'b0;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,44|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b1, Ctrl_LS_E04=1'b0;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,44|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b10: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b1, Ctrl_LS_E04=1'b0;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,44|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b1;  
+			                  |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,45|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b1;  
+			                                    |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,45|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b1;  
+			                                                      |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,45|57): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+			2'b11: Ctrl_LS_E01=1'b0, Ctrl_LS_E02=1'b0, Ctrl_LS_E03=1'b0, Ctrl_LS_E04=1'b1;  
+			                                                                        |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,45|75): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_LS_E00=1'b0, Ctrl_LS_E10=1'b0, Ctrl_LS_E20=1'b0, Ctrl_LS_E30=1'b0;  
+		           |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,47|13): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_LS_E00=1'b0, Ctrl_LS_E10=1'b0, Ctrl_LS_E20=1'b0, Ctrl_LS_E30=1'b0;  
+		                             |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,47|31): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_LS_E00=1'b0, Ctrl_LS_E10=1'b0, Ctrl_LS_E20=1'b0, Ctrl_LS_E30=1'b0;  
+		                                               |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,47|49): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_LS_E00=1'b0, Ctrl_LS_E10=1'b0, Ctrl_LS_E20=1'b0, Ctrl_LS_E30=1'b0;  
+		                                                                 |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,47|67): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_HS_E01=1'b0, Ctrl_HS_E02=1'b0, Ctrl_HS_E03=1'b0, Ctrl_HS_E04=1'b0;
+		           |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,48|13): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_HS_E01=1'b0, Ctrl_HS_E02=1'b0, Ctrl_HS_E03=1'b0, Ctrl_HS_E04=1'b0;
+		                             |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,48|31): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_HS_E01=1'b0, Ctrl_HS_E02=1'b0, Ctrl_HS_E03=1'b0, Ctrl_HS_E04=1'b0;
+		                                               |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,48|49): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+		Ctrl_HS_E01=1'b0, Ctrl_HS_E02=1'b0, Ctrl_HS_E03=1'b0, Ctrl_HS_E04=1'b0;
+		                                                                 |
+xmvlog: *E,EXPLPA (/home/ykhuang/research/Stimulator_IMP/Control_Logic_ST/functional/verilog.v,48|67): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+	module Stimulator_IMP.Control_Logic_ST:functional
+		errors: 42, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Mar 31, 2021 at 00:40:37 CEST  (total: 00:00:00)

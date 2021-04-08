@@ -1,0 +1,34 @@
+// Library - D_CELLS_M3V, Cell - LSHVT18U3VX2, View - cmos_sch
+// LAST TIME SAVED: Jun  7 14:44:51 2018
+// NETLIST TIME: Apr  5 15:14:49 2021
+`timescale 1ns / 1ps 
+
+`worklib D_CELLS_M3V
+`view cmos_sch
+
+(* cds_ams_schematic *) 
+(* dfII_lib="D_CELLS_M3V", dfII_cell="LSHVT18U3VX2", dfII_view="cmos_sch", worklib_name="D_CELLS_M3V", view_name="cmos_sch", last_save_time="Jun  7 14:44:51 2018" *)
+
+module LSHVT18U3VX2 (Q, A);
+
+output  Q;
+
+input  A;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd3";
+integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
+\vdd3! ;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdde";
+integer inh_conn_def_value = "cds_globals.\\vdde! ";*)
+\vdde! ;
+
+
+endmodule

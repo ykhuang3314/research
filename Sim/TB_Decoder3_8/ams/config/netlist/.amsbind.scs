@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_Decoder3_8:config
+// Created On: Apr  1 15:17:48 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_Decoder3_8:schematic"
+
+	config cell="Decoder3_8" lib="Stimulator_IMP" view="functional"
+	config cell="vsource" view="analogtext"
+	config cell="Counter" lib="Digital_Lib" view="functional"
+
+ }

@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Apr  5 14:50:33 2021 
+Best design point: 1
+Design specs: 
+	Stimulator_TestBench:TB_OneChannel_DC_imp:1	corner	Nominal - 
+Design parameters: 
+	Rload		1.3K
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Mon Apr  5 14:50:56 2021 

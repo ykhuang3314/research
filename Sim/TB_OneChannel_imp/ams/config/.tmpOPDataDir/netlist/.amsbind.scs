@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config Stimulator_TestBench.TB_OneChannel_imp:config
+// Created On: Mar 31 11:45:43 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="Stimulator_TestBench.TB_OneChannel_imp:schematic"
+
+	config cell="LSHVT18U3VX1" lib="D_CELLS_M3V" view="cmos_sch"
+	config cell="nedia_bjt" view="analogtext"
+	config cell="invrv3" lib="GATES_3V" view="schematic"
+	config cell="Digital_Stimulus_ST" lib="Stimulator_IMP" view="functional"
+	config cell="pe3" view="analogtext"
+	config cell="LS_LowSide_V2_ST" lib="Stimulator_IMP" view="schematic"
+	config cell="isource" view="analogtext"
+	config cell="ne3" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="LS_HighSide_V3_ST" lib="Stimulator_IMP" view="schematic"
+	config cell="IN_3VX2" lib="D_CELLS_3V" view="cmos_sch"
+	config cell="ped_bjt" view="analogtext"
+	config cell="csft5a" view="analogtext"
+	config cell="rpp1k1" view="analogtext"
+
+ }

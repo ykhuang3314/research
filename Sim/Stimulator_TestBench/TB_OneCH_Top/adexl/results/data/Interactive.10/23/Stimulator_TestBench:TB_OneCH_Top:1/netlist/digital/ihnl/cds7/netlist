@@ -1,0 +1,52 @@
+// Library - Stimulator_IMP, Cell - Idac_5bit_ST, View - schematic
+// LAST TIME SAVED: Mar 31 15:05:20 2021
+// NETLIST TIME: Apr  7 14:08:48 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="Idac_5bit_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 31 15:05:20 2021" *)
+
+module Idac_5bit_ST (Idac, vdd3, Bias1, Bias2, D0, D1, D2, D3, D4, 
+    Enable);
+
+output  Idac;
+
+inout  vdd3;
+
+input  Bias1, Bias2, D0, D1, D2, D3, D4, Enable;
+
+
+LSHVT18U3VX1 I16 ( .A(net024), .Q(net020));
+
+LSHVT18U3VX1 I30 ( .A(net021), .Q(net019));
+
+LSHVT18U3VX1 I14 ( .A(net022), .Q(net018));
+
+LSHVT18U3VX1 I12 ( .A(net023), .Q(net017));
+
+LSHVT18U3VX1 I29 ( .A(net026), .Q(net025));
+
+IN_3VX2 I31 ( .A(net020), .Q(D0_3v));
+
+IN_3VX2 I15 ( .A(net019), .Q(D1_3v));
+
+IN_3VX2 I13 ( .A(net018), .Q(D2_3v));
+
+IN_3VX2 I11 ( .A(net017), .Q(D3_3v));
+
+IN_3VX2 I10 ( .A(net025), .Q(D4_3v));
+
+AND2HDX0 I45 ( .Q(net024), .B(D0), .A(Enable));
+
+AND2HDX0 I46 ( .Q(net021), .B(D1), .A(Enable));
+
+AND2HDX0 I47 ( .Q(net022), .B(D2), .A(Enable));
+
+AND2HDX0 I48 ( .Q(net023), .B(D3), .A(Enable));
+
+AND2HDX0 I49 ( .Q(net026), .B(D4), .A(Enable));
+
+endmodule

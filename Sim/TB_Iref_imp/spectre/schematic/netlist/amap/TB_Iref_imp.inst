@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"R1n" "PRIMLIB_rpp1k1_spectre"
+"M43n M37n M28n M53n" "PRIMLIB_ne3_spectre"
+"M50n M48n M54n M51n M49n" "PRIMLIB_pe3_spectre"
+"V0n" "analogLib_vpwl_spectre"

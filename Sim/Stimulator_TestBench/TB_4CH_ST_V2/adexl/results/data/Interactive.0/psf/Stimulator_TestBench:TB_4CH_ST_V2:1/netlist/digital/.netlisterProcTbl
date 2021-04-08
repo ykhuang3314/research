@@ -1,4 +1,0 @@
-("analogLib" "idc" "spectre") spectreSrcPrim
-("analogLib" "vpwl" "spectre") spectrePwlsrcPrim
-("analogLib" "res" "spectre") nil
-("analogLib" "vdc" "spectre") spectreSrcPrim

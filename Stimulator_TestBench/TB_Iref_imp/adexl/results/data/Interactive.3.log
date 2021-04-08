@@ -1,0 +1,85 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Mar 25 16:28:13 2021 
+Best design point: 1
+Design specs: 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_0 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_1 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_2 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_3 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_4 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_5 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_6 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_7 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_8 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_9 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_10 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_11 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_12 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_13 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_14 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_15 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_16 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_17 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_18 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_19 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_20 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_21 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_22 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_23 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_24 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_25 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_26 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_27 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_28 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_29 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_30 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_31 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_32 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_33 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_34 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_35 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_36 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_37 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_38 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_39 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_40 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_41 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_42 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_43 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_44 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_45 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_46 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_47 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_48 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_49 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_50 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_51 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_52 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_53 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_54 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_55 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_56 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_57 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_58 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_59 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_60 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_61 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_62 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_63 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_64 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_65 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_66 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_67 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_68 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_69 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_70 - 
+	Stimulator_TestBench:TB_Iref_imp:1	corner	C0_71 - 
+Design parameters: 
+	vdd		3.3
+
+Interactive.3
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.3 completed. 
+Current time: Thu Mar 25 16:30:26 2021 

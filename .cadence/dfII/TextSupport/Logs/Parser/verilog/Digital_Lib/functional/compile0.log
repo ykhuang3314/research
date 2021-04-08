@@ -1,9 +1,9 @@
 xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xmvlog(64)	18.03-s018: Started on Jan 06, 2021 at 17:51:24 CET
+TOOL:	xmvlog(64)	18.03-s018: Started on Apr 01, 2021 at 15:04:06 CEST
 xmvlog
     -use5x
     -SPECIFICUNIT Counter
-    -zparse /tmp/vamsZparpb5922
+    -zparse /tmp/vamsZparwl5609
     -NOWARN DLNOHV
     -work Digital_Lib
     -view functional
@@ -17,4 +17,4 @@ file: /home/ykhuang/research/Digital_Lib/Counter/functional/verilog.v
 	module Digital_Lib.Counter:functional
 		errors: 0, warnings: 0
 	 writing out DPL output:
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Jan 06, 2021 at 17:51:24 CET  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Apr 01, 2021 at 15:04:06 CEST  (total: 00:00:00)

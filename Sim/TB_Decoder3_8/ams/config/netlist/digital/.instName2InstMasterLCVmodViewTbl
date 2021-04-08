@@ -1,0 +1,5 @@
+("TB_Decoder3_8" "I0") ("Stimulator_IMP" "Decoder3_8" "functional" "functional" "Stimulator_TestBench" "TB_Decoder3_8" "schematic")
+("TB_Decoder3_8" "I2") ("Digital_Lib" "Counter" "functional" "functional" "Stimulator_TestBench" "TB_Decoder3_8" "schematic")
+("TB_Decoder3_8" "V0") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "TB_Decoder3_8" "schematic")
+("TB_Decoder3_8" "V2") ("analogLib" "vpulse" "spectre" "spectre" "Stimulator_TestBench" "TB_Decoder3_8" "schematic")
+("TB_Decoder3_8" "V1") ("analogLib" "vdc" "spectre" "spectre" "Stimulator_TestBench" "TB_Decoder3_8" "schematic")

@@ -1,0 +1,67 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Apr  6 11:51:25 2021"
+"date" "Apr  6 11:51:25 2021"
+"simulator" "ams"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 2
+"axlDependentVarFlag" "true"
+"paramName" "#maeCorner"
+ "#maeCorner_num" 17
+"#maeCorner_name_1" "nom"
+"#maeCorner_name_2" "C0_0"
+"#maeCorner_name_3" "C0_1"
+"#maeCorner_name_4" "C0_2"
+"#maeCorner_name_5" "C0_3"
+"#maeCorner_name_6" "C0_4"
+"#maeCorner_name_7" "C0_5"
+"#maeCorner_name_8" "C0_6"
+"#maeCorner_name_9" "C0_7"
+"#maeCorner_name_10" "C0_8"
+"#maeCorner_name_11" "C0_9"
+"#maeCorner_name_12" "C0_10"
+"#maeCorner_name_13" "C0_11"
+"#maeCorner_name_14" "C0_12"
+"#maeCorner_name_15" "C0_13"
+"#maeCorner_name_16" "C0_14"
+"#maeCorner_name_17" "C0_15"
+ "#maeCorner_param_set_num" 1
+"#maeCorner_param_name_1" "modelFiles"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("modelFiles")
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm" "runObject" (
+("")
+"Root"
+("Rload")
+) PROP(
+"modelFiles" "config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm,Rload=100.0" "runObject" (
+(
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/logFile"
+"../../../1/Stimulator_TestBench:TB_OneCH_Top:1/psf/artistLogFile"
+)
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1/netlist"
+"dataDir" "../../../1/Stimulator_TestBench:TB_OneCH_Top:1"
+ "Rload" 1.000000e+02
+)
+
+END

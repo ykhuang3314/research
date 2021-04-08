@@ -1,12 +1,10 @@
 hnlLastStopCellInfo = '(
                            ( "PRIMLIB" "nedia_bjt" "spectre" "56" "1562065969" )
-                          ( "analogLib" "idc" "spectre" "33" "1570591052" )
-                          ( "PRIMLIB" "ne3" "spectre" "52" "1562065969" )
                           ( "analogLib" "vpulse" "spectre" "34" "1570591052" )
-                          ( "PRIMLIB" "pe3" "spectre" "53" "1562065969" )
                           ( "analogLib" "res" "spectre" "28" "1570591052" )
                           ( "analogLib" "vdc" "spectre" "33" "1570591052" )
-                          ( "analogLib" "cap" "spectre" "30" "1570591052" )
+                          ( "PRIMLIB" "pe3" "spectre" "53" "1562065969" )
+                          ( "PRIMLIB" "ne3" "spectre" "52" "1562065969" )
                        )
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"
@@ -763,11 +761,10 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "Stimulator_IMP" "1614781067" )
-                   ( "Stimulator_TestBench" "1609948351" )
-                   ( "D_CELLS_M3V" "1528371405" )
-                   ( "GATES_3V" "1520929029" )
+                    ( "GATES_3V" "1520929029" )
                    ( "D_CELLS_3V" "1520929020" )
+                   ( "D_CELLS_M3V" "1528371405" )
+                   ( "Stimulator_TestBench" "1609948351" )
                   )
 hnlLastConstants = '(
                       "P_CELSIUS0"
@@ -793,6 +790,4 @@ hnlLastConstants = '(
                       "M_PI_4"
                       "M_LN2"
                     )
-hnlLastDesignVars = '(
-                      "Ibias"
-                    )
+hnlLastDesignVars = '( )
