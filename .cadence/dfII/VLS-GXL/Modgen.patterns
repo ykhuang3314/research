@@ -1,0 +1,85 @@
+;;pre-defined pattern file for Modgen
+;
+; syntax:
+; ( name Schematic_inst_num layout_inst_num row_num
+;;pattern array 
+;   ( (A B C...) ;row#1(bottom row)
+;     (A B C...) ;row#2
+;     ...
+;     (A B C...) ;top row
+;   )
+;;optional orient array
+;   ( (R0 R0 R0...) ;row#1(bottom row)
+;     (R0 R0 R0...) ;row#2
+;     ...
+;     (R0 R0 R0...) ;top row
+;   )
+; )
+; Note: Modgen will construct the layout array from bottom to top
+;       So the the first row in the pattern array will be the bottom row
+;       in the layout, and the last row in the pattern array will be 
+;       the top row in the layout 		
+
+(
+Pattern2
+2
+4
+1
+((A B B A))
+((MX MX MY MY))
+)
+(
+Pattern3
+2
+4
+1
+((B A B A))
+((R0 MX R0 MX))
+)
+(
+AB_BA
+2
+4
+2
+((A B) (B A))
+((R0 MX) (R0 MX))
+)
+(
+AB_BA1
+2
+4
+2
+((A A) (B A))
+((R0 R0) (R0 R0))
+)
+(
+Quad1
+2
+8
+2
+((A B B A) (A B B A))
+)
+(
+Quad2
+2
+8
+2
+((B A A B) (B A A B))
+((R0 R0 MY MY) (MX MX R180 R180))
+)
+(
+Quad3
+3
+12
+2
+((B A C C A B) (B A C C A B))
+((R0 R0 R0 MY MY MY) (MX MX MX R180 R180 R180))
+)
+(
+\8by\8CommonCentroid
+12
+64
+8
+((K K L L L L K K) (K K I J J I K K) (L I F H G E I L) (L J H B C G J L) (L J G D A H J L) (L I E G H F I L) (K K I J J I K K) (K K L L L L K K))
+((R0 R0 R0 R0 R0 R0 R0 R0) (R0 R0 R0 R0 R0 R0 R0 R0) (R0 R0 R0 R0 R0 R0 R0 R0) (R0 R0 R0 R0 R0 R0 R0 R0) (R0 R0 R0 R0 R0 R0 R0 R0) (R0 R0 R0 R0 R0 R0 R0 R0) (R0 R0 R0 R0 R0 R0 R0 R0) (R0 R0 R0 R0 R0 R0 R0 R0))
+)

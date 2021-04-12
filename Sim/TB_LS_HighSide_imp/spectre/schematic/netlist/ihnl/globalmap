@@ -2,6 +2,7 @@ CADENCE IHNL11140
 $model
 D_CELLS_3V/IN_3VX1/cmos_sch IN_3VX1
 GATES_3V/invrv3/schematic invrv3
+Stimulator_IMP/ResistiveDivider/schematic ResistiveDivider
 Stimulator_TestBench/TB_LS_HighSide_imp/schematic TB_LS_HighSide_imp
 D_CELLS_M3V/LSHVT18U3VX1/cmos_sch LSHVT18U3VX1
 $endmodel

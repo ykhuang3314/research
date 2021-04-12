@@ -1,0 +1,22 @@
+================================================================================
+Rule No. 8 : BULK_should_be_contacted
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : ResistiveDivider layout Stimulator_IMP
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.720        1.035      45.960       57.015
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.720      1.035     45.960     57.015
+

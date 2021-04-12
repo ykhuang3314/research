@@ -1,0 +1,5 @@
+!<alc> v1 39
+0    3    0 ResistiveDivider layout Stimulator_IMP
+0    2    0 LSHVT18U3VX1 layout D_CELLS_M3V
+0    5    0 LS_HighSide_V3_ST layout Stimulator_IMP
+0    7    0 LS_LowSide_V2_ST layout Stimulator_IMP

@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+D_CELLS_M3V LSHVT18U3VX1 cmos_sch cds0
+Stimulator_TestBench TB_LS_LowSide_imp schematic cds1

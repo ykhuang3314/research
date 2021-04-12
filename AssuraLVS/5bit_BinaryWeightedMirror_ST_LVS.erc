@@ -1,0 +1,14 @@
+
+***** Begin Label Report *****
+
+ Label in cell '5bit_BinaryWeightedMirror_ST layout Stimulator_IMP':
+  info: Assign pin label "vdd3" at (1.5000, 152.2550) to layer `met3trm'.
+  info: Assign pin label "Iref" at (3.3400, 152.2470) to layer `met3trm'.
+  info: Assign pin label "Ix16" at (6.0200, 152.1900) to layer `met3trm'.
+  info: Assign pin label "Ix8" at (7.3600, 152.1720) to layer `met3trm'.
+  info: Assign pin label "Ix4" at (8.7000, 152.1650) to layer `met3trm'.
+  info: Assign pin label "Ix2" at (10.0400, 152.1600) to layer `met3trm'.
+  info: Assign pin label "Ix1" at (11.3800, 152.1520) to layer `met3trm'.
+
+***** End of Label Report *****
+

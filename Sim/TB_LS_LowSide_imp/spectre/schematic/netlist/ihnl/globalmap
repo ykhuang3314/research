@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+Stimulator_TestBench/TB_LS_LowSide_imp/schematic TB_LS_LowSide_imp
+D_CELLS_M3V/LSHVT18U3VX1/cmos_sch LSHVT18U3VX1
+$endmodel
+$net
+gnd! 0
+vdd3! vdd3!
+vdde! vdde!
+$endnet
+$param
+$endparam

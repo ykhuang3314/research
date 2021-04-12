@@ -1,0 +1,10 @@
+!<alc> v1 48
+0    3    0 ResistiveDivider layout Stimulator_IMP
+0    2    0 LSHVT18U3VX1 layout D_CELLS_M3V
+0   12    0 G8_2_2_15120_15120_r0 sub_array
+0    5    0 LS_HighSide_V3_ST layout Stimulator_IMP
+0   10    0 ped_bjt layout PRIMLIB ng="13" w="80u" in1=M66
+0    9    0 nedia_bjt layout PRIMLIB ng="10" w="80u" in1=M34
+0    8    0 M4_MTPCell_v2 layout Stimulator_IMP
+0    7    0 LS_LowSide_V2_ST layout Stimulator_IMP
+0   11    0 HalfBridge_ST layout Stimulator_IMP

@@ -1,0 +1,15 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'HalfBridge_ST layout Stimulator_IMP':
+  info: Assign pin label "Ist" at (228.3070, 30.7870) to layer `met4trm'.
+  info: Assign pin label "OUT" at (241.2950, 120.5800) to layer `met4trm'.
+  info: Assign pin label "vddh" at (232.0950, 231.4350) to layer `met4trm'.
+  info: Assign pin label "Ctrl_LS" at (3.7500, 49.6150) to layer `met1trm'.
+  info: Assign pin label "vdde!" at (2.2270, 175.6200) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS" at (3.7500, 174.2300) to layer `met1trm'.
+  info: Assign pin label "vdd3!" at (8.8400, 177.9100) to layer `met1trm'.
+  info: Assign pin label "gnd!" at (62.1920, 139.7650) to layer `met1trm'.
+
+***** End of Label Report *****
+

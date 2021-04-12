@@ -14,7 +14,9 @@
 ( model
 ( "Stimulator_TestBench/TB_LS_HighSide_imp/schematic" "TB_LS_HighSide_imp" )
 ( "D_CELLS_M3V/LSHVT18U3VX1/cmos_sch" "LSHVT18U3VX1" )
+( "Stimulator_IMP/ResistiveDivider/schematic" "ResistiveDivider" )
  )
+( "ResistiveDivider" "ihnl/cds4/map" )
 ( "LSHVT18U3VX1" "ihnl/cds0/map" )
 ( "TB_LS_HighSide_imp" "ihnl/cds1/map" )
  )

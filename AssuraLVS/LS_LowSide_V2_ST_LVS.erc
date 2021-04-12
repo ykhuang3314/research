@@ -1,0 +1,13 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'LS_LowSide_V2_ST layout Stimulator_IMP':
+  info: Assign pin label "in" at (1.7700, 25.0500) to layer `met1trm'.
+  info: Assign pin label "vdde!" at (1.8250, 26.4400) to layer `met1trm'.
+  info: Assign pin label "vdd3!" at (4.5750, 28.1300) to layer `met1trm'.
+  info: Assign pin label "gnd!" at (11.0800, 23.6500) to layer `met1trm'.
+  info: Assign pin label "vddh" at (51.3700, 26.3200) to layer `met1trm'.
+  info: Assign pin label "out" at (51.6870, 80.2000) to layer `met1trm'.
+
+***** End of Label Report *****
+

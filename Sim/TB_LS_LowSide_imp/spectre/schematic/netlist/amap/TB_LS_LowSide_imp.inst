@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "LSHVT18U3VX1"
+"V0n" "analogLib_vpulse_spectre"
+"M0n" "PRIMLIB_nedia_bjt_spectre"
+"C0n" "analogLib_cap_spectre"
+"V3n V2n V1n" "analogLib_vdc_spectre"
+"M1n" "PRIMLIB_ped_bjt_spectre"
+"R1n R0n R7n R6n" "PRIMLIB_rpp1k1_spectre"

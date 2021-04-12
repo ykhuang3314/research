@@ -1,0 +1,8 @@
+vuiLVSdebugRunInfo = list( nil
+   'layoutLibrary "Stimulator_IMP"
+   'layoutCell "LS_LowSide_V2_ST"
+   'layoutView "layout"
+   'schematicLibrary "Stimulator_IMP"
+   'schematicCell "LS_LowSide_V2_ST"
+   'schematicView "schematic"
+)

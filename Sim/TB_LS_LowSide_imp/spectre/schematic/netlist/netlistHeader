@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr  8 15:27:53 2021
+// Design library name: Stimulator_TestBench
+// Design cell name: TB_LS_LowSide_imp
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd3! vdde!

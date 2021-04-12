@@ -766,6 +766,7 @@ hnlLastLibInfo = '(
                    ( "Stimulator_TestBench" "1609948351" )
                    ( "GATES_3V" "1520929029" )
                    ( "D_CELLS_3V" "1520929020" )
+                   ( "Stimulator_IMP" "1614781067" )
                   )
 hnlLastConstants = '(
                       "P_CELSIUS0"

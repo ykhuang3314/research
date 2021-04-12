@@ -1,0 +1,1024 @@
+connect nsd ptiec
+connect nsd isoptiec
+connect psd ntiec
+text poly_text attach polytrm
+text poly_label attach polytrm
+text met1_text attach met1trm
+text met1_label attach met1trm
+text met2_text attach met2trm
+text met2_label attach met2trm
+text met3_text attach met3trm
+text met3_label attach met3trm
+text met4_text attach met4trm
+text met4_label attach met4trm
+text mtp_text attach mtptrm
+text mtp_label attach mtptrm
+text mtpl_text attach mtpltrm
+text mtpl_label attach mtpltrm
+text lpower attach dphopin3
+connect met1trm nbd_nma by cont_nma
+connect met1trm pbd_pma by cont_pma
+connect met1trm nsd by contSD
+connect met1trm psd by contSD
+connect met1trm ntiec by contSD
+connect met1trm ptiec by contSD
+connect met1trm isoptiec by contSD
+connect nsd psd by contSD
+connect nsd ntiec by contSD
+connect nsd ptiec by contSD
+connect nsd isoptiec by contSD
+connect psd ntiec by contSD
+connect psd ptiec by contSD
+connect psd isoptiec by contSD
+connect ntiec ptiec by contSD
+connect ntiec isoptiec by contSD
+connect ptiec isoptiec by contSD
+connect nsd bndiff by bndct
+connect met1trm polytrm by contP
+connect met1trm d_dsdf by d_dsc
+connect met1trm met2trm by via1
+connect met2trm met3trm by via2CON
+connect cm23f met3trm by v2cm
+connect cmh23f met3trm by v2cmh
+connect m3_dmm met3trm by v2cm2
+connect m3_dmmh met3trm by v2cmh2
+connect m3_tmm met3trm by v2cm3
+connect m3_tmmh met3trm by v2cmh3
+connect met3trm met4trm by via3CON
+connect cm34f met4trm by v3cm
+connect cmh34f met4trm by v3cmh
+connect m4_dmm met4trm by v3cm2
+connect m4_dmmh met4trm by v3cmh2
+connect m4_tmm met4trm by v3cm3
+connect m4_tmmh met4trm by v3cmh3
+connect mt_tmm mtptrm by vtpcm3
+connect mt_tmmh mtptrm by vtpcmh3
+connect met4trm mtptrm by vtpCON
+connect cm mtptrm by vtpcm
+connect cmh mtptrm by vtpcmh
+connect mtptrm mtpltrm by vtpl
+connect phodef dphopin3 by viapho
+stamp bm23f by met2trm
+stamp bmh23f by met2trm
+stamp bm34f by met3trm
+stamp bmh34f by met3trm
+stamp bm by met4trm
+stamp bmh by met4trm
+stamp dnwntie by ntiec
+stamp dnwtrm by dnwntie
+stamp dnwellmvtrm by dnwntie
+stamp nwelltrm by ntiec
+stamp nwtrm_scr by nsd
+stamp nwelltrm1 by nsd
+stamp dnwtrm1 by dnwntie
+stamp G_subs by ptiec
+stamp pwitrm by isoptiec
+stamp nbdsub by nsd
+stamp pdf by psd
+stamp ndftrm by nsd
+stamp hnw by ntiec
+stamp dpol_n by polytrm
+stamp dpol_p by polytrm
+stamp catdop by nsd
+stamp anodop by psd
+stamp catdiff by nsd
+stamp dphod_c by nwelltrm
+stamp dphod_nw by nwelltrm
+stamp qpvh_83a by psd
+stamp qpvh_84a by nsd
+stamp qpva_83a by psd
+stamp qpva_84a by nsd
+stamp qpvhbs51a by psd
+stamp qpvhbs52a by nsd
+stamp nwellgtrm by ntiec
+stamp m1atrm by met1trm
+stamp m1btrm by met1trm
+stamp m1aatrm by met1trm
+stamp m1abtrm by met1trm
+stamp capswp1 by polytrm
+stamp capswm1 by met1trm
+stamp capswm2 by met2trm
+stamp capswm3 by met3trm
+stamp capswm4 by met4trm
+stamp p1_vlbl by polytrm
+stamp m1_vlbl by met1trm
+stamp m2_vlbl by met2trm
+stamp m3_vlbl by met3trm
+stamp m4_vlbl by met4trm
+stamp mt_vlbl by mtptrm
+stamp mtl_vlbl by mtpltrm
+model=mos[ne],ne
+dfiimodel=mos[ne],ne#20ivpcell#20PRIMLIB
+element mos[ne] ne_MOS_1 polytrm nsd G_subs 
+model=mos[nesvt],nesvt
+dfiimodel=mos[nesvt],nesvt#20ivpcell#20PRIMLIB
+element mos[nesvt] nesvt_MOS_2 polytrm nsd G_subs 
+model=mos[nel],nel
+dfiimodel=mos[nel],nel#20ivpcell#20PRIMLIB
+element mos[nel] nel_MOS_3 polytrm nsd G_subs 
+model=mos[nelna],nelna
+dfiimodel=mos[nelna],nelna#20ivpcell#20PRIMLIB
+element mos[nelna] nelna_MOS_4 polytrm nsd G_subs 
+model=mos[nei],nei
+dfiimodel=mos[nei],nei#20ivpcell#20PRIMLIB
+element mos[nei] nei_MOS_5 polytrm nsd pwitrm 
+model=generic[nei_6],nei_6
+dfiimodel=generic[nei_6],nei_6#20ivpcell#20PRIMLIB
+element generic[nei_6] nei_6_Device_6 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[nei_m_6],nei_m_6
+dfiimodel=generic[nei_m_6],nei_m_6#20ivpcell#20PRIMLIB
+element generic[nei_m_6] nei_m_6_Device_7 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=mos[nesvti],nesvti
+dfiimodel=mos[nesvti],nesvti#20ivpcell#20PRIMLIB
+element mos[nesvti] nesvti_MOS_8 polytrm nsd pwitrm 
+model=generic[nesvti_6],nesvti_6
+dfiimodel=generic[nesvti_6],nesvti_6#20ivpcell#20PRIMLIB
+element generic[nesvti_6] nesvti_6_Device_9 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[nesvti_m_6],nesvti_m_6
+dfiimodel=generic[nesvti_m_6],nesvti_m_6#20ivpcell#20PRIMLIB
+element generic[nesvti_m_6] nesvti_m_6_Device_10 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=mos[neli],neli
+dfiimodel=mos[neli],neli#20ivpcell#20PRIMLIB
+element mos[neli] neli_MOS_11 polytrm nsd pwitrm 
+model=generic[neli_6],neli_6
+dfiimodel=generic[neli_6],neli_6#20ivpcell#20PRIMLIB
+element generic[neli_6] neli_6_Device_12 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[neli_m_6],neli_m_6
+dfiimodel=generic[neli_m_6],neli_m_6#20ivpcell#20PRIMLIB
+element generic[neli_m_6] neli_m_6_Device_13 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=mos[nelnai],nelnai
+dfiimodel=mos[nelnai],nelnai#20ivpcell#20PRIMLIB
+element mos[nelnai] nelnai_MOS_14 polytrm nsd pwitrm 
+model=generic[nelnai_6],nelnai_6
+dfiimodel=generic[nelnai_6],nelnai_6#20ivpcell#20PRIMLIB
+element generic[nelnai_6] nelnai_6_Device_15 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[nelnai_m_6],nelnai_m_6
+dfiimodel=generic[nelnai_m_6],nelnai_m_6#20ivpcell#20PRIMLIB
+element generic[nelnai_m_6] nelnai_m_6_Device_16 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=mos[pe],pe
+dfiimodel=mos[pe],pe#20ivpcell#20PRIMLIB
+element mos[pe] pe_MOS_17 polytrm psd nwelltrm 
+model=generic[pe_5],pe_5
+dfiimodel=generic[pe_5],pe_5#20ivpcell#20PRIMLIB
+element generic[pe_5] pe_5_Device_18 psd[D] polytrm[G] psd[S] nwelltrm[B] G_subs[SB] 
+model=mos[pel],pel
+dfiimodel=mos[pel],pel#20ivpcell#20PRIMLIB
+element mos[pel] pel_MOS_19 polytrm psd nwelltrm 
+model=generic[pel_5],pe_5
+dfiimodel=generic[pel_5],pel_5#20ivpcell#20PRIMLIB
+element generic[pel_5] pel_5_Device_20 psd[D] polytrm[G] psd[S] nwelltrm[B] G_subs[SB] 
+model=mos[pesvt],pesvt
+dfiimodel=mos[pesvt],pesvt#20ivpcell#20PRIMLIB
+element mos[pesvt] pesvt_MOS_21 polytrm psd nwelltrm 
+model=generic[pesvt_5],pesvt_5
+dfiimodel=generic[pesvt_5],pesvt_5#20ivpcell#20PRIMLIB
+element generic[pesvt_5] pesvt_5_Device_22 psd[D] polytrm[G] psd[S] nwelltrm[B] G_subs[SB] 
+model=mos[pei],pei
+dfiimodel=mos[pei],pei#20ivpcell#20PRIMLIB
+element mos[pei] pei_MOS_23 polytrm psd dnwtrm 
+model=generic[pei_5],pei_5
+dfiimodel=generic[pei_5],pei_5#20ivpcell#20PRIMLIB
+element generic[pei_5] pei_5_Device_24 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=generic[pei_m_5],pei_m_5
+dfiimodel=generic[pei_m_5],pei_m_5#20ivpcell#20PRIMLIB
+element generic[pei_m_5] pei_m_5_Device_25 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=mos[peli],peli
+dfiimodel=mos[peli],peli#20ivpcell#20PRIMLIB
+element mos[peli] peli_MOS_26 polytrm psd dnwtrm 
+model=generic[peli_5],peli_5
+dfiimodel=generic[peli_5],peli_5#20ivpcell#20PRIMLIB
+element generic[peli_5] peli_5_Device_27 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=generic[peli_m_5],peli_m_5
+dfiimodel=generic[peli_m_5],peli_m_5#20ivpcell#20PRIMLIB
+element generic[peli_m_5] peli_m_5_Device_28 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=mos[pesvti],pesvti
+dfiimodel=mos[pesvti],pesvti#20ivpcell#20PRIMLIB
+element mos[pesvti] pesvti_MOS_29 polytrm psd dnwtrm 
+model=generic[pesvti_5],pesvti_5
+dfiimodel=generic[pesvti_5],pesvti_5#20ivpcell#20PRIMLIB
+element generic[pesvti_5] pesvti_5_Device_30 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=generic[pesvti_m_5],pesvti_m_5
+dfiimodel=generic[pesvti_m_5],pesvti_m_5#20ivpcell#20PRIMLIB
+element generic[pesvti_m_5] pesvti_m_5_Device_31 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=mos[ne3],ne3
+dfiimodel=mos[ne3],ne3#20ivpcell#20PRIMLIB
+element mos[ne3] nem_MOS_32 polytrm nsd G_subs 
+model=mos[nd3],nd3
+dfiimodel=mos[nd3],nd3#20ivpcell#20PRIMLIB
+element mos[nd3] ndm_MOS_33 polytrm nsd G_subs 
+model=mos[ne3lna],ne3lna
+dfiimodel=mos[ne3lna],ne3lna#20ivpcell#20PRIMLIB
+element mos[ne3lna] nemlna_MOS_34 polytrm nsd G_subs 
+model=mos[nn3],nn3
+dfiimodel=mos[nn3],nn3#20ivpcell#20PRIMLIB
+element mos[nn3] nnm_MOS_35 polytrm nsd G_subs 
+model=mos[nd3i],nd3i
+dfiimodel=mos[nd3i],nd3i#20ivpcell#20PRIMLIB
+element mos[nd3i] ndmi_MOS_36 polytrm nsd pwitrm 
+model=mos[ne3i],ne3i
+dfiimodel=mos[ne3i],ne3i#20ivpcell#20PRIMLIB
+element mos[ne3i] nemi_MOS_37 polytrm nsd pwitrm 
+model=generic[ne3i_6],ne3i_6
+dfiimodel=generic[ne3i_6],ne3i_6#20ivpcell#20PRIMLIB
+element generic[ne3i_6] nemi_6_Device_38 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[ne3i_m_6],ne3i_m_6
+dfiimodel=generic[ne3i_m_6],ne3i_m_6#20ivpcell#20PRIMLIB
+element generic[ne3i_m_6] nemi_m_6_Device_39 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[nd3i_6],nd3i_6
+dfiimodel=generic[nd3i_6],nd3i_6#20ivpcell#20PRIMLIB
+element generic[nd3i_6] ndmi_6_Device_40 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[nd3i_m_6],nd3i_m_6
+dfiimodel=generic[nd3i_m_6],nd3i_m_6#20ivpcell#20PRIMLIB
+element generic[nd3i_m_6] ndmi_m_6_Device_41 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=mos[ne3lnai],ne3lnai
+dfiimodel=mos[ne3lnai],ne3lnai#20ivpcell#20PRIMLIB
+element mos[ne3lnai] nemlnai_MOS_42 polytrm nsd pwitrm 
+model=generic[ne3lnai_6],ne3lnai_6
+dfiimodel=generic[ne3lnai_6],ne3lnai_6#20ivpcell#20PRIMLIB
+element generic[ne3lnai_6] nemlnai_6_Device_43 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=generic[ne3lnai_m_6],ne3lnai_m_6
+dfiimodel=generic[ne3lnai_m_6],ne3lnai_m_6#20ivpcell#20PRIMLIB
+element generic[ne3lnai_m_6] nemlnai_m_6_Device_44 nsd[D] polytrm[G] nsd[S] pwitrm[B] dnwtrm[NW] G_subs[SB] 
+model=mos[pe3],pe3
+dfiimodel=mos[pe3],pe3#20ivpcell#20PRIMLIB
+element mos[pe3] pem_MOS_45 polytrm psd nwelltrm 
+model=generic[pe3_5],pe3_5
+dfiimodel=generic[pe3_5],pe3_5#20ivpcell#20PRIMLIB
+element generic[pe3_5] pem_5_Device_46 psd[D] polytrm[G] psd[S] nwelltrm[B] G_subs[SB] 
+model=mos[pe3ln],pe3ln
+dfiimodel=mos[pe3ln],pe3ln#20ivpcell#20PRIMLIB
+element mos[pe3ln] pemln_MOS_47 polytrm psd nwelltrm 
+model=generic[pe3ln_5],pe3ln_5
+dfiimodel=generic[pe3ln_5],pe3ln_5#20ivpcell#20PRIMLIB
+element generic[pe3ln_5] pemln_5_Device_48 psd[D] polytrm[G] psd[S] nwelltrm[B] G_subs[SB] 
+model=mos[pe3lna],pe3lna
+dfiimodel=mos[pe3lna],pe3lna#20ivpcell#20PRIMLIB
+element mos[pe3lna] pemlna_MOS_49 polytrm psd nwelltrm 
+model=generic[pe3lna_5],pe3lna_5
+dfiimodel=generic[pe3lna_5],pe3lna_5#20ivpcell#20PRIMLIB
+element generic[pe3lna_5] pemlna_5_Device_50 psd[D] polytrm[G] psd[S] nwelltrm[B] G_subs[SB] 
+model=mos[pe3i],pe3i
+dfiimodel=mos[pe3i],pe3i#20ivpcell#20PRIMLIB
+element mos[pe3i] pemi_MOS_51 polytrm psd dnwtrm 
+model=generic[pe3i_5],pe3i_5
+dfiimodel=generic[pe3i_5],pe3i_5#20ivpcell#20PRIMLIB
+element generic[pe3i_5] pemi_5_Device_52 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=generic[pe3i_m_5],pe3i_m_5
+dfiimodel=generic[pe3i_m_5],pe3i_m_5#20ivpcell#20PRIMLIB
+element generic[pe3i_m_5] pemi_m_5_Device_53 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=mos[pe3lni],pe3lni
+dfiimodel=mos[pe3lni],pe3lni#20ivpcell#20PRIMLIB
+element mos[pe3lni] pemlni_MOS_54 polytrm psd dnwtrm 
+model=generic[pe3lni_5],pe3lni_5
+dfiimodel=generic[pe3lni_5],pe3lni_5#20ivpcell#20PRIMLIB
+element generic[pe3lni_5] pemlni_5_Device_55 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=generic[pe3lni_m_5],pe3lni_m_5
+dfiimodel=generic[pe3lni_m_5],pe3lni_m_5#20ivpcell#20PRIMLIB
+element generic[pe3lni_m_5] pemlni_m_5_Device_56 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=mos[pe3lnai],pe3lnai
+dfiimodel=mos[pe3lnai],pe3lnai#20ivpcell#20PRIMLIB
+element mos[pe3lnai] pemlnai_MOS_57 polytrm psd dnwtrm 
+model=generic[pe3lnai_5],pe3lnai_5
+dfiimodel=generic[pe3lnai_5],pe3lnai_5#20ivpcell#20PRIMLIB
+element generic[pe3lnai_5] pemlnai_5_Device_58 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=generic[pe3lnai_m_5],pe3lnai_m_5
+dfiimodel=generic[pe3lnai_m_5],pe3lnai_m_5#20ivpcell#20PRIMLIB
+element generic[pe3lnai_m_5] pemlnai_m_5_Device_59 psd[D] polytrm[G] psd[S] dnwtrm[B] G_subs[SB] 
+model=mos[pmb],pmb
+dfiimodel=mos[pmb],pmb#20ivpcell#20PRIMLIB
+element mos[pmb] pmb_MOS_60 polytrm psd dnwtrm 
+model=generic[nmma],nmma
+dfiimodel=generic[nmma],nmma#20ivpcell#20PRIMLIB
+element generic[nmma] nmma_d_Device_61 nbd_nma[D] polytrm[G] nbd_nma[S] G_subs[B] 
+model=generic[nmma_bjt],nmma_bjt
+dfiimodel=generic[nmma_bjt],nmma_bjt#20ivpcell#20PRIMLIB
+element generic[nmma_bjt] nmma_b_Device_62 nbd_nma[D] polytrm[G] nbd_nma[S] G_subs[B] 
+model=generic[pmma],pmma
+dfiimodel=generic[pmma],pmma#20ivpcell#20PRIMLIB
+element generic[pmma] pmma_d_Device_63 pbd_pma[D] polytrm[G] pbd_pma[S] dnwtrm[B] 
+model=generic[pmma_bjt],pmma_bjt
+dfiimodel=generic[pmma_bjt],pmma_bjt#20ivpcell#20PRIMLIB
+element generic[pmma_bjt] pmma_b_Device_64 pbd_pma[D] polytrm[G] pbd_pma[S] dnwtrm[B] G_subs[SB] 
+model=mos[nma],nma
+dfiimodel=mos[nma],nma#20ivpcell#20PRIMLIB
+element mos[nma] nma_d_MOS_65 polytrm nsd G_subs 
+model=mos[nma_bjt],nma_bjt
+dfiimodel=mos[nma_bjt],nma_bjt#20ivpcell#20PRIMLIB
+element mos[nma_bjt] nma_b_MOS_66 polytrm nsd G_subs 
+model=mos[pma],pma
+dfiimodel=mos[pma],pma#20ivpcell#20PRIMLIB
+element mos[pma] pma_d_MOS_67 polytrm psd hnw 
+model=generic[pma_bjt],pma_bjt
+dfiimodel=generic[pma_bjt],pma_bjt#20ivpcell#20PRIMLIB
+element generic[pma_bjt] pma_b_Device_68 psd[D] polytrm[G] psd[S] hnw[B] G_subs[SB] 
+model=generic[nmc],nmc
+dfiimodel=generic[nmc],nmc#20ivpcell#20PRIMLIB
+element generic[nmc] nmc_d_Device_69 ndftrm[D] polytrm[G] nsd[S] G_subs[B] 
+model=generic[nmmc],nmmc
+dfiimodel=generic[nmmc],nmmc#20ivpcell#20PRIMLIB
+element generic[nmmc] nmmc_d_Device_70 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[nmc_bjt],nmc_bjt
+dfiimodel=generic[nmc_bjt],nmc_bjt#20ivpcell#20PRIMLIB
+element generic[nmc_bjt] nmc_b_Device_71 ndftrm[D] polytrm[G] nsd[S] G_subs[B] 
+model=generic[nmmc_bjt],nmmc_bjt
+dfiimodel=generic[nmmc_bjt],nmmc_bjt#20ivpcell#20PRIMLIB
+element generic[nmmc_bjt] nmmc_b_Device_72 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[nmmd],nmmd
+dfiimodel=generic[nmmd],nmmd#20ivpcell#20PRIMLIB
+element generic[nmmd] nmmd_d_Device_73 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[nmmd_bjt],nmmd_bjt
+dfiimodel=generic[nmmd_bjt],nmmd_bjt#20ivpcell#20PRIMLIB
+element generic[nmmd_bjt] nmmd_b_Device_74 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[nhv],nhv
+dfiimodel=generic[nhv],nhv#20ivpcell#20PRIMLIB
+element generic[nhv] nhv_d_Device_75 ndftrm[D] polytrm[G] nsd[S] G_subs[B] 
+model=generic[nhhv],nhhv
+dfiimodel=generic[nhhv],nhhv#20ivpcell#20PRIMLIB
+element generic[nhhv] nhhv_d_Device_76 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[nhvd],nhvd
+dfiimodel=generic[nhvd],nhvd#20ivpcell#20PRIMLIB
+element generic[nhvd] nhvd_d_Device_77 ndftrm[D] polytrm[G] nsd[S] G_subs[B] 
+model=generic[nhhvd],nhhvd
+dfiimodel=generic[nhhvd],nhhvd#20ivpcell#20PRIMLIB
+element generic[nhhvd] nhhvd_d_Device_78 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[nhv_bjt],nhv_bjt
+dfiimodel=generic[nhv_bjt],nhv_bjt#20ivpcell#20PRIMLIB
+element generic[nhv_bjt] nhv_b_Device_79 ndftrm[D] polytrm[G] nsd[S] G_subs[B] 
+model=generic[nhhv_bjt],nhhv_bjt
+dfiimodel=generic[nhhv_bjt],nhhv_bjt#20ivpcell#20PRIMLIB
+element generic[nhhv_bjt] nhhv_b_Device_80 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[nhvd_bjt],nhvd_bjt
+dfiimodel=generic[nhvd_bjt],nhvd_bjt#20ivpcell#20PRIMLIB
+element generic[nhvd_bjt] nhvd_b_Device_81 ndftrm[D] polytrm[G] nsd[S] G_subs[B] 
+model=generic[nhhvd_bjt],nhhvd_bjt
+dfiimodel=generic[nhhvd_bjt],nhhvd_bjt#20ivpcell#20PRIMLIB
+element generic[nhhvd_bjt] nhhvd_b_Device_82 ndftrm[D] polytrm[G] ndftrm[S] G_subs[B] 
+model=generic[pmc],pmc
+dfiimodel=generic[pmc],pmc#20ivpcell#20PRIMLIB
+element generic[pmc] pmc_d_Device_83 pdf[D] polytrm[G] psd[S] hnw[B] 
+model=generic[pmmc],pmmc
+dfiimodel=generic[pmmc],pmmc#20ivpcell#20PRIMLIB
+element generic[pmmc] pmmc_d_Device_84 pdf[D] polytrm[G] pdf[S] hnw[B] 
+model=generic[pmc_bjt],pmc_bjt
+dfiimodel=generic[pmc_bjt],pmc_bjt#20ivpcell#20PRIMLIB
+element generic[pmc_bjt] pmc_b_Device_85 pdf[D] polytrm[G] psd[S] hnw[B] G_subs[SB] 
+model=generic[pmmc_bjt],pmmc_bjt
+dfiimodel=generic[pmmc_bjt],pmmc_bjt#20ivpcell#20PRIMLIB
+element generic[pmmc_bjt] pmmc_b_Device_86 pdf[D] polytrm[G] pdf[S] hnw[B] G_subs[SB] 
+model=generic[phv],phv
+dfiimodel=generic[phv],phv#20ivpcell#20PRIMLIB
+element generic[phv] phv_d_Device_87 pdf[D] polytrm[G] psd[S] hnw[B] 
+model=generic[phhv],phhv
+dfiimodel=generic[phhv],phhv#20ivpcell#20PRIMLIB
+element generic[phhv] phhv_d_Device_88 pdf[D] polytrm[G] pdf[S] hnw[B] 
+model=generic[phv_bjt],phv_bjt
+dfiimodel=generic[phv_bjt],phv_bjt#20ivpcell#20PRIMLIB
+element generic[phv_bjt] phv_b_Device_89 pdf[D] polytrm[G] psd[S] hnw[B] G_subs[SB] 
+model=generic[phhv_bjt],phhv_bjt
+dfiimodel=generic[phhv_bjt],phhv_bjt#20ivpcell#20PRIMLIB
+element generic[phhv_bjt] phhv_b_Device_90 pdf[D] polytrm[G] pdf[S] hnw[B] G_subs[SB] 
+model=generic[ped],ped
+dfiimodel=generic[ped],ped#20ivpcell#20PRIMLIB
+element generic[ped] ped_d_Device_91 pwitrm[D] polytrm[G] psd[S] G_subs[SB] 
+model=generic[ped2],ped2
+dfiimodel=generic[ped2],ped2#20ivpcell#20PRIMLIB
+element generic[ped2] ped2_d_Device_92 pwitrm[D] polytrm[G] psd[S] G_subs[SB] 
+model=generic[nedi],nedi
+dfiimodel=generic[nedi],nedi#20ivpcell#20PRIMLIB
+element generic[nedi] nedi_d_Device_93 dnwtrm[D] polytrm[G] nsd[S] G_subs[SB] 
+model=generic[nedia],nedia
+dfiimodel=generic[nedia],nedia#20ivpcell#20PRIMLIB
+element generic[nedia] nedia_d_Device_94 dnwtrm[D] polytrm[G] nsd[S] G_subs[SB] 
+model=generic[ped_bjt],ped_bjt
+dfiimodel=generic[ped_bjt],ped_bjt#20ivpcell#20PRIMLIB
+element generic[ped_bjt] ped_b_Device_95 pwitrm[D] polytrm[G] psd[S] G_subs[SB] 
+model=generic[ped2_bjt],ped2_bjt
+dfiimodel=generic[ped2_bjt],ped2_bjt#20ivpcell#20PRIMLIB
+element generic[ped2_bjt] ped2_b_Device_96 pwitrm[D] polytrm[G] psd[S] G_subs[SB] 
+model=generic[nedi_bjt],nedi_bjt
+dfiimodel=generic[nedi_bjt],nedi_bjt#20ivpcell#20PRIMLIB
+element generic[nedi_bjt] nedi_b_Device_97 dnwtrm[D] polytrm[G] nsd[S] G_subs[SB] 
+model=generic[nedia_bjt],nedia_bjt
+dfiimodel=generic[nedia_bjt],nedia_bjt#20ivpcell#20PRIMLIB
+element generic[nedia_bjt] nedia_b_Device_98 dnwtrm[D] polytrm[G] nsd[S] G_subs[SB] 
+model=generic[mosvc],mosvc
+dfiimodel=generic[mosvc],mosvc#20ivpcell#20PRIMLIB
+element generic[mosvc] mosvc_Device_99 polytrm[G] nwelltrm[NW] G_subs[SB] 
+model=generic[mosvci],mosvci
+dfiimodel=generic[mosvci],mosvci#20ivpcell#20PRIMLIB
+element generic[mosvci] mosvci_Device_100 polytrm[G] pwitrm[PW] dnwtrm[DNW] G_subs[SB] 
+model=generic[mosvci_m],mosvci_m
+dfiimodel=generic[mosvci_m],mosvci_m#20ivpcell#20PRIMLIB
+element generic[mosvci_m] mosvci_m_Device_101 polytrm[G] pwitrm[PW] dnwtrm[DNW] G_subs[SB] 
+model=generic[mosvc3],mosvc3
+dfiimodel=generic[mosvc3],mosvc3#20ivpcell#20PRIMLIB
+element generic[mosvc3] mosvcm_Device_102 polytrm[G] nwelltrm[NW] G_subs[SB] 
+model=generic[mosvc3i],mosvc3i
+dfiimodel=generic[mosvc3i],mosvc3i#20ivpcell#20PRIMLIB
+element generic[mosvc3i] mosvcim_Device_103 polytrm[G] pwitrm[PW] dnwtrm[DNW] G_subs[SB] 
+model=generic[mosvc3i_m],mosvc3i_m
+dfiimodel=generic[mosvc3i_m],mosvc3i_m#20ivpcell#20PRIMLIB
+element generic[mosvc3i_m] mosvcim_m_Device_104 polytrm[G] pwitrm[PW] dnwtrm[DNW] G_subs[SB] 
+model=cap[csf2p],csf2p
+dfiimodel=cap[csf2p],csf2p#20ivpcell#20PRIMLIB
+element cap[csf2p] d_csf2p_CAP_105 m1atrm m1btrm 
+model=cap[csf3p],csf3p
+dfiimodel=cap[csf3p],csf3p#20ivpcell#20PRIMLIB
+element cap[csf3p] d_csf3p_CAP_106 m1atrm m1btrm 
+model=cap[csf3],csf3
+dfiimodel=cap[csf3],csf3#20ivpcell#20PRIMLIB
+element cap[csf3] d_csf3_CAP_107 m1atrm m1btrm 
+model=cap[csf3a],csf3a
+dfiimodel=cap[csf3a],csf3a#20ivpcell#20PRIMLIB
+element cap[csf3a] d_csf3a_CAP_108 m1aatrm m1abtrm 
+model=cap[csf4],csf4
+dfiimodel=cap[csf4],csf4#20ivpcell#20PRIMLIB
+element cap[csf4] d_csf4_CAP_109 m1atrm m1btrm 
+model=cap[csf4a],csf4a
+dfiimodel=cap[csf4a],csf4a#20ivpcell#20PRIMLIB
+element cap[csf4a] d_csf4a_CAP_110 m1aatrm m1abtrm 
+model=cap[csft5],csft5
+dfiimodel=cap[csft5],csft5#20ivpcell#20PRIMLIB
+element cap[csft5] d_csft5_CAP_111 m1atrm m1btrm 
+model=cap[csft5a],csft5a
+dfiimodel=cap[csft5a],csft5a#20ivpcell#20PRIMLIB
+element cap[csft5a] d_csft5a_CAP_112 m1aatrm m1abtrm 
+model=cap[csandwt4],csandwt4
+dfiimodel=cap[csandwt4],csandwt4#20ivpcell#20PRIMLIB
+element cap[csandwt4] d_capsw4_CAP_113 met3trm polytrm 
+model=cap[csandwt3],csandwt3
+dfiimodel=cap[csandwt3],csandwt3#20ivpcell#20PRIMLIB
+element cap[csandwt3] d_capsw3_CAP_114 met3trm polytrm 
+model=cap[cmm5t],cmm5t
+dfiimodel=cap[cmm5t],cmm5t#20ivpcell#20PRIMLIB
+element cap[cmm5t] cmm_CAP_115 cm bm 
+model=cap[cmmh5t],cmmh5t
+dfiimodel=cap[cmmh5t],cmmh5t#20ivpcell#20PRIMLIB
+element cap[cmmh5t] cmmh_CAP_116 cmh bmh 
+model=cap[cmm3],cmm3
+dfiimodel=cap[cmm3],cmm3#20ivpcell#20PRIMLIB
+element cap[cmm3] cmm23f_CAP_117 cm23f bm23f 
+model=cap[cmmh3],cmmh3
+dfiimodel=cap[cmmh3],cmmh3#20ivpcell#20PRIMLIB
+element cap[cmmh3] cmmh23f_CAP_118 cmh23f bmh23f 
+model=cap[cmm4],cmm4
+dfiimodel=cap[cmm4],cmm4#20ivpcell#20PRIMLIB
+element cap[cmm4] cmm34f_CAP_119 cm34f bm34f 
+model=cap[cmmh4],cmmh4
+dfiimodel=cap[cmmh4],cmmh4#20ivpcell#20PRIMLIB
+element cap[cmmh4] cmmh34f_CAP_120 cmh34f bmh34f 
+model=cap[cdmm4],cdmm4
+dfiimodel=cap[cdmm4],cdmm4#20ivpcell#20PRIMLIB
+element cap[cdmm4] cdmm_CAP_121 m3_dmm met2trm 
+model=cap[cdmmh4],cdmmh4
+dfiimodel=cap[cdmmh4],cdmmh4#20ivpcell#20PRIMLIB
+element cap[cdmmh4] cdmmh_CAP_122 m3_dmmh met2trm 
+model=cap[ctmm5t],ctmm5t
+dfiimodel=cap[ctmm5t],ctmm5t#20ivpcell#20PRIMLIB
+element cap[ctmm5t] ctmm_CAP_123 m3_tmm met2trm 
+model=cap[ctmmh5t],ctmmh5t
+dfiimodel=cap[ctmmh5t],ctmmh5t#20ivpcell#20PRIMLIB
+element cap[ctmmh5t] ctmmh_CAP_124 m3_tmmh met2trm 
+model=cap[cpod],cpod
+dfiimodel=cap[cpod],cpod#20ivpcell#20PRIMLIB
+element cap[cpod] cpod_CAP_125 polytrm bndiff G_subs 
+model=cap[cpodhv],cpodhv
+dfiimodel=cap[cpodhv],cpodhv#20ivpcell#20PRIMLIB
+element cap[cpodhv] cpodhv_CAP_126 polytrm bndiff G_subs 
+model=generic[s_res],s_res
+dfiimodel=generic[s_res],s_res#20auLvs#20PRIMLIB
+element generic[s_res] s_res_Device_127 G_subs[PLUS] G_subs[MINUS] 
+model=res[rnw_scr],rnw_scr
+dfiimodel=res[rnw_scr],rnw_scr#20ivpcell#20PRIMLIB
+element res[rnw_scr] rnw_scr_RES_128 nwtrm_scr G_subs 
+model=res[rnw3_scr],rnw3_scr
+dfiimodel=res[rnw3_scr],rnw3_scr#20ivpcell#20PRIMLIB
+element res[rnw3_scr] rnwmv_scr_RES_129 nwtrm_scr G_subs 
+model=res[rnw],rnw
+dfiimodel=res[rnw],rnw#20ivpcell#20PRIMLIB
+element res[rnw] resnwell_RES_130 nwelltrm G_subs 
+model=res[rnw3],rnw3
+dfiimodel=res[rnw3],rnw3#20ivpcell#20PRIMLIB
+element res[rnw3] resnwellmv_RES_131 nwelltrm G_subs 
+model=res[rdnwmv],rdnwmv
+dfiimodel=res[rdnwmv],rdnwmv#20ivpcell#20PRIMLIB
+element res[rdnwmv] resdnwellmv_RES_132 dnwellmvtrm G_subs 
+model=res[rnp1h],rnp1h
+dfiimodel=res[rnp1h],rnp1h#20ivpcell#20PRIMLIB
+element res[rnp1h] rnp1h_1_RES_133 polytrm 
+model=res[rnp1h_3],rnp1h_3
+dfiimodel=res[rnp1h_3],rnp1h_3#20ivpcell#20PRIMLIB
+element res[rnp1h_3] rnp1h_3_pw1_RES_134 polytrm pwitrm 
+model=res[rnp1h_3_av2],rnp1h_3
+dfiimodel=res[rnp1h_3_av2],rnp1h_3#20ivpcell#20PRIMLIB
+element res[rnp1h_3_av2] rnp1h_3_pw3_RES_135 polytrm G_subs 
+model=res[rnp1h_3_av3],rnp1h_3
+dfiimodel=res[rnp1h_3_av3],rnp1h_3#20ivpcell#20PRIMLIB
+element res[rnp1h_3_av3] rnp1h_3_nw1_RES_136 polytrm nwellgtrm 
+model=res[rnp1h_3_av4],rnp1h_3
+dfiimodel=res[rnp1h_3_av4],rnp1h_3#20ivpcell#20PRIMLIB
+element res[rnp1h_3_av4] rnp1h_3_nw2_RES_137 polytrm nbdsub 
+model=res[rpp1k1],rpp1k1
+dfiimodel=res[rpp1k1],rpp1k1#20ivpcell#20PRIMLIB
+element res[rpp1k1] rpp1k1_1_RES_138 polytrm 
+model=res[rpp1k1_3],rpp1k1_3
+dfiimodel=res[rpp1k1_3],rpp1k1_3#20ivpcell#20PRIMLIB
+element res[rpp1k1_3] rpp1k1_3_pw1_RES_139 polytrm pwitrm 
+model=res[rpp1k1_3_av2],rpp1k1_3
+dfiimodel=res[rpp1k1_3_av2],rpp1k1_3#20ivpcell#20PRIMLIB
+element res[rpp1k1_3_av2] rpp1k1_3_pw3_RES_140 polytrm G_subs 
+model=res[rpp1k1_3_av3],rpp1k1_3
+dfiimodel=res[rpp1k1_3_av3],rpp1k1_3#20ivpcell#20PRIMLIB
+element res[rpp1k1_3_av3] rpp1k1_3_nw1_RES_141 polytrm nwellgtrm 
+model=res[rpp1k1_3_av4],rpp1k1_3
+dfiimodel=res[rpp1k1_3_av4],rpp1k1_3#20ivpcell#20PRIMLIB
+element res[rpp1k1_3_av4] rpp1k1_3_nw2_RES_142 polytrm nbdsub 
+model=res[rnp1],rnp1
+dfiimodel=res[rnp1],rnp1#20ivpcell#20PRIMLIB
+element res[rnp1] rnp1_1_RES_143 polytrm 
+model=res[rnp1_3],rnp1_3
+dfiimodel=res[rnp1_3],rnp1_3#20ivpcell#20PRIMLIB
+element res[rnp1_3] rnp1_3_pw1_RES_144 polytrm pwitrm 
+model=res[rnp1_3_av2],rnp1_3
+dfiimodel=res[rnp1_3_av2],rnp1_3#20ivpcell#20PRIMLIB
+element res[rnp1_3_av2] rnp1_3_pw3_RES_145 polytrm G_subs 
+model=res[rnp1_3_av3],rnp1_3
+dfiimodel=res[rnp1_3_av3],rnp1_3#20ivpcell#20PRIMLIB
+element res[rnp1_3_av3] rnp1_3_nw1_RES_146 polytrm nwellgtrm 
+model=res[rnp1_3_av4],rnp1_3
+dfiimodel=res[rnp1_3_av4],rnp1_3#20ivpcell#20PRIMLIB
+element res[rnp1_3_av4] rnp1_3_nw2_RES_147 polytrm nbdsub 
+model=res[rpp1],rpp1
+dfiimodel=res[rpp1],rpp1#20ivpcell#20PRIMLIB
+element res[rpp1] rpp1_1_RES_148 polytrm 
+model=res[rpp1_3],rpp1_3
+dfiimodel=res[rpp1_3],rpp1_3#20ivpcell#20PRIMLIB
+element res[rpp1_3] rpp1_3_pw1_RES_149 polytrm pwitrm 
+model=res[rpp1_3_av2],rpp1_3
+dfiimodel=res[rpp1_3_av2],rpp1_3#20ivpcell#20PRIMLIB
+element res[rpp1_3_av2] rpp1_3_pw3_RES_150 polytrm G_subs 
+model=res[rpp1_3_av3],rpp1_3
+dfiimodel=res[rpp1_3_av3],rpp1_3#20ivpcell#20PRIMLIB
+element res[rpp1_3_av3] rpp1_3_nw1_RES_151 polytrm nwellgtrm 
+model=res[rpp1_3_av4],rpp1_3
+dfiimodel=res[rpp1_3_av4],rpp1_3#20ivpcell#20PRIMLIB
+element res[rpp1_3_av4] rpp1_3_nw2_RES_152 polytrm nbdsub 
+model=res[rpp1s],rpp1s
+dfiimodel=res[rpp1s],rpp1s#20ivpcell#20PRIMLIB
+element res[rpp1s] rpp1s_1_RES_153 polytrm 
+model=res[rpp1s_3],rpp1s_3
+dfiimodel=res[rpp1s_3],rpp1s_3#20ivpcell#20PRIMLIB
+element res[rpp1s_3] rpp1s_3_pw1_RES_154 polytrm pwitrm 
+model=res[rpp1s_3_av2],rpp1s_3
+dfiimodel=res[rpp1s_3_av2],rpp1s_3#20ivpcell#20PRIMLIB
+element res[rpp1s_3_av2] rpp1s_3_pw3_RES_155 polytrm G_subs 
+model=res[rpp1s_3_av3],rpp1s_3
+dfiimodel=res[rpp1s_3_av3],rpp1s_3#20ivpcell#20PRIMLIB
+element res[rpp1s_3_av3] rpp1s_3_nw1_RES_156 polytrm nwellgtrm 
+model=res[rpp1s_3_av4],rpp1s_3
+dfiimodel=res[rpp1s_3_av4],rpp1s_3#20ivpcell#20PRIMLIB
+element res[rpp1s_3_av4] rpp1s_3_nw2_RES_157 polytrm nbdsub 
+model=res[rdn],rdn
+dfiimodel=res[rdn],rdn#20ivpcell#20PRIMLIB
+element res[rdn] ndifres_1_RES_158 nsd G_subs 
+model=res[rdn_av2],rdn
+dfiimodel=res[rdn_av2],rdn#20ivpcell#20PRIMLIB
+element res[rdn_av2] ndifres_ng1_RES_159 nsd G_subs 
+model=res[rdn_av3],rdn
+dfiimodel=res[rdn_av3],rdn#20ivpcell#20PRIMLIB
+element res[rdn_av3] ndifres_ng2_RES_160 nsd pwitrm 
+model=res[rdp],rdp
+dfiimodel=res[rdp],rdp#20ivpcell#20PRIMLIB
+element res[rdp] pdifres_1_RES_161 psd nwellgtrm 
+model=res[rdp_av2],rdp
+dfiimodel=res[rdp_av2],rdp#20ivpcell#20PRIMLIB
+element res[rdp_av2] pdifres_pg1_RES_162 psd nwellgtrm 
+model=res[rdn3],rdn3
+dfiimodel=res[rdn3],rdn3#20ivpcell#20PRIMLIB
+element res[rdn3] ndifres_3_RES_163 nsd G_subs 
+model=res[rdn3_av2],rdn3
+dfiimodel=res[rdn3_av2],rdn3#20ivpcell#20PRIMLIB
+element res[rdn3_av2] ndifres_ng1_3_RES_164 nsd G_subs 
+model=res[rdn3_av3],rdn3
+dfiimodel=res[rdn3_av3],rdn3#20ivpcell#20PRIMLIB
+element res[rdn3_av3] ndifres_ng2_3_RES_165 nsd pwitrm 
+model=res[rdp3],rdp3
+dfiimodel=res[rdp3],rdp3#20ivpcell#20PRIMLIB
+element res[rdp3] pdifres_3_RES_166 psd nwellgtrm 
+model=res[rdp3_av2],rdp3
+dfiimodel=res[rdp3_av2],rdp3#20ivpcell#20PRIMLIB
+element res[rdp3_av2] pdifres_pg3_RES_167 psd nwellgtrm 
+model=res[rdp_io],rdp_io
+dfiimodel=res[rdp_io],rdp_io#20ivpcell#20PRIMLIB
+element res[rdp_io] rdp_io_g_RES_168 psd nwellgtrm 
+model=res[rdp_esd],rdp_esd
+dfiimodel=res[rdp_esd],rdp_esd#20ivpcell#20PRIMLIB
+element res[rdp_esd] rdp_esd_g_RES_169 psd hnw 
+model=res[rdn_esd],rdn_esd
+dfiimodel=res[rdn_esd],rdn_esd#20ivpcell#20PRIMLIB
+element res[rdn_esd] rdn_esd_g_RES_170 nsd G_subs 
+model=res[rm1],rm1
+dfiimodel=res[rm1],rm1#20ivpcell#20PRIMLIB
+element res[rm1] met1res_RES_171 met1trm 
+model=res[rm2],rm2
+dfiimodel=res[rm2],rm2#20ivpcell#20PRIMLIB
+element res[rm2] met2res_RES_172 met2trm 
+model=res[rm3],rm3
+dfiimodel=res[rm3],rm3#20ivpcell#20PRIMLIB
+element res[rm3] met3res_RES_173 met3trm 
+model=res[rm4],rm4
+dfiimodel=res[rm4],rm4#20ivpcell#20PRIMLIB
+element res[rm4] met4res_RES_174 met4trm 
+model=res[rmtp],rmtp
+dfiimodel=res[rmtp],rmtp#20ivpcell#20PRIMLIB
+element res[rmtp] mtpres_RES_175 mtptrm 
+model=res[rmtpl],rmtpl
+dfiimodel=res[rmtpl],rmtpl#20ivpcell#20PRIMLIB
+element res[rmtpl] mtplres_RES_176 mtpltrm 
+model=res[pfuse],pfuse
+dfiimodel=res[pfuse],pfuse#20ivpcell#20PRIMLIB
+element res[pfuse] pfuse_RES_177 polytrm 
+model=bjt[qnva],qnva
+dfiimodel=bjt[qnva],qnva#20ivpcell#20PRIMLIB
+element bjt[qnva] qnva_BJT_178 dnwellmvtrm pwitrm nsd G_subs 
+model=bjt[qnvam],qnvam
+dfiimodel=bjt[qnvam],qnvam#20ivpcell#20PRIMLIB
+element bjt[qnvam] qnvam_BJT_179 dnwtrm pwitrm nsd G_subs 
+model=bjt[qnvz],qnvz
+dfiimodel=bjt[qnvz],qnvz#20ivpcell#20PRIMLIB
+element bjt[qnvz] qnvz_BJT_180 dnwellmvtrm pwitrm nsd G_subs 
+model=bjt[qnvb],qnvb
+dfiimodel=bjt[qnvb],qnvb#20ivpcell#20PRIMLIB
+element bjt[qnvb] qnvb_BJT_181 dnwellmvtrm pwitrm nsd G_subs 
+model=bjt[qnvc],qnvc
+dfiimodel=bjt[qnvc],qnvc#20ivpcell#20PRIMLIB
+element bjt[qnvc] qnvc_BJT_182 dnwellmvtrm pwitrm nsd G_subs 
+model=bjt[qpvhscr],qpvhscr
+dfiimodel=bjt[qpvhscr],qpvhscr#20ivpcell#20PRIMLIB
+element bjt[qpvhscr] qpvhscr_BJT_183 G_subs hnw pdf 
+model=bjt[qpvascr],qpvascr
+dfiimodel=bjt[qpvascr],qpvascr#20ivpcell#20PRIMLIB
+element bjt[qpvascr] qpvascr_BJT_184 G_subs dnwtrm pwitrm 
+model=bjt[qpvhbscr],qpvhbscr
+dfiimodel=bjt[qpvhbscr],qpvhbscr#20ivpcell#20PRIMLIB
+element bjt[qpvhbscr] qpvhbscr_BJT_185 G_subs hnw pwitrm 
+model=bjt[qpvc],qpvc
+dfiimodel=bjt[qpvc],qpvc#20ivpcell#20PRIMLIB
+element bjt[qpvc] pnp10_BJT_186 G_subs nwelltrm psd 
+model=bjt[qpvb],qpvb
+dfiimodel=bjt[qpvb],qpvb#20ivpcell#20PRIMLIB
+element bjt[qpvb] pnp5_BJT_187 G_subs nwelltrm psd 
+model=bjt[qpva],qpva
+dfiimodel=bjt[qpva],qpva#20ivpcell#20PRIMLIB
+element bjt[qpva] pnp2_BJT_188 G_subs nwelltrm psd 
+model=bjt[qpvc3],qpvc3
+dfiimodel=bjt[qpvc3],qpvc3#20ivpcell#20PRIMLIB
+element bjt[qpvc3] pnph10_BJT_189 G_subs nwelltrm psd 
+model=bjt[qpvb3],qpvb3
+dfiimodel=bjt[qpvb3],qpvb3#20ivpcell#20PRIMLIB
+element bjt[qpvb3] pnph5_BJT_190 G_subs nwelltrm psd 
+model=bjt[qpva3],qpva3
+dfiimodel=bjt[qpva3],qpva3#20ivpcell#20PRIMLIB
+element bjt[qpva3] pnph2_BJT_191 G_subs nwelltrm psd 
+model=diode[dphoa],dphoa
+dfiimodel=diode[dphoa],dphoa#20ivpcell#20PRIMLIB
+element diode[dphoa] dphoa_DIODE_192 G_subs dnwtrm dphopin3 
+model=diode[dphob],dphob
+dfiimodel=diode[dphob],dphob#20ivpcell#20PRIMLIB
+element diode[dphob] dphob_DIODE_193 G_subs dnwtrm dphopin3 
+model=generic[dphoc],dphoc
+dfiimodel=generic[dphoc],dphoc#20ivpcell#20PRIMLIB
+element generic[dphoc] dphoc_Device_194 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
+model=generic[dphoc0],dphoc0
+dfiimodel=generic[dphoc0],dphoc0#20ivpcell#20PRIMLIB
+element generic[dphoc0] dphoc0_Device_195 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
+model=generic[dphocfp],dphocfp
+dfiimodel=generic[dphocfp],dphocfp#20ivpcell#20PRIMLIB
+element generic[dphocfp] dphocfp_Device_196 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
+model=generic[dphod],dphod
+dfiimodel=generic[dphod],dphod#20ivpcell#20PRIMLIB
+element generic[dphod] dphod_Device_197 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
+model=generic[dphod0],dphod0
+dfiimodel=generic[dphod0],dphod0#20ivpcell#20PRIMLIB
+element generic[dphod0] dphod0_Device_198 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
+model=generic[dphodfp],dphodfp
+dfiimodel=generic[dphodfp],dphodfp#20ivpcell#20PRIMLIB
+element generic[dphodfp] dphodfp_Device_199 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
+model=diode[dapda],dapda
+dfiimodel=diode[dapda],dapda#20ivpcell#20PRIMLIB
+element diode[dapda] dapda_DIODE_200 G_subs catdiff dphopin3 
+model=diode[dapda0],dapda0
+dfiimodel=diode[dapda0],dapda0#20ivpcell#20PRIMLIB
+element diode[dapda0] dapda0_DIODE_201 G_subs catdiff dphopin3 
+model=diode[dspada],dspada
+dfiimodel=diode[dspada],dspada#20ivpcell#20PRIMLIB
+element diode[dspada] dspada_DIODE_202 G_subs catdiff dphopin3 
+model=diode[dspada0],dspada0
+dfiimodel=diode[dspada0],dspada0#20ivpcell#20PRIMLIB
+element diode[dspada0] dspada0_DIODE_203 G_subs catdiff dphopin3 
+model=diode[dsb],dsb
+dfiimodel=diode[dsb],dsb#20ivpcell#20PRIMLIB
+element diode[dsb] d_dsb_DIODE_204 d_dsdf hnw G_subs 
+model=diode[dsba],dsba
+dfiimodel=diode[dsba],dsba#20ivpcell#20PRIMLIB
+element diode[dsba] d_dsba_DIODE_205 d_dsdf hnw G_subs 
+model=diode[dnp20],dnp20
+dfiimodel=diode[dnp20],dnp20#20ivpcell#20PRIMLIB
+element diode[dnp20] dnp20_DIODE_206 G_subs ndftrm 
+model=diode[dpp20],dpp20
+dfiimodel=diode[dpp20],dpp20#20ivpcell#20PRIMLIB
+element diode[dpp20] dpp20_DIODE_207 pwitrm dnwtrm 
+model=diode[dpol],dpol
+dfiimodel=diode[dpol],dpol#20ivpcell#20PRIMLIB
+element diode[dpol] dpol_DIODE_208 dpol_p dpol_n 
+model=diode[dp],dp
+dfiimodel=diode[dp],dp#20ivpcell#20PRIMLIB
+element diode[dp] dio_p_DIODE_209 psd nwelltrm 
+model=diode[dp_av2],dp
+dfiimodel=diode[dp_av2],dp#20ivpcell#20PRIMLIB
+element diode[dp_av2] dio_p_DIODE_211 psd nwtrm_scr 
+model=diode[dp3],dp3
+dfiimodel=diode[dp3],dp3#20ivpcell#20PRIMLIB
+element diode[dp3] dio_ph_DIODE_210 psd nwelltrm 
+model=diode[dp3_av2],dp3
+dfiimodel=diode[dp3_av2],dp3#20ivpcell#20PRIMLIB
+element diode[dp3_av2] dio_ph_DIODE_212 psd nwtrm_scr 
+model=diode[dp_av3],dp
+dfiimodel=diode[dp_av3],dp#20ivpcell#20PRIMLIB
+element diode[dp_av3] dio_pi_DIODE_213 psd dnwtrm 
+model=diode[dp3_av3],dp3
+dfiimodel=diode[dp3_av3],dp3#20ivpcell#20PRIMLIB
+element diode[dp3_av3] dio_pih_DIODE_214 psd dnwtrm 
+model=diode[dp_av4],dp
+dfiimodel=diode[dp_av4],dp#20ivpcell#20PRIMLIB
+element diode[dp_av4] d_dpi2_DIODE_215 psd hnw 
+model=diode[dp3_av4],dp3
+dfiimodel=diode[dp3_av4],dp3#20ivpcell#20PRIMLIB
+element diode[dp3_av4] d_dpmi2_DIODE_216 psd hnw 
+model=diode[dn],dn
+dfiimodel=diode[dn],dn#20ivpcell#20PRIMLIB
+element diode[dn] dio_n_DIODE_217 G_subs nsd 
+model=diode[dn3],dn3
+dfiimodel=diode[dn3],dn3#20ivpcell#20PRIMLIB
+element diode[dn3] dio_nh_DIODE_218 G_subs nsd 
+model=diode[dn_av2],dn
+dfiimodel=diode[dn_av2],dn#20ivpcell#20PRIMLIB
+element diode[dn_av2] dio_ni_DIODE_219 pwitrm nsd 
+model=diode[dn3_av2],dn3
+dfiimodel=diode[dn3_av2],dn3#20ivpcell#20PRIMLIB
+element diode[dn3_av2] dio_nih_DIODE_220 pwitrm nsd 
+model=diode[dn_av3],dn
+dfiimodel=diode[dn_av3],dn#20ivpcell#20PRIMLIB
+element diode[dn_av3] d_dni2_DIODE_221 pdf nsd 
+model=diode[dn3_av3],dn3
+dfiimodel=diode[dn3_av3],dn3#20ivpcell#20PRIMLIB
+element diode[dn3_av3] d_dnmi2_DIODE_222 pdf nsd 
+model=diode[dnn3],dnn3
+dfiimodel=diode[dnn3],dnn3#20ivpcell#20PRIMLIB
+element diode[dnn3] d_dnnm_DIODE_223 G_subs nsd 
+model=diode[dnw],dnw
+dfiimodel=diode[dnw],dnw#20ivpcell#20PRIMLIB
+element diode[dnw] dio_nws_DIODE_224 G_subs nwelltrm 
+model=diode[dnw_av2],dnw
+dfiimodel=diode[dnw_av2],dnw#20ivpcell#20PRIMLIB
+element diode[dnw_av2] dio_nws_DIODE_226 G_subs nwtrm_scr 
+model=diode[dnw3],dnw3
+dfiimodel=diode[dnw3],dnw3#20ivpcell#20PRIMLIB
+element diode[dnw3] dio_nwsh_DIODE_225 G_subs nwelltrm 
+model=diode[dnw3_av2],dnw3
+dfiimodel=diode[dnw3_av2],dnw3#20ivpcell#20PRIMLIB
+element diode[dnw3_av2] dio_nwsh_DIODE_227 G_subs nwtrm_scr 
+model=diode[dipdnw],dipdnw
+dfiimodel=diode[dipdnw],dipdnw#20ivpcell#20PRIMLIB
+element diode[dipdnw] dio_ipdnw_DIODE_228 pwitrm dnwtrm 
+model=diode[dipdnwmv],dipdnwmv
+dfiimodel=diode[dipdnwmv],dipdnwmv#20ivpcell#20PRIMLIB
+element diode[dipdnwmv] dio_ipdnwmv_DIODE_229 pwitrm dnwtrm 
+model=diode[dhpw],dhpw
+dfiimodel=diode[dhpw],dhpw#20ivpcell#20PRIMLIB
+element diode[dhpw] dio_dhpw_DIODE_230 pwitrm dnwtrm 
+model=diode[dhnw],dhnw
+dfiimodel=diode[dhnw],dhnw#20ivpcell#20PRIMLIB
+element diode[dhnw] dio_dhnw_DIODE_231 G_subs nbdsub 
+model=diode[ddnw],ddnw
+dfiimodel=diode[ddnw],ddnw#20ivpcell#20PRIMLIB
+element diode[ddnw] dio_ddnw_DIODE_232 G_subs dnwtrm 
+model=diode[ddnwmv],ddnwmv
+dfiimodel=diode[ddnwmv],ddnwmv#20ivpcell#20PRIMLIB
+element diode[ddnwmv] dio_ddnwmv_DIODE_233 G_subs dnwtrm 
+model=diode[dpdnw],dpdnw
+dfiimodel=diode[dpdnw],dpdnw#20ivpcell#20PRIMLIB
+element diode[dpdnw] dio_dpdnw_DIODE_234 psd dnwtrm 
+model=diode[dpdnwmv],dpdnwmv
+dfiimodel=diode[dpdnwmv],dpdnwmv#20ivpcell#20PRIMLIB
+element diode[dpdnwmv] dio_dpdnwmv_DIODE_235 psd dnwtrm 
+model=diode[dphnw],dphnw
+dfiimodel=diode[dphnw],dphnw#20ivpcell#20PRIMLIB
+element diode[dphnw] dio_dphnw1_DIODE_236 psd dnwtrm 
+model=diode[dphnw_av2],dphnw
+dfiimodel=diode[dphnw_av2],dphnw#20ivpcell#20PRIMLIB
+element diode[dphnw_av2] dio_dphnw2_DIODE_237 psd nbdsub 
+model=diode[dphnw_av3],dphnw
+dfiimodel=diode[dphnw_av3],dphnw#20ivpcell#20PRIMLIB
+element diode[dphnw_av3] dio_dphnw3_DIODE_238 psd hnw 
+model=diode[dnhpw],dnhpw
+dfiimodel=diode[dnhpw],dnhpw#20ivpcell#20PRIMLIB
+element diode[dnhpw] dio_dnhpw1_DIODE_239 pwitrm nsd 
+model=diode[dnhpw_av2],dnhpw
+dfiimodel=diode[dnhpw_av2],dnhpw#20ivpcell#20PRIMLIB
+element diode[dnhpw_av2] dio_dnhpw2_DIODE_240 G_subs nsd 
+model=diode[dwhn],dwhn
+dfiimodel=diode[dwhn],dwhn#20ivpcell#20PRIMLIB
+element diode[dwhn] dio_dwhn_DIODE_241 G_subs hnw 
+model=diode[dndf],dndf
+dfiimodel=diode[dndf],dndf#20ivpcell#20PRIMLIB
+element diode[dndf] dio_dndf_DIODE_242 G_subs ndftrm 
+model=diode[dpdwhn],dpdwhn
+dfiimodel=diode[dpdwhn],dpdwhn#20ivpcell#20PRIMLIB
+element diode[dpdwhn] dio_dpdwhn_DIODE_243 pdf hnw 
+model=diode[dpwhn],dpwhn
+dfiimodel=diode[dpwhn],dpwhn#20ivpcell#20PRIMLIB
+element diode[dpwhn] dio_dpwhn_DIODE_244 psd hnw 
+model=diode[dpdd_scr],dpdd_scr
+dfiimodel=diode[dpdd_scr],dpdd_scr#20ivpcell#20PRIMLIB
+element diode[dpdd_scr] dpdd_scr_DIODE_245 pwitrm dnwtrm 
+model=diode[dnpdd_scr],dnpdd_scr
+dfiimodel=diode[dnpdd_scr],dnpdd_scr#20ivpcell#20PRIMLIB
+element diode[dnpdd_scr] dnpdd_scr_DIODE_246 pwitrm nsd 
+model=diode[p_dnw],dnw
+dfiimodel=diode[p_dnw],p_dnw#20auLvs#20PRIMLIB
+element diode[p_dnw] p_dnw_DIODE_247 G_subs nwelltrm 
+model=diode[p_dnw_av2],dnw
+dfiimodel=diode[p_dnw_av2],p_dnw#20auLvs#20PRIMLIB
+element diode[p_dnw_av2] p_dnw_DIODE_249 G_subs nwtrm_scr 
+model=diode[p_dnw3],dnw3
+dfiimodel=diode[p_dnw3],p_dnw3#20auLvs#20PRIMLIB
+element diode[p_dnw3] p_dnwm_DIODE_248 G_subs nwelltrm 
+model=diode[p_dnw3_av2],dnw3
+dfiimodel=diode[p_dnw3_av2],p_dnw3#20auLvs#20PRIMLIB
+element diode[p_dnw3_av2] p_dnwm_DIODE_250 G_subs nwtrm_scr 
+model=diode[p_dp],dp
+dfiimodel=diode[p_dp],p_dp#20auLvs#20PRIMLIB
+element diode[p_dp] p_dp_DIODE_251 psd nwelltrm 
+model=diode[p_dp_av2],dp
+dfiimodel=diode[p_dp_av2],p_dp#20auLvs#20PRIMLIB
+element diode[p_dp_av2] p_dp_DIODE_253 psd nwtrm_scr 
+model=diode[p_dp3],dp3
+dfiimodel=diode[p_dp3],p_dp3#20auLvs#20PRIMLIB
+element diode[p_dp3] p_dph_DIODE_252 psd nwelltrm 
+model=diode[p_dp3_av2],dp3
+dfiimodel=diode[p_dp3_av2],p_dp3#20auLvs#20PRIMLIB
+element diode[p_dp3_av2] p_dph_DIODE_254 psd nwtrm_scr 
+model=diode[p_dp_av3],dp
+dfiimodel=diode[p_dp_av3],p_dp#20auLvs#20PRIMLIB
+element diode[p_dp_av3] p_dpi_DIODE_255 psd dnwtrm 
+model=diode[p_dp3_av3],dp3
+dfiimodel=diode[p_dp3_av3],p_dp3#20auLvs#20PRIMLIB
+element diode[p_dp3_av3] p_dpih_DIODE_256 psd dnwtrm 
+model=diode[p_dp_av4],dp
+dfiimodel=diode[p_dp_av4],p_dp#20auLvs#20PRIMLIB
+element diode[p_dp_av4] p_dpi2_DIODE_257 psd hnw 
+model=diode[p_dp3_av4],dp3
+dfiimodel=diode[p_dp3_av4],p_dp3#20auLvs#20PRIMLIB
+element diode[p_dp3_av4] p_dpmi2_DIODE_258 psd hnw 
+model=diode[p_dn],dn
+dfiimodel=diode[p_dn],p_dn#20auLvs#20PRIMLIB
+element diode[p_dn] p_dn_DIODE_259 G_subs nsd 
+model=diode[p_dn_av2],dn
+dfiimodel=diode[p_dn_av2],p_dn#20auLvs#20PRIMLIB
+element diode[p_dn_av2] p_dni_DIODE_260 pwitrm nsd 
+model=diode[p_dn3],dn3
+dfiimodel=diode[p_dn3],p_dn3#20auLvs#20PRIMLIB
+element diode[p_dn3] p_dnh_DIODE_261 G_subs nsd 
+model=diode[p_dn3_av2],dn3
+dfiimodel=diode[p_dn3_av2],p_dn3#20auLvs#20PRIMLIB
+element diode[p_dn3_av2] p_dnih_DIODE_262 pwitrm nsd 
+model=diode[p_dn_av3],dn
+dfiimodel=diode[p_dn_av3],p_dn#20auLvs#20PRIMLIB
+element diode[p_dn_av3] p_dni2_DIODE_263 pdf nsd 
+model=diode[p_dn3_av3],dn3
+dfiimodel=diode[p_dn3_av3],p_dn3#20auLvs#20PRIMLIB
+element diode[p_dn3_av3] p_dnmi2_DIODE_264 pdf nsd 
+model=diode[p_dnn3],dnn3
+dfiimodel=diode[p_dnn3],p_dnn3#20auLvs#20PRIMLIB
+element diode[p_dnn3] p_dnnm_DIODE_265 G_subs nsd 
+model=diode[p_ddnw],ddnw
+dfiimodel=diode[p_ddnw],p_ddnw#20auLvs#20PRIMLIB
+element diode[p_ddnw] p_ddnw_DIODE_266 G_subs dnwtrm 
+model=diode[p_ddnwmv],ddnwmv
+dfiimodel=diode[p_ddnwmv],p_ddnwmv#20auLvs#20PRIMLIB
+element diode[p_ddnwmv] p_ddnwmv_DIODE_267 G_subs dnwellmvtrm 
+model=diode[p_dipdnw],dipdnw
+dfiimodel=diode[p_dipdnw],p_dipdnw#20auLvs#20PRIMLIB
+element diode[p_dipdnw] p_dipdnw_DIODE_268 pwitrm dnwtrm 
+model=diode[p_dipdnwmv],dipdnwmv
+dfiimodel=diode[p_dipdnwmv],p_dipdnwmv#20auLvs#20PRIMLIB
+element diode[p_dipdnwmv] p_dipdnwmv_DIODE_269 pwitrm dnwtrm 
+model=diode[p_dhpw],dhpw
+dfiimodel=diode[p_dhpw],p_dhpw#20auLvs#20PRIMLIB
+element diode[p_dhpw] p_dhpw_DIODE_270 pwitrm dnwtrm 
+model=diode[p_dhnw],dhnw
+dfiimodel=diode[p_dhnw],p_dhnw#20auLvs#20PRIMLIB
+element diode[p_dhnw] p_dhnw_DIODE_271 G_subs nbdsub 
+model=diode[p_dpdnw],dpdnw
+dfiimodel=diode[p_dpdnw],p_dpdnw#20auLvs#20PRIMLIB
+element diode[p_dpdnw] p_dpdnw_DIODE_272 psd dnwtrm 
+model=diode[p_dpdnwmv],dpdnwmv
+dfiimodel=diode[p_dpdnwmv],p_dpdnwmv#20auLvs#20PRIMLIB
+element diode[p_dpdnwmv] p_dpdnwmv_DIODE_273 psd dnwtrm 
+model=diode[p_dphnw],dphnw
+dfiimodel=diode[p_dphnw],p_dphnw#20auLvs#20PRIMLIB
+element diode[p_dphnw] p_dphnw1_DIODE_274 psd dnwtrm 
+model=diode[p_dphnw_av2],dphnw
+dfiimodel=diode[p_dphnw_av2],p_dphnw#20auLvs#20PRIMLIB
+element diode[p_dphnw_av2] p_dphnw2_DIODE_275 psd nbdsub 
+model=diode[p_dphnw_av3],dphnw
+dfiimodel=diode[p_dphnw_av3],p_dphnw#20auLvs#20PRIMLIB
+element diode[p_dphnw_av3] p_dphnw3_DIODE_276 psd hnw 
+model=diode[p_dnhpw],dnhpw
+dfiimodel=diode[p_dnhpw],p_dnhpw#20auLvs#20PRIMLIB
+element diode[p_dnhpw] p_dnhpw1_DIODE_277 pwitrm nsd 
+model=diode[p_dnhpw_av2],dnhpw
+dfiimodel=diode[p_dnhpw_av2],p_dnhpw#20auLvs#20PRIMLIB
+element diode[p_dnhpw_av2] p_dnhpw2_DIODE_278 G_subs nsd 
+model=diode[p_dwhn],dwhn
+dfiimodel=diode[p_dwhn],p_dwhn#20auLvs#20PRIMLIB
+element diode[p_dwhn] p_dwhn_DIODE_279 G_subs hnw 
+model=diode[p_dndf],dndf
+dfiimodel=diode[p_dndf],p_dndf#20auLvs#20PRIMLIB
+element diode[p_dndf] p_dndf_DIODE_280 G_subs ndftrm 
+model=diode[p_dpdwhn],dpdwhn
+dfiimodel=diode[p_dpdwhn],p_dpdwhn#20auLvs#20PRIMLIB
+element diode[p_dpdwhn] p_dpdwhn_DIODE_281 pdf hnw 
+model=diode[p_dpwhn],dpwhn
+dfiimodel=diode[p_dpwhn],p_dpwhn#20auLvs#20PRIMLIB
+element diode[p_dpwhn] p_dpwhn_DIODE_282 psd hnw 
+model=diode[p_dn_av4],dn
+dfiimodel=diode[p_dn_av4],p_dn#20auLvs#20PRIMLIB
+element diode[p_dn_av4] p_dndpl_DIODE_283 G_subs nsd 
+model=diode[p_dn_av5],dn
+dfiimodel=diode[p_dn_av5],p_dn#20auLvs#20PRIMLIB
+element diode[p_dn_av5] p_dndpli_DIODE_284 pwitrm nsd 
+model=diode[p_ddpldnw],ddpldnw
+dfiimodel=diode[p_ddpldnw],p_ddpldnw#20auLvs#20PRIMLIB
+element diode[p_ddpldnw] pddpldnw_DIODE_285 pwitrm dnwtrm 
+model=diode[p_dn3dpl],dn3dpl
+dfiimodel=diode[p_dn3dpl],p_dn3dpl#20auLvs#20PRIMLIB
+element diode[p_dn3dpl] pdnmdpl_DIODE_286 G_subs nsd 
+model=diode[p_dn3dpl_av2],dn3dpl
+dfiimodel=diode[p_dn3dpl_av2],p_dn3dpl#20auLvs#20PRIMLIB
+element diode[p_dn3dpl_av2] pdnmdpli_DIODE_287 pwitrm nsd 
+model=diode[p_dpndf],dpndf
+dfiimodel=diode[p_dpndf],p_dpndf#20auLvs#20PRIMLIB
+element diode[p_dpndf] p_dpndf_DIODE_288 psd ndftrm 
+model=diode[p_dpndf_av2],dpndf
+dfiimodel=diode[p_dpndf_av2],p_dpndf#20auLvs#20PRIMLIB
+element diode[p_dpndf_av2] pdpndfh_DIODE_289 psd hnw 
+model=diode[p_dpdddnw],dpdddnw
+dfiimodel=diode[p_dpdddnw],p_dpdddnw#20auLvs#20PRIMLIB
+element diode[p_dpdddnw] pdpdddnw_DIODE_290 pwitrm dnwtrm 
+model=diode[p_dbn],dbn
+dfiimodel=diode[p_dbn],p_dbn#20auLvs#20PRIMLIB
+element diode[p_dbn] p_dbn_DIODE_291 G_subs bndiff 
+model=generic[tag_60v],tag_60v
+dfiimodel=generic[tag_60v],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v] p1_v60_Device_292 p1_vlbl[N1] 
+model=generic[tag_25v],tag_25v
+dfiimodel=generic[tag_25v],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v] p1_v25_Device_293 p1_vlbl[N1] 
+model=generic[tag_60v_av2],tag_60v
+dfiimodel=generic[tag_60v_av2],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av2] m1_v60_Device_294 m1_vlbl[N1] 
+model=generic[tag_25v_av2],tag_25v
+dfiimodel=generic[tag_25v_av2],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av2] m1_v25_Device_295 m1_vlbl[N1] 
+model=generic[tag_60v_av3],tag_60v
+dfiimodel=generic[tag_60v_av3],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av3] m2_v60_Device_296 m2_vlbl[N1] 
+model=generic[tag_25v_av3],tag_25v
+dfiimodel=generic[tag_25v_av3],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av3] m2_v25_Device_297 m2_vlbl[N1] 
+model=generic[tag_60v_av4],tag_60v
+dfiimodel=generic[tag_60v_av4],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av4] m3_v60_Device_298 m3_vlbl[N1] 
+model=generic[tag_25v_av4],tag_25v
+dfiimodel=generic[tag_25v_av4],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av4] m3_v25_Device_299 m3_vlbl[N1] 
+model=generic[tag_60v_av5],tag_60v
+dfiimodel=generic[tag_60v_av5],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av5] m4_v60_Device_300 m4_vlbl[N1] 
+model=generic[tag_25v_av5],tag_25v
+dfiimodel=generic[tag_25v_av5],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av5] m4_v25_Device_301 m4_vlbl[N1] 
+model=generic[tag_60v_av6],tag_60v
+dfiimodel=generic[tag_60v_av6],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av6] mt_v60_Device_302 mt_vlbl[N1] 
+model=generic[tag_25v_av6],tag_25v
+dfiimodel=generic[tag_25v_av6],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av6] mt_v25_Device_303 mt_vlbl[N1] 
+model=generic[tag_60v_av7],tag_60v
+dfiimodel=generic[tag_60v_av7],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av7] mtl_v60_Device_304 mtl_vlbl[N1] 
+model=generic[tag_25v_av7],tag_25v
+dfiimodel=generic[tag_25v_av7],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av7] mtl_v25_Device_305 mtl_vlbl[N1] 

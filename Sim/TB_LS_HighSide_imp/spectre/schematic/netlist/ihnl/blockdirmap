@@ -1,4 +1,5 @@
-CADENCE IHNL11144
+CADENCE IHNL11145
 
 D_CELLS_M3V LSHVT18U3VX1 cmos_sch cds0
 Stimulator_TestBench TB_LS_HighSide_imp schematic cds1
+Stimulator_IMP ResistiveDivider schematic cds4

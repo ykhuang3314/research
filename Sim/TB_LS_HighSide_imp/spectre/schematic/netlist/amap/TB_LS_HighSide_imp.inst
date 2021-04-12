@@ -4,5 +4,5 @@ HEADER
 "V0n" "analogLib_vpulse_spectre"
 "C0n" "analogLib_cap_spectre"
 "V3n V2n V1n" "analogLib_vdc_spectre"
-"R0n R1n" "PRIMLIB_rpp1k1_spectre"
+"I19n" "ResistiveDivider"
 "I10n" "LSHVT18U3VX1"
