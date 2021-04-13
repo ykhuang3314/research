@@ -13,7 +13,7 @@
 vuiLVSFormTable = '(
 	schematicSource  "DFII"
 	layoutSource  "DFII"
-	runName  "5bit_BinaryWeightedMirror_ST_LVS"
+	runName  "HalfBridge_ST_LVS"
 	runDir  "./AssuraLVS"
 	machineLoc  "local"
 	viewRules  t
@@ -32,12 +32,12 @@ vuiLVSFormTable = '(
 	avCompareView  nil
 	additionalFunctionsButton  nil
 	schLibrary  "Stimulator_IMP"
-	schCell  "5bit_BinaryWeightedMirror_ST"
+	schCell  "HalfBridge_ST"
 	schView  "schematic"
 	existingSchNetlist  nil
 	useVerilogTopCell  nil
 	layLibrary  "Stimulator_IMP"
-	layCell  "5bit_BinaryWeightedMirror_ST"
+	layCell  "HalfBridge_ST"
 	layView  "layout"
 	layUseExistingNL  nil
 	extractButton  nil

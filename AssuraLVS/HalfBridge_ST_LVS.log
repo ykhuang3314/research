@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Sat Apr 10 14:33:08 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue Apr 13 12:53:09 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraLVS/HalfBridge_ST_LVS.rsf -exec1 -LVS -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Sat Apr 10 14:33:09 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 13 12:53:10 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -42,7 +42,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Sat Apr 10 14:33:09 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue Apr 13 12:53:10 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -67,7 +67,7 @@ Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
 Express Pcell license has been checked out for the Express Pcell feature.
 *WARNING* Express Pcells will be disabled. This is because the Express Pcells data stored on disk is generated using some later release of Virtuoso. Use a later compatible Virtuoso release.
 
-Loading assuraExtract_Rules at "Apr 10 14:33:10 2021"
+Loading assuraExtract_Rules at "Apr 13 12:53:11 2021"
 Compiling rules...
 
 RSF-specified resolution of 0.0005 userUnits used for this run.
@@ -111,7 +111,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Sat Apr 10 14:33:13 2021
+run on s2424 at Tue Apr 13 12:53:14 2021
   
 *************************************************************** 
   
@@ -126,7 +126,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Sat Apr 10 14:33:14 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue Apr 13 12:53:15 2021
 
   
 *************************************************************** 
@@ -238,7 +238,7 @@ Finished /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/nvn
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.31  elap: 6  pf: 0  in: 0  out: 456  virt: 115M  phys: 651M
+cpu: 0.34  elap: 6  pf: 0  in: 0  out: 448  virt: 115M  phys: 659M
 
 Running the Task Processor, 10 cells, 15265 steps...
 
@@ -10085,12 +10085,12 @@ Executing: (saveInterconnect (vtpCON "VIATP") (vtpcm "VIATP") (vtpcmh "VIATP") (
 Executing: (saveInterconnect (vtpl "VIATPL") (mtpltrm "METTPL") (mtplres "allres"))
 
 Finished running rules. Task processor time in main process:
-cpu: 2.08  elap: 2  pf: 0  in: 0  out: 3376  virt: 184M  phys: 920M
+cpu: 2.34  elap: 2  pf: 0  in: 0  out: 3368  virt: 184M  phys: 926M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6680  virt: 189M  phys: 938M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6680  virt: 189M  phys: 940M
 
 
 *****  aveng terminated normally  *****
@@ -10108,7 +10108,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Sat Apr 10 14:33:18 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 13 12:53:20 2021
 
 
    Creating Error Database 'HalfBridge_ST_LVS'...
@@ -10600,7 +10600,7 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraLVS/HalfBridge_ST_LVS.err ...
 
-avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.20  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -10611,7 +10611,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 10 14:33:19 2021"
+Loading assuraExtract_Rules at "Apr 13 12:53:20 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
@@ -10623,25 +10623,25 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 10 14:33:19 2021"
+Loading assuraExtract_Rules at "Apr 13 12:53:21 2021"
 Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 *WARNING* Failed to obtain license for Assura_LVS
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Sat Apr 10 14:33:19 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Tue Apr 13 12:53:21 2021
 
 avnx started...
-cpu: 0.44  elap: 1  pf: 0  in: 0  out: 48  virt: 734M  phys: 1241M
+cpu: 0.44  elap: 0  pf: 0  in: 0  out: 48  virt: 734M  phys: 1241M
 
-Run time =  1.00 seconds
-CPU time =  0.50 seconds
+Run time =  0.00 seconds
+CPU time =  0.49 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.02  elap: 0  pf: 0  in: 0  out: 14104  virt: 662M  phys: 1241M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 14080  virt: 662M  phys: 1241M
 ***** avnx terminated normally ***** 
 
 
@@ -10652,7 +10652,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Sat Apr 10 14:33:20 2021
+run on s2424 at Tue Apr 13 12:53:22 2021
   
 *************************************************************** 
   
@@ -10813,7 +10813,7 @@ Top cell  HalfBridge_ST schematic Stimulator_IMP vs HalfBridge_ST layout Stimula
    2nd device: L = 1.25e-06 W = 8e-05 m = 1 
    Resulting: L = 1.25e-06 W = 0.0008 m = 1 
 Schematic and Layout Match
-cpu=0.00m  wall=0.02m  mem=118.21mb
+cpu=0.00m  wall=0.00m  mem=118.21mb
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/nvn
 
@@ -10837,7 +10837,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 10 14:33:22 2021"
+Loading assuraExtract_Rules at "Apr 13 12:53:23 2021"
  
 *************************************************************** 
  
@@ -10867,7 +10867,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Sat Apr 10 14:33:23 2021
+Run ended: Tue Apr 13 12:53:24 2021
 
 *****  Assura terminated normally  *****
 

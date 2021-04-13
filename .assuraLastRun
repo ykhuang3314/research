@@ -1,2 +1,2 @@
 runDir = ./AssuraLVS
-runName = 5bit_BinaryWeightedMirror_ST_LVS
+runName = HalfBridge_ST_LVS

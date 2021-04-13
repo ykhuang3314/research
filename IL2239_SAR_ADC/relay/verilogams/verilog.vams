@@ -1,0 +1,35 @@
+//Verilog-AMS HDL for "IL2239_SAR_ADC", "relay" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module relay ( in, out, gate );
+
+	parameter real VTHn=0.9;
+	parameter real Ron=100;
+	parameter real Roff=100e6;
+	parameter real delay = 0;
+	parameter real trise = 100e-12;
+	parameter real tfall = 100e-12;
+	
+	real Irelay;
+	
+	input gate;
+	inout in, out;
+	electrical in, out, gate;
+	
+	analog begin
+		if (V(gate)>VTHn)
+		begin
+			Irelay = V(in,out)/Ron;	
+		end
+		else			
+		begin
+			Irelay = V(in,out)/Roff;	
+		end
+
+	//I(in,out) <+ transition( Irelay, delay, trise, tfall );	//To avoid abrupt changes, to add transition slew
+	I(in,out) <+ Irelay;	
+	end
+
+endmodule

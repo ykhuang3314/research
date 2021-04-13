@@ -1,9 +1,9 @@
 xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xmvlog(64)	18.03-s018: Started on Apr 05, 2021 at 11:13:36 CEST
+TOOL:	xmvlog(64)	18.03-s018: Started on Apr 13, 2021 at 11:39:09 CEST
 xmvlog
     -use5x
     -SPECIFICUNIT Decoder3_8
-    -zparse /tmp/vamsZparbb2262
+    -zparse /tmp/vamsZpardh1720
     -NOWARN DLNOHV
     -work Stimulator_IMP
     -view functional
@@ -17,4 +17,4 @@ file: /home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v
 	module Stimulator_IMP.Decoder3_8:functional
 		errors: 0, warnings: 0
 	 writing out DPL output:
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Apr 05, 2021 at 11:13:36 CEST  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Apr 13, 2021 at 11:39:09 CEST  (total: 00:00:00)

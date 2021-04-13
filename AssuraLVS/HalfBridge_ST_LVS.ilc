@@ -8,4 +8,4 @@ Stimulator_IMP LS_LowSide_V2_ST layout 4015
 Stimulator_IMP M4_MTPCell_v2 layout 250
 PRIMLIB nedia_bjt layout 630
 PRIMLIB ped_bjt layout 572
-Stimulator_IMP HalfBridge_ST layout 23130
+Stimulator_IMP HalfBridge_ST layout 23230

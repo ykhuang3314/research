@@ -1,0 +1,21 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Apr 12, 2021 at 16:21:21 CEST
+xmvlog
+    -use5x
+    -SPECIFICUNIT relay
+    -zparse /tmp/vamsZparre1720
+    -NOWARN DLNOHV
+    -work IL2239_SAR_ADC
+    -view verilogams
+    -nostdout
+    -logfile /home/ykhuang/research/.cadence/dfII/TextSupport/Logs/Parser/verilogams/IL2239_SAR_ADC/verilogams/compile0.log
+    -messages
+    -ams
+    -cdslib /home/ykhuang/research/cds.lib
+    /home/ykhuang/research/IL2239_SAR_ADC/relay/verilogams/verilog.vams
+
+file: /home/ykhuang/research/IL2239_SAR_ADC/relay/verilogams/verilog.vams
+	module IL2239_SAR_ADC.relay:verilogams
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Apr 12, 2021 at 16:21:21 CEST  (total: 00:00:00)

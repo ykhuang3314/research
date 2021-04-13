@@ -2,36 +2,30 @@
 
 
 module Decoder3_8 (
-	input [3:0] Bin,
+	input [2:0] Bin,
 	input Enable,
 	output reg[7:0] Dout
 );
 
-initial begin
-	Dout = 8'b00000000;
-end
 
-always@(Bin) begin
+
+always@(Bin, Enable) begin
+	
+	Dout = 8'b00000000;
+
 	if(Enable) begin
-		if(Bin == 3'b000)
-			Dout = 8'b00000001;
-		else if (Bin == 3'b001)
-			Dout = 8'b00000010;
-		else if (Bin == 3'b010)
-			Dout = 8'b00000100;
-		else if (Bin == 3'b011)
-			Dout = 8'b00001000;
-		else if (Bin == 3'b100)
-			Dout = 8'b00010000;
-		else if (Bin == 3'b101)
-			Dout = 8'b00100000;
-		else if (Bin == 3'b110)
-			Dout = 8'b01000000;
-		else if (Bin == 3'b111)
-			Dout = 8'b10000000;
+		case(Bin)
+			3'b000: begin Dout = 8'b00000001; end
+			3'b001: begin Dout = 8'b00000010; end
+			3'b010: begin Dout = 8'b00000100; end
+			3'b011: begin Dout = 8'b00001000; end
+			3'b100: begin Dout = 8'b00010000; end
+			3'b101: begin Dout = 8'b00100000; end
+			3'b110: begin Dout = 8'b01000000; end
+			3'b111: begin Dout = 8'b10000000; end
+			default: begin Dout = 8'b00000000; end
+		endcase
 	end
-	else
-		Dout = 8'b00000000;
 end
 
 endmodule
