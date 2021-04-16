@@ -1,0 +1,10 @@
+!<alc> v1 77
+0   11    0 rpp1k1 layout PRIMLIB lstrip="20u" shapeType="Serpentine 90" strips=10 in1=R2
+0   10    0 ped_bjt layout PRIMLIB w="30u" in1=M11
+0    9    0 nedia_bjt layout PRIMLIB in1=M17
+0    8    0 nedia_bjt layout PRIMLIB ng="5" w="60u" in1=M16
+0    7    0 nedia_bjt layout PRIMLIB w="80u" in1=M32e10
+0    4    0 ne3 layout PRIMLIB gContT="Met1" l="2u" w="20u" in1=M262e2
+0    3    0 ne3 layout PRIMLIB gContT="Met1" w="20u" in1=ModgenDummy_1_12_Modgen_1
+0    2    0 csft5a layout PRIMLIB
+0   12    0 CurrentMirror_ST layout Stimulator_IMP

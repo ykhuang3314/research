@@ -1,0 +1,374 @@
+( global ( resolution_type basic ) )
+
+( net SAR4_ADC_sim.I1.I21.Irelay SAR4_ADC_sim.I1.I21.Irelay analog None )
+
+( net SAR4_ADC_sim.SW_inp SAR4_ADC_sim.SW_inp analog/mixed electrical )
+( net SAR4_ADC_sim.I0.SW_inp SAR4_ADC_sim.SW_inp digital/mixed logic )
+( net SAR4_ADC_sim.I1.SW_inp SAR4_ADC_sim.SW_inp analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I8.gate SAR4_ADC_sim.SW_inp analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I10.gate SAR4_ADC_sim.SW_inp analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I21.gate SAR4_ADC_sim.SW_inp analog/mixed electrical )
+
+( net SAR4_ADC_sim.I1.net85 SAR4_ADC_sim.I1.net85 analog electrical )
+( net SAR4_ADC_sim.I1.I1.in SAR4_ADC_sim.I1.net85 analog electrical )
+( net SAR4_ADC_sim.I1.I3.in SAR4_ADC_sim.I1.net85 analog electrical )
+( net SAR4_ADC_sim.I1.I5.in SAR4_ADC_sim.I1.net85 analog electrical )
+( net SAR4_ADC_sim.I1.I7.in SAR4_ADC_sim.I1.net85 analog electrical )
+( net SAR4_ADC_sim.I1.I9.out SAR4_ADC_sim.I1.net85 analog electrical )
+( net SAR4_ADC_sim.I1.I10.out SAR4_ADC_sim.I1.net85 analog electrical )
+( net SAR4_ADC_sim.I1.I21.in SAR4_ADC_sim.I1.net85 analog electrical )
+
+( net SAR4_ADC_sim.I1.net055 SAR4_ADC_sim.I1.net055 analog electrical )
+( net SAR4_ADC_sim.I1.I20.out SAR4_ADC_sim.I1.net055 analog electrical )
+( net SAR4_ADC_sim.I1.I21.out SAR4_ADC_sim.I1.net055 analog electrical )
+
+( net SAR4_ADC_sim.I1.I20.Irelay SAR4_ADC_sim.I1.I20.Irelay analog None )
+
+( net SAR4_ADC_sim.SW_ref SAR4_ADC_sim.SW_ref analog/mixed electrical )
+( net SAR4_ADC_sim.I0.SW_ref SAR4_ADC_sim.SW_ref digital/mixed logic )
+( net SAR4_ADC_sim.I1.SW_ref SAR4_ADC_sim.SW_ref analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I9.gate SAR4_ADC_sim.SW_ref analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I20.gate SAR4_ADC_sim.SW_ref analog/mixed electrical )
+
+( net SAR4_ADC_sim.I1.VSS SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I11.VSS SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I13.VSS SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I16.VSS SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I17.VSS SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I0.in SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I2.in SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I4.in SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I6.in SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I20.in SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net cds_globals.\gnd!  SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I0.reset SAR4_ADC_sim.I1.VSS digital/mixed logic )
+( net SAR4_ADC_sim.I18.VSS SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+( net SAR4_ADC_sim.I16.VSS SAR4_ADC_sim.I1.VSS analog/mixed electrical )
+
+( net SAR4_ADC_sim.I1.I10.Irelay SAR4_ADC_sim.I1.I10.Irelay analog None )
+
+( net SAR4_ADC_sim.Vin SAR4_ADC_sim.Vin analog electrical )
+( net SAR4_ADC_sim.I1.inp SAR4_ADC_sim.Vin analog electrical )
+( net SAR4_ADC_sim.I1.I10.in SAR4_ADC_sim.Vin analog electrical )
+
+( net SAR4_ADC_sim.I1.I9.Irelay SAR4_ADC_sim.I1.I9.Irelay analog None )
+
+( net SAR4_ADC_sim.Vref SAR4_ADC_sim.Vref analog electrical )
+( net SAR4_ADC_sim.I1.REF SAR4_ADC_sim.Vref analog electrical )
+( net SAR4_ADC_sim.I1.I9.in SAR4_ADC_sim.Vref analog electrical )
+
+( net SAR4_ADC_sim.I1.I8.Irelay SAR4_ADC_sim.I1.I8.Irelay analog None )
+
+( net SAR4_ADC_sim.Vcm SAR4_ADC_sim.Vcm analog electrical )
+( net SAR4_ADC_sim.I18.in2 SAR4_ADC_sim.Vcm analog electrical )
+( net SAR4_ADC_sim.I1.CM SAR4_ADC_sim.Vcm analog electrical )
+( net SAR4_ADC_sim.I1.I8.in SAR4_ADC_sim.Vcm analog electrical )
+
+( net SAR4_ADC_sim.DAC_analog SAR4_ADC_sim.DAC_analog analog electrical )
+( net SAR4_ADC_sim.I18.in1 SAR4_ADC_sim.DAC_analog analog electrical )
+( net SAR4_ADC_sim.I1.outp SAR4_ADC_sim.DAC_analog analog electrical )
+( net SAR4_ADC_sim.I1.I8.out SAR4_ADC_sim.DAC_analog analog electrical )
+
+( net SAR4_ADC_sim.I1.I7.Irelay SAR4_ADC_sim.I1.I7.Irelay analog None )
+
+( net SAR4_ADC_sim.DAC_out1 SAR4_ADC_sim.DAC_out1 analog/mixed electrical )
+( net SAR4_ADC_sim.I0.DAC_out1 SAR4_ADC_sim.DAC_out1 digital/mixed logic )
+( net SAR4_ADC_sim.I1.b1 SAR4_ADC_sim.DAC_out1 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I16.in SAR4_ADC_sim.DAC_out1 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I5.gate SAR4_ADC_sim.DAC_out1 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I7.gate SAR4_ADC_sim.DAC_out1 analog/mixed electrical )
+
+( net SAR4_ADC_sim.I1.c1 SAR4_ADC_sim.I1.c1 analog electrical )
+( net SAR4_ADC_sim.I1.I6.out SAR4_ADC_sim.I1.c1 analog electrical )
+( net SAR4_ADC_sim.I1.I7.out SAR4_ADC_sim.I1.c1 analog electrical )
+
+( net SAR4_ADC_sim.I1.I6.Irelay SAR4_ADC_sim.I1.I6.Irelay analog None )
+
+( net SAR4_ADC_sim.I1.b0n SAR4_ADC_sim.I1.b0n analog electrical )
+( net SAR4_ADC_sim.I1.I11.out SAR4_ADC_sim.I1.b0n analog electrical )
+( net SAR4_ADC_sim.I1.I6.gate SAR4_ADC_sim.I1.b0n analog electrical )
+
+( net SAR4_ADC_sim.I1.I5.Irelay SAR4_ADC_sim.I1.I5.Irelay analog None )
+
+( net SAR4_ADC_sim.I1.c2 SAR4_ADC_sim.I1.c2 analog electrical )
+( net SAR4_ADC_sim.I1.I4.out SAR4_ADC_sim.I1.c2 analog electrical )
+( net SAR4_ADC_sim.I1.I5.out SAR4_ADC_sim.I1.c2 analog electrical )
+
+( net SAR4_ADC_sim.I1.I4.Irelay SAR4_ADC_sim.I1.I4.Irelay analog None )
+
+( net SAR4_ADC_sim.I1.b1n SAR4_ADC_sim.I1.b1n analog electrical )
+( net SAR4_ADC_sim.I1.I16.out SAR4_ADC_sim.I1.b1n analog electrical )
+( net SAR4_ADC_sim.I1.I4.gate SAR4_ADC_sim.I1.b1n analog electrical )
+
+( net SAR4_ADC_sim.I1.I3.Irelay SAR4_ADC_sim.I1.I3.Irelay analog None )
+
+( net SAR4_ADC_sim.DAC_out2 SAR4_ADC_sim.DAC_out2 analog/mixed electrical )
+( net SAR4_ADC_sim.I0.DAC_out2 SAR4_ADC_sim.DAC_out2 digital/mixed logic )
+( net SAR4_ADC_sim.I1.b2 SAR4_ADC_sim.DAC_out2 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I13.in SAR4_ADC_sim.DAC_out2 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I3.gate SAR4_ADC_sim.DAC_out2 analog/mixed electrical )
+
+( net SAR4_ADC_sim.I1.c4 SAR4_ADC_sim.I1.c4 analog electrical )
+( net SAR4_ADC_sim.I1.I2.out SAR4_ADC_sim.I1.c4 analog electrical )
+( net SAR4_ADC_sim.I1.I3.out SAR4_ADC_sim.I1.c4 analog electrical )
+
+( net SAR4_ADC_sim.I1.I2.Irelay SAR4_ADC_sim.I1.I2.Irelay analog None )
+
+( net SAR4_ADC_sim.I1.b2n SAR4_ADC_sim.I1.b2n analog electrical )
+( net SAR4_ADC_sim.I1.I13.out SAR4_ADC_sim.I1.b2n analog electrical )
+( net SAR4_ADC_sim.I1.I2.gate SAR4_ADC_sim.I1.b2n analog electrical )
+
+( net SAR4_ADC_sim.I1.I1.Irelay SAR4_ADC_sim.I1.I1.Irelay analog None )
+
+( net SAR4_ADC_sim.DAC_out3 SAR4_ADC_sim.DAC_out3 analog/mixed electrical )
+( net SAR4_ADC_sim.I0.DAC_out3 SAR4_ADC_sim.DAC_out3 digital/mixed logic )
+( net SAR4_ADC_sim.I1.b3 SAR4_ADC_sim.DAC_out3 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I17.in SAR4_ADC_sim.DAC_out3 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I1.gate SAR4_ADC_sim.DAC_out3 analog/mixed electrical )
+
+( net SAR4_ADC_sim.I1.c8 SAR4_ADC_sim.I1.c8 analog electrical )
+( net SAR4_ADC_sim.I1.I0.out SAR4_ADC_sim.I1.c8 analog electrical )
+( net SAR4_ADC_sim.I1.I1.out SAR4_ADC_sim.I1.c8 analog electrical )
+
+( net SAR4_ADC_sim.I1.I0.Irelay SAR4_ADC_sim.I1.I0.Irelay analog None )
+
+( net SAR4_ADC_sim.I1.b3n SAR4_ADC_sim.I1.b3n analog electrical )
+( net SAR4_ADC_sim.I1.I17.out SAR4_ADC_sim.I1.b3n analog electrical )
+( net SAR4_ADC_sim.I1.I0.gate SAR4_ADC_sim.I1.b3n analog electrical )
+
+( net SAR4_ADC_sim.I1.VDD SAR4_ADC_sim.I1.VDD analog electrical )
+( net SAR4_ADC_sim.I1.I11.VDD SAR4_ADC_sim.I1.VDD analog electrical )
+( net SAR4_ADC_sim.I1.I13.VDD SAR4_ADC_sim.I1.VDD analog electrical )
+( net SAR4_ADC_sim.I1.I16.VDD SAR4_ADC_sim.I1.VDD analog electrical )
+( net SAR4_ADC_sim.I1.I17.VDD SAR4_ADC_sim.I1.VDD analog electrical )
+
+( net SAR4_ADC_sim.DAC_out0 SAR4_ADC_sim.DAC_out0 analog/mixed electrical )
+( net SAR4_ADC_sim.I0.DAC_out0 SAR4_ADC_sim.DAC_out0 digital/mixed logic )
+( net SAR4_ADC_sim.I1.b0 SAR4_ADC_sim.DAC_out0 analog/mixed electrical )
+( net SAR4_ADC_sim.I1.I11.in SAR4_ADC_sim.DAC_out0 analog/mixed electrical )
+
+( net SAR4_ADC_sim.CLK SAR4_ADC_sim.CLK analog/mixed electrical )
+( net SAR4_ADC_sim.I0.clock SAR4_ADC_sim.CLK digital/mixed logic )
+( net SAR4_ADC_sim.I18.CLK SAR4_ADC_sim.CLK digital/mixed logic )
+( net SAR4_ADC_sim.I16.out SAR4_ADC_sim.CLK analog/mixed electrical )
+
+( net SAR4_ADC_sim.net3 SAR4_ADC_sim.net3 analog electrical )
+( net SAR4_ADC_sim.I16.in SAR4_ADC_sim.net3 analog electrical )
+
+( net SAR4_ADC_sim.VDD SAR4_ADC_sim.VDD analog/mixed electrical )
+( net SAR4_ADC_sim.I0.start SAR4_ADC_sim.VDD digital/mixed logic )
+( net SAR4_ADC_sim.I18.VDD SAR4_ADC_sim.VDD analog/mixed electrical )
+( net SAR4_ADC_sim.I16.VDD SAR4_ADC_sim.VDD analog/mixed electrical )
+
+( net SAR4_ADC_sim.I16.net44 SAR4_ADC_sim.I16.net44 analog electrical )
+
+( net SAR4_ADC_sim.outn SAR4_ADC_sim.outn digital logic )
+( net SAR4_ADC_sim.I18.outn SAR4_ADC_sim.outn digital logic )
+
+( net SAR4_ADC_sim.comp SAR4_ADC_sim.comp digital logic )
+( net SAR4_ADC_sim.I0.comp SAR4_ADC_sim.comp digital logic )
+( net SAR4_ADC_sim.I18.outp SAR4_ADC_sim.comp digital logic )
+
+( net SAR4_ADC_sim.eoc SAR4_ADC_sim.eoc digital logic )
+( net SAR4_ADC_sim.I0.eoc SAR4_ADC_sim.eoc digital logic )
+
+( net SAR4_ADC_sim.out0 SAR4_ADC_sim.out0 digital logic )
+( net SAR4_ADC_sim.I0.out0 SAR4_ADC_sim.out0 digital logic )
+
+( net SAR4_ADC_sim.out1 SAR4_ADC_sim.out1 digital logic )
+( net SAR4_ADC_sim.I0.out1 SAR4_ADC_sim.out1 digital logic )
+
+( net SAR4_ADC_sim.out2 SAR4_ADC_sim.out2 digital logic )
+( net SAR4_ADC_sim.I0.out2 SAR4_ADC_sim.out2 digital logic )
+
+( net SAR4_ADC_sim.out3 SAR4_ADC_sim.out3 digital logic )
+( net SAR4_ADC_sim.I0.out3 SAR4_ADC_sim.out3 digital logic )
+
+( net SAR4_ADC_sim.I0.SW_inp_reg SAR4_ADC_sim.I0.SW_inp_reg digital logic )
+
+( net SAR4_ADC_sim.I0.state SAR4_ADC_sim.I0.state digital logic )
+
+( net SAR4_ADC_sim.I0.next SAR4_ADC_sim.I0.next digital logic )
+
+( connect
+   connectLib.Bidir_2:module
+   SAR4_ADC_sim.CLK
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I18.CLK logic digital )
+   )
+   "connect Bidir_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   SAR4_ADC_sim.CLK
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.clock logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.L2E_2:module
+   SAR4_ADC_sim.DAC_out0
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.DAC_out0 logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   SAR4_ADC_sim.DAC_out1
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.DAC_out1 logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   SAR4_ADC_sim.DAC_out2
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.DAC_out2 logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   SAR4_ADC_sim.DAC_out3
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.DAC_out3 logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   SAR4_ADC_sim.SW_inp
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.SW_inp logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   SAR4_ADC_sim.SW_ref
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.SW_ref logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.reset logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   SAR4_ADC_sim.VDD
+   electrical
+   analog
+   (
+    ( SAR4_ADC_sim.I0.start logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance SAR4_ADC_sim.I1.I21 analog)
+(instance SAR4_ADC_sim.I1.I20 analog)
+(instance SAR4_ADC_sim.I1.I10 analog)
+(instance SAR4_ADC_sim.I1.I9 analog)
+(instance SAR4_ADC_sim.I1.I8 analog)
+(instance SAR4_ADC_sim.I1.I7 analog)
+(instance SAR4_ADC_sim.I1.I6 analog)
+(instance SAR4_ADC_sim.I1.I5 analog)
+(instance SAR4_ADC_sim.I1.I4 analog)
+(instance SAR4_ADC_sim.I1.I3 analog)
+(instance SAR4_ADC_sim.I1.I2 analog)
+(instance SAR4_ADC_sim.I1.I1 analog)
+(instance SAR4_ADC_sim.I1.I0 analog)
+(instance SAR4_ADC_sim.I1.I17.M0 analog)
+(instance SAR4_ADC_sim.I1.I17.M1 analog)
+(instance SAR4_ADC_sim.I1.I17 analog)
+(instance SAR4_ADC_sim.I1.I16.M0 analog)
+(instance SAR4_ADC_sim.I1.I16.M1 analog)
+(instance SAR4_ADC_sim.I1.I16 analog)
+(instance SAR4_ADC_sim.I1.I13.M0 analog)
+(instance SAR4_ADC_sim.I1.I13.M1 analog)
+(instance SAR4_ADC_sim.I1.I13 analog)
+(instance SAR4_ADC_sim.I1.I11.M0 analog)
+(instance SAR4_ADC_sim.I1.I11.M1 analog)
+(instance SAR4_ADC_sim.I1.I11 analog)
+(instance SAR4_ADC_sim.I1.C30 analog)
+(instance SAR4_ADC_sim.I1.C29 analog)
+(instance SAR4_ADC_sim.I1.C28 analog)
+(instance SAR4_ADC_sim.I1.C27 analog)
+(instance SAR4_ADC_sim.I1.C26 analog)
+(instance SAR4_ADC_sim.I1.C25 analog)
+(instance SAR4_ADC_sim.I1.C24 analog)
+(instance SAR4_ADC_sim.I1.C23 analog)
+(instance SAR4_ADC_sim.I1.C22 analog)
+(instance SAR4_ADC_sim.I1.C21 analog)
+(instance SAR4_ADC_sim.I1.C20 analog)
+(instance SAR4_ADC_sim.I1.C19 analog)
+(instance SAR4_ADC_sim.I1.C18 analog)
+(instance SAR4_ADC_sim.I1.C17 analog)
+(instance SAR4_ADC_sim.I1.C16 analog)
+(instance SAR4_ADC_sim.I1.C15 analog)
+(instance SAR4_ADC_sim.I1.C14 analog)
+(instance SAR4_ADC_sim.I1.C13 analog)
+(instance SAR4_ADC_sim.I1.C12 analog)
+(instance SAR4_ADC_sim.I1.C11 analog)
+(instance SAR4_ADC_sim.I1.C10 analog)
+(instance SAR4_ADC_sim.I1.C9 analog)
+(instance SAR4_ADC_sim.I1.C8 analog)
+(instance SAR4_ADC_sim.I1.C7 analog)
+(instance SAR4_ADC_sim.I1.C6 analog)
+(instance SAR4_ADC_sim.I1.C5 analog)
+(instance SAR4_ADC_sim.I1.C4 analog)
+(instance SAR4_ADC_sim.I1.C3 analog)
+(instance SAR4_ADC_sim.I1.C2 analog)
+(instance SAR4_ADC_sim.I1.C1 analog)
+(instance SAR4_ADC_sim.I1.C0 analog)
+(instance SAR4_ADC_sim.I1.V0 analog)
+(instance SAR4_ADC_sim.I1 analog)
+(instance SAR4_ADC_sim.I16.M0 analog)
+(instance SAR4_ADC_sim.I16.M2 analog)
+(instance SAR4_ADC_sim.I16.M3 analog)
+(instance SAR4_ADC_sim.I16.M1 analog)
+(instance SAR4_ADC_sim.I16 analog)
+(instance SAR4_ADC_sim.I18 mixed)
+(instance SAR4_ADC_sim.I0 digital)
+(instance SAR4_ADC_sim.V3 analog)
+(instance SAR4_ADC_sim.V2 analog)
+(instance SAR4_ADC_sim.V1 analog)
+(instance SAR4_ADC_sim.V4 analog)
+(instance SAR4_ADC_sim.V0 analog)
+(instance SAR4_ADC_sim mixed)
+(instance cds_globals analog)

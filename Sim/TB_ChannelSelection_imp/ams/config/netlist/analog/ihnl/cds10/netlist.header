@@ -1,6 +1,6 @@
 
-// Library name: Stimulator_IMP
-// Cell name: Idac_5bit_ST
-// View name: schematic
-// Inherited view list: schematic
-subckt Idac_5bit_ST
+// Library name: D_CELLS_HD
+// Cell name: AND2HDX0
+// View name: cmos_sch
+// Inherited view list: cmos_sch
+subckt AND2HDX0

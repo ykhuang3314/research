@@ -1,4 +1,4 @@
-TOOL:	xrun(64)	18.03-s018: Started on Apr 05, 2021 at 11:42:19 CEST
+TOOL:	xrun(64)	18.03-s018: Started on Apr 13, 2021 at 14:33:25 CEST
 xrun
 	-f /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi/mapi_run.args
 		-64bit
@@ -15,7 +15,7 @@ xrun
 		-nclibdirpath /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi/
 		-cdslib /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi/cds.lib
 		-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
-		-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v lib:Stimulator_IMP cell:Decoder8 view:functional"
+		-amscompilefile "file:/home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
 		/home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi//dummyMapi.vams
 		/home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi//dummyMapi.vhms
 xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
@@ -23,10 +23,10 @@ file: /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.map
 file: /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v
 	module Stimulator_IMP.Digital_Stimulus_V2_ST:functional
 		errors: 0, warnings: 0
-file: /home/ykhuang/research/Stimulator_IMP/Decoder8/functional/verilog.v
-	module Stimulator_IMP.Decoder8:functional
+file: /home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v
+	module Stimulator_IMP.Decoder3_8:functional
 		errors: 0, warnings: 0
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun(64)	18.03-s018: Exiting on Apr 05, 2021 at 11:42:22 CEST  (total: 00:00:03)
+TOOL:	xrun(64)	18.03-s018: Exiting on Apr 13, 2021 at 14:33:28 CEST  (total: 00:00:03)

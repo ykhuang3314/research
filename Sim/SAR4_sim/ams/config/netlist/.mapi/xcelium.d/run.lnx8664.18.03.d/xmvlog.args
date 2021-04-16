@@ -1,0 +1,41 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ALLOWREDEFINITION
+-INCDIR
+/home/ykhuang/research/
+-XMLIBDIRPATH
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi/
+-CDSLIB
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//dummyMapi.vams
+-HDLVAR
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/research/IL2239_SAR_ADC/digital_stimuli_SAR4/verilogams/verilog.vams
+/home/ykhuang/research/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/research/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:SAR4 view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/IL2239_SAR_ADC/digital_stimuli_SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:digital_stimuli_SAR4 view:verilogams"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-amscommfile
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/amscomm.list

@@ -1,48 +1,12 @@
 
-HalfBridge_ST I19 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[7]), .Ctrl_HS(CtrlHS[7]), .OUT(net12), .Ist(Ist));
+Ext_Iref_ST I0 ( .Iext(Iext), .vdd3(vdd3), .vss(vss), .Bias1(Bias1), 
+    .Bias2(Bias2));
 
-HalfBridge_ST I17 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[6]), .Ctrl_HS(CtrlHS[6]), .OUT(net13), .Ist(Ist));
+Idac_5bit_ST I1 ( .Enable(Enable_ST), .Idac(net9), .vdd3(vdd3), 
+    .Bias1(Bias1), .Bias2(Bias2), .D0(Mag0_ST), .D1(Mag1_ST), 
+    .D2(Mag2_ST), .D3(Mag3_ST), .D4(Mag4_ST));
 
-HalfBridge_ST I15 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[5]), .Ctrl_HS(CtrlHS[5]), .OUT(net14), .Ist(Ist));
-
-HalfBridge_ST I13 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[4]), .Ctrl_HS(CtrlHS[4]), .OUT(net15), .Ist(Ist));
-
-HalfBridge_ST I11 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[3]), .Ctrl_HS(CtrlHS[3]), .OUT(net16), .Ist(Ist));
-
-HalfBridge_ST I9 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[2]), .Ctrl_HS(CtrlHS[2]), .OUT(net17), .Ist(Ist));
-
-HalfBridge_ST I7 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[1]), .Ctrl_HS(CtrlHS[1]), .OUT(net18), .Ist(Ist));
-
-HalfBridge_ST I0 ( .Ist(Ist), .\vdd3! (cds_globals.\vdd3! ), 
-    .vddh(vddh), .\vdde! (cds_globals.\vdde! ), .\gnd! 
-    (cds_globals.\gnd! ), .Ctrl_LS(CtrlLS[0]), .Ctrl_HS(CtrlHS[0]), 
-    .OUT(net19));
-
-CurrentSource_All_ST I26 ( .vss(cds_globals.\gnd! ), .Ist(Ist), 
-    .Iext(net08), .vdd3(cds_globals.\vdd3! ), .vddh(vddh), 
-    .Enable_ST(Enable_ST), .Mag0_ST(Mag_ST[0]), .Mag1_ST(Mag_ST[1]), 
-    .Mag2_ST(Mag_ST[2]), .Mag3_ST(Mag_ST[3]), .Mag4_ST(Mag_ST[4]));
-
-Decoder8 I30 ( .Dout(CtrlHS), .Bin(ChSel_HS));
-
-Decoder8 I31 ( .Dout(CtrlLS), .Bin(ChSel_LS));
-
-Digital_Stimulus_V2_ST #( .Ch_Sweeping(1'b1) ) I32 ( 
-    .ChSel_HS(ChSel_HS), .ChSel_LS(ChSel_LS), .EN_ST(Enable_ST), 
-    .MAG_ST(Mag_ST));
+CurrentMirror_ST I2 ( .vss(vss), .Ist(Ist), .Iref(net9), .vddh(vddh), 
+    .vdd3(vdd3), .enable(Enable_ST));
 
 endmodule

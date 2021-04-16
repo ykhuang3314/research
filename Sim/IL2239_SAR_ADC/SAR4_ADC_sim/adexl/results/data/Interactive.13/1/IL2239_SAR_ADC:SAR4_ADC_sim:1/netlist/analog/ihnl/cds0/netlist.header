@@ -1,0 +1,6 @@
+
+// Library name: IL2239_SAR_ADC
+// Cell name: inverterX2
+// View name: schematic
+// Inherited view list: schematic
+subckt inverterX2

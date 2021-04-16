@@ -1,0 +1,31 @@
+// Library - IL2239_SAR_ADC, Cell - SAR4_ADC_sim, View - schematic
+// LAST TIME SAVED: Apr 14 23:09:53 2021
+// NETLIST TIME: Apr 14 23:15:15 2021
+`timescale 1ns / 1ps 
+
+`worklib IL2239_SAR_ADC
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="IL2239_SAR_ADC", dfII_cell="SAR4_ADC_sim", dfII_view="schematic", worklib_name="IL2239_SAR_ADC", view_name="schematic", last_save_time="Apr 14 23:09:53 2021" *)
+
+module SAR4_ADC_sim ();
+
+
+DAC4_SH I1 ( .VSS(cds_globals.\gnd! ), .REF(Vref), .CM(Vcm), 
+    .outp(DAC_analog), .b0(DAC_out0), .b1(DAC_out1), .b2(DAC_out2), 
+    .b3(DAC_out3), .SW_inp(SW_inp), .SW_ref(SW_ref), .inp(Vin));
+
+bufferX2 I16 ( .VSS(cds_globals.\gnd! ), .VDD(VDD), .out(CLK), 
+    .in(net3));
+
+comp_v2 I18 ( .VSS(cds_globals.\gnd! ), .CLK(CLK), .VDD(VDD), 
+    .outn(outn), .outp(comp), .in1(DAC_analog), .in2(Vcm));
+
+SAR4 I0 ( .DAC_out0(DAC_out0), .DAC_out1(DAC_out1), 
+    .DAC_out2(DAC_out2), .DAC_out3(DAC_out3), .SW_inp(SW_inp), 
+    .SW_ref(SW_ref), .eoc(eoc), .out0(out0), .out1(out1), .out2(out2), 
+    .out3(out3), .clock(CLK), .comp(comp), .reset(cds_globals.\gnd! ), 
+    .start(VDD));
+
+endmodule

@@ -1,0 +1,11 @@
+desvar,*Vref,*Vref,*400m
+desvar,*Vin,*Vin,*180m
+desvar,*VDD,*VDD,*1.8
+desvar,*Vcm,*Vcm,*200m
+desvar,*fclk,*fclk,*24M
+desvar,*dCap,*dCap,*0
+desvar,*Cchannel,*Cchannel,*0
+desvar,*Cap,*Cap,*25f
+desvar,*Ron,*Ron,*140
+desvar,*Roff,*Roff,*500M
+desvar,*fin,*fin,*437500

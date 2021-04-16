@@ -1,0 +1,67 @@
+// Library - IL2239_SAR_ADC, Cell - DAC4_SH, View - schematic
+// LAST TIME SAVED: Apr 14 23:04:17 2021
+// NETLIST TIME: Apr 14 23:09:43 2021
+`timescale 1ns / 1ps 
+
+`worklib IL2239_SAR_ADC
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="IL2239_SAR_ADC", dfII_cell="DAC4_SH", dfII_view="schematic", worklib_name="IL2239_SAR_ADC", view_name="schematic", last_save_time="Apr 14 23:04:17 2021" *)
+
+module DAC4_SH (outp, CM, REF, SW_inp, SW_ref, VSS, b0, b1, b2, b3, 
+    inp);
+
+output  outp;
+
+input  CM, REF, SW_inp, SW_ref, VSS, b0, b1, b2, b3, inp;
+
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I21 ( 
+    .in(net85), .out(net055), .gate(SW_inp));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I20 ( 
+    .in(VSS), .out(net055), .gate(SW_ref));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I10 ( 
+    .in(inp), .out(net85), .gate(SW_inp));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I9 ( 
+    .in(REF), .out(net85), .gate(SW_ref));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I8 ( .in(CM), 
+    .out(outp), .gate(SW_inp));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I7 ( 
+    .in(net85), .out(c1), .gate(b1));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I6 ( 
+    .in(VSS), .out(c1), .gate(b0n));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I5 ( 
+    .in(net85), .out(c2), .gate(b1));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I4 ( 
+    .in(VSS), .out(c2), .gate(b1n));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I3 ( 
+    .in(net85), .out(c4), .gate(b2));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I2 ( 
+    .in(VSS), .out(c4), .gate(b2n));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I1 ( 
+    .in(net85), .out(c8), .gate(b3));
+
+relay #( .Ron(cds_globals.Ron), .Roff(cds_globals.Roff) ) I0 ( 
+    .in(VSS), .out(c8), .gate(b3n));
+
+inverterX2 I17 ( .VSS(VSS), .VDD(VDD), .out(b3n), .in(b3));
+
+inverterX2 I16 ( .VSS(VSS), .VDD(VDD), .out(b1n), .in(b1));
+
+inverterX2 I13 ( .VSS(VSS), .VDD(VDD), .out(b2n), .in(b2));
+
+inverterX2 I11 ( .VSS(VSS), .VDD(VDD), .out(b0n), .in(b0));
+
+endmodule

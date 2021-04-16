@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  IL2239_SAR_ADC 
+cell: SAR4_sim 
+view: config 
+topCellLib: IL2239_SAR_ADC 

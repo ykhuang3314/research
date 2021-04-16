@@ -1,0 +1,34 @@
+//Revision 3
+//NOTE
+// Default config view template for AMS netlister(s) in ADE.
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config SAR4_ADC_FFT_sim;
+design IL2239_SAR_ADC.SAR4_ADC_FFT_sim:schematic;
+liblist IL2239_SAR_ADC, PRIMLIB, analogLib, ahdlLib;
+
+viewlist spectre, verilog, verilogams, behavioral, functional, schematic, veriloga, wreal, symbol;
+stoplist spectre, symbol;
+
+
+cell IL2239_SAR_ADC.DAC4_SH binding :schematic;
+cell IL2239_SAR_ADC.SAR4 binding :verilogams;
+cell IL2239_SAR_ADC.bufferX2 binding :schematic;
+cell IL2239_SAR_ADC.comp_v2 binding :verilogams;
+cell IL2239_SAR_ADC.inverterX2 binding :schematic;
+cell IL2239_SAR_ADC.relay binding :verilogams;
+
+cell PRIMLIB.nel binding :spectre;
+cell PRIMLIB.pel binding :spectre;
+
+cell ahdlLib.dac_8bit_ideal binding :veriloga;
+
+cell analogLib.cap binding :spectre;
+cell analogLib.vdc binding :spectre;
+cell analogLib.vsource binding :spectre;
+
+
+endconfig

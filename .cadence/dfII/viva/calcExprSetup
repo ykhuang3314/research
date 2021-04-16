@@ -1,0 +1,4 @@
+artistResMgrCalcExprSetup("false" "plot" "E0" "dB20(VF("/Vout"))")
+artistResMgrCalcExprSetup("false" "plot" "Phase margin" "phaseMargin(VF("/Vout_open_loop"))")
+artistResMgrCalcExprSetup("false" "plot" "Zin_mag" "abs(((VF("/Vp_bioz") - VF("/Vn_bioz")) / 1e-05))")
+artistResMgrCalcExprSetup("false" "plot" "VOUT_diff_trans" "(VT("/VOUT_P") - VT("/VOUT_N"))")

@@ -1,0 +1,37 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Apr 14 22:41:13 2021"
+"date" "Apr 14 22:41:13 2021"
+"simulator" "ams"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 1
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("Vref")
+)
+"Vref=0.4" "runObject" (
+(
+"../../../1/IL2239_SAR_ADC:SAR4_ADC_sim:1/psf/logFile"
+"../../../1/IL2239_SAR_ADC:SAR4_ADC_sim:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist"
+"dataDir" "../../../1/IL2239_SAR_ADC:SAR4_ADC_sim:1"
+ "Vref" 4.000000e-01
+)
+
+END

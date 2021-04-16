@@ -1,0 +1,14 @@
+cellMap,*bufferX2,*bufferX2,*IL2239_SAR_ADC,*schematic
+netMap,*bufferX2,*gnd!,*0
+instMap,*bufferX2,*M0,*M0
+instMaster,*bufferX2,*M0,*PRIMLIB_pel_spectre,*pel
+instMap,*bufferX2,*M2,*M2
+instMaster,*bufferX2,*M2,*PRIMLIB_pel_spectre,*pel
+instMap,*bufferX2,*M3,*M3
+instMaster,*bufferX2,*M3,*PRIMLIB_nel_spectre,*nel
+instMap,*bufferX2,*M1,*M1
+instMaster,*bufferX2,*M1,*PRIMLIB_nel_spectre,*nel
+portMap,*bufferX2,*VDD,*VDD
+portMap,*bufferX2,*VSS,*VSS
+portMap,*bufferX2,*in,*in
+portMap,*bufferX2,*out,*out

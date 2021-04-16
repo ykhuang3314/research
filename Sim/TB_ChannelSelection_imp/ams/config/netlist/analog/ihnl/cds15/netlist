@@ -1,0 +1,30 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_ChannelSelection_imp
+// View name: schematic
+// Inherited view list: schematic
+I19 HalfBridge_ST
+I17 HalfBridge_ST
+I15 HalfBridge_ST
+I13 HalfBridge_ST
+I11 HalfBridge_ST
+I9 HalfBridge_ST
+I7 HalfBridge_ST
+I0 HalfBridge_ST
+V3 (vdd! 0) vsource dc=1.8 type=dc
+V2 (vddh 0) vsource dc=40 type=dc
+V0 (vdde! 0) vsource dc=1.8 type=dc
+V1 (vdd3! 0) vsource dc=3.3 type=dc
+R10 (net04 net06) resistor r=0
+R9 (net02 net04) resistor r=0
+R8 (net01 net02) resistor r=0
+R7 (net16 net01) resistor r=500
+R6 (net01 net12) resistor r=500
+R5 (net02 net13) resistor r=500
+R4 (net17 net02) resistor r=500
+R3 (net04 net14) resistor r=500
+R2 (net18 net04) resistor r=500
+R1 (net06 net15) resistor r=500
+R0 (net19 net06) resistor r=500
+I26 CurrentSource_All_ST
+I27 (vdd3! net08) isource dc=10u type=dc

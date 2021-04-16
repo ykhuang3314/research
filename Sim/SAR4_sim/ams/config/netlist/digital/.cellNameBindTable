@@ -1,0 +1,3 @@
+("IL2239_SAR_ADC" "digital_stimuli_SAR4" "verilogams") "digital_stimuli_SAR4"
+("IL2239_SAR_ADC" "SAR4" "verilogams") "SAR4"
+("analogLib" "vsource" "spectre") "vsource"

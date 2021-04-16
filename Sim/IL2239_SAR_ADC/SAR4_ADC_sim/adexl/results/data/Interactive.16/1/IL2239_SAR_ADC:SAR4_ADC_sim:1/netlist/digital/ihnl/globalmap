@@ -1,0 +1,23 @@
+CADENCE IHNL04120
+$model
+IL2239_SAR_ADC/DAC4_SH/schematic IL2239_SAR_ADC/DAC4_SH/schematic/schematic/IL2239_SAR_ADC_SAR4_ADC_sim_config/0 DAC4_SH
+IL2239_SAR_ADC/SAR4_ADC_sim/schematic IL2239_SAR_ADC/SAR4_ADC_sim/schematic/schematic/IL2239_SAR_ADC_SAR4_ADC_sim_config/1 SAR4_ADC_sim
+IL2239_SAR_ADC/inverterX2/schematic IL2239_SAR_ADC/inverterX2/schematic/schematic/IL2239_SAR_ADC_SAR4_ADC_sim_config/0 inverterX2
+IL2239_SAR_ADC/bufferX2/schematic IL2239_SAR_ADC/bufferX2/schematic/schematic/IL2239_SAR_ADC_SAR4_ADC_sim_config/0 bufferX2
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+Cchannel cds_globals.Cchannel
+Vref cds_globals.Vref
+Ron cds_globals.Ron
+VDD cds_globals.VDD
+fclk cds_globals.fclk
+Vin cds_globals.Vin
+Cap cds_globals.Cap
+Roff cds_globals.Roff
+fin cds_globals.fin
+dCap cds_globals.dCap
+Vcm cds_globals.Vcm
+$endparam

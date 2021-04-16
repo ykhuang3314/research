@@ -1,0 +1,26 @@
+// Library - Stimulator_TestBench, Cell - TB_ChannelSelection_imp, View
+//- schematic
+// LAST TIME SAVED: Apr 13 14:33:06 2021
+// NETLIST TIME: Apr 13 14:33:29 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_ChannelSelection_imp", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Apr 13 14:33:06 2021" *)
+
+module TB_ChannelSelection_imp ();
+
+// Buses in the design
+
+wire  [4:0]  Mag_ST;
+
+wire  [7:0]  CtrlLS;
+
+wire  [2:0]  ChSel_LS;
+
+wire  [7:0]  CtrlHS;
+
+wire  [2:0]  ChSel_HS;
+

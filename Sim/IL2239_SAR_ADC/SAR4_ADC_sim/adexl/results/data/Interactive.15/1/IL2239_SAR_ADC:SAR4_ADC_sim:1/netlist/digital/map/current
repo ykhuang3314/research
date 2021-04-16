@@ -1,0 +1,43 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "SAR4_ADC_sim"
+  repList "functional behavioral spectre schematic symbol"
+  stopList "spectre symbol"
+  globalList "gnd!"
+  hierDelim "."
+  globalHierPrefix "cds_globals."
+  prefixHierarchyWithCV "YES"
+  netlistDir "/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/digital"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+  slashCheck   "t"
+ )
+( net
+( "gnd!" "cds_globals.\\gnd! " )
+ )
+( model
+( "IL2239_SAR_ADC/inverterX2/schematic" "inverterX2" )
+( "IL2239_SAR_ADC/DAC4_SH/schematic" "DAC4_SH" )
+( "IL2239_SAR_ADC/bufferX2/schematic" "bufferX2" )
+( "IL2239_SAR_ADC/SAR4_ADC_sim/schematic" "SAR4_ADC_sim" )
+ )
+( "Roff" "cds_globals.Roff" )
+( "fin" "cds_globals.fin" )
+( "Ron" "cds_globals.Ron" )
+( "Vref" "cds_globals.Vref" )
+( "Cchannel" "cds_globals.Cchannel" )
+( "Vin" "cds_globals.Vin" )
+( "fclk" "cds_globals.fclk" )
+( "VDD" "cds_globals.VDD" )
+( "Vcm" "cds_globals.Vcm" )
+( "dCap" "cds_globals.dCap" )
+( "Cap" "cds_globals.Cap" )
+( "SAR4_ADC_sim" "ihnl/cds3/map" )
+( "DAC4_SH" "ihnl/cds1/map" )
+( "inverterX2" "ihnl/cds0/map" )
+( "bufferX2" "ihnl/cds2/map" )
+ )

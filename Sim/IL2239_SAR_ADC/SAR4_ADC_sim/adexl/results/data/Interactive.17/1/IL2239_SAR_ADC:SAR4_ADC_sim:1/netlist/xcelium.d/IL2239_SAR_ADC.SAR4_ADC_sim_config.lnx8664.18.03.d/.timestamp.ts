@@ -1,0 +1,9 @@
+1618428763 /home/ykhuang/research/IL2239_SAR_ADC/relay/verilogams/verilog.vams
+1618435677 /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/cds_globals.vams
+1618434563 /home/ykhuang/research/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
+1618428763 /home/ykhuang/research/IL2239_SAR_ADC/comp_v2/verilogams/verilog.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
+1618436442 /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/netlist.vams
+1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams

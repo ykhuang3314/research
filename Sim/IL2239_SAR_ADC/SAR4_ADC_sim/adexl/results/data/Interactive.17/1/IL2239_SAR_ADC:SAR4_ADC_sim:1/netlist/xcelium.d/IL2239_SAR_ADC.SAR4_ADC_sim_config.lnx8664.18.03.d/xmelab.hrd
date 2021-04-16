@@ -1,0 +1,36 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/sharedData/CDS/ahdl/input.ahdlSimDB"
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCONNRULES
+ConnRules_inhconn_full_fast_gnd
+
+IL2239_SAR_ADC.SAR4_ADC_sim:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:SAR4 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/comp_v2/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:comp_v2 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/relay/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:relay view:verilogams"
+-SPECTRE_ARGS
+++aps

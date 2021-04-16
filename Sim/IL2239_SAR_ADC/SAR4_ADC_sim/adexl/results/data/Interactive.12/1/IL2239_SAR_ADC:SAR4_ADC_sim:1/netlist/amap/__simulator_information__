@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"__artInstanceTerminalDelimiter__" "."
+"__artHierarchyDelimiter__" "."
+"__netlister__" "AMS-UNL"
+"__lib__" "IL2239_SAR_ADC"
+"__cell__" "SAR4_ADC_sim"
+"__view__" "config"
+"__topcell__" "SAR4_ADC_sim"
+"__outputformat__" "sst2"

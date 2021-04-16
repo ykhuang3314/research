@@ -1,0 +1,7 @@
+netMap,*SAR4_sim,*gnd!,*cds_globals.\gnd! 
+instMap,*SAR4_sim,*I0,*I0
+instMaster,*SAR4_sim,*I0,*IL2239_SAR_ADC_SAR4_verilogams
+instMap,*SAR4_sim,*I1,*I1
+instMaster,*SAR4_sim,*I1,*IL2239_SAR_ADC_digital_stimuli_SAR4_verilogams
+cellMap,*SAR4_sim,*SAR4_sim,*IL2239_SAR_ADC,*schematic
+topMap,*SAR4_sim

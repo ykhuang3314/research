@@ -1,0 +1,2 @@
+netMap,*inverterX2,*gnd!,*cds_globals.\gnd! 
+cellMap,*inverterX2,*inverterX2,*IL2239_SAR_ADC,*schematic

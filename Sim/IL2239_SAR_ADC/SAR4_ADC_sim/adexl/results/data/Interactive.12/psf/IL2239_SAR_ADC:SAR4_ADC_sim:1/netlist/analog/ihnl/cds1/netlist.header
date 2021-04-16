@@ -1,0 +1,6 @@
+
+// Library name: IL2239_SAR_ADC
+// Cell name: DAC4_SH
+// View name: schematic
+// Inherited view list: schematic
+subckt DAC4_SH

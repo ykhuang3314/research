@@ -1,0 +1,38 @@
+    C30 (outp c1) capacitor c=Cap+dCap
+    C29 (c1 SW_inp) capacitor c=Cchannel/2
+    C28 (c1 SW_ref) capacitor c=Cchannel/2
+    C27 (net85 SW_inp) capacitor c=Cchannel/2
+    C26 (VSS SW_ref) capacitor c=Cchannel/2
+    C25 (inp SW_inp) capacitor c=Cchannel/2
+    C24 (net85 SW_inp) capacitor c=Cchannel/2
+    C23 (REF SW_ref) capacitor c=Cchannel/2
+    C22 (net85 SW_ref) capacitor c=Cchannel/2
+    C21 (CM SW_inp) capacitor c=Cchannel/2
+    C20 (outp SW_inp) capacitor c=Cchannel/2
+    C19 (outp c1) capacitor c=Cap+dCap
+    C18 (net85 b1) capacitor c=Cchannel/2
+    C17 (c1 b1) capacitor c=Cchannel/2
+    C16 (VSS b0n) capacitor c=Cchannel/2
+    C15 (c1 b0n) capacitor c=Cchannel/2
+    C14 (outp c2) capacitor c=2*Cap+2*dCap
+    C13 (net85 b1) capacitor c=Cchannel/2
+    C12 (c2 b1) capacitor c=Cchannel/2
+    C11 (VSS b1n) capacitor c=Cchannel/2
+    C10 (c2 b1n) capacitor c=Cchannel/2
+    C9 (outp c4) capacitor c=4*Cap+4*dCap
+    C8 (net85 b2) capacitor c=Cchannel/2
+    C7 (c4 b2) capacitor c=Cchannel/2
+    C6 (VSS b2n) capacitor c=Cchannel/2
+    C5 (c4 b2n) capacitor c=Cchannel/2
+    C4 (outp c8) capacitor c=8*Cap+8*dCap
+    C3 (net85 b3) capacitor c=Cchannel/2
+    C2 (c8 b3) capacitor c=Cchannel/2
+    C1 (VSS b3n) capacitor c=Cchannel/2
+    C0 (c8 b3n) capacitor c=Cchannel/2
+    I17 inverterX2
+    I16 inverterX2
+    I13 inverterX2
+    I11 inverterX2
+    V0 (VDD 0) vsource dc=1.8 type=dc
+ends DAC4_SH
+// End of subcircuit definition.

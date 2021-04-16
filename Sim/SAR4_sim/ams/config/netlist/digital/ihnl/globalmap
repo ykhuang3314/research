@@ -1,0 +1,9 @@
+CADENCE IHNL04120
+$model
+IL2239_SAR_ADC/SAR4_sim/schematic IL2239_SAR_ADC/SAR4_sim/schematic/schematic/IL2239_SAR_ADC_SAR4_sim_config/1 SAR4_sim
+$endmodel
+$net
+gnd! cds_globals.\gnd! 
+$endnet
+$param
+$endparam

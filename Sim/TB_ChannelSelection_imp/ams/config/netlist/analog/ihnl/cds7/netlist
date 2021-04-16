@@ -1,18 +1,4 @@
-    MN1 (out a net11 inh_ground_gnd) ne w=GT_PDW l=GT_PDL as=sx*(GT_PDW) \
-        ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) pd=2*(sx+(GT_PDW)) \
-        nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) par1=((1)*(1)) \
-        xf_subext=0
-    MN2 (net11 b inh_ground_gnd inh_ground_gnd) ne w=GT_PDW l=GT_PDL \
-        as=sx*(GT_PDW) ad=sx*(GT_PDW) ps=2*(sx+(GT_PDW)) \
-        pd=2*(sx+(GT_PDW)) nrs=lc/(GT_PDW) nrd=lc/(GT_PDW) m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
-    MP1 (out a inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
-        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
-        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
-        par1=((1)*(1))
-    MP2 (out b inh_power_vdd inh_power_vdd) pe w=GT_PUW l=GT_PUL \
-        as=sx*(GT_PUW) ad=sx*(GT_PUW) ps=2*(sx+(GT_PUW)) \
-        pd=2*(sx+(GT_PUW)) nrs=lc/(GT_PUW) nrd=lc/(GT_PUW) m=(1)*(1) \
-        par1=((1)*(1))
-ends nand2
+    invr_1 invrv3 GT_PDW=960.00n GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 \
+        GT_PUW=2.94u GT_PUL=300.00n
+ends IN_3VX2
 // End of subcircuit definition.

@@ -1,2 +1,5 @@
 
+invrv3 #( .sx(4.8e-07), .GT_PUW(2.94u), .GT_PDL(350.00n), .lc(2.7e-07), .GT_PUL(300.00n) 
+    , .GT_PDW(960.00n) ) invr_1 ( .in(A), .out(Q));
+
 endmodule

@@ -1,0 +1,17 @@
+cellMap,*SAR4_ADC_sim,*SAR4_ADC_sim,*null,*null
+topMap,*SAR4_ADC_sim
+netMap,*SAR4_ADC_sim,*gnd!,*0
+instMap,*SAR4_ADC_sim,*I1,*I1
+instMaster,*SAR4_ADC_sim,*I1,*IL2239_SAR_ADC_DAC4_SH_schematic,*DAC4_SH
+instMap,*SAR4_ADC_sim,*V3,*V3
+instMaster,*SAR4_ADC_sim,*V3,*analogLib_vdc_spectre,*vsource
+instMap,*SAR4_ADC_sim,*V2,*V2
+instMaster,*SAR4_ADC_sim,*V2,*analogLib_vdc_spectre,*vsource
+instMap,*SAR4_ADC_sim,*V1,*V1
+instMaster,*SAR4_ADC_sim,*V1,*analogLib_vdc_spectre,*vsource
+instMap,*SAR4_ADC_sim,*V4,*V4
+instMaster,*SAR4_ADC_sim,*V4,*analogLib_vsource_spectre,*vsource
+instMap,*SAR4_ADC_sim,*V0,*V0
+instMaster,*SAR4_ADC_sim,*V0,*analogLib_vsource_spectre,*vsource
+instMap,*SAR4_ADC_sim,*I16,*I16
+instMaster,*SAR4_ADC_sim,*I16,*IL2239_SAR_ADC_bufferX2_schematic,*bufferX2

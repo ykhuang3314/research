@@ -1,0 +1,11 @@
+netMap,*SAR4_ADC_sim,*gnd!,*cds_globals.\gnd! 
+instMap,*SAR4_ADC_sim,*I1,*I1
+instMaster,*SAR4_ADC_sim,*I1,*IL2239_SAR_ADC_DAC4_SH_schematic
+instMap,*SAR4_ADC_sim,*I16,*I16
+instMaster,*SAR4_ADC_sim,*I16,*IL2239_SAR_ADC_bufferX2_schematic
+instMap,*SAR4_ADC_sim,*I18,*I18
+instMaster,*SAR4_ADC_sim,*I18,*IL2239_SAR_ADC_comp_v2_verilogams
+instMap,*SAR4_ADC_sim,*I0,*I0
+instMaster,*SAR4_ADC_sim,*I0,*IL2239_SAR_ADC_SAR4_verilogams
+cellMap,*SAR4_ADC_sim,*SAR4_ADC_sim,*IL2239_SAR_ADC,*schematic
+topMap,*SAR4_ADC_sim

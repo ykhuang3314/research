@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 14 23:27:51 2021
+// Design library name: IL2239_SAR_ADC
+// Design cell name: SAR4_ADC_sim
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

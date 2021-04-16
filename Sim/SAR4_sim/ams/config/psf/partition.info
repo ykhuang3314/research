@@ -1,0 +1,82 @@
+( global ( resolution_type basic ) )
+
+( net SAR4_sim.eoc SAR4_sim.eoc digital logic )
+( net SAR4_sim.I0.eoc SAR4_sim.eoc digital logic )
+
+( net SAR4_sim.SW_inp SAR4_sim.SW_inp digital logic )
+( net SAR4_sim.I0.SW_inp SAR4_sim.SW_inp digital logic )
+
+( net SAR4_sim.SW_ref SAR4_sim.SW_ref digital logic )
+( net SAR4_sim.I0.SW_ref SAR4_sim.SW_ref digital logic )
+
+( net SAR4_sim.out0 SAR4_sim.out0 digital logic )
+( net SAR4_sim.I0.out0 SAR4_sim.out0 digital logic )
+
+( net SAR4_sim.out1 SAR4_sim.out1 digital logic )
+( net SAR4_sim.I0.out1 SAR4_sim.out1 digital logic )
+
+( net SAR4_sim.out2 SAR4_sim.out2 digital logic )
+( net SAR4_sim.I0.out2 SAR4_sim.out2 digital logic )
+
+( net SAR4_sim.out3 SAR4_sim.out3 digital logic )
+( net SAR4_sim.I0.out3 SAR4_sim.out3 digital logic )
+
+( net SAR4_sim.DAC_out0 SAR4_sim.DAC_out0 digital logic )
+( net SAR4_sim.I0.DAC_out0 SAR4_sim.DAC_out0 digital logic )
+
+( net SAR4_sim.DAC_out1 SAR4_sim.DAC_out1 digital logic )
+( net SAR4_sim.I0.DAC_out1 SAR4_sim.DAC_out1 digital logic )
+
+( net SAR4_sim.DAC_out2 SAR4_sim.DAC_out2 digital logic )
+( net SAR4_sim.I0.DAC_out2 SAR4_sim.DAC_out2 digital logic )
+
+( net SAR4_sim.DAC_out3 SAR4_sim.DAC_out3 digital logic )
+( net SAR4_sim.I0.DAC_out3 SAR4_sim.DAC_out3 digital logic )
+
+( net SAR4_sim.start SAR4_sim.start digital logic )
+( net SAR4_sim.I1.start SAR4_sim.start digital logic )
+( net SAR4_sim.I0.start SAR4_sim.start digital logic )
+
+( net SAR4_sim.I0.reset SAR4_sim.I0.reset digital/mixed logic )
+( net cds_globals.\gnd!  SAR4_sim.I0.reset analog/mixed electrical )
+
+( net SAR4_sim.comp SAR4_sim.comp digital logic )
+( net SAR4_sim.I1.comp SAR4_sim.comp digital logic )
+( net SAR4_sim.I0.comp SAR4_sim.comp digital logic )
+
+( net SAR4_sim.clock SAR4_sim.clock analog/mixed electrical )
+( net SAR4_sim.I0.clock SAR4_sim.clock digital/mixed logic )
+
+( net SAR4_sim.I0.SW_inp_reg SAR4_sim.I0.SW_inp_reg digital logic )
+
+( net SAR4_sim.I0.state SAR4_sim.I0.state digital logic )
+
+( net SAR4_sim.I0.next SAR4_sim.I0.next digital logic )
+
+( connect
+   connectLib.E2L_2:module
+   SAR4_sim.clock
+   electrical
+   analog
+   (
+    ( SAR4_sim.I0.clock logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( SAR4_sim.I0.reset logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+(instance SAR4_sim.I0 digital)
+(instance SAR4_sim.I1 digital)
+(instance SAR4_sim.V0 analog)
+(instance SAR4_sim mixed)
+(instance cds_globals analog)

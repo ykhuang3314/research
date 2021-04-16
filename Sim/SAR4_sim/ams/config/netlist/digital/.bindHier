@@ -1,0 +1,4 @@
+("IL2239_SAR_ADC" "digital_stimuli_SAR4" "verilogams" "verilogams") nil
+("IL2239_SAR_ADC" "SAR4" "verilogams" "verilogams") nil
+("IL2239_SAR_ADC" "SAR4_sim" "schematic" "schematic") nil
+("analogLib" "vsource" "spectre" "spectre") nil

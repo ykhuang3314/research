@@ -795,9 +795,9 @@ hnlLastConstants = '(
                       "M_LN2"
                     )
 hnlLastDesignVars = '(
-                      "d4"
                       "d3"
-                      "d2"
-                      "d1"
+                      "d4"
                       "d0"
+                      "d1"
+                      "d2"
                     )

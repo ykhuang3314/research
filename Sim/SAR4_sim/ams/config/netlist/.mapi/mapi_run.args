@@ -1,0 +1,9 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/research/ 
+-nclibdirpath /home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi/
+-cdslib /home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/research/IL2239_SAR_ADC/digital_stimuli_SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:digital_stimuli_SAR4 view:verilogams"
+-amscompilefile "file:/home/ykhuang/research/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:SAR4 view:verilogams"
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/.mapi//dummyMapi.vhms

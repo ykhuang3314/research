@@ -5,8 +5,8 @@
 // HDL file for Lib - Stimulator_IMP ,Cell - Digital_Stimulus_V2_ST, View - functional
 -amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
 
-// HDL file for Lib - Stimulator_IMP ,Cell - Decoder8, View - functional
--amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_IMP/Decoder8/functional/verilog.v lib:Stimulator_IMP cell:Decoder8 view:functional"
+// HDL file for Lib - Stimulator_IMP ,Cell - Decoder3_8, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
 
 // Create required libraries 
 -makelib GATES_HD 

@@ -1,8 +1,2 @@
 
-nand2 #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
-    , .GT_PDW(420.00n) ) nand2_1 ( .a(A), .b(B), .out(net10));
-
-invr #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
-    , .GT_PDW(420.00n) ) invr_1 ( .out(Q), .in(net10));
-
 endmodule

@@ -1,0 +1,11 @@
+("PRIMLIB" "nel" "spectre" nil) t
+("IL2239_SAR_ADC" "SAR4" "verilogams" nil) nil
+("IL2239_SAR_ADC" "comp_v2" "verilogams" nil) nil
+("analogLib" "cap" "spectre" nil) t
+("IL2239_SAR_ADC" "bufferX2" "schematic" nil) nil
+("analogLib" "vsource" "spectre" spectreVandISourcePrim) t
+("IL2239_SAR_ADC" "inverterX2" "schematic" nil) nil
+("IL2239_SAR_ADC" "DAC4_SH" "schematic" nil) nil
+("IL2239_SAR_ADC" "relay" "verilogams" nil) nil
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("PRIMLIB" "pel" "spectre" nil) t

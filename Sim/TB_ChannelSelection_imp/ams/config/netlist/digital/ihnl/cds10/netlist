@@ -1,52 +1,35 @@
-// Library - Stimulator_IMP, Cell - Idac_5bit_ST, View - schematic
-// LAST TIME SAVED: Mar 31 15:05:20 2021
-// NETLIST TIME: Apr  5 11:42:22 2021
+// Library - D_CELLS_HD, Cell - AND2HDX0, View - cmos_sch
+// LAST TIME SAVED: Jan 23 08:10:19 2018
+// NETLIST TIME: Apr 13 14:33:29 2021
 `timescale 1ns / 1ps 
 
-`worklib Stimulator_IMP
-`view schematic
+`worklib D_CELLS_HD
+`view cmos_sch
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_IMP", dfII_cell="Idac_5bit_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 31 15:05:20 2021" *)
+(* dfII_lib="D_CELLS_HD", dfII_cell="AND2HDX0", dfII_view="cmos_sch", worklib_name="D_CELLS_HD", view_name="cmos_sch", last_save_time="Jan 23 08:10:19 2018" *)
 
-module Idac_5bit_ST (Idac, vdd3, Bias1, Bias2, D0, D1, D2, D3, D4, 
-    Enable);
+module AND2HDX0 (Q, A, B);
 
-output  Idac;
+output  Q;
 
-inout  vdd3;
+input  A, B;
 
-input  Bias1, Bias2, D0, D1, D2, D3, D4, Enable;
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
 
 
-LSHVT18U3VX1 I16 ( .A(net024), .Q(net020));
+nand2 #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) nand2_1 ( .a(A), .b(B), .out(net10));
 
-LSHVT18U3VX1 I30 ( .A(net021), .Q(net019));
-
-LSHVT18U3VX1 I14 ( .A(net022), .Q(net018));
-
-LSHVT18U3VX1 I12 ( .A(net023), .Q(net017));
-
-LSHVT18U3VX1 I29 ( .A(net026), .Q(net025));
-
-IN_3VX2 I31 ( .A(net020), .Q(D0_3v));
-
-IN_3VX2 I15 ( .A(net019), .Q(D1_3v));
-
-IN_3VX2 I13 ( .A(net018), .Q(D2_3v));
-
-IN_3VX2 I11 ( .A(net017), .Q(D3_3v));
-
-IN_3VX2 I10 ( .A(net025), .Q(D4_3v));
-
-AND2HDX0 I45 ( .Q(net024), .B(D0), .A(Enable));
-
-AND2HDX0 I46 ( .Q(net021), .B(D1), .A(Enable));
-
-AND2HDX0 I47 ( .Q(net022), .B(D2), .A(Enable));
-
-AND2HDX0 I48 ( .Q(net023), .B(D3), .A(Enable));
-
-AND2HDX0 I49 ( .Q(net026), .B(D4), .A(Enable));
+invr #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) invr_1 ( .out(Q), .in(net10));
 
 endmodule

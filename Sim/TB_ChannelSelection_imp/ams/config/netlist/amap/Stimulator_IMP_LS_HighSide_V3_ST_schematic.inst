@@ -13,5 +13,5 @@ HEADER
 "vddhv" ".vddhv"
 "vddhv" ".\\5 v"
 "M13n" "PRIMLIB_nedia_bjt_spectre"
-"R0n R1n" "PRIMLIB_rpp1k1_spectre"
+"I0n" "Stimulator_IMP_ResistiveDivider_schematic"
 "I10n" "D_CELLS_M3V_LSHVT18U3VX1_cmos_sch"

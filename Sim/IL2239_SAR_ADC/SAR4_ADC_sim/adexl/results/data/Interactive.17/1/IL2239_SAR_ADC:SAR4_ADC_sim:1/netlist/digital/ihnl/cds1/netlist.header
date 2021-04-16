@@ -1,0 +1,18 @@
+// Library - IL2239_SAR_ADC, Cell - DAC4_SH, View - schematic
+// LAST TIME SAVED: Apr 14 23:40:06 2021
+// NETLIST TIME: Apr 14 23:40:37 2021
+`timescale 1ns / 1ps 
+
+`worklib IL2239_SAR_ADC
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="IL2239_SAR_ADC", dfII_cell="DAC4_SH", dfII_view="schematic", worklib_name="IL2239_SAR_ADC", view_name="schematic", last_save_time="Apr 14 23:40:06 2021" *)
+
+module DAC4_SH (outp, CM, REF, SW_inp, SW_ref, VSS, b0, b1, b2, b3, 
+    inp);
+
+output  outp;
+
+input  CM, REF, SW_inp, SW_ref, VSS, b0, b1, b2, b3, inp;
+

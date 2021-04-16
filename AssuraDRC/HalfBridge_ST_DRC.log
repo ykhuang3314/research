@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Sat Apr 10 14:12:31 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Wed Apr 14 17:10:54 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraDRC/HalfBridge_ST_DRC.rsf -restart -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Sat Apr 10 14:12:31 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed Apr 14 17:10:55 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -51,9 +51,9 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.32  elap: 2  pf: 0  in: 0  out: 296  virt: 177M  phys: 894M
+cpu: 0.33  elap: 1  pf: 0  in: 0  out: 104  virt: 177M  phys: 894M
 
-Running the Task Processor, 8 cells, 16884 steps...
+Running the Task Processor, 7 cells, 16884 steps...
 
 Top Cell is 'HalfBridge_ST layout Stimulator_IMP'
 
@@ -9119,17 +9119,17 @@ Executing: processAntenna(((gate (gate poly)) (antenna poly met1 met2 met3 met4 
 running in speedup mode
 
 Finished running rules. Task processor time in main process:
-cpu: 3.51  elap: 4  pf: 0  in: 0  out: 3632  virt: 319M  phys: 1370M
+cpu: 4.14  elap: 5  pf: 0  in: 0  out: 3632  virt: 300M  phys: 1362M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.34  elap: 0  pf: 0  in: 0  out: 0  virt: 609M  phys: 2061M
+cpu: 0.33  elap: 0  pf: 0  in: 0  out: 0  virt: 609M  phys: 2035M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6520  virt: 609M  phys: 2072M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6520  virt: 609M  phys: 2048M
 
 
 *****  aveng terminated normally  *****
@@ -9147,7 +9147,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Sat Apr 10 14:12:38 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Wed Apr 14 17:11:02 2021
 
 
    Creating Error Database 'HalfBridge_ST_DRC'...
@@ -11094,7 +11094,7 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraDRC/HalfBridge_ST_DRC.err ...
 
-avrpt cpu sec:    0.52  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.56  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -11105,12 +11105,12 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraDRC_Rules Version "assuraDRC-190712" at "Apr 10 14:12:38 2021"
+Loading assuraDRC_Rules Version "assuraDRC-190712" at "Apr 14 17:11:03 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Sat Apr 10 14:12:38 2021
+Run ended: Wed Apr 14 17:11:03 2021
 
 *****  Assura terminated normally  *****
 

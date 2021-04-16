@@ -1,8 +1,6 @@
 
-// Library name: GATES_3V
-// Cell name: invrv3
+// Library name: Stimulator_IMP
+// Cell name: Ext_Iref_ST
 // View name: schematic
 // Inherited view list: schematic
-subckt invrv3
-parameters GT_PDW GT_PDL=350.00n sx=4.8e-07 lc=2.7e-07 GT_PUW \
-        GT_PUL=300.00n
+subckt Ext_Iref_ST

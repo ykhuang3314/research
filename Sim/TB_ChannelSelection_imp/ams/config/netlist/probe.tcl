@@ -13,11 +13,9 @@ database -open ams_database -into ${AMS_RESULTS_DIR} -default
 # Probe settings
 #
 probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.Enable_ST}
-probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_HS[3]}
 probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_HS[2]}
 probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_HS[1]}
 probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_HS[0]}
-probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_LS[3]}
 probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_LS[2]}
 probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_LS[1]}
 probe -create -emptyok -database ams_database {TB_ChannelSelection_imp.ChSel_LS[0]}
@@ -29,4 +27,5 @@ probe -create -emptyok -database ams_database -flow {TB_ChannelSelection_imp.R3.
 probe -create -emptyok -database ams_database -flow {TB_ChannelSelection_imp.R5.1}
 probe -create -emptyok -database ams_database -flow {TB_ChannelSelection_imp.R6.1}
 probe -create -emptyok -database ams_database -flow {TB_ChannelSelection_imp.I26.Ist}
+probe -create -emptyok -database ams_database -flow {TB_ChannelSelection_imp.I32.EN_ST}
 

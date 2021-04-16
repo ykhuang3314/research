@@ -1,9 +1,8 @@
 HEADER
 "PSFversion" "1.00"
-"M0n" "PRIMLIB_nedia_bjt_spectre"
-"R2n R0n R1n R3n" "PRIMLIB_rpp1k1_spectre"
+"I2n" "ResistiveDivider"
 "M1n" "PRIMLIB_ped_bjt_spectre"
-"I0n" "LSHVT18U3VX1"
+"I1n" "LS_HighSide_V3_ST"
 "gnd!v" ":1v"
 "inv" ":2v"
 "outv" ":3v"

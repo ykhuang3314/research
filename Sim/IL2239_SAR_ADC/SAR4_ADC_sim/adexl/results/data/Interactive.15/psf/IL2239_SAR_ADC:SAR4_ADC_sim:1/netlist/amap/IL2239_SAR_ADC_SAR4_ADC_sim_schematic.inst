@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"V0n V4n" "analogLib_vsource_spectre"
+"V1n V2n V3n" "analogLib_vdc_spectre"
+"I0n" "IL2239_SAR_ADC_SAR4_verilogams"
+"I1n" "IL2239_SAR_ADC_DAC4_SH_schematic"
+"I16n" "IL2239_SAR_ADC_bufferX2_schematic"
+"I18n" "IL2239_SAR_ADC_comp_v2_verilogams"

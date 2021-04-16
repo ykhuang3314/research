@@ -1,0 +1,72 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+CDS_SELECT_CRS
++define+CONNRULES_18V_FULL_FAST
++define+CONNRULES_INHCONN_FULL_FAST_GND
+-amsossirunbind
+.amsbind.scs
+-AMSINPUT
+.amsbind.scs
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-timescale
+1ns/1ns
+-DISCIPLINE
+logic
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-NOPARAMERR
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/research/
+-AMSINPUT
+./spiceModels.scs
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+./amsControlSpectre.scs
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.13/sharedData/CDS/ahdl/input.ahdlSimDB"
+-AMSCONNRULES
+ConnRules_18V_full_fast
+-AMSCONNRULES
+ConnRules_inhconn_full_fast_gnd
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:SAR4 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/comp_v2/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:comp_v2 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/relay/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:relay view:verilogams"
+-SPECTRE_ARGS
+++aps
+-MESSAGES
+IL2239_SAR_ADC.SAR4_ADC_sim:schematic
+cds_globals
+-AMSELAB
+-XLMODE
+./xcelium.d/IL2239_SAR_ADC.SAR4_ADC_sim_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/IL2239_SAR_ADC.SAR4_ADC_sim_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/IL2239_SAR_ADC.SAR4_ADC_sim_config.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

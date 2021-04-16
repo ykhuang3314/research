@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = Stimulator_TestBench
-	Cell         = TB_OneChannel_DC_imp
-	View         = schematic
-	Simulator    = spectre
+	Library      = IL2239_SAR_ADC
+	Cell         = SAR4_ADC_sim
+	View         = config
+	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Stimulator_TestBench:TB_OneChannel_DC_imp:1_state1_Interactive.0
-	Results DB   = /home/ykhuang/research/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data/Interactive.0.rdb
-	Results Dir  = /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneChannel_DC_imp:1
-	Results Loc  = /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data
+	State Name   = IL2239_SAR_ADC:SAR4_ADC_sim:1_ams_state1_Interactive.15
+	Results DB   = /home/ykhuang/research/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15.rdb
+	Results Dir  = /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1
+	Results Loc  = /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data
 	Project Dir  = /home/ykhuang/research/Sim
-	Setup DB loc = /home/ykhuang/research/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl
+	Setup DB loc = /home/ykhuang/research/IL2239_SAR_ADC/SAR4_ADC_sim/adexl
 	File Encoding = 0
 
 
@@ -30,87 +30,135 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (0 1) on testbench [
-          Stimulator_TestBench:TB_OneChannel_DC_imp:1 ].
+*Info*    Run start for Point ID (3 1) on testbench [
+          IL2239_SAR_ADC:SAR4_ADC_sim:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var Rload = "1.3k"
+Setting var Cap = "25f"
+Setting var Cchannel = "0"
+Setting var Roff = "500M"
+Setting var Ron = "140"
+Setting var VDD = "1.8"
+Setting var Vcm = "200m"
+Setting var Vin = "180m"
+Setting var Vref = "400m"
+Setting var dCap = "0"
+Setting var fclk = "20M"
+Setting var fin = "437500"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneChannel_DC_imp:1/netlist
+          /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneChannel_DC_imp:1
+          /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1
 
 
-*Info*    Creating Netlist for Point ID (0 1)
+*Info*    Creating Netlist for Point ID (3 1)
 
 generate netlist...
+INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+ field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+ analog primitives using the Spectre CDF simulation information.
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  5 14:50:35 2021
-WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the current netlisting session. It had a value
-'_unl' last time netlisting was done in current run directory. Netlists from last
-session cannot be used for incremental netlisting. Therefore re-netlisting the
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/digital/control
+Begin Netlisting Apr 14 23:15:12 2021
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+"/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+If you want to print only those cellviews that need to be re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell 'IL2239_SAR_ADC/SAR4_ADC_sim/schematic' has no ports. Make sure that this was the intended 
 design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 
-Netlist Warning: The netlisting procedure specified for (GATES_HD nand2 schematic) is 
-obsolete. You can convert your library with the 
-Tools - Conversion Tool Box menu on the CIW. 
 
-WARNING (ADE-6003): Terminal "gnd", specified in the CDF termOrder, does not exist
-           in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
-WARNING (ADE-6003): Terminal "vdd3", specified in the CDF termOrder, does not exist
-           in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
-WARNING (ADE-6003): Terminal "vdde", specified in the CDF termOrder, does not exist
-           in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-End netlisting Apr  5 14:50:35 2021
 
-Netlisting Statistics:
-	Number of components:  113
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
 
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 4
+relay                       verilogams           *Stopping View*  
+cap                         spectre              *Stopping View*  
+pel                         spectre              *Stopping View*  
+nel                         spectre              *Stopping View*  
+vdc                         spectre              *Stopping View*  
+vsource                     spectre              *Stopping View*  
+comp_v2                     verilogams           *Stopping View*  
+SAR4                        verilogams           *Stopping View*  
+SAR4_ADC_sim                schematic                             
+bufferX2                    schematic                             
+DAC4_SH                     schematic                             
+inverterX2                  schematic                             
+
+---------- End of netlist configuration information   ----------
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/analog/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Running netlist assembly..
+........
+End netlisting Apr 14 23:15:21 2021
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
+      ...successful.
+create cds_globals...
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          Stimulator_TestBench:TB_OneChannel_DC_imp:1 ] for Point ID
-          (0 1).
+          IL2239_SAR_ADC:SAR4_ADC_sim:1 ] for Point ID (3 1).
 
-Delete psf data in /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneChannel_DC_imp/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneChannel_DC_imp:1/psf.
+Delete simulation data in /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/psf.
+create cds_globals...
+      ...successful.
 compose simulator input file...
       ...successful.
-start simulator if needed...
+validating simulator hierarchy...
       ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
 INFO (ADE-3071): Simulation completed successfully.
 reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (0 1) on testbench [
-          Stimulator_TestBench:TB_OneChannel_DC_imp:1 ].
+*Info*    Run complete for Point ID (3 1) on testbench [
+          IL2239_SAR_ADC:SAR4_ADC_sim:1 ].
 
 
 

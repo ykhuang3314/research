@@ -1,0 +1,22 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-VFILE
+/home/ykhuang/research/.xkit/setup/xh018/diglibs/D_CELLS_HD/cadence_IC61/D_CELLS_HD
+-VFILE
+/home/ykhuang/research/.xkit/setup/x_all/diglibs/VLG_PRIMITIVES/cadence_IC61/VLG_PRIMITIVES
+-INCDIR
+/home/ykhuang/research/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/research/
+-DEFINE
+CDS_SELECT_CRS
+-DEFINE
+CONNRULES_18V_FULL_FAST
+-DEFINE
+CONNRULES_INHCONN_FULL_FAST_GND
+-SNAPSHOT
+IL2239_SAR_ADC.SAR4_sim:config

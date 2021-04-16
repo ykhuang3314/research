@@ -1,0 +1,3 @@
+("SAR4_sim" "V0") ("analogLib" "vsource" "spectre" "spectre" "IL2239_SAR_ADC" "SAR4_sim" "schematic")
+("SAR4_sim" "I0") ("IL2239_SAR_ADC" "SAR4" "verilogams" "verilogams" "IL2239_SAR_ADC" "SAR4_sim" "schematic")
+("SAR4_sim" "I1") ("IL2239_SAR_ADC" "digital_stimuli_SAR4" "verilogams" "verilogams" "IL2239_SAR_ADC" "SAR4_sim" "schematic")

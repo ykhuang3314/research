@@ -1,4 +1,4 @@
-Begin Netlisting Apr  5 11:42:19 2021
+Begin Netlisting Apr 13 14:33:25 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -62,7 +62,7 @@ res                         spectre              *Stopping View*
 ne                          spectre              *Stopping View*  
 pe                          spectre              *Stopping View*  
 csft5a                      spectre              *Stopping View*  
-Decoder8                    functional           *Stopping View*  
+Decoder3_8                  functional           *Stopping View*  
 idc                         spectre              *Stopping View*  
 Digital_Stimulus_V2_ST      functional           *Stopping View*  
 TB_ChannelSelection_imp     schematic                             
@@ -80,14 +80,8 @@ HalfBridge_ST               schematic
 LS_LowSide_V2_ST            schematic                             
 LS_HighSide_V3_ST           schematic                             
 LSHVT18U3VX1                cmos_sch                              
+ResistiveDivider            schematic                             
 
 ---------- End of netlist configuration information   ----------
-WARNING (OSSHNL-159): The primitive,
-'Stimulator_IMP/Digital_Stimulus_V2_ST/functional', has been updated since the
-last netlisting session
-in this current run directory. Therefore, re-netlisting
-all cell views where
-this primitive is instantiated.
-
 Running netlist assembly..
-End netlisting Apr  5 11:42:28 2021
+End netlisting Apr 13 14:33:35 2021

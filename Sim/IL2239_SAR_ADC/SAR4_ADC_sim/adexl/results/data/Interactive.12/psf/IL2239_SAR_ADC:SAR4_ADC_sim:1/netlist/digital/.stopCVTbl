@@ -1,0 +1,5 @@
+("PRIMLIB" "nel" "spectre" "spectre") t
+("analogLib" "cap" "spectre" "spectre") t
+("analogLib" "vsource" "spectre" "spectre") t
+("analogLib" "vdc" "spectre" "spectre") t
+("PRIMLIB" "pel" "spectre" "spectre") t

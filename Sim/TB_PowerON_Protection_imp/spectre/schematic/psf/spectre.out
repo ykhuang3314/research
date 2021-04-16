@@ -5,23 +5,23 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 17715
-Memory  available: 50.5147 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 32443
+Memory  available: 38.8001 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1204.8] ( 16 ),  1 [1269.7] ( 17 ),  2 [1200.0] ( 18 )
-                 3 [1300.2] ( 19 ),  4 [1263.7] ( 20 ),  5 [1200.3] ( 21 )
-                 6 [1293.8] ( 22 ),  7 [1200.0] ( 23 )
-        1:       8 [1202.8] ( 24 ),  9 [1200.0] ( 25 ), 10 [1359.4] ( 26 )
-                11 [2315.2] ( 27 ), 12 [1424.1] ( 28 ), 13 [1200.0] ( 29 )
-                14 [1326.0] ( 30 ), 15 [1199.9] ( 31 )
+        0:       0 [1200.0] ( 16 ),  1 [1448.7] ( 17 ),  2 [1200.0] ( 18 )
+                 3 [1282.0] ( 19 ),  4 [1208.6] ( 20 ),  5 [1200.4] ( 21 )
+                 6 [1201.8] ( 22 ),  7 [1279.8] ( 23 )
+        1:       8 [1200.1] ( 24 ),  9 [1230.9] ( 25 ), 10 [1250.8] ( 26 )
+                11 [1200.0] ( 27 ), 12 [1257.9] ( 28 ), 13 [1345.8] ( 29 )
+                14 [1200.0] ( 30 ), 15 [1247.5] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.7 %, 0.7 %, 0.5 %
+System load averages (1min, 5min, 15min) : 1.0 %, 0.5 %, 0.3 %
 Hyperthreading is enabled
 
 
-Simulating `input.scs' on s2424 at 4:39:02 PM, Tue Mar 30, 2021 (process id: 17715).
+Simulating `input.scs' on s2424 at 11:23:33 AM, Thur Apr 15, 2021 (process id: 32443).
 Current working directory: /home/ykhuang/research/Sim/TB_PowerON_Protection_imp/spectre/schematic/netlist
 Command line:
     /pkg/cadence/installs/SPECTRE181/tools/bin/spectre -64 input.scs  \
@@ -364,9 +364,9 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
-Time for NDB Parsing: CPU = 497.485 ms, elapsed = 581.109 ms.
-Time accumulated: CPU = 564.554 ms, elapsed = 581.123 ms.
-Peak resident memory used = 70.4 Mbytes.
+Time for NDB Parsing: CPU = 478.903 ms, elapsed = 569.282 ms.
+Time accumulated: CPU = 546.639 ms, elapsed = 569.296 ms.
+Peak resident memory used = 70.3 Mbytes.
 
 
 Warning from spectre in `LS_LowSide_V2_ST', during circuit read-in.
@@ -378,32 +378,38 @@ Warning from spectre in `LS_HighSide_V3_ST', during circuit read-in.
     WARNING (SFE-2453): The global node `vdd3!' and sub circuit terminal `vdd3!' will be treated as the sub circuit terminal.
         Further occurrences of this warning will be suppressed.
 
-Time for Elaboration: CPU = 65.656 ms, elapsed = 65.6559 ms.
-Time accumulated: CPU = 630.372 ms, elapsed = 646.94 ms.
-Peak resident memory used = 81.8 Mbytes.
+Time for Elaboration: CPU = 108.451 ms, elapsed = 108.451 ms.
+Time accumulated: CPU = 655.357 ms, elapsed = 678.012 ms.
+Peak resident memory used = 82.9 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 11.843 ms, elapsed = 11.843 ms.
-Time accumulated: CPU = 642.366 ms, elapsed = 658.934 ms.
-Peak resident memory used = 83.8 Mbytes.
+Time for EDB Visiting: CPU = 34.399 ms, elapsed = 34.4 ms.
+Time accumulated: CPU = 689.908 ms, elapsed = 712.564 ms.
+Peak resident memory used = 86.5 Mbytes.
 
 
 Notice from spectre during initial setup.
-    I36.M13.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
+    I33.I1.M13.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
+    I33.M1.ped_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is P.
     M19.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
     M24.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
     M27.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
-    M30.nedia_bjtmod: Hisim_hv version 2.10 used. Version: 2, Subversion: 1 and Revision: 0. Type is N.
         Further occurrences of this notice will be suppressed.
 Notice from spectre during topology check.
     Only one connection to the following 3 nodes:
         net085
         net089
         net091
+    No DC path from node `I36.I0.net6' to ground, Gmin installed to provide path.
+    No DC path from node `I36.I0.net5' to ground, Gmin installed to provide path.
+    No DC path from node `I36.I0.net07' to ground, Gmin installed to provide path.
+    No DC path from node `I36.I0.net08' to ground, Gmin installed to provide path.
+    No DC path from node `I33.I1.I0.net6' to ground, Gmin installed to provide path.
+        Further occurrences of this notice will be suppressed.
 
 
 Global user options:
@@ -432,12 +438,12 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 233
+              nodes 1052
                 bjt 27    
-            bsim3v3 167   
-          capacitor 80    
+            bsim3v3 160   
+          capacitor 698   
            hisim_hv 27    
-           resistor 105   
+           resistor 929   
             vsource 13    
 
 Analysis and control statement inventory:
@@ -451,40 +457,40 @@ Output statements:
 
 
 Notice from spectre.
-    5 notices suppressed.
+    13 notices suppressed.
     1 warning suppressed.
 
-Time for parsing: CPU = 8.614 ms, elapsed = 13.0131 ms.
-Time accumulated: CPU = 651.11 ms, elapsed = 672.076 ms.
-Peak resident memory used = 86.1 Mbytes.
+Time for parsing: CPU = 11.947 ms, elapsed = 16.407 ms.
+Time accumulated: CPU = 701.987 ms, elapsed = 729.101 ms.
+Peak resident memory used = 89 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~
 
-*************************************************
-Transient Analysis `tran': time = (0 s -> 150 us)
-*************************************************
+************************************************
+Transient Analysis `tran': time = (0 s -> 10 ms)
+************************************************
 
 Notice from spectre during IC analysis, during transient analysis `tran'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(I41.M0.m1:int_s) = -30.294 mV
+        dV(I41.M0.m1:int_s) = -30.2939 mV
         Use the `gmin_check' option to eliminate or expand this report.
     Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
 
 Maximum value of each quantity, excluding Verilog-A modules and dangling current sources:
 V: V(net089) = 3.3 V
 I: I(V4:p) = 56.2 uA
-DC simulation time: CPU = 26.345 ms, elapsed = 26.3481 ms.
+DC simulation time: CPU = 30.993 ms, elapsed = 30.9951 ms.
 
 Opening the PSFXL file ../psf/tran.tran.tran ...
 Important parameter values:
     start = 0 s
     outputstart = 0 s
-    stop = 150 us
-    step = 150 ns
-    maxstep = 1.5 us
+    stop = 10 ms
+    step = 10 us
+    maxstep = 100 us
     ic = all
     useprevic = no
     skipdc = no
@@ -504,33 +510,33 @@ Important parameter values:
 
 Output and IC/nodeset summary:
                  save   13      (current)
-                 save   233     (voltage)
+                 save   1052    (voltage)
 
-    tran: time = 3.75 us      (2.5 %), step = 1.5 us          (1 %)
-    tran: time = 12.75 us     (8.5 %), step = 1.5 us          (1 %)
-    tran: time = 20.25 us    (13.5 %), step = 1.5 us          (1 %)
-    tran: time = 27.75 us    (18.5 %), step = 1.5 us          (1 %)
-    tran: time = 33.75 us    (22.5 %), step = 1.5 us          (1 %)
-    tran: time = 41.25 us    (27.5 %), step = 1.5 us          (1 %)
-    tran: time = 48.75 us    (32.5 %), step = 1.5 us          (1 %)
-    tran: time = 56.45 us    (37.6 %), step = 242.7 ns     (162 m%)
-    tran: time = 63.9 us     (42.6 %), step = 229.8 ns     (153 m%)
-    tran: time = 71.56 us    (47.7 %), step = 428.5 ns     (286 m%)
-    tran: time = 78.88 us    (52.6 %), step = 850.7 ns     (567 m%)
-    tran: time = 87.6 us     (58.4 %), step = 1.5 us          (1 %)
-    tran: time = 95.1 us     (63.4 %), step = 1.5 us          (1 %)
-    tran: time = 101.3 us    (67.5 %), step = 289.8 ns     (193 m%)
-    tran: time = 109.6 us      (73 %), step = 1.5 us          (1 %)
-    tran: time = 117.1 us      (78 %), step = 1.5 us          (1 %)
-    tran: time = 124.6 us      (83 %), step = 1.5 us          (1 %)
-    tran: time = 132.1 us      (88 %), step = 1.5 us          (1 %)
-    tran: time = 139.6 us      (93 %), step = 1.5 us          (1 %)
-    tran: time = 147.1 us      (98 %), step = 1.5 us          (1 %)
-Number of accepted tran steps =             1080
+    tran: time = 250.5 us     (2.5 %), step = 12.41 us     (124 m%)
+    tran: time = 778.6 us    (7.79 %), step = 29.2 us      (292 m%)
+    tran: time = 1.311 ms    (13.1 %), step = 65.6 us      (656 m%)
+    tran: time = 1.757 ms    (17.6 %), step = 100 us          (1 %)
+    tran: time = 2.257 ms    (22.6 %), step = 100 us          (1 %)
+    tran: time = 2.757 ms    (27.6 %), step = 100 us          (1 %)
+    tran: time = 3.284 ms    (32.8 %), step = 43.38 us     (434 m%)
+    tran: time = 3.801 ms      (38 %), step = 100 us          (1 %)
+    tran: time = 4.301 ms      (43 %), step = 100 us          (1 %)
+    tran: time = 4.801 ms      (48 %), step = 100 us          (1 %)
+    tran: time = 5.301 ms      (53 %), step = 100 us          (1 %)
+    tran: time = 5.801 ms      (58 %), step = 100 us          (1 %)
+    tran: time = 6.301 ms      (63 %), step = 100 us          (1 %)
+    tran: time = 6.801 ms      (68 %), step = 100 us          (1 %)
+    tran: time = 7.301 ms      (73 %), step = 100 us          (1 %)
+    tran: time = 7.801 ms      (78 %), step = 100 us          (1 %)
+    tran: time = 8.301 ms      (83 %), step = 100 us          (1 %)
+    tran: time = 8.801 ms      (88 %), step = 100 us          (1 %)
+    tran: time = 9.301 ms      (93 %), step = 100 us          (1 %)
+    tran: time = 9.801 ms      (98 %), step = 100 us          (1 %)
+Number of accepted tran steps =             709
 
 Maximum value achieved for any signal of each quantity: 
-V: V(M67.m1:int_d) = 40.06 V
-I: I(V12:p) = 1.233 mA
+V: V(M69.xpnp.q1:int_b) = 40 V
+I: I(V12:p) = 380.2 uA
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Post-Transient Simulation Summary
@@ -545,15 +551,15 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (18.5 %)      1 (4.6 %)       8 (22.6 %)     10 (1.5 %)
-                11 (3.1 %)      14 (59.0 %)     15 (6.2 %)      21 (8.2 %)
-                22 (21.5 %)     
+        Spectre  0 (6.7 %)       1 (1.6 %)       2 (3.3 %)       7 (1.6 %)
+                 8 (9.9 %)      10 (3.3 %)      11 (5.5 %)      12 (57.9 %)
+                13 (4.4 %)      21 (1.1 %)      22 (24.2 %)     23 (1.6 %)
         Other   
-Initial condition solution time: CPU = 26.438 ms, elapsed = 26.4401 ms.
-Intrinsic tran analysis time:    CPU = 1.33272 s, elapsed = 1.33538 s.
-Total time required for tran analysis `tran': CPU = 1.36459 s, elapsed = 1.36723 s.
-Time accumulated: CPU = 2.05315 s, elapsed = 2.07678 s.
-Peak resident memory used = 97.3 Mbytes.
+Initial condition solution time: CPU = 31.072 ms, elapsed = 31.076 ms.
+Intrinsic tran analysis time:    CPU = 1.14239 s, elapsed = 1.14487 s.
+Total time required for tran analysis `tran': CPU = 1.18028 s, elapsed = 1.18274 s.
+Time accumulated: CPU = 1.95294 s, elapsed = 1.98252 s.
+Peak resident memory used = 112 Mbytes.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -577,9 +583,9 @@ subckts: writing subcircuits to rawfile.
 
 Opening the PSFASCII file ../psf/subckts.info.subckts ...
 
-Aggregate audit (4:39:04 PM, Tue Mar 30, 2021):
-Time used: CPU = 2.17 s, elapsed = 2.22 s, util. = 97.8%.
-Time spent in licensing: elapsed = 141 ms, percentage of total = 6.34%.
-Peak memory used = 98.2 Mbytes.
-Simulation started at: 4:39:02 PM, Tue Mar 30, 2021, ended at: 4:39:04 PM, Tue Mar 30, 2021, with elapsed time (wall clock): 2.22 s.
-spectre completes with 0 errors, 6 warnings, and 11 notices.
+Aggregate audit (11:23:35 AM, Thur Apr 15, 2021):
+Time used: CPU = 2.08 s, elapsed = 2.14 s, util. = 97.2%.
+Time spent in licensing: elapsed = 143 ms, percentage of total = 6.67%.
+Peak memory used = 112 Mbytes.
+Simulation started at: 11:23:33 AM, Thur Apr 15, 2021, ended at: 11:23:35 AM, Thur Apr 15, 2021, with elapsed time (wall clock): 2.14 s.
+spectre completes with 0 errors, 6 warnings, and 16 notices.

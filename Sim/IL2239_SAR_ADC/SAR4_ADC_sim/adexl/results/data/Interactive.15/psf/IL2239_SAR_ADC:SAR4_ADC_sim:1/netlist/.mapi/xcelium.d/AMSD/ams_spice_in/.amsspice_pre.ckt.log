@@ -1,0 +1,49 @@
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.433.isr9 64bit -- 5 Nov 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 23468
+Memory  available: 39.5658 GB  physical: 67.2863 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1200.0] ( 16 ),  1 [1242.6] ( 17 ),  2 [1267.2] ( 18 )
+                 3 [1253.0] ( 19 ),  4 [1200.0] ( 20 ),  5 [1200.1] ( 21 )
+                 6 [1200.0] ( 22 ),  7 [1200.3] ( 23 )
+        1:       8 [1200.0] ( 24 ),  9 [1320.6] ( 25 ), 10 [1235.9] ( 26 )
+                11 [1200.0] ( 27 ), 12 [1200.1] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1200.1] ( 30 ), 15 [1200.0] ( 31 )
+        
+System load averages (1min, 5min, 15min) : 0.1 %, 0.3 %, 0.3 %
+Hyperthreading is enabled
+
+
+Simulating `/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 11:15:15 PM, Wed Apr 14, 2021 (process id: 23468).
+Current working directory: /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=
+Command line:
+    amsprimtool  \
+        /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt  \
+        -noraw -va,amsspice_pre -ahdllibdir  \
+        /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/ahdlSimDB  \
+        =log  \
+        /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
+        -token  \
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDA126F37837D471DEBA2AFC31339371C2EE198E5D1CC93FF9C2238D5002A443F1B853FE4C02CF43F1B30DDB1039964FC3B434ED2F7F8968DCA922A72B7F9F64C3807CF82D249E59DEA23FFA7335D579C6A845903B1CC93FF9C2238D5002A443F1B846FE4C02CF43F1B30DDB1039964FC3E227BB643C9275C4EA72EE2120927DD1B532AB66398E75DC8D5FD35603BF51FD9A3DB23420924FC3997BA0767ED47E9FB63EAA3E399863C0BD61EB083390759EF86BAC2B65CC75D1880D8BD9537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06561CA648AA83DC30C50FB10B0C84AB65D0B9A70C700007C4D
+
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.15/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi/xcelium.d/AMSD/ams_spice_in/.amsspice_pre.ckt
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 127.236 ms, elapsed = 210.354 ms.
+Time accumulated: CPU = 185.587 ms, elapsed = 210.365 ms.
+Peak resident memory used = 50.3 Mbytes.
+

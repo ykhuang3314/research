@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - IL2239_SAR_ADC ,Cell - digital_stimuli_SAR4, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/IL2239_SAR_ADC/digital_stimuli_SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:digital_stimuli_SAR4 view:verilogams"
+
+// HDL file for Lib - IL2239_SAR_ADC ,Cell - SAR4, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:SAR4 view:verilogams"
+

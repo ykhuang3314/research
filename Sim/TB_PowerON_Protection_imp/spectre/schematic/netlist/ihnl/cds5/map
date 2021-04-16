@@ -3,4 +3,8 @@
 ( "[@power_vdd3:%:vdd3!]" "inh_power_vdd3" )
 ( "[@ground_gnd:%:gnd!]" "inh_ground_gnd" )
  )
+( model
+( "LSHVT18U3VX1" "LSHVT18U3VX1" )
+( "LS_HighSide_V3_ST" "LS_HighSide_V3_ST" )
+ )
  )

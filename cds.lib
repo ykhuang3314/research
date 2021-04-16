@@ -1,4 +1,4 @@
-# File Created by ykhuang at Sat Feb 27 14:05:06 2021
+# File Created by ykhuang at Wed Apr 14 17:15:40 2021
 # assisted by CdsLibEditor
 # ------------------------------------------------------------------------------
 # XKIT library definition files
@@ -43,4 +43,7 @@ DEFINE EXERCISE1 /home/ykhuang/workingdir/EXERCISE1
 DEFINE Exercise6 /home/ykhuang/workingdir/Exercise6
 DEFINE Stimulator_IMP /home/ykhuang/research/Stimulator_IMP
 #Removed by ddDeleteObj: DEFINE Test /home/ykhuang/research/Test
-DEFINE IL2239_SAR_ADC /home/ykhuang/research/IL2239_SAR_ADC
+#Removed by ddDeleteObj: DEFINE IL2239_SAR_ADC /home/ykhuang/research/IL2239_SAR_ADC
+DEFINE IL2239_SAR_comparator IL2239_comparator
+DEFINE IL2239_SAR_ADC_v1 IL2239_SAR_ADC_v1
+DEFINE IL2239_SAR_ADC IL2239_SAR_ADC

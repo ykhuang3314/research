@@ -1,11 +1,11 @@
-1617615749 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/cds.lib
-1617615748 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.amsbind.scs
-1617615749 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/spiceModels.scs
-1617615749 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/amsControlSpectre.scs
+1618317215 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/cds.lib
+1618317215 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.amsbind.scs
+1618317215 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/spiceModels.scs
+1618317215 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/amsControlSpectre.scs
 1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/ConnRules_inhconn_full_fast_gnd.vams
 1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/L2E_2_inhconn_gnd.vams
 1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/E2L_2_inhconn_gnd.vams
 1354799062 /pkg/xfab/XKIT/x_all/diglibs/xfab_connectLib/v1_0/cadence_IC61/v1_0_1/xfab_connectLib/Bidir_2_inhconn_gnd.vams
-1617615748 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/netlist.vams
+1618317215 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/netlist.vams
 1617614675 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/cds_globals.vams
 1034185470 /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v

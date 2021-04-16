@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config IL2239_SAR_ADC.SAR4_ADC_sim:config
+// Created On: Apr 14 23:09:49 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="IL2239_SAR_ADC.SAR4_ADC_sim:schematic"
+
+	config cell="nel" view="analogtext"
+	config cell="SAR4" lib="IL2239_SAR_ADC" view="verilogams"
+	config cell="comp_v2" lib="IL2239_SAR_ADC" view="verilogams"
+	config cell="capacitor" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="bufferX2" lib="IL2239_SAR_ADC" view="schematic"
+	config cell="inverterX2" lib="IL2239_SAR_ADC" view="schematic"
+	config cell="DAC4_SH" lib="IL2239_SAR_ADC" view="schematic"
+	config cell="relay" lib="IL2239_SAR_ADC" view="verilogams"
+	config cell="pel" view="analogtext"
+
+ }

@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = Stimulator_TestBench
-	Cell         = TB_OneCH_Top
+	Library      = IL2239_SAR_ADC
+	Cell         = SAR4_ADC_sim
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Stimulator_TestBench:TB_OneCH_Top:1_none_Interactive.0
-	Results DB   = /home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0.rdb
-	Results Dir  = /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneCH_Top:1
-	Results Loc  = /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data
+	State Name   = IL2239_SAR_ADC:SAR4_ADC_sim:1_ams_state1_Interactive.12
+	Results DB   = /home/ykhuang/research/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12.rdb
+	Results Dir  = /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12/1/IL2239_SAR_ADC:SAR4_ADC_sim:1
+	Results Loc  = /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data
 	Project Dir  = /home/ykhuang/research/Sim
-	Setup DB loc = /home/ykhuang/research/Stimulator_TestBench/TB_OneCH_Top/adexl
+	Setup DB loc = /home/ykhuang/research/IL2239_SAR_ADC/SAR4_ADC_sim/adexl
 	File Encoding = 0
 
 
@@ -29,22 +29,31 @@
 
 
 *Info*    Run start for Point ID (0 1) on testbench [
-          Stimulator_TestBench:TB_OneCH_Top:1 ].
+          IL2239_SAR_ADC:SAR4_ADC_sim:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var Cload = "100n"
-Setting var Rload = "1k"
+Setting var Cap = "25f"
+Setting var Cchannel = "15f"
+Setting var Roff = "500M"
+Setting var Ron = "140"
+Setting var VDD = "1.8"
+Setting var Vcm = "200m"
+Setting var Vin = "180m"
+Setting var Vref = "400m"
+Setting var dCap = "0"
+Setting var fclk = "20M"
+Setting var fin = "437500"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist
+          /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneCH_Top:1
+          /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12/1/IL2239_SAR_ADC:SAR4_ADC_sim:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
@@ -57,10 +66,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/control
-Begin Netlisting Apr  5 13:59:33 2021
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/digital/control
+Begin Netlisting Apr 14 22:40:30 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -83,7 +92,7 @@ INFO (VLOGNET-117): Re-netlisting the entire design.
 INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
 non-stopping cells.
  
-WARNING (VLOGNET-110): The cell 'Stimulator_TestBench/TB_OneCH_Top/schematic' has no ports. Make sure that this was the intended 
+WARNING (VLOGNET-110): The cell 'IL2239_SAR_ADC/SAR4_ADC_sim/schematic' has no ports. Make sure that this was the intended 
 design.
  
 INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
@@ -93,116 +102,30 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information -----
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
-rpp1k1                      spectre              *Stopping View*  
-ne3                         spectre              *Stopping View*  
-pe3                         spectre              *Stopping View*  
-ne                          spectre              *Stopping View*  
-pe                          spectre              *Stopping View*  
-csft5a                      spectre              *Stopping View*  
-nedia_bjt                   spectre              *Stopping View*  
-ped_bjt                     spectre              *Stopping View*  
-idc                         spectre              *Stopping View*  
-Decoder8                    functional           *Stopping View*  
-Digital_Stimulus_V2_ST      functional           *Stopping View*  
-res                         spectre              *Stopping View*  
-vdc                         spectre              *Stopping View*  
+relay                       verilogams           *Stopping View*  
 cap                         spectre              *Stopping View*  
-TB_OneCH_Top                schematic                             
-SingleChannel_ST            schematic                             
-HalfBridge_ST               schematic                             
-LS_LowSide_V2_ST            schematic                             
-LS_HighSide_V3_ST           schematic                             
-CurrentSource_All_ST        schematic                             
-CurrentMirror_ST            schematic                             
-LSHVT18U3VX2                cmos_sch                              
-Idac_5bit_ST                schematic                             
-AND2HDX0                    cmos_sch                              
-invr                        schematic                             
-nand2                       schematic                             
-IN_3VX2                     cmos_sch                              
-invrv3                      schematic                             
-LSHVT18U3VX1                cmos_sch                              
-Ext_Iref_ST                 schematic                             
+pel                         spectre              *Stopping View*  
+nel                         spectre              *Stopping View*  
+vdc                         spectre              *Stopping View*  
+vsource                     spectre              *Stopping View*  
+comp_v2                     verilogams           *Stopping View*  
+SAR4                        verilogams           *Stopping View*  
+SAR4_ADC_sim                schematic                             
+bufferX2                    schematic                             
+DAC4_SH                     schematic                             
+inverterX2                  schematic                             
 
 ---------- End of netlist configuration information   ----------
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneCH_Top:1/netlist/analog/control
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "D_CELLS_M3V" "LSHVT18U3VX1" "cmos_sch"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-Netlist Warning: The netlisting procedure specified for (GATES_3V invrv3 schematic) is 
-obsolete. You can convert your library with the 
-Tools - Conversion Tool Box menu on the CIW. 
-
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "IN_3VX2" "cmos_sch"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "D_CELLS_HD" "AND2HDX0" "cmos_sch"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "D_CELLS_M3V" "LSHVT18U3VX2" "cmos_sch"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-WARNING (ADE-6003): Terminal "gnd", specified in the CDF termOrder, does not exist
-           in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
-WARNING (ADE-6003): Terminal "vdd3", specified in the CDF termOrder, does not exist
-           in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
-WARNING (ADE-6003): Terminal "vdde", specified in the CDF termOrder, does not exist
-           in the cell-view "Stimulator_IMP" "LS_HighSide_V3_ST" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
 Running netlist assembly..
 ........
-End netlisting Apr  5 13:59:42 2021
+End netlisting Apr 14 22:40:39 2021
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -213,9 +136,9 @@ compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          Stimulator_TestBench:TB_OneCH_Top:1 ] for Point ID (0 1).
+          IL2239_SAR_ADC:SAR4_ADC_sim:1 ] for Point ID (0 1).
 
-Delete simulation data in /home/ykhuang/research/Sim/Stimulator_TestBench/TB_OneCH_Top/adexl/results/data/Interactive.0/1/Stimulator_TestBench:TB_OneCH_Top:1/psf.
+Delete simulation data in /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.12/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...
@@ -231,29 +154,9 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-ERROR (WIA-1006): Unable to plot expression <OT("/I0/I0/I2/M0","vds")>
-           because it does not evaluate to an object that can be plotted, like a waveform or
-           parametric wave. See the Visualization & Analysis Tool documentation for information
-           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
-           the expressions that evaluate to those objects can be plotted.
-ERROR (WIA-1006): Unable to plot expression <OT("/I0/I0/I2/M0","vdsat")>
-           because it does not evaluate to an object that can be plotted, like a waveform or
-           parametric wave. See the Visualization & Analysis Tool documentation for information
-           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
-           the expressions that evaluate to those objects can be plotted.
-ERROR (WIA-1006): Unable to plot expression <OT("/I0/I0/I2/M3","vds")>
-           because it does not evaluate to an object that can be plotted, like a waveform or
-           parametric wave. See the Visualization & Analysis Tool documentation for information
-           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
-           the expressions that evaluate to those objects can be plotted.
-ERROR (WIA-1006): Unable to plot expression <OT("/I0/I0/I2/M3","vdsat")>
-           because it does not evaluate to an object that can be plotted, like a waveform or
-           parametric wave. See the Visualization & Analysis Tool documentation for information
-           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
-           the expressions that evaluate to those objects can be plotted.
 
 *Info*    Run complete for Point ID (0 1) on testbench [
-          Stimulator_TestBench:TB_OneCH_Top:1 ].
+          IL2239_SAR_ADC:SAR4_ADC_sim:1 ].
 
 
 

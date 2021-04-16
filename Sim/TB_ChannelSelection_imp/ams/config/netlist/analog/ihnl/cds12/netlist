@@ -1,48 +1,32 @@
-    C5 (vddh net014) csft5a area=6.3936e-11 perimeter=33.72u m=15 \
-        par1=(15)
-    C1 (net014 vss) csft5a area=6.3936e-11 perimeter=33.72u m=45 par1=(45)
-    M26 (Iref Iref vss vss) ne3 w=40u l=2u as=1.92e-11 ad=1.92e-11 \
-        ps=8.096e-05 pd=8.096e-05 nrs=0.00675 nrd=0.00675 m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
-    M13 (net11 Iref vss vss) ne3 w=40u l=2u as=1.248e-11 ad=1.08e-11 \
-        ps=4.8624e-05 pd=4.054e-05 nrs=0.00675 nrd=0.00675 m=(1)*(10) \
-        par1=((1)*(10)) xf_subext=0
-    M17 (net11 net014 vss vss) nedia_bjt w=10u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M15 (net014 vdd3 vss vss) nedia_bjt w=10u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M14 (net016 net016 net19 vss) nedia_bjt w=30u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M8 (net17 net17 VB vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M16 (Bias2 en_3v net11 vss) nedia_bjt w=60u l=1.25u m=(1)*(5) \
-        par1=((1)*(5)) extlay=0 xf_subext=0
-    M5 (net19 VB net26 vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M0 (Ist VB net25 vss) nedia_bjt w=60u l=1.25u m=(1)*(10) \
-        par1=((1)*(10)) extlay=0 xf_subext=0
-    M7 (VB net17 net16 vss) nedia_bjt w=20u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M6 (net16 net16 vss vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M4 (net26 net19 vss vss) nedia_bjt w=60u l=1.25u m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M3 (net25 net19 vss vss) nedia_bjt w=60u l=1.25u m=(1)*(10) \
-        par1=((1)*(10)) extlay=0 xf_subext=0
-    I17 LSHVT18U3VX2
-    M11 (net23 net013 vddh vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M1 (net24 net013 vddh vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M2 (net013 net013 vddh vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M12 (net016 Bias2 net23 vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M10 (net17 Bias2 net24 vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    M9 (Bias2 Bias2 net013 vss) ped_bjt w=30u l=940.0n m=(1)*(1) \
-        par1=((1)*(1)) extlay=0 xf_subext=0
-    R1 (vdd3 vss) rpp1k1 l=202.905u w=2u m=1 par1=(1)
-    R0 (en_3v vss) rpp1k1 l=202.905u w=2u m=1 par1=(1)
-ends CurrentMirror_ST
+    M6 (Q net20 inh_power_vdd3 inh_power_vdd3) pe3 w=2.82u l=300n \
+        as=1.3536e-12 ad=1.3536e-12 ps=6.6e-06 pd=6.6e-06 nrs=0.0957447 \
+        nrd=0.0957447 m=(1)*(1) par1=((1)*(1))
+    M8 (net4 A inh_power_vdde inh_power_vdd3) pe3 w=1.47u l=300n \
+        as=7.056e-13 ad=7.056e-13 ps=3.9e-06 pd=3.9e-06 nrs=0.183673 \
+        nrd=0.183673 m=(1)*(1) par1=((1)*(1))
+    M9 (net20 A net024 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M0 (net10 net4 net023 inh_power_vdd3) pe3 w=420.0n l=300n as=2.016e-13 \
+        ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 nrd=0.642857 \
+        m=(1)*(1) par1=((1)*(1))
+    M2 (net023 net20 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M4 (net024 net10 inh_power_vdd3 inh_power_vdd3) pe3 w=420.0n l=300n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1))
+    M3 (net20 A inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M5 (Q net20 inh_ground_gnd inh_ground_gnd) ne3 w=1.78u l=350.0n \
+        as=8.544e-13 ad=8.544e-13 ps=4.52e-06 pd=4.52e-06 nrs=0.151685 \
+        nrd=0.151685 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M7 (net4 A inh_ground_gnd inh_ground_gnd) ne3 w=420.0n l=350.0n \
+        as=2.016e-13 ad=2.016e-13 ps=1.8e-06 pd=1.8e-06 nrs=0.642857 \
+        nrd=0.642857 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+    M1 (net10 net4 inh_ground_gnd inh_ground_gnd) ne3 w=1.31u l=350.0n \
+        as=6.288e-13 ad=6.288e-13 ps=3.58e-06 pd=3.58e-06 nrs=0.206107 \
+        nrd=0.206107 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+ends LSHVT18U3VX2
 // End of subcircuit definition.

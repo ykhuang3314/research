@@ -1,0 +1,4 @@
+designtop="IL2239_SAR_ADC.SAR4_sim:schematic"
+cell="digital_stimuli_SAR4" lib="IL2239_SAR_ADC" view="verilogams" 
+cell="SAR4" lib="IL2239_SAR_ADC" view="verilogams" 
+cell="vsource" view="analogtext" 

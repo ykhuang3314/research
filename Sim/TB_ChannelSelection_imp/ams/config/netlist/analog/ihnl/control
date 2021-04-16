@@ -9,16 +9,16 @@ hnlLastStopCellInfo = '(
                           ( "PRIMLIB" "ne" "spectre" "52" "1562065969" )
                           ( "PRIMLIB" "pe" "spectre" "53" "1562065969" )
                           ( "PRIMLIB" "csft5a" "spectre" "41" "1562065969" )
-                          ( "Stimulator_IMP" "Decoder8" "functional" "1617613642" "1617613642" )
+                          ( "Stimulator_IMP" "Decoder3_8" "functional" "1618306749" "1618306749" )
                           ( "analogLib" "idc" "spectre" "33" "1570591052" )
-                          ( "Stimulator_IMP" "Digital_Stimulus_V2_ST" "functional" "1617615733" "1617615733" )
+                          ( "Stimulator_IMP" "Digital_Stimulus_V2_ST" "functional" "1618314955" "1618314955" )
                        )
 hnlLastNetlistConfig = t
-hnlLastConfigFileVersion = 2
-hnlLastConfigFileTimeStamp = "1617614510"
+hnlLastConfigFileVersion = 4
+hnlLastConfigFileTimeStamp = "1618316423"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "Stimulator_TestBench" "TB_ChannelSelection_imp" "config" 2 "1617614510" )
+( "Stimulator_TestBench" "TB_ChannelSelection_imp" "config" 4 "1618316423" )
 ) 
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"
@@ -777,8 +777,8 @@ hnlLastNetNameDifferentFrom = '( "instance" )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "D_CELLS_M3V" "1528371405" )
-                   ( "Stimulator_IMP" "1614781067" )
+                    ( "Stimulator_IMP" "1614781067" )
+                   ( "D_CELLS_M3V" "1528371405" )
                    ( "GATES_3V" "1520929029" )
                    ( "D_CELLS_3V" "1520929020" )
                    ( "GATES_HD" "1516350477" )

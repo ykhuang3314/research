@@ -1,0 +1,5 @@
+cellMap,*SAR4_sim,*SAR4_sim,*null,*null
+topMap,*SAR4_sim
+netMap,*SAR4_sim,*gnd!,*0
+instMap,*SAR4_sim,*V0,*V0
+instMaster,*SAR4_sim,*V0,*analogLib_vsource_spectre,*vsource

@@ -1,2 +1,2 @@
-runDir = ./AssuraLVS
-runName = HalfBridge_ST_LVS
+runDir = ./AssuraDRC
+runName = CurrentMirror_ST_DRC

@@ -1,0 +1,10 @@
+cellMap,*inverterX2,*inverterX2,*IL2239_SAR_ADC,*schematic
+netMap,*inverterX2,*gnd!,*0
+instMap,*inverterX2,*M0,*M0
+instMaster,*inverterX2,*M0,*PRIMLIB_pel_spectre,*pel
+instMap,*inverterX2,*M1,*M1
+instMaster,*inverterX2,*M1,*PRIMLIB_nel_spectre,*nel
+portMap,*inverterX2,*VDD,*VDD
+portMap,*inverterX2,*VSS,*VSS
+portMap,*inverterX2,*in,*in
+portMap,*inverterX2,*out,*out

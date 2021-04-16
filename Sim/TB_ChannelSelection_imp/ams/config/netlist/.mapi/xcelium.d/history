@@ -2,4 +2,4 @@
 // File created by:  xrun
 // Do not modify this file
 
-s1::(05Apr2021:11:42:19):( xrun -f /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi/mapi_run.args )
+s1::(13Apr2021:14:33:25):( xrun -f /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi/mapi_run.args )

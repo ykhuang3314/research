@@ -1,0 +1,1 @@
+IL2239_SAR_ADC.SAR4_ADC_sim_config.lnx8664.18.03.d

@@ -1,0 +1,14 @@
+
+// Library name: IL2239_SAR_ADC
+// Cell name: SAR4_ADC_sim
+// View name: schematic
+// Inherited view list: schematic
+I1 DAC4_SH
+V3 (Vref 0) vsource dc=Vref type=dc
+V2 (Vcm 0) vsource dc=Vcm type=dc
+V1 (VDD 0) vsource dc=VDD type=dc
+V4 (net3 0) vsource type=pulse val0=0 val1=1.8 period=1/fclk \
+        rise=0.001/fclk fall=0.001/fclk width=0.5/fclk
+V0 (Vin 0) vsource type=pulse val0=0 val1=400m period=125.6u rise=20.8u \
+        fall=20.8u width=62.8u
+I16 bufferX2

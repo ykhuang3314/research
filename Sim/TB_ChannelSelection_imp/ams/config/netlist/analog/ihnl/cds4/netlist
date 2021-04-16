@@ -1,21 +1,8 @@
-    R0 (Iext net9) rpp1k1 l=20.095u w=2u m=1 par1=(1)
-    M3 (net8 net8 vss vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
-        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
-    M2 (net9 net9 net8 vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
-        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
-    M0 (Bias2 net9 net17 vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
-        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
-    M1 (net17 net8 vss vss) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
-        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
-    M48 (Bias1 Bias1 vdd3 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-    M49 (Bias2 Bias2 Bias1 vdd3) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-ends Ext_Iref_ST
+    I8 LS_HighSide_V3_ST
+    M34 (OUT VG_nedia Ist 0) nedia_bjt w=80u l=1.25u m=(1)*(10) \
+        par1=((1)*(10)) extlay=0 xf_subext=0
+    M66 (OUT VG_ped vddh 0) ped_bjt w=80u l=940.0n m=(1)*(13) \
+        par1=((1)*(13)) extlay=0 xf_subext=0
+    I9 LS_LowSide_V2_ST
+ends HalfBridge_ST
 // End of subcircuit definition.

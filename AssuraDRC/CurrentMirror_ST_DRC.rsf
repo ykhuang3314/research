@@ -1,0 +1,37 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/19 22:32 (sj-ramneek) $
+; sub-version 4.1_USR6_HF3
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; RSF include(/pkg/xfab/XKIT/xh018/cadence/v8_0/assura/v8_0_1/Assura/XH018_1143/DRCinclude.rsf) Section
+; Specified in the Assura UI
+;----------------------------------------------------------------------------
+
+; DRCinclude.rsf
+
+
+avParameters(
+?resolution 0.0005
+?textPriOnly t
+?keepOriginal t
+?autoGrid nil
+)
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avParameters(
+  ?inputLayout ( "df2" "Stimulator_IMP" )
+  ?cellName "CurrentMirror_ST"
+  ?viewName "layout"
+  ?runName "CurrentMirror_ST_DRC"
+  ?workingDirectory "./AssuraDRC"
+  ?technology "XH018_1143"
+  ?techLib "./assura_tech.lib"
+  ?avrpt t
+)

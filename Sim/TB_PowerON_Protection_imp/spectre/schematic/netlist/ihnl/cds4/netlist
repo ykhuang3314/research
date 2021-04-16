@@ -1,12 +1,7 @@
-    M0 (net12 in_3V 0 0) nedia_bjt w=30u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+    I2 (net11 0 out) ResistiveDivider
+    M1 (net11 net9 vddh 0) ped_bjt w=20u l=940.0n m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
-    R2 (net9 net12) rpp1k1 l=507.595u w=2u m=1 par1=(1)
-    R0 (out 0) rpp1k1 l=304.47u w=2u m=1 par1=(1)
-    R1 (vddh net9) rpp1k1 l=304.47u w=2u m=1 par1=(1)
-    R3 (net11 out) rpp1k1 l=507.595u w=2u m=1 par1=(1)
-    M1 (net11 net9 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
-        extlay=0 xf_subext=0
-    I0 (in in_3V inh_ground_gnd inh_power_vdd3 inh_power_vdde) \
-        LSHVT18U3VX1
+    I1 (0 in net9 vdd3! vdde! vddh inh_ground_gnd inh_power_vdd3 \
+        inh_power_vdde) LS_HighSide_V3_ST
 ends LS_LowSide_V2_ST
 // End of subcircuit definition.

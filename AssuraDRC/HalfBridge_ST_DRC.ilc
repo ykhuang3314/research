@@ -3,10 +3,9 @@ D_CELLS_M3V LSHVT18U3VX1 layout 73722
 Stimulator_IMP ResistiveDivider layout 11393
 PRIMLIB nedia_bjt layout 630
 Stimulator_IMP LS_HighSide_V3_ST layout 4334
-Stimulator_IMP M4_MTPCell layout 67
 PRIMLIB ped_bjt layout 572
 Stimulator_IMP LS_LowSide_V2_ST layout 4015
-Stimulator_IMP M4_MTPCell_v2 layout 22
+Stimulator_IMP M2_MTPcell layout 522
 PRIMLIB nedia_bjt layout 630
 PRIMLIB ped_bjt layout 572
-Stimulator_IMP HalfBridge_ST layout 22303
+Stimulator_IMP HalfBridge_ST layout 16890

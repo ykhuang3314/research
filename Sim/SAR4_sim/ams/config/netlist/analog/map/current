@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "SAR4_sim"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/SAR4_sim/ams/config/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "IL2239_SAR_ADC/SAR4_sim/schematic" "SAR4_sim" )
+ )
+( "SAR4_sim" "ihnl/cds0/map" )
+ )

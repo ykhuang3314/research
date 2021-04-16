@@ -1,0 +1,92 @@
+
+// Library name: IL2239_SAR_ADC
+// Cell name: inverterX2
+// View name: schematic
+// Inherited view list: schematic
+subckt inverterX2
+    M0 (out in VDD VDD) pel w=1.74u l=180.0n as=8.352e-13 ad=8.352e-13 \
+        ps=4.44e-06 pd=4.44e-06 nrs=0.155172 nrd=0.155172 m=(2)*(1) \
+        par1=((2)*(1))
+    M1 (out in VSS VSS) nel w=1.2u l=180.0n as=5.76e-13 ad=5.76e-13 \
+        ps=3.36e-06 pd=3.36e-06 nrs=0.225 nrd=0.225 m=(2)*(1) \
+        par1=((2)*(1)) xf_subext=0
+ends inverterX2
+// End of subcircuit definition.
+
+// Library name: IL2239_SAR_ADC
+// Cell name: DAC4_SH
+// View name: schematic
+// Inherited view list: schematic
+subckt DAC4_SH
+    C30 (outp c1) capacitor c=Cap+dCap
+    C29 (c1 SW_inp) capacitor c=Cchannel/2
+    C28 (c1 SW_ref) capacitor c=Cchannel/2
+    C27 (net85 SW_inp) capacitor c=Cchannel/2
+    C26 (VSS SW_ref) capacitor c=Cchannel/2
+    C25 (inp SW_inp) capacitor c=Cchannel/2
+    C24 (net85 SW_inp) capacitor c=Cchannel/2
+    C23 (REF SW_ref) capacitor c=Cchannel/2
+    C22 (net85 SW_ref) capacitor c=Cchannel/2
+    C21 (CM SW_inp) capacitor c=Cchannel/2
+    C20 (outp SW_inp) capacitor c=Cchannel/2
+    C19 (outp c1) capacitor c=Cap+dCap
+    C18 (net85 b1) capacitor c=Cchannel/2
+    C17 (c1 b1) capacitor c=Cchannel/2
+    C16 (VSS b0n) capacitor c=Cchannel/2
+    C15 (c1 b0n) capacitor c=Cchannel/2
+    C14 (outp c2) capacitor c=2*Cap+2*dCap
+    C13 (net85 b1) capacitor c=Cchannel/2
+    C12 (c2 b1) capacitor c=Cchannel/2
+    C11 (VSS b1n) capacitor c=Cchannel/2
+    C10 (c2 b1n) capacitor c=Cchannel/2
+    C9 (outp c4) capacitor c=4*Cap+4*dCap
+    C8 (net85 b2) capacitor c=Cchannel/2
+    C7 (c4 b2) capacitor c=Cchannel/2
+    C6 (VSS b2n) capacitor c=Cchannel/2
+    C5 (c4 b2n) capacitor c=Cchannel/2
+    C4 (outp c8) capacitor c=8*Cap+8*dCap
+    C3 (net85 b3) capacitor c=Cchannel/2
+    C2 (c8 b3) capacitor c=Cchannel/2
+    C1 (VSS b3n) capacitor c=Cchannel/2
+    C0 (c8 b3n) capacitor c=Cchannel/2
+    I17 inverterX2
+    I16 inverterX2
+    I13 inverterX2
+    I11 inverterX2
+    V0 (VDD 0) vsource dc=1.8 type=dc
+ends DAC4_SH
+// End of subcircuit definition.
+
+// Library name: IL2239_SAR_ADC
+// Cell name: bufferX2
+// View name: schematic
+// Inherited view list: schematic
+subckt bufferX2
+    M0 (out net44 VDD VDD) pel w=1.74u l=180.0n as=8.352e-13 ad=8.352e-13 \
+        ps=4.44e-06 pd=4.44e-06 nrs=0.155172 nrd=0.155172 m=(2)*(1) \
+        par1=((2)*(1))
+    M2 (net44 in VDD VDD) pel w=1.74u l=180.0n as=8.352e-13 ad=8.352e-13 \
+        ps=4.44e-06 pd=4.44e-06 nrs=0.155172 nrd=0.155172 m=(1)*(1) \
+        par1=((1)*(1))
+    M3 (net44 in VSS VSS) nel w=1.2u l=180.0n as=5.76e-13 ad=5.76e-13 \
+        ps=3.36e-06 pd=3.36e-06 nrs=0.225 nrd=0.225 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (out net44 VSS VSS) nel w=1.2u l=180.0n as=5.76e-13 ad=5.76e-13 \
+        ps=3.36e-06 pd=3.36e-06 nrs=0.225 nrd=0.225 m=(2)*(1) \
+        par1=((2)*(1)) xf_subext=0
+ends bufferX2
+// End of subcircuit definition.
+
+// Library name: IL2239_SAR_ADC
+// Cell name: SAR4_ADC_sim
+// View name: schematic
+// Inherited view list: schematic
+I1 DAC4_SH
+V3 (Vref 0) vsource dc=Vref type=dc
+V2 (Vcm 0) vsource dc=Vcm type=dc
+V1 (VDD 0) vsource dc=VDD type=dc
+V4 (net3 0) vsource type=pulse val0=0 val1=1.8 period=1/fclk \
+        rise=0.001/fclk fall=0.001/fclk width=0.5/fclk
+V0 (Vin 0) vsource type=pulse val0=0 val1=400m period=125.6u rise=20.8u \
+        fall=20.8u width=62.8u
+I16 bufferX2

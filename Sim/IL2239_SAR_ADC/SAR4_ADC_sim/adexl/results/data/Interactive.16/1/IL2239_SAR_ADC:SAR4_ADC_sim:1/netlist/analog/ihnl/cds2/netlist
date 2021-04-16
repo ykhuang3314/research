@@ -1,0 +1,14 @@
+    M0 (out net44 VDD VDD) pel w=1.74u l=180.0n as=8.352e-13 ad=8.352e-13 \
+        ps=4.44e-06 pd=4.44e-06 nrs=0.155172 nrd=0.155172 m=(2)*(1) \
+        par1=((2)*(1))
+    M2 (net44 in VDD VDD) pel w=1.74u l=180.0n as=8.352e-13 ad=8.352e-13 \
+        ps=4.44e-06 pd=4.44e-06 nrs=0.155172 nrd=0.155172 m=(1)*(1) \
+        par1=((1)*(1))
+    M3 (net44 in VSS VSS) nel w=1.2u l=180.0n as=5.76e-13 ad=5.76e-13 \
+        ps=3.36e-06 pd=3.36e-06 nrs=0.225 nrd=0.225 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+    M1 (out net44 VSS VSS) nel w=1.2u l=180.0n as=5.76e-13 ad=5.76e-13 \
+        ps=3.36e-06 pd=3.36e-06 nrs=0.225 nrd=0.225 m=(2)*(1) \
+        par1=((2)*(1)) xf_subext=0
+ends bufferX2
+// End of subcircuit definition.

@@ -13,7 +13,7 @@
 vuiDRCFormTable = '(
 	format  "DFII"
 	vui2dbxor  nil
-	runName  "5bit_BinaryWeightedMirror_ST_DRC"
+	runName  "CurrentMirror_ST_DRC"
 	runDir  "./AssuraDRC"
 	machineLoc  "local"
 	viewRules  t
@@ -30,7 +30,7 @@ vuiDRCFormTable = '(
 	additionalFunctionsButton  nil
 	limitDRCswitcher  nil
 	library  "Stimulator_IMP"
-	cell  "5bit_BinaryWeightedMirror_ST"
+	cell  "CurrentMirror_ST"
 	view  "layout"
 	saveExtracted  nil
 	extractedView  "drc_extracted"

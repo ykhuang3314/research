@@ -1,0 +1,5 @@
+
+// Library name: Stimulator_IMP
+// Cell name: ResistiveDivider
+// View name: schematic
+subckt ResistiveDivider V1 V2 VOUT

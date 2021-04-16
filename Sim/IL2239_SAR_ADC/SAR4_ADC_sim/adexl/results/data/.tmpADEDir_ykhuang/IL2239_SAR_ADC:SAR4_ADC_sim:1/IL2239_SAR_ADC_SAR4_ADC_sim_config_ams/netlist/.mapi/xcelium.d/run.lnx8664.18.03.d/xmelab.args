@@ -1,0 +1,35 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/AMSD/ahdlSimDB"
+-amsdlibdir
+/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/SAR4/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:SAR4 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/comp_v2/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:comp_v2 view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/IL2239_SAR_ADC/relay/verilogams/verilog.vams lib:IL2239_SAR_ADC cell:relay view:verilogams"
+-MESSAGES
+-AMSELAB
+-XLMODE
+/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+/home/ykhuang/research/Sim/IL2239_SAR_ADC/SAR4_ADC_sim/adexl/results/data/Interactive.17/1/IL2239_SAR_ADC:SAR4_ADC_sim:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

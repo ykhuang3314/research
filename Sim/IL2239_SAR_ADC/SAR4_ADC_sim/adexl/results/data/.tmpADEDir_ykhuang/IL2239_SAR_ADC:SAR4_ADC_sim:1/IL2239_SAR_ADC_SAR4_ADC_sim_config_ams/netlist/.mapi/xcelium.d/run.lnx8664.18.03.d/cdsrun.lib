@@ -1,0 +1,5 @@
+SOFTINCLUDE /pkg/cadence/installs/XCELIUM1803/tools/inca/files/IEEE_vhdlams/cds.lib
+include ../../cds.lib
+define IL2239_SAR_ADC ../IL2239_SAR_ADC
+define worklib ../worklib
+define vhdlspice_skeletons ../vhdlspice_skeletons

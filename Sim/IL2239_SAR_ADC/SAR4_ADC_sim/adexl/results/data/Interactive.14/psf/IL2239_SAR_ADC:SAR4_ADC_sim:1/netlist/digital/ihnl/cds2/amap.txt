@@ -1,0 +1,2 @@
+netMap,*bufferX2,*gnd!,*cds_globals.\gnd! 
+cellMap,*bufferX2,*bufferX2,*IL2239_SAR_ADC,*schematic

@@ -1,10 +1,10 @@
 HEADER
 "PSFversion" "1.00"
 "Log Generator" "drlLog rev. 1.0"
-"Log Time Stamp" "Tue Mar 30 16:39:02 2021"
+"Log Time Stamp" "Thu Apr 15 11:23:34 2021"
 "simulator" "spectre"
 "version" "18.1.0.516.isr12"
-"date" "4:39:02 PM, Tue Mar 30, 2021"
+"date" "11:23:34 AM, Thur Apr 15, 2021"
 "design" "// Generated for: spectre"
 "signalNameType" "spectre"
 "simMode" "Spectre"
@@ -27,7 +27,7 @@ VALUE
 "PSF"
 ""
 ("time")
-"Transient Analysis `tran': time = (0 s -> 150 us)"
+"Transient Analysis `tran': time = (0 s -> 10 ms)"
 ) PROP(
 "data_type" "swept_scalar"
 )

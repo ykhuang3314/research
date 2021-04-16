@@ -1,4 +1,6 @@
 
-LSHVT18U3VX1 I0 ( .A(in), .Q(in_3V));
+ResistiveDivider I0 ( .V2(net10), .V1(vddh), .VOUT(out));
+
+LSHVT18U3VX1 I10 ( .A(in), .Q(inn3v));
 
 endmodule

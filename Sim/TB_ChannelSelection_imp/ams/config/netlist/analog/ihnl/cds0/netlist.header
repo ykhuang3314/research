@@ -1,6 +1,6 @@
 
-// Library name: D_CELLS_M3V
-// Cell name: LSHVT18U3VX1
-// View name: cmos_sch
-// Inherited view list: cmos_sch
-subckt LSHVT18U3VX1
+// Library name: Stimulator_IMP
+// Cell name: ResistiveDivider
+// View name: schematic
+// Inherited view list: schematic
+subckt ResistiveDivider

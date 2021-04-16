@@ -1,0 +1,24 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Apr 14 22:44:20 2021 
+Best design point: 1
+Design specs: 
+	IL2239_SAR_ADC:SAR4_ADC_sim:1	corner	Nominal - 
+Design parameters: 
+	fin		437.5K
+	Roff		500M
+	Ron		140
+	Cap		25f
+	Cchannel		15f
+	dCap		0
+	fclk		20M
+	Vcm		200m
+	VDD		1.8
+	Vin		180m
+	Vref		400m
+
+Interactive.13
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.13 completed. 
+Current time: Wed Apr 14 22:44:59 2021 

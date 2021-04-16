@@ -1,0 +1,5 @@
+define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT IL2239_SAR_ADC.SAR4:verilogams
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => worklib )

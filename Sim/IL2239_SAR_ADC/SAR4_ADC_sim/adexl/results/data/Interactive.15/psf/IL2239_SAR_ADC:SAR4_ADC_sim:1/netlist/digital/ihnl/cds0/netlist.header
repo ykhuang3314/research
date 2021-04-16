@@ -1,0 +1,19 @@
+// Library - IL2239_SAR_ADC, Cell - inverterX2, View - schematic
+// LAST TIME SAVED: Apr 14 16:41:16 2021
+// NETLIST TIME: Apr 14 23:15:15 2021
+`timescale 1ns / 1ps 
+
+`worklib IL2239_SAR_ADC
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="IL2239_SAR_ADC", dfII_cell="inverterX2", dfII_view="schematic", worklib_name="IL2239_SAR_ADC", view_name="schematic", last_save_time="Apr 14 16:41:16 2021" *)
+
+module inverterX2 (out, VDD, VSS, in);
+
+output  out;
+
+inout  VDD, VSS;
+
+input  in;
+

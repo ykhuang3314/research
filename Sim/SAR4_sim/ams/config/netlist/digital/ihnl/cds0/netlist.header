@@ -1,0 +1,13 @@
+// Library - IL2239_SAR_ADC, Cell - SAR4_sim, View - schematic
+// LAST TIME SAVED: Apr 13 10:48:14 2021
+// NETLIST TIME: Apr 14 21:39:06 2021
+`timescale 1ns / 1ps 
+
+`worklib IL2239_SAR_ADC
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="IL2239_SAR_ADC", dfII_cell="SAR4_sim", dfII_view="schematic", worklib_name="IL2239_SAR_ADC", view_name="schematic", last_save_time="Apr 13 10:48:14 2021" *)
+
+module SAR4_sim ();
+

@@ -5,5 +5,5 @@ HEADER
 "V0n V1n V2n V3n" "analogLib_vdc_spectre"
 "I0n I11n I13n I15n I17n I19n I7n I9n" "Stimulator_IMP_HalfBridge_ST_schematic"
 "I26n" "Stimulator_IMP_CurrentSource_All_ST_schematic"
-"I30n I31n" "Stimulator_IMP_Decoder8_functional"
 "I32n" "Stimulator_IMP_Digital_Stimulus_V2_ST_functional"
+"I33n I34n" "Stimulator_IMP_Decoder3_8_functional"

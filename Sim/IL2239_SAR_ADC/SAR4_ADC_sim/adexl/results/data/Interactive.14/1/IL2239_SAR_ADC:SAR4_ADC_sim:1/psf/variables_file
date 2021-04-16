@@ -1,0 +1,21 @@
+HEADER
+"PSFversion" "1.00"
+"Time Stamp" "Apr 14 23:09:51 2021"
+TYPE
+"variable" STRUCT(
+"value" FLOAT DOUBLE
+) PROP( "key" "element" )
+VALUE
+"Vref" "variable" ( 400e-3 ) PROP( )
+"Vin" "variable" ( 180e-3 ) PROP( )
+"VDD" "variable" ( 1.8 ) PROP( )
+"Vcm" "variable" ( 200e-3 ) PROP( )
+"fclk" "variable" ( 20e6 ) PROP( )
+"dCap" "variable" ( 0 ) PROP( )
+"Cchannel" "variable" ( 15e-15 ) PROP( )
+"Cap" "variable" ( 25e-15 ) PROP( )
+"Ron" "variable" ( 140 ) PROP( )
+"Roff" "variable" ( 500e6 ) PROP( )
+"fin" "variable" ( 437500 ) PROP( )
+"temp" "variable" ( 27 ) PROP( )
+END

@@ -1,0 +1,14 @@
+enableAMSDflex (nil)
+compileVAAsVAMS (nil)
+saveTimeInterval ""
+runSimOnly (t)
+runCompOnly (t nil)
+runOpts "Batch (normal)"
+saveStartTime ""
+restartFlag (nil)
+saveTimes ""
+snapshot ""
+runElabOnly (t nil)
+saveStopTime ""
+cleanSnapShot (nil)
+snapshotPrefix ""

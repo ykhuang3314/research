@@ -2,7 +2,7 @@
 // IC subversion:  IC6.1.8-64b.500.7 
 // Xcelium version: 18.03-s018
 // Copyright(C) 2005-2009, Cadence Design Systems, Inc
-// User: ykhuang Pid: 32262
+// User: ykhuang Pid: 1720
 // Design library name: Stimulator_TestBench
 // Design cell name: TB_ChannelSelection_imp
 // Design view name: config
@@ -11,10 +11,10 @@
 `include "disciplines.vams"
 `include "userDisciplines.vams"
 // HDL file - Stimulator_IMP, Digital_Stimulus_V2_ST, functional.
-// HDL file - Stimulator_IMP, Decoder8, functional.
-// Library - Stimulator_IMP, Cell - LS_HighSide_V3_ST, View - schematic
-// LAST TIME SAVED: Mar 19 17:27:00 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// HDL file - Stimulator_IMP, Decoder3_8, functional.
+// Library - Stimulator_IMP, Cell - ResistiveDivider, View - schematic
+// LAST TIME SAVED: Apr  9 15:33:06 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_IMP
 `view schematic
@@ -22,29 +22,122 @@
 `timescale 1ns / 1ps 
 (* cds_ams_schematic *)
 
-module LS_HighSide_V3_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), .\vdde! (cdsNet0), vddh, in);
-output  out;
-input  in;
-inout  cdsNet2, cdsNet1, cdsNet0, vddh;
-wire inn3v;
-cds_alias #(1) cds_alias_inst1 ( cdsNet2 , cds_globals.\gnd! );
-cds_alias #(1) cds_alias_inst2 ( cdsNet1 , cds_globals.\vdd3! );
-cds_alias #(1) cds_alias_inst3 ( cdsNet0 , cds_globals.\vdde! );
-LSHVT18U3VX1 I10 (.A( in ), .Q( inn3v ));
-nedia_bjt #(.w(1e-05), .l(1.25e-06), .m((1)*(5)), .par1((1)*(5)), .extlay(0), .xf_subext(0))
+module ResistiveDivider (VOUT, V1, V2);
+output  VOUT;
+input  V1, V2;
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
 (* integer passed_mfactor = "m"; *)
- M13 (net10, inn3v, cds_globals.\gnd! , cds_globals.\gnd! );
-rpp1k1 #(.l(0.00030447), .w(2e-06), .m(1), .par1(1))
+ R37 (net09, V2);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
 (* integer passed_mfactor = "m"; *)
- R0 (vddh, out);
-rpp1k1 #(.l(0.000507595), .w(2e-06), .m(1), .par1(1))
+ R36 (net010, net09);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
 (* integer passed_mfactor = "m"; *)
- R1 (out, net10);
+ R35 (net011, net010);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R34 (net012, net011);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R33 (net013, net012);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R32 (net014, net013);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R31 (net015, net014);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R30 (net016, net015);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R29 (net017, net016);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R28 (net018, net017);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R27 (net019, net018);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R26 (VOUT, net019);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R25 (net020, VOUT);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R24 (net021, net020);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R23 (net022, net021);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R22 (net023, net022);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R21 (net024, net023);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R20 (net025, net024);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R19 (net026, net025);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R18 (net027, net026);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R17 (net028, net027);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R16 (net029, net028);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R15 (net030, net029);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R14 (net031, net030);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R13 (net032, net031);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R12 (net033, net032);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R11 (net034, net033);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R10 (net035, net034);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R9 (net036, net035);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R8 (net037, net036);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R7 (net038, net037);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R6 (V1, net038);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R5 (net08, net08);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R4 (net07, net07);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R3 (net5, net5);
+rpp1k1 #(.l(2.3e-05), .w(2e-06), .m(1), .par1(1))
+(* integer passed_mfactor = "m"; *)
+ R2 (net6, net6);
 
 endmodule
 // Library - Stimulator_IMP, Cell - Idac_5bit_ST, View - schematic
-// LAST TIME SAVED: Mar 31 15:05:20 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// LAST TIME SAVED: Apr 12 10:14:59 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_IMP
 `view schematic
@@ -86,31 +179,37 @@ AND2HDX0 I46 (.Q( net021 ), .B( D1 ), .A( Enable ));
 AND2HDX0 I47 (.Q( net022 ), .B( D2 ), .A( Enable ));
 AND2HDX0 I48 (.Q( net023 ), .B( D3 ), .A( Enable ));
 AND2HDX0 I49 (.Q( net026 ), .B( D4 ), .A( Enable ));
-pe3 #(.w(1e-05), .l(1e-06), .as(2.9625e-12), .ad(2.7e-12), .ps(1.18425e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(16)), .par1((1)*(16)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((1)*(1)), .par1((1)*(1)))
+(* integer passed_mfactor = "m"; *)
+ M1 (vdd3, vdd3, vdd3, vdd3);
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((1)*(1)), .par1((1)*(1)))
+(* integer passed_mfactor = "m"; *)
+ M2 (vdd3, vdd3, vdd3, vdd3);
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((16)*(1)), .par1((16)*(1)))
 (* integer passed_mfactor = "m"; *)
  M41 (net31, Bias1, vdd3, vdd3);
-pe3 #(.w(1e-05), .l(1e-06), .as(3.225e-12), .ad(2.7e-12), .ps(1.3145e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(8)), .par1((1)*(8)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((8)*(1)), .par1((8)*(1)))
 (* integer passed_mfactor = "m"; *)
  M38 (net33, Bias1, vdd3, vdd3);
-pe3 #(.w(1e-05), .l(1e-06), .as(3.75e-12), .ad(2.7e-12), .ps(1.575e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(4)), .par1((1)*(4)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((4)*(1)), .par1((4)*(1)))
 (* integer passed_mfactor = "m"; *)
  M35 (net35, Bias1, vdd3, vdd3);
-pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(2.7e-12), .ps(2.096e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(2)), .par1((1)*(2)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((2)*(1)), .par1((2)*(1)))
 (* integer passed_mfactor = "m"; *)
  M32 (net37, Bias1, vdd3, vdd3);
 pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((1)*(1)), .par1((1)*(1)))
 (* integer passed_mfactor = "m"; *)
  M22 (net39, Bias1, vdd3, vdd3);
-pe3 #(.w(1e-05), .l(1e-06), .as(2.9625e-12), .ad(2.7e-12), .ps(1.18425e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(16)), .par1((1)*(16)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((16)*(1)), .par1((16)*(1)))
 (* integer passed_mfactor = "m"; *)
  M42 (net30, Bias2, net31, vdd3);
-pe3 #(.w(1e-05), .l(1e-06), .as(3.225e-12), .ad(2.7e-12), .ps(1.3145e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(8)), .par1((1)*(8)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((8)*(1)), .par1((8)*(1)))
 (* integer passed_mfactor = "m"; *)
  M39 (net32, Bias2, net33, vdd3);
-pe3 #(.w(1e-05), .l(1e-06), .as(3.75e-12), .ad(2.7e-12), .ps(1.575e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(4)), .par1((1)*(4)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((4)*(1)), .par1((4)*(1)))
 (* integer passed_mfactor = "m"; *)
  M36 (net34, Bias2, net35, vdd3);
-pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(2.7e-12), .ps(2.096e-05), .pd(1.054e-05), .nrs(0.027), .nrd(0.027), .m((1)*(2)), .par1((1)*(2)))
+pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((2)*(1)), .par1((2)*(1)))
 (* integer passed_mfactor = "m"; *)
  M33 (net36, Bias2, net37, vdd3);
 pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.096e-05), .nrs(0.027), .nrd(0.027), .m((1)*(1)), .par1((1)*(1)))
@@ -134,8 +233,8 @@ pe3 #(.w(1e-05), .l(3e-07), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.09
 
 endmodule
 // Library - Stimulator_IMP, Cell - CurrentMirror_ST, View - schematic
-// LAST TIME SAVED: Apr  1 15:37:28 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// LAST TIME SAVED: Apr 10 15:05:42 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_IMP
 `view schematic
@@ -157,7 +256,7 @@ csft5a #(.area(6.3936e-11), .perimeter(3.372e-05), .m(45), .par1(45))
 ne3 #(.w(4e-05), .l(2e-06), .as(1.92e-11), .ad(1.92e-11), .ps(8.096e-05), .pd(8.096e-05), .nrs(0.00675), .nrd(0.00675), .m((1)*(1)), .par1((1)*(1)), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M26 (Iref, Iref, vss, vss);
-ne3 #(.w(4e-05), .l(2e-06), .as(1.248e-11), .ad(1.08e-11), .ps(4.8624e-05), .pd(4.054e-05), .nrs(0.00675), .nrd(0.00675), .m((1)*(10)), .par1((1)*(10)), .xf_subext(0))
+ne3 #(.w(4e-05), .l(2e-06), .as(1.92e-11), .ad(1.92e-11), .ps(8.096e-05), .pd(8.096e-05), .nrs(0.00675), .nrd(0.00675), .m((10)*(1)), .par1((10)*(1)), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M13 (net11, Iref, vss, vss);
 nedia_bjt #(.w(1e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
@@ -166,33 +265,33 @@ nedia_bjt #(.w(1e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .x
 nedia_bjt #(.w(1e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M15 (net014, vdd3, vss, vss);
-nedia_bjt #(.w(3e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+nedia_bjt #(.w(4e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
- M14 (net016, net016, net19, vss);
-nedia_bjt #(.w(6e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+ M14 (net016, net016, VG1, vss);
+nedia_bjt #(.w(8e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M8 (net17, net17, VB, vss);
 nedia_bjt #(.w(6e-05), .l(1.25e-06), .m((1)*(5)), .par1((1)*(5)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M16 (Bias2, en_3v, net11, vss);
-nedia_bjt #(.w(6e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+nedia_bjt #(.w(8e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
- M5 (net19, VB, net26, vss);
-nedia_bjt #(.w(6e-05), .l(1.25e-06), .m((1)*(10)), .par1((1)*(10)), .extlay(0), .xf_subext(0))
+ M5 (VG1, VB, VD_M4, vss);
+nedia_bjt #(.w(8e-05), .l(1.25e-06), .m((10)*(1)), .par1((10)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
- M0 (Ist, VB, net25, vss);
-nedia_bjt #(.w(2e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+ M0 (Ist, VB, VD_M3, vss);
+nedia_bjt #(.w(3.5e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M7 (VB, net17, net16, vss);
-nedia_bjt #(.w(6e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+nedia_bjt #(.w(8e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M6 (net16, net16, vss, vss);
-nedia_bjt #(.w(6e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+nedia_bjt #(.w(8e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
- M4 (net26, net19, vss, vss);
-nedia_bjt #(.w(6e-05), .l(1.25e-06), .m((1)*(10)), .par1((1)*(10)), .extlay(0), .xf_subext(0))
+ M4 (VD_M4, VG1, vss, vss);
+nedia_bjt #(.w(8e-05), .l(1.25e-06), .m((10)*(1)), .par1((10)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
- M3 (net25, net19, vss, vss);
+ M3 (VD_M3, VG1, vss, vss);
 ped_bjt #(.w(3e-05), .l(9.4e-07), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M11 (net23, net013, vddh, vss);
@@ -221,7 +320,7 @@ rpp1k1 #(.l(0.000202905), .w(2e-06), .m(1), .par1(1))
 endmodule
 // Library - Stimulator_IMP, Cell - CurrentSource_All_ST, View - schematic
 // LAST TIME SAVED: Apr  1 15:53:40 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_IMP
 `view schematic
@@ -240,9 +339,35 @@ Idac_5bit_ST I1 (.Enable( Enable_ST ), .Idac( net9 ), .vdd3( vdd3 ), .Bias1( Bia
 CurrentMirror_ST I2 (.vss( vss ), .Ist( Ist ), .Iref( net9 ), .vddh( vddh ), .vdd3( vdd3 ), .enable( Enable_ST ));
 
 endmodule
+// Library - Stimulator_IMP, Cell - LS_HighSide_V3_ST, View - schematic
+// LAST TIME SAVED: Apr  9 15:38:16 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
+
+`worklib Stimulator_IMP
+`view schematic
+
+`timescale 1ns / 1ps 
+(* cds_ams_schematic *)
+
+module LS_HighSide_V3_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), .\vdde! (cdsNet0), vddh, in);
+output  out;
+input  in;
+inout  cdsNet2, cdsNet1, cdsNet0, vddh;
+wire net10;
+wire inn3v;
+cds_alias #(1) cds_alias_inst1 ( cdsNet2 , cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst2 ( cdsNet1 , cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst3 ( cdsNet0 , cds_globals.\vdde! );
+ResistiveDivider I0 (.V2( net10 ), .V1( vddh ), .VOUT( out ));
+LSHVT18U3VX1 I10 (.A( in ), .Q( inn3v ));
+nedia_bjt #(.w(1.5e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+(* integer passed_mfactor = "m"; *)
+ M13 (net10, inn3v, cds_globals.\gnd! , cds_globals.\gnd! );
+
+endmodule
 // Library - Stimulator_IMP, Cell - LS_LowSide_V2_ST, View - schematic
-// LAST TIME SAVED: Mar 23 11:40:23 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// LAST TIME SAVED: Apr  9 15:57:59 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_IMP
 `view schematic
@@ -254,34 +379,21 @@ module LS_LowSide_V2_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), .\vdde! (cdsN
 output  out;
 input  in;
 inout  cdsNet2, cdsNet1, cdsNet0, vddh;
-wire in_3V;
+wire net11;
+wire net9;
 cds_alias #(1) cds_alias_inst4 ( cdsNet2 , cds_globals.\gnd! );
 cds_alias #(1) cds_alias_inst5 ( cdsNet1 , cds_globals.\vdd3! );
 cds_alias #(1) cds_alias_inst6 ( cdsNet0 , cds_globals.\vdde! );
-LSHVT18U3VX1 I0 (.A( in ), .Q( in_3V ));
-nedia_bjt #(.w(3e-05), .l(1.25e-06), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
-(* integer passed_mfactor = "m"; *)
- M0 (net12, in_3V, cds_globals.\gnd! , cds_globals.\gnd! );
-rpp1k1 #(.l(0.000507595), .w(2e-06), .m(1), .par1(1))
-(* integer passed_mfactor = "m"; *)
- R2 (net9, net12);
-rpp1k1 #(.l(0.00030447), .w(2e-06), .m(1), .par1(1))
-(* integer passed_mfactor = "m"; *)
- R0 (out, cds_globals.\gnd! );
-rpp1k1 #(.l(0.00030447), .w(2e-06), .m(1), .par1(1))
-(* integer passed_mfactor = "m"; *)
- R1 (vddh, net9);
-rpp1k1 #(.l(0.000507595), .w(2e-06), .m(1), .par1(1))
-(* integer passed_mfactor = "m"; *)
- R3 (net11, out);
-ped_bjt #(.w(3e-05), .l(9.4e-07), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
+ResistiveDivider I2 (.V2(cds_globals.\gnd! ), .V1( net11 ), .VOUT( out ));
+LS_HighSide_V3_ST I1 (.\vdde! (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh( vddh ), .out( net9 ), .in( in ));
+ped_bjt #(.w(2e-05), .l(9.4e-07), .m((1)*(1)), .par1((1)*(1)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
  M1 (net11, net9, vddh, cds_globals.\gnd! );
 
 endmodule
 // Library - Stimulator_IMP, Cell - HalfBridge_ST, View - schematic
-// LAST TIME SAVED: Mar 30 17:29:00 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// LAST TIME SAVED: Apr  8 17:49:30 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_IMP
 `view schematic
@@ -293,24 +405,24 @@ module HalfBridge_ST (OUT, Ist, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), .\vdde! (cd
 output  OUT;
 input  Ctrl_HS, Ctrl_LS;
 inout  Ist, cdsNet2, cdsNet1, cdsNet0, vddh;
-wire net07;
-wire net08;
+wire VG_ped;
+wire VG_nedia;
 cds_alias #(1) cds_alias_inst7 ( cdsNet2 , cds_globals.\gnd! );
 cds_alias #(1) cds_alias_inst8 ( cdsNet1 , cds_globals.\vdd3! );
 cds_alias #(1) cds_alias_inst9 ( cdsNet0 , cds_globals.\vdde! );
-LS_HighSide_V3_ST I8 (.\vdde! (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh( vddh ), .out( net07 ), .in( Ctrl_HS ));
-LS_LowSide_V2_ST I9 (.\gnd! (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh( vddh ), .out( net08 ), .in( Ctrl_LS ));
-nedia_bjt #(.w(0.0001), .l(1.25e-06), .m((1)*(6)), .par1((1)*(6)), .extlay(0), .xf_subext(0))
+LS_HighSide_V3_ST I8 (.\vdde! (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh( vddh ), .out( VG_ped ), .in( Ctrl_HS ));
+LS_LowSide_V2_ST I9 (.\gnd! (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh( vddh ), .out( VG_nedia ), .in( Ctrl_LS ));
+nedia_bjt #(.w(8e-05), .l(1.25e-06), .m((1)*(10)), .par1((1)*(10)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
- M34 (OUT, net08, Ist, cds_globals.\gnd! );
-ped_bjt #(.w(0.0001), .l(9.4e-07), .m((1)*(6)), .par1((1)*(6)), .extlay(0), .xf_subext(0))
+ M34 (OUT, VG_nedia, Ist, cds_globals.\gnd! );
+ped_bjt #(.w(8e-05), .l(9.4e-07), .m((1)*(13)), .par1((1)*(13)), .extlay(0), .xf_subext(0))
 (* integer passed_mfactor = "m"; *)
- M66 (OUT, net07, vddh, cds_globals.\gnd! );
+ M66 (OUT, VG_ped, vddh, cds_globals.\gnd! );
 
 endmodule
 // Library - Stimulator_IMP, Cell - Ext_Iref_ST, View - schematic
 // LAST TIME SAVED: Mar 31 11:16:25 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_IMP
 `view schematic
@@ -346,7 +458,7 @@ pe3 #(.w(1e-05), .l(1e-06), .as(4.8e-12), .ad(4.8e-12), .ps(2.096e-05), .pd(2.09
 endmodule
 // Library - GATES_3V, Cell - invrv3, View - schematic
 // LAST TIME SAVED: Mar  7 12:42:39 2018
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib GATES_3V
 `view schematic
@@ -381,7 +493,7 @@ pe3 #(.w(GT_PUW), .l(GT_PUL), .as(sx*(GT_PUW)), .ad(sx*(GT_PUW)), .ps(2*sx+(GT_P
 endmodule
 // Library - D_CELLS_HD, Cell - AND2HDX0, View - cmos_sch
 // LAST TIME SAVED: Jan 23 08:10:19 2018
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib D_CELLS_HD
 `view cmos_sch
@@ -407,7 +519,7 @@ invr #(.sx(4.8e-07), .GT_PUW(7.2e-07), .GT_PDL(1.8e-07), .lc(2.7e-07), .GT_PUL(1
 endmodule
 // Library - D_CELLS_3V, Cell - IN_3VX2, View - cmos_sch
 // LAST TIME SAVED: Feb 20 10:23:55 2018
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib D_CELLS_3V
 `view cmos_sch
@@ -430,8 +542,8 @@ invrv3 #(.sx(4.8e-07), .GT_PUW(2.94e-06), .GT_PDL(3.5e-07), .lc(2.7e-07), .GT_PU
 
 endmodule
 // Library - Stimulator_TestBench, Cell - TB_ChannelSelection_imp, View - schematic
-// LAST TIME SAVED: Apr  5 11:42:16 2021
-// NETLIST TIME: Apr  5 11:42:26 2021
+// LAST TIME SAVED: Apr 13 14:33:06 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib Stimulator_TestBench
 `view schematic
@@ -441,10 +553,10 @@ endmodule
 
 module TB_ChannelSelection_imp ( );
 wire [4:0] Mag_ST;
-wire [3:0] ChSel_LS;
 wire [7:0] CtrlLS;
+wire [2:0] ChSel_LS;
 wire [7:0] CtrlHS;
-wire [3:0] ChSel_HS;
+wire [2:0] ChSel_HS;
 wire Ist;
 wire net12;
 wire vddh;
@@ -466,9 +578,9 @@ HalfBridge_ST I9 (.\vdd3! (cds_globals.\vdd3! ), .vddh( vddh ), .\vdde! (cds_glo
 HalfBridge_ST I7 (.\vdd3! (cds_globals.\vdd3! ), .vddh( vddh ), .\vdde! (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), .Ctrl_LS( CtrlLS[1] ), .Ctrl_HS( CtrlHS[1] ), .OUT( net18 ), .Ist( Ist ));
 HalfBridge_ST I0 (.Ist( Ist ), .\vdd3! (cds_globals.\vdd3! ), .vddh( vddh ), .\vdde! (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), .Ctrl_LS( CtrlLS[0] ), .Ctrl_HS( CtrlHS[0] ), .OUT( net19 ));
 CurrentSource_All_ST I26 (.vss(cds_globals.\gnd! ), .Ist( Ist ), .Iext( net08 ), .vdd3(cds_globals.\vdd3! ), .vddh( vddh ), .Enable_ST( Enable_ST ), .Mag0_ST( Mag_ST[0] ), .Mag1_ST( Mag_ST[1] ), .Mag2_ST( Mag_ST[2] ), .Mag3_ST( Mag_ST[3] ), .Mag4_ST( Mag_ST[4] ));
-Decoder8 I30 (.Dout( CtrlHS ), .Bin( ChSel_HS ));
-Decoder8 I31 (.Dout( CtrlLS ), .Bin( ChSel_LS ));
-Digital_Stimulus_V2_ST #(.Ch_Sweeping(1'b1)) I32 (.ChSel_HS( ChSel_HS ), .ChSel_LS( ChSel_LS ), .EN_ST( Enable_ST ), .MAG_ST( Mag_ST ));
+Decoder3_8 I34 (.Bin( ChSel_LS ), .Dout( CtrlLS ), .Enable( Enable_ST ));
+Decoder3_8 I33 (.Bin( ChSel_HS ), .Dout( CtrlHS ), .Enable( Enable_ST ));
+Digital_Stimulus_V2_ST #(.Ramping(1'b1)) I32 (.ChSel_HS( ChSel_HS ), .ChSel_LS( ChSel_LS ), .EN_ST( Enable_ST ), .MAG_ST( Mag_ST ));
 vsource #(.dc(1.8), .type("dc")) V3 (cds_globals.\vdd! , cds_globals.\gnd! );
 vsource #(.dc(40), .type("dc")) V2 (vddh, cds_globals.\gnd! );
 vsource #(.dc(1.8), .type("dc")) V0 (cds_globals.\vdde! , cds_globals.\gnd! );
@@ -489,7 +601,7 @@ isource #(.dc(1e-05), .type("dc")) I27 (cds_globals.\vdd3! , net08);
 endmodule
 // Library - D_CELLS_M3V, Cell - LSHVT18U3VX1, View - cmos_sch
 // LAST TIME SAVED: Jun  7 14:44:58 2018
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib D_CELLS_M3V
 `view cmos_sch
@@ -546,7 +658,7 @@ ne3 #(.w(1.31e-06), .l(3.5e-07), .as(6.288e-13), .ad(6.288e-13), .ps(3.58e-06), 
 endmodule
 // Library - D_CELLS_M3V, Cell - LSHVT18U3VX2, View - cmos_sch
 // LAST TIME SAVED: Jun  7 14:44:51 2018
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib D_CELLS_M3V
 `view cmos_sch
@@ -603,7 +715,7 @@ ne3 #(.w(1.31e-06), .l(3.5e-07), .as(6.288e-13), .ad(6.288e-13), .ps(3.58e-06), 
 endmodule
 // Library - GATES_HD, Cell - nand2, View - schematic
 // LAST TIME SAVED: Jan 18 15:00:04 2018
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib GATES_HD
 `view schematic
@@ -644,7 +756,7 @@ pe #(.w(GT_PUW), .l(GT_PUL), .as(sx*(GT_PUW)), .ad(sx*(GT_PUW)), .ps(2*(sx+(GT_P
 endmodule
 // Library - GATES_HD, Cell - invr, View - schematic
 // LAST TIME SAVED: Jan 18 15:00:13 2018
-// NETLIST TIME: Apr  5 11:42:26 2021
+// NETLIST TIME: Apr 13 14:33:33 2021
 
 `worklib GATES_HD
 `view schematic

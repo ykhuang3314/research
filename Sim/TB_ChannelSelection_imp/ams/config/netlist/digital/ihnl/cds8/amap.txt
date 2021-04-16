@@ -1,7 +1,7 @@
-netMap,*invr,*inh_ground_gnd_gnd!,*\gnd! 
-netMap,*invr,*inh_power_vdd_vdd!,*\vdd! 
-netMap,*invr,*vdd3!,*cds_globals.\vdd3! 
-netMap,*invr,*vdde!,*cds_globals.\vdde! 
-netMap,*invr,*gnd!,*cds_globals.\gnd! 
-netMap,*invr,*vdd!,*cds_globals.\vdd! 
-cellMap,*invr,*invr,*GATES_HD,*schematic
+netMap,*nand2,*inh_ground_gnd_gnd!,*\gnd! 
+netMap,*nand2,*inh_power_vdd_vdd!,*\vdd! 
+netMap,*nand2,*vdd3!,*cds_globals.\vdd3! 
+netMap,*nand2,*vdde!,*cds_globals.\vdde! 
+netMap,*nand2,*gnd!,*cds_globals.\gnd! 
+netMap,*nand2,*vdd!,*cds_globals.\vdd! 
+cellMap,*nand2,*nand2,*GATES_HD,*schematic

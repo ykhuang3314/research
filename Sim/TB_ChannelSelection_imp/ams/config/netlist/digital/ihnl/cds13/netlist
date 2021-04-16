@@ -1,31 +1,21 @@
-// Library - Stimulator_IMP, Cell - CurrentSource_All_ST, View -
-//schematic
-// LAST TIME SAVED: Apr  1 15:53:40 2021
-// NETLIST TIME: Apr  5 11:42:22 2021
+// Library - Stimulator_IMP, Cell - CurrentMirror_ST, View - schematic
+// LAST TIME SAVED: Apr 10 15:05:42 2021
+// NETLIST TIME: Apr 13 14:33:29 2021
 `timescale 1ns / 1ps 
 
 `worklib Stimulator_IMP
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentSource_All_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  1 15:53:40 2021" *)
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentMirror_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr 10 15:05:42 2021" *)
 
-module CurrentSource_All_ST (Iext, Ist, vdd3, vddh, vss, Enable_ST, 
-    Mag0_ST, Mag1_ST, Mag2_ST, Mag3_ST, Mag4_ST);
+module CurrentMirror_ST (Iref, Ist, vdd3, vddh, vss, enable);
 
-inout  Iext, Ist, vdd3, vddh, vss;
+inout  Iref, Ist, vdd3, vddh, vss;
 
-input  Enable_ST, Mag0_ST, Mag1_ST, Mag2_ST, Mag3_ST, Mag4_ST;
+input  enable;
 
 
-Ext_Iref_ST I0 ( .Iext(Iext), .vdd3(vdd3), .vss(vss), .Bias1(Bias1), 
-    .Bias2(Bias2));
-
-Idac_5bit_ST I1 ( .Enable(Enable_ST), .Idac(net9), .vdd3(vdd3), 
-    .Bias1(Bias1), .Bias2(Bias2), .D0(Mag0_ST), .D1(Mag1_ST), 
-    .D2(Mag2_ST), .D3(Mag3_ST), .D4(Mag4_ST));
-
-CurrentMirror_ST I2 ( .vss(vss), .Ist(Ist), .Iref(net9), .vddh(vddh), 
-    .vdd3(vdd3), .enable(Enable_ST));
+LSHVT18U3VX2 I17 ( .A(enable), .Q(en_3v));
 
 endmodule
