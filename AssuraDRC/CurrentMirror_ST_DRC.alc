@@ -1,10 +1,13 @@
-!<alc> v1 77
-0   11    0 rpp1k1 layout PRIMLIB lstrip="20u" shapeType="Serpentine 90" strips=10 in1=R2
-0   10    0 ped_bjt layout PRIMLIB w="30u" in1=M11
-0    9    0 nedia_bjt layout PRIMLIB in1=M17
-0    8    0 nedia_bjt layout PRIMLIB ng="5" w="60u" in1=M16
-0    7    0 nedia_bjt layout PRIMLIB w="80u" in1=M32e10
-0    4    0 ne3 layout PRIMLIB gContT="Met1" l="2u" w="20u" in1=M262e2
-0    3    0 ne3 layout PRIMLIB gContT="Met1" w="20u" in1=ModgenDummy_1_12_Modgen_1
-0    2    0 csft5a layout PRIMLIB
-0   12    0 CurrentMirror_ST layout Stimulator_IMP
+!<alc> v1 76
+0   15    0 rpp1k1 layout PRIMLIB lstrip="25u" shapeType="Serpentine 90" strips=4 in1=R3
+0   14    0 ped_bjt layout PRIMLIB w="30u" in1=M11
+0   13    0 nedia_bjt layout PRIMLIB in1=M17
+0   12    0 nedia_bjt layout PRIMLIB w="80u" in1=M32e10
+0   11    0 nedia_bjt layout PRIMLIB ng="5" w="60u" in1=M16
+0    8    0 ne3 layout PRIMLIB gContT="Met1" w="20u" in1=ModgenDummy_1_12_Modgen_1
+0    7    0 ne3 layout PRIMLIB gContT="Met1" l="2u" w="20u" in1=M262e2
+0    6    0 csft5a layout PRIMLIB
+0    5    0 M3_MTPcell layout Stimulator_IMP
+0    3    0 M3_MTP_8_cell layout Stimulator_IMP
+0    1    0 HVMOS_GateRingM1 layout Stimulator_IMP
+0   17    0 CurrentMirror_ST layout Stimulator_IMP

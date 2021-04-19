@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-mpssession virtuoso21284 -mpshost s2424 
+\o Arguments:		-mpssession virtuoso1678 -mpshost s2424 
 \o Working Directory:	s2424:/home/ykhuang/research
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -12,13 +12,12 @@
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "Stimulator_IMP"
 \a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
 \a cdsLibManager->cellListBox->value = "CurrentMirror_ST"
 \a cdsLibManager->cellLineEdit->value = "CurrentMirror_ST"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 2 0)
 \a cdsLibManager->libListBox->value = nil
@@ -31,14 +30,81 @@
 \a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
 \a cdsLibManager->cellListBox->value = "CurrentMirror_ST"
 \a cdsLibManager->cellLineEdit->value = "CurrentMirror_ST"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "M3_MTP_CornerCell"
+\a cdsLibManager->cellLineEdit->value = "M3_MTP_CornerCell"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 26 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->cellListBox->value = "M3_MTP_CornerCell"
+\a cdsLibManager->cellLineEdit->value = "M3_MTP_CornerCell"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "M3_MTP_CornerCell"
+\a cdsLibManager->cellLineEdit->value = "M3_MTP_CornerCell"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 26 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->cellListBox->value = "M3_MTP_CornerCell"
+\a cdsLibManager->cellLineEdit->value = "M3_MTP_CornerCell"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -47,51 +113,20 @@
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "Stimulator_IMP"
 \a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
-\a cdsLibManager->cellListBox->value = "CurrentMirror_ST"
-\a cdsLibManager->cellLineEdit->value = "CurrentMirror_ST"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "M3_MTP_CornerCell"
+\a cdsLibManager->cellLineEdit->value = "M3_MTP_CornerCell"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetWindowVisibility(cdsLibManager "hide")
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
-\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "HVMOS_GateRingM1"
+\a cdsLibManager->cellLineEdit->value = "HVMOS_GateRingM1"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "TB_PowerON_Protection_imp"
-\a cdsLibManager->cellLineEdit->value = "TB_PowerON_Protection_imp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "Stimulator_IMP"
-\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "floorplan"
-\a cdsLibManager->cellLineEdit->value = "floorplan"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
@@ -102,36 +137,123 @@
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
-\a cdsLibManager->libListBox->value = nil
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Decoder8"
+\a cdsLibManager->cellLineEdit->value = "Decoder8"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Digital_Stimulus_ST"
+\a cdsLibManager->cellLineEdit->value = "Digital_Stimulus_ST"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->cellListBox->value = "HalfBridge_ST"
+\a cdsLibManager->cellLineEdit->value = "HalfBridge_ST"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2181 188 1254 663))
+\a cdsLibManager->showCatsToggle->value = t
+\a cdsLibManager->QToolButton7->value = t
+\a cdsLibManager->showCategoriesAction->value = t
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
+\a nrResizeWindow(cdsLibManager list(1989 0 1851 1052))
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "PAD_layouts"
+\a cdsLibManager->catLineEdit->value = "PAD_layouts"
+\a cdsLibManager->cellListBox->value = "std_pad_layout"
+\a cdsLibManager->cellLineEdit->value = "std_pad_layout"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->libCatsTreeView->value = "Outputs_5V_tol"
+\a cdsLibManager->catLineEdit->value = "Outputs_5V_tol"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Outputs"
+\a cdsLibManager->catLineEdit->value = "Outputs"
+\a cdsLibManager->libCatsTreeView->value = "Isolation_Cells"
+\a cdsLibManager->catLineEdit->value = "Isolation_Cells"
+\a cdsLibManager->libCatsTreeView->value = "Layout"
+\a cdsLibManager->catLineEdit->value = "Layout"
+\a cdsLibManager->libCatsTreeView->value = "Latches"
+\a cdsLibManager->catLineEdit->value = "Latches"
+\a cdsLibManager->libCatsTreeView->value = "Level_Shifter_Cells"
+\a cdsLibManager->catLineEdit->value = "Level_Shifter_Cells"
+\a cdsLibManager->libCatsTreeView->value = "Layout"
+\a cdsLibManager->catLineEdit->value = "Layout"
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "XFABLibs"
+\a cdsLibManager->libLineEdit->value = "XFABLibs"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libCatsTreeView->value = "Outputs"
+\a cdsLibManager->catLineEdit->value = "Outputs"
+\a cdsLibManager->cellListBox->value = "BT2SPC"
+\a cdsLibManager->cellLineEdit->value = "BT2SPC"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = "XFABLibs/TECH_XH018_HD"
+\a cdsLibManager->libLineEdit->value = "TECH_XH018_HD"
+\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "Stimulator_IMP"
-\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
-\a cdsLibManager->cellListBox->value = "floorplan"
-\a cdsLibManager->cellLineEdit->value = "floorplan"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "XFABLibs/PRIMLIB"
+\a cdsLibManager->libLineEdit->value = "PRIMLIB"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libListBox->value = "XFABLibs/DigitalLibs"
+\a cdsLibManager->libLineEdit->value = "DigitalLibs"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" t)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "CurrentMirror_ST"
-\a cdsLibManager->cellLineEdit->value = "CurrentMirror_ST"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a cdsLibManager->libListBox->value = "XFABLibs/DigitalLibs/IO_CELLS_3V"
+\a cdsLibManager->libLineEdit->value = "IO_CELLS_3V"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libCatsTreeView->value = "Special"
+\a cdsLibManager->catLineEdit->value = "Special"
+\a cdsLibManager->libCatsTreeView->value = "Open_Drain_Outputs"
+\a cdsLibManager->catLineEdit->value = "Open_Drain_Outputs"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" nil)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libCatsTreeView->value = "Supply"
+\a cdsLibManager->catLineEdit->value = "Supply"
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" nil)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o MPS service: shutdown
 \o libManager is exiting.
