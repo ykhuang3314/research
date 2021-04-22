@@ -1,0 +1,283 @@
+html, body{
+    margin           : 0;
+    padding          : 0;
+}
+
+th{
+	border           : 1px solid black;
+	padding          : 3px 6px 3px 6px;
+    background-color : lightGray;
+    word-wrap          : break-word;
+}
+
+table {
+	width            : 100%;
+	border-collapse  : collapse;
+	margin-top       : 12px;
+	margin-bottom    : 12px;
+	background-color : GhostWhite;
+    table-layout     : fixed;
+}
+
+#info{
+	text-align        : left;
+}
+
+#info > thead > tr > th:nth-child(1){
+    width             : 820px;
+}
+
+#info > thead > tr > th:nth-child(2){
+    width             : 190px;
+}
+
+#info > thead > tr > th:nth-child(3){
+    width             : 100px;
+}
+
+#info > thead > tr > th:nth-child(4){
+    width             : 110px;
+}
+
+#info tr > td {
+    padding-left      : 12px;
+	border            : 1px solid black;
+}
+
+p {
+    padding            : inherit;
+    margin             : inherit;
+}
+
+em,td {
+    font-style         : normal;
+    white-space        : pre-wrap;
+    word-wrap          : break-word;
+}
+
+label, input{
+    margin-left        : 3px;
+}
+
+input{
+    margin-right      : 10px;
+}
+
+.filterOptions{
+    position          : fixed;
+    top               : 0px;
+}
+
+/* fix cell dimensions
+ display was used instead of visibility
+ because visibility works properly only on FF & IE
+*/
+.comparison thead tr th:nth-child(1){
+    width             : 150px;
+}
+
+.comparison thead tr th:nth-child(2){
+    width             : 180px;
+}
+
+.comparison thead tr th:nth-child(3),
+.comparison thead tr th:nth-child(4),
+.comparison thead tr th:nth-child(5){
+    width             : 20px;
+}
+
+.comparison thead tr th:nth-child(6){
+    width             : 175px;
+}
+
+.comparison thead tr th:nth-child(7){
+    width             : 85px;
+}
+
+.comparison thead tr th:nth-child(8),
+.comparison thead tr th:nth-child(9){
+    width             : 255px;
+    white-space       : pre-wrap;
+}
+
+/* end fixed dimensions */
+
+/* table body external border color */
+th[class=comparison]{
+	border-bottom    : 1px solid black;
+}
+
+.comparison tbody tr:last-child td,
+.comparison tbody tr:last-child,
+.comparison tbody tr:first-child td:nth-child(2){
+	border-bottom    : 1px solid black;
+}
+
+.comparison tbody tr td:last-child{
+	border-right     : 1px solid black;
+}
+
+.comparison tbody tr:first-child td{
+	border-top       : 1px solid black;
+}
+
+.comparison tbody tr:first-child td:first-child{
+	border           : 1px solid black;
+}
+
+tbody[class =comparison]{
+    border           : 1px solid black;
+}
+
+td[class=endTable]{
+    border-top       : 1px solid black;
+}
+
+/* end table body external border color */
+
+/* cell border */
+.comparison tr {
+    border            : 1px solid lightGray;
+}
+
+.comparison td {
+    border-left       : 1px solid lightGray;
+    border-right      : 1px solid lightGray;
+    padding-left      : 12px;
+    padding-right     : 12px;
+    vertical-align    : text-top;
+}
+
+.wrongValue {
+    background-color  : Salmon;
+    color             : crimson;
+    text-align        : center;
+}
+
+.validValue {
+    background-color  : lightGreen;
+}
+
+/******************************************************/
+/* background-color for status */
+
+.Failed         tr:first-child td:first-child{
+    background-color : Purple;
+}
+
+.UnboundFailed  tr:first-child td:first-child{
+    background-color : #993399;
+}
+
+.BoundDiff      tr:first-child td:first-child{
+    background-color : crimson;
+}
+
+.Passed tr:first-child td:first-child{
+    background-color : limegreen;
+}
+
+.UnboundPassed tr:first-child td:first-child{
+    background-color : palegreen;
+}
+
+.NoStatus tr:first-child td:first-child{
+    background-color : #FF6500;
+}
+
+.Inactive tr:first-child td:first-child{
+    background-color : orange;
+}
+
+.Unbound  tr:first-child td:first-child{
+    background-color : #FFCC00;
+}
+
+
+/******************************************************/
+
+/* Parameters and member separator */
+.comparison td.separator {
+    text-align        : center;
+    font-weight       : bold;
+    text-decoration   : underline;
+    background-color  : LightBlue;
+}
+
+/* default value*/
+.defVal{
+    font-style : italic;
+}
+
+/*Parameters displayed in GUI*/
+.guiVal{
+
+}
+
+/*Parameters not displayed in GUI*/
+.dbVal{
+    font-style : italic;
+}
+
+/* buttons cells */
+.comparison td.buttons,
+.comparison td.Hbuttons {
+    padding-left       : 0px;
+    padding-right      : 0px;
+}
+
+.Hbuttons{
+    visibility         : hidden;
+}
+
+/* Difference highlighting*/
+em.noDif{
+    color              : blue;
+}
+
+em.difMis{
+    color              : orange;
+    font-weight        : bold;
+}
+
+.Disabled {
+    background-color : Silver;
+}
+
+/* Unbound element */
+tbody.unR tr:not(.Section) td:last-child,
+tbody.unL tr:not(.Section) td:nth-last-child(2) {
+    background-color : black;
+}
+
+tr.Section td:not(.buttons){
+    text-align       : center;
+    text-decoration  : underline;
+    background-color : lightGray;
+    font-weight      : bold;
+}
+
+/* default value*/
+.defVal{
+    font-style : italic;
+}
+
+/*Parameters displayed in GUI*/
+.guiVal{
+}
+
+/*Parameters not displayed in GUI*/
+.dbVal,
+.dbVal + td{
+    color : DarkGray;
+}
+
+
+/* /END Difference highlighting*/
+
+
+.page {
+	padding          : 0.25cm;
+	margin           : auto;
+	background-color : Lavender;
+}

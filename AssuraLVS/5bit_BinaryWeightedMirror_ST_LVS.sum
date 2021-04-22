@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 13 13:45:32 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 20 15:15:07 2021
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -4072,14 +4072,14 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap  547.9M virt       0 pf
+reading DFII data. . . .      0 cpu      0 elap  548.0M virt       0 pf
 LVS preprocessing. . . .      1 cpu      2 elap  115.5M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  115.5M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  117.9M virt       0 pf
 recognize standard cells      0 cpu      0 elap  117.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  117.9M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  117.9M virt       0 pf
-cluster overlapped insts      0 cpu      1 elap  120.4M virt       0 pf
+cluster overlapped insts      0 cpu      0 elap  120.4M virt       0 pf
 expand thin cells. . . .      0 cpu      0 elap  120.4M virt       0 pf
 pattern analysis . . . .      0 cpu      0 elap  132.7M virt       0 pf
 array analysis . . . . .      0 cpu      0 elap  132.7M virt       0 pf
@@ -4095,7 +4095,7 @@ duplicate inst removal .      0 cpu      0 elap  120.4M virt       0 pf
 duplicate cell removal .      0 cpu      0 elap  120.4M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  120.4M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
+TOTALS (secs). . . . . .      1 cpu      2 elap  548.0M virt       0 pf
 
 
 ************************************************************************
@@ -4524,28 +4524,28 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 102
     met1dg = geomOr( met1dg ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 142
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 145
 
  ;# 103
     met1b = geomOr( met1b ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 104
     met1pin = geomOr( met1pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 105
     T?318 = geomOr( met1dg met1b ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 142
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 145
 
  ;# 106
     met1dg = geomOr( T?318 met1pin  )
     keepLayer( met1dg "keepLayer( met1dg )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 142
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 145
 
  ;# 107
     via1 = geomOr( via1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 654
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 676
 
  ;# 108
     via1b = geomOr( via1b ) 
@@ -4554,15 +4554,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
  ;# 109
     via1 = geomOr( via1 via1b  )
     keepLayer( via1 "keepLayer( via1 )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 654
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 676
 
  ;# 110
     dataReduction( via1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 111
     met2dg = geomOr( met2dg ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 43
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 44
 
  ;# 112
     met2b = geomOr( met2b ) 
@@ -4574,16 +4574,16 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 114
     T?326 = geomOr( met2dg met2b ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 43
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 44
 
  ;# 115
     met2dg = geomOr( T?326 met2pin  )
     keepLayer( met2dg "keepLayer( met2dg )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 43
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 44
 
  ;# 116
     via2 = geomOr( via2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 528
 
  ;# 117
     via2b = geomOr( via2b ) 
@@ -4592,11 +4592,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
  ;# 118
     via2 = geomOr( via2 via2b  )
     keepLayer( via2 "keepLayer( via2 )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 528
 
  ;# 119
  ;  region( via2 )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 528
 
  ;# 120
     met3dg = geomOr( met3dg ) 
@@ -4769,7 +4769,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 160
     T?366 = geomOr( met1dg met1_dy ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 142
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 145
 
  ;# 161
     met1s = geomOr( met1s  )
@@ -4778,11 +4778,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 162
     met1 = geomAndNot( T?366 met1s ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 142
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 145
 
  ;# 163
     T?369 = geomOr( met2dg met2_dy ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 43
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 44
 
  ;# 164
     met2s = geomOr( met2s  )
@@ -4791,7 +4791,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 165
     met2 = geomAndNot( T?369 met2s ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 43
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 44
 
  ;# 166
     T?372 = geomOr( met3dg met3_dy ) 
@@ -18779,7 +18779,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
  ;# 3655
     met1trm = geomAndNot( met1 met1res  )
     keepLayer( met1trm "keepLayer( met1trm )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 142
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 145
 
  ;# 3656
     dataReduction( met1trm ) 
@@ -18787,7 +18787,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 3657
  ;  region( met1trm )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 142
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 145
 
  ;# 3658
     d_dsc = groupVias(  via(d_dsc) conn1(met1trm) conn2(d_dsdf) )
@@ -18804,7 +18804,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
  ;# 3661
     met2trm = geomAndNot( met2 met2res  )
     keepLayer( met2trm "keepLayer( met2trm )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 43
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 44
 
  ;# 3662
     dataReduction( met2trm ) 
@@ -18812,7 +18812,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 3663
  ;  region( met2trm )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 43
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 44
 
  ;# 3664
     via1 = groupVias(  via(via1) conn1(met1trm) conn2(met2trm) )
@@ -18824,7 +18824,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 3666
  ;  region( via1 )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 654
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 676
 
  ;# 3667
     resmet3 = geomOr( resmet3  )
@@ -21572,475 +21572,475 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4350
     dpddc_scr = drc( dpddb_scr T?3364 6.39 < sep < 10 opposite shielded "dpddc_scr = drc(dpddb_scr geomOutside(diff pdd) ((6.39 < sep) < 10) shielded opposite)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4351
  ;  region( dpddc_scr )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4352
     T?3366 = geomOverlap( dpdda_scr dpddc_scr ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4353
     dpdd1_scr = geomAndNot( dpdda_scr T?3366 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4354
  ;  region( dpdd1_scr )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4355
     scr_dnpdd0 = geomInside( nsd dpdd1_scr ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4356
  ;  region( scr_dnpdd0 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4357
     T?3369 = geomAnd( scr_dnpdd0 sab ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4358
  ;  region( T?3369 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4359
     T?3370 = geomHoles( T?3369 outermost ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4360
     dataReduction( T?3370 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4361
     scr_dnpdd1 = _geomPushDown( T?3370 T?3369 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4362
  ;  region( scr_dnpdd1 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4363
     scr_dnpdd11 = geomWidth( scr_dnpdd1 1.13 <= keep ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4364
     scr_dnpdd12 = geomWidth( scr_dnpdd1 1.13 < keep ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4365
     scr_dnpdd2 = geomAndNot( scr_dnpdd11 scr_dnpdd12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4366
  ;  region( scr_dnpdd2 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4367
     scr_dnpdd3 = geomEnclose( scr_dnpdd0 scr_dnpdd2 keep == 1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4368
  ;  region( scr_dnpdd3 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4369
     scr_dppdd = geomInside( psd dpdd1_scr ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4370
  ;  region( scr_dppdd )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4371
     T?3377 = geomAnd( sab dpdd1_scr ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4372
  ;  region( T?3377 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4373
     T?3378 = geomGetHoled( T?3377 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4374
     dataReduction( T?3378 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4375
     scr_dppdda = drc( scr_dppdd T?3378 ovlp == 0.78 "scr_dppdda = drc(scr_dppdd geomGetHoled(geomAnd(sab dpdd1_scr)) (ovlp == 0.78))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4376
  ;  region( scr_dppdda )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4377
     scr_dppdd0 = geomStraddle( scr_dppdd scr_dppdda ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4378
  ;  region( scr_dppdd0 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4379
     scr_dppdd1 = drc( dpdd1_scr scr_dppdd0 enc < 1.5 "scr_dppdd1 = drc(dpdd1_scr scr_dppdd0 (enc < 1.5))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4380
  ;  region( scr_dppdd1 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4381
     T?3383 = geomSize( dpdd1_scr -1.85 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4382
     scr_dppdd2 = geomAndNot( scr_dppdd0 T?3383 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4383
  ;  region( scr_dppdd2 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4384
     scr_dppdd21 = geomWidth( scr_dppdd2 0.35 < keep ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4385
  ;  region( scr_dppdd21 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4386
     T?3386 = geomButting( scr_dppdd0 scr_dppdd1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4387
     T?3387 = geomStraddle( scr_dppdd0 scr_dppdd21 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4388
     scr_dppdd31 = geomOr( T?3386 T?3387 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4389
     dppdd_scr = geomAndNot( scr_dppdd0 scr_dppdd31 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4390
  ;  region( dppdd_scr )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4391
     dpdd_scr = geomEnclose( dpdd1_scr dppdd_scr keep == 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4392
  ;  region( dpdd_scr )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4393
     T?3391 = geomSize( dppdd_scr 1.905 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4394
     T?3394 = geomOr( T?3391 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4395
  ;  region( T?3394 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4396
     dnpdd_scr = geomInside( scr_dnpdd3 T?3394 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4397
  ;  region( dnpdd_scr )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4398
     cm = geomOr( cm  )
     keepLayer( cm "keepLayer( cm )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4399
     dataReduction( cm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4400
  ;  region( cm )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4401
     cmh = geomOr( cmh  )
     keepLayer( cmh "keepLayer( cmh )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4402
     dataReduction( cmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4403
  ;  region( cmh )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4404
     cm23f = geomOr( cm23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4405
     dataReduction( cm23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4406
  ;  region( cm23f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4407
     cmh23f = geomOr( cmh23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4408
     dataReduction( cmh23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4409
  ;  region( cmh23f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4410
     cm34f = geomOr( cm34f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4411
     dataReduction( cm34f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4412
  ;  region( cm34f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4413
     cmh34f = geomOr( cmh34f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4414
     dataReduction( cmh34f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4415
  ;  region( cmh34f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4416
     bm = geomEnclose( met4trm cm  )
     keepLayer( bm "keepLayer( bm )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4417
     dataReduction( bm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4418
  ;  region( bm )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4419
     bmh = geomEnclose( met4trm cmh  )
     keepLayer( bmh "keepLayer( bmh )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4420
     dataReduction( bmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4421
  ;  region( bmh )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4422
     bm23f = geomEnclose( met2trm cm23f  )
     keepLayer( bm23f "keepLayer( bm23f )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4423
     dataReduction( bm23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4424
  ;  region( bm23f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4425
     bmh23f = geomEnclose( met2trm cmh23f  )
     keepLayer( bmh23f "keepLayer( bmh23f )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4426
     dataReduction( bmh23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4427
  ;  region( bmh23f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4428
     bm34f = geomEnclose( met3trm cm34f  )
     keepLayer( bm34f "keepLayer( bm34f )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4429
     dataReduction( bm34f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4430
  ;  region( bm34f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4431
     bmh34f = geomEnclose( met3trm cmh34f  )
     keepLayer( bmh34f "keepLayer( bmh34f )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4432
     dataReduction( bmh34f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4433
  ;  region( bmh34f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4434
     cmm = geomAnd( cm bm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4435
  ;  region( cmm )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4436
     cmmh = geomAnd( cmh bmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4437
  ;  region( cmmh )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4438
     vtpcm = geomAnd( vtp cm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4439
     dataReduction( vtpcm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4440
     vtpcm = groupVias(  via(vtpcm) conn1(cm) conn2(mtptrm) )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4441
     dataReduction( vtpcm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4442
  ;  region( vtpcm )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4443
     vtpcmh = geomAnd( vtp cmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4444
     dataReduction( vtpcmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4445
     vtpcmh = groupVias(  via(vtpcmh) conn1(cmh) conn2(mtptrm) )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4446
     dataReduction( vtpcmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4447
  ;  region( vtpcmh )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4448
     T?3456 = geomOr( vtpcm vtpcmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4449
     vtpCON1 = geomAndNot( vtp T?3456 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4450
     cmm23f = geomAnd( cm23f bm23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4451
  ;  region( cmm23f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4452
     cmmh23f = geomAnd( cmh23f bmh23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4453
  ;  region( cmmh23f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4454
     v2cm = geomAnd( via2 cm23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4455
     dataReduction( v2cm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4456
     v2cm = groupVias(  via(v2cm) conn1(cm23f) conn2(met3trm) )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4457
     dataReduction( v2cm ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4458
  ;  region( v2cm )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4459
     v2cmh = geomAnd( via2 cmh23f ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4460
     dataReduction( v2cmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4461
     v2cmh = groupVias(  via(v2cmh) conn1(cmh23f) conn2(met3trm) )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4462
     dataReduction( v2cmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4463
  ;  region( v2cmh )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4464
     T?3462 = geomOr( v2cm v2cmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4465
     via2CON1 = geomAndNot( via2 T?3462 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 528
 
  ;# 4466
     cmm34f = geomAnd( cm34f bm34f ) 
@@ -22048,7 +22048,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4467
  ;  region( cmm34f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4468
     cmmh34f = geomAnd( cmh34f bmh34f ) 
@@ -22056,7 +22056,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4469
  ;  region( cmmh34f )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 4470
     v3cm = geomAnd( via3 cm34f ) 
@@ -22196,12 +22196,12 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4503
     via2CON = geomAndNot( via2CON1 T?3478 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 528
 
  ;# 4504
     m4_dmm = geomAnd( met4trm cm2  )
     keepLayer( m4_dmm "keepLayer( m4_dmm )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4505
     dataReduction( m4_dmm ) 
@@ -22213,11 +22213,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4507
     T?3481 = geomAnd( m2_dmm m3_dmm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4508
     cdmm = geomAnd( m4_dmm T?3481 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4509
  ;  region( cdmm )
@@ -22246,7 +22246,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
  ;# 4515
     m4_dmmh = geomAnd( met4trm cmh2  )
     keepLayer( m4_dmmh "keepLayer( m4_dmmh )" ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4516
     dataReduction( m4_dmmh ) 
@@ -22258,11 +22258,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4518
     T?3485 = geomAnd( m2_dmmh m3_dmmh ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4519
     cdmmh = geomAnd( m4_dmmh T?3485 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4520
  ;  region( cdmmh )
@@ -22312,11 +22312,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4531
     dataReduction( m3_tmm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4532
  ;  region( m3_tmm )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4533
     v2cm3 = geomAnd( via2 m2_tmm ) 
@@ -22386,7 +22386,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4549
     via2CON = geomAndNot( via2CON T?3498 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 528
 
  ;# 4550
     dataReduction( via2CON ) 
@@ -22402,7 +22402,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4553
  ;  region( via2CON )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 528
 
  ;# 4554
     m4_tmm = geomAnd( met4trm cm3  )
@@ -22939,19 +22939,19 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 4685
  ;  via( via1 met1trm )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 654
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 676
 
  ;# 4686
  ;  via( via1 met2trm )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 654
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 676
 
  ;# 4687
  ;  via( via2CON met2trm )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 528
 
  ;# 4688
  ;  via( via2CON met3trm )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 530
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 528
 
  ;# 4689
  ;  via( v2cm cm23f )
@@ -23206,43 +23206,43 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
         label( mtpl_label mtpltrm )
         label( lpower dphopin3 )
     ) 
-    cpu: 0.0   elapsed: 0   virtual: 184M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 187M   task sum: 0
 
  ;# 4737
     geomStamp( bm23f met2trm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4738
     geomStamp( bmh23f met2trm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4739
     geomStamp( bm34f met3trm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4740
     geomStamp( bmh34f met3trm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4741
     geomStamp( bm met4trm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4742
     geomStamp( bmh met4trm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4743
     geomStamp( dnwntie ntiec ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4744
     geomStamp( dnwtrm dnwntie ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4745
     geomStamp( dnwellmvtrm dnwntie ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 4746
     geomStamp( nwelltrm ntiec ) 
@@ -27214,7 +27214,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 5725
     extractMOS( "nelnai" T?9844 polytrm( "G" ) nsd( "S" "D" ) pwitrm( "B" ) flagMalformed spiceModel("nelnai") cellView("nelnai ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
 
  ;# 5726
     unstable_device_for_nelnai_MOS_14 = unstableDevices( "nelnai" nelnai_MOS_14 nelnai_MOS_14)
@@ -27342,11 +27342,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 5757
     T?10958 = _geomPushDown( dnwtrm T?9847 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
 
  ;# 5758
     T?10959 = geomMerge( T?10958 ) 
-    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
 
  ;# 5759
     dataReduction( T?10959 ) 
@@ -27362,11 +27362,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 5762
     dataReduction( T?10961 ) 
-    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
 
  ;# 5763
     extractDevice( "nelnai_6" T?9847 nsd( "D" ) polytrm( "G" ) nsd( "S" ) pwitrm( "B" ) dnwtrm( "NW" ) G_subs( "SB" ) physical flagMalformed spiceModel("nelnai_6") cellView("nelnai_6 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 0
 
  ;# 5764
     unstable_device_for_nelnai_6_Device_15 = unstableDevices( "nelnai_6" nelnai_6_Device_15 nelnai_6_Device_15)
@@ -27506,11 +27506,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 5798
     T?10971 = _geomPushDown( G_subs T?9850 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 0
 
  ;# 5799
     T?10972 = geomMerge( T?10971 ) 
-    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 0
 
  ;# 5800
     dataReduction( T?10972 ) 
@@ -27598,1847 +27598,1847 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 5821
     areaSDn = calculateParameter( areaSDn * 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 167M   task sum: 0
 
  ;# 5822
     attachParameter( areaSDn ("as" "S") ("ad" "D") nei nei_6 neli neli_6 nei_m_6 neli_m_6 nelnai nelnai_6 nelnai_m_6 nesvti nesvti_6 nesvti_m_6 shared )
-    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 167M   task sum: 0
 
  ;# 5823
     perimSDn  = measureParameter( perimeter ( nsd ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 167M   task sum: 0
 
  ;# 5824
     attachParameter( perimSDn ("ps" "S") ("pd" "D") nei nei_6 neli neli_6 nei_m_6 neli_m_6 nelnai nelnai_6 nelnai_m_6 nesvti nesvti_6 nesvti_m_6 shared )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5825
     T?10973 = geomAvoiding( pe nwelltrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5826
     T?10974 = geomAndNot( pe T?10973 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5827
     T?9853 = _geomExtractMerge( T?10974 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5828
     unstable_device_for_pe_MOS_17 = unstableDevices( "pe" pe_MOS_17 T?9853)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5829
     dataReduction( T?9853 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5830
  ;  region( T?9853 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5831
     T?10975 = _geomPushDown( polytrm T?9853 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5832
     T?10976 = geomMerge( T?10975 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5833
     dataReduction( T?10976 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5834
     T?10977 = _geomPushDown( psd T?9853 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5835
     T?10978 = geomMerge( T?10977 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5836
     dataReduction( T?10978 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5837
     extractMOS( "pe" T?9853 polytrm( "G" ) psd( "S" "D" ) nwelltrm( "B" ) flagMalformed spiceModel("pe") cellView("pe ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5838
     unstable_device_for_pe_MOS_17 = unstableDevices( "pe" pe_MOS_17 pe_MOS_17)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5839
     dataReduction( pe_MOS_17 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5840
     dataReduction( pe_MOS_17_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5841
  ;  region( pe_MOS_17_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5842
  ;  region( pe_MOS_17 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5843
     T?9855 = geomOr( T?9853 T?10973 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5844
     errorLayer( geomAndNot( T?9855 pe_MOS_17 ) "malformed device pe" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5845
    saveRecognition( pe ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5846
     T?4215  = geomGetEdge( T?9853 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5847
     dataReduction( T?4215 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5848
  ;  region( T?4215 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5849
     areap  = measureParameter( area ( pe ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5850
     wp  = measureParameter( length ( pe coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5851
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5852
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5853
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5854
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5855
     saveProperty( pe "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5856
     T?9856 = _geomExtractMerge( pe_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5857
     unstable_device_for_pe_5_Device_18 = unstableDevices( "pe_5" pe_5_Device_18 T?9856)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5858
     dataReduction( T?9856 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5859
  ;  region( T?9856 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5860
     T?10980 = _geomPushDown( psd T?9856 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5861
     T?10981 = geomMerge( T?10980 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5862
     dataReduction( T?10981 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5863
     T?10982 = _geomPushDown( polytrm T?9856 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5864
     T?10983 = geomMerge( T?10982 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5865
     dataReduction( T?10983 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5866
     T?10984 = _geomPushDown( nwelltrm T?9856 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5867
     T?10985 = geomMerge( T?10984 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5868
     dataReduction( T?10985 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5869
     T?10986 = _geomPushDown( G_subs T?9856 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5870
     T?10987 = geomMerge( T?10986 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5871
     dataReduction( T?10987 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5872
     extractDevice( "pe_5" T?9856 psd( "D" ) polytrm( "G" ) psd( "S" ) nwelltrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("pe_5") cellView("pe_5 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5873
     unstable_device_for_pe_5_Device_18 = unstableDevices( "pe_5" pe_5_Device_18 pe_5_Device_18)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5874
     dataReduction( pe_5_Device_18 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5875
     dataReduction( pe_5_Device_18_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5876
  ;  region( pe_5_Device_18_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5877
  ;  region( pe_5_Device_18 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5878
     T?9858 = geomOr( T?9856 T?10979 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5879
     errorLayer( geomAndNot( T?9858 pe_5_Device_18 ) "malformed device pe_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5880
    saveRecognition( pe_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5881
     T?4230  = geomGetEdge( T?9856 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5882
     dataReduction( T?4230 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5883
  ;  region( T?4230 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5884
     areap  = measureParameter( area ( pe_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5885
     wp  = measureParameter( length ( pe_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5886
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5887
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5888
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5889
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5890
     saveProperty( pe_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5891
     T?10988 = geomAvoiding( pel nwelltrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5892
     T?10989 = geomAndNot( pel T?10988 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5893
     T?9859 = _geomExtractMerge( T?10989 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5894
     unstable_device_for_pel_MOS_19 = unstableDevices( "pel" pel_MOS_19 T?9859)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5895
     dataReduction( T?9859 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5896
  ;  region( T?9859 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5897
     T?10990 = _geomPushDown( polytrm T?9859 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5898
     T?10991 = geomMerge( T?10990 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5899
     dataReduction( T?10991 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5900
     T?10992 = _geomPushDown( psd T?9859 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5901
     T?10993 = geomMerge( T?10992 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5902
     dataReduction( T?10993 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5903
     extractMOS( "pel" T?9859 polytrm( "G" ) psd( "S" "D" ) nwelltrm( "B" ) flagMalformed spiceModel("pel") cellView("pel ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5904
     unstable_device_for_pel_MOS_19 = unstableDevices( "pel" pel_MOS_19 pel_MOS_19)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5905
     dataReduction( pel_MOS_19 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5906
     dataReduction( pel_MOS_19_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5907
  ;  region( pel_MOS_19_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5908
  ;  region( pel_MOS_19 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5909
     T?9861 = geomOr( T?9859 T?10988 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5910
     errorLayer( geomAndNot( T?9861 pel_MOS_19 ) "malformed device pel" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5911
    saveRecognition( pel ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5912
     T?4243  = geomGetEdge( T?9859 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5913
     dataReduction( T?4243 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5914
  ;  region( T?4243 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5915
     areap  = measureParameter( area ( pel ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5916
     wp  = measureParameter( length ( pel coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5917
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5918
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5919
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5920
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5921
     saveProperty( pel "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5922
     T?9862 = _geomExtractMerge( pel_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5923
     unstable_device_for_pel_5_Device_20 = unstableDevices( "pel_5" pel_5_Device_20 T?9862)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5924
     dataReduction( T?9862 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5925
  ;  region( T?9862 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5926
     T?10995 = _geomPushDown( psd T?9862 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5927
     T?10996 = geomMerge( T?10995 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5928
     dataReduction( T?10996 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5929
     T?10997 = _geomPushDown( polytrm T?9862 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5930
     T?10998 = geomMerge( T?10997 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5931
     dataReduction( T?10998 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5932
     T?10999 = _geomPushDown( nwelltrm T?9862 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5933
     T?11000 = geomMerge( T?10999 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5934
     dataReduction( T?11000 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5935
     T?11001 = _geomPushDown( G_subs T?9862 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5936
     T?11002 = geomMerge( T?11001 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5937
     dataReduction( T?11002 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5938
     extractDevice( "pel_5" T?9862 psd( "D" ) polytrm( "G" ) psd( "S" ) nwelltrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("pe_5") cellView("pel_5 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5939
     unstable_device_for_pel_5_Device_20 = unstableDevices( "pel_5" pel_5_Device_20 pel_5_Device_20)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5940
     dataReduction( pel_5_Device_20 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5941
     dataReduction( pel_5_Device_20_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5942
  ;  region( pel_5_Device_20_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5943
  ;  region( pel_5_Device_20 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5944
     T?9864 = geomOr( T?9862 T?10994 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5945
     errorLayer( geomAndNot( T?9864 pel_5_Device_20 ) "malformed device pel_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5946
    saveRecognition( pel_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5947
     T?4258  = geomGetEdge( T?9862 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5948
     dataReduction( T?4258 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5949
  ;  region( T?4258 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5950
     areap  = measureParameter( area ( pel_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5951
     wp  = measureParameter( length ( pel_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5952
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5953
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5954
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5955
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5956
     saveProperty( pel_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5957
     T?11003 = geomAvoiding( pesvt nwelltrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5958
     T?11004 = geomAndNot( pesvt T?11003 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5959
     T?9865 = _geomExtractMerge( T?11004 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5960
     unstable_device_for_pesvt_MOS_21 = unstableDevices( "pesvt" pesvt_MOS_21 T?9865)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5961
     dataReduction( T?9865 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5962
  ;  region( T?9865 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5963
     T?11005 = _geomPushDown( polytrm T?9865 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5964
     T?11006 = geomMerge( T?11005 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5965
     dataReduction( T?11006 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5966
     T?11007 = _geomPushDown( psd T?9865 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5967
     T?11008 = geomMerge( T?11007 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5968
     dataReduction( T?11008 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5969
     extractMOS( "pesvt" T?9865 polytrm( "G" ) psd( "S" "D" ) nwelltrm( "B" ) flagMalformed spiceModel("pesvt") cellView("pesvt ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5970
     unstable_device_for_pesvt_MOS_21 = unstableDevices( "pesvt" pesvt_MOS_21 pesvt_MOS_21)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5971
     dataReduction( pesvt_MOS_21 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5972
     dataReduction( pesvt_MOS_21_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5973
  ;  region( pesvt_MOS_21_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5974
  ;  region( pesvt_MOS_21 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5975
     T?9867 = geomOr( T?9865 T?11003 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5976
     errorLayer( geomAndNot( T?9867 pesvt_MOS_21 ) "malformed device pesvt" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5977
    saveRecognition( pesvt ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5978
     T?4271  = geomGetEdge( T?9865 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5979
     dataReduction( T?4271 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5980
  ;  region( T?4271 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5981
     areap  = measureParameter( area ( pesvt ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5982
     wp  = measureParameter( length ( pesvt coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5983
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5984
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5985
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5986
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5987
     saveProperty( pesvt "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5988
     T?9868 = _geomExtractMerge( pesvt_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5989
     unstable_device_for_pesvt_5_Device_22 = unstableDevices( "pesvt_5" pesvt_5_Device_22 T?9868)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5990
     dataReduction( T?9868 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5991
  ;  region( T?9868 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5992
     T?11010 = _geomPushDown( psd T?9868 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5993
     T?11011 = geomMerge( T?11010 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5994
     dataReduction( T?11011 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5995
     T?11012 = _geomPushDown( polytrm T?9868 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5996
     T?11013 = geomMerge( T?11012 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5997
     dataReduction( T?11013 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5998
     T?11014 = _geomPushDown( nwelltrm T?9868 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 5999
     T?11015 = geomMerge( T?11014 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6000
     dataReduction( T?11015 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6001
     T?11016 = _geomPushDown( G_subs T?9868 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6002
     T?11017 = geomMerge( T?11016 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6003
     dataReduction( T?11017 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6004
     extractDevice( "pesvt_5" T?9868 psd( "D" ) polytrm( "G" ) psd( "S" ) nwelltrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("pesvt_5") cellView("pesvt_5 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6005
     unstable_device_for_pesvt_5_Device_22 = unstableDevices( "pesvt_5" pesvt_5_Device_22 pesvt_5_Device_22)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6006
     dataReduction( pesvt_5_Device_22 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6007
     dataReduction( pesvt_5_Device_22_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6008
  ;  region( pesvt_5_Device_22_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6009
  ;  region( pesvt_5_Device_22 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6010
     T?9870 = geomOr( T?9868 T?11009 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6011
     errorLayer( geomAndNot( T?9870 pesvt_5_Device_22 ) "malformed device pesvt_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6012
    saveRecognition( pesvt_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6013
     T?4286  = geomGetEdge( T?9868 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6014
     dataReduction( T?4286 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6015
  ;  region( T?4286 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6016
     areap  = measureParameter( area ( pesvt_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6017
     wp  = measureParameter( length ( pesvt_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6018
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6019
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6020
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6021
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6022
     saveProperty( pesvt_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6023
     T?4290 = geomAnd( psd nwelltrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 128
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 128
 
  ;# 6024
  ;  region( T?4290 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 128
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 128
 
  ;# 6025
     areaSDp  = measureParameter( area ( psd over nwelltrm ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6026
     areaSDp = calculateParameter( areaSDp * 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6027
     attachParameter( areaSDp ("as" "S") ("ad" "D") pe pe_5 pel pel_5 pesvt pesvt_5 shared )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6028
     T?4293  = geomGetEdge( psd over nwelltrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 512
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 512
 
  ;# 6029
     dataReduction( T?4293 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6030
  ;  region( T?4293 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 512
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 512
 
  ;# 6031
     perimSDp  = measureParameter( length ( psd over nwelltrm ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6032
     attachParameter( perimSDp ("ps" "S") ("pd" "D") pe pe_5 pel pel_5 pesvt pesvt_5 shared )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6033
     T?11018 = geomAvoiding( pei dnwtrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6034
     T?11019 = geomAndNot( pei T?11018 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6035
     T?9871 = _geomExtractMerge( T?11019 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6036
     unstable_device_for_pei_MOS_23 = unstableDevices( "pei" pei_MOS_23 T?9871)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6037
     dataReduction( T?9871 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6038
  ;  region( T?9871 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6039
     T?11020 = _geomPushDown( polytrm T?9871 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6040
     T?11021 = geomMerge( T?11020 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6041
     dataReduction( T?11021 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6042
     T?11022 = _geomPushDown( psd T?9871 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6043
     T?11023 = geomMerge( T?11022 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6044
     dataReduction( T?11023 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6045
     extractMOS( "pei" T?9871 polytrm( "G" ) psd( "S" "D" ) dnwtrm( "B" ) flagMalformed spiceModel("pei") cellView("pei ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6046
     unstable_device_for_pei_MOS_23 = unstableDevices( "pei" pei_MOS_23 pei_MOS_23)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6047
     dataReduction( pei_MOS_23 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6048
     dataReduction( pei_MOS_23_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6049
  ;  region( pei_MOS_23_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6050
  ;  region( pei_MOS_23 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6051
     T?9873 = geomOr( T?9871 T?11018 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6052
     errorLayer( geomAndNot( T?9873 pei_MOS_23 ) "malformed device pei" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6053
    saveRecognition( pei ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6054
     T?4304  = geomGetEdge( T?9871 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6055
     dataReduction( T?4304 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6056
  ;  region( T?4304 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6057
     areap  = measureParameter( area ( pei ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6058
     wp  = measureParameter( length ( pei coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6059
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6060
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6061
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6062
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6063
     saveProperty( pei "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6064
     T?9874 = _geomExtractMerge( pei_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6065
     unstable_device_for_pei_5_Device_24 = unstableDevices( "pei_5" pei_5_Device_24 T?9874)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6066
     dataReduction( T?9874 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6067
  ;  region( T?9874 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6068
     T?11025 = _geomPushDown( psd T?9874 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6069
     T?11026 = geomMerge( T?11025 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6070
     dataReduction( T?11026 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6071
     T?11027 = _geomPushDown( polytrm T?9874 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6072
     T?11028 = geomMerge( T?11027 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6073
     dataReduction( T?11028 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6074
     T?11029 = _geomPushDown( dnwtrm T?9874 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6075
     T?11030 = geomMerge( T?11029 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6076
     dataReduction( T?11030 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6077
     T?11031 = _geomPushDown( G_subs T?9874 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6078
     T?11032 = geomMerge( T?11031 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6079
     dataReduction( T?11032 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6080
     extractDevice( "pei_5" T?9874 psd( "D" ) polytrm( "G" ) psd( "S" ) dnwtrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("pei_5") cellView("pei_5 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6081
     unstable_device_for_pei_5_Device_24 = unstableDevices( "pei_5" pei_5_Device_24 pei_5_Device_24)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6082
     dataReduction( pei_5_Device_24 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6083
     dataReduction( pei_5_Device_24_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6084
  ;  region( pei_5_Device_24_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6085
  ;  region( pei_5_Device_24 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6086
     T?9876 = geomOr( T?9874 T?11024 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6087
     errorLayer( geomAndNot( T?9876 pei_5_Device_24 ) "malformed device pei_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6088
    saveRecognition( pei_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6089
     T?4319  = geomGetEdge( T?9874 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6090
     dataReduction( T?4319 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6091
  ;  region( T?4319 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6092
     areap  = measureParameter( area ( pei_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6093
     wp  = measureParameter( length ( pei_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6094
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6095
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6096
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6097
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6098
     saveProperty( pei_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6099
     T?9877 = _geomExtractMerge( pei_m_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6100
     unstable_device_for_pei_m_5_Device_25 = unstableDevices( "pei_m_5" pei_m_5_Device_25 T?9877)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6101
     dataReduction( T?9877 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6102
  ;  region( T?9877 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6103
     T?11034 = _geomPushDown( psd T?9877 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6104
     T?11035 = geomMerge( T?11034 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6105
     dataReduction( T?11035 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6106
     T?11036 = _geomPushDown( polytrm T?9877 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6107
     T?11037 = geomMerge( T?11036 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6108
     dataReduction( T?11037 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6109
     T?11038 = _geomPushDown( dnwtrm T?9877 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6110
     T?11039 = geomMerge( T?11038 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6111
     dataReduction( T?11039 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6112
     T?11040 = _geomPushDown( G_subs T?9877 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6113
     T?11041 = geomMerge( T?11040 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6114
     dataReduction( T?11041 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6115
     extractDevice( "pei_m_5" T?9877 psd( "D" ) polytrm( "G" ) psd( "S" ) dnwtrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("pei_m_5") cellView("pei_m_5 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6116
     unstable_device_for_pei_m_5_Device_25 = unstableDevices( "pei_m_5" pei_m_5_Device_25 pei_m_5_Device_25)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6117
     dataReduction( pei_m_5_Device_25 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6118
     dataReduction( pei_m_5_Device_25_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6119
  ;  region( pei_m_5_Device_25_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6120
  ;  region( pei_m_5_Device_25 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6121
     T?9879 = geomOr( T?9877 T?11033 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6122
     errorLayer( geomAndNot( T?9879 pei_m_5_Device_25 ) "malformed device pei_m_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6123
    saveRecognition( pei_m_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6124
     T?4334  = geomGetEdge( T?9877 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6125
     dataReduction( T?4334 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6126
  ;  region( T?4334 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6127
     areap  = measureParameter( area ( pei_m_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6128
     wp  = measureParameter( length ( pei_m_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6129
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6130
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6131
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6132
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6133
     saveProperty( pei_m_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6134
     T?11042 = geomAvoiding( peli dnwtrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6135
     T?11043 = geomAndNot( peli T?11042 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6136
     T?9880 = _geomExtractMerge( T?11043 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6137
     unstable_device_for_peli_MOS_26 = unstableDevices( "peli" peli_MOS_26 T?9880)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6138
     dataReduction( T?9880 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6139
  ;  region( T?9880 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6140
     T?11044 = _geomPushDown( polytrm T?9880 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6141
     T?11045 = geomMerge( T?11044 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6142
     dataReduction( T?11045 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6143
     T?11046 = _geomPushDown( psd T?9880 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6144
     T?11047 = geomMerge( T?11046 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6145
     dataReduction( T?11047 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6146
     extractMOS( "peli" T?9880 polytrm( "G" ) psd( "S" "D" ) dnwtrm( "B" ) flagMalformed spiceModel("peli") cellView("peli ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6147
     unstable_device_for_peli_MOS_26 = unstableDevices( "peli" peli_MOS_26 peli_MOS_26)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6148
     dataReduction( peli_MOS_26 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6149
     dataReduction( peli_MOS_26_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6150
  ;  region( peli_MOS_26_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6151
  ;  region( peli_MOS_26 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6152
     T?9882 = geomOr( T?9880 T?11042 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6153
     errorLayer( geomAndNot( T?9882 peli_MOS_26 ) "malformed device peli" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6154
    saveRecognition( peli ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6155
     T?4347  = geomGetEdge( T?9880 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6156
     dataReduction( T?4347 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6157
  ;  region( T?4347 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6158
     areap  = measureParameter( area ( peli ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6159
     wp  = measureParameter( length ( peli coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6160
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6161
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6162
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6163
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6164
     saveProperty( peli "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6165
     T?9883 = _geomExtractMerge( peli_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6166
     unstable_device_for_peli_5_Device_27 = unstableDevices( "peli_5" peli_5_Device_27 T?9883)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6167
     dataReduction( T?9883 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6168
  ;  region( T?9883 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6169
     T?11049 = _geomPushDown( psd T?9883 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6170
     T?11050 = geomMerge( T?11049 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6171
     dataReduction( T?11050 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6172
     T?11051 = _geomPushDown( polytrm T?9883 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6173
     T?11052 = geomMerge( T?11051 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6174
     dataReduction( T?11052 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6175
     T?11053 = _geomPushDown( dnwtrm T?9883 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6176
     T?11054 = geomMerge( T?11053 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6177
     dataReduction( T?11054 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6178
     T?11055 = _geomPushDown( G_subs T?9883 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6179
     T?11056 = geomMerge( T?11055 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6180
     dataReduction( T?11056 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6181
     extractDevice( "peli_5" T?9883 psd( "D" ) polytrm( "G" ) psd( "S" ) dnwtrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("peli_5") cellView("peli_5 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6182
     unstable_device_for_peli_5_Device_27 = unstableDevices( "peli_5" peli_5_Device_27 peli_5_Device_27)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6183
     dataReduction( peli_5_Device_27 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6184
     dataReduction( peli_5_Device_27_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6185
  ;  region( peli_5_Device_27_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6186
  ;  region( peli_5_Device_27 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6187
     T?9885 = geomOr( T?9883 T?11048 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6188
     errorLayer( geomAndNot( T?9885 peli_5_Device_27 ) "malformed device peli_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6189
    saveRecognition( peli_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6190
     T?4362  = geomGetEdge( T?9883 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6191
     dataReduction( T?4362 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6192
  ;  region( T?4362 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6193
     areap  = measureParameter( area ( peli_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6194
     wp  = measureParameter( length ( peli_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6195
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6196
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6197
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6198
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6199
     saveProperty( peli_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6200
     T?9886 = _geomExtractMerge( peli_m_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6201
     unstable_device_for_peli_m_5_Device_28 = unstableDevices( "peli_m_5" peli_m_5_Device_28 T?9886)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6202
     dataReduction( T?9886 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6203
  ;  region( T?9886 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6204
     T?11058 = _geomPushDown( psd T?9886 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6205
     T?11059 = geomMerge( T?11058 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6206
     dataReduction( T?11059 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6207
     T?11060 = _geomPushDown( polytrm T?9886 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6208
     T?11061 = geomMerge( T?11060 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6209
     dataReduction( T?11061 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6210
     T?11062 = _geomPushDown( dnwtrm T?9886 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6211
     T?11063 = geomMerge( T?11062 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6212
     dataReduction( T?11063 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6213
     T?11064 = _geomPushDown( G_subs T?9886 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6214
     T?11065 = geomMerge( T?11064 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6215
     dataReduction( T?11065 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6216
     extractDevice( "peli_m_5" T?9886 psd( "D" ) polytrm( "G" ) psd( "S" ) dnwtrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("peli_m_5") cellView("peli_m_5 ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6217
     unstable_device_for_peli_m_5_Device_28 = unstableDevices( "peli_m_5" peli_m_5_Device_28 peli_m_5_Device_28)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6218
     dataReduction( peli_m_5_Device_28 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6219
     dataReduction( peli_m_5_Device_28_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6220
  ;  region( peli_m_5_Device_28_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6221
  ;  region( peli_m_5_Device_28 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6222
     T?9888 = geomOr( T?9886 T?11057 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6223
     errorLayer( geomAndNot( T?9888 peli_m_5_Device_28 ) "malformed device peli_m_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6224
    saveRecognition( peli_m_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6225
     T?4377  = geomGetEdge( T?9886 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6226
     dataReduction( T?4377 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6227
  ;  region( T?4377 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6228
     areap  = measureParameter( area ( peli_m_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6229
     wp  = measureParameter( length ( peli_m_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6230
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6231
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6232
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6233
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6234
     saveProperty( peli_m_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6235
     T?11066 = geomAvoiding( pesvti dnwtrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6236
     T?11067 = geomAndNot( pesvti T?11066 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6237
     T?9889 = _geomExtractMerge( T?11067 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6238
     unstable_device_for_pesvti_MOS_29 = unstableDevices( "pesvti" pesvti_MOS_29 T?9889)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6239
     dataReduction( T?9889 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6240
  ;  region( T?9889 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6241
     T?11068 = _geomPushDown( polytrm T?9889 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6242
     T?11069 = geomMerge( T?11068 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6243
     dataReduction( T?11069 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6244
     T?11070 = _geomPushDown( psd T?9889 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6245
     T?11071 = geomMerge( T?11070 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6246
     dataReduction( T?11071 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6247
     extractMOS( "pesvti" T?9889 polytrm( "G" ) psd( "S" "D" ) dnwtrm( "B" ) flagMalformed spiceModel("pesvti") cellView("pesvti ivpcell PRIMLIB"))
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6248
     unstable_device_for_pesvti_MOS_29 = unstableDevices( "pesvti" pesvti_MOS_29 pesvti_MOS_29)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6249
     dataReduction( pesvti_MOS_29 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6250
     dataReduction( pesvti_MOS_29_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6251
  ;  region( pesvti_MOS_29_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6252
  ;  region( pesvti_MOS_29 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6253
     T?9891 = geomOr( T?9889 T?11066 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6254
     errorLayer( geomAndNot( T?9891 pesvti_MOS_29 ) "malformed device pesvti" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6255
    saveRecognition( pesvti ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6256
     T?4390  = geomGetEdge( T?9889 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6257
     dataReduction( T?4390 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6258
  ;  region( T?4390 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6259
     areap  = measureParameter( area ( pesvti ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6260
     wp  = measureParameter( length ( pesvti coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6261
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6262
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6263
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6264
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6265
     saveProperty( pesvti "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6266
     T?9892 = _geomExtractMerge( pesvti_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6267
     unstable_device_for_pesvti_5_Device_30 = unstableDevices( "pesvti_5" pesvti_5_Device_30 T?9892)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6268
     dataReduction( T?9892 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6269
  ;  region( T?9892 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6270
     T?11073 = _geomPushDown( psd T?9892 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6271
     T?11074 = geomMerge( T?11073 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6272
     dataReduction( T?11074 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6273
     T?11075 = _geomPushDown( polytrm T?9892 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6274
     T?11076 = geomMerge( T?11075 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6275
     dataReduction( T?11076 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6276
     T?11077 = _geomPushDown( dnwtrm T?9892 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6277
     T?11078 = geomMerge( T?11077 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6278
     dataReduction( T?11078 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6279
     T?11079 = _geomPushDown( G_subs T?9892 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6280
     T?11080 = geomMerge( T?11079 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6281
     dataReduction( T?11080 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6282
     extractDevice( "pesvti_5" T?9892 psd( "D" ) polytrm( "G" ) psd( "S" ) dnwtrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("pesvti_5") cellView("pesvti_5 ivpcell PRIMLIB"))
@@ -29446,127 +29446,127 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 6283
     unstable_device_for_pesvti_5_Device_30 = unstableDevices( "pesvti_5" pesvti_5_Device_30 pesvti_5_Device_30)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6284
     dataReduction( pesvti_5_Device_30 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6285
     dataReduction( pesvti_5_Device_30_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6286
  ;  region( pesvti_5_Device_30_shape )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6287
  ;  region( pesvti_5_Device_30 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6288
     T?9894 = geomOr( T?9892 T?11072 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6289
     errorLayer( geomAndNot( T?9894 pesvti_5_Device_30 ) "malformed device pesvti_5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6290
    saveRecognition( pesvti_5 ("device" "drawing") )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6291
     T?4405  = geomGetEdge( T?9892 coincident polytrm ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6292
     dataReduction( T?4405 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6293
  ;  region( T?4405 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6294
     areap  = measureParameter( area ( pesvti_5 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6295
     wp  = measureParameter( length ( pesvti_5 coincident polytrm ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6296
     lp = calculateParameter( areap / wp ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6297
     nameParameter( lp "l" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6298
     nameParameter( wp "w" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6299
     nameParameter( wp "wtot" )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6300
     saveProperty( pesvti_5 "mtot" 1 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6301
     T?9895 = _geomExtractMerge( pesvti_m_5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6302
     unstable_device_for_pesvti_m_5_Device_31 = unstableDevices( "pesvti_m_5" pesvti_m_5_Device_31 T?9895)
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6303
     dataReduction( T?9895 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6304
  ;  region( T?9895 )
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6305
     T?11082 = _geomPushDown( psd T?9895 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6306
     T?11083 = geomMerge( T?11082 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6307
     dataReduction( T?11083 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6308
     T?11084 = _geomPushDown( polytrm T?9895 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6309
     T?11085 = geomMerge( T?11084 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6310
     dataReduction( T?11085 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6311
     T?11086 = _geomPushDown( dnwtrm T?9895 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6312
     T?11087 = geomMerge( T?11086 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6313
     dataReduction( T?11087 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6314
     T?11088 = _geomPushDown( G_subs T?9895 and ) 
@@ -29578,7 +29578,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 6316
     dataReduction( T?11089 ) 
-    cpu: 0.0   elapsed: 0   virtual: 157M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
 
  ;# 6317
     extractDevice( "pesvti_m_5" T?9895 psd( "D" ) polytrm( "G" ) psd( "S" ) dnwtrm( "B" ) G_subs( "SB" ) physical flagMalformed spiceModel("pesvti_m_5") cellView("pesvti_m_5 ivpcell PRIMLIB"))
@@ -31286,11 +31286,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 
  ;# 6743
     T?11185 = _geomPushDown( G_subs T?9931 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
 
  ;# 6744
     T?11186 = geomMerge( T?11185 ) 
-    cpu: 0.0   elapsed: 0   virtual: 160M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 162M   task sum: 0
 
  ;# 6745
     dataReduction( T?11186 ) 
@@ -65392,8 +65392,8 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  547.9M virt       0 pf
 Total cells checked = 1
 Total rules checked = 15265
 
-Run time =  8.00 seconds
-CPU time =  3.23 seconds
+Run time =  9.00 seconds
+CPU time =  3.49 seconds
 VM HWM   =   548 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes

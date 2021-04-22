@@ -1,0 +1,10 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'Ext_Iref_ST layout Stimulator_IMP':
+  info: Assign pin label "Iref" at (43.0150, 48.2220) to layer `met3trm'.
+  info: Assign pin label "vss" at (45.4300, 48.2650) to layer `met3trm'.
+  info: Assign pin label "Iext" at (24.0600, 69.9800) to layer `met1trm'.
+
+***** End of Label Report *****
+

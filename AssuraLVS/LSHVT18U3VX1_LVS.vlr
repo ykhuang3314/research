@@ -1,0 +1,17 @@
+
+
+;----------------------------------------------------------------------------
+; vldb RSF file
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+; form additions
+avSimName = "auLvs"
+avDisableWildcardPG = nil
+avVerilogBusMapIEEE = t
+avLibName  = "Digital_Lib"
+avCellName = "LSHVT18U3VX1"
+avViewName = "schematic"
+avViewList = "auLvs schematic cmos_sch symbol"
+avStopList = "auLvs"
+avVldbFile = "/home/ykhuang/research/AssuraLVS/LSHVT18U3VX1_LVS.sdb"

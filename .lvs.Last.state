@@ -13,7 +13,7 @@
 vuiLVSFormTable = '(
 	schematicSource  "DFII"
 	layoutSource  "DFII"
-	runName  "HalfBridge_ST_LVS"
+	runName  "Ext_Iref_ST_LVS"
 	runDir  "./AssuraLVS"
 	machineLoc  "local"
 	viewRules  t
@@ -32,12 +32,12 @@ vuiLVSFormTable = '(
 	avCompareView  nil
 	additionalFunctionsButton  nil
 	schLibrary  "Stimulator_IMP"
-	schCell  "HalfBridge_ST"
+	schCell  "Ext_Iref_ST"
 	schView  "schematic"
 	existingSchNetlist  nil
 	useVerilogTopCell  nil
 	layLibrary  "Stimulator_IMP"
-	layCell  "HalfBridge_ST"
+	layCell  "Ext_Iref_ST"
 	layView  "layout"
 	layUseExistingNL  nil
 	extractButton  nil

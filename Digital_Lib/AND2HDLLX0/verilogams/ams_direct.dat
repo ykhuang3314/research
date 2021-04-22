@@ -1,0 +1,11 @@
+$FILE_FORMAT_VERSION
+	Version 1.1;
+$END
+$GLOBAL_SIGNALS
+	gnd!:::;
+	vdd!:::;
+$END
+$INH_SIGNAL_CONN
+	gnd!:ground_gnd;
+	vdd!:power_vdd;
+$END

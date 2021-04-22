@@ -1,0 +1,14 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'CurrentMirror_ST layout Stimulator_IMP':
+  info: Assign pin label "Ist" at (382.5900, 141.4850) to layer `met3trm'.
+  info: Assign pin label "vddh" at (156.1050, 589.5200) to layer `met3trm'.
+  info: Assign pin label "Iref" at (156.2950, 393.1850) to layer `met2trm'.
+  info: Assign pin label "enable" at (103.6050, 457.7500) to layer `met1trm'.
+  info: Assign pin label "vdde!" at (103.3550, 459.1400) to layer `met1trm'.
+  info: Assign pin label "vdd3!" at (108.8670, 461.4300) to layer `met1trm'.
+  info: Assign pin label "gnd!" at (192.6920, 426.3220) to layer `met1trm'.
+
+***** End of Label Report *****
+

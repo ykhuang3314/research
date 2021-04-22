@@ -1,0 +1,35 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
+sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
+run on s2424 at Tue Apr 20 15:36:45 2021
+
+Schematic                         | Layout                         | Status
+-------------------------------------------------------------------------------
+LSHVT18U3VX1 schematic Digital_Lib| LSHVT18U3VX1 layout Digital_Lib| matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:Digital_Lib
+  Cell   :LSHVT18U3VX1
+  View   :schematic
+
+Layout:
+  Library:Digital_Lib
+  Cell   :LSHVT18U3VX1
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

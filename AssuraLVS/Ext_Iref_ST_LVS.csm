@@ -1,0 +1,6 @@
+Schematic                           | Layout                           | Status
+--------------------------------------------------------------------------------
+Ext_Iref_ST schematic Stimulator_IMP| Ext_Iref_ST layout Stimulator_IMP| errors *
+
+Mismatch between Schematic and Layout
+   1 cell with errors

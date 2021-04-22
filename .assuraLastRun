@@ -1,2 +1,2 @@
-runDir = ./AssuraDRC
-runName = CurrentMirror_ST_DRC
+runDir = ./AssuraLVS
+runName = Ext_Iref_ST_LVS

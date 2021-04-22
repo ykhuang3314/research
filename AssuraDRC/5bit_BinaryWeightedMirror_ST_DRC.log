@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Mon Apr 12 15:30:53 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue Apr 20 15:03:38 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraDRC/5bit_BinaryWeightedMirror_ST_DRC.rsf -restart -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 12 15:30:54 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 20 15:03:38 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -51,7 +51,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.31  elap: 1  pf: 0  in: 0  out: 40  virt: 177M  phys: 889M
+cpu: 0.30  elap: 2  pf: 0  in: 0  out: 40  virt: 177M  phys: 885M
 
 Running the Task Processor, 1 cells, 16884 steps...
 
@@ -9119,17 +9119,17 @@ Executing: processAntenna(((gate (gate poly)) (antenna poly met1 met2 met3 met4 
 running in speedup mode
 
 Finished running rules. Task processor time in main process:
-cpu: 1.40  elap: 2  pf: 0  in: 0  out: 3632  virt: 297M  phys: 1283M
+cpu: 1.55  elap: 2  pf: 0  in: 0  out: 3632  virt: 297M  phys: 1272M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.33  elap: 0  pf: 0  in: 0  out: 0  virt: 599M  phys: 1999M
+cpu: 0.43  elap: 0  pf: 0  in: 0  out: 0  virt: 599M  phys: 1994M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6488  virt: 604M  phys: 2012M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6488  virt: 604M  phys: 2014M
 
 
 *****  aveng terminated normally  *****
@@ -9147,7 +9147,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Mon Apr 12 15:30:58 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 20 15:03:43 2021
 
 
    Creating Error Database '5bit_BinaryWeightedMirror_ST_DRC'...
@@ -11094,7 +11094,7 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraDRC/5bit_BinaryWeightedMirror_ST_DRC.err ...
 
-avrpt cpu sec:    0.55  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.56  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -11105,12 +11105,12 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraDRC_Rules Version "assuraDRC-190712" at "Apr 12 15:30:58 2021"
+Loading assuraDRC_Rules Version "assuraDRC-190712" at "Apr 20 15:03:43 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Mon Apr 12 15:30:59 2021
+Run ended: Tue Apr 20 15:03:43 2021
 
 *****  Assura terminated normally  *****
 

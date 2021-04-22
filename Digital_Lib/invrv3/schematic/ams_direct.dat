@@ -1,0 +1,35 @@
+$FILE_FORMAT_VERSION
+	Version 1.1;
+$END
+$VECTOR_PREFERENCE
+	descending;
+$END
+$GLOBAL_SIGNALS
+	gnd!:::;
+	vdd3!:::;
+$END
+$INH_SIGNAL_CONN
+	gnd!:ground_gnd;
+	vdd3!:power_vdd3;
+$END
+$INH_TERMINAL_CONN
+	gnd:ground_gnd=gnd!;
+	vdd3:power_vdd3=vdd3!;
+$END
+$TIMESTAMP
+	1519992858=7-PRIMLIB3-ne3;
+	1510235670=7-PRIMLIB3-ne36-symbol;
+	-1=5-basic5-iopin;
+	1476117922=5-basic5-iopin7-symboll;
+	-1=5-basic4-opin;
+	1273039898=5-basic4-opin6-symbol;
+	-1=5-basic4-ipin;
+	1273039899=5-basic4-ipin6-symbol;
+	1519992858=7-PRIMLIB3-pe3;
+	1510235670=7-PRIMLIB3-pe36-symbol;
+	1520422958=verilog.vams;
+$END
+$PRIMITIVE_TERM_MAP
+	PRIMLIB:ne3:symbol:*:1-B1-41-D1-11-G1-21-S1-3;
+	PRIMLIB:pe3:symbol:*:1-B1-41-D1-11-G1-21-S1-3;
+$END

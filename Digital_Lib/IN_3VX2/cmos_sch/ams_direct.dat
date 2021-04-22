@@ -1,0 +1,29 @@
+$FILE_FORMAT_VERSION
+	Version 1.1;
+$END
+$VECTOR_PREFERENCE
+	descending;
+$END
+$GLOBAL_SIGNALS
+	gnd!:::;
+	vdd3!:::;
+$END
+$INH_SIGNAL_CONN
+	gnd!:ground_gnd;
+	vdd3!:power_vdd3;
+$END
+$INH_TERMINAL_CONN
+	vdd3:power_vdd3=vdd3!;
+	gnd:ground_gnd=gnd!;
+$END
+$TIMESTAMP
+	1445870567=8-GATES_3V6-invrv3;
+	1443100479=8-GATES_3V6-invrv36-symbol;
+	-1=5-basic4-ipin;
+	1273039899=5-basic4-ipin6-symbol;
+	-1=5-basic4-opin;
+	1273039898=5-basic4-opin6-symbol;
+	-1=5-basic5-iopin;
+	1476117922=5-basic5-iopin7-symboll;
+	1519118635=verilog.vams;
+$END

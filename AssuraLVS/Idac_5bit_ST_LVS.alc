@@ -1,0 +1,8 @@
+!<alc> v1 50
+0    6    0 pe3 layout PRIMLIB gContT="Met1" w="10u" in1=M44
+0    5    0 LSHVT18U3VX1 layout D_CELLS_M3V
+0    4    0 IN_3VX2 layout D_CELLS_3V
+0    3    0 AND2HDX0 layout D_CELLS_HD
+0    8    3 AND2HDX0_VAR1 layout D_CELLS_HD
+0    2    0 5bit_BinaryWeightedMirror_ST layout Stimulator_IMP
+0    7    0 Idac_5bit_ST layout Stimulator_IMP

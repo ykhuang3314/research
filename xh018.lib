@@ -54,6 +54,7 @@ DEFINE TECH_XH018_HD ./.xkit/setup/xh018/cadence/PDK/TECH_XH018_HD_1143
 DEFINE IO_CELLS_3V ./.xkit/setup/xh018/diglibs/IO_CELLS_3V/cadence_IC61/IO_CELLS_3V
 DEFINE IO_CELLS_F3V ./.xkit/setup/xh018/diglibs/IO_CELLS_F3V/cadence_IC61/IO_CELLS_F3V
 DEFINE IO_CELLS_JI3V ./.xkit/setup/xh018/diglibs/IO_CELLS_JI3V/cadence_IC61/IO_CELLS_JI3V
+DEFINE HV_CELLS ./.xkit/setup/xh018/esdlibs/HV_CELLS/cadence_IC61/HV_CELLS
 
 
 # digital reference library - udp, check, ...

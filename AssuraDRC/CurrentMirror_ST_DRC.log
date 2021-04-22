@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Sun Apr 18 16:53:35 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Wed Apr 21 10:41:41 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraDRC/CurrentMirror_ST_DRC.rsf -restart -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Sun Apr 18 16:53:35 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed Apr 21 10:41:42 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -51,7 +51,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.32  elap: 2  pf: 0  in: 0  out: 1024  virt: 177M  phys: 893M
+cpu: 0.33  elap: 2  pf: 0  in: 0  out: 1024  virt: 177M  phys: 896M
 
 Running the Task Processor, 14 cells, 16884 steps...
 
@@ -9117,17 +9117,17 @@ Executing: processAntenna(((gate (gate poly)) (antenna poly met1 met2 met3 met4 
 running in speedup mode
 
 Finished running rules. Task processor time in main process:
-cpu: 6.89  elap: 7  pf: 0  in: 0  out: 3632  virt: 300M  phys: 1384M
+cpu: 7.35  elap: 8  pf: 0  in: 0  out: 3632  virt: 300M  phys: 1385M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.33  elap: 1  pf: 0  in: 0  out: 0  virt: 612M  phys: 2058M
+cpu: 0.34  elap: 0  pf: 0  in: 0  out: 0  virt: 612M  phys: 2057M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6528  virt: 612M  phys: 2072M
+cpu: 0.01  elap: 1  pf: 0  in: 0  out: 6520  virt: 609M  phys: 2068M
 
 
 *****  aveng terminated normally  *****
@@ -9145,7 +9145,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Sun Apr 18 16:53:45 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Wed Apr 21 10:41:52 2021
 
 
    Creating Error Database 'CurrentMirror_ST_DRC'...
@@ -9632,8 +9632,8 @@ Rule      Message                                    FlatCount     RealCount
 (  476)  minority_DNWELL_connectors                          0            0
 (  477)  DNWELL_soft_connect                                 0            0
 (  478)  BULK_should_be_contacted                            0            0
-(  479)  minority_BULK_connectors                           14           14
-(  480)  BULK_soft_connect                                 261           17
+(  479)  minority_BULK_connectors                            0            0
+(  480)  BULK_soft_connect                                   0            0
 (  481)  isolated_pwells__Q1IW__should_be_contact            0            0
 (  482)  minority_isolated_pwells_connectors                 0            0
 (  483)  isolated_pwells_soft_connect                        0            0
@@ -9815,7 +9815,7 @@ Rule      Message                                    FlatCount     RealCount
 (  659)  S2IPDN : Minimum PIMP spacing to NDIFF =            0            0
 (  660)  S3IPDN : Minimum PIMP spacing to NDIFF =            0            0
 (  661)  E1IPDP : Minimum PIMP extension beyond P            0            0
-(  662)  A1IP : Minimum PIMP area = 0.3844                   6            6
+(  662)  A1IP : Minimum PIMP area = 0.3844                   0            0
 (  663)  B1CT : CONT without NDIFF or PDIFF or PO            0            0
 (  664)  B3CT : CONT stripes are only allowed to             0            0
 (  665)  B1CTGA : CONT overlap of GATE is not all            0            0
@@ -11085,15 +11085,12 @@ Rule      Message                                    FlatCount     RealCount
 ( 1929)  ant_mtpl_gate: R2MLP1 : Maximum ratio of            0            0
 ( 1930)  ant_mtpl_mtpl: R2MLP1 : Maximum ratio of            0            0
 --------------------------------------------------------------------------------
-Total  errors:                                             281           37
+Total  errors:                                               0            0
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into /home/ykhuang/research/AssuraDRC/CurrentMirror_ST_DRC.err ...
-   Rule 479 done.
-   Rule 480 done.
-   Rule 662 done.
 
 avrpt cpu sec:    0.56  elapsed:     1  virtual:    93M
 
@@ -11106,12 +11103,12 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraDRC_Rules Version "assuraDRC-190712" at "Apr 18 16:53:46 2021"
+Loading assuraDRC_Rules Version "assuraDRC-190712" at "Apr 21 10:41:53 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Sun Apr 18 16:53:46 2021
+Run ended: Wed Apr 21 10:41:53 2021
 
 *****  Assura terminated normally  *****
 
