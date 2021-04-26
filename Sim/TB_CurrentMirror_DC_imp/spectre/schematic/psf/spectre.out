@@ -5,23 +5,23 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 20286
-Memory  available: 50.2279 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 26224
+Memory  available: 36.6518 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1200.0] ( 16 ),  1 [2400.0] ( 17 ),  2 [1286.7] ( 18 )
-                 3 [1218.9] ( 19 ),  4 [1304.4] ( 20 ),  5 [1272.8] ( 21 )
-                 6 [1200.1] ( 22 ),  7 [1200.0] ( 23 )
-        1:       8 [1200.4] ( 24 ),  9 [2370.1] ( 25 ), 10 [1392.8] ( 26 )
-                11 [1281.3] ( 27 ), 12 [1421.9] ( 28 ), 13 [1247.6] ( 29 )
-                14 [1507.0] ( 30 ), 15 [1213.3] ( 31 )
+        0:       0 [1200.1] ( 16 ),  1 [1204.7] ( 17 ),  2 [2400.0] ( 18 )
+                 3 [1387.6] ( 19 ),  4 [1200.1] ( 20 ),  5 [1200.0] ( 21 )
+                 6 [1243.7] ( 22 ),  7 [1202.2] ( 23 )
+        1:       8 [1200.1] ( 24 ),  9 [1200.1] ( 25 ), 10 [1305.6] ( 26 )
+                11 [1206.4] ( 27 ), 12 [1495.3] ( 28 ), 13 [1703.2] ( 29 )
+                14 [1256.4] ( 30 ), 15 [1451.7] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.2 %, 0.2 %, 0.2 %
+System load averages (1min, 5min, 15min) : 1.2 %, 0.7 %, 0.3 %
 Hyperthreading is enabled
 
 
-Simulating `input.scs' on s2424 at 11:13:11 AM, Wed Mar 31, 2021 (process id: 20286).
+Simulating `input.scs' on s2424 at 2:43:31 PM, Fri Apr 23, 2021 (process id: 26224).
 Current working directory: /home/ykhuang/research/Sim/TB_CurrentMirror_DC_imp/spectre/schematic/netlist
 Command line:
     /pkg/cadence/installs/SPECTRE181/tools/bin/spectre -64 input.scs  \
@@ -364,22 +364,22 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
-Time for NDB Parsing: CPU = 463.583 ms, elapsed = 548.098 ms.
-Time accumulated: CPU = 514.178 ms, elapsed = 548.112 ms.
-Peak resident memory used = 70.4 Mbytes.
+Time for NDB Parsing: CPU = 541.478 ms, elapsed = 627.631 ms.
+Time accumulated: CPU = 606.723 ms, elapsed = 627.646 ms.
+Peak resident memory used = 70.3 Mbytes.
 
-Time for Elaboration: CPU = 48.612 ms, elapsed = 48.6131 ms.
-Time accumulated: CPU = 562.939 ms, elapsed = 596.872 ms.
-Peak resident memory used = 81.2 Mbytes.
+Time for Elaboration: CPU = 54.65 ms, elapsed = 54.652 ms.
+Time accumulated: CPU = 661.526 ms, elapsed = 682.45 ms.
+Peak resident memory used = 81 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 6.19 ms, elapsed = 6.19102 ms.
-Time accumulated: CPU = 569.294 ms, elapsed = 603.227 ms.
-Peak resident memory used = 82.7 Mbytes.
+Time for EDB Visiting: CPU = 6.737 ms, elapsed = 6.73699 ms.
+Time accumulated: CPU = 668.441 ms, elapsed = 689.364 ms.
+Peak resident memory used = 82.6 Mbytes.
 
 
 Notice from spectre during initial setup.
@@ -423,7 +423,7 @@ Scoped user options:
 Circuit inventory:
               nodes 104
                 bjt 17    
-            bsim3v3 106   
+            bsim3v3 104   
           capacitor 14    
            hisim_hv 17    
             isource 1     
@@ -443,9 +443,9 @@ Output statements:
 Notice from spectre.
     2 notices suppressed.
 
-Time for parsing: CPU = 6.276 ms, elapsed = 10.3869 ms.
-Time accumulated: CPU = 575.698 ms, elapsed = 613.742 ms.
-Peak resident memory used = 84.8 Mbytes.
+Time for parsing: CPU = 6.753 ms, elapsed = 11.2209 ms.
+Time accumulated: CPU = 675.323 ms, elapsed = 700.713 ms.
+Peak resident memory used = 84.7 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -469,19 +469,19 @@ Trying `homotopy = gmin'.
 
 Notice from spectre during DC analysis `dcOp'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(I17.M4.m1:int_d) = 21.9669 mV
+        dV(I4.M4.m1:int_d) = 21.9669 mV
         Use the `gmin_check' option to eliminate or expand this report.
     Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
 
 
 Maximum value achieved for any signal of each quantity: 
 V: V(vddh) = 40 V
-I: I(V0:p) = 1.393 mA
+I: I(V0:p) = 5.405 mA
 Convergence achieved in 350 iterations.
-DC simulation time: CPU = 100.847 ms, elapsed = 103.171 ms.
-Total time required for dc analysis `dcOp': CPU = 100.896 ms, elapsed = 103.217 ms.
-Time accumulated: CPU = 682.994 ms, elapsed = 723.359 ms.
-Peak resident memory used = 86.9 Mbytes.
+DC simulation time: CPU = 136.379 ms, elapsed = 138.793 ms.
+Total time required for dc analysis `dcOp': CPU = 136.457 ms, elapsed = 138.866 ms.
+Time accumulated: CPU = 820.886 ms, elapsed = 848.688 ms.
+Peak resident memory used = 86.7 Mbytes.
 
 dcOpInfo: writing operating point information to rawfile.
 
@@ -505,9 +505,9 @@ subckts: writing subcircuits to rawfile.
 
 Opening the PSFASCII file ../psf/subckts.info.subckts ...
 
-Aggregate audit (11:13:11 AM, Wed Mar 31, 2021):
-Time used: CPU = 737 ms, elapsed = 803 ms, util. = 91.8%.
-Time spent in licensing: elapsed = 143 ms, percentage of total = 17.8%.
-Peak memory used = 89 Mbytes.
-Simulation started at: 11:13:11 AM, Wed Mar 31, 2021, ended at: 11:13:11 AM, Wed Mar 31, 2021, with elapsed time (wall clock): 803 ms.
+Aggregate audit (2:43:32 PM, Fri Apr 23, 2021):
+Time used: CPU = 915 ms, elapsed = 968 ms, util. = 94.5%.
+Time spent in licensing: elapsed = 170 ms, percentage of total = 17.6%.
+Peak memory used = 88.9 Mbytes.
+Simulation started at: 2:43:31 PM, Fri Apr 23, 2021, ended at: 2:43:32 PM, Fri Apr 23, 2021, with elapsed time (wall clock): 968 ms.
 spectre completes with 0 errors, 1 warning, and 10 notices.

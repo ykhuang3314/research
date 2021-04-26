@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ykhuang
+HostName                       s2424.it.kth.se
+ProcessIdentifier              13727
+ProcessCreationTime_UTC        1619422448
+ProcessCreationTime_Readable   Mon Apr 26 09:34:08 2021 CEST
+AppIdentifier                  /pkg/cadence/installs/IC618/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/ykhuang/research/Stimulator_IMP/Ext_Iref_ST/physConfig/physExpand.cfg
+TimeEditLocked                 Mon Apr 26 13:51:30 2021 CEST

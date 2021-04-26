@@ -1,0 +1,9 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary CurrentMirror_ST
+vddh 3 vddh 164430 622835 m3trm
+vdd3! 13 vdd3! 111480 493585 m1trm
+vdde! 16 vdde! 103420 491190 m1trm
+Iref 19 Iref 97130 433720 m3trm
+gnd! 2 gnd! 192530 454000 m1trm
+enable 17 enable 103785 489745 m1trm
+Ist 20 Ist 275345 65230 m3trm

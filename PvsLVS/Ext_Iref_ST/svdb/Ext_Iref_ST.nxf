@@ -1,0 +1,18 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary Ext_Iref_ST
+# XXXX: End of header.
+% R 2 R 2 
+0 PLUS 0 PLUS
+0 MINUS 0 MINUS
+% MN 4 MN 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% Ext_Iref_ST 3 Ext_Iref_ST 3 
+0 3 0 VG2
+0 2 0 VG1
+0 4 0 VD_M1
+0 Iext 0 Iext
+0 Iref 0 Iref
+0 vss 0 vss

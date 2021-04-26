@@ -47,3 +47,4 @@ DEFINE Stimulator_IMP /home/ykhuang/research/Stimulator_IMP
 DEFINE IL2239_SAR_comparator IL2239_comparator
 DEFINE IL2239_SAR_ADC_v1 IL2239_SAR_ADC_v1
 DEFINE IL2239_SAR_ADC IL2239_SAR_ADC
+DEFINE Stimulator_IMP_old /home/ykhuang/research/Stimulator_IMP_old

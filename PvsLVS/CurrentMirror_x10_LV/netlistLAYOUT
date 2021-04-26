@@ -1,0 +1,73 @@
+** Layout Netlist, pvs precompare
+** 
+
+.subckt CurrentMirror_x10_LV Iin Ix10 gnd! 
+MX758/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX759/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX760/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX761/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX762/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX763/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX764/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX765/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX766/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX767/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX768/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX769/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX770/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX771/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX772/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX773/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX774/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX775/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX776/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX777/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX778/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX779/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX780/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX781/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX782/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX783/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX784/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX785/M0 Iin Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX786/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX787/M0 Iin Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX788/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX789/M0 Iin Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX790/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX791/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX792/M0 Iin Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX793/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX794/M0 Iin Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX795/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX796/M0 Iin Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX797/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX798/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX799/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX800/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX801/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX802/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX803/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX804/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX805/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX806/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX807/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX808/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX809/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX810/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX811/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX812/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX813/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX814/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX815/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX816/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX817/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX818/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX819/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX820/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX821/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX822/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX823/M0 Ix10 Iin gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+.ends
+
+

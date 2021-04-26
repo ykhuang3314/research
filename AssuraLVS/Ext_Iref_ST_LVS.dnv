@@ -1,7 +1,7 @@
 vuiLVSdebugRunInfo = list( nil
    'layoutLibrary "Stimulator_IMP"
    'layoutCell "Ext_Iref_ST"
-   'layoutView "layout"
+   'layoutView "ModgenTmplayout15249"
    'schematicLibrary "Stimulator_IMP"
    'schematicCell "Ext_Iref_ST"
    'schematicView "schematic"

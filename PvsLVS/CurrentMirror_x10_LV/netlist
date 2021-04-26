@@ -1,0 +1,38 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Stimulator_IMP
+* Top Cell Name: CurrentMirror_x10_LV
+* View Name:     schematic
+* Netlisted on:  Apr 23 16:56:00 2021
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+*.GLOBAL gnd!
+
+*.PIN gnd!
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    CurrentMirror_x10_LV
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT CurrentMirror_x10_LV Iin Ix10 gnd!
+*.PININFO Iin:B Ix10:B gnd!:B
+MM26 Iin Iin gnd! gnd! NE3 W=12.0u L=3u M=6.0 AD=5.76e-12 AS=5.76e-12 
++ PD=2.496e-05 PS=2.496e-05 NRD=0.0225 NRS=0.0225
+MM13 Ix10 Iin gnd! gnd! NE3 W=12.0u L=3u M=60.0 AD=5.76e-12 AS=5.76e-12 
++ PD=2.496e-05 PS=2.496e-05 NRD=0.0225 NRS=0.0225
+.ENDS
+

@@ -34,6 +34,8 @@ connect ntiec ptiec by contSD
 connect ntiec isoptiec by contSD
 connect ptiec isoptiec by contSD
 connect nsd bndiff by bndct
+connect nsd catdiff by catdfct
+connect met1trm catdiff by catm1ct
 connect met1trm polytrm by contP
 connect met1trm d_dsdf by d_dsc
 connect met1trm met2trm by via1
@@ -69,11 +71,11 @@ stamp dnwtrm by dnwntie
 stamp dnwellmvtrm by dnwntie
 stamp nwelltrm by ntiec
 stamp nwtrm_scr by nsd
-stamp nwelltrm1 by nsd
+stamp nwelltrm1 by ntiec
 stamp dnwtrm1 by dnwntie
 stamp G_subs by ptiec
 stamp pwitrm by isoptiec
-stamp nbdsub by nsd
+stamp nbdsub by ntiec
 stamp pdf by psd
 stamp ndftrm by nsd
 stamp hnw by ntiec
@@ -81,7 +83,7 @@ stamp dpol_n by polytrm
 stamp dpol_p by polytrm
 stamp catdop by nsd
 stamp anodop by psd
-stamp catdiff by nsd
+stamp davl_c2 by nsd
 stamp dphod_c by nwelltrm
 stamp dphod_nw by nwelltrm
 stamp qpvh_83a by psd
@@ -100,6 +102,10 @@ stamp capswm1 by met1trm
 stamp capswm2 by met2trm
 stamp capswm3 by met3trm
 stamp capswm4 by met4trm
+stamp nsd_dg by nsd
+stamp psd_dg by psd
+stamp nd_vlbl by nsd_dg
+stamp pd_vlbl by psd_dg
 stamp p1_vlbl by polytrm
 stamp m1_vlbl by met1trm
 stamp m2_vlbl by met2trm
@@ -641,384 +647,411 @@ element res[pfuse] pfuse_RES_177 polytrm
 model=bjt[qnva],qnva
 dfiimodel=bjt[qnva],qnva#20ivpcell#20PRIMLIB
 element bjt[qnva] qnva_BJT_178 dnwellmvtrm pwitrm nsd G_subs 
-model=bjt[qnvam],qnvam
-dfiimodel=bjt[qnvam],qnvam#20ivpcell#20PRIMLIB
-element bjt[qnvam] qnvam_BJT_179 dnwtrm pwitrm nsd G_subs 
 model=bjt[qnvz],qnvz
 dfiimodel=bjt[qnvz],qnvz#20ivpcell#20PRIMLIB
-element bjt[qnvz] qnvz_BJT_180 dnwellmvtrm pwitrm nsd G_subs 
+element bjt[qnvz] qnvz_BJT_179 dnwellmvtrm pwitrm nsd G_subs 
 model=bjt[qnvb],qnvb
 dfiimodel=bjt[qnvb],qnvb#20ivpcell#20PRIMLIB
-element bjt[qnvb] qnvb_BJT_181 dnwellmvtrm pwitrm nsd G_subs 
+element bjt[qnvb] qnvb_BJT_180 dnwellmvtrm pwitrm nsd G_subs 
+model=bjt[qnvba],qnvba
+dfiimodel=bjt[qnvba],qnvba#20ivpcell#20PRIMLIB
+element bjt[qnvba] qnvba_BJT_181 dnwellmvtrm pwitrm nsd G_subs 
 model=bjt[qnvc],qnvc
 dfiimodel=bjt[qnvc],qnvc#20ivpcell#20PRIMLIB
 element bjt[qnvc] qnvc_BJT_182 dnwellmvtrm pwitrm nsd G_subs 
+model=bjt[qnvca],qnvca
+dfiimodel=bjt[qnvca],qnvca#20ivpcell#20PRIMLIB
+element bjt[qnvca] qnvca_BJT_183 dnwellmvtrm pwitrm nsd G_subs 
 model=bjt[qpvhscr],qpvhscr
 dfiimodel=bjt[qpvhscr],qpvhscr#20ivpcell#20PRIMLIB
-element bjt[qpvhscr] qpvhscr_BJT_183 G_subs hnw pdf 
+element bjt[qpvhscr] qpvhscr_BJT_184 G_subs hnw pdf 
 model=bjt[qpvascr],qpvascr
 dfiimodel=bjt[qpvascr],qpvascr#20ivpcell#20PRIMLIB
-element bjt[qpvascr] qpvascr_BJT_184 G_subs dnwtrm pwitrm 
+element bjt[qpvascr] qpvascr_BJT_185 G_subs dnwtrm pwitrm 
 model=bjt[qpvhbscr],qpvhbscr
 dfiimodel=bjt[qpvhbscr],qpvhbscr#20ivpcell#20PRIMLIB
-element bjt[qpvhbscr] qpvhbscr_BJT_185 G_subs hnw pwitrm 
+element bjt[qpvhbscr] qpvhbscr_BJT_186 G_subs hnw pwitrm 
 model=bjt[qpvc],qpvc
 dfiimodel=bjt[qpvc],qpvc#20ivpcell#20PRIMLIB
-element bjt[qpvc] pnp10_BJT_186 G_subs nwelltrm psd 
+element bjt[qpvc] pnp10_BJT_187 G_subs nwelltrm psd 
 model=bjt[qpvb],qpvb
 dfiimodel=bjt[qpvb],qpvb#20ivpcell#20PRIMLIB
-element bjt[qpvb] pnp5_BJT_187 G_subs nwelltrm psd 
+element bjt[qpvb] pnp5_BJT_188 G_subs nwelltrm psd 
 model=bjt[qpva],qpva
 dfiimodel=bjt[qpva],qpva#20ivpcell#20PRIMLIB
-element bjt[qpva] pnp2_BJT_188 G_subs nwelltrm psd 
+element bjt[qpva] pnp2_BJT_189 G_subs nwelltrm psd 
 model=bjt[qpvc3],qpvc3
 dfiimodel=bjt[qpvc3],qpvc3#20ivpcell#20PRIMLIB
-element bjt[qpvc3] pnph10_BJT_189 G_subs nwelltrm psd 
+element bjt[qpvc3] pnph10_BJT_190 G_subs nwelltrm psd 
 model=bjt[qpvb3],qpvb3
 dfiimodel=bjt[qpvb3],qpvb3#20ivpcell#20PRIMLIB
-element bjt[qpvb3] pnph5_BJT_190 G_subs nwelltrm psd 
+element bjt[qpvb3] pnph5_BJT_191 G_subs nwelltrm psd 
 model=bjt[qpva3],qpva3
 dfiimodel=bjt[qpva3],qpva3#20ivpcell#20PRIMLIB
-element bjt[qpva3] pnph2_BJT_191 G_subs nwelltrm psd 
+element bjt[qpva3] pnph2_BJT_192 G_subs nwelltrm psd 
 model=diode[dphoa],dphoa
 dfiimodel=diode[dphoa],dphoa#20ivpcell#20PRIMLIB
-element diode[dphoa] dphoa_DIODE_192 G_subs dnwtrm dphopin3 
+element diode[dphoa] dphoa_DIODE_193 G_subs dnwtrm dphopin3 
 model=diode[dphob],dphob
 dfiimodel=diode[dphob],dphob#20ivpcell#20PRIMLIB
-element diode[dphob] dphob_DIODE_193 G_subs dnwtrm dphopin3 
+element diode[dphob] dphob_DIODE_194 G_subs dnwtrm dphopin3 
 model=generic[dphoc],dphoc
 dfiimodel=generic[dphoc],dphoc#20ivpcell#20PRIMLIB
-element generic[dphoc] dphoc_Device_194 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
+element generic[dphoc] dphoc_Device_195 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
 model=generic[dphoc0],dphoc0
 dfiimodel=generic[dphoc0],dphoc0#20ivpcell#20PRIMLIB
-element generic[dphoc0] dphoc0_Device_195 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
+element generic[dphoc0] dphoc0_Device_196 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
 model=generic[dphocfp],dphocfp
 dfiimodel=generic[dphocfp],dphocfp#20ivpcell#20PRIMLIB
-element generic[dphocfp] dphocfp_Device_196 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
+element generic[dphocfp] dphocfp_Device_197 G_subs[A] catdop[C] polytrm[POLY1] nwelltrm[NW] dphopin3[LPOWER] 
 model=generic[dphod],dphod
 dfiimodel=generic[dphod],dphod#20ivpcell#20PRIMLIB
-element generic[dphod] dphod_Device_197 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
+element generic[dphod] dphod_Device_198 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
 model=generic[dphod0],dphod0
 dfiimodel=generic[dphod0],dphod0#20ivpcell#20PRIMLIB
-element generic[dphod0] dphod0_Device_198 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
+element generic[dphod0] dphod0_Device_199 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
 model=generic[dphodfp],dphodfp
 dfiimodel=generic[dphodfp],dphodfp#20ivpcell#20PRIMLIB
-element generic[dphodfp] dphodfp_Device_199 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
+element generic[dphodfp] dphodfp_Device_200 anodop[A1] G_subs[A2] dphod_c[C] polytrm[POLY1] dphod_nw[NW] dphopin3[LPOWER] 
 model=diode[dapda],dapda
 dfiimodel=diode[dapda],dapda#20ivpcell#20PRIMLIB
-element diode[dapda] dapda_DIODE_200 G_subs catdiff dphopin3 
+element diode[dapda] dapda_DIODE_201 G_subs catdiff dphopin3 
 model=diode[dapda0],dapda0
 dfiimodel=diode[dapda0],dapda0#20ivpcell#20PRIMLIB
-element diode[dapda0] dapda0_DIODE_201 G_subs catdiff dphopin3 
+element diode[dapda0] dapda0_DIODE_202 G_subs catdiff dphopin3 
 model=diode[dspada],dspada
 dfiimodel=diode[dspada],dspada#20ivpcell#20PRIMLIB
-element diode[dspada] dspada_DIODE_202 G_subs catdiff dphopin3 
+element diode[dspada] dspada_DIODE_203 G_subs catdiff dphopin3 
 model=diode[dspada0],dspada0
 dfiimodel=diode[dspada0],dspada0#20ivpcell#20PRIMLIB
-element diode[dspada0] dspada0_DIODE_203 G_subs catdiff dphopin3 
+element diode[dspada0] dspada0_DIODE_204 G_subs catdiff dphopin3 
+model=generic[dapb],dapb
+dfiimodel=generic[dapb],dapb#20ivpcell#20PRIMLIB
+element generic[dapb] dapb_Device_205 G_subs[A] catdiff[C] davl_c2[C2] dphopin3[LPOWER] 
+model=generic[dapb0],dapb0
+dfiimodel=generic[dapb0],dapb0#20ivpcell#20PRIMLIB
+element generic[dapb0] dapb0_Device_206 G_subs[A] catdiff[C] davl_c2[C2] dphopin3[LPOWER] 
+model=generic[dspb],dspb
+dfiimodel=generic[dspb],dspb#20ivpcell#20PRIMLIB
+element generic[dspb] dspb_Device_207 G_subs[A] catdiff[C] davl_c2[C2] dphopin3[PHOTON] 
+model=generic[dspb0],dspb0
+dfiimodel=generic[dspb0],dspb0#20ivpcell#20PRIMLIB
+element generic[dspb0] dspb0_Device_208 G_subs[A] catdiff[C] davl_c2[C2] dphopin3[PHOTON] 
 model=diode[dsb],dsb
 dfiimodel=diode[dsb],dsb#20ivpcell#20PRIMLIB
-element diode[dsb] d_dsb_DIODE_204 d_dsdf hnw G_subs 
+element diode[dsb] d_dsb_DIODE_209 d_dsdf hnw G_subs 
 model=diode[dsba],dsba
 dfiimodel=diode[dsba],dsba#20ivpcell#20PRIMLIB
-element diode[dsba] d_dsba_DIODE_205 d_dsdf hnw G_subs 
+element diode[dsba] d_dsba_DIODE_210 d_dsdf hnw G_subs 
 model=diode[dnp20],dnp20
 dfiimodel=diode[dnp20],dnp20#20ivpcell#20PRIMLIB
-element diode[dnp20] dnp20_DIODE_206 G_subs ndftrm 
+element diode[dnp20] dnp20_DIODE_211 G_subs ndftrm 
 model=diode[dpp20],dpp20
 dfiimodel=diode[dpp20],dpp20#20ivpcell#20PRIMLIB
-element diode[dpp20] dpp20_DIODE_207 pwitrm dnwtrm 
+element diode[dpp20] dpp20_DIODE_212 pwitrm dnwtrm 
 model=diode[dpol],dpol
 dfiimodel=diode[dpol],dpol#20ivpcell#20PRIMLIB
-element diode[dpol] dpol_DIODE_208 dpol_p dpol_n 
+element diode[dpol] dpol_DIODE_213 dpol_p dpol_n 
 model=diode[dp],dp
 dfiimodel=diode[dp],dp#20ivpcell#20PRIMLIB
-element diode[dp] dio_p_DIODE_209 psd nwelltrm 
+element diode[dp] dio_p_DIODE_214 psd nwelltrm 
 model=diode[dp_av2],dp
 dfiimodel=diode[dp_av2],dp#20ivpcell#20PRIMLIB
-element diode[dp_av2] dio_p_DIODE_211 psd nwtrm_scr 
+element diode[dp_av2] dio_p_DIODE_216 psd nwtrm_scr 
 model=diode[dp3],dp3
 dfiimodel=diode[dp3],dp3#20ivpcell#20PRIMLIB
-element diode[dp3] dio_ph_DIODE_210 psd nwelltrm 
+element diode[dp3] dio_ph_DIODE_215 psd nwelltrm 
 model=diode[dp3_av2],dp3
 dfiimodel=diode[dp3_av2],dp3#20ivpcell#20PRIMLIB
-element diode[dp3_av2] dio_ph_DIODE_212 psd nwtrm_scr 
+element diode[dp3_av2] dio_ph_DIODE_217 psd nwtrm_scr 
 model=diode[dp_av3],dp
 dfiimodel=diode[dp_av3],dp#20ivpcell#20PRIMLIB
-element diode[dp_av3] dio_pi_DIODE_213 psd dnwtrm 
+element diode[dp_av3] dio_pi_DIODE_218 psd dnwtrm 
 model=diode[dp3_av3],dp3
 dfiimodel=diode[dp3_av3],dp3#20ivpcell#20PRIMLIB
-element diode[dp3_av3] dio_pih_DIODE_214 psd dnwtrm 
+element diode[dp3_av3] dio_pih_DIODE_219 psd dnwtrm 
 model=diode[dp_av4],dp
 dfiimodel=diode[dp_av4],dp#20ivpcell#20PRIMLIB
-element diode[dp_av4] d_dpi2_DIODE_215 psd hnw 
+element diode[dp_av4] d_dpi2_DIODE_220 psd hnw 
 model=diode[dp3_av4],dp3
 dfiimodel=diode[dp3_av4],dp3#20ivpcell#20PRIMLIB
-element diode[dp3_av4] d_dpmi2_DIODE_216 psd hnw 
+element diode[dp3_av4] d_dpmi2_DIODE_221 psd hnw 
 model=diode[dn],dn
 dfiimodel=diode[dn],dn#20ivpcell#20PRIMLIB
-element diode[dn] dio_n_DIODE_217 G_subs nsd 
+element diode[dn] dio_n_DIODE_222 G_subs nsd 
 model=diode[dn3],dn3
 dfiimodel=diode[dn3],dn3#20ivpcell#20PRIMLIB
-element diode[dn3] dio_nh_DIODE_218 G_subs nsd 
+element diode[dn3] dio_nh_DIODE_223 G_subs nsd 
 model=diode[dn_av2],dn
 dfiimodel=diode[dn_av2],dn#20ivpcell#20PRIMLIB
-element diode[dn_av2] dio_ni_DIODE_219 pwitrm nsd 
+element diode[dn_av2] dio_ni_DIODE_224 pwitrm nsd 
 model=diode[dn3_av2],dn3
 dfiimodel=diode[dn3_av2],dn3#20ivpcell#20PRIMLIB
-element diode[dn3_av2] dio_nih_DIODE_220 pwitrm nsd 
+element diode[dn3_av2] dio_nih_DIODE_225 pwitrm nsd 
 model=diode[dn_av3],dn
 dfiimodel=diode[dn_av3],dn#20ivpcell#20PRIMLIB
-element diode[dn_av3] d_dni2_DIODE_221 pdf nsd 
+element diode[dn_av3] d_dni2_DIODE_226 pdf nsd 
 model=diode[dn3_av3],dn3
 dfiimodel=diode[dn3_av3],dn3#20ivpcell#20PRIMLIB
-element diode[dn3_av3] d_dnmi2_DIODE_222 pdf nsd 
+element diode[dn3_av3] d_dnmi2_DIODE_227 pdf nsd 
 model=diode[dnn3],dnn3
 dfiimodel=diode[dnn3],dnn3#20ivpcell#20PRIMLIB
-element diode[dnn3] d_dnnm_DIODE_223 G_subs nsd 
+element diode[dnn3] d_dnnm_DIODE_228 G_subs nsd 
 model=diode[dnw],dnw
 dfiimodel=diode[dnw],dnw#20ivpcell#20PRIMLIB
-element diode[dnw] dio_nws_DIODE_224 G_subs nwelltrm 
+element diode[dnw] dio_nws_DIODE_229 G_subs nwelltrm 
 model=diode[dnw_av2],dnw
 dfiimodel=diode[dnw_av2],dnw#20ivpcell#20PRIMLIB
-element diode[dnw_av2] dio_nws_DIODE_226 G_subs nwtrm_scr 
+element diode[dnw_av2] dio_nws_DIODE_231 G_subs nwtrm_scr 
 model=diode[dnw3],dnw3
 dfiimodel=diode[dnw3],dnw3#20ivpcell#20PRIMLIB
-element diode[dnw3] dio_nwsh_DIODE_225 G_subs nwelltrm 
+element diode[dnw3] dio_nwsh_DIODE_230 G_subs nwelltrm 
 model=diode[dnw3_av2],dnw3
 dfiimodel=diode[dnw3_av2],dnw3#20ivpcell#20PRIMLIB
-element diode[dnw3_av2] dio_nwsh_DIODE_227 G_subs nwtrm_scr 
+element diode[dnw3_av2] dio_nwsh_DIODE_232 G_subs nwtrm_scr 
 model=diode[dipdnw],dipdnw
 dfiimodel=diode[dipdnw],dipdnw#20ivpcell#20PRIMLIB
-element diode[dipdnw] dio_ipdnw_DIODE_228 pwitrm dnwtrm 
+element diode[dipdnw] dio_ipdnw_DIODE_233 pwitrm dnwtrm 
 model=diode[dipdnwmv],dipdnwmv
 dfiimodel=diode[dipdnwmv],dipdnwmv#20ivpcell#20PRIMLIB
-element diode[dipdnwmv] dio_ipdnwmv_DIODE_229 pwitrm dnwtrm 
+element diode[dipdnwmv] dio_ipdnwmv_DIODE_234 pwitrm dnwtrm 
 model=diode[dhpw],dhpw
 dfiimodel=diode[dhpw],dhpw#20ivpcell#20PRIMLIB
-element diode[dhpw] dio_dhpw_DIODE_230 pwitrm dnwtrm 
+element diode[dhpw] dio_dhpw_DIODE_235 pwitrm dnwtrm 
 model=diode[dhnw],dhnw
 dfiimodel=diode[dhnw],dhnw#20ivpcell#20PRIMLIB
-element diode[dhnw] dio_dhnw_DIODE_231 G_subs nbdsub 
+element diode[dhnw] dio_dhnw_DIODE_236 G_subs nbdsub 
 model=diode[ddnw],ddnw
 dfiimodel=diode[ddnw],ddnw#20ivpcell#20PRIMLIB
-element diode[ddnw] dio_ddnw_DIODE_232 G_subs dnwtrm 
+element diode[ddnw] dio_ddnw_DIODE_237 G_subs dnwtrm 
 model=diode[ddnwmv],ddnwmv
 dfiimodel=diode[ddnwmv],ddnwmv#20ivpcell#20PRIMLIB
-element diode[ddnwmv] dio_ddnwmv_DIODE_233 G_subs dnwtrm 
+element diode[ddnwmv] dio_ddnwmv_DIODE_238 G_subs dnwtrm 
 model=diode[dpdnw],dpdnw
 dfiimodel=diode[dpdnw],dpdnw#20ivpcell#20PRIMLIB
-element diode[dpdnw] dio_dpdnw_DIODE_234 psd dnwtrm 
+element diode[dpdnw] dio_dpdnw_DIODE_239 psd dnwtrm 
 model=diode[dpdnwmv],dpdnwmv
 dfiimodel=diode[dpdnwmv],dpdnwmv#20ivpcell#20PRIMLIB
-element diode[dpdnwmv] dio_dpdnwmv_DIODE_235 psd dnwtrm 
+element diode[dpdnwmv] dio_dpdnwmv_DIODE_240 psd dnwtrm 
 model=diode[dphnw],dphnw
 dfiimodel=diode[dphnw],dphnw#20ivpcell#20PRIMLIB
-element diode[dphnw] dio_dphnw1_DIODE_236 psd dnwtrm 
+element diode[dphnw] dio_dphnw1_DIODE_241 psd dnwtrm 
 model=diode[dphnw_av2],dphnw
 dfiimodel=diode[dphnw_av2],dphnw#20ivpcell#20PRIMLIB
-element diode[dphnw_av2] dio_dphnw2_DIODE_237 psd nbdsub 
+element diode[dphnw_av2] dio_dphnw2_DIODE_242 psd nbdsub 
 model=diode[dphnw_av3],dphnw
 dfiimodel=diode[dphnw_av3],dphnw#20ivpcell#20PRIMLIB
-element diode[dphnw_av3] dio_dphnw3_DIODE_238 psd hnw 
+element diode[dphnw_av3] dio_dphnw3_DIODE_243 psd hnw 
 model=diode[dnhpw],dnhpw
 dfiimodel=diode[dnhpw],dnhpw#20ivpcell#20PRIMLIB
-element diode[dnhpw] dio_dnhpw1_DIODE_239 pwitrm nsd 
+element diode[dnhpw] dio_dnhpw1_DIODE_244 pwitrm nsd 
 model=diode[dnhpw_av2],dnhpw
 dfiimodel=diode[dnhpw_av2],dnhpw#20ivpcell#20PRIMLIB
-element diode[dnhpw_av2] dio_dnhpw2_DIODE_240 G_subs nsd 
+element diode[dnhpw_av2] dio_dnhpw2_DIODE_245 G_subs nsd 
 model=diode[dwhn],dwhn
 dfiimodel=diode[dwhn],dwhn#20ivpcell#20PRIMLIB
-element diode[dwhn] dio_dwhn_DIODE_241 G_subs hnw 
+element diode[dwhn] dio_dwhn_DIODE_246 G_subs hnw 
 model=diode[dndf],dndf
 dfiimodel=diode[dndf],dndf#20ivpcell#20PRIMLIB
-element diode[dndf] dio_dndf_DIODE_242 G_subs ndftrm 
+element diode[dndf] dio_dndf_DIODE_247 G_subs ndftrm 
 model=diode[dpdwhn],dpdwhn
 dfiimodel=diode[dpdwhn],dpdwhn#20ivpcell#20PRIMLIB
-element diode[dpdwhn] dio_dpdwhn_DIODE_243 pdf hnw 
+element diode[dpdwhn] dio_dpdwhn_DIODE_248 pdf hnw 
 model=diode[dpwhn],dpwhn
 dfiimodel=diode[dpwhn],dpwhn#20ivpcell#20PRIMLIB
-element diode[dpwhn] dio_dpwhn_DIODE_244 psd hnw 
+element diode[dpwhn] dio_dpwhn_DIODE_249 psd hnw 
 model=diode[dpdd_scr],dpdd_scr
 dfiimodel=diode[dpdd_scr],dpdd_scr#20ivpcell#20PRIMLIB
-element diode[dpdd_scr] dpdd_scr_DIODE_245 pwitrm dnwtrm 
+element diode[dpdd_scr] dpdd_scr_DIODE_250 pwitrm dnwtrm 
 model=diode[dnpdd_scr],dnpdd_scr
 dfiimodel=diode[dnpdd_scr],dnpdd_scr#20ivpcell#20PRIMLIB
-element diode[dnpdd_scr] dnpdd_scr_DIODE_246 pwitrm nsd 
+element diode[dnpdd_scr] dnpdd_scr_DIODE_251 pwitrm nsd 
 model=diode[p_dnw],dnw
 dfiimodel=diode[p_dnw],p_dnw#20auLvs#20PRIMLIB
-element diode[p_dnw] p_dnw_DIODE_247 G_subs nwelltrm 
+element diode[p_dnw] p_dnw_DIODE_252 G_subs nwelltrm 
 model=diode[p_dnw_av2],dnw
 dfiimodel=diode[p_dnw_av2],p_dnw#20auLvs#20PRIMLIB
-element diode[p_dnw_av2] p_dnw_DIODE_249 G_subs nwtrm_scr 
+element diode[p_dnw_av2] p_dnw_DIODE_254 G_subs nwtrm_scr 
 model=diode[p_dnw3],dnw3
 dfiimodel=diode[p_dnw3],p_dnw3#20auLvs#20PRIMLIB
-element diode[p_dnw3] p_dnwm_DIODE_248 G_subs nwelltrm 
+element diode[p_dnw3] p_dnwm_DIODE_253 G_subs nwelltrm 
 model=diode[p_dnw3_av2],dnw3
 dfiimodel=diode[p_dnw3_av2],p_dnw3#20auLvs#20PRIMLIB
-element diode[p_dnw3_av2] p_dnwm_DIODE_250 G_subs nwtrm_scr 
+element diode[p_dnw3_av2] p_dnwm_DIODE_255 G_subs nwtrm_scr 
 model=diode[p_dp],dp
 dfiimodel=diode[p_dp],p_dp#20auLvs#20PRIMLIB
-element diode[p_dp] p_dp_DIODE_251 psd nwelltrm 
+element diode[p_dp] p_dp_DIODE_256 psd nwelltrm 
 model=diode[p_dp_av2],dp
 dfiimodel=diode[p_dp_av2],p_dp#20auLvs#20PRIMLIB
-element diode[p_dp_av2] p_dp_DIODE_253 psd nwtrm_scr 
+element diode[p_dp_av2] p_dp_DIODE_258 psd nwtrm_scr 
 model=diode[p_dp3],dp3
 dfiimodel=diode[p_dp3],p_dp3#20auLvs#20PRIMLIB
-element diode[p_dp3] p_dph_DIODE_252 psd nwelltrm 
+element diode[p_dp3] p_dph_DIODE_257 psd nwelltrm 
 model=diode[p_dp3_av2],dp3
 dfiimodel=diode[p_dp3_av2],p_dp3#20auLvs#20PRIMLIB
-element diode[p_dp3_av2] p_dph_DIODE_254 psd nwtrm_scr 
+element diode[p_dp3_av2] p_dph_DIODE_259 psd nwtrm_scr 
 model=diode[p_dp_av3],dp
 dfiimodel=diode[p_dp_av3],p_dp#20auLvs#20PRIMLIB
-element diode[p_dp_av3] p_dpi_DIODE_255 psd dnwtrm 
+element diode[p_dp_av3] p_dpi_DIODE_260 psd dnwtrm 
 model=diode[p_dp3_av3],dp3
 dfiimodel=diode[p_dp3_av3],p_dp3#20auLvs#20PRIMLIB
-element diode[p_dp3_av3] p_dpih_DIODE_256 psd dnwtrm 
+element diode[p_dp3_av3] p_dpih_DIODE_261 psd dnwtrm 
 model=diode[p_dp_av4],dp
 dfiimodel=diode[p_dp_av4],p_dp#20auLvs#20PRIMLIB
-element diode[p_dp_av4] p_dpi2_DIODE_257 psd hnw 
+element diode[p_dp_av4] p_dpi2_DIODE_262 psd hnw 
 model=diode[p_dp3_av4],dp3
 dfiimodel=diode[p_dp3_av4],p_dp3#20auLvs#20PRIMLIB
-element diode[p_dp3_av4] p_dpmi2_DIODE_258 psd hnw 
+element diode[p_dp3_av4] p_dpmi2_DIODE_263 psd hnw 
 model=diode[p_dn],dn
 dfiimodel=diode[p_dn],p_dn#20auLvs#20PRIMLIB
-element diode[p_dn] p_dn_DIODE_259 G_subs nsd 
+element diode[p_dn] p_dn_DIODE_264 G_subs nsd 
 model=diode[p_dn_av2],dn
 dfiimodel=diode[p_dn_av2],p_dn#20auLvs#20PRIMLIB
-element diode[p_dn_av2] p_dni_DIODE_260 pwitrm nsd 
+element diode[p_dn_av2] p_dni_DIODE_265 pwitrm nsd 
 model=diode[p_dn3],dn3
 dfiimodel=diode[p_dn3],p_dn3#20auLvs#20PRIMLIB
-element diode[p_dn3] p_dnh_DIODE_261 G_subs nsd 
+element diode[p_dn3] p_dnh_DIODE_266 G_subs nsd 
 model=diode[p_dn3_av2],dn3
 dfiimodel=diode[p_dn3_av2],p_dn3#20auLvs#20PRIMLIB
-element diode[p_dn3_av2] p_dnih_DIODE_262 pwitrm nsd 
+element diode[p_dn3_av2] p_dnih_DIODE_267 pwitrm nsd 
 model=diode[p_dn_av3],dn
 dfiimodel=diode[p_dn_av3],p_dn#20auLvs#20PRIMLIB
-element diode[p_dn_av3] p_dni2_DIODE_263 pdf nsd 
+element diode[p_dn_av3] p_dni2_DIODE_268 pdf nsd 
 model=diode[p_dn3_av3],dn3
 dfiimodel=diode[p_dn3_av3],p_dn3#20auLvs#20PRIMLIB
-element diode[p_dn3_av3] p_dnmi2_DIODE_264 pdf nsd 
+element diode[p_dn3_av3] p_dnmi2_DIODE_269 pdf nsd 
 model=diode[p_dnn3],dnn3
 dfiimodel=diode[p_dnn3],p_dnn3#20auLvs#20PRIMLIB
-element diode[p_dnn3] p_dnnm_DIODE_265 G_subs nsd 
+element diode[p_dnn3] p_dnnm_DIODE_270 G_subs nsd 
 model=diode[p_ddnw],ddnw
 dfiimodel=diode[p_ddnw],p_ddnw#20auLvs#20PRIMLIB
-element diode[p_ddnw] p_ddnw_DIODE_266 G_subs dnwtrm 
+element diode[p_ddnw] p_ddnw_DIODE_271 G_subs dnwtrm 
 model=diode[p_ddnwmv],ddnwmv
 dfiimodel=diode[p_ddnwmv],p_ddnwmv#20auLvs#20PRIMLIB
-element diode[p_ddnwmv] p_ddnwmv_DIODE_267 G_subs dnwellmvtrm 
+element diode[p_ddnwmv] p_ddnwmv_DIODE_272 G_subs dnwellmvtrm 
 model=diode[p_dipdnw],dipdnw
 dfiimodel=diode[p_dipdnw],p_dipdnw#20auLvs#20PRIMLIB
-element diode[p_dipdnw] p_dipdnw_DIODE_268 pwitrm dnwtrm 
+element diode[p_dipdnw] p_dipdnw_DIODE_273 pwitrm dnwtrm 
 model=diode[p_dipdnwmv],dipdnwmv
 dfiimodel=diode[p_dipdnwmv],p_dipdnwmv#20auLvs#20PRIMLIB
-element diode[p_dipdnwmv] p_dipdnwmv_DIODE_269 pwitrm dnwtrm 
+element diode[p_dipdnwmv] p_dipdnwmv_DIODE_274 pwitrm dnwtrm 
 model=diode[p_dhpw],dhpw
 dfiimodel=diode[p_dhpw],p_dhpw#20auLvs#20PRIMLIB
-element diode[p_dhpw] p_dhpw_DIODE_270 pwitrm dnwtrm 
+element diode[p_dhpw] p_dhpw_DIODE_275 pwitrm dnwtrm 
 model=diode[p_dhnw],dhnw
 dfiimodel=diode[p_dhnw],p_dhnw#20auLvs#20PRIMLIB
-element diode[p_dhnw] p_dhnw_DIODE_271 G_subs nbdsub 
+element diode[p_dhnw] p_dhnw_DIODE_276 G_subs nbdsub 
 model=diode[p_dpdnw],dpdnw
 dfiimodel=diode[p_dpdnw],p_dpdnw#20auLvs#20PRIMLIB
-element diode[p_dpdnw] p_dpdnw_DIODE_272 psd dnwtrm 
+element diode[p_dpdnw] p_dpdnw_DIODE_277 psd dnwtrm 
 model=diode[p_dpdnwmv],dpdnwmv
 dfiimodel=diode[p_dpdnwmv],p_dpdnwmv#20auLvs#20PRIMLIB
-element diode[p_dpdnwmv] p_dpdnwmv_DIODE_273 psd dnwtrm 
+element diode[p_dpdnwmv] p_dpdnwmv_DIODE_278 psd dnwtrm 
 model=diode[p_dphnw],dphnw
 dfiimodel=diode[p_dphnw],p_dphnw#20auLvs#20PRIMLIB
-element diode[p_dphnw] p_dphnw1_DIODE_274 psd dnwtrm 
+element diode[p_dphnw] p_dphnw1_DIODE_279 psd dnwtrm 
 model=diode[p_dphnw_av2],dphnw
 dfiimodel=diode[p_dphnw_av2],p_dphnw#20auLvs#20PRIMLIB
-element diode[p_dphnw_av2] p_dphnw2_DIODE_275 psd nbdsub 
+element diode[p_dphnw_av2] p_dphnw2_DIODE_280 psd nbdsub 
 model=diode[p_dphnw_av3],dphnw
 dfiimodel=diode[p_dphnw_av3],p_dphnw#20auLvs#20PRIMLIB
-element diode[p_dphnw_av3] p_dphnw3_DIODE_276 psd hnw 
+element diode[p_dphnw_av3] p_dphnw3_DIODE_281 psd hnw 
 model=diode[p_dnhpw],dnhpw
 dfiimodel=diode[p_dnhpw],p_dnhpw#20auLvs#20PRIMLIB
-element diode[p_dnhpw] p_dnhpw1_DIODE_277 pwitrm nsd 
+element diode[p_dnhpw] p_dnhpw1_DIODE_282 pwitrm nsd 
 model=diode[p_dnhpw_av2],dnhpw
 dfiimodel=diode[p_dnhpw_av2],p_dnhpw#20auLvs#20PRIMLIB
-element diode[p_dnhpw_av2] p_dnhpw2_DIODE_278 G_subs nsd 
+element diode[p_dnhpw_av2] p_dnhpw2_DIODE_283 G_subs nsd 
 model=diode[p_dwhn],dwhn
 dfiimodel=diode[p_dwhn],p_dwhn#20auLvs#20PRIMLIB
-element diode[p_dwhn] p_dwhn_DIODE_279 G_subs hnw 
+element diode[p_dwhn] p_dwhn_DIODE_284 G_subs hnw 
 model=diode[p_dndf],dndf
 dfiimodel=diode[p_dndf],p_dndf#20auLvs#20PRIMLIB
-element diode[p_dndf] p_dndf_DIODE_280 G_subs ndftrm 
+element diode[p_dndf] p_dndf_DIODE_285 G_subs ndftrm 
 model=diode[p_dpdwhn],dpdwhn
 dfiimodel=diode[p_dpdwhn],p_dpdwhn#20auLvs#20PRIMLIB
-element diode[p_dpdwhn] p_dpdwhn_DIODE_281 pdf hnw 
+element diode[p_dpdwhn] p_dpdwhn_DIODE_286 pdf hnw 
 model=diode[p_dpwhn],dpwhn
 dfiimodel=diode[p_dpwhn],p_dpwhn#20auLvs#20PRIMLIB
-element diode[p_dpwhn] p_dpwhn_DIODE_282 psd hnw 
+element diode[p_dpwhn] p_dpwhn_DIODE_287 psd hnw 
 model=diode[p_dn_av4],dn
 dfiimodel=diode[p_dn_av4],p_dn#20auLvs#20PRIMLIB
-element diode[p_dn_av4] p_dndpl_DIODE_283 G_subs nsd 
+element diode[p_dn_av4] p_dndpl_DIODE_288 G_subs nsd 
 model=diode[p_dn_av5],dn
 dfiimodel=diode[p_dn_av5],p_dn#20auLvs#20PRIMLIB
-element diode[p_dn_av5] p_dndpli_DIODE_284 pwitrm nsd 
+element diode[p_dn_av5] p_dndpli_DIODE_289 pwitrm nsd 
 model=diode[p_ddpldnw],ddpldnw
 dfiimodel=diode[p_ddpldnw],p_ddpldnw#20auLvs#20PRIMLIB
-element diode[p_ddpldnw] pddpldnw_DIODE_285 pwitrm dnwtrm 
+element diode[p_ddpldnw] pddpldnw_DIODE_290 pwitrm dnwtrm 
 model=diode[p_dn3dpl],dn3dpl
 dfiimodel=diode[p_dn3dpl],p_dn3dpl#20auLvs#20PRIMLIB
-element diode[p_dn3dpl] pdnmdpl_DIODE_286 G_subs nsd 
+element diode[p_dn3dpl] pdnmdpl_DIODE_291 G_subs nsd 
 model=diode[p_dn3dpl_av2],dn3dpl
 dfiimodel=diode[p_dn3dpl_av2],p_dn3dpl#20auLvs#20PRIMLIB
-element diode[p_dn3dpl_av2] pdnmdpli_DIODE_287 pwitrm nsd 
+element diode[p_dn3dpl_av2] pdnmdpli_DIODE_292 pwitrm nsd 
 model=diode[p_dpndf],dpndf
 dfiimodel=diode[p_dpndf],p_dpndf#20auLvs#20PRIMLIB
-element diode[p_dpndf] p_dpndf_DIODE_288 psd ndftrm 
+element diode[p_dpndf] p_dpndf_DIODE_293 psd ndftrm 
 model=diode[p_dpndf_av2],dpndf
 dfiimodel=diode[p_dpndf_av2],p_dpndf#20auLvs#20PRIMLIB
-element diode[p_dpndf_av2] pdpndfh_DIODE_289 psd hnw 
+element diode[p_dpndf_av2] pdpndfh_DIODE_294 psd hnw 
 model=diode[p_dpdddnw],dpdddnw
 dfiimodel=diode[p_dpdddnw],p_dpdddnw#20auLvs#20PRIMLIB
-element diode[p_dpdddnw] pdpdddnw_DIODE_290 pwitrm dnwtrm 
+element diode[p_dpdddnw] pdpdddnw_DIODE_295 pwitrm dnwtrm 
 model=diode[p_dbn],dbn
 dfiimodel=diode[p_dbn],p_dbn#20auLvs#20PRIMLIB
-element diode[p_dbn] p_dbn_DIODE_291 G_subs bndiff 
+element diode[p_dbn] p_dbn_DIODE_296 G_subs bndiff 
 model=generic[tag_60v],tag_60v
 dfiimodel=generic[tag_60v],tag_60v#20auLvs#20PRIMLIB
-element generic[tag_60v] p1_v60_Device_292 p1_vlbl[N1] 
+element generic[tag_60v] nd_v60_Device_297 nd_vlbl[N1] 
 model=generic[tag_25v],tag_25v
 dfiimodel=generic[tag_25v],tag_25v#20auLvs#20PRIMLIB
-element generic[tag_25v] p1_v25_Device_293 p1_vlbl[N1] 
+element generic[tag_25v] nd_v25_Device_298 nd_vlbl[N1] 
 model=generic[tag_60v_av2],tag_60v
 dfiimodel=generic[tag_60v_av2],tag_60v#20auLvs#20PRIMLIB
-element generic[tag_60v_av2] m1_v60_Device_294 m1_vlbl[N1] 
+element generic[tag_60v_av2] pd_v60_Device_299 pd_vlbl[N1] 
 model=generic[tag_25v_av2],tag_25v
 dfiimodel=generic[tag_25v_av2],tag_25v#20auLvs#20PRIMLIB
-element generic[tag_25v_av2] m1_v25_Device_295 m1_vlbl[N1] 
+element generic[tag_25v_av2] pd_v25_Device_300 pd_vlbl[N1] 
 model=generic[tag_60v_av3],tag_60v
 dfiimodel=generic[tag_60v_av3],tag_60v#20auLvs#20PRIMLIB
-element generic[tag_60v_av3] m2_v60_Device_296 m2_vlbl[N1] 
+element generic[tag_60v_av3] p1_v60_Device_301 p1_vlbl[N1] 
 model=generic[tag_25v_av3],tag_25v
 dfiimodel=generic[tag_25v_av3],tag_25v#20auLvs#20PRIMLIB
-element generic[tag_25v_av3] m2_v25_Device_297 m2_vlbl[N1] 
+element generic[tag_25v_av3] p1_v25_Device_302 p1_vlbl[N1] 
 model=generic[tag_60v_av4],tag_60v
 dfiimodel=generic[tag_60v_av4],tag_60v#20auLvs#20PRIMLIB
-element generic[tag_60v_av4] m3_v60_Device_298 m3_vlbl[N1] 
+element generic[tag_60v_av4] m1_v60_Device_303 m1_vlbl[N1] 
 model=generic[tag_25v_av4],tag_25v
 dfiimodel=generic[tag_25v_av4],tag_25v#20auLvs#20PRIMLIB
-element generic[tag_25v_av4] m3_v25_Device_299 m3_vlbl[N1] 
+element generic[tag_25v_av4] m1_v25_Device_304 m1_vlbl[N1] 
 model=generic[tag_60v_av5],tag_60v
 dfiimodel=generic[tag_60v_av5],tag_60v#20auLvs#20PRIMLIB
-element generic[tag_60v_av5] m4_v60_Device_300 m4_vlbl[N1] 
+element generic[tag_60v_av5] m2_v60_Device_305 m2_vlbl[N1] 
 model=generic[tag_25v_av5],tag_25v
 dfiimodel=generic[tag_25v_av5],tag_25v#20auLvs#20PRIMLIB
-element generic[tag_25v_av5] m4_v25_Device_301 m4_vlbl[N1] 
+element generic[tag_25v_av5] m2_v25_Device_306 m2_vlbl[N1] 
 model=generic[tag_60v_av6],tag_60v
 dfiimodel=generic[tag_60v_av6],tag_60v#20auLvs#20PRIMLIB
-element generic[tag_60v_av6] mt_v60_Device_302 mt_vlbl[N1] 
+element generic[tag_60v_av6] m3_v60_Device_307 m3_vlbl[N1] 
 model=generic[tag_25v_av6],tag_25v
 dfiimodel=generic[tag_25v_av6],tag_25v#20auLvs#20PRIMLIB
-element generic[tag_25v_av6] mt_v25_Device_303 mt_vlbl[N1] 
+element generic[tag_25v_av6] m3_v25_Device_308 m3_vlbl[N1] 
 model=generic[tag_60v_av7],tag_60v
 dfiimodel=generic[tag_60v_av7],tag_60v#20auLvs#20PRIMLIB
-element generic[tag_60v_av7] mtl_v60_Device_304 mtl_vlbl[N1] 
+element generic[tag_60v_av7] m4_v60_Device_309 m4_vlbl[N1] 
 model=generic[tag_25v_av7],tag_25v
 dfiimodel=generic[tag_25v_av7],tag_25v#20auLvs#20PRIMLIB
-element generic[tag_25v_av7] mtl_v25_Device_305 mtl_vlbl[N1] 
+element generic[tag_25v_av7] m4_v25_Device_310 m4_vlbl[N1] 
+model=generic[tag_60v_av8],tag_60v
+dfiimodel=generic[tag_60v_av8],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av8] mt_v60_Device_311 mt_vlbl[N1] 
+model=generic[tag_25v_av8],tag_25v
+dfiimodel=generic[tag_25v_av8],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av8] mt_v25_Device_312 mt_vlbl[N1] 
+model=generic[tag_60v_av9],tag_60v
+dfiimodel=generic[tag_60v_av9],tag_60v#20auLvs#20PRIMLIB
+element generic[tag_60v_av9] mtl_v60_Device_313 mtl_vlbl[N1] 
+model=generic[tag_25v_av9],tag_25v
+dfiimodel=generic[tag_25v_av9],tag_25v#20auLvs#20PRIMLIB
+element generic[tag_25v_av9] mtl_v25_Device_314 mtl_vlbl[N1] 

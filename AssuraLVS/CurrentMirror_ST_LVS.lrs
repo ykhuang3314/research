@@ -1,13 +1,16 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Wed Apr 21 11:58:38 2021
+run on s2424 at Mon Apr 26 13:40:04 2021
 
-Schematic                                | Layout                                | Status
--------------------------------------------------------------------------------------------
-LSHVT18U3VX2 cmos_sch D_CELLS_M3V        | LSHVT18U3VX2 layout D_CELLS_M3V       | matched
-CurrentMirror_ST schematic Stimulator_IMP| CurrentMirror_ST layout Stimulator_IMP| matched
+Schematic                                    | Layout                                    | Status
+---------------------------------------------------------------------------------------------------
+CurrentMirror_x10_LV schematic Stimulator_IMP| CurrentMirror_x10_LV layout Stimulator_IMP| matched
+LSHVT18U3VX2 cmos_sch D_CELLS_M3V            | LSHVT18U3VX2 layout D_CELLS_M3V           | matched
+CurrentMirror_ST schematic Stimulator_IMP    | CurrentMirror_ST layout Stimulator_IMP    | errors  *
 
-Schematic and Layout Match
+Mismatch between Schematic and Layout
+   1 cell with errors
+   2 cells matched
 
 Schematic:
   Library:Stimulator_IMP
@@ -29,8 +32,8 @@ Extraction  Information
 
 Mismatch  Information
 --------------------
-     0 cells have 0 Net mismatches
-     0 cells have 0 Device mismatches
+     1 cells have 5 Net mismatches
+     1 cells have 11 Device mismatches
      0 cells have 0 Pin mismatches
      0 cells have 0 Parameter mismatches
 

@@ -1,0 +1,5 @@
+CADENCE IHNL11143
+
+D_CELLS_M3V LSHVT18U3VX2 cmos_sch cds0
+Stimulator_IMP CurrentMirror_x10_LV schematic cds1
+Stimulator_IMP CurrentMirror_ST schematic cds2

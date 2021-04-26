@@ -1,0 +1,193 @@
+** Schematic Netlist, pvs precompare
+** 
+
+.subckt LDDN D G S B 
+.ends
+
+
+.subckt LDDP D G S B 
+.ends
+
+
+.subckt CurrentMirror_ST Iref Ist enable gnd! vdd3! vddh vdde! 
+MXI17/MM6 en_3v XI17/net20 vdd3! vdd3! PE3 W=2.82e-06 L=3e-07 m=1 
+MXI17/MM8 XI17/net4 enable vdde! vdd3! PE3 W=1.47e-06 L=3e-07 m=1 
+MXI17/MM9 XI17/net20 enable XI17/net024 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI17/MM0 XI17/net10 XI17/net4 XI17/net023 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI17/MM2 XI17/net023 XI17/net20 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI17/MM4 XI17/net024 XI17/net10 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI17/MM3 XI17/net20 enable gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI17/MM5 en_3v XI17/net20 gnd! gnd! NE3 W=1.78e-06 L=3.5e-07 m=1 
+MXI17/MM7 XI17/net4 enable gnd! gnd! NE3 W=4.2e-07 L=3.5e-07 m=1 
+MXI17/MM1 XI17/net10 XI17/net4 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI0/MM26 Iref Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM26==2 Iref Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM26==3 Iref Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM26==4 Iref Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM26==5 Iref Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM26==6 Iref Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==2 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==3 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==4 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==5 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==6 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==7 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==8 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==9 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==10 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==11 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==12 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==13 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==14 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==15 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==16 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==17 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==18 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==19 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==20 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==21 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==22 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==23 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==24 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==25 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==26 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==27 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==28 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==29 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==30 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==31 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==32 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==33 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==34 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==35 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==36 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==37 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==38 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==39 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==40 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==41 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==42 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==43 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==44 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==45 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==46 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==47 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==48 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==49 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==50 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==51 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==52 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==53 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==54 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==55 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==56 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==57 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==58 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==59 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI0/MM13==60 Iout_LV Iref gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+CCC5 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==2 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==3 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==4 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==5 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==6 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==7 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==8 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==9 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==10 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==11 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==12 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==13 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==14 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC5==15 vddh Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==2 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==3 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==4 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==5 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==6 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==7 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==8 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==9 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==10 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==11 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==12 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==13 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==14 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==15 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==16 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==17 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==18 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==19 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==20 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==21 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==22 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==23 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==24 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==25 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==26 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==27 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==28 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==29 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==30 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==31 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==32 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==33 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==34 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==35 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==36 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==37 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==38 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==39 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==40 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==41 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==42 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==43 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==44 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CCC1==45 Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+XMM17 Iout_LV Vmid gnd! gnd! LDDN W=1e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM15 Vmid vdd3! gnd! gnd! LDDN W=1e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM14 Iout2 Iout2 VG1 gnd! LDDN W=4e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM8 Iout1 Iout1 VB gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM16 Bias2 en_3v Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM16==2 Bias2 en_3v Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM16==3 Bias2 en_3v Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM16==4 Bias2 en_3v Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM16==5 Bias2 en_3v Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM5 VG1 VB VD_M4 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==2 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==3 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==4 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==5 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==6 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==7 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==8 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==9 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM0==10 Ist VB VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM7 VB Iout1 net16 gnd! LDDN W=3.5e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM6 net16 net16 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM4 VD_M4 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==2 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==3 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==4 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==5 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==6 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==7 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==8 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==9 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM3==10 VD_M3 VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+XMM11 VD_M11 Bias1 vddh gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+XMM1 VD_M1 Bias1 vddh gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+XMM2 Bias1 Bias1 vddh gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+XMM12 Iout2 Bias2 VD_M11 gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+XMM10 Iout1 Bias2 VD_M1 gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+XMM9 Bias2 Bias2 Bias1 gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+RRR3 net030 gnd! RPP1K1 W=2e-06 L=0.00011122 m=1 R=54862.6 
+RRR2 vdd3! gnd! RPP1K1 W=2e-06 L=0.00036998 m=1 R=182252 
+RRR0 en_3v net030 RPP1K1 W=2e-06 L=0.00011122 m=1 R=54862.6 
+.ends
+
+

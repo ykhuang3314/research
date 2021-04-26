@@ -1,0 +1,15 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 unmatched connect pin
+1 0 ((S "M0" "nedia_bjt")(("D" "Ist")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI46/avD98_1" "nedia_bjt")(("D" "avC22")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI48/avD98_1" "nedia_bjt")(("D" "avC21")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI51/avD98_1" "nedia_bjt")(("D" "avC20")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI53/avD98_1" "nedia_bjt")(("D" "avC19")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI55/avD98_1" "nedia_bjt")(("D" "avC17")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI56/avD98_1" "nedia_bjt")(("D" "avC27")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI58/avD98_1" "nedia_bjt")(("D" "avC26")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI60/avD98_1" "nedia_bjt")(("D" "avC25")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI63/avD98_1" "nedia_bjt")(("D" "avC24")("G" "VB")("S" "VD_M3")("SB" "gnd!")))
+1 0 ((L "avI65/avD98_1" "nedia_bjt")(("D" "avC23")("G" "VB")("S" "VD_M3")("SB" "gnd!")))

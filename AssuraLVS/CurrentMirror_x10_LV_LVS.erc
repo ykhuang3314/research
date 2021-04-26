@@ -1,0 +1,10 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'CurrentMirror_x10_LV layout Stimulator_IMP':
+  info: Assign pin label "Ix10" at (79.7300, 72.7100) to layer `met4trm'.
+  info: Assign pin label "gnd!" at (79.7300, 77.9900) to layer `met4trm'.
+  info: Assign pin label "Iin" at (79.7300, 69.6800) to layer `met2trm'.
+
+***** End of Label Report *****
+

@@ -1,6 +1,5 @@
-Schematic                           | Layout                           | Status
---------------------------------------------------------------------------------
-Ext_Iref_ST schematic Stimulator_IMP| Ext_Iref_ST layout Stimulator_IMP| errors *
+Schematic                           | Layout                                         | Status
+-----------------------------------------------------------------------------------------------
+Ext_Iref_ST schematic Stimulator_IMP| Ext_Iref_ST ModgenTmplayout15249 Stimulator_IMP| matched
 
-Mismatch between Schematic and Layout
-   1 cell with errors
+Schematic and Layout Match

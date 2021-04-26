@@ -1,0 +1,32 @@
+** Schematic Netlist, pvs precompare
+** 
+
+.subckt Ext_Iref_ST Iext Iref vss 
+RRR0 Iext VG2 RPP1K1 W=2e-06 L=2.0095e-05 m=1 R=10001.1 
+MMM2 VG1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM2==2 VG1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM2==3 VG1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM2==4 VG1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM2==5 VG1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM0 VG2 VG2 VG1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM0==2 VG2 VG2 VG1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM0==3 VG2 VG2 VG1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM0==4 VG2 VG2 VG1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM0==5 VG2 VG2 VG1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM3 VD_M1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM3==2 VD_M1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM3==3 VD_M1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM3==4 VD_M1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM3==5 VD_M1 VG1 vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM1 Iref VG2 VD_M1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM1==2 Iref VG2 VD_M1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM1==3 Iref VG2 VD_M1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM1==4 Iref VG2 VD_M1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM1==5 Iref VG2 VD_M1 vss NE3 W=8e-06 L=2e-06 m=1 
+MMM14 vss vss vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM14==2 vss vss vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM14==3 vss vss vss vss NE3 W=8e-06 L=2e-06 m=1 
+MMM14==4 vss vss vss vss NE3 W=8e-06 L=2e-06 m=1 
+.ends
+
+

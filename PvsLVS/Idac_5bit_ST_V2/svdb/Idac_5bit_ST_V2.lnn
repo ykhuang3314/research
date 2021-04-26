@@ -1,0 +1,33 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary Idac_5bit_ST_V2
+% VIA2_C_CDNS_1 1
+% VIA2_C_CDNS_2 1
+% VIA1_C_CDNS_3 1
+% VIA1_C_CDNS_4 1
+% VIA1_C_CDNS_5 1
+% VIA2_C_CDNS_6 1
+% VIA1_C_CDNS_7 2
+% VIA1_C_CDNS_8 2
+% VIA1_C_CDNS_9 1
+% VIA2_C_CDNS_10 1
+% VIA1_C_CDNS_11 1
+% pe3_CDNS_12 5
+% pe3_CDNS_13 5
+% MASCO__A1 7
+% MASCO__A2 7
+% MASCO__A4 10
+% MASCO__A3 7
+% MASCO__A6 11
+% MASCO__A5 11
+% MASCO__A8 17
+% MASCO__A7 10
+% MASCO__A9 10
+% Idac_5bit_ST_V2 8
+7 vdd3!
+13 Iref
+14 Idac
+15 D0_3v
+16 D1_3v
+17 D2_3v
+18 D3_3v
+19 D4_3v

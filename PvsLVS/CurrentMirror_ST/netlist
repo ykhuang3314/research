@@ -1,0 +1,106 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Stimulator_IMP
+* Top Cell Name: CurrentMirror_ST
+* View Name:     schematic
+* Netlisted on:  Apr 26 13:49:09 2021
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+*.GLOBAL vdde!
++        vdd3!
++        gnd!
+
+*.PIN vdde!
+*+    vdd3!
+*+    gnd!
+
+************************************************************************
+* Library Name: D_CELLS_M3V
+* Cell Name:    LSHVT18U3VX2
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT LSHVT18U3VX2 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde
+*.PININFO A:I Q:O inh_ground_gnd:B inh_power_vdd3:B inh_power_vdde:B
+MM6 Q net20 inh_power_vdd3 inh_power_vdd3 PE3 W=2.82u L=300n M=1.0 
++ AD=1.3536e-12 AS=1.3536e-12 PD=6.6e-06 PS=6.6e-06 NRD=0.0957447 NRS=0.0957447
+MM8 net4 A inh_power_vdde inh_power_vdd3 PE3 W=1.47u L=300n M=1.0 AD=7.056e-13 
++ AS=7.056e-13 PD=3.9e-06 PS=3.9e-06 NRD=0.183673 NRS=0.183673
+MM9 net20 A net024 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 AD=2.016e-13 
++ AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM0 net10 net4 net023 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 AD=2.016e-13 
++ AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM2 net023 net20 inh_power_vdd3 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM4 net024 net10 inh_power_vdd3 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM3 net20 A inh_ground_gnd inh_ground_gnd NE3 W=1.31u L=350.0n M=1.0 
++ AD=6.288e-13 AS=6.288e-13 PD=3.58e-06 PS=3.58e-06 NRD=0.206107 NRS=0.206107
+MM5 Q net20 inh_ground_gnd inh_ground_gnd NE3 W=1.78u L=350.0n M=1.0 
++ AD=8.544e-13 AS=8.544e-13 PD=4.52e-06 PS=4.52e-06 NRD=0.151685 NRS=0.151685
+MM7 net4 A inh_ground_gnd inh_ground_gnd NE3 W=420.0n L=350.0n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM1 net10 net4 inh_ground_gnd inh_ground_gnd NE3 W=1.31u L=350.0n M=1.0 
++ AD=6.288e-13 AS=6.288e-13 PD=3.58e-06 PS=3.58e-06 NRD=0.206107 NRS=0.206107
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    CurrentMirror_x10_LV
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT CurrentMirror_x10_LV Iin Ix10 gnd!
+*.PININFO Iin:B Ix10:B gnd!:B
+MM26 Iin Iin gnd! gnd! NE3 W=12.0u L=3u M=6.0 AD=5.76e-12 AS=5.76e-12 
++ PD=2.496e-05 PS=2.496e-05 NRD=0.0225 NRS=0.0225
+MM13 Ix10 Iin gnd! gnd! NE3 W=12.0u L=3u M=60.0 AD=5.76e-12 AS=5.76e-12 
++ PD=2.496e-05 PS=2.496e-05 NRD=0.0225 NRS=0.0225
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    CurrentMirror_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT CurrentMirror_ST Iref Ist enable gnd! vdd3! vddh
+*.PININFO enable:I Iref:B Ist:B gnd!:B vdd3!:B vddh:B
+CC5 vddh Vmid $[CSFT5A] area=6.3936e-11 perimeter=33.72u M=15
+CC1 Vmid gnd! $[CSFT5A] area=6.3936e-11 perimeter=33.72u M=45
+MM17 Iout_LV Vmid gnd! gnd! NEDIA_BJT W=10u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM15 Vmid vdd3! gnd! gnd! NEDIA_BJT W=10u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM14 Iout2 Iout2 VG1 gnd! NEDIA_BJT W=40u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM8 Iout1 Iout1 VB gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM16 Bias2 en_3v Iout_LV gnd! NEDIA_BJT W=60u L=1.25u M=5.0 $LDD[NEDIA_BJT]
+MM5 VG1 VB VD_M4 gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM0 Ist VB VD_M3 gnd! NEDIA_BJT W=80u L=1.25u M=10.0 $LDD[NEDIA_BJT]
+MM7 VB Iout1 net16 gnd! NEDIA_BJT W=35.0u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM6 net16 net16 gnd! gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM4 VD_M4 VG1 gnd! gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM3 VD_M3 VG1 gnd! gnd! NEDIA_BJT W=80u L=1.25u M=10.0 $LDD[NEDIA_BJT]
+XI17 enable en_3v gnd! vdd3! vdde! / LSHVT18U3VX2
+MM11 VD_M11 Bias1 vddh gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM1 VD_M1 Bias1 vddh gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM2 Bias1 Bias1 vddh gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM12 Iout2 Bias2 VD_M11 gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM10 Iout1 Bias2 VD_M1 gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM9 Bias2 Bias2 Bias1 gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+RR3 net030 gnd! 54862.6 $[RPP1K1] $W=2u $L=111.22u M=1
+RR2 vdd3! gnd! 182252 $[RPP1K1] $W=2u $L=369.98u M=1
+RR0 en_3v net030 54862.6 $[RPP1K1] $W=2u $L=111.22u M=1
+XI0 Iref Iout_LV gnd! / CurrentMirror_x10_LV
+.ENDS
+

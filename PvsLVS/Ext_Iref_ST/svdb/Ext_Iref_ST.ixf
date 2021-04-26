@@ -1,0 +1,31 @@
+# XXXX: Instance Cross Reference (ixf) (File format 1)
+# XXXX: Layout Primary Ext_Iref_ST
+# XXXX: End of header.
+% R 2 R 2
+% MN 4 MN 4
+% Ext_Iref_ST 3 Ext_Iref_ST 3
+0 X148/R0 0 RR0  
+0 X170/M0 0 MM2==2  
+0 X154/M0 0 MM2  
+0 X157/M0 0 MM2==3  
+0 X162/M0 0 MM2==4  
+0 X165/M0 0 MM2==5  
+0 X160/M0 0 MM0==2  
+0 X152/M0 0 MM0  
+0 X155/M0 0 MM0==3  
+0 X163/M0 0 MM0==4  
+0 X168/M0 0 MM0==5  
+0 X161/M0 0 MM3==2  
+0 X153/M0 0 MM3  
+0 X158/M0 0 MM3==3  
+0 X166/M0 0 MM3==4  
+0 X169/M0 0 MM3==5  
+0 X167/M0 0 MM1==2  
+0 X151/M0 0 MM1  
+0 X156/M0 0 MM1==3  
+0 X159/M0 0 MM1==4  
+0 X164/M0 0 MM1==5  
+0 X171/M0 0 MM14==3  
+0 X149/M0 0 MM14  
+0 X150/M0 0 MM14==2  
+0 X172/M0 0 MM14==4  

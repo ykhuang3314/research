@@ -1,0 +1,35 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : Idac_5bit_ST_V2_lvs.sum
+ERC Summary File         : Idac_5bit_ST_V2.sum
+LVS Comparison Report    : Idac_5bit_ST_V2_lvs.sum.cls
+LVS Softchk Report       : Idac_5bit_ST_V2.softchk
+Layout Name              : /home/ykhuang/research/PvsLVS/Idac_5bit_ST_V2/Idac_5bit_ST_V2.gds ("Idac_5bit_ST_V2")
+User Name                : ykhuang
+Creation Time            : Fri Apr 23 13:45:41 2021
+Current directory        : /home/ykhuang/research/PvsLVS/Idac_5bit_ST_V2
+PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK nwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK dnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hvnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK ndftrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hnw -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK catdiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK anodiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pwitrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pdf -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK bulk -TYPE CONTACT   Total Result        0 (       0)

@@ -1,0 +1,35 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
+sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
+run on s2424 at Fri Apr 23 16:49:08 2021
+
+Schematic                                    | Layout                                    | Status
+---------------------------------------------------------------------------------------------------
+CurrentMirror_x10_LV schematic Stimulator_IMP| CurrentMirror_x10_LV layout Stimulator_IMP| matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:Stimulator_IMP
+  Cell   :CurrentMirror_x10_LV
+  View   :schematic
+
+Layout:
+  Library:Stimulator_IMP
+  Cell   :CurrentMirror_x10_LV
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

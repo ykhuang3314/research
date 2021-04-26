@@ -1,0 +1,9 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 bind match unmatched shorts opens
+1 0 ((L "Ist")()(S "Ist")((1 "nedia_bjt" ( "D"))))
+1 0 ((L "gnd!")((1 "csft5a" ( "MINUS"))(5 "nedia_bjt" ( "S"))(20 "nedia_bjt" ( "SB"))(1 "LSHVT18U3VX2" ( "gnd"))(6 "ped_bjt" ( "SB"))(2 "rpp1k1" ( "PLUS" "MINUS"))(1 "CurrentMirror_x10_LV" ( "gnd!")))(S "gnd!")((1 "csft5a" ( "MINUS"))(5 "nedia_bjt" ( "S"))(11 "nedia_bjt" ( "SB"))(1 "LSHVT18U3VX2" ( "gnd"))(6 "ped_bjt" ( "SB"))(2 "rpp1k1" ( "PLUS" "MINUS"))(1 "CurrentMirror_x10_LV" ( "gnd!"))))
+1 2 ((L "avC22")(L "avC21")(L "avC20")(L "avC19")(L "avC17")(L "avC27")(L "avC26")(L "avC25")(L "avC24")(L "avC23"))
+1 1 ((L "avC9")((1 "nedia_bjt" ( "D"))(11 "nedia_bjt" ( "G"))(1 "nedia_bjt" ( "S")))(S "VB")((1 "nedia_bjt" ( "D"))(2 "nedia_bjt" ( "G"))(1 "nedia_bjt" ( "S"))))
+1 1 ((L "avC18")((1 "nedia_bjt" ( "D"))(10 "nedia_bjt" ( "S")))(S "VD_M3")((1 "nedia_bjt" ( "D"))(1 "nedia_bjt" ( "S"))))

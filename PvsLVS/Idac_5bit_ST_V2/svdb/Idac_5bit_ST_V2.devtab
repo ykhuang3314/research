@@ -1,0 +1,6057 @@
+Device_Table 1000
+0 0 1 Fri Apr 23 13:45:41 2021
+332
+Device Entry 0
+0 0 20 Fri Apr 23 13:45:41 2021
+ne
+MOS
+MN
+ne
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 1
+0 0 20 Fri Apr 23 13:45:41 2021
+pe
+MOS
+MP
+pe
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B nwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 2
+0 0 20 Fri Apr 23 13:45:41 2021
+nel
+MOS
+MN
+nel
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 3
+0 0 20 Fri Apr 23 13:45:41 2021
+nelna
+MOS
+MN
+nelna
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 4
+0 0 20 Fri Apr 23 13:45:41 2021
+nesvt
+MOS
+MN
+nesvt
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 5
+0 0 20 Fri Apr 23 13:45:41 2021
+pel
+MOS
+MP
+pel
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B nwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 6
+0 0 20 Fri Apr 23 13:45:41 2021
+pesvt
+MOS
+MP
+pesvt
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B nwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 7
+0 0 20 Fri Apr 23 13:45:41 2021
+nei
+MOS
+MN
+nei
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 8
+0 0 20 Fri Apr 23 13:45:41 2021
+pei
+MOS
+MP
+pei
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B dnwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 9
+0 0 20 Fri Apr 23 13:45:41 2021
+neli
+MOS
+MN
+neli
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 10
+0 0 20 Fri Apr 23 13:45:41 2021
+peli
+MOS
+MP
+peli
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B dnwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 11
+0 0 20 Fri Apr 23 13:45:41 2021
+nelnai
+MOS
+MN
+nelnai
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 12
+0 0 20 Fri Apr 23 13:45:41 2021
+nesvti
+MOS
+MN
+nesvti
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 13
+0 0 20 Fri Apr 23 13:45:41 2021
+pesvti
+MOS
+MP
+pesvti
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B dnwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 14
+0 0 22 Fri Apr 23 13:45:41 2021
+nei_6
+USER
+NEI_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 15
+0 0 22 Fri Apr 23 13:45:41 2021
+nei_m_6
+USER
+NEI_M_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 16
+0 0 22 Fri Apr 23 13:45:41 2021
+neli_6
+USER
+NELI_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 17
+0 0 22 Fri Apr 23 13:45:41 2021
+neli_m_6
+USER
+NELI_M_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 18
+0 0 22 Fri Apr 23 13:45:41 2021
+nelnai_6
+USER
+NELNAI_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 19
+0 0 22 Fri Apr 23 13:45:41 2021
+nelnai_m_6
+USER
+NELNAI_M_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 20
+0 0 22 Fri Apr 23 13:45:41 2021
+nesvti_6
+USER
+NESVTI_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 21
+0 0 22 Fri Apr 23 13:45:41 2021
+nesvti_m_6
+USER
+NESVTI_M_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 22
+0 0 21 Fri Apr 23 13:45:41 2021
+pe_5
+USER
+PE_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B nwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 23
+0 0 21 Fri Apr 23 13:45:41 2021
+pel_5
+USER
+PEL_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B nwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 24
+0 0 21 Fri Apr 23 13:45:41 2021
+pei_5
+USER
+PEI_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 25
+0 0 21 Fri Apr 23 13:45:41 2021
+pei_m_5
+USER
+PEI_M_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 26
+0 0 21 Fri Apr 23 13:45:41 2021
+peli_5
+USER
+PELI_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 27
+0 0 21 Fri Apr 23 13:45:41 2021
+peli_m_5
+USER
+PELI_M_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 28
+0 0 21 Fri Apr 23 13:45:41 2021
+pesvt_5
+USER
+PESVT_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B nwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 29
+0 0 21 Fri Apr 23 13:45:41 2021
+pesvti_5
+USER
+PESVTI_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 30
+0 0 21 Fri Apr 23 13:45:41 2021
+pesvti_m_5
+USER
+PESVTI_M_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 31
+0 0 21 Fri Apr 23 13:45:41 2021
+nmma_d
+MOS
+MN
+nmma
+XM
+(null)
+4
+G p1trm 0
+S hvnwtrm 1
+D hvnwtrm 1
+B bulk 0
+1
+nmma_hvx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 32
+0 0 21 Fri Apr 23 13:45:41 2021
+nmma_b
+MOS
+MN
+nmma_bjt
+XM
+nmma_bjt
+4
+G p1trm 0
+S hvnwtrm 1
+D hvnwtrm 1
+B bulk 0
+1
+nmma_hvx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 33
+0 0 21 Fri Apr 23 13:45:41 2021
+pmma_d
+MOS
+MP
+pmma
+XM
+(null)
+4
+G p1trm 0
+S pwitrm 1
+D pwitrm 1
+B dnwtrm 0
+1
+pmma_hvx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 34
+0 0 22 Fri Apr 23 13:45:41 2021
+pmma_b
+USER
+PMMA_BJT
+(null)
+XM
+pmma_bjt
+5
+D pwitrm 1
+G p1trm 0
+S pwitrm 1
+B dnwtrm 0
+SB bulk 0
+1
+pmma_hvx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 35
+0 0 21 Fri Apr 23 13:45:41 2021
+nma_d
+MOS
+MN
+nma
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 36
+0 0 21 Fri Apr 23 13:45:41 2021
+nma_b
+MOS
+MN
+nma_bjt
+XM
+nma_bjt
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 37
+0 0 21 Fri Apr 23 13:45:41 2021
+pma_d
+MOS
+MP
+pma
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B hnw 0
+1
+pdif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 38
+0 0 22 Fri Apr 23 13:45:41 2021
+pma_b
+USER
+PMA_BJT
+(null)
+XM
+pma_bjt
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B hnw 0
+SB bulk 0
+1
+pdif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 39
+0 0 20 Fri Apr 23 13:45:41 2021
+pmb
+MOS
+MP
+pmb
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B dnwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 40
+0 0 20 Fri Apr 23 13:45:41 2021
+nmmc_d
+MOS
+MN
+nmmc
+XM
+(null)
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+0
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 41
+0 0 20 Fri Apr 23 13:45:41 2021
+nmmd_d
+MOS
+MN
+nmmd
+XM
+(null)
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+0
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 42
+0 0 20 Fri Apr 23 13:45:41 2021
+nhhv_d
+MOS
+MN
+nhhv
+XM
+(null)
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+0
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 43
+0 0 20 Fri Apr 23 13:45:41 2021
+nhhvd_d
+MOS
+MN
+nhhvd
+XM
+(null)
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+0
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 44
+0 0 21 Fri Apr 23 13:45:41 2021
+nmmc_b
+MOS
+MN
+nmmc_bjt
+XM
+nmmc_bjt
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+1
+n_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 45
+0 0 21 Fri Apr 23 13:45:41 2021
+nmmd_b
+MOS
+MN
+nmmd_bjt
+XM
+nmmd_bjt
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+1
+n_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 46
+0 0 21 Fri Apr 23 13:45:41 2021
+nhhv_b
+MOS
+MN
+nhhv_bjt
+XM
+nhhv_bjt
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+1
+n_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 47
+0 0 21 Fri Apr 23 13:45:41 2021
+nhhvd_b
+MOS
+MN
+nhhvd_bjt
+XM
+nhhvd_bjt
+4
+G p1trm 0
+S ndftrm 1
+D ndftrm 1
+B bulk 0
+1
+n_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 48
+0 0 20 Fri Apr 23 13:45:41 2021
+pmmc_d
+MOS
+MP
+pmmc
+XM
+pmmc
+4
+G p1trm 0
+S pdf 1
+D pdf 1
+B hnw 0
+0
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 49
+0 0 22 Fri Apr 23 13:45:41 2021
+pmmc_b
+USER
+PMMC_BJT
+(null)
+XM
+pmmc_bjt
+5
+D pdf 1
+G p1trm 0
+S pdf 1
+B hnw 0
+SB bulk 0
+1
+p_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 50
+0 0 20 Fri Apr 23 13:45:41 2021
+phhv_d
+MOS
+MP
+phhv
+XM
+phhv
+4
+G p1trm 0
+S pdf 1
+D pdf 1
+B hnw 0
+0
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 51
+0 0 22 Fri Apr 23 13:45:41 2021
+phhv_b
+USER
+PHHV_BJT
+(null)
+XM
+phhv_bjt
+5
+D pdf 1
+G p1trm 0
+S pdf 1
+B hnw 0
+SB bulk 0
+1
+p_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 52
+0 0 21 Fri Apr 23 13:45:41 2021
+nmc_d
+MOS
+LDDN
+nmc
+XM
+(null)
+4
+D ndftrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+1
+ndif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 53
+0 0 21 Fri Apr 23 13:45:41 2021
+nhv_d
+MOS
+LDDN
+nhv
+XM
+(null)
+4
+D ndftrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+1
+ndif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 54
+0 0 21 Fri Apr 23 13:45:41 2021
+nhvd_d
+MOS
+LDDN
+nhvd
+XM
+(null)
+4
+D ndftrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+1
+ndif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 55
+0 0 22 Fri Apr 23 13:45:41 2021
+nmc_b
+MOS
+LDDN
+nmc_bjt
+XM
+nmc_bjt
+4
+D ndftrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+2
+ndif2
+n_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 56
+0 0 22 Fri Apr 23 13:45:41 2021
+nhv_b
+MOS
+LDDN
+nhv_bjt
+XM
+nhv_bjt
+4
+D ndftrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+2
+ndif2
+n_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 57
+0 0 22 Fri Apr 23 13:45:41 2021
+nhvd_b
+MOS
+LDDN
+nhvd_bjt
+XM
+nhvd_bjt
+4
+D ndftrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+2
+ndif2
+n_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 58
+0 0 21 Fri Apr 23 13:45:41 2021
+pmc_d
+MOS
+LDDP
+pmc
+XM
+pmc
+4
+D pdf 0
+G p1trm 0
+S pdiff 0
+B hnw 0
+1
+pdif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 59
+0 0 23 Fri Apr 23 13:45:41 2021
+pmc_b
+USER
+PMC_BJT
+(null)
+XM
+pmc_bjt
+5
+D pdf 0
+G p1trm 0
+S pdiff 0
+B hnw 0
+SB bulk 0
+2
+pdif2
+p_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 60
+0 0 21 Fri Apr 23 13:45:41 2021
+phv_d
+MOS
+LDDP
+phv
+XM
+phv
+4
+D pdf 0
+G p1trm 0
+S pdiff 0
+B hnw 0
+1
+pdif2
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 61
+0 0 23 Fri Apr 23 13:45:41 2021
+phv_b
+USER
+PHV_BJT
+(null)
+XM
+phv_bjt
+5
+D pdf 0
+G p1trm 0
+S pdiff 0
+B hnw 0
+SB bulk 0
+2
+pdif2
+p_bjtx
+7
+w
+l
+extlay
+as
+ad
+ps
+pd
+Device Entry 62
+0 0 20 Fri Apr 23 13:45:41 2021
+nedi2_d
+MOS
+LDDN
+nedi
+XM
+nedi
+4
+D dnwtrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+2
+nedi
+dmos_dnx
+5
+w
+l
+adio
+pdio
+extlay
+Device Entry 63
+0 0 20 Fri Apr 23 13:45:41 2021
+nedia2_d
+MOS
+LDDN
+nedia
+XM
+nedia
+4
+D dnwtrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+2
+nedia
+dmos_dnx
+5
+w
+l
+adio
+pdio
+extlay
+Device Entry 64
+0 0 24 Fri Apr 23 13:45:41 2021
+ped12_d
+MOS
+LDDP
+ped
+XM
+ped
+4
+D pwitrm 0
+G p1trm 0
+S pdiff 0
+B bulk 0
+4
+pedx
+dnwtrm
+dmos_dnx
+dmos_pwx
+7
+w
+l
+AD
+PD
+adio
+pdio
+extlay
+Device Entry 65
+0 0 24 Fri Apr 23 13:45:41 2021
+ped22_d
+MOS
+LDDP
+ped2
+XM
+ped2
+4
+D pwitrm 0
+G p1trm 0
+S pdiff 0
+B bulk 0
+4
+pedx
+dnwtrm
+dmos_dnx
+dmos_pwx
+7
+w
+l
+AD
+PD
+adio
+pdio
+extlay
+Device Entry 66
+0 0 20 Fri Apr 23 13:45:41 2021
+nedi2_b
+MOS
+LDDN
+nedi_bjt
+XM
+nedi_bjt
+4
+D dnwtrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+2
+nedi
+dmos_dnx
+5
+w
+l
+adio
+pdio
+extlay
+Device Entry 67
+0 0 20 Fri Apr 23 13:45:41 2021
+nedia2_b
+MOS
+LDDN
+nedia_bjt
+XM
+nedia_bjt
+4
+D dnwtrm 0
+G p1trm 0
+S ndiff 0
+B bulk 0
+2
+nedia
+dmos_dnx
+5
+w
+l
+adio
+pdio
+extlay
+Device Entry 68
+0 0 24 Fri Apr 23 13:45:41 2021
+ped12_b
+MOS
+LDDP
+ped_bjt
+XM
+ped_bjt
+4
+D pwitrm 0
+G p1trm 0
+S pdiff 0
+B bulk 0
+4
+pedx
+dnwtrm
+dmos_dnx
+dmos_pwx
+7
+w
+l
+AD
+PD
+adio
+pdio
+extlay
+Device Entry 69
+0 0 24 Fri Apr 23 13:45:41 2021
+ped22_b
+MOS
+LDDP
+ped2_bjt
+XM
+ped2_bjt
+4
+D pwitrm 0
+G p1trm 0
+S pdiff 0
+B bulk 0
+4
+pedx
+dnwtrm
+dmos_dnx
+dmos_pwx
+7
+w
+l
+AD
+PD
+adio
+pdio
+extlay
+Device Entry 70
+0 0 12 Fri Apr 23 13:45:41 2021
+qpva
+BIPOLAR
+Q
+qpva
+XQ
+(null)
+3
+C bulk 0
+B nwtrm 0
+E pdiff 0
+0
+0
+Device Entry 71
+0 0 12 Fri Apr 23 13:45:41 2021
+qpvb
+BIPOLAR
+Q
+qpvb
+XQ
+(null)
+3
+C bulk 0
+B nwtrm 0
+E pdiff 0
+0
+0
+Device Entry 72
+0 0 12 Fri Apr 23 13:45:41 2021
+qpvc
+BIPOLAR
+Q
+qpvc
+XQ
+(null)
+3
+C bulk 0
+B nwtrm 0
+E pdiff 0
+0
+0
+Device Entry 73
+0 0 13 Fri Apr 23 13:45:41 2021
+qpvascr
+BIPOLAR
+Q
+qpvascr
+XQ
+(null)
+3
+C bulk 0
+B dnwtrm 0
+E pwitrm 0
+0
+1
+LE
+Device Entry 74
+0 0 13 Fri Apr 23 13:45:41 2021
+qpvhscr
+BIPOLAR
+Q
+qpvhscr
+XQ
+(null)
+3
+C bulk 0
+B hnw 0
+E pdf 0
+0
+1
+LE
+Device Entry 75
+0 0 13 Fri Apr 23 13:45:41 2021
+qpvhbscr
+BIPOLAR
+Q
+qpvhbscr
+XQ
+(null)
+3
+C bulk 0
+B hnw 0
+E pwitrm 0
+0
+1
+LE
+Device Entry 76
+0 0 14 Fri Apr 23 13:45:41 2021
+qnva
+BIPOLAR
+Q
+qnva
+XQ
+(null)
+4
+C dnwtrm 0
+B pwitrm 0
+E ndiff 0
+S bulk 0
+0
+1
+LE
+Device Entry 77
+0 0 14 Fri Apr 23 13:45:41 2021
+qnvb
+BIPOLAR
+Q
+qnvb
+XQ
+(null)
+4
+C dnwtrm 0
+B pwitrm 0
+E ndiff 0
+S bulk 0
+0
+1
+LE
+Device Entry 78
+0 0 14 Fri Apr 23 13:45:41 2021
+qnvba
+BIPOLAR
+Q
+qnvba
+XQ
+(null)
+4
+C dnwtrm 0
+B pwitrm 0
+E ndiff 0
+S bulk 0
+0
+1
+LE
+Device Entry 79
+0 0 14 Fri Apr 23 13:45:41 2021
+qnvc
+BIPOLAR
+Q
+qnvc
+XQ
+(null)
+4
+C dnwtrm 0
+B pwitrm 0
+E ndiff 0
+S bulk 0
+0
+1
+LE
+Device Entry 80
+0 0 14 Fri Apr 23 13:45:41 2021
+qnvca
+BIPOLAR
+Q
+qnvca
+XQ
+(null)
+4
+C dnwtrm 0
+B pwitrm 0
+E ndiff 0
+S bulk 0
+0
+1
+LE
+Device Entry 81
+0 0 14 Fri Apr 23 13:45:41 2021
+qnvz
+BIPOLAR
+Q
+qnvz
+XQ
+(null)
+4
+C dnwtrm 0
+B pwitrm 0
+E ndiff 0
+S bulk 0
+0
+1
+LE
+Device Entry 82
+0 0 20 Fri Apr 23 13:45:41 2021
+nnm
+MOS
+MN
+nn3
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 83
+0 0 20 Fri Apr 23 13:45:41 2021
+nem
+MOS
+MN
+ne3
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 84
+0 0 20 Fri Apr 23 13:45:41 2021
+ndm
+MOS
+MN
+nd3
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 85
+0 0 20 Fri Apr 23 13:45:41 2021
+nemlna
+MOS
+MN
+ne3lna
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 86
+0 0 20 Fri Apr 23 13:45:41 2021
+pem
+MOS
+MP
+pe3
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B nwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 87
+0 0 20 Fri Apr 23 13:45:41 2021
+pemln
+MOS
+MP
+pe3ln
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B nwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 88
+0 0 20 Fri Apr 23 13:45:41 2021
+pemlna
+MOS
+MP
+pe3lna
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B nwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 89
+0 0 20 Fri Apr 23 13:45:41 2021
+nemi
+MOS
+MN
+ne3i
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 90
+0 0 20 Fri Apr 23 13:45:41 2021
+ndmi
+MOS
+MN
+nd3i
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 91
+0 0 20 Fri Apr 23 13:45:41 2021
+nemlnai
+MOS
+MN
+ne3lnai
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 92
+0 0 22 Fri Apr 23 13:45:41 2021
+ndsmiP
+MOS
+MN
+nds3i
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+8
+w
+l
+as
+ad
+ps
+pd
+prg_state
+prog
+Device Entry 93
+0 0 22 Fri Apr 23 13:45:41 2021
+ndsmiE
+MOS
+MN
+nds3i
+XM
+(null)
+4
+G p1trm 0
+S ndiff 1
+D ndiff 1
+B pwitrm 0
+1
+ndif2
+8
+w
+l
+as
+ad
+ps
+pd
+prg_state
+prog
+Device Entry 94
+0 0 20 Fri Apr 23 13:45:41 2021
+pemi
+MOS
+MP
+pe3i
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B dnwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 95
+0 0 20 Fri Apr 23 13:45:41 2021
+pemlni
+MOS
+MP
+pe3lni
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B dnwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 96
+0 0 20 Fri Apr 23 13:45:41 2021
+pemlnai
+MOS
+MP
+pe3lnai
+XM
+(null)
+4
+G p1trm 0
+S pdiff 1
+D pdiff 1
+B dnwtrm 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 97
+0 0 22 Fri Apr 23 13:45:41 2021
+nemi_6
+USER
+NE3I_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 98
+0 0 22 Fri Apr 23 13:45:41 2021
+nemi_m_6
+USER
+NE3I_M_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 99
+0 0 22 Fri Apr 23 13:45:41 2021
+ndmi_6
+USER
+ND3I_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 100
+0 0 22 Fri Apr 23 13:45:41 2021
+ndmi_m_6
+USER
+ND3I_M_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 101
+0 0 22 Fri Apr 23 13:45:41 2021
+nemlnai_6
+USER
+NE3LNAI_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 102
+0 0 22 Fri Apr 23 13:45:41 2021
+nemlnai_m_6
+USER
+NE3LNAI_M_6
+(null)
+XM
+(null)
+6
+D ndiff 1
+G p1trm 0
+S ndiff 1
+B pwitrm 0
+NW dnwtrm 0
+SB bulk 0
+1
+ndif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 103
+0 0 21 Fri Apr 23 13:45:41 2021
+pem_5
+USER
+PE3_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B nwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 104
+0 0 21 Fri Apr 23 13:45:41 2021
+pemln_5
+USER
+PE3LN_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B nwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 105
+0 0 21 Fri Apr 23 13:45:41 2021
+pemi_5
+USER
+PE3I_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 106
+0 0 21 Fri Apr 23 13:45:41 2021
+pemi_m_5
+USER
+PE3I_M_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 107
+0 0 21 Fri Apr 23 13:45:41 2021
+pemlni_5
+USER
+PE3LNI_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 108
+0 0 21 Fri Apr 23 13:45:41 2021
+pemlni_m_5
+USER
+PE3LNI_M_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 109
+0 0 21 Fri Apr 23 13:45:41 2021
+pemlna_5
+USER
+PE3LNA_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B nwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 110
+0 0 21 Fri Apr 23 13:45:41 2021
+pemlnai_5
+USER
+PE3LNAI_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 111
+0 0 21 Fri Apr 23 13:45:41 2021
+pemlnai_m_5
+USER
+PE3LNAI_M_5
+(null)
+XM
+(null)
+5
+D pdiff 1
+G p1trm 0
+S pdiff 1
+B dnwtrm 0
+SB bulk 0
+1
+pdif2
+6
+w
+l
+as
+ad
+ps
+pd
+Device Entry 112
+0 0 15 Fri Apr 23 13:45:41 2021
+mosvc
+USER
+MOSVC
+(null)
+XM
+mosvc
+3
+G p1trm 0
+NW nwtrm 0
+SB bulk 0
+1
+ndif
+2
+w
+l
+Device Entry 113
+0 0 16 Fri Apr 23 13:45:41 2021
+mosvci
+USER
+MOSVCI
+(null)
+XM
+mosvci
+4
+G p1trm 0
+PW pwitrm 0
+DNW dnwtrm 0
+SB bulk 0
+1
+pdif
+2
+w
+l
+Device Entry 114
+0 0 16 Fri Apr 23 13:45:41 2021
+mosvci_m
+USER
+MOSVCI_M
+(null)
+XM
+mosvci_m
+4
+G p1trm 0
+PW pwitrm 0
+DNW dnwtrm 0
+SB bulk 0
+1
+pdif
+2
+w
+l
+Device Entry 115
+0 0 15 Fri Apr 23 13:45:41 2021
+mosvcm
+USER
+MOSVC3
+(null)
+XM
+mosvc3
+3
+G p1trm 0
+NW nwtrm 0
+SB bulk 0
+1
+ndif
+2
+w
+l
+Device Entry 116
+0 0 16 Fri Apr 23 13:45:41 2021
+mosvcim
+USER
+MOSVC3I
+(null)
+XM
+mosvc3i
+4
+G p1trm 0
+PW pwitrm 0
+DNW dnwtrm 0
+SB bulk 0
+1
+pdif
+2
+w
+l
+Device Entry 117
+0 0 16 Fri Apr 23 13:45:41 2021
+mosvcim_m
+USER
+MOSVC3I_M
+(null)
+XM
+mosvc3i_m
+4
+G p1trm 0
+PW pwitrm 0
+DNW dnwtrm 0
+SB bulk 0
+1
+pdif
+2
+w
+l
+Device Entry 118
+0 0 12 Fri Apr 23 13:45:41 2021
+qpvma
+BIPOLAR
+Q
+qpva3
+XQ
+(null)
+3
+C bulk 0
+B nwtrm 0
+E pdiff 0
+0
+0
+Device Entry 119
+0 0 12 Fri Apr 23 13:45:41 2021
+qpvmb
+BIPOLAR
+Q
+qpvb3
+XQ
+(null)
+3
+C bulk 0
+B nwtrm 0
+E pdiff 0
+0
+0
+Device Entry 120
+0 0 12 Fri Apr 23 13:45:41 2021
+qpvmc
+BIPOLAR
+Q
+qpvc3
+XQ
+(null)
+3
+C bulk 0
+B nwtrm 0
+E pdiff 0
+0
+0
+Device Entry 121
+0 0 14 Fri Apr 23 13:45:41 2021
+rnw
+RESISTOR
+R
+rnw
+XR
+(null)
+3
+POS nwtrm 1
+NEG nwtrm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 122
+0 0 14 Fri Apr 23 13:45:41 2021
+rnw_scr
+RESISTOR
+R
+rnw_scr
+XR
+(null)
+3
+POS nwtrm 1
+NEG nwtrm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 123
+0 0 14 Fri Apr 23 13:45:41 2021
+rdnwmv
+RESISTOR
+R
+rdnwmv
+XR
+(null)
+3
+POS dnwtrm 1
+NEG dnwtrm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 124
+0 0 14 Fri Apr 23 13:45:41 2021
+rdn
+RESISTOR
+R
+rdn
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 125
+0 0 15 Fri Apr 23 13:45:41 2021
+rdn_g
+RESISTOR
+R
+rdn
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB bulk 0
+1
+res_corr
+2
+w
+l
+Device Entry 126
+0 0 14 Fri Apr 23 13:45:41 2021
+rdni
+RESISTOR
+R
+rdn
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB pwitrm 0
+0
+2
+w
+l
+Device Entry 127
+0 0 15 Fri Apr 23 13:45:41 2021
+rdn_gi
+RESISTOR
+R
+rdn
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB pwitrm 0
+1
+res_corr
+2
+w
+l
+Device Entry 128
+0 0 15 Fri Apr 23 13:45:41 2021
+rdn_esdg
+RESISTOR
+R
+rdn_esd
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB bulk 0
+1
+res_corr
+2
+w
+l
+Device Entry 129
+0 0 14 Fri Apr 23 13:45:41 2021
+rdp
+RESISTOR
+R
+rdp
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB nwtrm 0
+0
+2
+w
+l
+Device Entry 130
+0 0 15 Fri Apr 23 13:45:41 2021
+rdp_g
+RESISTOR
+R
+rdp
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB nwtrm 0
+1
+res_corr
+2
+w
+l
+Device Entry 131
+0 0 14 Fri Apr 23 13:45:41 2021
+rdpi
+RESISTOR
+R
+rdp
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB dnwtrm 0
+0
+2
+w
+l
+Device Entry 132
+0 0 15 Fri Apr 23 13:45:41 2021
+rdp_gi
+RESISTOR
+R
+rdp
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB dnwtrm 0
+1
+res_corr
+2
+w
+l
+Device Entry 133
+0 0 15 Fri Apr 23 13:45:41 2021
+rdp_io_g
+RESISTOR
+R
+rdp_io
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB dnwtrm 0
+1
+res_corr
+2
+w
+l
+Device Entry 134
+0 0 15 Fri Apr 23 13:45:41 2021
+rdp_esdg
+RESISTOR
+R
+rdp_esd
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB hnw 0
+1
+res_corr
+2
+w
+l
+Device Entry 135
+0 0 10 Fri Apr 23 13:45:41 2021
+tdf_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 df_vlbl 0
+0
+0
+Device Entry 136
+0 0 10 Fri Apr 23 13:45:41 2021
+tdf_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 df_vlbl 0
+0
+0
+Device Entry 137
+0 0 12 Fri Apr 23 13:45:41 2021
+s_res
+RESISTOR
+R
+s_res
+XR
+(null)
+2
+POS bulk 1
+NEG bulk 1
+0
+1
+R
+Device Entry 138
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dn
+DIODE
+D
+dn
+XD
+(null)
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 139
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dni1
+DIODE
+D
+dn
+XD
+(null)
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 140
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dni2
+DIODE
+D
+dn
+XD
+(null)
+2
+POS pdf 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 141
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dn
+DIODE
+D
+p_dn
+XD_
+dn
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 142
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dni1
+DIODE
+D
+p_dn
+XD_
+dn
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 143
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dni2
+DIODE
+D
+p_dn
+XD_
+dn
+2
+POS pdf 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 144
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dndpl
+DIODE
+D
+p_dn
+XD_
+dn
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 145
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dndpli
+DIODE
+D
+p_dn
+XD_
+dn
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 146
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dbn
+DIODE
+D
+p_dbn
+XD_
+dbn
+2
+POS bulk 0
+NEG bndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 147
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dp
+DIODE
+D
+dp
+XD
+(null)
+2
+POS pdiff 0
+NEG nwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 148
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dpi1
+DIODE
+D
+dp
+XD
+(null)
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 149
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dpi2
+DIODE
+D
+dp
+XD
+(null)
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 150
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dp
+DIODE
+D
+p_dp
+XD_
+dp
+2
+POS pdiff 0
+NEG nwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 151
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpi1
+DIODE
+D
+p_dp
+XD_
+dp
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 152
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpi2
+DIODE
+D
+p_dp
+XD_
+dp
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 153
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpndf
+DIODE
+D
+p_dpndf
+XD_
+dpndf
+2
+POS pdiff 0
+NEG ndftrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 154
+0 0 15 Fri Apr 23 13:45:41 2021
+pdpndfh
+DIODE
+D
+p_dpndf
+XD_
+dpndf
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 155
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnw
+DIODE
+D
+dnw
+XD
+(null)
+2
+POS bulk 0
+NEG nwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 156
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnw
+DIODE
+D
+p_dnw
+XD_
+dnw
+2
+POS bulk 0
+NEG nwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 157
+0 0 14 Fri Apr 23 13:45:41 2021
+d_dhnw
+DIODE
+D
+dhnw
+XD
+dhnw
+2
+POS bulk 0
+NEG hvnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 158
+0 0 14 Fri Apr 23 13:45:41 2021
+p_dhnw
+DIODE
+D
+p_dhnw
+XD_
+dhnw
+2
+POS bulk 0
+NEG hvnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 159
+0 0 14 Fri Apr 23 13:45:41 2021
+d_dhpw
+DIODE
+D
+dhpw
+XD
+dhpw
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 160
+0 0 14 Fri Apr 23 13:45:41 2021
+p_dhpw
+DIODE
+D
+p_dhpw
+XD_
+dhpw
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 161
+0 0 15 Fri Apr 23 13:45:41 2021
+d_ddnw
+DIODE
+D
+ddnw
+XD
+ddnw
+2
+POS bulk 0
+NEG dnwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 162
+0 0 15 Fri Apr 23 13:45:41 2021
+p_ddnw
+DIODE
+D
+p_ddnw
+XD_
+ddnw
+2
+POS bulk 0
+NEG dnwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 163
+0 0 15 Fri Apr 23 13:45:41 2021
+d_ddnwmv
+DIODE
+D
+ddnwmv
+XD
+ddnwmv
+2
+POS bulk 0
+NEG dnwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 164
+0 0 15 Fri Apr 23 13:45:41 2021
+p_ddnwmv
+DIODE
+D
+p_ddnwmv
+XD_
+ddnwmv
+2
+POS bulk 0
+NEG dnwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 165
+0 0 16 Fri Apr 23 13:45:41 2021
+dphoa
+DIODE
+D
+dphoa
+XD
+dphoa
+3
+POS bulk 0
+NEG dnwtrm 0
+SUB dphopin3 0
+0
+4
+a
+p
+perimeter
+wlength
+Device Entry 166
+0 0 17 Fri Apr 23 13:45:41 2021
+dphob
+DIODE
+D
+dphob
+XD
+dphob
+3
+POS bulk 0
+NEG dnwtrm 0
+SUB dphopin3 0
+1
+anwell
+4
+a
+p
+perimeter
+wlength
+Device Entry 167
+0 0 21 Fri Apr 23 13:45:41 2021
+dphoc
+USER
+DPHOC
+(null)
+XD
+dphoc
+5
+A bulk 0
+C catdiff 0
+POLY1 p1trm 0
+NW nwtrm 0
+LPOWER dphopin3 0
+2
+uvwin_0
+catdop
+5
+area
+perimeter
+uva
+uvp
+wlength
+Device Entry 168
+0 0 21 Fri Apr 23 13:45:41 2021
+dphocfp
+USER
+DPHOCFP
+(null)
+XD
+dphocfp
+5
+A bulk 0
+C catdiff 0
+POLY1 p1trm 0
+NW nwtrm 0
+LPOWER dphopin3 0
+2
+uvwin_1
+catdop
+5
+area
+perimeter
+uva
+uvp
+wlength
+Device Entry 169
+0 0 21 Fri Apr 23 13:45:41 2021
+dphoc0
+USER
+DPHOC0
+(null)
+XD
+dphoc0
+5
+A bulk 0
+C catdiff 0
+POLY1 p1trm 0
+NW nwtrm 0
+LPOWER dphopin3 0
+2
+uvwin
+catdop
+5
+area
+perimeter
+uva
+uvp
+wlength
+Device Entry 170
+0 0 24 Fri Apr 23 13:45:41 2021
+dphod
+USER
+DPHOD
+(null)
+XD
+dphod
+6
+A1 anodiff 0
+A2 bulk 0
+C dphod_c 0
+POLY1 p1trm 0
+NW dphod_nw 0
+LPOWER dphopin3 0
+2
+uvwin_0
+anodop
+7
+area
+perimeter
+uva
+uvp
+a1a
+a1p
+wlength
+Device Entry 171
+0 0 24 Fri Apr 23 13:45:41 2021
+dphodfp
+USER
+DPHODFP
+(null)
+XD
+dphodfp
+6
+A1 anodiff 0
+A2 bulk 0
+C dphod_c 0
+POLY1 p1trm 0
+NW dphod_nw 0
+LPOWER dphopin3 0
+2
+uvwin_1
+anodop
+7
+area
+perimeter
+uva
+uvp
+a1a
+a1p
+wlength
+Device Entry 172
+0 0 24 Fri Apr 23 13:45:41 2021
+dphod0
+USER
+DPHOD0
+(null)
+XD
+dphod0
+6
+A1 anodiff 0
+A2 bulk 0
+C dphod_c 0
+POLY1 p1trm 0
+NW dphod_nw 0
+LPOWER dphopin3 0
+2
+uvwin
+anodop
+7
+area
+perimeter
+uva
+uvp
+a1a
+a1p
+wlength
+Device Entry 173
+0 0 16 Fri Apr 23 13:45:41 2021
+dapda
+DIODE
+D
+dapda
+XD
+dapda
+3
+POS bulk 0
+NEG catdiff 0
+SUB dphopin3 0
+0
+4
+a
+p
+perimeter
+wlength
+Device Entry 174
+0 0 16 Fri Apr 23 13:45:41 2021
+dapda0
+DIODE
+D
+dapda0
+XD
+dapda0
+3
+POS bulk 0
+NEG catdiff 0
+SUB dphopin3 0
+0
+4
+a
+p
+perimeter
+wlength
+Device Entry 175
+0 0 16 Fri Apr 23 13:45:41 2021
+dspada
+DIODE
+D
+dspada
+XD
+dspada
+3
+POS bulk 0
+NEG catdiff 0
+SUB dphopin3 0
+0
+4
+a
+p
+perimeter
+wlength
+Device Entry 176
+0 0 16 Fri Apr 23 13:45:41 2021
+dspada0
+DIODE
+D
+dspada0
+XD
+dspada0
+3
+POS bulk 0
+NEG catdiff 0
+SUB dphopin3 0
+0
+4
+a
+p
+perimeter
+wlength
+Device Entry 177
+0 0 16 Fri Apr 23 13:45:41 2021
+dapb
+USER
+DAPB
+(null)
+XD
+dapb
+4
+A bulk 0
+C catdiff 0
+C2 davl_c2 0
+LPOWER dphopin3 0
+0
+3
+area
+perimeter
+wlength
+Device Entry 178
+0 0 16 Fri Apr 23 13:45:41 2021
+dapb0
+USER
+DAPB0
+(null)
+XD
+dapb0
+4
+A bulk 0
+C catdiff 0
+C2 davl_c2 0
+LPOWER dphopin3 0
+0
+3
+area
+perimeter
+wlength
+Device Entry 179
+0 0 16 Fri Apr 23 13:45:41 2021
+dspb
+USER
+DSPB
+(null)
+XD
+dspb
+4
+A bulk 0
+C catdiff 0
+C2 davl_c2 0
+PHOTON dphopin3 0
+0
+3
+area
+perimeter
+wlength
+Device Entry 180
+0 0 16 Fri Apr 23 13:45:41 2021
+dspb0
+USER
+DSPB0
+(null)
+XD
+dspb0
+4
+A bulk 0
+C catdiff 0
+C2 davl_c2 0
+PHOTON dphopin3 0
+0
+3
+area
+perimeter
+wlength
+Device Entry 181
+0 0 14 Fri Apr 23 13:45:41 2021
+d_dipw
+DIODE
+D
+dipdnw
+XD
+dipdnw
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 182
+0 0 14 Fri Apr 23 13:45:41 2021
+p_dipw
+DIODE
+D
+p_dipdnw
+XD_
+dipdnw
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 183
+0 0 14 Fri Apr 23 13:45:41 2021
+d_dipwmv
+DIODE
+D
+dipdnwmv
+XD
+dipdnwmv
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 184
+0 0 14 Fri Apr 23 13:45:41 2021
+p_dipwmv
+DIODE
+D
+p_dipdnwmv
+XD_
+dipdnwmv
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 185
+0 0 14 Fri Apr 23 13:45:41 2021
+pddpldnw
+DIODE
+D
+p_ddpldnw
+XD_
+ddpldnw
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 186
+0 0 14 Fri Apr 23 13:45:41 2021
+d_dndf
+DIODE
+D
+dndf
+XD
+dndf
+2
+POS bulk 0
+NEG ndftrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 187
+0 0 14 Fri Apr 23 13:45:41 2021
+p_dndf
+DIODE
+D
+p_dndf
+XD_
+dndf
+2
+POS bulk 0
+NEG ndftrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 188
+0 0 14 Fri Apr 23 13:45:41 2021
+d_dpdwhn
+DIODE
+D
+dpdwhn
+XD
+dpdwhn
+2
+POS pdf 0
+NEG hnw 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 189
+0 0 14 Fri Apr 23 13:45:41 2021
+p_dpdwhn
+DIODE
+D
+p_dpdwhn
+XD_
+dpdwhn
+2
+POS pdf 0
+NEG hnw 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 190
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dwhn
+DIODE
+D
+dwhn
+XD
+dwhn
+2
+POS bulk 0
+NEG hnw 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 191
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dwhn
+DIODE
+D
+p_dwhn
+XD_
+dwhn
+2
+POS bulk 0
+NEG hnw 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 192
+0 0 14 Fri Apr 23 13:45:41 2021
+dpdd_scr
+DIODE
+D
+dpdd_scr
+XD
+dpdd_scr
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 193
+0 0 14 Fri Apr 23 13:45:41 2021
+pdpdddnw
+DIODE
+D
+p_dpdddnw
+XD
+dpdddnw
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 194
+0 0 14 Fri Apr 23 13:45:41 2021
+dnpddscr
+DIODE
+D
+dnpdd_scr
+XD
+dnpdd_scr
+2
+POS pwitrm 0
+NEG ndiff 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 195
+0 0 14 Fri Apr 23 13:45:41 2021
+dpp20
+DIODE
+D
+dpp20
+XD
+dpp20
+2
+POS pwitrm 0
+NEG dnwtrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 196
+0 0 14 Fri Apr 23 13:45:41 2021
+dnp20
+DIODE
+D
+dnp20
+XD
+dnp20
+2
+POS bulk 0
+NEG ndftrm 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 197
+0 0 14 Fri Apr 23 13:45:41 2021
+dpol
+DIODE
+D
+dpol
+XD
+dpol
+2
+POS dpol_p 0
+NEG dpol_n 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 198
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnhpw
+DIODE
+D
+dnhpw
+XD
+dnhpw
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 199
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnhpwi
+DIODE
+D
+dnhpw
+XD
+dnhpw
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 200
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnhpw
+DIODE
+D
+p_dnhpw
+XD_
+dnhpw
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 201
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnhpwi
+DIODE
+D
+p_dnhpw
+XD_
+dnhpw
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 202
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dphnw
+DIODE
+D
+dphnw
+XD
+dphnw
+2
+POS pdiff 0
+NEG hvnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 203
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dphnw1
+DIODE
+D
+dphnw
+XD
+dphnw
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 204
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dphnw2
+DIODE
+D
+dphnw
+XD
+dphnw
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 205
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dphnw
+DIODE
+D
+p_dphnw
+XD_
+dphnw
+2
+POS pdiff 0
+NEG hvnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 206
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dphnw1
+DIODE
+D
+p_dphnw
+XD_
+dphnw
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 207
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dphnw2
+DIODE
+D
+p_dphnw
+XD_
+dphnw
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 208
+0 0 15 Fri Apr 23 13:45:41 2021
+ddpdnwmv
+DIODE
+D
+dpdnwmv
+XD
+dpdnwmv
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 209
+0 0 15 Fri Apr 23 13:45:41 2021
+pdpdnwmv
+DIODE
+D
+p_dpdnwmv
+XD_
+dpdnwmv
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 210
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dpdnw
+DIODE
+D
+dpdnw
+XD
+dpdnw
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 211
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpdnw
+DIODE
+D
+p_dpdnw
+XD_
+dpdnw
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 212
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dpwhn
+DIODE
+D
+dpwhn
+XD
+dpwhn
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 213
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpwhn
+DIODE
+D
+p_dpwhn
+XD_
+dpwhn
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 214
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dsb
+DIODE
+D
+dsb
+XD
+dsb
+3
+POS d_dsdf 0
+NEG hnw 0
+SUB bulk 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 215
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dsba
+DIODE
+D
+dsba
+XD
+dsba
+3
+POS d_dsdf 0
+NEG hnw 0
+SUB bulk 0
+0
+3
+A
+P
+PERIMETER
+Device Entry 216
+0 0 14 Fri Apr 23 13:45:41 2021
+rnwm
+RESISTOR
+R
+rnw3
+XR
+(null)
+3
+POS nwtrm 1
+NEG nwtrm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 217
+0 0 14 Fri Apr 23 13:45:41 2021
+rnwm_scr
+RESISTOR
+R
+rnw3_scr
+XR
+(null)
+3
+POS nwtrm 1
+NEG nwtrm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 218
+0 0 14 Fri Apr 23 13:45:41 2021
+rdnm
+RESISTOR
+R
+rdn3
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 219
+0 0 15 Fri Apr 23 13:45:41 2021
+rdnm_g
+RESISTOR
+R
+rdn3
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB bulk 0
+1
+res_corr
+2
+w
+l
+Device Entry 220
+0 0 14 Fri Apr 23 13:45:41 2021
+rdnmi
+RESISTOR
+R
+rdn3
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB pwitrm 0
+0
+2
+w
+l
+Device Entry 221
+0 0 15 Fri Apr 23 13:45:41 2021
+rdnm_gi
+RESISTOR
+R
+rdn3
+XR
+(null)
+3
+POS ndiff 1
+NEG ndiff 1
+SUB pwitrm 0
+1
+res_corr
+2
+w
+l
+Device Entry 222
+0 0 14 Fri Apr 23 13:45:41 2021
+rdpm
+RESISTOR
+R
+rdp3
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB nwtrm 0
+0
+2
+w
+l
+Device Entry 223
+0 0 15 Fri Apr 23 13:45:41 2021
+rdpm_g
+RESISTOR
+R
+rdp3
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB nwtrm 0
+1
+res_corr
+2
+w
+l
+Device Entry 224
+0 0 14 Fri Apr 23 13:45:41 2021
+rdpmi
+RESISTOR
+R
+rdp3
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB dnwtrm 0
+0
+2
+w
+l
+Device Entry 225
+0 0 15 Fri Apr 23 13:45:41 2021
+rdpm_gi
+RESISTOR
+R
+rdp3
+XR
+(null)
+3
+POS pdiff 1
+NEG pdiff 1
+SUB dnwtrm 0
+1
+res_corr
+2
+w
+l
+Device Entry 226
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnm
+DIODE
+D
+dn3
+XD
+(null)
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 227
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnmi1
+DIODE
+D
+dn3
+XD
+(null)
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 228
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnmi2
+DIODE
+D
+dn3
+XD
+(null)
+2
+POS pdf 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 229
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnm
+DIODE
+D
+p_dn3
+XD_
+dn3
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 230
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnmi1
+DIODE
+D
+p_dn3
+XD_
+dn3
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 231
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnmi2
+DIODE
+D
+p_dn3
+XD_
+dn3
+2
+POS pdf 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 232
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnnm
+DIODE
+D
+dnn3
+XD
+(null)
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 233
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnnm
+DIODE
+D
+p_dnn3
+XD_
+dnn3
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 234
+0 0 15 Fri Apr 23 13:45:41 2021
+pdnmdpl
+DIODE
+D
+p_dn3dpl
+XD_
+dn3dpl
+2
+POS bulk 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 235
+0 0 15 Fri Apr 23 13:45:41 2021
+pdnmdpli
+DIODE
+D
+p_dn3dpl
+XD_
+dn3dpl
+2
+POS pwitrm 0
+NEG ndiff 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 236
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dpm
+DIODE
+D
+dp3
+XD
+(null)
+2
+POS pdiff 0
+NEG nwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 237
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dpmi1
+DIODE
+D
+dp3
+XD
+(null)
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 238
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dpmi2
+DIODE
+D
+dp3
+XD
+(null)
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 239
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpm
+DIODE
+D
+p_dp3
+XD_
+dp3
+2
+POS pdiff 0
+NEG nwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 240
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpmi1
+DIODE
+D
+p_dp3
+XD_
+dp3
+2
+POS pdiff 0
+NEG dnwtrm 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 241
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dpmi2
+DIODE
+D
+p_dp3
+XD_
+dp3
+2
+POS pdiff 0
+NEG hnw 0
+1
+diff
+3
+A
+P
+PERIMETER
+Device Entry 242
+0 0 15 Fri Apr 23 13:45:41 2021
+d_dnwm
+DIODE
+D
+dnw3
+XD
+(null)
+2
+POS bulk 0
+NEG nwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 243
+0 0 15 Fri Apr 23 13:45:41 2021
+p_dnwm
+DIODE
+D
+p_dnw3
+XD_
+dnw3
+2
+POS bulk 0
+NEG nwtrm 0
+1
+anwell
+3
+A
+P
+PERIMETER
+Device Entry 244
+0 0 13 Fri Apr 23 13:45:41 2021
+rpp1k1_2
+RESISTOR
+R
+rpp1k1
+XR
+(null)
+2
+POS p1trm 1
+NEG p1trm 1
+0
+2
+w
+l
+Device Entry 245
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1_s
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 246
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1_p
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pwitrm 0
+0
+2
+w
+l
+Device Entry 247
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1fp
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pdf 0
+0
+2
+w
+l
+Device Entry 248
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1_n
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB nwtrm 0
+0
+2
+w
+l
+Device Entry 249
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1_d
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB dnwtrm 0
+0
+2
+w
+l
+Device Entry 250
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1_h
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hvnwtrm 0
+0
+2
+w
+l
+Device Entry 251
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1hn
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hnw 0
+0
+2
+w
+l
+Device Entry 252
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1k1fn
+RESISTOR
+R
+rpp1k1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB ndftrm 0
+0
+2
+w
+l
+Device Entry 253
+0 0 13 Fri Apr 23 13:45:41 2021
+rnp1_2
+RESISTOR
+R
+rnp1
+XR
+(null)
+2
+POS p1trm 1
+NEG p1trm 1
+0
+2
+w
+l
+Device Entry 254
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1_s
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 255
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1_p
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pwitrm 0
+0
+2
+w
+l
+Device Entry 256
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1fp
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pdf 0
+0
+2
+w
+l
+Device Entry 257
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1_n
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB nwtrm 0
+0
+2
+w
+l
+Device Entry 258
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1_d
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB dnwtrm 0
+0
+2
+w
+l
+Device Entry 259
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1_h
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hvnwtrm 0
+0
+2
+w
+l
+Device Entry 260
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1hn
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hnw 0
+0
+2
+w
+l
+Device Entry 261
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1fn
+RESISTOR
+R
+rnp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB ndftrm 0
+0
+2
+w
+l
+Device Entry 262
+0 0 13 Fri Apr 23 13:45:41 2021
+rpp1_2
+RESISTOR
+R
+rpp1
+XR
+(null)
+2
+POS p1trm 1
+NEG p1trm 1
+0
+2
+w
+l
+Device Entry 263
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1_s
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 264
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1_p
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pwitrm 0
+0
+2
+w
+l
+Device Entry 265
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1fp
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pdf 0
+0
+2
+w
+l
+Device Entry 266
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1_n
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB nwtrm 0
+0
+2
+w
+l
+Device Entry 267
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1_d
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB dnwtrm 0
+0
+2
+w
+l
+Device Entry 268
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1_h
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hvnwtrm 0
+0
+2
+w
+l
+Device Entry 269
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1hn
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hnw 0
+0
+2
+w
+l
+Device Entry 270
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1fn
+RESISTOR
+R
+rpp1_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB ndftrm 0
+0
+2
+w
+l
+Device Entry 271
+0 0 13 Fri Apr 23 13:45:41 2021
+rpp1s_2
+RESISTOR
+R
+rpp1s
+XR
+(null)
+2
+POS p1trm 1
+NEG p1trm 1
+0
+2
+w
+l
+Device Entry 272
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1s_s
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 273
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1s_p
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pwitrm 0
+0
+2
+w
+l
+Device Entry 274
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1sfp
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pdf 0
+0
+2
+w
+l
+Device Entry 275
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1s_n
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB nwtrm 0
+0
+2
+w
+l
+Device Entry 276
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1s_d
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB dnwtrm 0
+0
+2
+w
+l
+Device Entry 277
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1s_h
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hvnwtrm 0
+0
+2
+w
+l
+Device Entry 278
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1shn
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hnw 0
+0
+2
+w
+l
+Device Entry 279
+0 0 14 Fri Apr 23 13:45:41 2021
+rpp1sfn
+RESISTOR
+R
+rpp1s_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB ndftrm 0
+0
+2
+w
+l
+Device Entry 280
+0 0 13 Fri Apr 23 13:45:41 2021
+rnp1h_2
+RESISTOR
+R
+rnp1h
+XR
+(null)
+2
+POS p1trm 1
+NEG p1trm 1
+0
+2
+w
+l
+Device Entry 281
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1h_s
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB bulk 0
+0
+2
+w
+l
+Device Entry 282
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1h_p
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pwitrm 0
+0
+2
+w
+l
+Device Entry 283
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1hfp
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB pdf 0
+0
+2
+w
+l
+Device Entry 284
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1h_n
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB nwtrm 0
+0
+2
+w
+l
+Device Entry 285
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1h_d
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB dnwtrm 0
+0
+2
+w
+l
+Device Entry 286
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1h_h
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hvnwtrm 0
+0
+2
+w
+l
+Device Entry 287
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1hhn
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB hnw 0
+0
+2
+w
+l
+Device Entry 288
+0 0 14 Fri Apr 23 13:45:41 2021
+rnp1hfn
+RESISTOR
+R
+rnp1h_3
+XR
+(null)
+3
+POS p1trm 1
+NEG p1trm 1
+SUB ndftrm 0
+0
+2
+w
+l
+Device Entry 289
+0 0 13 Fri Apr 23 13:45:41 2021
+pfuse
+RESISTOR
+R
+pfuse
+XR
+(null)
+2
+POS p1trm 1
+NEG p1trm 1
+0
+2
+w
+l
+Device Entry 290
+0 0 10 Fri Apr 23 13:45:41 2021
+tp1_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 p1_vlbl 0
+0
+0
+Device Entry 291
+0 0 10 Fri Apr 23 13:45:41 2021
+tp1_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 p1_vlbl 0
+0
+0
+Device Entry 292
+0 0 13 Fri Apr 23 13:45:41 2021
+rm1
+RESISTOR
+R
+rm1
+XR
+(null)
+2
+POS m1trm 1
+NEG m1trm 1
+0
+2
+w
+l
+Device Entry 293
+0 0 13 Fri Apr 23 13:45:41 2021
+rm2
+RESISTOR
+R
+rm2
+XR
+(null)
+2
+POS m2trm 1
+NEG m2trm 1
+0
+2
+w
+l
+Device Entry 294
+0 0 10 Fri Apr 23 13:45:41 2021
+tm1_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 m1_vlbl 0
+0
+0
+Device Entry 295
+0 0 10 Fri Apr 23 13:45:41 2021
+tm1_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 m1_vlbl 0
+0
+0
+Device Entry 296
+0 0 10 Fri Apr 23 13:45:41 2021
+tm2_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 m2_vlbl 0
+0
+0
+Device Entry 297
+0 0 10 Fri Apr 23 13:45:41 2021
+tm2_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 m2_vlbl 0
+0
+0
+Device Entry 298
+0 0 13 Fri Apr 23 13:45:41 2021
+rm3
+RESISTOR
+R
+rm3
+XR
+(null)
+2
+POS m3trm 1
+NEG m3trm 1
+0
+2
+w
+l
+Device Entry 299
+0 0 10 Fri Apr 23 13:45:41 2021
+tm3_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 m3_vlbl 0
+0
+0
+Device Entry 300
+0 0 10 Fri Apr 23 13:45:41 2021
+tm3_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 m3_vlbl 0
+0
+0
+Device Entry 301
+0 0 13 Fri Apr 23 13:45:41 2021
+rm4
+RESISTOR
+R
+rm4
+XR
+(null)
+2
+POS m4trm 1
+NEG m4trm 1
+0
+2
+w
+l
+Device Entry 302
+0 0 10 Fri Apr 23 13:45:41 2021
+tm4_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 m4_vlbl 0
+0
+0
+Device Entry 303
+0 0 10 Fri Apr 23 13:45:41 2021
+tm4_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 m4_vlbl 0
+0
+0
+Device Entry 304
+0 0 13 Fri Apr 23 13:45:41 2021
+rmtp
+RESISTOR
+R
+rmtp
+XR
+(null)
+2
+POS mttrm 1
+NEG mttrm 1
+0
+2
+w
+l
+Device Entry 305
+0 0 10 Fri Apr 23 13:45:41 2021
+tmt_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 mt_vlbl 0
+0
+0
+Device Entry 306
+0 0 10 Fri Apr 23 13:45:41 2021
+tmt_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 mt_vlbl 0
+0
+0
+Device Entry 307
+0 0 13 Fri Apr 23 13:45:41 2021
+rmtpl
+RESISTOR
+R
+rmtpl
+XR
+(null)
+2
+POS mltrm 1
+NEG mltrm 1
+0
+2
+w
+l
+Device Entry 308
+0 0 10 Fri Apr 23 13:45:41 2021
+tml_60
+USER
+tag_60v
+(null)
+XX
+(null)
+1
+N1 ml_vlbl 0
+0
+0
+Device Entry 309
+0 0 10 Fri Apr 23 13:45:41 2021
+tml_25
+USER
+tag_25v
+(null)
+XX
+(null)
+1
+N1 ml_vlbl 0
+0
+0
+Device Entry 310
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csf2p
+CAPACITOR
+C
+csf2p
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 311
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csf3
+CAPACITOR
+C
+csf3
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 312
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csf3p
+CAPACITOR
+C
+csf3p
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 313
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csf3a
+CAPACITOR
+C
+csf3a
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 314
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csf4
+CAPACITOR
+C
+csf4
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 315
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csf4a
+CAPACITOR
+C
+csf4a
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 316
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csft5
+CAPACITOR
+C
+csft5
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 317
+0 0 13 Fri Apr 23 13:45:41 2021
+d_csft5a
+CAPACITOR
+C
+csft5a
+XC
+(null)
+2
+POS m1atrm 0
+NEG m1btrm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 318
+0 0 13 Fri Apr 23 13:45:41 2021
+d_cswt3
+CAPACITOR
+C
+csandwt3
+XC
+(null)
+2
+POS m1trm 0
+NEG p1trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 319
+0 0 13 Fri Apr 23 13:45:41 2021
+d_cswt4
+CAPACITOR
+C
+csandwt4
+XC
+(null)
+2
+POS m1trm 0
+NEG p1trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 320
+0 0 13 Fri Apr 23 13:45:41 2021
+cdmm
+CAPACITOR
+C
+cdmm4
+XC
+(null)
+2
+POS capm2_b 0
+NEG m2trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 321
+0 0 13 Fri Apr 23 13:45:41 2021
+cdmmh
+CAPACITOR
+C
+cdmmh4
+XC
+(null)
+2
+POS capmh2_b 0
+NEG m2trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 322
+0 0 13 Fri Apr 23 13:45:41 2021
+cmim
+CAPACITOR
+C
+cmm5t
+XC
+(null)
+2
+POS capm 0
+NEG m4trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 323
+0 0 13 Fri Apr 23 13:45:41 2021
+cmimh
+CAPACITOR
+C
+cmmh5t
+XC
+(null)
+2
+POS capmh 0
+NEG m4trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 324
+0 0 13 Fri Apr 23 13:45:41 2021
+ctmm
+CAPACITOR
+C
+ctmm5t
+XC
+(null)
+2
+POS capm3_b 0
+NEG m2trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 325
+0 0 13 Fri Apr 23 13:45:41 2021
+ctmmh
+CAPACITOR
+C
+ctmmh5t
+XC
+(null)
+2
+POS capmh3_b 0
+NEG m2trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 326
+0 0 13 Fri Apr 23 13:45:41 2021
+cmim23f
+CAPACITOR
+C
+cmm3
+XC
+(null)
+2
+POS capm23f 0
+NEG m2trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 327
+0 0 13 Fri Apr 23 13:45:41 2021
+cmimh23f
+CAPACITOR
+C
+cmmh3
+XC
+(null)
+2
+POS capmh23f 0
+NEG m2trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 328
+0 0 13 Fri Apr 23 13:45:41 2021
+cmim34f
+CAPACITOR
+C
+cmm4
+XC
+(null)
+2
+POS capm34f 0
+NEG m3trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 329
+0 0 13 Fri Apr 23 13:45:41 2021
+cmimh34f
+CAPACITOR
+C
+cmmh4
+XC
+(null)
+2
+POS capmh34f 0
+NEG m3trm 0
+0
+2
+AREA
+PERIMETER
+Device Entry 330
+0 0 14 Fri Apr 23 13:45:41 2021
+cpod
+CAPACITOR
+C
+cpod
+XC
+(null)
+3
+POS p1trm 0
+NEG bndiff 0
+SUB bulk 0
+0
+2
+AREA
+PERIMETER
+Device Entry 331
+0 0 14 Fri Apr 23 13:45:41 2021
+cpodhv
+CAPACITOR
+C
+cpodhv
+XC
+(null)
+3
+POS p1trm 0
+NEG bndiff 0
+SUB bulk 0
+0
+2
+AREA
+PERIMETER

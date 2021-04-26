@@ -1,0 +1,34 @@
+##############################################################################################################
+#####  
+#####                                         PVS LVS COMPARISON
+#####  
+#####  Version                       :   16.15-s010
+#####  NVN Run Start                 :   Mon Apr 26 13:49:16 2021
+#####  ERC Summary File              :   CurrentMirror_ST.sum
+#####  Extraction Report File        :   CurrentMirror_ST_lvs.sum
+#####  Comparison Report File        :   CurrentMirror_ST_lvs.sum.cls
+#####  Top Cell                      :   CurrentMirror_ST  <vs>  CurrentMirror_ST
+#####  
+#####  Run Result                    :   MATCH
+#####  
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
+#####                                :   [INFO]  Extraction Clean
+#####  
+#####  Layout Design                 :   Stimulator_IMP CurrentMirror_ST layout
+#####  Schematic File                :   /home/ykhuang/research/PvsLVS/CurrentMirror_ST/CurrentMirror_ST.cdl (cdl)
+#####  Rules File                    :   .config.rul .technology.rul
+#####  Pin Swap File                 :   CurrentMirror_ST_lvs.sum.cps
+#####  
+#####  Extraction CPU Time           :   0h 0m 2s - (2s)
+#####  Extraction Exec Time          :   0h 0m 2s - (2s)
+#####  Extraction Peak Memory Usage  :   63.00MB
+#####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
+#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
+#####  NVN Peak Memory Usage         :   237.39MB
+#####  LVS Total CPU Time            :   0h 0m 2s - (2s)                 
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   237.39MB
+#####  
+##############################################################################################################
+
+

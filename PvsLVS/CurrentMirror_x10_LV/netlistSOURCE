@@ -1,0 +1,73 @@
+** Schematic Netlist, pvs precompare
+** 
+
+.subckt CurrentMirror_x10_LV Iin Ix10 gnd! 
+MMM26 Iin Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM26==2 Iin Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM26==3 Iin Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM26==4 Iin Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM26==5 Iin Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM26==6 Iin Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==2 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==3 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==4 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==5 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==6 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==7 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==8 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==9 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==10 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==11 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==12 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==13 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==14 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==15 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==16 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==17 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==18 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==19 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==20 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==21 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==22 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==23 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==24 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==25 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==26 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==27 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==28 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==29 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==30 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==31 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==32 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==33 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==34 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==35 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==36 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==37 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==38 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==39 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==40 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==41 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==42 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==43 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==44 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==45 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==46 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==47 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==48 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==49 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==50 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==51 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==52 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==53 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==54 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==55 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==56 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==57 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==58 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==59 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MMM13==60 Ix10 Iin gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+.ends
+
+

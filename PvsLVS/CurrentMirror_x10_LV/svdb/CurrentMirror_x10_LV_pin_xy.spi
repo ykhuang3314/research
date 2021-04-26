@@ -1,0 +1,1333 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : CurrentMirror_x10_LV                         *
+* Netlisted  : Fri Apr 23 16:56:04 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(ne) ne ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 1 MP(pe) pe pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 2 MN(nel) nel ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 3 MN(nelna) nelna ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 4 MN(nesvt) nesvt ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 5 MP(pel) pel pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 6 MP(pesvt) pesvt pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 7 MN(nei) nei ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 8 MP(pei) pei pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 9 MN(neli) neli ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 10 MP(peli) peli pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 11 MN(nelnai) nelnai ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 12 MN(nesvti) nesvti ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 13 MP(pesvti) pesvti pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 14 NEI_6() nei_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 15 NEI_M_6() nei_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 16 NELI_6() neli_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 17 NELI_M_6() neli_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 18 NELNAI_6() nelnai_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 19 NELNAI_M_6() nelnai_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 20 NESVTI_6() nesvti_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 21 NESVTI_M_6() nesvti_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 22 PE_5() pe_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 23 PEL_5() pel_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 24 PEI_5() pei_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 25 PEI_M_5() pei_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 26 PELI_5() peli_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 27 PELI_M_5() peli_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 28 PESVT_5() pesvt_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 29 PESVTI_5() pesvti_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 30 PESVTI_M_5() pesvti_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 31 MN(nmma) nmma_d hvnwtrm(D) p1trm(G) hvnwtrm(S) bulk(B)
+*.DEVTMPLT 32 MN(nmma_bjt) nmma_b hvnwtrm(D) p1trm(G) hvnwtrm(S) bulk(B)
+*.DEVTMPLT 33 MP(pmma) pmma_d pwitrm(D) p1trm(G) pwitrm(S) dnwtrm(B)
+*.DEVTMPLT 34 PMMA_BJT() pmma_b pwitrm(D) p1trm(G) pwitrm(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 35 MN(nma) nma_d ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 36 MN(nma_bjt) nma_b ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 37 MP(pma) pma_d pdiff(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 38 PMA_BJT() pma_b pdiff(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 39 MP(pmb) pmb pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 40 MN(nmmc) nmmc_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 41 MN(nmmd) nmmd_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 42 MN(nhhv) nhhv_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 43 MN(nhhvd) nhhvd_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 44 MN(nmmc_bjt) nmmc_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 45 MN(nmmd_bjt) nmmd_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 46 MN(nhhv_bjt) nhhv_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 47 MN(nhhvd_bjt) nhhvd_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 48 MP(pmmc) pmmc_d pdf(D) p1trm(G) pdf(S) hnw(B)
+*.DEVTMPLT 49 PMMC_BJT() pmmc_b pdf(D) p1trm(G) pdf(S) hnw(B) bulk(SB)
+*.DEVTMPLT 50 MP(phhv) phhv_d pdf(D) p1trm(G) pdf(S) hnw(B)
+*.DEVTMPLT 51 PHHV_BJT() phhv_b pdf(D) p1trm(G) pdf(S) hnw(B) bulk(SB)
+*.DEVTMPLT 52 LDDN(nmc) nmc_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 53 LDDN(nhv) nhv_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 54 LDDN(nhvd) nhvd_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 55 LDDN(nmc_bjt) nmc_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 56 LDDN(nhv_bjt) nhv_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 57 LDDN(nhvd_bjt) nhvd_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 58 LDDP(pmc) pmc_d pdf(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 59 PMC_BJT() pmc_b pdf(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 60 LDDP(phv) phv_d pdf(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 61 PHV_BJT() phv_b pdf(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 62 LDDN(nedi) nedi2_d dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 63 LDDN(nedia) nedia2_d dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 64 LDDP(ped) ped12_d pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 65 LDDP(ped2) ped22_d pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 66 LDDN(nedi_bjt) nedi2_b dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 67 LDDN(nedia_bjt) nedia2_b dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 68 LDDP(ped_bjt) ped12_b pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 69 LDDP(ped2_bjt) ped22_b pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 70 Q(qpva) qpva bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 71 Q(qpvb) qpvb bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 72 Q(qpvc) qpvc bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 73 Q(qpvascr) qpvascr bulk(C) dnwtrm(B) pwitrm(E)
+*.DEVTMPLT 74 Q(qpvhscr) qpvhscr bulk(C) hnw(B) pdf(E)
+*.DEVTMPLT 75 Q(qpvhbscr) qpvhbscr bulk(C) hnw(B) pwitrm(E)
+*.DEVTMPLT 76 Q(qnva) qnva dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 77 Q(qnvb) qnvb dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 78 Q(qnvba) qnvba dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 79 Q(qnvc) qnvc dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 80 Q(qnvca) qnvca dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 81 Q(qnvz) qnvz dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 82 MN(nn3) nnm ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 83 MN(ne3) nem ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 84 MN(nd3) ndm ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 85 MN(ne3lna) nemlna ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 86 MP(pe3) pem pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 87 MP(pe3ln) pemln pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 88 MP(pe3lna) pemlna pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 89 MN(ne3i) nemi ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 90 MN(nd3i) ndmi ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 91 MN(ne3lnai) nemlnai ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 92 MN(nds3i) ndsmiP ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 93 MN(nds3i) ndsmiE ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 94 MP(pe3i) pemi pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 95 MP(pe3lni) pemlni pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 96 MP(pe3lnai) pemlnai pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 97 NE3I_6() nemi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 98 NE3I_M_6() nemi_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 99 ND3I_6() ndmi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 100 ND3I_M_6() ndmi_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 101 NE3LNAI_6() nemlnai_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 102 NE3LNAI_M_6() nemlnai_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 103 PE3_5() pem_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 104 PE3LN_5() pemln_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 105 PE3I_5() pemi_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 106 PE3I_M_5() pemi_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 107 PE3LNI_5() pemlni_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 108 PE3LNI_M_5() pemlni_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 109 PE3LNA_5() pemlna_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 110 PE3LNAI_5() pemlnai_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 111 PE3LNAI_M_5() pemlnai_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 112 MOSVC() mosvc p1trm(G) nwtrm(NW) bulk(SB)
+*.DEVTMPLT 113 MOSVCI() mosvci p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 114 MOSVCI_M() mosvci_m p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 115 MOSVC3() mosvcm p1trm(G) nwtrm(NW) bulk(SB)
+*.DEVTMPLT 116 MOSVC3I() mosvcim p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 117 MOSVC3I_M() mosvcim_m p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 118 Q(qpva3) qpvma bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 119 Q(qpvb3) qpvmb bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 120 Q(qpvc3) qpvmc bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 121 R(rnw) rnw nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 122 R(rnw_scr) rnw_scr nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 123 R(rdnwmv) rdnwmv dnwtrm(POS) dnwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 124 R(rdn) rdn ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 125 R(rdn) rdn_g ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 126 R(rdn) rdni ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 127 R(rdn) rdn_gi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 128 R(rdn_esd) rdn_esdg ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 129 R(rdp) rdp pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 130 R(rdp) rdp_g pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 131 R(rdp) rdpi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 132 R(rdp) rdp_gi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 133 R(rdp_io) rdp_io_g pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 134 R(rdp_esd) rdp_esdg pdiff(POS) pdiff(NEG) hnw(SUB)
+*.DEVTMPLT 135 tag_60v() tdf_60 df_vlbl(N1)
+*.DEVTMPLT 136 tag_25v() tdf_25 df_vlbl(N1)
+*.DEVTMPLT 137 R(s_res) s_res bulk(POS) bulk(NEG)
+*.DEVTMPLT 138 D(dn) d_dn bulk(POS) ndiff(NEG)
+*.DEVTMPLT 139 D(dn) d_dni1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 140 D(dn) d_dni2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 141 D(p_dn) p_dn bulk(POS) ndiff(NEG)
+*.DEVTMPLT 142 D(p_dn) p_dni1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 143 D(p_dn) p_dni2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 144 D(p_dn) p_dndpl bulk(POS) ndiff(NEG)
+*.DEVTMPLT 145 D(p_dn) p_dndpli pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 146 D(p_dbn) p_dbn bulk(POS) bndiff(NEG)
+*.DEVTMPLT 147 D(dp) d_dp pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 148 D(dp) d_dpi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 149 D(dp) d_dpi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 150 D(p_dp) p_dp pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 151 D(p_dp) p_dpi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 152 D(p_dp) p_dpi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 153 D(p_dpndf) p_dpndf pdiff(POS) ndftrm(NEG)
+*.DEVTMPLT 154 D(p_dpndf) pdpndfh pdiff(POS) hnw(NEG)
+*.DEVTMPLT 155 D(dnw) d_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 156 D(p_dnw) p_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 157 D(dhnw) d_dhnw bulk(POS) hvnwtrm(NEG)
+*.DEVTMPLT 158 D(p_dhnw) p_dhnw bulk(POS) hvnwtrm(NEG)
+*.DEVTMPLT 159 D(dhpw) d_dhpw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 160 D(p_dhpw) p_dhpw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 161 D(ddnw) d_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 162 D(p_ddnw) p_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 163 D(ddnwmv) d_ddnwmv bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 164 D(p_ddnwmv) p_ddnwmv bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 165 D(dphoa) dphoa bulk(POS) dnwtrm(NEG) dphopin3(SUB)
+*.DEVTMPLT 166 D(dphob) dphob bulk(POS) dnwtrm(NEG) dphopin3(SUB)
+*.DEVTMPLT 167 DPHOC() dphoc bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 168 DPHOCFP() dphocfp bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 169 DPHOC0() dphoc0 bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 170 DPHOD() dphod anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 171 DPHODFP() dphodfp anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 172 DPHOD0() dphod0 anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 173 D(dapda) dapda bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 174 D(dapda0) dapda0 bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 175 D(dspada) dspada bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 176 D(dspada0) dspada0 bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 177 DAPB() dapb bulk(A) catdiff(C) davl_c2(C2) dphopin3(LPOWER)
+*.DEVTMPLT 178 DAPB0() dapb0 bulk(A) catdiff(C) davl_c2(C2) dphopin3(LPOWER)
+*.DEVTMPLT 179 DSPB() dspb bulk(A) catdiff(C) davl_c2(C2) dphopin3(PHOTON)
+*.DEVTMPLT 180 DSPB0() dspb0 bulk(A) catdiff(C) davl_c2(C2) dphopin3(PHOTON)
+*.DEVTMPLT 181 D(dipdnw) d_dipw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 182 D(p_dipdnw) p_dipw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 183 D(dipdnwmv) d_dipwmv pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 184 D(p_dipdnwmv) p_dipwmv pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 185 D(p_ddpldnw) pddpldnw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 186 D(dndf) d_dndf bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 187 D(p_dndf) p_dndf bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 188 D(dpdwhn) d_dpdwhn pdf(POS) hnw(NEG)
+*.DEVTMPLT 189 D(p_dpdwhn) p_dpdwhn pdf(POS) hnw(NEG)
+*.DEVTMPLT 190 D(dwhn) d_dwhn bulk(POS) hnw(NEG)
+*.DEVTMPLT 191 D(p_dwhn) p_dwhn bulk(POS) hnw(NEG)
+*.DEVTMPLT 192 D(dpdd_scr) dpdd_scr pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 193 D(p_dpdddnw) pdpdddnw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 194 D(dnpdd_scr) dnpddscr pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 195 D(dpp20) dpp20 pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 196 D(dnp20) dnp20 bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 197 D(dpol) dpol dpol_p(POS) dpol_n(NEG)
+*.DEVTMPLT 198 D(dnhpw) d_dnhpw bulk(POS) ndiff(NEG)
+*.DEVTMPLT 199 D(dnhpw) d_dnhpwi pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 200 D(p_dnhpw) p_dnhpw bulk(POS) ndiff(NEG)
+*.DEVTMPLT 201 D(p_dnhpw) p_dnhpwi pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 202 D(dphnw) d_dphnw pdiff(POS) hvnwtrm(NEG)
+*.DEVTMPLT 203 D(dphnw) d_dphnw1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 204 D(dphnw) d_dphnw2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 205 D(p_dphnw) p_dphnw pdiff(POS) hvnwtrm(NEG)
+*.DEVTMPLT 206 D(p_dphnw) p_dphnw1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 207 D(p_dphnw) p_dphnw2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 208 D(dpdnwmv) ddpdnwmv pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 209 D(p_dpdnwmv) pdpdnwmv pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 210 D(dpdnw) d_dpdnw pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 211 D(p_dpdnw) p_dpdnw pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 212 D(dpwhn) d_dpwhn pdiff(POS) hnw(NEG)
+*.DEVTMPLT 213 D(p_dpwhn) p_dpwhn pdiff(POS) hnw(NEG)
+*.DEVTMPLT 214 D(dsb) d_dsb d_dsdf(POS) hnw(NEG) bulk(SUB)
+*.DEVTMPLT 215 D(dsba) d_dsba d_dsdf(POS) hnw(NEG) bulk(SUB)
+*.DEVTMPLT 216 R(rnw3) rnwm nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 217 R(rnw3_scr) rnwm_scr nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 218 R(rdn3) rdnm ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 219 R(rdn3) rdnm_g ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 220 R(rdn3) rdnmi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 221 R(rdn3) rdnm_gi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 222 R(rdp3) rdpm pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 223 R(rdp3) rdpm_g pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 224 R(rdp3) rdpmi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 225 R(rdp3) rdpm_gi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 226 D(dn3) d_dnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 227 D(dn3) d_dnmi1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 228 D(dn3) d_dnmi2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 229 D(p_dn3) p_dnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 230 D(p_dn3) p_dnmi1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 231 D(p_dn3) p_dnmi2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 232 D(dnn3) d_dnnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 233 D(p_dnn3) p_dnnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 234 D(p_dn3dpl) pdnmdpl bulk(POS) ndiff(NEG)
+*.DEVTMPLT 235 D(p_dn3dpl) pdnmdpli pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 236 D(dp3) d_dpm pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 237 D(dp3) d_dpmi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 238 D(dp3) d_dpmi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 239 D(p_dp3) p_dpm pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 240 D(p_dp3) p_dpmi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 241 D(p_dp3) p_dpmi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 242 D(dnw3) d_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 243 D(p_dnw3) p_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 244 R(rpp1k1) rpp1k1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 245 R(rpp1k1_3) rpp1k1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 246 R(rpp1k1_3) rpp1k1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 247 R(rpp1k1_3) rpp1k1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 248 R(rpp1k1_3) rpp1k1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 249 R(rpp1k1_3) rpp1k1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 250 R(rpp1k1_3) rpp1k1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 251 R(rpp1k1_3) rpp1k1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 252 R(rpp1k1_3) rpp1k1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 253 R(rnp1) rnp1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 254 R(rnp1_3) rnp1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 255 R(rnp1_3) rnp1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 256 R(rnp1_3) rnp1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 257 R(rnp1_3) rnp1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 258 R(rnp1_3) rnp1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 259 R(rnp1_3) rnp1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 260 R(rnp1_3) rnp1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 261 R(rnp1_3) rnp1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 262 R(rpp1) rpp1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 263 R(rpp1_3) rpp1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 264 R(rpp1_3) rpp1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 265 R(rpp1_3) rpp1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 266 R(rpp1_3) rpp1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 267 R(rpp1_3) rpp1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 268 R(rpp1_3) rpp1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 269 R(rpp1_3) rpp1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 270 R(rpp1_3) rpp1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 271 R(rpp1s) rpp1s_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 272 R(rpp1s_3) rpp1s_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 273 R(rpp1s_3) rpp1s_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 274 R(rpp1s_3) rpp1sfp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 275 R(rpp1s_3) rpp1s_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 276 R(rpp1s_3) rpp1s_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 277 R(rpp1s_3) rpp1s_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 278 R(rpp1s_3) rpp1shn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 279 R(rpp1s_3) rpp1sfn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 280 R(rnp1h) rnp1h_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 281 R(rnp1h_3) rnp1h_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 282 R(rnp1h_3) rnp1h_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 283 R(rnp1h_3) rnp1hfp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 284 R(rnp1h_3) rnp1h_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 285 R(rnp1h_3) rnp1h_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 286 R(rnp1h_3) rnp1h_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 287 R(rnp1h_3) rnp1hhn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 288 R(rnp1h_3) rnp1hfn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 289 R(pfuse) pfuse p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 290 tag_60v() tp1_60 p1_vlbl(N1)
+*.DEVTMPLT 291 tag_25v() tp1_25 p1_vlbl(N1)
+*.DEVTMPLT 292 R(rm1) rm1 m1trm(POS) m1trm(NEG)
+*.DEVTMPLT 293 R(rm2) rm2 m2trm(POS) m2trm(NEG)
+*.DEVTMPLT 294 tag_60v() tm1_60 m1_vlbl(N1)
+*.DEVTMPLT 295 tag_25v() tm1_25 m1_vlbl(N1)
+*.DEVTMPLT 296 tag_60v() tm2_60 m2_vlbl(N1)
+*.DEVTMPLT 297 tag_25v() tm2_25 m2_vlbl(N1)
+*.DEVTMPLT 298 R(rm3) rm3 m3trm(POS) m3trm(NEG)
+*.DEVTMPLT 299 tag_60v() tm3_60 m3_vlbl(N1)
+*.DEVTMPLT 300 tag_25v() tm3_25 m3_vlbl(N1)
+*.DEVTMPLT 301 R(rm4) rm4 m4trm(POS) m4trm(NEG)
+*.DEVTMPLT 302 tag_60v() tm4_60 m4_vlbl(N1)
+*.DEVTMPLT 303 tag_25v() tm4_25 m4_vlbl(N1)
+*.DEVTMPLT 304 R(rmtp) rmtp mttrm(POS) mttrm(NEG)
+*.DEVTMPLT 305 tag_60v() tmt_60 mt_vlbl(N1)
+*.DEVTMPLT 306 tag_25v() tmt_25 mt_vlbl(N1)
+*.DEVTMPLT 307 R(rmtpl) rmtpl mltrm(POS) mltrm(NEG)
+*.DEVTMPLT 308 tag_60v() tml_60 ml_vlbl(N1)
+*.DEVTMPLT 309 tag_25v() tml_25 ml_vlbl(N1)
+*.DEVTMPLT 310 C(csf2p) d_csf2p m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 311 C(csf3) d_csf3 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 312 C(csf3p) d_csf3p m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 313 C(csf3a) d_csf3a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 314 C(csf4) d_csf4 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 315 C(csf4a) d_csf4a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 316 C(csft5) d_csft5 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 317 C(csft5a) d_csft5a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 318 C(csandwt3) d_cswt3 m1trm(POS) p1trm(NEG)
+*.DEVTMPLT 319 C(csandwt4) d_cswt4 m1trm(POS) p1trm(NEG)
+*.DEVTMPLT 320 C(cdmm4) cdmm capm2_b(POS) m2trm(NEG)
+*.DEVTMPLT 321 C(cdmmh4) cdmmh capmh2_b(POS) m2trm(NEG)
+*.DEVTMPLT 322 C(cmm5t) cmim capm(POS) m4trm(NEG)
+*.DEVTMPLT 323 C(cmmh5t) cmimh capmh(POS) m4trm(NEG)
+*.DEVTMPLT 324 C(ctmm5t) ctmm capm3_b(POS) m2trm(NEG)
+*.DEVTMPLT 325 C(ctmmh5t) ctmmh capmh3_b(POS) m2trm(NEG)
+*.DEVTMPLT 326 C(cmm3) cmim23f capm23f(POS) m2trm(NEG)
+*.DEVTMPLT 327 C(cmmh3) cmimh23f capmh23f(POS) m2trm(NEG)
+*.DEVTMPLT 328 C(cmm4) cmim34f capm34f(POS) m3trm(NEG)
+*.DEVTMPLT 329 C(cmmh4) cmimh34f capmh34f(POS) m3trm(NEG)
+*.DEVTMPLT 330 C(cpod) cpod p1trm(POS) bndiff(NEG) bulk(SUB)
+*.DEVTMPLT 331 C(cpodhv) cpodhv p1trm(POS) bndiff(NEG) bulk(SUB)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA3_C_CDNS_1                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA3_C_CDNS_1 1 2
+** N=2 EP=2 FDC=0
+.ends VIA3_C_CDNS_1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA3_C_CDNS_2                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA3_C_CDNS_2 1 2
+** N=2 EP=2 FDC=0
+.ends VIA3_C_CDNS_2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA3_C_CDNS_3                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA3_C_CDNS_3 1
+** N=1 EP=1 FDC=0
+.ends VIA3_C_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA2_C_CDNS_4                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA2_C_CDNS_4 1
+** N=1 EP=1 FDC=0
+.ends VIA2_C_CDNS_4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_5                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_5 1
+** N=1 EP=1 FDC=0
+.ends VIA1_C_CDNS_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA2_C_CDNS_6                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA2_C_CDNS_6 1 2
+** N=2 EP=2 FDC=0
+.ends VIA2_C_CDNS_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_7                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_7 1 2
+** N=2 EP=2 FDC=0
+.ends VIA1_C_CDNS_7
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA3_C_CDNS_8                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA3_C_CDNS_8 1
+** N=1 EP=1 FDC=0
+.ends VIA3_C_CDNS_8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_9                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_9 1
+** N=1 EP=1 FDC=0
+.ends VIA1_C_CDNS_9
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA2_C_CDNS_10                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA2_C_CDNS_10 1
+** N=1 EP=1 FDC=0
+.ends VIA2_C_CDNS_10
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA3_C_CDNS_11                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA3_C_CDNS_11 1
+** N=1 EP=1 FDC=0
+.ends VIA3_C_CDNS_11
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA2_C_CDNS_12                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA2_C_CDNS_12 1
+** N=1 EP=1 FDC=0
+.ends VIA2_C_CDNS_12
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_13                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_13 1
+** N=1 EP=1 FDC=0
+.ends VIA1_C_CDNS_13
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_14                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_14 1
+** N=1 EP=1 FDC=0
+.ends VIA1_C_CDNS_14
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA3_C_CDNS_15                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA3_C_CDNS_15 1
+** N=1 EP=1 FDC=0
+.ends VIA3_C_CDNS_15
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA2_C_CDNS_16                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA2_C_CDNS_16 1
+** N=1 EP=1 FDC=0
+.ends VIA2_C_CDNS_16
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_17                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_17 1
+** N=1 EP=1 FDC=0
+.ends VIA1_C_CDNS_17
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA3_C_CDNS_18                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA3_C_CDNS_18 1
+** N=1 EP=1 FDC=0
+.ends VIA3_C_CDNS_18
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA2_C_CDNS_19                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA2_C_CDNS_19 1
+** N=1 EP=1 FDC=0
+.ends VIA2_C_CDNS_19
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_20                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_20 1
+** N=1 EP=1 FDC=0
+.ends VIA1_C_CDNS_20
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA2_C_CDNS_21                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA2_C_CDNS_21 1
+** N=1 EP=1 FDC=0
+.ends VIA2_C_CDNS_21
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: VIA1_C_CDNS_22                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt VIA1_C_CDNS_22 1
+** N=1 EP=1 FDC=0
+.ends VIA1_C_CDNS_22
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_23                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_23 1 2 3
+** N=3 EP=3 FDC=1
+M0 3 2 1 1 ne3 L=3e-06 W=1.2e-05 AD=5.76e-12 AS=5.76e-12 PD=2.496e-05 PS=2.496e-05 $X=0 $Y=0 $dt=83
+.ends ne3_CDNS_23
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: CurrentMirror_x10_LV                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt CurrentMirror_x10_LV 3 1 2
+** N=3 EP=3 FDC=66
+X0 1 1 VIA3_C_CDNS_1 $T=6670 30530 0 0 $X=4450 $Y=29300
+X1 1 1 VIA3_C_CDNS_1 $T=6670 51120 0 0 $X=4450 $Y=49890
+X2 2 1 VIA3_C_CDNS_1 $T=11950 33810 0 0 $X=9730 $Y=32580
+X3 2 1 VIA3_C_CDNS_1 $T=11950 54400 0 0 $X=9730 $Y=53170
+X4 2 1 VIA3_C_CDNS_1 $T=147510 33810 0 0 $X=145290 $Y=32580
+X5 2 1 VIA3_C_CDNS_1 $T=147510 54400 0 0 $X=145290 $Y=53170
+X6 1 1 VIA3_C_CDNS_1 $T=152790 30530 0 0 $X=150570 $Y=29300
+X7 1 1 VIA3_C_CDNS_1 $T=152790 51120 0 0 $X=150570 $Y=49890
+X8 2 1 VIA3_C_CDNS_2 $T=11950 11440 0 0 $X=9680 $Y=9170
+X9 2 1 VIA3_C_CDNS_2 $T=11950 72710 0 0 $X=9680 $Y=70440
+X10 2 1 VIA3_C_CDNS_2 $T=147510 11440 0 0 $X=145240 $Y=9170
+X11 2 1 VIA3_C_CDNS_2 $T=147510 72710 0 0 $X=145240 $Y=70440
+X12 1 VIA3_C_CDNS_3 $T=6670 6160 0 0 $X=4400 $Y=3890
+X13 1 VIA3_C_CDNS_3 $T=6670 77990 0 0 $X=4400 $Y=75720
+X14 1 VIA3_C_CDNS_3 $T=152790 6160 0 0 $X=150520 $Y=3890
+X15 1 VIA3_C_CDNS_3 $T=152790 77990 0 0 $X=150520 $Y=75720
+X16 3 VIA2_C_CDNS_4 $T=15230 14470 0 0 $X=14780 $Y=14330
+X17 3 VIA2_C_CDNS_4 $T=15230 28500 0 0 $X=14780 $Y=28360
+X18 3 VIA2_C_CDNS_4 $T=15230 49090 0 0 $X=14780 $Y=48950
+X19 3 VIA2_C_CDNS_4 $T=15230 69680 0 0 $X=14780 $Y=69540
+X20 3 VIA2_C_CDNS_4 $T=144230 14470 0 0 $X=143780 $Y=14330
+X21 3 VIA2_C_CDNS_4 $T=144230 28500 0 0 $X=143780 $Y=28360
+X22 3 VIA2_C_CDNS_4 $T=144230 49090 0 0 $X=143780 $Y=48950
+X23 3 VIA2_C_CDNS_4 $T=144230 69680 0 0 $X=143780 $Y=69540
+X24 3 VIA1_C_CDNS_5 $T=18830 28500 0 0 $X=18080 $Y=28270
+X25 3 VIA1_C_CDNS_5 $T=18830 49090 0 0 $X=18080 $Y=48860
+X26 3 VIA1_C_CDNS_5 $T=18830 69680 0 0 $X=18080 $Y=69450
+X27 3 VIA1_C_CDNS_5 $T=24630 28500 0 0 $X=23880 $Y=28270
+X28 3 VIA1_C_CDNS_5 $T=24630 49090 0 0 $X=23880 $Y=48860
+X29 3 VIA1_C_CDNS_5 $T=24630 69680 0 0 $X=23880 $Y=69450
+X30 3 VIA1_C_CDNS_5 $T=30430 28500 0 0 $X=29680 $Y=28270
+X31 3 VIA1_C_CDNS_5 $T=30430 49090 0 0 $X=29680 $Y=48860
+X32 3 VIA1_C_CDNS_5 $T=30430 69680 0 0 $X=29680 $Y=69450
+X33 3 VIA1_C_CDNS_5 $T=36230 28500 0 0 $X=35480 $Y=28270
+X34 3 VIA1_C_CDNS_5 $T=36230 49090 0 0 $X=35480 $Y=48860
+X35 3 VIA1_C_CDNS_5 $T=36230 69680 0 0 $X=35480 $Y=69450
+X36 3 VIA1_C_CDNS_5 $T=42030 28500 0 0 $X=41280 $Y=28270
+X37 3 VIA1_C_CDNS_5 $T=42030 49090 0 0 $X=41280 $Y=48860
+X38 3 VIA1_C_CDNS_5 $T=42030 69680 0 0 $X=41280 $Y=69450
+X39 3 VIA1_C_CDNS_5 $T=47830 28500 0 0 $X=47080 $Y=28270
+X40 3 VIA1_C_CDNS_5 $T=47830 49090 0 0 $X=47080 $Y=48860
+X41 3 VIA1_C_CDNS_5 $T=47830 69680 0 0 $X=47080 $Y=69450
+X42 3 VIA1_C_CDNS_5 $T=53630 28500 0 0 $X=52880 $Y=28270
+X43 3 VIA1_C_CDNS_5 $T=53630 49090 0 0 $X=52880 $Y=48860
+X44 3 VIA1_C_CDNS_5 $T=53630 69680 0 0 $X=52880 $Y=69450
+X45 3 VIA1_C_CDNS_5 $T=59430 28500 0 0 $X=58680 $Y=28270
+X46 3 VIA1_C_CDNS_5 $T=59430 49090 0 0 $X=58680 $Y=48860
+X47 3 VIA1_C_CDNS_5 $T=59430 69680 0 0 $X=58680 $Y=69450
+X48 3 VIA1_C_CDNS_5 $T=65230 28500 0 0 $X=64480 $Y=28270
+X49 3 VIA1_C_CDNS_5 $T=65230 49090 0 0 $X=64480 $Y=48860
+X50 3 VIA1_C_CDNS_5 $T=65230 69680 0 0 $X=64480 $Y=69450
+X51 3 VIA1_C_CDNS_5 $T=71030 28500 0 0 $X=70280 $Y=28270
+X52 3 VIA1_C_CDNS_5 $T=71030 49090 0 0 $X=70280 $Y=48860
+X53 3 VIA1_C_CDNS_5 $T=71030 69680 0 0 $X=70280 $Y=69450
+X54 3 VIA1_C_CDNS_5 $T=76830 28500 0 0 $X=76080 $Y=28270
+X55 3 VIA1_C_CDNS_5 $T=76830 49090 0 0 $X=76080 $Y=48860
+X56 3 VIA1_C_CDNS_5 $T=76830 69680 0 0 $X=76080 $Y=69450
+X57 3 VIA1_C_CDNS_5 $T=82630 28500 0 0 $X=81880 $Y=28270
+X58 3 VIA1_C_CDNS_5 $T=82630 49090 0 0 $X=81880 $Y=48860
+X59 3 VIA1_C_CDNS_5 $T=82630 69680 0 0 $X=81880 $Y=69450
+X60 3 VIA1_C_CDNS_5 $T=88430 28500 1 180 $X=87680 $Y=28270
+X61 3 VIA1_C_CDNS_5 $T=88430 49090 1 180 $X=87680 $Y=48860
+X62 3 VIA1_C_CDNS_5 $T=88430 69680 1 180 $X=87680 $Y=69450
+X63 3 VIA1_C_CDNS_5 $T=94230 28500 1 180 $X=93480 $Y=28270
+X64 3 VIA1_C_CDNS_5 $T=94230 49090 1 180 $X=93480 $Y=48860
+X65 3 VIA1_C_CDNS_5 $T=94230 69680 1 180 $X=93480 $Y=69450
+X66 3 VIA1_C_CDNS_5 $T=100030 28500 1 180 $X=99280 $Y=28270
+X67 3 VIA1_C_CDNS_5 $T=100030 49090 1 180 $X=99280 $Y=48860
+X68 3 VIA1_C_CDNS_5 $T=100030 69680 1 180 $X=99280 $Y=69450
+X69 3 VIA1_C_CDNS_5 $T=105830 28500 1 180 $X=105080 $Y=28270
+X70 3 VIA1_C_CDNS_5 $T=105830 49090 1 180 $X=105080 $Y=48860
+X71 3 VIA1_C_CDNS_5 $T=105830 69680 1 180 $X=105080 $Y=69450
+X72 3 VIA1_C_CDNS_5 $T=111630 28500 1 180 $X=110880 $Y=28270
+X73 3 VIA1_C_CDNS_5 $T=111630 49090 1 180 $X=110880 $Y=48860
+X74 3 VIA1_C_CDNS_5 $T=111630 69680 1 180 $X=110880 $Y=69450
+X75 3 VIA1_C_CDNS_5 $T=117430 28500 1 180 $X=116680 $Y=28270
+X76 3 VIA1_C_CDNS_5 $T=117430 49090 1 180 $X=116680 $Y=48860
+X77 3 VIA1_C_CDNS_5 $T=117430 69680 1 180 $X=116680 $Y=69450
+X78 3 VIA1_C_CDNS_5 $T=123230 28500 1 180 $X=122480 $Y=28270
+X79 3 VIA1_C_CDNS_5 $T=123230 49090 1 180 $X=122480 $Y=48860
+X80 3 VIA1_C_CDNS_5 $T=123230 69680 1 180 $X=122480 $Y=69450
+X81 3 VIA1_C_CDNS_5 $T=129030 28500 1 180 $X=128280 $Y=28270
+X82 3 VIA1_C_CDNS_5 $T=129030 49090 1 180 $X=128280 $Y=48860
+X83 3 VIA1_C_CDNS_5 $T=129030 69680 1 180 $X=128280 $Y=69450
+X84 3 VIA1_C_CDNS_5 $T=134830 28500 1 180 $X=134080 $Y=28270
+X85 3 VIA1_C_CDNS_5 $T=134830 49090 1 180 $X=134080 $Y=48860
+X86 3 VIA1_C_CDNS_5 $T=134830 69680 1 180 $X=134080 $Y=69450
+X87 3 VIA1_C_CDNS_5 $T=140630 28500 1 180 $X=139880 $Y=28270
+X88 3 VIA1_C_CDNS_5 $T=140630 49090 1 180 $X=139880 $Y=48860
+X89 3 VIA1_C_CDNS_5 $T=140630 69680 1 180 $X=139880 $Y=69450
+X90 1 1 VIA2_C_CDNS_6 $T=16730 21400 0 0 $X=16230 $Y=15440
+X91 1 1 VIA2_C_CDNS_6 $T=16730 41990 0 0 $X=16230 $Y=36030
+X92 1 1 VIA2_C_CDNS_6 $T=16730 62580 0 0 $X=16230 $Y=56620
+X93 2 1 VIA2_C_CDNS_6 $T=20930 21400 0 0 $X=20430 $Y=15440
+X94 2 1 VIA2_C_CDNS_6 $T=20930 41990 0 0 $X=20430 $Y=36030
+X95 2 1 VIA2_C_CDNS_6 $T=20930 62580 0 0 $X=20430 $Y=56620
+X96 1 1 VIA2_C_CDNS_6 $T=22530 21400 0 0 $X=22030 $Y=15440
+X97 1 1 VIA2_C_CDNS_6 $T=22530 41990 0 0 $X=22030 $Y=36030
+X98 1 1 VIA2_C_CDNS_6 $T=22530 62580 0 0 $X=22030 $Y=56620
+X99 2 1 VIA2_C_CDNS_6 $T=26730 21400 0 0 $X=26230 $Y=15440
+X100 2 1 VIA2_C_CDNS_6 $T=26730 41990 0 0 $X=26230 $Y=36030
+X101 2 1 VIA2_C_CDNS_6 $T=26730 62580 0 0 $X=26230 $Y=56620
+X102 1 1 VIA2_C_CDNS_6 $T=28330 21400 0 0 $X=27830 $Y=15440
+X103 1 1 VIA2_C_CDNS_6 $T=28330 41990 0 0 $X=27830 $Y=36030
+X104 1 1 VIA2_C_CDNS_6 $T=28330 62580 0 0 $X=27830 $Y=56620
+X105 2 1 VIA2_C_CDNS_6 $T=32530 21400 0 0 $X=32030 $Y=15440
+X106 2 1 VIA2_C_CDNS_6 $T=32530 41990 0 0 $X=32030 $Y=36030
+X107 2 1 VIA2_C_CDNS_6 $T=32530 62580 0 0 $X=32030 $Y=56620
+X108 1 1 VIA2_C_CDNS_6 $T=34130 21400 0 0 $X=33630 $Y=15440
+X109 1 1 VIA2_C_CDNS_6 $T=34130 41990 0 0 $X=33630 $Y=36030
+X110 1 1 VIA2_C_CDNS_6 $T=34130 62580 0 0 $X=33630 $Y=56620
+X111 2 1 VIA2_C_CDNS_6 $T=38330 21400 0 0 $X=37830 $Y=15440
+X112 2 1 VIA2_C_CDNS_6 $T=38330 41990 0 0 $X=37830 $Y=36030
+X113 2 1 VIA2_C_CDNS_6 $T=38330 62580 0 0 $X=37830 $Y=56620
+X114 1 1 VIA2_C_CDNS_6 $T=39930 21400 0 0 $X=39430 $Y=15440
+X115 1 1 VIA2_C_CDNS_6 $T=39930 41990 0 0 $X=39430 $Y=36030
+X116 1 1 VIA2_C_CDNS_6 $T=39930 62580 0 0 $X=39430 $Y=56620
+X117 2 1 VIA2_C_CDNS_6 $T=44130 21400 0 0 $X=43630 $Y=15440
+X118 2 1 VIA2_C_CDNS_6 $T=44130 41990 0 0 $X=43630 $Y=36030
+X119 2 1 VIA2_C_CDNS_6 $T=44130 62580 0 0 $X=43630 $Y=56620
+X120 1 1 VIA2_C_CDNS_6 $T=45730 21400 0 0 $X=45230 $Y=15440
+X121 1 1 VIA2_C_CDNS_6 $T=45730 41990 0 0 $X=45230 $Y=36030
+X122 1 1 VIA2_C_CDNS_6 $T=45730 62580 0 0 $X=45230 $Y=56620
+X123 2 1 VIA2_C_CDNS_6 $T=49930 21400 0 0 $X=49430 $Y=15440
+X124 2 1 VIA2_C_CDNS_6 $T=49930 41990 0 0 $X=49430 $Y=36030
+X125 2 1 VIA2_C_CDNS_6 $T=49930 62580 0 0 $X=49430 $Y=56620
+X126 1 1 VIA2_C_CDNS_6 $T=51530 21400 0 0 $X=51030 $Y=15440
+X127 1 1 VIA2_C_CDNS_6 $T=51530 41990 0 0 $X=51030 $Y=36030
+X128 1 1 VIA2_C_CDNS_6 $T=51530 62580 0 0 $X=51030 $Y=56620
+X129 2 1 VIA2_C_CDNS_6 $T=55730 21400 0 0 $X=55230 $Y=15440
+X130 2 1 VIA2_C_CDNS_6 $T=55730 41990 0 0 $X=55230 $Y=36030
+X131 2 1 VIA2_C_CDNS_6 $T=55730 62580 0 0 $X=55230 $Y=56620
+X132 1 1 VIA2_C_CDNS_6 $T=57330 21400 0 0 $X=56830 $Y=15440
+X133 1 1 VIA2_C_CDNS_6 $T=57330 41990 0 0 $X=56830 $Y=36030
+X134 1 1 VIA2_C_CDNS_6 $T=57330 62580 0 0 $X=56830 $Y=56620
+X135 2 1 VIA2_C_CDNS_6 $T=61530 21400 0 0 $X=61030 $Y=15440
+X136 2 1 VIA2_C_CDNS_6 $T=61530 41990 0 0 $X=61030 $Y=36030
+X137 2 1 VIA2_C_CDNS_6 $T=61530 62580 0 0 $X=61030 $Y=56620
+X138 1 1 VIA2_C_CDNS_6 $T=63130 21400 0 0 $X=62630 $Y=15440
+X139 1 1 VIA2_C_CDNS_6 $T=63130 41990 0 0 $X=62630 $Y=36030
+X140 1 1 VIA2_C_CDNS_6 $T=63130 62580 0 0 $X=62630 $Y=56620
+X141 2 1 VIA2_C_CDNS_6 $T=67330 21400 0 0 $X=66830 $Y=15440
+X142 2 1 VIA2_C_CDNS_6 $T=67330 41990 0 0 $X=66830 $Y=36030
+X143 2 1 VIA2_C_CDNS_6 $T=67330 62580 0 0 $X=66830 $Y=56620
+X144 1 1 VIA2_C_CDNS_6 $T=68930 21400 0 0 $X=68430 $Y=15440
+X145 1 1 VIA2_C_CDNS_6 $T=68930 41990 0 0 $X=68430 $Y=36030
+X146 1 1 VIA2_C_CDNS_6 $T=68930 62580 0 0 $X=68430 $Y=56620
+X147 2 1 VIA2_C_CDNS_6 $T=73130 41990 0 0 $X=72630 $Y=36030
+X148 1 1 VIA2_C_CDNS_6 $T=74730 21400 0 0 $X=74230 $Y=15440
+X149 1 1 VIA2_C_CDNS_6 $T=74730 41990 0 0 $X=74230 $Y=36030
+X150 1 1 VIA2_C_CDNS_6 $T=74730 62580 0 0 $X=74230 $Y=56620
+X151 2 1 VIA2_C_CDNS_6 $T=78930 21400 0 0 $X=78430 $Y=15440
+X152 2 1 VIA2_C_CDNS_6 $T=78930 62580 0 0 $X=78430 $Y=56620
+X153 1 1 VIA2_C_CDNS_6 $T=80530 21400 0 0 $X=80030 $Y=15440
+X154 1 1 VIA2_C_CDNS_6 $T=80530 41990 0 0 $X=80030 $Y=36030
+X155 1 1 VIA2_C_CDNS_6 $T=80530 62580 0 0 $X=80030 $Y=56620
+X156 2 1 VIA2_C_CDNS_6 $T=84730 21400 0 0 $X=84230 $Y=15440
+X157 2 1 VIA2_C_CDNS_6 $T=84730 62580 0 0 $X=84230 $Y=56620
+X158 2 1 VIA2_C_CDNS_6 $T=86330 41990 1 180 $X=85830 $Y=36030
+X159 1 1 VIA2_C_CDNS_6 $T=90530 21400 1 180 $X=90030 $Y=15440
+X160 1 1 VIA2_C_CDNS_6 $T=90530 41990 1 180 $X=90030 $Y=36030
+X161 1 1 VIA2_C_CDNS_6 $T=90530 62580 1 180 $X=90030 $Y=56620
+X162 2 1 VIA2_C_CDNS_6 $T=92130 21400 1 180 $X=91630 $Y=15440
+X163 2 1 VIA2_C_CDNS_6 $T=92130 41990 1 180 $X=91630 $Y=36030
+X164 2 1 VIA2_C_CDNS_6 $T=92130 62580 1 180 $X=91630 $Y=56620
+X165 1 1 VIA2_C_CDNS_6 $T=96330 21400 1 180 $X=95830 $Y=15440
+X166 1 1 VIA2_C_CDNS_6 $T=96330 41990 1 180 $X=95830 $Y=36030
+X167 1 1 VIA2_C_CDNS_6 $T=96330 62580 1 180 $X=95830 $Y=56620
+X168 2 1 VIA2_C_CDNS_6 $T=97930 21400 1 180 $X=97430 $Y=15440
+X169 2 1 VIA2_C_CDNS_6 $T=97930 41990 1 180 $X=97430 $Y=36030
+X170 2 1 VIA2_C_CDNS_6 $T=97930 62580 1 180 $X=97430 $Y=56620
+X171 1 1 VIA2_C_CDNS_6 $T=102130 21400 1 180 $X=101630 $Y=15440
+X172 1 1 VIA2_C_CDNS_6 $T=102130 41990 1 180 $X=101630 $Y=36030
+X173 1 1 VIA2_C_CDNS_6 $T=102130 62580 1 180 $X=101630 $Y=56620
+X174 2 1 VIA2_C_CDNS_6 $T=103730 21400 1 180 $X=103230 $Y=15440
+X175 2 1 VIA2_C_CDNS_6 $T=103730 41990 1 180 $X=103230 $Y=36030
+X176 2 1 VIA2_C_CDNS_6 $T=103730 62580 1 180 $X=103230 $Y=56620
+X177 1 1 VIA2_C_CDNS_6 $T=107930 21400 1 180 $X=107430 $Y=15440
+X178 1 1 VIA2_C_CDNS_6 $T=107930 41990 1 180 $X=107430 $Y=36030
+X179 1 1 VIA2_C_CDNS_6 $T=107930 62580 1 180 $X=107430 $Y=56620
+X180 2 1 VIA2_C_CDNS_6 $T=109530 21400 1 180 $X=109030 $Y=15440
+X181 2 1 VIA2_C_CDNS_6 $T=109530 41990 1 180 $X=109030 $Y=36030
+X182 2 1 VIA2_C_CDNS_6 $T=109530 62580 1 180 $X=109030 $Y=56620
+X183 1 1 VIA2_C_CDNS_6 $T=113730 21400 1 180 $X=113230 $Y=15440
+X184 1 1 VIA2_C_CDNS_6 $T=113730 41990 1 180 $X=113230 $Y=36030
+X185 1 1 VIA2_C_CDNS_6 $T=113730 62580 1 180 $X=113230 $Y=56620
+X186 2 1 VIA2_C_CDNS_6 $T=115330 21400 1 180 $X=114830 $Y=15440
+X187 2 1 VIA2_C_CDNS_6 $T=115330 41990 1 180 $X=114830 $Y=36030
+X188 2 1 VIA2_C_CDNS_6 $T=115330 62580 1 180 $X=114830 $Y=56620
+X189 1 1 VIA2_C_CDNS_6 $T=119530 21400 1 180 $X=119030 $Y=15440
+X190 1 1 VIA2_C_CDNS_6 $T=119530 41990 1 180 $X=119030 $Y=36030
+X191 1 1 VIA2_C_CDNS_6 $T=119530 62580 1 180 $X=119030 $Y=56620
+X192 2 1 VIA2_C_CDNS_6 $T=121130 21400 1 180 $X=120630 $Y=15440
+X193 2 1 VIA2_C_CDNS_6 $T=121130 41990 1 180 $X=120630 $Y=36030
+X194 2 1 VIA2_C_CDNS_6 $T=121130 62580 1 180 $X=120630 $Y=56620
+X195 1 1 VIA2_C_CDNS_6 $T=125330 21400 1 180 $X=124830 $Y=15440
+X196 1 1 VIA2_C_CDNS_6 $T=125330 41990 1 180 $X=124830 $Y=36030
+X197 1 1 VIA2_C_CDNS_6 $T=125330 62580 1 180 $X=124830 $Y=56620
+X198 2 1 VIA2_C_CDNS_6 $T=126930 21400 1 180 $X=126430 $Y=15440
+X199 2 1 VIA2_C_CDNS_6 $T=126930 41990 1 180 $X=126430 $Y=36030
+X200 2 1 VIA2_C_CDNS_6 $T=126930 62580 1 180 $X=126430 $Y=56620
+X201 1 1 VIA2_C_CDNS_6 $T=131130 21400 1 180 $X=130630 $Y=15440
+X202 1 1 VIA2_C_CDNS_6 $T=131130 41990 1 180 $X=130630 $Y=36030
+X203 1 1 VIA2_C_CDNS_6 $T=131130 62580 1 180 $X=130630 $Y=56620
+X204 2 1 VIA2_C_CDNS_6 $T=132730 21400 1 180 $X=132230 $Y=15440
+X205 2 1 VIA2_C_CDNS_6 $T=132730 41990 1 180 $X=132230 $Y=36030
+X206 2 1 VIA2_C_CDNS_6 $T=132730 62580 1 180 $X=132230 $Y=56620
+X207 1 1 VIA2_C_CDNS_6 $T=136930 21400 1 180 $X=136430 $Y=15440
+X208 1 1 VIA2_C_CDNS_6 $T=136930 41990 1 180 $X=136430 $Y=36030
+X209 1 1 VIA2_C_CDNS_6 $T=136930 62580 1 180 $X=136430 $Y=56620
+X210 2 1 VIA2_C_CDNS_6 $T=138530 21400 1 180 $X=138030 $Y=15440
+X211 2 1 VIA2_C_CDNS_6 $T=138530 41990 1 180 $X=138030 $Y=36030
+X212 2 1 VIA2_C_CDNS_6 $T=138530 62580 1 180 $X=138030 $Y=56620
+X213 1 1 VIA2_C_CDNS_6 $T=142730 21400 1 180 $X=142230 $Y=15440
+X214 1 1 VIA2_C_CDNS_6 $T=142730 41990 1 180 $X=142230 $Y=36030
+X215 1 1 VIA2_C_CDNS_6 $T=142730 62580 1 180 $X=142230 $Y=56620
+X216 1 1 VIA1_C_CDNS_7 $T=16730 21400 0 0 $X=16230 $Y=15440
+X217 1 1 VIA1_C_CDNS_7 $T=16730 41990 0 0 $X=16230 $Y=36030
+X218 1 1 VIA1_C_CDNS_7 $T=16730 62580 0 0 $X=16230 $Y=56620
+X219 2 1 VIA1_C_CDNS_7 $T=20930 21400 0 0 $X=20430 $Y=15440
+X220 2 1 VIA1_C_CDNS_7 $T=20930 41990 0 0 $X=20430 $Y=36030
+X221 2 1 VIA1_C_CDNS_7 $T=20930 62580 0 0 $X=20430 $Y=56620
+X222 1 1 VIA1_C_CDNS_7 $T=22530 21400 0 0 $X=22030 $Y=15440
+X223 1 1 VIA1_C_CDNS_7 $T=22530 41990 0 0 $X=22030 $Y=36030
+X224 1 1 VIA1_C_CDNS_7 $T=22530 62580 0 0 $X=22030 $Y=56620
+X225 2 1 VIA1_C_CDNS_7 $T=26730 21400 0 0 $X=26230 $Y=15440
+X226 2 1 VIA1_C_CDNS_7 $T=26730 41990 0 0 $X=26230 $Y=36030
+X227 2 1 VIA1_C_CDNS_7 $T=26730 62580 0 0 $X=26230 $Y=56620
+X228 1 1 VIA1_C_CDNS_7 $T=28330 21400 0 0 $X=27830 $Y=15440
+X229 1 1 VIA1_C_CDNS_7 $T=28330 41990 0 0 $X=27830 $Y=36030
+X230 1 1 VIA1_C_CDNS_7 $T=28330 62580 0 0 $X=27830 $Y=56620
+X231 2 1 VIA1_C_CDNS_7 $T=32530 21400 0 0 $X=32030 $Y=15440
+X232 2 1 VIA1_C_CDNS_7 $T=32530 41990 0 0 $X=32030 $Y=36030
+X233 2 1 VIA1_C_CDNS_7 $T=32530 62580 0 0 $X=32030 $Y=56620
+X234 1 1 VIA1_C_CDNS_7 $T=34130 21400 0 0 $X=33630 $Y=15440
+X235 1 1 VIA1_C_CDNS_7 $T=34130 41990 0 0 $X=33630 $Y=36030
+X236 1 1 VIA1_C_CDNS_7 $T=34130 62580 0 0 $X=33630 $Y=56620
+X237 2 1 VIA1_C_CDNS_7 $T=38330 21400 0 0 $X=37830 $Y=15440
+X238 2 1 VIA1_C_CDNS_7 $T=38330 41990 0 0 $X=37830 $Y=36030
+X239 2 1 VIA1_C_CDNS_7 $T=38330 62580 0 0 $X=37830 $Y=56620
+X240 1 1 VIA1_C_CDNS_7 $T=39930 21400 0 0 $X=39430 $Y=15440
+X241 1 1 VIA1_C_CDNS_7 $T=39930 41990 0 0 $X=39430 $Y=36030
+X242 1 1 VIA1_C_CDNS_7 $T=39930 62580 0 0 $X=39430 $Y=56620
+X243 2 1 VIA1_C_CDNS_7 $T=44130 21400 0 0 $X=43630 $Y=15440
+X244 2 1 VIA1_C_CDNS_7 $T=44130 41990 0 0 $X=43630 $Y=36030
+X245 2 1 VIA1_C_CDNS_7 $T=44130 62580 0 0 $X=43630 $Y=56620
+X246 1 1 VIA1_C_CDNS_7 $T=45730 21400 0 0 $X=45230 $Y=15440
+X247 1 1 VIA1_C_CDNS_7 $T=45730 41990 0 0 $X=45230 $Y=36030
+X248 1 1 VIA1_C_CDNS_7 $T=45730 62580 0 0 $X=45230 $Y=56620
+X249 2 1 VIA1_C_CDNS_7 $T=49930 21400 0 0 $X=49430 $Y=15440
+X250 2 1 VIA1_C_CDNS_7 $T=49930 41990 0 0 $X=49430 $Y=36030
+X251 2 1 VIA1_C_CDNS_7 $T=49930 62580 0 0 $X=49430 $Y=56620
+X252 1 1 VIA1_C_CDNS_7 $T=51530 21400 0 0 $X=51030 $Y=15440
+X253 1 1 VIA1_C_CDNS_7 $T=51530 41990 0 0 $X=51030 $Y=36030
+X254 1 1 VIA1_C_CDNS_7 $T=51530 62580 0 0 $X=51030 $Y=56620
+X255 2 1 VIA1_C_CDNS_7 $T=55730 21400 0 0 $X=55230 $Y=15440
+X256 2 1 VIA1_C_CDNS_7 $T=55730 41990 0 0 $X=55230 $Y=36030
+X257 2 1 VIA1_C_CDNS_7 $T=55730 62580 0 0 $X=55230 $Y=56620
+X258 1 1 VIA1_C_CDNS_7 $T=57330 21400 0 0 $X=56830 $Y=15440
+X259 1 1 VIA1_C_CDNS_7 $T=57330 41990 0 0 $X=56830 $Y=36030
+X260 1 1 VIA1_C_CDNS_7 $T=57330 62580 0 0 $X=56830 $Y=56620
+X261 2 1 VIA1_C_CDNS_7 $T=61530 21400 0 0 $X=61030 $Y=15440
+X262 2 1 VIA1_C_CDNS_7 $T=61530 41990 0 0 $X=61030 $Y=36030
+X263 2 1 VIA1_C_CDNS_7 $T=61530 62580 0 0 $X=61030 $Y=56620
+X264 1 1 VIA1_C_CDNS_7 $T=63130 21400 0 0 $X=62630 $Y=15440
+X265 1 1 VIA1_C_CDNS_7 $T=63130 41990 0 0 $X=62630 $Y=36030
+X266 1 1 VIA1_C_CDNS_7 $T=63130 62580 0 0 $X=62630 $Y=56620
+X267 2 1 VIA1_C_CDNS_7 $T=67330 21400 0 0 $X=66830 $Y=15440
+X268 2 1 VIA1_C_CDNS_7 $T=67330 41990 0 0 $X=66830 $Y=36030
+X269 2 1 VIA1_C_CDNS_7 $T=67330 62580 0 0 $X=66830 $Y=56620
+X270 1 1 VIA1_C_CDNS_7 $T=68930 21400 0 0 $X=68430 $Y=15440
+X271 1 1 VIA1_C_CDNS_7 $T=68930 41990 0 0 $X=68430 $Y=36030
+X272 1 1 VIA1_C_CDNS_7 $T=68930 62580 0 0 $X=68430 $Y=56620
+X273 2 1 VIA1_C_CDNS_7 $T=73130 41990 0 0 $X=72630 $Y=36030
+X274 1 1 VIA1_C_CDNS_7 $T=74730 21400 0 0 $X=74230 $Y=15440
+X275 1 1 VIA1_C_CDNS_7 $T=74730 41990 0 0 $X=74230 $Y=36030
+X276 1 1 VIA1_C_CDNS_7 $T=74730 62580 0 0 $X=74230 $Y=56620
+X277 2 1 VIA1_C_CDNS_7 $T=78930 21400 0 0 $X=78430 $Y=15440
+X278 2 1 VIA1_C_CDNS_7 $T=78930 62580 0 0 $X=78430 $Y=56620
+X279 1 1 VIA1_C_CDNS_7 $T=80530 21400 0 0 $X=80030 $Y=15440
+X280 1 1 VIA1_C_CDNS_7 $T=80530 41990 0 0 $X=80030 $Y=36030
+X281 1 1 VIA1_C_CDNS_7 $T=80530 62580 0 0 $X=80030 $Y=56620
+X282 2 1 VIA1_C_CDNS_7 $T=84730 21400 0 0 $X=84230 $Y=15440
+X283 2 1 VIA1_C_CDNS_7 $T=84730 62580 0 0 $X=84230 $Y=56620
+X284 2 1 VIA1_C_CDNS_7 $T=86330 41990 1 180 $X=85830 $Y=36030
+X285 1 1 VIA1_C_CDNS_7 $T=90530 21400 1 180 $X=90030 $Y=15440
+X286 1 1 VIA1_C_CDNS_7 $T=90530 41990 1 180 $X=90030 $Y=36030
+X287 1 1 VIA1_C_CDNS_7 $T=90530 62580 1 180 $X=90030 $Y=56620
+X288 2 1 VIA1_C_CDNS_7 $T=92130 21400 1 180 $X=91630 $Y=15440
+X289 2 1 VIA1_C_CDNS_7 $T=92130 41990 1 180 $X=91630 $Y=36030
+X290 2 1 VIA1_C_CDNS_7 $T=92130 62580 1 180 $X=91630 $Y=56620
+X291 1 1 VIA1_C_CDNS_7 $T=96330 21400 1 180 $X=95830 $Y=15440
+X292 1 1 VIA1_C_CDNS_7 $T=96330 41990 1 180 $X=95830 $Y=36030
+X293 1 1 VIA1_C_CDNS_7 $T=96330 62580 1 180 $X=95830 $Y=56620
+X294 2 1 VIA1_C_CDNS_7 $T=97930 21400 1 180 $X=97430 $Y=15440
+X295 2 1 VIA1_C_CDNS_7 $T=97930 41990 1 180 $X=97430 $Y=36030
+X296 2 1 VIA1_C_CDNS_7 $T=97930 62580 1 180 $X=97430 $Y=56620
+X297 1 1 VIA1_C_CDNS_7 $T=102130 21400 1 180 $X=101630 $Y=15440
+X298 1 1 VIA1_C_CDNS_7 $T=102130 41990 1 180 $X=101630 $Y=36030
+X299 1 1 VIA1_C_CDNS_7 $T=102130 62580 1 180 $X=101630 $Y=56620
+X300 2 1 VIA1_C_CDNS_7 $T=103730 21400 1 180 $X=103230 $Y=15440
+X301 2 1 VIA1_C_CDNS_7 $T=103730 41990 1 180 $X=103230 $Y=36030
+X302 2 1 VIA1_C_CDNS_7 $T=103730 62580 1 180 $X=103230 $Y=56620
+X303 1 1 VIA1_C_CDNS_7 $T=107930 21400 1 180 $X=107430 $Y=15440
+X304 1 1 VIA1_C_CDNS_7 $T=107930 41990 1 180 $X=107430 $Y=36030
+X305 1 1 VIA1_C_CDNS_7 $T=107930 62580 1 180 $X=107430 $Y=56620
+X306 2 1 VIA1_C_CDNS_7 $T=109530 21400 1 180 $X=109030 $Y=15440
+X307 2 1 VIA1_C_CDNS_7 $T=109530 41990 1 180 $X=109030 $Y=36030
+X308 2 1 VIA1_C_CDNS_7 $T=109530 62580 1 180 $X=109030 $Y=56620
+X309 1 1 VIA1_C_CDNS_7 $T=113730 21400 1 180 $X=113230 $Y=15440
+X310 1 1 VIA1_C_CDNS_7 $T=113730 41990 1 180 $X=113230 $Y=36030
+X311 1 1 VIA1_C_CDNS_7 $T=113730 62580 1 180 $X=113230 $Y=56620
+X312 2 1 VIA1_C_CDNS_7 $T=115330 21400 1 180 $X=114830 $Y=15440
+X313 2 1 VIA1_C_CDNS_7 $T=115330 41990 1 180 $X=114830 $Y=36030
+X314 2 1 VIA1_C_CDNS_7 $T=115330 62580 1 180 $X=114830 $Y=56620
+X315 1 1 VIA1_C_CDNS_7 $T=119530 21400 1 180 $X=119030 $Y=15440
+X316 1 1 VIA1_C_CDNS_7 $T=119530 41990 1 180 $X=119030 $Y=36030
+X317 1 1 VIA1_C_CDNS_7 $T=119530 62580 1 180 $X=119030 $Y=56620
+X318 2 1 VIA1_C_CDNS_7 $T=121130 21400 1 180 $X=120630 $Y=15440
+X319 2 1 VIA1_C_CDNS_7 $T=121130 41990 1 180 $X=120630 $Y=36030
+X320 2 1 VIA1_C_CDNS_7 $T=121130 62580 1 180 $X=120630 $Y=56620
+X321 1 1 VIA1_C_CDNS_7 $T=125330 21400 1 180 $X=124830 $Y=15440
+X322 1 1 VIA1_C_CDNS_7 $T=125330 41990 1 180 $X=124830 $Y=36030
+X323 1 1 VIA1_C_CDNS_7 $T=125330 62580 1 180 $X=124830 $Y=56620
+X324 2 1 VIA1_C_CDNS_7 $T=126930 21400 1 180 $X=126430 $Y=15440
+X325 2 1 VIA1_C_CDNS_7 $T=126930 41990 1 180 $X=126430 $Y=36030
+X326 2 1 VIA1_C_CDNS_7 $T=126930 62580 1 180 $X=126430 $Y=56620
+X327 1 1 VIA1_C_CDNS_7 $T=131130 21400 1 180 $X=130630 $Y=15440
+X328 1 1 VIA1_C_CDNS_7 $T=131130 41990 1 180 $X=130630 $Y=36030
+X329 1 1 VIA1_C_CDNS_7 $T=131130 62580 1 180 $X=130630 $Y=56620
+X330 2 1 VIA1_C_CDNS_7 $T=132730 21400 1 180 $X=132230 $Y=15440
+X331 2 1 VIA1_C_CDNS_7 $T=132730 41990 1 180 $X=132230 $Y=36030
+X332 2 1 VIA1_C_CDNS_7 $T=132730 62580 1 180 $X=132230 $Y=56620
+X333 1 1 VIA1_C_CDNS_7 $T=136930 21400 1 180 $X=136430 $Y=15440
+X334 1 1 VIA1_C_CDNS_7 $T=136930 41990 1 180 $X=136430 $Y=36030
+X335 1 1 VIA1_C_CDNS_7 $T=136930 62580 1 180 $X=136430 $Y=56620
+X336 2 1 VIA1_C_CDNS_7 $T=138530 21400 1 180 $X=138030 $Y=15440
+X337 2 1 VIA1_C_CDNS_7 $T=138530 41990 1 180 $X=138030 $Y=36030
+X338 2 1 VIA1_C_CDNS_7 $T=138530 62580 1 180 $X=138030 $Y=56620
+X339 1 1 VIA1_C_CDNS_7 $T=142730 21400 1 180 $X=142230 $Y=15440
+X340 1 1 VIA1_C_CDNS_7 $T=142730 41990 1 180 $X=142230 $Y=36030
+X341 1 1 VIA1_C_CDNS_7 $T=142730 62580 1 180 $X=142230 $Y=56620
+X342 1 VIA3_C_CDNS_8 $T=16730 30475 0 0 $X=16240 $Y=29205
+X343 1 VIA3_C_CDNS_8 $T=16730 51065 0 0 $X=16240 $Y=49795
+X344 2 VIA3_C_CDNS_8 $T=20930 33755 0 0 $X=20440 $Y=32485
+X345 2 VIA3_C_CDNS_8 $T=20930 54345 0 0 $X=20440 $Y=53075
+X346 1 VIA3_C_CDNS_8 $T=22530 30475 0 0 $X=22040 $Y=29205
+X347 1 VIA3_C_CDNS_8 $T=22530 51065 0 0 $X=22040 $Y=49795
+X348 2 VIA3_C_CDNS_8 $T=26730 33755 0 0 $X=26240 $Y=32485
+X349 2 VIA3_C_CDNS_8 $T=26730 54345 0 0 $X=26240 $Y=53075
+X350 1 VIA3_C_CDNS_8 $T=28330 30475 0 0 $X=27840 $Y=29205
+X351 1 VIA3_C_CDNS_8 $T=28330 51065 0 0 $X=27840 $Y=49795
+X352 2 VIA3_C_CDNS_8 $T=32530 33755 0 0 $X=32040 $Y=32485
+X353 2 VIA3_C_CDNS_8 $T=32530 54345 0 0 $X=32040 $Y=53075
+X354 1 VIA3_C_CDNS_8 $T=34130 30475 0 0 $X=33640 $Y=29205
+X355 1 VIA3_C_CDNS_8 $T=34130 51065 0 0 $X=33640 $Y=49795
+X356 2 VIA3_C_CDNS_8 $T=38330 33755 0 0 $X=37840 $Y=32485
+X357 2 VIA3_C_CDNS_8 $T=38330 54345 0 0 $X=37840 $Y=53075
+X358 1 VIA3_C_CDNS_8 $T=39930 30475 0 0 $X=39440 $Y=29205
+X359 1 VIA3_C_CDNS_8 $T=39930 51065 0 0 $X=39440 $Y=49795
+X360 2 VIA3_C_CDNS_8 $T=44130 33755 0 0 $X=43640 $Y=32485
+X361 2 VIA3_C_CDNS_8 $T=44130 54345 0 0 $X=43640 $Y=53075
+X362 1 VIA3_C_CDNS_8 $T=45730 30475 0 0 $X=45240 $Y=29205
+X363 1 VIA3_C_CDNS_8 $T=45730 51065 0 0 $X=45240 $Y=49795
+X364 2 VIA3_C_CDNS_8 $T=49930 33755 0 0 $X=49440 $Y=32485
+X365 2 VIA3_C_CDNS_8 $T=49930 54345 0 0 $X=49440 $Y=53075
+X366 1 VIA3_C_CDNS_8 $T=51530 30475 0 0 $X=51040 $Y=29205
+X367 1 VIA3_C_CDNS_8 $T=51530 51065 0 0 $X=51040 $Y=49795
+X368 2 VIA3_C_CDNS_8 $T=55730 33755 0 0 $X=55240 $Y=32485
+X369 2 VIA3_C_CDNS_8 $T=55730 54345 0 0 $X=55240 $Y=53075
+X370 1 VIA3_C_CDNS_8 $T=57330 30475 0 0 $X=56840 $Y=29205
+X371 1 VIA3_C_CDNS_8 $T=57330 51065 0 0 $X=56840 $Y=49795
+X372 2 VIA3_C_CDNS_8 $T=61530 33755 0 0 $X=61040 $Y=32485
+X373 2 VIA3_C_CDNS_8 $T=61530 54345 0 0 $X=61040 $Y=53075
+X374 1 VIA3_C_CDNS_8 $T=63130 30475 0 0 $X=62640 $Y=29205
+X375 1 VIA3_C_CDNS_8 $T=63130 51065 0 0 $X=62640 $Y=49795
+X376 2 VIA3_C_CDNS_8 $T=67330 33755 0 0 $X=66840 $Y=32485
+X377 2 VIA3_C_CDNS_8 $T=67330 54345 0 0 $X=66840 $Y=53075
+X378 1 VIA3_C_CDNS_8 $T=68930 30475 0 0 $X=68440 $Y=29205
+X379 1 VIA3_C_CDNS_8 $T=68930 51065 0 0 $X=68440 $Y=49795
+X380 2 VIA3_C_CDNS_8 $T=73130 33755 0 0 $X=72640 $Y=32485
+X381 1 VIA3_C_CDNS_8 $T=74730 30475 0 0 $X=74240 $Y=29205
+X382 1 VIA3_C_CDNS_8 $T=74730 51065 0 0 $X=74240 $Y=49795
+X383 2 VIA3_C_CDNS_8 $T=78930 54345 0 0 $X=78440 $Y=53075
+X384 1 VIA3_C_CDNS_8 $T=80530 30475 0 0 $X=80040 $Y=29205
+X385 1 VIA3_C_CDNS_8 $T=80530 51065 0 0 $X=80040 $Y=49795
+X386 2 VIA3_C_CDNS_8 $T=84730 54345 0 0 $X=84240 $Y=53075
+X387 2 VIA3_C_CDNS_8 $T=86330 33755 1 180 $X=85840 $Y=32485
+X388 1 VIA3_C_CDNS_8 $T=90530 30475 1 180 $X=90040 $Y=29205
+X389 1 VIA3_C_CDNS_8 $T=90530 51065 1 180 $X=90040 $Y=49795
+X390 2 VIA3_C_CDNS_8 $T=92130 33755 1 180 $X=91640 $Y=32485
+X391 2 VIA3_C_CDNS_8 $T=92130 54345 1 180 $X=91640 $Y=53075
+X392 1 VIA3_C_CDNS_8 $T=96330 30475 1 180 $X=95840 $Y=29205
+X393 1 VIA3_C_CDNS_8 $T=96330 51065 1 180 $X=95840 $Y=49795
+X394 2 VIA3_C_CDNS_8 $T=97930 33755 1 180 $X=97440 $Y=32485
+X395 2 VIA3_C_CDNS_8 $T=97930 54345 1 180 $X=97440 $Y=53075
+X396 1 VIA3_C_CDNS_8 $T=102130 30475 1 180 $X=101640 $Y=29205
+X397 1 VIA3_C_CDNS_8 $T=102130 51065 1 180 $X=101640 $Y=49795
+X398 2 VIA3_C_CDNS_8 $T=103730 33755 1 180 $X=103240 $Y=32485
+X399 2 VIA3_C_CDNS_8 $T=103730 54345 1 180 $X=103240 $Y=53075
+X400 1 VIA3_C_CDNS_8 $T=107930 30475 1 180 $X=107440 $Y=29205
+X401 1 VIA3_C_CDNS_8 $T=107930 51065 1 180 $X=107440 $Y=49795
+X402 2 VIA3_C_CDNS_8 $T=109530 33755 1 180 $X=109040 $Y=32485
+X403 2 VIA3_C_CDNS_8 $T=109530 54345 1 180 $X=109040 $Y=53075
+X404 1 VIA3_C_CDNS_8 $T=113730 30475 1 180 $X=113240 $Y=29205
+X405 1 VIA3_C_CDNS_8 $T=113730 51065 1 180 $X=113240 $Y=49795
+X406 2 VIA3_C_CDNS_8 $T=115330 33755 1 180 $X=114840 $Y=32485
+X407 2 VIA3_C_CDNS_8 $T=115330 54345 1 180 $X=114840 $Y=53075
+X408 1 VIA3_C_CDNS_8 $T=119530 30475 1 180 $X=119040 $Y=29205
+X409 1 VIA3_C_CDNS_8 $T=119530 51065 1 180 $X=119040 $Y=49795
+X410 2 VIA3_C_CDNS_8 $T=121130 33755 1 180 $X=120640 $Y=32485
+X411 2 VIA3_C_CDNS_8 $T=121130 54345 1 180 $X=120640 $Y=53075
+X412 1 VIA3_C_CDNS_8 $T=125330 30475 1 180 $X=124840 $Y=29205
+X413 1 VIA3_C_CDNS_8 $T=125330 51065 1 180 $X=124840 $Y=49795
+X414 2 VIA3_C_CDNS_8 $T=126930 33755 1 180 $X=126440 $Y=32485
+X415 2 VIA3_C_CDNS_8 $T=126930 54345 1 180 $X=126440 $Y=53075
+X416 1 VIA3_C_CDNS_8 $T=131130 30475 1 180 $X=130640 $Y=29205
+X417 1 VIA3_C_CDNS_8 $T=131130 51065 1 180 $X=130640 $Y=49795
+X418 2 VIA3_C_CDNS_8 $T=132730 33755 1 180 $X=132240 $Y=32485
+X419 2 VIA3_C_CDNS_8 $T=132730 54345 1 180 $X=132240 $Y=53075
+X420 1 VIA3_C_CDNS_8 $T=136930 30475 1 180 $X=136440 $Y=29205
+X421 1 VIA3_C_CDNS_8 $T=136930 51065 1 180 $X=136440 $Y=49795
+X422 2 VIA3_C_CDNS_8 $T=138530 33755 1 180 $X=138040 $Y=32485
+X423 2 VIA3_C_CDNS_8 $T=138530 54345 1 180 $X=138040 $Y=53075
+X424 1 VIA3_C_CDNS_8 $T=142730 30475 1 180 $X=142240 $Y=29205
+X425 1 VIA3_C_CDNS_8 $T=142730 51065 1 180 $X=142240 $Y=49795
+X426 3 VIA1_C_CDNS_9 $T=73130 14470 0 0 $X=72640 $Y=14240
+X427 3 VIA1_C_CDNS_9 $T=73130 49090 0 0 $X=72640 $Y=48860
+X428 3 VIA1_C_CDNS_9 $T=78930 28500 0 0 $X=78440 $Y=28270
+X429 3 VIA1_C_CDNS_9 $T=84730 28500 0 0 $X=84240 $Y=28270
+X430 3 VIA1_C_CDNS_9 $T=86330 14470 0 0 $X=85840 $Y=14240
+X431 3 VIA1_C_CDNS_9 $T=86330 49090 0 0 $X=85840 $Y=48860
+X432 1 VIA2_C_CDNS_10 $T=16730 30475 0 0 $X=16240 $Y=29205
+X433 1 VIA2_C_CDNS_10 $T=16730 51065 0 0 $X=16240 $Y=49795
+X434 2 VIA2_C_CDNS_10 $T=20930 33755 0 0 $X=20440 $Y=32485
+X435 2 VIA2_C_CDNS_10 $T=20930 54345 0 0 $X=20440 $Y=53075
+X436 1 VIA2_C_CDNS_10 $T=22530 30475 0 0 $X=22040 $Y=29205
+X437 1 VIA2_C_CDNS_10 $T=22530 51065 0 0 $X=22040 $Y=49795
+X438 2 VIA2_C_CDNS_10 $T=26730 33755 0 0 $X=26240 $Y=32485
+X439 2 VIA2_C_CDNS_10 $T=26730 54345 0 0 $X=26240 $Y=53075
+X440 1 VIA2_C_CDNS_10 $T=28330 30475 0 0 $X=27840 $Y=29205
+X441 1 VIA2_C_CDNS_10 $T=28330 51065 0 0 $X=27840 $Y=49795
+X442 2 VIA2_C_CDNS_10 $T=32530 33755 0 0 $X=32040 $Y=32485
+X443 2 VIA2_C_CDNS_10 $T=32530 54345 0 0 $X=32040 $Y=53075
+X444 1 VIA2_C_CDNS_10 $T=34130 30475 0 0 $X=33640 $Y=29205
+X445 1 VIA2_C_CDNS_10 $T=34130 51065 0 0 $X=33640 $Y=49795
+X446 2 VIA2_C_CDNS_10 $T=38330 33755 0 0 $X=37840 $Y=32485
+X447 2 VIA2_C_CDNS_10 $T=38330 54345 0 0 $X=37840 $Y=53075
+X448 1 VIA2_C_CDNS_10 $T=39930 30475 0 0 $X=39440 $Y=29205
+X449 1 VIA2_C_CDNS_10 $T=39930 51065 0 0 $X=39440 $Y=49795
+X450 2 VIA2_C_CDNS_10 $T=44130 33755 0 0 $X=43640 $Y=32485
+X451 2 VIA2_C_CDNS_10 $T=44130 54345 0 0 $X=43640 $Y=53075
+X452 1 VIA2_C_CDNS_10 $T=45730 30475 0 0 $X=45240 $Y=29205
+X453 1 VIA2_C_CDNS_10 $T=45730 51065 0 0 $X=45240 $Y=49795
+X454 2 VIA2_C_CDNS_10 $T=49930 33755 0 0 $X=49440 $Y=32485
+X455 2 VIA2_C_CDNS_10 $T=49930 54345 0 0 $X=49440 $Y=53075
+X456 1 VIA2_C_CDNS_10 $T=51530 30475 0 0 $X=51040 $Y=29205
+X457 1 VIA2_C_CDNS_10 $T=51530 51065 0 0 $X=51040 $Y=49795
+X458 2 VIA2_C_CDNS_10 $T=55730 33755 0 0 $X=55240 $Y=32485
+X459 2 VIA2_C_CDNS_10 $T=55730 54345 0 0 $X=55240 $Y=53075
+X460 1 VIA2_C_CDNS_10 $T=57330 30475 0 0 $X=56840 $Y=29205
+X461 1 VIA2_C_CDNS_10 $T=57330 51065 0 0 $X=56840 $Y=49795
+X462 2 VIA2_C_CDNS_10 $T=61530 33755 0 0 $X=61040 $Y=32485
+X463 2 VIA2_C_CDNS_10 $T=61530 54345 0 0 $X=61040 $Y=53075
+X464 1 VIA2_C_CDNS_10 $T=63130 30475 0 0 $X=62640 $Y=29205
+X465 1 VIA2_C_CDNS_10 $T=63130 51065 0 0 $X=62640 $Y=49795
+X466 2 VIA2_C_CDNS_10 $T=67330 33755 0 0 $X=66840 $Y=32485
+X467 2 VIA2_C_CDNS_10 $T=67330 54345 0 0 $X=66840 $Y=53075
+X468 1 VIA2_C_CDNS_10 $T=68930 30475 0 0 $X=68440 $Y=29205
+X469 1 VIA2_C_CDNS_10 $T=68930 51065 0 0 $X=68440 $Y=49795
+X470 2 VIA2_C_CDNS_10 $T=73130 33755 0 0 $X=72640 $Y=32485
+X471 1 VIA2_C_CDNS_10 $T=74730 30475 0 0 $X=74240 $Y=29205
+X472 1 VIA2_C_CDNS_10 $T=74730 51065 0 0 $X=74240 $Y=49795
+X473 2 VIA2_C_CDNS_10 $T=78930 54345 0 0 $X=78440 $Y=53075
+X474 1 VIA2_C_CDNS_10 $T=80530 30475 0 0 $X=80040 $Y=29205
+X475 1 VIA2_C_CDNS_10 $T=80530 51065 0 0 $X=80040 $Y=49795
+X476 2 VIA2_C_CDNS_10 $T=84730 54345 0 0 $X=84240 $Y=53075
+X477 2 VIA2_C_CDNS_10 $T=86330 33755 1 180 $X=85840 $Y=32485
+X478 1 VIA2_C_CDNS_10 $T=90530 30475 1 180 $X=90040 $Y=29205
+X479 1 VIA2_C_CDNS_10 $T=90530 51065 1 180 $X=90040 $Y=49795
+X480 2 VIA2_C_CDNS_10 $T=92130 33755 1 180 $X=91640 $Y=32485
+X481 2 VIA2_C_CDNS_10 $T=92130 54345 1 180 $X=91640 $Y=53075
+X482 1 VIA2_C_CDNS_10 $T=96330 30475 1 180 $X=95840 $Y=29205
+X483 1 VIA2_C_CDNS_10 $T=96330 51065 1 180 $X=95840 $Y=49795
+X484 2 VIA2_C_CDNS_10 $T=97930 33755 1 180 $X=97440 $Y=32485
+X485 2 VIA2_C_CDNS_10 $T=97930 54345 1 180 $X=97440 $Y=53075
+X486 1 VIA2_C_CDNS_10 $T=102130 30475 1 180 $X=101640 $Y=29205
+X487 1 VIA2_C_CDNS_10 $T=102130 51065 1 180 $X=101640 $Y=49795
+X488 2 VIA2_C_CDNS_10 $T=103730 33755 1 180 $X=103240 $Y=32485
+X489 2 VIA2_C_CDNS_10 $T=103730 54345 1 180 $X=103240 $Y=53075
+X490 1 VIA2_C_CDNS_10 $T=107930 30475 1 180 $X=107440 $Y=29205
+X491 1 VIA2_C_CDNS_10 $T=107930 51065 1 180 $X=107440 $Y=49795
+X492 2 VIA2_C_CDNS_10 $T=109530 33755 1 180 $X=109040 $Y=32485
+X493 2 VIA2_C_CDNS_10 $T=109530 54345 1 180 $X=109040 $Y=53075
+X494 1 VIA2_C_CDNS_10 $T=113730 30475 1 180 $X=113240 $Y=29205
+X495 1 VIA2_C_CDNS_10 $T=113730 51065 1 180 $X=113240 $Y=49795
+X496 2 VIA2_C_CDNS_10 $T=115330 33755 1 180 $X=114840 $Y=32485
+X497 2 VIA2_C_CDNS_10 $T=115330 54345 1 180 $X=114840 $Y=53075
+X498 1 VIA2_C_CDNS_10 $T=119530 30475 1 180 $X=119040 $Y=29205
+X499 1 VIA2_C_CDNS_10 $T=119530 51065 1 180 $X=119040 $Y=49795
+X500 2 VIA2_C_CDNS_10 $T=121130 33755 1 180 $X=120640 $Y=32485
+X501 2 VIA2_C_CDNS_10 $T=121130 54345 1 180 $X=120640 $Y=53075
+X502 1 VIA2_C_CDNS_10 $T=125330 30475 1 180 $X=124840 $Y=29205
+X503 1 VIA2_C_CDNS_10 $T=125330 51065 1 180 $X=124840 $Y=49795
+X504 2 VIA2_C_CDNS_10 $T=126930 33755 1 180 $X=126440 $Y=32485
+X505 2 VIA2_C_CDNS_10 $T=126930 54345 1 180 $X=126440 $Y=53075
+X506 1 VIA2_C_CDNS_10 $T=131130 30475 1 180 $X=130640 $Y=29205
+X507 1 VIA2_C_CDNS_10 $T=131130 51065 1 180 $X=130640 $Y=49795
+X508 2 VIA2_C_CDNS_10 $T=132730 33755 1 180 $X=132240 $Y=32485
+X509 2 VIA2_C_CDNS_10 $T=132730 54345 1 180 $X=132240 $Y=53075
+X510 1 VIA2_C_CDNS_10 $T=136930 30475 1 180 $X=136440 $Y=29205
+X511 1 VIA2_C_CDNS_10 $T=136930 51065 1 180 $X=136440 $Y=49795
+X512 2 VIA2_C_CDNS_10 $T=138530 33755 1 180 $X=138040 $Y=32485
+X513 2 VIA2_C_CDNS_10 $T=138530 54345 1 180 $X=138040 $Y=53075
+X514 1 VIA2_C_CDNS_10 $T=142730 30475 1 180 $X=142240 $Y=29205
+X515 1 VIA2_C_CDNS_10 $T=142730 51065 1 180 $X=142240 $Y=49795
+X516 1 VIA3_C_CDNS_11 $T=16730 6125 0 0 $X=16240 $Y=3815
+X517 2 VIA3_C_CDNS_11 $T=20930 11405 0 0 $X=20440 $Y=9095
+X518 1 VIA3_C_CDNS_11 $T=22530 6125 0 0 $X=22040 $Y=3815
+X519 2 VIA3_C_CDNS_11 $T=26730 11405 0 0 $X=26240 $Y=9095
+X520 1 VIA3_C_CDNS_11 $T=28330 6125 0 0 $X=27840 $Y=3815
+X521 2 VIA3_C_CDNS_11 $T=32530 11405 0 0 $X=32040 $Y=9095
+X522 1 VIA3_C_CDNS_11 $T=34130 6125 0 0 $X=33640 $Y=3815
+X523 2 VIA3_C_CDNS_11 $T=38330 11405 0 0 $X=37840 $Y=9095
+X524 1 VIA3_C_CDNS_11 $T=39930 6125 0 0 $X=39440 $Y=3815
+X525 2 VIA3_C_CDNS_11 $T=44130 11405 0 0 $X=43640 $Y=9095
+X526 1 VIA3_C_CDNS_11 $T=45730 6125 0 0 $X=45240 $Y=3815
+X527 2 VIA3_C_CDNS_11 $T=49930 11405 0 0 $X=49440 $Y=9095
+X528 1 VIA3_C_CDNS_11 $T=51530 6125 0 0 $X=51040 $Y=3815
+X529 2 VIA3_C_CDNS_11 $T=55730 11405 0 0 $X=55240 $Y=9095
+X530 1 VIA3_C_CDNS_11 $T=57330 6125 0 0 $X=56840 $Y=3815
+X531 2 VIA3_C_CDNS_11 $T=61530 11405 0 0 $X=61040 $Y=9095
+X532 1 VIA3_C_CDNS_11 $T=63130 6125 0 0 $X=62640 $Y=3815
+X533 2 VIA3_C_CDNS_11 $T=67330 11405 0 0 $X=66840 $Y=9095
+X534 1 VIA3_C_CDNS_11 $T=68930 6125 0 0 $X=68440 $Y=3815
+X535 1 VIA3_C_CDNS_11 $T=74730 6125 0 0 $X=74240 $Y=3815
+X536 2 VIA3_C_CDNS_11 $T=78930 11405 0 0 $X=78440 $Y=9095
+X537 1 VIA3_C_CDNS_11 $T=80530 6125 0 0 $X=80040 $Y=3815
+X538 2 VIA3_C_CDNS_11 $T=84730 11405 0 0 $X=84240 $Y=9095
+X539 1 VIA3_C_CDNS_11 $T=90530 6125 1 180 $X=90040 $Y=3815
+X540 2 VIA3_C_CDNS_11 $T=92130 11405 1 180 $X=91640 $Y=9095
+X541 1 VIA3_C_CDNS_11 $T=96330 6125 1 180 $X=95840 $Y=3815
+X542 2 VIA3_C_CDNS_11 $T=97930 11405 1 180 $X=97440 $Y=9095
+X543 1 VIA3_C_CDNS_11 $T=102130 6125 1 180 $X=101640 $Y=3815
+X544 2 VIA3_C_CDNS_11 $T=103730 11405 1 180 $X=103240 $Y=9095
+X545 1 VIA3_C_CDNS_11 $T=107930 6125 1 180 $X=107440 $Y=3815
+X546 2 VIA3_C_CDNS_11 $T=109530 11405 1 180 $X=109040 $Y=9095
+X547 1 VIA3_C_CDNS_11 $T=113730 6125 1 180 $X=113240 $Y=3815
+X548 2 VIA3_C_CDNS_11 $T=115330 11405 1 180 $X=114840 $Y=9095
+X549 1 VIA3_C_CDNS_11 $T=119530 6125 1 180 $X=119040 $Y=3815
+X550 2 VIA3_C_CDNS_11 $T=121130 11405 1 180 $X=120640 $Y=9095
+X551 1 VIA3_C_CDNS_11 $T=125330 6125 1 180 $X=124840 $Y=3815
+X552 2 VIA3_C_CDNS_11 $T=126930 11405 1 180 $X=126440 $Y=9095
+X553 1 VIA3_C_CDNS_11 $T=131130 6125 1 180 $X=130640 $Y=3815
+X554 2 VIA3_C_CDNS_11 $T=132730 11405 1 180 $X=132240 $Y=9095
+X555 1 VIA3_C_CDNS_11 $T=136930 6125 1 180 $X=136440 $Y=3815
+X556 2 VIA3_C_CDNS_11 $T=138530 11405 1 180 $X=138040 $Y=9095
+X557 1 VIA3_C_CDNS_11 $T=142730 6125 1 180 $X=142240 $Y=3815
+X558 1 VIA2_C_CDNS_12 $T=16730 6125 0 0 $X=16240 $Y=3815
+X559 2 VIA2_C_CDNS_12 $T=20930 11405 0 0 $X=20440 $Y=9095
+X560 1 VIA2_C_CDNS_12 $T=22530 6125 0 0 $X=22040 $Y=3815
+X561 2 VIA2_C_CDNS_12 $T=26730 11405 0 0 $X=26240 $Y=9095
+X562 1 VIA2_C_CDNS_12 $T=28330 6125 0 0 $X=27840 $Y=3815
+X563 2 VIA2_C_CDNS_12 $T=32530 11405 0 0 $X=32040 $Y=9095
+X564 1 VIA2_C_CDNS_12 $T=34130 6125 0 0 $X=33640 $Y=3815
+X565 2 VIA2_C_CDNS_12 $T=38330 11405 0 0 $X=37840 $Y=9095
+X566 1 VIA2_C_CDNS_12 $T=39930 6125 0 0 $X=39440 $Y=3815
+X567 2 VIA2_C_CDNS_12 $T=44130 11405 0 0 $X=43640 $Y=9095
+X568 1 VIA2_C_CDNS_12 $T=45730 6125 0 0 $X=45240 $Y=3815
+X569 2 VIA2_C_CDNS_12 $T=49930 11405 0 0 $X=49440 $Y=9095
+X570 1 VIA2_C_CDNS_12 $T=51530 6125 0 0 $X=51040 $Y=3815
+X571 2 VIA2_C_CDNS_12 $T=55730 11405 0 0 $X=55240 $Y=9095
+X572 1 VIA2_C_CDNS_12 $T=57330 6125 0 0 $X=56840 $Y=3815
+X573 2 VIA2_C_CDNS_12 $T=61530 11405 0 0 $X=61040 $Y=9095
+X574 1 VIA2_C_CDNS_12 $T=63130 6125 0 0 $X=62640 $Y=3815
+X575 2 VIA2_C_CDNS_12 $T=67330 11405 0 0 $X=66840 $Y=9095
+X576 1 VIA2_C_CDNS_12 $T=68930 6125 0 0 $X=68440 $Y=3815
+X577 1 VIA2_C_CDNS_12 $T=74730 6125 0 0 $X=74240 $Y=3815
+X578 2 VIA2_C_CDNS_12 $T=78930 11405 0 0 $X=78440 $Y=9095
+X579 1 VIA2_C_CDNS_12 $T=80530 6125 0 0 $X=80040 $Y=3815
+X580 2 VIA2_C_CDNS_12 $T=84730 11405 0 0 $X=84240 $Y=9095
+X581 1 VIA2_C_CDNS_12 $T=90530 6125 1 180 $X=90040 $Y=3815
+X582 2 VIA2_C_CDNS_12 $T=92130 11405 1 180 $X=91640 $Y=9095
+X583 1 VIA2_C_CDNS_12 $T=96330 6125 1 180 $X=95840 $Y=3815
+X584 2 VIA2_C_CDNS_12 $T=97930 11405 1 180 $X=97440 $Y=9095
+X585 1 VIA2_C_CDNS_12 $T=102130 6125 1 180 $X=101640 $Y=3815
+X586 2 VIA2_C_CDNS_12 $T=103730 11405 1 180 $X=103240 $Y=9095
+X587 1 VIA2_C_CDNS_12 $T=107930 6125 1 180 $X=107440 $Y=3815
+X588 2 VIA2_C_CDNS_12 $T=109530 11405 1 180 $X=109040 $Y=9095
+X589 1 VIA2_C_CDNS_12 $T=113730 6125 1 180 $X=113240 $Y=3815
+X590 2 VIA2_C_CDNS_12 $T=115330 11405 1 180 $X=114840 $Y=9095
+X591 1 VIA2_C_CDNS_12 $T=119530 6125 1 180 $X=119040 $Y=3815
+X592 2 VIA2_C_CDNS_12 $T=121130 11405 1 180 $X=120640 $Y=9095
+X593 1 VIA2_C_CDNS_12 $T=125330 6125 1 180 $X=124840 $Y=3815
+X594 2 VIA2_C_CDNS_12 $T=126930 11405 1 180 $X=126440 $Y=9095
+X595 1 VIA2_C_CDNS_12 $T=131130 6125 1 180 $X=130640 $Y=3815
+X596 2 VIA2_C_CDNS_12 $T=132730 11405 1 180 $X=132240 $Y=9095
+X597 1 VIA2_C_CDNS_12 $T=136930 6125 1 180 $X=136440 $Y=3815
+X598 2 VIA2_C_CDNS_12 $T=138530 11405 1 180 $X=138040 $Y=9095
+X599 1 VIA2_C_CDNS_12 $T=142730 6125 1 180 $X=142240 $Y=3815
+X600 1 VIA1_C_CDNS_13 $T=16730 6125 0 0 $X=16240 $Y=3815
+X601 2 VIA1_C_CDNS_13 $T=20930 11405 0 0 $X=20440 $Y=9095
+X602 1 VIA1_C_CDNS_13 $T=22530 6125 0 0 $X=22040 $Y=3815
+X603 2 VIA1_C_CDNS_13 $T=26730 11405 0 0 $X=26240 $Y=9095
+X604 1 VIA1_C_CDNS_13 $T=28330 6125 0 0 $X=27840 $Y=3815
+X605 2 VIA1_C_CDNS_13 $T=32530 11405 0 0 $X=32040 $Y=9095
+X606 1 VIA1_C_CDNS_13 $T=34130 6125 0 0 $X=33640 $Y=3815
+X607 2 VIA1_C_CDNS_13 $T=38330 11405 0 0 $X=37840 $Y=9095
+X608 1 VIA1_C_CDNS_13 $T=39930 6125 0 0 $X=39440 $Y=3815
+X609 2 VIA1_C_CDNS_13 $T=44130 11405 0 0 $X=43640 $Y=9095
+X610 1 VIA1_C_CDNS_13 $T=45730 6125 0 0 $X=45240 $Y=3815
+X611 2 VIA1_C_CDNS_13 $T=49930 11405 0 0 $X=49440 $Y=9095
+X612 1 VIA1_C_CDNS_13 $T=51530 6125 0 0 $X=51040 $Y=3815
+X613 2 VIA1_C_CDNS_13 $T=55730 11405 0 0 $X=55240 $Y=9095
+X614 1 VIA1_C_CDNS_13 $T=57330 6125 0 0 $X=56840 $Y=3815
+X615 2 VIA1_C_CDNS_13 $T=61530 11405 0 0 $X=61040 $Y=9095
+X616 1 VIA1_C_CDNS_13 $T=63130 6125 0 0 $X=62640 $Y=3815
+X617 2 VIA1_C_CDNS_13 $T=67330 11405 0 0 $X=66840 $Y=9095
+X618 1 VIA1_C_CDNS_13 $T=68930 6125 0 0 $X=68440 $Y=3815
+X619 1 VIA1_C_CDNS_13 $T=74730 6125 0 0 $X=74240 $Y=3815
+X620 2 VIA1_C_CDNS_13 $T=78930 11405 0 0 $X=78440 $Y=9095
+X621 1 VIA1_C_CDNS_13 $T=80530 6125 0 0 $X=80040 $Y=3815
+X622 2 VIA1_C_CDNS_13 $T=84730 11405 0 0 $X=84240 $Y=9095
+X623 1 VIA1_C_CDNS_13 $T=90530 6125 1 180 $X=90040 $Y=3815
+X624 2 VIA1_C_CDNS_13 $T=92130 11405 1 180 $X=91640 $Y=9095
+X625 1 VIA1_C_CDNS_13 $T=96330 6125 1 180 $X=95840 $Y=3815
+X626 2 VIA1_C_CDNS_13 $T=97930 11405 1 180 $X=97440 $Y=9095
+X627 1 VIA1_C_CDNS_13 $T=102130 6125 1 180 $X=101640 $Y=3815
+X628 2 VIA1_C_CDNS_13 $T=103730 11405 1 180 $X=103240 $Y=9095
+X629 1 VIA1_C_CDNS_13 $T=107930 6125 1 180 $X=107440 $Y=3815
+X630 2 VIA1_C_CDNS_13 $T=109530 11405 1 180 $X=109040 $Y=9095
+X631 1 VIA1_C_CDNS_13 $T=113730 6125 1 180 $X=113240 $Y=3815
+X632 2 VIA1_C_CDNS_13 $T=115330 11405 1 180 $X=114840 $Y=9095
+X633 1 VIA1_C_CDNS_13 $T=119530 6125 1 180 $X=119040 $Y=3815
+X634 2 VIA1_C_CDNS_13 $T=121130 11405 1 180 $X=120640 $Y=9095
+X635 1 VIA1_C_CDNS_13 $T=125330 6125 1 180 $X=124840 $Y=3815
+X636 2 VIA1_C_CDNS_13 $T=126930 11405 1 180 $X=126440 $Y=9095
+X637 1 VIA1_C_CDNS_13 $T=131130 6125 1 180 $X=130640 $Y=3815
+X638 2 VIA1_C_CDNS_13 $T=132730 11405 1 180 $X=132240 $Y=9095
+X639 1 VIA1_C_CDNS_13 $T=136930 6125 1 180 $X=136440 $Y=3815
+X640 2 VIA1_C_CDNS_13 $T=138530 11405 1 180 $X=138040 $Y=9095
+X641 1 VIA1_C_CDNS_13 $T=142730 6125 1 180 $X=142240 $Y=3815
+X642 1 VIA1_C_CDNS_14 $T=16730 30475 0 0 $X=16240 $Y=29205
+X643 1 VIA1_C_CDNS_14 $T=16730 51065 0 0 $X=16240 $Y=49795
+X644 2 VIA1_C_CDNS_14 $T=20930 33755 0 0 $X=20440 $Y=32485
+X645 2 VIA1_C_CDNS_14 $T=20930 54345 0 0 $X=20440 $Y=53075
+X646 1 VIA1_C_CDNS_14 $T=22530 30475 0 0 $X=22040 $Y=29205
+X647 1 VIA1_C_CDNS_14 $T=22530 51065 0 0 $X=22040 $Y=49795
+X648 2 VIA1_C_CDNS_14 $T=26730 33755 0 0 $X=26240 $Y=32485
+X649 2 VIA1_C_CDNS_14 $T=26730 54345 0 0 $X=26240 $Y=53075
+X650 1 VIA1_C_CDNS_14 $T=28330 30475 0 0 $X=27840 $Y=29205
+X651 1 VIA1_C_CDNS_14 $T=28330 51065 0 0 $X=27840 $Y=49795
+X652 2 VIA1_C_CDNS_14 $T=32530 33755 0 0 $X=32040 $Y=32485
+X653 2 VIA1_C_CDNS_14 $T=32530 54345 0 0 $X=32040 $Y=53075
+X654 1 VIA1_C_CDNS_14 $T=34130 30475 0 0 $X=33640 $Y=29205
+X655 1 VIA1_C_CDNS_14 $T=34130 51065 0 0 $X=33640 $Y=49795
+X656 2 VIA1_C_CDNS_14 $T=38330 33755 0 0 $X=37840 $Y=32485
+X657 2 VIA1_C_CDNS_14 $T=38330 54345 0 0 $X=37840 $Y=53075
+X658 1 VIA1_C_CDNS_14 $T=39930 30475 0 0 $X=39440 $Y=29205
+X659 1 VIA1_C_CDNS_14 $T=39930 51065 0 0 $X=39440 $Y=49795
+X660 2 VIA1_C_CDNS_14 $T=44130 33755 0 0 $X=43640 $Y=32485
+X661 2 VIA1_C_CDNS_14 $T=44130 54345 0 0 $X=43640 $Y=53075
+X662 1 VIA1_C_CDNS_14 $T=45730 30475 0 0 $X=45240 $Y=29205
+X663 1 VIA1_C_CDNS_14 $T=45730 51065 0 0 $X=45240 $Y=49795
+X664 2 VIA1_C_CDNS_14 $T=49930 33755 0 0 $X=49440 $Y=32485
+X665 2 VIA1_C_CDNS_14 $T=49930 54345 0 0 $X=49440 $Y=53075
+X666 1 VIA1_C_CDNS_14 $T=51530 30475 0 0 $X=51040 $Y=29205
+X667 1 VIA1_C_CDNS_14 $T=51530 51065 0 0 $X=51040 $Y=49795
+X668 2 VIA1_C_CDNS_14 $T=55730 33755 0 0 $X=55240 $Y=32485
+X669 2 VIA1_C_CDNS_14 $T=55730 54345 0 0 $X=55240 $Y=53075
+X670 1 VIA1_C_CDNS_14 $T=57330 30475 0 0 $X=56840 $Y=29205
+X671 1 VIA1_C_CDNS_14 $T=57330 51065 0 0 $X=56840 $Y=49795
+X672 2 VIA1_C_CDNS_14 $T=61530 33755 0 0 $X=61040 $Y=32485
+X673 2 VIA1_C_CDNS_14 $T=61530 54345 0 0 $X=61040 $Y=53075
+X674 1 VIA1_C_CDNS_14 $T=63130 30475 0 0 $X=62640 $Y=29205
+X675 1 VIA1_C_CDNS_14 $T=63130 51065 0 0 $X=62640 $Y=49795
+X676 2 VIA1_C_CDNS_14 $T=67330 33755 0 0 $X=66840 $Y=32485
+X677 2 VIA1_C_CDNS_14 $T=67330 54345 0 0 $X=66840 $Y=53075
+X678 1 VIA1_C_CDNS_14 $T=68930 30475 0 0 $X=68440 $Y=29205
+X679 1 VIA1_C_CDNS_14 $T=68930 51065 0 0 $X=68440 $Y=49795
+X680 2 VIA1_C_CDNS_14 $T=73130 33755 0 0 $X=72640 $Y=32485
+X681 1 VIA1_C_CDNS_14 $T=74730 30475 0 0 $X=74240 $Y=29205
+X682 1 VIA1_C_CDNS_14 $T=74730 51065 0 0 $X=74240 $Y=49795
+X683 2 VIA1_C_CDNS_14 $T=78930 54345 0 0 $X=78440 $Y=53075
+X684 1 VIA1_C_CDNS_14 $T=80530 30475 0 0 $X=80040 $Y=29205
+X685 1 VIA1_C_CDNS_14 $T=80530 51065 0 0 $X=80040 $Y=49795
+X686 2 VIA1_C_CDNS_14 $T=84730 54345 0 0 $X=84240 $Y=53075
+X687 2 VIA1_C_CDNS_14 $T=86330 33755 1 180 $X=85840 $Y=32485
+X688 1 VIA1_C_CDNS_14 $T=90530 30475 1 180 $X=90040 $Y=29205
+X689 1 VIA1_C_CDNS_14 $T=90530 51065 1 180 $X=90040 $Y=49795
+X690 2 VIA1_C_CDNS_14 $T=92130 33755 1 180 $X=91640 $Y=32485
+X691 2 VIA1_C_CDNS_14 $T=92130 54345 1 180 $X=91640 $Y=53075
+X692 1 VIA1_C_CDNS_14 $T=96330 30475 1 180 $X=95840 $Y=29205
+X693 1 VIA1_C_CDNS_14 $T=96330 51065 1 180 $X=95840 $Y=49795
+X694 2 VIA1_C_CDNS_14 $T=97930 33755 1 180 $X=97440 $Y=32485
+X695 2 VIA1_C_CDNS_14 $T=97930 54345 1 180 $X=97440 $Y=53075
+X696 1 VIA1_C_CDNS_14 $T=102130 30475 1 180 $X=101640 $Y=29205
+X697 1 VIA1_C_CDNS_14 $T=102130 51065 1 180 $X=101640 $Y=49795
+X698 2 VIA1_C_CDNS_14 $T=103730 33755 1 180 $X=103240 $Y=32485
+X699 2 VIA1_C_CDNS_14 $T=103730 54345 1 180 $X=103240 $Y=53075
+X700 1 VIA1_C_CDNS_14 $T=107930 30475 1 180 $X=107440 $Y=29205
+X701 1 VIA1_C_CDNS_14 $T=107930 51065 1 180 $X=107440 $Y=49795
+X702 2 VIA1_C_CDNS_14 $T=109530 33755 1 180 $X=109040 $Y=32485
+X703 2 VIA1_C_CDNS_14 $T=109530 54345 1 180 $X=109040 $Y=53075
+X704 1 VIA1_C_CDNS_14 $T=113730 30475 1 180 $X=113240 $Y=29205
+X705 1 VIA1_C_CDNS_14 $T=113730 51065 1 180 $X=113240 $Y=49795
+X706 2 VIA1_C_CDNS_14 $T=115330 33755 1 180 $X=114840 $Y=32485
+X707 2 VIA1_C_CDNS_14 $T=115330 54345 1 180 $X=114840 $Y=53075
+X708 1 VIA1_C_CDNS_14 $T=119530 30475 1 180 $X=119040 $Y=29205
+X709 1 VIA1_C_CDNS_14 $T=119530 51065 1 180 $X=119040 $Y=49795
+X710 2 VIA1_C_CDNS_14 $T=121130 33755 1 180 $X=120640 $Y=32485
+X711 2 VIA1_C_CDNS_14 $T=121130 54345 1 180 $X=120640 $Y=53075
+X712 1 VIA1_C_CDNS_14 $T=125330 30475 1 180 $X=124840 $Y=29205
+X713 1 VIA1_C_CDNS_14 $T=125330 51065 1 180 $X=124840 $Y=49795
+X714 2 VIA1_C_CDNS_14 $T=126930 33755 1 180 $X=126440 $Y=32485
+X715 2 VIA1_C_CDNS_14 $T=126930 54345 1 180 $X=126440 $Y=53075
+X716 1 VIA1_C_CDNS_14 $T=131130 30475 1 180 $X=130640 $Y=29205
+X717 1 VIA1_C_CDNS_14 $T=131130 51065 1 180 $X=130640 $Y=49795
+X718 2 VIA1_C_CDNS_14 $T=132730 33755 1 180 $X=132240 $Y=32485
+X719 2 VIA1_C_CDNS_14 $T=132730 54345 1 180 $X=132240 $Y=53075
+X720 1 VIA1_C_CDNS_14 $T=136930 30475 1 180 $X=136440 $Y=29205
+X721 1 VIA1_C_CDNS_14 $T=136930 51065 1 180 $X=136440 $Y=49795
+X722 2 VIA1_C_CDNS_14 $T=138530 33755 1 180 $X=138040 $Y=32485
+X723 2 VIA1_C_CDNS_14 $T=138530 54345 1 180 $X=138040 $Y=53075
+X724 1 VIA1_C_CDNS_14 $T=142730 30475 1 180 $X=142240 $Y=29205
+X725 1 VIA1_C_CDNS_14 $T=142730 51065 1 180 $X=142240 $Y=49795
+X726 1 VIA3_C_CDNS_15 $T=3310 6160 0 0 $X=3080 $Y=3850
+X727 1 VIA3_C_CDNS_15 $T=3310 77990 0 0 $X=3080 $Y=75680
+X728 1 VIA3_C_CDNS_15 $T=156150 6160 0 0 $X=155920 $Y=3850
+X729 1 VIA3_C_CDNS_15 $T=156150 77990 0 0 $X=155920 $Y=75680
+X730 1 VIA2_C_CDNS_16 $T=3310 6160 0 0 $X=3080 $Y=3850
+X731 1 VIA2_C_CDNS_16 $T=3310 77990 0 0 $X=3080 $Y=75680
+X732 1 VIA2_C_CDNS_16 $T=156150 6160 0 0 $X=155920 $Y=3850
+X733 1 VIA2_C_CDNS_16 $T=156150 77990 0 0 $X=155920 $Y=75680
+X734 1 VIA1_C_CDNS_17 $T=3310 6160 0 0 $X=3080 $Y=3850
+X735 1 VIA1_C_CDNS_17 $T=3310 77990 0 0 $X=3080 $Y=75680
+X736 1 VIA1_C_CDNS_17 $T=156150 6160 0 0 $X=155920 $Y=3850
+X737 1 VIA1_C_CDNS_17 $T=156150 77990 0 0 $X=155920 $Y=75680
+X738 1 VIA3_C_CDNS_18 $T=3310 30530 0 0 $X=3080 $Y=29260
+X739 1 VIA3_C_CDNS_18 $T=3310 51120 0 0 $X=3080 $Y=49850
+X740 1 VIA3_C_CDNS_18 $T=156150 30530 0 0 $X=155920 $Y=29260
+X741 1 VIA3_C_CDNS_18 $T=156150 51120 0 0 $X=155920 $Y=49850
+X742 1 VIA2_C_CDNS_19 $T=3310 30530 0 0 $X=3080 $Y=29260
+X743 1 VIA2_C_CDNS_19 $T=3310 51120 0 0 $X=3080 $Y=49850
+X744 1 VIA2_C_CDNS_19 $T=156150 30530 0 0 $X=155920 $Y=29260
+X745 1 VIA2_C_CDNS_19 $T=156150 51120 0 0 $X=155920 $Y=49850
+X746 1 VIA1_C_CDNS_20 $T=3310 30530 0 0 $X=3080 $Y=29260
+X747 1 VIA1_C_CDNS_20 $T=3310 51120 0 0 $X=3080 $Y=49850
+X748 1 VIA1_C_CDNS_20 $T=156150 30530 0 0 $X=155920 $Y=29260
+X749 1 VIA1_C_CDNS_20 $T=156150 51120 0 0 $X=155920 $Y=49850
+X750 1 VIA2_C_CDNS_21 $T=6670 2800 0 0 $X=4360 $Y=2570
+X751 1 VIA2_C_CDNS_21 $T=6670 81350 0 0 $X=4360 $Y=81120
+X752 1 VIA2_C_CDNS_21 $T=152790 2800 0 0 $X=150480 $Y=2570
+X753 1 VIA2_C_CDNS_21 $T=152790 81350 0 0 $X=150480 $Y=81120
+X754 1 VIA1_C_CDNS_22 $T=6670 2800 0 0 $X=4360 $Y=2570
+X755 1 VIA1_C_CDNS_22 $T=6670 81350 0 0 $X=4360 $Y=81120
+X756 1 VIA1_C_CDNS_22 $T=152790 2800 0 0 $X=150480 $Y=2570
+X757 1 VIA1_C_CDNS_22 $T=152790 81350 0 0 $X=150480 $Y=81120
+X758 1 3 2 ne3_CDNS_23 $T=17330 15400 0 0 $X=16530 $Y=15000
+X759 1 3 2 ne3_CDNS_23 $T=17330 35990 0 0 $X=16530 $Y=35590
+X760 1 3 2 ne3_CDNS_23 $T=17330 56580 0 0 $X=16530 $Y=56180
+X761 1 3 2 ne3_CDNS_23 $T=23130 15400 0 0 $X=22330 $Y=15000
+X762 1 3 2 ne3_CDNS_23 $T=23130 35990 0 0 $X=22330 $Y=35590
+X763 1 3 2 ne3_CDNS_23 $T=23130 56580 0 0 $X=22330 $Y=56180
+X764 1 3 2 ne3_CDNS_23 $T=28930 15400 0 0 $X=28130 $Y=15000
+X765 1 3 2 ne3_CDNS_23 $T=28930 35990 0 0 $X=28130 $Y=35590
+X766 1 3 2 ne3_CDNS_23 $T=28930 56580 0 0 $X=28130 $Y=56180
+X767 1 3 2 ne3_CDNS_23 $T=34730 15400 0 0 $X=33930 $Y=15000
+X768 1 3 2 ne3_CDNS_23 $T=34730 35990 0 0 $X=33930 $Y=35590
+X769 1 3 2 ne3_CDNS_23 $T=34730 56580 0 0 $X=33930 $Y=56180
+X770 1 3 2 ne3_CDNS_23 $T=40530 15400 0 0 $X=39730 $Y=15000
+X771 1 3 2 ne3_CDNS_23 $T=40530 35990 0 0 $X=39730 $Y=35590
+X772 1 3 2 ne3_CDNS_23 $T=40530 56580 0 0 $X=39730 $Y=56180
+X773 1 3 2 ne3_CDNS_23 $T=46330 15400 0 0 $X=45530 $Y=15000
+X774 1 3 2 ne3_CDNS_23 $T=46330 35990 0 0 $X=45530 $Y=35590
+X775 1 3 2 ne3_CDNS_23 $T=46330 56580 0 0 $X=45530 $Y=56180
+X776 1 3 2 ne3_CDNS_23 $T=52130 15400 0 0 $X=51330 $Y=15000
+X777 1 3 2 ne3_CDNS_23 $T=52130 35990 0 0 $X=51330 $Y=35590
+X778 1 3 2 ne3_CDNS_23 $T=52130 56580 0 0 $X=51330 $Y=56180
+X779 1 3 2 ne3_CDNS_23 $T=57930 15400 0 0 $X=57130 $Y=15000
+X780 1 3 2 ne3_CDNS_23 $T=57930 35990 0 0 $X=57130 $Y=35590
+X781 1 3 2 ne3_CDNS_23 $T=57930 56580 0 0 $X=57130 $Y=56180
+X782 1 3 2 ne3_CDNS_23 $T=63730 15400 0 0 $X=62930 $Y=15000
+X783 1 3 2 ne3_CDNS_23 $T=63730 35990 0 0 $X=62930 $Y=35590
+X784 1 3 2 ne3_CDNS_23 $T=63730 56580 0 0 $X=62930 $Y=56180
+X785 1 3 3 ne3_CDNS_23 $T=69530 15400 0 0 $X=68730 $Y=15000
+X786 1 3 2 ne3_CDNS_23 $T=69530 35990 0 0 $X=68730 $Y=35590
+X787 1 3 3 ne3_CDNS_23 $T=69530 56580 0 0 $X=68730 $Y=56180
+X788 1 3 2 ne3_CDNS_23 $T=75330 15400 0 0 $X=74530 $Y=15000
+X789 1 3 3 ne3_CDNS_23 $T=75330 35990 0 0 $X=74530 $Y=35590
+X790 1 3 2 ne3_CDNS_23 $T=75330 56580 0 0 $X=74530 $Y=56180
+X791 1 3 2 ne3_CDNS_23 $T=81130 15400 0 0 $X=80330 $Y=15000
+X792 1 3 3 ne3_CDNS_23 $T=81130 35990 0 0 $X=80330 $Y=35590
+X793 1 3 2 ne3_CDNS_23 $T=81130 56580 0 0 $X=80330 $Y=56180
+X794 1 3 3 ne3_CDNS_23 $T=89930 15400 1 180 $X=86130 $Y=15000
+X795 1 3 2 ne3_CDNS_23 $T=89930 35990 1 180 $X=86130 $Y=35590
+X796 1 3 3 ne3_CDNS_23 $T=89930 56580 1 180 $X=86130 $Y=56180
+X797 1 3 2 ne3_CDNS_23 $T=95730 15400 1 180 $X=91930 $Y=15000
+X798 1 3 2 ne3_CDNS_23 $T=95730 35990 1 180 $X=91930 $Y=35590
+X799 1 3 2 ne3_CDNS_23 $T=95730 56580 1 180 $X=91930 $Y=56180
+X800 1 3 2 ne3_CDNS_23 $T=101530 15400 1 180 $X=97730 $Y=15000
+X801 1 3 2 ne3_CDNS_23 $T=101530 35990 1 180 $X=97730 $Y=35590
+X802 1 3 2 ne3_CDNS_23 $T=101530 56580 1 180 $X=97730 $Y=56180
+X803 1 3 2 ne3_CDNS_23 $T=107330 15400 1 180 $X=103530 $Y=15000
+X804 1 3 2 ne3_CDNS_23 $T=107330 35990 1 180 $X=103530 $Y=35590
+X805 1 3 2 ne3_CDNS_23 $T=107330 56580 1 180 $X=103530 $Y=56180
+X806 1 3 2 ne3_CDNS_23 $T=113130 15400 1 180 $X=109330 $Y=15000
+X807 1 3 2 ne3_CDNS_23 $T=113130 35990 1 180 $X=109330 $Y=35590
+X808 1 3 2 ne3_CDNS_23 $T=113130 56580 1 180 $X=109330 $Y=56180
+X809 1 3 2 ne3_CDNS_23 $T=118930 15400 1 180 $X=115130 $Y=15000
+X810 1 3 2 ne3_CDNS_23 $T=118930 35990 1 180 $X=115130 $Y=35590
+X811 1 3 2 ne3_CDNS_23 $T=118930 56580 1 180 $X=115130 $Y=56180
+X812 1 3 2 ne3_CDNS_23 $T=124730 15400 1 180 $X=120930 $Y=15000
+X813 1 3 2 ne3_CDNS_23 $T=124730 35990 1 180 $X=120930 $Y=35590
+X814 1 3 2 ne3_CDNS_23 $T=124730 56580 1 180 $X=120930 $Y=56180
+X815 1 3 2 ne3_CDNS_23 $T=130530 15400 1 180 $X=126730 $Y=15000
+X816 1 3 2 ne3_CDNS_23 $T=130530 35990 1 180 $X=126730 $Y=35590
+X817 1 3 2 ne3_CDNS_23 $T=130530 56580 1 180 $X=126730 $Y=56180
+X818 1 3 2 ne3_CDNS_23 $T=136330 15400 1 180 $X=132530 $Y=15000
+X819 1 3 2 ne3_CDNS_23 $T=136330 35990 1 180 $X=132530 $Y=35590
+X820 1 3 2 ne3_CDNS_23 $T=136330 56580 1 180 $X=132530 $Y=56180
+X821 1 3 2 ne3_CDNS_23 $T=142130 15400 1 180 $X=138330 $Y=15000
+X822 1 3 2 ne3_CDNS_23 $T=142130 35990 1 180 $X=138330 $Y=35590
+X823 1 3 2 ne3_CDNS_23 $T=142130 56580 1 180 $X=138330 $Y=56180
+.ends CurrentMirror_x10_LV

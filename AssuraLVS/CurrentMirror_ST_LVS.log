@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Wed Apr 21 11:58:24 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Mon Apr 26 13:39:50 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.rsf -exec1 -LVS -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed Apr 21 11:58:24 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 26 13:39:51 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -42,7 +42,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Wed Apr 21 11:58:25 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Mon Apr 26 13:39:51 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -67,16 +67,16 @@ Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
 Express Pcell license has been checked out for the Express Pcell feature.
 *WARNING* Express Pcells will be disabled. This is because the Express Pcells data stored on disk is generated using some later release of Virtuoso. Use a later compatible Virtuoso release.
 
-Loading assuraExtract_Rules at "Apr 21 11:58:25 2021"
+Loading assuraExtract_Rules at "Apr 26 13:39:52 2021"
 Compiling rules...
 
 RSF-specified resolution of 0.0005 userUnits used for this run.
  
 *************************************************************** 
  
- XH018 Assura Extract Rules file version v17.1 updated on 190711 
+ XH018 Assura Extract Rules file version 8.1.1 updated on 201215 
  X-FAB Design Support
- Reference Documents: PDS_018_03 Release 8.0 
+ Reference Documents: PDS_018_03 Release 8.1 
  
  ******  Subset    1143  ****** 
  
@@ -111,27 +111,27 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Wed Apr 21 11:58:29 2021
+run on s2424 at Mon Apr 26 13:39:55 2021
   
 *************************************************************** 
   
- X-FAB Assura Compare Rules file version v15.1 updated on Jul 10, 2019 
+ X-FAB Assura Compare Rules file version 8.1.1 updated on Dec 15, 2020 
  X-FAB Design Support
  
 *************************************************************** 
  
 Reading schematic network
  running dfIIToVldb -cdslib /home/ykhuang/research/cds.lib /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.vlr /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Wed Apr 21 11:58:30 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Mon Apr 26 13:39:56 2021
 
   
 *************************************************************** 
   
- X-FAB Assura Compare Rules file version v15.1 updated on Jul 10, 2019 
+ X-FAB Assura Compare Rules file version 8.1.1 updated on Dec 15, 2020 
  X-FAB Design Support
  
 *************************************************************** 
@@ -143,12 +143,12 @@ Top Cell Name: "CurrentMirror_ST"
 Top Cell View: "schematic"
 Output Data Base Name: "/home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.sdb"
 Simulator Name: "auLvs"
+Failed to obtain license for "Assura_LVS". 
+Checking out license for Phys_Ver_Sys_LVS_XL
 ERROR (LMF-02005): License call failed for feature Assura_LVS, version 4.100 and quantity 1. The license server search path is defined as 5280@lic09.ug.kth.se. The FLEXnet error message is as follows,
     FLEXnet ERROR(-5, 147, 0): No such feature exists.
 
 Run 'lic_error LMF-02005' for more information.
-Failed to obtain license for "Assura_LVS". 
-Checking out license for Phys_Ver_Sys_LVS_XL
 View List: "auLvs schematic cmos_sch symbol"
 Stop List: "auLvs"
 ** Info: PDK loadpath is "./.xkit/setup/xh018/cadence/PDK"
@@ -162,8 +162,8 @@ Finished Initializing Library .
     Generic Pcell Skill Tools: 'production' loaded.
 Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
 Net Listing Mode is Analog
-Global net vdd3! found
 Global net gnd! found
+Global net vdd3! found
 Global net vdde! found
 writing /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.sdb
  inputting /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.sdb
@@ -189,6 +189,10 @@ Preprocessing schematic network phase 1
 *WARNING* genericDevice("pmmc_bjt") - cell does not exist. This command will be ignored.
 *WARNING* genericDevice("phv_bjt") - cell does not exist. This command will be ignored.
 *WARNING* genericDevice("phhv_bjt") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("dspb0") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("dspb") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("dapb0") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("dapb") - cell does not exist. This command will be ignored.
 *WARNING* genericDevice("dphodfp") - cell does not exist. This command will be ignored.
 *WARNING* genericDevice("dphod0") - cell does not exist. This command will be ignored.
 *WARNING* genericDevice("dphod") - cell does not exist. This command will be ignored.
@@ -231,16 +235,16 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.02m  mem=117.47mb
+cpu=0.00m  wall=0.02m  mem=117.87mb
 
 Finished /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/nvn
 
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.32  elap: 7  pf: 0  in: 0  out: 304  virt: 115M  phys: 647M
+cpu: 0.32  elap: 6  pf: 0  in: 0  out: 304  virt: 115M  phys: 649M
 
-Running the Task Processor, 15 cells, 15265 steps...
+Running the Task Processor, 20 cells, 15557 steps...
 
 Top Cell is 'CurrentMirror_ST layout Stimulator_IMP'
 
@@ -594,6 +598,8 @@ Executing: gate_ds = geomAnd(gate d_ds_diff)
 
 Executing: catdiff = geomAnd(catdop diff)
 
+Executing: catdfct = geomAnd(catdiff ndiffa)
+
 Executing: dphoc_11 = geomOutside(geomEnclose(catdop diff) alwell)
 
 Executing: dphoc_1 = geomOutside(dphoc_11 aml)
@@ -610,21 +616,71 @@ Executing: dspada = geomGetTexted(davl_a1 dio_label "dspada")
 
 Executing: dspada0 = geomGetTexted(davl_a1 dio_label "dspada0")
 
-Executing: dspad_al = geomOr(dspada dspada0)
+Executing: dspad_a1 = geomOr(dspada dspada0)
 
-Executing: davl_a2 = geomOutside(davl_a1 dspad_al)
+Executing: davl_b1 = geomOutside(davl_a1 dspad_a1)
+
+Executing: dspb_1 = geomGetTexted(davl_b1 dio_label "dspb")
+
+Executing: dspb0_1 = geomGetTexted(davl_b1 dio_label "dspb0")
+
+Executing: dspb_2 = geomGetBBox(dspb_1)
+
+Executing: dspb0_2 = geomGetBBox(dspb0_1)
+
+Executing: dspb = geomSize(dspb_2 3.115)
+
+Executing: dspb0 = geomSize(dspb0_2 3.115)
+
+Executing: dspad_b1 = geomOr(dspb dspb0)
+
+Executing: davl_a2 = geomOutside(davl_b1 dspad_b1)
 
 Executing: dapda = geomGetTexted(davl_a2 dio_label "dapda")
 
 Executing: dapda0 = geomGetTexted(davl_a2 dio_label "dapda0")
 
-Executing: dapd_al = geomOr(dapda dapda0)
+Executing: dapd_a1 = geomOr(dapda dapda0)
 
-Executing: davl_all = geomOr(dspad_al dapd_al)
+Executing: davl_b2 = geomOutside(davl_a2 dapd_a1)
 
-Executing: davl_ext = geomGetBBox(davl_all)
+Executing: dapb_1 = geomGetTexted(davl_b2 dio_label "dapb")
 
-Executing: davl_ex1 = geomSize(davl_ext 0.705)
+Executing: dapb0_1 = geomGetTexted(davl_b2 dio_label "dapb0")
+
+Executing: dapb_2 = geomGetBBox(dapb_1)
+
+Executing: dapb0_2 = geomGetBBox(dapb0_1)
+
+Executing: dapb = geomSize(dapb_2 3.115)
+
+Executing: dapb0 = geomSize(dapb0_2 3.115)
+
+Executing: dapd_b1 = geomOr(dapb dapb0)
+
+Executing: davla_al = geomOr(dspad_a1 dapd_a1)
+
+Executing: davlb_al = geomOr(dspad_b1 dapd_b1)
+
+Executing: davl_c2 = geomAnd(davlb_al nsdg)
+
+Executing: catm1ct1 = geomAndNot(catdiff nsdg)
+
+Executing: catm1ct2 = geomAnd(catm1ct1 davlb_al)
+
+Executing: catm1ct = geomAnd(catm1ct2 cont)
+
+Executing: davl_all = geomOr(davla_al davlb_al)
+
+Executing: davla_ext = geomGetBBox(davla_al)
+
+Executing: davla_ex1 = geomSize(davla_ext 0.705)
+
+Executing: davlb_ex1 = geomSize(davlb_al -1.675)
+
+Executing: davlb_ex4 = drc(davlb_al (width < 4.58) only_perp)
+
+Executing: davl_ex1 = geomOr(davla_ex1 geomAndNot(davlb_ex1 davlb_ex4))
 
 Executing: dphod_1 = geomOutside(geomEnclose(nwell anodop) dnwellg)
 
@@ -1114,7 +1170,7 @@ Executing: psdnw = geomAnd(psdg nwellniso)
 
 Executing: ntie = geomAnd(nsdg nwellniso)
 
-Executing: ptie = geomAndNot(psdg geomOr(nwellg nbdsub))
+Executing: ptie = geomAndNot(geomAndNot(psdg geomSize(davl_c2 0.004)) geomOr(nwellg nbds...
 
 Executing: ptie_hole = geomHoles(ptie innermost)
 
@@ -1123,6 +1179,8 @@ Executing: ptie_h4 = geomGetVertex(ptie_hole (keep == 4))
 Executing: isoptie = geomAnd(psdg pwitrm00)
 
 Executing: dnwntie = geomAnd(ntie dnwtrm) keepLayer(dnwntie)
+
+Executing: dnwntie_h = geomHoles(dnwntie innermost)
 
 Executing: ndftrm = geomAndNot(ndf hnw) keepLayer(ndftrm)
 
@@ -2058,225 +2116,7 @@ Executing: qpvhscr1 = geomAnd(qpvh_33 qpvh_82)
 
 Executing: qpvhscr_bas = geomEnclose(qpvh_73 qpvhscr1)
 
-Executing: qnvam = geomEmpty()
-
 Executing: qnvam_isopw = geomEmpty()
-
-Executing: qnvb_dnw_0 = geomOutside(geomOutside(dnwellmv qnvam_isopw) poly)
-
-Executing: qnvb1 = geomGetRectangle(geomInside(depl qnvb_dnw_0))
-
-Executing: qnvb2 = geomGetRectangle(geomInside(ndiffa qnvb1) ((3 <= length) <= 50) (widt...
-
-Executing: qnvb2_sblk = drc(geomStraddle(sab qnvb2) (width == 0.7))
-
-Executing: qnvb20a = geomStraddle(qnvb2 qnvb2_sblk (keep == 2))
-
-Executing: qnvb20b = drc(qnvb20a qnvb2_sblk (ovlp < 0.18))
-
-Executing: qnvb20 = geomAndNot(qnvb20a geomStraddle(qnvb20a qnvb20b))
-
-Executing: qnvb21 = geomGetRectangle(geomAndNot(qnvb20 qnvb2_sblk) (width == 1.0))
-
-Executing: qnvb_emi = geomEnclose(qnvb20 qnvb21)
-
-Executing: qnvb3a = geomEnclose(diff qnvb_emi)
-
-Executing: qnvb30 = geomSize(qnvb1 -0.5)
-
-Executing: qnvb31 = geomSize(geomGetEdge(qnvb30 inside qnvb3a) 0.001)
-
-Executing: qnvb32 = geomSize(geomGetEdge(qnvb30 outside qnvb3a) 0.001)
-
-Executing: qnvb33 = geomAndNot(qnvb1 geomOverlap(qnvb1 geomOr(qnvb31 qnvb32)))
-
-Executing: qnvb34 = geomInside(qnvb3a qnvb33)
-
-Executing: qnvb35 = geomEnclose(qnvb34 pdiffa (keep == 2))
-
-Executing: qnvb4 = geomInside(pdiffa qnvb3a)
-
-Executing: qnvb41 = drc(qnvb4 (width == 0.72))
-
-Executing: qnvb3 = geomEnclose(qnvb35 qnvb41 (keep == 2))
-
-Executing: qnvb42 = geomAndNot(qnvb4 qnvb41)
-
-Executing: qnvb43 = drc(qnvb41 qnvb2 (sep < 0.34))
-
-Executing: qnvb44 = drc(qnvb41 qnvb2_sblk (ovlp < 0.18))
-
-Executing: qnvb45a = geomAndNot(qnvb3a implant)
-
-Executing: qnvb45b = drc(qnvb45a (width == 0.34))
-
-Executing: qnvb45 = geomAndNot(qnvb45a qnvb45b)
-
-Executing: qnvb_base1 = geomAndNot(qnvb3 geomOverlap(qnvb3 geomOr(qnvb42 qnvb43 qnvb44 q...
-
-Executing: qnvb_base = geomEnclose(qnvb33 qnvb_base1)
-
-Executing: qnvb_coll_r0 = geomGetHoled(geomInside(ndiffa qnvb_dnw_0))
-
-Executing: qnvb_coll_r = geomWidth(qnvb_coll_r0 (keep >= 0.9))
-
-Executing: qnvb_base_s = geomSize(qnvb_base 0.6)
-
-Executing: qnvb51 = geomSize(geomGetEdge(qnvb_base_s outside qnvb_coll_r) 0.001)
-
-Executing: qnvb52 = geomSize(geomGetEdge(qnvb_base_s inside qnvb_coll_r) 0.001)
-
-Executing: qnvb53 = geomAndNot(qnvb_dnw_0 geomStraddle(qnvb_dnw_0 geomOr(qnvb51 qnvb52)))
-
-Executing: qnvb5 = geomInside(qnvb_base qnvb53)
-
-Executing: qnvb10 = geomEnclose(qnvb1 qnvb5)
-
-Executing: qnvb1nw = geomEnclose(nwell qnvb10)
-
-Executing: qnvb_base_s2 = geomSize(qnvb_base 1.62)
-
-Executing: qnvb1nw_2 = geomSize(qnvb1nw -0.12)
-
-Executing: qnvb61 = geomSize(geomGetEdge(qnvb1nw outside qnvb_base_s2) 0.001)
-
-Executing: qnvb62 = geomSize(geomGetEdge(qnvb1nw inside qnvb_base_s2) 0.001)
-
-Executing: qnvb63 = geomAndNot(qnvb_dnw_0 geomStraddle(qnvb_dnw_0 geomOr(qnvb61 qnvb62)))
-
-Executing: qnvb6 = geomInside(qnvb5 qnvb63)
-
-Executing: qnvb71 = geomSize(geomGetEdge(qnvb1nw_2 outside ndiffa) 0.001)
-
-Executing: qnvb72 = geomSize(geomGetEdge(qnvb1nw_2 inside ndiffa) 0.001)
-
-Executing: qnvb73 = geomAndNot(qnvb_dnw_0 geomStraddle(qnvb_dnw_0 geomOr(qnvb71 qnvb72)))
-
-Executing: qnvb7 = geomInside(qnvb6 qnvb73)
-
-Executing: qnvb8 = geomEnclose(qnvb_dnw_0 qnvb7)
-
-Executing: qnvb8_s = geomSize(qnvb8 -0.38)
-
-Executing: qnvb82 = geomSize(geomGetEdge(qnvb8_s inside nwell) 0.001)
-
-Executing: qnvb_coll = geomAndNot(qnvb8 geomStraddle(qnvb8 qnvb82))
-
-Executing: qnvb = geomInside(qnvb_emi geomInside(qnvb_base qnvb_coll))
-
-Executing: qnvc_dnw_0 = geomInside(geomOutside(dnwellmv poly) mv)
-
-Executing: qnvc1 = geomGetRectangle(geomInside(isopw qnvc_dnw_0))
-
-Executing: qnvc2 = geomGetRectangle(geomInside(ndiffa qnvc1) ((3 <= length) <= 50) (widt...
-
-Executing: qnvc2_sblk = drc(geomStraddle(sab qnvc2) (width == 0.7))
-
-Executing: qnvc20a = geomStraddle(qnvc2 qnvc2_sblk (keep == 2))
-
-Executing: qnvc20b = drc(qnvc20a qnvc2_sblk (ovlp < 0.18))
-
-Executing: qnvc20 = geomAndNot(qnvc20a geomStraddle(qnvc20a qnvc20b))
-
-Executing: qnvc21 = geomGetRectangle(geomAndNot(qnvc20 qnvc2_sblk) (width == 1.0))
-
-Executing: qnvc_emi = geomEnclose(qnvc20 qnvc21)
-
-Executing: qnvc3a = geomEnclose(diff qnvc_emi)
-
-Executing: qnvc30 = geomSize(qnvc1 -0.5)
-
-Executing: qnvc31 = geomSize(geomGetEdge(qnvc30 inside qnvc3a) 0.001)
-
-Executing: qnvc32 = geomSize(geomGetEdge(qnvc30 outside qnvc3a) 0.001)
-
-Executing: qnvc33 = geomAndNot(qnvc1 geomOverlap(qnvc1 geomOr(qnvc31 qnvc32)))
-
-Executing: qnvc34 = geomInside(qnvc3a qnvc33)
-
-Executing: qnvc35 = geomEnclose(qnvc34 pdiffa (keep == 2))
-
-Executing: qnvc4 = geomInside(pdiffa qnvc3a)
-
-Executing: qnvc41 = drc(qnvc4 (width == 0.72))
-
-Executing: qnvc3 = geomEnclose(qnvc35 qnvc41 (keep == 2))
-
-Executing: qnvc42 = geomAndNot(qnvc4 qnvc41)
-
-Executing: qnvc43 = drc(qnvc41 qnvc2 (sep < 0.34))
-
-Executing: qnvc44 = drc(qnvc41 qnvc2_sblk (ovlp < 0.18))
-
-Executing: qnvc45a = geomAndNot(qnvc3a implant)
-
-Executing: qnvc45b = drc(qnvc45a (width == 0.34))
-
-Executing: qnvc45 = geomAndNot(qnvc45a qnvc45b)
-
-Executing: qnvc_base1 = geomAndNot(qnvc3 geomOverlap(qnvc3 geomOr(qnvc42 qnvc43 qnvc44 q...
-
-Executing: qnvc_base = geomEnclose(qnvc33 qnvc_base1)
-
-Executing: qnvc_coll_r0 = geomGetHoled(geomInside(ndiffa qnvc_dnw_0))
-
-Executing: qnvc_coll_r = geomWidth(qnvc_coll_r0 (keep >= 0.9))
-
-Executing: qnvc_base_s = geomSize(qnvc_base 0.6)
-
-Executing: qnvc51 = geomSize(geomGetEdge(qnvc_base_s outside qnvc_coll_r) 0.001)
-
-Executing: qnvc52 = geomSize(geomGetEdge(qnvc_base_s inside qnvc_coll_r) 0.001)
-
-Executing: qnvc53 = geomAndNot(qnvc_dnw_0 geomStraddle(qnvc_dnw_0 geomOr(qnvc51 qnvc52)))
-
-Executing: qnvc54 = geomInside(qnvc_base qnvc53)
-
-Executing: qnvc10 = geomEnclose(qnvc1 qnvc54)
-
-Executing: qnvc_nw = geomGetHoled(geomInside(nwell qnvc_dnw_0))
-
-Executing: qnvc1nw1 = geomEnclose(geomHoles(qnvc_nw) qnvc10)
-
-Executing: qnvc5 = geomInside(qnvc54 geomSize(qnvc1nw1 -0.48))
-
-Executing: qnvc1nw2 = geomSize(qnvc5 0.48)
-
-Executing: qnvc1nw3 = geomSize(geomGetEdge(qnvc1nw2 outside qnvc_nw) 0.001)
-
-Executing: qnvc1nw4 = geomInside(qnvc_nw geomAndNot(qnvc_dnw_0 geomStraddle(qnvc_dnw_0 q...
-
-Executing: qnvc1nw = geomOr(qnvc1nw4 qnvc1nw2)
-
-Executing: qnvc_base_s2 = geomSize(qnvc_base 1.62)
-
-Executing: qnvc1nw_2 = geomSize(qnvc1nw -0.12)
-
-Executing: qnvc61 = geomSize(geomGetEdge(qnvc1nw outside qnvc_base_s2) 0.001)
-
-Executing: qnvc62 = geomSize(geomGetEdge(qnvc1nw inside qnvc_base_s2) 0.001)
-
-Executing: qnvc63 = geomAndNot(qnvc_dnw_0 geomStraddle(qnvc_dnw_0 geomOr(qnvc61 qnvc62)))
-
-Executing: qnvc6 = geomInside(qnvc5 qnvc63)
-
-Executing: qnvc71 = geomSize(geomGetEdge(qnvc1nw_2 outside ndiffa) 0.001)
-
-Executing: qnvc72 = geomSize(geomGetEdge(qnvc1nw_2 inside ndiffa) 0.001)
-
-Executing: qnvc73 = geomAndNot(qnvc_dnw_0 geomStraddle(qnvc_dnw_0 geomOr(qnvc71 qnvc72)))
-
-Executing: qnvc7 = geomInside(qnvc6 qnvc73)
-
-Executing: qnvc8 = geomEnclose(qnvc_dnw_0 qnvc7)
-
-Executing: qnvc8_s = geomSize(qnvc8 -0.38)
-
-Executing: qnvc82 = geomSize(geomGetEdge(qnvc8_s inside nwell) 0.001)
-
-Executing: qnvc_coll = geomAndNot(qnvc8 geomStraddle(qnvc8 qnvc82))
-
-Executing: qnvc = geomInside(qnvc_emi geomInside(qnvc_base qnvc_coll))
 
 Executing: qnv_depl = geomGetVertex(dpldnw (keep == 8))
 
@@ -2432,11 +2272,255 @@ Executing: qnvz_dpl = geomEnclose(qnv_dl5 qnvz (keep == 1))
 
 Executing: qnvz_dnw = geomSize(qnvz_dpl 2.44)
 
-Executing: qnvb5_5 = geomEnclose(qnvb5 qnvb)
+Executing: qnv_dnw1 = geomOutside(dnwellmv poly)
 
-Executing: qnvc5_5 = geomEnclose(qnvc5 qnvc)
+Executing: qnvb_dl1 = geomInside(geomInside(depl nwell) geomOutside(qnv_dnw1 gxh))
 
-Executing: qnv_all = geomOr(qnva_dpl qnvb5_5 qnvc5_5 qnvz_dpl)
+Executing: qnvb_dl2 = geomEnclose(qnvb_dl1 diff (keep == 1))
+
+Executing: qnvb_dl3 = geomEnclose(qnvb_dl2 nsdg (keep == 1))
+
+Executing: qnvb_dl4 = geomEnclose(qnvb_dl3 psdg (keep == 2))
+
+Executing: qnvb_dl5 = geomEnclose(qnvb_dl4 diff_pur (keep == 2))
+
+Executing: qnvb_nd1 = geomInside(nsdg qnvb_dl5)
+
+Executing: qnvb_nd2 = geomGetRectangle(qnvb_nd1 ((3 <= length) <= 50) (width == 1.36))
+
+Executing: qnvb_n31 = geomAnd(qnvb_nd2 sab)
+
+Executing: qnvb_n32 = geomGetRectangle(qnvb_n31 ((3 <= length) <= 50) (width == 0.18))
+
+Executing: qnvban32 = geomGetRectangle(qnvb_n31 ((3 <= length) <= 50) (width == 0.26))
+
+Executing: qnvb_n33 = geomAnd(geomEnclose(qnvb_n31 qnvb_n32) geomEnclose(qnvb_n32 qnvb_n...
+
+Executing: qnvban33 = geomAnd(geomEnclose(qnvb_n31 qnvban32) geomEnclose(qnvban32 qnvb_n...
+
+Executing: qnvb_n34 = geomAndNot(qnvb_nd2 sab)
+
+Executing: qnvb_n35 = geomGetRectangle(qnvb_n34 ((3 <= length) <= 50) (width == 1.0))
+
+Executing: qnvban35 = geomGetRectangle(qnvb_n34 ((3 <= length) <= 50) (width == 0.84))
+
+Executing: qnvb_n37 = geomEnclose(geomEnclose(qnvb_nd2 qnvb_n31 (keep == 2)) qnvb_n33 (k...
+
+Executing: qnvb_nd3 = geomEnclose(geomEnclose(qnvb_n37 qnvb_n34 (keep == 1)) qnvb_n35 (k...
+
+Executing: qnvban37 = geomEnclose(geomEnclose(qnvb_nd2 qnvb_n31 (keep == 2)) qnvban33 (k...
+
+Executing: qnvband3 = geomEnclose(geomEnclose(qnvban37 qnvb_n34 (keep == 1)) qnvban35 (k...
+
+Executing: qnvbxnd3 = geomOr(qnvb_nd3 qnvband3)
+
+Executing: qnvb_pd1 = geomInside(psdg qnvb_dl5)
+
+Executing: qnvb_pd2 = geomGetRectangle(qnvb_pd1 ((3 <= length) <= 50) (width == 0.72))
+
+Executing: qnvb_p31 = geomAnd(qnvb_pd2 sab)
+
+Executing: qnvb_p32 = geomGetRectangle(qnvb_p31 ((3 <= length) <= 50) (width == 0.18))
+
+Executing: qnvb_p33 = geomAnd(geomEnclose(qnvb_p31 qnvb_p32) geomEnclose(qnvb_p32 qnvb_p...
+
+Executing: qnvb_p34 = geomAndNot(qnvb_pd2 sab)
+
+Executing: qnvb_p35 = geomGetRectangle(qnvb_p34 ((3 <= length) <= 50) (width == 0.54))
+
+Executing: qnvb_p37 = geomEnclose(geomEnclose(qnvb_pd2 qnvb_p31 (keep == 1)) qnvb_p33 (k...
+
+Executing: qnvb_pd3 = geomEnclose(geomEnclose(qnvb_p37 qnvb_p34 (keep == 1)) qnvb_p35 (k...
+
+Executing: qnvb_bd1 = geomInside(diff_pur qnvb_dl5)
+
+Executing: qnvb_bd2 = geomGetRectangle(qnvb_bd1 ((3 <= length) <= 50) (width == 0.34))
+
+Executing: qnvb_b31 = geomAnd(qnvb_bd2 sab)
+
+Executing: qnvb_b32 = geomButtOnly(qnvb_b31 qnvbxnd3 (keep == 1))
+
+Executing: qnvb_b33 = geomButtOnly(qnvb_b32 qnvb_pd3 (keep == 1))
+
+Executing: qnvb_bd3 = geomAnd(geomInside(qnvb_b31 qnvb_b33) geomInside(qnvb_b33 qnvb_b31))
+
+Executing: qnvb_df1 = geomAnd(qnvb_dl5 diff)
+
+Executing: qnvb_df21 = geomGetRectangle(qnvb_df1 ((3 <= length) <= 50))
+
+Executing: qnvb_df2 = drc(qnvb_df21 (width == 3.48))
+
+Executing: qnvb_d31 = geomEnclose(qnvb_df2 qnvbxnd3 (keep == 1))
+
+Executing: qnvb_d32 = geomEnclose(qnvb_d31 qnvb_pd3 (keep == 2))
+
+Executing: qnvb_d33 = geomEnclose(qnvb_d32 qnvb_bd3 (keep == 2))
+
+Executing: qnvb_df3 = geomAnd(geomInside(qnvb_df1 qnvb_d33) geomInside(qnvb_d33 qnvb_df1))
+
+Executing: qnvb_dl6 = geomSize(qnvb_df3 0.5)
+
+Executing: qnvb_dl7 = geomAnd(geomInside(qnvb_dl6 qnvb_dl5) geomInside(qnvb_dl5 qnvb_dl6))
+
+Executing: qnvb_r1 = geomInside(geomEnclose(dnwntie_h qnvb_dl7 (keep == 1)) nwell)
+
+Executing: qnvb_r2 = geomSize(qnvb_dl7 0.6)
+
+Executing: qnvb_r3 = geomAnd(geomInside(qnvb_r1 qnvb_r2) geomInside(qnvb_r2 qnvb_r1))
+
+Executing: qnvb_r4 = geomSize(qnvb_r3 0.9)
+
+Executing: qnvb_r5 = geomWidth(geomAnd(qnvb_r4 dnwntie) (keep >= 0.9))
+
+Executing: qnvb_r6 = geomHoles(qnvb_r5 innermost)
+
+Executing: qnvb_r7 = geomEnclose(qnvb_r6 qnvb_r3 (keep == 1))
+
+Executing: qnvb_r81 = geomInside(qnvb_dl7 qnvb_r7)
+
+Executing: qnvb_r82 = geomEnclose(qnv_dnw1 qnvb_r81)
+
+Executing: qnvb_r83 = geomAndNot(qnvb_r82 geomSize(qnvb_r82 -0.38))
+
+Executing: qnvb_r8 = geomOutside(qnvb_r82 geomAnd(qnvb_r83 nwell))
+
+Executing: qnvbx = geomInside(qnvb_r81 qnvb_r8)
+
+Executing: qnvb = geomEnclose(qnvbx qnvb_nd3 (keep == 1))
+
+Executing: qnvba = geomEnclose(qnvbx qnvband3 (keep == 1))
+
+Executing: qnvb_dnw = geomSize(qnvbx 1.05)
+
+Executing: qnvb_all = geomOr(qnvb qnvba)
+
+Executing: qnvc_ip1 = geomInside(isopw geomInside(qnv_dnw1 mv))
+
+Executing: qnvc_ip2 = geomEnclose(qnvc_ip1 diff (keep == 1))
+
+Executing: qnvc_ip3 = geomEnclose(qnvc_ip2 nsdg (keep == 1))
+
+Executing: qnvc_ip4 = geomEnclose(qnvc_ip3 psdg (keep == 2))
+
+Executing: qnvc_ip5 = geomEnclose(qnvc_ip4 diff_pur (keep == 2))
+
+Executing: qnvc_nd1 = geomInside(nsdg qnvc_ip5)
+
+Executing: qnvc_nd2 = geomGetRectangle(qnvc_nd1 ((3 <= length) <= 50) (width == 1.36))
+
+Executing: qnvc_n31 = geomAnd(qnvc_nd2 sab)
+
+Executing: qnvc_n32 = geomGetRectangle(qnvc_n31 ((3 <= length) <= 50) (width == 0.18))
+
+Executing: qnvcan32 = geomGetRectangle(qnvc_n31 ((3 <= length) <= 50) (width == 0.26))
+
+Executing: qnvc_n33 = geomAnd(geomEnclose(qnvc_n31 qnvc_n32) geomEnclose(qnvc_n32 qnvc_n...
+
+Executing: qnvcan33 = geomAnd(geomEnclose(qnvc_n31 qnvcan32) geomEnclose(qnvcan32 qnvc_n...
+
+Executing: qnvc_n34 = geomAndNot(qnvc_nd2 sab)
+
+Executing: qnvc_n35 = geomGetRectangle(qnvc_n34 ((3 <= length) <= 50) (width == 1.0))
+
+Executing: qnvcan35 = geomGetRectangle(qnvc_n34 ((3 <= length) <= 50) (width == 0.84))
+
+Executing: qnvc_n37 = geomEnclose(geomEnclose(qnvc_nd2 qnvc_n31 (keep == 2)) qnvc_n33 (k...
+
+Executing: qnvc_nd3 = geomEnclose(geomEnclose(qnvc_n37 qnvc_n34 (keep == 1)) qnvc_n35 (k...
+
+Executing: qnvcan37 = geomEnclose(geomEnclose(qnvc_nd2 qnvc_n31 (keep == 2)) qnvcan33 (k...
+
+Executing: qnvcand3 = geomEnclose(geomEnclose(qnvcan37 qnvc_n34 (keep == 1)) qnvcan35 (k...
+
+Executing: qnvcxnd3 = geomOr(qnvc_nd3 qnvcand3)
+
+Executing: qnvc_pd1 = geomInside(psdg qnvc_ip5)
+
+Executing: qnvc_pd2 = geomGetRectangle(qnvc_pd1 ((3 <= length) <= 50) (width == 0.72))
+
+Executing: qnvc_p31 = geomAnd(qnvc_pd2 sab)
+
+Executing: qnvc_p32 = geomGetRectangle(qnvc_p31 ((3 <= length) <= 50) (width == 0.18))
+
+Executing: qnvc_p33 = geomAnd(geomEnclose(qnvc_p31 qnvc_p32) geomEnclose(qnvc_p32 qnvc_p...
+
+Executing: qnvc_p34 = geomAndNot(qnvc_pd2 sab)
+
+Executing: qnvc_p35 = geomGetRectangle(qnvc_p34 ((3 <= length) <= 50) (width == 0.54))
+
+Executing: qnvc_p37 = geomEnclose(geomEnclose(qnvc_pd2 qnvc_p31 (keep == 1)) qnvc_p33 (k...
+
+Executing: qnvc_pd3 = geomEnclose(geomEnclose(qnvc_p37 qnvc_p34 (keep == 1)) qnvc_p35 (k...
+
+Executing: qnvc_bd1 = geomInside(diff_pur qnvc_ip5)
+
+Executing: qnvc_bd2 = geomGetRectangle(qnvc_bd1 ((3 <= length) <= 50) (width == 0.34))
+
+Executing: qnvc_b31 = geomAnd(qnvc_bd2 sab)
+
+Executing: qnvc_b32 = geomButtOnly(qnvc_b31 qnvcxnd3 (keep == 1))
+
+Executing: qnvc_b33 = geomButtOnly(qnvc_b32 qnvc_pd3 (keep == 1))
+
+Executing: qnvc_bd3 = geomAnd(geomInside(qnvc_b31 qnvc_b33) geomInside(qnvc_b33 qnvc_b31))
+
+Executing: qnvc_df1 = geomAnd(qnvc_ip5 diff)
+
+Executing: qnvc_df21 = geomGetRectangle(qnvc_df1 ((3 <= length) <= 50))
+
+Executing: qnvc_df2 = drc(qnvc_df21 (width == 3.48))
+
+Executing: qnvc_d31 = geomEnclose(qnvc_df2 qnvcxnd3 (keep == 1))
+
+Executing: qnvc_d32 = geomEnclose(qnvc_d31 qnvc_pd3 (keep == 2))
+
+Executing: qnvc_d33 = geomEnclose(qnvc_d32 qnvc_bd3 (keep == 2))
+
+Executing: qnvc_df3 = geomAnd(geomInside(qnvc_df1 qnvc_d33) geomInside(qnvc_d33 qnvc_df1))
+
+Executing: qnvc_ip6 = geomSize(qnvc_df3 0.5)
+
+Executing: qnvc_ip7 = geomAnd(geomInside(qnvc_ip6 qnvc_ip5) geomInside(qnvc_ip5 qnvc_ip6))
+
+Executing: qnvc_r1 = geomEnclose(dnwntie_h qnvc_ip7 (keep == 1))
+
+Executing: qnvc_r2 = geomSize(qnvc_ip7 0.6)
+
+Executing: qnvc_r3 = geomAnd(geomInside(qnvc_r1 qnvc_r2) geomInside(qnvc_r2 qnvc_r1))
+
+Executing: qnvc_r4 = geomSize(qnvc_r3 0.9)
+
+Executing: qnvc_r5 = geomWidth(geomAnd(qnvc_r4 dnwntie) (keep >= 0.9))
+
+Executing: qnvc_r6 = geomHoles(qnvc_r5 innermost)
+
+Executing: qnvc_r7 = geomEnclose(qnvc_r6 qnvc_r3 (keep == 1))
+
+Executing: qnvc_r81 = geomInside(qnvc_ip7 qnvc_r7)
+
+Executing: qnvc_r82 = geomEnclose(qnv_dnw1 qnvc_r81)
+
+Executing: qnvc_r83 = geomAndNot(qnvc_r82 geomSize(qnvc_r82 -0.38))
+
+Executing: qnvc_r8 = geomOutside(qnvc_r82 geomAnd(qnvc_r83 nwell))
+
+Executing: qnvcx = geomInside(qnvc_r81 qnvc_r8)
+
+Executing: qnvc = geomEnclose(qnvcx qnvc_nd3 (keep == 1))
+
+Executing: qnvca = geomEnclose(qnvcx qnvcand3 (keep == 1))
+
+Executing: qnvc_dnw = geomSize(qnvcx 1.05)
+
+Executing: qnvc_all = geomOr(qnvc qnvca)
+
+Executing: qnv_all = geomOr(qnva_dpl qnvb_all qnvc_all qnvz_dpl)
+
+Executing: qnvb_sb = geomAnd(qnvbx geomOr(qnvb_n31 qnvb_p31))
+
+Executing: qnvc_sb = geomAnd(qnvcx geomOr(qnvc_n31 qnvc_p31))
+
+Executing: qnv_sblk = geomOr(qnvb_sb qnvc_sb)
 
 Executing: qpvhbhw0 = geomOutside(geomOutside(hnw poly) dio_mark)
 
@@ -2478,7 +2562,7 @@ Executing: phodio = geomAnd(phodef dio_mark)
 
 Executing: ndifres0 = geomAndNot(geomAnd(geomAndNot(nsdg n_psub) sab) phodio)
 
-Executing: ndifres0_iso = geomAnd(geomAnd(nsdg isopw) geomAndNot(sab qnvc))
+Executing: ndifres0_iso = geomAnd(geomAnd(nsdg isopw) geomAndNot(sab qnvc_sb))
 
 Executing: ndifres1 = geomAnd(ndifres0 sab1)
 
@@ -2494,7 +2578,7 @@ Executing: ndifres = geomAndNot(ndifres1 ndifres_ng)
 
 Executing: pdifres00 = geomAnd(geomAnd(psdg nwellrm) sab)
 
-Executing: pdifres0 = geomAndNot(geomAndNot(pdifres00 geomOr(geomSize(qpvhscr1 1.68) geo...
+Executing: pdifres0 = geomAndNot(geomAndNot(pdifres00 geomOr(geomSize(qpvhscr1 1.68) qnv...
 
 Executing: pdifres1 = geomAnd(pdifres0 sab1)
 
@@ -2556,7 +2640,7 @@ Executing: rdp_a = geomOr(pdifres pdifres_pg rdp_io_g rdp_esd_g)
 
 Executing: nsd = geomAndNot(nsdg rdn_a) keepLayer(nsd)
 
-Executing: psd = geomAndNot(psdg rdp_a) keepLayer(psd)
+Executing: psd = geomAndNot(geomAndNot(psdg rdp_a) geomSize(davl_c2 0.001)) keepLayer(psd)
 
 Executing: sd = geomOr(nsd psd)
 
@@ -2661,6 +2745,8 @@ Executing: rpp1s_3_pw1 = geomAnd(rpp1s_3_pw pwitrm)
 Executing: rpp1s_3_pw2 = geomAnd(rpp1s_3_pw pdf)
 
 Executing: rpp1s_3_pw3 = geomAndNot(rpp1s_3_pw geomOr(rpp1s_3_pw1 rpp1s_3_pw2))
+
+Executing: rp1s_otps = geomEmpty()
 
 Executing: pfuse0 = geomGetTexted(geomAnd(poly respoly) polylabel "PFUSE")
 
@@ -3402,7 +3488,7 @@ Executing: cont_pma = geomAnd(cont geomAnd(psd pbd_pma))
 
 Executing: contSD = geomAnd(cont sd)
 
-Executing: contP = geomAndNot(geomOutside(cont sd) d_dsc)
+Executing: contP = geomAndNot(geomAndNot(geomOutside(cont sd) d_dsc) catm1ct)
 
 Executing: bndct = geomAnd(bndiff nsd)
 
@@ -3446,7 +3532,7 @@ Executing: geomStamp(nwelltrm ntiec)
 
 Executing: geomStamp(nwtrm_scr nsd)
 
-Executing: geomStamp(nwelltrm1 nsd floating "NWELL should be contacted" multStamp "NWELL soft connect" multConnect "minority NWELL connectors")
+Executing: geomStamp(nwelltrm1 ntiec floating "NWELL should be contacted" multStamp "NWELL soft connect" multConnect "minority NWELL connectors")
 
 Executing: geomStamp(dnwtrm1 dnwntie floating "DNWELL/DNWELLMV should be contacted" multStamp "DNWELL/DNWELLMV soft connect" multConnect "minority DNWELL/DNWELLMV connectors")
 
@@ -3454,7 +3540,7 @@ Executing: geomStamp(G_subs ptiec floating "BULK should be contacted" multStamp 
 
 Executing: geomStamp(pwitrm isoptiec floating "isolated pwells (Q1IW) should be contacted" multStamp "isolated pwells soft connect" multConnect "minority isolated pwells connectors")
 
-Executing: geomStamp(nbdsub nsd floating "HVNWELL should be contacted" multStamp "HVNWELL soft connect" multConnect "minority HVNWELL connectors")
+Executing: geomStamp(nbdsub ntiec floating "HVNWELL should be contacted" multStamp "HVNWELL soft connect" multConnect "minority HVNWELL connectors")
 
 Executing: geomStamp(pdf psd floating "PDF should be contacted" multStamp "PDF soft connect" multConnect "minority PDF connectors")
 
@@ -3476,7 +3562,7 @@ Executing: geomStamp(catdop nsd)
 
 Executing: geomStamp(anodop psd floating multStamp)
 
-Executing: geomStamp(catdiff nsd floating multStamp)
+Executing: geomStamp(davl_c2 nsd floating multStamp)
 
 Executing: dphod_c = geomAnd(nwelltrm dphod_1)
 
@@ -3773,6 +3859,30 @@ Executing: pdpdddn2 = geomOutside(dpdddnw1 geomOr(pedx2_al nedgate))
 Executing: pdpdddn3 = geomAndNot(pdpdddn2 pdd_ntrm)
 
 Executing: pdpdddnw = geomAndNot(pdpdddn3 dpdd_scr)
+
+Executing: nsd_dg = geomOr(nsd ptiec isoptiec)
+
+Executing: psd_dg = geomOr(psd ntiec)
+
+Executing: geomStamp(nsd_dg nsd)
+
+Executing: geomStamp(psd_dg psd)
+
+Executing: nd_v60 = geomGetTexted(nsd_dg hvdiff_l "tag_60v" "TAG_60V")
+
+Executing: nd_v25 = geomGetTexted(nsd_dg hvdiff_l "tag_25v" "TAG_25V")
+
+Executing: pd_v60 = geomGetTexted(psd_dg hvdiff_l "tag_60v" "TAG_60V")
+
+Executing: pd_v25 = geomGetTexted(psd_dg hvdiff_l "tag_25v" "TAG_25V")
+
+Executing: nd_vlbl = geomOr(nd_v60 nd_v25)
+
+Executing: pd_vlbl = geomOr(pd_v60 pd_v25)
+
+Executing: geomStamp(nd_vlbl nsd_dg)
+
+Executing: geomStamp(pd_vlbl psd_dg)
 
 Executing: p1_v60 = geomGetTexted(polytrm hvpoly_l "tag_60v" "TAG_60V")
 
@@ -4429,8 +4539,8 @@ Executing: perimSDp = measureParameter(length (sdLay over wellLay) 1e-06)
 Executing: attachParameter(perimSDp ("ps" "S") ("pd" "D") recL recL2 recL3 recL4 recL5 r...
 
 Executing: extractMOS("ne3" nem (polytrm "G") (nsd "S" "D") (G_subs "B") (spiceModel "ne...
-         1 'ne3' created in cell 'ne3 layout PRIMLIB gContT="Met1" l="2u" w="20u" in1=M262e2'.
-         1 'ne3' created in cell 'ne3 layout PRIMLIB gContT="Met1" w="20u" in1=ModgenDummy_1_12_Modgen_1'.
+         2 'ne3' created in cell 'G5_1_2_11600_0_my sub_array'.
+         2 'ne3' created in cell 'G5_1_2_11600_0_r0 sub_array'.
          5 'ne3' created in cell 'LSHVT18U3VX2 layout D_CELLS_M3V'.
 
 Executing: saveRecognition(recLay "device")
@@ -6146,9 +6256,9 @@ Executing: attachParameter(areaDiondm "adio" recLay shared)
 Executing: attachParameter(perimDiondm "pdio" recLay shared)
 
 Executing: extractDevice("nedia_bjt" nedia_b (dnwtrm "D") (polytrm "G") (nsd "S") (G_sub...
-         1 'nedia_bjt' created in cell 'nedia_bjt layout PRIMLIB in1=M17'.
          5 'nedia_bjt' created in cell 'nedia_bjt layout PRIMLIB ng="5" w="60u" in1=M16'.
-         1 'nedia_bjt' created in cell 'nedia_bjt layout PRIMLIB w="80u" in1=M32e10'.
+         1 'nedia_bjt' created in cell 'nedia_bjt layout PRIMLIB in1=M17'.
+         1 'nedia_bjt' created in cell 'nedia_bjt layout PRIMLIB w="80u" in1=M02e1'.
          2 'nedia_bjt' created in cell 'CurrentMirror_ST layout Stimulator_IMP'.
 
 Executing: saveRecognition(recLay "device")
@@ -6277,9 +6387,9 @@ Executing: saveProperty(recLay "area" 4.8384e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.056e-05)
 
-Executing: saveProperty(recLay "w" 4.48e-06)
+Executing: saveProperty(recLay "l" 4.48e-06)
 
-Executing: saveProperty(recLay "l" 1.08e-05)
+Executing: saveProperty(recLay "w" 1.08e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -6291,9 +6401,9 @@ Executing: saveProperty(recLay "area" 4.8384e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.056e-05)
 
-Executing: saveProperty(recLay "w" 4.48e-06)
+Executing: saveProperty(recLay "l" 4.48e-06)
 
-Executing: saveProperty(recLay "l" 1.08e-05)
+Executing: saveProperty(recLay "w" 1.08e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -6305,9 +6415,9 @@ Executing: saveProperty(recLay "area" 4.8384e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.056e-05)
 
-Executing: saveProperty(recLay "w" 4.48e-06)
+Executing: saveProperty(recLay "l" 4.48e-06)
 
-Executing: saveProperty(recLay "l" 1.08e-05)
+Executing: saveProperty(recLay "w" 1.08e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -6319,9 +6429,9 @@ Executing: saveProperty(recLay "area" 6.3936e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.372e-05)
 
-Executing: saveProperty(recLay "w" 5.76e-06)
+Executing: saveProperty(recLay "l" 5.76e-06)
 
-Executing: saveProperty(recLay "l" 1.11e-05)
+Executing: saveProperty(recLay "w" 1.11e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -6333,9 +6443,9 @@ Executing: saveProperty(recLay "area" 4.8384e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.056e-05)
 
-Executing: saveProperty(recLay "w" 4.48e-06)
+Executing: saveProperty(recLay "l" 4.48e-06)
 
-Executing: saveProperty(recLay "l" 1.08e-05)
+Executing: saveProperty(recLay "w" 1.08e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -6347,9 +6457,9 @@ Executing: saveProperty(recLay "area" 6.3936e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.372e-05)
 
-Executing: saveProperty(recLay "w" 5.76e-06)
+Executing: saveProperty(recLay "l" 5.76e-06)
 
-Executing: saveProperty(recLay "l" 1.11e-05)
+Executing: saveProperty(recLay "w" 1.11e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -6361,9 +6471,9 @@ Executing: saveProperty(recLay "area" 4.8384e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.056e-05)
 
-Executing: saveProperty(recLay "w" 4.48e-06)
+Executing: saveProperty(recLay "l" 4.48e-06)
 
-Executing: saveProperty(recLay "l" 1.08e-05)
+Executing: saveProperty(recLay "w" 1.08e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -6376,9 +6486,9 @@ Executing: saveProperty(recLay "area" 6.3936e-11)
 
 Executing: saveProperty(recLay "perimeter" 3.372e-05)
 
-Executing: saveProperty(recLay "w" 5.76e-06)
+Executing: saveProperty(recLay "l" 5.76e-06)
 
-Executing: saveProperty(recLay "l" 1.11e-05)
+Executing: saveProperty(recLay "w" 1.11e-05)
 
 Executing: saveProperty(recLay "m" 1)
 
@@ -8006,10 +8116,6 @@ Executing: nameParameter(qnva_le "le")
 
 Executing: saveProperty(qnva "w" 1.02e-06)
 
-Executing: extractBJT("qnvam" qnvam (dnwtrm "C") (pwitrm "B") (nsd "E") (G_subs "S") (sp...
-
-Executing: saveRecognition(qnvam "device")
-
 Executing: extractBJT("qnvz" qnvz (dnwellmvtrm "C") (pwitrm "B") (nsd "E") (G_subs "S") ...
 
 Executing: saveRecognition(qnvz "device")
@@ -8034,47 +8140,91 @@ Executing: saveProperty(qnvz "w" 1.02e-06)
 
 Executing: extractBJT("qnvb" qnvb (dnwellmvtrm "C") (pwitrm "B") (nsd "E") (G_subs "S") ...
 
-Executing: saveRecognition(qnvb "device")
+Executing: saveRecognition(recLay "device")
 
-Executing: qnvb_area = measureParameter(area qnvb 1e-12)
+Executing: qnv_area = measureParameter(area (recLay over ELay) 1e-12)
 
-Executing: qnvb_peri = measureParameter(perimeter qnvb 1e-06)
+Executing: qnv_peri = measureParameter(perimeter (recLay over ELay) 1e-06)
 
-Executing: qnvb_l = calculateParameter((qnvb_area / 1.36e-06))
+Executing: qnv_l = calculateParameter((qnv_area / 1.36e-06))
 
-Executing: qnvb_le = calculateParameter((qnvb_l / 1e-06))
+Executing: qnv_le = calculateParameter((qnv_l / 1e-06))
 
-Executing: nameParameter(qnvb_area "area")
+Executing: nameParameter(qnv_area "area")
 
-Executing: nameParameter(qnvb_peri "perimeter")
+Executing: nameParameter(qnv_peri "perimeter")
 
-Executing: nameParameter(qnvb_l "l")
+Executing: nameParameter(qnv_l "l")
 
-Executing: nameParameter(qnvb_le "le")
+Executing: nameParameter(qnv_le "le")
 
-Executing: saveProperty(qnvb "w" 1.36e-06)
+Executing: saveProperty(recLay "w" 1.36e-06)
+
+Executing: extractBJT("qnvba" qnvba (dnwellmvtrm "C") (pwitrm "B") (nsd "E") (G_subs "S"...
+
+Executing: saveRecognition(recLay "device")
+
+Executing: qnv_area = measureParameter(area (recLay over ELay) 1e-12)
+
+Executing: qnv_peri = measureParameter(perimeter (recLay over ELay) 1e-06)
+
+Executing: qnv_l = calculateParameter((qnv_area / 1.36e-06))
+
+Executing: qnv_le = calculateParameter((qnv_l / 1e-06))
+
+Executing: nameParameter(qnv_area "area")
+
+Executing: nameParameter(qnv_peri "perimeter")
+
+Executing: nameParameter(qnv_l "l")
+
+Executing: nameParameter(qnv_le "le")
+
+Executing: saveProperty(recLay "w" 1.36e-06)
 
 Executing: extractBJT("qnvc" qnvc (dnwellmvtrm "C") (pwitrm "B") (nsd "E") (G_subs "S") ...
 
-Executing: saveRecognition(qnvc "device")
+Executing: saveRecognition(recLay "device")
 
-Executing: qnvc_area = measureParameter(area qnvc 1e-12)
+Executing: qnv_area = measureParameter(area (recLay over ELay) 1e-12)
 
-Executing: qnvc_peri = measureParameter(perimeter qnvc 1e-06)
+Executing: qnv_peri = measureParameter(perimeter (recLay over ELay) 1e-06)
 
-Executing: qnvc_l = calculateParameter((qnvc_area / 1.36e-06))
+Executing: qnv_l = calculateParameter((qnv_area / 1.36e-06))
 
-Executing: qnvc_le = calculateParameter((qnvc_l / 1e-06))
+Executing: qnv_le = calculateParameter((qnv_l / 1e-06))
 
-Executing: nameParameter(qnvc_area "area")
+Executing: nameParameter(qnv_area "area")
 
-Executing: nameParameter(qnvc_peri "perimeter")
+Executing: nameParameter(qnv_peri "perimeter")
 
-Executing: nameParameter(qnvc_l "l")
+Executing: nameParameter(qnv_l "l")
 
-Executing: nameParameter(qnvc_le "le")
+Executing: nameParameter(qnv_le "le")
 
-Executing: saveProperty(qnvc "w" 1.36e-06)
+Executing: saveProperty(recLay "w" 1.36e-06)
+
+Executing: extractBJT("qnvca" qnvca (dnwellmvtrm "C") (pwitrm "B") (nsd "E") (G_subs "S"...
+
+Executing: saveRecognition(recLay "device")
+
+Executing: qnv_area = measureParameter(area (recLay over ELay) 1e-12)
+
+Executing: qnv_peri = measureParameter(perimeter (recLay over ELay) 1e-06)
+
+Executing: qnv_l = calculateParameter((qnv_area / 1.36e-06))
+
+Executing: qnv_le = calculateParameter((qnv_l / 1e-06))
+
+Executing: nameParameter(qnv_area "area")
+
+Executing: nameParameter(qnv_peri "perimeter")
+
+Executing: nameParameter(qnv_l "l")
+
+Executing: nameParameter(qnv_le "le")
+
+Executing: saveProperty(recLay "w" 1.36e-06)
 
 Executing: extractBJT("qpvhscr" qpvhscr (G_subs "C") (hnw "B") (pdf "E") (spiceModel "qp...
 
@@ -8218,8 +8368,6 @@ Executing: nameParameter(dphoc_area "area")
 
 Executing: nameParameter(dphoc_perim "perimeter")
 
-Executing: nameParameter(dphoc_perim "pj")
-
 Executing: nameParameter(dphoc_uva "uva")
 
 Executing: nameParameter(dphoc_uvp "uvp")
@@ -8246,8 +8394,6 @@ Executing: nameParameter(dphoc0_area "area")
 
 Executing: nameParameter(dphoc0_perim "perimeter")
 
-Executing: nameParameter(dphoc0_perim "pj")
-
 Executing: nameParameter(dphoc0_uva "uva")
 
 Executing: nameParameter(dphoc0_uvp "uvp")
@@ -8273,8 +8419,6 @@ Executing: dphocfp_uvp = measureParameter(perimeter (dphocfp over uvwin_1) 1e-06
 Executing: nameParameter(dphocfp_area "area")
 
 Executing: nameParameter(dphocfp_perim "perimeter")
-
-Executing: nameParameter(dphocfp_perim "pj")
 
 Executing: nameParameter(dphocfp_uva "uva")
 
@@ -8305,8 +8449,6 @@ Executing: dphod_a1p = measureParameter(perimeter (dphod over anodop) 1e-06)
 Executing: nameParameter(dphod_area "area")
 
 Executing: nameParameter(dphod_perim "perimeter")
-
-Executing: nameParameter(dphod_perim "pj")
 
 Executing: nameParameter(dphod_uva "uva")
 
@@ -8342,8 +8484,6 @@ Executing: nameParameter(dphod0_area "area")
 
 Executing: nameParameter(dphod0_perim "perimeter")
 
-Executing: nameParameter(dphod0_perim "pj")
-
 Executing: nameParameter(dphod0_uva "uva")
 
 Executing: nameParameter(dphod0_uvp "uvp")
@@ -8377,8 +8517,6 @@ Executing: dphodfp_a1p = measureParameter(perimeter (dphodfp over anodop) 1e-06)
 Executing: nameParameter(dphodfp_area "area")
 
 Executing: nameParameter(dphodfp_perim "perimeter")
-
-Executing: nameParameter(dphodfp_perim "pj")
 
 Executing: nameParameter(dphodfp_uva "uva")
 
@@ -8451,6 +8589,62 @@ Executing: attachParameter(dioa_area "area" recLay)
 Executing: attachParameter(dioa_perim "perimeter" recLay)
 
 Executing: attachParameter(dioa_perim "pj" recLay)
+
+Executing: saveProperty(recLay "w" 0)
+
+Executing: saveProperty(recLay "l" 0)
+
+Executing: saveProperty(recLay "wlength" "pwlength")
+
+Executing: extractDevice("dapb" dapb (G_subs "A") (catdiff "C") (davl_c2 "C2") (dphopin3...
+
+Executing: saveRecognition(recLay "device")
+
+Executing: attachParameter(diob_area "area" recLay)
+
+Executing: attachParameter(diob_perim "perimeter" recLay)
+
+Executing: saveProperty(recLay "w" 0)
+
+Executing: saveProperty(recLay "l" 0)
+
+Executing: saveProperty(recLay "wlength" "pwlength")
+
+Executing: extractDevice("dapb0" dapb0 (G_subs "A") (catdiff "C") (davl_c2 "C2") (dphopi...
+
+Executing: saveRecognition(recLay "device")
+
+Executing: attachParameter(diob_area "area" recLay)
+
+Executing: attachParameter(diob_perim "perimeter" recLay)
+
+Executing: saveProperty(recLay "w" 0)
+
+Executing: saveProperty(recLay "l" 0)
+
+Executing: saveProperty(recLay "wlength" "pwlength")
+
+Executing: extractDevice("dspb" dspb (G_subs "A") (catdiff "C") (davl_c2 "C2") (dphopin3...
+
+Executing: saveRecognition(recLay "device")
+
+Executing: attachParameter(diob_area "area" recLay)
+
+Executing: attachParameter(diob_perim "perimeter" recLay)
+
+Executing: saveProperty(recLay "w" 0)
+
+Executing: saveProperty(recLay "l" 0)
+
+Executing: saveProperty(recLay "wlength" "pwlength")
+
+Executing: extractDevice("dspb0" dspb0 (G_subs "A") (catdiff "C") (davl_c2 "C2") (dphopi...
+
+Executing: saveRecognition(recLay "device")
+
+Executing: attachParameter(diob_area "area" recLay)
+
+Executing: attachParameter(diob_perim "perimeter" recLay)
 
 Executing: saveProperty(recLay "w" 0)
 
@@ -10045,6 +10239,14 @@ Executing: saveProperty(recLay "w" 0)
 
 Executing: saveProperty(recLay "l" 0)
 
+Executing: extractDevice("tag_60v" nd_v60 (nd_vlbl "N1") (cellView "tag_60v auLvs PRIMLI...
+
+Executing: extractDevice("tag_25v" nd_v25 (nd_vlbl "N1") (cellView "tag_25v auLvs PRIMLI...
+
+Executing: extractDevice("tag_60v" pd_v60 (pd_vlbl "N1") (cellView "tag_60v auLvs PRIMLI...
+
+Executing: extractDevice("tag_25v" pd_v25 (pd_vlbl "N1") (cellView "tag_25v auLvs PRIMLI...
+
 Executing: extractDevice("tag_60v" p1_v60 (p1_vlbl "N1") (cellView "tag_60v auLvs PRIMLI...
 
 Executing: extractDevice("tag_25v" p1_v25 (p1_vlbl "N1") (cellView "tag_25v auLvs PRIMLI...
@@ -10090,12 +10292,12 @@ Executing: (saveInterconnect (vtpCON "VIATP") (vtpcm "VIATP") (vtpcmh "VIATP") (
 Executing: (saveInterconnect (vtpl "VIATPL") (mtpltrm "METTPL") (mtplres "allres"))
 
 Finished running rules. Task processor time in main process:
-cpu: 2.65  elap: 3  pf: 0  in: 0  out: 3368  virt: 179M  phys: 908M
+cpu: 3.14  elap: 3  pf: 0  in: 0  out: 3440  virt: 187M  phys: 927M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6664  virt: 184M  phys: 924M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6688  virt: 192M  phys: 945M
 
 
 *****  aveng terminated normally  *****
@@ -10113,7 +10315,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Wed Apr 21 11:58:35 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Mon Apr 26 13:40:02 2021
 
 
    Creating Error Database 'CurrentMirror_ST_LVS'...
@@ -10149,8 +10351,8 @@ Rule      Message                                    FlatCount     RealCount
 (   25)  HNW_soft_connect                                    0            0
 (   26)  anodop_StampErrorFloat                              0            0
 (   27)  anodop_StampErrorMult                               0            0
-(   28)  catdiff_StampErrorFloat                             0            0
-(   29)  catdiff_StampErrorMult                              0            0
+(   28)  davl_c2_StampErrorFloat                             0            0
+(   29)  davl_c2_StampErrorMult                              0            0
 (   30)  malformed device ne                                 0            0
 (   31)  malformed device nesvt                              0            0
 (   32)  malformed device nel                                0            0
@@ -10292,311 +10494,320 @@ Rule      Message                                    FlatCount     RealCount
 (  168)  malformed device met4res                            0            0
 (  169)  malformed device mtpres                             0            0
 (  170)  malformed device mtplres                            0            0
-(  171)  unstable device for mtl_v25_Device_305              0            0
-(  173)  unstable device for mtl_v60_Device_304              0            0
-(  175)  unstable device for mt_v25_Device_303               0            0
-(  177)  unstable device for mt_v60_Device_302               0            0
-(  179)  unstable device for m4_v25_Device_301               0            0
-(  181)  unstable device for m4_v60_Device_300               0            0
-(  183)  unstable device for m3_v25_Device_299               0            0
-(  185)  unstable device for m3_v60_Device_298               0            0
-(  187)  unstable device for m2_v25_Device_297               0            0
-(  189)  unstable device for m2_v60_Device_296               0            0
-(  191)  unstable device for m1_v25_Device_295               0            0
-(  193)  unstable device for m1_v60_Device_294               0            0
-(  195)  unstable device for p1_v25_Device_293               0            0
-(  197)  unstable device for p1_v60_Device_292               0            0
-(  199)  unstable device for p_dbn_DIODE_291                 0            0
-(  201)  unstable device for pdpdddnw_DIODE_290              0            0
-(  203)  unstable device for pdpndfh_DIODE_289               0            0
-(  205)  unstable device for p_dpndf_DIODE_288               0            0
-(  207)  unstable device for pdnmdpli_DIODE_287              0            0
-(  209)  unstable device for pdnmdpl_DIODE_286               0            0
-(  211)  unstable device for pddpldnw_DIODE_285              0            0
-(  213)  unstable device for p_dndpli_DIODE_284              0            0
-(  215)  unstable device for p_dndpl_DIODE_283               0            0
-(  217)  unstable device for p_dpwhn_DIODE_282               0            0
-(  219)  unstable device for p_dpdwhn_DIODE_281              0            0
-(  221)  unstable device for p_dndf_DIODE_280                0            0
-(  223)  unstable device for p_dwhn_DIODE_279                0            0
-(  225)  unstable device for p_dnhpw2_DIODE_278              0            0
-(  227)  unstable device for p_dnhpw1_DIODE_277              0            0
-(  229)  unstable device for p_dphnw3_DIODE_276              0            0
-(  231)  unstable device for p_dphnw2_DIODE_275              0            0
-(  233)  unstable device for p_dphnw1_DIODE_274              0            0
-(  235)  unstable device for p_dpdnwmv_DIODE_273             0            0
-(  237)  unstable device for p_dpdnw_DIODE_272               0            0
-(  239)  unstable device for p_dhnw_DIODE_271                0            0
-(  241)  unstable device for p_dhpw_DIODE_270                0            0
-(  243)  unstable device for p_dipdnwmv_DIODE_269            0            0
-(  245)  unstable device for p_dipdnw_DIODE_268              0            0
-(  247)  unstable device for p_ddnwmv_DIODE_267              0            0
-(  249)  unstable device for p_ddnw_DIODE_266                0            0
-(  251)  unstable device for p_dnnm_DIODE_265                0            0
-(  253)  unstable device for p_dnmi2_DIODE_264               0            0
-(  255)  unstable device for p_dni2_DIODE_263                0            0
-(  257)  unstable device for p_dnih_DIODE_262                0            0
-(  259)  unstable device for p_dnh_DIODE_261                 0            0
-(  261)  unstable device for p_dni_DIODE_260                 0            0
-(  263)  unstable device for p_dn_DIODE_259                  0            0
-(  265)  unstable device for p_dpmi2_DIODE_258               0            0
-(  267)  unstable device for p_dpi2_DIODE_257                0            0
-(  269)  unstable device for p_dpih_DIODE_256                0            0
-(  271)  unstable device for p_dpi_DIODE_255                 0            0
-(  273)  unstable device for p_dph_DIODE_252                 0            0
-(  275)  unstable device for p_dph_DIODE_254                 0            0
-(  277)  unstable device for p_dp_DIODE_251                  0            0
-(  279)  unstable device for p_dp_DIODE_253                  0            0
-(  281)  unstable device for p_dnwm_DIODE_248                0            0
-(  283)  unstable device for p_dnwm_DIODE_250                0            0
-(  285)  unstable device for p_dnw_DIODE_247                 0            0
-(  287)  unstable device for p_dnw_DIODE_249                 0            0
-(  289)  unstable device for dnpdd_scr_DIODE_246             0            0
-(  291)  unstable device for dpdd_scr_DIODE_245              0            0
-(  293)  unstable device for dio_dpwhn_DIODE_244             0            0
-(  295)  unstable device for dio_dpdwhn_DIODE_243            0            0
-(  297)  unstable device for dio_dndf_DIODE_242              0            0
-(  299)  unstable device for dio_dwhn_DIODE_241              0            0
-(  301)  unstable device for dio_dnhpw2_DIODE_240            0            0
-(  303)  unstable device for dio_dnhpw1_DIODE_239            0            0
-(  305)  unstable device for dio_dphnw3_DIODE_238            0            0
-(  307)  unstable device for dio_dphnw2_DIODE_237            0            0
-(  309)  unstable device for dio_dphnw1_DIODE_236            0            0
-(  311)  unstable device for dio_dpdnwmv_DIODE_23            0            0
-(  313)  unstable device for dio_dpdnw_DIODE_234             0            0
-(  315)  unstable device for dio_ddnwmv_DIODE_233            0            0
-(  317)  unstable device for dio_ddnw_DIODE_232              0            0
-(  319)  unstable device for dio_dhnw_DIODE_231              0            0
-(  321)  unstable device for dio_dhpw_DIODE_230              0            0
-(  323)  unstable device for dio_ipdnwmv_DIODE_22            0            0
-(  325)  unstable device for dio_ipdnw_DIODE_228             0            0
-(  327)  unstable device for dio_nwsh_DIODE_225              0            0
-(  329)  unstable device for dio_nwsh_DIODE_227              0            0
-(  331)  unstable device for dio_nws_DIODE_224               0            0
-(  333)  unstable device for dio_nws_DIODE_226               0            0
-(  335)  unstable device for d_dnnm_DIODE_223                0            0
-(  337)  unstable device for d_dnmi2_DIODE_222               0            0
-(  339)  unstable device for d_dni2_DIODE_221                0            0
-(  341)  unstable device for dio_nih_DIODE_220               0            0
-(  343)  unstable device for dio_ni_DIODE_219                0            0
-(  345)  unstable device for dio_nh_DIODE_218                0            0
-(  347)  unstable device for dio_n_DIODE_217                 0            0
-(  349)  unstable device for d_dpmi2_DIODE_216               0            0
-(  351)  unstable device for d_dpi2_DIODE_215                0            0
-(  353)  unstable device for dio_pih_DIODE_214               0            0
-(  355)  unstable device for dio_pi_DIODE_213                0            0
-(  357)  unstable device for dio_ph_DIODE_210                0            0
-(  359)  unstable device for dio_ph_DIODE_212                0            0
-(  361)  unstable device for dio_p_DIODE_209                 0            0
-(  363)  unstable device for dio_p_DIODE_211                 0            0
-(  365)  unstable device for dpol_DIODE_208                  0            0
-(  367)  unstable device for dpp20_DIODE_207                 0            0
-(  369)  unstable device for dnp20_DIODE_206                 0            0
-(  371)  unstable device for d_dsba_DIODE_205                0            0
-(  373)  unstable device for d_dsb_DIODE_204                 0            0
-(  375)  unstable device for dspada0_DIODE_203               0            0
-(  377)  unstable device for dspada_DIODE_202                0            0
-(  379)  unstable device for dapda0_DIODE_201                0            0
-(  381)  unstable device for dapda_DIODE_200                 0            0
-(  383)  unstable device for dphodfp_Device_199              0            0
-(  385)  unstable device for dphod0_Device_198               0            0
-(  387)  unstable device for dphod_Device_197                0            0
-(  389)  unstable device for dphocfp_Device_196              0            0
-(  391)  unstable device for dphoc0_Device_195               0            0
-(  393)  unstable device for dphoc_Device_194                0            0
-(  395)  unstable device for dphob_DIODE_193                 0            0
-(  397)  unstable device for dphoa_DIODE_192                 0            0
-(  399)  unstable device for pnph2_BJT_191                   0            0
-(  401)  unstable device for pnph5_BJT_190                   0            0
-(  403)  unstable device for pnph10_BJT_189                  0            0
-(  405)  unstable device for pnp2_BJT_188                    0            0
-(  407)  unstable device for pnp5_BJT_187                    0            0
-(  409)  unstable device for pnp10_BJT_186                   0            0
-(  411)  unstable device for qpvhbscr_BJT_185                0            0
-(  413)  unstable device for qpvascr_BJT_184                 0            0
-(  415)  unstable device for qpvhscr_BJT_183                 0            0
-(  417)  unstable device for qnvc_BJT_182                    0            0
-(  419)  unstable device for qnvb_BJT_181                    0            0
-(  421)  unstable device for qnvz_BJT_180                    0            0
-(  423)  unstable device for qnvam_BJT_179                   0            0
-(  425)  unstable device for qnva_BJT_178                    0            0
-(  427)  unstable device for pfuse_RES_177                   0            0
-(  429)  unstable device for mtplres_RES_176                 0            0
-(  431)  unstable device for mtpres_RES_175                  0            0
-(  433)  unstable device for met4res_RES_174                 0            0
-(  435)  unstable device for met3res_RES_173                 0            0
-(  437)  unstable device for met2res_RES_172                 0            0
-(  439)  unstable device for met1res_RES_171                 0            0
-(  441)  unstable device for rdn_esd_g_RES_170               0            0
-(  443)  unstable device for rdp_esd_g_RES_169               0            0
-(  445)  unstable device for rdp_io_g_RES_168                0            0
-(  447)  unstable device for pdifres_pg3_RES_167             0            0
-(  449)  unstable device for pdifres_3_RES_166               0            0
-(  451)  unstable device for ndifres_ng2_3_RES_16            0            0
-(  453)  unstable device for ndifres_ng1_3_RES_16            0            0
-(  455)  unstable device for ndifres_3_RES_163               0            0
-(  457)  unstable device for pdifres_pg1_RES_162             0            0
-(  459)  unstable device for pdifres_1_RES_161               0            0
-(  461)  unstable device for ndifres_ng2_RES_160             0            0
-(  463)  unstable device for ndifres_ng1_RES_159             0            0
-(  465)  unstable device for ndifres_1_RES_158               0            0
-(  467)  unstable device for rpp1s_3_nw2_RES_157             0            0
-(  469)  unstable device for rpp1s_3_nw1_RES_156             0            0
-(  471)  unstable device for rpp1s_3_pw3_RES_155             0            0
-(  473)  unstable device for rpp1s_3_pw1_RES_154             0            0
-(  475)  unstable device for rpp1s_1_RES_153                 0            0
-(  477)  unstable device for rpp1_3_nw2_RES_152              0            0
-(  479)  unstable device for rpp1_3_nw1_RES_151              0            0
-(  481)  unstable device for rpp1_3_pw3_RES_150              0            0
-(  483)  unstable device for rpp1_3_pw1_RES_149              0            0
-(  485)  unstable device for rpp1_1_RES_148                  0            0
-(  487)  unstable device for rnp1_3_nw2_RES_147              0            0
-(  489)  unstable device for rnp1_3_nw1_RES_146              0            0
-(  491)  unstable device for rnp1_3_pw3_RES_145              0            0
-(  493)  unstable device for rnp1_3_pw1_RES_144              0            0
-(  495)  unstable device for rnp1_1_RES_143                  0            0
-(  497)  unstable device for rpp1k1_3_nw2_RES_142            0            0
-(  499)  unstable device for rpp1k1_3_nw1_RES_141            0            0
-(  501)  unstable device for rpp1k1_3_pw3_RES_140            0            0
-(  503)  unstable device for rpp1k1_3_pw1_RES_139            0            0
-(  505)  unstable device for rpp1k1_1_RES_138                0            0
-(  507)  unstable device for rnp1h_3_nw2_RES_137             0            0
-(  509)  unstable device for rnp1h_3_nw1_RES_136             0            0
-(  511)  unstable device for rnp1h_3_pw3_RES_135             0            0
-(  513)  unstable device for rnp1h_3_pw1_RES_134             0            0
-(  515)  unstable device for rnp1h_1_RES_133                 0            0
-(  517)  unstable device for resdnwellmv_RES_132             0            0
-(  519)  unstable device for resnwellmv_RES_131              0            0
-(  521)  unstable device for resnwell_RES_130                0            0
-(  523)  unstable device for rnwmv_scr_RES_129               0            0
-(  525)  unstable device for rnw_scr_RES_128                 0            0
-(  527)  unstable device for s_res_Device_127                0            0
-(  529)  unstable device for cpodhv_CAP_126                  0            0
-(  531)  unstable device for cpod_CAP_125                    0            0
-(  533)  unstable device for ctmmh_CAP_124                   0            0
-(  535)  unstable device for ctmm_CAP_123                    0            0
-(  537)  unstable device for cdmmh_CAP_122                   0            0
-(  539)  unstable device for cdmm_CAP_121                    0            0
-(  541)  unstable device for cmmh34f_CAP_120                 0            0
-(  543)  unstable device for cmm34f_CAP_119                  0            0
-(  545)  unstable device for cmmh23f_CAP_118                 0            0
-(  547)  unstable device for cmm23f_CAP_117                  0            0
-(  549)  unstable device for cmmh_CAP_116                    0            0
-(  551)  unstable device for cmm_CAP_115                     0            0
-(  553)  unstable device for d_capsw3_CAP_114                0            0
-(  555)  unstable device for d_capsw4_CAP_113                0            0
-(  557)  unstable device for d_csft5a_CAP_112                0            0
-(  559)  unstable device for d_csft5_CAP_111                 0            0
-(  561)  unstable device for d_csf4a_CAP_110                 0            0
-(  563)  unstable device for d_csf4_CAP_109                  0            0
-(  565)  unstable device for d_csf3a_CAP_108                 0            0
-(  567)  unstable device for d_csf3_CAP_107                  0            0
-(  569)  unstable device for d_csf3p_CAP_106                 0            0
-(  571)  unstable device for d_csf2p_CAP_105                 0            0
-(  573)  unstable device for mosvcim_m_Device_104            0            0
-(  575)  unstable device for mosvcim_Device_103              0            0
-(  577)  unstable device for mosvcm_Device_102               0            0
-(  579)  unstable device for mosvci_m_Device_101             0            0
-(  581)  unstable device for mosvci_Device_100               0            0
-(  583)  unstable device for mosvc_Device_99                 0            0
-(  585)  unstable device for nedia_b_Device_98               0            0
-(  587)  unstable device for nedi_b_Device_97                0            0
-(  589)  unstable device for ped2_b_Device_96                0            0
-(  591)  unstable device for ped_b_Device_95                 0            0
-(  593)  unstable device for nedia_d_Device_94               0            0
-(  595)  unstable device for nedi_d_Device_93                0            0
-(  597)  unstable device for ped2_d_Device_92                0            0
-(  599)  unstable device for ped_d_Device_91                 0            0
-(  601)  unstable device for phhv_b_Device_90                0            0
-(  603)  unstable device for phv_b_Device_89                 0            0
-(  605)  unstable device for phhv_d_Device_88                0            0
-(  607)  unstable device for phv_d_Device_87                 0            0
-(  609)  unstable device for pmmc_b_Device_86                0            0
-(  611)  unstable device for pmc_b_Device_85                 0            0
-(  613)  unstable device for pmmc_d_Device_84                0            0
-(  615)  unstable device for pmc_d_Device_83                 0            0
-(  617)  unstable device for nhhvd_b_Device_82               0            0
-(  619)  unstable device for nhvd_b_Device_81                0            0
-(  621)  unstable device for nhhv_b_Device_80                0            0
-(  623)  unstable device for nhv_b_Device_79                 0            0
-(  625)  unstable device for nhhvd_d_Device_78               0            0
-(  627)  unstable device for nhvd_d_Device_77                0            0
-(  629)  unstable device for nhhv_d_Device_76                0            0
-(  631)  unstable device for nhv_d_Device_75                 0            0
-(  633)  unstable device for nmmd_b_Device_74                0            0
-(  635)  unstable device for nmmd_d_Device_73                0            0
-(  637)  unstable device for nmmc_b_Device_72                0            0
-(  639)  unstable device for nmc_b_Device_71                 0            0
-(  641)  unstable device for nmmc_d_Device_70                0            0
-(  643)  unstable device for nmc_d_Device_69                 0            0
-(  645)  unstable device for pma_b_Device_68                 0            0
-(  647)  unstable device for pma_d_MOS_67                    0            0
-(  649)  unstable device for nma_b_MOS_66                    0            0
-(  651)  unstable device for nma_d_MOS_65                    0            0
-(  653)  unstable device for pmma_b_Device_64                0            0
-(  655)  unstable device for pmma_d_Device_63                0            0
-(  657)  unstable device for nmma_b_Device_62                0            0
-(  659)  unstable device for nmma_d_Device_61                0            0
-(  661)  unstable device for pmb_MOS_60                      0            0
-(  663)  unstable device for pemlnai_m_5_Device_5            0            0
-(  665)  unstable device for pemlnai_5_Device_58             0            0
-(  667)  unstable device for pemlnai_MOS_57                  0            0
-(  669)  unstable device for pemlni_m_5_Device_56            0            0
-(  671)  unstable device for pemlni_5_Device_55              0            0
-(  673)  unstable device for pemlni_MOS_54                   0            0
-(  675)  unstable device for pemi_m_5_Device_53              0            0
-(  677)  unstable device for pemi_5_Device_52                0            0
-(  679)  unstable device for pemi_MOS_51                     0            0
-(  681)  unstable device for pemlna_5_Device_50              0            0
-(  683)  unstable device for pemlna_MOS_49                   0            0
-(  685)  unstable device for pemln_5_Device_48               0            0
-(  687)  unstable device for pemln_MOS_47                    0            0
-(  689)  unstable device for pem_5_Device_46                 0            0
-(  691)  unstable device for pem_MOS_45                      0            0
-(  693)  unstable device for nemlnai_m_6_Device_4            0            0
-(  695)  unstable device for nemlnai_6_Device_43             0            0
-(  697)  unstable device for nemlnai_MOS_42                  0            0
-(  699)  unstable device for ndmi_m_6_Device_41              0            0
-(  701)  unstable device for ndmi_6_Device_40                0            0
-(  703)  unstable device for nemi_m_6_Device_39              0            0
-(  705)  unstable device for nemi_6_Device_38                0            0
-(  707)  unstable device for nemi_MOS_37                     0            0
-(  709)  unstable device for ndmi_MOS_36                     0            0
-(  711)  unstable device for nnm_MOS_35                      0            0
-(  713)  unstable device for nemlna_MOS_34                   0            0
-(  715)  unstable device for ndm_MOS_33                      0            0
-(  717)  unstable device for nem_MOS_32                      0            0
-(  719)  unstable device for pesvti_m_5_Device_31            0            0
-(  721)  unstable device for pesvti_5_Device_30              0            0
-(  723)  unstable device for pesvti_MOS_29                   0            0
-(  725)  unstable device for peli_m_5_Device_28              0            0
-(  727)  unstable device for peli_5_Device_27                0            0
-(  729)  unstable device for peli_MOS_26                     0            0
-(  731)  unstable device for pei_m_5_Device_25               0            0
-(  733)  unstable device for pei_5_Device_24                 0            0
-(  735)  unstable device for pei_MOS_23                      0            0
-(  737)  unstable device for pesvt_5_Device_22               0            0
-(  739)  unstable device for pesvt_MOS_21                    0            0
-(  741)  unstable device for pel_5_Device_20                 0            0
-(  743)  unstable device for pel_MOS_19                      0            0
-(  745)  unstable device for pe_5_Device_18                  0            0
-(  747)  unstable device for pe_MOS_17                       0            0
-(  749)  unstable device for nelnai_m_6_Device_16            0            0
-(  751)  unstable device for nelnai_6_Device_15              0            0
-(  753)  unstable device for nelnai_MOS_14                   0            0
-(  755)  unstable device for neli_m_6_Device_13              0            0
-(  757)  unstable device for neli_6_Device_12                0            0
-(  759)  unstable device for neli_MOS_11                     0            0
-(  761)  unstable device for nesvti_m_6_Device_10            0            0
-(  763)  unstable device for nesvti_6_Device_9               0            0
-(  765)  unstable device for nesvti_MOS_8                    0            0
-(  767)  unstable device for nei_m_6_Device_7                0            0
-(  769)  unstable device for nei_6_Device_6                  0            0
-(  771)  unstable device for nei_MOS_5                       0            0
-(  773)  unstable device for nelna_MOS_4                     0            0
-(  775)  unstable device for nel_MOS_3                       0            0
-(  777)  unstable device for nesvt_MOS_2                     0            0
-(  779)  unstable device for ne_MOS_1                        0            0
+(  171)  unstable device for mtl_v25_Device_314              0            0
+(  173)  unstable device for mtl_v60_Device_313              0            0
+(  175)  unstable device for mt_v25_Device_312               0            0
+(  177)  unstable device for mt_v60_Device_311               0            0
+(  179)  unstable device for m4_v25_Device_310               0            0
+(  181)  unstable device for m4_v60_Device_309               0            0
+(  183)  unstable device for m3_v25_Device_308               0            0
+(  185)  unstable device for m3_v60_Device_307               0            0
+(  187)  unstable device for m2_v25_Device_306               0            0
+(  189)  unstable device for m2_v60_Device_305               0            0
+(  191)  unstable device for m1_v25_Device_304               0            0
+(  193)  unstable device for m1_v60_Device_303               0            0
+(  195)  unstable device for p1_v25_Device_302               0            0
+(  197)  unstable device for p1_v60_Device_301               0            0
+(  199)  unstable device for pd_v25_Device_300               0            0
+(  201)  unstable device for pd_v60_Device_299               0            0
+(  203)  unstable device for nd_v25_Device_298               0            0
+(  205)  unstable device for nd_v60_Device_297               0            0
+(  207)  unstable device for p_dbn_DIODE_296                 0            0
+(  209)  unstable device for pdpdddnw_DIODE_295              0            0
+(  211)  unstable device for pdpndfh_DIODE_294               0            0
+(  213)  unstable device for p_dpndf_DIODE_293               0            0
+(  215)  unstable device for pdnmdpli_DIODE_292              0            0
+(  217)  unstable device for pdnmdpl_DIODE_291               0            0
+(  219)  unstable device for pddpldnw_DIODE_290              0            0
+(  221)  unstable device for p_dndpli_DIODE_289              0            0
+(  223)  unstable device for p_dndpl_DIODE_288               0            0
+(  225)  unstable device for p_dpwhn_DIODE_287               0            0
+(  227)  unstable device for p_dpdwhn_DIODE_286              0            0
+(  229)  unstable device for p_dndf_DIODE_285                0            0
+(  231)  unstable device for p_dwhn_DIODE_284                0            0
+(  233)  unstable device for p_dnhpw2_DIODE_283              0            0
+(  235)  unstable device for p_dnhpw1_DIODE_282              0            0
+(  237)  unstable device for p_dphnw3_DIODE_281              0            0
+(  239)  unstable device for p_dphnw2_DIODE_280              0            0
+(  241)  unstable device for p_dphnw1_DIODE_279              0            0
+(  243)  unstable device for p_dpdnwmv_DIODE_278             0            0
+(  245)  unstable device for p_dpdnw_DIODE_277               0            0
+(  247)  unstable device for p_dhnw_DIODE_276                0            0
+(  249)  unstable device for p_dhpw_DIODE_275                0            0
+(  251)  unstable device for p_dipdnwmv_DIODE_274            0            0
+(  253)  unstable device for p_dipdnw_DIODE_273              0            0
+(  255)  unstable device for p_ddnwmv_DIODE_272              0            0
+(  257)  unstable device for p_ddnw_DIODE_271                0            0
+(  259)  unstable device for p_dnnm_DIODE_270                0            0
+(  261)  unstable device for p_dnmi2_DIODE_269               0            0
+(  263)  unstable device for p_dni2_DIODE_268                0            0
+(  265)  unstable device for p_dnih_DIODE_267                0            0
+(  267)  unstable device for p_dnh_DIODE_266                 0            0
+(  269)  unstable device for p_dni_DIODE_265                 0            0
+(  271)  unstable device for p_dn_DIODE_264                  0            0
+(  273)  unstable device for p_dpmi2_DIODE_263               0            0
+(  275)  unstable device for p_dpi2_DIODE_262                0            0
+(  277)  unstable device for p_dpih_DIODE_261                0            0
+(  279)  unstable device for p_dpi_DIODE_260                 0            0
+(  281)  unstable device for p_dph_DIODE_257                 0            0
+(  283)  unstable device for p_dph_DIODE_259                 0            0
+(  285)  unstable device for p_dp_DIODE_256                  0            0
+(  287)  unstable device for p_dp_DIODE_258                  0            0
+(  289)  unstable device for p_dnwm_DIODE_253                0            0
+(  291)  unstable device for p_dnwm_DIODE_255                0            0
+(  293)  unstable device for p_dnw_DIODE_252                 0            0
+(  295)  unstable device for p_dnw_DIODE_254                 0            0
+(  297)  unstable device for dnpdd_scr_DIODE_251             0            0
+(  299)  unstable device for dpdd_scr_DIODE_250              0            0
+(  301)  unstable device for dio_dpwhn_DIODE_249             0            0
+(  303)  unstable device for dio_dpdwhn_DIODE_248            0            0
+(  305)  unstable device for dio_dndf_DIODE_247              0            0
+(  307)  unstable device for dio_dwhn_DIODE_246              0            0
+(  309)  unstable device for dio_dnhpw2_DIODE_245            0            0
+(  311)  unstable device for dio_dnhpw1_DIODE_244            0            0
+(  313)  unstable device for dio_dphnw3_DIODE_243            0            0
+(  315)  unstable device for dio_dphnw2_DIODE_242            0            0
+(  317)  unstable device for dio_dphnw1_DIODE_241            0            0
+(  319)  unstable device for dio_dpdnwmv_DIODE_24            0            0
+(  321)  unstable device for dio_dpdnw_DIODE_239             0            0
+(  323)  unstable device for dio_ddnwmv_DIODE_238            0            0
+(  325)  unstable device for dio_ddnw_DIODE_237              0            0
+(  327)  unstable device for dio_dhnw_DIODE_236              0            0
+(  329)  unstable device for dio_dhpw_DIODE_235              0            0
+(  331)  unstable device for dio_ipdnwmv_DIODE_23            0            0
+(  333)  unstable device for dio_ipdnw_DIODE_233             0            0
+(  335)  unstable device for dio_nwsh_DIODE_230              0            0
+(  337)  unstable device for dio_nwsh_DIODE_232              0            0
+(  339)  unstable device for dio_nws_DIODE_229               0            0
+(  341)  unstable device for dio_nws_DIODE_231               0            0
+(  343)  unstable device for d_dnnm_DIODE_228                0            0
+(  345)  unstable device for d_dnmi2_DIODE_227               0            0
+(  347)  unstable device for d_dni2_DIODE_226                0            0
+(  349)  unstable device for dio_nih_DIODE_225               0            0
+(  351)  unstable device for dio_ni_DIODE_224                0            0
+(  353)  unstable device for dio_nh_DIODE_223                0            0
+(  355)  unstable device for dio_n_DIODE_222                 0            0
+(  357)  unstable device for d_dpmi2_DIODE_221               0            0
+(  359)  unstable device for d_dpi2_DIODE_220                0            0
+(  361)  unstable device for dio_pih_DIODE_219               0            0
+(  363)  unstable device for dio_pi_DIODE_218                0            0
+(  365)  unstable device for dio_ph_DIODE_215                0            0
+(  367)  unstable device for dio_ph_DIODE_217                0            0
+(  369)  unstable device for dio_p_DIODE_214                 0            0
+(  371)  unstable device for dio_p_DIODE_216                 0            0
+(  373)  unstable device for dpol_DIODE_213                  0            0
+(  375)  unstable device for dpp20_DIODE_212                 0            0
+(  377)  unstable device for dnp20_DIODE_211                 0            0
+(  379)  unstable device for d_dsba_DIODE_210                0            0
+(  381)  unstable device for d_dsb_DIODE_209                 0            0
+(  383)  unstable device for dspb0_Device_208                0            0
+(  385)  unstable device for dspb_Device_207                 0            0
+(  387)  unstable device for dapb0_Device_206                0            0
+(  389)  unstable device for dapb_Device_205                 0            0
+(  391)  unstable device for dspada0_DIODE_204               0            0
+(  393)  unstable device for dspada_DIODE_203                0            0
+(  395)  unstable device for dapda0_DIODE_202                0            0
+(  397)  unstable device for dapda_DIODE_201                 0            0
+(  399)  unstable device for dphodfp_Device_200              0            0
+(  401)  unstable device for dphod0_Device_199               0            0
+(  403)  unstable device for dphod_Device_198                0            0
+(  405)  unstable device for dphocfp_Device_197              0            0
+(  407)  unstable device for dphoc0_Device_196               0            0
+(  409)  unstable device for dphoc_Device_195                0            0
+(  411)  unstable device for dphob_DIODE_194                 0            0
+(  413)  unstable device for dphoa_DIODE_193                 0            0
+(  415)  unstable device for pnph2_BJT_192                   0            0
+(  417)  unstable device for pnph5_BJT_191                   0            0
+(  419)  unstable device for pnph10_BJT_190                  0            0
+(  421)  unstable device for pnp2_BJT_189                    0            0
+(  423)  unstable device for pnp5_BJT_188                    0            0
+(  425)  unstable device for pnp10_BJT_187                   0            0
+(  427)  unstable device for qpvhbscr_BJT_186                0            0
+(  429)  unstable device for qpvascr_BJT_185                 0            0
+(  431)  unstable device for qpvhscr_BJT_184                 0            0
+(  433)  unstable device for qnvca_BJT_183                   0            0
+(  435)  unstable device for qnvc_BJT_182                    0            0
+(  437)  unstable device for qnvba_BJT_181                   0            0
+(  439)  unstable device for qnvb_BJT_180                    0            0
+(  441)  unstable device for qnvz_BJT_179                    0            0
+(  443)  unstable device for qnva_BJT_178                    0            0
+(  445)  unstable device for pfuse_RES_177                   0            0
+(  447)  unstable device for mtplres_RES_176                 0            0
+(  449)  unstable device for mtpres_RES_175                  0            0
+(  451)  unstable device for met4res_RES_174                 0            0
+(  453)  unstable device for met3res_RES_173                 0            0
+(  455)  unstable device for met2res_RES_172                 0            0
+(  457)  unstable device for met1res_RES_171                 0            0
+(  459)  unstable device for rdn_esd_g_RES_170               0            0
+(  461)  unstable device for rdp_esd_g_RES_169               0            0
+(  463)  unstable device for rdp_io_g_RES_168                0            0
+(  465)  unstable device for pdifres_pg3_RES_167             0            0
+(  467)  unstable device for pdifres_3_RES_166               0            0
+(  469)  unstable device for ndifres_ng2_3_RES_16            0            0
+(  471)  unstable device for ndifres_ng1_3_RES_16            0            0
+(  473)  unstable device for ndifres_3_RES_163               0            0
+(  475)  unstable device for pdifres_pg1_RES_162             0            0
+(  477)  unstable device for pdifres_1_RES_161               0            0
+(  479)  unstable device for ndifres_ng2_RES_160             0            0
+(  481)  unstable device for ndifres_ng1_RES_159             0            0
+(  483)  unstable device for ndifres_1_RES_158               0            0
+(  485)  unstable device for rpp1s_3_nw2_RES_157             0            0
+(  487)  unstable device for rpp1s_3_nw1_RES_156             0            0
+(  489)  unstable device for rpp1s_3_pw3_RES_155             0            0
+(  491)  unstable device for rpp1s_3_pw1_RES_154             0            0
+(  493)  unstable device for rpp1s_1_RES_153                 0            0
+(  495)  unstable device for rpp1_3_nw2_RES_152              0            0
+(  497)  unstable device for rpp1_3_nw1_RES_151              0            0
+(  499)  unstable device for rpp1_3_pw3_RES_150              0            0
+(  501)  unstable device for rpp1_3_pw1_RES_149              0            0
+(  503)  unstable device for rpp1_1_RES_148                  0            0
+(  505)  unstable device for rnp1_3_nw2_RES_147              0            0
+(  507)  unstable device for rnp1_3_nw1_RES_146              0            0
+(  509)  unstable device for rnp1_3_pw3_RES_145              0            0
+(  511)  unstable device for rnp1_3_pw1_RES_144              0            0
+(  513)  unstable device for rnp1_1_RES_143                  0            0
+(  515)  unstable device for rpp1k1_3_nw2_RES_142            0            0
+(  517)  unstable device for rpp1k1_3_nw1_RES_141            0            0
+(  519)  unstable device for rpp1k1_3_pw3_RES_140            0            0
+(  521)  unstable device for rpp1k1_3_pw1_RES_139            0            0
+(  523)  unstable device for rpp1k1_1_RES_138                0            0
+(  525)  unstable device for rnp1h_3_nw2_RES_137             0            0
+(  527)  unstable device for rnp1h_3_nw1_RES_136             0            0
+(  529)  unstable device for rnp1h_3_pw3_RES_135             0            0
+(  531)  unstable device for rnp1h_3_pw1_RES_134             0            0
+(  533)  unstable device for rnp1h_1_RES_133                 0            0
+(  535)  unstable device for resdnwellmv_RES_132             0            0
+(  537)  unstable device for resnwellmv_RES_131              0            0
+(  539)  unstable device for resnwell_RES_130                0            0
+(  541)  unstable device for rnwmv_scr_RES_129               0            0
+(  543)  unstable device for rnw_scr_RES_128                 0            0
+(  545)  unstable device for s_res_Device_127                0            0
+(  547)  unstable device for cpodhv_CAP_126                  0            0
+(  549)  unstable device for cpod_CAP_125                    0            0
+(  551)  unstable device for ctmmh_CAP_124                   0            0
+(  553)  unstable device for ctmm_CAP_123                    0            0
+(  555)  unstable device for cdmmh_CAP_122                   0            0
+(  557)  unstable device for cdmm_CAP_121                    0            0
+(  559)  unstable device for cmmh34f_CAP_120                 0            0
+(  561)  unstable device for cmm34f_CAP_119                  0            0
+(  563)  unstable device for cmmh23f_CAP_118                 0            0
+(  565)  unstable device for cmm23f_CAP_117                  0            0
+(  567)  unstable device for cmmh_CAP_116                    0            0
+(  569)  unstable device for cmm_CAP_115                     0            0
+(  571)  unstable device for d_capsw3_CAP_114                0            0
+(  573)  unstable device for d_capsw4_CAP_113                0            0
+(  575)  unstable device for d_csft5a_CAP_112                0            0
+(  577)  unstable device for d_csft5_CAP_111                 0            0
+(  579)  unstable device for d_csf4a_CAP_110                 0            0
+(  581)  unstable device for d_csf4_CAP_109                  0            0
+(  583)  unstable device for d_csf3a_CAP_108                 0            0
+(  585)  unstable device for d_csf3_CAP_107                  0            0
+(  587)  unstable device for d_csf3p_CAP_106                 0            0
+(  589)  unstable device for d_csf2p_CAP_105                 0            0
+(  591)  unstable device for mosvcim_m_Device_104            0            0
+(  593)  unstable device for mosvcim_Device_103              0            0
+(  595)  unstable device for mosvcm_Device_102               0            0
+(  597)  unstable device for mosvci_m_Device_101             0            0
+(  599)  unstable device for mosvci_Device_100               0            0
+(  601)  unstable device for mosvc_Device_99                 0            0
+(  603)  unstable device for nedia_b_Device_98               0            0
+(  605)  unstable device for nedi_b_Device_97                0            0
+(  607)  unstable device for ped2_b_Device_96                0            0
+(  609)  unstable device for ped_b_Device_95                 0            0
+(  611)  unstable device for nedia_d_Device_94               0            0
+(  613)  unstable device for nedi_d_Device_93                0            0
+(  615)  unstable device for ped2_d_Device_92                0            0
+(  617)  unstable device for ped_d_Device_91                 0            0
+(  619)  unstable device for phhv_b_Device_90                0            0
+(  621)  unstable device for phv_b_Device_89                 0            0
+(  623)  unstable device for phhv_d_Device_88                0            0
+(  625)  unstable device for phv_d_Device_87                 0            0
+(  627)  unstable device for pmmc_b_Device_86                0            0
+(  629)  unstable device for pmc_b_Device_85                 0            0
+(  631)  unstable device for pmmc_d_Device_84                0            0
+(  633)  unstable device for pmc_d_Device_83                 0            0
+(  635)  unstable device for nhhvd_b_Device_82               0            0
+(  637)  unstable device for nhvd_b_Device_81                0            0
+(  639)  unstable device for nhhv_b_Device_80                0            0
+(  641)  unstable device for nhv_b_Device_79                 0            0
+(  643)  unstable device for nhhvd_d_Device_78               0            0
+(  645)  unstable device for nhvd_d_Device_77                0            0
+(  647)  unstable device for nhhv_d_Device_76                0            0
+(  649)  unstable device for nhv_d_Device_75                 0            0
+(  651)  unstable device for nmmd_b_Device_74                0            0
+(  653)  unstable device for nmmd_d_Device_73                0            0
+(  655)  unstable device for nmmc_b_Device_72                0            0
+(  657)  unstable device for nmc_b_Device_71                 0            0
+(  659)  unstable device for nmmc_d_Device_70                0            0
+(  661)  unstable device for nmc_d_Device_69                 0            0
+(  663)  unstable device for pma_b_Device_68                 0            0
+(  665)  unstable device for pma_d_MOS_67                    0            0
+(  667)  unstable device for nma_b_MOS_66                    0            0
+(  669)  unstable device for nma_d_MOS_65                    0            0
+(  671)  unstable device for pmma_b_Device_64                0            0
+(  673)  unstable device for pmma_d_Device_63                0            0
+(  675)  unstable device for nmma_b_Device_62                0            0
+(  677)  unstable device for nmma_d_Device_61                0            0
+(  679)  unstable device for pmb_MOS_60                      0            0
+(  681)  unstable device for pemlnai_m_5_Device_5            0            0
+(  683)  unstable device for pemlnai_5_Device_58             0            0
+(  685)  unstable device for pemlnai_MOS_57                  0            0
+(  687)  unstable device for pemlni_m_5_Device_56            0            0
+(  689)  unstable device for pemlni_5_Device_55              0            0
+(  691)  unstable device for pemlni_MOS_54                   0            0
+(  693)  unstable device for pemi_m_5_Device_53              0            0
+(  695)  unstable device for pemi_5_Device_52                0            0
+(  697)  unstable device for pemi_MOS_51                     0            0
+(  699)  unstable device for pemlna_5_Device_50              0            0
+(  701)  unstable device for pemlna_MOS_49                   0            0
+(  703)  unstable device for pemln_5_Device_48               0            0
+(  705)  unstable device for pemln_MOS_47                    0            0
+(  707)  unstable device for pem_5_Device_46                 0            0
+(  709)  unstable device for pem_MOS_45                      0            0
+(  711)  unstable device for nemlnai_m_6_Device_4            0            0
+(  713)  unstable device for nemlnai_6_Device_43             0            0
+(  715)  unstable device for nemlnai_MOS_42                  0            0
+(  717)  unstable device for ndmi_m_6_Device_41              0            0
+(  719)  unstable device for ndmi_6_Device_40                0            0
+(  721)  unstable device for nemi_m_6_Device_39              0            0
+(  723)  unstable device for nemi_6_Device_38                0            0
+(  725)  unstable device for nemi_MOS_37                     0            0
+(  727)  unstable device for ndmi_MOS_36                     0            0
+(  729)  unstable device for nnm_MOS_35                      0            0
+(  731)  unstable device for nemlna_MOS_34                   0            0
+(  733)  unstable device for ndm_MOS_33                      0            0
+(  735)  unstable device for nem_MOS_32                      0            0
+(  737)  unstable device for pesvti_m_5_Device_31            0            0
+(  739)  unstable device for pesvti_5_Device_30              0            0
+(  741)  unstable device for pesvti_MOS_29                   0            0
+(  743)  unstable device for peli_m_5_Device_28              0            0
+(  745)  unstable device for peli_5_Device_27                0            0
+(  747)  unstable device for peli_MOS_26                     0            0
+(  749)  unstable device for pei_m_5_Device_25               0            0
+(  751)  unstable device for pei_5_Device_24                 0            0
+(  753)  unstable device for pei_MOS_23                      0            0
+(  755)  unstable device for pesvt_5_Device_22               0            0
+(  757)  unstable device for pesvt_MOS_21                    0            0
+(  759)  unstable device for pel_5_Device_20                 0            0
+(  761)  unstable device for pel_MOS_19                      0            0
+(  763)  unstable device for pe_5_Device_18                  0            0
+(  765)  unstable device for pe_MOS_17                       0            0
+(  767)  unstable device for nelnai_m_6_Device_16            0            0
+(  769)  unstable device for nelnai_6_Device_15              0            0
+(  771)  unstable device for nelnai_MOS_14                   0            0
+(  773)  unstable device for neli_m_6_Device_13              0            0
+(  775)  unstable device for neli_6_Device_12                0            0
+(  777)  unstable device for neli_MOS_11                     0            0
+(  779)  unstable device for nesvti_m_6_Device_10            0            0
+(  781)  unstable device for nesvti_6_Device_9               0            0
+(  783)  unstable device for nesvti_MOS_8                    0            0
+(  785)  unstable device for nei_m_6_Device_7                0            0
+(  787)  unstable device for nei_6_Device_6                  0            0
+(  789)  unstable device for nei_MOS_5                       0            0
+(  791)  unstable device for nelna_MOS_4                     0            0
+(  793)  unstable device for nel_MOS_3                       0            0
+(  795)  unstable device for nesvt_MOS_2                     0            0
+(  797)  unstable device for ne_MOS_1                        0            0
 --------------------------------------------------------------------------------
 Total  errors:                                               0            0
 --------------------------------------------------------------------------------
@@ -10605,7 +10816,7 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.err ...
 
-avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.20  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -10616,7 +10827,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 21 11:58:36 2021"
+Loading assuraExtract_Rules at "Apr 26 13:40:02 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
@@ -10628,25 +10839,25 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 21 11:58:36 2021"
+Loading assuraExtract_Rules at "Apr 26 13:40:03 2021"
 Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 *WARNING* Failed to obtain license for Assura_LVS
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Wed Apr 21 11:58:36 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Mon Apr 26 13:40:03 2021
 
 avnx started...
-cpu: 0.45  elap: 1  pf: 0  in: 0  out: 40  virt: 735M  phys: 1248M
+cpu: 0.46  elap: 0  pf: 0  in: 0  out: 72  virt: 742M  phys: 1267M
 
-Run time =  1.00 seconds
-CPU time =  0.50 seconds
+Run time =  0.00 seconds
+CPU time =  0.51 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.02  elap: 0  pf: 0  in: 0  out: 14688  virt: 663M  phys: 1249M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 15248  virt: 669M  phys: 1268M
 ***** avnx terminated normally ***** 
 
 
@@ -10657,11 +10868,11 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Wed Apr 21 11:58:38 2021
+run on s2424 at Mon Apr 26 13:40:04 2021
   
 *************************************************************** 
   
- X-FAB Assura Compare Rules file version v15.1 updated on Jul 10, 2019 
+ X-FAB Assura Compare Rules file version 8.1.1 updated on Dec 15, 2020 
  X-FAB Design Support
  
 *************************************************************** 
@@ -10707,6 +10918,327 @@ Preprocessing layout network phase 1
  WARNING (AVLVSNN-10050) : resDevice - cell 's_res' not found.
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
+Comparing CurrentMirror_x10_LV schematic Stimulator_IMP vs CurrentMirror_x10_LV layout Stimulator_IMP
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 1.2e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 2.4e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 2.4e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 3.6e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 3.6e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 4.8e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 4.8e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 6e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 6e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 7.2e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 1.2e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 2.4e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 2.4e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 3.6e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 3.6e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 4.8e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 4.8e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 6e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 6e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 7.2e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 7.2e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 8.4e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 8.4e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 9.6e-05 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 9.6e-05 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000108 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000108 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00012 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00012 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000132 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000132 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000144 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000144 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000156 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000156 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000168 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000168 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00018 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00018 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000192 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000192 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000204 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000204 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000216 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000216 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000228 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000228 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00024 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00024 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000252 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000252 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000264 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000264 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000276 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000276 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000288 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000288 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.0003 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.0003 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000312 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000312 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000324 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000324 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000336 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000336 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000348 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000348 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00036 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00036 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000372 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000372 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000384 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000384 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000396 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000396 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000408 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000408 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00042 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00042 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000432 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000432 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000444 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000444 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000456 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000456 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000468 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000468 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00048 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00048 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000492 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000492 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000504 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000504 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000516 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000516 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000528 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000528 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00054 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00054 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000552 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000552 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000564 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000564 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000576 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000576 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000588 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000588 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.0006 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.0006 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000612 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000612 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000624 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000624 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000636 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000636 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000648 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000648 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00066 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.00066 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000672 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000672 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000684 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000684 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000696 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000696 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.000708 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 3e-06 W = 0.000708 m = 1 
+   2nd device: L = 3e-06 W = 1.2e-05 m = 1 
+   Resulting: L = 3e-06 W = 0.00072 m = 1 
 Comparing LSHVT18U3VX2 cmos_sch D_CELLS_M3V vs LSHVT18U3VX2 layout D_CELLS_M3V
 
 ** Parallel MOS combined: 
@@ -10719,21 +11251,6 @@ Comparing LSHVT18U3VX2 cmos_sch D_CELLS_M3V vs LSHVT18U3VX2 layout D_CELLS_M3V
    2nd device: L = 3e-07 W = 1.41e-06 m = 1 
    Resulting: L = 3e-07 W = 2.82e-06 m = 1 
 Top cell  CurrentMirror_ST schematic Stimulator_IMP vs CurrentMirror_ST layout Stimulator_IMP
-
-** Parallel MOS combined: 
-   1st device: L = 3.5e-07 W = 2e-05 m = 1 
-   2nd device: L = 3.5e-07 W = 2e-05 m = 1 
-   Resulting: L = 3.5e-07 W = 4e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 3.5e-07 W = 4e-05 m = 1 
-   2nd device: L = 3.5e-07 W = 2e-05 m = 1 
-   Resulting: L = 3.5e-07 W = 6e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 3.5e-07 W = 6e-05 m = 1 
-   2nd device: L = 3.5e-07 W = 2e-05 m = 1 
-   Resulting: L = 3.5e-07 W = 8e-05 m = 1 
 
 ** Parallel MOS combined: 
    1st device: L = 1.25e-06 W = 8e-05 m = 1 
@@ -10799,166 +11316,6 @@ Top cell  CurrentMirror_ST schematic Stimulator_IMP vs CurrentMirror_ST layout S
    1st device: L = 1.25e-06 W = 0.00024 m = 1 
    2nd device: L = 1.25e-06 W = 6e-05 m = 1 
    Resulting: L = 1.25e-06 W = 0.0003 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 8e-05 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.00016 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.00016 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.00024 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.00024 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.00032 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.00032 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.0004 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.0004 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.00048 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.00048 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.00056 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.00056 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.00064 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.00064 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.00072 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1.25e-06 W = 0.00072 m = 1 
-   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
-   Resulting: L = 1.25e-06 W = 0.0008 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 2e-05 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 4e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 4e-05 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 6e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 6e-05 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 8e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 8e-05 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.0001 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.0001 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00012 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00012 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00014 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00014 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00016 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00016 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00018 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00018 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.0002 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.0002 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00022 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00022 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00024 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00024 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00026 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00026 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00028 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00028 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.0003 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.0003 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00032 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00032 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00034 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00034 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00036 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00036 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.00038 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 0.00038 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 0.0004 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 3.5e-07 W = 2e-05 m = 1 
-   2nd device: L = 3.5e-07 W = 2e-05 m = 1 
-   Resulting: L = 3.5e-07 W = 4e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 3.5e-07 W = 4e-05 m = 1 
-   2nd device: L = 3.5e-07 W = 2e-05 m = 1 
-   Resulting: L = 3.5e-07 W = 6e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 3.5e-07 W = 6e-05 m = 1 
-   2nd device: L = 3.5e-07 W = 2e-05 m = 1 
-   Resulting: L = 3.5e-07 W = 8e-05 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 2e-06 W = 2e-05 m = 1 
-   2nd device: L = 2e-06 W = 2e-05 m = 1 
-   Resulting: L = 2e-06 W = 4e-05 m = 1 
 
 ** Parallel cap combined 
    1st device: area = 6.3936e-11 perimeter = 3.372e-05 m = 1
@@ -11249,8 +11606,8 @@ Top cell  CurrentMirror_ST schematic Stimulator_IMP vs CurrentMirror_ST layout S
    1st device: area = 6.3936e-11 perimeter = 3.372e-05 m = 14
    2nd device: area = 6.3936e-11 perimeter = 3.372e-05 m = 1
    Resulting: area = 6.3936e-11 perimeter = 3.372e-05 m = 15 
-Schematic and Layout Match
-cpu=0.00m  wall=0.02m  mem=118.21mb
+Compare errors, please see /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.csm and /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.cls files.
+cpu=0.00m  wall=0.00m  mem=118.60mb
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/nvn
 
@@ -11263,7 +11620,7 @@ Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/vldbToRpa Curren
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/vldbToRpa
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/ercChk /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
@@ -11274,13 +11631,13 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 21 11:58:39 2021"
+Loading assuraExtract_Rules at "Apr 26 13:40:05 2021"
  
 *************************************************************** 
  
- XH018 Assura Extract Rules file version v17.1 updated on 190711 
+ XH018 Assura Extract Rules file version 8.1.1 updated on 201215 
  X-FAB Design Support
- Reference Documents: PDS_018_03 Release 8.0 
+ Reference Documents: PDS_018_03 Release 8.1 
  
  ******  Subset    1143  ****** 
  
@@ -11304,7 +11661,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Wed Apr 21 11:58:40 2021
+Run ended: Mon Apr 26 13:40:06 2021
 
 *****  Assura terminated normally  *****
 

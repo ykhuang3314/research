@@ -1,0 +1,68 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Stimulator_IMP
+* Top Cell Name: Idac_5bit_ST_V2
+* View Name:     schematic
+* Netlisted on:  Apr 23 13:45:37 2021
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+*.GLOBAL vdd3!
+
+*.PIN vdd3!
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    Idac_5bit_ST_V2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Idac_5bit_ST_V2 D0_3v D1_3v D2_3v D3_3v D4_3v Idac Iref vdd3!
+*.PININFO D0_3v:I D1_3v:I D2_3v:I D3_3v:I D4_3v:I Idac:B Iref:B vdd3!:B
+MM1 Iref Iref Vbias vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM31 Idac D0_3v Ix1 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM20 n1 Vbias vdd3! vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM22 Ix1 Iref n1 vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM23 n2 Vbias vdd3! vdd3! PE3 W=6u L=2u M=8.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM24 Ix2 Iref n2 vdd3! PE3 W=6u L=2u M=8.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM25 n3 Vbias vdd3! vdd3! PE3 W=6u L=2u M=16.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM29 Ix4 Iref n3 vdd3! PE3 W=6u L=2u M=16.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM32 Ix8 Iref n4 vdd3! PE3 W=6u L=2u M=32.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM33 n4 Vbias vdd3! vdd3! PE3 W=6u L=2u M=32.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM35 n5 Vbias vdd3! vdd3! PE3 W=6u L=2u M=64.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM36 Ix16 Iref n5 vdd3! PE3 W=6u L=2u M=64.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM38 Vbias Vbias vdd3! vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM39 Idac D1_3v Ix2 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM40 Idac D2_3v Ix4 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM41 Idac D3_3v Ix8 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM42 Idac D4_3v Ix16 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+.ENDS
+

@@ -1,0 +1,101 @@
+"Cadence Directory" internal none /home/ykhuang/research/.cadence/
+"Current Directory" internal none /home/ykhuang/research
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/.preset.autosave
+"Job Signature" internal none IPVS_1619170949_1210
+"PVS Job Mode" internal none drc
+"Run Directory" internal none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2
+"Technology Mapping File" internal none /home/ykhuang/research/pvtech.lib
+"Technology Name" internal none "XH018_1143"
+"Technology Rule File" internal none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/.technology.rul
+"Technology RuleSet" internal none "default"
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvsgui
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1619170951
+"Cell Tree" output text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/cell_tree.txt
+"Control File" input text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/pvsdrcctl
+"DFII version" internal none 6.1.8.0
+"Do not check rules files before run" internal none ENABLED
+"Input Layout" input none OA: Stimulator_IMP Idac_5bit_ST_V2 layout
+"Intermediate GDSII File" output none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/Idac_5bit_ST_V2.gds
+"Intermediate GDSII File creation Errors" output none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/PIPO1.LOG
+"Intermediate OASIS File creation Errors" output none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/PIPO1.LOG
+"Job Signature" internal none IPVS_1619170949_1210
+"Layout Cell Name" internal none Idac_5bit_ST_V2
+"Layout ConvertPin" internal text geometryAndText
+"Layout GDSII" input none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/Idac_5bit_ST_V2.gds
+"Layout HierDepth" internal none 32
+"Layout Layermap" internal text /home/ykhuang/research/.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable
+"Layout Library Name" internal none Stimulator_IMP
+"Layout MaxVertices" internal none 2048
+"Layout NoConvertHalfWidthPath" input none nil
+"Layout ObjectMap" internal text /home/ykhuang/research/.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map
+"Layout ReplaceBusBitChar" input none nil
+"Layout Scale" internal none 0.001
+"Layout TechLib" internal none TECH_XH018
+"Layout Top Cell" internal none Idac_5bit_ST_V2
+"Layout View Name" internal none layout
+"Output Layout Cellmap I" internal text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/lay_cellMap.txt
+"PIPO Log I" log text  /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/PIPO1.LOG
+"PIPO Output I" internal text  /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/PIPO1.OUT
+"PIPO Setup File I" internal text  /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/pipo1.setup
+"PVS Job Log" log text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/pvsuidrc.log
+"PVS Job Mode" internal none drc
+"Rule File" input text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/.config.rul
+"Rule File" input text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/.technology.rul
+"Run Directory" internal none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvsvirt
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1619170952
+"ASCII DRC Report Database" output rdb /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/Idac_5bit_ST_V2_drc.err
+"Antenna RDB R1CT" output rdb antenna.ratio
+"Antenna RDB R1M1P1" output rdb antenna.ratio
+"Antenna RDB R1M2P1" output rdb antenna.ratio
+"Antenna RDB R1M3P1" output rdb antenna.ratio
+"Antenna RDB R1M4P1" output rdb antenna.ratio
+"Antenna RDB R1MLP1" output rdb antenna.ratio
+"Antenna RDB R1MTP1" output rdb antenna.ratio
+"Antenna RDB R1V1" output rdb antenna.ratio
+"Antenna RDB R1V2" output rdb antenna.ratio
+"Antenna RDB R1V3" output rdb antenna.ratio
+"Antenna RDB R1VL" output rdb antenna.ratio
+"Antenna RDB R1VT" output rdb antenna.ratio
+"Antenna RDB R2P1" output rdb antenna.ratio
+"Cell Tree" output text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/cell_tree.txt
+"DRC Summary" output text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/Idac_5bit_ST_V2_drc.sum
+"Density RDB " output rdb Q1VTdensity.rdb
+"Density RDB " output rdb Q3V2density.rdb
+"Density RDB " output rdb Q3V3density.rdb
+"Density RDB " output rdb Q4VTdensity.rdb
+"Density RDB " output rdb Q4V2density.rdb
+"Density RDB " output rdb Q4V3density.rdb
+"Density RDB " output rdb Q1V2density.rdb
+"Density RDB " output rdb Q1V3density.rdb
+"Density RDB " output rdb Q5V2density.rdb
+"Density RDB " output rdb Q5V3density.rdb
+"Density RDB " output rdb Q2V2density.rdb
+"Density RDB " output rdb Q2V3density.rdb
+"Density RDB " output rdb Q3VTdensity.rdb
+"Density RDB " output rdb Q6V2density.rdb
+"Density RDB " output rdb Q6V3density.rdb
+"Density RDB " output rdb Q6VTdensity.rdb
+"Density RDB " output rdb R1VLPAdensity.rdb
+"Density RDB " output rdb R1V1PAdensity.rdb
+"Density RDB " output rdb R1V2PAdensity.rdb
+"Density RDB " output rdb R1V3PAdensity.rdb
+"Density RDB " output rdb R1VTPAdensity.rdb
+"Density RDB " output rdb VIATPLdensity.rdb
+"Density RDB " output rdb VIATPL_VIATP_density.rdb
+"Layout GDSII" input none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/Idac_5bit_ST_V2.gds
+"PVS Job Mode" internal none drc
+"Report MaxResults" internal none 1000
+"Rule File" input text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/.config.rul
+"Rule File" input text /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/.technology.rul
+"Run Directory" internal none /home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/
+"UI Data" internal none ENABLED
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvs
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1619170952

@@ -1,0 +1,35 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : CurrentMirror_x10_LV_lvs.sum
+ERC Summary File         : CurrentMirror_x10_LV.sum
+LVS Comparison Report    : CurrentMirror_x10_LV_lvs.sum.cls
+LVS Softchk Report       : CurrentMirror_x10_LV.softchk
+Layout Name              : /home/ykhuang/research/PvsLVS/CurrentMirror_x10_LV/CurrentMirror_x10_LV.gds ("CurrentMirror_x10_LV")
+User Name                : ykhuang
+Creation Time            : Fri Apr 23 16:56:04 2021
+Current directory        : /home/ykhuang/research/PvsLVS/CurrentMirror_x10_LV
+PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK nwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK dnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hvnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK ndftrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hnw -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK catdiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK anodiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pwitrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pdf -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK bulk -TYPE CONTACT   Total Result        0 (       0)

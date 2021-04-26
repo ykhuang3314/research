@@ -1,0 +1,5 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary CurrentMirror_x10_LV
+Iin 3 Iin 51335 69660 m2trm
+gnd! 1 gnd! 55095 78430 m4trm
+Ix10 2 Ix10 31240 73245 m4trm

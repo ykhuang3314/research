@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "CurrentMirror_x10_LV"
+  repList "auCdl schematic cmos_sch"
+  stopList "auCdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/PvsLVS/CurrentMirror_x10_LV/"
+ )
+( model
+( "Stimulator_IMP/CurrentMirror_x10_LV/schematic" "CurrentMirror_x10_LV" )
+ )
+( "CurrentMirror_x10_LV" "ihnl/cds0/map" )
+ )

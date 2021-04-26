@@ -1,0 +1,30 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% Ext_Iref_ST 3
+RR0 R 2
+MM2 MN 4
+MM2==2 MN 4
+MM2==3 MN 4
+MM2==4 MN 4
+MM2==5 MN 4
+MM0 MN 4
+MM0==2 MN 4
+MM0==3 MN 4
+MM0==4 MN 4
+MM0==5 MN 4
+MM3 MN 4
+MM3==2 MN 4
+MM3==3 MN 4
+MM3==4 MN 4
+MM3==5 MN 4
+MM1 MN 4
+MM1==2 MN 4
+MM1==3 MN 4
+MM1==4 MN 4
+MM1==5 MN 4
+MM14 MN 4
+MM14==2 MN 4
+MM14==3 MN 4
+MM14==4 MN 4

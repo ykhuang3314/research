@@ -1,0 +1,32 @@
+** Layout Netlist, pvs precompare
+** 
+
+.subckt Ext_Iref_ST Iext Iref vss 
+RX148/R0 Iext 3 RPP1K1 R=0 L=2.0095e-05 W=2e-06 m=1 
+MX149/M0 vss vss vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX150/M0 vss vss vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX151/M0 Iref 3 4 vss NE3 L=2e-06 W=8e-06 m=1 
+MX152/M0 3 3 2 vss NE3 L=2e-06 W=8e-06 m=1 
+MX153/M0 4 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX154/M0 2 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX155/M0 3 3 2 vss NE3 L=2e-06 W=8e-06 m=1 
+MX156/M0 Iref 3 4 vss NE3 L=2e-06 W=8e-06 m=1 
+MX157/M0 2 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX158/M0 4 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX159/M0 Iref 3 4 vss NE3 L=2e-06 W=8e-06 m=1 
+MX160/M0 3 3 2 vss NE3 L=2e-06 W=8e-06 m=1 
+MX161/M0 4 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX162/M0 2 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX163/M0 3 3 2 vss NE3 L=2e-06 W=8e-06 m=1 
+MX164/M0 Iref 3 4 vss NE3 L=2e-06 W=8e-06 m=1 
+MX165/M0 2 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX166/M0 4 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX167/M0 Iref 3 4 vss NE3 L=2e-06 W=8e-06 m=1 
+MX168/M0 3 3 2 vss NE3 L=2e-06 W=8e-06 m=1 
+MX169/M0 4 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX170/M0 2 2 vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX171/M0 vss vss vss vss NE3 L=2e-06 W=8e-06 m=1 
+MX172/M0 vss vss vss vss NE3 L=2e-06 W=8e-06 m=1 
+.ends
+
+

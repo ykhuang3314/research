@@ -2,10 +2,11 @@
 "pe3(MOS)" "pe3(MOS)"
 "ne3(MOS)" "ne3(MOS)"
 "LSHVT18U3VX2 layout D_CELLS_M3V" "LSHVT18U3VX2 cmos_sch D_CELLS_M3V" "pe3(MOS)" "ne3(MOS)"
+"CurrentMirror_x10_LV layout Stimulator_IMP" "CurrentMirror_x10_LV schematic Stimulator_IMP" "ne3(MOS)"
 "csft5a(CAP)" "csft5a(CAP)"
 "ped_bjt(Generic)" "ped_bjt(Generic)"
 "nedia_bjt(Generic)" "nedia_bjt(Generic)"
-"CurrentMirror_ST layout Stimulator_IMP" "CurrentMirror_ST schematic Stimulator_IMP" "nedia_bjt(Generic)" "ped_bjt(Generic)" "ne3(MOS)" "rpp1k1(RES)" "csft5a(CAP)"
+"CurrentMirror_ST layout Stimulator_IMP" "CurrentMirror_ST schematic Stimulator_IMP" "nedia_bjt(Generic)" "ped_bjt(Generic)" "rpp1k1(RES)" "csft5a(CAP)"
 Devices filtered from layout
 "pcapacitor"
 "presistor"

@@ -5,7 +5,7 @@
 
 
 ;----------------------------------------------------------------------------
-; RSF include(/pkg/xfab/XKIT/xh018/cadence/v8_0/assura/v8_0_1/Assura/XH018_1143/LVSinclude.rsf) Section
+; RSF include(/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/LVSinclude.rsf) Section
 ; Specified in the Assura UI
 ;----------------------------------------------------------------------------
 
@@ -138,6 +138,10 @@ layout(
     swapPins( "dapda0" "(f A C LPOWER)")
     swapPins( "dspada" "(f A C PHOTON)")
     swapPins( "dspada0" "(f A C PHOTON)")
+    swapPins( "dapb" "(f A C C2 LPOWER)")
+    swapPins( "dapb0" "(f A C C2 LPOWER)")
+    swapPins( "dspb" "(f A C C2 PHOTON)")
+    swapPins( "dspb0" "(f A C C2 PHOTON)")
     swapPins( "nedi" "(f S D)")
     swapPins( "nedia" "(f S D)")
     swapPins( "ped2" "(f S D)")
@@ -196,7 +200,7 @@ schematic(
 avParameters(
   ?inputLayout ( "df2" "Stimulator_IMP" )
   ?cellName "Ext_Iref_ST"
-  ?viewName "layout"
+  ?viewName "ModgenTmplayout15249"
   ?runName "Ext_Iref_ST_LVS"
   ?workingDirectory "./AssuraLVS"
   ?technology "XH018_1143"
@@ -219,7 +223,8 @@ avParameters(
 ; Description:  Assura XH018 LVS Rules
 ; Author:       Alexander Schael
 ; Created:      Aug 15 12:57 07
-; Modified:     Jul 10 07:16 19 3467 schael
+; Modified:     Jun 30 10:38 20 92006 schael
+; Modified:     Dec 15 2020
 ; Language:     Skill
 ; Package:      N/A
 ; MainFun:      N/A
@@ -228,6 +233,8 @@ avParameters(
 ;
 ; Revisions:
 ;
+; Dec 15 2020
+;  update regarding PDS_018_03 Rel. 8.1.1
 ; Jul 10 07:15 19 (schael) aschael@sb21
 ;  update regarding PDS_018_03 Rel. 8.0.1
 ; Jan  3 11:52 18 (schael) aschael@sb21
@@ -281,35 +288,34 @@ avParameters(
 ;
 /* ****************************************************************************
 DISCLAIMER:
-#  The information contained herein is provided by X-FAB Semiconductor
-#  Foundries AG  on an "AS IS" basis without any warranty.
+#  The information contained herein is provided by X-FAB Global
+#  Services GmbH on an "AS IS" basis without any warranty.
 #
-#  X-FAB Semiconductor Foundries AG disclaims any representation that
+#  X-FAB Global Services GmbH disclaims any representation that
 #  the information does not infringe any intellectual property rights or proprietary
 #  rights of any third parties.  There are no other warranties given by
 #  X-FAB, whether express, implied or statutory, including, without limitation,
 #  implied warranties of merchantability and fitness for a particular purpose.
 
-# In no event X-FAB will be liable or responsible for any expense, losses, damages,
-# or action incurred or undertaken as a result of the receipt of the information.
+#  In no event X-FAB will be liable or responsible for any expense, losses, damages,
+#  or action incurred or undertaken as a result of the receipt of the information.
 #
-#  X-FAB Semiconductor Foundries AG  reserves the right to make changes
+#  X-FAB Global Services GmbH reserves the right to make changes
 #  to the information at any time and without notice.
 **************************************************************************** */
 
 
 avCompareRules(
 
-  fileVer  = "v15.1";
-  fileDate = "Jul 10, 2019"
+  fileVer  = "8.1.1";
+  fileDate = "Dec 15, 2020"
   libVer  = "X-FAB XH018 Techfile Version"
   printf( "  \n" )
   printf(
    "*************************************************************** \n"
   )
   printf( "  \n" )
-  printf(
-    " X-FAB Assura Compare Rules file version %s updated on %s \n"
+  printf( " X-FAB Assura Compare Rules file version %s updated on %s \n"
     fileVer fileDate
   )
   printf( " X-FAB Design Support\n" )
@@ -3400,6 +3406,8 @@ avCompareRules(
   mergeParallel( "qnva"  merge parallelBJT_l )
   mergeParallel( "qnvb"  merge parallelBJT_l )
   mergeParallel( "qnvc"  merge parallelBJT_l )
+  mergeParallel( "qnvba"  merge parallelBJT_l )
+  mergeParallel( "qnvca"  merge parallelBJT_l )
   mergeParallel( "qnvz"  merge parallelBJT_l )
   mergeParallel( "qpva"  merge parallelBJT )
   mergeParallel( "qpvb"  merge parallelBJT )
@@ -3410,6 +3418,8 @@ avCompareRules(
   mergeParallel( "QNVA"  merge parallelBJT_l )
   mergeParallel( "QNVB"  merge parallelBJT_l )
   mergeParallel( "QNVC"  merge parallelBJT_l )
+  mergeParallel( "QNVBA"  merge parallelBJT_l )
+  mergeParallel( "QNVCA"  merge parallelBJT_l )
   mergeParallel( "QNVZ"  merge parallelBJT_l )
   mergeParallel( "QPVA"  merge parallelBJT )
   mergeParallel( "QPVB"  merge parallelBJT )
@@ -3450,6 +3460,15 @@ avCompareRules(
   mergeParallel( "dspada0" noMerge )
   mergeParallel( "DSPADA" noMerge )
   mergeParallel( "DSPADA0" noMerge )
+  
+  mergeParallel( "dapb" noMerge )
+  mergeParallel( "dapb0" noMerge )
+  mergeParallel( "DAPB" noMerge )
+  mergeParallel( "DAPB0" noMerge )
+  mergeParallel( "dspb" noMerge )
+  mergeParallel( "dspb0" noMerge )
+  mergeParallel( "DSPB" noMerge )
+  mergeParallel( "DSPB0" noMerge )
 
   mergeSeries( CAP noMerge )
   
@@ -3579,6 +3598,15 @@ avCompareRules(
   mergeSeries( "DPHOD0" noMerge )
   mergeSeries( "dphodfp" noMerge )
   mergeSeries( "DPHODFP" noMerge )
+  
+  mergeSeries( "dapb" noMerge )
+  mergeSeries( "dapb0" noMerge )
+  mergeSeries( "DAPB" noMerge )
+  mergeSeries( "DAPB0" noMerge )
+  mergeSeries( "dspb" noMerge )
+  mergeSeries( "dspb0" noMerge )
+  mergeSeries( "DSPB" noMerge )
+  mergeSeries( "DSPB0" noMerge )
 
  ;;formGate( none ) ;;verhindert gate veriations (parallel_series)
 
@@ -3801,6 +3829,8 @@ avCompareRules(
   compareParameter( "qnva" compareBJT_l )
   compareParameter( "qnvb" compareBJT_l )
   compareParameter( "qnvc" compareBJT_l )
+  compareParameter( "qnvba" compareBJT_l )
+  compareParameter( "qnvca" compareBJT_l )
   compareParameter( "qnvz" compareBJT_l )
   compareParameter( "qpva" compareBJT )
   compareParameter( "qpvb" compareBJT )
@@ -3811,6 +3841,8 @@ avCompareRules(
   compareParameter( "QNVA" compareBJT_l )
   compareParameter( "QNVB" compareBJT_l )
   compareParameter( "QNVC" compareBJT_l )
+  compareParameter( "QNVBA" compareBJT_l )
+  compareParameter( "QNVCA" compareBJT_l )
   compareParameter( "QNVZ" compareBJT_l )
   compareParameter( "QPVA" compareBJT )
   compareParameter( "QPVB" compareBJT )
@@ -3842,6 +3874,15 @@ avCompareRules(
   compareParameter( "DPHOD0" compareDPHO )
   compareParameter( "dphodfp" compareDPHO )
   compareParameter( "DPHODFP" compareDPHO )
+  
+  compareParameter( "dapb" compareDPHO )
+  compareParameter( "dapb0" compareDPHO )
+  compareParameter( "DAPB" compareDPHO )
+  compareParameter( "DAPB0" compareDPHO )
+  compareParameter( "dspb" compareDPHO )
+  compareParameter( "dspb0" compareDPHO )
+  compareParameter( "DSPB" compareDPHO )
+  compareParameter( "DSPB0" compareDPHO )
 
   bind( cell("PED2" "ped2") net("B" "SB") )
   bind( cell("ped2" "ped2") net("B" "SB") )
@@ -4018,6 +4059,10 @@ schematic(
   genericDevice("dphod")
   genericDevice("dphod0")
   genericDevice("dphodfp")
+  genericDevice("dapb")
+  genericDevice("dapb0")
+  genericDevice("dspb")
+  genericDevice("dspb0")
   genericDevice("phhv_bjt")
   genericDevice("phv_bjt")
   genericDevice("pmmc_bjt")

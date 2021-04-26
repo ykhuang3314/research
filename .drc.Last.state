@@ -13,15 +13,15 @@
 vuiDRCFormTable = '(
 	format  "DFII"
 	vui2dbxor  nil
-	runName  "Ext_Iref_ST_DRC"
+	runName  "CurrentMirror_ST_DRC"
 	runDir  "./AssuraDRC"
 	machineLoc  "local"
 	viewRules  t
 	technologyField  "XH018_1143"
 	runsetField  "default"
-	rules  "/pkg/xfab/XKIT/xh018/cadence/v8_0/assura/v8_0_1/Assura/XH018_1143/drc.rul"
+	rules  "/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/drc.rul"
 	switches  ""
-	rsfInclude  "/pkg/xfab/XKIT/xh018/cadence/v8_0/assura/v8_0_1/Assura/XH018_1143/DRCinclude.rsf"
+	rsfInclude  "/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/DRCinclude.rsf"
 	varTag  "None"
 	varVal  ""
 	varDefVal  ""
@@ -30,7 +30,7 @@ vuiDRCFormTable = '(
 	additionalFunctionsButton  nil
 	limitDRCswitcher  nil
 	library  "Stimulator_IMP"
-	cell  "Ext_Iref_ST"
+	cell  "CurrentMirror_ST"
 	view  "layout"
 	saveExtracted  nil
 	extractedView  "drc_extracted"

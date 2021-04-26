@@ -1,0 +1,736 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : Ext_Iref_ST                                  *
+* Netlisted  : Fri Apr 23 13:47:56 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(ne) ne ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 1 MP(pe) pe pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 2 MN(nel) nel ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 3 MN(nelna) nelna ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 4 MN(nesvt) nesvt ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 5 MP(pel) pel pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 6 MP(pesvt) pesvt pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 7 MN(nei) nei ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 8 MP(pei) pei pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 9 MN(neli) neli ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 10 MP(peli) peli pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 11 MN(nelnai) nelnai ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 12 MN(nesvti) nesvti ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 13 MP(pesvti) pesvti pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 14 NEI_6() nei_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 15 NEI_M_6() nei_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 16 NELI_6() neli_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 17 NELI_M_6() neli_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 18 NELNAI_6() nelnai_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 19 NELNAI_M_6() nelnai_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 20 NESVTI_6() nesvti_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 21 NESVTI_M_6() nesvti_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 22 PE_5() pe_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 23 PEL_5() pel_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 24 PEI_5() pei_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 25 PEI_M_5() pei_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 26 PELI_5() peli_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 27 PELI_M_5() peli_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 28 PESVT_5() pesvt_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 29 PESVTI_5() pesvti_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 30 PESVTI_M_5() pesvti_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 31 MN(nmma) nmma_d hvnwtrm(D) p1trm(G) hvnwtrm(S) bulk(B)
+*.DEVTMPLT 32 MN(nmma_bjt) nmma_b hvnwtrm(D) p1trm(G) hvnwtrm(S) bulk(B)
+*.DEVTMPLT 33 MP(pmma) pmma_d pwitrm(D) p1trm(G) pwitrm(S) dnwtrm(B)
+*.DEVTMPLT 34 PMMA_BJT() pmma_b pwitrm(D) p1trm(G) pwitrm(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 35 MN(nma) nma_d ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 36 MN(nma_bjt) nma_b ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 37 MP(pma) pma_d pdiff(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 38 PMA_BJT() pma_b pdiff(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 39 MP(pmb) pmb pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 40 MN(nmmc) nmmc_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 41 MN(nmmd) nmmd_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 42 MN(nhhv) nhhv_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 43 MN(nhhvd) nhhvd_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 44 MN(nmmc_bjt) nmmc_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 45 MN(nmmd_bjt) nmmd_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 46 MN(nhhv_bjt) nhhv_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 47 MN(nhhvd_bjt) nhhvd_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 48 MP(pmmc) pmmc_d pdf(D) p1trm(G) pdf(S) hnw(B)
+*.DEVTMPLT 49 PMMC_BJT() pmmc_b pdf(D) p1trm(G) pdf(S) hnw(B) bulk(SB)
+*.DEVTMPLT 50 MP(phhv) phhv_d pdf(D) p1trm(G) pdf(S) hnw(B)
+*.DEVTMPLT 51 PHHV_BJT() phhv_b pdf(D) p1trm(G) pdf(S) hnw(B) bulk(SB)
+*.DEVTMPLT 52 LDDN(nmc) nmc_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 53 LDDN(nhv) nhv_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 54 LDDN(nhvd) nhvd_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 55 LDDN(nmc_bjt) nmc_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 56 LDDN(nhv_bjt) nhv_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 57 LDDN(nhvd_bjt) nhvd_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 58 LDDP(pmc) pmc_d pdf(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 59 PMC_BJT() pmc_b pdf(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 60 LDDP(phv) phv_d pdf(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 61 PHV_BJT() phv_b pdf(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 62 LDDN(nedi) nedi2_d dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 63 LDDN(nedia) nedia2_d dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 64 LDDP(ped) ped12_d pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 65 LDDP(ped2) ped22_d pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 66 LDDN(nedi_bjt) nedi2_b dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 67 LDDN(nedia_bjt) nedia2_b dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 68 LDDP(ped_bjt) ped12_b pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 69 LDDP(ped2_bjt) ped22_b pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 70 Q(qpva) qpva bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 71 Q(qpvb) qpvb bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 72 Q(qpvc) qpvc bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 73 Q(qpvascr) qpvascr bulk(C) dnwtrm(B) pwitrm(E)
+*.DEVTMPLT 74 Q(qpvhscr) qpvhscr bulk(C) hnw(B) pdf(E)
+*.DEVTMPLT 75 Q(qpvhbscr) qpvhbscr bulk(C) hnw(B) pwitrm(E)
+*.DEVTMPLT 76 Q(qnva) qnva dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 77 Q(qnvb) qnvb dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 78 Q(qnvba) qnvba dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 79 Q(qnvc) qnvc dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 80 Q(qnvca) qnvca dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 81 Q(qnvz) qnvz dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 82 MN(nn3) nnm ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 83 MN(ne3) nem ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 84 MN(nd3) ndm ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 85 MN(ne3lna) nemlna ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 86 MP(pe3) pem pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 87 MP(pe3ln) pemln pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 88 MP(pe3lna) pemlna pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 89 MN(ne3i) nemi ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 90 MN(nd3i) ndmi ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 91 MN(ne3lnai) nemlnai ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 92 MN(nds3i) ndsmiP ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 93 MN(nds3i) ndsmiE ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 94 MP(pe3i) pemi pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 95 MP(pe3lni) pemlni pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 96 MP(pe3lnai) pemlnai pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 97 NE3I_6() nemi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 98 NE3I_M_6() nemi_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 99 ND3I_6() ndmi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 100 ND3I_M_6() ndmi_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 101 NE3LNAI_6() nemlnai_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 102 NE3LNAI_M_6() nemlnai_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 103 PE3_5() pem_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 104 PE3LN_5() pemln_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 105 PE3I_5() pemi_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 106 PE3I_M_5() pemi_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 107 PE3LNI_5() pemlni_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 108 PE3LNI_M_5() pemlni_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 109 PE3LNA_5() pemlna_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 110 PE3LNAI_5() pemlnai_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 111 PE3LNAI_M_5() pemlnai_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 112 MOSVC() mosvc p1trm(G) nwtrm(NW) bulk(SB)
+*.DEVTMPLT 113 MOSVCI() mosvci p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 114 MOSVCI_M() mosvci_m p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 115 MOSVC3() mosvcm p1trm(G) nwtrm(NW) bulk(SB)
+*.DEVTMPLT 116 MOSVC3I() mosvcim p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 117 MOSVC3I_M() mosvcim_m p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 118 Q(qpva3) qpvma bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 119 Q(qpvb3) qpvmb bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 120 Q(qpvc3) qpvmc bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 121 R(rnw) rnw nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 122 R(rnw_scr) rnw_scr nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 123 R(rdnwmv) rdnwmv dnwtrm(POS) dnwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 124 R(rdn) rdn ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 125 R(rdn) rdn_g ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 126 R(rdn) rdni ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 127 R(rdn) rdn_gi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 128 R(rdn_esd) rdn_esdg ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 129 R(rdp) rdp pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 130 R(rdp) rdp_g pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 131 R(rdp) rdpi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 132 R(rdp) rdp_gi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 133 R(rdp_io) rdp_io_g pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 134 R(rdp_esd) rdp_esdg pdiff(POS) pdiff(NEG) hnw(SUB)
+*.DEVTMPLT 135 tag_60v() tdf_60 df_vlbl(N1)
+*.DEVTMPLT 136 tag_25v() tdf_25 df_vlbl(N1)
+*.DEVTMPLT 137 R(s_res) s_res bulk(POS) bulk(NEG)
+*.DEVTMPLT 138 D(dn) d_dn bulk(POS) ndiff(NEG)
+*.DEVTMPLT 139 D(dn) d_dni1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 140 D(dn) d_dni2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 141 D(p_dn) p_dn bulk(POS) ndiff(NEG)
+*.DEVTMPLT 142 D(p_dn) p_dni1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 143 D(p_dn) p_dni2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 144 D(p_dn) p_dndpl bulk(POS) ndiff(NEG)
+*.DEVTMPLT 145 D(p_dn) p_dndpli pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 146 D(p_dbn) p_dbn bulk(POS) bndiff(NEG)
+*.DEVTMPLT 147 D(dp) d_dp pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 148 D(dp) d_dpi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 149 D(dp) d_dpi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 150 D(p_dp) p_dp pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 151 D(p_dp) p_dpi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 152 D(p_dp) p_dpi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 153 D(p_dpndf) p_dpndf pdiff(POS) ndftrm(NEG)
+*.DEVTMPLT 154 D(p_dpndf) pdpndfh pdiff(POS) hnw(NEG)
+*.DEVTMPLT 155 D(dnw) d_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 156 D(p_dnw) p_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 157 D(dhnw) d_dhnw bulk(POS) hvnwtrm(NEG)
+*.DEVTMPLT 158 D(p_dhnw) p_dhnw bulk(POS) hvnwtrm(NEG)
+*.DEVTMPLT 159 D(dhpw) d_dhpw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 160 D(p_dhpw) p_dhpw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 161 D(ddnw) d_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 162 D(p_ddnw) p_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 163 D(ddnwmv) d_ddnwmv bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 164 D(p_ddnwmv) p_ddnwmv bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 165 D(dphoa) dphoa bulk(POS) dnwtrm(NEG) dphopin3(SUB)
+*.DEVTMPLT 166 D(dphob) dphob bulk(POS) dnwtrm(NEG) dphopin3(SUB)
+*.DEVTMPLT 167 DPHOC() dphoc bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 168 DPHOCFP() dphocfp bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 169 DPHOC0() dphoc0 bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 170 DPHOD() dphod anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 171 DPHODFP() dphodfp anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 172 DPHOD0() dphod0 anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 173 D(dapda) dapda bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 174 D(dapda0) dapda0 bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 175 D(dspada) dspada bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 176 D(dspada0) dspada0 bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 177 DAPB() dapb bulk(A) catdiff(C) davl_c2(C2) dphopin3(LPOWER)
+*.DEVTMPLT 178 DAPB0() dapb0 bulk(A) catdiff(C) davl_c2(C2) dphopin3(LPOWER)
+*.DEVTMPLT 179 DSPB() dspb bulk(A) catdiff(C) davl_c2(C2) dphopin3(PHOTON)
+*.DEVTMPLT 180 DSPB0() dspb0 bulk(A) catdiff(C) davl_c2(C2) dphopin3(PHOTON)
+*.DEVTMPLT 181 D(dipdnw) d_dipw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 182 D(p_dipdnw) p_dipw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 183 D(dipdnwmv) d_dipwmv pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 184 D(p_dipdnwmv) p_dipwmv pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 185 D(p_ddpldnw) pddpldnw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 186 D(dndf) d_dndf bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 187 D(p_dndf) p_dndf bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 188 D(dpdwhn) d_dpdwhn pdf(POS) hnw(NEG)
+*.DEVTMPLT 189 D(p_dpdwhn) p_dpdwhn pdf(POS) hnw(NEG)
+*.DEVTMPLT 190 D(dwhn) d_dwhn bulk(POS) hnw(NEG)
+*.DEVTMPLT 191 D(p_dwhn) p_dwhn bulk(POS) hnw(NEG)
+*.DEVTMPLT 192 D(dpdd_scr) dpdd_scr pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 193 D(p_dpdddnw) pdpdddnw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 194 D(dnpdd_scr) dnpddscr pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 195 D(dpp20) dpp20 pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 196 D(dnp20) dnp20 bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 197 D(dpol) dpol dpol_p(POS) dpol_n(NEG)
+*.DEVTMPLT 198 D(dnhpw) d_dnhpw bulk(POS) ndiff(NEG)
+*.DEVTMPLT 199 D(dnhpw) d_dnhpwi pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 200 D(p_dnhpw) p_dnhpw bulk(POS) ndiff(NEG)
+*.DEVTMPLT 201 D(p_dnhpw) p_dnhpwi pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 202 D(dphnw) d_dphnw pdiff(POS) hvnwtrm(NEG)
+*.DEVTMPLT 203 D(dphnw) d_dphnw1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 204 D(dphnw) d_dphnw2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 205 D(p_dphnw) p_dphnw pdiff(POS) hvnwtrm(NEG)
+*.DEVTMPLT 206 D(p_dphnw) p_dphnw1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 207 D(p_dphnw) p_dphnw2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 208 D(dpdnwmv) ddpdnwmv pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 209 D(p_dpdnwmv) pdpdnwmv pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 210 D(dpdnw) d_dpdnw pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 211 D(p_dpdnw) p_dpdnw pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 212 D(dpwhn) d_dpwhn pdiff(POS) hnw(NEG)
+*.DEVTMPLT 213 D(p_dpwhn) p_dpwhn pdiff(POS) hnw(NEG)
+*.DEVTMPLT 214 D(dsb) d_dsb d_dsdf(POS) hnw(NEG) bulk(SUB)
+*.DEVTMPLT 215 D(dsba) d_dsba d_dsdf(POS) hnw(NEG) bulk(SUB)
+*.DEVTMPLT 216 R(rnw3) rnwm nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 217 R(rnw3_scr) rnwm_scr nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 218 R(rdn3) rdnm ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 219 R(rdn3) rdnm_g ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 220 R(rdn3) rdnmi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 221 R(rdn3) rdnm_gi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 222 R(rdp3) rdpm pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 223 R(rdp3) rdpm_g pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 224 R(rdp3) rdpmi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 225 R(rdp3) rdpm_gi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 226 D(dn3) d_dnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 227 D(dn3) d_dnmi1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 228 D(dn3) d_dnmi2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 229 D(p_dn3) p_dnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 230 D(p_dn3) p_dnmi1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 231 D(p_dn3) p_dnmi2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 232 D(dnn3) d_dnnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 233 D(p_dnn3) p_dnnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 234 D(p_dn3dpl) pdnmdpl bulk(POS) ndiff(NEG)
+*.DEVTMPLT 235 D(p_dn3dpl) pdnmdpli pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 236 D(dp3) d_dpm pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 237 D(dp3) d_dpmi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 238 D(dp3) d_dpmi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 239 D(p_dp3) p_dpm pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 240 D(p_dp3) p_dpmi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 241 D(p_dp3) p_dpmi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 242 D(dnw3) d_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 243 D(p_dnw3) p_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 244 R(rpp1k1) rpp1k1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 245 R(rpp1k1_3) rpp1k1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 246 R(rpp1k1_3) rpp1k1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 247 R(rpp1k1_3) rpp1k1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 248 R(rpp1k1_3) rpp1k1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 249 R(rpp1k1_3) rpp1k1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 250 R(rpp1k1_3) rpp1k1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 251 R(rpp1k1_3) rpp1k1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 252 R(rpp1k1_3) rpp1k1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 253 R(rnp1) rnp1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 254 R(rnp1_3) rnp1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 255 R(rnp1_3) rnp1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 256 R(rnp1_3) rnp1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 257 R(rnp1_3) rnp1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 258 R(rnp1_3) rnp1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 259 R(rnp1_3) rnp1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 260 R(rnp1_3) rnp1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 261 R(rnp1_3) rnp1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 262 R(rpp1) rpp1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 263 R(rpp1_3) rpp1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 264 R(rpp1_3) rpp1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 265 R(rpp1_3) rpp1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 266 R(rpp1_3) rpp1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 267 R(rpp1_3) rpp1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 268 R(rpp1_3) rpp1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 269 R(rpp1_3) rpp1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 270 R(rpp1_3) rpp1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 271 R(rpp1s) rpp1s_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 272 R(rpp1s_3) rpp1s_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 273 R(rpp1s_3) rpp1s_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 274 R(rpp1s_3) rpp1sfp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 275 R(rpp1s_3) rpp1s_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 276 R(rpp1s_3) rpp1s_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 277 R(rpp1s_3) rpp1s_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 278 R(rpp1s_3) rpp1shn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 279 R(rpp1s_3) rpp1sfn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 280 R(rnp1h) rnp1h_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 281 R(rnp1h_3) rnp1h_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 282 R(rnp1h_3) rnp1h_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 283 R(rnp1h_3) rnp1hfp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 284 R(rnp1h_3) rnp1h_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 285 R(rnp1h_3) rnp1h_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 286 R(rnp1h_3) rnp1h_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 287 R(rnp1h_3) rnp1hhn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 288 R(rnp1h_3) rnp1hfn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 289 R(pfuse) pfuse p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 290 tag_60v() tp1_60 p1_vlbl(N1)
+*.DEVTMPLT 291 tag_25v() tp1_25 p1_vlbl(N1)
+*.DEVTMPLT 292 R(rm1) rm1 m1trm(POS) m1trm(NEG)
+*.DEVTMPLT 293 R(rm2) rm2 m2trm(POS) m2trm(NEG)
+*.DEVTMPLT 294 tag_60v() tm1_60 m1_vlbl(N1)
+*.DEVTMPLT 295 tag_25v() tm1_25 m1_vlbl(N1)
+*.DEVTMPLT 296 tag_60v() tm2_60 m2_vlbl(N1)
+*.DEVTMPLT 297 tag_25v() tm2_25 m2_vlbl(N1)
+*.DEVTMPLT 298 R(rm3) rm3 m3trm(POS) m3trm(NEG)
+*.DEVTMPLT 299 tag_60v() tm3_60 m3_vlbl(N1)
+*.DEVTMPLT 300 tag_25v() tm3_25 m3_vlbl(N1)
+*.DEVTMPLT 301 R(rm4) rm4 m4trm(POS) m4trm(NEG)
+*.DEVTMPLT 302 tag_60v() tm4_60 m4_vlbl(N1)
+*.DEVTMPLT 303 tag_25v() tm4_25 m4_vlbl(N1)
+*.DEVTMPLT 304 R(rmtp) rmtp mttrm(POS) mttrm(NEG)
+*.DEVTMPLT 305 tag_60v() tmt_60 mt_vlbl(N1)
+*.DEVTMPLT 306 tag_25v() tmt_25 mt_vlbl(N1)
+*.DEVTMPLT 307 R(rmtpl) rmtpl mltrm(POS) mltrm(NEG)
+*.DEVTMPLT 308 tag_60v() tml_60 ml_vlbl(N1)
+*.DEVTMPLT 309 tag_25v() tml_25 ml_vlbl(N1)
+*.DEVTMPLT 310 C(csf2p) d_csf2p m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 311 C(csf3) d_csf3 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 312 C(csf3p) d_csf3p m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 313 C(csf3a) d_csf3a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 314 C(csf4) d_csf4 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 315 C(csf4a) d_csf4a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 316 C(csft5) d_csft5 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 317 C(csft5a) d_csft5a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 318 C(csandwt3) d_cswt3 m1trm(POS) p1trm(NEG)
+*.DEVTMPLT 319 C(csandwt4) d_cswt4 m1trm(POS) p1trm(NEG)
+*.DEVTMPLT 320 C(cdmm4) cdmm capm2_b(POS) m2trm(NEG)
+*.DEVTMPLT 321 C(cdmmh4) cdmmh capmh2_b(POS) m2trm(NEG)
+*.DEVTMPLT 322 C(cmm5t) cmim capm(POS) m4trm(NEG)
+*.DEVTMPLT 323 C(cmmh5t) cmimh capmh(POS) m4trm(NEG)
+*.DEVTMPLT 324 C(ctmm5t) ctmm capm3_b(POS) m2trm(NEG)
+*.DEVTMPLT 325 C(ctmmh5t) ctmmh capmh3_b(POS) m2trm(NEG)
+*.DEVTMPLT 326 C(cmm3) cmim23f capm23f(POS) m2trm(NEG)
+*.DEVTMPLT 327 C(cmmh3) cmimh23f capmh23f(POS) m2trm(NEG)
+*.DEVTMPLT 328 C(cmm4) cmim34f capm34f(POS) m3trm(NEG)
+*.DEVTMPLT 329 C(cmmh4) cmimh34f capmh34f(POS) m3trm(NEG)
+*.DEVTMPLT 330 C(cpod) cpod p1trm(POS) bndiff(NEG) bulk(SUB)
+*.DEVTMPLT 331 C(cpodhv) cpodhv p1trm(POS) bndiff(NEG) bulk(SUB)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNAI_M_5                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNAI_M_5 D G S B SB
+.ends PE3LNAI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELNAI_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELNAI_6 D G S B NW SB
+.ends NELNAI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DSPB0                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DSPB0 A C C2 PHOTON
+.ends DSPB0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC G NW SB
+.ends MOSVC
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3_5                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3_5 D G S B SB
+.ends PE3_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PESVTI_M_5                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PESVTI_M_5 D G S B SB
+.ends PESVTI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMMA_BJT                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMMA_BJT D G S B SB
+.ends PMMA_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOCFP                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOCFP A C POLY1 NW LPOWER
+.ends DPHOCFP
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNI_M_5                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNI_M_5 D G S B SB
+.ends PE3LNI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PEI_5                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PEI_5 D G S B SB
+.ends PEI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3I_M_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3I_M_5 D G S B SB
+.ends PE3I_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNAI_5                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNAI_5 D G S B SB
+.ends PE3LNAI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC3I_M                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC3I_M G PW DNW SB
+.ends MOSVC3I_M
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DSPB                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DSPB A C C2 PHOTON
+.ends DSPB
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVCI                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVCI G PW DNW SB
+.ends MOSVCI
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LDDN                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LDDN D G S B
+.ends LDDN
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHODFP                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHODFP A1 A2 C POLY1 NW LPOWER
+.ends DPHODFP
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NESVTI_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NESVTI_6 D G S B NW SB
+.ends NESVTI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LDDP                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LDDP D G S B
+.ends LDDP
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: tag_60v                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt tag_60v N1
+.ends tag_60v
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PEI_M_5                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PEI_M_5 D G S B SB
+.ends PEI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNI_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNI_5 D G S B SB
+.ends PE3LNI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PELI_M_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PELI_M_5 D G S B SB
+.ends PELI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NEI_6                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NEI_6 D G S B NW SB
+.ends NEI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELNAI_M_6                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELNAI_M_6 D G S B NW SB
+.ends NELNAI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LN_5                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LN_5 D G S B SB
+.ends PE3LN_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE_5                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE_5 D G S B SB
+.ends PE_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVCI_M                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVCI_M G PW DNW SB
+.ends MOSVCI_M
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PESVT_5                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PESVT_5 D G S B SB
+.ends PESVT_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3I_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3I_6 D G S B NW SB
+.ends NE3I_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3I_5                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3I_5 D G S B SB
+.ends PE3I_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC3I                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC3I G PW DNW SB
+.ends MOSVC3I
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ND3I_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ND3I_6 D G S B NW SB
+.ends ND3I_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NESVTI_M_6                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NESVTI_M_6 D G S B NW SB
+.ends NESVTI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3I_M_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3I_M_6 D G S B NW SB
+.ends NE3I_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOC0                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOC0 A C POLY1 NW LPOWER
+.ends DPHOC0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMC_BJT                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMC_BJT D G S B SB
+.ends PMC_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3LNAI_6                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3LNAI_6 D G S B NW SB
+.ends NE3LNAI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOC                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOC A C POLY1 NW LPOWER
+.ends DPHOC
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NEI_M_6                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NEI_M_6 D G S B NW SB
+.ends NEI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOD                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOD A1 A2 C POLY1 NW LPOWER
+.ends DPHOD
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PEL_5                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PEL_5 D G S B SB
+.ends PEL_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ND3I_M_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ND3I_M_6 D G S B NW SB
+.ends ND3I_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PHHV_BJT                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PHHV_BJT D G S B SB
+.ends PHHV_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELI_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELI_6 D G S B NW SB
+.ends NELI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DAPB0                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DAPB0 A C C2 LPOWER
+.ends DAPB0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DAPB                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DAPB A C C2 LPOWER
+.ends DAPB
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELI_M_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELI_M_6 D G S B NW SB
+.ends NELI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3LNAI_M_6                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3LNAI_M_6 D G S B NW SB
+.ends NE3LNAI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: tag_25v                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt tag_25v N1
+.ends tag_25v
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PELI_5                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PELI_5 D G S B SB
+.ends PELI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PHV_BJT                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PHV_BJT D G S B SB
+.ends PHV_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC3                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC3 G NW SB
+.ends MOSVC3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOD0                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOD0 A1 A2 C POLY1 NW LPOWER
+.ends DPHOD0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNA_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNA_5 D G S B SB
+.ends PE3LNA_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PESVTI_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PESVTI_5 D G S B SB
+.ends PESVTI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMA_BJT                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMA_BJT D G S B SB
+.ends PMA_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMMC_BJT                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMMC_BJT D G S B SB
+.ends PMMC_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_CDNS_13                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_CDNS_13 1 2
+** N=3 EP=2 FDC=1
+R0 1 2 0 L=2.0095e-05 W=2e-06 $[rpp1k1] $X=0 $Y=0 $dt=244
+.ends rpp1k1_CDNS_13
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_14                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_14 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 3 2 1 4 ne3 L=2e-06 W=8e-06 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 PS=1.696e-05 $X=0 $Y=0 $dt=83
+.ends ne3_CDNS_14
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: Ext_Iref_ST                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt Ext_Iref_ST Iext Iref vss
+** N=6 EP=3 FDC=25
+X148 Iext 3 rpp1k1_CDNS_13 $T=420 7330 1 90 $X=200 $Y=6390
+X149 vss vss vss vss ne3_CDNS_14 $T=7640 50370 1 0 $X=6840 $Y=41800
+X150 vss vss vss vss ne3_CDNS_14 $T=7640 61680 1 0 $X=6840 $Y=53110
+X151 4 3 Iref vss ne3_CDNS_14 $T=11240 16280 1 0 $X=10440 $Y=7710
+X152 2 3 3 vss ne3_CDNS_14 $T=11240 28370 1 0 $X=10440 $Y=19800
+X153 vss 2 4 vss ne3_CDNS_14 $T=11240 50370 1 0 $X=10440 $Y=41800
+X154 vss 2 2 vss ne3_CDNS_14 $T=11240 61680 1 0 $X=10440 $Y=53110
+X155 2 3 3 vss ne3_CDNS_14 $T=14840 16280 1 0 $X=14040 $Y=7710
+X156 4 3 Iref vss ne3_CDNS_14 $T=14840 28370 1 0 $X=14040 $Y=19800
+X157 vss 2 2 vss ne3_CDNS_14 $T=14840 50370 1 0 $X=14040 $Y=41800
+X158 vss 2 4 vss ne3_CDNS_14 $T=14840 61680 1 0 $X=14040 $Y=53110
+X159 4 3 Iref vss ne3_CDNS_14 $T=18440 16280 1 0 $X=17640 $Y=7710
+X160 2 3 3 vss ne3_CDNS_14 $T=18440 28370 1 0 $X=17640 $Y=19800
+X161 vss 2 4 vss ne3_CDNS_14 $T=18440 50370 1 0 $X=17640 $Y=41800
+X162 vss 2 2 vss ne3_CDNS_14 $T=18440 61680 1 0 $X=17640 $Y=53110
+X163 2 3 3 vss ne3_CDNS_14 $T=24040 16280 0 180 $X=21240 $Y=7710
+X164 4 3 Iref vss ne3_CDNS_14 $T=24040 28370 0 180 $X=21240 $Y=19800
+X165 vss 2 2 vss ne3_CDNS_14 $T=24040 50370 0 180 $X=21240 $Y=41800
+X166 vss 2 4 vss ne3_CDNS_14 $T=24040 61680 0 180 $X=21240 $Y=53110
+X167 4 3 Iref vss ne3_CDNS_14 $T=27640 16280 0 180 $X=24840 $Y=7710
+X168 2 3 3 vss ne3_CDNS_14 $T=27640 28370 0 180 $X=24840 $Y=19800
+X169 vss 2 4 vss ne3_CDNS_14 $T=27640 50370 0 180 $X=24840 $Y=41800
+X170 vss 2 2 vss ne3_CDNS_14 $T=27640 61680 0 180 $X=24840 $Y=53110
+X171 vss vss vss vss ne3_CDNS_14 $T=29240 50370 1 0 $X=28440 $Y=41800
+X172 vss vss vss vss ne3_CDNS_14 $T=29240 61680 1 0 $X=28440 $Y=53110
+.ends Ext_Iref_ST

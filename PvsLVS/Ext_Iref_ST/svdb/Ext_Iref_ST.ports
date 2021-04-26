@@ -1,0 +1,5 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary Ext_Iref_ST
+Iext 6 Iext 1780 6695 m1trm
+vss 1 vss 19535 36250 m1trm
+Iref 5 Iref 32900 10965 m3trm

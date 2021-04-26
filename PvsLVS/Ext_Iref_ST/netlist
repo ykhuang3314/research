@@ -1,0 +1,43 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Stimulator_IMP
+* Top Cell Name: Ext_Iref_ST
+* View Name:     schematic
+* Netlisted on:  Apr 23 13:47:52 2021
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    Ext_Iref_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Ext_Iref_ST Iext Iref vss
+*.PININFO Iext:B Iref:B vss:B
+RR0 Iext VG2 10001.1 $[RPP1K1] $W=2u $L=20.095u M=1
+MM2 VG1 VG1 vss vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM0 VG2 VG2 VG1 vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM3 VD_M1 VG1 vss vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM1 Iref VG2 VD_M1 vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 
++ PD=1.696e-05 PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM14 vss vss vss vss NE3 W=8u L=2u M=4.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+.ENDS
+

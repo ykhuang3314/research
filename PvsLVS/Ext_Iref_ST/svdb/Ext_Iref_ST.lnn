@@ -1,0 +1,18 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary Ext_Iref_ST
+% VIA1_C_CDNS_1 1
+% VIA1_C_CDNS_2 1
+% VIA2_C_CDNS_3 1
+% VIA2_C_CDNS_4 1
+% VIA2_C_CDNS_5 1
+% VIA1_C_CDNS_6 1
+% VIA1_C_CDNS_7 1
+% VIA2_C_CDNS_8 1
+% VIA2_C_CDNS_9 1
+% VIA2_C_CDNS_10 1
+% rpp1k1_CDNS_13 3
+% ne3_CDNS_14 4
+% Ext_Iref_ST 3
+1 vss
+5 Iref
+6 Iext

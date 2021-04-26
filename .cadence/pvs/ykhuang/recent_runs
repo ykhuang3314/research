@@ -1,0 +1,6 @@
+1619437757 0 1619437757 "/home/ykhuang/research/PvsLVS/CurrentMirror_ST" "lvsbrowser" "" "" "" "/home/ykhuang/research/PvsLVS/CurrentMirror_ST/" "auCdl" "auCdl schematic cmos_sch" "/home/ykhuang/research/PvsLVS/CurrentMirror_ST/lay_cellMap.txt" "" "" "" "" true
+1619189766 0 1619189766 "/home/ykhuang/research/PvsLVS/CurrentMirror_x10_LV" "lvsbrowser" "" "" "" "/home/ykhuang/research/PvsLVS/CurrentMirror_x10_LV/" "auCdl" "auCdl schematic cmos_sch" "/home/ykhuang/research/PvsLVS/CurrentMirror_x10_LV/lay_cellMap.txt" "" "" "" "" true
+1619178479 0 1619178479 "/home/ykhuang/research/PvsLVS/Ext_Iref_ST" "lvsbrowser" "" "" "" "/home/ykhuang/research/PvsLVS/Ext_Iref_ST/" "auCdl" "auCdl schematic cmos_sch" "/home/ykhuang/research/PvsLVS/Ext_Iref_ST/lay_cellMap.txt" "" "" "" "" true
+1619178344 0 1619178344 "/home/ykhuang/research/PvsLVS/Idac_5bit_ST_V2" "lvsbrowser" "" "" "" "/home/ykhuang/research/PvsLVS/Idac_5bit_ST_V2/" "auCdl" "auCdl schematic cmos_sch" "/home/ykhuang/research/PvsLVS/Idac_5bit_ST_V2/lay_cellMap.txt" "" "" "" "" true
+1619170954 0 1619170954 "/home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/Idac_5bit_ST_V2_drc.err" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1619092958 0 1619092958 "/home/ykhuang/research/layoutverification/pvs_drc/Ext_Iref_ST/Ext_Iref_ST_drc.err" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true

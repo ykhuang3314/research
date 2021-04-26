@@ -1,0 +1,11 @@
+results_db -drc "/home/ykhuang/research/layoutverification/pvs_drc/Idac_5bit_ST_V2/Idac_5bit_ST_V2_drc.err" -ascii;
+//=== Configurator controls ===
+//   DRC CONFIGURATION  
+//   #Select Density Rules#  
+#UNDEFINE DENSITY
+#UNDEFINE POPPING
+//   #Select DUMMY Pattern Generation#   
+#UNDEFINE DUMMY_FILL
+//   #Select Additional Antenna Check based on variable ratios#   
+#UNDEFINE VAR_ANT_RATIO
+//=== End of configurator controls ===

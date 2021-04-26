@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+Stimulator_IMP/Ext_Iref_ST/schematic Ext_Iref_ST
+$endmodel
+$net
+$endnet
+$param
+$endparam

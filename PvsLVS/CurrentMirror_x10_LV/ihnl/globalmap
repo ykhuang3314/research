@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+Stimulator_IMP/CurrentMirror_x10_LV/schematic CurrentMirror_x10_LV
+$endmodel
+$net
+gnd! gnd!
+$endnet
+$param
+$endparam

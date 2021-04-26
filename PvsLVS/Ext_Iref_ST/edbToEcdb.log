@@ -1,0 +1,16 @@
+
+/pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : Ext_Iref_ST_21483.db
+ECDB dir        : ./
+Top Cell        : Ext_Iref_ST
+CDL netlist     : /home/ykhuang/research/PvsLVS/Ext_Iref_ST/svdb/Ext_Iref_ST.net
+Layer map file  : /home/ykhuang/research/PvsLVS/Ext_Iref_ST/svdb/Ext_Iref_ST.ecdbmap
+Text map file   : /home/ykhuang/research/PvsLVS/Ext_Iref_ST/svdb/Ext_Iref_ST.ports
+Dependency map  : Ext_Iref_ST.lmap.perc
+Lvs file        : /home/ykhuang/research/PvsLVS/Ext_Iref_ST/svdb/Ext_Iref_ST.lvsfile
+Float net file : .Ext_Iref_ST.info.softchk
+debug           : 0
+Source Library  : Ext_Iref_ST_21483

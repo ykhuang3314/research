@@ -1,0 +1,16 @@
+
+/pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : CurrentMirror_ST_15990.db
+ECDB dir        : ./
+Top Cell        : CurrentMirror_ST
+CDL netlist     : svdb/CurrentMirror_ST.net
+Layer map file  : svdb/CurrentMirror_ST.ecdbmap
+Text map file   : svdb/CurrentMirror_ST.ports
+Dependency map  : CurrentMirror_ST.lmap.perc
+Lvs file        : svdb/CurrentMirror_ST.lvsfile
+Float net file : .CurrentMirror_ST.info.softchk
+debug           : 0
+Source Library  : CurrentMirror_ST_15990

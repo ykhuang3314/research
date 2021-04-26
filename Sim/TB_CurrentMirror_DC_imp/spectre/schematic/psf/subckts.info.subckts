@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "18.1.0.516.isr12"
-"date" "11:13:11 AM, Wed Mar 31, 2021"
+"date" "2:43:32 PM, Fri Apr 23, 2021"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -656,7 +656,7 @@ VALUE
 "ne3" "subckt" (
 "psl wcd_au0 ad nrs nrsl xf_subext as par1 pd w adl ps nrdl l wcd_avt asl nrd pdl"
 "d g s b"
-"I31.invr_1.MN1 I3.invr_1.MN1 I5.invr_1.MN1 I7.invr_1.MN1 I9.invr_1.MN1 I18.invr_1.MN1 M25 M24 M20 M19 M43 M37 M28 M53 M26 M13 M40 I17.M3 I17.M5 I17.M7 I17.M1 I0.M3 I0.M5 I0.M7 I0.M1 I30.M3 I30.M5 I30.M7 I30.M1 I4.M3 I4.M5 I4.M7 I4.M1 I6.M3 I6.M5 I6.M7 I6.M1 I29.M3 I29.M5 I29.M7 I29.M1"
+"I31.invr_1.MN1 I3.invr_1.MN1 I5.invr_1.MN1 I7.invr_1.MN1 I9.invr_1.MN1 I18.invr_1.MN1 M34 M30 M27 M19 M43 M37 M28 M53 M26 M13 I17.M3 I17.M5 I17.M7 I17.M1 I0.M3 I0.M5 I0.M7 I0.M1 I30.M3 I30.M5 I30.M7 I30.M1 I4.M3 I4.M5 I4.M7 I4.M1 I6.M3 I6.M5 I6.M7 I6.M1 I29.M3 I29.M5 I29.M7 I29.M1"
 )
 "cmmh6t" "subckt" (
 ""
@@ -996,7 +996,7 @@ VALUE
 "pe3" "subckt" (
 "psl wcd_au0 ad nrs nrsl xf_subext as par1 pd w adl ps nrdl l wcd_avt asl nrd pdl"
 "d g s b"
-"I31.invr_1.MP1 I3.invr_1.MP1 I5.invr_1.MP1 I7.invr_1.MP1 I9.invr_1.MP1 I18.invr_1.MP1 I17.M6 I17.M8 I17.M9 I17.M0 I17.M2 I17.M4 I0.M6 I0.M8 I0.M9 I0.M0 I0.M2 I0.M4 I30.M6 I30.M8 I30.M9 I30.M0 I30.M2 I30.M4 I4.M6 I4.M8 I4.M9 I4.M0 I4.M2 I4.M4 I6.M6 I6.M8 I6.M9 I6.M0 I6.M2 I6.M4 I29.M6 I29.M8 I29.M9 I29.M0 I29.M2 I29.M4 M2 M1 M50 M41 M38 M35 M32 M22 M48 M54 M51 M42 M39 M36 M33 M29 M49 M44 M45 M46 M47 M31 M52"
+"I31.invr_1.MP1 I3.invr_1.MP1 I5.invr_1.MP1 I7.invr_1.MP1 I9.invr_1.MP1 I18.invr_1.MP1 I17.M6 I17.M8 I17.M9 I17.M0 I17.M2 I17.M4 I0.M6 I0.M8 I0.M9 I0.M0 I0.M2 I0.M4 I30.M6 I30.M8 I30.M9 I30.M0 I30.M2 I30.M4 I4.M6 I4.M8 I4.M9 I4.M0 I4.M2 I4.M4 I6.M6 I6.M8 I6.M9 I6.M0 I6.M2 I6.M4 I29.M6 I29.M8 I29.M9 I29.M0 I29.M2 I29.M4 M38 M1 M50 M24 M29 M33 M35 M22 M48 M54 M51 M23 M25 M32 M36 M20 M49 M42 M41 M40 M39 M31"
 )
 "dpdnw" "subckt" (
 ""

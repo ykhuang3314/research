@@ -1,0 +1,34 @@
+##############################################################################################################
+#####  
+#####                                         PVS LVS COMPARISON
+#####  
+#####  Version                       :   16.15-s010
+#####  NVN Run Start                 :   Fri Apr 23 13:47:58 2021
+#####  ERC Summary File              :   Ext_Iref_ST.sum
+#####  Extraction Report File        :   Ext_Iref_ST_lvs.sum
+#####  Comparison Report File        :   Ext_Iref_ST_lvs.sum.cls
+#####  Top Cell                      :   Ext_Iref_ST  <vs>  Ext_Iref_ST
+#####  
+#####  Run Result                    :   MATCH
+#####  
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
+#####                                :   [INFO]  Extraction Clean
+#####  
+#####  Layout Design                 :   Stimulator_IMP Ext_Iref_ST ModgenTmplayout15249
+#####  Schematic File                :   /home/ykhuang/research/PvsLVS/Ext_Iref_ST/Ext_Iref_ST.cdl (cdl)
+#####  Rules File                    :   .config.rul .technology.rul
+#####  Pin Swap File                 :   Ext_Iref_ST_lvs.sum.cps
+#####  
+#####  Extraction CPU Time           :   0h 0m 1s - (1s)
+#####  Extraction Exec Time          :   0h 0m 1s - (1s)
+#####  Extraction Peak Memory Usage  :   62.00MB
+#####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   235.40MB
+#####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   235.40MB
+#####  
+##############################################################################################################
+
+

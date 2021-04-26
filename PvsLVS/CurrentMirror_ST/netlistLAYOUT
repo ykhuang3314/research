@@ -1,0 +1,195 @@
+** Layout Netlist, pvs precompare
+** 
+
+.subckt LDDN D G S B 
+.ends
+
+
+.subckt LDDP D G S B 
+.ends
+
+
+.subckt CurrentMirror_ST Iref Ist enable gnd! vdd3! vdde! vddh 
+X276/X0 15 15 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X277/X0 9 9 11 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X278/X0 11 9 15 gnd! LDDN w=3.5e-05 l=1.25e-06 m=1 $[LDDN] 
+X279/X0 8 12 4 gnd! LDDN w=6e-05 l=1.25e-06 m=1 $[LDDN] 
+X279/X1 8 12 4 gnd! LDDN w=6e-05 l=1.25e-06 m=1 $[LDDN] 
+X279/X2 8 12 4 gnd! LDDN w=6e-05 l=1.25e-06 m=1 $[LDDN] 
+X279/X3 8 12 4 gnd! LDDN w=6e-05 l=1.25e-06 m=1 $[LDDN] 
+X279/X4 8 12 4 gnd! LDDN w=6e-05 l=1.25e-06 m=1 $[LDDN] 
+MX280/M0 X280/8 enable gnd! gnd! NE3 L=3.5e-07 W=4.2e-07 m=1 
+MX280/M1 gnd! X280/8 X280/6 gnd! NE3 L=3.5e-07 W=1.31e-06 m=1 
+MX280/M2 X280/7 enable gnd! gnd! NE3 L=3.5e-07 W=1.31e-06 m=1 
+MX280/M3 12 X280/7 gnd! gnd! NE3 L=3.5e-07 W=8.9e-07 m=1 
+MX280/M4 gnd! X280/7 12 gnd! NE3 L=3.5e-07 W=8.9e-07 m=1 
+MX280/M5 X280/8 enable vdde! vdd3! PE3 L=3.0008e-07 W=1.47627e-06 m=1 
+MX280/M6 X280/10 X280/7 vdd3! vdd3! PE3 L=3e-07 W=4.2e-07 m=1 
+MX280/M7 X280/6 X280/8 X280/10 vdd3! PE3 L=3e-07 W=4.2e-07 m=1 
+MX280/M8 X280/9 enable X280/7 vdd3! PE3 L=3e-07 W=4.2e-07 m=1 
+MX280/M9 vdd3! X280/6 X280/9 vdd3! PE3 L=3e-07 W=4.2e-07 m=1 
+MX280/M10 12 X280/7 vdd3! vdd3! PE3 L=3e-07 W=1.41e-06 m=1 
+MX280/M11 vdd3! X280/7 12 vdd3! PE3 L=3e-07 W=1.41e-06 m=1 
+X281/X0 10 10 18 gnd! LDDN w=4e-05 l=1.25e-06 m=1 $[LDDN] 
+X282/X0 9 8 5 gnd! LDDP w=3e-05 l=9.4e-07 m=1 $[LDDP] 
+X283/X0 5 6 vddh gnd! LDDP w=3e-05 l=9.4e-07 m=1 $[LDDP] 
+X284/X0 8 8 6 gnd! LDDP w=3e-05 l=9.4e-07 m=1 $[LDDP] 
+X285/X0 6 6 vddh gnd! LDDP w=3e-05 l=9.4e-07 m=1 $[LDDP] 
+X286/X0 10 8 7 gnd! LDDP w=3e-05 l=9.4e-07 m=1 $[LDDP] 
+X287/X0 7 6 vddh gnd! LDDP w=3e-05 l=9.4e-07 m=1 $[LDDP] 
+X288/X0 4 1 gnd! gnd! LDDN w=1e-05 l=1.25e-06 m=1 $[LDDN] 
+X289/X0 1 vdd3! gnd! gnd! LDDN w=1e-05 l=1.25e-06 m=1 $[LDDN] 
+MX290/X758/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X759/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X760/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X761/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X762/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X763/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X764/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X765/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X766/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X767/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X768/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X769/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X770/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X771/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X772/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X773/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X774/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X775/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X776/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X777/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X778/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X779/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X780/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X781/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X782/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X783/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X784/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X785/M0 Iref Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X786/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X787/M0 Iref Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X788/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X789/M0 Iref Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X790/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X791/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X792/M0 Iref Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X793/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X794/M0 Iref Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X795/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X796/M0 Iref Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X797/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X798/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X799/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X800/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X801/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X802/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X803/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X804/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X805/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X806/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X807/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X808/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X809/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X810/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X811/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X812/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X813/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X814/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X815/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X816/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X817/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X818/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X819/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X820/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X821/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X822/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+MX290/X823/M0 4 Iref gnd! gnd! NE3 L=3e-06 W=1.2e-05 m=1 
+X291/X10/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X11/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X12/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X13/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X14/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X15/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X16/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X17/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X18/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X19/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X20/X0 18 11 X291/6 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X21/X0 X291/6 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X22/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X23/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X24/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X25/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X26/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X27/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X28/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X29/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X30/X0 Ist 11 X291/5 gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+X291/X31/X0 X291/5 18 gnd! gnd! LDDN w=8e-05 l=1.25e-06 m=1 $[LDDN] 
+RX292/R0 12 14 RPP1K1 R=0 L=0.00011122 W=2e-06 m=1 
+RX293/R0 14 gnd! RPP1K1 R=0 L=0.00011122 W=2e-06 m=1 
+RX294/R0 vdd3! gnd! RPP1K1 R=0 L=0.00036998 W=2e-06 m=1 
+CC0 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC1 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC2 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC3 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC4 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC5 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC6 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC7 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC8 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC9 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC10 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC11 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC12 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC13 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC14 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC15 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC16 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC17 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC18 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC19 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC20 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC21 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC22 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC23 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC24 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC25 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC26 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC27 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC28 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC29 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC30 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC31 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC32 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC33 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC34 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC35 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC36 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC37 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC38 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC39 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC40 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC41 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC42 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC43 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC44 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC45 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC46 vddh 1 CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC47 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC48 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC49 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC50 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC51 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC52 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC53 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC54 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC55 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC56 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC57 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC58 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CC59 1 gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+.ends
+
+

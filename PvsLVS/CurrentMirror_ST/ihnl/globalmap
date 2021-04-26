@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+D_CELLS_M3V/LSHVT18U3VX2/cmos_sch LSHVT18U3VX2
+Stimulator_IMP/CurrentMirror_x10_LV/schematic CurrentMirror_x10_LV
+Stimulator_IMP/CurrentMirror_ST/schematic CurrentMirror_ST
+$endmodel
+$net
+gnd! gnd!
+vdd3! vdd3!
+vdde! vdde!
+$endnet
+$param
+$endparam

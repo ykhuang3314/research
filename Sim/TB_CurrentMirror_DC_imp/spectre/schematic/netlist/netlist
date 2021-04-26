@@ -70,18 +70,18 @@ I5 (net71 D2_3v 0 vdd3!) IN_3VX2
 I7 (net70 D3_3v 0 vdd3!) IN_3VX2
 I9 (net75 D4_3v 0 vdd3!) IN_3VX2
 I18 (en_3v enb_3v 0 vdd3!) IN_3VX2
-M25 (net081 net026 0 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 ps=4.096e-05 \
-        pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) par1=((1)*(1)) \
-        xf_subext=0
-M24 (VBp2 net027 net081 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
-        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
-M20 (net026 net026 0 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 ps=4.096e-05 \
-        pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) par1=((1)*(1)) \
-        xf_subext=0
-M19 (net027 net027 net026 0) ne3 w=20u l=1u as=9.6e-12 ad=9.6e-12 \
-        ps=4.096e-05 pd=4.096e-05 nrs=0.0135 nrd=0.0135 m=(1)*(1) \
-        par1=((1)*(1)) xf_subext=0
+M34 (VBp2 net027 net081 0) ne3 w=8u l=2u as=2.496e-12 ad=2.496e-12 \
+        ps=1.0224e-05 pd=1.0224e-05 nrs=0.03375 nrd=0.03375 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+M30 (net081 net026 0 0) ne3 w=8u l=2u as=2.496e-12 ad=2.496e-12 \
+        ps=1.0224e-05 pd=1.0224e-05 nrs=0.03375 nrd=0.03375 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+M27 (net026 net026 0 0) ne3 w=8u l=2u as=2.496e-12 ad=2.496e-12 \
+        ps=1.0224e-05 pd=1.0224e-05 nrs=0.03375 nrd=0.03375 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+M19 (net027 net027 net026 0) ne3 w=8u l=2u as=2.496e-12 ad=2.496e-12 \
+        ps=1.0224e-05 pd=1.0224e-05 nrs=0.03375 nrd=0.03375 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
 M43 (vdd3! net2 net37 0) ne3 w=2u l=1u as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
         pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
         xf_subext=0
@@ -94,22 +94,19 @@ M28 (net37 net8 0 0) ne3 w=10u l=350.0n as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
 M53 (net2 net2 0 0) ne3 w=2u l=5u as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
         pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
         xf_subext=0
-M26 (net14 net14 0 0) ne3 w=40u l=2u as=1.92e-11 ad=1.92e-11 ps=8.096e-05 \
-        pd=8.096e-05 nrs=0.00675 nrd=0.00675 m=(1)*(1) par1=((1)*(1)) \
-        xf_subext=0
-M13 (net078 net14 0 0) ne3 w=40u l=2u as=1.248e-11 ad=1.08e-11 \
-        ps=4.8624e-05 pd=4.054e-05 nrs=0.00675 nrd=0.00675 m=(1)*(10) \
-        par1=((1)*(10)) xf_subext=0
-M40 (net14 enb_3v 0 0) ne3 w=2u l=350.0n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
-        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
-        xf_subext=0
+M26 (net14 net14 0 0) ne3 w=12.0u l=3u as=5.76e-12 ad=5.76e-12 \
+        ps=2.496e-05 pd=2.496e-05 nrs=0.0225 nrd=0.0225 m=(6)*(1) \
+        par1=((6)*(1)) xf_subext=0
+M13 (net078 net14 0 0) ne3 w=12.0u l=3u as=5.76e-12 ad=5.76e-12 \
+        ps=2.496e-05 pd=2.496e-05 nrs=0.0225 nrd=0.0225 m=(60)*(1) \
+        par1=((60)*(1)) xf_subext=0
 M10 (net078 net035 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
 M9 (net035 vdd3! 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
         extlay=0 xf_subext=0
 M21 (net33 net33 net32 0) nedia_bjt w=15.0u l=1.25u m=(1)*(1) \
         par1=((1)*(1)) extlay=0 xf_subext=0
-M16 (Bias2 vdd3! net078 0) nedia_bjt w=50u l=1.25u m=(1)*(5) \
+M16 (Bias2 en_3v net078 0) nedia_bjt w=50u l=1.25u m=(1)*(5) \
         par1=((1)*(5)) extlay=0 xf_subext=0
 M8 (net29 net29 VB 0) nedia_bjt w=60u l=1.25u m=(10)*(1) par1=((10)*(1)) \
         extlay=0 xf_subext=0
@@ -131,30 +128,30 @@ I30 (MAG_ST\<1\> net72 0 vdd3! vdde!) LSHVT18U3VX1
 I4 (MAG_ST\<2\> net71 0 vdd3! vdde!) LSHVT18U3VX1
 I6 (MAG_ST\<3\> net70 0 vdd3! vdde!) LSHVT18U3VX1
 I29 (MAG_ST\<4\> net75 0 vdd3! vdde!) LSHVT18U3VX1
-M2 (net012 net012 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-M1 (VBp2 VBp2 net012 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
+M38 (net012 net012 vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
+M1 (VBp2 VBp2 net012 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
 M50 (net69 net021 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
         ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
         par1=((1)*(1))
-M41 (net60 net012 vdd3! vdd3!) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
-        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
-        par1=((1)*(16))
-M38 (net62 net012 vdd3! vdd3!) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
-        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
-        par1=((1)*(8))
-M35 (net64 net012 vdd3! vdd3!) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
-        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
-        par1=((1)*(4))
-M32 (net66 net012 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
-        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
-        par1=((1)*(2))
-M22 (net68 net012 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
+M24 (net65 VBp2 net66 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(8)*(1) \
+        par1=((8)*(1))
+M29 (net63 VBp2 net64 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(16)*(1) \
+        par1=((16)*(1))
+M33 (net62 net012 vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(32)*(1) \
+        par1=((32)*(1))
+M35 (net60 net012 vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(64)*(1) \
+        par1=((64)*(1))
+M22 (net67 VBp2 net68 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
 M48 (net021 net021 vdd3! vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
         ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
         par1=((1)*(1))
@@ -164,42 +161,39 @@ M54 (net2 net2 vdd3! vdd3!) pe3 w=6u l=5u as=2.88e-12 ad=2.88e-12 \
 M51 (net37 net08 net69 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
         ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
         par1=((1)*(1))
-M42 (net59 VBp2 net60 vdd3!) pe3 w=10u l=1u as=2.9625e-12 ad=2.7e-12 \
-        ps=1.18425e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(16) \
-        par1=((1)*(16))
-M39 (net61 VBp2 net62 vdd3!) pe3 w=10u l=1u as=3.225e-12 ad=2.7e-12 \
-        ps=1.3145e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(8) \
-        par1=((1)*(8))
-M36 (net63 VBp2 net64 vdd3!) pe3 w=10u l=1u as=3.75e-12 ad=2.7e-12 \
-        ps=1.575e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(4) \
-        par1=((1)*(4))
-M33 (net65 VBp2 net66 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=2.7e-12 \
-        ps=2.096e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(2) \
-        par1=((1)*(2))
-M29 (net67 VBp2 net68 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
+M23 (net66 net012 vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(8)*(1) \
+        par1=((8)*(1))
+M25 (net64 net012 vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(16)*(1) \
+        par1=((16)*(1))
+M32 (net61 VBp2 net62 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(32)*(1) \
+        par1=((32)*(1))
+M36 (net59 VBp2 net60 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(64)*(1) \
+        par1=((64)*(1))
+M20 (net68 net012 vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
 M49 (net08 net08 net021 vdd3!) pe3 w=10u l=1u as=4.8e-12 ad=4.8e-12 \
         ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
         par1=((1)*(1))
-M44 (net14 D1_3v net65 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-M45 (net14 D2_3v net63 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-M46 (net14 D3_3v net61 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-M47 (net14 D4_3v net59 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-M31 (net14 D0_3v net67 vdd3!) pe3 w=10u l=300n as=4.8e-12 ad=4.8e-12 \
-        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
-        par1=((1)*(1))
-M52 (net078 en_3v vdd3! vdd3!) pe3 w=2u l=300n as=9.6e-13 ad=9.6e-13 \
-        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
-        par1=((1)*(1))
+M42 (net14 D4_3v net59 vdd3!) pe3 w=2u l=300n as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M41 (net14 D3_3v net61 vdd3!) pe3 w=2u l=300n as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M40 (net14 D2_3v net63 vdd3!) pe3 w=2u l=300n as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M39 (net14 D1_3v net65 vdd3!) pe3 w=2u l=300n as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M31 (net14 D0_3v net67 vdd3!) pe3 w=2u l=300n as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
 R3 (net080 net027) rpp1k1 l=20.095u w=2u m=1 par1=(1)
 R1 (net8 0) rpp1k1 l=150.295u w=2u m=1 par1=(1)
 R0 (vddh net58) resistor r=1.1k
@@ -218,9 +212,9 @@ M17 (net028 net028 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) par1=((1)*(1)) \
 V9 (EN_ST 0) vsource dc=1.8 type=dc
 V8 (MAG_ST\<4\> 0) vsource dc=0 type=dc
 V7 (MAG_ST\<3\> 0) vsource dc=0 type=dc
-V6 (MAG_ST\<2\> 0) vsource dc=0 type=dc
+V6 (MAG_ST\<2\> 0) vsource dc=1.8 type=dc
 V5 (MAG_ST\<1\> 0) vsource dc=0 type=dc
-V2 (MAG_ST\<0\> 0) vsource dc=1.8 type=dc
+V2 (MAG_ST\<0\> 0) vsource dc=0 type=dc
 V4 (vdde! 0) vsource dc=1.8 type=dc
 V3 (vdd3! 0) vsource dc=3.3 type=dc
 V0 (vddh 0) vsource dc=40 type=dc

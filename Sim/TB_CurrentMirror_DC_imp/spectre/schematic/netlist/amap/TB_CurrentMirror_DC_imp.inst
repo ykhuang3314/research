@@ -1,10 +1,10 @@
 HEADER
 "PSFversion" "1.00"
 "I31n I3n I5n I7n I9n I18n" "IN_3VX2"
-"M25n M24n M20n M19n M43n M37n M28n M53n M26n M13n M40n" "PRIMLIB_ne3_spectre"
+"M34n M30n M27n M19n M43n M37n M28n M53n M26n M13n" "PRIMLIB_ne3_spectre"
 "M10n M9n M21n M16n M8n M5n M0n M7n M6n M4n M3n" "PRIMLIB_nedia_bjt_spectre"
 "I17n I0n I30n I4n I6n I29n" "LSHVT18U3VX1"
-"M2n M1n M50n M41n M38n M35n M32n M22n M48n M54n M51n M42n M39n M36n M33n M29n M49n M44n M45n M46n M47n M31n M52n" "PRIMLIB_pe3_spectre"
+"M38n M1n M50n M24n M29n M33n M35n M22n M48n M54n M51n M23n M25n M32n M36n M20n M49n M42n M41n M40n M39n M31n" "PRIMLIB_pe3_spectre"
 "R3n R1n" "PRIMLIB_rpp1k1_spectre"
 "R0n" "analogLib_res_spectre"
 "M11n M14n M18n M12n M15n M17n" "PRIMLIB_ped_bjt_spectre"

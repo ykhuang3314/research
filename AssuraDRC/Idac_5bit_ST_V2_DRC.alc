@@ -1,0 +1,7 @@
+!<alc> v1 57
+0    8    0 G1_1_2_10040_0_my sub_array
+0    6    0 G1_1_2_10040_0_r0 sub_array
+0    4    0 G1_1_3_10040_0_r0 sub_array
+0    2    0 pe3 layout PRIMLIB gContT="Met1" ng="8" in1=M31
+0    1    0 pe3 layout PRIMLIB gContT="Met1" l="2u" w="6u" in1=M332e6
+0    3    0 Idac_5bit_ST_V2 layout Stimulator_IMP

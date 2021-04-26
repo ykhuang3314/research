@@ -1,0 +1,108 @@
+********************************************************************************
+pvs 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
+Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
+
+Copyright 2019 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+Build O/S:       Linux x86_64 2.6.18-194.el5
+Executed on:     s2424 (Linux x86_64 3.10.0-1160.6.1.el7.x86_64)
+Process Id:      26185
+Starting Time:   Thu Apr 22 14:02:24 2021 (Thu Apr 22 12:02:24 2021 GMT)
+With parameters: -drc -get_rules /tmp/pvsrng.7572@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.7572@s2424.1 -gen_tags /tmp/pvsgentags.7572@s2424.1 -control /tmp/ipvsRulesCheckControl.7572@s2424.1 /home/ykhuang/research/layoutverification/pvs_drc/Ext_Iref_ST/.config.rul.7572@s2424.1 /home/ykhuang/research/layoutverification/pvs_drc/Ext_Iref_ST/.technology.rul.7572@s2424.1 
+********************************************************************************
+
+
+########################################################################
+Get host info ...
+########################################################################
+CPU info:
+    model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+    cpu MHz         :  1392.773
+    cache size      :  20480 KB
+    physical cores  :  16
+    logical cores   :  32
+    hyper-threading on
+
+Memory info:
+    64168M physical memory installed.
+
+    MemTotal:       65709336 kB
+    MemFree:        35941856 kB
+    MemAvailable:   51589656 kB
+    Buffers:            1088 kB
+    Cached:         17806964 kB
+    SwapCached:            0 kB
+    Active:         19687408 kB
+    Inactive:        4563088 kB
+    Active(anon):    8465632 kB
+    Inactive(anon):  1297372 kB
+    Active(file):   11221776 kB
+    Inactive(file):  3265716 kB
+    Unevictable:           0 kB
+    Mlocked:               0 kB
+    SwapTotal:      32964604 kB
+    SwapFree:       32964604 kB
+    Dirty:                 0 kB
+    Writeback:             0 kB
+    AnonPages:       6445832 kB
+    Mapped:           404256 kB
+    Shmem:           3320120 kB
+    Slab:            2239204 kB
+    SReclaimable:    1652208 kB
+    SUnreclaim:       586996 kB
+    KernelStack:       11056 kB
+    PageTables:        41408 kB
+    NFS_Unstable:          0 kB
+    Bounce:                0 kB
+    WritebackTmp:          0 kB
+    CommitLimit:    65819272 kB
+    Committed_AS:   12770668 kB
+    VmallocTotal:   34359738367 kB
+    VmallocUsed:      422632 kB
+    VmallocChunk:   34325399548 kB
+    Percpu:            12928 kB
+    HardwareCorrupted:     0 kB
+    AnonHugePages:   2988032 kB
+    CmaTotal:              0 kB
+    CmaFree:               0 kB
+    HugePages_Total:       0
+    HugePages_Free:        0
+    HugePages_Rsvd:        0
+    HugePages_Surp:        0
+    Hugepagesize:       2048 kB
+    DirectMap4k:      470340 kB
+    DirectMap2M:     7823360 kB
+    DirectMap1G:    58720256 kB
+
+
+########################################################################
+Get environment info ...
+########################################################################
+ENV VAR: TCL_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tcltk/08.64/tcl8.6
+ENV VAR: TCLX_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tclx/08.40
+ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 
+
+
+########################################################################
+Parsing Control File /tmp/ipvsRulesCheckControl.7572@s2424.1 ...
+########################################################################
+#UNDEFINE DENSITY
+#UNDEFINE POPPING
+#UNDEFINE DUMMY_FILL
+#UNDEFINE VAR_ANT_RATIO
+RESULTS_DB -drc -ascii;
+[ERROR] RESULTS_DB: Invalid file name at line 1 in file /tmp/ipvsRulesCheckControl.7572@s2424.1
+Usage: results_db [ -drc | -erc ] <fileName>
+                  [ -ascii | -binary | -gdsii | -oasis [ -cblock ] | -oa ]
+                  [ <cellNameSuffix> ] [ -prefix <cellNamePrefix> ] [ -pseudo ] [ -gzip ];
+
+[INFO] There is 1 error in PVS rule file /tmp/ipvsRulesCheckControl.7572@s2424.1
+Finished parsing rule file(s) with error.
+
+Execution aborted.  Exiting with status 1.
+
+
+Design Rule Check Finished Abnormally. Thu Apr 22 14:02:24 2021
+
+

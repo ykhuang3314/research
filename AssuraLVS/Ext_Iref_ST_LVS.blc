@@ -1,6 +1,6 @@
 "rpp1k1(RES)" "rpp1k1(RES)"
 "ne3(MOS)" "ne3(MOS)"
-"Ext_Iref_ST layout Stimulator_IMP" "Ext_Iref_ST schematic Stimulator_IMP" "ne3(MOS)" "rpp1k1(RES)"
+"Ext_Iref_ST ModgenTmplayout15249 Stimulator_IMP" "Ext_Iref_ST schematic Stimulator_IMP" "ne3(MOS)" "rpp1k1(RES)"
 Devices filtered from layout
 "pcapacitor"
 "presistor"

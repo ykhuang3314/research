@@ -13,17 +13,17 @@
 vuiLVSFormTable = '(
 	schematicSource  "DFII"
 	layoutSource  "DFII"
-	runName  "Ext_Iref_ST_LVS"
+	runName  "CurrentMirror_ST_LVS"
 	runDir  "./AssuraLVS"
 	machineLoc  "local"
 	viewRules  t
 	technologyField  "XH018_1143"
 	runsetField  "default"
-	extract  "/pkg/xfab/XKIT/xh018/cadence/v8_0/assura/v8_0_1/Assura/XH018_1143/extract.rul"
-	compare  "/pkg/xfab/XKIT/xh018/cadence/v8_0/assura/v8_0_1/Assura/XH018_1143/compare.rul"
+	extract  "/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/extract.rul"
+	compare  "/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/compare.rul"
 	switches  ""
 	bind  ""
-	rsfInclude  "/pkg/xfab/XKIT/xh018/cadence/v8_0/assura/v8_0_1/Assura/XH018_1143/LVSinclude.rsf"
+	rsfInclude  "/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/LVSinclude.rsf"
 	varTag  "None"
 	varVal  ""
 	varDefVal  ""
@@ -32,12 +32,12 @@ vuiLVSFormTable = '(
 	avCompareView  nil
 	additionalFunctionsButton  nil
 	schLibrary  "Stimulator_IMP"
-	schCell  "Ext_Iref_ST"
+	schCell  "CurrentMirror_ST"
 	schView  "schematic"
 	existingSchNetlist  nil
 	useVerilogTopCell  nil
 	layLibrary  "Stimulator_IMP"
-	layCell  "Ext_Iref_ST"
+	layCell  "CurrentMirror_ST"
 	layView  "layout"
 	layUseExistingNL  nil
 	extractButton  nil

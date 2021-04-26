@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+Stimulator_IMP/Idac_5bit_ST_V2/schematic Idac_5bit_ST_V2
+$endmodel
+$net
+vdd3! vdd3!
+$endnet
+$param
+$endparam
