@@ -25,5 +25,7 @@ spectre
 ./spiceModels.scs
 -amsi
 ./amsControlSpectre.scs
+-amsi
+./ie_card.scs
 -modelincdir
 "/home/ykhuang/research/"

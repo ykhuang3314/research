@@ -2,9 +2,6 @@
 // File created by:  xrun
 // Do not modify this file
 //
-+define+CDS_SELECT_CRS
-+define+CONNRULES_18V_FULL_FAST
-+define+CONNRULES_INHCONN_FULL_FAST_GND
 -SPECTRE_ARGS
 "-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
 -AMSINPUT
@@ -31,15 +28,16 @@ DLCLAP
 ../psf
 -SIMCOMPATIBLE_AMS
 spectre
--SPECTRE_ARGS
-++aps
+-AMSINPUT
+-ANALOGCONTROL
+./ie_card.scs
 -ANALOGCONTROL
 .amsbind.scs
 -MESSAGES
 +EMGRLOG
 ../psf/xrun.log
 -XLSTIME
-1617278748
+1619789958
 -XLKEEP
 -XLMODE
 ./xcelium.d/Stimulator_TestBench.TB_OneChannel_imp_config.lnx8664.18.03.d

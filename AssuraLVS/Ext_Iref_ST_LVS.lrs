@@ -1,10 +1,10 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Thu Apr 22 14:07:07 2021
+run on s2424 at Tue May 11 12:02:46 2021
 
-Schematic                           | Layout                                         | Status
------------------------------------------------------------------------------------------------
-Ext_Iref_ST schematic Stimulator_IMP| Ext_Iref_ST ModgenTmplayout15249 Stimulator_IMP| matched
+Schematic                           | Layout                           | Status
+---------------------------------------------------------------------------------
+Ext_Iref_ST schematic Stimulator_IMP| Ext_Iref_ST layout Stimulator_IMP| matched
 
 Schematic and Layout Match
 
@@ -16,7 +16,7 @@ Schematic:
 Layout:
   Library:Stimulator_IMP
   Cell   :Ext_Iref_ST
-  View   :ModgenTmplayout15249
+  View   :layout
 
 
 

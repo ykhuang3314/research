@@ -2,17 +2,17 @@
 // (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
 // -----------------------------------------------------------------------------
 
-// HDL file for Lib - Stimulator_IMP ,Cell - Digital_Stimulus_V2_ST, View - functional
--amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
-
 // HDL file for Lib - Stimulator_IMP ,Cell - Decoder3_8, View - functional
 -amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
 
+// HDL file for Lib - Stimulator_IMP ,Cell - Digital_Stimulus_ChSel_ST, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/Stimulator_IMP/Digital_Stimulus_ChSel_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_ChSel_ST view:functional"
+
 // Create required libraries 
--makelib GATES_HD 
 -makelib D_CELLS_M3V 
+-makelib GATES_HD 
 -makelib Stimulator_TestBench 
 -makelib D_CELLS_3V 
--makelib D_CELLS_HD 
 -makelib GATES_3V 
+-makelib D_CELLS_HD 
 -endlib 

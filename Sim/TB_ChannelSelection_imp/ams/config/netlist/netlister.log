@@ -1,4 +1,4 @@
-Begin Netlisting Apr 13 14:33:25 2021
+Begin Netlisting May  6 13:11:26 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -52,36 +52,45 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
-nedia_bjt                   spectre              *Stopping View*  
-rpp1k1                      spectre              *Stopping View*  
-pe3                         spectre              *Stopping View*  
-ne3                         spectre              *Stopping View*  
-ped_bjt                     spectre              *Stopping View*  
+Digital_Stimulus_ChSel_ST   functional           *Stopping View*  
 vdc                         spectre              *Stopping View*  
 res                         spectre              *Stopping View*  
+rpp1k1                      spectre              *Stopping View*  
+ne3                         spectre              *Stopping View*  
 ne                          spectre              *Stopping View*  
 pe                          spectre              *Stopping View*  
 csft5a                      spectre              *Stopping View*  
+nedia_bjt                   spectre              *Stopping View*  
+pe3                         spectre              *Stopping View*  
+ped_bjt                     spectre              *Stopping View*  
 Decoder3_8                  functional           *Stopping View*  
 idc                         spectre              *Stopping View*  
-Digital_Stimulus_V2_ST      functional           *Stopping View*  
 TB_ChannelSelection_imp     schematic                             
-CurrentSource_All_ST        schematic                             
-CurrentMirror_ST            schematic                             
-LSHVT18U3VX2                cmos_sch                              
-Idac_5bit_ST                schematic                             
-AND2HDX0                    cmos_sch                              
-invr                        schematic                             
-nand2                       schematic                             
-IN_3VX2                     cmos_sch                              
-invrv3                      schematic                             
-Ext_Iref_ST                 schematic                             
+MultiChannel_ST             schematic                             
 HalfBridge_ST               schematic                             
 LS_LowSide_V2_ST            schematic                             
 LS_HighSide_V3_ST           schematic                             
-LSHVT18U3VX1                cmos_sch                              
 ResistiveDivider            schematic                             
+CurrentSource_All_ST        schematic                             
+LSHVT18U3VX1                cmos_sch                              
+IN_3VX2                     cmos_sch                              
+invrv3                      schematic                             
+Idac_5bit_ST_V3             schematic                             
+CurrentMirror_ST            schematic                             
+CurrentMirror_x10_LV        schematic                             
+LSHVT18U3VX2                cmos_sch                              
+AND2HDX0                    cmos_sch                              
+invr                        schematic                             
+nand2                       schematic                             
+Ext_Iref_ST                 schematic                             
 
 ---------- End of netlist configuration information   ----------
+WARNING (OSSHNL-159): The primitive,
+'Stimulator_IMP/Digital_Stimulus_ChSel_ST/functional', has been updated since
+the last netlisting session
+in this current run directory. Therefore,
+re-netlisting all cell views where
+this primitive is instantiated.
+
 Running netlist assembly..
-End netlisting Apr 13 14:33:35 2021
+End netlisting May  6 13:11:36 2021

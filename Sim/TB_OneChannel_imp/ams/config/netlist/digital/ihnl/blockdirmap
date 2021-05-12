@@ -1,11 +1,12 @@
-CADENCE IHNL04129
+CADENCE IHNL041210
 
 GATES_3V invrv3 schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds0
 D_CELLS_3V IN_3VX2 cmos_sch nil cmos_sch Stimulator_TestBench TB_OneChannel_imp config 0 cds1
 D_CELLS_M3V LSHVT18U3VX1 cmos_sch nil cmos_sch Stimulator_TestBench TB_OneChannel_imp config 0 cds2
-Stimulator_IMP LS_LowSide_V2_ST schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds3
+Stimulator_IMP ResistiveDivider schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds3
 Stimulator_IMP LS_HighSide_V3_ST schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds4
-GATES_HD nand2 schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds5
-GATES_HD invr schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds6
-D_CELLS_HD AND2HDX0 cmos_sch nil cmos_sch Stimulator_TestBench TB_OneChannel_imp config 0 cds7
-Stimulator_TestBench TB_OneChannel_imp schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 1 cds8
+Stimulator_IMP LS_LowSide_V2_ST schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds5
+GATES_HD nand2 schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds6
+GATES_HD invr schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 0 cds7
+D_CELLS_HD AND2HDX0 cmos_sch nil cmos_sch Stimulator_TestBench TB_OneChannel_imp config 0 cds8
+Stimulator_TestBench TB_OneChannel_imp schematic nil schematic Stimulator_TestBench TB_OneChannel_imp config 1 cds9

@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Idac_5bit_ST_V3"
+  repList "auCdl schematic cmos_sch"
+  stopList "auCdl"
+  globalList "vdd3!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/PvsLVS/Idac_5bit_ST_V3/"
+ )
+( model
+( "Stimulator_IMP/Idac_5bit_ST_V3/schematic" "Idac_5bit_ST_V3" )
+ )
+( "Idac_5bit_ST_V3" "ihnl/cds0/map" )
+ )

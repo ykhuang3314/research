@@ -1,73 +1,37 @@
-// Library - Stimulator_TestBench, Cell - TB_ChannelSelection_imp, View
-//- schematic
-// LAST TIME SAVED: Apr 13 14:33:06 2021
-// NETLIST TIME: Apr 13 14:33:29 2021
+// Library - Stimulator_IMP, Cell - HalfBridge_ST, View - schematic
+// LAST TIME SAVED: Apr  8 17:49:30 2021
+// NETLIST TIME: May  6 13:11:30 2021
 `timescale 1ns / 1ps 
 
-`worklib Stimulator_TestBench
+`worklib Stimulator_IMP
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_ChannelSelection_imp", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Apr 13 14:33:06 2021" *)
+(* dfII_lib="Stimulator_IMP", dfII_cell="HalfBridge_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  8 17:49:30 2021" *)
 
-module TB_ChannelSelection_imp ();
+module HalfBridge_ST (OUT, Ist, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
+    .\vdde! (cdsNet0), vddh, Ctrl_HS, Ctrl_LS);
 
-// Buses in the design
+output  OUT;
 
-wire  [4:0]  Mag_ST;
+inout  Ist, cdsNet2, cdsNet1, cdsNet0, vddh;
 
-wire  [7:0]  CtrlLS;
-
-wire  [2:0]  ChSel_LS;
-
-wire  [7:0]  CtrlHS;
-
-wire  [2:0]  ChSel_HS;
+input  Ctrl_HS, Ctrl_LS;
 
 
-HalfBridge_ST I19 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[7]), .Ctrl_HS(CtrlHS[7]), .OUT(net12), .Ist(Ist));
+// List of all aliases
 
-HalfBridge_ST I17 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[6]), .Ctrl_HS(CtrlHS[6]), .OUT(net13), .Ist(Ist));
 
-HalfBridge_ST I15 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[5]), .Ctrl_HS(CtrlHS[5]), .OUT(net14), .Ist(Ist));
+cds_alias #(1) cds_alias_inst13(cdsNet2, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst14(cdsNet1, cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst15(cdsNet0, cds_globals.\vdde! );
 
-HalfBridge_ST I13 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[4]), .Ctrl_HS(CtrlHS[4]), .OUT(net15), .Ist(Ist));
+LS_HighSide_V3_ST I8 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(VG_ped), .in(Ctrl_HS));
 
-HalfBridge_ST I11 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[3]), .Ctrl_HS(CtrlHS[3]), .OUT(net16), .Ist(Ist));
-
-HalfBridge_ST I9 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[2]), .Ctrl_HS(CtrlHS[2]), .OUT(net17), .Ist(Ist));
-
-HalfBridge_ST I7 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
-    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
-    .Ctrl_LS(CtrlLS[1]), .Ctrl_HS(CtrlHS[1]), .OUT(net18), .Ist(Ist));
-
-HalfBridge_ST I0 ( .Ist(Ist), .\vdd3! (cds_globals.\vdd3! ), 
-    .vddh(vddh), .\vdde! (cds_globals.\vdde! ), .\gnd! 
-    (cds_globals.\gnd! ), .Ctrl_LS(CtrlLS[0]), .Ctrl_HS(CtrlHS[0]), 
-    .OUT(net19));
-
-CurrentSource_All_ST I26 ( .vss(cds_globals.\gnd! ), .Ist(Ist), 
-    .Iext(net08), .vdd3(cds_globals.\vdd3! ), .vddh(vddh), 
-    .Enable_ST(Enable_ST), .Mag0_ST(Mag_ST[0]), .Mag1_ST(Mag_ST[1]), 
-    .Mag2_ST(Mag_ST[2]), .Mag3_ST(Mag_ST[3]), .Mag4_ST(Mag_ST[4]));
-
-Decoder3_8 I34 ( .Bin(ChSel_LS), .Dout(CtrlLS), .Enable(Enable_ST));
-
-Decoder3_8 I33 ( .Bin(ChSel_HS), .Dout(CtrlHS), .Enable(Enable_ST));
-
-Digital_Stimulus_V2_ST #( .Ramping(1'b1) ) I32 ( .ChSel_HS(ChSel_HS), 
-    .ChSel_LS(ChSel_LS), .EN_ST(Enable_ST), .MAG_ST(Mag_ST));
+LS_LowSide_V2_ST I9 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
+    .out(VG_nedia), .in(Ctrl_LS));
 
 endmodule

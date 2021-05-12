@@ -1,0 +1,6 @@
+
+// Library name: Stimulator_IMP
+// Cell name: MultiChannel_ST
+// View name: schematic
+// Inherited view list: schematic
+subckt MultiChannel_ST

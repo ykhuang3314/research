@@ -1,36 +1,31 @@
-// Library - GATES_3V, Cell - invrv3, View - schematic
-// LAST TIME SAVED: Mar  7 12:42:39 2018
-// NETLIST TIME: Apr 13 14:33:29 2021
+// Library - Stimulator_IMP, Cell - CurrentMirror_ST, View - schematic
+// LAST TIME SAVED: Apr 23 17:12:47 2021
+// NETLIST TIME: May  6 13:11:30 2021
 `timescale 1ns / 1ps 
 
-`worklib GATES_3V
+`worklib Stimulator_IMP
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="GATES_3V", dfII_cell="invrv3", dfII_view="schematic", worklib_name="GATES_3V", view_name="schematic", last_save_time="Mar  7 12:42:39 2018" *)
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentMirror_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr 23 17:12:47 2021" *)
 
-module invrv3 (out, in);
+module CurrentMirror_ST (Iref, Ist, .\gnd! (cdsNet1), .\vdd3! 
+    (cdsNet0), vddh, enable);
 
-parameter GT_PDW=0;
-parameter GT_PDL=350.00n;
-parameter sx=4.8e-07;
-parameter lc=2.7e-07;
-parameter GT_PUW=0;
-parameter GT_PUL=300.00n;
+inout  Iref, Ist, cdsNet1, cdsNet0, vddh;
 
-output  out;
+input  enable;
 
-input  in;
 
-wire (*
-integer inh_conn_prop_name = "power_vdd3";
-integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
-\vdd3! ;
+// List of all aliases
 
-wire (*
-integer inh_conn_prop_name = "ground_gnd";
-integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
-\gnd! ;
 
+cds_alias #(1) cds_alias_inst2(cdsNet1, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst3(cdsNet0, cds_globals.\vdd3! );
+
+LSHVT18U3VX2 I17 ( .A(enable), .Q(en_3v));
+
+CurrentMirror_x10_LV I0 ( .\gnd! (cds_globals.\gnd! ), .Ix10(Iout_LV), 
+    .Iin(Iref));
 
 endmodule

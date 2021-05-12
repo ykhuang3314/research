@@ -1,0 +1,5 @@
+
+// Library name: Stimulator_IMP
+// Cell name: CurrentMirror_x10_LV
+// View name: schematic
+subckt CurrentMirror_x10_LV Iin Ix10 0

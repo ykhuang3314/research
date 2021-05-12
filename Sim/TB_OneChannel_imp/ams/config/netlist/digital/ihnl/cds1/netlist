@@ -1,6 +1,6 @@
 // Library - D_CELLS_3V, Cell - IN_3VX2, View - cmos_sch
 // LAST TIME SAVED: Feb 20 10:23:55 2018
-// NETLIST TIME: Apr  1 14:05:41 2021
+// NETLIST TIME: Apr 30 15:39:11 2021
 `timescale 1ns / 1ps 
 
 `worklib D_CELLS_3V

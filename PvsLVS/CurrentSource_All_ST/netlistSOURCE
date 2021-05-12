@@ -1,0 +1,612 @@
+** Schematic Netlist, pvs precompare
+** 
+
+.subckt LDDN D G S B 
+.ends
+
+
+.subckt LDDP D G S B 
+.ends
+
+
+.subckt CurrentSource_All_ST Enable_ST Iext Ist Mag0_ST Mag1_ST Mag2_ST Mag3_ST Mag4_ST gnd! vdd3! vddh vdde! vdd! 
+RXI0/RR0 Iext XI0/VG2 RPP1K1 W=2e-06 L=2.0095e-05 m=1 R=10001.1 
+MXI0/MM2 XI0/VG1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM2==2 XI0/VG1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM2==3 XI0/VG1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM2==4 XI0/VG1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM2==5 XI0/VG1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM0 XI0/VG2 XI0/VG2 XI0/VG1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM0==2 XI0/VG2 XI0/VG2 XI0/VG1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM0==3 XI0/VG2 XI0/VG2 XI0/VG1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM0==4 XI0/VG2 XI0/VG2 XI0/VG1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM0==5 XI0/VG2 XI0/VG2 XI0/VG1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM3 XI0/VD_M1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM3==2 XI0/VD_M1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM3==3 XI0/VD_M1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM3==4 XI0/VD_M1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM3==5 XI0/VD_M1 XI0/VG1 gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM1 Iref XI0/VG2 XI0/VD_M1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM1==2 Iref XI0/VG2 XI0/VD_M1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM1==3 Iref XI0/VG2 XI0/VD_M1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM1==4 Iref XI0/VG2 XI0/VD_M1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM1==5 Iref XI0/VG2 XI0/VD_M1 gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM14 gnd! gnd! gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM14==2 gnd! gnd! gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM14==3 gnd! gnd! gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI0/MM14==4 gnd! gnd! gnd! gnd! NE3 W=8e-06 L=2e-06 m=1 
+MXI45/Xnand2_1/MMN1 XI45/net10 Enable_ST XI45/Xnand2_1/net11 gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI45/Xnand2_1/MMN2 XI45/Xnand2_1/net11 Mag0_ST gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI45/Xnand2_1/MMP1 XI45/net10 Enable_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI45/Xnand2_1/MMP2 XI45/net10 Mag0_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI45/Xinvr_1/Mne net05 XI45/net10 gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI45/Xinvr_1/Mpe net05 XI45/net10 vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI46/Xnand2_1/MMN1 XI46/net10 Enable_ST XI46/Xnand2_1/net11 gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI46/Xnand2_1/MMN2 XI46/Xnand2_1/net11 Mag1_ST gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI46/Xnand2_1/MMP1 XI46/net10 Enable_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI46/Xnand2_1/MMP2 XI46/net10 Mag1_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI46/Xinvr_1/Mne net07 XI46/net10 gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI46/Xinvr_1/Mpe net07 XI46/net10 vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI47/Xnand2_1/MMN1 XI47/net10 Enable_ST XI47/Xnand2_1/net11 gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI47/Xnand2_1/MMN2 XI47/Xnand2_1/net11 Mag2_ST gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI47/Xnand2_1/MMP1 XI47/net10 Enable_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI47/Xnand2_1/MMP2 XI47/net10 Mag2_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI47/Xinvr_1/Mne net09 XI47/net10 gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI47/Xinvr_1/Mpe net09 XI47/net10 vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI48/Xnand2_1/MMN1 XI48/net10 Enable_ST XI48/Xnand2_1/net11 gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI48/Xnand2_1/MMN2 XI48/Xnand2_1/net11 Mag3_ST gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI48/Xnand2_1/MMP1 XI48/net10 Enable_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI48/Xnand2_1/MMP2 XI48/net10 Mag3_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI48/Xinvr_1/Mne net011 XI48/net10 gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI48/Xinvr_1/Mpe net011 XI48/net10 vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI49/Xnand2_1/MMN1 XI49/net10 Enable_ST XI49/Xnand2_1/net11 gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI49/Xnand2_1/MMN2 XI49/Xnand2_1/net11 Mag4_ST gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI49/Xnand2_1/MMP1 XI49/net10 Enable_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI49/Xnand2_1/MMP2 XI49/net10 Mag4_ST vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+MXI49/Xinvr_1/Mne net013 XI49/net10 gnd! gnd! NE W=4.2e-07 L=1.8e-07 m=1 
+MXI49/Xinvr_1/Mpe net013 XI49/net10 vdd! vdd! PE W=7.2e-07 L=1.8e-07 m=1 
+RXI2/RR3 XI2/net030 gnd! RPP1K1 W=2e-06 L=0.00011122 m=1 R=54862.6 
+RXI2/RR2 vdd3! gnd! RPP1K1 W=2e-06 L=0.00036998 m=1 R=182252 
+RXI2/RR0 XI2/en_3v XI2/net030 RPP1K1 W=2e-06 L=0.00011122 m=1 R=54862.6 
+MXI2/XI17/MM3 XI2/XI17/net20 Enable_ST gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI2/XI17/MM5 XI2/en_3v XI2/XI17/net20 gnd! gnd! NE3 W=1.78e-06 L=3.5e-07 m=1 
+MXI2/XI17/MM7 XI2/XI17/net4 Enable_ST gnd! gnd! NE3 W=4.2e-07 L=3.5e-07 m=1 
+MXI2/XI17/MM1 XI2/XI17/net10 XI2/XI17/net4 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI2/XI17/MM6 XI2/en_3v XI2/XI17/net20 vdd3! vdd3! PE3 W=2.82e-06 L=3e-07 m=1 
+MXI2/XI17/MM8 XI2/XI17/net4 Enable_ST vdde! vdd3! PE3 W=1.47e-06 L=3e-07 m=1 
+MXI2/XI17/MM9 XI2/XI17/net20 Enable_ST XI2/XI17/net024 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI2/XI17/MM0 XI2/XI17/net10 XI2/XI17/net4 XI2/XI17/net023 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI2/XI17/MM2 XI2/XI17/net023 XI2/XI17/net20 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI2/XI17/MM4 XI2/XI17/net024 XI2/XI17/net10 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI2/XI0/MM26 net9 net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM26==2 net9 net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM26==3 net9 net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM26==4 net9 net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM26==5 net9 net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM26==6 net9 net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==2 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==3 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==4 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==5 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==6 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==7 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==8 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==9 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==10 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==11 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==12 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==13 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==14 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==15 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==16 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==17 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==18 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==19 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==20 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==21 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==22 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==23 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==24 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==25 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==26 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==27 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==28 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==29 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==30 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==31 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==32 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==33 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==34 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==35 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==36 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==37 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==38 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==39 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==40 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==41 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==42 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==43 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==44 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==45 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==46 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==47 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==48 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==49 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==50 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==51 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==52 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==53 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==54 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==55 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==56 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==57 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==58 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==59 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+MXI2/XI0/MM13==60 XI2/Iout_LV net9 gnd! gnd! NE3 W=1.2e-05 L=3e-06 m=1 
+CXI2/CC5 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==2 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==3 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==4 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==5 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==6 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==7 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==8 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==9 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==10 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==11 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==12 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==13 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==14 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC5==15 vddh XI2/Vmid CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==2 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==3 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==4 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==5 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==6 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==7 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==8 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==9 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==10 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==11 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==12 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==13 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==14 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==15 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==16 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==17 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==18 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==19 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==20 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==21 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==22 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==23 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==24 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==25 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==26 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==27 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==28 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==29 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==30 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==31 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==32 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==33 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==34 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==35 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==36 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==37 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==38 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==39 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==40 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==41 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==42 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==43 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==44 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+CXI2/CC1==45 XI2/Vmid gnd! CSFT5A area=6.3936e-11 perimeter=3.372e-05 m=1 
+MXI2/MM17 XI2/Iout_LV XI2/Vmid gnd! gnd! LDDN W=1e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM15 XI2/Vmid vdd3! gnd! gnd! LDDN W=1e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM14 XI2/Iout2 XI2/Iout2 XI2/VG1 gnd! LDDN W=4e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM8 XI2/Iout1 XI2/Iout1 XI2/VB gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM16 XI2/Bias2 XI2/en_3v XI2/Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM16==2 XI2/Bias2 XI2/en_3v XI2/Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM16==3 XI2/Bias2 XI2/en_3v XI2/Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM16==4 XI2/Bias2 XI2/en_3v XI2/Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM16==5 XI2/Bias2 XI2/en_3v XI2/Iout_LV gnd! LDDN W=6e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM5 XI2/VG1 XI2/VB XI2/VD_M4 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==2 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==3 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==4 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==5 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==6 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==7 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==8 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==9 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM0==10 Ist XI2/VB XI2/VD_M3 gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM7 XI2/VB XI2/Iout1 XI2/net16 gnd! LDDN W=3.5e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM6 XI2/net16 XI2/net16 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM4 XI2/VD_M4 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==2 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==3 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==4 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==5 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==6 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==7 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==8 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==9 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM3==10 XI2/VD_M3 XI2/VG1 gnd! gnd! LDDN W=8e-05 L=1.25e-06 m=1 $[LDDN] 
+MXI2/MM11 XI2/VD_M11 XI2/Bias1 vddh gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+MXI2/MM1 XI2/VD_M1 XI2/Bias1 vddh gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+MXI2/MM2 XI2/Bias1 XI2/Bias1 vddh gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+MXI2/MM12 XI2/Iout2 XI2/Bias2 XI2/VD_M11 gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+MXI2/MM10 XI2/Iout1 XI2/Bias2 XI2/VD_M1 gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+MXI2/MM9 XI2/Bias2 XI2/Bias2 XI2/Bias1 gnd! LDDP W=3e-05 L=9.4e-07 m=1 $[LDDP] 
+MXI1/MM0 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM0==2 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM0==3 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM0==4 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM0==5 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM0==6 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM0==7 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM0==8 vdd3! vdd3! vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM1 Iref Iref XI1/Vbias vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM1==2 Iref Iref XI1/Vbias vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM1==3 Iref Iref XI1/Vbias vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM1==4 Iref Iref XI1/Vbias vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM31 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM31==2 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM31==3 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM31==4 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM31==5 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM31==6 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM31==7 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM31==8 net9 D0_3v XI1/Ix1 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM20 XI1/n1 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM20==2 XI1/n1 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM20==3 XI1/n1 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM20==4 XI1/n1 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM22 XI1/Ix1 Iref XI1/n1 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM22==2 XI1/Ix1 Iref XI1/n1 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM22==3 XI1/Ix1 Iref XI1/n1 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM22==4 XI1/Ix1 Iref XI1/n1 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23==2 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23==3 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23==4 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23==5 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23==6 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23==7 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM23==8 XI1/n2 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24==2 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24==3 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24==4 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24==5 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24==6 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24==7 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM24==8 XI1/Ix2 Iref XI1/n2 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==2 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==3 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==4 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==5 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==6 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==7 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==8 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==9 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==10 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==11 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==12 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==13 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==14 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==15 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM25==16 XI1/n3 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==2 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==3 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==4 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==5 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==6 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==7 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==8 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==9 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==10 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==11 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==12 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==13 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==14 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==15 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM29==16 XI1/Ix4 Iref XI1/n3 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==2 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==3 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==4 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==5 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==6 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==7 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==8 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==9 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==10 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==11 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==12 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==13 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==14 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==15 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==16 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==17 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==18 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==19 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==20 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==21 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==22 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==23 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==24 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==25 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==26 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==27 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==28 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==29 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==30 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==31 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM32==32 XI1/Ix8 Iref XI1/n4 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==2 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==3 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==4 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==5 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==6 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==7 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==8 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==9 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==10 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==11 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==12 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==13 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==14 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==15 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==16 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==17 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==18 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==19 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==20 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==21 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==22 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==23 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==24 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==25 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==26 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==27 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==28 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==29 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==30 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==31 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM33==32 XI1/n4 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==2 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==3 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==4 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==5 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==6 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==7 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==8 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==9 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==10 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==11 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==12 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==13 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==14 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==15 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==16 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==17 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==18 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==19 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==20 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==21 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==22 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==23 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==24 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==25 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==26 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==27 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==28 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==29 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==30 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==31 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==32 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==33 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==34 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==35 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==36 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==37 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==38 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==39 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==40 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==41 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==42 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==43 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==44 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==45 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==46 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==47 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==48 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==49 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==50 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==51 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==52 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==53 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==54 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==55 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==56 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==57 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==58 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==59 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==60 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==61 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==62 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==63 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM35==64 XI1/n5 XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==2 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==3 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==4 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==5 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==6 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==7 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==8 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==9 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==10 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==11 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==12 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==13 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==14 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==15 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==16 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==17 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==18 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==19 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==20 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==21 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==22 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==23 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==24 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==25 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==26 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==27 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==28 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==29 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==30 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==31 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==32 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==33 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==34 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==35 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==36 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==37 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==38 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==39 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==40 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==41 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==42 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==43 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==44 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==45 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==46 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==47 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==48 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==49 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==50 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==51 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==52 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==53 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==54 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==55 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==56 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==57 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==58 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==59 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==60 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==61 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==62 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==63 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM36==64 XI1/Ix16 Iref XI1/n5 vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM38 XI1/Vbias XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM38==2 XI1/Vbias XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM38==3 XI1/Vbias XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM38==4 XI1/Vbias XI1/Vbias vdd3! vdd3! PE3 W=6e-06 L=2e-06 m=1 
+MXI1/MM39 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM39==2 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM39==3 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM39==4 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM39==5 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM39==6 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM39==7 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM39==8 net9 D1_3v XI1/Ix2 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40==2 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40==3 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40==4 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40==5 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40==6 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40==7 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM40==8 net9 D2_3v XI1/Ix4 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41==2 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41==3 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41==4 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41==5 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41==6 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41==7 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM41==8 net9 D3_3v XI1/Ix8 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42==2 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42==3 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42==4 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42==5 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42==6 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42==7 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI1/MM42==8 net9 D4_3v XI1/Ix16 vdd3! PE3 W=2e-06 L=3e-07 m=1 
+MXI31/Xinvr_1/MMN1 D0_3v net06 gnd! gnd! NE3 W=9.6e-07 L=3.5e-07 m=1 
+MXI31/Xinvr_1/MMP1 D0_3v net06 vdd3! vdd3! PE3 W=2.94e-06 L=3e-07 m=1 
+MXI15/Xinvr_1/MMN1 D1_3v net08 gnd! gnd! NE3 W=9.6e-07 L=3.5e-07 m=1 
+MXI15/Xinvr_1/MMP1 D1_3v net08 vdd3! vdd3! PE3 W=2.94e-06 L=3e-07 m=1 
+MXI13/Xinvr_1/MMN1 D2_3v net010 gnd! gnd! NE3 W=9.6e-07 L=3.5e-07 m=1 
+MXI13/Xinvr_1/MMP1 D2_3v net010 vdd3! vdd3! PE3 W=2.94e-06 L=3e-07 m=1 
+MXI11/Xinvr_1/MMN1 D3_3v net012 gnd! gnd! NE3 W=9.6e-07 L=3.5e-07 m=1 
+MXI11/Xinvr_1/MMP1 D3_3v net012 vdd3! vdd3! PE3 W=2.94e-06 L=3e-07 m=1 
+MXI10/Xinvr_1/MMN1 D4_3v net014 gnd! gnd! NE3 W=9.6e-07 L=3.5e-07 m=1 
+MXI10/Xinvr_1/MMP1 D4_3v net014 vdd3! vdd3! PE3 W=2.94e-06 L=3e-07 m=1 
+MXI16/MM3 XI16/net20 net05 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI16/MM5 net06 XI16/net20 gnd! gnd! NE3 W=8.9e-07 L=3.5e-07 m=1 
+MXI16/MM7 XI16/net4 net05 gnd! gnd! NE3 W=4.2e-07 L=3.5e-07 m=1 
+MXI16/MM1 XI16/net10 XI16/net4 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI16/MM6 net06 XI16/net20 vdd3! vdd3! PE3 W=1.46e-06 L=3e-07 m=1 
+MXI16/MM8 XI16/net4 net05 vdde! vdd3! PE3 W=1.48e-06 L=3e-07 m=1 
+MXI16/MM9 XI16/net20 net05 XI16/net024 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI16/MM0 XI16/net10 XI16/net4 XI16/net023 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI16/MM2 XI16/net023 XI16/net20 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI16/MM4 XI16/net024 XI16/net10 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI30/MM3 XI30/net20 net07 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI30/MM5 net08 XI30/net20 gnd! gnd! NE3 W=8.9e-07 L=3.5e-07 m=1 
+MXI30/MM7 XI30/net4 net07 gnd! gnd! NE3 W=4.2e-07 L=3.5e-07 m=1 
+MXI30/MM1 XI30/net10 XI30/net4 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI30/MM6 net08 XI30/net20 vdd3! vdd3! PE3 W=1.46e-06 L=3e-07 m=1 
+MXI30/MM8 XI30/net4 net07 vdde! vdd3! PE3 W=1.48e-06 L=3e-07 m=1 
+MXI30/MM9 XI30/net20 net07 XI30/net024 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI30/MM0 XI30/net10 XI30/net4 XI30/net023 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI30/MM2 XI30/net023 XI30/net20 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI30/MM4 XI30/net024 XI30/net10 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI14/MM3 XI14/net20 net09 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI14/MM5 net010 XI14/net20 gnd! gnd! NE3 W=8.9e-07 L=3.5e-07 m=1 
+MXI14/MM7 XI14/net4 net09 gnd! gnd! NE3 W=4.2e-07 L=3.5e-07 m=1 
+MXI14/MM1 XI14/net10 XI14/net4 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI14/MM6 net010 XI14/net20 vdd3! vdd3! PE3 W=1.46e-06 L=3e-07 m=1 
+MXI14/MM8 XI14/net4 net09 vdde! vdd3! PE3 W=1.48e-06 L=3e-07 m=1 
+MXI14/MM9 XI14/net20 net09 XI14/net024 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI14/MM0 XI14/net10 XI14/net4 XI14/net023 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI14/MM2 XI14/net023 XI14/net20 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI14/MM4 XI14/net024 XI14/net10 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI12/MM3 XI12/net20 net011 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI12/MM5 net012 XI12/net20 gnd! gnd! NE3 W=8.9e-07 L=3.5e-07 m=1 
+MXI12/MM7 XI12/net4 net011 gnd! gnd! NE3 W=4.2e-07 L=3.5e-07 m=1 
+MXI12/MM1 XI12/net10 XI12/net4 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI12/MM6 net012 XI12/net20 vdd3! vdd3! PE3 W=1.46e-06 L=3e-07 m=1 
+MXI12/MM8 XI12/net4 net011 vdde! vdd3! PE3 W=1.48e-06 L=3e-07 m=1 
+MXI12/MM9 XI12/net20 net011 XI12/net024 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI12/MM0 XI12/net10 XI12/net4 XI12/net023 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI12/MM2 XI12/net023 XI12/net20 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI12/MM4 XI12/net024 XI12/net10 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI29/MM3 XI29/net20 net013 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI29/MM5 net014 XI29/net20 gnd! gnd! NE3 W=8.9e-07 L=3.5e-07 m=1 
+MXI29/MM7 XI29/net4 net013 gnd! gnd! NE3 W=4.2e-07 L=3.5e-07 m=1 
+MXI29/MM1 XI29/net10 XI29/net4 gnd! gnd! NE3 W=1.31e-06 L=3.5e-07 m=1 
+MXI29/MM6 net014 XI29/net20 vdd3! vdd3! PE3 W=1.46e-06 L=3e-07 m=1 
+MXI29/MM8 XI29/net4 net013 vdde! vdd3! PE3 W=1.48e-06 L=3e-07 m=1 
+MXI29/MM9 XI29/net20 net013 XI29/net024 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI29/MM0 XI29/net10 XI29/net4 XI29/net023 vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI29/MM2 XI29/net023 XI29/net20 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+MXI29/MM4 XI29/net024 XI29/net10 vdd3! vdd3! PE3 W=4.2e-07 L=3e-07 m=1 
+.ends
+
+

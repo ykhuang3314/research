@@ -1,19 +1,26 @@
-// Library - D_CELLS_HD, Cell - AND2HDX0, View - cmos_sch
-// LAST TIME SAVED: Jan 23 08:10:19 2018
-// NETLIST TIME: Apr  1 14:05:41 2021
+// Library - GATES_HD, Cell - invr, View - schematic
+// LAST TIME SAVED: Jan 18 15:00:13 2018
+// NETLIST TIME: Apr 30 15:39:11 2021
 `timescale 1ns / 1ps 
 
-`worklib D_CELLS_HD
-`view cmos_sch
+`worklib GATES_HD
+`view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="D_CELLS_HD", dfII_cell="AND2HDX0", dfII_view="cmos_sch", worklib_name="D_CELLS_HD", view_name="cmos_sch", last_save_time="Jan 23 08:10:19 2018" *)
+(* dfII_lib="GATES_HD", dfII_cell="invr", dfII_view="schematic", worklib_name="GATES_HD", view_name="schematic", last_save_time="Jan 18 15:00:13 2018" *)
 
-module AND2HDX0 (Q, A, B);
+module invr (out, in);
 
-output  Q;
+parameter GT_PDW=0;
+parameter GT_PDL=180.00n;
+parameter sx=4.8e-07;
+parameter lc=2.7e-07;
+parameter GT_PUW=0;
+parameter GT_PUL=180.00n;
 
-input  A, B;
+output  out;
+
+input  in;
 
 wire (*
 integer inh_conn_prop_name = "ground_gnd";

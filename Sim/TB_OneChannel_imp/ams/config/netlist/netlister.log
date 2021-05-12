@@ -1,4 +1,4 @@
-Begin Netlisting Apr  1 14:05:38 2021
+Begin Netlisting Apr 30 15:39:07 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -69,12 +69,13 @@ TB_OneChannel_imp           schematic
 AND2HDX0                    cmos_sch                              
 invr                        schematic                             
 nand2                       schematic                             
-LS_HighSide_V3_ST           schematic                             
 LS_LowSide_V2_ST            schematic                             
+LS_HighSide_V3_ST           schematic                             
+ResistiveDivider            schematic                             
 LSHVT18U3VX1                cmos_sch                              
 IN_3VX2                     cmos_sch                              
 invrv3                      schematic                             
 
 ---------- End of netlist configuration information   ----------
 Running netlist assembly..
-End netlisting Apr  1 14:05:47 2021
+End netlisting Apr 30 15:39:17 2021

@@ -4,8 +4,8 @@ Stimulator_IMP M3_MTP_CornerCell layout 159
 Stimulator_IMP M3_MTPcell layout 522
 PRIMLIB ne3 layout 548
 PRIMLIB nedia_bjt layout 630
-Stimulator_IMP CurrentMirror_x10_LV layout 54004
-Stimulator_IMP CurrretMirrorx10_HV layout 9799
+Stimulator_IMP CurrentMirror_x10_LV layout 54029
+Stimulator_IMP CurrretMirrorx10_HV layout 10485
 Stimulator_IMP HVMOS_GateRingM1 layout 19
 D_CELLS_M3V LSHVT18U3VX2 layout 74617
 PRIMLIB csft5a layout 784
@@ -16,4 +16,4 @@ PRIMLIB nedia_bjt layout 630
 PRIMLIB ped_bjt layout 572
 PRIMLIB rpp1k1 layout 287
 PRIMLIB rpp1k1 layout 287
-Stimulator_IMP CurrentMirror_ST layout 459251
+Stimulator_IMP CurrentMirror_ST layout 459329

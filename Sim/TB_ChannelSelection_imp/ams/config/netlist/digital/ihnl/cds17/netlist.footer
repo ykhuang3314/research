@@ -1,0 +1,23 @@
+
+Digital_Stimulus_ChSel_ST #( .MAG(5'b11100), .InterPulseDelay(100), .ANO_phase(300) 
+    , .CAT_phase(300), .ST_period(1000), .Ch_Sweeping(1'b1) ) I32 ( 
+    .ChSel_HS(ChSel_HS), .ChSel_LS(ChSel_LS), .EN_ST(Enable_ST), 
+    .MAG_ST(Mag_ST));
+
+MultiChannel_ST I35 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
+    .Iext(net4), .E0(E0), .E1(E1), .E2(E2), .E3(E3), .E4(E4), .E5(E5), 
+    .E6(E6), .E7(E7), .Enable(Enable_ST), .Mag0(Mag_ST[0]), 
+    .Mag1(Mag_ST[1]), .Mag2(Mag_ST[2]), .Mag3(Mag_ST[3]), 
+    .Mag4(Mag_ST[4]), .Ctrl_HS0(CtrlHS[0]), .Ctrl_HS1(CtrlHS[1]), 
+    .Ctrl_HS2(CtrlHS[2]), .Ctrl_HS3(CtrlHS[3]), .Ctrl_HS4(CtrlHS[4]), 
+    .Ctrl_HS5(CtrlHS[5]), .Ctrl_HS6(CtrlHS[6]), .Ctrl_HS7(CtrlHS[7]), 
+    .Ctrl_LS0(CtrlLS[0]), .Ctrl_LS1(CtrlLS[1]), .Ctrl_LS2(CtrlLS[2]), 
+    .Ctrl_LS3(CtrlLS[3]), .Ctrl_LS4(CtrlLS[4]), .Ctrl_LS5(CtrlLS[5]), 
+    .Ctrl_LS6(CtrlLS[6]), .Ctrl_LS7(CtrlLS[7]));
+
+Decoder3_8 I33 ( .Bin(ChSel_HS), .Dout(CtrlHS), .Enable(Enable_ST));
+
+Decoder3_8 I34 ( .Bin(ChSel_LS), .Dout(CtrlLS), .Enable(Enable_ST));
+
+endmodule

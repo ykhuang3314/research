@@ -1,0 +1,11 @@
+( ( net
+( "gnd!" "0" )
+( "vdde!" "vdde!" )
+( "vdd3!" "vdd3!" )
+ )
+( model
+( "HalfBridge_ST" "HalfBridge_ST" )
+( "CurrentSource_All_ST" "CurrentSource_All_ST" )
+( "SingleChannel_ST" "SingleChannel_ST" )
+ )
+ )

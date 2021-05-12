@@ -1,0 +1,162 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : CurrentSource_All_ST_lvs.sum
+ERC Summary File         : CurrentSource_All_ST.sum
+LVS Comparison Report    : CurrentSource_All_ST_lvs.sum.cls
+LVS Softchk Report       : CurrentSource_All_ST.softchk
+Layout Name              : /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/CurrentSource_All_ST.gds ("CurrentSource_All_ST")
+User Name                : ykhuang
+Creation Time            : Tue May 11 17:08:48 2021
+Current directory        : /home/ykhuang/research/PvsLVS/CurrentSource_All_ST
+PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK nwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK dnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hvnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK ndftrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hnw -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK catdiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK anodiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pwitrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pdf -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK bulk -TYPE CONTACT   Total Result        0 (       0)
+
+Clean cell list (added by extraction report parser )
+ for cell "AND2HDX0"
+ for cell "CurrentMirror_x10_LV"
+ for cell "CurrentSource_All_ST"
+ for cell "CurrretMirrorx10_HV"
+ for cell "Ext_Iref_ST"
+ for cell "HVMOS_GateRingM1"
+ for cell "IN_3VX2"
+ for cell "Idac_5bit_ST_V3"
+ for cell "LDDN"
+ for cell "LDDP"
+ for cell "LSHVT18U3VX1"
+ for cell "LSHVT18U3VX2"
+ for cell "M1Cell"
+ for cell "M3_MTP_8_cell"
+ for cell "M3_MTP_CornerCell"
+ for cell "M3_MTPcell"
+ for cell "P1_C_CDNS_33"
+ for cell "VIA1_C_CDNS_1"
+ for cell "VIA1_C_CDNS_101"
+ for cell "VIA1_C_CDNS_104"
+ for cell "VIA1_C_CDNS_106"
+ for cell "VIA1_C_CDNS_110"
+ for cell "VIA1_C_CDNS_120"
+ for cell "VIA1_C_CDNS_121"
+ for cell "VIA1_C_CDNS_123"
+ for cell "VIA1_C_CDNS_15"
+ for cell "VIA1_C_CDNS_16"
+ for cell "VIA1_C_CDNS_2"
+ for cell "VIA1_C_CDNS_22"
+ for cell "VIA1_C_CDNS_23"
+ for cell "VIA1_C_CDNS_29"
+ for cell "VIA1_C_CDNS_3"
+ for cell "VIA1_C_CDNS_30"
+ for cell "VIA1_C_CDNS_36"
+ for cell "VIA1_C_CDNS_37"
+ for cell "VIA1_C_CDNS_4"
+ for cell "VIA1_C_CDNS_47"
+ for cell "VIA1_C_CDNS_5"
+ for cell "VIA1_C_CDNS_61"
+ for cell "VIA1_C_CDNS_65"
+ for cell "VIA1_C_CDNS_83"
+ for cell "VIA1_C_CDNS_94"
+ for cell "VIA1_C_CDNS_98"
+ for cell "VIA1_C_CDNS_99"
+ for cell "VIA2_C_CDNS_103"
+ for cell "VIA2_C_CDNS_105"
+ for cell "VIA2_C_CDNS_108"
+ for cell "VIA2_C_CDNS_112"
+ for cell "VIA2_C_CDNS_115"
+ for cell "VIA2_C_CDNS_119"
+ for cell "VIA2_C_CDNS_17"
+ for cell "VIA2_C_CDNS_18"
+ for cell "VIA2_C_CDNS_19"
+ for cell "VIA2_C_CDNS_20"
+ for cell "VIA2_C_CDNS_21"
+ for cell "VIA2_C_CDNS_25"
+ for cell "VIA2_C_CDNS_31"
+ for cell "VIA2_C_CDNS_32"
+ for cell "VIA2_C_CDNS_35"
+ for cell "VIA2_C_CDNS_41"
+ for cell "VIA2_C_CDNS_48"
+ for cell "VIA2_C_CDNS_50"
+ for cell "VIA2_C_CDNS_51"
+ for cell "VIA2_C_CDNS_52"
+ for cell "VIA2_C_CDNS_53"
+ for cell "VIA2_C_CDNS_55"
+ for cell "VIA2_C_CDNS_56"
+ for cell "VIA2_C_CDNS_57"
+ for cell "VIA2_C_CDNS_6"
+ for cell "VIA2_C_CDNS_60"
+ for cell "VIA2_C_CDNS_68"
+ for cell "VIA2_C_CDNS_69"
+ for cell "VIA2_C_CDNS_7"
+ for cell "VIA2_C_CDNS_74"
+ for cell "VIA2_C_CDNS_75"
+ for cell "VIA2_C_CDNS_76"
+ for cell "VIA2_C_CDNS_78"
+ for cell "VIA2_C_CDNS_79"
+ for cell "VIA2_C_CDNS_8"
+ for cell "VIA2_C_CDNS_93"
+ for cell "VIA2_C_CDNS_97"
+ for cell "VIA3_C_CDNS_100"
+ for cell "VIA3_C_CDNS_102"
+ for cell "VIA3_C_CDNS_109"
+ for cell "VIA3_C_CDNS_114"
+ for cell "VIA3_C_CDNS_116"
+ for cell "VIA3_C_CDNS_124"
+ for cell "VIA3_C_CDNS_126"
+ for cell "VIA3_C_CDNS_128"
+ for cell "VIA3_C_CDNS_131"
+ for cell "VIA3_C_CDNS_40"
+ for cell "VIA3_C_CDNS_43"
+ for cell "VIA3_C_CDNS_49"
+ for cell "VIA3_C_CDNS_54"
+ for cell "VIA3_C_CDNS_58"
+ for cell "VIA3_C_CDNS_59"
+ for cell "VIA3_C_CDNS_71"
+ for cell "VIA3_C_CDNS_77"
+ for cell "VIA3_C_CDNS_80"
+ for cell "VIA3_C_CDNS_90"
+ for cell "VIA3_C_CDNS_91"
+ for cell "VIA3_C_CDNS_92"
+ for cell "VIA3_C_CDNS_95"
+ for cell "VIA3_C_CDNS_96"
+ for cell "VIATP_C_CDNS_111"
+ for cell "VIATP_C_CDNS_113"
+ for cell "VIATP_C_CDNS_117"
+ for cell "VIATP_C_CDNS_118"
+ for cell "VIATP_C_CDNS_125"
+ for cell "VIATP_C_CDNS_127"
+ for cell "VIATP_C_CDNS_129"
+ for cell "VIATP_C_CDNS_130"
+ for cell "ne3_CDNS_107"
+ for cell "ne3_CDNS_27"
+ for cell "nedia_bjt_CDNS_84"
+ for cell "nedia_bjt_CDNS_85"
+ for cell "nedia_bjt_CDNS_86"
+ for cell "nedia_bjt_CDNS_87"
+ for cell "nedia_bjt_CDNS_89"
+ for cell "pe3_CDNS_38"
+ for cell "pe3_CDNS_39"
+ for cell "ped_bjt_CDNS_88"
+ for cell "rpp1k1_CDNS_132"
+ for cell "rpp1k1_CDNS_133"
+ for cell "rpp1k1_CDNS_28"

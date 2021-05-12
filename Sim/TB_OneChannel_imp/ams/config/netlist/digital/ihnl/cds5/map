@@ -1,5 +1,11 @@
 ( ( net
-( "vdd!" "\\vdd! " )
+( "gnd!" "cds_globals.\\gnd! " )
+( "vdde!" "cds_globals.\\vdde! " )
+( "vdd3!" "cds_globals.\\vdd3! " )
+ )
+( term
 ( "gnd!" "\\gnd! " )
+( "vdde!" "\\vdde! " )
+( "vdd3!" "\\vdd3! " )
  )
  )

@@ -1,0 +1,14 @@
+( ( net
+( "gnd!" "0" )
+( "vdd3!" "vdd3!" )
+ )
+( model
+( "Ext_Iref_ST" "Ext_Iref_ST" )
+( "CurrentMirror_ST" "CurrentMirror_ST" )
+( "LSHVT18U3VX1" "LSHVT18U3VX1" )
+( "CurrentSource_All_ST" "CurrentSource_All_ST" )
+( "Idac_5bit_ST_V3" "Idac_5bit_ST_V3" )
+( "AND2HDX0" "AND2HDX0" )
+( "IN_3VX2" "IN_3VX2" )
+ )
+ )

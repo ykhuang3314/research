@@ -1,0 +1,1 @@
+1620135712 ./xcelium.d/AMSD/ams_spice_in/amscomm.list

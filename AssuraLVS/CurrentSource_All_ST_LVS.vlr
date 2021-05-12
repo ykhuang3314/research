@@ -1,0 +1,17 @@
+
+
+;----------------------------------------------------------------------------
+; vldb RSF file
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+; form additions
+avSimName = "auLvs"
+avDisableWildcardPG = nil
+avVerilogBusMapIEEE = t
+avLibName  = "Stimulator_IMP"
+avCellName = "CurrentSource_All_ST"
+avViewName = "schematic"
+avViewList = "auLvs schematic cmos_sch symbol"
+avStopList = "auLvs"
+avVldbFile = "/home/ykhuang/research/AssuraLVS/CurrentSource_All_ST_LVS.sdb"

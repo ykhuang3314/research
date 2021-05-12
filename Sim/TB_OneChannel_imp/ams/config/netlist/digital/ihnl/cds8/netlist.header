@@ -1,18 +1,27 @@
-// Library - Stimulator_TestBench, Cell - TB_OneChannel_imp, View -
-//schematic
-// LAST TIME SAVED: Mar 31 14:57:51 2021
-// NETLIST TIME: Apr  1 14:05:41 2021
+// Library - D_CELLS_HD, Cell - AND2HDX0, View - cmos_sch
+// LAST TIME SAVED: Jan 23 08:10:19 2018
+// NETLIST TIME: Apr 30 15:39:11 2021
 `timescale 1ns / 1ps 
 
-`worklib Stimulator_TestBench
-`view schematic
+`worklib D_CELLS_HD
+`view cmos_sch
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_OneChannel_imp", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Mar 31 14:57:51 2021" *)
+(* dfII_lib="D_CELLS_HD", dfII_cell="AND2HDX0", dfII_view="cmos_sch", worklib_name="D_CELLS_HD", view_name="cmos_sch", last_save_time="Jan 23 08:10:19 2018" *)
 
-module TB_OneChannel_imp ();
+module AND2HDX0 (Q, A, B);
 
-// Buses in the design
+output  Q;
 
-wire  [4:0]  MAG_ST;
+input  A, B;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
 

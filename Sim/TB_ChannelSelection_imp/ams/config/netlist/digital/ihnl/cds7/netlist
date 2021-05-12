@@ -1,32 +1,25 @@
-// Library - D_CELLS_3V, Cell - IN_3VX2, View - cmos_sch
-// LAST TIME SAVED: Feb 20 10:23:55 2018
-// NETLIST TIME: Apr 13 14:33:29 2021
+// Library - Stimulator_IMP, Cell - Idac_5bit_ST_V3, View - schematic
+// LAST TIME SAVED: Apr 26 14:24:45 2021
+// NETLIST TIME: May  6 13:11:30 2021
 `timescale 1ns / 1ps 
 
-`worklib D_CELLS_3V
-`view cmos_sch
+`worklib Stimulator_IMP
+`view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="D_CELLS_3V", dfII_cell="IN_3VX2", dfII_view="cmos_sch", worklib_name="D_CELLS_3V", view_name="cmos_sch", last_save_time="Feb 20 10:23:55 2018" *)
+(* dfII_lib="Stimulator_IMP", dfII_cell="Idac_5bit_ST_V3", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr 26 14:24:45 2021" *)
 
-module IN_3VX2 (Q, A);
+module Idac_5bit_ST_V3 (Idac, Iref, .\vdd3! (cdsNet0), D0_3v, D1_3v, 
+    D2_3v, D3_3v, D4_3v);
 
-output  Q;
+inout  Idac, Iref, cdsNet0;
 
-input  A;
-
-wire (*
-integer inh_conn_prop_name = "power_vdd3";
-integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
-\vdd3! ;
-
-wire (*
-integer inh_conn_prop_name = "ground_gnd";
-integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
-\gnd! ;
+input  D0_3v, D1_3v, D2_3v, D3_3v, D4_3v;
 
 
-invrv3 #( .sx(4.8e-07), .GT_PUW(2.94u), .GT_PDL(350.00n), .lc(2.7e-07), .GT_PUL(300.00n) 
-    , .GT_PDW(960.00n) ) invr_1 ( .in(A), .out(Q));
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst4(cdsNet0, cds_globals.\vdd3! );
 
 endmodule

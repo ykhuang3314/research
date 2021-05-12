@@ -5,23 +5,23 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 29433
-Memory  available: 40.1850 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 26991
+Memory  available: 36.2607 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1200.0] ( 16 ),  1 [1200.0] ( 17 ),  2 [1358.3] ( 18 )
-                 3 [1200.9] ( 19 ),  4 [1200.0] ( 20 ),  5 [1200.0] ( 21 )
-                 6 [1200.0] ( 22 ),  7 [1200.3] ( 23 )
-        1:       8 [1237.6] ( 24 ),  9 [1244.7] ( 25 ), 10 [1239.8] ( 26 )
-                11 [1200.3] ( 27 ), 12 [1215.1] ( 28 ), 13 [1200.0] ( 29 )
-                14 [1243.2] ( 30 ), 15 [1242.8] ( 31 )
+        0:       0 [1199.4] ( 16 ),  1 [1200.0] ( 17 ),  2 [1200.0] ( 18 )
+                 3 [1200.7] ( 19 ),  4 [1200.1] ( 20 ),  5 [1200.3] ( 21 )
+                 6 [1200.0] ( 22 ),  7 [1200.0] ( 23 )
+        1:       8 [1199.9] ( 24 ),  9 [1200.1] ( 25 ), 10 [1350.3] ( 26 )
+                11 [1200.6] ( 27 ), 12 [1200.0] ( 28 ), 13 [1279.2] ( 29 )
+                14 [1200.0] ( 30 ), 15 [1200.6] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.9 %, 1.2 %, 0.7 %
+System load averages (1min, 5min, 15min) : 0.0 %, 0.2 %, 0.2 %
 Hyperthreading is enabled
 
 
-Simulating `/home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 2:33:28 PM, Tue Apr 13, 2021 (process id: 29433).
+Simulating `/home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 1:11:29 PM, Thur May 6, 2021 (process id: 26991).
 Current working directory: /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -33,7 +33,7 @@ Command line:
         =log  \
         /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDA126F37837D471DEBA2AFC31339371C2EE04803012A43FE4A736C2073CA87ED5B937E73E3F9564D9EA2CDF263D883FD1A13AA57037D476D9B522F77624D479C3A062EC297F83799FB139A03D7E9F65DDA141A3103196549FB22EFB3C35A479D3A83DE53F31963F9EBB31C13F0F8B73D5ED2ABF3B70997BC4A93BEC7860DB21D4A83DDEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06461CB648AA83DC30C50FB10B0C84862AADF6D70C5000062D6
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDA126F37837D471DEBA2AFC31339371C2EE04803012A43FE4A736C2073CA87ED5B937E73E3F9564D9EA2CDF263D883FD1A13AA57037D476D9B522F77624D479C3A062EC297F83799FB139A03D7E9F65DDA141A3103196549FB22EFB3C35A479D3A83DE53F31963F9EBB31C13F0F8B73D5ED2ABF6B70C97BC4A938EC2B62DB2387A83DDEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06461CB648AA83DC30C50FB10B0C8AE23E39E247023000062B3
 
 Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -43,7 +43,7 @@ Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libstmod
 Reading file:  /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi/xcelium.d/AMSD/ams_spice_in/.amsspice_pre.ckt
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
-Time for NDB Parsing: CPU = 146.524 ms, elapsed = 230.076 ms.
-Time accumulated: CPU = 208.372 ms, elapsed = 230.087 ms.
+Time for NDB Parsing: CPU = 126.731 ms, elapsed = 210.838 ms.
+Time accumulated: CPU = 187.095 ms, elapsed = 210.85 ms.
 Peak resident memory used = 48.4 Mbytes.
 

@@ -2,8 +2,6 @@ Schematic                                    | Layout                           
 ---------------------------------------------------------------------------------------------------
 CurrentMirror_x10_LV schematic Stimulator_IMP| CurrentMirror_x10_LV layout Stimulator_IMP| matched
 LSHVT18U3VX2 cmos_sch D_CELLS_M3V            | LSHVT18U3VX2 layout D_CELLS_M3V           | matched
-CurrentMirror_ST schematic Stimulator_IMP    | CurrentMirror_ST layout Stimulator_IMP    | errors  *
+CurrentMirror_ST schematic Stimulator_IMP    | CurrentMirror_ST layout Stimulator_IMP    | matched
 
-Mismatch between Schematic and Layout
-   1 cell with errors
-   2 cells matched
+Schematic and Layout Match

@@ -1,0 +1,29 @@
+!<alc> v1 76
+0   45    0 G23_1_2_10040_0_r0 sub_array
+0   43    0 G8_1_2_11600_0_my sub_array
+0   41    0 G8_1_2_11600_0_r0 sub_array
+0   23    0 pe3 layout PRIMLIB gContT="Met1" l="2u" w="6u" in1=M382e4
+0   22    0 pe3 layout PRIMLIB gContT="Met1" ng="8" in1=M31
+0    3    0 M1Cell layout Stimulator_IMP
+0   36    0 ped_bjt layout PRIMLIB ng="13" w="80u" in1=M66
+0   35    0 nedia_bjt layout PRIMLIB ng="10" w="80u" in1=M34
+0   33    0 Idac_5bit_ST_V3 layout Stimulator_IMP
+0   32    0 IN_3VX2 layout D_CELLS_3V
+0   29    0 AND2HDX0 layout D_CELLS_HD
+0   27    0 rpp1k1 layout PRIMLIB lstrip="25u" shapeType="Serpentine 90" strips=4 in1=R3
+0   24    0 ped_bjt layout PRIMLIB w="30u" in1=M11
+0   19    0 nedia_bjt layout PRIMLIB in1=M17
+0   18    0 nedia_bjt layout PRIMLIB ng="5" w="60u" in1=M16
+0   17    0 ne3 layout PRIMLIB gContT="Met1" l="2u" w="8u" in1=M32e5
+0   16    0 csft5a layout PRIMLIB
+0   15    0 LS_HighSide_V3_ST layout Stimulator_IMP
+0   13    0 HVMOS_GateRingM1 layout Stimulator_IMP
+0   11    0 CurrentMirror_x10_LV layout Stimulator_IMP
+0   10    0 nedia_bjt layout PRIMLIB w="80u" in1=M02e1
+0    7    0 ResistiveDivider layout Stimulator_IMP
+0    6    0 M3_MTPcell layout Stimulator_IMP
+0    4    0 M3_MTP_8_cell layout Stimulator_IMP
+0    2    0 LSHVT18U3VX1 layout D_CELLS_M3V
+0   38    0 HalfBridge_ST layout Stimulator_IMP
+0   37    0 CurrentSource_All_ST layout Stimulator_IMP
+0   39    0 MultiChannel_ST layout Stimulator_IMP

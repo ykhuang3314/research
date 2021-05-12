@@ -5,10 +5,8 @@ netMap,*LS_HighSide_V3_ST,*vdd!,*vdd!
 netMap,*LS_HighSide_V3_ST,*gnd!,*0
 instMap,*LS_HighSide_V3_ST,*M13,*M13
 instMaster,*LS_HighSide_V3_ST,*M13,*PRIMLIB_nedia_bjt_spectre,*nedia_bjt
-instMap,*LS_HighSide_V3_ST,*R0,*R0
-instMaster,*LS_HighSide_V3_ST,*R0,*PRIMLIB_rpp1k1_spectre,*rpp1k1
-instMap,*LS_HighSide_V3_ST,*R1,*R1
-instMaster,*LS_HighSide_V3_ST,*R1,*PRIMLIB_rpp1k1_spectre,*rpp1k1
+instMap,*LS_HighSide_V3_ST,*I0,*I0
+instMaster,*LS_HighSide_V3_ST,*I0,*Stimulator_IMP_ResistiveDivider_schematic,*ResistiveDivider
 instMap,*LS_HighSide_V3_ST,*I10,*I10
 instMaster,*LS_HighSide_V3_ST,*I10,*D_CELLS_M3V_LSHVT18U3VX1_cmos_sch,*LSHVT18U3VX1
 portMap,*LS_HighSide_V3_ST,*gnd!,*0

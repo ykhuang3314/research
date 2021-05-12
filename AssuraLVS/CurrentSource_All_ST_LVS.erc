@@ -1,0 +1,14 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'CurrentSource_All_ST layout Stimulator_IMP':
+  info: Assign pin label "Ist" at (656.5100, -887.7120) to layer `met3trm'.
+  info: Assign pin label "vddh" at (493.9570, -332.1420) to layer `met3trm'.
+  info: Assign pin label "Enable_ST" at (297.8270, -587.9370) to layer `met2trm'.
+  info: Assign pin label "vdde!" at (302.5000, -584.8000) to layer `met2trm'.
+  info: Assign pin label "vdd!" at (289.9900, -569.1320) to layer `met2trm'.
+  info: Assign pin label "gnd!" at (250.5100, -572.6020) to layer `met1trm'.
+  info: Assign pin label "Iext" at (450.6000, -364.0270) to layer `met1trm'.
+
+***** End of Label Report *****
+

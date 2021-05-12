@@ -1,0 +1,11 @@
+( ( net
+( "gnd!" "0" )
+( "vdde!" "vdde!" )
+( "vdd3!" "vdd3!" )
+ )
+( model
+( "ResistiveDivider" "ResistiveDivider" )
+( "LSHVT18U3VX1" "LSHVT18U3VX1" )
+( "LS_HighSide_V3_ST" "LS_HighSide_V3_ST" )
+ )
+ )

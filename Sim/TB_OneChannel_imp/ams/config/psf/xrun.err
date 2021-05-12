@@ -1,13 +1,10 @@
 xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-file: ./netlist.vams
-	module Stimulator_TestBench.TB_OneChannel_imp:schematic
-		errors: 0, warnings: 0
 file: /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/verilog.v
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-xmvlog: Memory Usage - Current physical: 26.0M, Current virtual: 57.8M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 64.4% cpu)
+xmvlog: Memory Usage - Current physical: 25.2M, Current virtual: 57.0M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 60.5% cpu)
 
 		Caching library 'D_CELLS_M3V' ....... Done
 		Caching library 'GATES_3V' ....... Done
@@ -18,6 +15,13 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 64.4% cpu)
 		Caching library 'Stimulator_IMP' ....... Done
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
+		Caching library 'GATES_HD' ....... Done
+		Caching library 'D_CELLS_M3V' ....... Done
+		Caching library 'Stimulator_TestBench' ....... Done
+		Caching library 'D_CELLS_3V' ....... Done
+		Caching library 'D_CELLS_HD' ....... Done
+		Caching library 'GATES_3V' ....... Done
+		Caching library 'worklib' ....... Done
 	Top level design units:
 		TB_OneChannel_imp
 		cds_globals
@@ -25,29 +29,31 @@ xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 64.4% cpu)
 xmelab: *W,IHNOPT: AMS interface element optimization is disabled due to interface elements on inherited connections.
 	Doing auto-insertion of connection elements...
 	Connect Rules applied are:
-		ConnRules_18V_full_fast
+		logic_cr
 	Building instance overlay tables: .................... Done
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:                57      33
-		Registers:              94     162
+		Modules:                64      34
+		Verilog packages:        0       1
+		Registers:              94     220
 		Scalar wires:           26       -
 		Expanded wires:          5       1
 		Vectored wires:         11       -
-		Always blocks:          38      68
-		Initial blocks:         12      28
+		Always blocks:          38      62
+		Initial blocks:         12      61
 		Cont. assignments:      11      24
-		Interconnect:          199       -
+		Interconnect:          301       -
+		Compilation units:       0       3
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: Stimulator_TestBench.TB_OneChannel_imp:config
-xmelab: Memory Usage - Final: 43.7M, Peak: 167.1M, Peak virtual: 252.4M
-xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 94.3% cpu)
+xmelab: Memory Usage - Final: 43.8M, Peak: 166.3M, Peak virtual: 251.5M
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.2s total (0.2s, 93.7% cpu)
 Loading snapshot Stimulator_TestBench.TB_OneChannel_imp:config .................... Done
 Simulating in AMS-SIE mode...
 	Starting analog simulation engine...
-AMSD: Using spectre solver with arguments: -ahdllibdir xcelium.d/AMSD/ahdlSimDB ++aps.
+AMSD: Using spectre solver with arguments: -ahdllibdir xcelium.d/AMSD/ahdlSimDB.
 
 Spectre (R) Circuit Simulator
 Version 17.1.0.433.isr9 64bit -- 5 Nov 2018
@@ -59,21 +65,20 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
         Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 16931
-Memory  available: 47.9988 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 10791
+Memory  available: 35.3500 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1200.0] ( 16 ),  1 [1923.2] ( 17 ),  2 [1241.9] ( 18 )
-                 3 [1572.2] ( 19 ),  4 [1200.0] ( 20 ),  5 [1728.2] ( 21 )
-                 6 [1529.6] ( 22 ),  7 [1200.1] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [1200.0] ( 25 ), 10 [1292.7] ( 26 )
-                11 [1524.3] ( 27 ), 12 [1200.0] ( 28 ), 13 [1258.3] ( 29 )
-                14 [1200.0] ( 30 ), 15 [1200.0] ( 31 )
+        0:       0 [1395.3] ( 16 ),  1 [1397.6] ( 17 ),  2 [1523.6] ( 18 )
+                 3 [1200.3] ( 19 ),  4 [1200.0] ( 20 ),  5 [1609.0] ( 21 )
+                 6 [1207.3] ( 22 ),  7 [1203.1] ( 23 )
+        1:       8 [1224.3] ( 24 ),  9 [1323.6] ( 25 ), 10 [1373.7] ( 26 )
+                11 [1268.3] ( 27 ), 12 [2309.0] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1200.0] ( 30 ), 15 [1227.7] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.2 %, 0.1 %, 0.2 %
+System load averages (1min, 5min, 15min) : 1.7 %, 2.2 %, 1.6 %
 Hyperthreading is enabled
-HPC is enabled
 
 
 Analog Kernel using -ANALOGCONTROL  ./spiceModels.scs.
@@ -762,12 +767,14 @@ Reading file:
 Reading file: 
         /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/amsControlSpectre.scs
 Reading file: 
+        /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/ie_card.scs
+Reading file: 
         /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/.amsbind.scs
 Reading file: 
         /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 555.601 ms, elapsed = 693.316 ms.
-Time accumulated: CPU = 997.422 ms, elapsed = 693.322 ms.
-Peak resident memory used = 102 Mbytes.
+Time for NDB Parsing: CPU = 568.352 ms, elapsed = 643.824 ms.
+Time accumulated: CPU = 1.01566 s, elapsed = 643.829 ms.
+Peak resident memory used = 103 Mbytes.
 
 xcelium> source /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc
 xcelium> 
@@ -792,19 +799,23 @@ xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.ANO_ST
 Created probe 2
 xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.CAT_ST}
 Created probe 3
-xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.net181}
+xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.MAG_ST[4]}
 Created probe 4
-xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.net0109}
-xmsim: *E,PNOOBJ: Path element could not be found: net0109.
-xcelium> probe -create -emptyok -database ams_database -flow {TB_OneChannel_imp.M26.1}
+xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.MAG_ST[3]}
 Created probe 5
-xcelium> probe -create -emptyok -database ams_database -flow {TB_OneChannel_imp.R0.1}
+xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.MAG_ST[2]}
 Created probe 6
+xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.MAG_ST[1]}
+Created probe 7
+xcelium> probe -create -emptyok -database ams_database {TB_OneChannel_imp.MAG_ST[0]}
+Created probe 8
+xcelium> probe -create -emptyok -database ams_database -flow {TB_OneChannel_imp.R0.1}
+Created probe 9
 xcelium> 
 xcelium> run
-Time for Elaboration: CPU = 264.672 ms, elapsed = 296.684 ms.
-Time accumulated: CPU = 1.26226 s, elapsed = 990.174 ms.
-Peak resident memory used = 130 Mbytes.
+Time for Elaboration: CPU = 240.45 ms, elapsed = 260.977 ms.
+Time accumulated: CPU = 1.25638 s, elapsed = 905.076 ms.
+Peak resident memory used = 131 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
@@ -813,30 +824,9 @@ Warning from spectre during hierarchy flattening.
         releases.
 
 
-
-Warning from spectre during hierarchy flattening.
-    WARNING (SPECTRE-8527): There are some nodes and instances removed from the
-        netlist topology check. Check the circuit and correct the topology. Or
-        use preserve_inst to keep them if necessary.
-
-***********************************************
-  Total removed instances 1 ( dangling 1, terminals connected together 0)  
-
-Warning from spectre during hierarchy flattening.
-    WARNING (SPECTRE-8529): Dangling instance. TB_OneChannel_imp.V12 is
-        removed.
-
-
-  Total removed nodes 1 ( dangling nodes 1, floating nodes 0 )
-
-Warning from spectre during hierarchy flattening.
-    WARNING (SPECTRE-8530): Dangling node. TB_OneChannel_imp.net060 is
-        removed.
-
-***********************************************
-Time for EDB Visiting: CPU = 16.744 ms, elapsed = 16.7449 ms.
-Time accumulated: CPU = 1.27921 s, elapsed = 1.00712 s.
-Peak resident memory used = 132 Mbytes.
+Time for EDB Visiting: CPU = 46.831 ms, elapsed = 46.8321 ms.
+Time accumulated: CPU = 1.3034 s, elapsed = 952.094 ms.
+Peak resident memory used = 134 Mbytes.
 
 
 Notice from spectre during initial setup.
@@ -852,9 +842,20 @@ Notice from spectre during initial setup.
         Subversion: 1 and Revision: 0. Type is N.
         Further occurrences of this notice will be suppressed (except in log
         file).
-
-Notice from spectre during initial setup.
-    Multithreading is disabled due to the size of the design being too small.
+Notice from spectre during topology check.
+    Only one connection to node `TB_OneChannel_imp.net060'.
+    No DC path from node `TB_OneChannel_imp.I36.I0.net6' to ground, Gmin
+        installed to provide path.
+    No DC path from node `TB_OneChannel_imp.I36.I0.net5' to ground, Gmin
+        installed to provide path.
+    No DC path from node `TB_OneChannel_imp.I36.I0.net07' to ground, Gmin
+        installed to provide path.
+    No DC path from node `TB_OneChannel_imp.I36.I0.net08' to ground, Gmin
+        installed to provide path.
+    No DC path from node `TB_OneChannel_imp.I33.I1.I0.net6' to ground, Gmin
+        installed to provide path.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
 
 Global user options:
       addflowsuffix = yes
@@ -873,7 +874,6 @@ Global user options:
      checklimitdest = psf
              rawfmt = sst2
                save = selected
-           useterms = name
                tnom = 27
               scale = 1
              scalem = 1
@@ -882,16 +882,15 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 315
-             iprobe 1     
+              nodes 1131
                 bjt 27    
             bsim3v3 163   
-          capacitor 80    
+          capacitor 692   
 connectLib__E2L_2__module__0x10000001_behavioral 3     
 connectLib__L2E_2__module__0x10000001_behavioral 8     
            hisim_hv 27    
             isource 1     
-           resistor 105   
+           resistor 921   
             vsource 5     
 
 Analysis and control statement inventory:
@@ -901,40 +900,39 @@ Analysis and control statement inventory:
 Output statements:
              .probe 0     
            .measure 0     
-               save 6     
+               save 9     
 
 
-Notice from spectre during initial setup.
-    Fast APS Enabled.
-    7 notices suppressed.
+Notice from spectre.
+    13 notices suppressed.
 
-Time for parsing: CPU = 6.698 ms, elapsed = 11.4992 ms.
-Time accumulated: CPU = 1.28606 s, elapsed = 1.01877 s.
-Peak resident memory used = 133 Mbytes.
+Time for parsing: CPU = 13.68 ms, elapsed = 18.3392 ms.
+Time accumulated: CPU = 1.31724 s, elapsed = 970.591 ms.
+Peak resident memory used = 136 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~
 
-*************************************************
-Transient Analysis `tran': time = (0 s -> 150 us)
-*************************************************
+************************************************
+Transient Analysis `tran': time = (0 s -> 17 ms)
+************************************************
 
 Notice from spectre during IC analysis, during transient analysis `tran'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(TB_OneChannel_imp.M24.m1:int_d) = 178.57 mV
+        dV(TB_OneChannel_imp.M24.m1:int_d) = 178.571 mV
         Use the `gmin_check' option to eliminate or expand this report.
     Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
         recommended for possible improvement of convergence.
 
-DC simulation time: CPU = 96.299 ms, elapsed = 96.3979 ms.
+DC simulation time: CPU = 120.4 ms, elapsed = 120.498 ms.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
-    stop = 150 us
-    step = 150 ns
-    maxstep = 1.5 us
+    stop = 17 ms
+    step = 17 us
+    maxstep = 170 us
     ic = all
     useprevic = no
     skipdc = no
@@ -944,68 +942,87 @@ Important parameter values:
     temp = 27 C
     tnom = 27 C
     tempeffects = all
-    errpreset = conservative_sigglobal
+    errpreset = conservative
     method = gear2only
     lteratio = 10
-    relref = sigglobal
+    relref = alllocal
     cmin = 0 F
     gmin = 1 pS
-    rabsshort = 1 mOhm
-
-
-Notice from spectre during transient analysis `tran'.
-    Multithreading is disabled due to the size of the design being too small.
 
 
 Output and IC/nodeset summary:
-                 save   2       (current)
-                 save   4       (voltage)
+                 save   1       (current)
+                 save   8       (voltage)
 
-    tran: time = 3.75 us      (2.5 %), step = 1.5 us          (1 %)
-    tran: time = 12.75 us     (8.5 %), step = 1.5 us          (1 %)
-    tran: time = 20.25 us    (13.5 %), step = 1.5 us          (1 %)
-    tran: time = 27.75 us    (18.5 %), step = 1.5 us          (1 %)
-    tran: time = 33.75 us    (22.5 %), step = 1.5 us          (1 %)
-    tran: time = 41.25 us    (27.5 %), step = 1.5 us          (1 %)
-    tran: time = 48.75 us    (32.5 %), step = 1.5 us          (1 %)
-    tran: time = 56.25 us    (37.5 %), step = 1.5 us          (1 %)
-    tran: time = 63.75 us    (42.5 %), step = 1.5 us          (1 %)
-    tran: time = 71.25 us    (47.5 %), step = 1.5 us          (1 %)
-    tran: time = 78.75 us    (52.5 %), step = 1.5 us          (1 %)
-    tran: time = 87.75 us    (58.5 %), step = 1.5 us          (1 %)
-    tran: time = 95.25 us    (63.5 %), step = 1.5 us          (1 %)
-    tran: time = 102.7 us    (68.5 %), step = 1.5 us          (1 %)
-    tran: time = 110.2 us    (73.5 %), step = 1.5 us          (1 %)
-    tran: time = 117.7 us    (78.5 %), step = 1.5 us          (1 %)
-    tran: time = 125.2 us    (83.5 %), step = 1.5 us          (1 %)
-    tran: time = 132.7 us    (88.5 %), step = 1.5 us          (1 %)
-    tran: time = 138.7 us    (92.5 %), step = 1.5 us          (1 %)
-    tran: time = 146.3 us    (97.5 %), step = 1.5 us          (1 %)
+    tran: time = 429.2 us    (2.52 %), step = 6.821 us    (40.1 m%)
+
+Warning from spectre at time = 745.159 us during transient analysis `tran'.
+    WARNING (CMI-5007): TB_OneChannel_imp.I33.M1.m1: Actual channel length
+        2.77307e-10 is too small. As a result, it has been reset it to 1e-09.
+        Check the values of the CLM5 and CLM6 parameters and reduce the values,
+        if required.
+Warning from spectre at time = 745.329 us during transient analysis `tran'.
+    WARNING (CMI-5007): TB_OneChannel_imp.I33.M1.m1: Actual channel length
+        6.8277e-10 is too small. As a result, it has been reset it to 1e-09.
+        Check the values of the CLM5 and CLM6 parameters and reduce the values,
+        if required.
+Warning from spectre at time = 745.344 us during transient analysis `tran'.
+    WARNING (CMI-5007): TB_OneChannel_imp.M23.m1: Actual channel length
+        4.59085e-11 is too small. As a result, it has been reset it to 1e-09.
+        Check the values of the CLM5 and CLM6 parameters and reduce the values,
+        if required.
+
+    tran: time = 1.276 ms    (7.51 %), step = 3.313 us    (19.5 m%)
+
+Warning from spectre at time = 1.35518 ms during transient analysis `tran'.
+    WARNING (CMI-5007): TB_OneChannel_imp.M23.m1: Actual channel length
+        1.8068e-10 is too small. As a result, it has been reset it to 1e-09.
+        Check the values of the CLM5 and CLM6 parameters and reduce the values,
+        if required.
+Warning from spectre at time = 1.35547 ms during transient analysis `tran'.
+    WARNING (CMI-5007): TB_OneChannel_imp.M23.m1: Actual channel length
+        3.3395e-10 is too small. As a result, it has been reset it to 1e-09.
+        Check the values of the CLM5 and CLM6 parameters and reduce the values,
+        if required.
+        Further occurrences of this warning will be suppressed.
+
+    tran: time = 2.137 ms    (12.6 %), step = 14.27 us      (84 m%)
+    tran: time = 2.982 ms    (17.5 %), step = 15.53 us    (91.4 m%)
+    tran: time = 3.836 ms    (22.6 %), step = 12.87 us    (75.7 m%)
+    tran: time = 4.679 ms    (27.5 %), step = 7.325 us    (43.1 m%)
+    tran: time = 5.526 ms    (32.5 %), step = 2.761 us    (16.2 m%)
+    tran: time = 6.376 ms    (37.5 %), step = 3.276 us    (19.3 m%)
+    tran: time = 7.227 ms    (42.5 %), step = 15.69 us    (92.3 m%)
+    tran: time = 8.08 ms     (47.5 %), step = 9.013 us      (53 m%)
+    tran: time = 8.931 ms    (52.5 %), step = 7.197 us    (42.3 m%)
+    tran: time = 9.778 ms    (57.5 %), step = 3.515 us    (20.7 m%)
+    tran: time = 10.63 ms    (62.6 %), step = 15.76 us    (92.7 m%)
+    tran: time = 11.48 ms    (67.5 %), step = 14.36 us    (84.5 m%)
+    tran: time = 12.33 ms    (72.5 %), step = 11.76 us    (69.2 m%)
+    tran: time = 13.18 ms    (77.5 %), step = 7.26 us     (42.7 m%)
+    tran: time = 14.03 ms    (82.5 %), step = 3.071 us    (18.1 m%)
+    tran: time = 14.88 ms    (87.5 %), step = 3.202 us    (18.8 m%)
+    tran: time = 15.73 ms    (92.6 %), step = 27.85 us     (164 m%)
+    tran: time = 16.58 ms    (97.5 %), step = 10.45 us    (61.5 m%)
 
 The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
-Simulation stopped via transient analysis stoptime at time 150 US
-Memory Usage - Current physical: 141.0M, Current virtual: 605.7M
-CPU Usage - 0.4s system + 0.9s user = 1.3s total (51.4% cpu)
+Simulation stopped via transient analysis stoptime at time 17 MS
+Memory Usage - Current physical: 144.6M, Current virtual: 662.2M
+CPU Usage - 0.9s system + 122.8s user = 123.7s total (99.8% cpu)
 xcelium> exit
-Number of accepted tran steps =             103
+Number of accepted tran steps =             99173
 
 Maximum value achieved for any signal of each quantity: 
-V: V(TB_OneChannel_imp.vddh) = 40 V
-I: I(TB_OneChannel_imp.V3:p) = 20 uA
-If your circuit contains signals of the same quantity that are vastly different
-        in size (such as high voltage circuitry combined with low voltage
-        control circuitry), you should consider specifying global option
-        `bin_relref=yes'.
+V: V(TB_OneChannel_imp.net204) = 43.81 V
+I: I(TB_OneChannel_imp.V0:p) = 43.77 mA
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Post-Transient Simulation Summary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   -   DC analysis takes more than half of total simulation time. To speed up,
-        consider
-          add +fastdc on command line
-          reuse previous ic file
+   -   To further speed up simulation, consider
+          add ++aps on command line
    -   Non-default settings that could significantly slow down simulation
-          errpreset = conservative_sigglobal, default moderate
+          errpreset = conservative, default moderate
           reltol = 10e-06, default 100e-06 (conservative)
    -   The circuit contains signals of the voltage > 10V, consider to set
         highvoltage=yes to get better accuracy and convergence ability.
@@ -1013,23 +1030,27 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  8 (52.3 %)     10 (2.8 %)      12 (5.6 %)      
-        Other    0 (22.4 %)      1 (9.4 %)       2 (6.5 %)       6 (9.3 %)
-                21 (12.3 %)     
-Initial condition solution time: CPU = 96.393 ms, elapsed = 96.494 ms.
+        Spectre  1 (2.9 %)       8 (19.8 %)      9 (22.2 %)     10 (22.5 %)
+                11 (22.1 %)     12 (10.2 %)     22 (1.6 %)      
+        Other   
+Initial condition solution time: CPU = 120.475 ms, elapsed = 120.575 ms.
 
 **** AMSD: Mixed-Signal Activity Statistics ****
 Number of A-to-D events:                       6
   Number of A-to-D events in IEs:              6
-Number of D-to-A events:                      24
-  Number of D-to-A events in IEs:             24
+Number of D-to-A events:                     285
+  Number of D-to-A events in IEs:            285
 Number of VHDL-AMS Breaks:                     0
 
-Intrinsic tran analysis time:    CPU = 84.793 ms, elapsed = 89.7911 ms.
-Total time required for tran analysis `tran': CPU = 185.09 ms, elapsed =
-        192.673 ms.
-Time accumulated: CPU = 1.48708 s, elapsed = 1.22992 s.
-Peak resident memory used = 141 Mbytes.
+Intrinsic tran analysis time:    CPU = 122.416 s, elapsed = 122.474 s.
+Total time required for tran analysis `tran': CPU = 122.543 s (2m  2.5s),
+        elapsed = 122.603 s (2m  2.6s).
+Time accumulated: CPU = 123.88 s (2m  3.9s), elapsed = 123.598 s (2m  3.6s).
+Peak resident memory used = 145 Mbytes.
+
+
+Notice from spectre.
+    112 warnings suppressed.
 
 finalTimeOP: writing operating point information to rawfile.
 
@@ -1043,14 +1064,14 @@ Opening the PSF file ../psf/element.info ...
 outputParameter: writing output parameter values to rawfile.
 
 Opening the PSF file ../psf/outputParameter.info ...
-Simulation complete via transient analysis stoptime at time 150 US
+Simulation complete via transient analysis stoptime at time 17 MS
 
-Aggregate audit (2:06:00 PM, Thur Apr 1, 2021):
-Time used: CPU = 1.58 s, elapsed = 1.33 s, util. = 118%.
-Time spent in licensing: elapsed = 167 ms, percentage of total = 12.5%.
-Peak memory used = 142 Mbytes.
-Simulation started at: 2:05:59 PM, Thur Apr 1, 2021, ended at: 2:06:00 PM, Thur
-        Apr 1, 2021, with elapsed time (wall clock): 1.33 s.
-spectre completes with 0 errors, 4 warnings, and 12 notices.
-xmsim: Memory Usage - Final: 141.9M, Peak: 142.0M, Peak virtual: 605.7M
-xmsim: CPU Usage - 0.5s system + 1.0s user = 1.5s total (2.6s, 58.6% cpu)
+Aggregate audit (3:41:31 PM, Fri Apr 30, 2021):
+Time used: CPU = 124 s (2m  4.1s), elapsed = 124 s (2m  4.1s), util. = 100%.
+Time spent in licensing: elapsed = 115 ms.
+Peak memory used = 145 Mbytes.
+Simulation started at: 3:39:27 PM, Fri Apr 30, 2021, ended at: 3:41:31 PM, Fri
+        Apr 30, 2021, with elapsed time (wall clock): 124 s (2m  4.1s).
+spectre completes with 0 errors, 6 warnings, and 16 notices.
+xmsim: Memory Usage - Final: 145.4M, Peak: 145.5M, Peak virtual: 726.2M
+xmsim: CPU Usage - 1.0s system + 123.0s user = 124.0s total (124.1s, 99.9% cpu)

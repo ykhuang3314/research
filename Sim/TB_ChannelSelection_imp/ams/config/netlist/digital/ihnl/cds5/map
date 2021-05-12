@@ -1,0 +1,7 @@
+( ( net
+( "gnd!" "cds_globals.\\gnd! " )
+ )
+( term
+( "gnd!" "\\gnd! " )
+ )
+ )

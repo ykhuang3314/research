@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Thu Apr 22 14:06:57 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue May 11 12:02:36 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraLVS/Ext_Iref_ST_LVS.rsf -exec1 -LVS -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Thu Apr 22 14:06:57 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue May 11 12:02:36 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -30,7 +30,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
  Library Name  : Stimulator_IMP
  CDSLIB Path   : "/home/ykhuang/research/cds.lib"
  Cell Name     : Ext_Iref_ST
- View Name     : ModgenTmplayout15249
+ View Name     : layout
  Rules File    : /home/ykhuang/research/.assuraSetup/Assura/../../.xkit/setup/xh018/cadence/assura/Assura/XH018_1143/extract.rul
  Options       : -exec1 -LVS -cdslib /home/ykhuang/research/cds.lib 
  Work Directory: /home/ykhuang/research/AssuraLVS
@@ -38,11 +38,11 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 
 
 Starting dfIIToVdb...
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.11s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Thu Apr 22 14:06:57 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue May 11 12:02:37 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -67,7 +67,7 @@ Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
 Express Pcell license has been checked out for the Express Pcell feature.
 *WARNING* Express Pcells will be disabled. This is because the Express Pcells data stored on disk is generated using some later release of Virtuoso. Use a later compatible Virtuoso release.
 
-Loading assuraExtract_Rules at "Apr 22 14:06:58 2021"
+Loading assuraExtract_Rules at "May 11 12:02:37 2021"
 Compiling rules...
 
 RSF-specified resolution of 0.0005 userUnits used for this run.
@@ -111,7 +111,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Thu Apr 22 14:07:01 2021
+run on s2424 at Tue May 11 12:02:40 2021
   
 *************************************************************** 
   
@@ -126,7 +126,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Thu Apr 22 14:07:01 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue May 11 12:02:41 2021
 
   
 *************************************************************** 
@@ -232,18 +232,18 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.03m  mem=117.87mb
+cpu=0.00m  wall=0.02m  mem=117.87mb
 
 Finished /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/nvn
 
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.33  elap: 5  pf: 0  in: 0  out: 296  virt: 115M  phys: 664M
+cpu: 0.32  elap: 6  pf: 0  in: 0  out: 296  virt: 115M  phys: 662M
 
 Running the Task Processor, 1 cells, 15557 steps...
 
-Top Cell is 'Ext_Iref_ST ModgenTmplayout15249 Stimulator_IMP'
+Top Cell is 'Ext_Iref_ST layout Stimulator_IMP'
 
 Executing: gxa = geomOr(mv gxh)
 
@@ -4536,7 +4536,7 @@ Executing: perimSDp = measureParameter(length (sdLay over wellLay) 1e-06)
 Executing: attachParameter(perimSDp ("ps" "S") ("pd" "D") recL recL2 recL3 recL4 recL5 r...
 
 Executing: extractMOS("ne3" nem (polytrm "G") (nsd "S" "D") (G_subs "B") (spiceModel "ne...
-        24 'ne3' created in cell 'Ext_Iref_ST ModgenTmplayout15249 Stimulator_IMP'.
+        24 'ne3' created in cell 'Ext_Iref_ST layout Stimulator_IMP'.
 
 Executing: saveRecognition(recLay "device")
 
@@ -7107,7 +7107,7 @@ Executing: nameParameter(res2_l "lstrip")
 Executing: saveProperty(recLay "rtot" "****")
 
 Executing: extractRES("rpp1k1" rpp1k1_1 (polytrm "PLUS" "MINUS") (spiceModel "rpp1k1") (...
-         1 'rpp1k1' created in cell 'Ext_Iref_ST ModgenTmplayout15249 Stimulator_IMP'.
+         1 'rpp1k1' created in cell 'Ext_Iref_ST layout Stimulator_IMP'.
 
 Executing: saveRecognition(recLay "device")
 
@@ -10278,12 +10278,12 @@ Executing: (saveInterconnect (vtpCON "VIATP") (vtpcm "VIATP") (vtpcmh "VIATP") (
 Executing: (saveInterconnect (vtpl "VIATPL") (mtpltrm "METTPL") (mtplres "allres"))
 
 Finished running rules. Task processor time in main process:
-cpu: 1.52  elap: 2  pf: 0  in: 0  out: 3440  virt: 174M  phys: 856M
+cpu: 1.34  elap: 1  pf: 0  in: 0  out: 3440  virt: 174M  phys: 855M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6632  virt: 179M  phys: 869M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6632  virt: 179M  phys: 870M
 
 
 *****  aveng terminated normally  *****
@@ -10301,7 +10301,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Thu Apr 22 14:07:05 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue May 11 12:02:44 2021
 
 
    Creating Error Database 'Ext_Iref_ST_LVS'...
@@ -10802,7 +10802,7 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraLVS/Ext_Iref_ST_LVS.err ...
 
-avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.16  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -10813,32 +10813,32 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 22 14:07:05 2021"
+Loading assuraExtract_Rules at "May 11 12:02:45 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avnx /home/ykhuang/research/AssuraLVS/Ext_Iref_ST_LVS.rsf -exec1 -LVS -cdslib /home/ykhuang/research/cds.lib
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 22 14:07:06 2021"
+Loading assuraExtract_Rules at "May 11 12:02:45 2021"
 Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 *WARNING* Failed to obtain license for Assura_LVS
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Thu Apr 22 14:07:06 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Tue May 11 12:02:45 2021
 
 avnx started...
-cpu: 0.43  elap: 1  pf: 0  in: 0  out: 24  virt: 738M  phys: 1253M
+cpu: 0.44  elap: 1  pf: 0  in: 0  out: 24  virt: 738M  phys: 1253M
 
 Run time =  1.00 seconds
-CPU time =  0.49 seconds
+CPU time =  0.50 seconds
 
                   End of Summary Report
 
@@ -10854,7 +10854,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Thu Apr 22 14:07:07 2021
+run on s2424 at Tue May 11 12:02:46 2021
   
 *************************************************************** 
   
@@ -10904,7 +10904,7 @@ Preprocessing layout network phase 1
  WARNING (AVLVSNN-10050) : resDevice - cell 's_res' not found.
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-Top cell  Ext_Iref_ST schematic Stimulator_IMP vs Ext_Iref_ST ModgenTmplayout15249 Stimulator_IMP
+Top cell  Ext_Iref_ST schematic Stimulator_IMP vs Ext_Iref_ST layout Stimulator_IMP
 
 ** Parallel MOS combined: 
    1st device: L = 2e-06 W = 8e-06 m = 1 
@@ -11014,7 +11014,7 @@ Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/vldbToRpa Ext_Ir
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/vldbToRpa
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/ercChk /home/ykhuang/research/AssuraLVS/Ext_Iref_ST_LVS.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
@@ -11025,7 +11025,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 22 14:07:08 2021"
+Loading assuraExtract_Rules at "May 11 12:02:48 2021"
  
 *************************************************************** 
  
@@ -11055,7 +11055,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Thu Apr 22 14:07:09 2021
+Run ended: Tue May 11 12:02:48 2021
 
 *****  Assura terminated normally  *****
 

@@ -16,9 +16,9 @@ DLNOHV
 DLCLAP
 -V93
 -AMSCOMPILEFILE
-"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
--AMSCOMPILEFILE
 "file:/home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ChSel_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_ChSel_ST view:functional"
 -MESSAGES
 -AMSELAB
 -XLMODE

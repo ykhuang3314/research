@@ -11,7 +11,7 @@ reltol=100e-6 vabstol=1e-6 iabstol=1e-12 homotopy=all limit=delta \
 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 digits=5 pivrel=1e-3 \
 checklimitdest=psf 
 
-tran tran stop=150u errpreset=conservative write="spectre.ic" \
+tran tran stop=17m errpreset=conservative write="spectre.ic" \
 writefinal="spectre.fc" annotate=status maxiters=5 
 
 finalTimeOP info what=oppoint where=rawfile

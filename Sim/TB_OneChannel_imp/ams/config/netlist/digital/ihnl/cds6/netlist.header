@@ -1,15 +1,15 @@
-// Library - GATES_HD, Cell - invr, View - schematic
-// LAST TIME SAVED: Jan 18 15:00:13 2018
-// NETLIST TIME: Apr  1 14:05:41 2021
+// Library - GATES_HD, Cell - nand2, View - schematic
+// LAST TIME SAVED: Jan 18 15:00:04 2018
+// NETLIST TIME: Apr 30 15:39:11 2021
 `timescale 1ns / 1ps 
 
 `worklib GATES_HD
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="GATES_HD", dfII_cell="invr", dfII_view="schematic", worklib_name="GATES_HD", view_name="schematic", last_save_time="Jan 18 15:00:13 2018" *)
+(* dfII_lib="GATES_HD", dfII_cell="nand2", dfII_view="schematic", worklib_name="GATES_HD", view_name="schematic", last_save_time="Jan 18 15:00:04 2018" *)
 
-module invr (out, in);
+module nand2 (out, a, b);
 
 parameter GT_PDW=0;
 parameter GT_PDL=180.00n;
@@ -20,7 +20,7 @@ parameter GT_PUL=180.00n;
 
 output  out;
 
-input  in;
+input  a, b;
 
 wire (*
 integer inh_conn_prop_name = "ground_gnd";

@@ -1,0 +1,185 @@
+********************************************************************************
+*** PVS HERC SUMMARY
+***
+Execute on Date/Time    : Tue May 11 17:08:47 2021
+PVS HERC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+Rule Deck Path          : /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/.config.rul
+Rule Deck Title         : " XH018 PVS DRC/LVS File v8.1.2 : MET4 / METMID / METTHK "
+Layout System           : GDSII
+Layout Path             : /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/CurrentSource_All_ST.gds
+Current Directory       : /home/ykhuang/research/PvsLVS/CurrentSource_All_ST
+User Name:              : ykhuang
+Maximum Results         : 1000
+Maximum Result Vertices : 4096
+Layout Depth            : ALL
+Text Depth              : 0
+Summary File            : CurrentSource_All_ST.sum
+Geometry Flagging       : ACUTE = YES  ANGLED = NO  SKEW = YES  OFFGRID = YES
+                          NONSIMPLE POLYGON = YES  NONSIMPLE PATH = YES
+Keep Empty Checks       : YES
+Excluded Cells          : 
+Layout Primary Cell     : CurrentSource_All_ST
+LVS Softchk Report      : CurrentSource_All_ST.softchk
+ASCII ERC Error Report  :
+ERC Results Database    :
+--------------------------------------------------------------------------------
+--- RUNNING TIME WARNINGS
+---
+--------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER met1_dg .................... Total Original Geometry:     2160 (    9935)
+LAYER met2_dg .................... Total Original Geometry:      980 (    4798)
+LAYER met3_dg .................... Total Original Geometry:      589 (   52864)
+LAYER met4_dg .................... Total Original Geometry:      418 (   92068)
+LAYER mettp_dg ................... Total Original Geometry:      288 (   51116)
+LAYER mettpl_dg .................. Total Original Geometry:        0 (       0)
+LAYER nwell ...................... Total Original Geometry:       30 (     357)
+LAYER nwrdef ..................... Total Original Geometry:        0 (       0)
+LAYER diff_dg .................... Total Original Geometry:      212 (    1923)
+LAYER diff_dyi ................... Total Original Geometry:        0 (       0)
+LAYER mv ......................... Total Original Geometry:       13 (     998)
+LAYER pimp ....................... Total Original Geometry:      137 (    1057)
+LAYER nimp ....................... Total Original Geometry:      125 (     643)
+LAYER pwblk ...................... Total Original Geometry:       44 (     218)
+LAYER poly_dg .................... Total Original Geometry:      207 (    2344)
+LAYER poly_dyi ................... Total Original Geometry:        0 (       0)
+LAYER POLY1_TEXT ................. Total Original Geometry:        0 (       0)
+LAYER id_txt ..................... Total Original Geometry:        0 (       0)
+LAYER cont ....................... Total Original Geometry:     9874 (   44149)
+LAYER met1_dyi ................... Total Original Geometry:        0 (       0)
+LAYER m1hole ..................... Total Original Geometry:        0 (       0)
+LAYER MET1_TEXT .................. Total Original Geometry:        0 (       0)
+LAYER m1rdef ..................... Total Original Geometry:        0 (       0)
+LAYER via1 ....................... Total Original Geometry:     3846 (   41964)
+LAYER met2_dyi ................... Total Original Geometry:        0 (       0)
+LAYER m2hole ..................... Total Original Geometry:        0 (       0)
+LAYER MET2_TEXT .................. Total Original Geometry:        0 (       0)
+LAYER m2rdef ..................... Total Original Geometry:        0 (       0)
+LAYER pad ........................ Total Original Geometry:        0 (       0)
+LAYER via2 ....................... Total Original Geometry:     6581 (   97632)
+LAYER met3_dyi ................... Total Original Geometry:        0 (       0)
+LAYER m3hole ..................... Total Original Geometry:        0 (       0)
+LAYER MET3_TEXT .................. Total Original Geometry:        0 (       0)
+LAYER m3rdef ..................... Total Original Geometry:        0 (       0)
+LAYER via3 ....................... Total Original Geometry:     6206 (  202780)
+LAYER met4_dyi ................... Total Original Geometry:        0 (       0)
+LAYER m4hole ..................... Total Original Geometry:        0 (       0)
+LAYER MET4_TEXT .................. Total Original Geometry:        0 (       0)
+LAYER m4rdef ..................... Total Original Geometry:        0 (       0)
+LAYER mettp_dyi .................. Total Original Geometry:        0 (       0)
+LAYER mthole ..................... Total Original Geometry:        0 (       0)
+LAYER METTP_TEXT ................. Total Original Geometry:        0 (       0)
+LAYER mtrdef ..................... Total Original Geometry:        0 (       0)
+LAYER sblk ....................... Total Original Geometry:       95 (     384)
+LAYER mettpl_dyi ................. Total Original Geometry:        0 (       0)
+LAYER METL_TEXT .................. Total Original Geometry:        0 (       0)
+LAYER mlrdef ..................... Total Original Geometry:        0 (       0)
+LAYER viatpl ..................... Total Original Geometry:        0 (       0)
+LAYER capm2 ...................... Total Original Geometry:        0 (       0)
+LAYER capm3 ...................... Total Original Geometry:        0 (       0)
+LAYER lvt ........................ Total Original Geometry:        0 (       0)
+LAYER mres ....................... Total Original Geometry:        3 (       4)
+LAYER lndev ...................... Total Original Geometry:        0 (       0)
+LAYER aml ........................ Total Original Geometry:        0 (       0)
+LAYER capm ....................... Total Original Geometry:        0 (       0)
+LAYER viatp ...................... Total Original Geometry:     1518 (   75912)
+LAYER diodef ..................... Total Original Geometry:        0 (       0)
+LAYER hres ....................... Total Original Geometry:        0 (       0)
+LAYER dnwell ..................... Total Original Geometry:        6 (      35)
+LAYER capdef ..................... Total Original Geometry:        1 (      60)
+LAYER hvgox ...................... Total Original Geometry:        6 (      35)
+LAYER hvpwell .................... Total Original Geometry:      102 (     440)
+LAYER hvnwell .................... Total Original Geometry:        1 (       6)
+LAYER pdd ........................ Total Original Geometry:       98 (     416)
+LAYER sci ........................ Total Original Geometry:        0 (       0)
+LAYER depl ....................... Total Original Geometry:        0 (       0)
+LAYER pwiso ...................... Total Original Geometry:       18 (      66)
+LAYER dnw_mv ..................... Total Original Geometry:        0 (       0)
+LAYER dnmrdef .................... Total Original Geometry:        0 (       0)
+LAYER idftxt ..................... Total Original Geometry:        0 (       0)
+LAYER devmark .................... Total Original Geometry:        0 (       0)
+LAYER PHODEF_TEXT ................ Total Original Geometry:        0 (       0)
+LAYER phodef ..................... Total Original Geometry:        0 (       0)
+LAYER ip1txt ..................... Total Original Geometry:        0 (       0)
+LAYER id1txt ..................... Total Original Geometry:        0 (       0)
+LAYER hvdepl ..................... Total Original Geometry:        0 (       0)
+LAYER id2txt ..................... Total Original Geometry:        0 (       0)
+LAYER capm23f .................... Total Original Geometry:        0 (       0)
+LAYER capmh23f ................... Total Original Geometry:        0 (       0)
+LAYER capm34f .................... Total Original Geometry:        0 (       0)
+LAYER capmh34f ................... Total Original Geometry:        0 (       0)
+LAYER id3txt ..................... Total Original Geometry:        0 (       0)
+LAYER uvwin ...................... Total Original Geometry:        0 (       0)
+LAYER anodop ..................... Total Original Geometry:        0 (       0)
+LAYER catdop ..................... Total Original Geometry:        0 (       0)
+LAYER id4txt ..................... Total Original Geometry:        0 (       0)
+LAYER idttxt ..................... Total Original Geometry:        0 (       0)
+LAYER idltxt ..................... Total Original Geometry:        0 (       0)
+LAYER dnc ........................ Total Original Geometry:        0 (       0)
+LAYER dpc ........................ Total Original Geometry:        0 (       0)
+LAYER hnw ........................ Total Original Geometry:        0 (       0)
+LAYER ndf ........................ Total Original Geometry:        0 (       0)
+LAYER pdf ........................ Total Original Geometry:        0 (       0)
+LAYER capmh ...................... Total Original Geometry:        0 (       0)
+LAYER capmh2 ..................... Total Original Geometry:        0 (       0)
+LAYER capmh3 ..................... Total Original Geometry:        0 (       0)
+LAYER subcut ..................... Total Original Geometry:        0 (       0)
+LAYER bnimp ...................... Total Original Geometry:        0 (       0)
+LAYER uln ........................ Total Original Geometry:        0 (       0)
+LAYER svt ........................ Total Original Geometry:        0 (       0)
+--------------------------------------------------------------------------------
+--- WARNINGS FROM FLAG STATEMENT
+---
+Acute Angle on layer met1_dg at location (-6.110,-19.250) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (-16.080,-9.280) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (-6.110,59.250) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (-16.080,49.280) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (16.080,-9.280) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (6.110,-19.250) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (6.110,59.250) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (16.080,49.280) in cell nedia_bjt_CDNS_84.
+Acute Angle on layer met1_dg at location (-6.110,-19.250) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (-16.080,-9.280) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (-6.110,36.750) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (-16.080,26.780) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (16.080,-9.280) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (6.110,-19.250) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (6.110,36.750) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (16.080,26.780) in cell nedia_bjt_CDNS_85.
+Acute Angle on layer met1_dg at location (-6.110,-19.250) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (-16.080,-9.280) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (-6.110,49.250) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (-16.080,39.280) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (63.680,-9.280) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (53.710,-19.250) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (53.710,49.250) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (63.680,39.280) in cell nedia_bjt_CDNS_86.
+Acute Angle on layer met1_dg at location (-6.110,-19.250) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (-16.080,-9.280) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (-6.110,39.250) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (-16.080,29.280) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (16.080,-9.280) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (6.110,-19.250) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (6.110,39.250) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (16.080,29.280) in cell nedia_bjt_CDNS_87.
+Acute Angle on layer met1_dg at location (-6.110,-19.250) in cell nedia_bjt_CDNS_89.
+Acute Angle on layer met1_dg at location (-16.080,-9.280) in cell nedia_bjt_CDNS_89.
+Acute Angle on layer met1_dg at location (-6.110,24.250) in cell nedia_bjt_CDNS_89.
+Acute Angle on layer met1_dg at location (-16.080,14.280) in cell nedia_bjt_CDNS_89.
+Acute Angle on layer met1_dg at location (16.080,-9.280) in cell nedia_bjt_CDNS_89.
+Acute Angle on layer met1_dg at location (6.110,-19.250) in cell nedia_bjt_CDNS_89.
+Acute Angle on layer met1_dg at location (6.110,24.250) in cell nedia_bjt_CDNS_89.
+Acute Angle on layer met1_dg at location (16.080,14.280) in cell nedia_bjt_CDNS_89.
+--------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+--------------------------------------------------------------------------------
+--- SUMMARY
+---
+Total CPU Time                    : 2(s)
+Total Real Time                   : 2(s)
+Peak Memory Used                  : 63(M)
+Total Original Geometry           : 33558 (682204)
+Total ERC RuleChecks              : 0
+Total ERC Results                 : 0 (0)

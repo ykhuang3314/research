@@ -1,0 +1,16 @@
+
+/pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : CurrentSource_All_ST_22222.db
+ECDB dir        : ./
+Top Cell        : CurrentSource_All_ST
+CDL netlist     : svdb/CurrentSource_All_ST.net
+Layer map file  : svdb/CurrentSource_All_ST.ecdbmap
+Text map file   : svdb/CurrentSource_All_ST.ports
+Dependency map  : CurrentSource_All_ST.lmap.perc
+Lvs file        : svdb/CurrentSource_All_ST.lvsfile
+Float net file : .CurrentSource_All_ST.info.softchk
+debug           : 0
+Source Library  : CurrentSource_All_ST_22222

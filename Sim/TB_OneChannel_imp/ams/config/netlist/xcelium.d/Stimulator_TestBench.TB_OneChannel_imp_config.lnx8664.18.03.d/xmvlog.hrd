@@ -8,11 +8,5 @@
 1ns/1ns
 -MODELINCDIR
 /home/ykhuang/research/
--DEFINE
-CDS_SELECT_CRS
--DEFINE
-CONNRULES_18V_FULL_FAST
--DEFINE
-CONNRULES_INHCONN_FULL_FAST_GND
 -SNAPSHOT
 Stimulator_TestBench.TB_OneChannel_imp:config

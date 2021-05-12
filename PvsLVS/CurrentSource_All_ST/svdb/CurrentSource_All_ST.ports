@@ -1,0 +1,15 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary CurrentSource_All_ST
+Enable_ST 1 Enable_ST 297885 -587870 m2trm
+vddh 15 vddh 494075 -332110 m3trm
+vdd! 2 vdd! 289930 -569140 m2trm
+Ist 28 Ist 656695 -887925 m3trm
+vdde! 3 vdde! 302695 -584240 m2trm
+Mag0_ST 29 Mag0_ST 293885 -579970 m1trm
+vdd3! 4 vdd3! 271375 -555435 m2trm
+gnd! 18 gnd! 250745 -571790 m1trm
+Mag1_ST 31 Mag1_ST 293890 -575530 m1trm
+Iext 19 Iext 450605 -364000 m1trm
+Mag2_ST 33 Mag2_ST 293905 -571065 m1trm
+Mag3_ST 35 Mag3_ST 293870 -566665 m1trm
+Mag4_ST 37 Mag4_ST 293880 -562060 m1trm

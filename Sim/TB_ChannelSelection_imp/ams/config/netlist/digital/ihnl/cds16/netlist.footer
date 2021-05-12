@@ -1,0 +1,39 @@
+
+CurrentSource_All_ST I18 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .Ist(Ist), .Iext(Iext), .vddh(vddh), 
+    .Enable_ST(Enable), .Mag0_ST(Mag0), .Mag1_ST(Mag1), .Mag2_ST(Mag2), 
+    .Mag3_ST(Mag3), .Mag4_ST(Mag4));
+
+HalfBridge_ST I17 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS7), .Ctrl_HS(Ctrl_HS7), .OUT(E7), .Ist(Ist));
+
+HalfBridge_ST I16 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS3), .Ctrl_HS(Ctrl_HS3), .OUT(E3), .Ist(Ist));
+
+HalfBridge_ST I15 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS6), .Ctrl_HS(Ctrl_HS6), .OUT(E6), .Ist(Ist));
+
+HalfBridge_ST I14 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS2), .Ctrl_HS(Ctrl_HS2), .OUT(E2), .Ist(Ist));
+
+HalfBridge_ST I13 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS5), .Ctrl_HS(Ctrl_HS5), .OUT(E5), .Ist(Ist));
+
+HalfBridge_ST I12 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS1), .Ctrl_HS(Ctrl_HS1), .OUT(E1), .Ist(Ist));
+
+HalfBridge_ST I11 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS4), .Ctrl_HS(Ctrl_HS4), .OUT(E4), .Ist(Ist));
+
+HalfBridge_ST I2 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(Ctrl_LS0), .Ctrl_HS(Ctrl_HS0), .OUT(E0), .Ist(Ist));
+
+endmodule

@@ -1,5 +1,5 @@
 
-tran tran stop=150u errpreset=conservative write="spectre.ic" \
+tran tran stop=17m errpreset=conservative write="spectre.ic" \
 writefinal="spectre.fc" annotate=status maxiters=5 
 
 finalTimeOP info what=oppoint where=rawfile

@@ -200,7 +200,7 @@ schematic(
 avParameters(
   ?inputLayout ( "df2" "Stimulator_IMP" )
   ?cellName "Ext_Iref_ST"
-  ?viewName "ModgenTmplayout15249"
+  ?viewName "layout"
   ?runName "Ext_Iref_ST_LVS"
   ?workingDirectory "./AssuraLVS"
   ?technology "XH018_1143"

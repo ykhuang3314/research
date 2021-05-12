@@ -25,12 +25,12 @@ DLCLAP
 /home/ykhuang/research/Sim/TB_ChannelSelection_imp/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
 -xmfatal
 NOTCMP
-/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v
 /home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v
+/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ChSel_ST/functional/verilog.v
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ChSel_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_ChSel_ST view:functional"
 -amscompilefile
 "file:/home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
--amscompilefile
-"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
 -MESSAGES
 -UPDATE
 -XLLIBSTORE

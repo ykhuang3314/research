@@ -1,0 +1,5 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 device net parameter pin rewire total
+1  5 (( ( S "CurrentSource_All_ST layout Stimulator_IMP" )( L "CurrentSource_All_ST schematic Stimulator_IMP" ) )(( 3 0 6 )))

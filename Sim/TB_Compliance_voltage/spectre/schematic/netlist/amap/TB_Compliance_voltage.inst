@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"V3n V2n V1n V0n" "analogLib_vdc_spectre"
+"R0n R3n R2n" "PRIMLIB_rpp1k1_spectre"
+"C5n C1n" "PRIMLIB_csft5a_spectre"
+"I0n" "CurrentMirror_x10_LV"
+"M14n M16n M8n M5n M0n M7n M15n M6n M4n M3n M17n" "PRIMLIB_nedia_bjt_spectre"
+"I17n" "LSHVT18U3VX2"
+"M11n M1n M2n M12n M10n M9n" "PRIMLIB_ped_bjt_spectre"
+"I2n" "analogLib_idc_spectre"

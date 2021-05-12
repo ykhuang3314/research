@@ -1,4 +1,4 @@
-1617278748 /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/spiceModels.scs
+1619789957 /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/spiceModels.scs
 1563349148 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs
 1563349148 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs
 1563349147 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs
@@ -324,4 +324,5 @@
 1563349147 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
 1563349145 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 1563349147 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
-1617278747 /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/amsControlSpectre.scs
+1619789957 /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/amsControlSpectre.scs
+1619789957 /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/ie_card.scs

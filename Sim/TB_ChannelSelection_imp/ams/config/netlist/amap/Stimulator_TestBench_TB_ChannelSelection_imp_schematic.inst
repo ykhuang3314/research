@@ -1,9 +1,8 @@
 HEADER
 "PSFversion" "1.00"
-"I27n" "analogLib_idc_spectre"
-"R0n R1n R10n R2n R3n R4n R5n R6n R7n R8n R9n" "analogLib_res_spectre"
+"I37n" "analogLib_idc_spectre"
+"R0n R1n R2n R3n" "analogLib_res_spectre"
 "V0n V1n V2n V3n" "analogLib_vdc_spectre"
-"I0n I11n I13n I15n I17n I19n I7n I9n" "Stimulator_IMP_HalfBridge_ST_schematic"
-"I26n" "Stimulator_IMP_CurrentSource_All_ST_schematic"
-"I32n" "Stimulator_IMP_Digital_Stimulus_V2_ST_functional"
+"I32n" "Stimulator_IMP_Digital_Stimulus_ChSel_ST_functional"
 "I33n I34n" "Stimulator_IMP_Decoder3_8_functional"
+"I35n" "Stimulator_IMP_MultiChannel_ST_schematic"

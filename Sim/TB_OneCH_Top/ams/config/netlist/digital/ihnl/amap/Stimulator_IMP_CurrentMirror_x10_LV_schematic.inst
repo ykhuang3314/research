@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"Iinv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".Iin\")))v"
+"Iinv" ".Iinv"
+"Iinv" ".\\1 v"
+"Ix10v" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".Ix10\")))v"
+"Ix10v" ".Ix10v"
+"Ix10v" ".\\2 v"
+"gnd!v" ".cds_globals.\\gnd! v"

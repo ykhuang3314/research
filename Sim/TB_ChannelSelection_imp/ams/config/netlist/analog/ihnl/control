@@ -1,24 +1,24 @@
 hnlLastStopCellInfo = '(
-                           ( "PRIMLIB" "nedia_bjt" "spectre" "56" "1562065969" )
-                          ( "PRIMLIB" "rpp1k1" "spectre" "40" "1562065969" )
-                          ( "PRIMLIB" "pe3" "spectre" "53" "1562065969" )
-                          ( "PRIMLIB" "ne3" "spectre" "52" "1562065969" )
-                          ( "PRIMLIB" "ped_bjt" "spectre" "56" "1562065969" )
+                           ( "Stimulator_IMP" "Digital_Stimulus_ChSel_ST" "functional" "1620299486" "1620299473" )
                           ( "analogLib" "vdc" "spectre" "33" "1570591052" )
                           ( "analogLib" "res" "spectre" "28" "1570591052" )
+                          ( "PRIMLIB" "rpp1k1" "spectre" "40" "1562065969" )
+                          ( "PRIMLIB" "ne3" "spectre" "52" "1562065969" )
                           ( "PRIMLIB" "ne" "spectre" "52" "1562065969" )
                           ( "PRIMLIB" "pe" "spectre" "53" "1562065969" )
                           ( "PRIMLIB" "csft5a" "spectre" "41" "1562065969" )
+                          ( "PRIMLIB" "nedia_bjt" "spectre" "56" "1562065969" )
+                          ( "PRIMLIB" "pe3" "spectre" "53" "1562065969" )
+                          ( "PRIMLIB" "ped_bjt" "spectre" "56" "1562065969" )
                           ( "Stimulator_IMP" "Decoder3_8" "functional" "1618306749" "1618306749" )
                           ( "analogLib" "idc" "spectre" "33" "1570591052" )
-                          ( "Stimulator_IMP" "Digital_Stimulus_V2_ST" "functional" "1618314955" "1618314955" )
                        )
 hnlLastNetlistConfig = t
-hnlLastConfigFileVersion = 4
-hnlLastConfigFileTimeStamp = "1618316423"
+hnlLastConfigFileVersion = 8
+hnlLastConfigFileTimeStamp = "1620219411"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "Stimulator_TestBench" "TB_ChannelSelection_imp" "config" 4 "1618316423" )
+( "Stimulator_TestBench" "TB_ChannelSelection_imp" "config" 8 "1620219411" )
 ) 
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"
@@ -778,11 +778,11 @@ hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
                     ( "Stimulator_IMP" "1614781067" )
+                   ( "GATES_HD" "1516350477" )
+                   ( "D_CELLS_HD" "1517475089" )
                    ( "D_CELLS_M3V" "1528371405" )
                    ( "GATES_3V" "1520929029" )
                    ( "D_CELLS_3V" "1520929020" )
-                   ( "GATES_HD" "1516350477" )
-                   ( "D_CELLS_HD" "1517475089" )
                    ( "Stimulator_TestBench" "1609948351" )
                   )
 hnlLastConstants = '(

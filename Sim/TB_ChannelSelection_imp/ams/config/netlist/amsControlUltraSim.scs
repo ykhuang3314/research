@@ -4,14 +4,14 @@
 
 simulator lang=spectre 
 
-global 0 vdd3! vdde! vdd!
+global 0 vdd! vdd3! vdde!
 
 simulatorOptions options temp=27 tnom=27 scale=1.0 scalem=1.0
 
 // UltraSim Solver Options 
 usim_opt output_upper=0 ade=1 wf_spectre_syntax=1
 
-tran tran stop=16m write="spectre.ic" writefinal="spectre.fc" 
+tran tran stop=5m write="spectre.ic" writefinal="spectre.fc" 
 
 finalTimeOP info what=oppoint where=rawfile
 

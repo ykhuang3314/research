@@ -1,37 +1,34 @@
-// Library - Stimulator_IMP, Cell - HalfBridge_ST, View - schematic
-// LAST TIME SAVED: Apr  8 17:49:30 2021
-// NETLIST TIME: Apr 13 14:33:29 2021
+// Library - D_CELLS_M3V, Cell - LSHVT18U3VX2, View - cmos_sch
+// LAST TIME SAVED: Jun  7 14:44:51 2018
+// NETLIST TIME: May  6 13:11:30 2021
 `timescale 1ns / 1ps 
 
-`worklib Stimulator_IMP
-`view schematic
+`worklib D_CELLS_M3V
+`view cmos_sch
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_IMP", dfII_cell="HalfBridge_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  8 17:49:30 2021" *)
+(* dfII_lib="D_CELLS_M3V", dfII_cell="LSHVT18U3VX2", dfII_view="cmos_sch", worklib_name="D_CELLS_M3V", view_name="cmos_sch", last_save_time="Jun  7 14:44:51 2018" *)
 
-module HalfBridge_ST (OUT, Ist, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
-    .\vdde! (cdsNet0), vddh, Ctrl_HS, Ctrl_LS);
+module LSHVT18U3VX2 (Q, A);
 
-output  OUT;
+output  Q;
 
-inout  Ist, cdsNet2, cdsNet1, cdsNet0, vddh;
+input  A;
 
-input  Ctrl_HS, Ctrl_LS;
+wire (*
+integer inh_conn_prop_name = "power_vdd3";
+integer inh_conn_def_value = "cds_globals.\\vdd3! ";*)
+\vdd3! ;
 
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
 
-// List of all aliases
+wire (*
+integer inh_conn_prop_name = "power_vdde";
+integer inh_conn_def_value = "cds_globals.\\vdde! ";*)
+\vdde! ;
 
-
-cds_alias #(1) cds_alias_inst7(cdsNet2, cds_globals.\gnd! );
-cds_alias #(1) cds_alias_inst8(cdsNet1, cds_globals.\vdd3! );
-cds_alias #(1) cds_alias_inst9(cdsNet0, cds_globals.\vdde! );
-
-LS_HighSide_V3_ST I8 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
-    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
-    .out(VG_ped), .in(Ctrl_HS));
-
-LS_LowSide_V2_ST I9 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
-    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
-    .out(VG_nedia), .in(Ctrl_LS));
 
 endmodule

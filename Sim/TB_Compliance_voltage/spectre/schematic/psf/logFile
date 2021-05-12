@@ -1,0 +1,1005 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Tue May  4 16:34:48 2021"
+"simulator" "spectre"
+"version" "18.1.0.516.isr12"
+"date" "4:34:48 PM, Tue May 4, 2021"
+"design" "// Generated for: spectre"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"sweep1_dcOp-sweep" "analysisInst" (
+"sweep"
+"sweep1_dcOp.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_dcOpInfo-sweep" "analysisInst" (
+"sweep"
+"sweep1_dcOpInfo.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_dc-sweep" "analysisInst" (
+"sweep"
+"sweep1_dc.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_modelParameter-sweep" "analysisInst" (
+"sweep"
+"sweep1_modelParameter.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_element-sweep" "analysisInst" (
+"sweep"
+"sweep1_element.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_outputParameter-sweep" "analysisInst" (
+"sweep"
+"sweep1_outputParameter.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_designParamVals-sweep" "analysisInst" (
+"sweep"
+"sweep1_designParamVals.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_primitives-sweep" "analysisInst" (
+"sweep"
+"sweep1_primitives.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1_subckts-sweep" "analysisInst" (
+"sweep"
+"sweep1_subckts.sweep"
+"PSF"
+""
+("Iref")
+"Sweep parent"
+) PROP(
+"sweep_tree_type" "paramSetSweepNode"
+)
+
+"sweep1-000_dcOp-dc" "analysisInst" (
+"dc"
+"sweep1-000_dcOp.dc"
+"PSF"
+"sweep1_dcOp-sweep"
+()
+"DC Analysis `sweep1-000_dcOp'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_dcOpInfo-info" "analysisInst" (
+"info"
+"sweep1-000_dcOpInfo.info"
+"PSF"
+"sweep1_dcOpInfo-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_dc-dc" "analysisInst" (
+"dc"
+"sweep1-000_dc.dc"
+"PSF"
+"sweep1_dc-sweep"
+("vout")
+"DC Analysis `sweep1-000_dc': vout = (0 -> 40)"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_dc-info" "analysisInst" (
+"info"
+"sweep1-000_dc.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"sweep1-000_modelParameter-info" "analysisInst" (
+"info"
+"sweep1-000_modelParameter.info"
+"PSF"
+"sweep1_modelParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_element-info" "analysisInst" (
+"info"
+"sweep1-000_element.info"
+"PSF"
+"sweep1_element-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_outputParameter-info" "analysisInst" (
+"info"
+"sweep1-000_outputParameter.info"
+"PSF"
+"sweep1_outputParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_designParamVals-info" "analysisInst" (
+"info"
+"sweep1-000_designParamVals.info"
+"PSF"
+"sweep1_designParamVals-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"sweep1-000_primitives.info.primitives"
+"PSF"
+"sweep1_primitives-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-000_subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"sweep1-000_subckts.info.subckts"
+"PSF"
+"sweep1_subckts-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 1.00000e-05
+)
+
+"sweep1-001_dcOp-dc" "analysisInst" (
+"dc"
+"sweep1-001_dcOp.dc"
+"PSF"
+"sweep1_dcOp-sweep"
+()
+"DC Analysis `sweep1-001_dcOp'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_dcOpInfo-info" "analysisInst" (
+"info"
+"sweep1-001_dcOpInfo.info"
+"PSF"
+"sweep1_dcOpInfo-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_dc-dc" "analysisInst" (
+"dc"
+"sweep1-001_dc.dc"
+"PSF"
+"sweep1_dc-sweep"
+("vout")
+"DC Analysis `sweep1-001_dc': vout = (0 -> 40)"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_dc-info" "analysisInst" (
+"info"
+"sweep1-001_dc.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"sweep1-001_modelParameter-info" "analysisInst" (
+"info"
+"sweep1-001_modelParameter.info"
+"PSF"
+"sweep1_modelParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_element-info" "analysisInst" (
+"info"
+"sweep1-001_element.info"
+"PSF"
+"sweep1_element-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_outputParameter-info" "analysisInst" (
+"info"
+"sweep1-001_outputParameter.info"
+"PSF"
+"sweep1_outputParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_designParamVals-info" "analysisInst" (
+"info"
+"sweep1-001_designParamVals.info"
+"PSF"
+"sweep1_designParamVals-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"sweep1-001_primitives.info.primitives"
+"PSF"
+"sweep1_primitives-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-001_subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"sweep1-001_subckts.info.subckts"
+"PSF"
+"sweep1_subckts-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 5.00000e-05
+)
+
+"sweep1-002_dcOp-dc" "analysisInst" (
+"dc"
+"sweep1-002_dcOp.dc"
+"PSF"
+"sweep1_dcOp-sweep"
+()
+"DC Analysis `sweep1-002_dcOp'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_dcOpInfo-info" "analysisInst" (
+"info"
+"sweep1-002_dcOpInfo.info"
+"PSF"
+"sweep1_dcOpInfo-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_dc-dc" "analysisInst" (
+"dc"
+"sweep1-002_dc.dc"
+"PSF"
+"sweep1_dc-sweep"
+("vout")
+"DC Analysis `sweep1-002_dc': vout = (0 -> 40)"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_dc-info" "analysisInst" (
+"info"
+"sweep1-002_dc.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"sweep1-002_modelParameter-info" "analysisInst" (
+"info"
+"sweep1-002_modelParameter.info"
+"PSF"
+"sweep1_modelParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_element-info" "analysisInst" (
+"info"
+"sweep1-002_element.info"
+"PSF"
+"sweep1_element-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_outputParameter-info" "analysisInst" (
+"info"
+"sweep1-002_outputParameter.info"
+"PSF"
+"sweep1_outputParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_designParamVals-info" "analysisInst" (
+"info"
+"sweep1-002_designParamVals.info"
+"PSF"
+"sweep1_designParamVals-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"sweep1-002_primitives.info.primitives"
+"PSF"
+"sweep1_primitives-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-002_subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"sweep1-002_subckts.info.subckts"
+"PSF"
+"sweep1_subckts-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000100000
+)
+
+"sweep1-003_dcOp-dc" "analysisInst" (
+"dc"
+"sweep1-003_dcOp.dc"
+"PSF"
+"sweep1_dcOp-sweep"
+()
+"DC Analysis `sweep1-003_dcOp'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_dcOpInfo-info" "analysisInst" (
+"info"
+"sweep1-003_dcOpInfo.info"
+"PSF"
+"sweep1_dcOpInfo-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_dc-dc" "analysisInst" (
+"dc"
+"sweep1-003_dc.dc"
+"PSF"
+"sweep1_dc-sweep"
+("vout")
+"DC Analysis `sweep1-003_dc': vout = (0 -> 40)"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_dc-info" "analysisInst" (
+"info"
+"sweep1-003_dc.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"sweep1-003_modelParameter-info" "analysisInst" (
+"info"
+"sweep1-003_modelParameter.info"
+"PSF"
+"sweep1_modelParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_element-info" "analysisInst" (
+"info"
+"sweep1-003_element.info"
+"PSF"
+"sweep1_element-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_outputParameter-info" "analysisInst" (
+"info"
+"sweep1-003_outputParameter.info"
+"PSF"
+"sweep1_outputParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_designParamVals-info" "analysisInst" (
+"info"
+"sweep1-003_designParamVals.info"
+"PSF"
+"sweep1_designParamVals-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"sweep1-003_primitives.info.primitives"
+"PSF"
+"sweep1_primitives-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-003_subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"sweep1-003_subckts.info.subckts"
+"PSF"
+"sweep1_subckts-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000150000
+)
+
+"sweep1-004_dcOp-dc" "analysisInst" (
+"dc"
+"sweep1-004_dcOp.dc"
+"PSF"
+"sweep1_dcOp-sweep"
+()
+"DC Analysis `sweep1-004_dcOp'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_dcOpInfo-info" "analysisInst" (
+"info"
+"sweep1-004_dcOpInfo.info"
+"PSF"
+"sweep1_dcOpInfo-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_dc-dc" "analysisInst" (
+"dc"
+"sweep1-004_dc.dc"
+"PSF"
+"sweep1_dc-sweep"
+("vout")
+"DC Analysis `sweep1-004_dc': vout = (0 -> 40)"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_dc-info" "analysisInst" (
+"info"
+"sweep1-004_dc.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"sweep1-004_modelParameter-info" "analysisInst" (
+"info"
+"sweep1-004_modelParameter.info"
+"PSF"
+"sweep1_modelParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_element-info" "analysisInst" (
+"info"
+"sweep1-004_element.info"
+"PSF"
+"sweep1_element-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_outputParameter-info" "analysisInst" (
+"info"
+"sweep1-004_outputParameter.info"
+"PSF"
+"sweep1_outputParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_designParamVals-info" "analysisInst" (
+"info"
+"sweep1-004_designParamVals.info"
+"PSF"
+"sweep1_designParamVals-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"sweep1-004_primitives.info.primitives"
+"PSF"
+"sweep1_primitives-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-004_subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"sweep1-004_subckts.info.subckts"
+"PSF"
+"sweep1_subckts-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000200000
+)
+
+"sweep1-005_dcOp-dc" "analysisInst" (
+"dc"
+"sweep1-005_dcOp.dc"
+"PSF"
+"sweep1_dcOp-sweep"
+()
+"DC Analysis `sweep1-005_dcOp'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_dcOpInfo-info" "analysisInst" (
+"info"
+"sweep1-005_dcOpInfo.info"
+"PSF"
+"sweep1_dcOpInfo-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_dc-dc" "analysisInst" (
+"dc"
+"sweep1-005_dc.dc"
+"PSF"
+"sweep1_dc-sweep"
+("vout")
+"DC Analysis `sweep1-005_dc': vout = (0 -> 40)"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_dc-info" "analysisInst" (
+"info"
+"sweep1-005_dc.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"sweep1-005_modelParameter-info" "analysisInst" (
+"info"
+"sweep1-005_modelParameter.info"
+"PSF"
+"sweep1_modelParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_element-info" "analysisInst" (
+"info"
+"sweep1-005_element.info"
+"PSF"
+"sweep1_element-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_outputParameter-info" "analysisInst" (
+"info"
+"sweep1-005_outputParameter.info"
+"PSF"
+"sweep1_outputParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_designParamVals-info" "analysisInst" (
+"info"
+"sweep1-005_designParamVals.info"
+"PSF"
+"sweep1_designParamVals-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"sweep1-005_primitives.info.primitives"
+"PSF"
+"sweep1_primitives-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-005_subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"sweep1-005_subckts.info.subckts"
+"PSF"
+"sweep1_subckts-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000240000
+)
+
+"sweep1-006_dcOp-dc" "analysisInst" (
+"dc"
+"sweep1-006_dcOp.dc"
+"PSF"
+"sweep1_dcOp-sweep"
+()
+"DC Analysis `sweep1-006_dcOp'"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_dcOpInfo-info" "analysisInst" (
+"info"
+"sweep1-006_dcOpInfo.info"
+"PSF"
+"sweep1_dcOpInfo-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_dc-dc" "analysisInst" (
+"dc"
+"sweep1-006_dc.dc"
+"PSF"
+"sweep1_dc-sweep"
+("vout")
+"DC Analysis `sweep1-006_dc': vout = (0 -> 40)"
+) PROP(
+"data_type" "scalar"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_dc-info" "analysisInst" (
+"info"
+"sweep1-006_dc.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"sweep1-006_modelParameter-info" "analysisInst" (
+"info"
+"sweep1-006_modelParameter.info"
+"PSF"
+"sweep1_modelParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_element-info" "analysisInst" (
+"info"
+"sweep1-006_element.info"
+"PSF"
+"sweep1_element-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_outputParameter-info" "analysisInst" (
+"info"
+"sweep1-006_outputParameter.info"
+"PSF"
+"sweep1_outputParameter-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_designParamVals-info" "analysisInst" (
+"info"
+"sweep1-006_designParamVals.info"
+"PSF"
+"sweep1_designParamVals-sweep"
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"sweep1-006_primitives.info.primitives"
+"PSF"
+"sweep1_primitives-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+"sweep1-006_subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"sweep1-006_subckts.info.subckts"
+"PSF"
+"sweep1_subckts-sweep"
+()
+"Circuit Information"
+) PROP(
+"sweep_tree_type" "leafNode"
+"Iref" 0.000280000
+)
+
+END

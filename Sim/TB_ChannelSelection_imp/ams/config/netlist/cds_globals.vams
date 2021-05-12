@@ -13,9 +13,9 @@ module cds_globals;
 // Global Signals
    electrical \gnd! ;
    ground \gnd! ;
+   wire \vdd! ;
    wire \vdde! ;
    wire \vdd3! ;
-   wire \vdd! ;
 
 // Design Variables
 

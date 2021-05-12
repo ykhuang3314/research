@@ -1,33 +1,36 @@
-// Library - Stimulator_IMP, Cell - LS_HighSide_V3_ST, View - schematic
-// LAST TIME SAVED: Apr  9 15:38:16 2021
-// NETLIST TIME: Apr 13 14:33:29 2021
+// Library - GATES_HD, Cell - invr, View - schematic
+// LAST TIME SAVED: Jan 18 15:00:13 2018
+// NETLIST TIME: May  6 13:11:30 2021
 `timescale 1ns / 1ps 
 
-`worklib Stimulator_IMP
+`worklib GATES_HD
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_IMP", dfII_cell="LS_HighSide_V3_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  9 15:38:16 2021" *)
+(* dfII_lib="GATES_HD", dfII_cell="invr", dfII_view="schematic", worklib_name="GATES_HD", view_name="schematic", last_save_time="Jan 18 15:00:13 2018" *)
 
-module LS_HighSide_V3_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
-    .\vdde! (cdsNet0), vddh, in);
+module invr (out, in);
+
+parameter GT_PDW=0;
+parameter GT_PDL=180.00n;
+parameter sx=4.8e-07;
+parameter lc=2.7e-07;
+parameter GT_PUW=0;
+parameter GT_PUL=180.00n;
 
 output  out;
 
-inout  cdsNet2, cdsNet1, cdsNet0, vddh;
-
 input  in;
 
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
 
-// List of all aliases
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
 
-
-cds_alias #(1) cds_alias_inst1(cdsNet2, cds_globals.\gnd! );
-cds_alias #(1) cds_alias_inst2(cdsNet1, cds_globals.\vdd3! );
-cds_alias #(1) cds_alias_inst3(cdsNet0, cds_globals.\vdde! );
-
-ResistiveDivider I0 ( .V2(net10), .V1(vddh), .VOUT(out));
-
-LSHVT18U3VX1 I10 ( .A(in), .Q(inn3v));
 
 endmodule

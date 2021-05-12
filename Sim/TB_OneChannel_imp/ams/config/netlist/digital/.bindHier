@@ -1,6 +1,6 @@
-("Stimulator_IMP" "LS_HighSide_V3_ST" "schematic" "schematic") nil
 ("GATES_HD" "invr" "schematic" "schematic") nil
 ("GATES_HD" "nand2" "schematic" "schematic") nil
+("Stimulator_IMP" "LS_HighSide_V3_ST" "schematic" "schematic") nil
 ("D_CELLS_M3V" "LSHVT18U3VX1" "cmos_sch" "cmos_sch") nil
 ("PRIMLIB" "pe3" "spectre" "spectre") nil
 ("analogLib" "idc" "spectre" "spectre") nil
@@ -15,6 +15,7 @@
 ("GATES_3V" "invrv3" "schematic" "schematic") nil
 ("PRIMLIB" "csft5a" "spectre" "spectre") nil
 ("Stimulator_IMP" "Digital_Stimulus_ST" "functional" "functional") nil
+("Stimulator_IMP" "ResistiveDivider" "schematic" "schematic") nil
 ("PRIMLIB" "rpp1k1" "spectre" "spectre") nil
 ("D_CELLS_HD" "AND2HDX0" "cmos_sch" "cmos_sch") nil
 ("analogLib" "vdc" "spectre" "spectre") nil

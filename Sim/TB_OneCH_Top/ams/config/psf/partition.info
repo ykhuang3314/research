@@ -1,0 +1,1838 @@
+( global ( resolution_type basic ) )
+
+( net TB_OneCH_Top.I0.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.cds_alias_inst16.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net cds_globals.\gnd!  TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.cds_alias_inst7.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I2.V2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.cds_alias_inst10.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.cds_alias_inst7.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I1.cds_alias_inst13.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.cds_alias_inst7.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I2.V2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.cds_alias_inst10.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.cds_alias_inst7.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.cdsNet2 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I2.cds_alias_inst13.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.I0.cdsNet0 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.I0.cds_alias_inst1.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.cdsNet1 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.cds_alias_inst2.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I0.I0.vss TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I0.cdsNet1 TB_OneCH_Top.I0.cdsNet2 analog electrical )
+( net TB_OneCH_Top.I0.I0.cds_alias_inst5.a[0] TB_OneCH_Top.I0.cdsNet2 analog electrical )
+
+( net TB_OneCH_Top.I0.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.cds_alias_inst17.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net cds_globals.\vdd3!  TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.cds_alias_inst8.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.cds_alias_inst11.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.cds_alias_inst8.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I1.cds_alias_inst14.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.cds_alias_inst8.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.cds_alias_inst11.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.cds_alias_inst8.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.cdsNet1 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I2.cds_alias_inst14.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.cdsNet0 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.cds_alias_inst4.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.cdsNet0 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.cds_alias_inst3.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I0.cdsNet0 TB_OneCH_Top.I0.cdsNet1 analog electrical )
+( net TB_OneCH_Top.I0.I0.cds_alias_inst6.a[0] TB_OneCH_Top.I0.cdsNet1 analog electrical )
+
+( net TB_OneCH_Top.I0.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.cds_alias_inst18.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net cds_globals.\vdde!  TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.cds_alias_inst9.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.cds_alias_inst12.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.cds_alias_inst9.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I1.cds_alias_inst15.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.cds_alias_inst9.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.cds_alias_inst12.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.cds_alias_inst9.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.cdsNet0 TB_OneCH_Top.I0.cdsNet0 analog electrical )
+( net TB_OneCH_Top.I0.I2.cds_alias_inst15.a[0] TB_OneCH_Top.I0.cdsNet0 analog electrical )
+
+( net TB_OneCH_Top.net6 TB_OneCH_Top.net6 analog electrical )
+( net TB_OneCH_Top.I0.Iext TB_OneCH_Top.net6 analog electrical )
+( net TB_OneCH_Top.I0.I0.Iext TB_OneCH_Top.net6 analog electrical )
+( net TB_OneCH_Top.I0.I0.I0.Iext TB_OneCH_Top.net6 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.Iref TB_OneCH_Top.I0.I0.Iref analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.Iref TB_OneCH_Top.I0.I0.Iref analog electrical )
+( net TB_OneCH_Top.I0.I0.I0.Iref TB_OneCH_Top.I0.I0.Iref analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I0.VG2 TB_OneCH_Top.I0.I0.I0.VG2 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I0.VG1 TB_OneCH_Top.I0.I0.I0.VG1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I0.VD_M1 TB_OneCH_Top.I0.I0.I0.VD_M1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I45.net10 TB_OneCH_Top.I0.I0.I45.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I45.invr_1.in TB_OneCH_Top.I0.I0.I45.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I45.nand2_1.out TB_OneCH_Top.I0.I0.I45.net10 analog electrical )
+
+( net TB_OneCH_Top.Enable_ST TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I32.EN_ST TB_OneCH_Top.Enable_ST digital/mixed logic )
+( net TB_OneCH_Top.I6.Enable TB_OneCH_Top.Enable_ST digital/mixed logic )
+( net TB_OneCH_Top.I7.Enable TB_OneCH_Top.Enable_ST digital/mixed logic )
+( net TB_OneCH_Top.I0.Enable_ST TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.Enable_ST TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I2.enable TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I2.I17.A TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I49.A TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I49.nand2_1.a TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I48.A TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I48.nand2_1.a TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I47.A TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I47.nand2_1.a TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I46.A TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I46.nand2_1.a TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I45.A TB_OneCH_Top.Enable_ST analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I45.nand2_1.a TB_OneCH_Top.Enable_ST analog/mixed electrical )
+
+( net TB_OneCH_Top.Mag_ST[0] TB_OneCH_Top.Mag_ST[0] analog/mixed electrical )
+( net TB_OneCH_Top.I32.MAG_ST[0] TB_OneCH_Top.Mag_ST[0] digital/mixed logic )
+( net TB_OneCH_Top.I0.Mag0_ST TB_OneCH_Top.Mag_ST[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.Mag0_ST TB_OneCH_Top.Mag_ST[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I45.B TB_OneCH_Top.Mag_ST[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I45.nand2_1.b TB_OneCH_Top.Mag_ST[0] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I0.I45.nand2_1.\gnd!  TB_OneCH_Top.I0.I0.I45.nand2_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I45.nand2_1.\vdd!  TB_OneCH_Top.I0.I0.I45.nand2_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I45.nand2_1.net11 TB_OneCH_Top.I0.I0.I45.nand2_1.net11 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.net05 TB_OneCH_Top.I0.I0.net05 analog electrical )
+( net TB_OneCH_Top.I0.I0.I16.A TB_OneCH_Top.I0.I0.net05 analog electrical )
+( net TB_OneCH_Top.I0.I0.I45.Q TB_OneCH_Top.I0.I0.net05 analog electrical )
+( net TB_OneCH_Top.I0.I0.I45.invr_1.out TB_OneCH_Top.I0.I0.net05 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I45.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I45.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I45.invr_1.\vdd!  TB_OneCH_Top.I0.I0.I45.invr_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I45.\gnd!  TB_OneCH_Top.I0.I0.I45.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I45.\vdd!  TB_OneCH_Top.I0.I0.I45.\vdd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I46.net10 TB_OneCH_Top.I0.I0.I46.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I46.invr_1.in TB_OneCH_Top.I0.I0.I46.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I46.nand2_1.out TB_OneCH_Top.I0.I0.I46.net10 analog electrical )
+
+( net TB_OneCH_Top.Mag_ST[1] TB_OneCH_Top.Mag_ST[1] analog/mixed electrical )
+( net TB_OneCH_Top.I32.MAG_ST[1] TB_OneCH_Top.Mag_ST[1] digital/mixed logic )
+( net TB_OneCH_Top.I0.Mag1_ST TB_OneCH_Top.Mag_ST[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.Mag1_ST TB_OneCH_Top.Mag_ST[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I46.B TB_OneCH_Top.Mag_ST[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I46.nand2_1.b TB_OneCH_Top.Mag_ST[1] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I0.I46.nand2_1.\gnd!  TB_OneCH_Top.I0.I0.I46.nand2_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I46.nand2_1.\vdd!  TB_OneCH_Top.I0.I0.I46.nand2_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I46.nand2_1.net11 TB_OneCH_Top.I0.I0.I46.nand2_1.net11 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.net07 TB_OneCH_Top.I0.I0.net07 analog electrical )
+( net TB_OneCH_Top.I0.I0.I30.A TB_OneCH_Top.I0.I0.net07 analog electrical )
+( net TB_OneCH_Top.I0.I0.I46.Q TB_OneCH_Top.I0.I0.net07 analog electrical )
+( net TB_OneCH_Top.I0.I0.I46.invr_1.out TB_OneCH_Top.I0.I0.net07 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I46.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I46.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I46.invr_1.\vdd!  TB_OneCH_Top.I0.I0.I46.invr_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I46.\gnd!  TB_OneCH_Top.I0.I0.I46.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I46.\vdd!  TB_OneCH_Top.I0.I0.I46.\vdd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I47.net10 TB_OneCH_Top.I0.I0.I47.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I47.invr_1.in TB_OneCH_Top.I0.I0.I47.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I47.nand2_1.out TB_OneCH_Top.I0.I0.I47.net10 analog electrical )
+
+( net TB_OneCH_Top.Mag_ST[2] TB_OneCH_Top.Mag_ST[2] analog/mixed electrical )
+( net TB_OneCH_Top.I32.MAG_ST[2] TB_OneCH_Top.Mag_ST[2] digital/mixed logic )
+( net TB_OneCH_Top.I0.Mag2_ST TB_OneCH_Top.Mag_ST[2] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.Mag2_ST TB_OneCH_Top.Mag_ST[2] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I47.B TB_OneCH_Top.Mag_ST[2] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I47.nand2_1.b TB_OneCH_Top.Mag_ST[2] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I0.I47.nand2_1.\gnd!  TB_OneCH_Top.I0.I0.I47.nand2_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I47.nand2_1.\vdd!  TB_OneCH_Top.I0.I0.I47.nand2_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I47.nand2_1.net11 TB_OneCH_Top.I0.I0.I47.nand2_1.net11 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.net09 TB_OneCH_Top.I0.I0.net09 analog electrical )
+( net TB_OneCH_Top.I0.I0.I14.A TB_OneCH_Top.I0.I0.net09 analog electrical )
+( net TB_OneCH_Top.I0.I0.I47.Q TB_OneCH_Top.I0.I0.net09 analog electrical )
+( net TB_OneCH_Top.I0.I0.I47.invr_1.out TB_OneCH_Top.I0.I0.net09 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I47.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I47.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I47.invr_1.\vdd!  TB_OneCH_Top.I0.I0.I47.invr_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I47.\gnd!  TB_OneCH_Top.I0.I0.I47.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I47.\vdd!  TB_OneCH_Top.I0.I0.I47.\vdd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I48.net10 TB_OneCH_Top.I0.I0.I48.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I48.invr_1.in TB_OneCH_Top.I0.I0.I48.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I48.nand2_1.out TB_OneCH_Top.I0.I0.I48.net10 analog electrical )
+
+( net TB_OneCH_Top.Mag_ST[3] TB_OneCH_Top.Mag_ST[3] analog/mixed electrical )
+( net TB_OneCH_Top.I32.MAG_ST[3] TB_OneCH_Top.Mag_ST[3] digital/mixed logic )
+( net TB_OneCH_Top.I0.Mag3_ST TB_OneCH_Top.Mag_ST[3] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.Mag3_ST TB_OneCH_Top.Mag_ST[3] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I48.B TB_OneCH_Top.Mag_ST[3] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I48.nand2_1.b TB_OneCH_Top.Mag_ST[3] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I0.I48.nand2_1.\gnd!  TB_OneCH_Top.I0.I0.I48.nand2_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I48.nand2_1.\vdd!  TB_OneCH_Top.I0.I0.I48.nand2_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I48.nand2_1.net11 TB_OneCH_Top.I0.I0.I48.nand2_1.net11 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.net011 TB_OneCH_Top.I0.I0.net011 analog electrical )
+( net TB_OneCH_Top.I0.I0.I12.A TB_OneCH_Top.I0.I0.net011 analog electrical )
+( net TB_OneCH_Top.I0.I0.I48.Q TB_OneCH_Top.I0.I0.net011 analog electrical )
+( net TB_OneCH_Top.I0.I0.I48.invr_1.out TB_OneCH_Top.I0.I0.net011 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I48.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I48.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I48.invr_1.\vdd!  TB_OneCH_Top.I0.I0.I48.invr_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I48.\gnd!  TB_OneCH_Top.I0.I0.I48.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I48.\vdd!  TB_OneCH_Top.I0.I0.I48.\vdd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I49.net10 TB_OneCH_Top.I0.I0.I49.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I49.invr_1.in TB_OneCH_Top.I0.I0.I49.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I49.nand2_1.out TB_OneCH_Top.I0.I0.I49.net10 analog electrical )
+
+( net TB_OneCH_Top.Mag_ST[4] TB_OneCH_Top.Mag_ST[4] analog/mixed electrical )
+( net TB_OneCH_Top.I32.MAG_ST[4] TB_OneCH_Top.Mag_ST[4] digital/mixed logic )
+( net TB_OneCH_Top.I0.Mag4_ST TB_OneCH_Top.Mag_ST[4] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.Mag4_ST TB_OneCH_Top.Mag_ST[4] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I49.B TB_OneCH_Top.Mag_ST[4] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I0.I49.nand2_1.b TB_OneCH_Top.Mag_ST[4] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I0.I49.nand2_1.\gnd!  TB_OneCH_Top.I0.I0.I49.nand2_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I49.nand2_1.\vdd!  TB_OneCH_Top.I0.I0.I49.nand2_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I49.nand2_1.net11 TB_OneCH_Top.I0.I0.I49.nand2_1.net11 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.net013 TB_OneCH_Top.I0.I0.net013 analog electrical )
+( net TB_OneCH_Top.I0.I0.I29.A TB_OneCH_Top.I0.I0.net013 analog electrical )
+( net TB_OneCH_Top.I0.I0.I49.Q TB_OneCH_Top.I0.I0.net013 analog electrical )
+( net TB_OneCH_Top.I0.I0.I49.invr_1.out TB_OneCH_Top.I0.I0.net013 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I49.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I49.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I49.invr_1.\vdd!  TB_OneCH_Top.I0.I0.I49.invr_1.\vdd!  analog electrical ( resolved_name cds_globals.\vdd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I49.\gnd!  TB_OneCH_Top.I0.I0.I49.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I49.\vdd!  TB_OneCH_Top.I0.I0.I49.\vdd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I2.en_3v TB_OneCH_Top.I0.I0.I2.en_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.I17.Q TB_OneCH_Top.I0.I0.I2.en_3v analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.\vdd3!  TB_OneCH_Top.I0.I0.I2.I17.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.\gnd!  TB_OneCH_Top.I0.I0.I2.I17.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.\vdde!  TB_OneCH_Top.I0.I0.I2.I17.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.net20 TB_OneCH_Top.I0.I0.I2.I17.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.net4 TB_OneCH_Top.I0.I0.I2.I17.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.net024 TB_OneCH_Top.I0.I0.I2.I17.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.net023 TB_OneCH_Top.I0.I0.I2.I17.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.I17.net10 TB_OneCH_Top.I0.I0.I2.I17.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.net9 TB_OneCH_Top.I0.I0.net9 analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.Idac TB_OneCH_Top.I0.I0.net9 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.Iref TB_OneCH_Top.I0.I0.net9 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.I0.Iin TB_OneCH_Top.I0.I0.net9 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.Iout_LV TB_OneCH_Top.I0.I0.I2.Iout_LV analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.I0.Ix10 TB_OneCH_Top.I0.I0.I2.Iout_LV analog electrical )
+
+( net TB_OneCH_Top.I0.net10 TB_OneCH_Top.I0.net10 analog electrical )
+( net TB_OneCH_Top.I0.I1.Ist TB_OneCH_Top.I0.net10 analog electrical )
+( net TB_OneCH_Top.I0.I2.Ist TB_OneCH_Top.I0.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.Ist TB_OneCH_Top.I0.net10 analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.Ist TB_OneCH_Top.I0.net10 analog electrical )
+
+( net TB_OneCH_Top.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I1.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.V1 TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.I0.V1 TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I2.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.V1 TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.I0.V1 TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I0.vddh TB_OneCH_Top.vddh analog electrical )
+( net TB_OneCH_Top.I0.I0.I2.vddh TB_OneCH_Top.vddh analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.Vmid TB_OneCH_Top.I0.I0.I2.Vmid analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.VG1 TB_OneCH_Top.I0.I0.I2.VG1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.Iout2 TB_OneCH_Top.I0.I0.I2.Iout2 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.VB TB_OneCH_Top.I0.I0.I2.VB analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.Iout1 TB_OneCH_Top.I0.I0.I2.Iout1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.Bias2 TB_OneCH_Top.I0.I0.I2.Bias2 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.VD_M4 TB_OneCH_Top.I0.I0.I2.VD_M4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.VD_M3 TB_OneCH_Top.I0.I0.I2.VD_M3 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.net16 TB_OneCH_Top.I0.I0.I2.net16 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.Bias1 TB_OneCH_Top.I0.I0.I2.Bias1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.VD_M11 TB_OneCH_Top.I0.I0.I2.VD_M11 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.VD_M1 TB_OneCH_Top.I0.I0.I2.VD_M1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I2.net030 TB_OneCH_Top.I0.I0.I2.net030 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.D0_3v TB_OneCH_Top.I0.I0.D0_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I31.Q TB_OneCH_Top.I0.I0.D0_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I31.invr_1.out TB_OneCH_Top.I0.I0.D0_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.D0_3v TB_OneCH_Top.I0.I0.D0_3v analog electrical )
+
+( net TB_OneCH_Top.I0.I0.D1_3v TB_OneCH_Top.I0.I0.D1_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I15.Q TB_OneCH_Top.I0.I0.D1_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I15.invr_1.out TB_OneCH_Top.I0.I0.D1_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.D1_3v TB_OneCH_Top.I0.I0.D1_3v analog electrical )
+
+( net TB_OneCH_Top.I0.I0.D2_3v TB_OneCH_Top.I0.I0.D2_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I13.Q TB_OneCH_Top.I0.I0.D2_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I13.invr_1.out TB_OneCH_Top.I0.I0.D2_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.D2_3v TB_OneCH_Top.I0.I0.D2_3v analog electrical )
+
+( net TB_OneCH_Top.I0.I0.D3_3v TB_OneCH_Top.I0.I0.D3_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I11.Q TB_OneCH_Top.I0.I0.D3_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I11.invr_1.out TB_OneCH_Top.I0.I0.D3_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.D3_3v TB_OneCH_Top.I0.I0.D3_3v analog electrical )
+
+( net TB_OneCH_Top.I0.I0.D4_3v TB_OneCH_Top.I0.I0.D4_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I10.Q TB_OneCH_Top.I0.I0.D4_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I10.invr_1.out TB_OneCH_Top.I0.I0.D4_3v analog electrical )
+( net TB_OneCH_Top.I0.I0.I1.D4_3v TB_OneCH_Top.I0.I0.D4_3v analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.Vbias TB_OneCH_Top.I0.I0.I1.Vbias analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.Ix1 TB_OneCH_Top.I0.I0.I1.Ix1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.n1 TB_OneCH_Top.I0.I0.I1.n1 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.n2 TB_OneCH_Top.I0.I0.I1.n2 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.Ix2 TB_OneCH_Top.I0.I0.I1.Ix2 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.n3 TB_OneCH_Top.I0.I0.I1.n3 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.Ix4 TB_OneCH_Top.I0.I0.I1.Ix4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.n4 TB_OneCH_Top.I0.I0.I1.n4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.Ix8 TB_OneCH_Top.I0.I0.I1.Ix8 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.n5 TB_OneCH_Top.I0.I0.I1.n5 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I1.Ix16 TB_OneCH_Top.I0.I0.I1.Ix16 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.net06 TB_OneCH_Top.I0.I0.net06 analog electrical )
+( net TB_OneCH_Top.I0.I0.I16.Q TB_OneCH_Top.I0.I0.net06 analog electrical )
+( net TB_OneCH_Top.I0.I0.I31.A TB_OneCH_Top.I0.I0.net06 analog electrical )
+( net TB_OneCH_Top.I0.I0.I31.invr_1.in TB_OneCH_Top.I0.I0.net06 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I31.invr_1.\vdd3!  TB_OneCH_Top.I0.I0.I31.invr_1.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I31.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I31.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I31.\vdd3!  TB_OneCH_Top.I0.I0.I31.\vdd3!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I31.\gnd!  TB_OneCH_Top.I0.I0.I31.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.net08 TB_OneCH_Top.I0.I0.net08 analog electrical )
+( net TB_OneCH_Top.I0.I0.I30.Q TB_OneCH_Top.I0.I0.net08 analog electrical )
+( net TB_OneCH_Top.I0.I0.I15.A TB_OneCH_Top.I0.I0.net08 analog electrical )
+( net TB_OneCH_Top.I0.I0.I15.invr_1.in TB_OneCH_Top.I0.I0.net08 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I15.invr_1.\vdd3!  TB_OneCH_Top.I0.I0.I15.invr_1.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I15.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I15.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I15.\vdd3!  TB_OneCH_Top.I0.I0.I15.\vdd3!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I15.\gnd!  TB_OneCH_Top.I0.I0.I15.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.net010 TB_OneCH_Top.I0.I0.net010 analog electrical )
+( net TB_OneCH_Top.I0.I0.I14.Q TB_OneCH_Top.I0.I0.net010 analog electrical )
+( net TB_OneCH_Top.I0.I0.I13.A TB_OneCH_Top.I0.I0.net010 analog electrical )
+( net TB_OneCH_Top.I0.I0.I13.invr_1.in TB_OneCH_Top.I0.I0.net010 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I13.invr_1.\vdd3!  TB_OneCH_Top.I0.I0.I13.invr_1.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I13.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I13.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I13.\vdd3!  TB_OneCH_Top.I0.I0.I13.\vdd3!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I13.\gnd!  TB_OneCH_Top.I0.I0.I13.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.net012 TB_OneCH_Top.I0.I0.net012 analog electrical )
+( net TB_OneCH_Top.I0.I0.I12.Q TB_OneCH_Top.I0.I0.net012 analog electrical )
+( net TB_OneCH_Top.I0.I0.I11.A TB_OneCH_Top.I0.I0.net012 analog electrical )
+( net TB_OneCH_Top.I0.I0.I11.invr_1.in TB_OneCH_Top.I0.I0.net012 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I11.invr_1.\vdd3!  TB_OneCH_Top.I0.I0.I11.invr_1.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I11.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I11.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I11.\vdd3!  TB_OneCH_Top.I0.I0.I11.\vdd3!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I11.\gnd!  TB_OneCH_Top.I0.I0.I11.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.net014 TB_OneCH_Top.I0.I0.net014 analog electrical )
+( net TB_OneCH_Top.I0.I0.I29.Q TB_OneCH_Top.I0.I0.net014 analog electrical )
+( net TB_OneCH_Top.I0.I0.I10.A TB_OneCH_Top.I0.I0.net014 analog electrical )
+( net TB_OneCH_Top.I0.I0.I10.invr_1.in TB_OneCH_Top.I0.I0.net014 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I10.invr_1.\vdd3!  TB_OneCH_Top.I0.I0.I10.invr_1.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I10.invr_1.\gnd!  TB_OneCH_Top.I0.I0.I10.invr_1.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I10.\vdd3!  TB_OneCH_Top.I0.I0.I10.\vdd3!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I10.\gnd!  TB_OneCH_Top.I0.I0.I10.\gnd!  digital logic )
+
+( net TB_OneCH_Top.I0.I0.I16.\vdd3!  TB_OneCH_Top.I0.I0.I16.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I16.\gnd!  TB_OneCH_Top.I0.I0.I16.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I16.\vdde!  TB_OneCH_Top.I0.I0.I16.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I0.I16.net20 TB_OneCH_Top.I0.I0.I16.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I16.net4 TB_OneCH_Top.I0.I0.I16.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I16.net024 TB_OneCH_Top.I0.I0.I16.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I16.net023 TB_OneCH_Top.I0.I0.I16.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I16.net10 TB_OneCH_Top.I0.I0.I16.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I30.\vdd3!  TB_OneCH_Top.I0.I0.I30.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I30.\gnd!  TB_OneCH_Top.I0.I0.I30.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I30.\vdde!  TB_OneCH_Top.I0.I0.I30.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I0.I30.net20 TB_OneCH_Top.I0.I0.I30.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I30.net4 TB_OneCH_Top.I0.I0.I30.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I30.net024 TB_OneCH_Top.I0.I0.I30.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I30.net023 TB_OneCH_Top.I0.I0.I30.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I30.net10 TB_OneCH_Top.I0.I0.I30.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I14.\vdd3!  TB_OneCH_Top.I0.I0.I14.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I14.\gnd!  TB_OneCH_Top.I0.I0.I14.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I14.\vdde!  TB_OneCH_Top.I0.I0.I14.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I0.I14.net20 TB_OneCH_Top.I0.I0.I14.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I14.net4 TB_OneCH_Top.I0.I0.I14.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I14.net024 TB_OneCH_Top.I0.I0.I14.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I14.net023 TB_OneCH_Top.I0.I0.I14.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I14.net10 TB_OneCH_Top.I0.I0.I14.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I12.\vdd3!  TB_OneCH_Top.I0.I0.I12.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I12.\gnd!  TB_OneCH_Top.I0.I0.I12.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I12.\vdde!  TB_OneCH_Top.I0.I0.I12.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I0.I12.net20 TB_OneCH_Top.I0.I0.I12.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I12.net4 TB_OneCH_Top.I0.I0.I12.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I12.net024 TB_OneCH_Top.I0.I0.I12.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I12.net023 TB_OneCH_Top.I0.I0.I12.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I12.net10 TB_OneCH_Top.I0.I0.I12.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I29.\vdd3!  TB_OneCH_Top.I0.I0.I29.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I0.I29.\gnd!  TB_OneCH_Top.I0.I0.I29.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I0.I29.\vdde!  TB_OneCH_Top.I0.I0.I29.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I0.I29.net20 TB_OneCH_Top.I0.I0.I29.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I29.net4 TB_OneCH_Top.I0.I0.I29.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I29.net024 TB_OneCH_Top.I0.I0.I29.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I29.net023 TB_OneCH_Top.I0.I0.I29.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I0.I29.net10 TB_OneCH_Top.I0.I0.I29.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.VG_ped TB_OneCH_Top.I0.I2.VG_ped analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.out TB_OneCH_Top.I0.I2.VG_ped analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.I0.VOUT TB_OneCH_Top.I0.I2.VG_ped analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.net10 TB_OneCH_Top.I0.I2.I8.net10 analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.I0.V2 TB_OneCH_Top.I0.I2.I8.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net09 TB_OneCH_Top.I0.I2.I8.I0.net09 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net010 TB_OneCH_Top.I0.I2.I8.I0.net010 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net011 TB_OneCH_Top.I0.I2.I8.I0.net011 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net012 TB_OneCH_Top.I0.I2.I8.I0.net012 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net013 TB_OneCH_Top.I0.I2.I8.I0.net013 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net014 TB_OneCH_Top.I0.I2.I8.I0.net014 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net015 TB_OneCH_Top.I0.I2.I8.I0.net015 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net016 TB_OneCH_Top.I0.I2.I8.I0.net016 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net017 TB_OneCH_Top.I0.I2.I8.I0.net017 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net018 TB_OneCH_Top.I0.I2.I8.I0.net018 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net019 TB_OneCH_Top.I0.I2.I8.I0.net019 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net020 TB_OneCH_Top.I0.I2.I8.I0.net020 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net021 TB_OneCH_Top.I0.I2.I8.I0.net021 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net022 TB_OneCH_Top.I0.I2.I8.I0.net022 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net023 TB_OneCH_Top.I0.I2.I8.I0.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net024 TB_OneCH_Top.I0.I2.I8.I0.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net025 TB_OneCH_Top.I0.I2.I8.I0.net025 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net026 TB_OneCH_Top.I0.I2.I8.I0.net026 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net027 TB_OneCH_Top.I0.I2.I8.I0.net027 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net028 TB_OneCH_Top.I0.I2.I8.I0.net028 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net029 TB_OneCH_Top.I0.I2.I8.I0.net029 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net030 TB_OneCH_Top.I0.I2.I8.I0.net030 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net031 TB_OneCH_Top.I0.I2.I8.I0.net031 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net032 TB_OneCH_Top.I0.I2.I8.I0.net032 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net033 TB_OneCH_Top.I0.I2.I8.I0.net033 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net034 TB_OneCH_Top.I0.I2.I8.I0.net034 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net035 TB_OneCH_Top.I0.I2.I8.I0.net035 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net036 TB_OneCH_Top.I0.I2.I8.I0.net036 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net037 TB_OneCH_Top.I0.I2.I8.I0.net037 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net038 TB_OneCH_Top.I0.I2.I8.I0.net038 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net08 TB_OneCH_Top.I0.I2.I8.I0.net08 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net07 TB_OneCH_Top.I0.I2.I8.I0.net07 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net5 TB_OneCH_Top.I0.I2.I8.I0.net5 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I0.net6 TB_OneCH_Top.I0.I2.I8.I0.net6 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.inn3v TB_OneCH_Top.I0.I2.I8.inn3v analog electrical )
+( net TB_OneCH_Top.I0.I2.I8.I10.Q TB_OneCH_Top.I0.I2.I8.inn3v analog electrical )
+
+( net TB_OneCH_Top.CtrlHS[1] TB_OneCH_Top.CtrlHS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I6.Dout[1] TB_OneCH_Top.CtrlHS[1] digital/mixed logic )
+( net TB_OneCH_Top.I0.CtrlHS_2 TB_OneCH_Top.CtrlHS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I2.Ctrl_HS TB_OneCH_Top.CtrlHS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I2.I8.in TB_OneCH_Top.CtrlHS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I2.I8.I10.A TB_OneCH_Top.CtrlHS[1] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.\vdd3!  TB_OneCH_Top.I0.I2.I8.I10.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.\gnd!  TB_OneCH_Top.I0.I2.I8.I10.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.\vdde!  TB_OneCH_Top.I0.I2.I8.I10.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.net20 TB_OneCH_Top.I0.I2.I8.I10.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.net4 TB_OneCH_Top.I0.I2.I8.I10.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.net024 TB_OneCH_Top.I0.I2.I8.I10.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.net023 TB_OneCH_Top.I0.I2.I8.I10.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I8.I10.net10 TB_OneCH_Top.I0.I2.I8.I10.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.VG_nedia TB_OneCH_Top.I0.I2.VG_nedia analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.out TB_OneCH_Top.I0.I2.VG_nedia analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I2.VOUT TB_OneCH_Top.I0.I2.VG_nedia analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.net11 TB_OneCH_Top.I0.I2.I9.net11 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I2.V1 TB_OneCH_Top.I0.I2.I9.net11 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net09 TB_OneCH_Top.I0.I2.I9.I2.net09 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net010 TB_OneCH_Top.I0.I2.I9.I2.net010 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net011 TB_OneCH_Top.I0.I2.I9.I2.net011 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net012 TB_OneCH_Top.I0.I2.I9.I2.net012 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net013 TB_OneCH_Top.I0.I2.I9.I2.net013 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net014 TB_OneCH_Top.I0.I2.I9.I2.net014 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net015 TB_OneCH_Top.I0.I2.I9.I2.net015 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net016 TB_OneCH_Top.I0.I2.I9.I2.net016 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net017 TB_OneCH_Top.I0.I2.I9.I2.net017 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net018 TB_OneCH_Top.I0.I2.I9.I2.net018 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net019 TB_OneCH_Top.I0.I2.I9.I2.net019 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net020 TB_OneCH_Top.I0.I2.I9.I2.net020 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net021 TB_OneCH_Top.I0.I2.I9.I2.net021 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net022 TB_OneCH_Top.I0.I2.I9.I2.net022 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net023 TB_OneCH_Top.I0.I2.I9.I2.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net024 TB_OneCH_Top.I0.I2.I9.I2.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net025 TB_OneCH_Top.I0.I2.I9.I2.net025 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net026 TB_OneCH_Top.I0.I2.I9.I2.net026 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net027 TB_OneCH_Top.I0.I2.I9.I2.net027 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net028 TB_OneCH_Top.I0.I2.I9.I2.net028 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net029 TB_OneCH_Top.I0.I2.I9.I2.net029 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net030 TB_OneCH_Top.I0.I2.I9.I2.net030 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net031 TB_OneCH_Top.I0.I2.I9.I2.net031 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net032 TB_OneCH_Top.I0.I2.I9.I2.net032 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net033 TB_OneCH_Top.I0.I2.I9.I2.net033 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net034 TB_OneCH_Top.I0.I2.I9.I2.net034 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net035 TB_OneCH_Top.I0.I2.I9.I2.net035 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net036 TB_OneCH_Top.I0.I2.I9.I2.net036 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net037 TB_OneCH_Top.I0.I2.I9.I2.net037 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net038 TB_OneCH_Top.I0.I2.I9.I2.net038 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net08 TB_OneCH_Top.I0.I2.I9.I2.net08 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net07 TB_OneCH_Top.I0.I2.I9.I2.net07 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net5 TB_OneCH_Top.I0.I2.I9.I2.net5 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I2.net6 TB_OneCH_Top.I0.I2.I9.I2.net6 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.net9 TB_OneCH_Top.I0.I2.I9.net9 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.out TB_OneCH_Top.I0.I2.I9.net9 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.VOUT TB_OneCH_Top.I0.I2.I9.net9 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.net10 TB_OneCH_Top.I0.I2.I9.I1.net10 analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.V2 TB_OneCH_Top.I0.I2.I9.I1.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net09 TB_OneCH_Top.I0.I2.I9.I1.I0.net09 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net010 TB_OneCH_Top.I0.I2.I9.I1.I0.net010 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net011 TB_OneCH_Top.I0.I2.I9.I1.I0.net011 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net012 TB_OneCH_Top.I0.I2.I9.I1.I0.net012 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net013 TB_OneCH_Top.I0.I2.I9.I1.I0.net013 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net014 TB_OneCH_Top.I0.I2.I9.I1.I0.net014 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net015 TB_OneCH_Top.I0.I2.I9.I1.I0.net015 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net016 TB_OneCH_Top.I0.I2.I9.I1.I0.net016 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net017 TB_OneCH_Top.I0.I2.I9.I1.I0.net017 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net018 TB_OneCH_Top.I0.I2.I9.I1.I0.net018 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net019 TB_OneCH_Top.I0.I2.I9.I1.I0.net019 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net020 TB_OneCH_Top.I0.I2.I9.I1.I0.net020 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net021 TB_OneCH_Top.I0.I2.I9.I1.I0.net021 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net022 TB_OneCH_Top.I0.I2.I9.I1.I0.net022 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net023 TB_OneCH_Top.I0.I2.I9.I1.I0.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net024 TB_OneCH_Top.I0.I2.I9.I1.I0.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net025 TB_OneCH_Top.I0.I2.I9.I1.I0.net025 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net026 TB_OneCH_Top.I0.I2.I9.I1.I0.net026 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net027 TB_OneCH_Top.I0.I2.I9.I1.I0.net027 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net028 TB_OneCH_Top.I0.I2.I9.I1.I0.net028 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net029 TB_OneCH_Top.I0.I2.I9.I1.I0.net029 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net030 TB_OneCH_Top.I0.I2.I9.I1.I0.net030 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net031 TB_OneCH_Top.I0.I2.I9.I1.I0.net031 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net032 TB_OneCH_Top.I0.I2.I9.I1.I0.net032 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net033 TB_OneCH_Top.I0.I2.I9.I1.I0.net033 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net034 TB_OneCH_Top.I0.I2.I9.I1.I0.net034 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net035 TB_OneCH_Top.I0.I2.I9.I1.I0.net035 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net036 TB_OneCH_Top.I0.I2.I9.I1.I0.net036 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net037 TB_OneCH_Top.I0.I2.I9.I1.I0.net037 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net038 TB_OneCH_Top.I0.I2.I9.I1.I0.net038 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net08 TB_OneCH_Top.I0.I2.I9.I1.I0.net08 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net07 TB_OneCH_Top.I0.I2.I9.I1.I0.net07 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net5 TB_OneCH_Top.I0.I2.I9.I1.I0.net5 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I0.net6 TB_OneCH_Top.I0.I2.I9.I1.I0.net6 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.inn3v TB_OneCH_Top.I0.I2.I9.I1.inn3v analog electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.Q TB_OneCH_Top.I0.I2.I9.I1.inn3v analog electrical )
+
+( net TB_OneCH_Top.CtrlLS[1] TB_OneCH_Top.CtrlLS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I7.Dout[1] TB_OneCH_Top.CtrlLS[1] digital/mixed logic )
+( net TB_OneCH_Top.I0.CtrlLS_2 TB_OneCH_Top.CtrlLS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I2.Ctrl_LS TB_OneCH_Top.CtrlLS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I2.I9.in TB_OneCH_Top.CtrlLS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.in TB_OneCH_Top.CtrlLS[1] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.A TB_OneCH_Top.CtrlLS[1] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.\vdd3!  TB_OneCH_Top.I0.I2.I9.I1.I10.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.\gnd!  TB_OneCH_Top.I0.I2.I9.I1.I10.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.\vdde!  TB_OneCH_Top.I0.I2.I9.I1.I10.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.net20 TB_OneCH_Top.I0.I2.I9.I1.I10.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.net4 TB_OneCH_Top.I0.I2.I9.I1.I10.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.net024 TB_OneCH_Top.I0.I2.I9.I1.I10.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.net023 TB_OneCH_Top.I0.I2.I9.I1.I10.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I2.I9.I1.I10.net10 TB_OneCH_Top.I0.I2.I9.I1.I10.net10 analog electrical )
+
+( net TB_OneCH_Top.vout2 TB_OneCH_Top.vout2 analog electrical )
+( net TB_OneCH_Top.I0.out2 TB_OneCH_Top.vout2 analog electrical )
+( net TB_OneCH_Top.I0.I2.OUT TB_OneCH_Top.vout2 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.VG_ped TB_OneCH_Top.I0.I1.VG_ped analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.out TB_OneCH_Top.I0.I1.VG_ped analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.I0.VOUT TB_OneCH_Top.I0.I1.VG_ped analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.net10 TB_OneCH_Top.I0.I1.I8.net10 analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.I0.V2 TB_OneCH_Top.I0.I1.I8.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net09 TB_OneCH_Top.I0.I1.I8.I0.net09 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net010 TB_OneCH_Top.I0.I1.I8.I0.net010 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net011 TB_OneCH_Top.I0.I1.I8.I0.net011 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net012 TB_OneCH_Top.I0.I1.I8.I0.net012 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net013 TB_OneCH_Top.I0.I1.I8.I0.net013 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net014 TB_OneCH_Top.I0.I1.I8.I0.net014 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net015 TB_OneCH_Top.I0.I1.I8.I0.net015 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net016 TB_OneCH_Top.I0.I1.I8.I0.net016 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net017 TB_OneCH_Top.I0.I1.I8.I0.net017 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net018 TB_OneCH_Top.I0.I1.I8.I0.net018 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net019 TB_OneCH_Top.I0.I1.I8.I0.net019 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net020 TB_OneCH_Top.I0.I1.I8.I0.net020 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net021 TB_OneCH_Top.I0.I1.I8.I0.net021 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net022 TB_OneCH_Top.I0.I1.I8.I0.net022 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net023 TB_OneCH_Top.I0.I1.I8.I0.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net024 TB_OneCH_Top.I0.I1.I8.I0.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net025 TB_OneCH_Top.I0.I1.I8.I0.net025 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net026 TB_OneCH_Top.I0.I1.I8.I0.net026 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net027 TB_OneCH_Top.I0.I1.I8.I0.net027 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net028 TB_OneCH_Top.I0.I1.I8.I0.net028 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net029 TB_OneCH_Top.I0.I1.I8.I0.net029 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net030 TB_OneCH_Top.I0.I1.I8.I0.net030 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net031 TB_OneCH_Top.I0.I1.I8.I0.net031 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net032 TB_OneCH_Top.I0.I1.I8.I0.net032 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net033 TB_OneCH_Top.I0.I1.I8.I0.net033 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net034 TB_OneCH_Top.I0.I1.I8.I0.net034 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net035 TB_OneCH_Top.I0.I1.I8.I0.net035 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net036 TB_OneCH_Top.I0.I1.I8.I0.net036 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net037 TB_OneCH_Top.I0.I1.I8.I0.net037 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net038 TB_OneCH_Top.I0.I1.I8.I0.net038 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net08 TB_OneCH_Top.I0.I1.I8.I0.net08 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net07 TB_OneCH_Top.I0.I1.I8.I0.net07 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net5 TB_OneCH_Top.I0.I1.I8.I0.net5 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I0.net6 TB_OneCH_Top.I0.I1.I8.I0.net6 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.inn3v TB_OneCH_Top.I0.I1.I8.inn3v analog electrical )
+( net TB_OneCH_Top.I0.I1.I8.I10.Q TB_OneCH_Top.I0.I1.I8.inn3v analog electrical )
+
+( net TB_OneCH_Top.CtrlHS[0] TB_OneCH_Top.CtrlHS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I6.Dout[0] TB_OneCH_Top.CtrlHS[0] digital/mixed logic )
+( net TB_OneCH_Top.I0.CtrlHS_1 TB_OneCH_Top.CtrlHS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I1.Ctrl_HS TB_OneCH_Top.CtrlHS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I1.I8.in TB_OneCH_Top.CtrlHS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I1.I8.I10.A TB_OneCH_Top.CtrlHS[0] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.\vdd3!  TB_OneCH_Top.I0.I1.I8.I10.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.\gnd!  TB_OneCH_Top.I0.I1.I8.I10.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.\vdde!  TB_OneCH_Top.I0.I1.I8.I10.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.net20 TB_OneCH_Top.I0.I1.I8.I10.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.net4 TB_OneCH_Top.I0.I1.I8.I10.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.net024 TB_OneCH_Top.I0.I1.I8.I10.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.net023 TB_OneCH_Top.I0.I1.I8.I10.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I8.I10.net10 TB_OneCH_Top.I0.I1.I8.I10.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.VG_nedia TB_OneCH_Top.I0.I1.VG_nedia analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.out TB_OneCH_Top.I0.I1.VG_nedia analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I2.VOUT TB_OneCH_Top.I0.I1.VG_nedia analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.net11 TB_OneCH_Top.I0.I1.I9.net11 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I2.V1 TB_OneCH_Top.I0.I1.I9.net11 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net09 TB_OneCH_Top.I0.I1.I9.I2.net09 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net010 TB_OneCH_Top.I0.I1.I9.I2.net010 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net011 TB_OneCH_Top.I0.I1.I9.I2.net011 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net012 TB_OneCH_Top.I0.I1.I9.I2.net012 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net013 TB_OneCH_Top.I0.I1.I9.I2.net013 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net014 TB_OneCH_Top.I0.I1.I9.I2.net014 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net015 TB_OneCH_Top.I0.I1.I9.I2.net015 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net016 TB_OneCH_Top.I0.I1.I9.I2.net016 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net017 TB_OneCH_Top.I0.I1.I9.I2.net017 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net018 TB_OneCH_Top.I0.I1.I9.I2.net018 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net019 TB_OneCH_Top.I0.I1.I9.I2.net019 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net020 TB_OneCH_Top.I0.I1.I9.I2.net020 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net021 TB_OneCH_Top.I0.I1.I9.I2.net021 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net022 TB_OneCH_Top.I0.I1.I9.I2.net022 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net023 TB_OneCH_Top.I0.I1.I9.I2.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net024 TB_OneCH_Top.I0.I1.I9.I2.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net025 TB_OneCH_Top.I0.I1.I9.I2.net025 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net026 TB_OneCH_Top.I0.I1.I9.I2.net026 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net027 TB_OneCH_Top.I0.I1.I9.I2.net027 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net028 TB_OneCH_Top.I0.I1.I9.I2.net028 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net029 TB_OneCH_Top.I0.I1.I9.I2.net029 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net030 TB_OneCH_Top.I0.I1.I9.I2.net030 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net031 TB_OneCH_Top.I0.I1.I9.I2.net031 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net032 TB_OneCH_Top.I0.I1.I9.I2.net032 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net033 TB_OneCH_Top.I0.I1.I9.I2.net033 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net034 TB_OneCH_Top.I0.I1.I9.I2.net034 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net035 TB_OneCH_Top.I0.I1.I9.I2.net035 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net036 TB_OneCH_Top.I0.I1.I9.I2.net036 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net037 TB_OneCH_Top.I0.I1.I9.I2.net037 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net038 TB_OneCH_Top.I0.I1.I9.I2.net038 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net08 TB_OneCH_Top.I0.I1.I9.I2.net08 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net07 TB_OneCH_Top.I0.I1.I9.I2.net07 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net5 TB_OneCH_Top.I0.I1.I9.I2.net5 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I2.net6 TB_OneCH_Top.I0.I1.I9.I2.net6 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.net9 TB_OneCH_Top.I0.I1.I9.net9 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.out TB_OneCH_Top.I0.I1.I9.net9 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.VOUT TB_OneCH_Top.I0.I1.I9.net9 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.net10 TB_OneCH_Top.I0.I1.I9.I1.net10 analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.V2 TB_OneCH_Top.I0.I1.I9.I1.net10 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net09 TB_OneCH_Top.I0.I1.I9.I1.I0.net09 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net010 TB_OneCH_Top.I0.I1.I9.I1.I0.net010 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net011 TB_OneCH_Top.I0.I1.I9.I1.I0.net011 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net012 TB_OneCH_Top.I0.I1.I9.I1.I0.net012 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net013 TB_OneCH_Top.I0.I1.I9.I1.I0.net013 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net014 TB_OneCH_Top.I0.I1.I9.I1.I0.net014 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net015 TB_OneCH_Top.I0.I1.I9.I1.I0.net015 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net016 TB_OneCH_Top.I0.I1.I9.I1.I0.net016 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net017 TB_OneCH_Top.I0.I1.I9.I1.I0.net017 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net018 TB_OneCH_Top.I0.I1.I9.I1.I0.net018 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net019 TB_OneCH_Top.I0.I1.I9.I1.I0.net019 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net020 TB_OneCH_Top.I0.I1.I9.I1.I0.net020 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net021 TB_OneCH_Top.I0.I1.I9.I1.I0.net021 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net022 TB_OneCH_Top.I0.I1.I9.I1.I0.net022 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net023 TB_OneCH_Top.I0.I1.I9.I1.I0.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net024 TB_OneCH_Top.I0.I1.I9.I1.I0.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net025 TB_OneCH_Top.I0.I1.I9.I1.I0.net025 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net026 TB_OneCH_Top.I0.I1.I9.I1.I0.net026 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net027 TB_OneCH_Top.I0.I1.I9.I1.I0.net027 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net028 TB_OneCH_Top.I0.I1.I9.I1.I0.net028 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net029 TB_OneCH_Top.I0.I1.I9.I1.I0.net029 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net030 TB_OneCH_Top.I0.I1.I9.I1.I0.net030 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net031 TB_OneCH_Top.I0.I1.I9.I1.I0.net031 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net032 TB_OneCH_Top.I0.I1.I9.I1.I0.net032 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net033 TB_OneCH_Top.I0.I1.I9.I1.I0.net033 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net034 TB_OneCH_Top.I0.I1.I9.I1.I0.net034 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net035 TB_OneCH_Top.I0.I1.I9.I1.I0.net035 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net036 TB_OneCH_Top.I0.I1.I9.I1.I0.net036 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net037 TB_OneCH_Top.I0.I1.I9.I1.I0.net037 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net038 TB_OneCH_Top.I0.I1.I9.I1.I0.net038 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net08 TB_OneCH_Top.I0.I1.I9.I1.I0.net08 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net07 TB_OneCH_Top.I0.I1.I9.I1.I0.net07 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net5 TB_OneCH_Top.I0.I1.I9.I1.I0.net5 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I0.net6 TB_OneCH_Top.I0.I1.I9.I1.I0.net6 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.inn3v TB_OneCH_Top.I0.I1.I9.I1.inn3v analog electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.Q TB_OneCH_Top.I0.I1.I9.I1.inn3v analog electrical )
+
+( net TB_OneCH_Top.CtrlLS[0] TB_OneCH_Top.CtrlLS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I7.Dout[0] TB_OneCH_Top.CtrlLS[0] digital/mixed logic )
+( net TB_OneCH_Top.I0.CtrlLS_1 TB_OneCH_Top.CtrlLS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I1.Ctrl_LS TB_OneCH_Top.CtrlLS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I1.I9.in TB_OneCH_Top.CtrlLS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.in TB_OneCH_Top.CtrlLS[0] analog/mixed electrical )
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.A TB_OneCH_Top.CtrlLS[0] analog/mixed electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.\vdd3!  TB_OneCH_Top.I0.I1.I9.I1.I10.\vdd3!  analog electrical ( resolved_name cds_globals.\vdd3!  ) )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.\gnd!  TB_OneCH_Top.I0.I1.I9.I1.I10.\gnd!  analog electrical ( resolved_name cds_globals.\gnd!  ) )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.\vdde!  TB_OneCH_Top.I0.I1.I9.I1.I10.\vdde!  analog electrical ( resolved_name cds_globals.\vdde!  ) )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.net20 TB_OneCH_Top.I0.I1.I9.I1.I10.net20 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.net4 TB_OneCH_Top.I0.I1.I9.I1.I10.net4 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.net024 TB_OneCH_Top.I0.I1.I9.I1.I10.net024 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.net023 TB_OneCH_Top.I0.I1.I9.I1.I10.net023 analog electrical )
+
+( net TB_OneCH_Top.I0.I1.I9.I1.I10.net10 TB_OneCH_Top.I0.I1.I9.I1.I10.net10 analog electrical )
+
+( net TB_OneCH_Top.vout1 TB_OneCH_Top.vout1 analog electrical )
+( net TB_OneCH_Top.I0.out1 TB_OneCH_Top.vout1 analog electrical )
+( net TB_OneCH_Top.I0.I1.OUT TB_OneCH_Top.vout1 analog electrical )
+
+( net TB_OneCH_Top.ChSel_LS TB_OneCH_Top.ChSel_LS digital logic )
+( net TB_OneCH_Top.I32.ChSel_LS TB_OneCH_Top.ChSel_LS digital logic )
+( net TB_OneCH_Top.I7.Bin TB_OneCH_Top.ChSel_LS digital logic )
+
+( net TB_OneCH_Top.CtrlLS[7] TB_OneCH_Top.CtrlLS[7] digital logic )
+( net TB_OneCH_Top.I7.Dout[7] TB_OneCH_Top.CtrlLS[7] digital logic )
+
+( net TB_OneCH_Top.CtrlLS[6] TB_OneCH_Top.CtrlLS[6] digital logic )
+( net TB_OneCH_Top.I7.Dout[6] TB_OneCH_Top.CtrlLS[6] digital logic )
+
+( net TB_OneCH_Top.CtrlLS[5] TB_OneCH_Top.CtrlLS[5] digital logic )
+( net TB_OneCH_Top.I7.Dout[5] TB_OneCH_Top.CtrlLS[5] digital logic )
+
+( net TB_OneCH_Top.CtrlLS[4] TB_OneCH_Top.CtrlLS[4] digital logic )
+( net TB_OneCH_Top.I7.Dout[4] TB_OneCH_Top.CtrlLS[4] digital logic )
+
+( net TB_OneCH_Top.CtrlLS[3] TB_OneCH_Top.CtrlLS[3] digital logic )
+( net TB_OneCH_Top.I7.Dout[3] TB_OneCH_Top.CtrlLS[3] digital logic )
+
+( net TB_OneCH_Top.CtrlLS[2] TB_OneCH_Top.CtrlLS[2] digital logic )
+( net TB_OneCH_Top.I7.Dout[2] TB_OneCH_Top.CtrlLS[2] digital logic )
+
+( net TB_OneCH_Top.ChSel_HS TB_OneCH_Top.ChSel_HS digital logic )
+( net TB_OneCH_Top.I32.ChSel_HS TB_OneCH_Top.ChSel_HS digital logic )
+( net TB_OneCH_Top.I6.Bin TB_OneCH_Top.ChSel_HS digital logic )
+
+( net TB_OneCH_Top.CtrlHS[7] TB_OneCH_Top.CtrlHS[7] digital logic )
+( net TB_OneCH_Top.I6.Dout[7] TB_OneCH_Top.CtrlHS[7] digital logic )
+
+( net TB_OneCH_Top.CtrlHS[6] TB_OneCH_Top.CtrlHS[6] digital logic )
+( net TB_OneCH_Top.I6.Dout[6] TB_OneCH_Top.CtrlHS[6] digital logic )
+
+( net TB_OneCH_Top.CtrlHS[5] TB_OneCH_Top.CtrlHS[5] digital logic )
+( net TB_OneCH_Top.I6.Dout[5] TB_OneCH_Top.CtrlHS[5] digital logic )
+
+( net TB_OneCH_Top.CtrlHS[4] TB_OneCH_Top.CtrlHS[4] digital logic )
+( net TB_OneCH_Top.I6.Dout[4] TB_OneCH_Top.CtrlHS[4] digital logic )
+
+( net TB_OneCH_Top.CtrlHS[3] TB_OneCH_Top.CtrlHS[3] digital logic )
+( net TB_OneCH_Top.I6.Dout[3] TB_OneCH_Top.CtrlHS[3] digital logic )
+
+( net TB_OneCH_Top.CtrlHS[2] TB_OneCH_Top.CtrlHS[2] digital logic )
+( net TB_OneCH_Top.I6.Dout[2] TB_OneCH_Top.CtrlHS[2] digital logic )
+
+( net TB_OneCH_Top.I32.period_ns TB_OneCH_Top.I32.period_ns digital logic (type rnm) )
+
+( net TB_OneCH_Top.I32.CAT_phase_ns TB_OneCH_Top.I32.CAT_phase_ns digital logic (type rnm) )
+
+( net TB_OneCH_Top.I32.ANO_phase_ns TB_OneCH_Top.I32.ANO_phase_ns digital logic (type rnm) )
+
+( net TB_OneCH_Top.I32.IPD_ns TB_OneCH_Top.I32.IPD_ns digital logic (type rnm) )
+
+( net TB_OneCH_Top.I32.Rest_ns TB_OneCH_Top.I32.Rest_ns digital logic (type rnm) )
+
+( net TB_OneCH_Top.I32.ChSel_ANO TB_OneCH_Top.I32.ChSel_ANO digital logic )
+
+( net TB_OneCH_Top.I32.ChSel_CAT TB_OneCH_Top.I32.ChSel_CAT digital logic )
+
+( net cds_globals.\vdd!  cds_globals.\vdd!  analog electrical )
+
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\gnd! 
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I0.I0.I45.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I46.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I47.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I48.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I49.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I31.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I15.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I13.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I11.\gnd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I10.\gnd!  logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\vdd! 
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I0.I0.I45.\vdd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I46.\vdd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I47.\vdd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I48.\vdd!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I49.\vdd!  logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.E2L_2:module
+   cds_globals.\vdd3! 
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I0.I0.I31.\vdd3!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I15.\vdd3!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I13.\vdd3!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I11.\vdd3!  logic digital )
+    ( TB_OneCH_Top.I0.I0.I10.\vdd3!  logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.CtrlLS[1]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I7.Dout[1] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.CtrlLS[0]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I7.Dout[0] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.E2L_2:module
+   TB_OneCH_Top.Enable_ST
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I7.Enable logic digital )
+    ( TB_OneCH_Top.I6.Enable logic digital )
+   )
+   "connect E2L_2 merged"
+   ( (vsup 1.800000000000000) (vthi 1.200000000000000) (vtlo 0.600000000000000) (tr 0.000000000200000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.Enable_ST
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I32.EN_ST logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.CtrlHS[1]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I6.Dout[1] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.CtrlHS[0]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I6.Dout[0] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.Mag_ST[4]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I32.MAG_ST[4] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.Mag_ST[3]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I32.MAG_ST[3] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.Mag_ST[2]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I32.MAG_ST[2] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.Mag_ST[1]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I32.MAG_ST[1] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   TB_OneCH_Top.Mag_ST[0]
+   electrical
+   analog
+   (
+    ( TB_OneCH_Top.I32.MAG_ST[0] logic digital )
+   )
+   "connect L2E_2 merged"
+   ( (vsup 1.800000000000000) (vlo 0) (tr 0.000000000200000) (tf 0.000000000200000) (rlo 200) (rhi 200) (rx 40) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+(instance TB_OneCH_Top.I0.cds_alias_inst16 analog)
+(instance TB_OneCH_Top.I0.cds_alias_inst17 analog)
+(instance TB_OneCH_Top.I0.cds_alias_inst18 analog)
+(instance TB_OneCH_Top.I0.I0.cds_alias_inst5 analog)
+(instance TB_OneCH_Top.I0.I0.cds_alias_inst6 analog)
+(instance TB_OneCH_Top.I0.I0.I0.R0 analog)
+(instance TB_OneCH_Top.I0.I0.I0.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I0.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I0.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I0.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I0.M14 analog)
+(instance TB_OneCH_Top.I0.I0.I0 analog)
+(instance TB_OneCH_Top.I0.I0.I45.nand2_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I45.nand2_1.MN2 analog)
+(instance TB_OneCH_Top.I0.I0.I45.nand2_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I45.nand2_1.MP2 analog)
+(instance TB_OneCH_Top.I0.I0.I45.nand2_1 analog)
+(instance TB_OneCH_Top.I0.I0.I45.invr_1.ne analog)
+(instance TB_OneCH_Top.I0.I0.I45.invr_1.pe analog)
+(instance TB_OneCH_Top.I0.I0.I45.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I45 mixed)
+(instance TB_OneCH_Top.I0.I0.I46.nand2_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I46.nand2_1.MN2 analog)
+(instance TB_OneCH_Top.I0.I0.I46.nand2_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I46.nand2_1.MP2 analog)
+(instance TB_OneCH_Top.I0.I0.I46.nand2_1 analog)
+(instance TB_OneCH_Top.I0.I0.I46.invr_1.ne analog)
+(instance TB_OneCH_Top.I0.I0.I46.invr_1.pe analog)
+(instance TB_OneCH_Top.I0.I0.I46.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I46 mixed)
+(instance TB_OneCH_Top.I0.I0.I47.nand2_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I47.nand2_1.MN2 analog)
+(instance TB_OneCH_Top.I0.I0.I47.nand2_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I47.nand2_1.MP2 analog)
+(instance TB_OneCH_Top.I0.I0.I47.nand2_1 analog)
+(instance TB_OneCH_Top.I0.I0.I47.invr_1.ne analog)
+(instance TB_OneCH_Top.I0.I0.I47.invr_1.pe analog)
+(instance TB_OneCH_Top.I0.I0.I47.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I47 mixed)
+(instance TB_OneCH_Top.I0.I0.I48.nand2_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I48.nand2_1.MN2 analog)
+(instance TB_OneCH_Top.I0.I0.I48.nand2_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I48.nand2_1.MP2 analog)
+(instance TB_OneCH_Top.I0.I0.I48.nand2_1 analog)
+(instance TB_OneCH_Top.I0.I0.I48.invr_1.ne analog)
+(instance TB_OneCH_Top.I0.I0.I48.invr_1.pe analog)
+(instance TB_OneCH_Top.I0.I0.I48.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I48 mixed)
+(instance TB_OneCH_Top.I0.I0.I49.nand2_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I49.nand2_1.MN2 analog)
+(instance TB_OneCH_Top.I0.I0.I49.nand2_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I49.nand2_1.MP2 analog)
+(instance TB_OneCH_Top.I0.I0.I49.nand2_1 analog)
+(instance TB_OneCH_Top.I0.I0.I49.invr_1.ne analog)
+(instance TB_OneCH_Top.I0.I0.I49.invr_1.pe analog)
+(instance TB_OneCH_Top.I0.I0.I49.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I49 mixed)
+(instance TB_OneCH_Top.I0.I0.I2.cds_alias_inst2 analog)
+(instance TB_OneCH_Top.I0.I0.I2.cds_alias_inst3 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M6 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M8 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M9 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M4 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M5 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M7 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I17 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I0.cds_alias_inst1 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I0.M26 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I0.M13 analog)
+(instance TB_OneCH_Top.I0.I0.I2.I0 analog)
+(instance TB_OneCH_Top.I0.I0.I2.C5 analog)
+(instance TB_OneCH_Top.I0.I0.I2.C1 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M17 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M15 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M14 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M8 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M16 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M5 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M7 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M6 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M4 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M11 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M12 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M10 analog)
+(instance TB_OneCH_Top.I0.I0.I2.M9 analog)
+(instance TB_OneCH_Top.I0.I0.I2.R3 analog)
+(instance TB_OneCH_Top.I0.I0.I2.R2 analog)
+(instance TB_OneCH_Top.I0.I0.I2.R0 analog)
+(instance TB_OneCH_Top.I0.I0.I2 analog)
+(instance TB_OneCH_Top.I0.I0.I1.cds_alias_inst4 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M31 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M20 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M22 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M23 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M24 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M25 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M29 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M32 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M33 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M35 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M36 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M38 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M39 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M40 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M41 analog)
+(instance TB_OneCH_Top.I0.I0.I1.M42 analog)
+(instance TB_OneCH_Top.I0.I0.I1 analog)
+(instance TB_OneCH_Top.I0.I0.I31.invr_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I31.invr_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I31.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I31 mixed)
+(instance TB_OneCH_Top.I0.I0.I15.invr_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I15.invr_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I15.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I15 mixed)
+(instance TB_OneCH_Top.I0.I0.I13.invr_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I13.invr_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I13.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I13 mixed)
+(instance TB_OneCH_Top.I0.I0.I11.invr_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I11.invr_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I11.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I11 mixed)
+(instance TB_OneCH_Top.I0.I0.I10.invr_1.MN1 analog)
+(instance TB_OneCH_Top.I0.I0.I10.invr_1.MP1 analog)
+(instance TB_OneCH_Top.I0.I0.I10.invr_1 analog)
+(instance TB_OneCH_Top.I0.I0.I10 mixed)
+(instance TB_OneCH_Top.I0.I0.I16.M6 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M8 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M9 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M4 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M5 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M7 analog)
+(instance TB_OneCH_Top.I0.I0.I16.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I16 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M6 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M8 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M9 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M4 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M5 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M7 analog)
+(instance TB_OneCH_Top.I0.I0.I30.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I30 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M6 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M8 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M9 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M4 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M5 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M7 analog)
+(instance TB_OneCH_Top.I0.I0.I14.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I14 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M6 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M8 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M9 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M4 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M5 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M7 analog)
+(instance TB_OneCH_Top.I0.I0.I12.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I12 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M6 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M8 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M9 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M0 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M2 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M4 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M3 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M5 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M7 analog)
+(instance TB_OneCH_Top.I0.I0.I29.M1 analog)
+(instance TB_OneCH_Top.I0.I0.I29 analog)
+(instance TB_OneCH_Top.I0.I0 mixed)
+(instance TB_OneCH_Top.I0.I2.cds_alias_inst13 analog)
+(instance TB_OneCH_Top.I0.I2.cds_alias_inst14 analog)
+(instance TB_OneCH_Top.I0.I2.cds_alias_inst15 analog)
+(instance TB_OneCH_Top.I0.I2.I8.cds_alias_inst7 analog)
+(instance TB_OneCH_Top.I0.I2.I8.cds_alias_inst8 analog)
+(instance TB_OneCH_Top.I0.I2.I8.cds_alias_inst9 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R37 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R36 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R35 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R34 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R33 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R32 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R31 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R30 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R29 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R28 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R27 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R26 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R25 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R24 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R23 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R22 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R21 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R20 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R19 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R18 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R17 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R16 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R15 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R14 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R13 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R12 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R11 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R10 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R9 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R8 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R7 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R6 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R5 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R4 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R3 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0.R2 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I0 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M6 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M8 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M9 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M0 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M2 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M4 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M3 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M5 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M7 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10.M1 analog)
+(instance TB_OneCH_Top.I0.I2.I8.I10 analog)
+(instance TB_OneCH_Top.I0.I2.I8.M13 analog)
+(instance TB_OneCH_Top.I0.I2.I8 analog)
+(instance TB_OneCH_Top.I0.I2.I9.cds_alias_inst10 analog)
+(instance TB_OneCH_Top.I0.I2.I9.cds_alias_inst11 analog)
+(instance TB_OneCH_Top.I0.I2.I9.cds_alias_inst12 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R37 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R36 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R35 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R34 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R33 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R32 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R31 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R30 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R29 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R28 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R27 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R26 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R25 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R24 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R23 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R22 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R21 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R20 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R19 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R18 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R17 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R16 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R15 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R14 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R13 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R12 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R11 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R10 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R9 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R8 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R7 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R6 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R5 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R4 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R3 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2.R2 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I2 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.cds_alias_inst7 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.cds_alias_inst8 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.cds_alias_inst9 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R37 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R36 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R35 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R34 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R33 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R32 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R31 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R30 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R29 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R28 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R27 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R26 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R25 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R24 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R23 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R22 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R21 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R20 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R19 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R18 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R17 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R16 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R15 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R14 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R13 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R12 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R11 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R10 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R9 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R8 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R7 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R6 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R5 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R4 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R3 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0.R2 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I0 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M6 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M8 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M9 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M0 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M2 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M4 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M3 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M5 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M7 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10.M1 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.I10 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1.M13 analog)
+(instance TB_OneCH_Top.I0.I2.I9.I1 analog)
+(instance TB_OneCH_Top.I0.I2.I9.M1 analog)
+(instance TB_OneCH_Top.I0.I2.I9 analog)
+(instance TB_OneCH_Top.I0.I2.M34 analog)
+(instance TB_OneCH_Top.I0.I2.M66 analog)
+(instance TB_OneCH_Top.I0.I2 analog)
+(instance TB_OneCH_Top.I0.I1.cds_alias_inst13 analog)
+(instance TB_OneCH_Top.I0.I1.cds_alias_inst14 analog)
+(instance TB_OneCH_Top.I0.I1.cds_alias_inst15 analog)
+(instance TB_OneCH_Top.I0.I1.I8.cds_alias_inst7 analog)
+(instance TB_OneCH_Top.I0.I1.I8.cds_alias_inst8 analog)
+(instance TB_OneCH_Top.I0.I1.I8.cds_alias_inst9 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R37 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R36 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R35 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R34 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R33 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R32 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R31 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R30 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R29 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R28 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R27 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R26 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R25 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R24 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R23 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R22 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R21 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R20 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R19 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R18 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R17 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R16 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R15 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R14 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R13 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R12 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R11 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R10 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R9 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R8 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R7 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R6 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R5 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R4 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R3 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0.R2 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I0 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M6 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M8 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M9 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M0 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M2 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M4 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M3 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M5 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M7 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10.M1 analog)
+(instance TB_OneCH_Top.I0.I1.I8.I10 analog)
+(instance TB_OneCH_Top.I0.I1.I8.M13 analog)
+(instance TB_OneCH_Top.I0.I1.I8 analog)
+(instance TB_OneCH_Top.I0.I1.I9.cds_alias_inst10 analog)
+(instance TB_OneCH_Top.I0.I1.I9.cds_alias_inst11 analog)
+(instance TB_OneCH_Top.I0.I1.I9.cds_alias_inst12 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R37 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R36 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R35 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R34 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R33 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R32 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R31 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R30 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R29 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R28 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R27 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R26 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R25 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R24 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R23 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R22 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R21 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R20 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R19 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R18 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R17 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R16 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R15 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R14 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R13 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R12 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R11 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R10 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R9 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R8 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R7 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R6 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R5 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R4 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R3 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2.R2 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I2 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.cds_alias_inst7 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.cds_alias_inst8 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.cds_alias_inst9 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R37 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R36 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R35 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R34 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R33 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R32 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R31 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R30 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R29 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R28 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R27 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R26 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R25 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R24 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R23 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R22 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R21 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R20 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R19 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R18 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R17 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R16 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R15 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R14 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R13 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R12 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R11 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R10 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R9 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R8 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R7 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R6 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R5 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R4 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R3 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0.R2 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I0 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M6 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M8 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M9 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M0 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M2 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M4 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M3 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M5 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M7 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10.M1 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.I10 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1.M13 analog)
+(instance TB_OneCH_Top.I0.I1.I9.I1 analog)
+(instance TB_OneCH_Top.I0.I1.I9.M1 analog)
+(instance TB_OneCH_Top.I0.I1.I9 analog)
+(instance TB_OneCH_Top.I0.I1.M34 analog)
+(instance TB_OneCH_Top.I0.I1.M66 analog)
+(instance TB_OneCH_Top.I0.I1 analog)
+(instance TB_OneCH_Top.I0 mixed)
+(instance TB_OneCH_Top.I7 digital)
+(instance TB_OneCH_Top.I6 digital)
+(instance TB_OneCH_Top.I32 dmixed (type rnm))
+(instance TB_OneCH_Top.I1 analog)
+(instance TB_OneCH_Top.R0 analog)
+(instance TB_OneCH_Top.V3 analog)
+(instance TB_OneCH_Top.V2 analog)
+(instance TB_OneCH_Top.V0 analog)
+(instance TB_OneCH_Top.V1 analog)
+(instance TB_OneCH_Top mixed/dmixed (type rnm))
+(instance cds_globals analog)

@@ -1,0 +1,154 @@
+connect nsd ptiec
+connect nsd isoptiec
+connect psd ntiec
+text poly_text attach polytrm
+text poly_label attach polytrm
+text met1_text attach met1trm
+text met1_label attach met1trm
+text met2_text attach met2trm
+text met2_label attach met2trm
+text met3_text attach met3trm
+text met3_label attach met3trm
+text met4_text attach met4trm
+text met4_label attach met4trm
+text mtp_text attach mtptrm
+text mtp_label attach mtptrm
+text mtpl_text attach mtpltrm
+text mtpl_label attach mtpltrm
+text lpower attach dphopin3
+connect met1trm nbd_nma by cont_nma
+connect met1trm pbd_pma by cont_pma
+connect met1trm nsd by contSD
+connect met1trm psd by contSD
+connect met1trm ntiec by contSD
+connect met1trm ptiec by contSD
+connect met1trm isoptiec by contSD
+connect nsd psd by contSD
+connect nsd ntiec by contSD
+connect nsd ptiec by contSD
+connect nsd isoptiec by contSD
+connect psd ntiec by contSD
+connect psd ptiec by contSD
+connect psd isoptiec by contSD
+connect ntiec ptiec by contSD
+connect ntiec isoptiec by contSD
+connect ptiec isoptiec by contSD
+connect nsd bndiff by bndct
+connect met1trm polytrm by contP
+connect nsd catdiff by catdfct
+connect met1trm catdiff by catm1ct
+connect met1trm d_dsdf by d_dsc
+connect met1trm met2trm by via1
+connect met2trm met3trm by via2CON
+connect cm23f met3trm by v2cm
+connect cmh23f met3trm by v2cmh
+connect m3_dmm met3trm by v2cm2
+connect m3_dmmh met3trm by v2cmh2
+connect m3_tmm met3trm by v2cm3
+connect m3_tmmh met3trm by v2cmh3
+connect met3trm met4trm by via3CON
+connect cm34f met4trm by v3cm
+connect cmh34f met4trm by v3cmh
+connect m4_dmm met4trm by v3cm2
+connect m4_dmmh met4trm by v3cmh2
+connect m4_tmm met4trm by v3cm3
+connect m4_tmmh met4trm by v3cmh3
+connect mt_tmm mtptrm by vtpcm3
+connect mt_tmmh mtptrm by vtpcmh3
+connect met4trm mtptrm by vtpCON
+connect cm mtptrm by vtpcm
+connect cmh mtptrm by vtpcmh
+connect mtptrm mtpltrm by vtpl
+connect phodef dphopin3 by viapho
+stamp bm by met4trm
+stamp dnwntie by ntiec
+stamp dnwtrm by dnwntie
+stamp dnwellmvtrm by dnwntie
+stamp nwelltrm1 by ntiec
+stamp dnwtrm1 by dnwntie
+stamp G_subs by ptiec
+stamp pwitrm by isoptiec
+stamp nbdsub by ntiec
+stamp pdf by psd
+stamp ndftrm by nsd
+stamp hnw by ntiec
+stamp qpvh_83a by psd
+stamp qpvh_84a by nsd
+stamp qpva_83a by psd
+stamp qpva_84a by nsd
+stamp qpvhbs51a by psd
+stamp qpvhbs52a by nsd
+stamp pbddnw by pwitrm
+stamp pwitrm0_1 by pwitrm
+stamp pwitrm1 by pwitrm
+stamp pad_b by mtpltrm
+stamp m2_dmm by met2trm
+stamp m4_dm1 by met4trm
+stamp m2_tmm by met2trm
+stamp mt_tm1 by mtptrm
+stamp m2_dmmh by met2trm
+stamp m4_dmh1 by met4trm
+stamp m2_tmmh by met2trm
+stamp mt_tmh1 by mtptrm
+stamp polytrm_dg by polytrm
+stamp met1trm_dg by met1trm
+stamp met2trm_dg by met2trm
+stamp nsd_dg by catdiff
+stamp nsd_dg by nsd
+stamp psd_dg by psd
+stamp nd_v60 by nsd_dg
+stamp nd_v25 by nsd_dg
+stamp pd_v60 by psd_dg
+stamp pd_v25 by psd_dg
+stamp p1_v60 by polytrm_dg
+stamp p1_v25 by polytrm_dg
+stamp m1_v60 by met1trm_dg
+stamp m1_v25 by met1trm_dg
+stamp m2_v60 by met2trm_dg
+stamp m2_v25 by met2trm_dg
+stamp met3trm_dg by met3trm
+stamp m3_v60 by met3trm_dg
+stamp m3_v25 by met3trm_dg
+stamp met4trm_dg by met4trm
+stamp m4_v60 by met4trm_dg
+stamp m4_v25 by met4trm_dg
+stamp mtptrm_dg by mtptrm
+stamp mt_v60 by mtptrm_dg
+stamp mt_v25 by mtptrm_dg
+stamp mtpltrm_dg by mtpltrm
+stamp mtl_v60 by mtpltrm_dg
+stamp mtl_v25 by mtpltrm_dg
+stamp v25_p1 by polytrm_dg
+stamp v25_met1 by met1trm_dg
+stamp v25_met2 by met2trm_dg
+stamp v25_met3 by met3trm_dg
+stamp v25_met4 by met4trm_dg
+stamp v25_mtp by mtptrm_dg
+stamp v60_p1 by polytrm_dg
+stamp v60_met1 by met1trm_dg
+stamp v60_met2 by met2trm_dg
+stamp v60_met3 by met3trm_dg
+stamp v60_met4 by met4trm_dg
+stamp v60_mtp by mtptrm_dg
+connect pfox poly by pfox_conn
+connect cont poly by cont_conn
+stamp gate_T?11375 by poly
+connect met1 poly by cont
+connect met1 sd by cont
+connect poly sd by cont
+connect via1 met1 by via1_conn
+stamp gate_T?11381 by poly
+connect met2 met1 by via1_conn
+connect via2 met2 by via2_conn
+stamp gate_T?11387 by poly
+connect met3 met2 by via2_conn
+connect via3 met3 by via3_conn
+stamp gate_T?11393 by poly
+connect met4 met3 by via3_conn
+connect vtp met4 by vtp_conn
+stamp gate_T?11399 by poly
+connect met4 mtp by vtp_conn
+connect vtpl mtp by vtpl_conn
+stamp gate_T?11405 by poly
+connect mtp mtpl by vtpl
+stamp gate_T?11410 by poly

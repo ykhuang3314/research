@@ -1,0 +1,10 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary Idac_5bit_ST_V3
+D1_3v 3 D1_3v 84265 5360 m2trm
+D4_3v 6 D4_3v 84265 9170 m2trm
+vdd3! 12 vdd3! 33210 27455 m2trm
+Idac 1 Idac 84255 2745 m2trm
+D2_3v 4 D2_3v 84255 6645 m2trm
+D0_3v 2 D0_3v 84265 4050 m2trm
+D3_3v 5 D3_3v 84340 7865 m2trm
+Iref 14 Iref 21720 125090 m2trm

@@ -1,0 +1,13 @@
+define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT Stimulator_TestBench.TB_OneCH_Top:config
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => D_CELLS_M3V )
+DEFINE LIB_MAP ($LIB_MAP,  => GATES_HD )
+DEFINE LIB_MAP ($LIB_MAP,  => Stimulator_TestBench )
+DEFINE LIB_MAP ($LIB_MAP,  => D_CELLS_3V )
+DEFINE LIB_MAP ($LIB_MAP,  => GATES_3V )
+DEFINE LIB_MAP ($LIB_MAP,  => D_CELLS_HD )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT Stimulator_TestBench.TB_OneCH_Top:config

@@ -4,7 +4,7 @@
 
 
 // Binding AMSD Control Block for config Stimulator_TestBench.TB_ChannelSelection_imp:config
-// Created On: Apr 13 14:33:35 2021
+// Created On: May  6 13:11:36 2021
 // NOTE      : DO NOT change this system generated file.
 
 amsd {
@@ -14,26 +14,28 @@ amsd {
 	config cell="LSHVT18U3VX2" lib="D_CELLS_M3V" view="cmos_sch"
 	config cell="HalfBridge_ST" lib="Stimulator_IMP" view="schematic"
 	config cell="pe" view="analogtext"
+	config cell="Digital_Stimulus_ChSel_ST" lib="Stimulator_IMP" view="functional"
 	config cell="vsource" view="analogtext"
+	config cell="CurrentMirror_x10_LV" lib="Stimulator_IMP" view="schematic"
 	config cell="invrv3" lib="GATES_3V" view="schematic"
 	config cell="Decoder3_8" lib="Stimulator_IMP" view="functional"
-	config cell="LSHVT18U3VX1" lib="D_CELLS_M3V" view="cmos_sch"
 	config cell="nand2" lib="GATES_HD" view="schematic"
 	config cell="invr" lib="GATES_HD" view="schematic"
-	config cell="Digital_Stimulus_V2_ST" lib="Stimulator_IMP" view="functional"
+	config cell="LSHVT18U3VX1" lib="D_CELLS_M3V" view="cmos_sch"
 	config cell="AND2HDX0" lib="D_CELLS_HD" view="cmos_sch"
 	config cell="ne3" view="analogtext"
 	config cell="Ext_Iref_ST" lib="Stimulator_IMP" view="schematic"
-	config cell="ped_bjt" view="analogtext"
 	config cell="ne" view="analogtext"
+	config cell="ped_bjt" view="analogtext"
 	config cell="rpp1k1" view="analogtext"
 	config cell="nedia_bjt" view="analogtext"
 	config cell="isource" view="analogtext"
 	config cell="resistor" view="analogtext"
-	config cell="Idac_5bit_ST" lib="Stimulator_IMP" view="schematic"
 	config cell="IN_3VX2" lib="D_CELLS_3V" view="cmos_sch"
+	config cell="Idac_5bit_ST_V3" lib="Stimulator_IMP" view="schematic"
 	config cell="pe3" view="analogtext"
 	config cell="LS_LowSide_V2_ST" lib="Stimulator_IMP" view="schematic"
+	config cell="MultiChannel_ST" lib="Stimulator_IMP" view="schematic"
 	config cell="CurrentMirror_ST" lib="Stimulator_IMP" view="schematic"
 	config cell="CurrentSource_All_ST" lib="Stimulator_IMP" view="schematic"
 	config cell="LS_HighSide_V3_ST" lib="Stimulator_IMP" view="schematic"

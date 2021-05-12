@@ -1,0 +1,15 @@
+
+// Library name: Stimulator_TestBench
+// Cell name: TB_ChannelSelection_imp
+// View name: schematic
+// Inherited view list: schematic
+V3 (vdd! 0) vsource dc=1.8 type=dc
+V2 (vddh 0) vsource dc=40 type=dc
+V0 (vdde! 0) vsource dc=1.8 type=dc
+V1 (vdd3! 0) vsource dc=3.3 type=dc
+R3 (E6 E7) resistor r=1K
+R2 (E4 E5) resistor r=1K
+R1 (E2 E3) resistor r=1K
+R0 (E0 E1) resistor r=1K
+I35 MultiChannel_ST
+I37 (vdd3! net4) isource dc=10u type=dc

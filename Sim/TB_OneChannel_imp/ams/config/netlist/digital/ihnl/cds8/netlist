@@ -1,67 +1,35 @@
-// Library - Stimulator_TestBench, Cell - TB_OneChannel_imp, View -
-//schematic
-// LAST TIME SAVED: Mar 31 14:57:51 2021
-// NETLIST TIME: Apr  1 14:05:41 2021
+// Library - D_CELLS_HD, Cell - AND2HDX0, View - cmos_sch
+// LAST TIME SAVED: Jan 23 08:10:19 2018
+// NETLIST TIME: Apr 30 15:39:11 2021
 `timescale 1ns / 1ps 
 
-`worklib Stimulator_TestBench
-`view schematic
+`worklib D_CELLS_HD
+`view cmos_sch
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_TestBench", dfII_cell="TB_OneChannel_imp", dfII_view="schematic", worklib_name="Stimulator_TestBench", view_name="schematic", last_save_time="Mar 31 14:57:51 2021" *)
+(* dfII_lib="D_CELLS_HD", dfII_cell="AND2HDX0", dfII_view="cmos_sch", worklib_name="D_CELLS_HD", view_name="cmos_sch", last_save_time="Jan 23 08:10:19 2018" *)
 
-module TB_OneChannel_imp ();
+module AND2HDX0 (Q, A, B);
 
-// Buses in the design
+output  Q;
 
-wire  [4:0]  MAG_ST;
+input  A, B;
+
+wire (*
+integer inh_conn_prop_name = "ground_gnd";
+integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
+\gnd! ;
+
+wire (*
+integer inh_conn_prop_name = "power_vdd";
+integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
+\vdd! ;
 
 
-Digital_Stimulus_ST #( .Ramping(1'b1) ) I38 ( .ANO_ST(ANO_ST), 
-    .CAT_ST(CAT_ST), .DIS_ST(DIS_ST), .EN_ST(EN_ST), .MAG_ST(MAG_ST));
+nand2 #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) nand2_1 ( .a(A), .b(B), .out(net10));
 
-IN_3VX2 I31 ( .A(net247), .Q(D0_3v));
-
-IN_3VX2 I3 ( .A(net253), .Q(D1_3v));
-
-IN_3VX2 I5 ( .A(net254), .Q(D2_3v));
-
-IN_3VX2 I7 ( .A(net255), .Q(D3_3v));
-
-IN_3VX2 I9 ( .A(net257), .Q(D4_3v));
-
-LSHVT18U3VX1 I34 ( .A(ANO_ST), .Q(net238));
-
-LSHVT18U3VX1 I27 ( .A(ANO_ST), .Q(net233));
-
-LSHVT18U3VX1 I17 ( .A(EN_ST), .Q(en_3v));
-
-LSHVT18U3VX1 I0 ( .A(net071), .Q(net247));
-
-LSHVT18U3VX1 I30 ( .A(net070), .Q(net253));
-
-LSHVT18U3VX1 I4 ( .A(net069), .Q(net254));
-
-LSHVT18U3VX1 I6 ( .A(net068), .Q(net255));
-
-LSHVT18U3VX1 I29 ( .A(net067), .Q(net257));
-
-LS_LowSide_V2_ST I33 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
-    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), .vddh(vddh), 
-    .out(Ctrl_LS), .in(CAT_ST));
-
-LS_HighSide_V3_ST I36 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
-    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
-    .out(Ctrl_HS), .in(CAT_ST));
-
-AND2HDX0 I49 ( .Q(net067), .B(MAG_ST[4]), .A(EN_ST));
-
-AND2HDX0 I48 ( .Q(net068), .B(MAG_ST[3]), .A(EN_ST));
-
-AND2HDX0 I47 ( .Q(net069), .B(MAG_ST[2]), .A(EN_ST));
-
-AND2HDX0 I46 ( .Q(net070), .B(MAG_ST[1]), .A(EN_ST));
-
-AND2HDX0 I45 ( .Q(net071), .B(MAG_ST[0]), .A(EN_ST));
+invr #( .sx(4.8e-07), .GT_PUW(720.00n), .GT_PDL(180.00n), .lc(2.7e-07), .GT_PUL(180.00n) 
+    , .GT_PDW(420.00n) ) invr_1 ( .out(Q), .in(net10));
 
 endmodule

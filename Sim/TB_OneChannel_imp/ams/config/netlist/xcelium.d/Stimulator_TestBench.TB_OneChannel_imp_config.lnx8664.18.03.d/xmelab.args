@@ -2,9 +2,6 @@
 // File created by:  xrun
 // Do not modify this file
 //
-+define+CDS_SELECT_CRS
-+define+CONNRULES_18V_FULL_FAST
-+define+CONNRULES_INHCONN_FULL_FAST_GND
 -SPECTRE_ARGS
 "-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
 -amsossirunbind
@@ -22,8 +19,6 @@ DLCLAP
 -V93
 -timescale
 1ns/1ns
--DISCIPLINE
-logic
 -DELAY_MODE
 None
 -NOVITALACCL
@@ -43,14 +38,12 @@ r
 ./amsControlSpectre.scs
 -ANALOGCONTROL
 ./amsControlSpectre.scs
--AMSCONNRULES
-ConnRules_18V_full_fast
--AMSCONNRULES
-ConnRules_inhconn_full_fast_gnd
+-AMSINPUT
+./ie_card.scs
+-ANALOGCONTROL
+./ie_card.scs
 -AMSCOMPILEFILE
 "file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_ST view:functional"
--SPECTRE_ARGS
-++aps
 -MESSAGES
 Stimulator_TestBench.TB_OneChannel_imp:schematic
 cds_globals

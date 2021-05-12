@@ -1,0 +1,16 @@
+
+/pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : Idac_5bit_ST_V3_3339.db
+ECDB dir        : ./
+Top Cell        : Idac_5bit_ST_V3
+CDL netlist     : svdb/Idac_5bit_ST_V3.net
+Layer map file  : svdb/Idac_5bit_ST_V3.ecdbmap
+Text map file   : svdb/Idac_5bit_ST_V3.ports
+Dependency map  : Idac_5bit_ST_V3.lmap.perc
+Lvs file        : svdb/Idac_5bit_ST_V3.lvsfile
+Float net file : .Idac_5bit_ST_V3.info.softchk
+debug           : 0
+Source Library  : Idac_5bit_ST_V3_3339

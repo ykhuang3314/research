@@ -1,2 +1,2 @@
-runDir = ./AssuraLVS
-runName = CurrentMirror_ST_LVS
+runDir = ./AssuraDRC
+runName = MultiChannel_ST_DRC

@@ -1,12 +1,6 @@
 ( ( net
-( "vdd!" "vdd!" )
 ( "gnd!" "0" )
-( "MAG_ST<2>" "MAG_ST_2" )
-( "MAG_ST<1>" "MAG_ST_1" )
-( "MAG_ST<0>" "MAG_ST_0" )
 ( "vdde!" "vdde!" )
-( "MAG_ST<3>" "MAG_ST_3" )
-( "MAG_ST<4>" "MAG_ST_4" )
 ( "vdd3!" "vdd3!" )
  )
  )

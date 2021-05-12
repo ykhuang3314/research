@@ -1,5 +1,5 @@
 
-tran tran stop=150u write="spectre.ic" writefinal="spectre.fc" 
+tran tran stop=17m write="spectre.ic" writefinal="spectre.fc" 
 
 finalTimeOP info what=oppoint where=rawfile
 

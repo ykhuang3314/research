@@ -1,0 +1,15 @@
+
+CurrentSource_All_ST I0 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .Ist(net10), .Iext(Iext), .vddh(vddh), 
+    .Enable_ST(Enable_ST), .Mag0_ST(Mag0_ST), .Mag1_ST(Mag1_ST), 
+    .Mag2_ST(Mag2_ST), .Mag3_ST(Mag3_ST), .Mag4_ST(Mag4_ST));
+
+HalfBridge_ST I2 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(CtrlLS_2), .Ctrl_HS(CtrlHS_2), .OUT(out2), .Ist(net10));
+
+HalfBridge_ST I1 ( .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), .\vdde! 
+    (cds_globals.\vdde! ), .\gnd! (cds_globals.\gnd! ), 
+    .Ctrl_LS(CtrlLS_1), .Ctrl_HS(CtrlHS_1), .OUT(out1), .Ist(net10));
+
+endmodule

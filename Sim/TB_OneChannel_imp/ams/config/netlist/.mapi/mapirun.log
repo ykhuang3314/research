@@ -1,4 +1,4 @@
-TOOL:	xrun(64)	18.03-s018: Started on Apr 01, 2021 at 14:05:38 CEST
+TOOL:	xrun(64)	18.03-s018: Started on Apr 30, 2021 at 15:39:08 CEST
 xrun
 	-f /home/ykhuang/research/Sim/TB_OneChannel_imp/ams/config/netlist/.mapi/mapi_run.args
 		-64bit
@@ -25,4 +25,4 @@ file: /home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_ST/functional/veril
 xmvlog: *W,SPDUSD: Include directory /home/ykhuang/research/ given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun(64)	18.03-s018: Exiting on Apr 01, 2021 at 14:05:41 CEST  (total: 00:00:03)
+TOOL:	xrun(64)	18.03-s018: Exiting on Apr 30, 2021 at 15:39:11 CEST  (total: 00:00:03)

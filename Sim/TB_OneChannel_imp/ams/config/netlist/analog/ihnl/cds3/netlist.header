@@ -1,6 +1,6 @@
 
 // Library name: Stimulator_IMP
-// Cell name: LS_LowSide_V2_ST
+// Cell name: ResistiveDivider
 // View name: schematic
 // Inherited view list: schematic
-subckt LS_LowSide_V2_ST
+subckt ResistiveDivider

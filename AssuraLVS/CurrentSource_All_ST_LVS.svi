@@ -1,0 +1,405 @@
+Version 3
+3 ne 4051 231 -1
+3 nesvt 4064 231 -1
+3 nel 4077 231 -1
+3 nelna 4090 231 -1
+3 nei 4106 231 -1
+3 nei_6 4123 231 -1
+3 nei_m_6 4140 231 -1
+3 nesvti 4153 231 -1
+3 nesvti_6 4170 231 -1
+3 nesvti_m_6 4187 231 -1
+3 neli 4200 231 -1
+3 neli_6 4217 231 -1
+3 neli_m_6 4234 231 -1
+3 nelnai 4247 231 -1
+3 nelnai_6 4264 231 -1
+3 nelnai_m_6 4281 231 -1
+3 pe 4297 231 -1
+3 pe_5 4312 231 -1
+3 pel 4325 231 -1
+3 pel_5 4340 231 -1
+3 pesvt 4353 231 -1
+3 pesvt_5 4368 231 -1
+3 pei 4386 231 -1
+3 pei_5 4401 231 -1
+3 pei_m_5 4416 231 -1
+3 peli 4429 231 -1
+3 peli_5 4444 231 -1
+3 peli_m_5 4459 231 -1
+3 pesvti 4472 231 -1
+3 pesvti_5 4487 231 -1
+3 pesvti_m_5 4502 231 -1
+3 nem 4520 231 -1
+3 ndm 4533 231 -1
+3 nemlna 4546 231 -1
+3 nnm 4562 231 -1
+3 ndmi 4583 231 -1
+3 nemi 4596 231 -1
+3 nemi_6 4613 231 -1
+3 nemi_m_6 4630 231 -1
+3 ndmi_6 4647 231 -1
+3 ndmi_m_6 4664 231 -1
+3 nemlnai 4677 231 -1
+3 nemlnai_6 4694 231 -1
+3 nemlnai_m_6 4711 231 -1
+3 pem 4727 231 -1
+3 pem_5 4742 231 -1
+3 pemln 4755 231 -1
+3 pemln_5 4770 231 -1
+3 pemlna 4783 231 -1
+3 pemlna_5 4798 231 -1
+3 pemi 4816 231 -1
+3 pemi_5 4831 231 -1
+3 pemi_m_5 4846 231 -1
+3 pemlni 4859 231 -1
+3 pemlni_5 4874 231 -1
+3 pemlni_m_5 4889 231 -1
+3 pemlnai 4902 231 -1
+3 pemlnai_5 4917 231 -1
+3 pemlnai_m_5 4932 231 -1
+3 pmb 4950 231 -1
+3 nmma_d 4978 231 -1
+3 nmma_b 4992 231 -1
+3 pmma_d 5010 231 -1
+3 pmma_b 5026 231 -1
+3 nma_d 5043 231 -1
+3 nma_b 5057 231 -1
+3 pma_d 5074 231 -1
+3 pma_b 5090 231 -1
+3 nmc_d 5109 231 -1
+3 nmmc_d 5139 231 -1
+3 nmc_b 5161 231 -1
+3 nmmc_b 5177 231 -1
+3 nmmd_d 5211 231 -1
+3 nmmd_b 5231 231 -1
+3 nhv_d 5260 231 -1
+3 nhhv_d 5290 231 -1
+3 nhvd_d 5312 231 -1
+3 nhhvd_d 5341 231 -1
+3 nhv_b 5363 231 -1
+3 nhhv_b 5379 231 -1
+3 nhvd_b 5397 231 -1
+3 nhhvd_b 5413 231 -1
+3 pmc_d 5459 231 -1
+3 pmmc_d 5489 231 -1
+3 pmc_b 5513 231 -1
+3 pmmc_b 5531 231 -1
+3 phv_d 5566 231 -1
+3 phhv_d 5596 231 -1
+3 phv_b 5620 231 -1
+3 phhv_b 5638 231 -1
+3 ped_d 5673 231 -1
+3 ped2_d 5715 231 -1
+3 nedi_d 5757 231 -1
+3 nedia_d 5787 231 -1
+3 ped_b 5817 231 -1
+3 ped2_b 5859 231 -1
+3 nedi_b 5901 231 -1
+3 nedia_b 5931 231 -1
+3 mosvc 5959 231 -1
+3 mosvci 5973 231 -1
+3 mosvci_m 5987 231 -1
+3 mosvcm 5999 231 -1
+3 mosvcim 6013 231 -1
+3 mosvcim_m 6027 231 -1
+3 d_csf2p 6037 231 -1
+3 d_csf3p 6048 231 -1
+3 d_csf3 6059 231 -1
+3 d_csf3a 6070 231 -1
+3 d_csf4 6081 231 -1
+3 d_csf4a 6092 231 -1
+3 d_csft5 6103 231 -1
+3 d_csft5a 6114 231 -1
+3 d_capsw4 6125 231 -1
+3 d_capsw3 6137 231 -1
+3 cmm 6149 231 -1
+3 cmmh 6162 231 -1
+3 cmm23f 6175 231 -1
+3 cmmh23f 6188 231 -1
+3 cmm34f 6201 231 -1
+3 cmmh34f 6214 231 -1
+3 cdmm 6227 231 -1
+3 cdmmh 6240 231 -1
+3 ctmm 6253 231 -1
+3 ctmmh 6266 231 -1
+3 cpod 6281 231 -1
+3 cpodhv 6297 231 -1
+3 rnw_scr 6319 231 -1
+3 rnwmv_scr 6340 231 -1
+3 resnwell 6361 231 -1
+3 resnwellmv 6408 231 -1
+3 resdnwellmv 6455 231 -1
+3 rnp1h_1 6500 231 -1
+3 rnp1h_3_pw1 6547 231 -1
+3 rnp1h_3_pw3 6594 231 -1
+3 rnp1h_3_nw1 6641 231 -1
+3 rnp1h_3_nw2 6688 231 -1
+3 rpp1k1_1 6733 231 -1
+3 rpp1k1_3_pw1 6786 231 -1
+3 rpp1k1_3_pw3 6839 231 -1
+3 rpp1k1_3_nw1 6892 231 -1
+3 rpp1k1_3_nw2 6945 231 -1
+3 rnp1_1 6996 231 -1
+3 rnp1_3_pw1 7043 231 -1
+3 rnp1_3_pw3 7090 231 -1
+3 rnp1_3_nw1 7137 231 -1
+3 rnp1_3_nw2 7184 231 -1
+3 rpp1_1 7229 231 -1
+3 rpp1_3_pw1 7276 231 -1
+3 rpp1_3_pw3 7323 231 -1
+3 rpp1_3_nw1 7370 231 -1
+3 rpp1_3_nw2 7417 231 -1
+3 rpp1s_1 7462 231 -1
+3 rpp1s_3_pw1 7509 231 -1
+3 rpp1s_3_pw3 7556 231 -1
+3 rpp1s_3_nw1 7603 231 -1
+3 rpp1s_3_nw2 7650 231 -1
+3 ndifres_1 7697 231 -1
+3 ndifres_ng1 7744 231 -1
+3 ndifres_ng2 7775 231 -1
+3 pdifres_1 7806 231 -1
+3 pdifres_pg1 7853 231 -1
+3 ndifres_3 7884 231 -1
+3 ndifres_ng1_3 7931 231 -1
+3 ndifres_ng2_3 7962 231 -1
+3 pdifres_3 7993 231 -1
+3 pdifres_pg3 8040 231 -1
+3 rdp_io_g 8071 231 -1
+3 rdp_esd_g 8102 231 -1
+3 rdn_esd_g 8133 231 -1
+3 met1res 8162 231 -1
+3 met2res 8199 231 -1
+3 met3res 8236 231 -1
+3 met4res 8273 231 -1
+3 mtpres 8310 231 -1
+3 mtplres 8347 231 -1
+3 pfuse 8384 231 -1
+3 qnva 8399 231 -1
+3 qnvz 8414 231 -1
+3 qnvb 8429 231 -1
+3 qnvba 8446 231 -1
+3 qnvc 8463 231 -1
+3 qnvca 8480 231 -1
+3 qpvhscr 8495 231 -1
+3 qpvascr 8508 231 -1
+3 qpvhbscr 8523 231 -1
+3 pnp10 8538 231 -1
+3 pnp5 8546 231 -1
+3 pnp2 8554 231 -1
+3 pnph10 8562 231 -1
+3 pnph5 8570 231 -1
+3 pnph2 8578 231 -1
+3 dphoa 8586 231 -1
+3 dphob 8599 231 -1
+3 dphoc 8616 231 -1
+3 dphoc0 8639 231 -1
+3 dphocfp 8662 231 -1
+3 dphod 8687 231 -1
+3 dphod0 8716 231 -1
+3 dphodfp 8745 231 -1
+3 dapda 8768 231 -1
+3 dapda0 8783 231 -1
+3 dspada 8798 231 -1
+3 dspada0 8813 231 -1
+3 dapb 8830 231 -1
+3 dapb0 8849 231 -1
+3 dspb 8868 231 -1
+3 dspb0 8887 231 -1
+3 d_dsb 8904 231 -1
+3 d_dsba 8916 231 -1
+3 dnp20 8926 231 -1
+3 dpp20 8936 231 -1
+3 dpol 8946 231 -1
+3 dio_p 8956 231 -1
+3 dio_p 8978 231 -1
+3 dio_ph 8967 231 -1
+3 dio_ph 8989 231 -1
+3 dio_p 8956 231 -1
+3 dio_p 8978 231 -1
+3 dio_ph 8967 231 -1
+3 dio_ph 8989 231 -1
+3 dio_pi 9000 231 -1
+3 dio_pih 9011 231 -1
+3 d_dpi2 9022 231 -1
+3 d_dpmi2 9033 231 -1
+3 dio_n 9044 231 -1
+3 dio_nh 9055 231 -1
+3 dio_ni 9066 231 -1
+3 dio_nih 9077 231 -1
+3 d_dni2 9088 231 -1
+3 d_dnmi2 9099 231 -1
+3 d_dnnm 9110 231 -1
+3 dio_nws 9121 231 -1
+3 dio_nws 9143 231 -1
+3 dio_nwsh 9132 231 -1
+3 dio_nwsh 9154 231 -1
+3 dio_nws 9121 231 -1
+3 dio_nws 9143 231 -1
+3 dio_nwsh 9132 231 -1
+3 dio_nwsh 9154 231 -1
+3 dio_ipdnw 9165 231 -1
+3 dio_ipdnwmv 9176 231 -1
+3 dio_dhpw 9187 231 -1
+3 dio_dhnw 9197 231 -1
+3 dio_ddnw 9207 231 -1
+3 dio_ddnwmv 9218 231 -1
+3 dio_dpdnw 9229 231 -1
+3 dio_dpdnwmv 9240 231 -1
+3 dio_dphnw1 9251 231 -1
+3 dio_dphnw2 9262 231 -1
+3 dio_dphnw3 9273 231 -1
+3 dio_dnhpw1 9284 231 -1
+3 dio_dnhpw2 9295 231 -1
+3 dio_dwhn 9306 231 -1
+3 dio_dndf 9317 231 -1
+3 dio_dpdwhn 9327 231 -1
+3 dio_dpwhn 9337 231 -1
+3 dpdd_scr 9348 231 -1
+3 dnpdd_scr 9358 231 -1
+3 p_dnw 9369 231 -1
+3 p_dnw 9391 231 -1
+3 p_dnwm 9380 231 -1
+3 p_dnwm 9402 231 -1
+3 p_dnw 9369 231 -1
+3 p_dnw 9391 231 -1
+3 p_dnwm 9380 231 -1
+3 p_dnwm 9402 231 -1
+3 p_dp 9413 231 -1
+3 p_dp 9435 231 -1
+3 p_dph 9424 231 -1
+3 p_dph 9446 231 -1
+3 p_dp 9413 231 -1
+3 p_dp 9435 231 -1
+3 p_dph 9424 231 -1
+3 p_dph 9446 231 -1
+3 p_dpi 9457 231 -1
+3 p_dpih 9468 231 -1
+3 p_dpi2 9479 231 -1
+3 p_dpmi2 9490 231 -1
+3 p_dn 9501 231 -1
+3 p_dni 9512 231 -1
+3 p_dnh 9523 231 -1
+3 p_dnih 9534 231 -1
+3 p_dni2 9545 231 -1
+3 p_dnmi2 9556 231 -1
+3 p_dnnm 9567 231 -1
+3 p_ddnw 9578 231 -1
+3 p_ddnwmv 9589 231 -1
+3 p_dipdnw 9600 231 -1
+3 p_dipdnwmv 9611 231 -1
+3 p_dhpw 9622 231 -1
+3 p_dhnw 9632 231 -1
+3 p_dpdnw 9642 231 -1
+3 p_dpdnwmv 9653 231 -1
+3 p_dphnw1 9664 231 -1
+3 p_dphnw2 9675 231 -1
+3 p_dphnw3 9686 231 -1
+3 p_dnhpw1 9697 231 -1
+3 p_dnhpw2 9708 231 -1
+3 p_dwhn 9719 231 -1
+3 p_dndf 9730 231 -1
+3 p_dpdwhn 9740 231 -1
+3 p_dpwhn 9750 231 -1
+3 p_dndpl 9761 231 -1
+3 p_dndpli 9772 231 -1
+3 pddpldnw 9783 231 -1
+3 pdnmdpl 9794 231 -1
+3 pdnmdpli 9805 231 -1
+3 p_dpndf 9816 231 -1
+3 pdpndfh 9827 231 -1
+3 pdpdddnw 9838 231 -1
+3 p_dbn 9848 231 -1
+4 mtplres 0 2961 189 0
+4 mtpltrm 1 2962 75 0
+4 vtpl 1 12900 76 0
+4 mtpres 0 2964 189 0
+4 mtptrm 1 2965 22 0
+4 vtpcmh 1 12918 27 0
+4 vtpcm 1 12915 27 0
+4 vtpCON 1 12909 27 0
+4 vtpcmh3 1 12906 27 0
+4 vtpcm3 1 12902 27 0
+4 v3cmh 1 12905 19 0
+4 v3cm 1 12904 19 0
+4 met4res 0 2958 189 0
+4 met4trm 1 2959 20 0
+4 v3cmh3 1 12920 19 0
+4 v3cmh2 1 12903 19 0
+4 v3cm3 1 12919 19 0
+4 v3cm2 1 12895 19 0
+4 via3CON 1 12923 19 0
+4 v2cmh3 1 12912 17 0
+4 v2cm3 1 12908 17 0
+4 v2cmh2 1 12917 17 0
+4 v2cm2 1 12910 17 0
+4 v2cmh 1 12898 17 0
+4 v2cm 1 12894 17 0
+4 met3res 0 2955 189 0
+4 met3trm 1 2956 18 0
+4 via2CON 1 12914 17 0
+4 s_res 0 428 189 0
+4 pdifres1 0 2745 189 0
+4 ndifres_ng 0 2727 189 0
+4 ndifres1 0 2723 189 0
+4 resnwell1 0 398 189 0
+4 resdnwellmv 0 404 189 0
+4 met2res 0 2951 189 0
+4 met1res 0 2949 189 0
+4 polyres_ps 0 2861 188 0
+4 polyres_p 0 2831 188 0
+4 polyres_n 0 2829 188 0
+4 rpp1k1 0 2934 188 0
+4 polyres_ho 0 2922 188 0
+4 met2trm 1 2953 15 0
+4 via1 1 12897 14 0
+4 met1trm 1 2952 13 0
+4 d_dsc 1 12901 12 0
+4 contP 1 12921 12 0
+4 contSD 1 12916 12 0
+4 polytrm 1 2947 10 0
+4 G_subs 1 3577 7 0
+4 nbdsub 1 1115 82 0
+4 dnwtrm 1 407 37 0
+4 nwgtrm 0 418 2 0
+4 bndiff 1 386 3 0
+4 mosvci2 0 837 186 0
+4 mosvc1 0 829 185 0
+4 nedam 0 860 185 0
+4 pedam_all 0 859 186 0
+4 nedgate 0 1454 185 0
+4 ped2 0 1845 186 0
+4 ped 0 1665 186 0
+4 pmc 0 1070 186 0
+4 pmb 0 1102 186 0
+4 pma 0 1096 186 0
+4 pmmc 0 1077 186 0
+4 phv 0 1069 186 0
+4 phhv 0 1076 186 0
+4 pmmagate 0 1016 186 0
+4 nmc 0 1029 185 0
+4 nma 0 1099 185 0
+4 nmmd 0 1045 185 0
+4 nmmc 0 1042 185 0
+4 nhvd 0 1033 185 0
+4 nhhvd 0 1047 185 0
+4 nhv 0 1034 185 0
+4 nhhv 0 1048 185 0
+4 nmmagate 0 1018 185 0
+4 deplngate_i 0 885 185 0
+4 ndm 0 890 185 0
+4 pgate_mv_w 0 915 186 0
+4 pgate_w 0 907 186 0
+4 pgate_all4 0 968 186 0
+4 pgate_all3 0 958 186 0
+4 nnm 0 878 185 0
+4 ngate_mv_all_ndsi 0 897 185 0
+4 ngate_all_ndsi 0 896 185 0
+4 nem 0 906 185 0
+4 ngate_mv_i 0 901 185 0
+4 ngate_i 0 891 185 0
+4 ne 0 900 185 0
+4 pwitrm 1 1466 187 0
+4 pgate 0 908 186 0
+4 nsd 1 2792 192 0
+4 psd 1 2798 193 0

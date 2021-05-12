@@ -1,0 +1,11 @@
+    I18 CurrentSource_All_ST
+    I17 HalfBridge_ST
+    I16 HalfBridge_ST
+    I15 HalfBridge_ST
+    I14 HalfBridge_ST
+    I13 HalfBridge_ST
+    I12 HalfBridge_ST
+    I11 HalfBridge_ST
+    I2 HalfBridge_ST
+ends MultiChannel_ST
+// End of subcircuit definition.

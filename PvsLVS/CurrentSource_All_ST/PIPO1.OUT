@@ -1,0 +1,353 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
+          : sub-version  IC6.1.8-64b.500.7 
+Started at: 11-May-2021  17:08:42
+User Name : ykhuang
+Host Name : s2424
+Directory : /home/ykhuang/research
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/ykhuang/research/PvsLVS/CurrentSource_All_ST/CurrentSource_All_ST.gds' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /home/ykhuang/research/.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable
+INFO (XSTRM-217): Reading the object map file, /home/ykhuang/research/.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 Stimulator_IMP
+strmFile                                /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/CurrentSource_All_ST.gds
+topCell                                 CurrentSource_All_ST
+view                                    layout
+runDir                                  /home/ykhuang/research/PvsLVS/CurrentSource_All_ST
+logFile                                 /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/PIPO1.LOG
+techLib                                 TECH_XH018
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /home/ykhuang/research/.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable
+objectMap                                /home/ykhuang/research/.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map
+userSkillFile                           /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+convertPin                              geometryAndText
+
+INFO (XSTRM-223): 1. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_1.
+INFO (XSTRM-223): 2. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_2.
+INFO (XSTRM-223): 3. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_3.
+INFO (XSTRM-223): 4. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_4.
+INFO (XSTRM-223): 5. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_5.
+INFO (XSTRM-223): 6. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_6.
+INFO (XSTRM-223): 7. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_7.
+INFO (XSTRM-223): 8. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_8.
+INFO (XSTRM-223): 9. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_9.
+INFO (XSTRM-223): 10. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_10.
+INFO (XSTRM-223): 11. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_11.
+INFO (XSTRM-223): 12. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_12.
+INFO (XSTRM-223): 13. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_13.
+INFO (XSTRM-223): 14. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_14.
+** Info: PDK loadpath is "./.xkit/setup/xh018/cadence/PDK"
+Loading XfPcellCore.cxt
+Loading XfSktTools.cxt
+Loading XfTechXh018.cxt
+nil
+Initializing library.
+Finished Initializing Library .
+    Generic PcellKit: 'production' loaded.
+    Generic Pcell Skill Tools: 'production' loaded.
+Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+INFO (XSTRM-223): 15. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_15.
+INFO (XSTRM-223): 16. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_16.
+INFO (XSTRM-223): 17. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_17.
+INFO (XSTRM-223): 18. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_18.
+INFO (XSTRM-223): 19. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_19.
+INFO (XSTRM-223): 20. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_20.
+INFO (XSTRM-223): 21. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_21.
+INFO (XSTRM-223): 22. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_22.
+INFO (XSTRM-223): 23. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_23.
+INFO (XSTRM-223): 24. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_24.
+INFO (XSTRM-223): 25. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_25.
+INFO (XSTRM-223): 26. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_26.
+Express Pcell license has been checked out for the Express Pcell feature.
+INFO (XSTRM-223): 27. Translating cellView PRIMLIB/ne3/layout as STRUCTURE ne3_CDNS_27.
+INFO (XSTRM-223): 28. Translating cellView PRIMLIB/rpp1k1/layout as STRUCTURE rpp1k1_CDNS_28.
+INFO (XSTRM-223): 29. Translating cellView Stimulator_IMP/Ext_Iref_ST/layout as STRUCTURE Ext_Iref_ST.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET1:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'PIMP:VLABEL' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET3:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 30. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_29.
+INFO (XSTRM-223): 31. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_30.
+INFO (XSTRM-223): 32. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_31.
+INFO (XSTRM-223): 33. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_32.
+INFO (XSTRM-223): 34. Translating stdVia TECH_XH018/P1_C/layout as STRUCTURE P1_C_CDNS_33.
+INFO (XSTRM-223): 35. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_34.
+INFO (XSTRM-223): 36. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_35.
+INFO (XSTRM-223): 37. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_36.
+INFO (XSTRM-223): 38. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_37.
+INFO (XSTRM-223): 39. Translating cellView PRIMLIB/pe3/layout as STRUCTURE pe3_CDNS_38.
+INFO (XSTRM-223): 40. Translating cellView PRIMLIB/pe3/layout as STRUCTURE pe3_CDNS_39.
+INFO (XSTRM-223): 41. Translating cellView Stimulator_IMP/Idac_5bit_ST_V3/layout as STRUCTURE Idac_5bit_ST_V3.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET2:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-154): The object map file does not contain any mapping for the OpenAccess object 'Marker' and the sub-object 'annotation'. Therefore, these objects in the design will not be translated. To enable the translation of these objects in the Stream file, provide a valid mapping in the object map file. For details on the format of object map file, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 42. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_40.
+INFO (XSTRM-223): 43. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_41.
+INFO (XSTRM-223): 44. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_42.
+INFO (XSTRM-223): 45. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_43.
+INFO (XSTRM-223): 46. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_44.
+INFO (XSTRM-223): 47. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_45.
+INFO (XSTRM-223): 48. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_46.
+INFO (XSTRM-223): 49. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_47.
+INFO (XSTRM-223): 50. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_48.
+INFO (XSTRM-223): 51. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_49.
+INFO (XSTRM-223): 52. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_50.
+INFO (XSTRM-223): 53. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_51.
+INFO (XSTRM-223): 54. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_52.
+INFO (XSTRM-223): 55. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_53.
+INFO (XSTRM-223): 56. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_54.
+INFO (XSTRM-223): 57. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_55.
+INFO (XSTRM-223): 58. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_56.
+INFO (XSTRM-223): 59. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_57.
+INFO (XSTRM-223): 60. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_58.
+INFO (XSTRM-223): 61. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_59.
+INFO (XSTRM-223): 62. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_60.
+INFO (XSTRM-223): 63. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_61.
+INFO (XSTRM-223): 64. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_62.
+INFO (XSTRM-223): 65. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_63.
+INFO (XSTRM-223): 66. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_64.
+INFO (XSTRM-223): 67. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_65.
+INFO (XSTRM-223): 68. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_66.
+INFO (XSTRM-223): 69. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_67.
+INFO (XSTRM-223): 70. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_68.
+INFO (XSTRM-223): 71. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_69.
+INFO (XSTRM-223): 72. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_70.
+INFO (XSTRM-223): 73. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_71.
+INFO (XSTRM-223): 74. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_72.
+INFO (XSTRM-223): 75. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_73.
+INFO (XSTRM-223): 76. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_74.
+INFO (XSTRM-223): 77. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_75.
+INFO (XSTRM-223): 78. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_76.
+INFO (XSTRM-223): 79. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_77.
+INFO (XSTRM-223): 80. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_78.
+INFO (XSTRM-223): 81. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_79.
+INFO (XSTRM-223): 82. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_80.
+INFO (XSTRM-223): 83. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_81.
+INFO (XSTRM-223): 84. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_82.
+INFO (XSTRM-223): 85. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_83.
+INFO (XSTRM-223): 86. Translating cellView PRIMLIB/nedia_bjt/layout as STRUCTURE nedia_bjt_CDNS_84.
+INFO (XSTRM-223): 87. Translating cellView PRIMLIB/nedia_bjt/layout as STRUCTURE nedia_bjt_CDNS_85.
+INFO (XSTRM-223): 88. Translating cellView PRIMLIB/nedia_bjt/layout as STRUCTURE nedia_bjt_CDNS_86.
+INFO (XSTRM-223): 89. Translating cellView D_CELLS_M3V/LSHVT18U3VX2/layout as STRUCTURE LSHVT18U3VX2.
+INFO (XSTRM-223): 90. Translating cellView PRIMLIB/nedia_bjt/layout as STRUCTURE nedia_bjt_CDNS_87.
+INFO (XSTRM-223): 91. Translating cellView PRIMLIB/ped_bjt/layout as STRUCTURE ped_bjt_CDNS_88.
+INFO (XSTRM-223): 92. Translating cellView PRIMLIB/nedia_bjt/layout as STRUCTURE nedia_bjt_CDNS_89.
+INFO (XSTRM-223): 93. Translating cellView PRIMLIB/csft5a/layout as STRUCTURE csft5a.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET4:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'METTP:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 94. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_90.
+INFO (XSTRM-223): 95. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_91.
+INFO (XSTRM-223): 96. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_92.
+INFO (XSTRM-223): 97. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_93.
+INFO (XSTRM-223): 98. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_94.
+INFO (XSTRM-223): 99. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_95.
+INFO (XSTRM-223): 100. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_96.
+INFO (XSTRM-223): 101. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_97.
+INFO (XSTRM-223): 102. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_98.
+INFO (XSTRM-223): 103. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_99.
+INFO (XSTRM-223): 104. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_100.
+INFO (XSTRM-223): 105. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_101.
+INFO (XSTRM-223): 106. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_102.
+INFO (XSTRM-223): 107. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_103.
+INFO (XSTRM-223): 108. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_104.
+INFO (XSTRM-223): 109. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_105.
+INFO (XSTRM-223): 110. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_106.
+INFO (XSTRM-223): 111. Translating cellView PRIMLIB/ne3/layout as STRUCTURE ne3_CDNS_107.
+INFO (XSTRM-223): 112. Translating cellView Stimulator_IMP/CurrentMirror_x10_LV/layout as STRUCTURE CurrentMirror_x10_LV.
+INFO (XSTRM-223): 113. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_108.
+INFO (XSTRM-223): 114. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_109.
+INFO (XSTRM-223): 115. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_110.
+INFO (XSTRM-223): 116. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_111.
+INFO (XSTRM-223): 117. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_112.
+INFO (XSTRM-223): 118. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_113.
+INFO (XSTRM-223): 119. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_114.
+INFO (XSTRM-223): 120. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_115.
+INFO (XSTRM-223): 121. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_116.
+INFO (XSTRM-223): 122. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_117.
+INFO (XSTRM-223): 123. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_118.
+INFO (XSTRM-223): 124. Translating stdVia TECH_XH018/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_119.
+INFO (XSTRM-223): 125. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_120.
+INFO (XSTRM-223): 126. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_121.
+INFO (XSTRM-223): 127. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_122.
+INFO (XSTRM-223): 128. Translating stdVia TECH_XH018/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_123.
+INFO (XSTRM-223): 129. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_124.
+INFO (XSTRM-223): 130. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_125.
+INFO (XSTRM-223): 131. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_126.
+INFO (XSTRM-223): 132. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_127.
+INFO (XSTRM-223): 133. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_128.
+INFO (XSTRM-223): 134. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_129.
+INFO (XSTRM-223): 135. Translating cellView Stimulator_IMP/M3_MTP_8_cell/layout as STRUCTURE M3_MTP_8_cell.
+INFO (XSTRM-223): 136. Translating cellView Stimulator_IMP/M1Cell/layout as STRUCTURE M1Cell.
+INFO (XSTRM-223): 137. Translating cellView Stimulator_IMP/M3_MTP_CornerCell/layout as STRUCTURE M3_MTP_CornerCell.
+INFO (XSTRM-317): The 'Stimulator_IMP/M3_MTP_CornerCell/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (25460, 41940). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/M3_MTP_CornerCell/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (32960, 23980). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/M3_MTP_CornerCell/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (25460, 41940). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/M3_MTP_CornerCell/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (32960, 23980). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/M3_MTP_CornerCell/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (25460, 41940). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/M3_MTP_CornerCell/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (32960, 23980). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 138. Translating stdVia TECH_XH018/VIATP_C/layout as STRUCTURE VIATP_C_CDNS_130.
+INFO (XSTRM-223): 139. Translating stdVia TECH_XH018/VIA3_C/layout as STRUCTURE VIA3_C_CDNS_131.
+INFO (XSTRM-223): 140. Translating cellView Stimulator_IMP/M3_MTPcell/layout as STRUCTURE M3_MTPcell.
+INFO (XSTRM-223): 141. Translating cellView Stimulator_IMP/CurrretMirrorx10_HV/layout as STRUCTURE CurrretMirrorx10_HV.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (395660, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (381270, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (403750, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (389360, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (395565, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (389265, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (403655, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (381175, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (363355, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (357055, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (371445, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (348965, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (363270, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (356970, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (371360, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (348880, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (331050, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (324750, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (339140, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (316660, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (330975, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (324675, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (339065, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (316585, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (298745, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (292445, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (306835, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (284355, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (298680, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (292380, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (306770, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (284290, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (266440, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (252050, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (274530, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (260140, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (274475, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (251995, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (266385, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (260085, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (234135, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (227835, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (242225, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (219745, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (234090, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (227790, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (242180, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (219700, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (201830, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (195530, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (209920, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (187440, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (201795, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (195495, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (209885, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (187405, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (169525, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (155135, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (177615, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (163225, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (169500, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (163200, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (177590, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (155110, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (137220, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (130920, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (145310, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (122830, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (137205, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (130905, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (145295, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (122815, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (104915, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (90525, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (113005, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (98615, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (104910, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (98610, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (113000, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (90520, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (72615, 66790). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (66315, 135615). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (80705, 127525). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (58225, 74880). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (58220, 178375). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (80700, 231020). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (66310, 239110). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrretMirrorx10_HV/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (72610, 170285). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 142. Translating cellView PRIMLIB/rpp1k1/layout as STRUCTURE rpp1k1_CDNS_132.
+INFO (XSTRM-223): 143. Translating cellView PRIMLIB/rpp1k1/layout as STRUCTURE rpp1k1_CDNS_133.
+INFO (XSTRM-223): 144. Translating cellView Stimulator_IMP/HVMOS_GateRingM1/layout as STRUCTURE HVMOS_GateRingM1.
+INFO (XSTRM-317): The 'Stimulator_IMP/HVMOS_GateRingM1/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (22980, 61235). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/HVMOS_GateRingM1/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (8590, 69325). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/HVMOS_GateRingM1/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (14890, 500). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/HVMOS_GateRingM1/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (500, 8590). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 145. Translating cellView Stimulator_IMP/CurrentMirror_ST/layout as STRUCTURE CurrentMirror_ST.
+INFO (XSTRM-275): Number of vertices in the 'polygon' with starting point (199095, 364425) on layer '16' is 3270. This number exceeds the limit, 2048, defined by 'maxVertices'. Therefore, XStream Out will chop this 'polygon' into smaller polygons.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (251815, 413105). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (259915, 453825). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (266195, 405005). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (274295, 445725). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (300240, 529965). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (293950, 529965). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (308335, 491740). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (293950, 483645). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-275): Number of vertices in the 'polygon' with starting point (311985, 393210) on layer '16' is 3208. This number exceeds the limit, 2048, defined by 'maxVertices'. Therefore, XStream Out will chop this 'polygon' into smaller polygons.
+INFO (XSTRM-275): Number of vertices in the 'polygon' with starting point (299795, 400165) on layer '16' is 2754. This number exceeds the limit, 2048, defined by 'maxVertices'. Therefore, XStream Out will chop this 'polygon' into smaller polygons.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentMirror_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (201620, 612995). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+WARNING (XSTRM-154): The object map file does not contain any mapping for the OpenAccess object 'Marker' and the sub-object 'info'. Therefore, these objects in the design will not be translated. To enable the translation of these objects in the Stream file, provide a valid mapping in the object map file. For details on the format of object map file, refer to the "Design Data Translator's Reference" guide for XStream.
+WARNING (XSTRM-154): The object map file does not contain any mapping for the OpenAccess object 'Marker' and the sub-object 'warning'. Therefore, these objects in the design will not be translated. To enable the translation of these objects in the Stream file, provide a valid mapping in the object map file. For details on the format of object map file, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 146. Translating cellView D_CELLS_HD/AND2HDX0/layout as STRUCTURE AND2HDX0.
+INFO (XSTRM-223): 147. Translating cellView D_CELLS_3V/IN_3VX2/layout as STRUCTURE IN_3VX2.
+INFO (XSTRM-223): 148. Translating cellView D_CELLS_M3V/LSHVT18U3VX1/layout as STRUCTURE LSHVT18U3VX1.
+INFO (XSTRM-223): 149. Translating cellView Stimulator_IMP/CurrentSource_All_ST/layout as STRUCTURE CurrentSource_All_ST.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (309725, -578925). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (310415, -577645). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (309925, -571250). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (311660, -576365). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (311425, -567250). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (313105, -575085). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (312775, -562450). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (314000, -573805). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (493905, -499540). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'Stimulator_IMP/CurrentSource_All_ST/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (449410, -570945). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+
+Summary of Objects Translated:
+	Scalar Instances:                       1525
+	Array Instances:                        0
+	Polygons:                               738
+	Paths:                                  67
+	Rectangles:                             29231
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             14
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           2963
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               3522
+	Text:                                   68
+	TextDisplay:                            35
+	Cells:                                  149
+
+Elapsed Time: 0.6s   User Time: 0.3s   CPU Time: 0.2s   Peak VM: 23576KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '10' warning(s) found.

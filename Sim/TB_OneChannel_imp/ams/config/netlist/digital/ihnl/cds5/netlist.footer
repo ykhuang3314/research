@@ -1,2 +1,8 @@
 
+ResistiveDivider I2 ( .V2(cds_globals.\gnd! ), .V1(net11), .VOUT(out));
+
+LS_HighSide_V3_ST I1 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(net9), .in(in));
+
 endmodule

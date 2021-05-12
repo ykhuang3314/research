@@ -1,0 +1,7 @@
+( ( net
+( "gnd!" "0" )
+ )
+( model
+( "CurrentMirror_x10_LV" "CurrentMirror_x10_LV" )
+ )
+ )

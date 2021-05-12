@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Mon Apr 26 13:39:50 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue May 11 15:45:58 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.rsf -exec1 -LVS -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 26 13:39:51 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue May 11 15:45:58 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -38,11 +38,11 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 
 
 Starting dfIIToVdb...
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Mon Apr 26 13:39:51 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue May 11 15:45:59 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -67,7 +67,7 @@ Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
 Express Pcell license has been checked out for the Express Pcell feature.
 *WARNING* Express Pcells will be disabled. This is because the Express Pcells data stored on disk is generated using some later release of Virtuoso. Use a later compatible Virtuoso release.
 
-Loading assuraExtract_Rules at "Apr 26 13:39:52 2021"
+Loading assuraExtract_Rules at "May 11 15:45:59 2021"
 Compiling rules...
 
 RSF-specified resolution of 0.0005 userUnits used for this run.
@@ -111,7 +111,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Mon Apr 26 13:39:55 2021
+run on s2424 at Tue May 11 15:46:03 2021
   
 *************************************************************** 
   
@@ -126,7 +126,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:18 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Mon Apr 26 13:39:56 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue May 11 15:46:03 2021
 
   
 *************************************************************** 
@@ -235,14 +235,14 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.02m  mem=117.87mb
+cpu=0.00m  wall=0.03m  mem=117.88mb
 
 Finished /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/nvn
 
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.32  elap: 6  pf: 0  in: 0  out: 304  virt: 115M  phys: 649M
+cpu: 0.31  elap: 6  pf: 0  in: 0  out: 304  virt: 115M  phys: 646M
 
 Running the Task Processor, 20 cells, 15557 steps...
 
@@ -10292,12 +10292,12 @@ Executing: (saveInterconnect (vtpCON "VIATP") (vtpcm "VIATP") (vtpcmh "VIATP") (
 Executing: (saveInterconnect (vtpl "VIATPL") (mtpltrm "METTPL") (mtplres "allres"))
 
 Finished running rules. Task processor time in main process:
-cpu: 3.14  elap: 3  pf: 0  in: 0  out: 3440  virt: 187M  phys: 927M
+cpu: 3.12  elap: 4  pf: 0  in: 0  out: 3440  virt: 187M  phys: 924M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6688  virt: 192M  phys: 945M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6688  virt: 192M  phys: 941M
 
 
 *****  aveng terminated normally  *****
@@ -10315,7 +10315,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Mon Apr 26 13:40:02 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue May 11 15:46:09 2021
 
 
    Creating Error Database 'CurrentMirror_ST_LVS'...
@@ -10816,7 +10816,7 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.err ...
 
-avrpt cpu sec:    0.20  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -10827,37 +10827,37 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 26 13:40:02 2021"
+Loading assuraExtract_Rules at "May 11 15:46:09 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avnx /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.rsf -exec1 -LVS -cdslib /home/ykhuang/research/cds.lib
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.15s.
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 26 13:40:03 2021"
+Loading assuraExtract_Rules at "May 11 15:46:10 2021"
 Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 *WARNING* Failed to obtain license for Assura_LVS
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Mon Apr 26 13:40:03 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Tue May 11 15:46:10 2021
 
 avnx started...
-cpu: 0.46  elap: 0  pf: 0  in: 0  out: 72  virt: 742M  phys: 1267M
+cpu: 0.47  elap: 0  pf: 0  in: 0  out: 72  virt: 742M  phys: 1266M
 
 Run time =  0.00 seconds
-CPU time =  0.51 seconds
+CPU time =  0.52 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.02  elap: 0  pf: 0  in: 0  out: 15248  virt: 669M  phys: 1268M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 15304  virt: 669M  phys: 1266M
 ***** avnx terminated normally ***** 
 
 
@@ -10868,7 +10868,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
-run on s2424 at Mon Apr 26 13:40:04 2021
+run on s2424 at Tue May 11 15:46:11 2021
   
 *************************************************************** 
   
@@ -11317,6 +11317,51 @@ Top cell  CurrentMirror_ST schematic Stimulator_IMP vs CurrentMirror_ST layout S
    2nd device: L = 1.25e-06 W = 6e-05 m = 1 
    Resulting: L = 1.25e-06 W = 0.0003 m = 1 
 
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 8e-05 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.00016 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.00016 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.00024 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.00024 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.00032 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.00032 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.0004 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.0004 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.00048 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.00048 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.00056 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.00056 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.00064 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.00064 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.00072 m = 1 
+
+** Parallel MOS combined: 
+   1st device: L = 1.25e-06 W = 0.00072 m = 1 
+   2nd device: L = 1.25e-06 W = 8e-05 m = 1 
+   Resulting: L = 1.25e-06 W = 0.0008 m = 1 
+
 ** Parallel cap combined 
    1st device: area = 6.3936e-11 perimeter = 3.372e-05 m = 1
    2nd device: area = 6.3936e-11 perimeter = 3.372e-05 m = 1
@@ -11606,8 +11651,8 @@ Top cell  CurrentMirror_ST schematic Stimulator_IMP vs CurrentMirror_ST layout S
    1st device: area = 6.3936e-11 perimeter = 3.372e-05 m = 14
    2nd device: area = 6.3936e-11 perimeter = 3.372e-05 m = 1
    Resulting: area = 6.3936e-11 perimeter = 3.372e-05 m = 15 
-Compare errors, please see /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.csm and /home/ykhuang/research/AssuraLVS/CurrentMirror_ST_LVS.cls files.
-cpu=0.00m  wall=0.00m  mem=118.60mb
+Schematic and Layout Match
+cpu=0.00m  wall=0.00m  mem=118.61mb
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/nvn
 
@@ -11631,7 +11676,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraExtract_Rules at "Apr 26 13:40:05 2021"
+Loading assuraExtract_Rules at "May 11 15:46:12 2021"
  
 *************************************************************** 
  
@@ -11661,7 +11706,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Mon Apr 26 13:40:06 2021
+Run ended: Tue May 11 15:46:13 2021
 
 *****  Assura terminated normally  *****
 

@@ -1,0 +1,46 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
+sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
+run on s2424 at Tue May 11 17:05:23 2021
+
+Schematic                                    | Layout                                    | Status
+-------------------------------------------------------------------------------------------------------------
+LSHVT18U3VX1 cmos_sch D_CELLS_M3V            | LSHVT18U3VX1 layout D_CELLS_M3V           | matched          
+IN_3VX2 cmos_sch D_CELLS_3V                  | IN_3VX2 layout D_CELLS_3V                 | matched          
+Idac_5bit_ST_V3 schematic Stimulator_IMP     | Idac_5bit_ST_V3 layout Stimulator_IMP     | matched          
+CurrentMirror_x10_LV schematic Stimulator_IMP| CurrentMirror_x10_LV layout Stimulator_IMP| matched          
+LSHVT18U3VX2 cmos_sch D_CELLS_M3V            | LSHVT18U3VX2 layout D_CELLS_M3V           | matched          
+CurrentMirror_ST schematic Stimulator_IMP    | CurrentMirror_ST layout Stimulator_IMP    | matched          
+AND2HDX0 cmos_sch D_CELLS_HD                 | AND2HDX0 layout D_CELLS_HD                | matched          
+AND2HDX0 cmos_sch D_CELLS_HD                 | AND2HDX0_VAR1 layout D_CELLS_HD           | matched          
+Ext_Iref_ST schematic Stimulator_IMP         | Ext_Iref_ST layout Stimulator_IMP         | matched          
+CurrentSource_All_ST schematic Stimulator_IMP| CurrentSource_All_ST layout Stimulator_IMP| matched, pin errs *
+
+Mismatch between Schematic and Layout
+   1 cell matched with pin errors
+   9 cells matched
+
+Schematic:
+  Library:Stimulator_IMP
+  Cell   :CurrentSource_All_ST
+  View   :schematic
+
+Layout:
+  Library:Stimulator_IMP
+  Cell   :CurrentSource_All_ST
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     1 cells have 1 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

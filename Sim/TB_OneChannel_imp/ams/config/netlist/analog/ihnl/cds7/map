@@ -2,7 +2,4 @@
 ( "vdd!" "inh_power_vdd" )
 ( "gnd!" "inh_ground_gnd" )
  )
-( model
-( "invr" "invr" )
- )
  )

@@ -1,0 +1,68 @@
+// Library - Stimulator_IMP, Cell - CurrentSource_All_ST, View -
+//schematic
+// LAST TIME SAVED: May  4 13:56:45 2021
+// NETLIST TIME: May  4 15:41:36 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentSource_All_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="May  4 13:56:45 2021" *)
+
+module CurrentSource_All_ST (Iext, Ist, .\gnd! (cdsNet1), .\vdd3! 
+    (cdsNet0), vddh, Enable_ST, Mag0_ST, Mag1_ST, Mag2_ST, Mag3_ST, 
+    Mag4_ST);
+
+inout  Iext, Ist, cdsNet1, cdsNet0, vddh;
+
+input  Enable_ST, Mag0_ST, Mag1_ST, Mag2_ST, Mag3_ST, Mag4_ST;
+
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst5(cdsNet1, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst6(cdsNet0, cds_globals.\vdd3! );
+
+Ext_Iref_ST I0 ( .Iref(Iref), .Iext(Iext), .vss(cds_globals.\gnd! ));
+
+AND2HDX0 I45 ( .Q(net05), .B(Mag0_ST), .A(Enable_ST));
+
+AND2HDX0 I46 ( .Q(net07), .B(Mag1_ST), .A(Enable_ST));
+
+AND2HDX0 I47 ( .Q(net09), .B(Mag2_ST), .A(Enable_ST));
+
+AND2HDX0 I48 ( .Q(net011), .B(Mag3_ST), .A(Enable_ST));
+
+AND2HDX0 I49 ( .Q(net013), .B(Mag4_ST), .A(Enable_ST));
+
+CurrentMirror_ST I2 ( .\vdd3! (cds_globals.\vdd3! ), .\gnd! 
+    (cds_globals.\gnd! ), .Ist(Ist), .Iref(net9), .vddh(vddh), 
+    .enable(Enable_ST));
+
+Idac_5bit_ST_V3 I1 ( .D4_3v(D4_3v), .D3_3v(D3_3v), .D1_3v(D1_3v), 
+    .D2_3v(D2_3v), .D0_3v(D0_3v), .\vdd3! (cds_globals.\vdd3! ), 
+    .Iref(Iref), .Idac(net9));
+
+IN_3VX2 I31 ( .A(net06), .Q(D0_3v));
+
+IN_3VX2 I15 ( .A(net08), .Q(D1_3v));
+
+IN_3VX2 I13 ( .A(net010), .Q(D2_3v));
+
+IN_3VX2 I11 ( .A(net012), .Q(D3_3v));
+
+IN_3VX2 I10 ( .A(net014), .Q(D4_3v));
+
+LSHVT18U3VX1 I16 ( .A(net05), .Q(net06));
+
+LSHVT18U3VX1 I30 ( .A(net07), .Q(net08));
+
+LSHVT18U3VX1 I14 ( .A(net09), .Q(net010));
+
+LSHVT18U3VX1 I12 ( .A(net011), .Q(net012));
+
+LSHVT18U3VX1 I29 ( .A(net013), .Q(net014));
+
+endmodule

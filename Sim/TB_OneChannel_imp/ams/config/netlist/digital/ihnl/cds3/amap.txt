@@ -1,7 +1,5 @@
-instMap,*LS_LowSide_V2_ST,*I0,*I0
-instMaster,*LS_LowSide_V2_ST,*I0,*D_CELLS_M3V_LSHVT18U3VX1_cmos_sch
-netMap,*LS_LowSide_V2_ST,*vdd3!,*cds_globals.\vdd3! 
-netMap,*LS_LowSide_V2_ST,*vdde!,*cds_globals.\vdde! 
-netMap,*LS_LowSide_V2_ST,*vdd!,*cds_globals.\vdd! 
-netMap,*LS_LowSide_V2_ST,*gnd!,*cds_globals.\gnd! 
-cellMap,*LS_LowSide_V2_ST,*LS_LowSide_V2_ST,*Stimulator_IMP,*schematic
+netMap,*ResistiveDivider,*vdd3!,*cds_globals.\vdd3! 
+netMap,*ResistiveDivider,*vdde!,*cds_globals.\vdde! 
+netMap,*ResistiveDivider,*vdd!,*cds_globals.\vdd! 
+netMap,*ResistiveDivider,*gnd!,*cds_globals.\gnd! 
+cellMap,*ResistiveDivider,*ResistiveDivider,*Stimulator_IMP,*schematic

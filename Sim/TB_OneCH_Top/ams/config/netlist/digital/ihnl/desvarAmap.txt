@@ -1,0 +1,5 @@
+desvar,*Rload,*Rload,*1k
+desvar,*Tcat,*Tcat,*300
+desvar,*Tano,*Tano,*300
+desvar,*Period,*Period,*1000
+desvar,*IPD,*IPD,*100

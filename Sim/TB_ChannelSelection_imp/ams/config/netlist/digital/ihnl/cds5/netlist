@@ -1,19 +1,23 @@
-// Library - Stimulator_IMP, Cell - Ext_Iref_ST, View - schematic
-// LAST TIME SAVED: Mar 31 11:16:25 2021
-// NETLIST TIME: Apr 13 14:33:29 2021
+// Library - Stimulator_IMP, Cell - CurrentMirror_x10_LV, View -
+//schematic
+// LAST TIME SAVED: Apr 23 15:21:29 2021
+// NETLIST TIME: May  6 13:11:30 2021
 `timescale 1ns / 1ps 
 
 `worklib Stimulator_IMP
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_IMP", dfII_cell="Ext_Iref_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Mar 31 11:16:25 2021" *)
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentMirror_x10_LV", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr 23 15:21:29 2021" *)
 
-module Ext_Iref_ST (Bias1, Bias2, Iext, vdd3, vss);
+module CurrentMirror_x10_LV (Iin, Ix10, .\gnd! (cdsNet0));
 
-output  Bias1, Bias2;
+inout  Iin, Ix10, cdsNet0;
 
-inout  Iext, vdd3, vss;
 
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst1(cdsNet0, cds_globals.\gnd! );
 
 endmodule

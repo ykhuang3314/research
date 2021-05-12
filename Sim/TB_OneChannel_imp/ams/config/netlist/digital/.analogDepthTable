@@ -1,9 +1,10 @@
 ("GATES_HD" "invr" "schematic" nil) 1
 ("GATES_HD" "nand2" "schematic" nil) 1
-("Stimulator_IMP" "LS_HighSide_V3_ST" "schematic" nil) 2
+("Stimulator_IMP" "LS_HighSide_V3_ST" "schematic" nil) 3
 ("D_CELLS_M3V" "LSHVT18U3VX1" "cmos_sch" nil) 1
 ("D_CELLS_3V" "IN_3VX2" "cmos_sch" nil) 1
-("Stimulator_TestBench" "TB_OneChannel_imp" "schematic" nil) 9
-("Stimulator_IMP" "LS_LowSide_V2_ST" "schematic" nil) 2
+("Stimulator_TestBench" "TB_OneChannel_imp" "schematic" nil) 13
+("Stimulator_IMP" "LS_LowSide_V2_ST" "schematic" nil) 5
 ("GATES_3V" "invrv3" "schematic" nil) 1
+("Stimulator_IMP" "ResistiveDivider" "schematic" nil) 1
 ("D_CELLS_HD" "AND2HDX0" "cmos_sch" nil) 2

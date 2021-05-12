@@ -1,0 +1,15 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'Idac_5bit_ST_V3 layout Stimulator_IMP':
+  info: Assign pin label "vdd3!" at (31.3070, 27.4600) to layer `met2trm'.
+  info: Assign pin label "Idac" at (84.6400, 2.8320) to layer `met2trm'.
+  info: Assign pin label "D0_3v" at (84.6350, 3.9770) to layer `met2trm'.
+  info: Assign pin label "D1_3v" at (84.5850, 5.3300) to layer `met2trm'.
+  info: Assign pin label "D2_3v" at (84.5400, 6.5320) to layer `met2trm'.
+  info: Assign pin label "D3_3v" at (84.4870, 7.8470) to layer `met2trm'.
+  info: Assign pin label "D4_3v" at (84.4850, 9.1750) to layer `met2trm'.
+  info: Assign pin label "Iref" at (22.0850, 124.9600) to layer `met2trm'.
+
+***** End of Label Report *****
+

@@ -1,36 +1,35 @@
-// Library - GATES_HD, Cell - nand2, View - schematic
-// LAST TIME SAVED: Jan 18 15:00:04 2018
-// NETLIST TIME: Apr  1 14:05:41 2021
+// Library - Stimulator_IMP, Cell - LS_LowSide_V2_ST, View - schematic
+// LAST TIME SAVED: Apr  9 15:57:59 2021
+// NETLIST TIME: Apr 30 15:39:11 2021
 `timescale 1ns / 1ps 
 
-`worklib GATES_HD
+`worklib Stimulator_IMP
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="GATES_HD", dfII_cell="nand2", dfII_view="schematic", worklib_name="GATES_HD", view_name="schematic", last_save_time="Jan 18 15:00:04 2018" *)
+(* dfII_lib="Stimulator_IMP", dfII_cell="LS_LowSide_V2_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  9 15:57:59 2021" *)
 
-module nand2 (out, a, b);
-
-parameter GT_PDW=0;
-parameter GT_PDL=180.00n;
-parameter sx=4.8e-07;
-parameter lc=2.7e-07;
-parameter GT_PUW=0;
-parameter GT_PUL=180.00n;
+module LS_LowSide_V2_ST (out, .\gnd! (cdsNet2), .\vdd3! (cdsNet1), 
+    .\vdde! (cdsNet0), vddh, in);
 
 output  out;
 
-input  a, b;
+inout  cdsNet2, cdsNet1, cdsNet0, vddh;
 
-wire (*
-integer inh_conn_prop_name = "ground_gnd";
-integer inh_conn_def_value = "cds_globals.\\gnd! ";*)
-\gnd! ;
+input  in;
 
-wire (*
-integer inh_conn_prop_name = "power_vdd";
-integer inh_conn_def_value = "cds_globals.\\vdd! ";*)
-\vdd! ;
 
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst4(cdsNet2, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst5(cdsNet1, cds_globals.\vdd3! );
+cds_alias #(1) cds_alias_inst6(cdsNet0, cds_globals.\vdde! );
+
+ResistiveDivider I2 ( .V2(cds_globals.\gnd! ), .V1(net11), .VOUT(out));
+
+LS_HighSide_V3_ST I1 ( .\vdde! (cds_globals.\vdde! ), .\gnd! 
+    (cds_globals.\gnd! ), .\vdd3! (cds_globals.\vdd3! ), .vddh(vddh), 
+    .out(net9), .in(in));
 
 endmodule

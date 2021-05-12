@@ -1,0 +1,52 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TB_OneCH_Top"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal cmos_sch"
+  stopList "spectre"
+  globalList "gnd! vdd3! vdde! vdd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/research/Sim/TB_OneCH_Top/ams/config/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "GATES_HD/invr/schematic" "invr" )
+( "Stimulator_IMP/Ext_Iref_ST/schematic" "Ext_Iref_ST" )
+( "Stimulator_IMP/CurrentMirror_x10_LV/schematic" "CurrentMirror_x10_LV" )
+( "GATES_HD/nand2/schematic" "nand2" )
+( "Stimulator_IMP/LS_LowSide_V2_ST/schematic" "LS_LowSide_V2_ST" )
+( "Stimulator_IMP/HalfBridge_ST/schematic" "HalfBridge_ST" )
+( "D_CELLS_3V/IN_3VX2/cmos_sch" "IN_3VX2" )
+( "D_CELLS_HD/AND2HDX0/cmos_sch" "AND2HDX0" )
+( "Stimulator_IMP/Idac_5bit_ST_V3/schematic" "Idac_5bit_ST_V3" )
+( "GATES_3V/invrv3/schematic" "invrv3" )
+( "Stimulator_IMP/SingleChannel_ST/schematic" "SingleChannel_ST" )
+( "Stimulator_IMP/LS_HighSide_V3_ST/schematic" "LS_HighSide_V3_ST" )
+( "D_CELLS_M3V/LSHVT18U3VX2/cmos_sch" "LSHVT18U3VX2" )
+( "Stimulator_IMP/CurrentSource_All_ST/schematic" "CurrentSource_All_ST" )
+( "Stimulator_TestBench/TB_OneCH_Top/schematic" "TB_OneCH_Top" )
+( "D_CELLS_M3V/LSHVT18U3VX1/cmos_sch" "LSHVT18U3VX1" )
+( "Stimulator_IMP/CurrentMirror_ST/schematic" "CurrentMirror_ST" )
+( "Stimulator_IMP/ResistiveDivider/schematic" "ResistiveDivider" )
+ )
+( "TB_OneCH_Top" "ihnl/cds17/map" )
+( "HalfBridge_ST" "ihnl/cds15/map" )
+( "Ext_Iref_ST" "ihnl/cds0/map" )
+( "LSHVT18U3VX2" "ihnl/cds4/map" )
+( "invrv3" "ihnl/cds8/map" )
+( "CurrentMirror_ST" "ihnl/cds6/map" )
+( "nand2" "ihnl/cds1/map" )
+( "ResistiveDivider" "ihnl/cds12/map" )
+( "invr" "ihnl/cds2/map" )
+( "LSHVT18U3VX1" "ihnl/cds10/map" )
+( "LS_LowSide_V2_ST" "ihnl/cds14/map" )
+( "CurrentSource_All_ST" "ihnl/cds11/map" )
+( "CurrentMirror_x10_LV" "ihnl/cds5/map" )
+( "Idac_5bit_ST_V3" "ihnl/cds7/map" )
+( "LS_HighSide_V3_ST" "ihnl/cds13/map" )
+( "SingleChannel_ST" "ihnl/cds16/map" )
+( "AND2HDX0" "ihnl/cds3/map" )
+( "IN_3VX2" "ihnl/cds9/map" )
+ )

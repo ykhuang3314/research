@@ -2,9 +2,4 @@
 ( "vdd!" "inh_power_vdd" )
 ( "gnd!" "inh_ground_gnd" )
  )
-( model
-( "nand2" "nand2" )
-( "invr" "invr" )
-( "AND2HDX0" "AND2HDX0" )
- )
  )
