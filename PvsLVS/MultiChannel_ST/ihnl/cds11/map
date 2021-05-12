@@ -1,0 +1,9 @@
+( ( net
+( "gnd!" "gnd!" )
+( "[@power_vdde:%:vdde!]" "inh_power_vdde" )
+( "[@power_vdd:%:vdd!]" "inh_power_vdd" )
+( "[@power_vdd3:%:vdd3!]" "inh_power_vdd3" )
+( "[@ground_gnd:%:gnd!]" "inh_ground_gnd" )
+( "vdd3!" "vdd3!" )
+ )
+ )

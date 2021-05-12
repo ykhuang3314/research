@@ -1,0 +1,1509 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : MultiChannel_ST                              *
+* Netlisted  : Wed May 12 14:35:33 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(ne) ne ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 1 MP(pe) pe pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 2 MN(nel) nel ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 3 MN(nelna) nelna ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 4 MN(nesvt) nesvt ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 5 MP(pel) pel pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 6 MP(pesvt) pesvt pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 7 MN(nei) nei ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 8 MP(pei) pei pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 9 MN(neli) neli ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 10 MP(peli) peli pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 11 MN(nelnai) nelnai ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 12 MN(nesvti) nesvti ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 13 MP(pesvti) pesvti pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 14 NEI_6() nei_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 15 NEI_M_6() nei_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 16 NELI_6() neli_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 17 NELI_M_6() neli_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 18 NELNAI_6() nelnai_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 19 NELNAI_M_6() nelnai_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 20 NESVTI_6() nesvti_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 21 NESVTI_M_6() nesvti_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 22 PE_5() pe_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 23 PEL_5() pel_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 24 PEI_5() pei_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 25 PEI_M_5() pei_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 26 PELI_5() peli_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 27 PELI_M_5() peli_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 28 PESVT_5() pesvt_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 29 PESVTI_5() pesvti_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 30 PESVTI_M_5() pesvti_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 31 MN(nmma) nmma_d hvnwtrm(D) p1trm(G) hvnwtrm(S) bulk(B)
+*.DEVTMPLT 32 MN(nmma_bjt) nmma_b hvnwtrm(D) p1trm(G) hvnwtrm(S) bulk(B)
+*.DEVTMPLT 33 MP(pmma) pmma_d pwitrm(D) p1trm(G) pwitrm(S) dnwtrm(B)
+*.DEVTMPLT 34 PMMA_BJT() pmma_b pwitrm(D) p1trm(G) pwitrm(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 35 MN(nma) nma_d ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 36 MN(nma_bjt) nma_b ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 37 MP(pma) pma_d pdiff(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 38 PMA_BJT() pma_b pdiff(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 39 MP(pmb) pmb pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 40 MN(nmmc) nmmc_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 41 MN(nmmd) nmmd_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 42 MN(nhhv) nhhv_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 43 MN(nhhvd) nhhvd_d ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 44 MN(nmmc_bjt) nmmc_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 45 MN(nmmd_bjt) nmmd_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 46 MN(nhhv_bjt) nhhv_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 47 MN(nhhvd_bjt) nhhvd_b ndftrm(D) p1trm(G) ndftrm(S) bulk(B)
+*.DEVTMPLT 48 MP(pmmc) pmmc_d pdf(D) p1trm(G) pdf(S) hnw(B)
+*.DEVTMPLT 49 PMMC_BJT() pmmc_b pdf(D) p1trm(G) pdf(S) hnw(B) bulk(SB)
+*.DEVTMPLT 50 MP(phhv) phhv_d pdf(D) p1trm(G) pdf(S) hnw(B)
+*.DEVTMPLT 51 PHHV_BJT() phhv_b pdf(D) p1trm(G) pdf(S) hnw(B) bulk(SB)
+*.DEVTMPLT 52 LDDN(nmc) nmc_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 53 LDDN(nhv) nhv_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 54 LDDN(nhvd) nhvd_d ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 55 LDDN(nmc_bjt) nmc_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 56 LDDN(nhv_bjt) nhv_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 57 LDDN(nhvd_bjt) nhvd_b ndftrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 58 LDDP(pmc) pmc_d pdf(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 59 PMC_BJT() pmc_b pdf(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 60 LDDP(phv) phv_d pdf(D) p1trm(G) pdiff(S) hnw(B)
+*.DEVTMPLT 61 PHV_BJT() phv_b pdf(D) p1trm(G) pdiff(S) hnw(B) bulk(SB)
+*.DEVTMPLT 62 LDDN(nedi) nedi2_d dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 63 LDDN(nedia) nedia2_d dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 64 LDDP(ped) ped12_d pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 65 LDDP(ped2) ped22_d pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 66 LDDN(nedi_bjt) nedi2_b dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 67 LDDN(nedia_bjt) nedia2_b dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 68 LDDP(ped_bjt) ped12_b pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 69 LDDP(ped2_bjt) ped22_b pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 70 Q(qpva) qpva bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 71 Q(qpvb) qpvb bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 72 Q(qpvc) qpvc bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 73 Q(qpvascr) qpvascr bulk(C) dnwtrm(B) pwitrm(E)
+*.DEVTMPLT 74 Q(qpvhscr) qpvhscr bulk(C) hnw(B) pdf(E)
+*.DEVTMPLT 75 Q(qpvhbscr) qpvhbscr bulk(C) hnw(B) pwitrm(E)
+*.DEVTMPLT 76 Q(qnva) qnva dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 77 Q(qnvb) qnvb dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 78 Q(qnvba) qnvba dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 79 Q(qnvc) qnvc dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 80 Q(qnvca) qnvca dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 81 Q(qnvz) qnvz dnwtrm(C) pwitrm(B) ndiff(E) bulk(S)
+*.DEVTMPLT 82 MN(nn3) nnm ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 83 MN(ne3) nem ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 84 MN(nd3) ndm ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 85 MN(ne3lna) nemlna ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 86 MP(pe3) pem pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 87 MP(pe3ln) pemln pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 88 MP(pe3lna) pemlna pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 89 MN(ne3i) nemi ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 90 MN(nd3i) ndmi ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 91 MN(ne3lnai) nemlnai ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 92 MN(nds3i) ndsmiP ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 93 MN(nds3i) ndsmiE ndiff(D) p1trm(G) ndiff(S) pwitrm(B)
+*.DEVTMPLT 94 MP(pe3i) pemi pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 95 MP(pe3lni) pemlni pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 96 MP(pe3lnai) pemlnai pdiff(D) p1trm(G) pdiff(S) dnwtrm(B)
+*.DEVTMPLT 97 NE3I_6() nemi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 98 NE3I_M_6() nemi_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 99 ND3I_6() ndmi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 100 ND3I_M_6() ndmi_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 101 NE3LNAI_6() nemlnai_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 102 NE3LNAI_M_6() nemlnai_m_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 103 PE3_5() pem_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 104 PE3LN_5() pemln_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 105 PE3I_5() pemi_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 106 PE3I_M_5() pemi_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 107 PE3LNI_5() pemlni_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 108 PE3LNI_M_5() pemlni_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 109 PE3LNA_5() pemlna_5 pdiff(D) p1trm(G) pdiff(S) nwtrm(B) bulk(SB)
+*.DEVTMPLT 110 PE3LNAI_5() pemlnai_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 111 PE3LNAI_M_5() pemlnai_m_5 pdiff(D) p1trm(G) pdiff(S) dnwtrm(B) bulk(SB)
+*.DEVTMPLT 112 MOSVC() mosvc p1trm(G) nwtrm(NW) bulk(SB)
+*.DEVTMPLT 113 MOSVCI() mosvci p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 114 MOSVCI_M() mosvci_m p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 115 MOSVC3() mosvcm p1trm(G) nwtrm(NW) bulk(SB)
+*.DEVTMPLT 116 MOSVC3I() mosvcim p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 117 MOSVC3I_M() mosvcim_m p1trm(G) pwitrm(PW) dnwtrm(DNW) bulk(SB)
+*.DEVTMPLT 118 Q(qpva3) qpvma bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 119 Q(qpvb3) qpvmb bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 120 Q(qpvc3) qpvmc bulk(C) nwtrm(B) pdiff(E)
+*.DEVTMPLT 121 R(rnw) rnw nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 122 R(rnw_scr) rnw_scr nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 123 R(rdnwmv) rdnwmv dnwtrm(POS) dnwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 124 R(rdn) rdn ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 125 R(rdn) rdn_g ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 126 R(rdn) rdni ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 127 R(rdn) rdn_gi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 128 R(rdn_esd) rdn_esdg ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 129 R(rdp) rdp pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 130 R(rdp) rdp_g pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 131 R(rdp) rdpi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 132 R(rdp) rdp_gi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 133 R(rdp_io) rdp_io_g pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 134 R(rdp_esd) rdp_esdg pdiff(POS) pdiff(NEG) hnw(SUB)
+*.DEVTMPLT 135 tag_60v() tdf_60 df_vlbl(N1)
+*.DEVTMPLT 136 tag_25v() tdf_25 df_vlbl(N1)
+*.DEVTMPLT 137 R(s_res) s_res bulk(POS) bulk(NEG)
+*.DEVTMPLT 138 D(dn) d_dn bulk(POS) ndiff(NEG)
+*.DEVTMPLT 139 D(dn) d_dni1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 140 D(dn) d_dni2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 141 D(p_dn) p_dn bulk(POS) ndiff(NEG)
+*.DEVTMPLT 142 D(p_dn) p_dni1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 143 D(p_dn) p_dni2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 144 D(p_dn) p_dndpl bulk(POS) ndiff(NEG)
+*.DEVTMPLT 145 D(p_dn) p_dndpli pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 146 D(p_dbn) p_dbn bulk(POS) bndiff(NEG)
+*.DEVTMPLT 147 D(dp) d_dp pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 148 D(dp) d_dpi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 149 D(dp) d_dpi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 150 D(p_dp) p_dp pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 151 D(p_dp) p_dpi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 152 D(p_dp) p_dpi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 153 D(p_dpndf) p_dpndf pdiff(POS) ndftrm(NEG)
+*.DEVTMPLT 154 D(p_dpndf) pdpndfh pdiff(POS) hnw(NEG)
+*.DEVTMPLT 155 D(dnw) d_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 156 D(p_dnw) p_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 157 D(dhnw) d_dhnw bulk(POS) hvnwtrm(NEG)
+*.DEVTMPLT 158 D(p_dhnw) p_dhnw bulk(POS) hvnwtrm(NEG)
+*.DEVTMPLT 159 D(dhpw) d_dhpw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 160 D(p_dhpw) p_dhpw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 161 D(ddnw) d_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 162 D(p_ddnw) p_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 163 D(ddnwmv) d_ddnwmv bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 164 D(p_ddnwmv) p_ddnwmv bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 165 D(dphoa) dphoa bulk(POS) dnwtrm(NEG) dphopin3(SUB)
+*.DEVTMPLT 166 D(dphob) dphob bulk(POS) dnwtrm(NEG) dphopin3(SUB)
+*.DEVTMPLT 167 DPHOC() dphoc bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 168 DPHOCFP() dphocfp bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 169 DPHOC0() dphoc0 bulk(A) catdiff(C) p1trm(POLY1) nwtrm(NW) dphopin3(LPOWER)
+*.DEVTMPLT 170 DPHOD() dphod anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 171 DPHODFP() dphodfp anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 172 DPHOD0() dphod0 anodiff(A1) bulk(A2) dphod_c(C) p1trm(POLY1) dphod_nw(NW) dphopin3(LPOWER)
+*.DEVTMPLT 173 D(dapda) dapda bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 174 D(dapda0) dapda0 bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 175 D(dspada) dspada bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 176 D(dspada0) dspada0 bulk(POS) catdiff(NEG) dphopin3(SUB)
+*.DEVTMPLT 177 DAPB() dapb bulk(A) catdiff(C) davl_c2(C2) dphopin3(LPOWER)
+*.DEVTMPLT 178 DAPB0() dapb0 bulk(A) catdiff(C) davl_c2(C2) dphopin3(LPOWER)
+*.DEVTMPLT 179 DSPB() dspb bulk(A) catdiff(C) davl_c2(C2) dphopin3(PHOTON)
+*.DEVTMPLT 180 DSPB0() dspb0 bulk(A) catdiff(C) davl_c2(C2) dphopin3(PHOTON)
+*.DEVTMPLT 181 D(dipdnw) d_dipw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 182 D(p_dipdnw) p_dipw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 183 D(dipdnwmv) d_dipwmv pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 184 D(p_dipdnwmv) p_dipwmv pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 185 D(p_ddpldnw) pddpldnw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 186 D(dndf) d_dndf bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 187 D(p_dndf) p_dndf bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 188 D(dpdwhn) d_dpdwhn pdf(POS) hnw(NEG)
+*.DEVTMPLT 189 D(p_dpdwhn) p_dpdwhn pdf(POS) hnw(NEG)
+*.DEVTMPLT 190 D(dwhn) d_dwhn bulk(POS) hnw(NEG)
+*.DEVTMPLT 191 D(p_dwhn) p_dwhn bulk(POS) hnw(NEG)
+*.DEVTMPLT 192 D(dpdd_scr) dpdd_scr pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 193 D(p_dpdddnw) pdpdddnw pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 194 D(dnpdd_scr) dnpddscr pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 195 D(dpp20) dpp20 pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 196 D(dnp20) dnp20 bulk(POS) ndftrm(NEG)
+*.DEVTMPLT 197 D(dpol) dpol dpol_p(POS) dpol_n(NEG)
+*.DEVTMPLT 198 D(dnhpw) d_dnhpw bulk(POS) ndiff(NEG)
+*.DEVTMPLT 199 D(dnhpw) d_dnhpwi pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 200 D(p_dnhpw) p_dnhpw bulk(POS) ndiff(NEG)
+*.DEVTMPLT 201 D(p_dnhpw) p_dnhpwi pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 202 D(dphnw) d_dphnw pdiff(POS) hvnwtrm(NEG)
+*.DEVTMPLT 203 D(dphnw) d_dphnw1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 204 D(dphnw) d_dphnw2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 205 D(p_dphnw) p_dphnw pdiff(POS) hvnwtrm(NEG)
+*.DEVTMPLT 206 D(p_dphnw) p_dphnw1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 207 D(p_dphnw) p_dphnw2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 208 D(dpdnwmv) ddpdnwmv pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 209 D(p_dpdnwmv) pdpdnwmv pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 210 D(dpdnw) d_dpdnw pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 211 D(p_dpdnw) p_dpdnw pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 212 D(dpwhn) d_dpwhn pdiff(POS) hnw(NEG)
+*.DEVTMPLT 213 D(p_dpwhn) p_dpwhn pdiff(POS) hnw(NEG)
+*.DEVTMPLT 214 D(dsb) d_dsb d_dsdf(POS) hnw(NEG) bulk(SUB)
+*.DEVTMPLT 215 D(dsba) d_dsba d_dsdf(POS) hnw(NEG) bulk(SUB)
+*.DEVTMPLT 216 R(rnw3) rnwm nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 217 R(rnw3_scr) rnwm_scr nwtrm(POS) nwtrm(NEG) bulk(SUB)
+*.DEVTMPLT 218 R(rdn3) rdnm ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 219 R(rdn3) rdnm_g ndiff(POS) ndiff(NEG) bulk(SUB)
+*.DEVTMPLT 220 R(rdn3) rdnmi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 221 R(rdn3) rdnm_gi ndiff(POS) ndiff(NEG) pwitrm(SUB)
+*.DEVTMPLT 222 R(rdp3) rdpm pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 223 R(rdp3) rdpm_g pdiff(POS) pdiff(NEG) nwtrm(SUB)
+*.DEVTMPLT 224 R(rdp3) rdpmi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 225 R(rdp3) rdpm_gi pdiff(POS) pdiff(NEG) dnwtrm(SUB)
+*.DEVTMPLT 226 D(dn3) d_dnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 227 D(dn3) d_dnmi1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 228 D(dn3) d_dnmi2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 229 D(p_dn3) p_dnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 230 D(p_dn3) p_dnmi1 pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 231 D(p_dn3) p_dnmi2 pdf(POS) ndiff(NEG)
+*.DEVTMPLT 232 D(dnn3) d_dnnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 233 D(p_dnn3) p_dnnm bulk(POS) ndiff(NEG)
+*.DEVTMPLT 234 D(p_dn3dpl) pdnmdpl bulk(POS) ndiff(NEG)
+*.DEVTMPLT 235 D(p_dn3dpl) pdnmdpli pwitrm(POS) ndiff(NEG)
+*.DEVTMPLT 236 D(dp3) d_dpm pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 237 D(dp3) d_dpmi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 238 D(dp3) d_dpmi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 239 D(p_dp3) p_dpm pdiff(POS) nwtrm(NEG)
+*.DEVTMPLT 240 D(p_dp3) p_dpmi1 pdiff(POS) dnwtrm(NEG)
+*.DEVTMPLT 241 D(p_dp3) p_dpmi2 pdiff(POS) hnw(NEG)
+*.DEVTMPLT 242 D(dnw3) d_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 243 D(p_dnw3) p_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 244 R(rpp1k1) rpp1k1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 245 R(rpp1k1_3) rpp1k1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 246 R(rpp1k1_3) rpp1k1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 247 R(rpp1k1_3) rpp1k1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 248 R(rpp1k1_3) rpp1k1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 249 R(rpp1k1_3) rpp1k1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 250 R(rpp1k1_3) rpp1k1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 251 R(rpp1k1_3) rpp1k1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 252 R(rpp1k1_3) rpp1k1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 253 R(rnp1) rnp1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 254 R(rnp1_3) rnp1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 255 R(rnp1_3) rnp1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 256 R(rnp1_3) rnp1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 257 R(rnp1_3) rnp1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 258 R(rnp1_3) rnp1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 259 R(rnp1_3) rnp1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 260 R(rnp1_3) rnp1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 261 R(rnp1_3) rnp1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 262 R(rpp1) rpp1_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 263 R(rpp1_3) rpp1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 264 R(rpp1_3) rpp1_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 265 R(rpp1_3) rpp1fp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 266 R(rpp1_3) rpp1_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 267 R(rpp1_3) rpp1_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 268 R(rpp1_3) rpp1_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 269 R(rpp1_3) rpp1hn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 270 R(rpp1_3) rpp1fn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 271 R(rpp1s) rpp1s_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 272 R(rpp1s_3) rpp1s_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 273 R(rpp1s_3) rpp1s_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 274 R(rpp1s_3) rpp1sfp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 275 R(rpp1s_3) rpp1s_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 276 R(rpp1s_3) rpp1s_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 277 R(rpp1s_3) rpp1s_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 278 R(rpp1s_3) rpp1shn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 279 R(rpp1s_3) rpp1sfn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 280 R(rnp1h) rnp1h_2 p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 281 R(rnp1h_3) rnp1h_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 282 R(rnp1h_3) rnp1h_p p1trm(POS) p1trm(NEG) pwitrm(SUB)
+*.DEVTMPLT 283 R(rnp1h_3) rnp1hfp p1trm(POS) p1trm(NEG) pdf(SUB)
+*.DEVTMPLT 284 R(rnp1h_3) rnp1h_n p1trm(POS) p1trm(NEG) nwtrm(SUB)
+*.DEVTMPLT 285 R(rnp1h_3) rnp1h_d p1trm(POS) p1trm(NEG) dnwtrm(SUB)
+*.DEVTMPLT 286 R(rnp1h_3) rnp1h_h p1trm(POS) p1trm(NEG) hvnwtrm(SUB)
+*.DEVTMPLT 287 R(rnp1h_3) rnp1hhn p1trm(POS) p1trm(NEG) hnw(SUB)
+*.DEVTMPLT 288 R(rnp1h_3) rnp1hfn p1trm(POS) p1trm(NEG) ndftrm(SUB)
+*.DEVTMPLT 289 R(pfuse) pfuse p1trm(POS) p1trm(NEG)
+*.DEVTMPLT 290 tag_60v() tp1_60 p1_vlbl(N1)
+*.DEVTMPLT 291 tag_25v() tp1_25 p1_vlbl(N1)
+*.DEVTMPLT 292 R(rm1) rm1 m1trm(POS) m1trm(NEG)
+*.DEVTMPLT 293 R(rm2) rm2 m2trm(POS) m2trm(NEG)
+*.DEVTMPLT 294 tag_60v() tm1_60 m1_vlbl(N1)
+*.DEVTMPLT 295 tag_25v() tm1_25 m1_vlbl(N1)
+*.DEVTMPLT 296 tag_60v() tm2_60 m2_vlbl(N1)
+*.DEVTMPLT 297 tag_25v() tm2_25 m2_vlbl(N1)
+*.DEVTMPLT 298 R(rm3) rm3 m3trm(POS) m3trm(NEG)
+*.DEVTMPLT 299 tag_60v() tm3_60 m3_vlbl(N1)
+*.DEVTMPLT 300 tag_25v() tm3_25 m3_vlbl(N1)
+*.DEVTMPLT 301 R(rm4) rm4 m4trm(POS) m4trm(NEG)
+*.DEVTMPLT 302 tag_60v() tm4_60 m4_vlbl(N1)
+*.DEVTMPLT 303 tag_25v() tm4_25 m4_vlbl(N1)
+*.DEVTMPLT 304 R(rmtp) rmtp mttrm(POS) mttrm(NEG)
+*.DEVTMPLT 305 tag_60v() tmt_60 mt_vlbl(N1)
+*.DEVTMPLT 306 tag_25v() tmt_25 mt_vlbl(N1)
+*.DEVTMPLT 307 R(rmtpl) rmtpl mltrm(POS) mltrm(NEG)
+*.DEVTMPLT 308 tag_60v() tml_60 ml_vlbl(N1)
+*.DEVTMPLT 309 tag_25v() tml_25 ml_vlbl(N1)
+*.DEVTMPLT 310 C(csf2p) d_csf2p m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 311 C(csf3) d_csf3 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 312 C(csf3p) d_csf3p m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 313 C(csf3a) d_csf3a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 314 C(csf4) d_csf4 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 315 C(csf4a) d_csf4a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 316 C(csft5) d_csft5 m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 317 C(csft5a) d_csft5a m1atrm(POS) m1btrm(NEG)
+*.DEVTMPLT 318 C(csandwt3) d_cswt3 m1trm(POS) p1trm(NEG)
+*.DEVTMPLT 319 C(csandwt4) d_cswt4 m1trm(POS) p1trm(NEG)
+*.DEVTMPLT 320 C(cdmm4) cdmm capm2_b(POS) m2trm(NEG)
+*.DEVTMPLT 321 C(cdmmh4) cdmmh capmh2_b(POS) m2trm(NEG)
+*.DEVTMPLT 322 C(cmm5t) cmim capm(POS) m4trm(NEG)
+*.DEVTMPLT 323 C(cmmh5t) cmimh capmh(POS) m4trm(NEG)
+*.DEVTMPLT 324 C(ctmm5t) ctmm capm3_b(POS) m2trm(NEG)
+*.DEVTMPLT 325 C(ctmmh5t) ctmmh capmh3_b(POS) m2trm(NEG)
+*.DEVTMPLT 326 C(cmm3) cmim23f capm23f(POS) m2trm(NEG)
+*.DEVTMPLT 327 C(cmmh3) cmimh23f capmh23f(POS) m2trm(NEG)
+*.DEVTMPLT 328 C(cmm4) cmim34f capm34f(POS) m3trm(NEG)
+*.DEVTMPLT 329 C(cmmh4) cmimh34f capmh34f(POS) m3trm(NEG)
+*.DEVTMPLT 330 C(cpod) cpod p1trm(POS) bndiff(NEG) bulk(SUB)
+*.DEVTMPLT 331 C(cpodhv) cpodhv p1trm(POS) bndiff(NEG) bulk(SUB)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNAI_M_5                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNAI_M_5 D G S B SB
+.ends PE3LNAI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELNAI_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELNAI_6 D G S B NW SB
+.ends NELNAI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DSPB0                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DSPB0 A C C2 PHOTON
+.ends DSPB0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC G NW SB
+.ends MOSVC
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3_5                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3_5 D G S B SB
+.ends PE3_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PESVTI_M_5                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PESVTI_M_5 D G S B SB
+.ends PESVTI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMMA_BJT                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMMA_BJT D G S B SB
+.ends PMMA_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOCFP                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOCFP A C POLY1 NW LPOWER
+.ends DPHOCFP
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNI_M_5                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNI_M_5 D G S B SB
+.ends PE3LNI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PEI_5                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PEI_5 D G S B SB
+.ends PEI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3I_M_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3I_M_5 D G S B SB
+.ends PE3I_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNAI_5                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNAI_5 D G S B SB
+.ends PE3LNAI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC3I_M                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC3I_M G PW DNW SB
+.ends MOSVC3I_M
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DSPB                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DSPB A C C2 PHOTON
+.ends DSPB
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVCI                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVCI G PW DNW SB
+.ends MOSVCI
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LDDN                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LDDN D G S B
+.ends LDDN
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHODFP                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHODFP A1 A2 C POLY1 NW LPOWER
+.ends DPHODFP
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NESVTI_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NESVTI_6 D G S B NW SB
+.ends NESVTI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LDDP                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LDDP D G S B
+.ends LDDP
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: tag_60v                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt tag_60v N1
+.ends tag_60v
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PEI_M_5                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PEI_M_5 D G S B SB
+.ends PEI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNI_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNI_5 D G S B SB
+.ends PE3LNI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PELI_M_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PELI_M_5 D G S B SB
+.ends PELI_M_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NEI_6                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NEI_6 D G S B NW SB
+.ends NEI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELNAI_M_6                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELNAI_M_6 D G S B NW SB
+.ends NELNAI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LN_5                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LN_5 D G S B SB
+.ends PE3LN_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE_5                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE_5 D G S B SB
+.ends PE_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVCI_M                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVCI_M G PW DNW SB
+.ends MOSVCI_M
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PESVT_5                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PESVT_5 D G S B SB
+.ends PESVT_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3I_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3I_6 D G S B NW SB
+.ends NE3I_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3I_5                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3I_5 D G S B SB
+.ends PE3I_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC3I                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC3I G PW DNW SB
+.ends MOSVC3I
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ND3I_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ND3I_6 D G S B NW SB
+.ends ND3I_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NESVTI_M_6                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NESVTI_M_6 D G S B NW SB
+.ends NESVTI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3I_M_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3I_M_6 D G S B NW SB
+.ends NE3I_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOC0                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOC0 A C POLY1 NW LPOWER
+.ends DPHOC0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMC_BJT                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMC_BJT D G S B SB
+.ends PMC_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3LNAI_6                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3LNAI_6 D G S B NW SB
+.ends NE3LNAI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOC                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOC A C POLY1 NW LPOWER
+.ends DPHOC
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NEI_M_6                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NEI_M_6 D G S B NW SB
+.ends NEI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOD                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOD A1 A2 C POLY1 NW LPOWER
+.ends DPHOD
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PEL_5                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PEL_5 D G S B SB
+.ends PEL_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ND3I_M_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ND3I_M_6 D G S B NW SB
+.ends ND3I_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PHHV_BJT                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PHHV_BJT D G S B SB
+.ends PHHV_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELI_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELI_6 D G S B NW SB
+.ends NELI_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DAPB0                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DAPB0 A C C2 LPOWER
+.ends DAPB0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DAPB                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DAPB A C C2 LPOWER
+.ends DAPB
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NELI_M_6                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NELI_M_6 D G S B NW SB
+.ends NELI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3LNAI_M_6                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3LNAI_M_6 D G S B NW SB
+.ends NE3LNAI_M_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: tag_25v                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt tag_25v N1
+.ends tag_25v
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PELI_5                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PELI_5 D G S B SB
+.ends PELI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PHV_BJT                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PHV_BJT D G S B SB
+.ends PHV_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC3                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC3 G NW SB
+.ends MOSVC3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DPHOD0                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DPHOD0 A1 A2 C POLY1 NW LPOWER
+.ends DPHOD0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PE3LNA_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PE3LNA_5 D G S B SB
+.ends PE3LNA_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PESVTI_5                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PESVTI_5 D G S B SB
+.ends PESVTI_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMA_BJT                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMA_BJT D G S B SB
+.ends PMA_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: PMMC_BJT                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt PMMC_BJT D G S B SB
+.ends PMMC_BJT
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_68                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_68 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 3 2 1 4 ne3 L=2e-06 W=8e-06 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 PS=1.696e-05 $X=0 $Y=0 $dt=83
+.ends ne3_CDNS_68
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_CDNS_69                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_CDNS_69 1 2
+** N=3 EP=2 FDC=1
+R0 1 2 0 L=2.0095e-05 W=2e-06 $[rpp1k1] $X=0 $Y=0 $dt=244
+.ends rpp1k1_CDNS_69
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: Ext_Iref_ST                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt Ext_Iref_ST 1 2 3
+** N=6 EP=3 FDC=25
+X150 1 1 1 1 ne3_CDNS_68 $T=8070 50710 1 0 $X=7270 $Y=42140
+X151 1 1 1 1 ne3_CDNS_68 $T=8070 62020 1 0 $X=7270 $Y=53450
+X152 4 5 3 1 ne3_CDNS_68 $T=11670 16620 1 0 $X=10870 $Y=8050
+X153 6 5 5 1 ne3_CDNS_68 $T=11670 28710 1 0 $X=10870 $Y=20140
+X154 1 6 4 1 ne3_CDNS_68 $T=11670 50710 1 0 $X=10870 $Y=42140
+X155 1 6 6 1 ne3_CDNS_68 $T=11670 62020 1 0 $X=10870 $Y=53450
+X156 6 5 5 1 ne3_CDNS_68 $T=15270 16620 1 0 $X=14470 $Y=8050
+X157 4 5 3 1 ne3_CDNS_68 $T=15270 28710 1 0 $X=14470 $Y=20140
+X158 1 6 6 1 ne3_CDNS_68 $T=15270 50710 1 0 $X=14470 $Y=42140
+X159 1 6 4 1 ne3_CDNS_68 $T=15270 62020 1 0 $X=14470 $Y=53450
+X160 4 5 3 1 ne3_CDNS_68 $T=18870 16620 1 0 $X=18070 $Y=8050
+X161 6 5 5 1 ne3_CDNS_68 $T=18870 28710 1 0 $X=18070 $Y=20140
+X162 1 6 4 1 ne3_CDNS_68 $T=18870 50710 1 0 $X=18070 $Y=42140
+X163 1 6 6 1 ne3_CDNS_68 $T=18870 62020 1 0 $X=18070 $Y=53450
+X164 6 5 5 1 ne3_CDNS_68 $T=24470 16620 0 180 $X=21670 $Y=8050
+X165 4 5 3 1 ne3_CDNS_68 $T=24470 28710 0 180 $X=21670 $Y=20140
+X166 1 6 6 1 ne3_CDNS_68 $T=24470 50710 0 180 $X=21670 $Y=42140
+X167 1 6 4 1 ne3_CDNS_68 $T=24470 62020 0 180 $X=21670 $Y=53450
+X168 4 5 3 1 ne3_CDNS_68 $T=28070 16620 0 180 $X=25270 $Y=8050
+X169 6 5 5 1 ne3_CDNS_68 $T=28070 28710 0 180 $X=25270 $Y=20140
+X170 1 6 4 1 ne3_CDNS_68 $T=28070 50710 0 180 $X=25270 $Y=42140
+X171 1 6 6 1 ne3_CDNS_68 $T=28070 62020 0 180 $X=25270 $Y=53450
+X172 1 1 1 1 ne3_CDNS_68 $T=29670 50710 1 0 $X=28870 $Y=42140
+X173 1 1 1 1 ne3_CDNS_68 $T=29670 62020 1 0 $X=28870 $Y=53450
+X174 2 5 rpp1k1_CDNS_69 $T=850 7670 1 90 $X=630 $Y=6730
+.ends Ext_Iref_ST
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pe3_CDNS_79                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pe3_CDNS_79 1 2 3 4
+*.DEVICECLIMB
+** N=5 EP=4 FDC=8
+M0 3 2 1 4 pe3 L=3e-07 W=2e-06 AD=5.4e-13 AS=9.6e-13 PD=2.54e-06 PS=4.96e-06 $X=0 $Y=0 $dt=86
+M1 1 2 3 4 pe3 L=3e-07 W=2e-06 AD=5.4e-13 AS=5.4e-13 PD=2.54e-06 PS=2.54e-06 $X=840 $Y=0 $dt=86
+M2 3 2 1 4 pe3 L=3e-07 W=2e-06 AD=5.4e-13 AS=5.4e-13 PD=2.54e-06 PS=2.54e-06 $X=1680 $Y=0 $dt=86
+M3 1 2 3 4 pe3 L=3e-07 W=2e-06 AD=5.4e-13 AS=5.4e-13 PD=2.54e-06 PS=2.54e-06 $X=2520 $Y=0 $dt=86
+M4 3 2 1 4 pe3 L=3e-07 W=2e-06 AD=5.4e-13 AS=5.4e-13 PD=2.54e-06 PS=2.54e-06 $X=3360 $Y=0 $dt=86
+M5 1 2 3 4 pe3 L=3e-07 W=2e-06 AD=5.4e-13 AS=5.4e-13 PD=2.54e-06 PS=2.54e-06 $X=4200 $Y=0 $dt=86
+M6 3 2 1 4 pe3 L=3e-07 W=2e-06 AD=5.4e-13 AS=5.4e-13 PD=2.54e-06 PS=2.54e-06 $X=5040 $Y=0 $dt=86
+M7 1 2 3 4 pe3 L=3e-07 W=2e-06 AD=9.6e-13 AS=5.4e-13 PD=4.96e-06 PS=2.54e-06 $X=5880 $Y=0 $dt=86
+.ends pe3_CDNS_79
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pe3_CDNS_80                                     *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pe3_CDNS_80 1 2 3 4
+*.DEVICECLIMB
+** N=5 EP=4 FDC=1
+M0 3 2 1 4 pe3 L=2e-06 W=6e-06 AD=2.88e-12 AS=2.88e-12 PD=1.296e-05 PS=1.296e-05 $X=0 $Y=0 $dt=86
+.ends pe3_CDNS_80
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A45                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A45 1 2 3 4 5 6 7 8
+*.DEVICECLIMB
+** N=9 EP=8 FDC=4
+X0 4 1 5 8 pe3_CDNS_80 $T=3510 1030 1 180 $X=0 $Y=0
+X1 2 1 3 8 pe3_CDNS_80 $T=8530 1030 1 180 $X=5020 $Y=0
+X2 6 1 7 8 pe3_CDNS_80 $T=13550 1030 1 180 $X=10040 $Y=0
+X3 2 1 3 8 pe3_CDNS_80 $T=18570 1030 1 180 $X=15060 $Y=0
+.ends MASCO__A45
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: Idac_5bit_ST_V3                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt Idac_5bit_ST_V3 1 vdd3! Iref D0_3v Idac D1_3v D2_3v D3_3v D4_3v
+** N=20 EP=9 FDC=316
+X1139 11 D0_3v Idac vdd3! pe3_CDNS_79 $T=76900 12835 1 0 $X=75390 $Y=9805
+X1140 13 D1_3v Idac vdd3! pe3_CDNS_79 $T=86100 12835 1 0 $X=84590 $Y=9805
+X1141 15 D2_3v Idac vdd3! pe3_CDNS_79 $T=95300 12835 1 0 $X=93790 $Y=9805
+X1142 17 D3_3v Idac vdd3! pe3_CDNS_79 $T=104500 12835 1 0 $X=102990 $Y=9805
+X1143 19 D4_3v Idac vdd3! pe3_CDNS_79 $T=113700 12835 1 0 $X=112190 $Y=9805
+X1144 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=14330 166105 0 0 $X=12820 $Y=165075
+X1145 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=14330 181725 0 0 $X=12820 $Y=180695
+X1146 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=14330 197345 0 0 $X=12820 $Y=196315
+X1147 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=14330 212965 0 0 $X=12820 $Y=211935
+X1148 18 Iref 19 vdd3! pe3_CDNS_80 $T=18910 50740 0 0 $X=17400 $Y=49710
+X1149 16 Iref 17 vdd3! pe3_CDNS_80 $T=18910 72840 0 0 $X=17400 $Y=71810
+X1150 16 Iref 17 vdd3! pe3_CDNS_80 $T=18910 94940 0 0 $X=17400 $Y=93910
+X1151 18 Iref 19 vdd3! pe3_CDNS_80 $T=18910 117040 0 0 $X=17400 $Y=116010
+X1152 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=19350 166105 0 0 $X=17840 $Y=165075
+X1153 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=19350 181725 0 0 $X=17840 $Y=180695
+X1154 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=19350 197345 0 0 $X=17840 $Y=196315
+X1155 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=19350 212965 0 0 $X=17840 $Y=211935
+X1156 18 Iref 19 vdd3! pe3_CDNS_80 $T=23930 50740 0 0 $X=22420 $Y=49710
+X1157 18 Iref 19 vdd3! pe3_CDNS_80 $T=23930 72840 0 0 $X=22420 $Y=71810
+X1158 18 Iref 19 vdd3! pe3_CDNS_80 $T=23930 94940 0 0 $X=22420 $Y=93910
+X1159 18 Iref 19 vdd3! pe3_CDNS_80 $T=23930 117040 0 0 $X=22420 $Y=116010
+X1160 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=24370 166105 0 0 $X=22860 $Y=165075
+X1161 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=24370 181725 0 0 $X=22860 $Y=180695
+X1162 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=24370 197345 0 0 $X=22860 $Y=196315
+X1163 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=24370 212965 0 0 $X=22860 $Y=211935
+X1164 18 Iref 19 vdd3! pe3_CDNS_80 $T=28950 50740 0 0 $X=27440 $Y=49710
+X1165 16 Iref 17 vdd3! pe3_CDNS_80 $T=28950 72840 0 0 $X=27440 $Y=71810
+X1166 16 Iref 17 vdd3! pe3_CDNS_80 $T=28950 94940 0 0 $X=27440 $Y=93910
+X1167 18 Iref 19 vdd3! pe3_CDNS_80 $T=28950 117040 0 0 $X=27440 $Y=116010
+X1168 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=29390 166105 0 0 $X=27880 $Y=165075
+X1169 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=29390 181725 0 0 $X=27880 $Y=180695
+X1170 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=29390 197345 0 0 $X=27880 $Y=196315
+X1171 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=29390 212965 0 0 $X=27880 $Y=211935
+X1172 18 Iref 19 vdd3! pe3_CDNS_80 $T=33970 50740 0 0 $X=32460 $Y=49710
+X1173 18 Iref 19 vdd3! pe3_CDNS_80 $T=33970 72840 0 0 $X=32460 $Y=71810
+X1174 18 Iref 19 vdd3! pe3_CDNS_80 $T=33970 94940 0 0 $X=32460 $Y=93910
+X1175 18 Iref 19 vdd3! pe3_CDNS_80 $T=33970 117040 0 0 $X=32460 $Y=116010
+X1176 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=34410 166105 0 0 $X=32900 $Y=165075
+X1177 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=34410 181725 0 0 $X=32900 $Y=180695
+X1178 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=34410 197345 0 0 $X=32900 $Y=196315
+X1179 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=34410 212965 0 0 $X=32900 $Y=211935
+X1180 18 Iref 19 vdd3! pe3_CDNS_80 $T=38990 50740 0 0 $X=37480 $Y=49710
+X1181 16 Iref 17 vdd3! pe3_CDNS_80 $T=38990 72840 0 0 $X=37480 $Y=71810
+X1182 16 Iref 17 vdd3! pe3_CDNS_80 $T=38990 94940 0 0 $X=37480 $Y=93910
+X1183 18 Iref 19 vdd3! pe3_CDNS_80 $T=38990 117040 0 0 $X=37480 $Y=116010
+X1184 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=39430 166105 0 0 $X=37920 $Y=165075
+X1185 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=39430 181725 0 0 $X=37920 $Y=180695
+X1186 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=39430 197345 0 0 $X=37920 $Y=196315
+X1187 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=39430 212965 0 0 $X=37920 $Y=211935
+X1188 18 Iref 19 vdd3! pe3_CDNS_80 $T=44010 50740 0 0 $X=42500 $Y=49710
+X1189 18 Iref 19 vdd3! pe3_CDNS_80 $T=44010 72840 0 0 $X=42500 $Y=71810
+X1190 18 Iref 19 vdd3! pe3_CDNS_80 $T=44010 94940 0 0 $X=42500 $Y=93910
+X1191 18 Iref 19 vdd3! pe3_CDNS_80 $T=44010 117040 0 0 $X=42500 $Y=116010
+X1192 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=44450 166105 0 0 $X=42940 $Y=165075
+X1193 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=44450 181725 0 0 $X=42940 $Y=180695
+X1194 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=44450 197345 0 0 $X=42940 $Y=196315
+X1195 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=44450 212965 0 0 $X=42940 $Y=211935
+X1196 18 Iref 19 vdd3! pe3_CDNS_80 $T=49030 50740 0 0 $X=47520 $Y=49710
+X1197 16 Iref 17 vdd3! pe3_CDNS_80 $T=49030 72840 0 0 $X=47520 $Y=71810
+X1198 16 Iref 17 vdd3! pe3_CDNS_80 $T=49030 94940 0 0 $X=47520 $Y=93910
+X1199 18 Iref 19 vdd3! pe3_CDNS_80 $T=49030 117040 0 0 $X=47520 $Y=116010
+X1200 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=49470 166105 0 0 $X=47960 $Y=165075
+X1201 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=49470 181725 0 0 $X=47960 $Y=180695
+X1202 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=49470 197345 0 0 $X=47960 $Y=196315
+X1203 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=49470 212965 0 0 $X=47960 $Y=211935
+X1204 18 Iref 19 vdd3! pe3_CDNS_80 $T=54050 50740 0 0 $X=52540 $Y=49710
+X1205 14 Iref 15 vdd3! pe3_CDNS_80 $T=54050 72840 0 0 $X=52540 $Y=71810
+X1206 14 Iref 15 vdd3! pe3_CDNS_80 $T=54050 94940 0 0 $X=52540 $Y=93910
+X1207 18 Iref 19 vdd3! pe3_CDNS_80 $T=54050 117040 0 0 $X=52540 $Y=116010
+X1208 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=54490 166105 0 0 $X=52980 $Y=165075
+X1209 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=54490 181725 0 0 $X=52980 $Y=180695
+X1210 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=54490 197345 0 0 $X=52980 $Y=196315
+X1211 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=54490 212965 0 0 $X=52980 $Y=211935
+X1212 18 Iref 19 vdd3! pe3_CDNS_80 $T=59070 50740 0 0 $X=57560 $Y=49710
+X1213 16 Iref 17 vdd3! pe3_CDNS_80 $T=59070 72840 0 0 $X=57560 $Y=71810
+X1214 16 Iref 17 vdd3! pe3_CDNS_80 $T=59070 94940 0 0 $X=57560 $Y=93910
+X1215 18 Iref 19 vdd3! pe3_CDNS_80 $T=59070 117040 0 0 $X=57560 $Y=116010
+X1216 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=59510 166105 0 0 $X=58000 $Y=165075
+X1217 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=59510 181725 0 0 $X=58000 $Y=180695
+X1218 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=59510 197345 0 0 $X=58000 $Y=196315
+X1219 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=59510 212965 0 0 $X=58000 $Y=211935
+X1220 18 Iref 19 vdd3! pe3_CDNS_80 $T=64090 50740 0 0 $X=62580 $Y=49710
+X1221 14 Iref 15 vdd3! pe3_CDNS_80 $T=64090 72840 0 0 $X=62580 $Y=71810
+X1222 14 Iref 15 vdd3! pe3_CDNS_80 $T=64090 94940 0 0 $X=62580 $Y=93910
+X1223 18 Iref 19 vdd3! pe3_CDNS_80 $T=64090 117040 0 0 $X=62580 $Y=116010
+X1224 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=64530 166105 0 0 $X=63020 $Y=165075
+X1225 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=64530 181725 0 0 $X=63020 $Y=180695
+X1226 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=64530 197345 0 0 $X=63020 $Y=196315
+X1227 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=64530 212965 0 0 $X=63020 $Y=211935
+X1228 18 Iref 19 vdd3! pe3_CDNS_80 $T=69110 50740 0 0 $X=67600 $Y=49710
+X1229 16 Iref 17 vdd3! pe3_CDNS_80 $T=69110 72840 0 0 $X=67600 $Y=71810
+X1230 16 Iref 17 vdd3! pe3_CDNS_80 $T=69110 94940 0 0 $X=67600 $Y=93910
+X1231 18 Iref 19 vdd3! pe3_CDNS_80 $T=69110 117040 0 0 $X=67600 $Y=116010
+X1232 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=69550 166105 0 0 $X=68040 $Y=165075
+X1233 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=69550 181725 0 0 $X=68040 $Y=180695
+X1234 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=69550 197345 0 0 $X=68040 $Y=196315
+X1235 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=69550 212965 0 0 $X=68040 $Y=211935
+X1236 18 Iref 19 vdd3! pe3_CDNS_80 $T=74130 50740 0 0 $X=72620 $Y=49710
+X1237 14 Iref 15 vdd3! pe3_CDNS_80 $T=74130 72840 0 0 $X=72620 $Y=71810
+X1238 14 Iref 15 vdd3! pe3_CDNS_80 $T=74130 94940 0 0 $X=72620 $Y=93910
+X1239 18 Iref 19 vdd3! pe3_CDNS_80 $T=74130 117040 0 0 $X=72620 $Y=116010
+X1240 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=74570 166105 0 0 $X=73060 $Y=165075
+X1241 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=74570 181725 0 0 $X=73060 $Y=180695
+X1242 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=74570 197345 0 0 $X=73060 $Y=196315
+X1243 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=74570 212965 0 0 $X=73060 $Y=211935
+X1244 18 Iref 19 vdd3! pe3_CDNS_80 $T=79150 50740 0 0 $X=77640 $Y=49710
+X1245 16 Iref 17 vdd3! pe3_CDNS_80 $T=79150 72840 0 0 $X=77640 $Y=71810
+X1246 16 Iref 17 vdd3! pe3_CDNS_80 $T=79150 94940 0 0 $X=77640 $Y=93910
+X1247 18 Iref 19 vdd3! pe3_CDNS_80 $T=79150 117040 0 0 $X=77640 $Y=116010
+X1248 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=79590 166105 0 0 $X=78080 $Y=165075
+X1249 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=79590 181725 0 0 $X=78080 $Y=180695
+X1250 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=79590 197345 0 0 $X=78080 $Y=196315
+X1251 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=79590 212965 0 0 $X=78080 $Y=211935
+X1252 16 Iref 17 vdd3! pe3_CDNS_80 $T=84170 50740 0 0 $X=82660 $Y=49710
+X1253 14 Iref 15 vdd3! pe3_CDNS_80 $T=84170 72840 0 0 $X=82660 $Y=71810
+X1254 14 Iref 15 vdd3! pe3_CDNS_80 $T=84170 94940 0 0 $X=82660 $Y=93910
+X1255 16 Iref 17 vdd3! pe3_CDNS_80 $T=84170 117040 0 0 $X=82660 $Y=116010
+X1256 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=84610 166105 0 0 $X=83100 $Y=165075
+X1257 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=84610 181725 0 0 $X=83100 $Y=180695
+X1258 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=84610 197345 0 0 $X=83100 $Y=196315
+X1259 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=84610 212965 0 0 $X=83100 $Y=211935
+X1260 10 Iref 11 vdd3! pe3_CDNS_80 $T=89190 50740 0 0 $X=87680 $Y=49710
+X1261 12 Iref 13 vdd3! pe3_CDNS_80 $T=89190 72840 0 0 $X=87680 $Y=71810
+X1262 12 Iref 13 vdd3! pe3_CDNS_80 $T=89190 94940 0 0 $X=87680 $Y=93910
+X1263 10 Iref 11 vdd3! pe3_CDNS_80 $T=89190 117040 0 0 $X=87680 $Y=116010
+X1264 vdd3! 20 10 vdd3! pe3_CDNS_80 $T=89630 166105 0 0 $X=88120 $Y=165075
+X1265 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=89630 181725 0 0 $X=88120 $Y=180695
+X1266 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=89630 197345 0 0 $X=88120 $Y=196315
+X1267 vdd3! 20 10 vdd3! pe3_CDNS_80 $T=89630 212965 0 0 $X=88120 $Y=211935
+X1268 12 Iref 13 vdd3! pe3_CDNS_80 $T=94210 50740 0 0 $X=92700 $Y=49710
+X1269 20 Iref Iref vdd3! pe3_CDNS_80 $T=94210 72840 0 0 $X=92700 $Y=71810
+X1270 20 Iref Iref vdd3! pe3_CDNS_80 $T=94210 94940 0 0 $X=92700 $Y=93910
+X1271 12 Iref 13 vdd3! pe3_CDNS_80 $T=94210 117040 0 0 $X=92700 $Y=116010
+X1272 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=94650 166105 0 0 $X=93140 $Y=165075
+X1273 vdd3! 20 20 vdd3! pe3_CDNS_80 $T=94650 181725 0 0 $X=93140 $Y=180695
+X1274 vdd3! 20 20 vdd3! pe3_CDNS_80 $T=94650 197345 0 0 $X=93140 $Y=196315
+X1275 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=94650 212965 0 0 $X=93140 $Y=211935
+X1276 12 Iref 13 vdd3! pe3_CDNS_80 $T=99230 50740 0 0 $X=97720 $Y=49710
+X1277 20 Iref Iref vdd3! pe3_CDNS_80 $T=99230 72840 0 0 $X=97720 $Y=71810
+X1278 20 Iref Iref vdd3! pe3_CDNS_80 $T=99230 94940 0 0 $X=97720 $Y=93910
+X1279 12 Iref 13 vdd3! pe3_CDNS_80 $T=99230 117040 0 0 $X=97720 $Y=116010
+X1280 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=99670 166105 0 0 $X=98160 $Y=165075
+X1281 vdd3! 20 20 vdd3! pe3_CDNS_80 $T=99670 181725 0 0 $X=98160 $Y=180695
+X1282 vdd3! 20 20 vdd3! pe3_CDNS_80 $T=99670 197345 0 0 $X=98160 $Y=196315
+X1283 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=99670 212965 0 0 $X=98160 $Y=211935
+X1284 10 Iref 11 vdd3! pe3_CDNS_80 $T=106250 50740 1 180 $X=102740 $Y=49710
+X1285 12 Iref 13 vdd3! pe3_CDNS_80 $T=106250 72840 1 180 $X=102740 $Y=71810
+X1286 12 Iref 13 vdd3! pe3_CDNS_80 $T=106250 94940 1 180 $X=102740 $Y=93910
+X1287 10 Iref 11 vdd3! pe3_CDNS_80 $T=106250 117040 1 180 $X=102740 $Y=116010
+X1288 vdd3! 20 10 vdd3! pe3_CDNS_80 $T=106690 166105 1 180 $X=103180 $Y=165075
+X1289 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=106690 181725 1 180 $X=103180 $Y=180695
+X1290 vdd3! 20 12 vdd3! pe3_CDNS_80 $T=106690 197345 1 180 $X=103180 $Y=196315
+X1291 vdd3! 20 10 vdd3! pe3_CDNS_80 $T=106690 212965 1 180 $X=103180 $Y=211935
+X1292 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=111710 166105 1 180 $X=108200 $Y=165075
+X1293 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=111710 181725 1 180 $X=108200 $Y=180695
+X1294 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=111710 197345 1 180 $X=108200 $Y=196315
+X1295 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=111710 212965 1 180 $X=108200 $Y=211935
+X1296 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=134810 166105 0 0 $X=133300 $Y=165075
+X1297 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=134810 181725 0 0 $X=133300 $Y=180695
+X1298 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=134810 197345 0 0 $X=133300 $Y=196315
+X1299 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=134810 212965 0 0 $X=133300 $Y=211935
+X1300 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=139830 166105 0 0 $X=138320 $Y=165075
+X1301 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=139830 181725 0 0 $X=138320 $Y=180695
+X1302 vdd3! 20 14 vdd3! pe3_CDNS_80 $T=139830 197345 0 0 $X=138320 $Y=196315
+X1303 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=139830 212965 0 0 $X=138320 $Y=211935
+X1304 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=146850 166105 1 180 $X=143340 $Y=165075
+X1305 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=146850 181725 1 180 $X=143340 $Y=180695
+X1306 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=146850 197345 1 180 $X=143340 $Y=196315
+X1307 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=146850 212965 1 180 $X=143340 $Y=211935
+X1308 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=151870 166105 1 180 $X=148360 $Y=165075
+X1309 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=151870 181725 1 180 $X=148360 $Y=180695
+X1310 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=151870 197345 1 180 $X=148360 $Y=196315
+X1311 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=151870 212965 1 180 $X=148360 $Y=211935
+X1312 18 Iref 19 vdd3! pe3_CDNS_80 $T=171510 50740 1 180 $X=168000 $Y=49710
+X1313 18 Iref 19 vdd3! pe3_CDNS_80 $T=171510 72840 1 180 $X=168000 $Y=71810
+X1314 18 Iref 19 vdd3! pe3_CDNS_80 $T=171510 94940 1 180 $X=168000 $Y=93910
+X1315 18 Iref 19 vdd3! pe3_CDNS_80 $T=171510 117040 1 180 $X=168000 $Y=116010
+X1316 18 Iref 19 vdd3! pe3_CDNS_80 $T=176530 50740 1 180 $X=173020 $Y=49710
+X1317 16 Iref 17 vdd3! pe3_CDNS_80 $T=176530 72840 1 180 $X=173020 $Y=71810
+X1318 16 Iref 17 vdd3! pe3_CDNS_80 $T=176530 94940 1 180 $X=173020 $Y=93910
+X1319 18 Iref 19 vdd3! pe3_CDNS_80 $T=176530 117040 1 180 $X=173020 $Y=116010
+X1320 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=176970 166105 1 180 $X=173460 $Y=165075
+X1321 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=176970 181725 1 180 $X=173460 $Y=180695
+X1322 vdd3! 20 16 vdd3! pe3_CDNS_80 $T=176970 197345 1 180 $X=173460 $Y=196315
+X1323 vdd3! 20 18 vdd3! pe3_CDNS_80 $T=176970 212965 1 180 $X=173460 $Y=211935
+X1324 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=179990 166105 0 0 $X=178480 $Y=165075
+X1325 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=179990 181725 0 0 $X=178480 $Y=180695
+X1326 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=179990 197345 0 0 $X=178480 $Y=196315
+X1327 vdd3! vdd3! vdd3! vdd3! pe3_CDNS_80 $T=179990 212965 0 0 $X=178480 $Y=211935
+X1328 Iref 18 19 16 17 18 19 vdd3! MASCO__A45 $T=107760 49710 0 0 $X=107760 $Y=49710
+X1329 Iref 16 17 14 15 14 15 vdd3! MASCO__A45 $T=107760 71810 0 0 $X=107760 $Y=71810
+X1330 Iref 16 17 14 15 14 15 vdd3! MASCO__A45 $T=107760 93910 0 0 $X=107760 $Y=93910
+X1331 Iref 18 19 16 17 18 19 vdd3! MASCO__A45 $T=107760 116010 0 0 $X=107760 $Y=116010
+X1332 20 vdd3! 18 vdd3! 18 vdd3! 18 vdd3! MASCO__A45 $T=113220 165075 0 0 $X=113220 $Y=165075
+X1333 20 vdd3! 14 vdd3! 16 vdd3! 16 vdd3! MASCO__A45 $T=113220 180695 0 0 $X=113220 $Y=180695
+X1334 20 vdd3! 14 vdd3! 16 vdd3! 16 vdd3! MASCO__A45 $T=113220 196315 0 0 $X=113220 $Y=196315
+X1335 20 vdd3! 18 vdd3! 18 vdd3! 18 vdd3! MASCO__A45 $T=113220 211935 0 0 $X=113220 $Y=211935
+X1336 Iref 18 19 18 19 18 19 vdd3! MASCO__A45 $T=127840 49710 0 0 $X=127840 $Y=49710
+X1337 Iref 16 17 14 15 14 15 vdd3! MASCO__A45 $T=127840 71810 0 0 $X=127840 $Y=71810
+X1338 Iref 16 17 14 15 14 15 vdd3! MASCO__A45 $T=127840 93910 0 0 $X=127840 $Y=93910
+X1339 Iref 18 19 18 19 18 19 vdd3! MASCO__A45 $T=127840 116010 0 0 $X=127840 $Y=116010
+X1340 Iref 18 19 18 19 18 19 vdd3! MASCO__A45 $T=147920 49710 0 0 $X=147920 $Y=49710
+X1341 Iref 16 17 18 19 18 19 vdd3! MASCO__A45 $T=147920 71810 0 0 $X=147920 $Y=71810
+X1342 Iref 16 17 18 19 18 19 vdd3! MASCO__A45 $T=147920 93910 0 0 $X=147920 $Y=93910
+X1343 Iref 18 19 18 19 18 19 vdd3! MASCO__A45 $T=147920 116010 0 0 $X=147920 $Y=116010
+X1344 20 vdd3! 18 vdd3! 18 vdd3! 18 vdd3! MASCO__A45 $T=153380 165075 0 0 $X=153380 $Y=165075
+X1345 20 vdd3! 18 vdd3! 16 vdd3! 16 vdd3! MASCO__A45 $T=153380 180695 0 0 $X=153380 $Y=180695
+X1346 20 vdd3! 18 vdd3! 16 vdd3! 16 vdd3! MASCO__A45 $T=153380 196315 0 0 $X=153380 $Y=196315
+X1347 20 vdd3! 18 vdd3! 18 vdd3! 18 vdd3! MASCO__A45 $T=153380 211935 0 0 $X=153380 $Y=211935
+D0 1 vdd3! p_dnw AREA=2.0589e-08 PJ=0.00066488 perimeter=0.00066488 $X=-6960 $Y=25350 $dt=156
+D1 1 vdd3! p_dnw AREA=1.0792e-08 PJ=0.00056064 perimeter=0.00056064 $X=-860 $Y=151395 $dt=156
+D2 1 vdd3! p_dnw AREA=1.20791e-09 PJ=0.00017132 perimeter=0.00017132 $X=66490 $Y=905 $dt=156
+D3 1 vdd3! p_dnw3 AREA=1.37568e-09 PJ=0 perimeter=0 $X=12820 $Y=165075 $dt=243
+D4 1 vdd3! p_dnw3 AREA=1.37568e-09 PJ=0 perimeter=0 $X=12820 $Y=180695 $dt=243
+D5 1 vdd3! p_dnw3 AREA=1.37568e-09 PJ=0 perimeter=0 $X=12820 $Y=196315 $dt=243
+D6 1 vdd3! p_dnw3 AREA=1.37568e-09 PJ=0 perimeter=0 $X=12820 $Y=211935 $dt=243
+D7 1 vdd3! p_dnw3 AREA=1.29476e-09 PJ=0 perimeter=0 $X=17400 $Y=49710 $dt=243
+D8 1 vdd3! p_dnw3 AREA=1.29476e-09 PJ=0 perimeter=0 $X=17400 $Y=71810 $dt=243
+D9 1 vdd3! p_dnw3 AREA=1.29476e-09 PJ=0 perimeter=0 $X=17400 $Y=93910 $dt=243
+D10 1 vdd3! p_dnw3 AREA=1.29476e-09 PJ=0 perimeter=0 $X=17400 $Y=116010 $dt=243
+D11 1 vdd3! p_dnw3 AREA=1.8676e-10 PJ=0 perimeter=0 $X=75390 $Y=9805 $dt=243
+.ends Idac_5bit_ST_V3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_bjt_CDNS_125                              *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_bjt_CDNS_125 1 2 3 4
+** N=4 EP=4 FDC=1
+X0 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=1.41512e-09 pdio=0.00016535 extlay=1 $[nedia_bjt] $X=-680 $Y=-4850 $dt=67
+.ends nedia_bjt_CDNS_125
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_bjt_CDNS_126                              *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_bjt_CDNS_126 1 2 3 4
+** N=4 EP=4 FDC=1
+X0 2 3 4 1 LDDN w=3.5e-05 l=1.25e-06 adio=9.21466e-10 pdio=0.00012035 extlay=1 $[nedia_bjt] $X=-680 $Y=-4850 $dt=67
+.ends nedia_bjt_CDNS_126
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_bjt_CDNS_127                              *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_bjt_CDNS_127 1 2 3 4
+** N=4 EP=4 FDC=5
+X0 2 3 4 1 LDDN w=6e-05 l=1.25e-06 adio=7.93969e-10 pdio=4.811e-05 extlay=1 $[nedia_bjt] $X=-680 $Y=-4850 $dt=67
+X1 2 3 4 1 LDDN w=6e-05 l=1.25e-06 adio=7.93969e-10 pdio=4.811e-05 extlay=1 $[nedia_bjt] $X=11220 $Y=-4850 $dt=67
+X2 2 3 4 1 LDDN w=6e-05 l=1.25e-06 adio=7.93969e-10 pdio=4.811e-05 extlay=1 $[nedia_bjt] $X=23120 $Y=-4850 $dt=67
+X3 2 3 4 1 LDDN w=6e-05 l=1.25e-06 adio=7.93969e-10 pdio=4.811e-05 extlay=1 $[nedia_bjt] $X=35020 $Y=-4850 $dt=67
+X4 2 3 4 1 LDDN w=6e-05 l=1.25e-06 adio=7.93969e-10 pdio=4.811e-05 extlay=1 $[nedia_bjt] $X=46920 $Y=-4850 $dt=67
+.ends nedia_bjt_CDNS_127
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LSHVT18U3VX2                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LSHVT18U3VX2 vdd3! gnd! vdde! A Q
+** N=10 EP=5 FDC=13
+M0 8 A gnd! gnd! ne3 L=3.5e-07 W=4.2e-07 AD=2.016e-13 AS=3.654e-13 PD=1.8e-06 PS=2.58e-06 $X=660 $Y=660 $dt=83
+M1 gnd! 8 6 gnd! ne3 L=3.5e-07 W=1.31e-06 AD=3.537e-13 AS=6.187e-13 PD=1.85e-06 PS=3.61e-06 $X=2345 $Y=660 $dt=83
+M2 7 A gnd! gnd! ne3 L=3.5e-07 W=1.31e-06 AD=6.288e-13 AS=3.537e-13 PD=3.58e-06 PS=1.85e-06 $X=3235 $Y=660 $dt=83
+M3 Q 7 gnd! gnd! ne3 L=3.5e-07 W=8.9e-07 AD=2.403e-13 AS=1.1368e-12 PD=1.43e-06 PS=4.37e-06 $X=5290 $Y=660 $dt=83
+M4 gnd! 7 Q gnd! ne3 L=3.5e-07 W=8.9e-07 AD=7.214e-13 AS=2.403e-13 PD=3.7e-06 PS=1.43e-06 $X=6180 $Y=660 $dt=83
+M5 8 A vdde! vdd3! pe3 L=3.0008e-07 W=1.47627e-06 AD=6.21587e-13 AS=5.264e-13 PD=3.96234e-06 PS=3.68627e-06 $X=620 $Y=2410 $dt=86
+M6 10 7 vdd3! vdd3! pe3 L=3e-07 W=4.2e-07 AD=5.25e-14 AS=3.086e-13 PD=6.7e-07 PS=2.7e-06 $X=1990 $Y=3060 $dt=86
+M7 6 8 10 vdd3! pe3 L=3e-07 W=4.2e-07 AD=2.71e-13 AS=5.25e-14 PD=2.32071e-06 PS=6.7e-07 $X=2540 $Y=3060 $dt=86
+M8 9 A 7 vdd3! pe3 L=3e-07 W=4.2e-07 AD=5.25e-14 AS=2.32287e-13 PD=6.7e-07 PS=1.98778e-06 $X=3965 $Y=3400 $dt=86
+M9 vdd3! 6 9 vdd3! pe3 L=3e-07 W=4.2e-07 AD=1.52026e-13 AS=5.25e-14 PD=8.95082e-07 PS=6.7e-07 $X=4515 $Y=3400 $dt=86
+M10 Q 7 vdd3! vdd3! pe3 L=3e-07 W=1.41e-06 AD=3.84225e-13 AS=5.10374e-13 PD=1.955e-06 PS=3.00492e-06 $X=5355 $Y=2410 $dt=86
+M11 vdd3! 7 Q vdd3! pe3 L=3e-07 W=1.41e-06 AD=1.0914e-12 AS=3.84225e-13 PD=4.8e-06 PS=1.955e-06 $X=6200 $Y=2410 $dt=86
+D12 gnd! vdd3! p_dnw3 AREA=2.43707e-11 PJ=2.30544e-05 perimeter=2.30544e-05 $X=-430 $Y=1980 $dt=243
+.ends LSHVT18U3VX2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_bjt_CDNS_128                              *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_bjt_CDNS_128 1 2 3
+** N=3 EP=3 FDC=1
+X0 2 2 3 1 LDDN w=4e-05 l=1.25e-06 adio=9.76316e-10 pdio=0.00012535 extlay=1 $[nedia_bjt] $X=-680 $Y=-4850 $dt=67
+.ends nedia_bjt_CDNS_128
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ped_bjt_CDNS_129                                *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ped_bjt_CDNS_129 1 2 3 4
+** N=4 EP=4 FDC=1
+X0 2 3 4 1 LDDP w=3e-05 l=9.4e-07 ad=2.16315e-10 pd=0.00011484 adio=6.07846e-10 pdio=9.48181e-05 extlay=1 $[ped_bjt] $X=-2270 $Y=0 $dt=68
+.ends ped_bjt_CDNS_129
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_bjt_CDNS_130                              *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_bjt_CDNS_130 1 2 3
+** N=3 EP=3 FDC=1
+X0 2 3 1 1 LDDN w=1e-05 l=1.25e-06 adio=6.47216e-10 pdio=9.53501e-05 extlay=1 $[nedia_bjt] $X=-680 $Y=-4850 $dt=67
+.ends nedia_bjt_CDNS_130
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_148                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_148 1 2 3
+** N=3 EP=3 FDC=1
+M0 3 2 1 1 ne3 L=3e-06 W=1.2e-05 AD=5.76e-12 AS=5.76e-12 PD=2.496e-05 PS=2.496e-05 $X=0 $Y=0 $dt=83
+.ends ne3_CDNS_148
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: CurrentMirror_x10_LV                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt CurrentMirror_x10_LV gnd! Iin Ix10
+** N=3 EP=3 FDC=66
+X758 gnd! Iin Ix10 ne3_CDNS_148 $T=17330 15400 0 0 $X=16530 $Y=15000
+X759 gnd! Iin Ix10 ne3_CDNS_148 $T=17330 35990 0 0 $X=16530 $Y=35590
+X760 gnd! Iin Ix10 ne3_CDNS_148 $T=17330 56580 0 0 $X=16530 $Y=56180
+X761 gnd! Iin Ix10 ne3_CDNS_148 $T=23130 15400 0 0 $X=22330 $Y=15000
+X762 gnd! Iin Ix10 ne3_CDNS_148 $T=23130 35990 0 0 $X=22330 $Y=35590
+X763 gnd! Iin Ix10 ne3_CDNS_148 $T=23130 56580 0 0 $X=22330 $Y=56180
+X764 gnd! Iin Ix10 ne3_CDNS_148 $T=28930 15400 0 0 $X=28130 $Y=15000
+X765 gnd! Iin Ix10 ne3_CDNS_148 $T=28930 35990 0 0 $X=28130 $Y=35590
+X766 gnd! Iin Ix10 ne3_CDNS_148 $T=28930 56580 0 0 $X=28130 $Y=56180
+X767 gnd! Iin Ix10 ne3_CDNS_148 $T=34730 15400 0 0 $X=33930 $Y=15000
+X768 gnd! Iin Ix10 ne3_CDNS_148 $T=34730 35990 0 0 $X=33930 $Y=35590
+X769 gnd! Iin Ix10 ne3_CDNS_148 $T=34730 56580 0 0 $X=33930 $Y=56180
+X770 gnd! Iin Ix10 ne3_CDNS_148 $T=40530 15400 0 0 $X=39730 $Y=15000
+X771 gnd! Iin Ix10 ne3_CDNS_148 $T=40530 35990 0 0 $X=39730 $Y=35590
+X772 gnd! Iin Ix10 ne3_CDNS_148 $T=40530 56580 0 0 $X=39730 $Y=56180
+X773 gnd! Iin Ix10 ne3_CDNS_148 $T=46330 15400 0 0 $X=45530 $Y=15000
+X774 gnd! Iin Ix10 ne3_CDNS_148 $T=46330 35990 0 0 $X=45530 $Y=35590
+X775 gnd! Iin Ix10 ne3_CDNS_148 $T=46330 56580 0 0 $X=45530 $Y=56180
+X776 gnd! Iin Ix10 ne3_CDNS_148 $T=52130 15400 0 0 $X=51330 $Y=15000
+X777 gnd! Iin Ix10 ne3_CDNS_148 $T=52130 35990 0 0 $X=51330 $Y=35590
+X778 gnd! Iin Ix10 ne3_CDNS_148 $T=52130 56580 0 0 $X=51330 $Y=56180
+X779 gnd! Iin Ix10 ne3_CDNS_148 $T=57930 15400 0 0 $X=57130 $Y=15000
+X780 gnd! Iin Ix10 ne3_CDNS_148 $T=57930 35990 0 0 $X=57130 $Y=35590
+X781 gnd! Iin Ix10 ne3_CDNS_148 $T=57930 56580 0 0 $X=57130 $Y=56180
+X782 gnd! Iin Ix10 ne3_CDNS_148 $T=63730 15400 0 0 $X=62930 $Y=15000
+X783 gnd! Iin Ix10 ne3_CDNS_148 $T=63730 35990 0 0 $X=62930 $Y=35590
+X784 gnd! Iin Ix10 ne3_CDNS_148 $T=63730 56580 0 0 $X=62930 $Y=56180
+X785 gnd! Iin Iin ne3_CDNS_148 $T=69530 15400 0 0 $X=68730 $Y=15000
+X786 gnd! Iin Ix10 ne3_CDNS_148 $T=69530 35990 0 0 $X=68730 $Y=35590
+X787 gnd! Iin Iin ne3_CDNS_148 $T=69530 56580 0 0 $X=68730 $Y=56180
+X788 gnd! Iin Ix10 ne3_CDNS_148 $T=75330 15400 0 0 $X=74530 $Y=15000
+X789 gnd! Iin Iin ne3_CDNS_148 $T=75330 35990 0 0 $X=74530 $Y=35590
+X790 gnd! Iin Ix10 ne3_CDNS_148 $T=75330 56580 0 0 $X=74530 $Y=56180
+X791 gnd! Iin Ix10 ne3_CDNS_148 $T=81130 15400 0 0 $X=80330 $Y=15000
+X792 gnd! Iin Iin ne3_CDNS_148 $T=81130 35990 0 0 $X=80330 $Y=35590
+X793 gnd! Iin Ix10 ne3_CDNS_148 $T=81130 56580 0 0 $X=80330 $Y=56180
+X794 gnd! Iin Iin ne3_CDNS_148 $T=89930 15400 1 180 $X=86130 $Y=15000
+X795 gnd! Iin Ix10 ne3_CDNS_148 $T=89930 35990 1 180 $X=86130 $Y=35590
+X796 gnd! Iin Iin ne3_CDNS_148 $T=89930 56580 1 180 $X=86130 $Y=56180
+X797 gnd! Iin Ix10 ne3_CDNS_148 $T=95730 15400 1 180 $X=91930 $Y=15000
+X798 gnd! Iin Ix10 ne3_CDNS_148 $T=95730 35990 1 180 $X=91930 $Y=35590
+X799 gnd! Iin Ix10 ne3_CDNS_148 $T=95730 56580 1 180 $X=91930 $Y=56180
+X800 gnd! Iin Ix10 ne3_CDNS_148 $T=101530 15400 1 180 $X=97730 $Y=15000
+X801 gnd! Iin Ix10 ne3_CDNS_148 $T=101530 35990 1 180 $X=97730 $Y=35590
+X802 gnd! Iin Ix10 ne3_CDNS_148 $T=101530 56580 1 180 $X=97730 $Y=56180
+X803 gnd! Iin Ix10 ne3_CDNS_148 $T=107330 15400 1 180 $X=103530 $Y=15000
+X804 gnd! Iin Ix10 ne3_CDNS_148 $T=107330 35990 1 180 $X=103530 $Y=35590
+X805 gnd! Iin Ix10 ne3_CDNS_148 $T=107330 56580 1 180 $X=103530 $Y=56180
+X806 gnd! Iin Ix10 ne3_CDNS_148 $T=113130 15400 1 180 $X=109330 $Y=15000
+X807 gnd! Iin Ix10 ne3_CDNS_148 $T=113130 35990 1 180 $X=109330 $Y=35590
+X808 gnd! Iin Ix10 ne3_CDNS_148 $T=113130 56580 1 180 $X=109330 $Y=56180
+X809 gnd! Iin Ix10 ne3_CDNS_148 $T=118930 15400 1 180 $X=115130 $Y=15000
+X810 gnd! Iin Ix10 ne3_CDNS_148 $T=118930 35990 1 180 $X=115130 $Y=35590
+X811 gnd! Iin Ix10 ne3_CDNS_148 $T=118930 56580 1 180 $X=115130 $Y=56180
+X812 gnd! Iin Ix10 ne3_CDNS_148 $T=124730 15400 1 180 $X=120930 $Y=15000
+X813 gnd! Iin Ix10 ne3_CDNS_148 $T=124730 35990 1 180 $X=120930 $Y=35590
+X814 gnd! Iin Ix10 ne3_CDNS_148 $T=124730 56580 1 180 $X=120930 $Y=56180
+X815 gnd! Iin Ix10 ne3_CDNS_148 $T=130530 15400 1 180 $X=126730 $Y=15000
+X816 gnd! Iin Ix10 ne3_CDNS_148 $T=130530 35990 1 180 $X=126730 $Y=35590
+X817 gnd! Iin Ix10 ne3_CDNS_148 $T=130530 56580 1 180 $X=126730 $Y=56180
+X818 gnd! Iin Ix10 ne3_CDNS_148 $T=136330 15400 1 180 $X=132530 $Y=15000
+X819 gnd! Iin Ix10 ne3_CDNS_148 $T=136330 35990 1 180 $X=132530 $Y=35590
+X820 gnd! Iin Ix10 ne3_CDNS_148 $T=136330 56580 1 180 $X=132530 $Y=56180
+X821 gnd! Iin Ix10 ne3_CDNS_148 $T=142130 15400 1 180 $X=138330 $Y=15000
+X822 gnd! Iin Ix10 ne3_CDNS_148 $T=142130 35990 1 180 $X=138330 $Y=35590
+X823 gnd! Iin Ix10 ne3_CDNS_148 $T=142130 56580 1 180 $X=138330 $Y=56180
+.ends CurrentMirror_x10_LV
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: CurrretMirrorx10_HV                             *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt CurrretMirrorx10_HV 1 2 3 4
+** N=6 EP=4 FDC=22
+X10 1 5 1 3 nedia_bjt_CDNS_125 $T=69460 81200 0 0 $X=53240 $Y=61810
+X11 1 4 5 2 nedia_bjt_CDNS_125 $T=69460 184700 0 0 $X=53240 $Y=165310
+X12 1 4 5 2 nedia_bjt_CDNS_125 $T=101760 81200 0 0 $X=85540 $Y=61810
+X13 1 5 1 3 nedia_bjt_CDNS_125 $T=101760 184700 0 0 $X=85540 $Y=165310
+X14 1 5 1 3 nedia_bjt_CDNS_125 $T=134060 81200 0 0 $X=117840 $Y=61810
+X15 1 4 5 2 nedia_bjt_CDNS_125 $T=134060 184700 0 0 $X=117840 $Y=165310
+X16 1 4 5 2 nedia_bjt_CDNS_125 $T=166360 81200 0 0 $X=150140 $Y=61810
+X17 1 5 1 3 nedia_bjt_CDNS_125 $T=166360 184700 0 0 $X=150140 $Y=165310
+X18 1 5 1 3 nedia_bjt_CDNS_125 $T=198660 81200 0 0 $X=182440 $Y=61810
+X19 1 4 5 2 nedia_bjt_CDNS_125 $T=198660 184700 0 0 $X=182440 $Y=165310
+X20 1 3 6 2 nedia_bjt_CDNS_125 $T=230960 81200 0 0 $X=214740 $Y=61810
+X21 1 6 1 3 nedia_bjt_CDNS_125 $T=230960 184700 0 0 $X=214740 $Y=165310
+X22 1 4 5 2 nedia_bjt_CDNS_125 $T=263260 81200 0 0 $X=247040 $Y=61810
+X23 1 5 1 3 nedia_bjt_CDNS_125 $T=263260 184700 0 0 $X=247040 $Y=165310
+X24 1 5 1 3 nedia_bjt_CDNS_125 $T=295560 81200 0 0 $X=279340 $Y=61810
+X25 1 4 5 2 nedia_bjt_CDNS_125 $T=295560 184700 0 0 $X=279340 $Y=165310
+X26 1 4 5 2 nedia_bjt_CDNS_125 $T=327860 81200 0 0 $X=311640 $Y=61810
+X27 1 5 1 3 nedia_bjt_CDNS_125 $T=327860 184700 0 0 $X=311640 $Y=165310
+X28 1 5 1 3 nedia_bjt_CDNS_125 $T=360160 81200 0 0 $X=343940 $Y=61810
+X29 1 4 5 2 nedia_bjt_CDNS_125 $T=360160 184700 0 0 $X=343940 $Y=165310
+X30 1 4 5 2 nedia_bjt_CDNS_125 $T=392460 81200 0 0 $X=376240 $Y=61810
+X31 1 5 1 3 nedia_bjt_CDNS_125 $T=392460 184700 0 0 $X=376240 $Y=165310
+.ends CurrretMirrorx10_HV
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_CDNS_173                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_CDNS_173 1 2
+** N=3 EP=2 FDC=1
+R0 2 1 0 L=0.00011122 W=2e-06 $[rpp1k1] $X=-2220 $Y=0 $dt=244
+.ends rpp1k1_CDNS_173
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_CDNS_174                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_CDNS_174 1 2
+** N=2 EP=2 FDC=1
+R0 2 1 0 L=0.00036998 W=2e-06 $[rpp1k1] $X=-2220 $Y=0 $dt=244
+.ends rpp1k1_CDNS_174
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: AND2HDX0                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt AND2HDX0 vdd! gnd! A B Q
+*.DEVICECLIMB
+** N=7 EP=5 FDC=6
+M0 6 A 7 gnd! ne L=1.8e-07 W=4.2e-07 AD=5.25e-14 AS=2.016e-13 PD=6.7e-07 PS=1.8e-06 $X=620 $Y=1130 $dt=0
+M1 gnd! B 6 gnd! ne L=1.8e-07 W=4.2e-07 AD=4.554e-13 AS=5.25e-14 PD=2.25e-06 PS=6.7e-07 $X=1050 $Y=1130 $dt=0
+M2 Q 7 gnd! gnd! ne L=1.8e-07 W=4.2e-07 AD=2.016e-13 AS=4.554e-13 PD=1.8e-06 PS=2.25e-06 $X=2000 $Y=1130 $dt=0
+M3 vdd! A 7 vdd! pe L=1.8e-07 W=7.2e-07 AD=6.23467e-13 AS=1.944e-13 PD=3.12667e-06 PS=1.26e-06 $X=515 $Y=2580 $dt=1
+M4 vdd! B 7 vdd! pe L=1.8e-07 W=7.2e-07 AD=6.23467e-13 AS=1.944e-13 PD=3.12667e-06 PS=1.26e-06 $X=1235 $Y=2580 $dt=1
+M5 Q 7 vdd! vdd! pe L=1.8e-07 W=7.2e-07 AD=3.456e-13 AS=6.23467e-13 PD=2.4e-06 PS=3.12667e-06 $X=2000 $Y=2580 $dt=1
+.ends AND2HDX0
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: IN_3VX2                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt IN_3VX2 vdd3! gnd! A Q
+*.DEVICECLIMB
+** N=4 EP=4 FDC=4
+M0 Q A gnd! gnd! ne3 L=3.5e-07 W=4.8e-07 AD=1.296e-13 AS=4.408e-13 PD=1.02e-06 PS=3.52e-06 $X=500 $Y=1070 $dt=83
+M1 gnd! A Q gnd! ne3 L=3.5e-07 W=4.8e-07 AD=4.408e-13 AS=1.296e-13 PD=3.52e-06 PS=1.02e-06 $X=1390 $Y=1070 $dt=83
+M2 Q A vdd3! vdd3! pe3 L=3.00472e-07 W=1.45971e-06 AD=2.751e-13 AS=8.151e-13 PD=1.87971e-06 PS=4.50971e-06 $X=560 $Y=2410 $dt=86
+M3 vdd3! A Q vdd3! pe3 L=3.00472e-07 W=1.45971e-06 AD=8.01e-13 AS=2.751e-13 PD=4.48971e-06 PS=1.87971e-06 $X=1400 $Y=2410 $dt=86
+.ends IN_3VX2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LSHVT18U3VX1                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LSHVT18U3VX1 vdd3! gnd! vdde! A Q
+*.DEVICECLIMB
+** N=10 EP=5 FDC=10
+M0 8 A gnd! gnd! ne3 L=3.5e-07 W=4.2e-07 AD=2.016e-13 AS=3.654e-13 PD=1.8e-06 PS=2.58e-06 $X=660 $Y=660 $dt=83
+M1 gnd! 8 6 gnd! ne3 L=3.5e-07 W=1.31e-06 AD=3.537e-13 AS=6.187e-13 PD=1.85e-06 PS=3.61e-06 $X=2345 $Y=660 $dt=83
+M2 7 A gnd! gnd! ne3 L=3.5e-07 W=1.31e-06 AD=6.288e-13 AS=3.537e-13 PD=3.58e-06 PS=1.85e-06 $X=3235 $Y=660 $dt=83
+M3 Q 7 gnd! gnd! ne3 L=3.5e-07 W=8.9e-07 AD=4.272e-13 AS=1.0128e-12 PD=2.74e-06 PS=4.17e-06 $X=5190 $Y=660 $dt=83
+M4 8 A vdde! vdd3! pe3 L=3.0008e-07 W=1.47627e-06 AD=6.24563e-13 AS=5.264e-13 PD=3.97406e-06 PS=3.68627e-06 $X=620 $Y=2410 $dt=86
+M5 10 7 vdd3! vdd3! pe3 L=3e-07 W=4.2e-07 AD=5.25e-14 AS=3.086e-13 PD=6.7e-07 PS=2.7e-06 $X=1995 $Y=3060 $dt=86
+M6 6 8 10 vdd3! pe3 L=3e-07 W=4.2e-07 AD=2.6775e-13 AS=5.25e-14 PD=2.31071e-06 PS=6.7e-07 $X=2545 $Y=3060 $dt=86
+M7 9 A 7 vdd3! pe3 L=3e-07 W=4.2e-07 AD=5.25e-14 AS=2.32287e-13 PD=6.7e-07 PS=1.98778e-06 $X=3970 $Y=3400 $dt=86
+M8 vdd3! 6 9 vdd3! pe3 L=3e-07 W=4.2e-07 AD=1.30176e-13 AS=5.25e-14 PD=8.55707e-07 PS=6.7e-07 $X=4520 $Y=3400 $dt=86
+M9 Q 7 vdd3! vdd3! pe3 L=3.00472e-07 W=1.45971e-06 AD=5.718e-13 AS=4.52424e-13 PD=3.70971e-06 PS=2.974e-06 $X=5240 $Y=2410 $dt=86
+.ends LSHVT18U3VX1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: CurrentSource_All_ST                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt CurrentSource_All_ST gnd! vdd! Mag0_ST Mag1_ST Mag2_ST Mag3_ST Mag4_ST Enable_ST vdd3! vdde!
++ Iext vddh Ist
+** N=43 EP=13 FDC=628
+X119 gnd! Iext 23 Ext_Iref_ST $T=449360 -356980 1 0 $X=449990 $Y=-424390
+X122 gnd! vdd3! 23 14 25 15 16 17 18 Idac_5bit_ST_V3 $T=247420 -582970 0 0 $X=239880 $Y=-582645
+X306 gnd! 21 gnd! 21 nedia_bjt_CDNS_125 $T=677290 -534285 0 0 $X=661070 $Y=-553675
+X307 gnd! 22 31 22 nedia_bjt_CDNS_125 $T=677290 -399505 0 0 $X=661070 $Y=-418895
+X308 gnd! 31 22 21 nedia_bjt_CDNS_126 $T=677290 -455645 0 0 $X=661070 $Y=-475035
+X309 gnd! 30 32 24 nedia_bjt_CDNS_127 $T=512540 -478395 0 0 $X=496320 $Y=-497785
+X310 vdd3! gnd! vdde! Enable_ST 32 LSHVT18U3VX2 $T=483220 -465375 0 0 $X=482790 $Y=-466015
+X311 gnd! 20 33 nedia_bjt_CDNS_128 $T=643355 -534285 0 0 $X=627135 $Y=-553675
+X312 gnd! 22 30 27 ped_bjt_CDNS_129 $T=506400 -407055 0 0 $X=491450 $Y=-422005
+X313 gnd! 27 28 vddh ped_bjt_CDNS_129 $T=506400 -362155 0 0 $X=491450 $Y=-377105
+X314 gnd! 30 30 28 ped_bjt_CDNS_129 $T=536300 -407055 0 0 $X=521350 $Y=-422005
+X315 gnd! 28 28 vddh ped_bjt_CDNS_129 $T=536300 -362155 0 0 $X=521350 $Y=-377105
+X316 gnd! 20 30 29 ped_bjt_CDNS_129 $T=566200 -407055 0 0 $X=551250 $Y=-422005
+X317 gnd! 29 28 vddh ped_bjt_CDNS_129 $T=566200 -362155 0 0 $X=551250 $Y=-377105
+X318 gnd! 24 19 nedia_bjt_CDNS_130 $T=605825 -453070 0 0 $X=589605 $Y=-472460
+X319 gnd! 19 vdd3! nedia_bjt_CDNS_130 $T=638265 -453070 0 0 $X=622045 $Y=-472460
+X320 gnd! 25 24 CurrentMirror_x10_LV $T=462060 -583750 0 0 $X=464980 $Y=-581340
+X321 gnd! 31 33 Ist CurrretMirrorx10_HV $T=233030 -895410 0 0 $X=233030 $Y=-895405
+X322 26 32 rpp1k1_CDNS_173 $T=491630 -471915 1 270 $X=482630 $Y=-499135
+X323 gnd! 26 rpp1k1_CDNS_173 $T=482850 -454365 1 90 $X=482630 $Y=-457525
+X324 gnd! vdd3! rpp1k1_CDNS_174 $T=586330 -479410 0 270 $X=586110 $Y=-491630
+X327 vdd! gnd! Enable_ST Mag0_ST 34 AND2HDX0 $T=292485 -577600 1 0 $X=292055 $Y=-582720
+X328 vdd! gnd! Enable_ST Mag1_ST 35 AND2HDX0 $T=292485 -577600 0 0 $X=292055 $Y=-578000
+X329 vdd! gnd! Enable_ST Mag2_ST 36 AND2HDX0 $T=292485 -568640 1 0 $X=292055 $Y=-573760
+X330 vdd! gnd! Enable_ST Mag3_ST 37 AND2HDX0 $T=292485 -568640 0 0 $X=292055 $Y=-569040
+X331 vdd! gnd! Enable_ST Mag4_ST 38 AND2HDX0 $T=292485 -559680 1 0 $X=292055 $Y=-564800
+X332 vdd3! gnd! 39 14 IN_3VX2 $T=306065 -577600 1 0 $X=305635 $Y=-582720
+X333 vdd3! gnd! 40 15 IN_3VX2 $T=306065 -577600 0 0 $X=305635 $Y=-578240
+X334 vdd3! gnd! 41 16 IN_3VX2 $T=306065 -568640 1 0 $X=305635 $Y=-573760
+X335 vdd3! gnd! 42 17 IN_3VX2 $T=306065 -568640 0 0 $X=305635 $Y=-569280
+X336 vdd3! gnd! 43 18 IN_3VX2 $T=306065 -559680 1 0 $X=305635 $Y=-564800
+X337 vdd3! gnd! vdde! 34 39 LSHVT18U3VX1 $T=299905 -577600 1 0 $X=299475 $Y=-582720
+X338 vdd3! gnd! vdde! 35 40 LSHVT18U3VX1 $T=299905 -577600 0 0 $X=299475 $Y=-578240
+X339 vdd3! gnd! vdde! 36 41 LSHVT18U3VX1 $T=299905 -568640 1 0 $X=299475 $Y=-573760
+X340 vdd3! gnd! vdde! 37 42 LSHVT18U3VX1 $T=299905 -568640 0 0 $X=299475 $Y=-569280
+X341 vdd3! gnd! vdde! 38 43 LSHVT18U3VX1 $T=299905 -559680 1 0 $X=299475 $Y=-564800
+D0 gnd! vdd! p_dnw AREA=1.14924e-11 PJ=1.36e-05 perimeter=1.36e-05 $X=292055 $Y=-582720 $dt=156
+D1 gnd! vdd! p_dnw AREA=1.83e-11 PJ=1.732e-05 perimeter=1.732e-05 $X=292055 $Y=-575620 $dt=156
+D2 gnd! vdd! p_dnw AREA=1.83e-11 PJ=1.732e-05 perimeter=1.732e-05 $X=292055 $Y=-566660 $dt=156
+D3 gnd! vdd3! p_dnw3 AREA=2.78876e-11 PJ=2.52944e-05 perimeter=2.52944e-05 $X=299475 $Y=-582720 $dt=243
+D4 gnd! vdd3! p_dnw3 AREA=4.39223e-11 PJ=2.95088e-05 perimeter=2.95088e-05 $X=299475 $Y=-575620 $dt=243
+D5 gnd! vdd3! p_dnw3 AREA=4.39223e-11 PJ=2.95088e-05 perimeter=2.95088e-05 $X=299475 $Y=-566660 $dt=243
+C6 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=590990 $Y=-411685 $dt=317
+C7 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=590990 $Y=-398905 $dt=317
+C8 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=590990 $Y=-384785 $dt=317
+C9 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=590990 $Y=-372005 $dt=317
+C10 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=590990 $Y=-357885 $dt=317
+C11 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=590990 $Y=-345105 $dt=317
+C12 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=597210 $Y=-411685 $dt=317
+C13 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=597210 $Y=-398905 $dt=317
+C14 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=597210 $Y=-384785 $dt=317
+C15 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=597210 $Y=-372005 $dt=317
+C16 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=597210 $Y=-357885 $dt=317
+C17 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=597210 $Y=-345105 $dt=317
+C18 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=603430 $Y=-411685 $dt=317
+C19 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=603430 $Y=-398905 $dt=317
+C20 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=603430 $Y=-384785 $dt=317
+C21 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=603430 $Y=-372005 $dt=317
+C22 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=603430 $Y=-357885 $dt=317
+C23 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=603430 $Y=-345105 $dt=317
+C24 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=609650 $Y=-411685 $dt=317
+C25 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=609650 $Y=-398905 $dt=317
+C26 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=609650 $Y=-384785 $dt=317
+C27 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=609650 $Y=-372005 $dt=317
+C28 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=609650 $Y=-357885 $dt=317
+C29 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=609650 $Y=-345105 $dt=317
+C30 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=615870 $Y=-411685 $dt=317
+C31 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=615870 $Y=-398905 $dt=317
+C32 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=615870 $Y=-384785 $dt=317
+C33 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=615870 $Y=-372005 $dt=317
+C34 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=615870 $Y=-357885 $dt=317
+C35 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=615870 $Y=-345105 $dt=317
+C36 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=622090 $Y=-411685 $dt=317
+C37 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=622090 $Y=-398905 $dt=317
+C38 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=622090 $Y=-384785 $dt=317
+C39 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=622090 $Y=-372005 $dt=317
+C40 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=622090 $Y=-357885 $dt=317
+C41 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=622090 $Y=-345105 $dt=317
+C42 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=628310 $Y=-411685 $dt=317
+C43 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=628310 $Y=-398905 $dt=317
+C44 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=628310 $Y=-384785 $dt=317
+C45 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=628310 $Y=-372005 $dt=317
+C46 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=628310 $Y=-357885 $dt=317
+C47 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=628310 $Y=-345105 $dt=317
+C48 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=634530 $Y=-411685 $dt=317
+C49 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=634530 $Y=-398905 $dt=317
+C50 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=634530 $Y=-384785 $dt=317
+C51 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=634530 $Y=-372005 $dt=317
+C52 vddh 19 area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=634530 $Y=-357885 $dt=317
+C53 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=634530 $Y=-345105 $dt=317
+C54 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=640750 $Y=-411685 $dt=317
+C55 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=640750 $Y=-398905 $dt=317
+C56 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=640750 $Y=-384785 $dt=317
+C57 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=640750 $Y=-372005 $dt=317
+C58 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=640750 $Y=-357885 $dt=317
+C59 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=640750 $Y=-345105 $dt=317
+C60 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=646970 $Y=-411685 $dt=317
+C61 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=646970 $Y=-398905 $dt=317
+C62 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=646970 $Y=-384785 $dt=317
+C63 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=646970 $Y=-372005 $dt=317
+C64 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=646970 $Y=-357885 $dt=317
+C65 19 gnd! area=6.3936e-11 perimeter=3.372e-05 $[csft5a] $X=646970 $Y=-345105 $dt=317
+.ends CurrentSource_All_ST
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_CDNS_217                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_CDNS_217 1 2
+** N=3 EP=2 FDC=1
+R0 1 2 0 L=2.3e-05 W=2e-06 $[rpp1k1] $X=0 $Y=0 $dt=244
+.ends rpp1k1_CDNS_217
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ResistiveDivider                                *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ResistiveDivider 1 2 3
+** N=38 EP=3 FDC=36
+X11 8 8 rpp1k1_CDNS_217 $T=4280 26555 1 270 $X=2060 $Y=2615
+X12 9 9 rpp1k1_CDNS_217 $T=4280 31495 0 90 $X=2060 $Y=30555
+X13 1 10 rpp1k1_CDNS_217 $T=6640 26555 1 270 $X=4420 $Y=2615
+X14 3 11 rpp1k1_CDNS_217 $T=6640 31495 0 90 $X=4420 $Y=30555
+X15 5 10 rpp1k1_CDNS_217 $T=9000 26555 1 270 $X=6780 $Y=2615
+X16 12 11 rpp1k1_CDNS_217 $T=9000 31495 0 90 $X=6780 $Y=30555
+X17 2 13 rpp1k1_CDNS_217 $T=11360 26555 1 270 $X=9140 $Y=2615
+X18 1 14 rpp1k1_CDNS_217 $T=11360 31495 0 90 $X=9140 $Y=30555
+X19 15 13 rpp1k1_CDNS_217 $T=13720 26555 1 270 $X=11500 $Y=2615
+X20 16 14 rpp1k1_CDNS_217 $T=13720 31495 0 90 $X=11500 $Y=30555
+X21 15 17 rpp1k1_CDNS_217 $T=16080 26555 1 270 $X=13860 $Y=2615
+X22 16 18 rpp1k1_CDNS_217 $T=16080 31495 0 90 $X=13860 $Y=30555
+X23 5 19 rpp1k1_CDNS_217 $T=18440 26555 1 270 $X=16220 $Y=2615
+X24 12 20 rpp1k1_CDNS_217 $T=18440 31495 0 90 $X=16220 $Y=30555
+X25 21 19 rpp1k1_CDNS_217 $T=20800 26555 1 270 $X=18580 $Y=2615
+X26 22 20 rpp1k1_CDNS_217 $T=20800 31495 0 90 $X=18580 $Y=30555
+X27 21 23 rpp1k1_CDNS_217 $T=23160 26555 1 270 $X=20940 $Y=2615
+X28 22 24 rpp1k1_CDNS_217 $T=23160 31495 0 90 $X=20940 $Y=30555
+X29 25 23 rpp1k1_CDNS_217 $T=23520 26555 0 270 $X=23300 $Y=2615
+X30 26 24 rpp1k1_CDNS_217 $T=23520 31495 1 90 $X=23300 $Y=30555
+X31 25 27 rpp1k1_CDNS_217 $T=25880 26555 0 270 $X=25660 $Y=2615
+X32 26 28 rpp1k1_CDNS_217 $T=25880 31495 1 90 $X=25660 $Y=30555
+X33 29 27 rpp1k1_CDNS_217 $T=28240 26555 0 270 $X=28020 $Y=2615
+X34 30 28 rpp1k1_CDNS_217 $T=28240 31495 1 90 $X=28020 $Y=30555
+X35 31 17 rpp1k1_CDNS_217 $T=30600 26555 0 270 $X=30380 $Y=2615
+X36 32 18 rpp1k1_CDNS_217 $T=30600 31495 1 90 $X=30380 $Y=30555
+X37 31 33 rpp1k1_CDNS_217 $T=32960 26555 0 270 $X=32740 $Y=2615
+X38 32 34 rpp1k1_CDNS_217 $T=32960 31495 1 90 $X=32740 $Y=30555
+X39 6 33 rpp1k1_CDNS_217 $T=35320 26555 0 270 $X=35100 $Y=2615
+X40 6 34 rpp1k1_CDNS_217 $T=35320 31495 1 90 $X=35100 $Y=30555
+X41 29 35 rpp1k1_CDNS_217 $T=37680 26555 0 270 $X=37460 $Y=2615
+X42 30 36 rpp1k1_CDNS_217 $T=37680 31495 1 90 $X=37460 $Y=30555
+X43 7 35 rpp1k1_CDNS_217 $T=40040 26555 0 270 $X=39820 $Y=2615
+X44 7 36 rpp1k1_CDNS_217 $T=40040 31495 1 90 $X=39820 $Y=30555
+X45 37 37 rpp1k1_CDNS_217 $T=42400 26555 0 270 $X=42180 $Y=2615
+X46 38 38 rpp1k1_CDNS_217 $T=42400 31495 1 90 $X=42180 $Y=30555
+.ends ResistiveDivider
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_bjt_CDNS_218                              *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_bjt_CDNS_218 1 2 3
+** N=3 EP=3 FDC=1
+X0 2 3 1 1 LDDN w=1.5e-05 l=1.25e-06 adio=7.02066e-10 pdio=0.00010035 extlay=1 $[nedia_bjt] $X=-680 $Y=-4850 $dt=67
+.ends nedia_bjt_CDNS_218
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LS_HighSide_V3_ST                               *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LS_HighSide_V3_ST 1 2 3 4 5 6
+** N=8 EP=6 FDC=48
+X0 4 2 5 1 7 LSHVT18U3VX1 $T=930 23800 0 0 $X=500 $Y=23160
+X11 6 8 3 ResistiveDivider $T=47840 -3755 0 0 $X=49560 $Y=-1720
+X12 2 8 7 nedia_bjt_CDNS_218 $T=29255 22435 0 0 $X=13035 $Y=3045
+D0 2 4 p_dnw3 AREA=2.0854e-11 PJ=2.08144e-05 perimeter=2.08144e-05 $X=500 $Y=25780 $dt=243
+.ends LS_HighSide_V3_ST
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ped_bjt_CDNS_219                                *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ped_bjt_CDNS_219 1 2 3 4
+** N=4 EP=4 FDC=1
+X0 2 4 3 1 LDDP w=2e-05 l=9.4e-07 ad=1.76915e-10 pd=9.48396e-05 adio=5.10846e-10 pdio=8.48181e-05 extlay=1 $[ped_bjt] $X=-2270 $Y=0 $dt=68
+.ends ped_bjt_CDNS_219
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LS_LowSide_V2_ST                                *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LS_LowSide_V2_ST 1 2 3 4 5 6
+** N=8 EP=6 FDC=85
+X11 6 2 8 ResistiveDivider $T=48405 50775 0 0 $X=50125 $Y=52810
+X12 1 2 3 5 4 7 LS_HighSide_V3_ST $T=565 -150 0 0 $X=1065 $Y=-1870
+X13 2 8 3 7 ped_bjt_CDNS_219 $T=29820 76060 0 0 $X=14870 $Y=61110
+.ends LS_LowSide_V2_ST
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_bjt_CDNS_220                              *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_bjt_CDNS_220 1 2 3 4
+** N=4 EP=4 FDC=10
+X0 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=-680 $Y=-4850 $dt=67
+X1 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=11220 $Y=-4850 $dt=67
+X2 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=23120 $Y=-4850 $dt=67
+X3 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=35020 $Y=-4850 $dt=67
+X4 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=46920 $Y=-4850 $dt=67
+X5 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=58820 $Y=-4850 $dt=67
+X6 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=70720 $Y=-4850 $dt=67
+X7 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=82620 $Y=-4850 $dt=67
+X8 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=94520 $Y=-4850 $dt=67
+X9 2 4 3 1 LDDN w=8e-05 l=1.25e-06 adio=8.7279e-10 pdio=3.7955e-05 extlay=1 $[nedia_bjt] $X=106420 $Y=-4850 $dt=67
+.ends nedia_bjt_CDNS_220
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ped_bjt_CDNS_221                                *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ped_bjt_CDNS_221 1 2 3 4
+** N=4 EP=4 FDC=13
+X0 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=-2270 $Y=0 $dt=68
+X1 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=6530 $Y=0 $dt=68
+X2 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=15330 $Y=0 $dt=68
+X3 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=24130 $Y=0 $dt=68
+X4 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=32930 $Y=0 $dt=68
+X5 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=41730 $Y=0 $dt=68
+X6 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=50530 $Y=0 $dt=68
+X7 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=59330 $Y=0 $dt=68
+X8 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=68130 $Y=0 $dt=68
+X9 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=76930 $Y=0 $dt=68
+X10 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=85730 $Y=0 $dt=68
+X11 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=94530 $Y=0 $dt=68
+X12 2 4 3 1 LDDP w=8e-05 l=9.4e-07 ad=2.98618e-10 pd=0.000121287 adio=5.66576e-10 pdio=2.7386e-05 extlay=1 $[ped_bjt] $X=103330 $Y=0 $dt=68
+.ends ped_bjt_CDNS_221
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: HalfBridge_ST                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt HalfBridge_ST 1 2 3 4 5 6 Ist OUT
+** N=10 EP=8 FDC=156
+X212 1 5 6 4 3 10 LS_HighSide_V3_ST $T=2840 133030 0 0 $X=3340 $Y=131310
+X213 2 5 6 3 4 9 LS_LowSide_V2_ST $T=2275 23345 0 0 $X=3340 $Y=21475
+X214 5 OUT Ist 9 nedia_bjt_CDNS_220 $T=143435 153625 0 270 $X=124045 $Y=30305
+X215 5 OUT 6 10 ped_bjt_CDNS_221 $T=234815 152875 0 270 $X=219865 $Y=32325
+.ends HalfBridge_ST
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MultiChannel_ST                                 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MultiChannel_ST Ctrl_HS0 Ctrl_HS1 Ctrl_HS2 Ctrl_HS3 Ctrl_HS4 Ctrl_HS5 Ctrl_HS6 Ctrl_HS7 Ctrl_LS0 Ctrl_LS1
++ Ctrl_LS2 Ctrl_LS3 Ctrl_LS4 Ctrl_LS5 Ctrl_LS6 Ctrl_LS7 E0 E1 E2 E3
++ E4 E5 E6 E7 Enable Iext Mag0 Mag1 Mag2 Mag3
++ Mag4 gnd! vdd! vdd3! vdde! vddh
+** N=37 EP=36 FDC=1876
+X203 gnd! vdd! Mag0 Mag1 Mag2 Mag3 Mag4 Enable vdd3! vdde!
++ Iext vddh 1 CurrentSource_All_ST $T=719410 -1786300 0 90 $X=1049115 $Y=-1553270
+X204 Ctrl_HS0 Ctrl_LS0 vdde! vdd3! gnd! vddh 1 E0 HalfBridge_ST $T=1267600 -1029845 0 90 $X=1076810 $Y=-1029090
+X205 Ctrl_HS1 Ctrl_LS1 vdde! vdd3! gnd! vddh 1 E1 HalfBridge_ST $T=1441480 -1029845 0 90 $X=1250690 $Y=-1029090
+X206 Ctrl_HS2 Ctrl_LS2 vdde! vdd3! gnd! vddh 1 E2 HalfBridge_ST $T=1615360 -1029845 0 90 $X=1424570 $Y=-1029090
+X207 Ctrl_HS3 Ctrl_LS3 vdde! vdd3! gnd! vddh 1 E3 HalfBridge_ST $T=1789240 -1029845 0 90 $X=1598450 $Y=-1029090
+X208 Ctrl_HS7 Ctrl_LS7 vdde! vdd3! gnd! vddh 1 E7 HalfBridge_ST $T=1675575 -1743760 0 0 $X=1676330 $Y=-1726215
+X209 Ctrl_HS6 Ctrl_LS6 vdde! vdd3! gnd! vddh 1 E6 HalfBridge_ST $T=1675575 -1569880 0 0 $X=1676330 $Y=-1552335
+X210 Ctrl_HS5 Ctrl_LS5 vdde! vdd3! gnd! vddh 1 E5 HalfBridge_ST $T=1675575 -1396000 0 0 $X=1676330 $Y=-1378455
+X211 Ctrl_HS4 Ctrl_LS4 vdde! vdd3! gnd! vddh 1 E4 HalfBridge_ST $T=1675575 -1222120 0 0 $X=1676330 $Y=-1204575
+.ends MultiChannel_ST

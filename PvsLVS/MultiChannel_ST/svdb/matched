@@ -1,0 +1,34 @@
+##############################################################################################################
+#####  
+#####                                         PVS LVS COMPARISON
+#####  
+#####  Version                       :   16.15-s010
+#####  NVN Run Start                 :   Wed May 12 14:35:35 2021
+#####  ERC Summary File              :   MultiChannel_ST.sum
+#####  Extraction Report File        :   MultiChannel_ST_lvs.sum
+#####  Comparison Report File        :   MultiChannel_ST_lvs.sum.cls
+#####  Top Cell                      :   MultiChannel_ST  <vs>  MultiChannel_ST
+#####  
+#####  Run Result                    :   MATCH
+#####  
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
+#####                                :   [INFO]  Extraction Clean
+#####  
+#####  Layout Design                 :   Stimulator_IMP MultiChannel_ST layout
+#####  Schematic File                :   /home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST.cdl (cdl)
+#####  Rules File                    :   .config.rul .technology.rul
+#####  Pin Swap File                 :   MultiChannel_ST_lvs.sum.cps
+#####  
+#####  Extraction CPU Time           :   0h 0m 3s - (3s)
+#####  Extraction Exec Time          :   0h 0m 3s - (3s)
+#####  Extraction Peak Memory Usage  :   151.00MB
+#####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   238.41MB
+#####  LVS Total CPU Time            :   0h 0m 3s - (3s)                 
+#####  LVS Total Exec Time           :   0h 0m 4s - (4s)                 
+#####  LVS Total Peak Memory Usage   :   238.41MB
+#####  
+##############################################################################################################
+
+

@@ -7,9 +7,9 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.6.1.el7.x86_64)
-Process Id:      21206
-Starting Time:   Tue May 11 17:05:47 2021 (Tue May 11 15:05:47 2021 GMT)
-With parameters: -lvs -get_rules /tmp/pvsrng.16465@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.16465@s2424.1 -gen_tags /tmp/pvsgentags.16465@s2424.1 -stc top -cdl . -control /tmp/ipvsRulesCheckControl.16465@s2424.1 /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/.config.rul.16465@s2424.1 /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/.technology.rul.16465@s2424.1 
+Process Id:      6929
+Starting Time:   Wed May 12 14:35:23 2021 (Wed May 12 12:35:23 2021 GMT)
+With parameters: -lvs -get_rules /tmp/pvsrng.31694@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.31694@s2424.1 -gen_tags /tmp/pvsgentags.31694@s2424.1 -stc top -cdl . -control /tmp/ipvsRulesCheckControl.31694@s2424.1 /home/ykhuang/research/PvsLVS/MultiChannel_ST/.config.rul.31694@s2424.1 /home/ykhuang/research/PvsLVS/MultiChannel_ST/.technology.rul.31694@s2424.1 
 ********************************************************************************
 
 
@@ -18,7 +18,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  1203.955
+    cpu MHz         :  1204.541
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -28,42 +28,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709336 kB
-    MemFree:        35395976 kB
-    MemAvailable:   51537452 kB
+    MemFree:        35263732 kB
+    MemAvailable:   51504480 kB
     Buffers:            1088 kB
-    Cached:         18161008 kB
+    Cached:         18303748 kB
     SwapCached:            0 kB
-    Active:         20163944 kB
-    Inactive:        4570828 kB
-    Active(anon):    8582008 kB
-    Inactive(anon):  1212676 kB
-    Active(file):   11581936 kB
-    Inactive(file):  3358152 kB
+    Active:         20279016 kB
+    Inactive:        4580296 kB
+    Active(anon):    8563772 kB
+    Inactive(anon):  1261812 kB
+    Active(file):   11715244 kB
+    Inactive(file):  3318484 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
     SwapFree:       32964604 kB
-    Dirty:              1000 kB
+    Dirty:                32 kB
     Writeback:             0 kB
-    AnonPages:       6681252 kB
-    Mapped:           353780 kB
-    Shmem:           3222004 kB
-    Slab:            2292620 kB
-    SReclaimable:    1693288 kB
-    SUnreclaim:       599332 kB
-    KernelStack:       11584 kB
-    PageTables:        48832 kB
+    AnonPages:       6552240 kB
+    Mapped:           399620 kB
+    Shmem:           3271092 kB
+    Slab:            2300992 kB
+    SReclaimable:    1698920 kB
+    SUnreclaim:       602072 kB
+    KernelStack:       11376 kB
+    PageTables:        45056 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819272 kB
-    Committed_AS:   13184000 kB
+    Committed_AS:   13114496 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422632 kB
     VmallocChunk:   34325399548 kB
     Percpu:            12928 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   2846720 kB
+    AnonHugePages:   2705408 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -85,21 +85,21 @@ ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cad
 
 
 ########################################################################
-Parsing Control File /tmp/ipvsRulesCheckControl.16465@s2424.1 ...
+Parsing Control File /tmp/ipvsRulesCheckControl.31694@s2424.1 ...
 ########################################################################
 #UNDEFINE FloatingGate
 #UNDEFINE FloatingWell
 #UNDEFINE ParaDioAsDevDio
 #UNDEFINE DUMMY_FILL
-RESULTS_DB -erc "/home/ykhuang/research/PvsLVS/CurrentSource_All_ST/CurrentSource_All_ST_lvs.err" -ascii;
+RESULTS_DB -erc "/home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST_lvs.err" -ascii;
 LVS_RUN_ERC_CHECKS yes;
 
 ########################################################################
-Parsing Rule File /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/.config.rul.16465@s2424.1 ...
+Parsing Rule File /home/ykhuang/research/PvsLVS/MultiChannel_ST/.config.rul.31694@s2424.1 ...
 ########################################################################
 
 ########################################################################
-Parsing Rule File /home/ykhuang/research/PvsLVS/CurrentSource_All_ST/.technology.rul.16465@s2424.1 ...
+Parsing Rule File /home/ykhuang/research/PvsLVS/MultiChannel_ST/.technology.rul.31694@s2424.1 ...
 ########################################################################
 TECHNOLOGY XH018_1143 -ruleSet default -techLib /home/ykhuang/research/pvtech.lib;
 [INFO] TECHNOLOGY: Rules file /home/ykhuang/research/.pvsSetup/PVS/../../.xkit/setup/xh018/cadence/pvs/PVS/XH018_1143/metalswitch.pvl will be included after the remainder of the current rules are processed.
@@ -7836,6 +7836,6 @@ Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)
 
 
-Netlist Extraction Finished Normally. Tue May 11 17:05:48 2021
+Netlist Extraction Finished Normally. Wed May 12 14:35:23 2021
 
 

@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue May 11 17:42:11 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Wed May 12 14:21:29 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.rsf -restart -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue May 11 17:42:11 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed May 12 14:21:29 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
@@ -51,7 +51,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.34  elap: 3  pf: 0  in: 0  out: 40  virt: 177M  phys: 896M
+cpu: 0.30  elap: 2  pf: 0  in: 0  out: 40  virt: 177M  phys: 887M
 
 Running the Task Processor, 36 cells, 17316 steps...
 
@@ -9482,17 +9482,17 @@ Executing: processAntenna(((gate (gate poly)) (antenna poly met1 met2 met3 met4 
 running in speedup mode
 
 Finished running rules. Task processor time in main process:
-cpu: 14.37  elap: 14  pf: 0  in: 0  out: 3760  virt: 373M  phys: 1941M
+cpu: 15.60  elap: 16  pf: 0  in: 0  out: 3768  virt: 371M  phys: 1920M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.36  elap: 1  pf: 0  in: 0  out: 0  virt: 666M  phys: 2201M
+cpu: 0.36  elap: 0  pf: 0  in: 0  out: 0  virt: 666M  phys: 2177M
 
 Finished building the persistent database.
-cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6584  virt: 666M  phys: 2214M
+cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6600  virt: 666M  phys: 2189M
 
 
 *****  aveng terminated normally  *****
@@ -9510,7 +9510,7 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue May 11 17:42:29 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Wed May 12 14:21:48 2021
 
 
    Creating Error Database 'MultiChannel_ST_DRC'...
@@ -9997,8 +9997,8 @@ Rule      Message                                    FlatCount     RealCount
 (  476)  minority_DNWELL_connectors                          0            0
 (  477)  DNWELL_soft_connect                                 0            0
 (  478)  BULK_should_be_contacted                            0            0
-(  479)  minority_BULK_connectors                           56           56
-(  480)  BULK_soft_connect                                1271          240
+(  479)  minority_BULK_connectors                            0            0
+(  480)  BULK_soft_connect                                   0            0
 (  481)  isolated_pwells__Q1IW__should_be_contact            0            0
 (  482)  minority_isolated_pwells_connectors                 0            0
 (  483)  isolated_pwells_soft_connect                        0            0
@@ -11493,16 +11493,14 @@ Rule      Message                                    FlatCount     RealCount
 ( 1972)  ant_mtpl_gate: R2MLP1 : Maximum ratio of            0            0
 ( 1973)  ant_mtpl_mtpl: R2MLP1 : Maximum ratio of            0            0
 --------------------------------------------------------------------------------
-Total  errors:                                            1327          296
+Total  errors:                                               0            0
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.err ...
-   Rule 479 done.
-   Rule 480 done.
 
-avrpt cpu sec:    0.58  elapsed:     1  virtual:    93M
+avrpt cpu sec:    0.57  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -11513,12 +11511,12 @@ Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRule
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraDRC_Rules Version "assuraDRC-210106" at "May 11 17:42:30 2021"
+Loading assuraDRC_Rules Version "assuraDRC-210106" at "May 12 14:21:49 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Tue May 11 17:42:30 2021
+Run ended: Wed May 12 14:21:49 2021
 
 *****  Assura terminated normally  *****
 

@@ -35,6 +35,8 @@ connect ntiec isoptiec by contSD
 connect ptiec isoptiec by contSD
 connect nsd bndiff by bndct
 connect met1trm polytrm by contP
+connect nsd catdiff by catdfct
+connect met1trm catdiff by catm1ct
 connect met1trm d_dsdf by d_dsc
 connect met1trm met2trm by via1
 connect met2trm met3trm by via2CON
@@ -62,11 +64,11 @@ stamp bm by met4trm
 stamp dnwntie by ntiec
 stamp dnwtrm by dnwntie
 stamp dnwellmvtrm by dnwntie
-stamp nwelltrm1 by nsd
+stamp nwelltrm1 by ntiec
 stamp dnwtrm1 by dnwntie
 stamp G_subs by ptiec
 stamp pwitrm by isoptiec
-stamp nbdsub by nsd
+stamp nbdsub by ntiec
 stamp pdf by psd
 stamp ndftrm by nsd
 stamp hnw by ntiec
@@ -91,6 +93,13 @@ stamp mt_tmh1 by mtptrm
 stamp polytrm_dg by polytrm
 stamp met1trm_dg by met1trm
 stamp met2trm_dg by met2trm
+stamp nsd_dg by catdiff
+stamp nsd_dg by nsd
+stamp psd_dg by psd
+stamp nd_v60 by nsd_dg
+stamp nd_v25 by nsd_dg
+stamp pd_v60 by psd_dg
+stamp pd_v25 by psd_dg
 stamp p1_v60 by polytrm_dg
 stamp p1_v25 by polytrm_dg
 stamp m1_v60 by met1trm_dg
@@ -123,23 +132,23 @@ stamp v60_met4 by met4trm_dg
 stamp v60_mtp by mtptrm_dg
 connect pfox poly by pfox_conn
 connect cont poly by cont_conn
-stamp gate_T?11092 by poly
+stamp gate_T?11375 by poly
 connect met1 poly by cont
 connect met1 sd by cont
 connect poly sd by cont
 connect via1 met1 by via1_conn
-stamp gate_T?11098 by poly
+stamp gate_T?11381 by poly
 connect met2 met1 by via1_conn
 connect via2 met2 by via2_conn
-stamp gate_T?11104 by poly
+stamp gate_T?11387 by poly
 connect met3 met2 by via2_conn
 connect via3 met3 by via3_conn
-stamp gate_T?11110 by poly
+stamp gate_T?11393 by poly
 connect met4 met3 by via3_conn
 connect vtp met4 by vtp_conn
-stamp gate_T?11116 by poly
+stamp gate_T?11399 by poly
 connect met4 mtp by vtp_conn
 connect vtpl mtp by vtpl_conn
-stamp gate_T?11122 by poly
+stamp gate_T?11405 by poly
 connect mtp mtpl by vtpl
-stamp gate_T?11127 by poly
+stamp gate_T?11410 by poly

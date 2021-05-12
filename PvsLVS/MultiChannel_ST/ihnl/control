@@ -1,0 +1,92 @@
+hnlLastStopCellInfo = '(
+                           ( "PRIMLIB" "rpp1k1" "auCdl" "40" "1562065969" )
+                          ( "PRIMLIB" "ne3" "auCdl" "52" "1562065969" )
+                          ( "PRIMLIB" "ne" "auCdl" "52" "1562065969" )
+                          ( "PRIMLIB" "pe" "auCdl" "53" "1562065969" )
+                          ( "PRIMLIB" "csft5a" "auCdl" "41" "1562065969" )
+                          ( "PRIMLIB" "nedia_bjt" "auCdl" "56" "1562065969" )
+                          ( "PRIMLIB" "pe3" "auCdl" "53" "1562065969" )
+                          ( "PRIMLIB" "ped_bjt" "auCdl" "56" "1562065969" )
+                       )
+hnlLastMaxNameLength = 60
+hnlLastNamePrefix = "hnl_"
+hnlLastNetNamePrefix = "N"
+hnlLastInstNamePrefix = ""
+hnlLastModelNamePrefix = ""
+hnlLastGlobalNetPrefix = "G"
+hnlLastModulePrefix = "sub"
+hnlLastHierarchyDelimiter = "."
+hnlLastMapNetFirstChar = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            "0"
+                            "1"
+                            "2"
+                            "3"
+                            "4"
+                            "5"
+                            "6"
+                            "7"
+                            "8"
+                            "9"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapNetInName = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapInstFirstChar = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            "0"
+                            "1"
+                            "2"
+                            "3"
+                            "4"
+                            "5"
+                            "6"
+                            "7"
+                            "8"
+                            "9"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapInstInName = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastInstNameDifferentFrom = '( )
+hnlLastModelNameDifferentFrom = '( )
+hnlLastNetNameDifferentFrom = '( )
+hnlLastTermNameDifferentFrom = '( )
+hnlLastParamNameDifferentFrom = '( )
+hnlLastLibInfo = '(
+                    ( "Stimulator_IMP" "1614781067" )
+                   ( "GATES_HD" "1516350477" )
+                   ( "D_CELLS_HD" "1517475089" )
+                   ( "D_CELLS_M3V" "1528371405" )
+                   ( "GATES_3V" "1520929029" )
+                   ( "D_CELLS_3V" "1520929020" )
+                  )
+hnlLastDesignVars = '( )

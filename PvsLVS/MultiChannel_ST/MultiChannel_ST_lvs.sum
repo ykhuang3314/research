@@ -1,0 +1,35 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : MultiChannel_ST_lvs.sum
+ERC Summary File         : MultiChannel_ST.sum
+LVS Comparison Report    : MultiChannel_ST_lvs.sum.cls
+LVS Softchk Report       : MultiChannel_ST.softchk
+Layout Name              : /home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST.gds ("MultiChannel_ST")
+User Name                : ykhuang
+Creation Time            : Wed May 12 14:35:31 2021
+Current directory        : /home/ykhuang/research/PvsLVS/MultiChannel_ST
+PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK nwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK dnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hvnwtrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK ndftrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK hnw -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK catdiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK anodiff -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pwitrm -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK pdf -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK bulk -TYPE CONTACT   Total Result        0 (       0)

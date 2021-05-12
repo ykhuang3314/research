@@ -1,0 +1,7 @@
+( ( net
+( "vdd!" "vdd!" )
+( "gnd!" "gnd!" )
+( "vdde!" "vdde!" )
+( "vdd3!" "vdd3!" )
+ )
+ )

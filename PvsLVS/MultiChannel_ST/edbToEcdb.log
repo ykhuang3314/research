@@ -1,0 +1,16 @@
+
+/pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : MultiChannel_ST_7225.db
+ECDB dir        : ./
+Top Cell        : MultiChannel_ST
+CDL netlist     : svdb/MultiChannel_ST.net
+Layer map file  : svdb/MultiChannel_ST.ecdbmap
+Text map file   : svdb/MultiChannel_ST.ports
+Dependency map  : MultiChannel_ST.lmap.perc
+Lvs file        : svdb/MultiChannel_ST.lvsfile
+Float net file : .MultiChannel_ST.info.softchk
+debug           : 0
+Source Library  : MultiChannel_ST_7225

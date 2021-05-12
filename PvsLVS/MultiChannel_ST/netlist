@@ -1,0 +1,450 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Stimulator_IMP
+* Top Cell Name: MultiChannel_ST
+* View Name:     schematic
+* Netlisted on:  May 12 14:35:27 2021
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
++        vdd3!
++        vdde!
+
+*.PIN vdd!
+*+    gnd!
+*+    vdd3!
+*+    vdde!
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    Ext_Iref_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Ext_Iref_ST Iext Iref vss
+*.PININFO Iext:B Iref:B vss:B
+RR0 Iext VG2 10001.1 $[RPP1K1] $W=2u $L=20.095u M=1
+MM2 VG1 VG1 vss vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM0 VG2 VG2 VG1 vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM3 VD_M1 VG1 vss vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM1 Iref VG2 VD_M1 vss NE3 W=8u L=2u M=5.0 AD=3.84e-12 AS=3.84e-12 
++ PD=1.696e-05 PS=1.696e-05 NRD=0.03375 NRS=0.03375
+MM14 vss vss vss vss NE3 W=8u L=2u M=4.0 AD=3.84e-12 AS=3.84e-12 PD=1.696e-05 
++ PS=1.696e-05 NRD=0.03375 NRS=0.03375
+.ENDS
+
+************************************************************************
+* Library Name: GATES_HD
+* Cell Name:    nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand2 a b out inh_ground_gnd inh_power_vdd
+*.PININFO a:I b:I out:O inh_ground_gnd:B inh_power_vdd:B
+MMN1 out a net11 inh_ground_gnd NE W=GT_PDW L=GT_PDL M=1.0 AD=sx*(GT_PDW) 
++ AS=sx*(GT_PDW) PD=2*(sx+(GT_PDW)) PS=2*(sx+(GT_PDW)) NRD=lc/(GT_PDW) 
++ NRS=lc/(GT_PDW)
+MMN2 net11 b inh_ground_gnd inh_ground_gnd NE W=GT_PDW L=GT_PDL M=1.0 
++ AD=sx*(GT_PDW) AS=sx*(GT_PDW) PD=2*(sx+(GT_PDW)) PS=2*(sx+(GT_PDW)) 
++ NRD=lc/(GT_PDW) NRS=lc/(GT_PDW)
+MMP1 out a inh_power_vdd inh_power_vdd PE W=GT_PUW L=GT_PUL M=1.0 
++ AD=sx*(GT_PUW) AS=sx*(GT_PUW) PD=2*(sx+(GT_PUW)) PS=2*(sx+(GT_PUW)) 
++ NRD=lc/(GT_PUW) NRS=lc/(GT_PUW)
+MMP2 out b inh_power_vdd inh_power_vdd PE W=GT_PUW L=GT_PUL M=1.0 
++ AD=sx*(GT_PUW) AS=sx*(GT_PUW) PD=2*(sx+(GT_PUW)) PS=2*(sx+(GT_PUW)) 
++ NRD=lc/(GT_PUW) NRS=lc/(GT_PUW)
+.ENDS
+
+************************************************************************
+* Library Name: GATES_HD
+* Cell Name:    invr
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT invr in out inh_ground_gnd inh_power_vdd
+*.PININFO in:I out:O inh_ground_gnd:B inh_power_vdd:B
+Mne out in inh_ground_gnd inh_ground_gnd NE W=GT_PDW L=GT_PDL M=1.0 
++ AD=sx*(GT_PDW) AS=sx*(GT_PDW) PD=2*(sx+(GT_PDW)) PS=2*(sx+(GT_PDW)) 
++ NRD=lc/(GT_PDW) NRS=lc/(GT_PDW)
+Mpe out in inh_power_vdd inh_power_vdd PE W=GT_PUW L=GT_PUL M=1.0 
++ AD=sx*(GT_PUW) AS=sx*(GT_PUW) PD=2*(sx+(GT_PUW)) PS=2*(sx+(GT_PUW)) 
++ NRD=lc/(GT_PUW) NRS=lc/(GT_PUW)
+.ENDS
+
+************************************************************************
+* Library Name: D_CELLS_HD
+* Cell Name:    AND2HDX0
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT AND2HDX0 A B Q inh_ground_gnd inh_power_vdd
+*.PININFO A:I B:I Q:O inh_ground_gnd:B inh_power_vdd:B
+Xnand2_1 A B net10 inh_ground_gnd inh_power_vdd / nand2 GT_PUL=180.00n 
++ GT_PUW=720.00n lc=2.7e-07 sx=4.8e-07 GT_PDL=180.00n GT_PDW=420.00n
+Xinvr_1 net10 Q inh_ground_gnd inh_power_vdd / invr GT_PUL=180.00n 
++ GT_PUW=720.00n lc=2.7e-07 sx=4.8e-07 GT_PDL=180.00n GT_PDW=420.00n
+.ENDS
+
+************************************************************************
+* Library Name: D_CELLS_M3V
+* Cell Name:    LSHVT18U3VX2
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT LSHVT18U3VX2 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde
+*.PININFO A:I Q:O inh_ground_gnd:B inh_power_vdd3:B inh_power_vdde:B
+MM6 Q net20 inh_power_vdd3 inh_power_vdd3 PE3 W=2.82u L=300n M=1.0 
++ AD=1.3536e-12 AS=1.3536e-12 PD=6.6e-06 PS=6.6e-06 NRD=0.0957447 NRS=0.0957447
+MM8 net4 A inh_power_vdde inh_power_vdd3 PE3 W=1.47u L=300n M=1.0 AD=7.056e-13 
++ AS=7.056e-13 PD=3.9e-06 PS=3.9e-06 NRD=0.183673 NRS=0.183673
+MM9 net20 A net024 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 AD=2.016e-13 
++ AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM0 net10 net4 net023 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 AD=2.016e-13 
++ AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM2 net023 net20 inh_power_vdd3 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM4 net024 net10 inh_power_vdd3 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM3 net20 A inh_ground_gnd inh_ground_gnd NE3 W=1.31u L=350.0n M=1.0 
++ AD=6.288e-13 AS=6.288e-13 PD=3.58e-06 PS=3.58e-06 NRD=0.206107 NRS=0.206107
+MM5 Q net20 inh_ground_gnd inh_ground_gnd NE3 W=1.78u L=350.0n M=1.0 
++ AD=8.544e-13 AS=8.544e-13 PD=4.52e-06 PS=4.52e-06 NRD=0.151685 NRS=0.151685
+MM7 net4 A inh_ground_gnd inh_ground_gnd NE3 W=420.0n L=350.0n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM1 net10 net4 inh_ground_gnd inh_ground_gnd NE3 W=1.31u L=350.0n M=1.0 
++ AD=6.288e-13 AS=6.288e-13 PD=3.58e-06 PS=3.58e-06 NRD=0.206107 NRS=0.206107
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    CurrentMirror_x10_LV
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT CurrentMirror_x10_LV Iin Ix10 gnd!
+*.PININFO Iin:B Ix10:B gnd!:B
+MM26 Iin Iin gnd! gnd! NE3 W=12.0u L=3u M=6.0 AD=5.76e-12 AS=5.76e-12 
++ PD=2.496e-05 PS=2.496e-05 NRD=0.0225 NRS=0.0225
+MM13 Ix10 Iin gnd! gnd! NE3 W=12.0u L=3u M=60.0 AD=5.76e-12 AS=5.76e-12 
++ PD=2.496e-05 PS=2.496e-05 NRD=0.0225 NRS=0.0225
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    CurrentMirror_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT CurrentMirror_ST Iref Ist enable gnd! vdd3! vddh inh_ground_gnd 
++ inh_power_vdd3 inh_power_vdde
+*.PININFO enable:I Iref:B Ist:B gnd!:B vdd3!:B vddh:B inh_ground_gnd:B 
+*.PININFO inh_power_vdd3:B inh_power_vdde:B
+CC5 vddh Vmid $[CSFT5A] area=6.3936e-11 perimeter=33.72u M=15
+CC1 Vmid gnd! $[CSFT5A] area=6.3936e-11 perimeter=33.72u M=45
+MM17 Iout_LV Vmid gnd! gnd! NEDIA_BJT W=10u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM15 Vmid vdd3! gnd! gnd! NEDIA_BJT W=10u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM14 Iout2 Iout2 VG1 gnd! NEDIA_BJT W=40u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM8 Iout1 Iout1 VB gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM16 Bias2 en_3v Iout_LV gnd! NEDIA_BJT W=60u L=1.25u M=5.0 $LDD[NEDIA_BJT]
+MM5 VG1 VB VD_M4 gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM0 Ist VB VD_M3 gnd! NEDIA_BJT W=80u L=1.25u M=10.0 $LDD[NEDIA_BJT]
+MM7 VB Iout1 net16 gnd! NEDIA_BJT W=35.0u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM6 net16 net16 gnd! gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM4 VD_M4 VG1 gnd! gnd! NEDIA_BJT W=80u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+MM3 VD_M3 VG1 gnd! gnd! NEDIA_BJT W=80u L=1.25u M=10.0 $LDD[NEDIA_BJT]
+XI17 enable en_3v inh_ground_gnd inh_power_vdd3 inh_power_vdde / LSHVT18U3VX2
+MM11 VD_M11 Bias1 vddh gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM1 VD_M1 Bias1 vddh gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM2 Bias1 Bias1 vddh gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM12 Iout2 Bias2 VD_M11 gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM10 Iout1 Bias2 VD_M1 gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+MM9 Bias2 Bias2 Bias1 gnd! PED_BJT W=30u L=940.0n M=1.0 $LDD[PED_BJT]
+RR3 net030 gnd! 54862.6 $[RPP1K1] $W=2u $L=111.22u M=1
+RR2 vdd3! gnd! 182252 $[RPP1K1] $W=2u $L=369.98u M=1
+RR0 en_3v net030 54862.6 $[RPP1K1] $W=2u $L=111.22u M=1
+XI0 Iref Iout_LV gnd! / CurrentMirror_x10_LV
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    Idac_5bit_ST_V3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Idac_5bit_ST_V3 D0_3v D1_3v D2_3v D3_3v D4_3v Idac Iref vdd3!
+*.PININFO D0_3v:I D1_3v:I D2_3v:I D3_3v:I D4_3v:I Idac:B Iref:B vdd3!:B
+MM0 vdd3! vdd3! vdd3! vdd3! PE3 W=6u L=2u M=8.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM1 Iref Iref Vbias vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM31 Idac D0_3v Ix1 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM20 n1 Vbias vdd3! vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM22 Ix1 Iref n1 vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM23 n2 Vbias vdd3! vdd3! PE3 W=6u L=2u M=8.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM24 Ix2 Iref n2 vdd3! PE3 W=6u L=2u M=8.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM25 n3 Vbias vdd3! vdd3! PE3 W=6u L=2u M=16.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM29 Ix4 Iref n3 vdd3! PE3 W=6u L=2u M=16.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM32 Ix8 Iref n4 vdd3! PE3 W=6u L=2u M=32.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM33 n4 Vbias vdd3! vdd3! PE3 W=6u L=2u M=32.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM35 n5 Vbias vdd3! vdd3! PE3 W=6u L=2u M=64.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM36 Ix16 Iref n5 vdd3! PE3 W=6u L=2u M=64.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM38 Vbias Vbias vdd3! vdd3! PE3 W=6u L=2u M=4.0 AD=2.88e-12 AS=2.88e-12 
++ PD=1.296e-05 PS=1.296e-05 NRD=0.045 NRS=0.045
+MM39 Idac D1_3v Ix2 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM40 Idac D2_3v Ix4 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM41 Idac D3_3v Ix8 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+MM42 Idac D4_3v Ix16 vdd3! PE3 W=2u L=300n M=8.0 AD=5.4e-13 AS=6.45e-13 
++ PD=2.54e-06 PS=3.145e-06 NRD=0.135 NRS=0.135
+.ENDS
+
+************************************************************************
+* Library Name: GATES_3V
+* Cell Name:    invrv3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT invrv3 in out inh_ground_gnd inh_power_vdd3
+*.PININFO in:I out:O inh_ground_gnd:B inh_power_vdd3:B
+MMN1 out in inh_ground_gnd inh_ground_gnd NE3 W=GT_PDW L=GT_PDL M=1.0 
++ AD=sx*(GT_PDW) AS=sx*(GT_PDW) PD=2*sx+(GT_PDW) PS=2*sx+(GT_PDW) 
++ NRD=lc/(GT_PDW) NRS=lc/(GT_PDW)
+MMP1 out in inh_power_vdd3 inh_power_vdd3 PE3 W=GT_PUW L=GT_PUL M=1.0 
++ AD=sx*(GT_PUW) AS=sx*(GT_PUW) PD=2*sx+(GT_PUW) PS=2*sx+(GT_PUW) 
++ NRD=lc/(GT_PUW) NRS=lc/(GT_PUW)
+.ENDS
+
+************************************************************************
+* Library Name: D_CELLS_3V
+* Cell Name:    IN_3VX2
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT IN_3VX2 A Q inh_ground_gnd inh_power_vdd3
+*.PININFO A:I Q:O inh_ground_gnd:B inh_power_vdd3:B
+Xinvr_1 A Q inh_ground_gnd inh_power_vdd3 / invrv3 GT_PUL=300.00n GT_PUW=2.94u 
++ lc=2.7e-07 sx=4.8e-07 GT_PDL=350.00n GT_PDW=960.00n
+.ENDS
+
+************************************************************************
+* Library Name: D_CELLS_M3V
+* Cell Name:    LSHVT18U3VX1
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT LSHVT18U3VX1 A Q inh_ground_gnd inh_power_vdd3 inh_power_vdde
+*.PININFO A:I Q:O inh_ground_gnd:B inh_power_vdd3:B inh_power_vdde:B
+MM6 Q net20 inh_power_vdd3 inh_power_vdd3 PE3 W=1.46u L=300n M=1.0 
++ AD=7.008e-13 AS=7.008e-13 PD=3.88e-06 PS=3.88e-06 NRD=0.184932 NRS=0.184932
+MM8 net4 A inh_power_vdde inh_power_vdd3 PE3 W=1.48u L=300n M=1.0 AD=7.104e-13 
++ AS=7.104e-13 PD=3.92e-06 PS=3.92e-06 NRD=0.182432 NRS=0.182432
+MM9 net20 A net024 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 AD=2.016e-13 
++ AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM0 net10 net4 net023 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 AD=2.016e-13 
++ AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM2 net023 net20 inh_power_vdd3 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM4 net024 net10 inh_power_vdd3 inh_power_vdd3 PE3 W=420.0n L=300n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM3 net20 A inh_ground_gnd inh_ground_gnd NE3 W=1.31u L=350.0n M=1.0 
++ AD=6.288e-13 AS=6.288e-13 PD=3.58e-06 PS=3.58e-06 NRD=0.206107 NRS=0.206107
+MM5 Q net20 inh_ground_gnd inh_ground_gnd NE3 W=890.0n L=350.0n M=1.0 
++ AD=4.272e-13 AS=4.272e-13 PD=2.74e-06 PS=2.74e-06 NRD=0.303371 NRS=0.303371
+MM7 net4 A inh_ground_gnd inh_ground_gnd NE3 W=420.0n L=350.0n M=1.0 
++ AD=2.016e-13 AS=2.016e-13 PD=1.8e-06 PS=1.8e-06 NRD=0.642857 NRS=0.642857
+MM1 net10 net4 inh_ground_gnd inh_ground_gnd NE3 W=1.31u L=350.0n M=1.0 
++ AD=6.288e-13 AS=6.288e-13 PD=3.58e-06 PS=3.58e-06 NRD=0.206107 NRS=0.206107
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    CurrentSource_All_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT CurrentSource_All_ST Enable_ST Iext Ist Mag0_ST Mag1_ST Mag2_ST 
++ Mag3_ST Mag4_ST gnd! vdd3! vddh inh_ground_gnd inh_power_vdd inh_power_vdd3 
++ inh_power_vdde
+*.PININFO Enable_ST:I Mag0_ST:I Mag1_ST:I Mag2_ST:I Mag3_ST:I Mag4_ST:I Iext:B 
+*.PININFO Ist:B gnd!:B vdd3!:B vddh:B inh_ground_gnd:B inh_power_vdd:B 
+*.PININFO inh_power_vdd3:B inh_power_vdde:B
+XI0 Iext Iref gnd! / Ext_Iref_ST
+XI45 Enable_ST Mag0_ST net05 inh_ground_gnd inh_power_vdd / AND2HDX0
+XI46 Enable_ST Mag1_ST net07 inh_ground_gnd inh_power_vdd / AND2HDX0
+XI47 Enable_ST Mag2_ST net09 inh_ground_gnd inh_power_vdd / AND2HDX0
+XI48 Enable_ST Mag3_ST net011 inh_ground_gnd inh_power_vdd / AND2HDX0
+XI49 Enable_ST Mag4_ST net013 inh_ground_gnd inh_power_vdd / AND2HDX0
+XI2 net9 Ist Enable_ST gnd! vdd3! vddh inh_ground_gnd inh_power_vdd3 
++ inh_power_vdde / CurrentMirror_ST
+XI1 D0_3v D1_3v D2_3v D3_3v D4_3v net9 Iref vdd3! / Idac_5bit_ST_V3
+XI31 net06 D0_3v inh_ground_gnd inh_power_vdd3 / IN_3VX2
+XI15 net08 D1_3v inh_ground_gnd inh_power_vdd3 / IN_3VX2
+XI13 net010 D2_3v inh_ground_gnd inh_power_vdd3 / IN_3VX2
+XI11 net012 D3_3v inh_ground_gnd inh_power_vdd3 / IN_3VX2
+XI10 net014 D4_3v inh_ground_gnd inh_power_vdd3 / IN_3VX2
+XI16 net05 net06 inh_ground_gnd inh_power_vdd3 inh_power_vdde / LSHVT18U3VX1
+XI30 net07 net08 inh_ground_gnd inh_power_vdd3 inh_power_vdde / LSHVT18U3VX1
+XI14 net09 net010 inh_ground_gnd inh_power_vdd3 inh_power_vdde / LSHVT18U3VX1
+XI12 net011 net012 inh_ground_gnd inh_power_vdd3 inh_power_vdde / LSHVT18U3VX1
+XI29 net013 net014 inh_ground_gnd inh_power_vdd3 inh_power_vdde / LSHVT18U3VX1
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    ResistiveDivider
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ResistiveDivider V1 V2 VOUT
+*.PININFO V1:I V2:I VOUT:O
+RR37 net09 V2 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR36 net010 net09 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR35 net011 net010 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR34 net012 net011 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR33 net013 net012 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR32 net014 net013 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR31 net015 net014 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR30 net016 net015 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR29 net017 net016 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR28 net018 net017 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR27 net019 net018 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR26 VOUT net019 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR25 net020 VOUT 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR24 net021 net020 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR23 net022 net021 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR22 net023 net022 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR21 net024 net023 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR20 net025 net024 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR19 net026 net025 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR18 net027 net026 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR17 net028 net027 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR16 net029 net028 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR15 net030 net029 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR14 net031 net030 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR13 net032 net031 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR12 net033 net032 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR11 net034 net033 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR10 net035 net034 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR9 net036 net035 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR8 net037 net036 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR7 net038 net037 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR6 V1 net038 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR5 net08 net08 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR4 net07 net07 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR3 net5 net5 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+RR2 net6 net6 11431.2 $[RPP1K1] $W=2u $L=23.0u M=1
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    LS_HighSide_V3_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT LS_HighSide_V3_ST gnd! in out vdd3! vdde! vddh inh_ground_gnd 
++ inh_power_vdd3 inh_power_vdde
+*.PININFO in:I out:O gnd!:B vdd3!:B vdde!:B vddh:B inh_ground_gnd:B 
+*.PININFO inh_power_vdd3:B inh_power_vdde:B
+MM13 net10 inn3v gnd! gnd! NEDIA_BJT W=15.0u L=1.25u M=1.0 $LDD[NEDIA_BJT]
+XI0 vddh net10 out / ResistiveDivider
+XI10 in inn3v inh_ground_gnd inh_power_vdd3 inh_power_vdde / LSHVT18U3VX1
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    LS_LowSide_V2_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT LS_LowSide_V2_ST gnd! in out vdd3! vdde! vddh inh_ground_gnd 
++ inh_power_vdd3 inh_power_vdde
+*.PININFO in:I out:O gnd!:B vdd3!:B vdde!:B vddh:B inh_ground_gnd:B 
+*.PININFO inh_power_vdd3:B inh_power_vdde:B
+XI2 net11 gnd! out / ResistiveDivider
+MM1 net11 net9 vddh gnd! PED_BJT W=20u L=940.0n M=1.0 $LDD[PED_BJT]
+XI1 gnd! in net9 vdd3! vdde! vddh inh_ground_gnd inh_power_vdd3 inh_power_vdde 
++ / LS_HighSide_V3_ST
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    HalfBridge_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT HalfBridge_ST Ctrl_HS Ctrl_LS Ist OUT gnd! vdd3! vdde! vddh 
++ inh_ground_gnd inh_power_vdd3 inh_power_vdde
+*.PININFO Ctrl_HS:I Ctrl_LS:I OUT:O Ist:B gnd!:B vdd3!:B vdde!:B vddh:B 
+*.PININFO inh_ground_gnd:B inh_power_vdd3:B inh_power_vdde:B
+XI8 gnd! Ctrl_HS VG_ped vdd3! vdde! vddh inh_ground_gnd inh_power_vdd3 
++ inh_power_vdde / LS_HighSide_V3_ST
+MM34 OUT VG_nedia Ist gnd! NEDIA_BJT W=80u L=1.25u M=10.0 $LDD[NEDIA_BJT]
+MM66 OUT VG_ped vddh gnd! PED_BJT W=80u L=940.0n M=13.0 $LDD[PED_BJT]
+XI9 gnd! Ctrl_LS VG_nedia vdd3! vdde! vddh inh_ground_gnd inh_power_vdd3 
++ inh_power_vdde / LS_LowSide_V2_ST
+.ENDS
+
+************************************************************************
+* Library Name: Stimulator_IMP
+* Cell Name:    MultiChannel_ST
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT MultiChannel_ST Ctrl_HS0 Ctrl_HS1 Ctrl_HS2 Ctrl_HS3 Ctrl_HS4 Ctrl_HS5 
++ Ctrl_HS6 Ctrl_HS7 Ctrl_LS0 Ctrl_LS1 Ctrl_LS2 Ctrl_LS3 Ctrl_LS4 Ctrl_LS5 
++ Ctrl_LS6 Ctrl_LS7 E0 E1 E2 E3 E4 E5 E6 E7 Enable Iext Mag0 Mag1 Mag2 Mag3 
++ Mag4 gnd! vdd3! vdde! vddh
+*.PININFO Ctrl_HS0:I Ctrl_HS1:I Ctrl_HS2:I Ctrl_HS3:I Ctrl_HS4:I Ctrl_HS5:I 
+*.PININFO Ctrl_HS6:I Ctrl_HS7:I Ctrl_LS0:I Ctrl_LS1:I Ctrl_LS2:I Ctrl_LS3:I 
+*.PININFO Ctrl_LS4:I Ctrl_LS5:I Ctrl_LS6:I Ctrl_LS7:I Enable:I Iext:I Mag0:I 
+*.PININFO Mag1:I Mag2:I Mag3:I Mag4:I E0:B E1:B E2:B E3:B E4:B E5:B E6:B E7:B 
+*.PININFO gnd!:B vdd3!:B vdde!:B vddh:B
+XI18 Enable Iext Ist Mag0 Mag1 Mag2 Mag3 Mag4 gnd! vdd3! vddh gnd! vdd! vdd3! 
++ vdde! / CurrentSource_All_ST
+XI17 Ctrl_HS7 Ctrl_LS7 Ist E7 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+XI16 Ctrl_HS3 Ctrl_LS3 Ist E3 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+XI15 Ctrl_HS6 Ctrl_LS6 Ist E6 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+XI14 Ctrl_HS2 Ctrl_LS2 Ist E2 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+XI13 Ctrl_HS5 Ctrl_LS5 Ist E5 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+XI12 Ctrl_HS1 Ctrl_LS1 Ist E1 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+XI11 Ctrl_HS4 Ctrl_LS4 Ist E4 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+XI2 Ctrl_HS0 Ctrl_LS0 Ist E0 gnd! vdd3! vdde! vddh gnd! vdd3! vdde! / 
++ HalfBridge_ST
+.ENDS
+

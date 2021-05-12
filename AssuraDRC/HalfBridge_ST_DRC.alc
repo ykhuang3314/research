@@ -1,7 +1,7 @@
 !<alc> v1 48
 0   10    0 ped_bjt layout PRIMLIB ng="13" w="80u" in1=M66
 0    9    0 nedia_bjt layout PRIMLIB ng="10" w="80u" in1=M34
-0    8    0 M2_MTPcell layout Stimulator_IMP
+0    8    0 M3_MTPcell layout Stimulator_IMP
 0    5    0 LS_HighSide_V3_ST layout Stimulator_IMP
 0    3    0 ResistiveDivider layout Stimulator_IMP
 0   11    0 HalfBridge_ST layout Stimulator_IMP
