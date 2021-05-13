@@ -1,0 +1,41 @@
+Gds_Map 1000
+Layers:
+0 0 36 May 13 11:45:17 2021
+d_csft5a 151 0
+nwtrm 76 1
+nem 129 0
+npdct 62 1
+dntap 147 1
+ntap 146 1
+ne 126 0
+cont 90 1
+pwitap 144 1
+m1btrm 163 0
+via3CON 105 1
+ptap 143 1
+m1atrm 162 0
+pem 186 0
+pdiff 174 1
+pwitrm 70 1
+pe 184 0
+rpp1k1_2 16 0
+mttrm 161 0
+p_dnwm 43 1
+m4trm 160 0
+nedia2_b 60 1
+p_dnw 42 1
+m3trm 159 0
+npdtap 65 1
+bulk 123 1
+ndiff 162 1
+vtpCON 119 1
+m2trm 158 0
+dphod_nw 231 0
+via1 102 1
+m1trm 155 0
+ped12_b 120 1
+p1trm 153 0
+via2CON 96 1
+dnwtrm 79 1
+END OF RESPONSE
+0 0 0 May 13 11:45:17 2021

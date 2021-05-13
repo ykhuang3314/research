@@ -1,0 +1,14 @@
+
+
+vuipreRcxFormTable = '(
+	runName  "MultiChannel_ST"
+	runDir  "/home/ykhuang/research/PvsLVS/MultiChannel_ST/svdb"
+	assuraTech  "/home/ykhuang/research/pvtech.lib"
+	tech  "XH018_1143"
+	mapFile  ""
+	netProp  5
+	instProp  6
+	devProp  7
+)
+
+

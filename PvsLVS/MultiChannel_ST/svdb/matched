@@ -3,7 +3,7 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Wed May 12 14:35:35 2021
+#####  NVN Run Start                 :   Thu May 13 11:45:19 2021
 #####  ERC Summary File              :   MultiChannel_ST.sum
 #####  Extraction Report File        :   MultiChannel_ST_lvs.sum
 #####  Comparison Report File        :   MultiChannel_ST_lvs.sum.cls
@@ -24,10 +24,10 @@
 #####  Extraction Peak Memory Usage  :   151.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   238.41MB
+#####  NVN Peak Memory Usage         :   246.29MB
 #####  LVS Total CPU Time            :   0h 0m 3s - (3s)                 
 #####  LVS Total Exec Time           :   0h 0m 4s - (4s)                 
-#####  LVS Total Peak Memory Usage   :   238.41MB
+#####  LVS Total Peak Memory Usage   :   246.29MB
 #####  
 ##############################################################################################################
 

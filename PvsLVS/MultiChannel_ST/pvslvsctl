@@ -19,6 +19,7 @@ lvs_report_opt -none;
 report_summary -erc "MultiChannel_ST.sum" -replace;
 max_results -erc 1000;
 results_db -erc "/home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST_lvs.err" -ascii;
+mask_svdb_dir "/home/ykhuang/research/PvsLVS/MultiChannel_ST/svdb";
 keep_layers -none;
 schematic_format cdl;
 schematic_path "/home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST.cdl";

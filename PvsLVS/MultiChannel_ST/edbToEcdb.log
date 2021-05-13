@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : MultiChannel_ST_7225.db
+EDB Library dir : MultiChannel_ST_14515.db
 ECDB dir        : ./
 Top Cell        : MultiChannel_ST
-CDL netlist     : svdb/MultiChannel_ST.net
-Layer map file  : svdb/MultiChannel_ST.ecdbmap
-Text map file   : svdb/MultiChannel_ST.ports
+CDL netlist     : /home/ykhuang/research/PvsLVS/MultiChannel_ST/svdb/MultiChannel_ST.net
+Layer map file  : /home/ykhuang/research/PvsLVS/MultiChannel_ST/svdb/MultiChannel_ST.ecdbmap
+Text map file   : /home/ykhuang/research/PvsLVS/MultiChannel_ST/svdb/MultiChannel_ST.ports
 Dependency map  : MultiChannel_ST.lmap.perc
-Lvs file        : svdb/MultiChannel_ST.lvsfile
+Lvs file        : /home/ykhuang/research/PvsLVS/MultiChannel_ST/svdb/MultiChannel_ST.lvsfile
 Float net file : .MultiChannel_ST.info.softchk
 debug           : 0
-Source Library  : MultiChannel_ST_7225
+Source Library  : MultiChannel_ST_14515

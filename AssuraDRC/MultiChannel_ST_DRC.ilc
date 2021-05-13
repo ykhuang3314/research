@@ -34,6 +34,6 @@ Stimulator_IMP Idac_5bit_ST_V3 layout 111432
 Stimulator_IMP LS_LowSide_V2_ST layout 4015
 PRIMLIB nedia_bjt layout 630
 PRIMLIB ped_bjt layout 572
-Stimulator_IMP CurrentSource_All_ST layout 6877
-Stimulator_IMP HalfBridge_ST layout 19712
-Stimulator_IMP MultiChannel_ST layout 29011
+Stimulator_IMP CurrentSource_All_ST layout 6903
+Stimulator_IMP HalfBridge_ST layout 19738
+Stimulator_IMP MultiChannel_ST layout 30331

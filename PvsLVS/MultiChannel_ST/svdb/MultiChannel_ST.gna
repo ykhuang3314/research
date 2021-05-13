@@ -1,0 +1,21 @@
+* Net aliases by cell for run: MultiChannel_ST_lvs.sum
+* THIS FILE IS GENERATED. DO NOT EDIT.
+* ==== Bound cells ==============
+* ==== Unbound cells ==============
+CurrentMirror_ST { 
+  inh_ground_gnd ( gnd! )
+  vdd3! ( inh_power_vdd3 )
+}
+CurrentSource_All_ST { 
+  inh_ground_gnd ( gnd! )
+  vdd3! ( inh_power_vdd3 )
+}
+HalfBridge_ST { 
+  inh_ground_gnd ( gnd! )
+}
+LS_HighSide_V3_ST { 
+  inh_ground_gnd ( gnd! )
+}
+LS_LowSide_V2_ST { 
+  inh_ground_gnd ( gnd! )
+}

@@ -10,6 +10,7 @@ cd /home/ykhuang/research/PvsLVS/MultiChannel_ST ;\
 	-top_cell MultiChannel_ST \
 	-source_top_cell MultiChannel_ST \
 	-spice /home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST.spi \
+	-rc_data \
 	-control /home/ykhuang/research/PvsLVS/MultiChannel_ST/pvslvsctl \
 	-ui_data \
 	-gdb_data \

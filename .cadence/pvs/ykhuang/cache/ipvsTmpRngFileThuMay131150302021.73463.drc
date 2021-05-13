@@ -1,0 +1,2790 @@
+1373 0
+1 offgrid_vertex 1
+"Grid = 0.005"
+1 skew_edge 1
+"Edge is not multiple 45 degrees"
+1 offgrid_NW 1
+"offgrid_NWELL"
+1 skewEdge_NW 1
+"skewEdge_NWELL"
+1 offgrid_PB 1
+"offgrid_PWBLK"
+1 skewEdge_PB 1
+"skewEdge_PWBLK"
+1 offgrid_DF 1
+"offgrid_DIFF"
+1 skewEdge_DF 1
+"skewEdge_DIFF"
+1 offgrid_MV 1
+"offgrid_MV"
+1 skewEdge_MV 1
+"skewEdge_MV"
+1 offgrid_P1 1
+"offgrid_POLY1"
+1 skewEdge_P1 1
+"skewEdge_POLY1"
+1 offgrid_HR 1
+"offgrid_HRES"
+1 skewEdge_HR 1
+"skewEdge_HRES"
+1 offgrid_SB 1
+"offgrid_SBLK"
+1 skewEdge_SB 1
+"skewEdge_SBLK"
+1 offgrid_IN 1
+"offgrid_NIMP"
+1 skewEdge_IN 1
+"skewEdge_NIMP"
+1 offgrid_IP 1
+"offgrid_PIMP"
+1 skewEdge_IP 1
+"skewEdge_PIMP"
+1 offgrid_CT 1
+"offgrid_CONT"
+1 skewEdge_CT 1
+"skewEdge_CONT"
+1 offgrid_M1 1
+"offgrid_MET1"
+1 skewEdge_M1 1
+"skewEdge_MET1"
+1 offgrid_V1 1
+"offgrid_VIA1"
+1 skewEdge_V1 1
+"skewEdge_VIA1"
+1 offgrid_M2 1
+"offgrid_MET2"
+1 skewEdge_M2 1
+"skewEdge_MET2"
+1 offgrid_PA 1
+"offgrid_PAD"
+1 skewEdge_PA 1
+"skewEdge_PAD"
+1 offgrid_V2 1
+"offgrid_VIA2"
+1 skewEdge_V2 1
+"skewEdge_VIA2"
+1 offgrid_M3 1
+"offgrid_MET3"
+1 skewEdge_M3 1
+"skewEdge_MET3"
+1 offgrid_V3 1
+"offgrid_VIA3"
+1 skewEdge_V3 1
+"skewEdge_VIA3"
+1 offgrid_M4 1
+"offgrid_MET4"
+1 skewEdge_M4 1
+"skewEdge_MET4"
+1 offgrid_NU 1
+"offgrid_BNIMP"
+1 skewEdge_NU 1
+"skewEdge_BNIMP"
+1 offgrid_GH 1
+"offgrid_HVGOX"
+1 skewEdge_GH 1
+"skewEdge_HVGOX"
+1 offgrid_MR 1
+"offgrid_MRES"
+1 skewEdge_MR 1
+"skewEdge_MRES"
+1 offgrid_WM 1
+"offgrid_DNWELLMV"
+1 skewEdge_WM 1
+"skewEdge_DNWELLMV"
+1 offgrid_PI 1
+"offgrid_ISOPW"
+1 skewEdge_PI 1
+"skewEdge_ISOPW"
+1 offgrid_WD 1
+"offgrid_DNWELL"
+1 skewEdge_WD 1
+"skewEdge_DNWELL"
+1 offgrid_HP 1
+"offgrid_HVPWELL"
+1 skewEdge_HP 1
+"skewEdge_HVPWELL"
+1 offgrid_LV 1
+"offgrid_LVT"
+1 skewEdge_LV 1
+"skewEdge_LVT"
+1 offgrid_SV 1
+"offgrid_SVT"
+1 skewEdge_SV 1
+"skewEdge_SVT"
+1 offgrid_LD 1
+"offgrid_LNDEV"
+1 skewEdge_LD 1
+"skewEdge_LNDEV"
+1 offgrid_UL 1
+"offgrid_ULN"
+1 skewEdge_UL 1
+"skewEdge_ULN"
+1 offgrid_DL 1
+"offgrid_DEPL"
+1 skewEdge_DL 1
+"skewEdge_DEPL"
+1 offgrid_HL 1
+"offgrid_HVDEPL"
+1 skewEdge_HL 1
+"skewEdge_HVDEPL"
+1 offgrid_PT 1
+"offgrid_PDD"
+1 skewEdge_PT 1
+"skewEdge_PDD"
+1 offgrid_HN 1
+"offgrid_HVNWELL"
+1 skewEdge_HN 1
+"skewEdge_HVNWELL"
+1 offgrid_ND 1
+"offgrid_NDF"
+1 skewEdge_ND 1
+"skewEdge_NDF"
+1 offgrid_HW 1
+"offgrid_HNW"
+1 skewEdge_HW 1
+"skewEdge_HNW"
+1 offgrid_PD 1
+"offgrid_PDF"
+1 skewEdge_PD 1
+"skewEdge_PDF"
+1 offgrid_NC 1
+"offgrid_DNC"
+1 skewEdge_NC 1
+"skewEdge_DNC"
+1 offgrid_CM 1
+"offgrid_CAPM"
+1 skewEdge_CM 1
+"skewEdge_CAPM"
+1 offgrid_C3 1
+"offgrid_CAPM23F"
+1 skewEdge_C3 1
+"skewEdge_CAPM23F"
+1 offgrid_C4 1
+"offgrid_CAPM34F"
+1 skewEdge_C4 1
+"skewEdge_CAPM34F"
+1 offgrid_DM 1
+"offgrid_CAPM2"
+1 skewEdge_DM 1
+"skewEdge_CAPM2"
+1 offgrid_TM 1
+"offgrid_CAPM3"
+1 skewEdge_TM 1
+"skewEdge_CAPM3"
+1 offgrid_CH 1
+"offgrid_CAPMH"
+1 skewEdge_CH 1
+"skewEdge_CAPMH"
+1 offgrid_H3 1
+"offgrid_CAPMH23F"
+1 skewEdge_H3 1
+"skewEdge_CAPMH23F"
+1 offgrid_H4 1
+"offgrid_CAPMH34F"
+1 skewEdge_H4 1
+"skewEdge_CAPMH34F"
+1 offgrid_DH 1
+"offgrid_CAPMH2"
+1 skewEdge_DH 1
+"skewEdge_CAPMH2"
+1 offgrid_TH 1
+"offgrid_CAPMH3"
+1 skewEdge_TH 1
+"skewEdge_CAPMH3"
+1 offgrid_SC 1
+"offgrid_SCI"
+1 skewEdge_SC 1
+"skewEdge_SCI"
+1 offgrid_OA 1
+"offgrid_ANODOP"
+1 skewEdge_OA 1
+"skewEdge_ANODOP"
+1 offgrid_OC 1
+"offgrid_CATDOP"
+1 skewEdge_OC 1
+"skewEdge_CATDOP"
+1 offgrid_UV 1
+"offgrid_UVWIN"
+1 skewEdge_UV 1
+"skewEdge_UVWIN"
+1 offgrid_AM 1
+"offgrid_AML"
+1 skewEdge_AM 1
+"skewEdge_AML"
+1 offgrid_IB 1
+"offgrid_NOPIM"
+1 skewEdge_IB 1
+"skewEdge_NOPIM"
+1 offgrid_PC 1
+"offgrid_DPC"
+1 skewEdge_PC 1
+"skewEdge_DPC"
+1 Q1SU 1
+"Check for the right usage of the layer SUBCUT"
+1 B1SU 1
+"DIFF or *WELL crossing SUBCUT edge is not allowed"
+1 M_HW 1 connected
+"Predefined area must have HNW"
+1 N_HW 1 connected
+"Predefined area must not have HNW"
+1 N_WD 1
+"Predefined area must not have DNWELL"
+1 N_WM 1
+"Predefined area must not have DNWELLMV"
+1 M_HN 1 connected
+"Predefined area must have HVNWELL"
+1 N_HN 1 connected
+"Predefined area must not have HVNWELL"
+1 G_HP 1 connected
+"Predefined geometry of HVPWELL violated"
+1 M_HP 1 connected
+"Predefined area must have HVPWELL"
+1 N_HP 1 connected
+"Predefined area must not have HVPWELL"
+1 N_ND 1
+"Predefined area must not have NDF"
+1 N_DL 1
+"Predefined area must not have DEPL"
+1 M_NW 1
+"Predefined area must have NWELL"
+1 N_NW 1
+"Predefined area must not have NWELL"
+1 M_PB 1
+"Predefined area must have PWBLK"
+1 N_PB 1
+"Predefined area must not have PWBLK"
+1 M_MV 1
+"Predefined area must have MV"
+1 M_DF 1
+"Predefined area must have DIFF"
+1 M_DN 1 connected
+"Predefined area must have NDIFF"
+1 N_DN 1 connected
+"Predefined area must not have NDIFF"
+1 M_DP 1 connected
+"Predefined area must have PDIFF"
+1 N_DP 1 connected
+"Predefined area must not have PDIFF"
+1 M_P1 1
+"Predefined area must have POLY1"
+1 N_P1 1
+"Predefined area must not have POLY1"
+1 M_IN 1
+"Predefined area must have NIMP"
+1 N_IN 1
+"Predefined area must not have NIMP"
+1 M_IP 1
+"Predefined area must have PIMP"
+1 N_IP 1
+"Predefined area must not have PIMP"
+1 M_SB 1 connected
+"Predefined area must have SBLK"
+1 N_SB 1 connected
+"Predefined area must not have SBLK"
+1 M_UV 1
+"Predefined area must have UVWIN"
+1 N_UV 1
+"Predefined area must not have UVWIN"
+1 N_OA 1
+"Predefined area must not have ANODOP"
+1 N_GH 1
+"Predefined area must not have HVGOX"
+1 N_LV 1
+"Predefined area must not have LVT"
+1 N_SV 1
+"Predefined area must not have SVT"
+1 N_LD 1
+"Predefined area must not have LNDEV"
+1 N_UL 1
+"Predefined area must not have ULN"
+1 N_NU 1
+"Predefined area must not have BNIMP"
+1 N_HL 1
+"Predefined area must not have HVDEPL"
+1 N_CT 1
+"Predefined area must not have CONT"
+1 N_M1 1
+"Predefined area must not have MET1"
+1 M_M2 1
+"Predefined area must have MET2"
+1 N_M2 1
+"Predefined area must not have MET2"
+1 N_M3 1
+"Predefined area must not have MET3"
+1 offgrid_W1 1
+"offgrid_NWELL1"
+1 skewEdge_W1 1
+"skewEdge_NWELL1"
+1 offgrid_W3 1
+"offgrid_NWELL2"
+1 skewEdge_W3 1
+"skewEdge_NWELL2"
+1 offgrid_W5 1
+"offgrid_NWELL3"
+1 skewEdge_W5 1
+"skewEdge_NWELL3"
+1 offgrid_W7 1
+"offgrid_NWELL4"
+1 skewEdge_W7 1
+"skewEdge_NWELL4"
+1 offgrid_W9 1
+"offgrid_NWELL5"
+1 skewEdge_W9 1
+"skewEdge_NWELL5"
+1 offgrid_W2 1
+"offgrid_PWELL1"
+1 skewEdge_W2 1
+"skewEdge_PWELL1"
+1 offgrid_W4 1
+"offgrid_PWELL2"
+1 skewEdge_W4 1
+"skewEdge_PWELL2"
+1 offgrid_W6 1
+"offgrid_PWELL3"
+1 skewEdge_W6 1
+"skewEdge_PWELL3"
+1 offgrid_W10 1
+"offgrid_PWELL5"
+1 skewEdge_W10 1
+"skewEdge_PWELL5"
+1 W1W1 1
+"Minimum NWELL1 width ... 0.86"
+1 W1W2 1
+"Minimum PWELL1 width ... 0.6"
+1 W1W3 1
+"Minimum NWELL2 width ... 0.86"
+1 W1W4 1
+"Minimum PWELL2 width ... 0.6"
+1 W1W5 1
+"Minimum NWELL3 width ... 0.86"
+1 W1W6 1
+"Minimum PWELL3 width ... 0.6"
+1 W1W7 1
+"Minimum NWELL4 width ... 0.86"
+1 W1W9 1
+"Minimum NWELL5 width ... 0.86"
+1 W1W10 1
+"Minimum PWELL5 width ... 0.6"
+1 A1W1 1
+"Minimum NWELL1 area ... 2.25"
+1 A1W2 1
+"Minimum PWELL1 area ... 2.25"
+1 A1W3 1
+"Minimum NWELL2 area ... 2.25"
+1 A1W4 1
+"Minimum PWELL2 area ... 2.25"
+1 A1W5 1
+"Minimum NWELL3 area ... 2.25"
+1 A1W6 1
+"Minimum PWELL3 area ... 2.25"
+1 A1W7 1
+"Minimum NWELL4 area ... 2.25"
+1 A1W9 1
+"Minimum NWELL5 area ... 2.25"
+1 A1W10 1
+"Minimum PWELL5 area ... 2.25"
+1 W1NW 1
+"Minimum NWELL width ... 0.86"
+1 S1NW 1
+"Minimum NWELL spacing/notch ... 0.6"
+1 S2NW 1 connected
+"Minimum NWELL spacing (different net) ... 1.4"
+1 A1NW 1
+"Minimum NWELL area ... 2.25"
+1 W1PB 1
+"Minimum PWBLK width ... 0.6"
+1 S1PB 1
+"Minimum PWBLK spacing/notch ... 0.86"
+1 B3PB 1
+"PWBLK overlap of PDIFF is not allowed"
+1 B4PB 1
+"DIFF crossing PWBLK edge is not allowed"
+1 B5PB 1
+"PWBLK overlap of NDIFF without MV or BNIMP is not allowed" 
+1 B6PB 1
+"Only a single rectangular NDIFF inside PWBLK is allowed"
+1 E1PBDN 1
+"Fixed PWBLK enclosure of NDIFF ... 0.12"
+1 S1PBDN 1
+"Minimum PWBLK spacing to NDIFF ... 0.12"
+1 S1PBNW 1
+"Minimum PWBLK spacing to NWELL ... 0.86"
+1 S1PBWM 1
+"Minimum PWBLK spacing to DNWELLMV ... 0.86"
+1 B1WM 1
+"DNWELLMV crossing DNWELL edge is not allowed"
+1 B2WM 1
+"NWELL crossing DNWELLMV edge is not allowed"
+1 B6WM 1
+"HVPWELL crossing DNWELLMV edge is not allowed"
+1 B7WM 1
+"HVNWELL crossing DNWELLMV edge is not allowed"
+1 B8WM 1
+"POLY1 crossing DNWELLMV edge is not allowed"
+1 W1WM 1
+"Minimum DNWELLMV width ... 1.6"
+1 S1WM 1
+"Minimum DNWELLMV spacing/notch ... 1.6"
+1 S2WM 1 connected
+"Minimum DNWELLMV spacing (different net) ... 5.0"
+1 A1WM 1
+"Minimum DNWELLMV area ... 4.0"
+1 S1WMNW 1
+"Minimum DNWELLMV spacing to NWELL ... 3.5"
+1 S1WMWD 1
+"Minimum DNWELLMV spacing to DNWELL ... 10.0"
+1 S1WMP1 1
+"Minimum DNWELLMV spacing to POLY1 ... 2.0"
+1 E1WMP1 1
+"Minimum DNWELLMV enclosure of POLY1 ... 2.0"
+1 S1WMDP 1
+"Minimum DNWELLMV spacing to PDIFF ... 0.43"
+1 E1WMDP 1
+"Minimum DNWELLMV enclosure of PDIFF ... 0.86"
+1 S1WMDN 1
+"Minimum DNWELLMV spacing to NDIFF ... 0.43"
+1 E1WMDN 1
+"Minimum DNWELLMV enclosure of NDIFF ... 0.43"
+1 S1WMHP 1
+"Minimum DNWELLMV spacing to HVPWELL ... 3.0"
+1 E1WMHP 1
+"Minimum DNWELLMV enclosure of HVPWELL ... 2.0"
+1 S1WMHN 1
+"Minimum DNWELLMV spacing to HVNWELL ... 8.0"
+1 E1WMHN 1
+"Minimum DNWELLMV enclosure of HVNWELL ... 1.0"
+1 B1PI 1 connected
+"ISOPW outside DNWELL/DNWELLMV is not allowed"
+1 W1PI 1
+"Minimum ISOPW width ... 0.6"
+1 S1PI 1
+"Minimum ISOPW spacing/notch ... 0.6"
+1 B1IW 1
+"ISOWELL overlap of NWELL,HVNWELL,HVPWELL or PDD is not allowed"
+1 B2IW 1
+"ISOWELL crossing DNWELLMV edge is not allowed"
+1 S1IW 1
+"Minimum ISOWELL spacing/notch ... 0.6"
+1 S2IW 1 connected
+"Minimum ISOWELL spacing (different net) ... 3.0"
+1 S2IW_ESD 1 connected
+"Minimum ISOPW spacing (different net) ... 1.5 (ESD device)"
+1 S1IWDN 1
+"Minimum ISOWELL spacing to NDIFF ... 0.43"
+1 E1IWDN 1
+"Minimum ISOWELL enclosure of NDIFF ... 0.43"
+1 S1IWDP 1
+"Minimum ISOWELL spacing to PDIFF ... 0.43"
+1 E1IWDP 1
+"Minimum ISOWELL enclosure of PDIFF ... 0.43"
+1 S1IWPT 1
+"Minimum ISOWELL spacing to PDD ... 8.0"
+1 S1IWHN 1
+"Minimum ISOWELL spacing to HVNWELL ... 0.8"
+1 S1IWHP 1
+"Minimum ISOWELL spacing to HVPWELL ... 7.4"
+1 Q1IW 1
+"ISOWELL should be contacted by PDIFF"
+1 E1WMIW 1
+"Minimum DNWELLMV enclosure of ISOWELL ... 2.0"
+1 S2IWDN 1
+"Minimum ISOWELL spacing to NDIFF ... 3.0"
+1 E2IWDN 1
+"Minimum ISOWELL enclosure of NDIFF ... 3.5"
+1 S2IWDP 1
+"Minimum ISOWELL spacing to PDIFF ... 3.0"
+1 E2IWDP 1
+"Fixed ISOWELL enclosure of PDIFF ... 3.0"
+1 S2IWHN 1
+"Minimum ISOWELL spacing to HVNWELL ... 3.0"
+1 B1DF 1
+"DIFF without NIMP or PIMP is not allowed"
+1 B2DF 1
+"DIFF crossing NTYPE_WELL or PTYPE_WELL edge is not allowed"
+1 B3DF 1
+"DIFF crossing NWELL edge is not allowed"
+1 W1DF 1
+"Minimum DIFF width ... 0.22"
+1 W2DF 1
+"Minimum length of coincident NDIFF/PDIFF path edge ... 0.42"
+1 S1DF 1
+"Minimum DIFF spacing/notch ... 0.28"
+1 E1NWDN 1
+"Minimum NWELL enclosure of NDIFF ... 0.12"
+1 E1NWDP 1
+"Minimum NWELL enclosure of PDIFF ... 0.43"
+1 S1DNNW 1
+"Minimum NDIFF spacing to NWELL ... 0.43"
+1 S1DPNW 1
+"Minimum PDIFF spacing to NWELL ... 0.12"
+1 S2DF 1
+"Minimum NDIFF in NWELL spacing to PDIFF in PWELL ... 0.36"
+1 S3DF 1
+"Minimum PDIFF spacing ... 0.56"
+1 A1DF 1
+"Minimum DIFF area ... 0.202"
+1 B1MV 1
+"DIFF crossing MV edge is not allowed"
+1 B2MV 1
+"NW_VERIFY crossing MV edge is not allowed"
+1 B3MV 1
+"MV overlap of HVPWELL, HVNWELL, PDD is not allowed"
+1 W1MV 1
+"Minimum MV width ... 0.6"
+1 S1MV 1
+"Minimum MV spacing/notch ... 0.45"
+1 E1MVDF 1
+"Minimum MV enclosure of DIFF ... 0.32"
+1 S1MVDF 1
+"Minimum MV spacing to DIFF ... 0.32"
+1 S1MVGA 1
+"Minimum MV spacing to GATE ... 0.4"
+1 E1MVGA 1
+"Minimum MV enclosure of GATE ... 0.4"
+1 B1P1 2
+"(POLY1 and SBLK and not (HRES or MRES)) without NIMP or PIMP is not allowed"
+"Note: NIMP touching PIMP under (POLY1 and SBLK and not (HRES or MRES)) is not allowed"
+1 B1GA 3
+"90 degree bent GATE is not allowed"
+"Note:" 
+"only valid for POLY1 over DIFF or for DIFF over POLY1 structures with > 4 vertices"
+1 B2GA 3
+"Illegal GATE construct"
+"Note:"
+"GATE region has been identified as having no association with supported devices"
+1 W1P1 1
+"Minimum POLY1 width ... 0.18"
+1 W2P1 1
+"Minimum POLY1 width (for 45 degree bent GATE) ... 0.21"
+1 S1P1 1
+"Minimum POLY1 spacing/notch ... 0.25"
+1 S1P1DF 1
+"Minimum POLY1 spacing to DIFF ... 0.1"
+1 E1P1GA 1
+"Minimum POLY1 extension beyond GATE ... 0.22"
+1 E1DFGA 1
+"Minimum DIFF extension beyond GATE ... 0.32"
+1 A1P1 1
+"Minimum POLY1 area ... 0.118"
+1 A2P1 1
+"Maximum (POLY1 and not SBLK) area ... 17000.0"
+1 B1HR 1
+"HRES overlap of DIFF is not allowed"
+1 B2HR 1
+"NIMP overlap of rnp1h# (resistor body) is not allowed"
+1 B3HR 1
+"PIMP overlap of HRES is not allowed"
+1 B4HR 1
+"POLY1 crossing HRES edge is not allowed"
+1 B5HR 1
+"rnp1h# terminal without NIMP is not allowed"
+1 B6HR 1
+"NIMP crossing HRES edge is not allowed"
+1 B7HR 1
+"MET1 overlap of rnp1h# (resistor body) is not allowed"
+1 B10HR 1
+"rnp1h_3 crossing NTYPE_WELL or PTYPE_WELL or SUBCUT edge is not allowed"
+1 B11HR 1
+"rnp1h_3 overlap rnw/rnw3/rdnwmv is not allowed"
+1 W1HR 1
+"Minimum HRES width ... 0.44"
+1 S1HR 1
+"Minimum HRES spacing/notch ... 0.44"
+1 S1HRDF 1
+"Minimum HRES spacing to DIFF ... 0.32"
+1 S1HRP1 1
+"Minimum HRES spacing to POLY1 ... 0.32"
+1 E1HRP1 1
+"Minimum HRES enclosure of POLY1 ... 0.18"
+1 S1HRIN 1
+"Minimum HRES spacing to NIMP ... 0.44"
+1 S1HRIP 1
+"Minimum HRES spacing to PIMP ... 0.44"
+1 W2HR 1
+"Minimum rnp1h# width ... 0.42"
+1 W3HR 1
+"Minimum rnp1h# length ... 5.0"
+1 E2INP1 1
+"Minimum NIMP extension beyond POLY1 ... 0.18"
+1 S2INP1 1
+"Minimum NIMP (in SBLK) spacing to rnp1h# ... 0.18"
+1 W1SB 1
+"Minimum SBLK width ... 0.43"
+1 S1SB 1
+"Minimum SBLK spacing/notch ... 0.43"
+1 S1SBDF 1
+"Minimum SBLK spacing to DIFF ... 0.22"
+1 E1SBDF 1
+"Minimum SBLK extension beyond DIFF ... 0.22"
+1 S1SBP1 1
+"Minimum SBLK spacing to POLY1 ... 0.3"
+1 E1SBP1 1
+"Minimum SBLK extension beyond POLY1 ... 0.22"
+1 S1SBGA 1
+"Minimum SBLK spacing to GATE ... 0.45"
+1 O1SBGA 2
+"Minimum SBLK overlap of GATE ... 0.05"
+"It is recommended to use SBLK over GATE only for IO blocks and ESD protection"
+1 S1SBCT 1
+"Minimum SBLK spacing to CONT ... 0.22"
+1 E1DFSB 1
+"Minimum DIFF extension beyond SBLK ... 0.22"
+1 A1SB 1
+"Minimum area of SBLK ... 2.0"
+1 B1SB 1
+"SBLK overlap of MET1, MET2, MET3, MET4, MET5, METTP or METTPL is not allowed"
+1 B3SB 1
+"(SBLK and AML and not POLY1) overlap of MET1, MET2, MET3, MET4, MET5, METTP or METTPL is not allowed"
+1 B2SB 1
+"SBLK without BLKALL is not allowed"
+1 E1BASB 1
+"Minimum BLKALL enclosure of SBLK ... 1.7"
+1 B4SB 1
+"(SBLK and AML) without BLKALL is not allowed"
+1 E2BASB 1
+"Minimum BLKALL enclosure of (SBLK and AML) ... 1.7"
+1 W1IN 1
+"Minimum NIMP width ... 0.44"
+1 S1IN 1
+"Minimum NIMP spacing/notch ... 0.44"
+1 E1INDF 1
+"Minimum NIMP extension beyond DIFF ... 0.18"
+1 E2INDF 1
+"Minimum NIMP extension beyond DIFF ... 0.02"
+1 O1INDF 1
+"Minimum DIFF overlap of NIMP ... 0.23"
+1 E1DNP1 1
+"Minimum NDIFF extension beyond POLY1 ... 0.32"
+1 S1INDP 1
+"Minimum NIMP spacing to PDIFF ... 0.1"
+1 S2INDP 1
+"Minimum NIMP spacing to PDIFF (in NTYPE1_WELL) ... 0.26"
+1 S3INDP 1
+"Minimum NIMP spacing to PDIFF ... 0.18"
+1 E1INDN 1
+"Minimum NIMP extension beyond POLY1/NDIFF in direction of POLY1 ... 0.35"
+1 A1IN 1
+"Minimum NIMP area ... 0.3844"
+1 B1IPIN 1
+"PIMP overlap of NIMP is not allowed"
+1 W1IP 1
+"Minimum PIMP width ... 0.44"
+1 S1IP 1
+"Minimum PIMP spacing/notch ... 0.44"
+1 E1IPDF 1
+"Minimum PIMP extension beyond DIFF ... 0.18"
+1 E2IPDF 1
+"Minimum PIMP extension beyond DIFF ... 0.02"
+1 O1IPDF 1
+"Minimum DIFF overlap of PIMP ... 0.23"
+1 E1DPP1 1
+"Minimum PDIFF extension beyond POLY1 ... 0.32"
+1 S1IPDN 1
+"Minimum PIMP spacing to NDIFF (outside NTYPE1_WELL) ... 0.26"
+1 S2IPDN 1
+"Minimum PIMP spacing to NDIFF ... 0.1"
+1 S3IPDN 1
+"Minimum PIMP spacing to NDIFF ... 0.18"
+1 E1IPDP 1
+"Minimum PIMP extension beyond POLY1/PDIFF in direction of POLY1 ... 0.35"
+1 A1IP 1
+"Minimum PIMP area ... 0.3844"
+1 B1CT 1
+"CONT without NDIFF or PDIFF or POLY1 is not allowed"
+1 B1CTGA 1
+"CONT overlap of GATE is not allowed"
+1 B1CTSB 1
+"CONT overlap of SBLK is not allowed"
+1 W1CT 1
+"Fixed CONT size ... 0.22 x 0.22"
+1 W2CT 1
+"Fixed CONT stripe width ... 0.22"
+1 B3CT 1
+"CONT stripes are only allowed to bend at 135 degrees"
+1 S1CT 1
+"Minimum CONT spacing ... 0.25"
+1 S2CT 2
+"Minimum CONT spacing ... 0.28"
+"(for contact arrays containing more than 4x4 elements)"
+1 S3CT 1
+"Minimum CONT stripe to CONT spacing ... 0.39"
+1 S4CT 1
+"Minimum CONT stripe spacing/notch ... 0.67"
+1 E1DFCT 1
+"Minimum DIFF enclosure of CONT ... 0.1"
+1 E1P1CT 1
+"Minimum POLY1 enclosure of CONT ... 0.1"
+1 S1CTP1 1
+"Minimum CONT spacing to POLY1 ... 0.16"
+1 S1CTDF 1
+"Minimum CONT spacing to DIFF ... 0.2"
+1 E1CTIP 1
+"Minimum PIMP enclosure of DIFFCON ... 0.12"
+1 E1CTIN 1
+"Minimum NIMP enclosure of DIFFCON ... 0.12"
+1 B1CTM1 1
+"CONT must be covered by MET1"
+1 W1M1 1
+"Minimum MET1 width ... 0.23"
+1 S1M1 1
+"Minimum MET1 spacing/notch ... 0.23"
+1 S2M1 1
+"Minimum MET1 spacing to WIDE_MET1 ... 0.6"
+1 E1M1CT 1
+"Minimum MET1 enclosure of CONT ... 0.005"
+1 E2M1CT 2
+"Minimum MET1 enclosure of CONT ... 0.06"
+"(in one direction of CONT corner)"
+1 E3M1CT 1
+"Minimum MET1 enclosure of CONT stripe ... 0.07"
+1 A1M1 1
+"Minimum MET1 area ... 0.202"
+1 B1M1 1
+"All MET1 tracks >35um wide to be slotted (except Pads)"
+1 W2M1 1
+"Minimum M1SLOT width ... 0.6"
+1 W3M1 1
+"Minimum M1SLOT length ... 20.0"
+1 S3M1 1
+"Minimum M1SLOT spacing/notch ... 10.0"
+1 E1M1M1 2
+"Minimum MET1 enclosure of M1SLOT ... 10.0"
+"Note: M1SLOT without MET1 is not allowed"
+1 B1V1 1
+"VIA1 must be covered by MET1 and MET2"
+1 W1V1 1
+"Fixed VIA1 size ... 0.26 x 0.26"
+1 W2V1 1
+"Fixed VIA1 stripe width ... 0.26"
+1 B2V1 1
+"VIA1 stripes are only allowed to bend at 135 degrees"
+1 S1V1 1
+"Minimum VIA1 spacing ... 0.26"
+1 S3V1 1
+"Minimum VIA1 stripe to VIA1 spacing ... 1.0"
+1 E1M1V1 1
+"Minimum MET1 enclosure of VIA1 ... 0.01"
+1 E2M1V1 2
+"Minimum MET1 enclosure of VIA1 ... 0.06"
+"(in one direction of VIA1 corner)"
+1 E1M2V1 1
+"Minimum MET2 enclosure of VIA1 ... 0.01"
+1 E2M2V1 2
+"Minimum MET2 enclosure of VIA1 ... 0.06"
+"(in one direction of VIA1 corner)"
+1 E4M1V1 1
+"Minimum MET1 enclosure of VIA1 stripe ... 0.07"
+1 E7M2V1 1
+"Minimum MET2 enclosure of VIA1 stripe ... 0.07"
+1 Q20V1 1
+"Check for the right usage of OPTOVIA1"
+1 W1M2 1
+"Minimum MET2 width ... 0.28"
+1 S1M2 1
+"Minimum MET2 spacing/notch ... 0.28"
+1 S2M2 1
+"Minimum MET2 spacing to WIDE_MET2 ... 0.6"
+1 A1M2 1
+"Minimum MET2 area ... 0.202"
+1 B1M2 1
+"All MET2 tracks >35um wide to be slotted (except Pads, dphoc0, dphod0)"
+1 W2M2 1
+"Minimum M2SLOT width ... 0.6"
+1 W3M2 1
+"Minimum M2SLOT length ... 20.0"
+1 S3M2 1
+"Minimum M2SLOT spacing/notch ... 10.0"
+1 S1M2M1 2
+"Minimum M2SLOT spacing to M1SLOT ... 2.0"
+"Note: M2SLOT is not allowed over M1SLOT"
+1 E1M2M2 2
+"Minimum MET2 enclosure of M2SLOT ... 10.0"
+"Note: M2SLOT without MET2 is not allowed"
+1 B1V2 1
+"VIA2 must be covered by MET2 and MET3"
+1 W1V2 1
+"Fixed VIA2 size ... 0.26 x 0.26"
+1 W2V2 1
+"Fixed VIA2 stripe width ... 0.26"
+1 B2V2 1
+"VIA2 stripes are only allowed to bend at 135 degrees"
+1 S1V2 1
+"Minimum VIA2 spacing ... 0.26"
+1 S9V2 1
+"Minimum VIA2 stripe to VIA2 spacing ... 1.0"
+1 E1M2V2 1
+"Minimum MET2 enclosure of VIA2 ... 0.01"
+1 E2M2V2 2
+"Minimum MET2 enclosure of VIA2 ... 0.06"
+"(in one direction of VIA2 corner)"
+1 E1M3V2 1
+"Minimum MET3 enclosure of VIA2 ... 0.01"
+1 E2M3V2 2
+"Minimum MET3 enclosure of VIA2 ... 0.06"
+"(in one direction of VIA2 corner)"
+1 E8M2V2 1
+"Minimum MET2 enclosure of VIA2 stripe ... 0.1"
+1 E3M3V2 1
+"Minimum MET3 enclosure of VIA2 stripe ... 0.1"
+1 Q20V2 1
+"Check for the right usage of OPTOVIA2"
+1 W1M3 1
+"Minimum MET3 width ... 0.28"
+1 S1M3 1
+"Minimum MET3 spacing/notch ... 0.28"
+1 S2M3 1
+"Minimum MET3 spacing to WIDE_MET3 ... 0.6"
+1 A1M3 1
+"Minimum MET3 area ... 0.202"
+1 B1M3 1
+"All MET3 tracks >35um wide to be slotted (except Pads)"
+1 W2M3 1
+"Minimum M3SLOT width ... 0.6"
+1 W3M3 1
+"Minimum M3SLOT length ... 20.0"
+1 S3M3 1
+"Minimum M3SLOT spacing/notch ... 10.0"
+1 S1M3M2 2
+"Minimum M3SLOT spacing to M2SLOT ... 2.0"
+"Note: M3SLOT is not allowed over M2SLOT"
+1 E1M3M3 2
+"Minimum MET3 enclosure of M3SLOT ... 10.0"
+"Note: M3SLOT without MET3 is not allowed"
+1 W1VT 1
+"Fixed VIATP size ... 0.36 x 0.36"
+1 W2VT 1
+"Fixed VIATP stripe width ... 0.36"
+1 B2VT 1
+"VIATP stripes are only allowed to bend at 135 degrees"
+1 S1VT 1
+"Minimum VIATP spacing ... 0.35"
+1 S9VT 1
+"Minimum VIATP stripe to VIATP spacing ... 1.0"
+1 B1VT 1
+"VIATP must be covered by METTP"
+1 E1MTVT 1
+"Minimum METTP enclosure of VIATP ... 0.09"
+1 E3MTVT 1
+"Minimum METTP enclosure of VIATP stripe ... 0.2"
+1 B1VTM4 1
+"VIATP must be covered by MET4"
+1 E1M4VT 1
+"Minimum MET4 enclosure of VIATP ... 0.01"
+1 E2M4VT 2
+"Minimum MET4 enclosure of VIATP ... 0.06"
+"(in one direction of VIATP corner)"
+1 E5M4VT 1
+"Minimum MET4 enclosure of VIATP stripe ... 0.2"
+1 S1MTM4 2
+"Minimum MTPSLOT spacing to M4SLOT ... 2.0"
+"Note: MTPSLOT is not allowed over M4SLOT"
+1 Q20VT 1
+"Check for the right usage of OPTOVIATP"
+1 W1MT 1
+"Minimum METTP width ... 0.44"
+1 S1MT 1
+"Minimum METTP spacing/notch ... 0.46"
+1 S2MT 1
+"Minimum METTP spacing to WIDE_METTP ... 0.6"
+1 A1MT 1
+"Minimum METTP area ... 0.562"
+1 B1MT 1
+"All METTP tracks >35um wide to be slotted (except Pads)"
+1 W2MT 1
+"Minimum MTPSLOT width ... 0.6"
+1 W3MT 1
+"Minimum MTPSLOT length ... 20.0"
+1 S3MT 1
+"Minimum MTPSLOT spacing/notch ... 10.0"
+1 E1MTMT 2
+"Minimum METTP enclosure of MTPSLOT ... 10.0"
+"Note: MTPSLOT without METTP is not allowed"
+1 B1V3 1
+"VIA3 must be covered by MET3 and MET4"
+1 W1V3 1
+"Fixed VIA3 size ... 0.26 x 0.26"
+1 W2V3 1
+"Fixed VIA3 stripe width ... 0.26"
+1 B2V3 1
+"VIA3 stripes are only allowed to bend at 135 degrees"
+1 S1V3 1
+"Minimum VIA3 spacing ... 0.26"
+1 S9V3 1
+"Minimum VIA3 stripe to VIA3 spacing ... 1.0"
+1 E1M3V3 1
+"Minimum MET3 enclosure of VIA3 ... 0.01"
+1 E2M3V3 2
+"Minimum MET3 enclosure of VIA3 ... 0.06"
+"(in one direction of VIA3 corner)"
+1 E1M4V3 1
+"Minimum MET4 enclosure of VIA3 ... 0.01"
+1 E2M4V3 2
+"Minimum MET4 enclosure of VIA3 ... 0.06"
+"(in one direction of VIA3 corner)"
+1 E8M3V3 1
+"Minimum MET3 enclosure of VIA3 stripe ... 0.1"
+1 E4M4V3 1
+"Minimum MET4 enclosure of VIA3 stripe ... 0.1"
+1 Q20V3 1
+"Check for the right usage of OPTOVIA3"
+1 W1M4 1
+"Minimum MET4 width ... 0.28"
+1 S1M4 1
+"Minimum MET4 spacing/notch ... 0.28"
+1 S2M4 1
+"Minimum MET4 spacing to WIDE_MET4 ... 0.6"
+1 A1M4 1
+"Minimum MET4 area ... 0.202"
+1 B1M4 1
+"All MET4 tracks >35um wide to be slotted (except Pads)"
+1 W2M4 1
+"Minimum M4SLOT width ... 0.6"
+1 W3M4 1
+"Minimum M4SLOT length ... 20.0"
+1 S3M4 1
+"Minimum M4SLOT spacing/notch ... 10.0"
+1 S1M4M3 2
+"Minimum M4SLOT spacing to M3SLOT ... 2.0"
+"Note: M4SLOT is not allowed over M3SLOT"
+1 E1M4M4 2
+"Minimum MET4 enclosure of M4SLOT ... 10.0"
+"Note: M4SLOT without MET4 is not allowed"
+1 W1VL 1
+"Fixed VIATPL size ... 0.5 x 0.5"
+1 S1VL 1
+"Minimum VIATPL spacing ... 0.45"
+1 B1VL 1
+"VIATPL must be covered by METTPL"
+1 E1MLVL 1
+"Minimum METTPL enclosure of VIATPL ... 0.5"
+1 B1ML 1
+"METTPL tracks >35.0um are not allowed (except Pads)"
+1 W1ML 1
+"Minimum METTPL width ... 3.0"
+1 S1ML 1
+"Minimum METTPL spacing/notch ... 2.5"
+1 A1ML 1
+"Minimum METTPL area ... 10.0"
+1 A2ML 1
+"Minimum METTPL enclosed area ... 18.0"
+1 B1VLMT 1
+"VIATPL must be covered by METTP"
+1 E1MTVL 1
+"Minimum METTP enclosure of VIATPL ... 0.5"
+1 W4P1 1
+"Minimum GATE length ... 0.18"
+1 W3DF 1
+"Minimum GATE width ... 0.22"
+1 B3GA 1
+"Only rectangular GATE inside PWBLK is allowed"
+1 W5P1 1
+"Minimum GATE length ... 1.0"
+1 W4DF 1
+"Minimum GATE width ... 1.0"
+1 W6P1 1
+"Minimum GATE length ... 0.35"
+1 W7P1 1
+"Minimum GATE length ... 0.3"
+1 W9P1 1
+"Minimum GATE length ... 0.5"
+1 W10P1 1
+"Minimum GATE length ... 0.35"
+1 W11P1 1
+"Minimum GATE length ... 0.3"
+1 B4GA 1
+"Only rectangular GATE is allowed"
+1 W38GA 1
+"Minimum GATE length ... 2.0"
+1 W39GA 1
+"Minimum GATE width ... 2.0"
+1 B1DN 1
+"rdn/rdn3 inside ISOPW, DEPL, SCI, HVPWELL, PDD or PDF is not allowed"
+1 B2GH 1
+"HVGOX overlap of rdn or rdp is not allowed"
+1 W5DF 1
+"Minimum rdn/rdn3, rdp/rdp3 width ... 0.42"
+1 B1NW 1
+"NW_VERIFY overlap of DIFF is not allowed"
+1 B2NW 1
+"NW_VERIFY overlap of DNWELL or DNWELLMV is not allowed"
+1 B3GH 1
+"HVGOX overlap of rnw is not allowed"
+1 W2NW 1
+"Minimum rnw,rnw3 width ... 2.0"
+1 B4WM 1
+"DNWMV_VERIFY overlap of NWELL, DNWELL or HVNWELL is not allowed"
+1 B5WM 1
+"DNWMV_VERIFY overlap of DIFF is not allowed"
+1 B9WM 1
+"DNWMV_VERIFY overlap of ISOPW, DEPL, SCI, HVPWELL, PDF or PDD is not allowed"
+1 B4GH 1
+"HVGOX overlap of rdnwmv is not allowed"
+1 W2WM 1
+"Minimum rdnwmv width ... 2.0"
+1 W3P1 1
+"Minimum rnp1#/rpp1# width ... 0.42"
+1 E1INP1 1
+"Minimum NIMP extension beyond rnp1# ... 0.18"
+1 E1IPP1 1
+"Minimum PIMP extension beyond rpp1# or rpp1s# ... 0.18"
+1 S1INP1 1
+"Minimum NIMP spacing to rpp1# or rpp1s# ... 0.26"
+1 S1IPP1 1
+"Minimum PIMP spacing to rnp1# ... 0.26"
+1 B2CT 1
+"CONT is not allowed within rpp1s#"
+1 B5P1 1
+"rnp1_3 crossing NTYPE_WELL or PTYPE_WELL or SUBCUT edge is not allowed"
+1 B6P1 1
+"rnp1_3 overlap rnw/rnw3/rdnwmv is not allowed"
+1 B7P1 1
+"rpp1_3 crossing NTYPE_WELL or PTYPE_WELL or SUBCUT edge is not allowed"
+1 B8P1 1
+"rpp1_3 overlap rnw/rnw3/rdnwmv is not allowed"
+1 B9P1 1
+"rpp1s_3 crossing NTYPE_WELL or PTYPE_WELL or SUBCUT edge is not allowed"
+1 B10P1 1
+"rpp1s_3 overlap rnw/rnw3/rdnwmv is not allowed"
+1 B2M1 1
+"CONT or VIA1 are not allowed within rm1"
+1 B2M2 1
+"VIA1 is not allowed within rm2"
+1 B4M2 1
+"VIA2 is not allowed within rm2"
+1 B2M3 1
+"VIA2 is not allowed within rm3"
+1 B4M3 1
+"VIA3 is not allowed within rm3"
+1 B2M4 1
+"VIA3 is not allowed within rm4"
+1 B3M4 1
+"VIATP is not allowed within rm4"
+1 B2MT 1
+"VIATP is not allowed within rmtp"
+1 B3MT 1
+"VIATPL is not allowed within rmtp"
+1 B2ML 1
+"VIATPL is not allowed within rmtpl"
+1 B2P1 1
+"pfuse overlap of MET1, MET2, MET3, MET4, MET5, METTP or METTPL is not allowed"
+1 B3P1 1
+"pfuse overlap of SBLK or DIFF is not allowed"
+1 E1NWP1 1
+"Fixed NWELL enclosure of pfuse ... 1.7"
+1 E1BAP1 1
+"Minimum BLKALL enclosure of pfuse ... 1.7"
+1 E3INP1 1
+"Minimum NIMP enclosure of pfuse ... 0.3"
+1 B4P1 1
+"pfuse without NIMP and BLKALL is not allowed"
+1 S1DFP1 1
+"Minimum DIFF spacing to pfuse ... 2.0"
+1 S2P1 1
+"Minimum POLY1 spacing to pfuse ... 2.0"
+1 S2SBP1 1
+"Minimum SBLK spacing to pfuse ... 2.0"
+1 S1M1P1 1
+"Minimum MET1 spacing to pfuse ... 0.8"
+1 S1M2P1 1
+"Minimum MET2 spacing to pfuse ... 0.8"
+1 S1M3P1 1
+"Minimum MET3 spacing to pfuse ... 1.7"
+1 S1M4P1 1
+"Minimum MET4 spacing to pfuse ... 1.7"
+1 S1MTP1 1
+"Minimum METTP spacing to pfuse ... 1.7"
+1 S1MLP1 1
+"Minimum METTPL spacing to pfuse ... 1.7"
+1 B11P1 1
+"Only rectangular dpol body is allowed"
+1 B12P1 1
+"dpol body (oversized by 1.5um) overlap of DIFF is not allowed"
+1 B13P1 1
+"dpol body (oversized by 1.0um) overlap of MET1, MET2, MET3, MET4, MET5, METTP or METTPL is not allowed"
+1 B14P1 1
+"dpol body (oversized by 1.0um) without BLKALL is not allowed"
+1 W12P1 1
+"Minimum dpol width ... 1.0"
+1 W13P1 1
+"Maximum dpol width ... 200.0"
+1 W14P1 1
+"Fixed dpol body length ... 0.85"
+1 E3IPP1 1
+"Minimum PIMP extension beyond POLY1 ... 0.18"
+1 E4INP1 1
+"Minimum NIMP extension beyond POLY1 ... 0.18"
+1 O1INSB 1
+"Fixed SBLK overlap of (POLY1 and NIMP) ... 1.0"
+1 O1IPSB 1
+"Fixed SBLK overlap of (POLY1 and PIMP) ... 1.0"
+1 B1LV 1
+"LVT overlap of PWBLK, MV, HVGOX, HVNWELL, HVPWELL, HNW, DNC, DPC, PDD, SCI or DEPL is not allowed"
+1 B2LV 1
+"LVT overlap of rnw, rdn, rdp, qpva, qpvb, qpvc, qnvba or qnvb is not allowed"
+1 E1LVGA 1
+"Minimum LVT enclosure of GATE ... 0.35"
+1 E2LVGA 1
+"Minimum LVT enclosure of GATE (in GATE length direction) ... 0.46"
+1 S1LVGA 1
+"Minimum LVT spacing to GATE ... 0.35"
+1 S2LVGA 1
+"Minimum LVT spacing to GATE (in GATE length direction) ... 0.46"
+1 S1LVHN 1
+"Minimum LVT spacing to HVNWELL ... 3.0"
+1 S1LVHP 1
+"Minimum LVT spacing to HVPWELL ... 3.0"
+1 S1LVWM 1
+"Minimum LVT spacing to DNWELLMV ... 3.5"
+1 S1LVWD 1
+"Minimum LVT spacing to DNWELL ... 10.0"
+1 S1LVHW 1
+"Minimum LVT spacing to HNW ... 10.0"
+1 S1LVND 1
+"Minimum LVT spacing to NDF ... 10.0"
+1 B1SV 1
+"SVT overlap of PWBLK, MV, HVGOX, HVNWELL, HVPWELL, HNW, DNC, DPC, PDD, LVT, SCI or DEPL is not allowed"
+1 B2SV 1
+"SVT overlap of rnw, rdn, rdp, qpva, qpvb, qpvc, qnvba or qnvb is not allowed"
+1 E1SVGA 1
+"Minimum SVT enclosure of GATE ... 0.35"
+1 E2SVGA 1
+"Minimum SVT enclosure of GATE (in GATE length direction) ... 0.46"
+1 S1SVGA 1
+"Minimum SVT spacing to GATE ... 0.35"
+1 S2SVGA 1
+"Minimum SVT spacing to GATE (in GATE length direction) ... 0.46"
+1 S1SVHN 1
+"Minimum SVT spacing to HVNWELL ... 3.0"
+1 S1SVHP 1
+"Minimum SVT spacing to HVPWELL ... 3.0"
+1 S1SVWM 1
+"Minimum SVT spacing to DNWELLMV ... 3.5"
+1 S1SVWD 1
+"Minimum SVT spacing to DNWELL ... 10.0"
+1 S1SVHW 1
+"Minimum SVT spacing to HNW ... 10.0"
+1 S1SVND 1
+"Minimum SVT spacing to NDF ... 10.0"
+1 B1LD 1
+"LNDEV overlap of HVGOX, HVNWELL, HVPWELL, HNW, DNC, DPC, PDD, SCI or DEPL is not allowed"
+1 B2LD 1
+"LNDEV overlap of rnw3, rdn3, rdp3, qpva3, qpvb3 or qpvc3 is not allowed"
+1 B3LD 1
+"LNDEV overlap of LVT or SVT is not allowed"
+1 E1LDGA 1
+"Minimum LNDEV enclosure of GATE ... 0.35"
+1 E2LDGA 1
+"Minimum LNDEV enclosure of GATE (in GATE length direction) ... 0.46"
+1 S1LDGA 1
+"Minimum LNDEV spacing to GATE ... 0.35"
+1 S2LDGA 1
+"Minimum LNDEV spacing to GATE (in GATE length direction) ... 0.46"
+1 S1LDHN 1
+"Minimum LNDEV spacing to HVNWELL ... 3.0"
+1 S1LDHP 1
+"Minimum LNDEV spacing to HVPWELL ... 3.0"
+1 S1LDWM 1
+"Minimum LNDEV spacing to DNWELLMV ... 3.5"
+1 S1LDWD 1
+"Minimum LNDEV spacing to DNWELL ... 10.0"
+1 S1LDHW 1
+"Minimum LNDEV spacing to HNW ... 10.0"
+1 S1LDND 1
+"Minimum LNDEV spacing to NDF ... 10.0"
+1 B1UL 1
+"ULN overlap of PWBLK, HVGOX, HVNWELL, HVPWELL, HNW, DNC, DPC, PDD, SCI, DEPL, LVT, SVT, LNDEV, CATDOP or ANODOP is not allowed"
+1 B1ULSB 1
+"ULN overlap of SBLK is not allowed"
+1 B2UL 1
+"ULN overlap of rpp1#, rnp1#, rpp1s#, HRES or MRES is not allowed"
+1 W1UL 1
+"Minimum ULN width ... 0.44"
+1 S1UL 1
+"Minimum ULN spacing/notch ... 0.44"
+1 A1UL 1
+"Minimum ULN area ... 0.3844"
+1 S1ULGA 1
+"Minimum ULN spacing to GATE ... 0.35"
+1 E1ULGA 1
+"Minimum ULN enclosure of GATE ... 0.35"
+1 S1ULSB 1
+"Minimum ULN spacing to SBLK ... 0.35"
+1 B1NU 1
+"BNIMP overlap of LVT, SVT, DEPL, HVDEPL, PDD, LNDEV or ULN is not allowed"
+1 B2NU 1
+"BNIMP overlap of NTYPE_WELL is not allowed"
+1 B3NU 1
+"BNIMP overlap of HVPWELL is not allowed"
+1 B4NU 1
+"(BNIMP and DIFF) without NIMP is not allowed"
+1 W1NU 1
+"Minimum BNIMP width ... 0.6"
+1 S1NU 1
+"Minimum BIMP spacing/notch ... 0.6"
+1 A1NU 1
+"Minimum BNIMP area ... 0.3844"
+1 S1NUDF 1
+"Minimum BNIMP spacing to DIFF ... 0.35"
+1 S1NUGA 1
+"Minimum BNIMP spacing to GATE ... 0.45"
+1 E1NUGA 1
+"Minimum BNIMP enclosure of GATE ... 0.25"
+1 E1NUDN 1
+"Minimum BNIMP extension beyond NDIFF ... 0.25"
+1 B5NU 1
+"BNIMP without PWBLK is not allowed"
+1 E2PBDN 1
+"Fixed PWBLK enclosure of NDIFF ... 1.2"
+1 W2NU 1
+"Minimum cpod# width ... 2.0"
+1 B1DL 1
+"DEPL overlap of HVGOX, NWELL, HVNWELL or HVPWELL is not allowed"
+1 B2DL 1
+"DEPL crossing DNWELLMV/DNWELL edge is not allowed"
+1 B3DL 1
+"DEPL NMOS transistor without MV is not allowed"
+1 W1DL 1
+"Minimum DEPL width ... 1.0"
+1 S1DL 1
+"Minimum DEPL spacing/notch ... 0.6"
+1 A1DL 1
+"Minimum DEPL area ... 2.25"
+1 O1DLPI 1
+"Fixed DEPL overlap of ISOPW (same potential) ... 0.05"
+1 S1DLGA 1
+"Minimum DEPL spacing to GATE ... 0.7"
+1 E1DLGA 1
+"Minimum DEPL extension beyond GATE ... 0.7"
+1 S1DLHN 1
+"Minimum DEPL spacing to HVNWELL ... 3.0"
+1 B1HL 1
+"HVDEPL is only allowed for nhvd and nhhvd"
+1 W1HL 1
+"Minimum HVDEPL width ... 4.5"
+1 S1HL 1
+"Minimum HVDEPL spacing/notch ... 0.6"
+1 S1HLGA 1
+"Minimum HVDEPL spacing to GATE ... 0.7"
+1 W1GA 1
+"Minimum GATE length ... 0.7"
+1 W2GA 1
+"Minimum GATE width ... 0.44"
+1 B5WD 1
+"qnva inside DNWELL is not allowed"
+1 B4MV 1
+"MV overlap of qnva is not allowed"
+1 B6WD 1
+"qnvb inside DNWELL is not allowed"
+1 B5MV 1
+"MV overlap of qnvb is not allowed"
+1 B5DF 1
+"Check for qnvb usage"
+1 B8WD 1
+"qnvba inside DNWELL is not allowed"
+1 B6MV 1
+"MV overlap of qnvba is not allowed"
+1 B6DF 1
+"Check for qnvc usage"
+1 B7WD 1
+"qnvc inside DNWELL is not allowed"
+1 E1MVWM 1
+"Minimum MV enclosure of DNWELLMV ... 0.6"
+1 B9WD 1
+"qnvca inside DNWELL is not allowed"
+1 B1GH 1
+"DIFF crossing HVGOX edge is not allowed"
+1 B1GHMV 1
+"HVGOX overlap of MV is not allowed"
+1 W1GH 1
+"Minimum HVGOX width ... 0.6"
+1 S1GH 1
+"Minimum HVGOX spacing/notch ... 1.0"
+1 E1GHDF 1
+"Minimum HVGOX enclosure of DIFF ... 0.2"
+1 S1GHDF 1
+"Minimum HVGOX spacing to DIFF ... 0.2"
+1 B1WD 1
+"DNWELL must be surrounded by a GUARD RING consisting of PDIFF and HVPWELL"
+1 B3WD 1
+"NWELL crossing DNWELL edge is not allowed"
+1 W1WD 1
+"Minimum DNWELL width ... 6.44"
+1 W1WD_ESD 1
+"Minimum DNWELL width ... 1.6 (applicable for DNWELL in ESD case)"
+1 S1WD 1
+"Minimum DNWELL spacing/notch ... 10.0"
+1 S1WDNW 1
+"Minimum DNWELL spacing to NWELL ... 10.0"
+1 E1WDNW 1
+"Minimum DNWELL enclosure of NWELL ... 3.65"
+1 E1WDWM 1
+"Minimum DNWELL enclosure of DNWELLMV ... 3.0"
+1 S1P1WD 1
+"Minimum POLY1 spacing to DNWELL ... 5.35"
+1 E1WDP1 1
+"Minimum DNWELL enclosure of POLY1 ... 3.95"
+1 E1WDHN 1 connected
+"Minimum DNWELL enclosure of HVNWELL ... 3.65"
+1 E2WDHN 1
+"Minimum DNWELL enclosure of HVNWELL ... 2.76"
+1 S1WDHN 1
+"Minimum DNWELL spacing to HVNWELL ... 10.0"
+1 E1PBWD 1
+"Fixed PWBLK enclosure of DNWELL ... 4.0"
+1 E1PBWD_ESD1 1
+"Minimum PWBLK enclosure of DNWELL ... 2.0 (applicable for DNWELL in ESD case)"
+1 E1PBWD_ESD2 1
+"Area must have PWBLK without wells (applicable for DNWELL in ESD case)"
+1 S1WDHP 1
+"Minimum DNWELL spacing to HVPWELL ... 3.75"
+1 S1WDHP_ESD 1
+"Minimum DNWELL spacing to HVPWELL ... 2.0 (applicable for DNWELL in ESD case)"
+1 S1WDDP 1
+"Fixed DNWELL spacing to PDIFF ... 4.0"
+1 S1WDDP_ESD 1
+"Minimum DNWELL spacing to PDIFF ... 3.0 (applicable for DNWELL in ESD case)"
+1 E1WDDP 1
+"Minimum DNWELL enclosure of PDIFF ... 3.5"
+1 E1WDDP_ESD 1
+"Minimum DNWELL enclosure of PDIFF ... 1.5 (applicable for DNWELL in ESD case)"
+1 S1WDDN 1
+"Minimum DNWELL spacing to NDIFF ... 4.23"
+1 S1WDDN_ESD 1
+"Minimum DNWELL spacing to NDIFF ... 2.13 (applicable for DNWELL in ESD case)"
+1 E1WDDN 1
+"Fixed DNWELL enclosure of NDIFF ... 3.0"
+1 E1WDDN_ESD1 1
+"Minimum DNWELL enclosure of NDIFF ... 1.0 (applicable for DNWELL in ESD case)"
+1 E1WDDN_ESD2 1
+"Minimum DNWELL enclosure of NDIFF ... 1.5 (applicable for DNWELL in ESD case)"
+1 B1HP 1
+"HVPWELL must be contacted by PDIFF"
+1 B2HP 1
+"DIFF crossing HVPWELL edge is not allowed"
+1 B3HP 1
+"HVPWELL overlap of NWELL is not allowed"
+1 B4HP 1
+"HVPWELL crossing DNWELL edge is not allowed"
+1 B5HP 1
+"HVPWELL overlap of DNWELL is not allowed"
+1 W1HP 1
+"Minimum HVPWELL width ... 0.9"
+1 S1HP 1
+"Minimum HVPWELL spacing/notch ... 0.6"
+1 A1HP 1
+"Minimum HVPWELL area ... 2.25"
+1 S2HP 1 connected
+"Minimum HVPWELL spacing (different net) ... 3.0"
+1 E1HPDN 1
+"Minimum HVPWELL enclosure of NDIFF ... 0.43"
+1 S1HPDN 1
+"Minimum HVPWELL spacing to NDIFF ... 0.43"
+1 S1HPDP 1
+"Minimum HVPWELL spacing to PDIFF ... 0.43"
+1 S1HPNW 1
+"Minimum HVPWELL spacing to NWELL ... 0.8"
+1 S2HPNW 1
+"Minimum HVPWELL spacing to NWELL ... 3.0"
+1 S2HPDN 1 connected
+"Fixed HVPWELL spacing to NDIFF ... 3.0"
+1 E1HPDP 1
+"Minimum HVPWELL enclosure of PDIFF ... 0.43"
+1 B1HN 1
+"HVNWELL must be contacted by NDIFF"
+1 B2HN 1
+"HVNWELL overlap of HVPWELL or PDD is not allowed"
+1 B3HN 1
+"HVNWELL overlap of NWELL is not allowed"
+1 B4HN 1
+"DIFF crossing HVNWELL edge is not allowed"
+1 B5HN 1
+"HVNWELL without PWBLK is not allowed"
+1 B6HN 1
+"HVNWELL crossing DNWELL edge is not allowed"
+1 B7HN 1
+"HVNWELL overlap of DNWELL is not allowed"
+1 W1HN 1
+"Minimum HVNWELL width ... 0.9"
+1 S1HN 1
+"Minimum HVNWELL spacing/notch ... 0.6"
+1 A1HN 1
+"Minimum HVNWELL area ... 2.25"
+1 S2HN 1 connected
+"Minimum HVNWELL spacing (different net) ... 7.0"
+1 S1HNNW 1
+"Minimum HVNWELL spacing to NWELL ... 3.0"
+1 S1HNHP 1 connected
+"Minimum HVNWELL spacing to HVPWELL ... 3.0"
+1 E1HNDP 1
+"Minimum HVNWELL enclosure of PDIFF ... 0.43"
+1 E1HNDN 1
+"Minimum HVNWELL enclosure of NDIFF ... 0.12"
+1 S1HNDN 1
+"Minimum HVNWELL spacing to NDIFF ... 0.43"
+1 S2HNDN 1
+"Minimum HVNWELL spacing to NDIFF ... 3.43"
+1 E1PBHN 1
+"Fixed PWBLK enclosure of HVNWELL ... 3.0"
+1 E2HNDN 1
+"Minimum HVNWELL enclosure of NDIFF ... 0.43"
+1 S2HNHP 1
+"Minimum HVNWELL spacing to HVPWELL ... 0.8"
+1 B1DNGH 1
+"NDIFF without HVGOX is not allowed"
+1 B1DPGH 1
+"PDIFF(pmma) without HVGOX is not allowed"
+1 B3WM 1
+"pmma inside DNWELLMV is not allowed"
+1 W5GA 1
+"Minimum GATE length ... 2.9"
+1 W6GA 1
+"Minimum GATE width ... 2.5"
+1 S3HNHP 1
+"Fixed HVNWELL spacing to HVPWELL of GATE ... 0.5"
+1 S2HPHN 1
+"Fixed HVPWELL spacing to HVNWELL of GATE ... 0.8"
+1 S4HNHP 1
+"Fixed HVNWELL spacing to HVPWELL (except channel region) ... 1.75"
+1 S3HPHN 1
+"Minimum HVPWELL spacing to HVNWELL (except channel region) ... 2.6"
+1 O1HNGA 1
+"Fixed HVNWELL overlap of GATE ... 0.2"
+1 O1HPGA 1
+"Fixed HVPWELL overlap of GATE ... 0.2"
+1 S4DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 0.6"
+1 S5DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 0.6"
+1 S1P1DN 1
+"Minimum POLY1 spacing to SOURCE/DRAIN NDIFF ... 0.3"
+1 S1P1DP 1
+"Minimum POLY1 spacing to SOURCE/DRAIN PDIFF ... 0.3"
+1 E2PBHN 1
+"Minimum PWBLK enclosure of HVNWELL ... 1.75"
+1 E1P1DN 1
+"Minimum POLY1 extension beyond GATE ... 0.3"
+1 E1P1DP 1
+"Minimum POLY1 extension beyond GATE ... 0.3"
+1 S1DPGA 1
+"Maximum PDIFF spacing to GATE (at channel end) ... 2.6"
+1 S1DNGA 1
+"Maximum NDIFF spacing to GATE (at channel end) ... 3.3"
+1 E1HNGA 1
+"Minimum HVNWELL extension beyond GATE (at channel end) ... 2.7"
+1 S3HPDN 1
+"Minimum SOURCE/DRAIN HVPWELL spacing to NDIFF ... 2.6"
+1 B1PT 1
+"PDD is only allowed for ned#, ped#"
+1 W1PT 1
+"Minimum PDD width ... 1.0"
+1 S1PT 1
+"Minimum PDD spacing/notch ... 0.86"
+1 A1PT 1
+"Minimum PDD area ... 6.0"
+1 A2PT 1
+"Minimum PDD enclosed area ... 12.0"
+1 W7GA 1
+"Fixed GATE length ... 0.65"
+1 W8GA 1
+"Minimum linear cell width ... 5.0"
+1 W9GA 1
+"Fixed GATE length ... 0.94"
+1 W10GA 1
+"Minimum linear cell width ... 5.0"
+1 W11GA 1
+"Fixed GATE length ... 1.25"
+1 W20GA 1
+"Minimum GATE length ... 1.0"
+1 W21GA 1
+"Minimum GATE width ... 2.5"
+1 B1ND 1
+"NDF without HVGOX and PWBLK is not allowed"
+1 B2ND 1
+"NDF overlap of DNWELL, DNWELLMV, HVPWELL, ISOPW, SCI, DEPL or PDD is not allowed"
+1 B3ND 1
+"NDF crossing HNW edge is not allowed"
+1 B4ND 1
+"PDIFF overlap of NDF is not allowed"
+1 B7ND 1
+"NDF overlap of rpp1#, rnp1#, rpp1s#, HRES or MRES is not allowed"
+1 B8ND 1
+"NWELL crossing NDF edge is not allowed"
+1 B9ND 1
+"NW_VERIFY overlap of NDF is not allowed"
+1 B13ND 1
+"NWELL overlap of NDF is not allowed"
+1 B5ND 1
+"NDF overlap of HVNWELL is not allowed"
+1 B10ND 1
+"NDF must be surrounded by a GUARD RING consisting of PDIFF and HVPWELL"
+1 B11ND 1
+"POLY1 overlap of NDF is not allowed"
+1 W1ND 1
+"Minimum NDF width ... 0.8"
+1 S1ND 1
+"Minimum NDF spacing/notch ... 0.54"
+1 W2ND 1
+"Minimum NDF width ... 5.32"
+1 S2ND 1 connected
+"Minimum NDF spacing (different net) ... 8.42"
+1 A1ND 1
+"Minimum NDF area ... 2.25"
+1 E1NDDN 1
+"Fixed NDF enclosure of NDIFF ... 1.0"
+1 S1NDDN 1
+"Minimum NDF spacing to NDIFF ... 4.5"
+1 S2NDDN 1
+"Minimum NDF spacing to NDIFF ... 3.0"
+1 S1NDDP 1
+"Fixed NDF spacing to PDIFF ... 4.0"
+1 S1NDWD 1
+"Minimum NDF spacing to DNWELL ... 10.0"
+1 S1NDWM 1
+"Minimum NDF spacing to DNWELLMV ... 10.0"
+1 S1NDHN 1
+"Minimum NDF spacing to HVNWELL ... 10.0"
+1 S1NDNW 1
+"Minimum NDF spacing to NWELL ... 10.0"
+1 E1GHND 1
+"Minimum HVGOX enclosure of NDF ... 0.5"
+1 E1PBND 1
+"Fixed PWBLK enclosure of NDF ... 4.0"
+1 S1NDHP 1
+"Minimum NDF spacing to HVPWELL ... 3.76"
+1 B6ND 1
+"NDF without HVNWELL is not allowed"
+1 B12ND 1
+"NDIFF overlap of NDF is not allowed"
+1 B1P1GA 1
+"Only a rectangular POLY1 over GATE is allowed"
+1 W16GA 1
+"Minimum GATE length ... 5.0"
+1 W17GA 1
+"Minimum GATE width ... 4.0"
+1 W28GA 1
+"Minimum GATE length ... 3.0"
+1 W29GA 1
+"Minimum GATE width ... 4.0"
+1 S2NDHP 1
+"Fixed NDF spacing to HVPWELL ... 0.5"
+1 S7NDHP 1
+"Fixed NDF spacing to HVPWELL (except channel region) ... 3.76"
+1 S7DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 3.0"
+1 S12DF 1
+"Fixed DRAIN-EDGE-STI length ... 3.0"
+1 S3P1DN 1
+"Minimum POLY1 spacing to SOURCE/DRAIN NDIFF ... 2.4"
+1 S5P1DN 1
+"Minimum POLY1 spacing to DRAIN NDIFF ... 2.4"
+1 E3P1GA 1
+"Minimum POLY1 extension beyond GATE ... 0.6"
+1 E3P1DN 1
+"Minimum POLY1 extension beyond NDIFF ... 0.6"
+1 E5P1GA 1
+"Fixed POLY1 extension beyond GATE (in GATE width direction) ... 1.2"
+1 S2NWGA 1
+"Minimum NWELL spacing to GATE ... 2.78"
+1 E3NWDN 1
+"Minimum NWELL enclosure of NDIFF ... 0.22"
+1 E3NDNW 1
+"Minimum NDF enclosure of NWELL ... 0.78"
+1 E4PBND 1
+"Fixed PWBLK enclosure of NDF ... 4.0"
+1 O2NDGA 1
+"Fixed NDF overlap of GATE ... 0.9"
+1 S2NDDP 1
+"Fixed NDF spacing to PDIFF ... 4.0"
+1 E1M1DN 1
+"Fixed MET1 enclosure of SOURCE/DRAIN NDIFF ... 1.0"
+1 E2M1DN 1
+"Fixed MET1 enclosure of DRAIN NDIFF ... 1.0"
+1 E1HLGA 1
+"Fixed HVDEPL enclosure of GATE ... 0.75"
+1 E2HLGA 1
+"Fixed HVDEPL enclosure of GATE ... 0.75"
+1 W12GA 1
+"Minimum GATE length ... 2.0"
+1 W13GA 1
+"Minimum GATE width ... 3.0"
+1 W3ND 1
+"Minimum NDF width ... 2.82"
+1 S6DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 1.0"
+1 S3NDHP 1
+"Fixed NDF spacing to HVPWELL ... 0.0"
+1 S5NDHP 1
+"Fixed NDF spacing to HVPWELL (except channel region) ... 1.76"
+1 S2P1DN 1
+"Minimum POLY1 spacing to SOURCE/DRAIN NDIFF ... 0.5"
+1 E2P1GA 1
+"Minimum POLY1 extension beyond GATE ... 0.5"
+1 S1NWGA 1
+"Minimum NWELL spacing to GATE ... 0.78"
+1 E2NWDN 1
+"Minimum NWELL enclosure of NDIFF ... 0.22"
+1 E1NDNW 1
+"Minimum NDF enclosure of NWELL ... 0.78"
+1 E2PBND 1
+"Fixed PWBLK enclosure of NDF ... 2.0"
+1 S3NDDP 1
+"Fixed NDF spacing to PDIFF ... 2.0"
+1 O1NDGA 1
+"Fixed NDF overlap of GATE ... 0.4"
+1 W30GA 1
+"Fixed GATE length ... 3.2"
+1 W31GA 1
+"Minimum GATE width ... 3.0"
+1 W5ND 1
+"Minimum NDF width ... 2.82"
+1 S13DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 1.0"
+1 S8NDHP 1
+"Fixed NDF spacing to HVPWELL ... 0.3"
+1 S9NDHP 1
+"Fixed NDF spacing to HVPWELL (except channel region) ... 1.76"
+1 S6P1DN 1
+"Minimum POLY1 spacing to SOURCE/DRAIN NDIFF ... 0.5"
+1 E7P1GA 1
+"Minimum POLY1 extension beyond GATE ... 0.5"
+1 S4NWGA 1
+"Minimum NWELL spacing to GATE ... 0.78"
+1 E5NWDN 1
+"Minimum NWELL enclosure of NDIFF ... 0.22"
+1 E4NDNW 1
+"Minimum NDF enclosure of NWELL ... 0.78"
+1 E3PBND 1
+"Fixed PWBLK enclosure of NDF ... 2.0"
+1 S4NDDP 1
+"Fixed NDF spacing to PDIFF ... 2.0"
+1 O4NDGA 1
+"Fixed NDF overlap of GATE ... 0.9"
+1 W24GA 1
+"Minimum GATE length ... 1.5"
+1 W25GA 1
+"Minimum GATE width ... 3.0"
+1 S9DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 1.0"
+1 W4ND 1
+"Minimum NDF width ... 2.82"
+1 S4NDHP 1
+"Fixed NDF spacing to HVPWELL ... 0.0"
+1 S6NDHP 1
+"Fixed NDF spacing to HVPWELL (except channel region) ... 1.76"
+1 S4P1DN 1
+"Minimum POLY1 spacing to SOURCE/DRAIN NDIFF ... 0.5"
+1 E2P1DN 1
+"Minimum POLY1 extension beyond NDIFF ... 0.5"
+1 S3NWGA 1
+"Minimum NWELL spacing to GATE ... 0.78"
+1 E4NWDN 1
+"Minimum NWELL enclosure of NDIFF ... 0.22"
+1 E2NDNW 1
+"Minimum NDF enclosure of NWELL ... 0.78"
+1 O3NDGA 1
+"Fixed NDF overlap of GATE ... 0.4"
+1 B4DF 1
+"Check for dsb usage"
+1 B1HW 1 connected
+"HNW without HVGOX and PWBLK is not allowed"
+1 B2HW 1
+"HNW must be surrounded by a GUARD RING consisting of PDIFF and HVPWELL"
+1 B3HW 1 connected
+"HNW overlap of DNWELL, DNWELLMV, NWELL, HVPWELL, ISOPW, SCI, DEPL or PDD is not allowed"
+1 B4HW 1
+"HVNWELL crossing HNW edge is not allowed"
+1 B5HW 1
+"HNW overlap of rpp1#, rnp1#, rpp1s#, HRES or MRES is not allowed"
+1 W1HW 1
+"Minimum HNW width ... 8.0"
+1 S1HW 1
+"Minimum HNW spacing/notch ... 10.0"
+1 E1HWDN 1 connected
+"Fixed HNW enclosure of NDIFF ... 2.0"
+1 E1HWHN 1
+"Minimum HNW enclosure of HVNWELL ... 1.76"
+1 E1GHHW 1
+"Minimum HVGOX enclosure of HNW ... 0.5"
+1 E1PBHW 1
+"Fixed PWBLK enclosure of HNW ... 4.0"
+1 S1HWDP 1
+"Fixed HNW spacing to PDIFF ... 4.0"
+1 S1HWHP 1
+"Minimum HNW spacing to HVPWELL ... 3.76"
+1 S1HWWD 1
+"Minimum HNW spacing to DNWELL ... 10.0"
+1 S1HWWM 1
+"Minimum HNW spacing to DNWELLMV ... 10.0"
+1 S1HWHN 1
+"Minimum HNW spacing to HVNWELL ... 10.0"
+1 S1HWNW 1
+"Minimum HNW spacing to NWELL ... 10.0"
+1 S1HWND 1
+"Minimum HNW spacing to NDF ... 10.0"
+1 S1HWP1 1
+"Minimum HNW spacing to POLY1 ... 5.35"
+1 E1HWP1 1
+"Minimum HNW enclosure of POLY1 ... 2.95"
+1 E1HWDP 1
+"Minimum HNW enclosure of PDIFF ... 2.86"
+1 S1HWDN 1
+"Minimum HNW spacing to NDIFF ... 4.5"
+1 W22GA 1
+"Minimum GATE length ... 1.0"
+1 W23GA 1
+"Minimum GATE width ... 2.5"
+1 B1PD 1
+"PDF without HNW is not allowed"
+1 B2PD 1 connected
+"NDIFF overlap of PDF is not allowed"
+1 B3PD 1
+"PDF overlap of HVNWELL is not allowed"
+1 W1PD 1
+"Minimum PDF width ... 5.0"
+1 W1DP 1
+"Fixed PDIFF stripe width ... 0.42"
+1 S1PD 1
+"Minimum PDF spacing/notch ... 2.2"
+1 S2PD 1 connected
+"Minimum PDF spacing (different net) ... 5.0"
+1 A1PD 1
+"Minimum PDF area ... 2.25"
+1 E1PDDP 1 connected
+"Minimum PDF enclosure of PDIFF ... 3.0"
+1 E1HWPD 1
+"Minimum HNW enclosure of PDF ... 5.0"
+1 S1PDHN 1
+"Minimum PDF spacing to HVNWELL ... 2.76"
+1 S1PDDN 1 connected
+"Minimum PDF spacing to NDIFF ... 3.0"
+1 S1PDDP 1 connected
+"Minimum PDF spacing to PDIFF ... 4.0"
+1 W18GA 1
+"Minimum GATE length ... 3.5"
+1 W19GA 1
+"Minimum GATE width ... 4.0"
+1 S8DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 2.5"
+1 S4PD 1
+"Minimum PDF spacing ... 2.5"
+1 S3P1DP 1
+"Minimum POLY1 spacing to SOURCE/DRAIN PDIFF ... 1.25"
+1 E4P1GA 1
+"Minimum POLY1 extension beyond GATE ... 1.25"
+1 O2PDGA 1
+"Fixed PDF overlap of GATE ... 0.5"
+1 W32GA 1
+"Minimum GATE length ... 2.0"
+1 W33GA 1
+"Minimum GATE width ... 4.0"
+1 S14DF 1
+"Fixed DRAIN-EDGE-STI length ... 2.5"
+1 S5P1DP 1
+"Minimum POLY1 spacing to DRAIN PDIFF ... 1.25"
+1 S3PDND 1
+"Fixed PDF spacing to NDF (in channel region) ... 0.0"
+1 E3P1DP 1
+"Minimum POLY1 extension beyond PDIFF ... 1.25"
+1 W14GA 1
+"Minimum GATE length ... 1.8"
+1 W15GA 1
+"Minimum GATE width ... 3.0"
+1 W2PD 1
+"Minimum PDF width ... 3.02"
+1 S3PD 1
+"Minimum PDF spacing ... 0.8"
+1 S11DF 1
+"Fixed SOURCE/DRAIN-EDGE-STI length ... 1.0"
+1 E2PDDP 1
+"Minimum PDF enclosure of PDIFF ... 1.1"
+1 S1PDND 1
+"Fixed PDF spacing to NDF (in channel region) ... 0.0"
+1 S2P1DP 1
+"Minimum POLY1 spacing to SOURCE/DRAIN PDIFF ... 0.5"
+1 E6P1GA 1
+"Minimum POLY1 extension beyond GATE ... 0.5"
+1 O1PDGA 1
+"Fixed PDF overlap of GATE ... 0.5"
+1 W26GA 1
+"Minimum GATE length ... 1.3"
+1 W27GA 1
+"Minimum GATE width ... 3.0"
+1 S10DF 1
+"Fixed DRAIN-EDGE-STI length ... 1.0"
+1 W3PD 1
+"Minimum PDF width ... 3.02"
+1 S4P1DP 1
+"Minimum POLY1 spacing to DRAIN PDIFF ... 0.5"
+1 E2P1DP 1
+"Minimum POLY1 extension beyond PDIFF ... 0.5"
+1 S2PDND 1
+"Fixed PDF spacing to NDF (in channel region) ... 0.0"
+1 E3PDDP 1
+"Minimum PDF enclosure of PDIFF ... 1.1"
+1 O3PDGA 1
+"Fixed PDF overlap of GATE ... 0.5"
+1 B1MR 1
+"MRES overlap of DIFF is not allowed"
+1 B2MR 1
+"MRES without SBLK is not allowed"
+1 B3MR 1
+"MRES overlap of NIMP or PIMP is not allowed"
+1 B4MR 1
+"HRES overlap of MRES is not allowed"
+1 W1MR 1
+"Minimum MRES width ... 0.44"
+1 S1MR 1
+"Minimum MRES spacing/notch ... 0.44"
+1 A1MR 1
+"Minimum MRES area ... 0.3844"
+1 S1MRDF 1
+"Minimum MRES spacing to DIFF ... 0.32"
+1 S1MRP1 1
+"Minimum MRES spacing to POLY1 ... 0.32"
+1 B6MR 1
+"rpp1k1_3 crossing NTYPE_WELL or PTYPE_WELL or SUBCUT edge is not allowed"
+1 B7MR 1
+"rpp1k1_3 overlap rnw/rnw3/rdnwmv is not allowed"
+1 W16P1 1
+"Minimum rpp1k1# width ... 0.42"
+1 E1MRP1 1
+"Minimum MRES extension beyond rpp1k1# ... 0.18"
+1 E1SBMR 1
+"Fixed SBLK extension beyond MRES in direction of POLY1 ... 0.22"
+1 E2IPP1 1
+"Minimum PIMP extension beyond rpp1k1_ext ... 0.18"
+1 S3INP1 1
+"Minimum NIMP spacing to rpp1k1# or rpp1k1_ext ... 0.26"
+1 B3CM 1
+"CAPM is not allowed when CAPM23F, CAPM34F, CAPMH, CAPMH23F, CAPMH34F, CAPM2, CAPMH2, CAPM3 or CAPMH3 is present"
+1 B3C3 1
+"CAPM23F is not allowed when CAPM, CAPM34F, CAPMH, CAPMH23F, CAPMH34F, CAPM2, CAPMH2, CAPM3 or CAPMH3 is present"
+1 B3C4 1
+"CAPM34F is not allowed when CAPM, CAPM23F, CAPMH, CAPMH23F, CAPMH34F, CAPM2, CAPMH2, CAPM3 or CAPMH3 is present"
+1 B3CH 1
+"CAPMH is not allowed when CAPM, CAPM23F, CAPM34F, CAPMH23F, CAPMH34F, CAPM2, CAPMH2, CAPM3 or CAPMH3 is present"
+1 B3H3 1
+"CAPMH23F is not allowed when CAPM, CAPM23F, CAPM34F, CAPMH, CAPMH34F, CAPM2, CAPMH2, CAPM3 or CAPMH3 is present"
+1 B3H4 1
+"CAPMH34F is not allowed when CAPM, CAPM23F, CAPM34F, CAPMH, CAPMH23F, CAPM2, CAPMH2, CAPM3 or CAPMH3 is present"
+1 B1DM 1
+"CAPM2 is not allowed when CAPM, CAPM23F, CAPM34F, CAPMH, CAPMH23F, CAPMH34F, CAPMH2, CAPM3 or CAPMH3 is present"
+1 B1DH 1
+"CAPMH2 is not allowed when CAPM, CAPM23F, CAPM34F, CAPMH, CAPMH23F, CAPMH34F, CAPM2, CAPM3 or CAPMH3 is present"
+1 B1TM 1
+"CAPM3 is not allowed when CAPM, CAPM23F, CAPM34F, CAPMH, CAPMH23F, CAPMH34F, CAPM2, CAPMH2 or CAPMH3 is present"
+1 B1TH 1
+"CAPMH3 is not allowed when CAPM, CAPM23F, CAPM34F, CAPMH, CAPMH23F, CAPMH34F, CAPM2, CAPMH2 or CAPM3 is present"
+1 B1CM 1
+"CAPM without BM is not allowed"
+1 B2CM 1
+"CAPM overlap of VIAn or PAD is not allowed"
+1 W1CM 1
+"Minimum CAPM width ... 2.0"
+1 W2CM 1
+"Maximum CAPM bounding box size ... 30.0 x 30.0"
+1 S1CM 1
+"Minimum CAPM spacing/notch ... 1.5"
+1 S1CMPA 1
+"Minimum CAPM spacing to PAD ... 10.0"
+1 S1CMVN 1
+"Minimum CAPM spacing to VIAn ... 0.5"
+1 E1BMCM 1
+"Minimum BM enclosure of CAPM ... 0.5"
+1 E1BMVN 1
+"Minimum BM enclosure of VIAn ... 0.15"
+1 S1CMVT 1
+"Minimum CAPM spacing to VIATP ... 0.5"
+1 E1CMVT 1
+"Minimum CAPM enclosure of VIATP ... 0.3"
+1 E1BMVT 1
+"Minimum BM enclosure of VIATP ... 0.15"
+1 S3VT 1
+"Minimum VIATP spacing on CAPM ... 2.0"
+1 Q1VT 1 density
+"Recommended minimum ratio of VIATP area to CAPM area ... 1.0%"
+1 B1C3 1
+"CAPM23F without MET2 is not allowed"
+1 B2C3 1
+"CAPM23F overlap of VIA1 or PAD is not allowed"
+1 W1C3 1
+"Minimum CAPM23F width ... 2.0"
+1 W2C3 1
+"Maximum CAPM23F bounding box size ... 30.0 x 30.0"
+1 S1C3 1
+"Minimum CAPM23F spacing/notch ... 1.5"
+1 S1C3PA 1
+"Minimum CAPM23F spacing to PAD ... 10.0"
+1 S1C3V1 1
+"Minimum CAPM23F spacing to VIA1 ... 0.5"
+1 E1M2C3 1
+"Minimum MET2 enclosure of CAPM23F ... 0.5"
+1 S1C3V2 1
+"Minimum CAPM23F spacing to VIA2 ... 0.5"
+1 E1C3V2 1
+"Minimum CAPM23F enclosure of VIA2 ... 0.3"
+1 E5M2V1 1
+"Minimum MET2 enclosure of VIA1 ... 0.15"
+1 E6M2V2 1
+"Minimum MET2 enclosure of VIA2 ... 0.15"
+1 S5V2 1
+"Minimum VIA2 spacing on CAPM23F ... 2.0"
+1 Q3V2 1 density
+"Recommended minimum ratio of VIA2 area to CAPM23F area ... 1.0%"
+1 B1C4 1
+"CAPM34F without MET3 is not allowed"
+1 B2C4 1
+"CAPM34F overlap of VIA2 or PAD is not allowed"
+1 W1C4 1
+"Minimum CAPM34F width ... 2.0"
+1 W2C4 1
+"Maximum CAPM34F bounding box size ... 30.0 x 30.0"
+1 S1C4 1
+"Minimum CAPM34F spacing/notch ... 1.5"
+1 S1C4PA 1
+"Minimum CAPM34F spacing to PAD ... 10.0"
+1 S1C4V2 1
+"Minimum CAPM34F spacing to VIA2 ... 0.5"
+1 E1M3C4 1
+"Minimum MET3 enclosure of CAPM34F ... 0.5"
+1 S1C4V3 1
+"Minimum CAPM34F spacing to VIA3 ... 0.5"
+1 E1C4V3 1
+"Minimum CAPM34F enclosure of VIA3 ... 0.3"
+1 E6M3V2 1
+"Minimum MET3 enclosure of VIA2 ... 0.15"
+1 E6M3V3 1
+"Minimum MET3 enclosure of VIA3 ... 0.15"
+1 S5V3 1
+"Minimum VIA3 spacing on CAPM34F ... 2.0"
+1 Q3V3 1 density
+"Recommended minimum ratio of VIA3 area to CAPM34F area ... 1.0%"
+1 B1CH 1
+"CAPMH without BM is not allowed"
+1 B2CH 1
+"CAPMH overlap of VIAn or PAD is not allowed"
+1 W1CH 1
+"Minimum CAPMH width ... 2.0"
+1 W2CH 1
+"Maximum CAPMH bounding box size ... 30.0 x 30.0"
+1 S1CH 1
+"Minimum CAPMH spacing/notch ... 1.5"
+1 S1CHPA 1
+"Minimum CAPMH spacing to PAD ... 10.0"
+1 S1CHVN 1
+"Minimum CAPMH spacing to VIAn ... 0.5"
+1 E1BMCH 1
+"Minimum BM enclosure of CAPMH ... 0.5"
+1 E2BMVN 1
+"Minimum BM enclosure of VIAn ... 0.15"
+1 S1CHVT 1
+"Minimum CAPMH spacing to VIATP ... 0.5"
+1 E1CHVT 1
+"Minimum CAPMH enclosure of VIATP ... 0.3"
+1 E2BMVT 1
+"Minimum BM enclosure of VIATP ... 0.15"
+1 S4VT 1
+"Minimum VIATP spacing on CAPMH ... 2.0"
+1 Q4VT 1 density
+"Recommended minimum ratio of VIATP area to CAPMH area ... 1.0%"
+1 B1H3 1
+"CAPMH23F without MET2 is not allowed"
+1 B2H3 1
+"CAPMH23F overlap of VIA1 or PAD is not allowed"
+1 W1H3 1
+"Minimum CAPMH23F width ... 2.0"
+1 W2H3 1
+"Maximum CAPMH23F bounding box size ... 30.0 x 30.0"
+1 S1H3 1
+"Minimum CAPMH23F spacing/notch ... 1.5"
+1 S1H3PA 1
+"Minimum CAPMH23F spacing to PAD ... 10.0"
+1 S1H3V1 1
+"Minimum CAPMH23F spacing to VIA1 ... 0.5"
+1 E1M2H3 1
+"Minimum MET2 enclosure of CAPMH23F ... 0.5"
+1 S1H3V2 1
+"Minimum CAPMH23F spacing to VIA2 ... 0.5"
+1 E1H3V2 1
+"Minimum CAPMH23F enclosure of VIA2 ... 0.3"
+1 E6M2V1 1
+"Minimum MET2 enclosure of VIA1 ... 0.15"
+1 E7M2V2 1
+"Minimum MET2 enclosure of VIA2 ... 0.15"
+1 S6V2 1
+"Minimum VIA2 spacing on CAPMH23F ... 2.0"
+1 Q4V2 1 density
+"Recommended minimum ratio of VIA2 area to CAPMH23F area ... 1.0%"
+1 B1H4 1
+"CAPMH34F without MET3 is not allowed"
+1 B2H4 1
+"CAPMH34F overlap of VIA2 or PAD is not allowed"
+1 W1H4 1
+"Minimum CAPMH34F width ... 2.0"
+1 W2H4 1
+"Maximum CAPMH34F bounding box size ... 30.0 x 30.0"
+1 S1H4 1
+"Minimum CAPMH34F spacing/notch ... 1.5"
+1 S1H4PA 1
+"Minimum CAPMH34F spacing to PAD ... 10.0"
+1 S1H4V2 1
+"Minimum CAPMH34F spacing to VIA2 ... 0.5"
+1 E1M3H4 1
+"Minimum MET3 enclosure of CAPMH34F ... 0.5"
+1 S1H4V3 1
+"Minimum CAPMH34F spacing to VIA3 ... 0.5"
+1 E1H4V3 1
+"Minimum CAPMH34F enclosure of VIA3 ... 0.3"
+1 E7M3V2 1
+"Minimum MET3 enclosure of VIA2 ... 0.15"
+1 E7M3V3 1
+"Minimum MET3 enclosure of VIA3 ... 0.15"
+1 S6V3 1
+"Minimum VIA3 spacing on CAPMH34F ... 2.0"
+1 Q4V3 1 density
+"Recommended minimum ratio of VIA3 area to CAPMH34F area ... 1.0%"
+1 B2DM 1
+"CAPM2 must be enclosed by MET2 and MET3"
+1 B3DM 1
+"CAPM2 must not be over VIA1 or PAD"
+1 B4DM 1
+"CAPM2 without VIA2 is not allowed"
+1 W1DM 1
+"Minimum CAPM2 width ... 2.0"
+1 W2DM 1
+"Maximum CAPM2 bounding box size ... 30.0 x 30.0"
+1 S1DM 1
+"Minimum CAPM2 spacing/notch ... 1.5"
+1 S1DMPA 1
+"Minimum CAPM2 spacing to PAD ... 10.0"
+1 S1DMV1 1
+"Minimum CAPM2 spacing to VIA1 ... 0.5"
+1 S1DMV2 1
+"Minimum CAPM2 spacing to VIA2 ... 0.5"
+1 E1DMV2 1
+"Minimum CAPM2 enclosure of VIA2 ... 0.3"
+1 E1M2DM 1
+"Minimum MET2 enclosure of CAPM2 ... 0.5"
+1 E1M3DM 1
+"Minimum MET3 enclosure of CAPM2 ... 0.5"
+1 E3M2V1 1
+"Minimum MET2 enclosure of VIA1 ... 0.15"
+1 E4M2V2 1
+"Minimum MET2 enclosure of VIA2 ... 0.15"
+1 E4M3V2 1
+"Minimum MET3 enclosure of VIA2 ... 0.15"
+1 S3V2 1
+"Minimum VIA2 spacing on CAPM2 ... 2.0"
+1 Q1V2 1 density
+"Recommended minimum ratio of VIA2 area to CAPM2 area ... 1.0%"
+1 B7DM 1
+"CAPM2 without VIA3 is not allowed"
+1 B8DM 2 connected
+"MET2 and MET4 must be connected"
+"Note: CAPM2 must be enclosed by MET4"
+1 S1DMV3 1
+"Minimum CAPM2 spacing to VIA3 ... 0.5"
+1 E1DMV3 1
+"Minimum CAPM2 enclosure of VIA3 ... 0.3"
+1 E4M3V3 1
+"Minimum MET3 enclosure of VIA3 ... 0.15"
+1 S3V3 1
+"Minimum VIA3 spacing on CAPM2 ... 2.0"
+1 Q1V3 1 density
+"Recommended minimum ratio of VIA3 area to CAPM2 area ... 1.0%"
+1 B2DH 1
+"CAPMH2 must be enclosed by MET2 and MET3"
+1 B3DH 1
+"CAPMH2 must not be over VIA1 or PAD"
+1 B4DH 1
+"CAPMH2 without VIA2 is not allowed"
+1 W1DH 1
+"Minimum CAPMH2 width ... 2.0"
+1 W2DH 1
+"Maximum CAPMH2 bounding box size ... 30.0 x 30.0"
+1 S1DH 1
+"Minimum CAPMH2 spacing/notch ... 1.5"
+1 S1DHPA 1
+"Minimum CAPMH2 spacing to PAD ... 10.0"
+1 S1DHV1 1
+"Minimum CAPMH2 spacing to VIA1 ... 0.5"
+1 S1DHV2 1
+"Minimum CAPMH2 spacing to VIA2 ... 0.5"
+1 E1DHV2 1
+"Minimum CAPMH2 enclosure of VIA2 ... 0.3"
+1 E1M2DH 1
+"Minimum MET2 enclosure of CAPMH2 ... 0.5"
+1 E1M3DH 1
+"Minimum MET3 enclosure of CAPMH2 ... 0.5"
+1 S7V2 1
+"Minimum VIA2 spacing on CAPMH2 ... 2.0"
+1 Q5V2 1 density
+"Recommended minimum ratio of VIA2 area to CAPMH2 area ... 1.0%"
+1 B7DH 1
+"CAPMH2 without VIA3 is not allowed"
+1 B8DH 2 connected
+"MET2 and MET4 must be connected"
+"Note: CAPMH2 must be enclosed by MET4"
+1 S1DHV3 1
+"Minimum CAPMH2 spacing to VIA3 ... 0.5"
+1 E1DHV3 1
+"Minimum CAPMH2 enclosure of VIA3 ... 0.3"
+1 S7V3 1
+"Minimum VIA3 spacing on CAPMH2 ... 2.0"
+1 Q5V3 1 density
+"Recommended minimum ratio of VIA3 area to CAPMH2 area ... 1.0%"
+1 B2TM 1
+"CAPM3 must be enclosed by MET2,MET3 and MET4"
+1 B3TM 1
+"CAPM3 must not be over VIA1 or PAD"
+1 B4TM 1
+"CAPM3 without VIA2 or VIA3 is not allowed"
+1 B5TM 1 connected
+"MET2 and MET4 must be connected"
+1 W1TM 1
+"Minimum CAPM3 width ... 2.0"
+1 W2TM 1
+"Maximum CAPM3 bounding box size ... 30.0 x 30.0"
+1 S1TM 1
+"Minimum CAPM3 spacing/notch ... 1.5"
+1 S1TMPA 1
+"Minimum CAPM3 spacing to PAD ... 10.0"
+1 S1TMV1 1
+"Minimum CAPM3 spacing to VIA1 ... 0.5"
+1 S1TMV2 1
+"Minimum CAPM3 spacing to VIA2 ... 0.5"
+1 S1TMV3 1
+"Minimum CAPM3 spacing to VIA3 ... 0.5"
+1 E1TMV2 1
+"Minimum CAPM3 enclosure of VIA2 ... 0.3"
+1 E1TMV3 1
+"Minimum CAPM3 enclosure of VIA3 ... 0.3"
+1 E1M2TM 1
+"Minimum MET2 enclosure of CAPM3 ... 0.5"
+1 E1M3TM 1
+"Minimum MET3 enclosure of CAPM3 ... 0.5"
+1 E1M4TM 1
+"Minimum MET4 enclosure of CAPM3 ... 0.5"
+1 E4M2V1 1
+"Minimum MET2 enclosure of VIA1 ... 0.15"
+1 E5M2V2 1
+"Minimum MET2 enclosure of VIA2 ... 0.15"
+1 E5M3V2 1
+"Minimum MET3 enclosure of VIA2 ... 0.15"
+1 E5M3V3 1
+"Minimum MET3 enclosure of VIA3 ... 0.15"
+1 E3M4V3 1
+"Minimum MET4 enclosure of VIA3 ... 0.15"
+1 S4V2 1
+"Minimum VIA2 spacing on CAPM3 ... 2.0"
+1 S4V3 1
+"Minimum VIA3 spacing on CAPM3 ... 2.0"
+1 Q2V2 1 density
+"Recommended minimum ratio of VIA2 area to CAPM3 area ... 1.0%"
+1 Q2V3 1 density
+"Recommended minimum ratio of VIA3 area to CAPM3 area ... 1.0%"
+1 B6TM 1
+"CAPM3 without VIATP is not allowed"
+1 B7TM 2 connected
+"MET3 and METTP must be connected"
+"Note: CAPM3 must be enclosed by METTP"
+1 S1TMVT 1
+"Minimum CAPM3 spacing to VIATP ... 0.5"
+1 E1TMVT 1
+"Minimum CAPM3 enclosure of VIATP ... 0.3"
+1 E4M4VT 1
+"Minimum MET4 enclosure of VIATP ... 0.15"
+1 S6VT 1
+"Minimum VIATP spacing on CAPM3 ... 2.0"
+1 Q3VT 1 density
+"Recommended minimum ratio of VIATP area to CAPM3 area ... 1.0%"
+1 B2TH 1
+"CAPMH3 must be enclosed by MET2,MET3 and MET4"
+1 B3TH 1
+"CAPMH3 must not be over VIA1 or PAD"
+1 B4TH 1
+"CAPMH3 without VIA2 or VIA3 is not allowed"
+1 B5TH 1 connected
+"MET2 and MET4 must be connected"
+1 W1TH 1
+"Minimum CAPMH3 width ... 2.0"
+1 W2TH 1
+"Maximum CAPMH3 bounding box size ... 30.0 x 30.0"
+1 S1TH 1
+"Minimum CAPMH3 spacing/notch ... 1.5"
+1 S1THPA 1
+"Minimum CAPMH3 spacing to PAD ... 10.0"
+1 S1THV1 1
+"Minimum CAPMH3 spacing to VIA1 ... 0.5"
+1 S1THV2 1
+"Minimum CAPMH3 spacing to VIA2 ... 0.5"
+1 S1THV3 1
+"Minimum CAPMH3 spacing to VIA3 ... 0.5"
+1 E1THV2 1
+"Minimum CAPMH3 enclosure of VIA2 ... 0.3"
+1 E1THV3 1
+"Minimum CAPMH3 enclosure of VIA3 ... 0.3"
+1 E1M2TH 1
+"Minimum MET2 enclosure of CAPMH3 ... 0.5"
+1 E1M3TH 1
+"Minimum MET3 enclosure of CAPMH3 ... 0.5"
+1 E1M4TH 1
+"Minimum MET4 enclosure of CAPMH3 ... 0.5"
+1 S8V2 1
+"Minimum VIA2 spacing on CAPMH3 ... 2.0"
+1 S8V3 1
+"Minimum VIA3 spacing on CAPMH3 ... 2.0"
+1 Q6V2 1 density
+"Recommended minimum ratio of VIA2 area to CAPMH3 area ... 1.0%"
+1 Q6V3 1 density
+"Recommended minimum ratio of VIA3 area to CAPMH3 area ... 1.0%"
+1 B6TH 1
+"CAPMH3 without VIATP is not allowed"
+1 B7TH 2 connected
+"MET3 and METTP must be connected"
+"Note: CAPMH3 must be enclosed by METTP"
+1 S1THVT 1
+"Minimum CAPMH3 spacing to VIATP ... 0.5"
+1 E1THVT 1
+"Minimum CAPMH3 enclosure of VIATP ... 0.3"
+1 S8VT 1
+"Minimum VIATP spacing on CAPMH3 ... 2.0"
+1 Q6VT 1 density
+"Recommended minimum ratio of VIATP area to CAPMH3 area ... 1.0%"
+1 Q1D1 1
+"Check for the right usage of the layer PHODEF"
+1 B1D1 1
+"PHODEF without DIODEF is not allowed"
+1 B2D1 1
+"PHODEF without BLKALL is not allowed"
+1 B3D1 1
+"PHODEF and DIFF without SBLK is not allowed (except DIFFCON sized by 0.5um, davl#)"
+1 B1D1DF 1
+"PHODEF and DIFF without NIMP or PIMP or SBLK is not allowed"
+1 W1DFD1 1
+"Maximum (DIFF overlap of PHODEF) bounding box size ... 502.0 x 502.0"
+1 O1SBIN 1
+"Minimum PHODEF and SBLK overlap of NIMP ... 0.22"
+1 O1SBIP 1
+"Minimum PHODEF and SBLK overlap of PIMP ... 0.22"
+1 B1OC 1
+"CATDOP is only allowed for dphoc#,davl#"
+1 W1OC 1
+"Minimum CATDOP width ... 0.44"
+1 S1OC 1
+"Minimum CATDOP spacing/notch ... 0.44"
+1 A1OC 1
+"Minimum CATDOP area ... 0.3844"
+1 E1OCDF 1
+"Minimum CATDOP extension beyond DIFF ... 0.18"
+1 B1OA 1
+"ANODOP is only allowed for dphod#"
+1 W1OA 1
+"Minimum ANODOP width ... 0.44"
+1 S1OA 1
+"Minimum ANODOP spacing/notch ... 0.44"
+1 A1OA 1
+"Minimum ANODOP area ... 0.3844"
+1 B1UV 1
+"UVWIN overlap of MET3, METTP, PAD is not allowed"
+1 B2UV 1
+"UVWIN overlap of POLY1 is not allowed"
+1 B3UV 1
+"UVWIN is only allowed for dphoc#,dphod#,davlb#"
+1 B4UV 1
+"UVWIN without BLKALL is not allowed"
+1 W1DFUV 1
+"Maximum (DIFF overlap of UVWIN) bounding box size ... 502.0 x 502.0"
+1 W1UV 1
+"Minimum UVWIN width ... 3.0"
+1 W2UV 1
+"Maximum UVWIN bounding box size ... 500.0 x 500.0"
+1 S1UV 1
+"Minimum UVWIN spacing/notch ... 3.0"
+1 S1UVM3 1
+"Minimum UVWIN spacing to MET3 ... 1.5"
+1 S1UVMT 1
+"Minimum UVWIN spacing to METTP ... 2.0"
+1 S1UVPA 1
+"Minimum UVWIN spacing to PAD ... 5.0"
+1 E1BAUV 1
+"Minimum BLKALL enclosure of UVWIN ... 2.0"
+1 W1AM 1
+"Minimum AML width ... 1.0"
+1 S1AM 1
+"Minimum AML spacing/notch ... 1.0"
+1 A1AM 1
+"Minimum AML area ... 4.0"
+1 B1AM 1
+"AML is only allowed for davl#"
+1 B2AM 1
+"AML without CATDIFF is not allowed"
+1 B3AM 1
+"AML without SBLK is not allowed"
+1 B4AM 1
+"AML without CATDIFF is not allowed"
+1 E1DCAM 1
+"Minimum CATDIFF enclosure of AML ... 1.0"
+1 E2DCAM 1
+"Minimum CATDIFF enclosure of AML ... 0.44"
+1 B1PBDC 1
+"CATDIFF without PWBLK is not allowed"
+1 E1PBDC 1
+"Minimum PWBLK enclosure of CATDIFF ... 4.5"
+1 E2PBDC 1
+"Minimum PWBLK enclosure of CATDIFF ... 1.46"
+1 B6M2 1
+"dapda0/dspada0 without MET2 is not allowed"
+1 B7M2 1
+"dapb0/dspb0 without MET2 is not allowed"
+1 B3NW 1
+"dapda/dapda0 without NWELL ring is not allowed"
+1 B4NW 1
+"dapb/dapb0 without NWELL ring is not allowed"
+1 W1IB 1
+"Minimum NOPIM width ... 60.0"
+1 S1IB 1
+"Minimum NOPIM spacing/notch ... 20.0"
+1 S1IBPA 1
+"Minimum NOPIM spacing to PAD ... 40.0"
+1 W1PA 1
+"Minimum PAD width ... 15.0"
+1 S1PA 1
+"Minimum PAD spacing/notch ... 7.0"
+1 B4PA 1
+"PAD without METTPL is not allowed"
+1 E1MLPA 1
+"Minimum METTPL enclosure of PAD ... 2.0"
+1 E2MLVL 1
+"Minimum METTPL enclosure of VIATPL ... 3.0"
+1 S1PAML 1 connected
+"Minimum PAD spacing to METTPL (different net) ... 5.0"
+1 R1VLPA 1 density
+"Minimum ratio of VIATPL (in pad) area to PAD area ... 5.0%"
+1 E2MTVL 1
+"Minimum METTP enclosure of VIATPL ... 3.0"
+1 E1MTPA 1
+"Minimum METTP enclosure of PAD ... 2.0"
+1 B2PA 1
+"PAD overlap of DIFF or POLY1 is not allowed"
+1 Q1PA 1
+"Minimum recommended bond PAD width ... 53.0"
+1 S1PADF 1
+"Minimum PAD spacing to DIFF ... 5.0"
+1 S1PAP1 1
+"Minimum PAD spacing to POLY1 ... 5.0"
+1 S1PAM1 1 connected
+"Minimum PAD spacing to MET1 (different net) ... 5.0"
+1 S1PAM2 1 connected
+"Minimum PAD spacing to MET2 (different net) ... 5.0"
+1 E1M1PA 1
+"Minimum MET1 enclosure of PAD ... 2.0"
+1 E1M2PA 1
+"Minimum MET2 enclosure of PAD ... 2.0"
+1 S2V1 1
+"Minimum VIA1 spacing ... 0.45"
+1 E3M1V1 1
+"Minimum MET1 and MET2 enclosure of VIA1 ... 3.0"
+1 R1V1PA 1 density
+"Minimum ratio of VIA1 (in pad) area to PAD area ... 5.0%"
+1 Q3PA 1
+"Minimum recommended PAD width ... 66.0"
+1 S1PAM3 1 connected
+"Minimum PAD spacing to MET3 (different net) ... 5.0"
+1 E1M3PA 1
+"Minimum MET3 enclosure of PAD ... 2.0"
+1 S2V2 1
+"Minimum VIA2 spacing ... 0.45"
+1 S1V2V1 2
+"Minimum VIA2 spacing to VIA1 ... 0.13"
+"Note: VIA2 stacking over VIA1 is not allowed"
+1 E3M2V2 1
+"Minimum MET2 and MET3 enclosure of VIA2 ... 3.0"
+1 R1V2PA 1 density
+"Minimum ratio of VIA2 (in pad) area to PAD area ... 5.0%"
+1 S1PAM4 1 connected
+"Minimum PAD spacing to MET4 (different net) ... 5.0"
+1 E1M4PA 1
+"Minimum MET4 enclosure of PAD ... 2.0"
+1 S2V3 1
+"Minimum VIA3 spacing ... 0.45"
+1 S1V3V2 2
+"Minimum VIA3 spacing to VIA2 ... 0.13"
+"Note: VIA3 stacking over VIA2 is not allowed"
+1 E3M3V3 1
+"Minimum MET3 and MET4 enclosure of VIA3 ... 3.0"
+1 R1V3PA 1 density
+"Minimum ratio of VIA3 (in pad) area to PAD area ... 5.0%"
+1 S1PAMT 1 connected
+"Minimum PAD spacing to METTP (different net) ... 5.0"
+1 E2MTVT 1
+"Minimum METTP enclosure of VIATP ... 3.0"
+1 R1VTPA 1 density
+"Minimum ratio of VIATP (in pad) area to PAD area ... 5.0%"
+1 S1VTV3 2
+"Minimum VIATP spacing to VIA3 ... 0.06"
+"Note: VIATP stacking over VIA3 is not allowed"
+1 E3M4VT 1
+"Minimum MET4 enclosure of VIATP ... 3.0"
+1 B15PA 1
+"Probe PAD with VIATPL is not allowed"
+1 S1PAVL 1
+"Minimum PAD spacing to VIATPL ... 2.0"
+1 BDLOCK 1
+"Any structure over LOCKED (ALL) or LOCKED (boundary) is not allowed"
+1 B1LOCK 1
+"Any structure over LOCKED (LOCKED1) or LOCKED1 (boundary) is not allowed"
+1 B2LOCK 1
+"Any structure over LOCKED (LOCKED2) or LOCKED2 (boundary) is not allowed"
+1 B3LOCK 1
+"Any structure over LOCKED3 (boundary) is not allowed"
+1 B4LOCK 1
+"Any structure over LOCKED4 (boundary) is not allowed"
+1 BDDF 1
+"Not allowed to be used by customers"
+1 BDP1 1
+"Not allowed to be used by customers"
+1 BDXF 1
+"Not allowed to be used by customers"
+1 BDSC 1
+"Not allowed to be used by customers"
+1 BDNC 1
+"Not allowed to be used by customers"
+1 BDPC 1
+"Not allowed to be used by customers"
+1 S3P1 1 connected
+"Minimum POLY1 spacing ... 0.5"
+1 Q1P1 1 connected
+"Resistor terminal net without VLABEL"
+1 S5P1DF 1 connected
+"Minimum POLY1 spacing to DIFF ... 0.5"
+1 S4M1 1 connected
+"Minimum MET1 spacing ... 0.38"
+1 Q1M1 1 connected
+"Resistor terminal net without VLABEL"
+1 S4M2 1 connected
+"Minimum MET2 spacing ... 0.4"
+1 Q1M2 1 connected
+"Resistor terminal net without VLABEL"
+1 S4M3 1 connected
+"Minimum MET3 spacing ... 0.4"
+1 Q1M3 1 connected
+"Resistor terminal net without VLABEL"
+1 S4M4 1 connected
+"Minimum MET4 spacing ... 0.4"
+1 Q1M4 1 connected
+"Resistor terminal net without VLABEL"
+1 S4MT 1 connected
+"Minimum METTP spacing ... 0.5"
+1 Q1MT 1 connected
+"Resistor terminal net without VLABEL"
+1 Q1ML 1 connected
+"Resistor terminal net without VLABEL"
+1 B1YD 1
+"DIFFDUMMY overlap of DIFF is not allowed"
+1 B2YD 1
+"DIFFDUMMY overlap of NIMP or PIMP is not allowed"
+1 B3YD 1
+"DIFFDUMMY overlap of CONT is not allowed"
+1 B5YD 1
+"DIFFDUMMY overlap of SBLK is not allowed"
+1 B6YD 1
+"DIFFDUMMY overlap of HVDEPL is not allowed"
+1 B7YD 1
+"DIFFDUMMY overlap of PHODEF is not allowed"
+1 W1YD 1
+"Minimum DIFFDUMMY width ... 0.4"
+1 S1YD 1
+"Minimum DIFFDUMMY spacing/notch ... 0.5"
+1 S1YDDF 1
+"Minimum DIFFDUMMY spacing to DIFF ... 3.0"
+1 S1YDIN 1
+"Minimum DIFFDUMMY spacing to NIMP ... 0.3"
+1 S1YDIP 1
+"Minimum DIFFDUMMY spacing to PIMP ... 0.3"
+1 S1YDP1 1
+"Minimum DIFFDUMMY spacing to POLY1 ... 3.0"
+1 S1YDSB 1
+"Minimum DIFFDUMMY spacing to SBLK ... 3.0"
+1 S1YDHL 1
+"Minimum DIFFDUMMY spacing to HVDEPL ... 5.0"
+1 S1YDWD 1
+"Minimum DIFFDUMMY spacing to DNWELL ... 10.0"
+1 S1YDHW 1
+"Minimum DIFFDUMMY spacing to HNW ... 10.0"
+1 S1YDWM 1
+"Minimum DIFFDUMMY spacing to DNWELLMV ... 5.0"
+1 S1YDPI 1
+"Minimum DIFFDUMMY spacing to PW4DMY ... 5.0"
+1 S1YDNW 1
+"Minimum DIFFDUMMY spacing to NW4DMY ... 5.0"
+1 E1YDWD 1
+"Minimum DNWELL enclosure of DIFFDUMMY ... 10.0"
+1 E1YDHW 1
+"Minimum HNW enclosure of DIFFDUMMY ... 10.0"
+1 E1YDWM 1
+"Minimum DNWELLMV enclosure of DIFFDUMMY ... 5.0"
+1 E1YDPI 1
+"Minimum PW4DMY enclosure of DIFFDUMMY ... 5.0"
+1 E1YDNW 1
+"Minimum NW4DMY enclosure of DIFFDUMMY ... 5.0"
+1 S10YD 1
+"Minimum DIFFDUMMY spacing to LOCKED ... 3.6"
+1 S11YD 1
+"Minimum DIFFDUMMY spacing to LOCKED1 ... 3.6"
+1 S12YD 1
+"Minimum DIFFDUMMY spacing to LOCKED2 ... 3.6"
+1 S13YD 1
+"Minimum DIFFDUMMY spacing to LOCKED3 ... 3.6"
+1 S14YD 1
+"Minimum DIFFDUMMY spacing to LOCKED4 ... 3.6"
+1 A1YD 1
+"Minimum DIFFDUMMY area ... 1.2"
+1 B1YP 1
+"Only rectangular P1DUMMY is allowed"
+1 B2YP 1
+"P1DUMMY overlap of POLY1 is not allowed"
+1 B3YP 1
+"P1DUMMY overlap of CONT is not allowed"
+1 B5YP 1
+"P1DUMMY overlap of SBLK is not allowed"
+1 B6YP 1
+"P1DUMMY overlap of MRES or HRES is not allowed"
+1 B7YP 1
+"P1DUMMY overlap of HVDEPL is not allowed"
+1 B8YP 1
+"P1DUMMY overlap of PHODEF is not allowed"
+1 W1YP 1
+"Minimum P1DUMMY width ... 1.0"
+1 S1YP 1
+"Minimum P1DUMMY spacing ... 1.0"
+1 S1YPP1 1
+"Minimum P1DUMMY spacing to POLY1 ... 3.0"
+1 S1YPDF 1
+"Minimum P1DUMMY spacing to DIFF ... 3.0"
+1 S1YPYD 1
+"Minimum P1DUMMY spacing to DIFFDUMMY ... 0.4"
+1 S1YPSB 1
+"Minimum P1DUMMY spacing to SBLK ... 3.0"
+1 S1YPHL 1
+"Minimum P1DUMMY spacing to HVDEPL ... 5.0"
+1 S1YPWD 1
+"Minimum P1DUMMY spacing to DNWELL ... 10.0"
+1 S1YPHW 1
+"Minimum P1DUMMY spacing to HNW ... 10.0"
+1 S1YPWM 1
+"Minimum P1DUMMY spacing to DNWELLMV ... 5.0"
+1 S1YPPI 1
+"Minimum P1DUMMY spacing to PW4DMY ... 5.0"
+1 S1YPNW 1
+"Minimum P1DUMMY spacing to NW4DMY ... 5.0"
+1 E1YPWD 1
+"Minimum DNWELL enclosure of P1DUMMY ... 10.0"
+1 E1YPHW 1
+"Minimum HNW enclosure of P1DUMMY ... 10.0"
+1 E1YPWM 1
+"Minimum DNWELLMV enclosure of P1DUMMY ... 5.0"
+1 E1YPPI 1
+"Minimum PW4DMY enclosure of P1DUMMY ... 5.0"
+1 E1YPNW 1
+"Minimum NW4DMY enclosure of P1DUMMY ... 5.0"
+1 S10YP 1
+"Minimum P1DUMMY spacing to LOCKED ... 3.6"
+1 S11YP 1
+"Minimum P1DUMMY spacing to LOCKED1 ... 3.6"
+1 S12YP 1
+"Minimum P1DUMMY spacing to LOCKED2 ... 3.6"
+1 S13YP 1
+"Minimum P1DUMMY spacing to LOCKED3 ... 3.6"
+1 S14YP 1
+"Minimum P1DUMMY spacing to LOCKED4 ... 3.6"
+1 B1Y1 1
+"Only rectangular M1DUMMY is allowed"
+1 B2Y1 1
+"M1DUMMY overlap of MET1 is not allowed"
+1 B3Y1 1
+"M1DUMMY overlap of CONT or VIA1 is not allowed"
+1 B4Y1 1
+"M1DUMMY overlap of HRES is not allowed"
+1 W1Y1 1
+"Minimum M1DUMMY width ... 2.0"
+1 W2Y1 1
+"Maximum M1DUMMY edge length ... 20.0"
+1 S1Y1 1
+"Minimum M1DUMMY spacing ... 2.0"
+1 S10Y1 1
+"Minimum M1DUMMY spacing to LOCKED ... 4.0"
+1 S11Y1 1
+"Minimum M1DUMMY spacing to LOCKED1 ... 4.0"
+1 S12Y1 1
+"Minimum M1DUMMY spacing to LOCKED2 ... 4.0"
+1 S13Y1 1
+"Minimum M1DUMMY spacing to LOCKED3 ... 4.0"
+1 S14Y1 1
+"Minimum M1DUMMY spacing to LOCKED4 ... 4.0"
+1 S1Y1HR 1
+"Minimum M1DUMMY spacing to HRES ... 5.0"
+1 S1Y1M1 1
+"Minimum M1DUMMY spacing to MET1 ... 4.0"
+1 B1Y2 1
+"Only rectangular M2DUMMY is allowed"
+1 B2Y2 1
+"M2DUMMY overlap of MET2 is not allowed"
+1 B3Y2V1 1
+"M2DUMMY overlap of VIA1 is not allowed"
+1 B3Y2V2 1
+"M2DUMMY overlap of VIA2 is not allowed"
+1 W1Y2 1
+"Minimum M2DUMMY width ... 2.0"
+1 W2Y2 1
+"Maximum M2DUMMY edge length ... 20.0"
+1 S1Y2 1
+"Minimum M2DUMMY spacing ... 2.0"
+1 S10Y2 1
+"Minimum M2DUMMY spacing to LOCKED ... 4.0"
+1 S11Y2 1
+"Minimum M2DUMMY spacing to LOCKED1 ... 4.0"
+1 S12Y2 1
+"Minimum M2DUMMY spacing to LOCKED2 ... 4.0"
+1 S13Y2 1
+"Minimum M2DUMMY spacing to LOCKED3 ... 4.0"
+1 S14Y2 1
+"Minimum M2DUMMY spacing to LOCKED4 ... 4.0"
+1 S1Y2M2 1
+"Minimum M2DUMMY spacing to MET2 ... 4.0"
+1 B1Y3 1
+"Only rectangular M3DUMMY is allowed"
+1 B2Y3 1
+"M3DUMMY overlap of MET3 is not allowed"
+1 B3Y3V2 1
+"M3DUMMY overlap of VIA2 is not allowed"
+1 B3Y3V3 1
+"M3DUMMY overlap of VIA3 is not allowed"
+1 W1Y3 1
+"Minimum M3DUMMY width ... 2.0"
+1 W2Y3 1
+"Maximum M3DUMMY edge length ... 20.0"
+1 S1Y3 1
+"Minimum M3DUMMY spacing ... 2.0"
+1 S10Y3 1
+"Minimum M3DUMMY spacing to LOCKED ... 4.0"
+1 S11Y3 1
+"Minimum M3DUMMY spacing to LOCKED1 ... 4.0"
+1 S12Y3 1
+"Minimum M3DUMMY spacing to LOCKED2 ... 4.0"
+1 S13Y3 1
+"Minimum M3DUMMY spacing to LOCKED3 ... 4.0"
+1 S1Y3M3 1
+"Minimum M3DUMMY spacing to MET3 ... 4.0"
+1 B1Y4 1
+"Only rectangular M4DUMMY is allowed"
+1 B2Y4 1
+"M4DUMMY overlap of MET4 is not allowed"
+1 B3Y4V3 1
+"M4DUMMY overlap of VIA3 is not allowed"
+1 B3Y4VT 1
+"M4DUMMY overlap of VIATP is not allowed"
+1 W1Y4 1
+"Minimum M4DUMMY width ... 2.0"
+1 W2Y4 1
+"Maximum M4DUMMY edge length ... 20.0"
+1 S1Y4 1
+"Minimum M4DUMMY spacing ... 2.0"
+1 S10Y4 1
+"Minimum M4DUMMY spacing to LOCKED ... 4.0"
+1 S11Y4 1
+"Minimum M4DUMMY spacing to LOCKED1 ... 4.0"
+1 S12Y4 1
+"Minimum M4DUMMY spacing to LOCKED2 ... 4.0"
+1 S1Y4M4 1
+"Minimum M4DUMMY spacing to MET4 ... 4.0"
+1 B1YT 1
+"Only rectangular MTPDUMMY is allowed"
+1 B2YT 1
+"MTPDUMMY overlap of METTP is not allowed"
+1 B3YTVL 1
+"MTPDUMMY overlap of VIATPL is not allowed"
+1 B3YTVT 1
+"MTPDUMMY overlap of VIATP is not allowed"
+1 W1YT 1
+"Minimum MTPDUMMY width ... 2.0"
+1 W2YT 1
+"Maximum MTPDUMMY edge length ... 20.0"
+1 S1YT 1
+"Minimum MTPDUMMY spacing ... 2.0"
+1 S10YT 1
+"Minimum MTPDUMMY spacing to LOCKED ... 2.0"
+1 S11YT 1
+"Minimum MTPDUMMY spacing to LOCKED1 ... 2.0"
+1 S1YTMT 1
+"Minimum MTPDUMMY spacing to METTP ... 2.0"
+1 S1YTPA 1
+"Minimum MTPDUMMY spacing to PAD ... 5.0"
+1 B1YL 1
+"Only rectangular MTPLDUMMY is allowed"
+1 B2YL 1
+"MTPLDUMMY overlap of METTPL is not allowed"
+1 B3YLVL 1
+"MTPLDUMMY overlap of VIATPL is not allowed"
+1 W1YL 1
+"Minimum MTPLDUMMY width ... 5.0"
+1 W2YL 1
+"Maximum MTPLDUMMY edge length ... 20.0"
+1 S1YL 1
+"Minimum MTPLDUMMY spacing ... 5.0"
+1 S10YL 1
+"Minimum MTPLDUMMY spacing to LOCKED ... 5.0"
+1 S1YLML 1
+"Minimum MTPLDUMMY spacing to METTPL ... 5.0"
+1 R1VLVT 1 density
+"Maximum local VIATPL density ... 19.0%"
+1 R2P1 1 connected
+"Maximum ratio of POLY1 area to connected GATE area ... 200"
+1 R1CT 1 connected
+"Maximum ratio of CONT area to connected GATE area ... 10"
+1 R1M1P1 2 connected
+"Maximum ratio of MET1 area to connected GATE area ... 400"
+"(gate output)"
+1 R2M1P1 2 connected
+"Maximum ratio of MET1 area to connected GATE area ... 400"
+"(met1 output)"
+1 R1V1 1 connected
+"Maximum ratio of VIA1 area to connected GATE area ... 20"
+1 R1M2P1 2 connected
+"Maximum ratio of MET2 area to connected GATE area ... 400"
+"(gate output)"
+1 R2M2P1 2 connected
+"Maximum ratio of MET2 area to connected GATE area ... 400"
+"(met2 output)"
+1 R1V2 1 connected
+"Maximum ratio of VIA2 area to connected GATE area ... 20"
+1 R1M3P1 2 connected
+"Maximum ratio of MET3 area to connected GATE area ... 400"
+"(gate output)"
+1 R2M3P1 2 connected
+"Maximum ratio of MET3 area to connected GATE area ... 400"
+"(met3 output)"
+1 R1V3 1 connected
+"Maximum ratio of VIA3 area to connected GATE area ... 20"
+1 R1M4P1 2 connected
+"Maximum ratio of MET4 area to connected GATE area ... 400"
+"(gate output)"
+1 R2M4P1 2 connected
+"Maximum ratio of MET4 area to connected GATE area ... 400"
+"(met4 output)"
+1 R1VT 1 connected
+"Maximum ratio of VIATP area to connected GATE area ... 20"
+1 R1MTP1 2 connected
+"Maximum ratio of METTP area to connected GATE area ... 400"
+"(gate output)"
+1 R2MTP1 2 connected
+"Maximum ratio of METTP area to connected GATE area ... 400"
+"(mettp output)"
+1 R1VL 1 connected
+"Maximum ratio of VIATPL area to connected GATE area ... 20"
+1 R1MLP1 2 connected
+"Maximum ratio of METTPL area to connected GATE area ... 200"
+"(gate output)"
+1 R2MLP1 2 connected
+"Maximum ratio of METTPL area to connected GATE area ... 200"
+"(mettpl output)"

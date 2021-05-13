@@ -1,5 +1,5 @@
 Version 1
-2000.000000 4
+1000.000000 4
 0 1 dataAuditErrors 0 0 0 0 dataAuditErrors
 1 0 pad 0 0 0 0 pad = layer( "PAD" type("drawing") )
 2 0 diff_dg 0 0 0 0 diff_dg = layer( "DIFF" type("drawing") )

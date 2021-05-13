@@ -1,0 +1,11 @@
+results_db -drc "" -ascii;
+//=== Configurator controls ===
+//   DRC CONFIGURATION  
+//   #Select Density Rules#  
+#UNDEFINE DENSITY
+#UNDEFINE POPPING
+//   #Select DUMMY Pattern Generation#   
+#UNDEFINE DUMMY_FILL
+//   #Select Additional Antenna Check based on variable ratios#   
+#UNDEFINE VAR_ANT_RATIO
+//=== End of configurator controls ===

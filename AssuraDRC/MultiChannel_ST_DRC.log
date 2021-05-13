@@ -6,32 +6,30 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Wed May 12 14:21:29 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Thu May 13 11:56:59 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.rsf -restart -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed May 12 14:21:29 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Thu May 13 11:56:59 2021
 
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
  Summary Report: MultiChannel_ST_DRC.sum
  RSF           : /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.rsf
  Library Name  : Stimulator_IMP
  CDSLIB Path   : "/home/ykhuang/research/cds.lib"
  Cell Name     : MultiChannel_ST
  View Name     : layout
- Rules File    : /home/ykhuang/research/.assuraSetup/Assura/../../.xkit/setup/xh018/cadence/assura/Assura/XH018_1143/drc.rul
+ Rules File    : /pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/drc.rul
  Options       : -restart -cdslib /home/ykhuang/research/cds.lib 
  Work Directory: /home/ykhuang/research/AssuraDRC
  Operating Mode: Legacy Mode is Off
@@ -51,9 +49,9 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.30  elap: 2  pf: 0  in: 0  out: 40  virt: 177M  phys: 887M
+cpu: 0.32  elap: 2  pf: 0  in: 0  out: 40  virt: 177M  phys: 895M
 
-Running the Task Processor, 36 cells, 17316 steps...
+Running the Task Processor, 43 cells, 17316 steps...
 
 Top Cell is 'MultiChannel_ST layout Stimulator_IMP'
 
@@ -3004,6 +3002,15 @@ Executing: ptiec = geomAndNot(ptie geomSize(geomGetEdge(geomAnd(ptie sab) buttin
 Executing: isoptiec = geomAndNot(isoptie geomSize(geomGetEdge(geomAnd(isoptie sab) butti...
 
 Executing: geomConnect((via cont_nma met1trm nbd_nma) (via cont_pma met1trm pbd_pma) (vi...
+    21 same-label  warnings found in cell 'pe3 layout PRIMLIB gContT="Met1" ng="8" in1=M31'.
+   240 same-label  warnings found in cell 'ped_bjt layout PRIMLIB ng="13" w="80u" in1=M66'.
+   180 same-label  warnings found in cell 'nedia_bjt layout PRIMLIB ng="10" w="80u" in1=M34'.
+     2 net(s) with multi-label warnings found in cell 'IN_3VX2 layout D_CELLS_3V'.
+     2 net(s) with multi-label warnings found in cell 'AND2HDX0 layout D_CELLS_HD'.
+    80 same-label  warnings found in cell 'nedia_bjt layout PRIMLIB ng="5" w="60u" in1=M16'.
+     3 net(s) with multi-label warnings found in cell 'LSHVT18U3VX1 layout D_CELLS_M3V'.
+ See the label report in "MultiChannel_ST_DRC.erc" file for details.
+
 
 Executing: geomStamp(bm met4trm)
 
@@ -9482,17 +9489,15 @@ Executing: processAntenna(((gate (gate poly)) (antenna poly met1 met2 met3 met4 
 running in speedup mode
 
 Finished running rules. Task processor time in main process:
-cpu: 15.60  elap: 16  pf: 0  in: 0  out: 3768  virt: 371M  phys: 1920M
+cpu: 16.99  elap: 18  pf: 0  in: 0  out: 4208  virt: 371M  phys: 1902M
 
 Started output post-processing ...
 
-Nothing to postprocess: No grid cells in the design
-
 Finished output post-processing
-cpu: 0.36  elap: 0  pf: 0  in: 0  out: 0  virt: 666M  phys: 2177M
+cpu: 2.59  elap: 2  pf: 0  in: 0  out: 440  virt: 658M  phys: 2213M
 
 Finished building the persistent database.
-cpu: 0.02  elap: 0  pf: 0  in: 0  out: 6600  virt: 666M  phys: 2189M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6584  virt: 663M  phys: 2226M
 
 
 *****  aveng terminated normally  *****
@@ -9502,15 +9507,13 @@ Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.rsf
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Wed May 12 14:21:48 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Thu May 13 11:57:22 2021
 
 
    Creating Error Database 'MultiChannel_ST_DRC'...
@@ -11500,23 +11503,21 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.err ...
 
-avrpt cpu sec:    0.57  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.58  elapsed:     0  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.rsf -restart -cdslib /home/ykhuang/research/cds.lib
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-
-Loading tech rule set file : /home/ykhuang/research/.assuraSetup/Assura/techRuleSets
-Loading assuraDRC_Rules Version "assuraDRC-210106" at "May 12 14:21:49 2021"
+Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
+Loading assuraDRC_Rules Version "assuraDRC-210106" at "May 13 11:57:23 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Wed May 12 14:21:49 2021
+Run ended: Thu May 13 11:57:23 2021
 
 *****  Assura terminated normally  *****
 
