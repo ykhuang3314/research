@@ -2,7 +2,12 @@ define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, 
 include ./hdlrun.var
 define SNAPSHOT EMG_NMES_TestBench.Sim_StimulusArtifact:config
 DEFINE RUNMODEDEFAULT 1
-DEFINE LIB_MAP (  => EMG_NMES_TestBench )
+DEFINE LIB_MAP (  => D_CELLS_M3V )
+DEFINE LIB_MAP ($LIB_MAP,  => GATES_HD )
+DEFINE LIB_MAP ($LIB_MAP,  => EMG_NMES_TestBench )
+DEFINE LIB_MAP ($LIB_MAP,  => D_CELLS_3V )
+DEFINE LIB_MAP ($LIB_MAP,  => GATES_3V )
+DEFINE LIB_MAP ($LIB_MAP,  => D_CELLS_HD )
 DEFINE LIB_MAP ($LIB_MAP, + => worklib )
 define ELAB_SNAPSHOT
 define SNAPSHOT EMG_NMES_TestBench.Sim_StimulusArtifact:config

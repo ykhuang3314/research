@@ -1,0 +1,6 @@
+    M13 (net10 inn3v 0 0) nedia_bjt w=15.0u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    I0 ResistiveDivider
+    I10 LSHVT18U3VX1
+ends LS_HighSide_V3_ST
+// End of subcircuit definition.

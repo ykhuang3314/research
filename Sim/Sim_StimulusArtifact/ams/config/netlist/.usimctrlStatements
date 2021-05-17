@@ -4,7 +4,7 @@
 
 simulator lang=spectre 
 
-global 0
+global 0 vdd! vdd3! vdde!
 
 simulatorOptions options temp=27 tnom=27 scale=1.0 scalem=1.0
 

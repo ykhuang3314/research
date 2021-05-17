@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"Irefv" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".Iref\")))v"
+"Irefv" ".Irefv"
+"Irefv" ".\\2 v"
+"Iextv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".Iext\")))v"
+"Iextv" ".Iextv"
+"Iextv" ".\\1 v"
+"vssv" "(FUNCTION or(mappedRoot(\".3@index\") mappedRoot(\".vss\")))v"
+"vssv" ".vssv"
+"vssv" ".\\3 v"

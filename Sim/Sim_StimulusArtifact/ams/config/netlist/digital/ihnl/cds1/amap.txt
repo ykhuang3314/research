@@ -1,11 +1,5 @@
-instMap,*AFE_EMG,*I1,*I1
-instMaster,*AFE_EMG,*I1,*EMG_Model_BPF_EMG_verilogams
-instMap,*AFE_EMG,*I2,*I2
-instMaster,*AFE_EMG,*I2,*EMG_Model_PGA_EMG_verilogams
-instMap,*AFE_EMG,*I0,*I0
-instMaster,*AFE_EMG,*I0,*EMG_Model_IA_EMG_Ideal_verilogams
-netMap,*AFE_EMG,*Gain_Sel<2>,*Gain_Sel[2]
-netMap,*AFE_EMG,*Gain_Sel<1>,*Gain_Sel[1]
-netMap,*AFE_EMG,*Gain_Sel<0>,*Gain_Sel[0]
-netMap,*AFE_EMG,*gnd!,*cds_globals.\gnd! 
-cellMap,*AFE_EMG,*AFE_EMG,*EMG_Model,*schematic
+netMap,*Ext_Iref_ST,*gnd!,*cds_globals.\gnd! 
+netMap,*Ext_Iref_ST,*vdd3!,*cds_globals.\vdd3! 
+netMap,*Ext_Iref_ST,*vdde!,*cds_globals.\vdde! 
+netMap,*Ext_Iref_ST,*vdd!,*cds_globals.\vdd! 
+cellMap,*Ext_Iref_ST,*Ext_Iref_ST,*Stimulator_IMP,*schematic

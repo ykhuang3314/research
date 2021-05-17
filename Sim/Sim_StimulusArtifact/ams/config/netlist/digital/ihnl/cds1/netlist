@@ -1,35 +1,17 @@
-// Library - EMG_Model, Cell - AFE_EMG, View - schematic
-// LAST TIME SAVED: Feb  9 12:37:09 2021
-// NETLIST TIME: Feb 10 18:47:39 2021
+// Library - Stimulator_IMP, Cell - Ext_Iref_ST, View - schematic
+// LAST TIME SAVED: May 11 12:03:33 2021
+// NETLIST TIME: May 13 15:52:35 2021
 `timescale 1ns / 1ps 
 
-`worklib EMG_Model
+`worklib Stimulator_IMP
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="EMG_Model", dfII_cell="AFE_EMG", dfII_view="schematic", worklib_name="EMG_Model", view_name="schematic", last_save_time="Feb  9 12:37:09 2021" *)
+(* dfII_lib="Stimulator_IMP", dfII_cell="Ext_Iref_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="May 11 12:03:33 2021" *)
 
-module AFE_EMG (Vout, Ibias, Vdda, Vddd, Vssa, Vssd, Vsub, Gain_Sel, 
-    Vinn, Vinp);
+module Ext_Iref_ST (Iext, Iref, vss);
 
-output  Vout;
+inout  Iext, Iref, vss;
 
-inout  Ibias, Vdda, Vddd, Vssa, Vssd, Vsub;
-
-input  Vinn, Vinp;
-
-input [2:0]  Gain_Sel;
-
-
-BPF_EMG I1 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(Vssa), .Vsub(Vsub), 
-    .Voutn(Voutn_BPF), .Voutp(Voutp_BPF), .Vinn(Voutn_IA), 
-    .Vinp(Voutp_IA));
-
-PGA_EMG I2 ( .Vddd(Vddd), .Vssd(Vssd), .Ibias(Ibias), .Vdda(Vdda), 
-    .Vssa(Vssa), .Vsub(Vsub), .Vout(Vout), .Gain_Sel(Gain_Sel), 
-    .Vinn(Voutn_BPF), .Vinp(Voutp_BPF));
-
-IA_EMG_Ideal I0 ( .Ibias(Ibias), .Vdda(Vdda), .Vssa(Vssa), .Vsub(Vsub), 
-    .Voutn(Voutn_IA), .Voutp(Voutp_IA), .Vinn(Vinn), .Vinp(Vinp));
 
 endmodule

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ykhuang
+HostName                       s2424.it.kth.se
+ProcessIdentifier              15442
+ProcessCreationTime_UTC        1620912140
+ProcessCreationTime_Readable   Thu May 13 15:22:20 2021 CEST
+AppIdentifier                  /pkg/cadence/installs/IC618/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Not specified
+FilePathUsedToEditLock         /home/ykhuang/research/EMG_NMES_TestBench/Sim_StimulusArtifact/config/expand.cfg
+TimeEditLocked                 Thu May 13 15:50:34 2021 CEST

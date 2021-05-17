@@ -1,0 +1,6 @@
+    I2 ResistiveDivider
+    M1 (net11 net9 vddh 0) ped_bjt w=20u l=940.0n m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    I1 LS_HighSide_V3_ST
+ends LS_LowSide_V2_ST
+// End of subcircuit definition.

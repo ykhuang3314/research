@@ -25,24 +25,21 @@ DLCLAP
 /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
 -xmfatal
 NOTCMP
+/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v
 /home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams
 /home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams
 /home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams
-/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams
-/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams
-/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams
+/home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v
 -amscompilefile
-"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
--amscompilefile
-"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
--amscompilefile
-"file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
+"file:/home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
 -amscompilefile
 "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
 -amscompilefile
 "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
 -amscompilefile
 "file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
 -MESSAGES
 -UPDATE
 -XLLIBSTORE

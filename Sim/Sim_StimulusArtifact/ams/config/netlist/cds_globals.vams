@@ -13,7 +13,14 @@ module cds_globals;
 // Global Signals
    electrical \gnd! ;
    ground \gnd! ;
+   wire \vdd! ;
+   wire \vdde! ;
+   wire \vdd3! ;
 
 // Design Variables
+   dynamicparam real Period = 1000;
+   dynamicparam real Tcat = 300;
+   dynamicparam real Tano = 300;
+   dynamicparam real IPD = 100;
 
 endmodule

@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"V1v" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".V1\")))v"
+"V1v" ".V1v"
+"V1v" ".\\2 v"
+"V2v" "(FUNCTION or(mappedRoot(\".3@index\") mappedRoot(\".V2\")))v"
+"V2v" ".V2v"
+"V2v" ".\\3 v"
+"VOUTv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".VOUT\")))v"
+"VOUTv" ".VOUTv"
+"VOUTv" ".\\1 v"
+"R10n R11n R12n R13n R14n R15n R16n R17n R18n R19n R2n R20n R21n R22n R23n R24n R25n R26n R27n R28n R29n R3n R30n R31n R32n R33n R34n R35n R36n R37n R4n R5n R6n R7n R8n R9n" "PRIMLIB_rpp1k1_spectre"

@@ -1,0 +1,17 @@
+// Library - Stimulator_IMP, Cell - ResistiveDivider, View - schematic
+// LAST TIME SAVED: Apr  9 15:33:06 2021
+// NETLIST TIME: May 13 15:52:35 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="ResistiveDivider", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr  9 15:33:06 2021" *)
+
+module ResistiveDivider (VOUT, V1, V2);
+
+output  VOUT;
+
+input  V1, V2;
+

@@ -10,7 +10,6 @@
 -ade 
 -timescale 1ns/1ns 
 -vtimescale 1ns/1ns 
--discipline logic 
 -delay_mode None 
 -novitalaccl 
 -access r 
@@ -23,16 +22,14 @@
 -run -exit 
 -xmsimargs "+amsrawdir ../psf" 
  -simcompatible_ams spectre 
--name EMG_NMES_TestBench.Sim_StimulusArtifact:config 
--amsconnrules ConnRules_18V_full_fast 
-+define+CDS_SELECT_CRS 
-+define+CONNRULES_18V_FULL_FAST  
+-name EMG_NMES_TestBench.Sim_StimulusArtifact:config  
 -allowredefinition 
 -amsbind 
 -top EMG_NMES_TestBench.Sim_StimulusArtifact:schematic 
 -top cds_globals 
 ./netlist.vams 
+./ie_card.scs
 -f ./textInputs
 ./cds_globals.vams 
--l ../psf/xrun.log
--spectre_args ++aps
+/pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/cdslib/basic/cds_alias/functional/verilog.v 
+-l ../psf/xrun.log 

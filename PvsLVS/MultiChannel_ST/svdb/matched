@@ -3,7 +3,7 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Thu May 13 11:45:19 2021
+#####  NVN Run Start                 :   Thu May 13 15:38:36 2021
 #####  ERC Summary File              :   MultiChannel_ST.sum
 #####  Extraction Report File        :   MultiChannel_ST_lvs.sum
 #####  Comparison Report File        :   MultiChannel_ST_lvs.sum.cls

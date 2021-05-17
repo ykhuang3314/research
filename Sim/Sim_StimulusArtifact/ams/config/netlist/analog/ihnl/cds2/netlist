@@ -3,39 +3,25 @@
 // Cell name: Sim_StimulusArtifact
 // View name: schematic
 // Inherited view list: schematic
-R10 (Vinp 0) resistor r=1G
 R6 (Vinp net09) resistor r=1k
-R9 (net017 net09) resistor r=500
-R5 (net2 net016) resistor r=1k
-R4 (net017 net016) resistor r=500
-R3 (net1 net017) resistor r=1k
-I5 (Vdda net4) isource dc=10u type=dc
-I3 (Vdda net3) isource dc=10u type=dc
-V19 (Vssd 0) vsource dc=0 type=dc
-V18 (Vddd 0) vsource dc=1.8 type=dc
-V17 (Gain_Sel_0 0) vsource dc=0 type=dc
-V16 (Gain_Sel_1 0) vsource dc=0 type=dc
-V15 (Gain_Sel_2 0) vsource dc=1.8 type=dc
-V12 (Mag_0 0) vsource dc=1.8 type=dc
-V11 (Mag_1 0) vsource dc=0 type=dc
-V10 (Mag_2 0) vsource dc=0 type=dc
-V9 (Mag_3 0) vsource dc=1.8 type=dc
-V8 (Mag_4 0) vsource dc=0 type=dc
-V6 (Vssa 0) vsource dc=0 type=dc
-V2 (Vdda 0) vsource dc=1.8 type=dc
-V1 (VddH 0) vsource dc=30 type=dc
-V4 (Vsub 0) vsource dc=0 type=dc
-V14 (Vctrl_inv 0) vsource type=pulse val0=1.8 val1=0 period=450u \
-        delay=420u rise=1p fall=1p width=30u
-V13 (Vctrl 0) vsource type=pulse val0=0 val1=1.8 period=450u delay=420u \
-        rise=1p fall=1p width=30u
-V0 (ANO 0) vsource type=pulse val0=0 val1=1.8 period=450u delay=10u \
-        rise=1p fall=1p width=200u
-V3 (CAT 0) vsource type=pulse val0=0 val1=1.8 period=450u delay=220u \
-        rise=1p fall=1p width=200u
-V5 (DIS 0) vsource type=pulse val0=0 val1=1.8 period=450u delay=420u \
-        rise=1p fall=1p width=10u
-W3 (net019 net018 Vctrl 0) relay vt1=0 vt2=1.5 ropen=1T rclosed=1.0
+R9 (net017 net09) resistor r=1k
+R5 (E10 net016) resistor r=1k
+R4 (net017 net016) resistor r=1k
+R3 (E00 net017) resistor r=1k
+I36 (vdd3! net025) isource dc=10u type=dc
+I5 (vdda net4) isource dc=10u type=dc
+V0 (vdde! 0) vsource dc=1.8 type=dc
+V29 (Gain_Sel_2 0) vsource dc=1.8 type=dc
+V3 (vdd! 0) vsource dc=1.8 type=dc
+V19 (vssd 0) vsource dc=0 type=dc
+V28 (Gain_Sel_1 0) vsource dc=0 type=dc
+V27 (Gain_Sel_0 0) vsource dc=0 type=dc
+V25 (vdd3! 0) vsource dc=3.3 type=dc
+V26 (vddh 0) vsource dc=40 type=dc
+V6 (vssa 0) vsource dc=0 type=dc
+V2 (vdda 0) vsource dc=1.8 type=dc
+V4 (vsub 0) vsource dc=0 type=dc
+I0 SingleChannel_ST
 C1 (Vinp net09) capacitor c=1n
-C3 (net2 net016) capacitor c=1n
-C2 (net1 net017) capacitor c=1n
+C3 (E10 net016) capacitor c=1n
+C2 (E00 net017) capacitor c=1n

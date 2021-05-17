@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-mpssession virtuoso10568 -mpshost s2424 
+\o Arguments:		-mpssession virtuoso15442 -mpshost s2424 
 \o Working Directory:	s2424:/home/ykhuang/research
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -13,11 +13,14 @@
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
 \a cdsLibManager->libListBox->value = "Stimulator_IMP"
 \a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2029 247 1388 829))
 \a cdsLibManager->cellListBox->value = "MultiChannel_ST"
 \a cdsLibManager->cellLineEdit->value = "MultiChannel_ST"
 \a cdsLibManager->viewListBox->value = "layout"
@@ -42,34 +45,105 @@
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "Idac_5bit_ST_V3"
-\a cdsLibManager->cellLineEdit->value = "Idac_5bit_ST_V3"
+\a nrResizeWindow(cdsLibManager list(2228 81 1388 829))
+\a cdsLibManager->libListBox->value = "Exercise6"
+\a cdsLibManager->libLineEdit->value = "Exercise6"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "HalfBridge_ST"
-\a cdsLibManager->cellLineEdit->value = "HalfBridge_ST"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "IL2239_SAR_comparator"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_comparator"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC_v1"
+\a cdsLibManager->libListBox->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libLineEdit->value = "IL2239_SAR_ADC"
+\a cdsLibManager->libListBox->value = "EMG_202009"
+\a cdsLibManager->libLineEdit->value = "EMG_202009"
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a lmgrLogShowPopup("mainListPopup1" 140 10 2 "Sim_StimulusArtifact")
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TB_Single_CH_Behav"
+\a cdsLibManager->cellLineEdit->value = "TB_Single_CH_Behav"
+\a cdsLibManager->cellListBox->value = "TB_OneCH_Top"
+\a cdsLibManager->cellLineEdit->value = "TB_OneCH_Top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EMG_NMES_TestBench"
+\a cdsLibManager->libLineEdit->value = "EMG_NMES_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Sim_StimulusArtifact"
+\a cdsLibManager->cellLineEdit->value = "Sim_StimulusArtifact"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")

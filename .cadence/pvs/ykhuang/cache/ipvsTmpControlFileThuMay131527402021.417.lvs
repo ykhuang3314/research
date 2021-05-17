@@ -1,0 +1,12 @@
+results_db -erc "/home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST_lvs.err" -ascii;
+lvs_run_erc_checks yes;
+//=== Configurator controls ===
+//   LVS CONFIGURATION  
+//   #Select Floating Checks#  
+#UNDEFINE FloatingGate
+#UNDEFINE FloatingWell
+//   #Special Diode Extraction#  
+#UNDEFINE ParaDioAsDevDio
+//   #Select DUMMY Pattern Generation#   
+#UNDEFINE DUMMY_FILL
+//=== End of configurator controls ===

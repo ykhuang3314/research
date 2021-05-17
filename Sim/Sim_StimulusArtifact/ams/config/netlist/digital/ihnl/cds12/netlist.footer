@@ -1,0 +1,42 @@
+
+Ext_Iref_ST I0 ( .Iref(Iref), .Iext(Iext), .vss(cds_globals.\gnd! ));
+
+AND2HDX0 I45 ( .Q(net05), .B(Mag0_ST), .A(Enable_ST));
+
+AND2HDX0 I46 ( .Q(net07), .B(Mag1_ST), .A(Enable_ST));
+
+AND2HDX0 I47 ( .Q(net09), .B(Mag2_ST), .A(Enable_ST));
+
+AND2HDX0 I48 ( .Q(net011), .B(Mag3_ST), .A(Enable_ST));
+
+AND2HDX0 I49 ( .Q(net013), .B(Mag4_ST), .A(Enable_ST));
+
+CurrentMirror_ST I2 ( .\vdd3! (cds_globals.\vdd3! ), .\gnd! 
+    (cds_globals.\gnd! ), .Ist(Ist), .Iref(net9), .vddh(vddh), 
+    .enable(Enable_ST));
+
+Idac_5bit_ST_V3 I1 ( .D4_3v(D4_3v), .D3_3v(D3_3v), .D1_3v(D1_3v), 
+    .D2_3v(D2_3v), .D0_3v(D0_3v), .\vdd3! (cds_globals.\vdd3! ), 
+    .Iref(Iref), .Idac(net9));
+
+IN_3VX2 I31 ( .A(net06), .Q(D0_3v));
+
+IN_3VX2 I15 ( .A(net08), .Q(D1_3v));
+
+IN_3VX2 I13 ( .A(net010), .Q(D2_3v));
+
+IN_3VX2 I11 ( .A(net012), .Q(D3_3v));
+
+IN_3VX2 I10 ( .A(net014), .Q(D4_3v));
+
+LSHVT18U3VX1 I16 ( .A(net05), .Q(net06));
+
+LSHVT18U3VX1 I30 ( .A(net07), .Q(net08));
+
+LSHVT18U3VX1 I14 ( .A(net09), .Q(net010));
+
+LSHVT18U3VX1 I12 ( .A(net011), .Q(net012));
+
+LSHVT18U3VX1 I29 ( .A(net013), .Q(net014));
+
+endmodule

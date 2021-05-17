@@ -1,0 +1,56 @@
+    M0 (vdd3! vdd3! vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(8)*(1) \
+        par1=((8)*(1))
+    M1 (Iref Iref Vbias vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
+    M31 (Idac D0_3v Ix1 vdd3!) pe3 w=2u l=300n as=6.45e-13 ad=5.4e-13 \
+        ps=3.145e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(8) \
+        par1=((1)*(8))
+    M20 (n1 Vbias vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
+    M22 (Ix1 Iref n1 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
+    M23 (n2 Vbias vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(8)*(1) \
+        par1=((8)*(1))
+    M24 (Ix2 Iref n2 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(8)*(1) \
+        par1=((8)*(1))
+    M25 (n3 Vbias vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(16)*(1) \
+        par1=((16)*(1))
+    M29 (Ix4 Iref n3 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(16)*(1) \
+        par1=((16)*(1))
+    M32 (Ix8 Iref n4 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(32)*(1) \
+        par1=((32)*(1))
+    M33 (n4 Vbias vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(32)*(1) \
+        par1=((32)*(1))
+    M35 (n5 Vbias vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(64)*(1) \
+        par1=((64)*(1))
+    M36 (Ix16 Iref n5 vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(64)*(1) \
+        par1=((64)*(1))
+    M38 (Vbias Vbias vdd3! vdd3!) pe3 w=6u l=2u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(4)*(1) \
+        par1=((4)*(1))
+    M39 (Idac D1_3v Ix2 vdd3!) pe3 w=2u l=300n as=6.45e-13 ad=5.4e-13 \
+        ps=3.145e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(8) \
+        par1=((1)*(8))
+    M40 (Idac D2_3v Ix4 vdd3!) pe3 w=2u l=300n as=6.45e-13 ad=5.4e-13 \
+        ps=3.145e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(8) \
+        par1=((1)*(8))
+    M41 (Idac D3_3v Ix8 vdd3!) pe3 w=2u l=300n as=6.45e-13 ad=5.4e-13 \
+        ps=3.145e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(8) \
+        par1=((1)*(8))
+    M42 (Idac D4_3v Ix16 vdd3!) pe3 w=2u l=300n as=6.45e-13 ad=5.4e-13 \
+        ps=3.145e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(8) \
+        par1=((1)*(8))
+ends Idac_5bit_ST_V3
+// End of subcircuit definition.

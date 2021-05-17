@@ -1,0 +1,7 @@
+( ( net
+( "vdd3!" "cds_globals.\\vdd3! " )
+ )
+( term
+( "vdd3!" "\\vdd3! " )
+ )
+ )

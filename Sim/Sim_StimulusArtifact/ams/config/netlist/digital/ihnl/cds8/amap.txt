@@ -1,0 +1,5 @@
+netMap,*Idac_5bit_ST_V3,*gnd!,*cds_globals.\gnd! 
+netMap,*Idac_5bit_ST_V3,*vdd3!,*cds_globals.\vdd3! 
+netMap,*Idac_5bit_ST_V3,*vdde!,*cds_globals.\vdde! 
+netMap,*Idac_5bit_ST_V3,*vdd!,*cds_globals.\vdd! 
+cellMap,*Idac_5bit_ST_V3,*Idac_5bit_ST_V3,*Stimulator_IMP,*schematic

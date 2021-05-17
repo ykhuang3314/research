@@ -1,23 +1,22 @@
-// Library - Stimulator_Model, Cell - Stimulator_Single_CH, View -
-//schematic
-// LAST TIME SAVED: Feb  9 12:10:15 2021
-// NETLIST TIME: Feb 10 18:47:39 2021
+// Library - EMG_Model, Cell - AFE_EMG, View - schematic
+// LAST TIME SAVED: Feb  9 12:37:09 2021
+// NETLIST TIME: May 13 15:52:35 2021
 `timescale 1ns / 1ps 
 
-`worklib Stimulator_Model
+`worklib EMG_Model
 `view schematic
 
 (* cds_ams_schematic *) 
-(* dfII_lib="Stimulator_Model", dfII_cell="Stimulator_Single_CH", dfII_view="schematic", worklib_name="Stimulator_Model", view_name="schematic", last_save_time="Feb  9 12:10:15 2021" *)
+(* dfII_lib="EMG_Model", dfII_cell="AFE_EMG", dfII_view="schematic", worklib_name="EMG_Model", view_name="schematic", last_save_time="Feb  9 12:37:09 2021" *)
 
-module Stimulator_Single_CH (Iano, Icat, VddH, Vdda, Vddd, Vssa, Vssd, 
-    ANO, CAT, DIS, Ibias, Mag);
+module AFE_EMG (Vout, Ibias, Vdda, Vddd, Vssa, Vssd, Vsub, Gain_Sel, 
+    Vinn, Vinp);
 
-output  Iano, Icat;
+output  Vout;
 
-inout  VddH, Vdda, Vddd, Vssa, Vssd;
+inout  Ibias, Vdda, Vddd, Vssa, Vssd, Vsub;
 
-input  ANO, CAT, DIS, Ibias;
+input  Vinn, Vinp;
 
-input [4:0]  Mag;
+input [2:0]  Gain_Sel;
 

@@ -1,4 +1,4 @@
-Begin Netlisting Feb 10 18:47:35 2021
+Begin Netlisting May 13 15:52:31 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
 
 "/home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set
@@ -52,22 +52,51 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
-Current_Source              verilogams           *Stopping View*  
-Current_Mirror              verilogams           *Stopping View*  
-H_Bridge                    verilogams           *Stopping View*  
+Decoder3_8                  functional           *Stopping View*  
 BPF_EMG                     verilogams           *Stopping View*  
 PGA_EMG                     verilogams           *Stopping View*  
 IA_EMG_Ideal                verilogams           *Stopping View*  
 res                         spectre              *Stopping View*  
 idc                         spectre              *Stopping View*  
 vdc                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
-switch                      spectre              *Stopping View*  
+rpp1k1                      spectre              *Stopping View*  
+ne3                         spectre              *Stopping View*  
+ne                          spectre              *Stopping View*  
+pe                          spectre              *Stopping View*  
+csft5a                      spectre              *Stopping View*  
+nedia_bjt                   spectre              *Stopping View*  
+pe3                         spectre              *Stopping View*  
+ped_bjt                     spectre              *Stopping View*  
+Digital_Stimulus_V2_ST      functional           *Stopping View*  
 cap                         spectre              *Stopping View*  
 Sim_StimulusArtifact        schematic                             
+SingleChannel_ST            schematic                             
+HalfBridge_ST               schematic                             
+LS_LowSide_V2_ST            schematic                             
+LS_HighSide_V3_ST           schematic                             
+ResistiveDivider            schematic                             
+CurrentSource_All_ST        schematic                             
+LSHVT18U3VX1                cmos_sch                              
+IN_3VX2                     cmos_sch                              
+invrv3                      schematic                             
+Idac_5bit_ST_V3             schematic                             
+CurrentMirror_ST            schematic                             
+CurrentMirror_x10_LV        schematic                             
+LSHVT18U3VX2                cmos_sch                              
+AND2HDX0                    cmos_sch                              
+invr                        schematic                             
+nand2                       schematic                             
+Ext_Iref_ST                 schematic                             
 AFE_EMG                     schematic                             
-Stimulator_Single_CH        schematic                             
 
 ---------- End of netlist configuration information   ----------
+WARNING (OSSHNL-226): There are more design variables used in the current
+netlisting session as
+compared to the last session in the current run directory.
+The netlist(s)
+generated in the last netlisting session cannot be reused for
+incremental
+netlisting. Therefore re-netlisting the design.
+
 Running netlist assembly..
-End netlisting Feb 10 18:47:44 2021
+End netlisting May 13 15:52:41 2021

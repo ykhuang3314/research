@@ -1,8 +1,8 @@
 Device_Table 1000
-0 0 1 Thu May 13 11:45:17 2021
+0 0 1 Thu May 13 15:38:35 2021
 332
 Device Entry 0
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 ne
 MOS
 MN
@@ -24,7 +24,7 @@ ad
 ps
 pd
 Device Entry 1
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pe
 MOS
 MP
@@ -46,7 +46,7 @@ ad
 ps
 pd
 Device Entry 2
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nel
 MOS
 MN
@@ -68,7 +68,7 @@ ad
 ps
 pd
 Device Entry 3
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nelna
 MOS
 MN
@@ -90,7 +90,7 @@ ad
 ps
 pd
 Device Entry 4
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nesvt
 MOS
 MN
@@ -112,7 +112,7 @@ ad
 ps
 pd
 Device Entry 5
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pel
 MOS
 MP
@@ -134,7 +134,7 @@ ad
 ps
 pd
 Device Entry 6
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pesvt
 MOS
 MP
@@ -156,7 +156,7 @@ ad
 ps
 pd
 Device Entry 7
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nei
 MOS
 MN
@@ -178,7 +178,7 @@ ad
 ps
 pd
 Device Entry 8
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pei
 MOS
 MP
@@ -200,7 +200,7 @@ ad
 ps
 pd
 Device Entry 9
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 neli
 MOS
 MN
@@ -222,7 +222,7 @@ ad
 ps
 pd
 Device Entry 10
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 peli
 MOS
 MP
@@ -244,7 +244,7 @@ ad
 ps
 pd
 Device Entry 11
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nelnai
 MOS
 MN
@@ -266,7 +266,7 @@ ad
 ps
 pd
 Device Entry 12
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nesvti
 MOS
 MN
@@ -288,7 +288,7 @@ ad
 ps
 pd
 Device Entry 13
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pesvti
 MOS
 MP
@@ -310,7 +310,7 @@ ad
 ps
 pd
 Device Entry 14
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nei_6
 USER
 NEI_6
@@ -334,7 +334,7 @@ ad
 ps
 pd
 Device Entry 15
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nei_m_6
 USER
 NEI_M_6
@@ -358,7 +358,7 @@ ad
 ps
 pd
 Device Entry 16
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 neli_6
 USER
 NELI_6
@@ -382,7 +382,7 @@ ad
 ps
 pd
 Device Entry 17
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 neli_m_6
 USER
 NELI_M_6
@@ -406,7 +406,7 @@ ad
 ps
 pd
 Device Entry 18
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nelnai_6
 USER
 NELNAI_6
@@ -430,7 +430,7 @@ ad
 ps
 pd
 Device Entry 19
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nelnai_m_6
 USER
 NELNAI_M_6
@@ -454,7 +454,7 @@ ad
 ps
 pd
 Device Entry 20
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nesvti_6
 USER
 NESVTI_6
@@ -478,7 +478,7 @@ ad
 ps
 pd
 Device Entry 21
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nesvti_m_6
 USER
 NESVTI_M_6
@@ -502,7 +502,7 @@ ad
 ps
 pd
 Device Entry 22
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pe_5
 USER
 PE_5
@@ -525,7 +525,7 @@ ad
 ps
 pd
 Device Entry 23
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pel_5
 USER
 PEL_5
@@ -548,7 +548,7 @@ ad
 ps
 pd
 Device Entry 24
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pei_5
 USER
 PEI_5
@@ -571,7 +571,7 @@ ad
 ps
 pd
 Device Entry 25
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pei_m_5
 USER
 PEI_M_5
@@ -594,7 +594,7 @@ ad
 ps
 pd
 Device Entry 26
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 peli_5
 USER
 PELI_5
@@ -617,7 +617,7 @@ ad
 ps
 pd
 Device Entry 27
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 peli_m_5
 USER
 PELI_M_5
@@ -640,7 +640,7 @@ ad
 ps
 pd
 Device Entry 28
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pesvt_5
 USER
 PESVT_5
@@ -663,7 +663,7 @@ ad
 ps
 pd
 Device Entry 29
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pesvti_5
 USER
 PESVTI_5
@@ -686,7 +686,7 @@ ad
 ps
 pd
 Device Entry 30
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pesvti_m_5
 USER
 PESVTI_M_5
@@ -709,7 +709,7 @@ ad
 ps
 pd
 Device Entry 31
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nmma_d
 MOS
 MN
@@ -732,7 +732,7 @@ ad
 ps
 pd
 Device Entry 32
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nmma_b
 MOS
 MN
@@ -755,7 +755,7 @@ ad
 ps
 pd
 Device Entry 33
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pmma_d
 MOS
 MP
@@ -778,7 +778,7 @@ ad
 ps
 pd
 Device Entry 34
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 pmma_b
 USER
 PMMA_BJT
@@ -802,7 +802,7 @@ ad
 ps
 pd
 Device Entry 35
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nma_d
 MOS
 MN
@@ -825,7 +825,7 @@ ad
 ps
 pd
 Device Entry 36
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nma_b
 MOS
 MN
@@ -848,7 +848,7 @@ ad
 ps
 pd
 Device Entry 37
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pma_d
 MOS
 MP
@@ -871,7 +871,7 @@ ad
 ps
 pd
 Device Entry 38
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 pma_b
 USER
 PMA_BJT
@@ -895,7 +895,7 @@ ad
 ps
 pd
 Device Entry 39
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pmb
 MOS
 MP
@@ -917,7 +917,7 @@ ad
 ps
 pd
 Device Entry 40
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nmmc_d
 MOS
 MN
@@ -939,7 +939,7 @@ ad
 ps
 pd
 Device Entry 41
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nmmd_d
 MOS
 MN
@@ -961,7 +961,7 @@ ad
 ps
 pd
 Device Entry 42
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nhhv_d
 MOS
 MN
@@ -983,7 +983,7 @@ ad
 ps
 pd
 Device Entry 43
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nhhvd_d
 MOS
 MN
@@ -1005,7 +1005,7 @@ ad
 ps
 pd
 Device Entry 44
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nmmc_b
 MOS
 MN
@@ -1028,7 +1028,7 @@ ad
 ps
 pd
 Device Entry 45
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nmmd_b
 MOS
 MN
@@ -1051,7 +1051,7 @@ ad
 ps
 pd
 Device Entry 46
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nhhv_b
 MOS
 MN
@@ -1074,7 +1074,7 @@ ad
 ps
 pd
 Device Entry 47
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nhhvd_b
 MOS
 MN
@@ -1097,7 +1097,7 @@ ad
 ps
 pd
 Device Entry 48
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pmmc_d
 MOS
 MP
@@ -1119,7 +1119,7 @@ ad
 ps
 pd
 Device Entry 49
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 pmmc_b
 USER
 PMMC_BJT
@@ -1143,7 +1143,7 @@ ad
 ps
 pd
 Device Entry 50
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 phhv_d
 MOS
 MP
@@ -1165,7 +1165,7 @@ ad
 ps
 pd
 Device Entry 51
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 phhv_b
 USER
 PHHV_BJT
@@ -1189,7 +1189,7 @@ ad
 ps
 pd
 Device Entry 52
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nmc_d
 MOS
 LDDN
@@ -1212,7 +1212,7 @@ ad
 ps
 pd
 Device Entry 53
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nhv_d
 MOS
 LDDN
@@ -1235,7 +1235,7 @@ ad
 ps
 pd
 Device Entry 54
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 nhvd_d
 MOS
 LDDN
@@ -1258,7 +1258,7 @@ ad
 ps
 pd
 Device Entry 55
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nmc_b
 MOS
 LDDN
@@ -1282,7 +1282,7 @@ ad
 ps
 pd
 Device Entry 56
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nhv_b
 MOS
 LDDN
@@ -1306,7 +1306,7 @@ ad
 ps
 pd
 Device Entry 57
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nhvd_b
 MOS
 LDDN
@@ -1330,7 +1330,7 @@ ad
 ps
 pd
 Device Entry 58
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pmc_d
 MOS
 LDDP
@@ -1353,7 +1353,7 @@ ad
 ps
 pd
 Device Entry 59
-0 0 23 Thu May 13 11:45:17 2021
+0 0 23 Thu May 13 15:38:35 2021
 pmc_b
 USER
 PMC_BJT
@@ -1378,7 +1378,7 @@ ad
 ps
 pd
 Device Entry 60
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 phv_d
 MOS
 LDDP
@@ -1401,7 +1401,7 @@ ad
 ps
 pd
 Device Entry 61
-0 0 23 Thu May 13 11:45:17 2021
+0 0 23 Thu May 13 15:38:35 2021
 phv_b
 USER
 PHV_BJT
@@ -1426,7 +1426,7 @@ ad
 ps
 pd
 Device Entry 62
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nedi2_d
 MOS
 LDDN
@@ -1448,7 +1448,7 @@ adio
 pdio
 extlay
 Device Entry 63
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nedia2_d
 MOS
 LDDN
@@ -1470,7 +1470,7 @@ adio
 pdio
 extlay
 Device Entry 64
-0 0 24 Thu May 13 11:45:17 2021
+0 0 24 Thu May 13 15:38:35 2021
 ped12_d
 MOS
 LDDP
@@ -1496,7 +1496,7 @@ adio
 pdio
 extlay
 Device Entry 65
-0 0 24 Thu May 13 11:45:17 2021
+0 0 24 Thu May 13 15:38:35 2021
 ped22_d
 MOS
 LDDP
@@ -1522,7 +1522,7 @@ adio
 pdio
 extlay
 Device Entry 66
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nedi2_b
 MOS
 LDDN
@@ -1544,7 +1544,7 @@ adio
 pdio
 extlay
 Device Entry 67
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nedia2_b
 MOS
 LDDN
@@ -1566,7 +1566,7 @@ adio
 pdio
 extlay
 Device Entry 68
-0 0 24 Thu May 13 11:45:17 2021
+0 0 24 Thu May 13 15:38:35 2021
 ped12_b
 MOS
 LDDP
@@ -1592,7 +1592,7 @@ adio
 pdio
 extlay
 Device Entry 69
-0 0 24 Thu May 13 11:45:17 2021
+0 0 24 Thu May 13 15:38:35 2021
 ped22_b
 MOS
 LDDP
@@ -1618,7 +1618,7 @@ adio
 pdio
 extlay
 Device Entry 70
-0 0 12 Thu May 13 11:45:17 2021
+0 0 12 Thu May 13 15:38:35 2021
 qpva
 BIPOLAR
 Q
@@ -1632,7 +1632,7 @@ E pdiff 0
 0
 0
 Device Entry 71
-0 0 12 Thu May 13 11:45:17 2021
+0 0 12 Thu May 13 15:38:35 2021
 qpvb
 BIPOLAR
 Q
@@ -1646,7 +1646,7 @@ E pdiff 0
 0
 0
 Device Entry 72
-0 0 12 Thu May 13 11:45:17 2021
+0 0 12 Thu May 13 15:38:35 2021
 qpvc
 BIPOLAR
 Q
@@ -1660,7 +1660,7 @@ E pdiff 0
 0
 0
 Device Entry 73
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 qpvascr
 BIPOLAR
 Q
@@ -1675,7 +1675,7 @@ E pwitrm 0
 1
 LE
 Device Entry 74
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 qpvhscr
 BIPOLAR
 Q
@@ -1690,7 +1690,7 @@ E pdf 0
 1
 LE
 Device Entry 75
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 qpvhbscr
 BIPOLAR
 Q
@@ -1705,7 +1705,7 @@ E pwitrm 0
 1
 LE
 Device Entry 76
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 qnva
 BIPOLAR
 Q
@@ -1721,7 +1721,7 @@ S bulk 0
 1
 LE
 Device Entry 77
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 qnvb
 BIPOLAR
 Q
@@ -1737,7 +1737,7 @@ S bulk 0
 1
 LE
 Device Entry 78
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 qnvba
 BIPOLAR
 Q
@@ -1753,7 +1753,7 @@ S bulk 0
 1
 LE
 Device Entry 79
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 qnvc
 BIPOLAR
 Q
@@ -1769,7 +1769,7 @@ S bulk 0
 1
 LE
 Device Entry 80
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 qnvca
 BIPOLAR
 Q
@@ -1785,7 +1785,7 @@ S bulk 0
 1
 LE
 Device Entry 81
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 qnvz
 BIPOLAR
 Q
@@ -1801,7 +1801,7 @@ S bulk 0
 1
 LE
 Device Entry 82
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nnm
 MOS
 MN
@@ -1823,7 +1823,7 @@ ad
 ps
 pd
 Device Entry 83
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nem
 MOS
 MN
@@ -1845,7 +1845,7 @@ ad
 ps
 pd
 Device Entry 84
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 ndm
 MOS
 MN
@@ -1867,7 +1867,7 @@ ad
 ps
 pd
 Device Entry 85
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nemlna
 MOS
 MN
@@ -1889,7 +1889,7 @@ ad
 ps
 pd
 Device Entry 86
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pem
 MOS
 MP
@@ -1911,7 +1911,7 @@ ad
 ps
 pd
 Device Entry 87
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pemln
 MOS
 MP
@@ -1933,7 +1933,7 @@ ad
 ps
 pd
 Device Entry 88
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pemlna
 MOS
 MP
@@ -1955,7 +1955,7 @@ ad
 ps
 pd
 Device Entry 89
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nemi
 MOS
 MN
@@ -1977,7 +1977,7 @@ ad
 ps
 pd
 Device Entry 90
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 ndmi
 MOS
 MN
@@ -1999,7 +1999,7 @@ ad
 ps
 pd
 Device Entry 91
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 nemlnai
 MOS
 MN
@@ -2021,7 +2021,7 @@ ad
 ps
 pd
 Device Entry 92
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 ndsmiP
 MOS
 MN
@@ -2045,7 +2045,7 @@ pd
 prg_state
 prog
 Device Entry 93
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 ndsmiE
 MOS
 MN
@@ -2069,7 +2069,7 @@ pd
 prg_state
 prog
 Device Entry 94
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pemi
 MOS
 MP
@@ -2091,7 +2091,7 @@ ad
 ps
 pd
 Device Entry 95
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pemlni
 MOS
 MP
@@ -2113,7 +2113,7 @@ ad
 ps
 pd
 Device Entry 96
-0 0 20 Thu May 13 11:45:17 2021
+0 0 20 Thu May 13 15:38:35 2021
 pemlnai
 MOS
 MP
@@ -2135,7 +2135,7 @@ ad
 ps
 pd
 Device Entry 97
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nemi_6
 USER
 NE3I_6
@@ -2159,7 +2159,7 @@ ad
 ps
 pd
 Device Entry 98
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nemi_m_6
 USER
 NE3I_M_6
@@ -2183,7 +2183,7 @@ ad
 ps
 pd
 Device Entry 99
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 ndmi_6
 USER
 ND3I_6
@@ -2207,7 +2207,7 @@ ad
 ps
 pd
 Device Entry 100
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 ndmi_m_6
 USER
 ND3I_M_6
@@ -2231,7 +2231,7 @@ ad
 ps
 pd
 Device Entry 101
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nemlnai_6
 USER
 NE3LNAI_6
@@ -2255,7 +2255,7 @@ ad
 ps
 pd
 Device Entry 102
-0 0 22 Thu May 13 11:45:17 2021
+0 0 22 Thu May 13 15:38:35 2021
 nemlnai_m_6
 USER
 NE3LNAI_M_6
@@ -2279,7 +2279,7 @@ ad
 ps
 pd
 Device Entry 103
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pem_5
 USER
 PE3_5
@@ -2302,7 +2302,7 @@ ad
 ps
 pd
 Device Entry 104
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemln_5
 USER
 PE3LN_5
@@ -2325,7 +2325,7 @@ ad
 ps
 pd
 Device Entry 105
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemi_5
 USER
 PE3I_5
@@ -2348,7 +2348,7 @@ ad
 ps
 pd
 Device Entry 106
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemi_m_5
 USER
 PE3I_M_5
@@ -2371,7 +2371,7 @@ ad
 ps
 pd
 Device Entry 107
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemlni_5
 USER
 PE3LNI_5
@@ -2394,7 +2394,7 @@ ad
 ps
 pd
 Device Entry 108
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemlni_m_5
 USER
 PE3LNI_M_5
@@ -2417,7 +2417,7 @@ ad
 ps
 pd
 Device Entry 109
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemlna_5
 USER
 PE3LNA_5
@@ -2440,7 +2440,7 @@ ad
 ps
 pd
 Device Entry 110
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemlnai_5
 USER
 PE3LNAI_5
@@ -2463,7 +2463,7 @@ ad
 ps
 pd
 Device Entry 111
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 pemlnai_m_5
 USER
 PE3LNAI_M_5
@@ -2486,7 +2486,7 @@ ad
 ps
 pd
 Device Entry 112
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 mosvc
 USER
 MOSVC
@@ -2503,7 +2503,7 @@ ndif
 w
 l
 Device Entry 113
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 mosvci
 USER
 MOSVCI
@@ -2521,7 +2521,7 @@ pdif
 w
 l
 Device Entry 114
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 mosvci_m
 USER
 MOSVCI_M
@@ -2539,7 +2539,7 @@ pdif
 w
 l
 Device Entry 115
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 mosvcm
 USER
 MOSVC3
@@ -2556,7 +2556,7 @@ ndif
 w
 l
 Device Entry 116
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 mosvcim
 USER
 MOSVC3I
@@ -2574,7 +2574,7 @@ pdif
 w
 l
 Device Entry 117
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 mosvcim_m
 USER
 MOSVC3I_M
@@ -2592,7 +2592,7 @@ pdif
 w
 l
 Device Entry 118
-0 0 12 Thu May 13 11:45:17 2021
+0 0 12 Thu May 13 15:38:35 2021
 qpvma
 BIPOLAR
 Q
@@ -2606,7 +2606,7 @@ E pdiff 0
 0
 0
 Device Entry 119
-0 0 12 Thu May 13 11:45:17 2021
+0 0 12 Thu May 13 15:38:35 2021
 qpvmb
 BIPOLAR
 Q
@@ -2620,7 +2620,7 @@ E pdiff 0
 0
 0
 Device Entry 120
-0 0 12 Thu May 13 11:45:17 2021
+0 0 12 Thu May 13 15:38:35 2021
 qpvmc
 BIPOLAR
 Q
@@ -2634,7 +2634,7 @@ E pdiff 0
 0
 0
 Device Entry 121
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnw
 RESISTOR
 R
@@ -2650,7 +2650,7 @@ SUB bulk 0
 w
 l
 Device Entry 122
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnw_scr
 RESISTOR
 R
@@ -2666,7 +2666,7 @@ SUB bulk 0
 w
 l
 Device Entry 123
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdnwmv
 RESISTOR
 R
@@ -2682,7 +2682,7 @@ SUB bulk 0
 w
 l
 Device Entry 124
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdn
 RESISTOR
 R
@@ -2698,7 +2698,7 @@ SUB bulk 0
 w
 l
 Device Entry 125
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdn_g
 RESISTOR
 R
@@ -2715,7 +2715,7 @@ res_corr
 w
 l
 Device Entry 126
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdni
 RESISTOR
 R
@@ -2731,7 +2731,7 @@ SUB pwitrm 0
 w
 l
 Device Entry 127
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdn_gi
 RESISTOR
 R
@@ -2748,7 +2748,7 @@ res_corr
 w
 l
 Device Entry 128
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdn_esdg
 RESISTOR
 R
@@ -2765,7 +2765,7 @@ res_corr
 w
 l
 Device Entry 129
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdp
 RESISTOR
 R
@@ -2781,7 +2781,7 @@ SUB nwtrm 0
 w
 l
 Device Entry 130
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdp_g
 RESISTOR
 R
@@ -2798,7 +2798,7 @@ res_corr
 w
 l
 Device Entry 131
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdpi
 RESISTOR
 R
@@ -2814,7 +2814,7 @@ SUB dnwtrm 0
 w
 l
 Device Entry 132
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdp_gi
 RESISTOR
 R
@@ -2831,7 +2831,7 @@ res_corr
 w
 l
 Device Entry 133
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdp_io_g
 RESISTOR
 R
@@ -2848,7 +2848,7 @@ res_corr
 w
 l
 Device Entry 134
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdp_esdg
 RESISTOR
 R
@@ -2865,7 +2865,7 @@ res_corr
 w
 l
 Device Entry 135
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tdf_60
 USER
 tag_60v
@@ -2877,7 +2877,7 @@ N1 df_vlbl 0
 0
 0
 Device Entry 136
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tdf_25
 USER
 tag_25v
@@ -2889,7 +2889,7 @@ N1 df_vlbl 0
 0
 0
 Device Entry 137
-0 0 12 Thu May 13 11:45:17 2021
+0 0 12 Thu May 13 15:38:35 2021
 s_res
 RESISTOR
 R
@@ -2903,7 +2903,7 @@ NEG bulk 1
 1
 R
 Device Entry 138
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dn
 DIODE
 D
@@ -2920,7 +2920,7 @@ A
 P
 PERIMETER
 Device Entry 139
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dni1
 DIODE
 D
@@ -2937,7 +2937,7 @@ A
 P
 PERIMETER
 Device Entry 140
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dni2
 DIODE
 D
@@ -2954,7 +2954,7 @@ A
 P
 PERIMETER
 Device Entry 141
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dn
 DIODE
 D
@@ -2971,7 +2971,7 @@ A
 P
 PERIMETER
 Device Entry 142
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dni1
 DIODE
 D
@@ -2988,7 +2988,7 @@ A
 P
 PERIMETER
 Device Entry 143
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dni2
 DIODE
 D
@@ -3005,7 +3005,7 @@ A
 P
 PERIMETER
 Device Entry 144
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dndpl
 DIODE
 D
@@ -3022,7 +3022,7 @@ A
 P
 PERIMETER
 Device Entry 145
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dndpli
 DIODE
 D
@@ -3039,7 +3039,7 @@ A
 P
 PERIMETER
 Device Entry 146
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dbn
 DIODE
 D
@@ -3056,7 +3056,7 @@ A
 P
 PERIMETER
 Device Entry 147
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dp
 DIODE
 D
@@ -3073,7 +3073,7 @@ A
 P
 PERIMETER
 Device Entry 148
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dpi1
 DIODE
 D
@@ -3090,7 +3090,7 @@ A
 P
 PERIMETER
 Device Entry 149
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dpi2
 DIODE
 D
@@ -3107,7 +3107,7 @@ A
 P
 PERIMETER
 Device Entry 150
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dp
 DIODE
 D
@@ -3124,7 +3124,7 @@ A
 P
 PERIMETER
 Device Entry 151
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpi1
 DIODE
 D
@@ -3141,7 +3141,7 @@ A
 P
 PERIMETER
 Device Entry 152
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpi2
 DIODE
 D
@@ -3158,7 +3158,7 @@ A
 P
 PERIMETER
 Device Entry 153
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpndf
 DIODE
 D
@@ -3175,7 +3175,7 @@ A
 P
 PERIMETER
 Device Entry 154
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 pdpndfh
 DIODE
 D
@@ -3192,7 +3192,7 @@ A
 P
 PERIMETER
 Device Entry 155
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnw
 DIODE
 D
@@ -3209,7 +3209,7 @@ A
 P
 PERIMETER
 Device Entry 156
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnw
 DIODE
 D
@@ -3226,7 +3226,7 @@ A
 P
 PERIMETER
 Device Entry 157
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 d_dhnw
 DIODE
 D
@@ -3242,7 +3242,7 @@ A
 P
 PERIMETER
 Device Entry 158
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 p_dhnw
 DIODE
 D
@@ -3258,7 +3258,7 @@ A
 P
 PERIMETER
 Device Entry 159
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 d_dhpw
 DIODE
 D
@@ -3274,7 +3274,7 @@ A
 P
 PERIMETER
 Device Entry 160
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 p_dhpw
 DIODE
 D
@@ -3290,7 +3290,7 @@ A
 P
 PERIMETER
 Device Entry 161
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_ddnw
 DIODE
 D
@@ -3307,7 +3307,7 @@ A
 P
 PERIMETER
 Device Entry 162
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_ddnw
 DIODE
 D
@@ -3324,7 +3324,7 @@ A
 P
 PERIMETER
 Device Entry 163
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_ddnwmv
 DIODE
 D
@@ -3341,7 +3341,7 @@ A
 P
 PERIMETER
 Device Entry 164
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_ddnwmv
 DIODE
 D
@@ -3358,7 +3358,7 @@ A
 P
 PERIMETER
 Device Entry 165
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dphoa
 DIODE
 D
@@ -3376,7 +3376,7 @@ p
 perimeter
 wlength
 Device Entry 166
-0 0 17 Thu May 13 11:45:17 2021
+0 0 17 Thu May 13 15:38:35 2021
 dphob
 DIODE
 D
@@ -3395,7 +3395,7 @@ p
 perimeter
 wlength
 Device Entry 167
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 dphoc
 USER
 DPHOC
@@ -3418,7 +3418,7 @@ uva
 uvp
 wlength
 Device Entry 168
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 dphocfp
 USER
 DPHOCFP
@@ -3441,7 +3441,7 @@ uva
 uvp
 wlength
 Device Entry 169
-0 0 21 Thu May 13 11:45:17 2021
+0 0 21 Thu May 13 15:38:35 2021
 dphoc0
 USER
 DPHOC0
@@ -3464,7 +3464,7 @@ uva
 uvp
 wlength
 Device Entry 170
-0 0 24 Thu May 13 11:45:17 2021
+0 0 24 Thu May 13 15:38:35 2021
 dphod
 USER
 DPHOD
@@ -3490,7 +3490,7 @@ a1a
 a1p
 wlength
 Device Entry 171
-0 0 24 Thu May 13 11:45:17 2021
+0 0 24 Thu May 13 15:38:35 2021
 dphodfp
 USER
 DPHODFP
@@ -3516,7 +3516,7 @@ a1a
 a1p
 wlength
 Device Entry 172
-0 0 24 Thu May 13 11:45:17 2021
+0 0 24 Thu May 13 15:38:35 2021
 dphod0
 USER
 DPHOD0
@@ -3542,7 +3542,7 @@ a1a
 a1p
 wlength
 Device Entry 173
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dapda
 DIODE
 D
@@ -3560,7 +3560,7 @@ p
 perimeter
 wlength
 Device Entry 174
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dapda0
 DIODE
 D
@@ -3578,7 +3578,7 @@ p
 perimeter
 wlength
 Device Entry 175
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dspada
 DIODE
 D
@@ -3596,7 +3596,7 @@ p
 perimeter
 wlength
 Device Entry 176
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dspada0
 DIODE
 D
@@ -3614,7 +3614,7 @@ p
 perimeter
 wlength
 Device Entry 177
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dapb
 USER
 DAPB
@@ -3632,7 +3632,7 @@ area
 perimeter
 wlength
 Device Entry 178
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dapb0
 USER
 DAPB0
@@ -3650,7 +3650,7 @@ area
 perimeter
 wlength
 Device Entry 179
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dspb
 USER
 DSPB
@@ -3668,7 +3668,7 @@ area
 perimeter
 wlength
 Device Entry 180
-0 0 16 Thu May 13 11:45:17 2021
+0 0 16 Thu May 13 15:38:35 2021
 dspb0
 USER
 DSPB0
@@ -3686,7 +3686,7 @@ area
 perimeter
 wlength
 Device Entry 181
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 d_dipw
 DIODE
 D
@@ -3702,7 +3702,7 @@ A
 P
 PERIMETER
 Device Entry 182
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 p_dipw
 DIODE
 D
@@ -3718,7 +3718,7 @@ A
 P
 PERIMETER
 Device Entry 183
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 d_dipwmv
 DIODE
 D
@@ -3734,7 +3734,7 @@ A
 P
 PERIMETER
 Device Entry 184
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 p_dipwmv
 DIODE
 D
@@ -3750,7 +3750,7 @@ A
 P
 PERIMETER
 Device Entry 185
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 pddpldnw
 DIODE
 D
@@ -3766,7 +3766,7 @@ A
 P
 PERIMETER
 Device Entry 186
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 d_dndf
 DIODE
 D
@@ -3782,7 +3782,7 @@ A
 P
 PERIMETER
 Device Entry 187
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 p_dndf
 DIODE
 D
@@ -3798,7 +3798,7 @@ A
 P
 PERIMETER
 Device Entry 188
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 d_dpdwhn
 DIODE
 D
@@ -3814,7 +3814,7 @@ A
 P
 PERIMETER
 Device Entry 189
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 p_dpdwhn
 DIODE
 D
@@ -3830,7 +3830,7 @@ A
 P
 PERIMETER
 Device Entry 190
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dwhn
 DIODE
 D
@@ -3847,7 +3847,7 @@ A
 P
 PERIMETER
 Device Entry 191
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dwhn
 DIODE
 D
@@ -3864,7 +3864,7 @@ A
 P
 PERIMETER
 Device Entry 192
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 dpdd_scr
 DIODE
 D
@@ -3880,7 +3880,7 @@ A
 P
 PERIMETER
 Device Entry 193
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 pdpdddnw
 DIODE
 D
@@ -3896,7 +3896,7 @@ A
 P
 PERIMETER
 Device Entry 194
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 dnpddscr
 DIODE
 D
@@ -3912,7 +3912,7 @@ A
 P
 PERIMETER
 Device Entry 195
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 dpp20
 DIODE
 D
@@ -3928,7 +3928,7 @@ A
 P
 PERIMETER
 Device Entry 196
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 dnp20
 DIODE
 D
@@ -3944,7 +3944,7 @@ A
 P
 PERIMETER
 Device Entry 197
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 dpol
 DIODE
 D
@@ -3960,7 +3960,7 @@ A
 P
 PERIMETER
 Device Entry 198
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnhpw
 DIODE
 D
@@ -3977,7 +3977,7 @@ A
 P
 PERIMETER
 Device Entry 199
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnhpwi
 DIODE
 D
@@ -3994,7 +3994,7 @@ A
 P
 PERIMETER
 Device Entry 200
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnhpw
 DIODE
 D
@@ -4011,7 +4011,7 @@ A
 P
 PERIMETER
 Device Entry 201
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnhpwi
 DIODE
 D
@@ -4028,7 +4028,7 @@ A
 P
 PERIMETER
 Device Entry 202
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dphnw
 DIODE
 D
@@ -4045,7 +4045,7 @@ A
 P
 PERIMETER
 Device Entry 203
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dphnw1
 DIODE
 D
@@ -4062,7 +4062,7 @@ A
 P
 PERIMETER
 Device Entry 204
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dphnw2
 DIODE
 D
@@ -4079,7 +4079,7 @@ A
 P
 PERIMETER
 Device Entry 205
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dphnw
 DIODE
 D
@@ -4096,7 +4096,7 @@ A
 P
 PERIMETER
 Device Entry 206
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dphnw1
 DIODE
 D
@@ -4113,7 +4113,7 @@ A
 P
 PERIMETER
 Device Entry 207
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dphnw2
 DIODE
 D
@@ -4130,7 +4130,7 @@ A
 P
 PERIMETER
 Device Entry 208
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 ddpdnwmv
 DIODE
 D
@@ -4147,7 +4147,7 @@ A
 P
 PERIMETER
 Device Entry 209
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 pdpdnwmv
 DIODE
 D
@@ -4164,7 +4164,7 @@ A
 P
 PERIMETER
 Device Entry 210
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dpdnw
 DIODE
 D
@@ -4181,7 +4181,7 @@ A
 P
 PERIMETER
 Device Entry 211
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpdnw
 DIODE
 D
@@ -4198,7 +4198,7 @@ A
 P
 PERIMETER
 Device Entry 212
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dpwhn
 DIODE
 D
@@ -4215,7 +4215,7 @@ A
 P
 PERIMETER
 Device Entry 213
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpwhn
 DIODE
 D
@@ -4232,7 +4232,7 @@ A
 P
 PERIMETER
 Device Entry 214
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dsb
 DIODE
 D
@@ -4249,7 +4249,7 @@ A
 P
 PERIMETER
 Device Entry 215
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dsba
 DIODE
 D
@@ -4266,7 +4266,7 @@ A
 P
 PERIMETER
 Device Entry 216
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnwm
 RESISTOR
 R
@@ -4282,7 +4282,7 @@ SUB bulk 0
 w
 l
 Device Entry 217
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnwm_scr
 RESISTOR
 R
@@ -4298,7 +4298,7 @@ SUB bulk 0
 w
 l
 Device Entry 218
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdnm
 RESISTOR
 R
@@ -4314,7 +4314,7 @@ SUB bulk 0
 w
 l
 Device Entry 219
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdnm_g
 RESISTOR
 R
@@ -4331,7 +4331,7 @@ res_corr
 w
 l
 Device Entry 220
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdnmi
 RESISTOR
 R
@@ -4347,7 +4347,7 @@ SUB pwitrm 0
 w
 l
 Device Entry 221
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdnm_gi
 RESISTOR
 R
@@ -4364,7 +4364,7 @@ res_corr
 w
 l
 Device Entry 222
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdpm
 RESISTOR
 R
@@ -4380,7 +4380,7 @@ SUB nwtrm 0
 w
 l
 Device Entry 223
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdpm_g
 RESISTOR
 R
@@ -4397,7 +4397,7 @@ res_corr
 w
 l
 Device Entry 224
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rdpmi
 RESISTOR
 R
@@ -4413,7 +4413,7 @@ SUB dnwtrm 0
 w
 l
 Device Entry 225
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 rdpm_gi
 RESISTOR
 R
@@ -4430,7 +4430,7 @@ res_corr
 w
 l
 Device Entry 226
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnm
 DIODE
 D
@@ -4447,7 +4447,7 @@ A
 P
 PERIMETER
 Device Entry 227
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnmi1
 DIODE
 D
@@ -4464,7 +4464,7 @@ A
 P
 PERIMETER
 Device Entry 228
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnmi2
 DIODE
 D
@@ -4481,7 +4481,7 @@ A
 P
 PERIMETER
 Device Entry 229
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnm
 DIODE
 D
@@ -4498,7 +4498,7 @@ A
 P
 PERIMETER
 Device Entry 230
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnmi1
 DIODE
 D
@@ -4515,7 +4515,7 @@ A
 P
 PERIMETER
 Device Entry 231
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnmi2
 DIODE
 D
@@ -4532,7 +4532,7 @@ A
 P
 PERIMETER
 Device Entry 232
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnnm
 DIODE
 D
@@ -4549,7 +4549,7 @@ A
 P
 PERIMETER
 Device Entry 233
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnnm
 DIODE
 D
@@ -4566,7 +4566,7 @@ A
 P
 PERIMETER
 Device Entry 234
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 pdnmdpl
 DIODE
 D
@@ -4583,7 +4583,7 @@ A
 P
 PERIMETER
 Device Entry 235
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 pdnmdpli
 DIODE
 D
@@ -4600,7 +4600,7 @@ A
 P
 PERIMETER
 Device Entry 236
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dpm
 DIODE
 D
@@ -4617,7 +4617,7 @@ A
 P
 PERIMETER
 Device Entry 237
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dpmi1
 DIODE
 D
@@ -4634,7 +4634,7 @@ A
 P
 PERIMETER
 Device Entry 238
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dpmi2
 DIODE
 D
@@ -4651,7 +4651,7 @@ A
 P
 PERIMETER
 Device Entry 239
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpm
 DIODE
 D
@@ -4668,7 +4668,7 @@ A
 P
 PERIMETER
 Device Entry 240
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpmi1
 DIODE
 D
@@ -4685,7 +4685,7 @@ A
 P
 PERIMETER
 Device Entry 241
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dpmi2
 DIODE
 D
@@ -4702,7 +4702,7 @@ A
 P
 PERIMETER
 Device Entry 242
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 d_dnwm
 DIODE
 D
@@ -4719,7 +4719,7 @@ A
 P
 PERIMETER
 Device Entry 243
-0 0 15 Thu May 13 11:45:17 2021
+0 0 15 Thu May 13 15:38:35 2021
 p_dnwm
 DIODE
 D
@@ -4736,7 +4736,7 @@ A
 P
 PERIMETER
 Device Entry 244
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rpp1k1_2
 RESISTOR
 R
@@ -4751,7 +4751,7 @@ NEG p1trm 1
 w
 l
 Device Entry 245
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1_s
 RESISTOR
 R
@@ -4767,7 +4767,7 @@ SUB bulk 0
 w
 l
 Device Entry 246
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1_p
 RESISTOR
 R
@@ -4783,7 +4783,7 @@ SUB pwitrm 0
 w
 l
 Device Entry 247
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1fp
 RESISTOR
 R
@@ -4799,7 +4799,7 @@ SUB pdf 0
 w
 l
 Device Entry 248
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1_n
 RESISTOR
 R
@@ -4815,7 +4815,7 @@ SUB nwtrm 0
 w
 l
 Device Entry 249
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1_d
 RESISTOR
 R
@@ -4831,7 +4831,7 @@ SUB dnwtrm 0
 w
 l
 Device Entry 250
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1_h
 RESISTOR
 R
@@ -4847,7 +4847,7 @@ SUB hvnwtrm 0
 w
 l
 Device Entry 251
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1hn
 RESISTOR
 R
@@ -4863,7 +4863,7 @@ SUB hnw 0
 w
 l
 Device Entry 252
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1k1fn
 RESISTOR
 R
@@ -4879,7 +4879,7 @@ SUB ndftrm 0
 w
 l
 Device Entry 253
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rnp1_2
 RESISTOR
 R
@@ -4894,7 +4894,7 @@ NEG p1trm 1
 w
 l
 Device Entry 254
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1_s
 RESISTOR
 R
@@ -4910,7 +4910,7 @@ SUB bulk 0
 w
 l
 Device Entry 255
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1_p
 RESISTOR
 R
@@ -4926,7 +4926,7 @@ SUB pwitrm 0
 w
 l
 Device Entry 256
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1fp
 RESISTOR
 R
@@ -4942,7 +4942,7 @@ SUB pdf 0
 w
 l
 Device Entry 257
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1_n
 RESISTOR
 R
@@ -4958,7 +4958,7 @@ SUB nwtrm 0
 w
 l
 Device Entry 258
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1_d
 RESISTOR
 R
@@ -4974,7 +4974,7 @@ SUB dnwtrm 0
 w
 l
 Device Entry 259
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1_h
 RESISTOR
 R
@@ -4990,7 +4990,7 @@ SUB hvnwtrm 0
 w
 l
 Device Entry 260
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1hn
 RESISTOR
 R
@@ -5006,7 +5006,7 @@ SUB hnw 0
 w
 l
 Device Entry 261
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1fn
 RESISTOR
 R
@@ -5022,7 +5022,7 @@ SUB ndftrm 0
 w
 l
 Device Entry 262
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rpp1_2
 RESISTOR
 R
@@ -5037,7 +5037,7 @@ NEG p1trm 1
 w
 l
 Device Entry 263
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1_s
 RESISTOR
 R
@@ -5053,7 +5053,7 @@ SUB bulk 0
 w
 l
 Device Entry 264
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1_p
 RESISTOR
 R
@@ -5069,7 +5069,7 @@ SUB pwitrm 0
 w
 l
 Device Entry 265
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1fp
 RESISTOR
 R
@@ -5085,7 +5085,7 @@ SUB pdf 0
 w
 l
 Device Entry 266
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1_n
 RESISTOR
 R
@@ -5101,7 +5101,7 @@ SUB nwtrm 0
 w
 l
 Device Entry 267
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1_d
 RESISTOR
 R
@@ -5117,7 +5117,7 @@ SUB dnwtrm 0
 w
 l
 Device Entry 268
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1_h
 RESISTOR
 R
@@ -5133,7 +5133,7 @@ SUB hvnwtrm 0
 w
 l
 Device Entry 269
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1hn
 RESISTOR
 R
@@ -5149,7 +5149,7 @@ SUB hnw 0
 w
 l
 Device Entry 270
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1fn
 RESISTOR
 R
@@ -5165,7 +5165,7 @@ SUB ndftrm 0
 w
 l
 Device Entry 271
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rpp1s_2
 RESISTOR
 R
@@ -5180,7 +5180,7 @@ NEG p1trm 1
 w
 l
 Device Entry 272
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1s_s
 RESISTOR
 R
@@ -5196,7 +5196,7 @@ SUB bulk 0
 w
 l
 Device Entry 273
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1s_p
 RESISTOR
 R
@@ -5212,7 +5212,7 @@ SUB pwitrm 0
 w
 l
 Device Entry 274
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1sfp
 RESISTOR
 R
@@ -5228,7 +5228,7 @@ SUB pdf 0
 w
 l
 Device Entry 275
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1s_n
 RESISTOR
 R
@@ -5244,7 +5244,7 @@ SUB nwtrm 0
 w
 l
 Device Entry 276
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1s_d
 RESISTOR
 R
@@ -5260,7 +5260,7 @@ SUB dnwtrm 0
 w
 l
 Device Entry 277
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1s_h
 RESISTOR
 R
@@ -5276,7 +5276,7 @@ SUB hvnwtrm 0
 w
 l
 Device Entry 278
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1shn
 RESISTOR
 R
@@ -5292,7 +5292,7 @@ SUB hnw 0
 w
 l
 Device Entry 279
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rpp1sfn
 RESISTOR
 R
@@ -5308,7 +5308,7 @@ SUB ndftrm 0
 w
 l
 Device Entry 280
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rnp1h_2
 RESISTOR
 R
@@ -5323,7 +5323,7 @@ NEG p1trm 1
 w
 l
 Device Entry 281
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1h_s
 RESISTOR
 R
@@ -5339,7 +5339,7 @@ SUB bulk 0
 w
 l
 Device Entry 282
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1h_p
 RESISTOR
 R
@@ -5355,7 +5355,7 @@ SUB pwitrm 0
 w
 l
 Device Entry 283
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1hfp
 RESISTOR
 R
@@ -5371,7 +5371,7 @@ SUB pdf 0
 w
 l
 Device Entry 284
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1h_n
 RESISTOR
 R
@@ -5387,7 +5387,7 @@ SUB nwtrm 0
 w
 l
 Device Entry 285
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1h_d
 RESISTOR
 R
@@ -5403,7 +5403,7 @@ SUB dnwtrm 0
 w
 l
 Device Entry 286
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1h_h
 RESISTOR
 R
@@ -5419,7 +5419,7 @@ SUB hvnwtrm 0
 w
 l
 Device Entry 287
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1hhn
 RESISTOR
 R
@@ -5435,7 +5435,7 @@ SUB hnw 0
 w
 l
 Device Entry 288
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 rnp1hfn
 RESISTOR
 R
@@ -5451,7 +5451,7 @@ SUB ndftrm 0
 w
 l
 Device Entry 289
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 pfuse
 RESISTOR
 R
@@ -5466,7 +5466,7 @@ NEG p1trm 1
 w
 l
 Device Entry 290
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tp1_60
 USER
 tag_60v
@@ -5478,7 +5478,7 @@ N1 p1_vlbl 0
 0
 0
 Device Entry 291
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tp1_25
 USER
 tag_25v
@@ -5490,7 +5490,7 @@ N1 p1_vlbl 0
 0
 0
 Device Entry 292
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rm1
 RESISTOR
 R
@@ -5505,7 +5505,7 @@ NEG m1trm 1
 w
 l
 Device Entry 293
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rm2
 RESISTOR
 R
@@ -5520,7 +5520,7 @@ NEG m2trm 1
 w
 l
 Device Entry 294
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm1_60
 USER
 tag_60v
@@ -5532,7 +5532,7 @@ N1 m1_vlbl 0
 0
 0
 Device Entry 295
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm1_25
 USER
 tag_25v
@@ -5544,7 +5544,7 @@ N1 m1_vlbl 0
 0
 0
 Device Entry 296
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm2_60
 USER
 tag_60v
@@ -5556,7 +5556,7 @@ N1 m2_vlbl 0
 0
 0
 Device Entry 297
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm2_25
 USER
 tag_25v
@@ -5568,7 +5568,7 @@ N1 m2_vlbl 0
 0
 0
 Device Entry 298
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rm3
 RESISTOR
 R
@@ -5583,7 +5583,7 @@ NEG m3trm 1
 w
 l
 Device Entry 299
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm3_60
 USER
 tag_60v
@@ -5595,7 +5595,7 @@ N1 m3_vlbl 0
 0
 0
 Device Entry 300
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm3_25
 USER
 tag_25v
@@ -5607,7 +5607,7 @@ N1 m3_vlbl 0
 0
 0
 Device Entry 301
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rm4
 RESISTOR
 R
@@ -5622,7 +5622,7 @@ NEG m4trm 1
 w
 l
 Device Entry 302
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm4_60
 USER
 tag_60v
@@ -5634,7 +5634,7 @@ N1 m4_vlbl 0
 0
 0
 Device Entry 303
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tm4_25
 USER
 tag_25v
@@ -5646,7 +5646,7 @@ N1 m4_vlbl 0
 0
 0
 Device Entry 304
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rmtp
 RESISTOR
 R
@@ -5661,7 +5661,7 @@ NEG mttrm 1
 w
 l
 Device Entry 305
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tmt_60
 USER
 tag_60v
@@ -5673,7 +5673,7 @@ N1 mt_vlbl 0
 0
 0
 Device Entry 306
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tmt_25
 USER
 tag_25v
@@ -5685,7 +5685,7 @@ N1 mt_vlbl 0
 0
 0
 Device Entry 307
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 rmtpl
 RESISTOR
 R
@@ -5700,7 +5700,7 @@ NEG mltrm 1
 w
 l
 Device Entry 308
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tml_60
 USER
 tag_60v
@@ -5712,7 +5712,7 @@ N1 ml_vlbl 0
 0
 0
 Device Entry 309
-0 0 10 Thu May 13 11:45:17 2021
+0 0 10 Thu May 13 15:38:35 2021
 tml_25
 USER
 tag_25v
@@ -5724,7 +5724,7 @@ N1 ml_vlbl 0
 0
 0
 Device Entry 310
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csf2p
 CAPACITOR
 C
@@ -5739,7 +5739,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 311
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csf3
 CAPACITOR
 C
@@ -5754,7 +5754,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 312
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csf3p
 CAPACITOR
 C
@@ -5769,7 +5769,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 313
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csf3a
 CAPACITOR
 C
@@ -5784,7 +5784,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 314
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csf4
 CAPACITOR
 C
@@ -5799,7 +5799,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 315
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csf4a
 CAPACITOR
 C
@@ -5814,7 +5814,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 316
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csft5
 CAPACITOR
 C
@@ -5829,7 +5829,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 317
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_csft5a
 CAPACITOR
 C
@@ -5844,7 +5844,7 @@ NEG m1btrm 0
 AREA
 PERIMETER
 Device Entry 318
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_cswt3
 CAPACITOR
 C
@@ -5859,7 +5859,7 @@ NEG p1trm 0
 AREA
 PERIMETER
 Device Entry 319
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 d_cswt4
 CAPACITOR
 C
@@ -5874,7 +5874,7 @@ NEG p1trm 0
 AREA
 PERIMETER
 Device Entry 320
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cdmm
 CAPACITOR
 C
@@ -5889,7 +5889,7 @@ NEG m2trm 0
 AREA
 PERIMETER
 Device Entry 321
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cdmmh
 CAPACITOR
 C
@@ -5904,7 +5904,7 @@ NEG m2trm 0
 AREA
 PERIMETER
 Device Entry 322
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cmim
 CAPACITOR
 C
@@ -5919,7 +5919,7 @@ NEG m4trm 0
 AREA
 PERIMETER
 Device Entry 323
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cmimh
 CAPACITOR
 C
@@ -5934,7 +5934,7 @@ NEG m4trm 0
 AREA
 PERIMETER
 Device Entry 324
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 ctmm
 CAPACITOR
 C
@@ -5949,7 +5949,7 @@ NEG m2trm 0
 AREA
 PERIMETER
 Device Entry 325
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 ctmmh
 CAPACITOR
 C
@@ -5964,7 +5964,7 @@ NEG m2trm 0
 AREA
 PERIMETER
 Device Entry 326
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cmim23f
 CAPACITOR
 C
@@ -5979,7 +5979,7 @@ NEG m2trm 0
 AREA
 PERIMETER
 Device Entry 327
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cmimh23f
 CAPACITOR
 C
@@ -5994,7 +5994,7 @@ NEG m2trm 0
 AREA
 PERIMETER
 Device Entry 328
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cmim34f
 CAPACITOR
 C
@@ -6009,7 +6009,7 @@ NEG m3trm 0
 AREA
 PERIMETER
 Device Entry 329
-0 0 13 Thu May 13 11:45:17 2021
+0 0 13 Thu May 13 15:38:35 2021
 cmimh34f
 CAPACITOR
 C
@@ -6024,7 +6024,7 @@ NEG m3trm 0
 AREA
 PERIMETER
 Device Entry 330
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 cpod
 CAPACITOR
 C
@@ -6040,7 +6040,7 @@ SUB bulk 0
 AREA
 PERIMETER
 Device Entry 331
-0 0 14 Thu May 13 11:45:17 2021
+0 0 14 Thu May 13 15:38:35 2021
 cpodhv
 CAPACITOR
 C

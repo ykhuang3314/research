@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:38 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Thu May 13 11:56:59 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Mon May 17 10:36:42 2021
 
 
 Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/aveng /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.rsf -restart -cdslib /home/ykhuang/research/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Thu May 13 11:56:59 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Mon May 17 10:36:43 2021
 
 
 Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
@@ -9489,15 +9489,15 @@ Executing: processAntenna(((gate (gate poly)) (antenna poly met1 met2 met3 met4 
 running in speedup mode
 
 Finished running rules. Task processor time in main process:
-cpu: 16.99  elap: 18  pf: 0  in: 0  out: 4208  virt: 371M  phys: 1902M
+cpu: 16.83  elap: 17  pf: 0  in: 0  out: 4152  virt: 371M  phys: 1915M
 
 Started output post-processing ...
 
 Finished output post-processing
-cpu: 2.59  elap: 2  pf: 0  in: 0  out: 440  virt: 658M  phys: 2213M
+cpu: 2.63  elap: 3  pf: 0  in: 0  out: 400  virt: 658M  phys: 2216M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6584  virt: 663M  phys: 2226M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6584  virt: 663M  phys: 2229M
 
 
 *****  aveng terminated normally  *****
@@ -9513,7 +9513,7 @@ Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/29/2019 23:39 (sj-ramneek) $
 sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
 
-run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Thu May 13 11:57:22 2021
+run on s2424 from /pkg/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Mon May 17 10:37:05 2021
 
 
    Creating Error Database 'MultiChannel_ST_DRC'...
@@ -11503,7 +11503,7 @@ Total  errors:                                               0            0
 
    Writing Report into /home/ykhuang/research/AssuraDRC/MultiChannel_ST_DRC.err ...
 
-avrpt cpu sec:    0.58  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.57  elapsed:     1  virtual:    93M
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avrpt
 
@@ -11512,12 +11512,12 @@ Starting /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc /home
 Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
 
 Loading tech rule set file : /home/ykhuang/research/.pvsSetup/PVS/techRuleSets
-Loading assuraDRC_Rules Version "assuraDRC-210106" at "May 13 11:57:23 2021"
+Loading assuraDRC_Rules Version "assuraDRC-210106" at "May 17 10:37:06 2021"
 
 Finished /pkg/cadence/installs/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Thu May 13 11:57:23 2021
+Run ended: Mon May 17 10:37:06 2021
 
 *****  Assura terminated normally  *****
 

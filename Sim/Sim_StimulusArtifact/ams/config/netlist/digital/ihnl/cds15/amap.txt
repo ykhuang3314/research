@@ -1,0 +1,9 @@
+instMap,*LS_LowSide_V2_ST,*I2,*I2
+instMaster,*LS_LowSide_V2_ST,*I2,*Stimulator_IMP_ResistiveDivider_schematic
+instMap,*LS_LowSide_V2_ST,*I1,*I1
+instMaster,*LS_LowSide_V2_ST,*I1,*Stimulator_IMP_LS_HighSide_V3_ST_schematic
+netMap,*LS_LowSide_V2_ST,*gnd!,*cds_globals.\gnd! 
+netMap,*LS_LowSide_V2_ST,*vdd3!,*cds_globals.\vdd3! 
+netMap,*LS_LowSide_V2_ST,*vdde!,*cds_globals.\vdde! 
+netMap,*LS_LowSide_V2_ST,*vdd!,*cds_globals.\vdd! 
+cellMap,*LS_LowSide_V2_ST,*LS_LowSide_V2_ST,*Stimulator_IMP,*schematic

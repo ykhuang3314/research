@@ -1,0 +1,51 @@
+// Library - EMG_NMES_TestBench, Cell - Sim_StimulusArtifact, View -
+//schematic
+// LAST TIME SAVED: May 13 15:48:59 2021
+// NETLIST TIME: May 13 15:52:35 2021
+`timescale 1ns / 1ps 
+
+`worklib EMG_NMES_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="EMG_NMES_TestBench", dfII_cell="Sim_StimulusArtifact", dfII_view="schematic", worklib_name="EMG_NMES_TestBench", view_name="schematic", last_save_time="May 13 15:48:59 2021" *)
+
+module Sim_StimulusArtifact ();
+
+// Buses in the design
+
+wire  [2:0]  ChSel_HS;
+
+wire  [2:0]  ChSel_LS;
+
+wire  [7:0]  CtrlLS;
+
+wire  [7:0]  CtrlHS;
+
+wire  [2:0]  Gain_Sel;
+
+wire  [4:0]  Mag_ST;
+
+
+Decoder3_8 I35 ( .Dout(CtrlHS), .Bin(ChSel_HS), .Enable(Enable_ST));
+
+Decoder3_8 I33 ( .Dout(CtrlLS), .Bin(ChSel_LS), .Enable(Enable_ST));
+
+AFE_EMG I1 ( .Vddd(cds_globals.\vdd! ), .Vssd(vssd), .Ibias(net4), 
+    .Vdda(vdda), .Vssa(vssa), .Vsub(vsub), .Vout(Vout), 
+    .Gain_Sel(Gain_Sel[2:0]), .Vinn(cds_globals.\gnd! ), .Vinp(Vinp));
+
+SingleChannel_ST I0 ( .\gnd! (cds_globals.\gnd! ), .\vdd3! 
+    (cds_globals.\vdd3! ), .\vdde! (cds_globals.\vdde! ), 
+    .Iext(net025), .out1(E00), .out2(E10), .vddh(vddh), 
+    .CtrlHS_1(CtrlHS[0]), .CtrlHS_2(CtrlHS[1]), .CtrlLS_1(CtrlLS[0]), 
+    .CtrlLS_2(CtrlLS[1]), .Enable_ST(Enable_ST), .Mag0_ST(Mag_ST[0]), 
+    .Mag1_ST(Mag_ST[1]), .Mag2_ST(Mag_ST[2]), .Mag3_ST(Mag_ST[3]), 
+    .Mag4_ST(Mag_ST[4]));
+
+Digital_Stimulus_V2_ST #( .MAG(5'b11100), .InterPulseDelay(cds_globals.IPD) 
+    , .Ch_ANO(3'b000), .ANO_phase(cds_globals.Tano), .Ch_CAT(3'b001), .CAT_phase(cds_globals.Tcat) 
+    , .ST_period(cds_globals.Period) ) I34 ( .ChSel_HS(ChSel_HS), 
+    .ChSel_LS(ChSel_LS), .EN_ST(Enable_ST), .MAG_ST(Mag_ST));
+
+endmodule

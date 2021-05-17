@@ -1,0 +1,12 @@
+cellMap,*CurrentMirror_x10_LV,*CurrentMirror_x10_LV,*Stimulator_IMP,*schematic
+netMap,*CurrentMirror_x10_LV,*gnd!,*0
+netMap,*CurrentMirror_x10_LV,*vdd3!,*vdd3!
+netMap,*CurrentMirror_x10_LV,*vdde!,*vdde!
+netMap,*CurrentMirror_x10_LV,*vdd!,*vdd!
+instMap,*CurrentMirror_x10_LV,*M26,*M26
+instMaster,*CurrentMirror_x10_LV,*M26,*PRIMLIB_ne3_spectre,*ne3
+instMap,*CurrentMirror_x10_LV,*M13,*M13
+instMaster,*CurrentMirror_x10_LV,*M13,*PRIMLIB_ne3_spectre,*ne3
+portMap,*CurrentMirror_x10_LV,*Iin,*Iin
+portMap,*CurrentMirror_x10_LV,*Ix10,*Ix10
+portMap,*CurrentMirror_x10_LV,*gnd!,*0

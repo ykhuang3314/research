@@ -1,9 +1,1 @@
 MultiChannel_ST 1000
-offgrid_M3
-1 1 3 May 13 11:54:15 2021
-Rule File Pathname: /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/.config.rul
-Rule File Title:  " XH018 PVS DRC/LVS File v8.1.2 : MET4 / METMID / METTHK "
-"offgrid_MET3"
-e 1 2
-1109118 -1010472 1108411 -1009765
-1109825 -1009765 1109118 -1010472

@@ -13,7 +13,7 @@
 vuiLVSFormTable = '(
 	schematicSource  "DFII"
 	layoutSource  "DFII"
-	runName  "CurrentSource_All_ST_LVS"
+	runName  "MultiChannel_ST_LVS"
 	runDir  "./AssuraLVS"
 	machineLoc  "local"
 	viewRules  t
@@ -32,18 +32,18 @@ vuiLVSFormTable = '(
 	avCompareView  nil
 	additionalFunctionsButton  nil
 	schLibrary  "Stimulator_IMP"
-	schCell  "CurrentSource_All_ST"
+	schCell  "MultiChannel_ST"
 	schView  "schematic"
 	existingSchNetlist  nil
 	useVerilogTopCell  nil
 	layLibrary  "Stimulator_IMP"
-	layCell  "CurrentSource_All_ST"
+	layCell  "MultiChannel_ST"
 	layView  "layout"
 	layUseExistingNL  nil
-	extractButton  nil
-	compareButton  nil
+	extractButton  t
+	compareButton  t
 	bindButton  nil
-	rsfIncludeButton  nil
+	rsfIncludeButton  t
 )
 
 

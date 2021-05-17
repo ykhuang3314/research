@@ -1,5 +1,21 @@
-CADENCE IHNL04123
+CADENCE IHNL041220
 
-Stimulator_Model Stimulator_Single_CH schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds0
 EMG_Model AFE_EMG schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds1
 EMG_NMES_TestBench Sim_StimulusArtifact schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 1 cds2
+Stimulator_IMP Ext_Iref_ST schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds3
+GATES_HD nand2 schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds4
+GATES_HD invr schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds5
+D_CELLS_HD AND2HDX0 cmos_sch nil cmos_sch EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds6
+D_CELLS_M3V LSHVT18U3VX2 cmos_sch nil cmos_sch EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds7
+Stimulator_IMP CurrentMirror_x10_LV schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds8
+Stimulator_IMP CurrentMirror_ST schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds9
+Stimulator_IMP Idac_5bit_ST_V3 schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds10
+GATES_3V invrv3 schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds11
+D_CELLS_3V IN_3VX2 cmos_sch nil cmos_sch EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds12
+D_CELLS_M3V LSHVT18U3VX1 cmos_sch nil cmos_sch EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds13
+Stimulator_IMP CurrentSource_All_ST schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds14
+Stimulator_IMP ResistiveDivider schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds15
+Stimulator_IMP LS_HighSide_V3_ST schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds16
+Stimulator_IMP LS_LowSide_V2_ST schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds17
+Stimulator_IMP HalfBridge_ST schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds18
+Stimulator_IMP SingleChannel_ST schematic nil schematic EMG_NMES_TestBench Sim_StimulusArtifact config 0 cds19

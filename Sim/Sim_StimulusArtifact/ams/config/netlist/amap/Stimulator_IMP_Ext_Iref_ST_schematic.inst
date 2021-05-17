@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"Irefv" "(FUNCTION or(mappedRoot(\".2@index\") mappedRoot(\".Iref\")))v"
+"Irefv" ".Irefv"
+"Irefv" ".\\2 v"
+"Iextv" "(FUNCTION or(mappedRoot(\".1@index\") mappedRoot(\".Iext\")))v"
+"Iextv" ".Iextv"
+"Iextv" ".\\1 v"
+"vssv" "(FUNCTION or(mappedRoot(\".3@index\") mappedRoot(\".vss\")))v"
+"vssv" ".vssv"
+"vssv" ".\\3 v"
+"M0n M1n M14n M2n M3n" "PRIMLIB_ne3_spectre"
+"R0n" "PRIMLIB_rpp1k1_spectre"

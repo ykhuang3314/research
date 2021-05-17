@@ -1,0 +1,43 @@
+    C5 (vddh Vmid) csft5a area=6.3936e-11 perimeter=33.72u m=15 par1=(15)
+    C1 (Vmid 0) csft5a area=6.3936e-11 perimeter=33.72u m=45 par1=(45)
+    M17 (Iout_LV Vmid 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M15 (Vmid vdd3! 0 0) nedia_bjt w=10u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    M14 (Iout2 Iout2 VG1 0) nedia_bjt w=40u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M8 (Iout1 Iout1 VB 0) nedia_bjt w=80u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    M16 (Bias2 en_3v Iout_LV 0) nedia_bjt w=60u l=1.25u m=(1)*(5) \
+        par1=((1)*(5)) extlay=0 xf_subext=0
+    M5 (VG1 VB VD_M4 0) nedia_bjt w=80u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    M0 (Ist VB VD_M3 0) nedia_bjt w=80u l=1.25u m=(10)*(1) par1=((10)*(1)) \
+        extlay=0 xf_subext=0
+    M7 (VB Iout1 net16 0) nedia_bjt w=35.0u l=1.25u m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M6 (net16 net16 0 0) nedia_bjt w=80u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    M4 (VD_M4 VG1 0 0) nedia_bjt w=80u l=1.25u m=(1)*(1) par1=((1)*(1)) \
+        extlay=0 xf_subext=0
+    M3 (VD_M3 VG1 0 0) nedia_bjt w=80u l=1.25u m=(10)*(1) par1=((10)*(1)) \
+        extlay=0 xf_subext=0
+    I17 LSHVT18U3VX2
+    M11 (VD_M11 Bias1 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M1 (VD_M1 Bias1 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M2 (Bias1 Bias1 vddh 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M12 (Iout2 Bias2 VD_M11 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M10 (Iout1 Bias2 VD_M1 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    M9 (Bias2 Bias2 Bias1 0) ped_bjt w=30u l=940.0n m=(1)*(1) \
+        par1=((1)*(1)) extlay=0 xf_subext=0
+    R3 (net030 0) rpp1k1 l=111.22u w=2u m=1 par1=(1)
+    R2 (vdd3! 0) rpp1k1 l=369.98u w=2u m=1 par1=(1)
+    R0 (en_3v net030) rpp1k1 l=111.22u w=2u m=1 par1=(1)
+    I0 CurrentMirror_x10_LV
+ends CurrentMirror_ST
+// End of subcircuit definition.

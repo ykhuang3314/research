@@ -1,7 +1,7 @@
 ********************************************************************************
 *** PVS HERC SUMMARY
 ***
-Execute on Date/Time    : Thu May 13 11:45:15 2021
+Execute on Date/Time    : Thu May 13 15:38:32 2021
 PVS HERC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/ykhuang/research/PvsLVS/MultiChannel_ST/.config.rul
 Rule Deck Title         : " XH018 PVS DRC/LVS File v8.1.2 : MET4 / METMID / METTHK "
@@ -30,7 +30,7 @@ ERC Results Database    :
 ---
 LAYER met1_dg .................... Total Original Geometry:     2880 (   19259)
 LAYER met2_dg .................... Total Original Geometry:     1867 (   10924)
-LAYER met3_dg .................... Total Original Geometry:      941 (   97218)
+LAYER met3_dg .................... Total Original Geometry:      936 (   97138)
 LAYER met4_dg .................... Total Original Geometry:      612 (  144248)
 LAYER mettp_dg ................... Total Original Geometry:      704 (   94668)
 LAYER mettpl_dg .................. Total Original Geometry:        0 (       0)
@@ -196,6 +196,6 @@ Acute Angle on layer met1_dg at location (123.180,49.280) in cell nedia_bjt_CDNS
 Total CPU Time                    : 3(s)
 Total Real Time                   : 3(s)
 Peak Memory Used                  : 151(M)
-Total Original Geometry           : 73628 (1921928)
+Total Original Geometry           : 73623 (1921848)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)

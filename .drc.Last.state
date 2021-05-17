@@ -19,6 +19,13 @@ vuiDRCFormTable = '(
 	viewRules  t
 	technologyField  "XH018_1143"
 	runsetField  "default"
+	rules  "/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/drc.rul"
+	switches  ""
+	rsfInclude  ""
+	varTag  "None"
+	varVal  ""
+	varDefVal  ""
+	varDesc  ""
 	avView  nil
 	additionalFunctionsButton  nil
 	limitDRCswitcher  nil
@@ -28,13 +35,6 @@ vuiDRCFormTable = '(
 	saveExtracted  nil
 	extractedView  "drc_extracted"
 	areaButton  "Full"
-	rules  "/pkg/xfab/XKIT/xh018/cadence/v8_1/assura/v8_1_1/Assura/XH018_1143/drc.rul"
-	switches  ""
-	rsfInclude  ""
-	varTag  "None"
-	varVal  ""
-	varDefVal  ""
-	varDesc  ""
 	rulesButton  t
 	rsfIncludeButton  nil
 )

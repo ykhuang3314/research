@@ -1,0 +1,43 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'MultiChannel_ST layout Stimulator_IMP':
+  info: Assign pin label "E0" at (1097.1970, -817.6720) to layer `met3trm'.
+  info: Assign pin label "E7" at (1887.4350, -1573.9970) to layer `met3trm'.
+  info: Assign pin label "E1" at (1271.2350, -817.7470) to layer `met3trm'.
+  info: Assign pin label "E6" at (1887.4570, -1400.0920) to layer `met3trm'.
+  info: Assign pin label "E2" at (1445.1150, -817.8920) to layer `met3trm'.
+  info: Assign pin label "E5" at (1887.4100, -1225.7550) to layer `met3trm'.
+  info: Assign pin label "vddh" at (1497.1370, -718.4970) to layer `met3trm'.
+  info: Assign pin label "E3" at (1619.0220, -817.9270) to layer `met3trm'.
+  info: Assign pin label "E4" at (1887.3570, -1051.9950) to layer `met3trm'.
+  info: Assign pin label "vdd!" at (1294.3170, -1496.4450) to layer `met2trm'.
+  info: Assign pin label "Enable" at (1307.5250, -1472.9350) to layer `met2trm'.
+  info: Assign pin label "vdd3!" at (1638.9200, -1692.2400) to layer `met2trm'.
+  info: Assign pin label "vdde!" at (1667.0170, -1665.0500) to layer `met2trm'.
+  info: Assign pin label "Iext" at (1083.4320, -1335.1750) to layer `met1trm'.
+  info: Assign pin label "Mag4" at (1281.0670, -1492.4520) to layer `met1trm'.
+  info: Assign pin label "Mag3" at (1285.6120, -1492.4300) to layer `met1trm'.
+  info: Assign pin label "Mag2" at (1290.0150, -1492.4400) to layer `met1trm'.
+  info: Assign pin label "Mag1" at (1294.4970, -1492.4120) to layer `met1trm'.
+  info: Assign pin label "Mag0" at (1298.9970, -1492.4620) to layer `met1trm'.
+  info: Assign pin label "gnd!" at (1594.0920, -1669.4820) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS7" at (1679.1770, -1695.3650) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS0" at (1109.3970, -1025.5820) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS7" at (1679.2470, -1585.5420) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS6" at (1679.2420, -1521.4620) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS0" at (1219.2070, -1025.7950) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS1" at (1283.2470, -1025.7650) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS6" at (1679.2820, -1411.6600) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS5" at (1679.2170, -1347.6020) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS1" at (1393.0820, -1025.4970) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS2" at (1457.1450, -1025.6250) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS5" at (1679.3370, -1237.7750) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS4" at (1679.2620, -1173.7370) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS2" at (1566.9720, -1025.6800) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS3" at (1631.0150, -1025.6870) to layer `met1trm'.
+  info: Assign pin label "Ctrl_HS4" at (1679.3350, -1063.9120) to layer `met1trm'.
+  info: Assign pin label "Ctrl_LS3" at (1740.8400, -1025.8070) to layer `met1trm'.
+
+***** End of Label Report *****
+

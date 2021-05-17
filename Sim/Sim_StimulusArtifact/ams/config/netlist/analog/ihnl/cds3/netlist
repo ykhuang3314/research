@@ -1,0 +1,18 @@
+    R0 (Iext VG2) rpp1k1 l=20.095u w=2u m=1 par1=(1)
+    M2 (VG1 VG1 vss vss) ne3 w=8u l=2u as=3.84e-12 ad=3.84e-12 \
+        ps=1.696e-05 pd=1.696e-05 nrs=0.03375 nrd=0.03375 m=(5)*(1) \
+        par1=((5)*(1)) xf_subext=0
+    M0 (VG2 VG2 VG1 vss) ne3 w=8u l=2u as=3.84e-12 ad=3.84e-12 \
+        ps=1.696e-05 pd=1.696e-05 nrs=0.03375 nrd=0.03375 m=(5)*(1) \
+        par1=((5)*(1)) xf_subext=0
+    M3 (VD_M1 VG1 vss vss) ne3 w=8u l=2u as=3.84e-12 ad=3.84e-12 \
+        ps=1.696e-05 pd=1.696e-05 nrs=0.03375 nrd=0.03375 m=(5)*(1) \
+        par1=((5)*(1)) xf_subext=0
+    M1 (Iref VG2 VD_M1 vss) ne3 w=8u l=2u as=3.84e-12 ad=3.84e-12 \
+        ps=1.696e-05 pd=1.696e-05 nrs=0.03375 nrd=0.03375 m=(5)*(1) \
+        par1=((5)*(1)) xf_subext=0
+    M14 (vss vss vss vss) ne3 w=8u l=2u as=3.84e-12 ad=3.84e-12 \
+        ps=1.696e-05 pd=1.696e-05 nrs=0.03375 nrd=0.03375 m=(4)*(1) \
+        par1=((4)*(1)) xf_subext=0
+ends Ext_Iref_ST
+// End of subcircuit definition.

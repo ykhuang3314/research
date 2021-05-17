@@ -325,3 +325,4 @@
 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
 /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/amsControlSpectre.scs
+/home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/ie_card.scs

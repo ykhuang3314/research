@@ -1,0 +1,7 @@
+
+LSHVT18U3VX2 I17 ( .A(enable), .Q(en_3v));
+
+CurrentMirror_x10_LV I0 ( .\gnd! (cds_globals.\gnd! ), .Ix10(Iout_LV), 
+    .Iin(Iref));
+
+endmodule

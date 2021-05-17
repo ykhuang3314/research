@@ -1,0 +1,6 @@
+
+// Library name: Stimulator_IMP
+// Cell name: CurrentMirror_x10_LV
+// View name: schematic
+// Inherited view list: schematic
+subckt CurrentMirror_x10_LV

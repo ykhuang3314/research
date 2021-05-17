@@ -19,3 +19,24 @@
 *WARNING* Because of the label priority, discard label "vdd3!",
         but keep the label "vdd3" at (1.657, 3.795)  on net C4.
 *WARNING* 3 net(s) with multi-label warnings found in cell 'LSHVT18U3VX1 layout D_CELLS_M3V'.
+*WARNING* 21 same-label  warnings found in cell 'pe3 layout PRIMLIB gContT="Met1" ng="8" in1=M31'.
+*WARNING* 240 same-label  warnings found in cell 'ped_bjt layout PRIMLIB ng="13" w="80u" in1=M66'.
+*WARNING* 180 same-label  warnings found in cell 'nedia_bjt layout PRIMLIB ng="10" w="80u" in1=M34'.
+*WARNING* Because of the label priority, discard label "gnd!",
+        but keep the label "gnd" at (0.325, 0.555)  on net C1.
+*WARNING* Because of the label priority, discard label "vdd3!",
+        but keep the label "vdd3" at (0.337, 3.790)  on net C4.
+*WARNING* 2 net(s) with multi-label warnings found in cell 'IN_3VX2 layout D_CELLS_3V'.
+*WARNING* Because of the label priority, discard label "gnd!",
+        but keep the label "gnd" at (1.400, 0.000)  on net C1.
+*WARNING* Because of the label priority, discard label "vdd!",
+        but keep the label "vdd" at (0.602, 3.875)  on net C4.
+*WARNING* 2 net(s) with multi-label warnings found in cell 'AND2HDX0 layout D_CELLS_HD'.
+*WARNING* 80 same-label  warnings found in cell 'nedia_bjt layout PRIMLIB ng="5" w="60u" in1=M16'.
+*WARNING* Because of the label priority, discard label "gnd!",
+        but keep the label "gnd" at (0.350, 0.690)  on net C1.
+*WARNING* Because of the label priority, discard label "vdde!",
+        but keep the label "vdde" at (0.330, 2.790)  on net C3.
+*WARNING* Because of the label priority, discard label "vdd3!",
+        but keep the label "vdd3" at (1.657, 3.795)  on net C4.
+*WARNING* 3 net(s) with multi-label warnings found in cell 'LSHVT18U3VX1 layout D_CELLS_M3V'.

@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/ykhuang/research
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/.preset.autosave
-"Job Signature" internal none IPVS_1620899652_10925
+"Job Signature" internal none IPVS_1620900162_10925
 "PVS Job Mode" internal none drc
 "Run Directory" internal none /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST
 "Technology Mapping File" internal none /home/ykhuang/research/pvtech.lib
@@ -12,7 +12,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1620899652
+"PVS Job Time" internal none 1620900164
 "Cell Tree" output text /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/cell_tree.txt
 "Control File" input text /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/pvsdrcctl
 "DFII version" internal none 6.1.8.0
@@ -21,7 +21,7 @@
 "Intermediate GDSII File" output none /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/MultiChannel_ST.gds
 "Intermediate GDSII File creation Errors" output none /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/PIPO1.LOG
 "Intermediate OASIS File creation Errors" output none /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/PIPO1.LOG
-"Job Signature" internal none IPVS_1620899652_10925
+"Job Signature" internal none IPVS_1620900162_10925
 "Layout Cell Name" internal none MultiChannel_ST
 "Layout ConvertPin" internal text geometryAndText
 "Layout GDSII" input none /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/MultiChannel_ST.gds
@@ -48,7 +48,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1620899653
+"PVS Job Time" internal none 1620900165
 "ASCII DRC Report Database" output rdb /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/MultiChannel_ST_drc.err
 "Antenna RDB R1CT" output rdb antenna.ratio
 "Antenna RDB R1M1P1" output rdb antenna.ratio
@@ -98,4 +98,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1620899654
+"PVS Job Time" internal none 1620900165

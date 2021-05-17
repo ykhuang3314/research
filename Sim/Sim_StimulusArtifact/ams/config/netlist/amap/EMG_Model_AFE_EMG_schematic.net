@@ -4,3 +4,6 @@ HEADER
 "Gain_Sel<1>v" "Gain_Sel[1]v"
 "Gain_Sel<2>v" "Gain_Sel[2]v"
 "gnd!v" "cds_globals.\\gnd! v"
+"vdd!v" "cds_globals.\\vdd! v"
+"vdd3!v" "cds_globals.\\vdd3! v"
+"vdde!v" "cds_globals.\\vdde! v"

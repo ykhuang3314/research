@@ -1,0 +1,8 @@
+    M26 (Iin Iin 0 0) ne3 w=12.0u l=3u as=5.76e-12 ad=5.76e-12 \
+        ps=2.496e-05 pd=2.496e-05 nrs=0.0225 nrd=0.0225 m=(6)*(1) \
+        par1=((6)*(1)) xf_subext=0
+    M13 (Ix10 Iin 0 0) ne3 w=12.0u l=3u as=5.76e-12 ad=5.76e-12 \
+        ps=2.496e-05 pd=2.496e-05 nrs=0.0225 nrd=0.0225 m=(60)*(1) \
+        par1=((60)*(1)) xf_subext=0
+ends CurrentMirror_x10_LV
+// End of subcircuit definition.

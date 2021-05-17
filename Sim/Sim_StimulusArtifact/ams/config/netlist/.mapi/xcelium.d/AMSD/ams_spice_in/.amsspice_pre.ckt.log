@@ -5,23 +5,23 @@ Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 15327
-Memory  available: 53.2318 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 23009
+Memory  available: 36.0675 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1229.2] ( 16 ),  1 [1309.4] ( 17 ),  2 [1237.6] ( 18 )
-                 3 [1271.5] ( 19 ),  4 [1204.8] ( 20 ),  5 [1200.3] ( 21 )
+        0:       0 [1200.0] ( 16 ),  1 [1207.2] ( 17 ),  2 [1271.5] ( 18 )
+                 3 [1284.2] ( 19 ),  4 [1200.0] ( 20 ),  5 [1205.6] ( 21 )
                  6 [1200.0] ( 22 ),  7 [1200.0] ( 23 )
-        1:       8 [1200.0] ( 24 ),  9 [1201.5] ( 25 ), 10 [1255.2] ( 26 )
-                11 [1200.0] ( 27 ), 12 [1200.0] ( 28 ), 13 [1200.0] ( 29 )
-                14 [1200.0] ( 30 ), 15 [1200.1] ( 31 )
+        1:       8 [1200.0] ( 24 ),  9 [1203.5] ( 25 ), 10 [1295.1] ( 26 )
+                11 [1280.9] ( 27 ), 12 [1200.0] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1199.9] ( 30 ), 15 [1200.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 1.3 %, 4.6 %, 7.2 %
+System load averages (1min, 5min, 15min) : 0.5 %, 0.4 %, 0.3 %
 Hyperthreading is enabled
 
 
-Simulating `/home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 6:47:38 PM, Wed Feb 10, 2021 (process id: 15327).
+Simulating `/home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on s2424 at 3:52:34 PM, Thur May 13, 2021 (process id: 23009).
 Current working directory: /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -33,7 +33,7 @@ Command line:
         =log  \
         /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi//xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log  \
         -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDA126F37837D471DEBA2AFC31339371C2EE03AB0239963FE3B121DE1A3C8E7DC5B32FFF1E319879D6BA7FFA7C3394639FEE34E62E358F3FDEF467EC343D9A3F9EFF71F839359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2B928EC6232CE7585EA38880950FB3080A83DEEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06461CB648AA83DC30C50FB10B0C819F1044CC37094000062E8
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080E838B83335D47FDDA126F37837D471DEBA2AFC31339371C2EE03AB0239963FE3B121DE1A3C8E7DC5B32FFF1E319879D6BA7FFA7C3394639FEE34E62E358F3FDEF467EC343D9A3F9EFF71F839359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2BA28B66068CC7685B03A8B0950FB3080A83DEEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06461CB648AA83DC30C50FB10B0C8A0C21C7FDB702D00006319
 
 Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -43,7 +43,7 @@ Loading /pkg/cadence/installs/XCELIUM1803/tools.lnx86/cmi/lib/64bit/5.0/libstmod
 Reading file:  /home/ykhuang/research/Sim/Sim_StimulusArtifact/ams/config/netlist/.mapi/xcelium.d/AMSD/ams_spice_in/.amsspice_pre.ckt
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
 Reading file:  /pkg/cadence/installs/XCELIUM1803/tools.lnx86/spectre/etc/configs/spectre.cfg
-Time for NDB Parsing: CPU = 126.578 ms, elapsed = 209.165 ms.
-Time accumulated: CPU = 184.684 ms, elapsed = 209.176 ms.
-Peak resident memory used = 48.4 Mbytes.
+Time for NDB Parsing: CPU = 127.019 ms, elapsed = 211.725 ms.
+Time accumulated: CPU = 187.009 ms, elapsed = 211.736 ms.
+Peak resident memory used = 50.4 Mbytes.
 

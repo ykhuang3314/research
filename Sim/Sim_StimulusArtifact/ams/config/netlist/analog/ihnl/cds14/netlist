@@ -1,0 +1,20 @@
+    I0 Ext_Iref_ST
+    I45 AND2HDX0
+    I46 AND2HDX0
+    I47 AND2HDX0
+    I48 AND2HDX0
+    I49 AND2HDX0
+    I2 CurrentMirror_ST
+    I1 Idac_5bit_ST_V3
+    I31 IN_3VX2
+    I15 IN_3VX2
+    I13 IN_3VX2
+    I11 IN_3VX2
+    I10 IN_3VX2
+    I16 LSHVT18U3VX1
+    I30 LSHVT18U3VX1
+    I14 LSHVT18U3VX1
+    I12 LSHVT18U3VX1
+    I29 LSHVT18U3VX1
+ends CurrentSource_All_ST
+// End of subcircuit definition.

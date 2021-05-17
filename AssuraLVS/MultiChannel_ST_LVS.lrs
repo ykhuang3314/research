@@ -1,0 +1,50 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 08/30/2019 01:19 (sj-ramneek) $
+sub-version 4.1_USR6_HF3, integ signature 2019-08-29-0302
+run on s2424 at Mon May 17 10:38:09 2021
+
+Schematic                                    | Layout                                    | Status
+---------------------------------------------------------------------------------------------------
+LSHVT18U3VX1 cmos_sch D_CELLS_M3V            | LSHVT18U3VX1 layout D_CELLS_M3V           | matched
+LSHVT18U3VX1 cmos_sch D_CELLS_M3V            | LSHVT18U3VX1_VAR1 layout D_CELLS_M3V      | matched
+ResistiveDivider schematic Stimulator_IMP    | ResistiveDivider layout Stimulator_IMP    | matched
+LS_HighSide_V3_ST schematic Stimulator_IMP   | LS_HighSide_V3_ST layout Stimulator_IMP   | matched
+LS_LowSide_V2_ST schematic Stimulator_IMP    | LS_LowSide_V2_ST layout Stimulator_IMP    | matched
+HalfBridge_ST schematic Stimulator_IMP       | HalfBridge_ST layout Stimulator_IMP       | matched
+IN_3VX2 cmos_sch D_CELLS_3V                  | IN_3VX2 layout D_CELLS_3V                 | matched
+Idac_5bit_ST_V3 schematic Stimulator_IMP     | Idac_5bit_ST_V3 layout Stimulator_IMP     | matched
+CurrentMirror_x10_LV schematic Stimulator_IMP| CurrentMirror_x10_LV layout Stimulator_IMP| matched
+LSHVT18U3VX2 cmos_sch D_CELLS_M3V            | LSHVT18U3VX2 layout D_CELLS_M3V           | matched
+CurrentMirror_ST schematic Stimulator_IMP    | CurrentMirror_ST layout Stimulator_IMP    | matched
+AND2HDX0 cmos_sch D_CELLS_HD                 | AND2HDX0 layout D_CELLS_HD                | matched
+AND2HDX0 cmos_sch D_CELLS_HD                 | AND2HDX0_VAR1 layout D_CELLS_HD           | matched
+Ext_Iref_ST schematic Stimulator_IMP         | Ext_Iref_ST layout Stimulator_IMP         | matched
+CurrentSource_All_ST schematic Stimulator_IMP| CurrentSource_All_ST layout Stimulator_IMP| matched
+MultiChannel_ST schematic Stimulator_IMP     | MultiChannel_ST layout Stimulator_IMP     | matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:Stimulator_IMP
+  Cell   :MultiChannel_ST
+  View   :schematic
+
+Layout:
+  Library:Stimulator_IMP
+  Cell   :MultiChannel_ST
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

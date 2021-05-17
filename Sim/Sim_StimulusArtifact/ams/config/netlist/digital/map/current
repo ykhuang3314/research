@@ -2,9 +2,9 @@
   version "2.1"
   mapType "incremental"
   blockName "Sim_StimulusArtifact"
-  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal cmos_sch"
   stopList "spectre"
-  globalList "gnd!"
+  globalList "gnd! vdd3! vdde! vdd!"
   hierDelim "."
   globalHierPrefix "cds_globals."
   prefixHierarchyWithCV "YES"
@@ -17,18 +17,61 @@
   slashCheck   "t"
  )
 ( defbus
-( "Mag" 4 0  "Mag" 4 0  )
+( "Mag_ST" 4 0  "Mag_ST" 4 0  )
 ( "Gain_Sel" 2 0  "Gain_Sel" 2 0  )
+( "CtrlHS" 7 0  "CtrlHS" 7 0  )
+( "CtrlLS" 7 0  "CtrlLS" 7 0  )
+( "ChSel_LS" 2 0  "ChSel_LS" 2 0  )
+( "ChSel_HS" 2 0  "ChSel_HS" 2 0  )
  )
 ( net
+( "vdd!" "cds_globals.\\vdd! " )
 ( "gnd!" "cds_globals.\\gnd! " )
+( "vdde!" "cds_globals.\\vdde! " )
+( "vdd3!" "cds_globals.\\vdd3! " )
  )
 ( model
+( "GATES_HD/invr/schematic" "invr" )
+( "Stimulator_IMP/Ext_Iref_ST/schematic" "Ext_Iref_ST" )
+( "Stimulator_IMP/CurrentMirror_x10_LV/schematic" "CurrentMirror_x10_LV" )
+( "GATES_HD/nand2/schematic" "nand2" )
+( "Stimulator_IMP/LS_LowSide_V2_ST/schematic" "LS_LowSide_V2_ST" )
 ( "EMG_Model/AFE_EMG/schematic" "AFE_EMG" )
-( "Stimulator_Model/Stimulator_Single_CH/schematic" "Stimulator_Single_CH" )
+( "Stimulator_IMP/HalfBridge_ST/schematic" "HalfBridge_ST" )
+( "D_CELLS_3V/IN_3VX2/cmos_sch" "IN_3VX2" )
+( "D_CELLS_HD/AND2HDX0/cmos_sch" "AND2HDX0" )
+( "Stimulator_IMP/Idac_5bit_ST_V3/schematic" "Idac_5bit_ST_V3" )
+( "GATES_3V/invrv3/schematic" "invrv3" )
+( "Stimulator_IMP/SingleChannel_ST/schematic" "SingleChannel_ST" )
+( "Stimulator_IMP/LS_HighSide_V3_ST/schematic" "LS_HighSide_V3_ST" )
+( "D_CELLS_M3V/LSHVT18U3VX2/cmos_sch" "LSHVT18U3VX2" )
+( "Stimulator_IMP/CurrentSource_All_ST/schematic" "CurrentSource_All_ST" )
+( "D_CELLS_M3V/LSHVT18U3VX1/cmos_sch" "LSHVT18U3VX1" )
+( "Stimulator_IMP/CurrentMirror_ST/schematic" "CurrentMirror_ST" )
+( "Stimulator_IMP/ResistiveDivider/schematic" "ResistiveDivider" )
 ( "EMG_NMES_TestBench/Sim_StimulusArtifact/schematic" "Sim_StimulusArtifact" )
  )
-( "Stimulator_Single_CH" "ihnl/cds0/map" )
-( "Sim_StimulusArtifact" "ihnl/cds2/map" )
-( "AFE_EMG" "ihnl/cds1/map" )
+( "Tano" "cds_globals.Tano" )
+( "Period" "cds_globals.Period" )
+( "Tcat" "cds_globals.Tcat" )
+( "IPD" "cds_globals.IPD" )
+( "HalfBridge_ST" "ihnl/cds16/map" )
+( "Ext_Iref_ST" "ihnl/cds1/map" )
+( "LSHVT18U3VX2" "ihnl/cds5/map" )
+( "invrv3" "ihnl/cds9/map" )
+( "CurrentMirror_ST" "ihnl/cds7/map" )
+( "nand2" "ihnl/cds2/map" )
+( "ResistiveDivider" "ihnl/cds13/map" )
+( "invr" "ihnl/cds3/map" )
+( "LSHVT18U3VX1" "ihnl/cds11/map" )
+( "LS_LowSide_V2_ST" "ihnl/cds15/map" )
+( "CurrentSource_All_ST" "ihnl/cds12/map" )
+( "CurrentMirror_x10_LV" "ihnl/cds6/map" )
+( "Idac_5bit_ST_V3" "ihnl/cds8/map" )
+( "LS_HighSide_V3_ST" "ihnl/cds14/map" )
+( "SingleChannel_ST" "ihnl/cds17/map" )
+( "Sim_StimulusArtifact" "ihnl/cds18/map" )
+( "AND2HDX0" "ihnl/cds4/map" )
+( "AFE_EMG" "ihnl/cds0/map" )
+( "IN_3VX2" "ihnl/cds10/map" )
  )

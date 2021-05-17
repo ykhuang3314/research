@@ -2,8 +2,6 @@
 // File created by:  xrun
 // Do not modify this file
 //
-+define+CDS_SELECT_CRS
-+define+CONNRULES_18V_FULL_FAST
 -SPECTRE_ARGS
 "-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
 -amsossirunbind
@@ -21,8 +19,6 @@ DLCLAP
 -V93
 -timescale
 1ns/1ns
--DISCIPLINE
-logic
 -DELAY_MODE
 None
 -NOVITALACCL
@@ -42,22 +38,20 @@ r
 ./amsControlSpectre.scs
 -ANALOGCONTROL
 ./amsControlSpectre.scs
--AMSCONNRULES
-ConnRules_18V_full_fast
+-AMSINPUT
+./ie_card.scs
+-ANALOGCONTROL
+./ie_card.scs
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Digital_Stimulus_V2_ST/functional/verilog.v lib:Stimulator_IMP cell:Digital_Stimulus_V2_ST view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/research/Stimulator_IMP/Decoder3_8/functional/verilog.v lib:Stimulator_IMP cell:Decoder3_8 view:functional"
 -AMSCOMPILEFILE
 "file:/home/ykhuang/research/EMG_Model/IA_EMG_Ideal/verilogams/verilog.vams lib:EMG_Model cell:IA_EMG_Ideal view:verilogams"
 -AMSCOMPILEFILE
 "file:/home/ykhuang/research/EMG_Model/PGA_EMG/verilogams/verilog.vams lib:EMG_Model cell:PGA_EMG view:verilogams"
 -AMSCOMPILEFILE
 "file:/home/ykhuang/research/EMG_Model/BPF_EMG/verilogams/verilog.vams lib:EMG_Model cell:BPF_EMG view:verilogams"
--AMSCOMPILEFILE
-"file:/home/ykhuang/research/Stimulator_Model/H_Bridge/verilogams/verilog.vams lib:Stimulator_Model cell:H_Bridge view:verilogams"
--AMSCOMPILEFILE
-"file:/home/ykhuang/research/Stimulator_Model/Current_Mirror/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Mirror view:verilogams"
--AMSCOMPILEFILE
-"file:/home/ykhuang/research/Stimulator_Model/Current_Source/verilogams/verilog.vams lib:Stimulator_Model cell:Current_Source view:verilogams"
--SPECTRE_ARGS
-++aps
 -MESSAGES
 EMG_NMES_TestBench.Sim_StimulusArtifact:schematic
 cds_globals

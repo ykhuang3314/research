@@ -1,0 +1,31 @@
+// Library - Stimulator_IMP, Cell - CurrentMirror_ST, View - schematic
+// LAST TIME SAVED: Apr 23 17:12:47 2021
+// NETLIST TIME: May 13 15:52:35 2021
+`timescale 1ns / 1ps 
+
+`worklib Stimulator_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="Stimulator_IMP", dfII_cell="CurrentMirror_ST", dfII_view="schematic", worklib_name="Stimulator_IMP", view_name="schematic", last_save_time="Apr 23 17:12:47 2021" *)
+
+module CurrentMirror_ST (Iref, Ist, .\gnd! (cdsNet1), .\vdd3! 
+    (cdsNet0), vddh, enable);
+
+inout  Iref, Ist, cdsNet1, cdsNet0, vddh;
+
+input  enable;
+
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst2(cdsNet1, cds_globals.\gnd! );
+cds_alias #(1) cds_alias_inst3(cdsNet0, cds_globals.\vdd3! );
+
+LSHVT18U3VX2 I17 ( .A(enable), .Q(en_3v));
+
+CurrentMirror_x10_LV I0 ( .\gnd! (cds_globals.\gnd! ), .Ix10(Iout_LV), 
+    .Iin(Iref));
+
+endmodule

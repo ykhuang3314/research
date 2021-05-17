@@ -1,23 +1,28 @@
 hnlLastStopCellInfo = '(
-                           ( "Stimulator_Model" "Current_Source" "verilogams" "1612868567" "1612868567" )
-                          ( "Stimulator_Model" "Current_Mirror" "verilogams" "1611094364" "1611094363" )
-                          ( "Stimulator_Model" "H_Bridge" "verilogams" "1612868774" "1612868774" )
+                           ( "Stimulator_IMP" "Decoder3_8" "functional" "1618306749" "1618306749" )
                           ( "EMG_Model" "BPF_EMG" "verilogams" "1605303913" "1605303913" )
                           ( "EMG_Model" "PGA_EMG" "verilogams" "1612867538" "1612867538" )
                           ( "EMG_Model" "IA_EMG_Ideal" "verilogams" "1612885663" "1612885663" )
                           ( "analogLib" "res" "spectre" "28" "1570591052" )
                           ( "analogLib" "idc" "spectre" "33" "1570591052" )
                           ( "analogLib" "vdc" "spectre" "33" "1570591052" )
-                          ( "analogLib" "vpulse" "spectre" "34" "1570591052" )
-                          ( "analogLib" "switch" "spectre" "48" "1570591052" )
+                          ( "PRIMLIB" "rpp1k1" "spectre" "40" "1562065969" )
+                          ( "PRIMLIB" "ne3" "spectre" "52" "1562065969" )
+                          ( "PRIMLIB" "ne" "spectre" "52" "1562065969" )
+                          ( "PRIMLIB" "pe" "spectre" "53" "1562065969" )
+                          ( "PRIMLIB" "csft5a" "spectre" "41" "1562065969" )
+                          ( "PRIMLIB" "nedia_bjt" "spectre" "56" "1562065969" )
+                          ( "PRIMLIB" "pe3" "spectre" "53" "1562065969" )
+                          ( "PRIMLIB" "ped_bjt" "spectre" "56" "1562065969" )
+                          ( "Stimulator_IMP" "Digital_Stimulus_V2_ST" "functional" "1618314955" "1618314955" )
                           ( "analogLib" "cap" "spectre" "30" "1570591052" )
                        )
 hnlLastNetlistConfig = t
-hnlLastConfigFileVersion = 1
-hnlLastConfigFileTimeStamp = "1612864707"
+hnlLastConfigFileVersion = 4
+hnlLastConfigFileTimeStamp = "1620913834"
 hnlLastSupportNewConfig = t
 hnlLastConfigInfo = '( 
-( "EMG_NMES_TestBench" "Sim_StimulusArtifact" "config" 1 "1612864707" )
+( "EMG_NMES_TestBench" "Sim_StimulusArtifact" "config" 4 "1620913834" )
 ) 
 hnlLastMaxNameLength = 2000
 hnlLastNamePrefix = "hnl_"
@@ -1631,11 +1636,21 @@ hnlLastNetNameDifferentFrom = '( "instance" "parameter" )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( "net" )
 hnlLastLibInfo = '(
-                    ( "Stimulator_Model" "1612794634" )
-                   ( "EMG_Model" "1605477451" )
+                    ( "EMG_Model" "1605477451" )
+                   ( "Stimulator_IMP" "1614781067" )
+                   ( "GATES_HD" "1516350477" )
+                   ( "D_CELLS_HD" "1517475089" )
+                   ( "D_CELLS_M3V" "1528371405" )
+                   ( "GATES_3V" "1520929029" )
+                   ( "D_CELLS_3V" "1520929020" )
                    ( "EMG_NMES_TestBench" "1612798479" )
                   )
 hnlLastConstants = '(
                       ""
                     )
-hnlLastDesignVars = '( )
+hnlLastDesignVars = '(
+                      "Period"
+                      "Tcat"
+                      "Tano"
+                      "IPD"
+                    )

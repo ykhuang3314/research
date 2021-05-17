@@ -1,7 +1,7 @@
 ********************************************************************************
 *** PVS HDRC SUMMARY
 ***
-Execute on Date/Time    : Thu May 13 11:54:14 2021
+Execute on Date/Time    : Thu May 13 12:02:45 2021
 PVS HDRC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/ykhuang/research/layoutverification/pvs_drc/MultiChannel_ST/.config.rul
 Rule Deck Title         : " XH018 PVS DRC/LVS File v8.1.2 : MET4 / METMID / METTHK "
@@ -30,7 +30,7 @@ DRC Results Database    :
 LAYER met1_dg .................... Total Original Geometry:     2880 (   19259)
 LAYER met2_dg .................... Total Original Geometry:     1867 (   10924)
 LAYER xflay ...................... Total Original Geometry:        0 (       0)
-LAYER met3_dg .................... Total Original Geometry:      941 (   97218)
+LAYER met3_dg .................... Total Original Geometry:      936 (   97138)
 LAYER met4_dg .................... Total Original Geometry:      612 (  144248)
 LAYER mettp_dg ................... Total Original Geometry:      704 (   94668)
 LAYER mettpl_dg .................. Total Original Geometry:        0 (       0)
@@ -1483,7 +1483,7 @@ RULECHECK offgrid_LD ................. Total Result      0 (       0)
 RULECHECK offgrid_LV ................. Total Result      0 (       0)
 RULECHECK offgrid_M1 ................. Total Result      0 (       0)
 RULECHECK offgrid_M2 ................. Total Result      0 (       0)
-RULECHECK offgrid_M3 ................. Total Result      1 (      16)
+RULECHECK offgrid_M3 ................. Total Result      0 (       0)
 RULECHECK offgrid_M4 ................. Total Result      0 (       0)
 RULECHECK offgrid_MR ................. Total Result      0 (       0)
 RULECHECK offgrid_MV ................. Total Result      0 (       0)
@@ -1592,6 +1592,6 @@ RULECHECK skew_edge .................. Total Result      0 (       0)
 Total CPU Time                    : 7(s)
 Total Real Time                   : 7(s)
 Peak Memory Used                  : 132(M)
-Total Original Geometry           : 73628 (1921928)
+Total Original Geometry           : 73623 (1921848)
 Total DRC RuleChecks              : 1373
-Total DRC Results                 : 1 (16)
+Total DRC Results                 : 0 (0)

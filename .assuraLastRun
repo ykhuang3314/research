@@ -1,2 +1,2 @@
-runDir = ./AssuraDRC
-runName = MultiChannel_ST_DRC
+runDir = ./AssuraLVS
+runName = MultiChannel_ST_LVS

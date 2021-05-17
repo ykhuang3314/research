@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/ykhuang/research
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/ykhuang/research/PvsLVS/MultiChannel_ST/.preset.autosave
-"Job Signature" internal none IPVS_1620899108_10925
+"Job Signature" internal none IPVS_1620913105_15799
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/ykhuang/research/PvsLVS/MultiChannel_ST
 "Technology Mapping File" internal none /home/ykhuang/research/pvtech.lib
@@ -12,7 +12,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1620899109
+"PVS Job Time" internal none 1620913106
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic cmos_sch
@@ -62,7 +62,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1620899114
+"PVS Job Time" internal none 1620913112
 "Comparison Report" output cls /home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST_lvs.sum.cls
 "ERC Result" internal none EMPTY
 "ERC Summary" output text /home/ykhuang/research/PvsLVS/MultiChannel_ST/MultiChannel_ST.sum
@@ -86,7 +86,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1620899115
+"PVS Job Time" internal none 1620913112
 "Comparison Result" internal none MATCH
 "LVS Run Name" internal none MultiChannel_ST_lvs.sum
 "Run Directory" internal none /home/ykhuang/research/PvsLVS/MultiChannel_ST/
@@ -95,4 +95,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1620899119
+"PVS Job Time" internal none 1620913116

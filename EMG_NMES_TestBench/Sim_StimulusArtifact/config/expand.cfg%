@@ -1,4 +1,4 @@
-//Revision 1
+//Revision 3
 //NOTE
 // Default config view template for AMS netlister(s) in ADE.
 // Note:
@@ -10,8 +10,16 @@ config Sim_StimulusArtifact;
 design EMG_NMES_TestBench.Sim_StimulusArtifact:schematic;
 liblist myLib;
 
-viewlist spectre, spice, pspice, verilog, verilogams, behavioral, functional, systemVerilog, schematic, veriloga, vhdl, vhdlams, wreal;
+viewlist spectre, spice, pspice, verilog, verilogams, behavioral, functional, systemVerilog, schematic, veriloga, vhdl, vhdlams, wreal, cmos_sch;
 stoplist spectre;
+
+
+cell D_CELLS_HD.AND2HDX0 binding :cmos_sch;
+
+cell D_CELLS_M3V.LSHVT18U3VX1 binding :cmos_sch;
+cell D_CELLS_M3V.LSHVT18U3VX2 binding :cmos_sch;
+
+cell D_CELLS_3V.IN_3VX2 binding :cmos_sch;
 
 
 endconfig

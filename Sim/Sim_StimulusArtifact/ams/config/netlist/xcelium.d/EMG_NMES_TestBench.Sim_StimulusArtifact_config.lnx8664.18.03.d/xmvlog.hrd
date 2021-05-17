@@ -8,9 +8,5 @@
 1ns/1ns
 -MODELINCDIR
 /home/ykhuang/research/
--DEFINE
-CDS_SELECT_CRS
--DEFINE
-CONNRULES_18V_FULL_FAST
 -SNAPSHOT
 EMG_NMES_TestBench.Sim_StimulusArtifact:config
